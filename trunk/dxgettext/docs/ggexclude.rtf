@@ -1,0 +1,188 @@
+{\rtf1\ansi\ansicpg1252\deff0\deflang1031{\fonttbl{\f0\fswiss\fcharset0 Arial;}{\f1\fmodern\fprq1\fcharset0 Courier New;}{\f2\fnil\fcharset2 Symbol;}}
+\viewkind4\uc1\pard\f0\fs20 Preventing string extraction\par
+\par
+There might be occasions where you need certain files, whole classes or properties on certain forms, or even a whole folder, to be excluded from string extraction. dxgettext doesn't know anything about classes and their properties, because it's not a compiler, and therefore it can't know about the classes and properties you invented. But usually you as the developer know about that, and there's a mechanism to tell dxgettex what you want to get excluded from string extraction.\par
+\par
+It's done with a config file, always called "ggexclude.cfg", that accepts different kinds of information about things that shall be excluded:\par
+\pard{\pntext\f2\'B7\tab}{\*\pn\pnlvlblt\pnf2\pnindent0{\pntxtb\'B7}}\fi-720\li720 folders\par
+{\pntext\f2\'B7\tab}files\par
+{\pntext\f2\'B7\tab}classes\par
+{\pntext\f2\'B7\tab}properties of classes\par
+{\pntext\f2\'B7\tab}certain instances (=objects) of a class in certain files\par
+\pard\par
+This file must be located in the directory where you want to extract strings from (that is the folder where you start "extract translations to template" in the context menu of the Windows-Explorer; in dxgettext command line it's the current working directory or the directory specified in the "-b"-option) . If the file doesn't exist, dxgettext just ignores that and does its normal job. It is a plain text file, consisting of four different kinds of lines: empty lines, comments, section and values.\par
+\par
+Comments:\par
+# This is a comment, starting with a # at the beginning of each line\par
+     # Leading spaces may be added, but no other leading characters\par
+\par
+Sections:\par
+Therse sections are recognized by dxgettext:\par
+[exclude-dir]\par
+[exclude-file]\par
+[exclude-form-class]\par
+[exclude-form-class-property]\par
+[exclude-form-instance]\par
+\par
+Each section is optional and can contain zero to many lines, which are the "values" of that section. Below is a sample file with lots of comments to explain the internal structure and syntax. You have to be aware that the information you provide in this file has to be accurate, and, again, that the parser of dxgettext doesn't know about classes and inheritence. That means that if you have a class, say, "TMyEdit" and derived from that, "TMyDerivedEdit", and you want their "Text" property to be excluded, you need to mention \b both\b0  classes in the config file. Leaving "TMyDerivedEdit" out would mean that its "Text" property would still be extracted.\par
+\par
+Now the sample file: \par
+\par
+\f1 # Text in square brackets, like "[exclude-dir]", is called a "section".\par
+# Each line that is not empty, not a comment and not a section holds \par
+# exactly 1 "value".\par
+# All lines below a section are scanned for values belonging to that \par
+# section until the next section starts. You can use the same section \par
+# serveral times. It will all be added up.\par
+\par
+[exclude-dir]\par
+# This section prevents a whole folder and all it's subfolder from being scanned.\par
+# Each value is exactly one folder. On Windows, it's not case-sensitive.\par
+# You can use relative or absolute paths. No wildcards allowed.\par
+\par
+subfolder\par
+# these are valid values as well:\par
+# another\\folder\par
+# another\\folder\\\par
+# Windows: D:\\yet\\another\\folder\par
+# Linux:  /home/zaphod/projects/subfolder/\par
+# You don't have to worry about the path delimiters, both "/" and "\\"\par
+# can be used. They are converted to "/" internally\par
+\par
+[exclude-file]\par
+# This section prevents a whole file from being scanned.\par
+# Each value is exactly one file. On Windows, it's not case-sensitive.\par
+# You can use relative or absolute paths. Wildcards allowed.\par
+\par
+Unit4.dfm\par
+# Using the wildcard ".*" for a file extension means that the following\par
+# matching Delphi-files will be excluded: dfm, xfm, pas, inc, rc, dpr\par
+Unit5.*\par
+# If Unit3 is already excluded by the [exclude-dir] above, because it\par
+# is located in a subfolder of "subfolder", listing it here therefore \par
+# has not further effect\par
+subfolder\\subfolder\\Unit3.dfm\par
+\par
+# you can use absolute paths as well, like this:\par
+# on Windows: D:\\test\\Unit.pas\par
+# on Linux:   /home/zaphod/projects/MainForm.*\par
+\par
+[exclude-form-class-property]\par
+# This section prevents a certain property of a class to\par
+# be excluded from scanning in all forms of the folder and subfolders\par
+# where "ggexclude.cfg" is located.\par
+# The format for a value is "Classname.Properyname". It's not case-sensitive. No wildcards allowed.\par
+# Classname is obvious, the propertyname has to be written the way it\par
+# is # Text in square brackets, like "[exclude-dir]", is called a "section".\par
+# Each line that is not empty, not a comment and not a section holds \par
+# exactly 1 "value".\par
+# All lines below a section are scanned for values belonging to that \par
+# section until the next section starts. You can use the same section \par
+# serveral times. It will all be added up.\par
+\par
+[exclude-dir]\par
+# This section prevents a whole folder and all it's subfolder from being scanned.\par
+# Each value is exactly one folder. On Windows, it's not case-sensitive.\par
+# You can use relative or absolute paths. No wildcards allowed.\par
+\par
+subfolder\par
+# these are valid values as well:\par
+# another\\folder\par
+# another\\folder\\\par
+# Windows: D:\\yet\\another\\folder\par
+# Linux:  /home/zaphod/projects/subfolder/\par
+# You don't have to worry about the path delimiters, both "/" and "\\"\par
+# can be used. They are converted to "/" internally\par
+\par
+[exclude-file]\par
+# This section prevents a whole file from being scanned.\par
+# Each value is exactly one file. On Windows, it's not case-sensitive.\par
+# You can use relative or absolute paths. Wildcards allowed.\par
+\par
+Unit4.dfm\par
+# Using the wildcard ".*" for a file extension means that the following\par
+# matching Delphi-files will be excluded: dfm, xfm, pas, inc, rc, dpr\par
+Unit5.*\par
+# If Unit3 is already excluded by the [exclude-dir] above, because it\par
+# is located in a subfolder of "subfolder", listing it here therefore \par
+# has not further effect\par
+subfolder\\subfolder\\Unit3.dfm\par
+\par
+# you can use absolute paths as well, like this:\par
+# on Windows: D:\\test\\Unit.pas\par
+# on Linux:   /home/zaphod/projects/MainForm.*\par
+\par
+[exclude-form-class-property]\par
+# This section prevents a certain property of a class to\par
+# be excluded from scanning in all forms of the folder and subfolders\par
+# where "ggexclude.cfg" is located.\par
+# The format for a value is "Classname.Properyname". It's not case-sensitive. No wildcards allowed.\par
+# Classname is obvious, the propertyname has to be written the way it\par
+# is written in the form file. If you're in doubt about how a certain property\par
+# has to be stored here, just copy and paste the line from the DFM file here and\par
+# put the classname before that.\par
+# For simple strings the property name is one word:\par
+TLabel.Caption\par
+# ...and for TStrings it's like this:\par
+TListbox.Items.Strings\par
+TMemo.Lines.Strings\par
+TQuery.SQL.Strings\par
+\par
+# TEdit is listed in the [exclude-form-class]-section below which means\par
+# that the whole class will be excluded. Listing TEdit.Text here therefore\par
+# has no further effect\par
+TEdit.Text\par
+\par
+# A special case are collections in forms (like TDBGridColumns in a TDBGrid,\par
+# TParams in a TQuery or TActionManager.ActionBars). You can exclude only\par
+# the whole collection, but not certain properties of a collection. That \par
+# means as well that in the case of nested collections (see TActionManager.ActionBars\par
+# in the sample unit "nestedcollections.dfm"), everything that appears below\par
+# the collection with the highest level will be ignored.\par
+# Note that some collections are saved with another name than their propertyname. \par
+# For example: "TQuery.Params" will be saved as "ParamData" in the form file.  \par
+TQuery.ParamData\par
+TDBGrid.Columns\par
+TActionManager.ActionBars\par
+# these lines won't work:\par
+# TDBGrid.Columns.Title.Caption\par
+# TActionManager.ActionBars.ContextItems\par
+# ("ContextItems" is a nested collection, which can hold another nested collection and so on)\par
+\par
+[exclude-form-class]\par
+# This section prevents a whole class to\par
+# be excluded from scanning in all forms of the folder and subfolders\par
+# where "ggexclude.cfg" is located.\par
+# The format for a value is just "Classname". It's not case-sensitive.\par
+# A wildcard "*" can be used optionally.\par
+# A special case are collections, see [exclude-form-class-property] for that\par
+\par
+# Here, everything of TEdit in DFM/XFM-files will be ignored. Remember:\par
+# other classes derived from TEdit have to listed seperatly in order to \par
+# exclude their properties as well. Inheritance is not recognized by dxgettext:\par
+TEdit\par
+\par
+# Visual containers like TPanel or TScrollbox have to be treated slightly different. \par
+# If you have a TPanel with a TLabel on it, writing "TPanel" would only\par
+# exclude the properties of TPanel itself. If you want to exclude\par
+# everything contained in a TPanel, use the wildcard "*" at the end, like this:\par
+TPanel* \par
+# The following only excludes the properties of TScrollbox itself, but not the controls\par
+# contained in Scrollboxes (except other classes explicitly listed here, like\par
+# TEdit above):\par
+TScrollbox\par
+\par
+[exclude-form-instance]\par
+# This section prevents a certain instance (=object) of a class in a certain form file to\par
+# be excluded from scanning.\par
+# Each value is exactly one file with one instance. The format is \par
+# "filename:instancename". On Windows, the "filename" part is not \par
+# case-sensitive. You can use relative or absolute paths.\par
+# Note that if the instance is something like a container or menu, \par
+# everything belonging to that will be excluded.\par
+# Note also that a frame on a form might contain a component with the\par
+# same name as a component on the form. They would both be excluded. \par
+Unit6.dfm:Popupmenu\par
+Unit6.dfm:Label5\par
+}
+ 

@@ -1,0 +1,6 @@
+#!/bin/sh
+db2pdf manual.docbook
+db2rtf manual.docbook
+rm manual/*
+db2html -o manual -V %use-id-as-filename% manual.docbook
+
