@@ -1,0 +1,31 @@
+msgid ""
+msgstr ""
+"Project-Id-Version: Example\n"
+"POT-Creation-Date: 2003-03-02 13:31\n"
+"PO-Revision-Date: 2005-10-25 09:52+0100\n"
+"Last-Translator: Naiara Maya <naiabera@yahoo.es>\n"
+"Language-Team: Basque\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+
+#. Message to the user when the test button is clicked
+#. Name: MessageToUser
+#. This is a demo of the _() syntax
+#: ClxSampleForm.pas:42  SampleForm.pas:48 SampleForm.pas:59
+msgid "Thank you for clicking this button"
+msgstr "Mila esker botoi hau sakatzeagatik"
+
+#. FormMain..Caption
+#: ClxSampleForm.xfm:9  SampleForm.dfm:6
+msgid "GNU gettext sample application"
+msgstr "GNU gettext aplikazioaren adibidea"
+
+#. FormMain..ButtonTestGettext..Caption
+#. FormMain..ButtonTestResourcestring..Caption
+#: ClxSampleForm.xfm:20  SampleForm.dfm:23 SampleForm.dfm:32
+msgid "Click me"
+msgstr "Klikatu"
+
+#~ msgid "MS Sans Serif"
+#~ msgstr "MS Sans Serif"

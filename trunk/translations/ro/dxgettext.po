@@ -1,0 +1,951 @@
+msgid ""
+msgstr ""
+"Project-Id-Version: dxgettext_RO_1.0\n"
+"POT-Creation-Date: 2005-06-18 12:24\n"
+"PO-Revision-Date: 2005-05-10 02:33+0200\n"
+"Last-Translator: George Motru <office@sollinx.com>\n"
+"Language-Team: Sollinx Services srl <office@sollinx.com>\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"X-Generator: dxgettext 1.2.1 beta 1\n"
+"X-Poedit-Language: Romanian\n"
+"X-Poedit-Country: Romania\n"
+
+#. Form1..Caption
+#: assemble/umain.dfm:7 
+msgid "Embed translations in executable"
+msgstr "Include traducerile în corpul executabilului"
+
+#. Form1..LabelExplanation....Caption
+#: assemble/umain.dfm:34 
+msgid "This will append the following translations to your executable file."
+msgstr "Aceasta va adăuga următoarele traduceri la fişierul executabil."
+
+#. Form1..LabelExeHeading..Caption
+#: assemble/umain.dfm:42 
+msgid "Executable file:"
+msgstr "Fişier executabil:"
+
+#. Form1..PanelButtons..ButtonOK..Caption
+#. FormConfig..ButtonOK..Caption
+#: assemble/umain.dfm:74  uconfig.dfm:54
+msgid "&OK"
+msgstr "&OK"
+
+#. Form1..PanelButtons..ButtonCancel..Caption
+#. FormConfig..ButtonCancel..Caption
+#: assemble/umain.dfm:85  uconfig.dfm:66
+msgid "&Cancel"
+msgstr "&Renunta"
+
+#. frmMain..Caption
+#: bplPoMerge/main_translation.dfm:6 
+msgid "Autotranslate BPL-Ressources to PO file"
+msgstr "Auto-traducere Resurse BPL în fişierul tip PO"
+
+#. frmMain..panel2..Caption
+#: bplPoMerge/main_translation.dfm:34 
+msgid "Step 2"
+msgstr "Pasul 2"
+
+#. frmMain..panel2..Label3..Caption
+#: bplPoMerge/main_translation.dfm:41 
+msgid "PO file to merge :"
+msgstr "Fişierul PO de mixat:"
+
+#. frmMain..panel2..btMergePO..Caption
+#: bplPoMerge/main_translation.dfm:48 
+msgid "Merge PO file"
+msgstr "Mixează fişierul tip PO"
+
+#. frmMain..panel2..edPO..Text
+#: bplPoMerge/main_translation.dfm:58 
+msgid "delphi7.po"
+msgstr "delphi7.po"
+
+#. frmMain..panel2..chkUTF8..Caption
+#: bplPoMerge/main_translation.dfm:72 
+msgid "write conforming to UTF8 (see your PO file setting)"
+msgstr "scrie conform cu UTF8 (vezi setările fişierului PO)"
+
+#. frmMain..panel2..btCreatePO..Caption
+#: bplPoMerge/main_translation.dfm:82 
+msgid "Create PO file"
+msgstr "Creare fişier PO"
+
+#. frmMain..panelClient..Values......Caption
+#: bplPoMerge/main_translation.dfm:112 
+msgid "ID"
+msgstr "ID"
+
+#. frmMain..panelClient..Values......Caption
+#: bplPoMerge/main_translation.dfm:116 
+msgid "BPL (english)"
+msgstr "BPL (engleză)"
+
+#. frmMain..panelClient..Values......Caption
+#: bplPoMerge/main_translation.dfm:120 
+msgid "language dependent"
+msgstr "dependent de limbaj"
+
+#. frmMain..panelClient..panel1..Caption
+#: bplPoMerge/main_translation.dfm:134 
+msgid "Step 1"
+msgstr "Pasul 1"
+
+#. frmMain..panelClient..panel1..Label1..Caption
+#: bplPoMerge/main_translation.dfm:141 
+msgid "BPL files to extract :"
+msgstr "Fişiere BPL de extras:"
+
+#. frmMain..panelClient..panel1..Label2..Caption
+#: bplPoMerge/main_translation.dfm:148 
+msgid "Extension for corresponding language dependent ressourcefiles :"
+msgstr "Extensia pt. fişiere de resurse dependente de limbaj :"
+
+#. frmMain..panelClient..panel1..btExtract..Caption
+#: bplPoMerge/main_translation.dfm:185 
+msgid "Extract ressources"
+msgstr "Extrage resurse"
+
+#. frmMain..MainMenu1..Files1..Caption
+#: bplPoMerge/main_translation.dfm:210 
+msgid "&Files"
+msgstr "&Fişiere"
+
+#. frmMain..MainMenu1..Files1..Exit1..Caption
+#: bplPoMerge/main_translation.dfm:212 
+msgid "&Exit"
+msgstr "I&esire"
+
+#. frmMain..MainMenu1..Extractions1..Caption
+#: bplPoMerge/main_translation.dfm:217 
+msgid "&Ressources"
+msgstr "&Resurse"
+
+#. frmMain..MainMenu1..Extractions1..Extract1..Caption
+#: bplPoMerge/main_translation.dfm:219 
+msgid "&Extract"
+msgstr "&Extragere"
+
+#. frmMain..MainMenu1..Extractions1..Load1..Caption
+#: bplPoMerge/main_translation.dfm:223 
+msgid "&Load"
+msgstr "&Incarcare"
+
+#. frmMain..MainMenu1..Extractions1..Save1..Caption
+#: bplPoMerge/main_translation.dfm:227 
+msgid "&Save"
+msgstr "&Salvare"
+
+#. frmMain..MainMenu1..POfiles1..Caption
+#: bplPoMerge/main_translation.dfm:232 
+msgid "&PO files"
+msgstr "Fişiere &PO"
+
+#. frmMain..MainMenu1..POfiles1..Merge1..Caption
+#. FormRun..ButtonGo..Caption
+#: bplPoMerge/main_translation.dfm:234  ggmerge/uRun.dfm:30
+msgid "&Merge"
+msgstr "&Mixare"
+
+#. frmMain..MainMenu1..POfiles1..Create1..Caption
+#: bplPoMerge/main_translation.dfm:237 
+msgid "&Create"
+msgstr "&Creare"
+
+#. frmMain..MainMenu1..N1..Help1..Caption
+#: bplPoMerge/main_translation.dfm:243 
+msgid "&Help"
+msgstr "&Ajutor"
+
+#. FormOutput..Caption
+#: ggfmt/uOutput.dfm:7 
+msgid "Output of command line application"
+msgstr "Rezultatul aplicaţiei (din linia de comandă)"
+
+#. FormRun..Caption
+#: ggmerge/uRun.dfm:6 
+msgid "Merge translation with new translation template"
+msgstr "Mixare traducerea cu modelul nou de traducere"
+
+#. FormRun..EditTranslation..EditLabel.Caption
+#: ggmerge/uRun.dfm:43 
+msgid "Translation file:"
+msgstr "Fişier traducere:"
+
+#. FormRun..EditTemplate..EditLabel.Caption
+#: ggmerge/uRun.dfm:54 
+msgid "Translation template:"
+msgstr "Model traducere:"
+
+#. FormRun..CheckBoxCreateBackup..Caption
+#: ggmerge/uRun.dfm:83 
+msgid "Create backup file of old translation (recommended)"
+msgstr "Creare fişier copie a traducerii vechi (recomandat)"
+
+#. FormRun..CheckBoxSaveSettings..Caption
+#. FormConfig..CheckBoxSaveSettings..Caption
+#: ggmerge/uRun.dfm:94  uconfig.dfm:89
+msgid "Remember settings"
+msgstr "Memorează setările"
+
+#. FormRun..CheckBoxNonAscii..Caption
+#: ggmerge/uRun.dfm:103 
+msgid "Support non-ascii msgid values (not recommended)"
+msgstr "Suportă valori MSGID non-ASCII (ne-recomandat)"
+
+#: assemble/ggassemble.dpr:17 
+msgid "This program needs a filename as parameter."
+msgstr "Acest program necesită un nume de fişier ca parametru."
+
+#: dxgreg/dxgreg.dpr:124 
+msgid "Could not open or create subkey %s."
+msgstr "Nu pot accesa sau crea cheia %s."
+
+#. Program files
+#: dxgreg/dxgreg.dpr:170 
+msgid ""
+"This Windows installation is corrupt - .exe extension is not associated with "
+"anything."
+msgstr ""
+"Această instalare în Windows este coruptă - extensia .exe nu este asociată "
+"cu un tip de fişier."
+
+#. Dynamic Link Libraries
+#: dxgreg/dxgreg.dpr:184 
+msgid "Dynamic Link Library"
+msgstr "Librarie Dinamică DLL"
+
+#. OCX files
+#: dxgreg/dxgreg.dpr:198 
+msgid "OCX Dynamic Link Library"
+msgstr "Librărie Dinamică OCX"
+
+#. Borland Package Libraries
+#: dxgreg/dxgreg.dpr:212 
+msgid "Borland Package Library"
+msgstr "Librărie tip pachet Borland"
+
+#: dxgreg/dxgreg.dpr:238 
+msgid "The applications have now been integrated into your desktop."
+msgstr "Aplicaţiile au fost acum integrate pe spaţiul de lucru (desktop)."
+
+#: dxgreg/dxgreg.dpr:239 
+msgid "GNU gettext %s"
+msgstr "GNU gettext %s"
+
+#. First %s will be replaced by version number, second by the name of an .exe file that has been run
+#: ggfmt/ggfmt.dpr:75 
+msgid "ggfmt %s running %s"
+msgstr "ggfmt %s rulează %s"
+
+#: ggfmt/ggfmt.dpr:77 
+msgid "Result of running %s:"
+msgstr "Rezultatul rulării %s:"
+
+#. Third solution: source positions match
+#: msgmergePOT/msgmergePOT.dpr:118 
+msgid "No translation for %s"
+msgstr "Nu există traducere pentru %s"
+
+#: msgmergePOT/msgmergePOT.dpr:168 
+msgid "msgmergePOT usage:"
+msgstr "msgmergePOT se utilizează astfel:"
+
+#: msgmergePOT/msgmergePOT.dpr:169 
+msgid "  msgmergePOT english.po otherlanguage.po destination.po"
+msgstr "  msgmergePOT english.po altlimbaj.po destinaţie.po"
+
+#: msgmergePOT/msgmergePOT.dpr:173 
+msgid ""
+"This will create a po file from two identical po extracts that\n"
+"only differ by the language, for instance the German and English\n"
+"runtime source code from Borland."
+msgstr ""
+"Aceasta va crea un fişier PO din două extrase identice care\n"
+"diferă numai prin limbaj, ex: German şi  Englez pt. cod sursă\n"
+"de tip Borland runtime."
+
+#: msgmergePOT/msgmergePOT.dpr:204  msgshowheader/msgshowheader.dpr:50
+#: msgsplitTStrings/msgsplitTStrings.dpr:122
+msgid "Exception occured"
+msgstr "A apărut o excepţie"
+
+#. Messages about how to use this program
+#: msgshowheader/msgshowheader.dpr:33 
+msgid "msgshowheader usage:"
+msgstr "msgshowheader se utilizează astfel:"
+
+#: msgshowheader/msgshowheader.dpr:34 
+msgid "  msgshowheader translation.mo"
+msgstr "  msgshowheader traducere.mo"
+
+#: msgshowheader/msgshowheader.dpr:36 
+msgid "This will output the header of the translation to stdout, i.e. _('')."
+msgstr ""
+"Aceasta va trimite antetul traducerii către disp.afişare (stdout), ex: _('')."
+
+#: msgsplitTStrings/msgsplitTStrings.dpr:46 
+msgid "msgsplitTStrings usage:"
+msgstr "msgsplitTStrings se utilizeză astfel:"
+
+#: msgsplitTStrings/msgsplitTStrings.dpr:47 
+msgid "  msgsplitTStrings input.po -o output.po"
+msgstr "  msgsplitTStrings intrare.po -o ieşire.po"
+
+#: msgsplitTStrings/msgsplitTStrings.dpr:51 
+msgid ""
+"This will split all multiline translations into several single\n"
+"line translations, while still keeping the multiline translations\n"
+"around. Use msgmerge on the output file afterwards."
+msgstr ""
+"Aceasta va împarte toate traducerile multilinie în traduceri pe\n"
+"o singură linie, odată cu păstrarea traducerilor multilinie alături.\n"
+"Utilizaţi apoi utilitarul msgmerge cu fişierul ce va rezulta."
+
+#. Messages about how to use this program
+#: msgstripCR/msgstripCR.dpr:24 
+msgid "msgstripCR usage:"
+msgstr "msgstripCR se utilizează astfel:"
+
+#: msgstripCR/msgstripCR.dpr:25 
+msgid "  msgstripCR source.po destination.po"
+msgstr "  msgstripCR sursă.po destinaţie.po"
+
+#: msgstripCR/msgstripCR.dpr:27 
+msgid "This will strip all Carriage Return codes (\\r)."
+msgstr "Aceasta va elimina toate codurile tip Carriage Return (\\r)."
+
+#: assemble/assembleengine.pas:50  poparser.pas:139
+msgid "Error when writing to stream."
+msgstr "Eroare la scriere în stream (fişier)."
+
+#: assemble/assembleengine.pas:86 
+msgid "No .exe filename specified."
+msgstr "Nu s-a specificat un fişier tip .exe."
+
+#. Find first patch position
+#: assemble/assembleengine.pas:100 
+msgid ""
+"Patch code \"%s\" was not found in .exe file. Are you sure the .exe file has "
+"been compiled with the correct libraries?"
+msgstr ""
+"Codul de corecţie \"%s\" nu a fost găsit în fişierul .exe. Sunteţi sigur că "
+"acest fişier .exe a fost compilat cu librăriile corecte?"
+
+#. Finds the position of patchcode in the file.
+#: assemble/assembleengine.pas:159 
+msgid "No patch code has been specified."
+msgstr "Nu s-a specificat nici un cod de corecţie."
+
+#. Search from the point where we left last time
+#: assemble/assembleengine.pas:170 
+msgid "This file has already been modified. Please recompile this .exe file."
+msgstr "Fişierul a fost deja modificat. Recompilaţi fişierul .exe."
+
+#: assemble/consoleapp.pas:45 
+msgid "Already specified an .exe file."
+msgstr "Deja aveţi un fişier .exe specificat."
+
+#: assemble/consoleapp.pas:77 
+msgid "assemble usage:"
+msgstr "assemble se utilizează astfel:"
+
+#: assemble/consoleapp.pas:78 
+msgid "  assemble application.exe --dxgettext"
+msgstr "  assemble aplicaţie.exe --dxgettext"
+
+#: assemble/consoleapp.pas:83 
+msgid ""
+"This will append all files in the directory of application.exe and in \n"
+"all subdirectories to the file application.exe. This will enable the \n"
+"gnugettext.pas unit that was compiled into application.exe to get \n"
+"its translations from the .exe file instead of from external files."
+msgstr ""
+"Aceasta va adăuga toate fişierele la directorul aplicaţiei.exe şi în \n"
+"toate subdirectoarele aplicaţiei.exe. În acest mod se va activa \n"
+"unitatea gnugettext.pas compilată în aplicaţie.exe pt. a-şi culege \n"
+"traducerile din fişierul executabil în loc de fişiere externe."
+
+#: assemble/umain.pas:57 
+msgid "No translations (.mo files) found."
+msgstr "Nu am găsit traduceri (fişiere .MO)"
+
+#: bplPoMerge/main_translation.pas:340  bplPoMerge/main_translation.pas:343
+msgid "Loading %s ..."
+msgstr "Încărcare %s ..."
+
+#: bplPoMerge/main_translation.pas:346 
+msgid "%d translations available"
+msgstr "%d traduceri disponibile"
+
+#: bplPoMerge/main_translation.pas:351 
+msgid "ready"
+msgstr "gata"
+
+#. allready filled -> do not replace it
+#: bplPoMerge/main_translation.pas:452 
+msgid "row %d: %s -> %s -> %s"
+msgstr "rând %d: %s -> %s -> %s"
+
+#: ggmerge/msgmergedxconsole.pas:77 
+msgid "msgmergedx %s"
+msgstr "msgmergedx %s"
+
+#: ggmerge/msgmergedxconsole.pas:79  msgimport/consoleapp.pas:76
+#: msgmkignore/consoleapp.pas:76
+msgid "Usage:"
+msgstr "Utilizare:"
+
+#: ggmerge/msgmergedxconsole.pas:80 
+msgid "  msgmergedx -o output.po oldtranslations.po newtemplate.po"
+msgstr "  msgmergedx -o ieşire.po traducereveche.po modelnou.po"
+
+#. Do not make this more than 70 characters wide, please.
+#: ggmerge/msgmergedxconsole.pas:87 
+msgid ""
+"This is a replacement for the GNU msgmerge utility. It requires\n"
+"all files to use utf-8 encoding and is extremely simple. The only\n"
+"reason to use this tool is because it allows non-ascii msgid values.\n"
+"Several features are not implemented, including generating fuzzy\n"
+"translations."
+msgstr ""
+"Aceasta este o înlocuire a utilitarului GNU msgmerge. El cere\n"
+"ca toate fişierele să utilizeze codarea tip UTF-8 şi este f.simplu.\n"
+"Singurul motiv pt. a utiliza acest utilitar: el acceptă valori MSGID non-"
+"ASCII.\n"
+"Multe alte facilităţi nu sunt implementate, incluzând traduceri difuze."
+
+#: ggmerge/uRun.pas:73 
+msgid "The specified translation file does not exist."
+msgstr "Fişierul de traducere specificat nu există."
+
+#: ggmerge/uRun.pas:76 
+msgid "The specified template file does not exist."
+msgstr "Fişierul de model specificat nu există."
+
+#. ASCII only. Use external msgmerge.exe
+#: ggmerge/uRun.pas:99 
+msgid ""
+"Because there was unexpected output from msgmerge.exe, no merging has been "
+"done."
+msgstr ""
+"Pentru că s-a obţinut un rezultat neaşteptat de la msgmerge.exe, nu se va "
+"efectua mixarea."
+
+#: ggmerge/uRun.pas:103 
+msgid "msgmerge.exe failed with exit code %s."
+msgstr "msgmerge.exe a eşuat, cod de ieşire raportat %s."
+
+#: ggmerge/uRun.pas:112  ggmerge/uRun.pas:114
+msgid "Cannot rename %s to %s"
+msgstr "Nu pot redenumi %s la %s"
+
+#: ggmerge/uRun.pas:121 
+msgid ""
+"The template was merged into the translation file.\n"
+"Do you want to open the translation file now?\n"
+"(This requires you to have a .po file editor installed)"
+msgstr ""
+"Modelul a fost mixat în fişierul de traducere.\n"
+"Dorişi deschiderea traducerii acum?\n"
+"(trebuie să aveţi un editor de fişiere tip .PO instalat)"
+
+#: ggmerge/uRun.pas:176 
+msgid "Translation files (*.po)|*.po|All files (*.*)|*.*"
+msgstr "Traduceri (*.po)|*.po|Toate fişierele (*.*)|*.*"
+
+#: ggmerge/uRun.pas:193 
+msgid "Template files (*.po;*.pot)|*.po;*.pot|All files (*.*)|*.*"
+msgstr "Modele traduceri (*.po;*.pot)|*.po;*.pot|Toate fişierele (*.*)|*.*"
+
+#: msgimport/consoleapp.pas:77 
+msgid "  msgimport textfile.txt -o output.po"
+msgstr "  msgimport fişiertext.txt -o ieşire.po"
+
+#: msgimport/consoleapp.pas:85 
+msgid ""
+"This will generate a po file from an ascii tabulated file that\n"
+"contains two columns. The first column becomes msgid, and the\n"
+"second column becomes the translation. The text file should use\n"
+"utf-8 as character set. It should be fairly easy to create such\n"
+"a file from all kinds of tabulated file formats by saving it from\n"
+"a spreadsheet and then convert it to utf-8 using a text editor\n"
+"that is capable of reading and writing several character sets."
+msgstr ""
+"Aceasta va genera un fişier PO dintr-un fişier tabulat tip ASCII care\n"
+"conţine două coloane. Prima coloană devine MSGID, şi cea de a\n"
+"doua coloană devine traducere. Fişierul text trebuie să utilizeze\n"
+"UTF-9 ca set de caractere. Ar trebui să fie simplu de creat astfel\n"
+"de fişier din toate tipurile existente de fişiere tabulate prin salvarea\n"
+"lor dintr-o foaie de calcul şi convertirea la UTF-8 cu un editor text\n"
+"ce este capabil să citescă şi să scrie în mai multe seturi de caractere."
+
+#: msgimport/msgimportengine.pas:46 
+msgid "Error: No tabulator in line"
+msgstr "Eroare: Nu există Tabulator în linie"
+
+#: msgmkignore/consoleapp.pas:77 
+msgid "  msgmkignore default.po -o ignore.po"
+msgstr "  msgmkignore implicit.po -o ignorat.po"
+
+#: msgmkignore/consoleapp.pas:80 
+msgid ""
+"This will extract texts from default.po that this program\n"
+"thinks should not be translated by a translator"
+msgstr ""
+"Aceasta va extrage textele din default.po pe care acest\n"
+"program consideră că nu pot fi traduse de un translator"
+
+#: msgmkignore/msgmkignoreengine.pas:35  msgremove/msgremoveengine.pas:56
+msgid "No input filename specified."
+msgstr "Nu s-a specificat un fişier de intrare."
+
+#: msgmkignore/msgmkignoreengine.pas:37  msgremove/msgremoveengine.pas:60
+msgid "No output filename specified."
+msgstr "Nu s-a specificat un fişier de ieşire."
+
+#: msgmkignore/msgmkignoreengine.pas:44 
+msgid "Ignore list. Remove those that you do want to have translated."
+msgstr "Ignoră lista. Elimină pe acelea pe care le doriţi traduse."
+
+#: msgremove/consoleapp.pas:81 
+msgid "msgremove usage:"
+msgstr "msgremove se utilizează astfel:"
+
+#: msgremove/consoleapp.pas:85 
+msgid ""
+"This will generate the file output.po as a copy of default.po, \n"
+"but without all the MsgIds that are listed in ignore.po."
+msgstr ""
+"Aceasta va genera fişierul output.po ca o copie a lui default.po, \n"
+"dar fără toate MSGID-urile listate în ignore.po."
+
+#: msgremove/msgremoveengine.pas:58 
+msgid "No filename specified for list of msgids to remove."
+msgstr "Nu s-a specifica un nume de fişier cu lista de MSGID-uri de eliminat."
+
+#. FormConfig..Caption
+#: uconfig.dfm:6 
+msgid "Configuration"
+msgstr "Configuraţie"
+
+#. FormConfig..EditMask..Hint
+#: uconfig.dfm:29 
+msgid "Here you can specify which files you want to scan."
+msgstr "Aici puteţi specifica ce fişiere doriţi să scanaţi."
+
+#. FormConfig..EditMask..EditLabel.Caption
+#: uconfig.dfm:33 
+msgid "Filemasks"
+msgstr "&Fişiere (sau masca lor)"
+
+#. FormConfig..CheckBoxRecurse..Caption
+#: uconfig.dfm:44 
+msgid "Also search subdirectories"
+msgstr "Caută şi în subdirectoare"
+
+#. FormConfig..EditBasepath..EditLabel.Caption
+#: uconfig.dfm:78 
+msgid "Base directory:"
+msgstr "Director de bază:"
+
+#. FormConfig..CheckBoxSaveSettings....Hint
+#: uconfig.dfm:88 
+msgid "Save settings for the base directory in an ini file in this directory"
+msgstr ""
+"Salvare setări pt. director de bază într-un fişier tip INI în acest director"
+
+#. FormConfig..CBCreateIgnore....Hint
+#: uconfig.dfm:101 
+msgid ""
+"Create a new ignore.po file or add likely ignores to existing ignore.po file "
+"(default domain)"
+msgstr ""
+"Creare a unui nou fişier ignore.po sau adăugarea va ignora fişierul ignore."
+"po  (domeniul implicit)"
+
+#. FormConfig..CBCreateIgnore..Caption
+#: uconfig.dfm:102 
+msgid "Add likely ignores to ignore.po file"
+msgstr "Adăugarea să ignore fişierul ignore.po"
+
+#. FormConfig..CBRemoveIgnore....Hint
+#: uconfig.dfm:114 
+msgid "Don't store items from default domain that are present in ignore.po"
+msgstr "Nu stoca intrări din domeniul implicit care sunt prezente în ignore.po"
+
+#. FormConfig..CBRemoveIgnore..Caption
+#: uconfig.dfm:115 
+msgid "Remove items from default domain present in ignore.po file"
+msgstr "Elimină intrări din domeniul implicit prezente in fişierul ignore.po"
+
+#. FormConfig..CheckBoxAllowNonAscii....Hint
+#: uconfig.dfm:127 
+msgid ""
+"Check this if you want your po file to contain msgid values that contain non-"
+"ascii characters."
+msgstr ""
+"Bifaţi dacă doriţi ca fişierul PO să conţină valori MSGID cu caractere non-"
+"ASCII"
+
+#. FormConfig..CheckBoxAllowNonAscii..Caption
+#: uconfig.dfm:128 
+msgid "Allow non-ASCII texts"
+msgstr "Permite texte non-ASCII"
+
+#. FormWork..Caption
+#: uWork.dfm:6 
+msgid "Extracting text"
+msgstr "&Extragere text"
+
+#. FormWork..LabelProgress..Caption
+#: uWork.dfm:30 
+msgid "Initializing..."
+msgstr "Iniţializare..."
+
+#. FormWork..ButtonOK..Caption
+#: uWork.dfm:49 
+msgid "&Close"
+msgstr "În&chidere"
+
+#: ggdxgettext.dpr:35 
+msgid ""
+"This program needs one parameter, which must be a directory path or a file "
+"name."
+msgstr ""
+"Acest program necesită un parametru, care poate fi ori un director, ori "
+"calea către un fişier."
+
+#: consoleapp.pas:159 
+msgid "Warning: Remember to escape wildcards in the shell"
+msgstr "ATENŢIE: Reamintim că în shell trebuie să înlocuiţi wildcard-urile"
+
+#: consoleapp.pas:160 
+msgid "Use --nowc option to disable this message."
+msgstr "Utilizaţi opţiunea --nowc pt. dezactivarea acestui mesaj."
+
+#: consoleapp.pas:194 
+msgid "ERROR in %s: %s"
+msgstr "EROARE în %s: %s"
+
+#: consoleapp.pas:196 
+msgid "WARNING in %s: %s"
+msgstr "AVERTIZARE în %s: %s"
+
+#: consoleapp.pas:200 
+msgid "ERROR: %s"
+msgstr "EROARE: %s"
+
+#: consoleapp.pas:202 
+msgid "WARNING: %s"
+msgstr "AVERTIZARE: %s"
+
+#. Headline for screen output when no parameter is given
+#: consoleapp.pas:212 
+msgid "dxgettext usage:"
+msgstr "dxgettext se utilizează astfel:"
+
+#: consoleapp.pas:219 
+msgid " -b c:\\source\\myprogram --delphi"
+msgstr " -b c:\\surse\\program --delphi"
+
+#. This message may not be wider than 78 characters because it must fit onto a 80x25 text mode screen.
+#: consoleapp.pas:223 
+msgid ""
+"This will extract all texts from the specified files and save them\n"
+"in a file named default.po."
+msgstr ""
+"Aceasta va extrage toate textele din fişierele specificate\n"
+"şi le va salva într-un fişier denumit default.po."
+
+#: consoleapp.pas:225 
+msgid "Options:"
+msgstr "Opţiuni:"
+
+#: consoleapp.pas:226 
+msgid "Adds the wildcards: *.pas *.inc *.rc *.dpr *.xfm *.dfm"
+msgstr "Adaugă wildcard-uri: *.pas *.inc *.rc *.dpr *.xfm *.dfm"
+
+#: consoleapp.pas:227 
+msgid "Adds the wildcards: *.pas *.inc *.rc *.dpr *.xfm"
+msgstr "Adaugă the wildcard-uri: *.pas *.inc *.rc *.dpr *.xfm"
+
+#: consoleapp.pas:228 
+msgid "Recurse subdirectories"
+msgstr "Coboară şi în subdirectoare"
+
+#: consoleapp.pas:229 
+msgid "Use directory as base directory for filenames."
+msgstr "Utilizează directorul ca director de bază pt. fişiere."
+
+#: consoleapp.pas:230 
+msgid "You can specify several base dirs, that will all be scanned."
+msgstr "Puteţi specifica mai multe directoare de bază, toate vor fi scanate."
+
+#: consoleapp.pas:231 
+msgid "Order by msgid"
+msgstr "Ordinea este dată de MSGID"
+
+#: consoleapp.pas:232 
+msgid "Order by occurence (default)"
+msgstr "Ordinea după apariţie (implicită)"
+
+#: consoleapp.pas:233 
+msgid "Output directory for .po files"
+msgstr "Director de ieşire pt. fişiere .po"
+
+#: consoleapp.pas:234 
+msgid "Outputs default domain to specified file. No other files are written."
+msgstr ""
+"Scrie domeniul implicit în fişierul specificat. Alte fişiere nu vor fi "
+"scrise."
+
+#: consoleapp.pas:235 
+msgid "Quiet: Reduces output to absolute minimum."
+msgstr "Rezumat: Reduce afişarea la absolut minimum."
+
+#: consoleapp.pas:236 
+msgid "Use ignore.po file from the base dir"
+msgstr "Utilizare fişier ignore.po din directorul de bază"
+
+#: consoleapp.pas:237 
+msgid "Allow non-ascii characters."
+msgstr "Permite caractere non-ASCII."
+
+#: consoleapp.pas:239 
+msgid "Assume the specified codepage. Default is CP_ACP."
+msgstr "Este asumată ca pagină specificată. Implicit este is CP_ACP."
+
+#: consoleapp.pas:241 
+msgid "Assume wildcards to be part of filenames"
+msgstr "Este asumat ca wildcard-urile să fie parte din numele fişierelor"
+
+#: consoleapp.pas:242 
+msgid "Suppresses warnings about CRLF"
+msgstr "Nu mai afişează avertizări despre CRLF"
+
+#: consoleapp.pas:243 
+msgid "Warnings will produce a nonzero exit code"
+msgstr "Avertizările vor produce cod de ieşire mai mare ca 0"
+
+#: consoleapp.pas:246 
+msgid ""
+"If a filename is preceded with @, it is assumed to contain a list of\n"
+"filenames or file masks."
+msgstr ""
+"Dacă un fişiere este precedat de @, este asumat faptul că el conţine\n"
+"o listă de fişiere sau măşti de fişiere."
+
+#: poparser.pas:236 
+msgid "Illegal line: %s"
+msgstr "Linie ilegală: %s"
+
+#. Do nothing - the character was just escaped.
+#: poparser.pas:268 
+msgid ""
+"Exception %s in line %d:\n"
+"%s"
+msgstr ""
+"Excepţie %s în linia %d:\n"
+"%s"
+
+#: poparser.pas:452 
+msgid ""
+"This list of translations cannot handle MsgId duplicates. Please remove the "
+"duplicate of \"%s\"."
+msgstr ""
+"Această listă de traduceri nu poate utiliza MSGID-uri duplicat. Rugăm "
+"eliminaţi duplicatul lui \"%s\"."
+
+#: poparser.pas:545  poparser.pas:567
+msgid ""
+"Internal error in TPoEntryList data structure. Sublist for searchkey was "
+"empty."
+msgstr ""
+"Eroare internă în structura TPoEntryList. Sublista pt. cheia de căutate a "
+"fost goală."
+
+#: poparser.pas:560 
+msgid "Error: Specified TPoEntry was not found in list."
+msgstr "Eroare: TPoEntry specificat nu a fost găsit în listă."
+
+#: uWork.pas:90 
+msgid "Line: %s"
+msgstr "Linia: %s"
+
+#. %s will be replaced with the number of C/C++ files
+#: uWork.pas:150 
+msgid "Scanning %s C/C++ files"
+msgstr "Scanare %s fişiere C/C++"
+
+#: uWork.pas:164 
+msgid "No warnings or errors."
+msgstr "Fără avertismente sau erori."
+
+#: uWork.pas:165 
+msgid "Finished."
+msgstr "Terminat."
+
+#: uWork.pas:178 
+msgid "Do you want to overwrite the file named %s?"
+msgstr "Doriţi supra-scrierea fişierului denumit %s?"
+
+#. Removes the extracted data from source.
+#: xgettext.pas:251 
+msgid "Single quote detected - string starts but does not end"
+msgstr ""
+"S-a detectat deschiderea parantezei - string-ul începe dar nu se termină"
+
+#. End of text part detected
+#: xgettext.pas:284 
+msgid "CRLF substituted with #10 for %s. Consider to use sLineBreak instead."
+msgstr ""
+"CRLF substituit cu #10 pt. %s. Poate ar fi mai bună utilizarea lui "
+"sLineBreak."
+
+#. Don't handle consts that don't work
+#: xgettext.pas:304 
+msgid "Constant %s is not known."
+msgstr "Constanta %s este necunoscută."
+
+#. This is a multi-line string
+#: xgettext.pas:342 
+msgid "This line is not connected with the previous line using a plus (+)."
+msgstr "Această linie nu este conectată cu cea de dinainte printr-un plus (+)."
+
+#. First parameter is line number, second is the contents of the line
+#: xgettext.pas:491 
+msgid "resourcestring does not end in semicolon."
+msgstr "resourcestring nu se termina în apostrof."
+
+#. First parameter is line number, second is line contents
+#. Get parameter that contains the msgid
+#: xgettext.pas:560  xgettext.pas:572
+msgid "Missing comma after first parameter"
+msgstr "Lipseşte virgula după primul parametru"
+
+#: xgettext.pas:592 
+msgid "$gnugettext: end directive is missing !"
+msgstr "$gnugettext: directiva de sfârşit (end) lipseşte !"
+
+#. Check for non-ascii characters
+#: xgettext.pas:875 
+msgid "msgid contains non-ascii characters: \"%s\""
+msgstr "MSGID conţine caractere non-ASCII: \"%s\""
+
+#. Check for overwriting. Call custom handler if present, and abort if overwriting is not permitted.
+#: xgettext.pas:974 
+msgid "Overwrite %s aborted."
+msgstr "Supra-scrierea %s s-a abandonat."
+
+#. %s will be replaced by the filename
+#: xgettext.pas:981 
+msgid "Writing %s"
+msgstr "Scriere %s"
+
+#: xgettext.pas:1015  xgettext.pas:1561
+msgid "Reading %s"
+msgstr "Citire %s"
+
+#: xgettext.pas:1030 
+msgid ""
+"WARNING: Unknown file extension %s. Reading file as being pascal source."
+msgstr ""
+"AVERTISMENT: Extensie de fişier necunoscută %s. Voi citi fişierul ca şi cum "
+"este de tip sursă pascal."
+
+#: xgettext.pas:1439 
+msgid "{gnugettext: error in the domain name definition."
+msgstr "{gnugettext: eroare în definiţia numelui de domeniu."
+
+#: xgettext.pas:1445 
+msgid "{gnugettext: reset found without scan-all."
+msgstr "{gnugettext: s-a găsit reset fără scan-all."
+
+#: xgettext.pas:1449 
+msgid "{gnugettext: Unknonw option."
+msgstr "{gnugettext: opţiune necunoscută."
+
+#. entering new section
+#: xgettext.pas:1577 
+msgid "Line %d: Unknown section"
+msgstr ""
+
+#: xgettext.pas:1580 
+msgid "Line %d: Looks like a section but has no closing square brackets"
+msgstr ""
+
+#: xgettext.pas:1594 
+#, fuzzy
+msgid "Line %d: %s"
+msgstr "Linia: %s"
+
+#: xgettext.pas:1622 
+msgid "Directory %s doesn't exist"
+msgstr ""
+
+#: xgettext.pas:1635 
+msgid "Wrong section: %s is a property name and not a class"
+msgstr ""
+
+#: xgettext.pas:1650 
+msgid "Wrong section: %s seems to be a class and not a property name"
+msgstr ""
+
+#. if a wildcard is used, add all possible Delphi- or Kylix-files to the list
+#: xgettext.pas:1682 
+msgid "No file found for \"%s.*\""
+msgstr ""
+
+#: xgettext.pas:1696 
+msgid "File %s doesn't exist"
+msgstr ""
+
+#: xgettext.pas:1726 
+msgid "Wrong syntax: No \":\" found in %s"
+msgstr ""
+
+#: xgettext.pas:1732 
+msgid "Wrong syntax: \":\" is at the end of the line of %s"
+msgstr ""
+
+#: xgettext.pas:1739 
+msgid "File \"%s\" doesn't exist"
+msgstr ""
+
+#: xgettexttools.pas:136 
+msgid "Cannot convert ansistring to widestring with specified codepage."
+msgstr ""
+"Nu pot converti de la ANSIString la WideString cu codul de pagină specificat."
+
+#. Returns false if end of line. reads single-bytes and converts these.
+#: xgettexttools.pas:150 
+msgid "StreamReadln requires the stream to be not nil."
+msgstr "StreamReadln cere ca stream-ul să nu fie NIL."
+
+#, fuzzy
+#~ msgid "No DPR File specified"
+#~ msgstr "Nu s-a specificat un fişier tip .exe."
+
+#, fuzzy
+#~ msgid "String does not end with a quote"
+#~ msgstr "resourcestring nu se termina în apostrof."
+
+#~ msgid ""
+#~ "ngettext() encountered. This will create msgid_plural entries in the\n"
+#~ "default.po file, which may render it uneditable by some GUI po file "
+#~ "editors.\n"
+#~ "Consider to use dngettext() instead, putting the msgid_plural entries "
+#~ "into\n"
+#~ "a separate .po file."
+#~ msgstr ""
+#~ "ngettext() a fost detectat. Aceasta va crea msgid_plural intrări în "
+#~ "fişierul\n"
+#~ "implicit .po, care pot deveni non-editabile de anumite editoare PO tip "
+#~ "GUI.\n"
+#~ "Mai bine utilizaţi dngettext(), punând aceste intrări tip msgid_plural "
+#~ "entries\n"
+#~ "într-un fişier .po separat."

@@ -1,0 +1,368 @@
+msgid ""
+msgstr ""
+"Project-Id-Version: RAVE 5\n"
+"POT-Creation-Date: 2003-02-28 16:04\n"
+"PO-Revision-Date: 2003-10-22 10:59+0100\n"
+"Last-Translator: Dušan Majkić <dmajkic@dmajkic.co.yu>\n"
+"Language-Team: dmajkic <dmajkic@dmajkic.co.yu>\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+
+msgid "   OK   "
+msgstr "   ОК   "
+
+msgid "  &Help  "
+msgstr "  &Помоћ  "
+
+msgid "  Help  "
+msgstr "  Помоћ "
+
+msgid " Add... "
+msgstr " Додање..."
+
+msgid "&About"
+msgstr "&О Програму"
+
+msgid "&Add Page"
+msgstr "Дод&авање страна"
+
+msgid "&Cancel"
+msgstr "От&кажи"
+
+msgid "&Copies"
+msgstr "&Копије"
+
+msgid "&Duplex"
+msgstr "&Дуплекс"
+
+msgid "&File"
+msgstr "&Фајл"
+
+msgid "&First"
+msgstr "Пр&ви"
+
+msgid "&Go to Page #"
+msgstr "&Скок на страну бр."
+
+msgid "&Last"
+msgstr "Пос&ледњи"
+
+msgid "&Next"
+msgstr "Сл&едећи"
+
+msgid "&Next >"
+msgstr "Н&апред >"
+
+msgid "&Ok"
+msgstr "&ОК"
+
+msgid "&Open"
+msgstr "&Отварање"
+
+msgid "&Page"
+msgstr "&Страна"
+
+msgid "&Previous"
+msgstr "Пре&дходни"
+
+msgid "&Print"
+msgstr "&Штампај"
+
+msgid "&Printer"
+msgstr "&Штампач"
+
+msgid "&Save As"
+msgstr "&Снимање"
+
+msgid "&Setup"
+msgstr "&Подешавање"
+
+msgid "&Zoom"
+msgstr "&Зумирање"
+
+msgid "(none)"
+msgstr "(ниједан)"
+
+msgid "< &Back"
+msgstr "< &Назад"
+
+msgid "Add &Global"
+msgstr " &Глобално додавање"
+
+msgid "Add Column"
+msgstr "Додавање колоне"
+
+msgid "Adobe PDF (*.pdf)|*.pdf|HTML Files (One per page)|*.html;*.htm|Rave Snapshot Files (*.ndr)|*.ndr|All Files|*.*"
+msgstr "Adobe PDF (*.pdf)|*.pdf|ХТМЛ фајлови (један по страни)|*.html;*.htm|Rave снимљени фајлови (*.ndr)|*.ndr|Сви фајлови|*.*"
+
+msgid "Alias:"
+msgstr "Алијас:"
+
+msgid "All"
+msgstr "Све"
+
+msgid "All Files|*.*"
+msgstr "Сви фајлови|*.*"
+
+msgid "Authentication"
+msgstr "Аутентификација"
+
+msgid "Body Font"
+msgstr "Фонт тела"
+
+msgid "Bottom"
+msgstr "Дно"
+
+msgid "Cancel"
+msgstr "Откажи"
+
+msgid "Cancel The Report Wizard"
+msgstr "Откажи чаробњака извештаја"
+
+msgid "Caption Font"
+msgstr "Фонт назива"
+
+msgid "Change Font"
+msgstr "Измена фонта"
+
+msgid "Columns"
+msgstr "Колоне"
+
+msgid "Connection"
+msgstr "Конекција"
+
+msgid "Current Width:"
+msgstr "Тренутна ширина:"
+
+msgid "Cursor"
+msgstr "Курсор"
+
+msgid "Delete Page"
+msgstr "Уклањање страна"
+
+msgid "Desired Width:"
+msgstr "Жељена ширина:"
+
+msgid "Displays about box"
+msgstr "Основне информације о програму"
+
+msgid "Distance"
+msgstr "Дистанца"
+
+msgid "Driver:"
+msgstr "Драјвер:"
+
+msgid "E&xit"
+msgstr "&Излазак"
+
+msgid "Enabled"
+msgstr "Омогућено"
+
+msgid "Exit viewer"
+msgstr "Напуштање прегледа"
+
+msgid "Fields"
+msgstr "Поља"
+
+msgid "File"
+msgstr "Фајл"
+
+msgid "Fit to &Page"
+msgstr "&Цела страна"
+
+msgid "Fit to Page &Width"
+msgstr "На &ширину стране"
+
+msgid "Font Index"
+msgstr "Индекс фонта"
+
+msgid "Format:"
+msgstr "Формат:"
+
+msgid "From"
+msgstr "Од"
+
+msgid "Go to specified page"
+msgstr "Иди на  дату страну бр."
+
+msgid "Height"
+msgstr "Висина"
+
+msgid "Help"
+msgstr "Помоћ"
+
+msgid "Left"
+msgstr "Лево"
+
+msgid "Lines"
+msgstr "Линије"
+
+msgid "Margin"
+msgstr "Маргина"
+
+msgid "Master/Detail Report"
+msgstr "Мастер/Детаљи извештај"
+
+msgid "Min Height"
+msgstr "Минимална висина"
+
+msgid "Move Page Down"
+msgstr "Померање за страну доле"
+
+msgid "Move Page Up"
+msgstr "Померање за страну горе"
+
+msgid "Move to first page"
+msgstr "Скок на прву страну"
+
+msgid "Move to last page"
+msgstr "Скок на последњу страну "
+
+msgid "Move to next page"
+msgstr "Прелазак на следећу страну"
+
+msgid "Move to previous page"
+msgstr "Прелазак на предходну страну "
+
+msgid "OK"
+msgstr "ОК"
+
+msgid "Open File"
+msgstr "Отварање фајла"
+
+msgid "Open another report"
+msgstr "Отварање другог извештаја"
+
+msgid "Options"
+msgstr "Опције"
+
+msgid "Output Options"
+msgstr "Излазне опције"
+
+msgid "Page"
+msgstr "Страна"
+
+msgid "Page Description Here"
+msgstr "Овде иде опис стране"
+
+msgid "Pages"
+msgstr "Стране"
+
+msgid "Parameters:"
+msgstr "Параметри:"
+
+msgid "Pre&view"
+msgstr "Пре&глед"
+
+msgid "Print Range"
+msgstr "Опсег штампе"
+
+msgid "Print Report Title"
+msgstr "Штампа наслова извештаја"
+
+msgid "Print report"
+msgstr "Штампа извештаја"
+
+msgid "Rave Format (NDR)"
+msgstr "Rave формат (NDR)"
+
+msgid "Rave Snapshot Files (*.ndr)|*.ndr|All Files|*.*"
+msgstr "Rave снимљњни фајлови (*.ndr)|*.ndr|All Files|*.*"
+
+msgid "Report Destination"
+msgstr "Дестинација извештаја"
+
+msgid "Report Margins"
+msgstr "Маргине извештаја"
+
+msgid "Report Preview"
+msgstr "Преглед извештаја"
+
+msgid "Report Status"
+msgstr "Статуј извештаја"
+
+msgid "Report Title"
+msgstr "Наслов извештаја"
+
+msgid "Reprint Settings"
+msgstr "Опције извештаја"
+
+msgid "Right"
+msgstr "Десно"
+
+msgid "Save"
+msgstr "Снимање"
+
+msgid "Save As"
+msgstr "Снимање као"
+
+msgid "Save File"
+msgstr "Снимање фајла"
+
+msgid "Save report"
+msgstr "Снимање извештаја"
+
+msgid "Section"
+msgstr "Секција"
+
+msgid "Selected"
+msgstr "Изабрани"
+
+msgid "Selected Printer"
+msgstr "Изабрани штампач"
+
+msgid "Selection"
+msgstr "Селекција"
+
+msgid "Setup"
+msgstr "Подешавање"
+
+msgid "Simple Table"
+msgstr "Проста табела"
+
+msgid "Simple Table Report"
+msgstr "Извештај од просте табеле"
+
+msgid "Strings Editor"
+msgstr "Текст Едитор"
+
+msgid "Title Font"
+msgstr "Насловни фонт"
+
+msgid "Top"
+msgstr "Врх"
+
+msgid "Type the Title You Want For This Report"
+msgstr "Укуцајте наслов извештаја који желите"
+
+msgid "Widths"
+msgstr "Шириние"
+
+msgid "Zoom"
+msgstr "Зумирање"
+
+msgid "Zoom &In"
+msgstr "Приближ&и"
+
+msgid "Zoom &Out"
+msgstr "&Удаљи"
+
+msgid "Zoom In (+)"
+msgstr "Приближи (+)"
+
+msgid "Zoom Out (-)"
+msgstr "Удаљи (-)"
+
+msgid "Zoom to fit page"
+msgstr "Зумјирање целе стране"
+
+msgid "Zoom to fit page width"
+msgstr "Зумирање на ширину стране"
+
+msgid "of 3000"
+msgstr "од 3000"
+
+msgid "to"
+msgstr "до"
+

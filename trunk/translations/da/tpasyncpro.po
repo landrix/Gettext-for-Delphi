@@ -1,0 +1,4540 @@
+# SOME DESCRIPTIVE TITLE.
+# Copyright (C) YEAR THE PACKAGE'S COPYRIGHT HOLDER
+# This file is distributed under the same license as the PACKAGE package.
+# FIRST AUTHOR <EMAIL@ADDRESS>, YEAR.
+# 
+msgid ""
+msgstr ""
+"Project-Id-Version: TurboPower AsyncPro\n"
+"POT-Creation-Date: 2004-08-26 21:20\n"
+"PO-Revision-Date: 2004-08-24 08:32+0100\n"
+"Last-Translator: Pelle F. S. Liljendal <pelle@liljendal.dk>\n"
+"Language-Team: Pelle F. S. Liljendal <pelle@liljendal.dk>\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+
+#  Programmer's name for it: secPathNotFound
+#  Programmer's name for it: secPathNotFound
+#  Programmer's name for it: secPathNotFound
+#. Programmer's name for it: secPathNotFound
+#: ggsetup_TpAsyncPro.inc:34
+msgid "Path not found"
+msgstr "Sti ikke fundet"
+
+#  Programmer's name for it: AbInvalidCabTemplateS
+#  Programmer's name for it: secInvalidHandle
+#. Programmer's name for it: secInvalidHandle
+#: ggsetup_TpAsyncPro.inc:37
+msgid "Invalid file handle"
+msgstr "Ugyldig fil håndtag"
+
+#  Programmer's name for it: secOutOfMemory
+#. Programmer's name for it: secOutOfMemory
+#: ggsetup_TpAsyncPro.inc:38
+msgid "Insufficient memory"
+msgstr "For lidt hukommelse"
+
+#  Programmer's name for it: AbBadStreamTypeS
+#  Programmer's name for it: secInvalidDrive
+#. Programmer's name for it: secInvalidDrive
+#: ggsetup_TpAsyncPro.inc:39
+msgid "Invalid drive"
+msgstr "Ugyldig drev"
+
+#  Programmer's name for it: secNoMoreFiles
+#. Programmer's name for it: secNoMoreFiles
+#: ggsetup_TpAsyncPro.inc:40
+msgid "No more files"
+msgstr "Ikke flere fler"
+
+#  Programmer's name for it: secDiskRead
+#. Programmer's name for it: secDiskRead
+#: ggsetup_TpAsyncPro.inc:41
+msgid "Attempt to read beyond end of file"
+msgstr "Forsøgte at læse forbi filens slutning"
+
+#  Programmer's name for it: secDiskFull
+#. Programmer's name for it: secDiskFull
+#: ggsetup_TpAsyncPro.inc:42
+msgid "Disk is full"
+msgstr "Disken er fuld"
+
+#  Programmer's name for it: sBIBufferNotAssigned
+#  Programmer's name for it: secNotAssigned
+#. Programmer's name for it: secNotAssigned
+#: ggsetup_TpAsyncPro.inc:43
+msgid "File/device not assigned"
+msgstr "Fil/enhed ikke tildelt"
+
+#  Programmer's name for it: AbCmpndFileNotFound
+#  Programmer's name for it: secNotOpen
+#. Programmer's name for it: secNotOpen
+#: ggsetup_TpAsyncPro.inc:44
+msgid "File/device not open"
+msgstr "Fil/enhed ikke åben"
+
+#  Programmer's name for it: secNotOpenInput
+#. Programmer's name for it: secNotOpenInput
+#: ggsetup_TpAsyncPro.inc:45
+msgid "File/device not open for input"
+msgstr "Fil/enhed ikke åben for input"
+
+#  Programmer's name for it: secNotOpenOutput
+#. Programmer's name for it: secNotOpenOutput
+#: ggsetup_TpAsyncPro.inc:46
+msgid "File/device not open for output"
+msgstr "Fil/enhed ikke åben for output"
+
+#  Programmer's name for it: secWriteProtected
+#. Programmer's name for it: secWriteProtected
+#: ggsetup_TpAsyncPro.inc:47
+msgid "Disk is write-protected"
+msgstr "Disken er skrive-beskyttet"
+
+#  Programmer's name for it: secUnknownUnit
+#. Programmer's name for it: secUnknownUnit
+#: ggsetup_TpAsyncPro.inc:48
+msgid "Unknown disk unit"
+msgstr "Ukendt disk enhed"
+
+#  Programmer's name for it: secDriveNotReady
+#. Programmer's name for it: secDriveNotReady
+#: ggsetup_TpAsyncPro.inc:49
+msgid "Drive is not ready"
+msgstr "Drevet er ikke klar"
+
+#  Programmer's name for it: secCrcError
+#. Programmer's name for it: secCrcError
+#: ggsetup_TpAsyncPro.inc:51
+msgid "Data error"
+msgstr "Data fejl"
+
+#  Programmer's name for it: secBadStructLen
+#. Programmer's name for it: secBadStructLen
+#: ggsetup_TpAsyncPro.inc:52
+msgid "Bad request structure length"
+msgstr "Forkert ønsket struktur længde"
+
+#  Programmer's name for it: AbFCIFileSeekErrorS
+#  Programmer's name for it: secSeekError
+#. Programmer's name for it: secSeekError
+#: ggsetup_TpAsyncPro.inc:53
+msgid "Seek error"
+msgstr "Søge fejl"
+
+#  Programmer's name for it: secUnknownMedia
+#. Programmer's name for it: secUnknownMedia
+#: ggsetup_TpAsyncPro.inc:54
+msgid "Unknown media type"
+msgstr "Ukendt medie type"
+
+#  Programmer's name for it: AbCmpndFileNotFound
+#  Programmer's name for it: secSectorNotFound
+#  Programmer's name for it: secSectorNotFound
+#. Programmer's name for it: secSectorNotFound
+#: ggsetup_TpAsyncPro.inc:55
+msgid "Disk sector not found"
+msgstr "Disk sektor ikke fundet"
+
+#  Programmer's name for it: secOutOfPaper
+#  Programmer's name for it: secOutOfPaper
+#. Programmer's name for it: secOutOfPaper
+#: ggsetup_TpAsyncPro.inc:56
+msgid "Printer is out of paper"
+msgstr "Printer er løbet tør for papir"
+
+#  Programmer's name for it: secDeviceWrite
+#. Programmer's name for it: secDeviceWrite
+#: ggsetup_TpAsyncPro.inc:57
+msgid "Device write error"
+msgstr "Enhed skrive fejl"
+
+#  Programmer's name for it: secDeviceRead
+#. Programmer's name for it: secDeviceRead
+#: ggsetup_TpAsyncPro.inc:58
+msgid "Device read error"
+msgstr "Enhed læse fejl"
+
+#  Programmer's name for it: sDSAParametersPQGErr
+#  Programmer's name for it: secHardwareFailure
+#  Programmer's name for it: secVoIPFailed
+#. Programmer's name for it: secHardwareFailure
+#. Programmer's name for it: secVoIPFailed
+#: ggsetup_TpAsyncPro.inc:59 ggsetup_TpAsyncPro.inc:677
+msgid "General failure"
+msgstr "Generel fejl"
+
+#  Programmer's name for it: secBadHandle
+#. Programmer's name for it: secBadHandle
+#: ggsetup_TpAsyncPro.inc:62
+msgid "Bad handle passed to com function"
+msgstr "Ugyldig håndtag overført til com funktion"
+
+#  Programmer's name for it: secBadArgument
+#. Programmer's name for it: secBadArgument
+#: ggsetup_TpAsyncPro.inc:63
+msgid "Bad argument passed to function"
+msgstr "Ugyldigt parameter overført til funktion"
+
+#  Programmer's name for it: secGotQuitMsg
+#. Programmer's name for it: secGotQuitMsg
+#: ggsetup_TpAsyncPro.inc:64
+msgid "Got quit message"
+msgstr "Modtog afbryd meddelelse"
+
+#  Programmer's name for it: secBufferTooBig
+#. Programmer's name for it: secBufferTooBig
+#: ggsetup_TpAsyncPro.inc:65
+msgid "Terminal buffer greater than 65521"
+msgstr "Terminal buffer større end 65521"
+
+#  Programmer's name for it: secPortNotAssigned
+#. Programmer's name for it: secPortNotAssigned
+#: ggsetup_TpAsyncPro.inc:66
+msgid "ComPort component not assigned"
+msgstr "ComPort komponent ikke tildelt"
+
+#  Programmer's name for it: secInternal
+#. Programmer's name for it: secInternal
+#: ggsetup_TpAsyncPro.inc:67
+msgid "Internal error creating window class"
+msgstr "Intern fejl ved oprettese af vindue klasse"
+
+#  Programmer's name for it: secModemNotAssigned
+#. Programmer's name for it: secModemNotAssigned
+#: ggsetup_TpAsyncPro.inc:68
+msgid "Modem component not assigned"
+msgstr "Modem komponent ikke tildelt"
+
+#  Programmer's name for it: secPhonebookNotAssigned
+#. Programmer's name for it: secPhonebookNotAssigned
+#: ggsetup_TpAsyncPro.inc:69
+msgid "Phonebook component not assigned"
+msgstr "Telefonbog komponent ikke tildelt"
+
+#  Programmer's name for it: secCannotUseWithWinSock
+#. Programmer's name for it: secCannotUseWithWinSock
+#: ggsetup_TpAsyncPro.inc:70
+msgid "Component not compatible with WinSock"
+msgstr "Komponent ikke kompatibel med WinSock"
+
+#  Programmer's name for it: secBadId
+#. Programmer's name for it: secBadId
+#: ggsetup_TpAsyncPro.inc:73
+msgid "ie_BadId - Specified comport doesn't exist"
+msgstr "ie_BadId - Angivet comport findes ikke"
+
+#  Programmer's name for it: secBaudRate
+#. Programmer's name for it: secBaudRate
+#: ggsetup_TpAsyncPro.inc:74
+msgid "ie_Baudrate - unsupported baud rate"
+msgstr "ie_Baudrate - Ikke understøttet baud rate"
+
+#  Programmer's name for it: secByteSize
+#. Programmer's name for it: secByteSize
+#: ggsetup_TpAsyncPro.inc:75
+msgid "ie_Bytesize - invalid byte size"
+msgstr "ie_Bytesize - ugyldig byte størrelse"
+
+#  Programmer's name for it: secDefault
+#. Programmer's name for it: secDefault
+#: ggsetup_TpAsyncPro.inc:76
+msgid "ie_Default - error in default parameters"
+msgstr "ie_Default - fejl i standard parametre"
+
+#  Programmer's name for it: secHardware
+#. Programmer's name for it: secHardware
+#: ggsetup_TpAsyncPro.inc:77
+msgid "ie_Hardware - Specified comport in use"
+msgstr "ie_Hardware - Angivet comport i brug"
+
+#  Programmer's name for it: secMemory
+#. Programmer's name for it: secMemory
+#: ggsetup_TpAsyncPro.inc:78
+msgid "ie_Memory - unable to allocate queues"
+msgstr "ie_Memory - ikke i stand til at allokere køer"
+
+#  Programmer's name for it: secCommNotOpen
+#. Programmer's name for it: secCommNotOpen
+#: ggsetup_TpAsyncPro.inc:79
+msgid "ie_NOpen - device not open"
+msgstr "ie_NOpen - enhed ikke åben"
+
+#  Programmer's name for it: secAlreadyOpen
+#. Programmer's name for it: secAlreadyOpen
+#: ggsetup_TpAsyncPro.inc:80
+msgid "ie_Open - device already open"
+msgstr "ie_Open - enhed er allerede åben"
+
+#  Programmer's name for it: secNoHandles
+#. Programmer's name for it: secNoHandles
+#: ggsetup_TpAsyncPro.inc:81
+msgid "No more handles, can't open port"
+msgstr "Ikke flere håndtag, kan ikke åbne port"
+
+#  Programmer's name for it: secNoTimers
+#. Programmer's name for it: secNoTimers
+#: ggsetup_TpAsyncPro.inc:82
+msgid "No timers available"
+msgstr "Ingen tilgængelige timere"
+
+#  Programmer's name for it: secNoPortSelected
+#. Programmer's name for it: secNoPortSelected
+#: ggsetup_TpAsyncPro.inc:83
+msgid "The ComNumber property of the TApdComPort has not been set"
+msgstr "ComNumber egenskaben af TAdpComPort er ikke blevet sat"
+
+#  Programmer's name for it: secNotOpenedByTapi
+#. Programmer's name for it: secNotOpenedByTapi
+#: ggsetup_TpAsyncPro.inc:84
+msgid "Comport was not opened by Tapi"
+msgstr "Comport var ikke åbnet af Tapi"
+
+#  Programmer's name for it: secNullApi
+#. Programmer's name for it: secNullApi
+#: ggsetup_TpAsyncPro.inc:87
+msgid "No device layer specified"
+msgstr "Ingen enhedslag specificeret"
+
+#  Programmer's name for it: AbSpanningNotSupportedS
+#  Programmer's name for it: secNotSupported
+#. Programmer's name for it: secNotSupported
+#: ggsetup_TpAsyncPro.inc:88
+msgid "Function not supported by driver"
+msgstr "Funktion ikke understøttet af driver"
+
+#  Programmer's name for it: secRegisterHandlerFailed
+#. Programmer's name for it: secRegisterHandlerFailed
+#: ggsetup_TpAsyncPro.inc:89
+msgid "EnableCommNotification failed"
+msgstr "EnableCommNotification fejlede"
+
+#  Programmer's name for it: secPutBlockFail
+#. Programmer's name for it: secPutBlockFail
+#: ggsetup_TpAsyncPro.inc:90
+msgid "Failed to put entire block"
+msgstr "Fejlede at skrive hele blokken"
+
+#  Programmer's name for it: secGetBlockFail
+#. Programmer's name for it: secGetBlockFail
+#: ggsetup_TpAsyncPro.inc:91
+msgid "Failed to get entire block"
+msgstr "Fejlede af læse hele blokken"
+
+#  Programmer's name for it: sASNKeyBufferTooSmall
+#  Programmer's name for it: secOutputBufferTooSmall
+#. Programmer's name for it: secOutputBufferTooSmall
+#: ggsetup_TpAsyncPro.inc:92
+msgid "Output buffer too small for block"
+msgstr "Output buffer er for lille til blok"
+
+#  Programmer's name for it: secBufferIsEmpty
+#. Programmer's name for it: secBufferIsEmpty
+#: ggsetup_TpAsyncPro.inc:93
+msgid "Buffer is empty"
+msgstr "Buffer er tom"
+
+#  Programmer's name for it: secTracingNotEnabled
+#. Programmer's name for it: secTracingNotEnabled
+#: ggsetup_TpAsyncPro.inc:94
+msgid "Tracing not enabled"
+msgstr "Sporing ikke slået til"
+
+#  Programmer's name for it: secLoggingNotEnabled
+#. Programmer's name for it: secLoggingNotEnabled
+#: ggsetup_TpAsyncPro.inc:95
+msgid "Logging not enabled"
+msgstr "Loggning ikke slået til"
+
+#  Programmer's name for it: secBaseAddressNotSet
+#. Programmer's name for it: secBaseAddressNotSet
+#: ggsetup_TpAsyncPro.inc:96
+msgid "Base address not set"
+msgstr "Base adresse ikke sat"
+
+#  Programmer's name for it: secModemNotStarted
+#. Programmer's name for it: secModemNotStarted
+#: ggsetup_TpAsyncPro.inc:99
+msgid "StartModem has not been called"
+msgstr "StartModem er ikke blevet kaldt"
+
+#  Programmer's name for it: secModemBusy
+#. Programmer's name for it: secModemBusy
+#: ggsetup_TpAsyncPro.inc:100
+msgid "Modem is busy elsewhere"
+msgstr "Modem er optaget andetsteds"
+
+#  Programmer's name for it: secModemNotDialing
+#. Programmer's name for it: secModemNotDialing
+#: ggsetup_TpAsyncPro.inc:101
+msgid "Modem is not currently dialing"
+msgstr "Modem ikke ved at foretage opkald"
+
+#  Programmer's name for it: secNotDialing
+#. Programmer's name for it: secNotDialing
+#: ggsetup_TpAsyncPro.inc:102
+msgid "Dialer is not dialing"
+msgstr "Opkalder kalder ikke op"
+
+#  Programmer's name for it: secAlreadyDialing
+#. Programmer's name for it: secAlreadyDialing
+#: ggsetup_TpAsyncPro.inc:103
+msgid "Dialer is already dialing"
+msgstr "Opkalder er ved at foretage opkald"
+
+#  Programmer's name for it: secModemNotResponding
+#. Programmer's name for it: secModemNotResponding
+#: ggsetup_TpAsyncPro.inc:104
+msgid "Modem is not responding"
+msgstr "Modem svare ikke"
+
+#  Programmer's name for it: AbCmpndInvalidFile
+#  Programmer's name for it: secModemRejectedCommand
+#. Programmer's name for it: secModemRejectedCommand
+#: ggsetup_TpAsyncPro.inc:105
+msgid "Invalid command sent to modem"
+msgstr "Ugyldig kommando sendt til modem"
+
+#  Programmer's name for it: secModemStatusMismatch
+#. Programmer's name for it: secModemStatusMismatch
+#: ggsetup_TpAsyncPro.inc:106
+msgid "Wrong modem status requested"
+msgstr "Ønskede forkert modem status"
+
+#  Programmer's name for it: secDeviceNotSelected
+#. Programmer's name for it: secDeviceNotSelected
+#: ggsetup_TpAsyncPro.inc:108
+msgid "Device not selected"
+msgstr "Enhed ikke valgt"
+
+#  Programmer's name for it: secModemDetectedBusy
+#  Programmer's name for it: stcs_Busy
+#  Programmer's name for it: sTAPICalledBusy
+#. Programmer's name for it: secModemDetectedBusy
+#. Programmer's name for it: stcs_Busy
+#. Programmer's name for it: sTAPICalledBusy
+#: ggsetup_TpAsyncPro.inc:109 ggsetup_TpAsyncPro.inc:495
+#: ggsetup_TpAsyncPro.inc:535
+msgid "Called number is busy"
+msgstr "Opkaldte nummer er optaget"
+
+#  Programmer's name for it: secModemNoDialtone
+#  Programmer's name for it: sdsmMsgNoDialtone
+#. Programmer's name for it: secModemNoDialtone
+#. Programmer's name for it: sdsmMsgNoDialtone
+#: ggsetup_TpAsyncPro.inc:110 ggsetup_TpAsyncPro.inc:137
+msgid "No dialtone"
+msgstr "Ingen ringetone"
+
+#  Programmer's name for it: secModemNoCarrier
+#. Programmer's name for it: secModemNoCarrier
+#: ggsetup_TpAsyncPro.inc:111
+msgid "No carrier"
+msgstr "Ingen bærebølge"
+
+#  Programmer's name for it: secModemNoAnswer
+#. Programmer's name for it: secModemNoAnswer
+#: ggsetup_TpAsyncPro.inc:112
+msgid "No answer"
+msgstr "Ingen svar"
+
+#  Programmer's name for it: secInitFail
+#  Programmer's name for it: sInitFail
+#. Programmer's name for it: secInitFail
+#. Programmer's name for it: sInitFail
+#: ggsetup_TpAsyncPro.inc:115 ggsetup_TpAsyncPro.inc:773
+msgid "Modem Initialization Failure"
+msgstr "Modem Initiaisation Fejl"
+
+#  Programmer's name for it: secLoginFail
+#  Programmer's name for it: sLoginFail
+#. Programmer's name for it: secLoginFail
+#. Programmer's name for it: sLoginFail
+#: ggsetup_TpAsyncPro.inc:116 ggsetup_TpAsyncPro.inc:774
+msgid "Failed to Login"
+msgstr "Fejlede at logge ind"
+
+#  Programmer's name for it: secMinorSrvErr
+#  Programmer's name for it: sMinorSrvErr
+#. Programmer's name for it: secMinorSrvErr
+#. Programmer's name for it: sMinorSrvErr
+#: ggsetup_TpAsyncPro.inc:117 ggsetup_TpAsyncPro.inc:775
+msgid "Minor Server Error"
+msgstr "Mindre Server Fejl"
+
+#  Programmer's name for it: secFatalSrvErr
+#  Programmer's name for it: sFatalSrvErr
+#. Programmer's name for it: secFatalSrvErr
+#. Programmer's name for it: sFatalSrvErr
+#: ggsetup_TpAsyncPro.inc:118 ggsetup_TpAsyncPro.inc:776
+msgid "Fatal Server Error"
+msgstr "Alvorlig Server Fejl"
+
+#  Programmer's name for it: AbCmpndIndexOutOfBounds
+#  Programmer's name for it: secModemNotFound
+#. Programmer's name for it: secModemNotFound
+#: ggsetup_TpAsyncPro.inc:121
+msgid "Modem not found"
+msgstr "Modem ikke fundet"
+
+#  Programmer's name for it: AbCmpndInvalidFile
+#  Programmer's name for it: secInvalidFile
+#. Programmer's name for it: secInvalidFile
+#: ggsetup_TpAsyncPro.inc:122
+msgid "Invalid modemcap file"
+msgstr "Ugyldig modemcap fil"
+
+#  Programmer's name for it: spbeDeleteQuery
+#. Programmer's name for it: spbeDeleteQuery
+#: ggsetup_TpAsyncPro.inc:126
+msgid "Are you sure you want to delete this entry?"
+msgstr "Er du sikker på at du vil slette denne indgang?"
+
+#  Programmer's name for it: sdsmMsgReady
+#. Programmer's name for it: sdsmMsgReady
+#: ggsetup_TpAsyncPro.inc:129
+msgid "Ready"
+msgstr "Klar"
+
+#  Programmer's name for it: sdsmMsgInitialize
+#. Programmer's name for it: sdsmMsgInitialize
+#: ggsetup_TpAsyncPro.inc:130
+msgid "Initializing modem"
+msgstr "Initialisere modem"
+
+#  Programmer's name for it: sdsmMsgInitializeTimeout
+#. Programmer's name for it: sdsmMsgInitializeTimeout
+#: ggsetup_TpAsyncPro.inc:131
+msgid "Initialize timed out"
+msgstr "Intialiseringen tog for lang tid"
+
+#  Programmer's name for it: sdsmMsgAutoAnswerBackground
+#. Programmer's name for it: sdsmMsgAutoAnswerBackground
+#: ggsetup_TpAsyncPro.inc:132
+msgid "AutoAnswer in background"
+msgstr "AutoAnswer i baggrund"
+
+#  Programmer's name for it: sdsmMsgAutoAnswerWait
+#  Programmer's name for it: sfpWaiting
+#. Programmer's name for it: sdsmMsgAutoAnswerWait
+#. Programmer's name for it: sfpWaiting
+#: ggsetup_TpAsyncPro.inc:133 ggsetup_TpAsyncPro.inc:272
+msgid "Waiting for incoming call"
+msgstr "Venter på indgående opkald"
+
+#  Programmer's name for it: sdsmMsgAnswerWait
+#. Programmer's name for it: sdsmMsgAnswerWait
+#: ggsetup_TpAsyncPro.inc:134
+msgid "Answering call"
+msgstr "Besvare opkald"
+
+#  Programmer's name for it: sdsmMsgDialWait
+#  Programmer's name for it: sPDS_DIALING
+#  Programmer's name for it: sfpDialing
+#. Programmer's name for it: sdsmMsgDialWait
+#. Programmer's name for it: sPDS_DIALING
+#. Programmer's name for it: sfpDialing
+#: ggsetup_TpAsyncPro.inc:135 ggsetup_TpAsyncPro.inc:194
+#: ggsetup_TpAsyncPro.inc:263
+msgid "Dialing"
+msgstr "Ringer"
+
+#  Programmer's name for it: sdsmMsgDialCycle
+#. Programmer's name for it: sdsmMsgDialCycle
+#: ggsetup_TpAsyncPro.inc:136
+msgid "Pausing until redial"
+msgstr "Pause indtil genopkald"
+
+#  Programmer's name for it: sdsmMsgConnectWait
+#. Programmer's name for it: sdsmMsgConnectWait
+#: ggsetup_TpAsyncPro.inc:138
+msgid "Connected waiting"
+msgstr "Forbundet venter"
+
+#  Programmer's name for it: sdsmMsgHangup
+#. Programmer's name for it: sdsmMsgHangup
+#: ggsetup_TpAsyncPro.inc:140
+msgid "Disconnecting"
+msgstr "Afbryder"
+
+#  Programmer's name for it: sdsmMsgCancel
+#. Programmer's name for it: sdsmMsgCancel
+#: ggsetup_TpAsyncPro.inc:141
+msgid "Canceling"
+msgstr "Fortryder"
+
+#  Programmer's name for it: sdddCycling
+#. Programmer's name for it: sdddCycling
+#: ggsetup_TpAsyncPro.inc:143
+msgid "Cycling dial attempt . . ."
+msgstr "Gentager opkalds forsøg . . . "
+
+#  Programmer's name for it: sdddRetryWaiting
+#. Programmer's name for it: sdddRetryWaiting
+#: ggsetup_TpAsyncPro.inc:144
+msgid "Waiting . . ."
+msgstr "Venter . . . "
+
+#  Programmer's name for it: sdddRetryWaitOver
+#. Programmer's name for it: sdddRetryWaitOver
+#: ggsetup_TpAsyncPro.inc:145
+msgid "Wait complete, redialing . . ."
+msgstr "Vent afsluttet, genopkalder . . . "
+
+#  Programmer's name for it: sdddDialing
+#. Programmer's name for it: sdddDialing
+#: ggsetup_TpAsyncPro.inc:146
+msgid "Dialing . . ."
+msgstr "Ringer . . . "
+
+#  Programmer's name for it: sdddModemConnect
+#. Programmer's name for it: sdddModemConnect
+#: ggsetup_TpAsyncPro.inc:147
+msgid "Modem connected!"
+msgstr "Modem forbundet!"
+
+#  Programmer's name for it: sdddModemConnectAt
+#. Programmer's name for it: sdddModemConnectAt
+#: ggsetup_TpAsyncPro.inc:148
+msgid "Connected at %d baud"
+msgstr "Forbundet ved %d baud"
+
+#  Programmer's name for it: sdddModemVoice
+#. Programmer's name for it: sdddModemVoice
+#: ggsetup_TpAsyncPro.inc:149
+msgid "Connection Result: Remote answered with voice"
+msgstr "Forbind Resultat: Fjern svarede med stemme"
+
+#  Programmer's name for it: sdddModemError
+#. Programmer's name for it: sdddModemError
+#: ggsetup_TpAsyncPro.inc:150
+msgid "Connection Result: Modem return an error"
+msgstr "Forbind Resultat: Modem retunerede en fejl"
+
+#  Programmer's name for it: sdddModemNoCarrier
+#. Programmer's name for it: sdddModemNoCarrier
+#: ggsetup_TpAsyncPro.inc:151
+msgid "Connection Result: No carrier, connection failed"
+msgstr "Forbind Resultat: Ingen bærebølge, forbindelse fejlede"
+
+#  Programmer's name for it: sdddModemBusy
+#. Programmer's name for it: sdddModemBusy
+#: ggsetup_TpAsyncPro.inc:152
+msgid "Connection Result: Remote is busy"
+msgstr "Forbind Resultat: Fjern er optaget"
+
+#  Programmer's name for it: sdddModemNoDialTone
+#. Programmer's name for it: sdddModemNoDialTone
+#: ggsetup_TpAsyncPro.inc:153
+msgid "Connection Result: No dialtone, check connections"
+msgstr "Forbind Resultat: Ingen opkaldstone, undersøg forbindelse"
+
+#  Programmer's name for it: sdddDialTimedOut
+#. Programmer's name for it: sdddDialTimedOut
+#: ggsetup_TpAsyncPro.inc:154
+msgid "Dial attempt timed out"
+msgstr "Opkald tog for lang tid"
+
+#  Programmer's name for it: sdpeMustEnterName
+#. Programmer's name for it: sdpeMustEnterName
+#: ggsetup_TpAsyncPro.inc:156
+msgid "You must enter an entry name"
+msgstr "Du skal skrive et indgangs navn"
+
+#  Programmer's name for it: sdpeMustEnterNumber
+#. Programmer's name for it: sdpeMustEnterNumber
+#: ggsetup_TpAsyncPro.inc:157
+msgid "You must enter a phone number"
+msgstr "Du skal skrive et telefon nummer"
+
+#  Programmer's name for it: sdpeNameExists
+#. Programmer's name for it: sdpeNameExists
+#: ggsetup_TpAsyncPro.inc:158
+msgid "A phonebook entry with that name already exists"
+msgstr "Der findes allerede en telefonbogs indgang med det navn"
+
+#  Programmer's name for it: scsOpenPort
+#. Programmer's name for it: scsOpenPort
+#: ggsetup_TpAsyncPro.inc:161
+msgid "OpenPort"
+msgstr "OpenPort"
+
+#  Programmer's name for it: scsPortOpened
+#. Programmer's name for it: scsPortOpened
+#: ggsetup_TpAsyncPro.inc:162
+msgid "PortOpened"
+msgstr "PortOpened"
+
+#  Programmer's name for it: scsConnectDevice
+#. Programmer's name for it: scsConnectDevice
+#: ggsetup_TpAsyncPro.inc:163
+msgid "ConnectDevice"
+msgstr "ConnectDevice"
+
+#  Programmer's name for it: scsDeviceConnected
+#  Programmer's name for it: scsRasDeviceConnected
+#. Programmer's name for it: scsDeviceConnected
+#. Programmer's name for it: scsRasDeviceConnected
+#: ggsetup_TpAsyncPro.inc:164 ggsetup_TpAsyncPro.inc:189
+msgid "DeviceConnected"
+msgstr "DeviceConnected"
+
+#  Programmer's name for it: scsAllDevicesConnected
+#. Programmer's name for it: scsAllDevicesConnected
+#: ggsetup_TpAsyncPro.inc:165
+msgid "AllDevicesConnected"
+msgstr "AllDevicesConnected"
+
+#  Programmer's name for it: scsAuthenticate
+#. Programmer's name for it: scsAuthenticate
+#: ggsetup_TpAsyncPro.inc:166
+msgid "Authenticate"
+msgstr "Authenticate"
+
+#  Programmer's name for it: scsAuthNotify
+#. Programmer's name for it: scsAuthNotify
+#: ggsetup_TpAsyncPro.inc:167
+msgid "AuthNotify"
+msgstr "AuthNotify"
+
+#  Programmer's name for it: scsAuthRetry
+#. Programmer's name for it: scsAuthRetry
+#: ggsetup_TpAsyncPro.inc:168
+msgid "AuthRetry"
+msgstr "AuthRetry"
+
+#  Programmer's name for it: scsAuthCallback
+#. Programmer's name for it: scsAuthCallback
+#: ggsetup_TpAsyncPro.inc:169
+msgid "AuthCallback"
+msgstr "AuthCallback"
+
+#  Programmer's name for it: AbEnterPasswordS
+#  Programmer's name for it: scsAuthChangePassword
+#. Programmer's name for it: scsAuthChangePassword
+#: ggsetup_TpAsyncPro.inc:170
+msgid "AuthChangePassword"
+msgstr "AuthChangePassword"
+
+#  Programmer's name for it: scsAuthProject
+#. Programmer's name for it: scsAuthProject
+#: ggsetup_TpAsyncPro.inc:171
+msgid "AuthProject"
+msgstr "AuthProject"
+
+#  Programmer's name for it: scsAuthLinkSpeed
+#. Programmer's name for it: scsAuthLinkSpeed
+#: ggsetup_TpAsyncPro.inc:172
+msgid "AuthLinkSpeed"
+msgstr "AuthLinkSpeed"
+
+#  Programmer's name for it: scsAuthAck
+#. Programmer's name for it: scsAuthAck
+#: ggsetup_TpAsyncPro.inc:173
+msgid "AuthAck"
+msgstr "AuthAck"
+
+#  Programmer's name for it: scsReAuthenticate
+#. Programmer's name for it: scsReAuthenticate
+#: ggsetup_TpAsyncPro.inc:174
+msgid "ReAuthenticate"
+msgstr "ReAuthenticate"
+
+#  Programmer's name for it: scsPrepareForCallback
+#. Programmer's name for it: scsPrepareForCallback
+#: ggsetup_TpAsyncPro.inc:176
+msgid "PrepareForCallback"
+msgstr "PrepareForCallback"
+
+#  Programmer's name for it: scsWaitForModemReset
+#. Programmer's name for it: scsWaitForModemReset
+#: ggsetup_TpAsyncPro.inc:177
+msgid "WaitForModemReset"
+msgstr "WaitForModemReset"
+
+#  Programmer's name for it: scsWaitForCallback
+#. Programmer's name for it: scsWaitForCallback
+#: ggsetup_TpAsyncPro.inc:178
+msgid "WaitForCallback"
+msgstr "WaitForCallback"
+
+#  Programmer's name for it: scsProjected
+#. Programmer's name for it: scsProjected
+#: ggsetup_TpAsyncPro.inc:179
+msgid "Projected"
+msgstr "Projected"
+
+#  Programmer's name for it: scsStartAuthentication
+#. Programmer's name for it: scsStartAuthentication
+#: ggsetup_TpAsyncPro.inc:180
+msgid "StartAuthentication"
+msgstr "StartAuthentication"
+
+#  Programmer's name for it: scsCallbackComplete
+#. Programmer's name for it: scsCallbackComplete
+#: ggsetup_TpAsyncPro.inc:181
+msgid "CallbackComplete"
+msgstr "CallbackComplete"
+
+#  Programmer's name for it: scsLogonNetwork
+#. Programmer's name for it: scsLogonNetwork
+#: ggsetup_TpAsyncPro.inc:182
+msgid "LogonNetwork"
+msgstr "LogonNetwork"
+
+#  Programmer's name for it: scsSubEntryConnected
+#. Programmer's name for it: scsSubEntryConnected
+#: ggsetup_TpAsyncPro.inc:183
+msgid "SubEntryConnected"
+msgstr "SubEntryConnected"
+
+#  Programmer's name for it: scsSubEntryDisconnected
+#. Programmer's name for it: scsSubEntryDisconnected
+#: ggsetup_TpAsyncPro.inc:184
+msgid "SubEntryDisconnected"
+msgstr "SubEntryDisconnected"
+
+#  Programmer's name for it: scsRasInteractive
+#. Programmer's name for it: scsRasInteractive
+#: ggsetup_TpAsyncPro.inc:185
+msgid "Interactive"
+msgstr "Interactive"
+
+#  Programmer's name for it: scsRasRetryAuthentication
+#. Programmer's name for it: scsRasRetryAuthentication
+#: ggsetup_TpAsyncPro.inc:186
+msgid "RetryAuthentication"
+msgstr "RetryAuthentication"
+
+#  Programmer's name for it: scsRasCallbackSetByCaller
+#. Programmer's name for it: scsRasCallbackSetByCaller
+#: ggsetup_TpAsyncPro.inc:187
+msgid "CallbackSetByCaller"
+msgstr "CallbackSetByCaller"
+
+#  Programmer's name for it: AbPasswordS
+#  Programmer's name for it: scsRasPasswordExpired
+#. Programmer's name for it: scsRasPasswordExpired
+#: ggsetup_TpAsyncPro.inc:188
+msgid "PasswordExpired"
+msgstr "PasswordExpired"
+
+#  Programmer's name for it: sPDS_OFFHOOK
+#. Programmer's name for it: sPDS_OFFHOOK
+#: ggsetup_TpAsyncPro.inc:193
+msgid "Off Hook"
+msgstr "Røret af"
+
+#  Programmer's name for it: sPDS_RINGING
+#  Programmer's name for it: stds_Ringing
+#. Programmer's name for it: sPDS_RINGING
+#. Programmer's name for it: stds_Ringing
+#: ggsetup_TpAsyncPro.inc:195 ggsetup_TpAsyncPro.inc:507
+msgid "Ringing"
+msgstr "Ringer"
+
+#  Programmer's name for it: sPDS_WAITFORCONNECT
+#. Programmer's name for it: sPDS_WAITFORCONNECT
+#: ggsetup_TpAsyncPro.inc:196
+msgid "Wait For Connect"
+msgstr "Vent på Forbindelse"
+
+#  Programmer's name for it: sPDS_WAITINGTOREDIAL
+#. Programmer's name for it: sPDS_WAITINGTOREDIAL
+#: ggsetup_TpAsyncPro.inc:198
+msgid "Waiting To Redial"
+msgstr "Venter på genopkald"
+
+#  Programmer's name for it: sPDS_REDIALING
+#. Programmer's name for it: sPDS_REDIALING
+#: ggsetup_TpAsyncPro.inc:199
+msgid "Redialing"
+msgstr "Genopkalder"
+
+#  Programmer's name for it: sPDS_MSGNOTSENT
+#. Programmer's name for it: sPDS_MSGNOTSENT
+#: ggsetup_TpAsyncPro.inc:200
+msgid "Message Not Sent"
+msgstr "Meddelelse Ikke Sendt"
+
+#  Programmer's name for it: sPDS_CANCELLING
+#. Programmer's name for it: sPDS_CANCELLING
+#: ggsetup_TpAsyncPro.inc:201
+msgid "Cancelling"
+msgstr "Fortryder"
+
+#  Programmer's name for it: sPDS_CLEANUP
+#. Programmer's name for it: sPDS_CLEANUP
+#: ggsetup_TpAsyncPro.inc:203
+msgid "Cleanup"
+msgstr "Rydder op"
+
+#  Programmer's name for it: sPDE_NODIALTONE
+#. Programmer's name for it: sPDE_NODIALTONE
+#: ggsetup_TpAsyncPro.inc:207
+msgid "No Dial Tone"
+msgstr "Ingen Opkalds Tone"
+
+#  Programmer's name for it: sPDE_LINEBUSY
+#. Programmer's name for it: sPDE_LINEBUSY
+#: ggsetup_TpAsyncPro.inc:208
+msgid "Busy"
+msgstr "Optaget"
+
+#  Programmer's name for it: sPDE_NOCONNECTION
+#. Programmer's name for it: sPDE_NOCONNECTION
+#: ggsetup_TpAsyncPro.inc:209
+msgid "No Connection"
+msgstr "Ingen Forbindelse"
+
+#  Programmer's name for it: sTAPS_LOGINPROMPT
+#. Programmer's name for it: sTAPS_LOGINPROMPT
+#: ggsetup_TpAsyncPro.inc:213
+msgid "Login Prompt"
+msgstr "Login Billede"
+
+#  Programmer's name for it: sTAPS_LOGGEDIN
+#. Programmer's name for it: sTAPS_LOGGEDIN
+#: ggsetup_TpAsyncPro.inc:214
+msgid "Logged In"
+msgstr "Logget Ind"
+
+#  Programmer's name for it: sTAPS_LOGINERR
+#. Programmer's name for it: sTAPS_LOGINERR
+#: ggsetup_TpAsyncPro.inc:215
+msgid "Login Error"
+msgstr "Login Fejl"
+
+#  Programmer's name for it: sTAPS_LOGINFAIL
+#. Programmer's name for it: sTAPS_LOGINFAIL
+#: ggsetup_TpAsyncPro.inc:216
+msgid "Login Fail"
+msgstr "Login Fejlede"
+
+#  Programmer's name for it: sTAPS_MSGOKTOSEND
+#. Programmer's name for it: sTAPS_MSGOKTOSEND
+#: ggsetup_TpAsyncPro.inc:217
+msgid "Message Ok To Send"
+msgstr "Meddelelse Ok at sende"
+
+#  Programmer's name for it: sTAPS_SENDINGMSG
+#. Programmer's name for it: sTAPS_SENDINGMSG
+#: ggsetup_TpAsyncPro.inc:218
+msgid "Sending Message"
+msgstr "Sender Meddelelse"
+
+#  Programmer's name for it: sTAPS_MSGACK
+#. Programmer's name for it: sTAPS_MSGACK
+#: ggsetup_TpAsyncPro.inc:219
+msgid "Message Acknowledged"
+msgstr "Meddelelse Accepteret"
+
+#  Programmer's name for it: sTAPS_MSGNAK
+#. Programmer's name for it: sTAPS_MSGNAK
+#: ggsetup_TpAsyncPro.inc:220
+msgid "Message Not Acknowledged"
+msgstr "Meddelelse Ikke Accepteret"
+
+#  Programmer's name for it: sTAPS_MSGRS
+#. Programmer's name for it: sTAPS_MSGRS
+#: ggsetup_TpAsyncPro.inc:221
+msgid "Message Error"
+msgstr "Meddelelse Fejl"
+
+#  Programmer's name for it: sTAPS_MSGCOMPLETED
+#. Programmer's name for it: sTAPS_MSGCOMPLETED
+#: ggsetup_TpAsyncPro.inc:222
+msgid "Message Completed"
+msgstr "Meddelelse Afsluttet"
+
+#  Programmer's name for it: sTAPS_DONE
+#. Programmer's name for it: sTAPS_DONE
+#: ggsetup_TpAsyncPro.inc:223
+msgid "Done"
+msgstr "Færdig"
+
+#  Programmer's name for it: spsProtocolHandshake
+#. Programmer's name for it: spsProtocolHandshake
+#: ggsetup_TpAsyncPro.inc:227
+msgid "Protocol handshaking in progress"
+msgstr "Protokol handshaking udføres"
+
+#  Programmer's name for it: spsInvalidDate
+#. Programmer's name for it: spsInvalidDate
+#: ggsetup_TpAsyncPro.inc:228
+msgid "Bad date/time stamp received and ignored"
+msgstr "Forkert dato/tids-stempling modtaget og ignoreret"
+
+#  Programmer's name for it: spsFileRejected
+#. Programmer's name for it: spsFileRejected
+#: ggsetup_TpAsyncPro.inc:229
+msgid "File rejected"
+msgstr "Fil forkastet"
+
+#  Programmer's name for it: spsFileRenamed
+#. Programmer's name for it: spsFileRenamed
+#: ggsetup_TpAsyncPro.inc:230
+msgid "File renamed"
+msgstr "Fil omdøbt"
+
+#  Programmer's name for it: spsSkipFile
+#. Programmer's name for it: spsSkipFile
+#: ggsetup_TpAsyncPro.inc:231
+msgid "File skipped"
+msgstr "Fil sprunget over"
+
+#  Programmer's name for it: spsFileDoesntExist
+#. Programmer's name for it: spsFileDoesntExist
+#: ggsetup_TpAsyncPro.inc:232
+msgid "File doesn't exist locally, skipped"
+msgstr "Filen findes ikke lokalt, sprunget over"
+
+#  Programmer's name for it: AbIFAFormatS
+#  Programmer's name for it: AbIFAFormatS
+#  Programmer's name for it: spsCantWriteFile
+#. Programmer's name for it: spsCantWriteFile
+#: ggsetup_TpAsyncPro.inc:233
+msgid "File skipped "
+msgstr "Sprunget over Fil "
+
+#  Programmer's name for it: spsTimeout
+#. Programmer's name for it: spsTimeout
+#: ggsetup_TpAsyncPro.inc:234
+msgid "Time out in protocol"
+msgstr "Tog for lang tid i protokol"
+
+#  Programmer's name for it: spsBlockCheckError
+#. Programmer's name for it: spsBlockCheckError
+#: ggsetup_TpAsyncPro.inc:235
+msgid "Bad checksum or CRC"
+msgstr "Forkert checksum eller CRC"
+
+#  Programmer's name for it: spsLongPacket
+#. Programmer's name for it: spsLongPacket
+#: ggsetup_TpAsyncPro.inc:236
+msgid "Block too long"
+msgstr "Blok for stor"
+
+#  Programmer's name for it: spsDuplicateBlock
+#. Programmer's name for it: spsDuplicateBlock
+#: ggsetup_TpAsyncPro.inc:237
+msgid "Duplicate block received and ignored "
+msgstr "Dublikeret blok modtaget of ignoreret"
+
+#  Programmer's name for it: spsProtocolError
+#. Programmer's name for it: spsProtocolError
+#: ggsetup_TpAsyncPro.inc:238
+msgid "Error in protocol"
+msgstr "Fejl i protokol"
+
+#  Programmer's name for it: spsCancelRequested
+#  Programmer's name for it: secCancelRequested
+#. Programmer's name for it: spsCancelRequested
+#. Programmer's name for it: secCancelRequested
+#: ggsetup_TpAsyncPro.inc:239 ggsetup_TpAsyncPro.inc:311
+msgid "Cancel requested"
+msgstr "Anmodning om afbydelse"
+
+#  Programmer's name for it: spsEndFile
+#  Programmer's name for it: spsEndFile
+#. Programmer's name for it: spsEndFile
+#: ggsetup_TpAsyncPro.inc:240
+msgid "At end of file"
+msgstr "Ved filens slutning"
+
+#  Programmer's name for it: spsResumeBad
+#. Programmer's name for it: spsResumeBad
+#: ggsetup_TpAsyncPro.inc:241
+msgid "B+ host refused resume request"
+msgstr "B+ vært nægtede at genoptage forespørgsel"
+
+#  Programmer's name for it: spsSequenceError
+#. Programmer's name for it: spsSequenceError
+#: ggsetup_TpAsyncPro.inc:242
+msgid "Block was out of sequence"
+msgstr "Blok ikke i sekvens"
+
+#  Programmer's name for it: spsAbortNoCarrier
+#. Programmer's name for it: spsAbortNoCarrier
+#: ggsetup_TpAsyncPro.inc:243
+msgid "Aborting on carrier loss"
+msgstr "Afbryder ved tab af bærebølge"
+
+#  Programmer's name for it: spsGotCrcE
+#. Programmer's name for it: spsGotCrcE
+#: ggsetup_TpAsyncPro.inc:246
+msgid "Got CrcE packet (Zmodem)"
+msgstr "Modtag CrcE pakke (Zmodem)"
+
+#  Programmer's name for it: spsGotCrcG
+#. Programmer's name for it: spsGotCrcG
+#: ggsetup_TpAsyncPro.inc:247
+msgid "Got CrcG packet (Zmodem)"
+msgstr "Modtog CrcG pakke (Zmodem)"
+
+#  Programmer's name for it: spsGotCrcW
+#. Programmer's name for it: spsGotCrcW
+#: ggsetup_TpAsyncPro.inc:248
+msgid "Got CrcW packet (Zmodem)"
+msgstr "Modtog CrcW pakke (Zmodem)"
+
+#  Programmer's name for it: spsGotCrcQ
+#. Programmer's name for it: spsGotCrcQ
+#: ggsetup_TpAsyncPro.inc:249
+msgid "Got CrcQ packet (Zmodem)"
+msgstr "Modtog CrcQ pakke (Zmodem)"
+
+#  Programmer's name for it: spsTryResume
+#. Programmer's name for it: spsTryResume
+#: ggsetup_TpAsyncPro.inc:250
+msgid "B+ is trying to resume a download"
+msgstr "B+ forsøger at genoptage download"
+
+#  Programmer's name for it: spsHostResume
+#. Programmer's name for it: spsHostResume
+#: ggsetup_TpAsyncPro.inc:251
+msgid "B+ host is resuming"
+msgstr "B+ vært genoptager"
+
+#  Programmer's name for it: spsWaitAck
+#. Programmer's name for it: spsWaitAck
+#: ggsetup_TpAsyncPro.inc:252
+msgid "Waiting for B+ ACK"
+msgstr "Venter på B+ ACK"
+
+#  Programmer's name for it: sfpInitModem
+#. Programmer's name for it: sfpInitModem
+#: ggsetup_TpAsyncPro.inc:262
+msgid "Initializing modem for fax processing"
+msgstr "Initialisere modem for fax operation"
+
+#  Programmer's name for it: sfpBusyWait
+#. Programmer's name for it: sfpBusyWait
+#: ggsetup_TpAsyncPro.inc:264
+msgid "Busy, waiting until redial..."
+msgstr "Optaget, venter indtil genopkald..."
+
+#  Programmer's name for it: sfpSendPage
+#. Programmer's name for it: sfpSendPage
+#: ggsetup_TpAsyncPro.inc:265
+msgid "Sending page data"
+msgstr "Sender side data"
+
+#  Programmer's name for it: sfpSendPageStatus
+#. Programmer's name for it: sfpSendPageStatus
+#: ggsetup_TpAsyncPro.inc:266
+msgid "Sending EOP"
+msgstr "Sender EOP"
+
+#  Programmer's name for it: AbReadErrorS
+#  Programmer's name for it: sfpPageError
+#. Programmer's name for it: sfpPageError
+#: ggsetup_TpAsyncPro.inc:267
+msgid "Error sending page"
+msgstr "Fejl ved afsendelse af side"
+
+#  Programmer's name for it: sfpPageOK
+#. Programmer's name for it: sfpPageOK
+#: ggsetup_TpAsyncPro.inc:268
+msgid "Page accepted by remote"
+msgstr "SIde accepteret af fjern"
+
+#  Programmer's name for it: sfpConnecting
+#. Programmer's name for it: sfpConnecting
+#: ggsetup_TpAsyncPro.inc:269
+msgid "Connecting..."
+msgstr "Forbinder...."
+
+#  Programmer's name for it: sfpNoConnect
+#. Programmer's name for it: sfpNoConnect
+#: ggsetup_TpAsyncPro.inc:273
+msgid "No connect on this call"
+msgstr "Ingen forbindelse ved dette opkald"
+
+#  Programmer's name for it: sfpAnswer
+#. Programmer's name for it: sfpAnswer
+#: ggsetup_TpAsyncPro.inc:274
+msgid "Answering incoming call"
+msgstr "Besvare indkommende opkald"
+
+#  Programmer's name for it: sfpIncoming
+#. Programmer's name for it: sfpIncoming
+#: ggsetup_TpAsyncPro.inc:275
+msgid "Incoming call validated as fax"
+msgstr "Inkommende opkald valideret som fax"
+
+#  Programmer's name for it: sfpGetPage
+#. Programmer's name for it: sfpGetPage
+#: ggsetup_TpAsyncPro.inc:276
+msgid "Getting page data"
+msgstr "Modtager side data"
+
+#  Programmer's name for it: sfpGetPageResult
+#. Programmer's name for it: sfpGetPageResult
+#: ggsetup_TpAsyncPro.inc:277
+msgid "Getting end-of-page signal"
+msgstr "Modtager slut-på-side signal"
+
+#  Programmer's name for it: sfpCheckMorePages
+#. Programmer's name for it: sfpCheckMorePages
+#: ggsetup_TpAsyncPro.inc:278
+msgid "Getting end-of-document status"
+msgstr "Modtager slut-på-dokument signal"
+
+#  Programmer's name for it: sfpGetHangup
+#. Programmer's name for it: sfpGetHangup
+#: ggsetup_TpAsyncPro.inc:279
+msgid "Getting hangup command"
+msgstr "Modtager læg på kommando"
+
+#  Programmer's name for it: sfpGotHangup
+#. Programmer's name for it: sfpGotHangup
+#: ggsetup_TpAsyncPro.inc:280
+msgid "Got Class 2 FHNG code"
+msgstr "Modtog Klasse 2 FHNG kode"
+
+#  Programmer's name for it: sfpSwitchModes
+#. Programmer's name for it: sfpSwitchModes
+#: ggsetup_TpAsyncPro.inc:283
+msgid "Switching modes"
+msgstr "Skifter mode"
+
+#  Programmer's name for it: sfpMonitorEnabled
+#. Programmer's name for it: sfpMonitorEnabled
+#: ggsetup_TpAsyncPro.inc:284
+msgid "Monitoring for incoming faxes"
+msgstr "Overvåger for indkommende faxe"
+
+#  Programmer's name for it: sfpMonitorDisabled
+#. Programmer's name for it: sfpMonitorDisabled
+#: ggsetup_TpAsyncPro.inc:285
+msgid "Not monitoring for incoming faxes"
+msgstr "Overvåge ikke for indkommende faxe"
+
+#  Programmer's name for it: sfpSessionParams
+#. Programmer's name for it: sfpSessionParams
+#: ggsetup_TpAsyncPro.inc:288
+msgid "Getting connection params"
+msgstr "Modtager forbindelses parametre"
+
+#  Programmer's name for it: sfpGotRemoteID
+#. Programmer's name for it: sfpGotRemoteID
+#: ggsetup_TpAsyncPro.inc:289
+msgid "Got called-station ID"
+msgstr "Modtog opkald-station ID"
+
+#  Programmer's name for it: sfpFinished
+#. Programmer's name for it: sfpFinished
+#: ggsetup_TpAsyncPro.inc:291
+msgid "Finished"
+msgstr "Færdig"
+
+#  Programmer's name for it: secNoMoreTriggers
+#. Programmer's name for it: secNoMoreTriggers
+#: ggsetup_TpAsyncPro.inc:294
+msgid "No more trigger slots"
+msgstr "Ikke flere trigger stik"
+
+#  Programmer's name for it: secTriggerTooLong
+#. Programmer's name for it: secTriggerTooLong
+#: ggsetup_TpAsyncPro.inc:295
+msgid "Data trigger too long"
+msgstr "Data trigger for lang"
+
+#  Programmer's name for it: secBadTriggerHandle
+#. Programmer's name for it: secBadTriggerHandle
+#: ggsetup_TpAsyncPro.inc:296
+msgid "Bad trigger handle"
+msgstr "Forkert trigger håndtag"
+
+#  Programmer's name for it: secStartStringEmpty
+#. Programmer's name for it: secStartStringEmpty
+#: ggsetup_TpAsyncPro.inc:299
+msgid "Start string is empty"
+msgstr "Start streng er tom"
+
+#  Programmer's name for it: secPacketTooSmall
+#. Programmer's name for it: secPacketTooSmall
+#: ggsetup_TpAsyncPro.inc:300
+msgid "Packet size cannot be smaller than start string"
+msgstr "Pakke størrelse kan ikke være mindre end start streng"
+
+#  Programmer's name for it: secNoEndCharCount
+#. Programmer's name for it: secNoEndCharCount
+#: ggsetup_TpAsyncPro.inc:301
+msgid "CharCount packets must have an end-condition"
+msgstr "CharCount pakker skal have en end-condition"
+
+#  Programmer's name for it: secEmptyEndString
+#. Programmer's name for it: secEmptyEndString
+#: ggsetup_TpAsyncPro.inc:302
+msgid "End string is empty"
+msgstr "Slut streng er tom"
+
+#  Programmer's name for it: secZeroSizePacket
+#. Programmer's name for it: secZeroSizePacket
+#: ggsetup_TpAsyncPro.inc:303
+msgid "Packet size cannot be zero"
+msgstr "Pakke størrelse kan ikke være nul"
+
+#  Programmer's name for it: secPacketTooLong
+#. Programmer's name for it: secPacketTooLong
+#: ggsetup_TpAsyncPro.inc:304
+msgid "Packet too long"
+msgstr "Pakke for stor"
+
+#  Programmer's name for it: secBadFileList
+#. Programmer's name for it: secBadFileList
+#: ggsetup_TpAsyncPro.inc:307
+msgid "Bad format in file list"
+msgstr "Forkert format i fil listen"
+
+#  Programmer's name for it: secNoSearchMask
+#. Programmer's name for it: secNoSearchMask
+#: ggsetup_TpAsyncPro.inc:308
+msgid "No search mask specified during transmit"
+msgstr "Ingen søge-maske specificeret under forsendelse"
+
+#  Programmer's name for it: secNoMatchingFiles
+#. Programmer's name for it: secNoMatchingFiles
+#: ggsetup_TpAsyncPro.inc:309
+msgid "No files matched search mask"
+msgstr "Ingen filer matched søge-maske"
+
+#  Programmer's name for it: AbNoSuchDirectoryS
+#  Programmer's name for it: secDirNotFound
+#. Programmer's name for it: secDirNotFound
+#: ggsetup_TpAsyncPro.inc:310
+msgid "Directory in search mask doesn't exist"
+msgstr "Folder i søge-maske findes ikke"
+
+#  Programmer's name for it: secTimeout
+#. Programmer's name for it: secTimeout
+#: ggsetup_TpAsyncPro.inc:312
+msgid "Fatal time out"
+msgstr "Fatal tids udløb"
+
+#  Programmer's name for it: secProtocolError
+#. Programmer's name for it: secProtocolError
+#: ggsetup_TpAsyncPro.inc:313
+msgid "Unrecoverable event during protocol"
+msgstr "Ukorregerbar hændelse i protokol"
+
+#  Programmer's name for it: secTooManyErrors
+#. Programmer's name for it: secTooManyErrors
+#: ggsetup_TpAsyncPro.inc:314
+msgid "Too many errors during protocol"
+msgstr "For mange fejl i protokol"
+
+#  Programmer's name for it: secSequenceError
+#. Programmer's name for it: secSequenceError
+#: ggsetup_TpAsyncPro.inc:315
+msgid "Block sequence error in Xmodem"
+msgstr "Blok sekvens fejl i Xmodem"
+
+#  Programmer's name for it: secNoFilename
+#. Programmer's name for it: secNoFilename
+#: ggsetup_TpAsyncPro.inc:316
+msgid "No filename specified in protocol receive"
+msgstr "Ingen filnavn specificeret i protokol modtagelse"
+
+#  Programmer's name for it: secFileRejected
+#. Programmer's name for it: secFileRejected
+#: ggsetup_TpAsyncPro.inc:317
+msgid "File was rejected"
+msgstr "Fil blev forkastet"
+
+#  Programmer's name for it: AbFCIFileWriteErrorS
+#  Programmer's name for it: secCantWriteFile
+#. Programmer's name for it: secCantWriteFile
+#: ggsetup_TpAsyncPro.inc:318
+msgid "Cant write file"
+msgstr "Kan ikke skrive fil"
+
+#  Programmer's name for it: secTableFull
+#. Programmer's name for it: secTableFull
+#: ggsetup_TpAsyncPro.inc:319
+msgid "Kermit window table is full, fatal error"
+msgstr "Kermit vindue tabel er fuld, fatal fejl"
+
+#  Programmer's name for it: secAbortNoCarrier
+#. Programmer's name for it: secAbortNoCarrier
+#: ggsetup_TpAsyncPro.inc:320
+msgid "Aborting due to carrier loss"
+msgstr "Afbryder pga. bærebølge tab"
+
+#  Programmer's name for it: secBadProtocolFunction
+#. Programmer's name for it: secBadProtocolFunction
+#: ggsetup_TpAsyncPro.inc:321
+msgid "Function not supported by protocol"
+msgstr "Funktion ikke understøttet af protokol"
+
+#  Programmer's name for it: AbUserAbortS
+#  Programmer's name for it: AbUserAbortS
+#  Programmer's name for it: secProtocolAbort
+#. Programmer's name for it: secProtocolAbort
+#: ggsetup_TpAsyncPro.inc:322
+msgid "Protocol aborted"
+msgstr "Protokol afbrudt"
+
+#  Programmer's name for it: sExponentStringTooBig
+#  Programmer's name for it: secKeyTooLong
+#. Programmer's name for it: secKeyTooLong
+#: ggsetup_TpAsyncPro.inc:325
+msgid "Key string too long"
+msgstr "Nøgle streng for lang"
+
+#  Programmer's name for it: sExponentStringTooBig
+#  Programmer's name for it: secDataTooLarge
+#. Programmer's name for it: secDataTooLarge
+#: ggsetup_TpAsyncPro.inc:326
+msgid "Data string too long"
+msgstr "Data streng for lang"
+
+#  Programmer's name for it: secNoFieldsDefined
+#. Programmer's name for it: secNoFieldsDefined
+#: ggsetup_TpAsyncPro.inc:327
+msgid "No fields defined in database"
+msgstr "Ingen felter definret i database"
+
+#  Programmer's name for it: AbFCIFileDeleteErrorS
+#  Programmer's name for it: secIniWrite
+#. Programmer's name for it: secIniWrite
+#: ggsetup_TpAsyncPro.inc:328
+msgid "Generic INI file write error"
+msgstr "Generel INI fil skrive fejl"
+
+#  Programmer's name for it: AbFCIFileSeekErrorS
+#  Programmer's name for it: secIniRead
+#. Programmer's name for it: secIniRead
+#: ggsetup_TpAsyncPro.inc:329
+msgid "Generic INI file read error"
+msgstr "Generel INI fil læse fejl"
+
+#  Programmer's name for it: secNoIndexKey
+#. Programmer's name for it: secNoIndexKey
+#: ggsetup_TpAsyncPro.inc:330
+msgid "No index defined for database"
+msgstr "Ingen indeks defineret i database"
+
+#  Programmer's name for it: secRecordExists
+#. Programmer's name for it: secRecordExists
+#: ggsetup_TpAsyncPro.inc:331
+msgid "Record already exists"
+msgstr "Post findes allerede"
+
+#  Programmer's name for it: secRecordNotFound
+#. Programmer's name for it: secRecordNotFound
+#: ggsetup_TpAsyncPro.inc:332
+msgid "Record not found in database"
+msgstr "Post ikke fundet i database"
+
+#  Programmer's name for it: AbInvalidIndexS
+#  Programmer's name for it: secMustHaveIdxVal
+#. Programmer's name for it: secMustHaveIdxVal
+#: ggsetup_TpAsyncPro.inc:333
+msgid "Invalid index key name"
+msgstr "Ugyldig indeks nøgle navn"
+
+#  Programmer's name for it: secDatabaseFull
+#. Programmer's name for it: secDatabaseFull
+#: ggsetup_TpAsyncPro.inc:334
+msgid "Maximum database records (999) reached"
+msgstr "Maximum database poster (999) nået"
+
+#  Programmer's name for it: secDatabaseEmpty
+#. Programmer's name for it: secDatabaseEmpty
+#: ggsetup_TpAsyncPro.inc:335
+msgid "No records in database"
+msgstr "Ingen poster i database"
+
+#  Programmer's name for it: secDatabaseNotPrepared
+#. Programmer's name for it: secDatabaseNotPrepared
+#: ggsetup_TpAsyncPro.inc:336
+msgid "iPrepareIniDatabase not called"
+msgstr "iPrepareIniDatabase ikke kaldt"
+
+#  Programmer's name for it: secBadFieldList
+#. Programmer's name for it: secBadFieldList
+#: ggsetup_TpAsyncPro.inc:337
+msgid "Bad field list in INI component"
+msgstr "Forkert felt liste i INI komponent"
+
+#  Programmer's name for it: secBadFieldForIndex
+#. Programmer's name for it: secBadFieldForIndex
+#: ggsetup_TpAsyncPro.inc:338
+msgid "Bad field index in INI component"
+msgstr "Forkert felt indeks i INI komponent"
+
+#  Programmer's name for it: secNoStateMachine
+#. Programmer's name for it: secNoStateMachine
+#: ggsetup_TpAsyncPro.inc:341
+msgid "No state machine specified"
+msgstr "Der er ikke defineret noget state machine"
+
+#  Programmer's name for it: secNoStartState
+#. Programmer's name for it: secNoStartState
+#: ggsetup_TpAsyncPro.inc:342
+msgid "StartState not set"
+msgstr "StartState ikke sat"
+
+#  Programmer's name for it: secNoSapiEngine
+#. Programmer's name for it: secNoSapiEngine
+#: ggsetup_TpAsyncPro.inc:343
+msgid "No SAPI engine specified"
+msgstr "Ingen SAPI motor specificeret"
+
+#  Programmer's name for it: AbErrZipInvalidS
+#  Programmer's name for it: AbErrZipInvalidS
+#  Programmer's name for it: AbErrZipInvalidS
+#  Programmer's name for it: AbErrZipInvalidS
+#  Programmer's name for it: AbErrZipInvalidS
+#  Programmer's name for it: secFaxBadFormat
+#. Programmer's name for it: secFaxBadFormat
+#: ggsetup_TpAsyncPro.inc:346
+msgid "File is not an APF file"
+msgstr "Fil er ikke en APF fil"
+
+#  Programmer's name for it: secBadGraphicsFormat
+#. Programmer's name for it: secBadGraphicsFormat
+#: ggsetup_TpAsyncPro.inc:347
+msgid "Unsupported graphics file format"
+msgstr "Ikke supporteret grafik fil format"
+
+#  Programmer's name for it: secConvertAbort
+#. Programmer's name for it: secConvertAbort
+#: ggsetup_TpAsyncPro.inc:348
+msgid "User aborted fax conversion"
+msgstr "Bruger afbrød fax konvertering"
+
+#  Programmer's name for it: secUnpackAbort
+#. Programmer's name for it: secUnpackAbort
+#: ggsetup_TpAsyncPro.inc:349
+msgid "User aborted fax unpack"
+msgstr "Bruger afbrød fax udpakning"
+
+#  Programmer's name for it: secCantMakeBitmap
+#. Programmer's name for it: secCantMakeBitmap
+#: ggsetup_TpAsyncPro.inc:350
+msgid "CreateBitmapIndirect API failure"
+msgstr "CreateBitmapIndirect API fejl"
+
+#  Programmer's name for it: secNoImageLoaded
+#. Programmer's name for it: secNoImageLoaded
+#: ggsetup_TpAsyncPro.inc:351
+msgid "No image loaded into viewer"
+msgstr "Ingen billed hentet ind i viser"
+
+#  Programmer's name for it: secNoImageBlockMarked
+#. Programmer's name for it: secNoImageBlockMarked
+#: ggsetup_TpAsyncPro.inc:352
+msgid "No block of image marked"
+msgstr "Ingen blok af billede markeret"
+
+#  Programmer's name for it: secFontFileNotFound
+#. Programmer's name for it: secFontFileNotFound
+#: ggsetup_TpAsyncPro.inc:353
+msgid "APFAX.FNT not found, or resource bad"
+msgstr "APFAX.FNT ikke fundet, eller forkert resource"
+
+#  Programmer's name for it: secInvalidPageNumber
+#. Programmer's name for it: secInvalidPageNumber
+#: ggsetup_TpAsyncPro.inc:354
+msgid "Invalid page number specified for fax"
+msgstr "Ugyldig side nummer specificeret til fax"
+
+#  Programmer's name for it: secBmpTooBig
+#. Programmer's name for it: secBmpTooBig
+#: ggsetup_TpAsyncPro.inc:355
+msgid "BMP size exceeds Windows' maxheight of 32767"
+msgstr "BMP størrelse overskrider Vindows maxhøjde på 32767"
+
+#  Programmer's name for it: secEnhFontTooBig
+#. Programmer's name for it: secEnhFontTooBig
+#: ggsetup_TpAsyncPro.inc:356
+msgid "Font selected for enhanced text converter too large"
+msgstr "Skrifttype for fremhævet test konvertere for stort"
+
+#  Programmer's name for it: secFaxBadMachine
+#. Programmer's name for it: secFaxBadMachine
+#: ggsetup_TpAsyncPro.inc:358
+msgid "Fax incompatible with remote fax"
+msgstr "Fax er ikke kompatibel med modtagende fax"
+
+#  Programmer's name for it: secFaxBadModemResult
+#. Programmer's name for it: secFaxBadModemResult
+#: ggsetup_TpAsyncPro.inc:359
+msgid "Bad response from modem"
+msgstr "Forkert svar fra modem"
+
+#  Programmer's name for it: secFaxTrainError
+#. Programmer's name for it: secFaxTrainError
+#: ggsetup_TpAsyncPro.inc:360
+msgid "Modems failed to train"
+msgstr "Modem fejlede at train"
+
+#  Programmer's name for it: secFaxInitError
+#. Programmer's name for it: secFaxInitError
+#: ggsetup_TpAsyncPro.inc:361
+msgid "Error while initializing modem"
+msgstr "Fejl under initialisering af modem"
+
+#  Programmer's name for it: secFaxBusy
+#. Programmer's name for it: secFaxBusy
+#: ggsetup_TpAsyncPro.inc:362
+msgid "Called fax number was busy"
+msgstr "Opkaldt fax nummer var optager"
+
+#  Programmer's name for it: secFaxVoiceCall
+#. Programmer's name for it: secFaxVoiceCall
+#: ggsetup_TpAsyncPro.inc:363
+msgid "Called fax number answered with voice"
+msgstr "Opkaldt fax nummer blev besvaret med stemme"
+
+#  Programmer's name for it: secFaxDataCall
+#. Programmer's name for it: secFaxDataCall
+#: ggsetup_TpAsyncPro.inc:364
+msgid "Incoming data call"
+msgstr "Inkommende data opkald"
+
+#  Programmer's name for it: secFaxNoDialTone
+#. Programmer's name for it: secFaxNoDialTone
+#: ggsetup_TpAsyncPro.inc:365
+msgid "No dial tone"
+msgstr "Ingen opkalds tone"
+
+#  Programmer's name for it: secFaxNoCarrier
+#. Programmer's name for it: secFaxNoCarrier
+#: ggsetup_TpAsyncPro.inc:366
+msgid "Failed to connect to remote fax"
+msgstr "Fejlede at forbinde til fjern-fax"
+
+#  Programmer's name for it: secFaxSessionError
+#. Programmer's name for it: secFaxSessionError
+#: ggsetup_TpAsyncPro.inc:367
+msgid "Fax failed in mid-session"
+msgstr "Fax fejlede mid-session"
+
+#  Programmer's name for it: secFaxPageError
+#. Programmer's name for it: secFaxPageError
+#: ggsetup_TpAsyncPro.inc:368
+msgid "Fax failed at page end"
+msgstr "Fejl fejlede ved side slutning"
+
+#  Programmer's name for it: secFaxGDIPrintError
+#. Programmer's name for it: secFaxGDIPrintError
+#: ggsetup_TpAsyncPro.inc:369
+msgid "NextBand GDI error in fax print driver"
+msgstr "NextBand GDI fejl i fax print driver"
+
+#  Programmer's name for it: secFaxMixedResolution
+#. Programmer's name for it: secFaxMixedResolution
+#: ggsetup_TpAsyncPro.inc:370
+msgid "Multiple resolutions per session not supported"
+msgstr "Flere opløsninger i samme session ikke understøttet"
+
+#  Programmer's name for it: secFaxConverterInitFail
+#. Programmer's name for it: secFaxConverterInitFail
+#: ggsetup_TpAsyncPro.inc:371
+msgid "Initialization of fax converter failed"
+msgstr "Initialisering af fax konverter fejlede"
+
+#  Programmer's name for it: secNoAnswer
+#. Programmer's name for it: secNoAnswer
+#: ggsetup_TpAsyncPro.inc:372
+msgid "Remote fax did not answer"
+msgstr "Fjern-fax svarede ikke"
+
+#  Programmer's name for it: secAlreadyMonitored
+#. Programmer's name for it: secAlreadyMonitored
+#: ggsetup_TpAsyncPro.inc:373
+msgid "Directory already being monitored"
+msgstr "Folder bliver allerede overvåget"
+
+#  Programmer's name for it: secUniAlreadyInstalled
+#. Programmer's name for it: secUniAlreadyInstalled
+#: ggsetup_TpAsyncPro.inc:376
+msgid "Unidrv support files already installed"
+msgstr "Unidrv understøttelsesfil er allerede installeret"
+
+#  Programmer's name for it: secUniCannotGetSysDir
+#. Programmer's name for it: secUniCannotGetSysDir
+#: ggsetup_TpAsyncPro.inc:377
+msgid "Cannot determine windows system dir"
+msgstr "Kan ikke lokalisere Vindows system folder"
+
+#  Programmer's name for it: secUniCannotGetWinDir
+#. Programmer's name for it: secUniCannotGetWinDir
+#: ggsetup_TpAsyncPro.inc:378
+msgid "Cannot determine windows dir"
+msgstr "Kan ikke lokalisere windows folder"
+
+#  Programmer's name for it: secUniUnknownLayout
+#. Programmer's name for it: secUniUnknownLayout
+#: ggsetup_TpAsyncPro.inc:379
+msgid "Cannot determine setup file layout"
+msgstr "Kan ikke lokalisere setup fil layout"
+
+#  Programmer's name for it: secUniCannotInstallFile
+#. Programmer's name for it: secUniCannotInstallFile
+#: ggsetup_TpAsyncPro.inc:380
+msgid "Cannot install Unidrv files to system dir"
+msgstr "Can ikke installere Unidrv filer til system folderen"
+
+#  Programmer's name for it: secDrvCopyError
+#. Programmer's name for it: secDrvCopyError
+#: ggsetup_TpAsyncPro.inc:381
+msgid "Error copying printer driver"
+msgstr "Fejl ved kopiering af printer driver"
+
+#  Programmer's name for it: secCannotAddPrinter
+#. Programmer's name for it: secCannotAddPrinter
+#: ggsetup_TpAsyncPro.inc:382
+msgid "32-bit AddPrinter call failed"
+msgstr "32-bit AddPrinter kald fejlede"
+
+#  Programmer's name for it: secDrvBadResources
+#. Programmer's name for it: secDrvBadResources
+#: ggsetup_TpAsyncPro.inc:383
+msgid "Bad/missing resources in driver"
+msgstr "Dårlig/manglende resource i driver"
+
+#  Programmer's name for it: AbCmpndFileNotFound
+#  Programmer's name for it: secDrvDriverNotFound
+#. Programmer's name for it: secDrvDriverNotFound
+#: ggsetup_TpAsyncPro.inc:384
+msgid "Driver file not found"
+msgstr "Driver fil ikke fundet"
+
+#  Programmer's name for it: secUniCannotGetPrinterDriverDir
+#. Programmer's name for it: secUniCannotGetPrinterDriverDir
+#: ggsetup_TpAsyncPro.inc:385
+msgid "Cannot determine Win NT printer driver dir"
+msgstr "Kan ikke lokalisere Win NT printer driver folder"
+
+#  Programmer's name for it: secInstallDriverFailed
+#. Programmer's name for it: secInstallDriverFailed
+#: ggsetup_TpAsyncPro.inc:386
+msgid "AddPrinterDriver API failed"
+msgstr "AddPrinterDriver API fejlede"
+
+#  Programmer's name for it: secSMSBusy
+#. Programmer's name for it: secSMSBusy
+#: ggsetup_TpAsyncPro.inc:389
+msgid "Busy with another command"
+msgstr "Optaget med en anden kommando"
+
+#  Programmer's name for it: secSMSTimedOut
+#. Programmer's name for it: secSMSTimedOut
+#: ggsetup_TpAsyncPro.inc:390
+msgid "Timed out, no response back"
+msgstr "Tog for lang tid, ingen svar tilbage"
+
+#  Programmer's name for it: secSMSTooLong
+#. Programmer's name for it: secSMSTooLong
+#: ggsetup_TpAsyncPro.inc:391
+msgid "SMS message too long"
+msgstr "SMS meddelelse for lang"
+
+#  Programmer's name for it: secSMSUnknownStatus
+#. Programmer's name for it: secSMSUnknownStatus
+#: ggsetup_TpAsyncPro.inc:392
+msgid "Status unknown"
+msgstr "Status ukendt"
+
+#  Programmer's name for it: secSMSInvalidNumber
+#. Programmer's name for it: secSMSInvalidNumber
+#: ggsetup_TpAsyncPro.inc:393
+msgid "Invalid Number or Network out of order"
+msgstr "Ugyldig Nummer eller Netværk virker ikke"
+
+#  Programmer's name for it: secMEFailure
+#. Programmer's name for it: secMEFailure
+#: ggsetup_TpAsyncPro.inc:394
+msgid "Mobile equipment failure"
+msgstr "Mobil udstyr fejlede"
+
+#  Programmer's name for it: secServiceRes
+#. Programmer's name for it: secServiceRes
+#: ggsetup_TpAsyncPro.inc:395
+msgid "SMS service of ME reserved"
+msgstr "SMS service i ME reserveret"
+
+#  Programmer's name for it: secBadOperation
+#. Programmer's name for it: secBadOperation
+#: ggsetup_TpAsyncPro.inc:396
+msgid "Operation not allowed"
+msgstr "Operation ikke tilladt"
+
+#  Programmer's name for it: secInvalidPDU
+#. Programmer's name for it: secInvalidPDU
+#: ggsetup_TpAsyncPro.inc:398
+msgid "Invalid PDU mode parameter"
+msgstr "Ugyldig PDE mode parameter"
+
+#  Programmer's name for it: AbInvalidFactorS
+#  Programmer's name for it: AbInvalidFactorS
+#  Programmer's name for it: secInvalidText
+#. Programmer's name for it: secInvalidText
+#: ggsetup_TpAsyncPro.inc:399
+msgid "Invalid Text mode parameter"
+msgstr "Ugyldig Tekst mode parameter"
+
+#  Programmer's name for it: secSIMInsert
+#. Programmer's name for it: secSIMInsert
+#: ggsetup_TpAsyncPro.inc:400
+msgid "SIM card not inserted"
+msgstr "SIM kort ikke indsat"
+
+#  Programmer's name for it: secSIMPin
+#. Programmer's name for it: secSIMPin
+#: ggsetup_TpAsyncPro.inc:401
+msgid "SIM PIN required"
+msgstr "SIM PIN krævet"
+
+#  Programmer's name for it: secSIMPH
+#. Programmer's name for it: secSIMPH
+#: ggsetup_TpAsyncPro.inc:402
+msgid "PH-SIM PIN required"
+msgstr "PH-SIM PIN krævet"
+
+#  Programmer's name for it: secSIMFailure
+#. Programmer's name for it: secSIMFailure
+#: ggsetup_TpAsyncPro.inc:403
+msgid "SIM failure"
+msgstr "SIM fejl"
+
+#  Programmer's name for it: secSIMBusy
+#. Programmer's name for it: secSIMBusy
+#: ggsetup_TpAsyncPro.inc:404
+msgid "SIM busy"
+msgstr "SIM optaget"
+
+#  Programmer's name for it: secSIMWrong
+#. Programmer's name for it: secSIMWrong
+#: ggsetup_TpAsyncPro.inc:405
+msgid "SIM wrong"
+msgstr "SIM forkert"
+
+#  Programmer's name for it: secSIMPUK
+#. Programmer's name for it: secSIMPUK
+#: ggsetup_TpAsyncPro.inc:406
+msgid "SIM PUK required"
+msgstr "SIM PUK krævet"
+
+#  Programmer's name for it: secSIMPIN2
+#. Programmer's name for it: secSIMPIN2
+#: ggsetup_TpAsyncPro.inc:407
+msgid "SIM PIN2 required"
+msgstr "SIM PIN2 krævet"
+
+#  Programmer's name for it: secSIMPUK2
+#. Programmer's name for it: secSIMPUK2
+#: ggsetup_TpAsyncPro.inc:408
+msgid "SIM PUK2 required"
+msgstr "SIM PUK krævet"
+
+#  Programmer's name for it: sRSAEncryptErr
+#  Programmer's name for it: secMemFail
+#. Programmer's name for it: secMemFail
+#: ggsetup_TpAsyncPro.inc:409
+msgid "Memory failure"
+msgstr "Hukommelses fejl"
+
+#  Programmer's name for it: AbInvalidIndexS
+#  Programmer's name for it: secInvalidMemIndex
+#. Programmer's name for it: secInvalidMemIndex
+#: ggsetup_TpAsyncPro.inc:410
+msgid "Invalid memory index"
+msgstr "Ugyldig hukommelses indeks"
+
+#  Programmer's name for it: secMemFull
+#. Programmer's name for it: secMemFull
+#: ggsetup_TpAsyncPro.inc:411
+msgid "Memory is full"
+msgstr "Hukommelse er fuld"
+
+#  Programmer's name for it: secSMSCAddUnknown
+#. Programmer's name for it: secSMSCAddUnknown
+#: ggsetup_TpAsyncPro.inc:412
+msgid "SMS Center Address unknown"
+msgstr "SMS Center Adresse ukendt"
+
+#  Programmer's name for it: secNoNetwork
+#. Programmer's name for it: secNoNetwork
+#: ggsetup_TpAsyncPro.inc:413
+msgid "No network service"
+msgstr "Ingen netværks service"
+
+#  Programmer's name for it: secNetworkTimeout
+#. Programmer's name for it: secNetworkTimeout
+#: ggsetup_TpAsyncPro.inc:414
+msgid "Network timeout"
+msgstr "Netværk tids udløb"
+
+#  Programmer's name for it: secCNMAAck
+#. Programmer's name for it: secCNMAAck
+#: ggsetup_TpAsyncPro.inc:415
+msgid "No +CNMA acknowledgement expected"
+msgstr "Ingen +CNMA accept forventet"
+
+#  Programmer's name for it: secADWSERROR
+#. Programmer's name for it: secADWSERROR
+#: ggsetup_TpAsyncPro.inc:419
+msgid "Async Professional Error"
+msgstr "Async Professional Fejl"
+
+#  Programmer's name for it: secADWSLOADERROR
+#. Programmer's name for it: secADWSLOADERROR
+#: ggsetup_TpAsyncPro.inc:420
+msgid "Error loading Winsock DLL"
+msgstr "Fejl ved hentning af Winsock DLL"
+
+#  Programmer's name for it: secADWSVERSIONERROR
+#. Programmer's name for it: secADWSVERSIONERROR
+#: ggsetup_TpAsyncPro.inc:421
+msgid "Incorrect version of Winsock"
+msgstr "Ukorrekt version af Winsock"
+
+#  Programmer's name for it: secADWSNOTINIT
+#. Programmer's name for it: secADWSNOTINIT
+#: ggsetup_TpAsyncPro.inc:422
+msgid "Winsock not initialized - %s"
+msgstr "Winsock ikke initialiseret - %s"
+
+#  Programmer's name for it: secADWSINVPORT
+#. Programmer's name for it: secADWSINVPORT
+#: ggsetup_TpAsyncPro.inc:423
+msgid "Specified port is not valid"
+msgstr "Specificeret port er ikke gyldig"
+
+#  Programmer's name for it: secADWSCANTCHANGE
+#. Programmer's name for it: secADWSCANTCHANGE
+#: ggsetup_TpAsyncPro.inc:424
+msgid "Cannot change parameter while socket is connected"
+msgstr "Kan ikke ændre parametre mens socket er forbundet"
+
+#  Programmer's name for it: secADWSCANTRESOLVE
+#. Programmer's name for it: secADWSCANTRESOLVE
+#: ggsetup_TpAsyncPro.inc:425
+msgid "Cannot resolve destination address"
+msgstr "Kan ikke opløse destinations adresse"
+
+#  Programmer's name for it: swsaEIntr
+#. Programmer's name for it: swsaEIntr
+#: ggsetup_TpAsyncPro.inc:430
+msgid "Interrupted function call"
+msgstr "Afbrudt funktions kald"
+
+#  Programmer's name for it: AbImageRequestS
+#  Programmer's name for it: AbImageRequestS
+#  Programmer's name for it: swsaEBadF
+#. Programmer's name for it: swsaEBadF
+#: ggsetup_TpAsyncPro.inc:431
+msgid "Bad file number"
+msgstr "Forkert fil nummer"
+
+#  Programmer's name for it: AbVersionNeededHeadingS
+#  Programmer's name for it: swsaEAcces
+#. Programmer's name for it: swsaEAcces
+#: ggsetup_TpAsyncPro.inc:432
+msgid "Permission denied"
+msgstr "Tilladelse nægtet"
+
+#  Programmer's name for it: swsaEWouldBlock
+#. Programmer's name for it: swsaEWouldBlock
+#: ggsetup_TpAsyncPro.inc:438
+msgid "Warning : the socket would block on this call"
+msgstr "Advarsel: socket vil blokere ved dette kald"
+
+#  Programmer's name for it: swsaEInProgress
+#. Programmer's name for it: swsaEInProgress
+#: ggsetup_TpAsyncPro.inc:439
+msgid "A blocking call is in progress"
+msgstr "Et blokkerende kald bliver udført"
+
+#  Programmer's name for it: swsaEAlReady
+#. Programmer's name for it: swsaEAlReady
+#: ggsetup_TpAsyncPro.inc:440
+msgid "WSAEALREADY: watch out, Al is ready"
+msgstr "WSAEALREADY: pas på, Al er klar"
+
+#  Programmer's name for it: swsaENotSock
+#. Programmer's name for it: swsaENotSock
+#: ggsetup_TpAsyncPro.inc:441
+msgid "Socket descriptor is (1) not a socket, or (2) is of wrong type"
+msgstr "Socket beskriver er (1) ikke en socket, eller (2) af forkert type"
+
+#  Programmer's name for it: swsaEDestAddrReq
+#. Programmer's name for it: swsaEDestAddrReq
+#: ggsetup_TpAsyncPro.inc:442
+msgid "The destination address is required for this operation"
+msgstr "Destinations adressen er krævet for denne operation"
+
+#  Programmer's name for it: swsaEMsgSize
+#. Programmer's name for it: swsaEMsgSize
+#: ggsetup_TpAsyncPro.inc:443
+msgid "The datagram was too large to fit into the buffer and was truncated"
+msgstr "Datagrammet er for lang til at passe i bufferen og blev afkortet"
+
+#  Programmer's name for it: swsaEPrototype
+#. Programmer's name for it: swsaEPrototype
+#: ggsetup_TpAsyncPro.inc:444
+msgid "WSAEPROTOTYPE"
+msgstr "WSAEPROTOTYPE"
+
+#  Programmer's name for it: swsaENoProtoOpt
+#. Programmer's name for it: swsaENoProtoOpt
+#: ggsetup_TpAsyncPro.inc:445
+msgid "The option is unknown or not supported"
+msgstr "Operationen er ukendt eller ikke understøttet"
+
+#  Programmer's name for it: swsaEProtoNoSupport
+#. Programmer's name for it: swsaEProtoNoSupport
+#: ggsetup_TpAsyncPro.inc:446
+msgid ""
+"Either (1) not enough buffer space to create socket (2) protocol not "
+"supported"
+msgstr ""
+"Enten (1) ikke nok buffer størrelse til at oprette socket (2) protokol ikke "
+"understøttet"
+
+#  Programmer's name for it: swsaESocktNoSupport
+#. Programmer's name for it: swsaESocktNoSupport
+#: ggsetup_TpAsyncPro.inc:447
+msgid "Specified socket type not supported in this address family"
+msgstr "Specificerede socket type ikke understøttet i denne adresse familie"
+
+#  Programmer's name for it: AbSpanningNotSupportedS
+#  Programmer's name for it: swsaEOpNotSupp
+#. Programmer's name for it: swsaEOpNotSupp
+#: ggsetup_TpAsyncPro.inc:448
+msgid "Operation is not supported by this socket"
+msgstr "Operationen er ikke understøttet af denne socket"
+
+#  Programmer's name for it: swsaEPfNoSupport
+#. Programmer's name for it: swsaEPfNoSupport
+#: ggsetup_TpAsyncPro.inc:449
+msgid "Specified protocol family is not supported"
+msgstr "Specificerede protokol familie er ikke understøttet"
+
+#  Programmer's name for it: swsaEAfNoSupport
+#. Programmer's name for it: swsaEAfNoSupport
+#: ggsetup_TpAsyncPro.inc:450
+msgid "Specified address family is not supported by this protocol"
+msgstr "Specificerede adresse familie ikke understøttet af denne protokol"
+
+#  Programmer's name for it: swsaEAddrInUse
+#. Programmer's name for it: swsaEAddrInUse
+#: ggsetup_TpAsyncPro.inc:451
+msgid "The address is already in use for this operation"
+msgstr "Adressen er allerede i brug i denne operation"
+
+#  Programmer's name for it: swsaEAddrNotAvail
+#. Programmer's name for it: swsaEAddrNotAvail
+#: ggsetup_TpAsyncPro.inc:452
+msgid "The address is not available from this machine"
+msgstr "Adressen er ikke tilgængelig fra denne maskine"
+
+#  Programmer's name for it: swsaENetDown
+#. Programmer's name for it: swsaENetDown
+#: ggsetup_TpAsyncPro.inc:453
+msgid "The network subsystem has failed"
+msgstr "Netværks undersystemet fejlede"
+
+#  Programmer's name for it: swsaENetUnreach
+#. Programmer's name for it: swsaENetUnreach
+#: ggsetup_TpAsyncPro.inc:454
+msgid "The network is unreachable from this machine at this time"
+msgstr "Netværket er ikke nåbar fra denne maskine på dette tidspunkt"
+
+#  Programmer's name for it: swsaENetReset
+#. Programmer's name for it: swsaENetReset
+#: ggsetup_TpAsyncPro.inc:455
+msgid "The network has been reset"
+msgstr "Netværket er blevet nulstillet"
+
+#  Programmer's name for it: swsaEConnAborted
+#. Programmer's name for it: swsaEConnAborted
+#: ggsetup_TpAsyncPro.inc:456
+msgid "The virtual circuit has been aborted due to timeout, etc"
+msgstr "Det virtuelle kredsløb blev afbrudt på grund af tids udløb, etc"
+
+#  Programmer's name for it: swsaEConnReset
+#. Programmer's name for it: swsaEConnReset
+#: ggsetup_TpAsyncPro.inc:457
+msgid "The virtual circuit has been reset by the partner"
+msgstr "Det virtuelle kredsløb er blevet nulstillet af partner"
+
+#  Programmer's name for it: swsaENoBufs
+#. Programmer's name for it: swsaENoBufs
+#: ggsetup_TpAsyncPro.inc:458
+msgid "The descriptor is not a socket, or no buffer space is available"
+msgstr "Beskriveren er ikke socket, eller buffer størrelse er ikke tilgængelig"
+
+#  Programmer's name for it: swsaEIsConn
+#. Programmer's name for it: swsaEIsConn
+#: ggsetup_TpAsyncPro.inc:459
+msgid "The socket is already connected"
+msgstr "Socket er allerede forbundet"
+
+#  Programmer's name for it: swsaENotConn
+#. Programmer's name for it: swsaENotConn
+#: ggsetup_TpAsyncPro.inc:460
+msgid "The socket is not connected"
+msgstr "Socket er ikke forbundet"
+
+#  Programmer's name for it: swsaEShutDown
+#. Programmer's name for it: swsaEShutDown
+#: ggsetup_TpAsyncPro.inc:461
+msgid "The socket has been shutdown"
+msgstr "Socket er blevet lukket ned"
+
+#  Programmer's name for it: swsaETooManyRefs
+#. Programmer's name for it: swsaETooManyRefs
+#: ggsetup_TpAsyncPro.inc:462
+msgid "WSAETOOMANYREFS"
+msgstr "WSAETOOMANYREFS"
+
+#  Programmer's name for it: swsaETimedOut
+#. Programmer's name for it: swsaETimedOut
+#: ggsetup_TpAsyncPro.inc:463
+msgid "The operation timed out"
+msgstr "Operationen fik tids udløb"
+
+#  Programmer's name for it: swsaEConnRefused
+#. Programmer's name for it: swsaEConnRefused
+#: ggsetup_TpAsyncPro.inc:464
+msgid "The attempt to connect was forcibly refused"
+msgstr "Forsøg på at forbinde blev forkastet med overlæg"
+
+#  Programmer's name for it: swsaELoop
+#. Programmer's name for it: swsaELoop
+#: ggsetup_TpAsyncPro.inc:465
+msgid "WSAELOOP: see WSAELOOP"
+msgstr "WSAELOOP: se WSAELOOP"
+
+#  Programmer's name for it: swsaENameTooLong
+#. Programmer's name for it: swsaENameTooLong
+#: ggsetup_TpAsyncPro.inc:466
+msgid "The name is too long"
+msgstr "Navnet er for langt"
+
+#  Programmer's name for it: swsaEHostDown
+#. Programmer's name for it: swsaEHostDown
+#: ggsetup_TpAsyncPro.inc:467
+msgid "The host machine is down"
+msgstr "Værts maskinen er nede"
+
+#  Programmer's name for it: swsaEHostUnreach
+#. Programmer's name for it: swsaEHostUnreach
+#: ggsetup_TpAsyncPro.inc:468
+msgid "The host machine is unreachable"
+msgstr "Værts maskinen er ikke nåbar"
+
+#  Programmer's name for it: swsaENotEmpty
+#. Programmer's name for it: swsaENotEmpty
+#: ggsetup_TpAsyncPro.inc:469
+msgid "WSAENOTEMPTY"
+msgstr "WSAENOTEMPTY"
+
+#  Programmer's name for it: swsaEProcLim
+#. Programmer's name for it: swsaEProcLim
+#: ggsetup_TpAsyncPro.inc:470
+msgid "WSAEPROCLIM"
+msgstr "WSAEPROCLIM"
+
+#  Programmer's name for it: swsaEUsers
+#. Programmer's name for it: swsaEUsers
+#: ggsetup_TpAsyncPro.inc:471
+msgid "WSAEUSERS"
+msgstr "WSAEUSERS"
+
+#  Programmer's name for it: swsaEDQuot
+#. Programmer's name for it: swsaEDQuot
+#: ggsetup_TpAsyncPro.inc:472
+msgid "WSAEDQUOT"
+msgstr "WSAEDQUOT"
+
+#  Programmer's name for it: swsaEStale
+#. Programmer's name for it: swsaEStale
+#: ggsetup_TpAsyncPro.inc:473
+msgid "WSAESTALE"
+msgstr "WSAESTALE"
+
+#  Programmer's name for it: swsaERemote
+#. Programmer's name for it: swsaERemote
+#: ggsetup_TpAsyncPro.inc:474
+msgid "WSAEREMOTE"
+msgstr "WSAEREMOTE"
+
+#  Programmer's name for it: swsaSysNotReady
+#. Programmer's name for it: swsaSysNotReady
+#: ggsetup_TpAsyncPro.inc:477
+msgid "Network subsystem unusable"
+msgstr "Netværk underssytem ikke nåbar"
+
+#  Programmer's name for it: swsaVerNotSupported
+#. Programmer's name for it: swsaVerNotSupported
+#: ggsetup_TpAsyncPro.inc:478
+msgid "Version requested by WSAStartUp not supported by loaded Winsock DLL"
+msgstr ""
+"Version forespurgt af WSAStartUp ikke understøttet af lokal Winsock DLL"
+
+#  Programmer's name for it: swsaNotInitialised
+#. Programmer's name for it: swsaNotInitialised
+#: ggsetup_TpAsyncPro.inc:479
+msgid "WSAStartUp not yet called"
+msgstr "WSAStartUp ikke kaldt endnu"
+
+#  Programmer's name for it: swsaEDiscOn
+#. Programmer's name for it: swsaEDiscOn
+#: ggsetup_TpAsyncPro.inc:480
+msgid "WSAEDISCON"
+msgstr "WSAEDISCON"
+
+#  Programmer's name for it: swsaHost_Not_Found
+#. Programmer's name for it: swsaHost_Not_Found
+#: ggsetup_TpAsyncPro.inc:481
+msgid "Host not found"
+msgstr "Vært ikke fundet"
+
+#  Programmer's name for it: swsaTry_Again
+#. Programmer's name for it: swsaTry_Again
+#: ggsetup_TpAsyncPro.inc:482
+msgid "Host not found, or SERVERFAIL, can try again"
+msgstr "Vært ikke fundet, eller SERVERFAIL, kan forsøge igen"
+
+#  Programmer's name for it: swsaNo_Recovery
+#. Programmer's name for it: swsaNo_Recovery
+#: ggsetup_TpAsyncPro.inc:483
+msgid "Non recoverable errors, FORMERR, REFUSED, NOTIMP"
+msgstr "Ikke korregerbar fejl, FORMERR, REFUSED, NOTIMP"
+
+#  Programmer's name for it: swsaNo_Data
+#. Programmer's name for it: swsaNo_Data
+#: ggsetup_TpAsyncPro.inc:484
+msgid "Valid name, but no data record of requested type"
+msgstr "Valid navn, men ingen data post af forespurgt type"
+
+#  Programmer's name for it: stcs_Idle
+#. Programmer's name for it: stcs_Idle
+#: ggsetup_TpAsyncPro.inc:489
+msgid "Line is idle"
+msgstr "Linie er ledig"
+
+#  Programmer's name for it: stcs_Offering
+#. Programmer's name for it: stcs_Offering
+#: ggsetup_TpAsyncPro.inc:490
+msgid "Offering line..."
+msgstr "Tilbyder linie..."
+
+#  Programmer's name for it: stcs_Accepted
+#. Programmer's name for it: stcs_Accepted
+#: ggsetup_TpAsyncPro.inc:491
+msgid "Accepting call..."
+msgstr "Acceptere opkald..."
+
+#  Programmer's name for it: stcs_Dialtone
+#. Programmer's name for it: stcs_Dialtone
+#: ggsetup_TpAsyncPro.inc:492
+msgid "Dialtone detected"
+msgstr "Opkaldstone opdaget"
+
+#  Programmer's name for it: stcs_Dialing
+#. Programmer's name for it: stcs_Dialing
+#: ggsetup_TpAsyncPro.inc:493
+msgid "Dialing..."
+msgstr "Kalder op..."
+
+#  Programmer's name for it: stcs_Ringback
+#. Programmer's name for it: stcs_Ringback
+#: ggsetup_TpAsyncPro.inc:494
+msgid "Ringback detected"
+msgstr "Tilbagekald opdaget"
+
+#  Programmer's name for it: stcs_SpecialInfo
+#. Programmer's name for it: stcs_SpecialInfo
+#: ggsetup_TpAsyncPro.inc:496
+msgid "Special info"
+msgstr "Speciel info"
+
+#  Programmer's name for it: stcs_Connected
+#. Programmer's name for it: stcs_Connected
+#: ggsetup_TpAsyncPro.inc:497
+msgid "Connected!"
+msgstr "Forbundet!"
+
+#  Programmer's name for it: stcs_Proceeding
+#. Programmer's name for it: stcs_Proceeding
+#: ggsetup_TpAsyncPro.inc:498
+msgid "Proceeding..."
+msgstr "Behandler..."
+
+#  Programmer's name for it: stcs_OnHold
+#. Programmer's name for it: stcs_OnHold
+#: ggsetup_TpAsyncPro.inc:499
+msgid "On hold..."
+msgstr "På hold..."
+
+#  Programmer's name for it: stcs_Conferenced
+#. Programmer's name for it: stcs_Conferenced
+#: ggsetup_TpAsyncPro.inc:500
+msgid "Call conferenced"
+msgstr "Opkalds konference"
+
+#  Programmer's name for it: stcs_OnHoldPendConf
+#. Programmer's name for it: stcs_OnHoldPendConf
+#: ggsetup_TpAsyncPro.inc:501
+msgid "On hold pending conference..."
+msgstr "På hold forestående konference..."
+
+#  Programmer's name for it: stcs_OnHoldPendTransfer
+#. Programmer's name for it: stcs_OnHoldPendTransfer
+#: ggsetup_TpAsyncPro.inc:502
+msgid "On hold pending transfer..."
+msgstr "På hold forestående overførelse..."
+
+#  Programmer's name for it: stcs_Disconnected
+#. Programmer's name for it: stcs_Disconnected
+#: ggsetup_TpAsyncPro.inc:503
+msgid "Call disconnected (%s)"
+msgstr "Opkald afbrudt (%s)"
+
+#  Programmer's name for it: stcs_Unknown
+#. Programmer's name for it: stcs_Unknown
+#: ggsetup_TpAsyncPro.inc:504
+msgid "Unknown state"
+msgstr "Ukendt status"
+
+#  Programmer's name for it: stds_Disconnected
+#. Programmer's name for it: stds_Disconnected
+#: ggsetup_TpAsyncPro.inc:509
+msgid "Disconnected"
+msgstr "Afbrudt"
+
+#  Programmer's name for it: stds_MsgWaitOn
+#. Programmer's name for it: stds_MsgWaitOn
+#: ggsetup_TpAsyncPro.inc:510
+msgid "Message wait on"
+msgstr "Meddelelse vent slået til"
+
+#  Programmer's name for it: stds_MsgWaitOff
+#. Programmer's name for it: stds_MsgWaitOff
+#: ggsetup_TpAsyncPro.inc:511
+msgid "Message wait off"
+msgstr "Meddelelse vent slået fra"
+
+#  Programmer's name for it: stds_InService
+#. Programmer's name for it: stds_InService
+#: ggsetup_TpAsyncPro.inc:512
+msgid "In service"
+msgstr "Kører"
+
+#  Programmer's name for it: stds_OutOfService
+#. Programmer's name for it: stds_OutOfService
+#: ggsetup_TpAsyncPro.inc:513
+msgid "Out of service"
+msgstr "Kører ikke"
+
+#  Programmer's name for it: stds_Maintenance
+#. Programmer's name for it: stds_Maintenance
+#: ggsetup_TpAsyncPro.inc:514
+msgid "Maintenance change"
+msgstr "Vedligehold ændring"
+
+#  Programmer's name for it: stds_Open
+#. Programmer's name for it: stds_Open
+#: ggsetup_TpAsyncPro.inc:515
+msgid "Ppen change"
+msgstr "Ppen ændring"
+
+#  Programmer's name for it: stds_Close
+#. Programmer's name for it: stds_Close
+#: ggsetup_TpAsyncPro.inc:516
+msgid "Closed"
+msgstr "Lukket"
+
+#  Programmer's name for it: stds_NumCalls
+#. Programmer's name for it: stds_NumCalls
+#: ggsetup_TpAsyncPro.inc:517
+msgid "Number of calls changed"
+msgstr "Antal opkald ændret"
+
+#  Programmer's name for it: stds_NumCompletions
+#. Programmer's name for it: stds_NumCompletions
+#: ggsetup_TpAsyncPro.inc:518
+msgid "Number of completions changed"
+msgstr "Antal af tilendebragt ændret"
+
+#  Programmer's name for it: stds_Terminals
+#. Programmer's name for it: stds_Terminals
+#: ggsetup_TpAsyncPro.inc:519
+msgid "Terminals changed"
+msgstr "Terminaler ændret"
+
+#  Programmer's name for it: stds_RoamMode
+#. Programmer's name for it: stds_RoamMode
+#: ggsetup_TpAsyncPro.inc:520
+msgid "Roam mode changed"
+msgstr "Roam mode ændret"
+
+#  Programmer's name for it: stds_Battery
+#. Programmer's name for it: stds_Battery
+#: ggsetup_TpAsyncPro.inc:521
+msgid "Battery changed"
+msgstr "Batteri ændret"
+
+#  Programmer's name for it: stds_Signal
+#. Programmer's name for it: stds_Signal
+#: ggsetup_TpAsyncPro.inc:522
+msgid "Signal changed"
+msgstr "Signal ændret"
+
+#  Programmer's name for it: stds_DevSpecific
+#. Programmer's name for it: stds_DevSpecific
+#: ggsetup_TpAsyncPro.inc:523
+msgid "Device specific change"
+msgstr "Enhed specifik ændret"
+
+#  Programmer's name for it: stds_ReInit
+#. Programmer's name for it: stds_ReInit
+#: ggsetup_TpAsyncPro.inc:524
+msgid "Re-initialized"
+msgstr "Gen-initialiseret"
+
+#  Programmer's name for it: stds_Lock
+#. Programmer's name for it: stds_Lock
+#: ggsetup_TpAsyncPro.inc:525
+msgid "Lock change"
+msgstr "Lås ændret"
+
+#  Programmer's name for it: stds_CapsChange
+#. Programmer's name for it: stds_CapsChange
+#: ggsetup_TpAsyncPro.inc:526
+msgid "Caps change"
+msgstr "Caps ændret"
+
+#  Programmer's name for it: stds_ConfigChange
+#. Programmer's name for it: stds_ConfigChange
+#: ggsetup_TpAsyncPro.inc:527
+msgid "Configuration change"
+msgstr "Konfiguration ændret"
+
+#  Programmer's name for it: stds_TranslateChange
+#. Programmer's name for it: stds_TranslateChange
+#: ggsetup_TpAsyncPro.inc:528
+msgid "Translate change"
+msgstr "Oversættelse ændret"
+
+#  Programmer's name for it: stds_ComplCancel
+#. Programmer's name for it: stds_ComplCancel
+#: ggsetup_TpAsyncPro.inc:529
+msgid "Compltion cancel"
+msgstr "Compilering afbrudt"
+
+#  Programmer's name for it: AbLtMoveS
+#  Programmer's name for it: stds_Removed
+#. Programmer's name for it: stds_Removed
+#: ggsetup_TpAsyncPro.inc:530
+msgid "Removed"
+msgstr "Fjernet"
+
+#  Programmer's name for it: sTAPILineReply
+#. Programmer's name for it: sTAPILineReply
+#: ggsetup_TpAsyncPro.inc:533
+msgid "TAPI line reply"
+msgstr "TAPI linie svar"
+
+#  Programmer's name for it: sTAPIStateChange
+#. Programmer's name for it: sTAPIStateChange
+#: ggsetup_TpAsyncPro.inc:534
+msgid "TAPI state change"
+msgstr "TAPI status ændret"
+
+#  Programmer's name for it: sTAPIDialFail
+#. Programmer's name for it: sTAPIDialFail
+#: ggsetup_TpAsyncPro.inc:536
+msgid "Dial failed/no connection"
+msgstr "Opkald fejlede/ingen forbindelse"
+
+#  Programmer's name for it: sTAPIRetryWait
+#. Programmer's name for it: sTAPIRetryWait
+#: ggsetup_TpAsyncPro.inc:537
+msgid "Waiting for retry in %d seconds"
+msgstr "Venter på genkald om %d sekunder"
+
+#  Programmer's name for it: sTAPIDeviceInUse
+#. Programmer's name for it: sTAPIDeviceInUse
+#: ggsetup_TpAsyncPro.inc:538
+msgid "Device is in use by another application"
+msgstr "Enhed bruges af andet program"
+
+#  Programmer's name for it: sTAPIDisconnect_Unspecified
+#. Programmer's name for it: sTAPIDisconnect_Unspecified
+#: ggsetup_TpAsyncPro.inc:541
+msgid "Reason Unspecified"
+msgstr "Årsag er ikke angivet"
+
+#  Programmer's name for it: sTAPIDisconnect_Normal
+#. Programmer's name for it: sTAPIDisconnect_Normal
+#: ggsetup_TpAsyncPro.inc:542
+msgid "Normal Hangup by Remote"
+msgstr "Normal læg-på af Fjern"
+
+#  Programmer's name for it: sTAPIDisconnect_Unknown
+#. Programmer's name for it: sTAPIDisconnect_Unknown
+#: ggsetup_TpAsyncPro.inc:543
+msgid "Reason Unknown"
+msgstr "Årsag Ukendt"
+
+#  Programmer's name for it: sTAPIDisconnect_Reject
+#. Programmer's name for it: sTAPIDisconnect_Reject
+#: ggsetup_TpAsyncPro.inc:544
+msgid "Remote Rejected Call"
+msgstr "Fjern nægtede Opkald"
+
+#  Programmer's name for it: sTAPIDisconnect_PickUp
+#. Programmer's name for it: sTAPIDisconnect_PickUp
+#: ggsetup_TpAsyncPro.inc:545
+msgid "Call Picked Up Elsewhere"
+msgstr "Opkald taget andetsteds"
+
+#  Programmer's name for it: sTAPIDisconnect_Forwarded
+#. Programmer's name for it: sTAPIDisconnect_Forwarded
+#: ggsetup_TpAsyncPro.inc:546
+msgid "Call was Forwarded"
+msgstr "Kald blev vidrestillet"
+
+#  Programmer's name for it: sTAPIDisconnect_Busy
+#. Programmer's name for it: sTAPIDisconnect_Busy
+#: ggsetup_TpAsyncPro.inc:547
+msgid "Line was Busy"
+msgstr "Linies var Optaget"
+
+#  Programmer's name for it: sTAPIDisconnect_NoAnswer
+#. Programmer's name for it: sTAPIDisconnect_NoAnswer
+#: ggsetup_TpAsyncPro.inc:548
+msgid "No Answer by Remote"
+msgstr "Ingen svar fra Fjern"
+
+#  Programmer's name for it: sTAPIDisconnect_BadAddress
+#. Programmer's name for it: sTAPIDisconnect_BadAddress
+#: ggsetup_TpAsyncPro.inc:549
+msgid "Invalid Destination Address"
+msgstr "Ugyldig Destinations Adresse"
+
+#  Programmer's name for it: sTAPIDisconnect_Unreachable
+#. Programmer's name for it: sTAPIDisconnect_Unreachable
+#: ggsetup_TpAsyncPro.inc:550
+msgid "Remote Unreachable"
+msgstr "Fjern ikke nåbar"
+
+#  Programmer's name for it: sTAPIDisconnect_Congestion
+#. Programmer's name for it: sTAPIDisconnect_Congestion
+#: ggsetup_TpAsyncPro.inc:551
+msgid "Network Congestion"
+msgstr "Netværks forstoppelse"
+
+#  Programmer's name for it: sTAPIDisconnect_Incompatible
+#. Programmer's name for it: sTAPIDisconnect_Incompatible
+#: ggsetup_TpAsyncPro.inc:552
+msgid "Remote Equipment Incompatible"
+msgstr "Fjern Udstyr ikke kompatibelt"
+
+#  Programmer's name for it: sTAPIDisconnect_Unavail
+#. Programmer's name for it: sTAPIDisconnect_Unavail
+#: ggsetup_TpAsyncPro.inc:553
+msgid "Reason Unavailable"
+msgstr "Årsag ikke tilgængelig"
+
+#  Programmer's name for it: sTAPIDisconnect_NoDialtone
+#  Programmer's name for it: sModemNoDialtone
+#  Programmer's name for it: sNoDialtone
+#. Programmer's name for it: sTAPIDisconnect_NoDialtone
+#. Programmer's name for it: sModemNoDialtone
+#. Programmer's name for it: sNoDialtone
+#: ggsetup_TpAsyncPro.inc:554 ggsetup_TpAsyncPro.inc:769
+#: ggsetup_TpAsyncPro.inc:781
+msgid "No Dialtone"
+msgstr "Ingen Ringetone"
+
+#  Programmer's name for it: sTAPIDisconnect_NumberChanged
+#. Programmer's name for it: sTAPIDisconnect_NumberChanged
+#: ggsetup_TpAsyncPro.inc:555
+msgid "Number Changed"
+msgstr "Nummer Ændret"
+
+#  Programmer's name for it: sTAPIDisconnect_OutOfOrder
+#. Programmer's name for it: sTAPIDisconnect_OutOfOrder
+#: ggsetup_TpAsyncPro.inc:556
+msgid "Out of Order"
+msgstr "Virker Ikke"
+
+#  Programmer's name for it: sTAPIDisconnect_TempFailure
+#. Programmer's name for it: sTAPIDisconnect_TempFailure
+#: ggsetup_TpAsyncPro.inc:557
+msgid "Temporary Failure"
+msgstr "Temporær Fejl"
+
+#  Programmer's name for it: sTAPIDisconnect_QOSUnavail
+#. Programmer's name for it: sTAPIDisconnect_QOSUnavail
+#: ggsetup_TpAsyncPro.inc:558
+msgid "Quality of Service Unavail"
+msgstr "Service Kvalitet ikke tilgængelig"
+
+#  Programmer's name for it: AbPackedHeadingS
+#  Programmer's name for it: sTAPIDisconnect_Blocked
+#. Programmer's name for it: sTAPIDisconnect_Blocked
+#: ggsetup_TpAsyncPro.inc:559
+msgid "Blocked"
+msgstr "Blokkeret"
+
+#  Programmer's name for it: sTAPIDisconnect_DoNotDisturb
+#. Programmer's name for it: sTAPIDisconnect_DoNotDisturb
+#: ggsetup_TpAsyncPro.inc:560
+msgid "Do Not Disturb"
+msgstr "Afbryd Ikke"
+
+#  Programmer's name for it: sTAPIDisconnect_Cancelled
+#  Programmer's name for it: secVoIPCancelled
+#. Programmer's name for it: sTAPIDisconnect_Cancelled
+#. Programmer's name for it: secVoIPCancelled
+#: ggsetup_TpAsyncPro.inc:561 ggsetup_TpAsyncPro.inc:675
+msgid "Cancelled"
+msgstr "Afbrudt"
+
+#  Programmer's name for it: secAllocated
+#. Programmer's name for it: secAllocated
+#: ggsetup_TpAsyncPro.inc:564
+msgid "Already allocated"
+msgstr "Allerede allokeret"
+
+#  Programmer's name for it: secBadDeviceID
+#. Programmer's name for it: secBadDeviceID
+#: ggsetup_TpAsyncPro.inc:565
+msgid "Bad device ID"
+msgstr "Forkert enhed ID"
+
+#  Programmer's name for it: secBearerModeUnavail
+#. Programmer's name for it: secBearerModeUnavail
+#: ggsetup_TpAsyncPro.inc:566
+msgid "Bearer mode unavailable"
+msgstr "Bearer mode ikke tilgængelig"
+
+#  Programmer's name for it: secCallUnavail
+#. Programmer's name for it: secCallUnavail
+#: ggsetup_TpAsyncPro.inc:567
+msgid "Call unavailable"
+msgstr "Opkald ikke tilgængelig"
+
+#  Programmer's name for it: secCompletionOverrun
+#. Programmer's name for it: secCompletionOverrun
+#: ggsetup_TpAsyncPro.inc:568
+msgid "Completion overrun"
+msgstr "Afsluttelse overløb"
+
+#  Programmer's name for it: secConferenceFull
+#. Programmer's name for it: secConferenceFull
+#: ggsetup_TpAsyncPro.inc:569
+msgid "Conference full"
+msgstr "Konference fuld"
+
+#  Programmer's name for it: secDialBilling
+#  Programmer's name for it: secDialPrompt
+#  Programmer's name for it: secDialQuiet
+#. Programmer's name for it: secDialBilling
+#. Programmer's name for it: secDialPrompt
+#. Programmer's name for it: secDialQuiet
+#: ggsetup_TpAsyncPro.inc:570 ggsetup_TpAsyncPro.inc:572
+#: ggsetup_TpAsyncPro.inc:573
+msgid "Dial failed"
+msgstr "Opkald fejlede"
+
+#  Programmer's name for it: secDialDialtone
+#. Programmer's name for it: secDialDialtone
+#: ggsetup_TpAsyncPro.inc:571
+msgid "Dial failed, no dialtone"
+msgstr "Opkald fejlede, ingen opkaldstone"
+
+#  Programmer's name for it: secIncompatibleApiVersion
+#. Programmer's name for it: secIncompatibleApiVersion
+#: ggsetup_TpAsyncPro.inc:574
+msgid "Incompatible API version"
+msgstr "Ikke kompatibel API version"
+
+#  Programmer's name for it: secIncompatibleExtVersion
+#. Programmer's name for it: secIncompatibleExtVersion
+#: ggsetup_TpAsyncPro.inc:575
+msgid "Incompatible EXT version"
+msgstr "Ikke kompatibel EXT version"
+
+#  Programmer's name for it: secIniFileCorrupt
+#. Programmer's name for it: secIniFileCorrupt
+#: ggsetup_TpAsyncPro.inc:576
+msgid "INI file corrupt"
+msgstr "INI fil er korrupt"
+
+#  Programmer's name for it: secInUse
+#. Programmer's name for it: secInUse
+#: ggsetup_TpAsyncPro.inc:577
+msgid "Resource in use"
+msgstr "Resource er i brug"
+
+#  Programmer's name for it: AbBadStreamTypeS
+#  Programmer's name for it: secInvalAddress
+#. Programmer's name for it: secInvalAddress
+#: ggsetup_TpAsyncPro.inc:578
+msgid "Invalid address"
+msgstr "Ugyldig adresse"
+
+#  Programmer's name for it: AbBadStreamTypeS
+#  Programmer's name for it: secInvalAddressID
+#. Programmer's name for it: secInvalAddressID
+#: ggsetup_TpAsyncPro.inc:579
+msgid "Invalid address ID"
+msgstr "Ugyldig adresse ID"
+
+#  Programmer's name for it: AbInvalidIndexS
+#  Programmer's name for it: secInvalAddressMode
+#. Programmer's name for it: secInvalAddressMode
+#: ggsetup_TpAsyncPro.inc:580
+msgid "Invalid address mode"
+msgstr "Ugyldig adresse mode"
+
+#  Programmer's name for it: AbInvalidCabTemplateS
+#  Programmer's name for it: secInvalAddressState
+#. Programmer's name for it: secInvalAddressState
+#: ggsetup_TpAsyncPro.inc:581
+msgid "Invalid address state"
+msgstr "Ugyldig adresse status"
+
+#  Programmer's name for it: secInvalAppHandle
+#. Programmer's name for it: secInvalAppHandle
+#: ggsetup_TpAsyncPro.inc:582
+msgid "Invalid application handle"
+msgstr "Ugyldig program håndtag"
+
+#  Programmer's name for it: sRSAPublicKeyErr
+#  Programmer's name for it: secInvalAppName
+#. Programmer's name for it: secInvalAppName
+#: ggsetup_TpAsyncPro.inc:583
+msgid "Invalid Application name"
+msgstr "Ugyldig Program navn"
+
+#  Programmer's name for it: AbInvalidIndexS
+#  Programmer's name for it: secInvalBearerMode
+#. Programmer's name for it: secInvalBearerMode
+#: ggsetup_TpAsyncPro.inc:584
+msgid "Invalid bearer mode"
+msgstr "Ugyldig bearer mode"
+
+#  Programmer's name for it: AbCmpndInvalidFile
+#  Programmer's name for it: secInvalCallComplMode
+#. Programmer's name for it: secInvalCallComplMode
+#: ggsetup_TpAsyncPro.inc:585
+msgid "Invalid call completion mode"
+msgstr "Ugyldig kald afslutelses mode"
+
+#  Programmer's name for it: AbCmpndInvalidFile
+#  Programmer's name for it: secInvalCallHandle
+#. Programmer's name for it: secInvalCallHandle
+#: ggsetup_TpAsyncPro.inc:586
+msgid "Invalid call handle"
+msgstr "Ugyldig kald håndtag"
+
+#  Programmer's name for it: AbInvalidCabTemplateS
+#  Programmer's name for it: secInvalCallParams
+#. Programmer's name for it: secInvalCallParams
+#: ggsetup_TpAsyncPro.inc:587
+msgid "Invalid call parameters"
+msgstr "Ugyldig kald parametre"
+
+#  Programmer's name for it: sRSAPrivateKeyErr
+#  Programmer's name for it: secInvalCallPrivilege
+#. Programmer's name for it: secInvalCallPrivilege
+#: ggsetup_TpAsyncPro.inc:588
+msgid "Invalid call privilege"
+msgstr "Ugyldig kald tilladelse"
+
+#  Programmer's name for it: AbInvalidCabTemplateS
+#  Programmer's name for it: secInvalCallSelect
+#. Programmer's name for it: secInvalCallSelect
+#: ggsetup_TpAsyncPro.inc:589
+msgid "Invalid call select"
+msgstr "Ugyldig kald vælg"
+
+#  Programmer's name for it: AbInvalidCabTemplateS
+#  Programmer's name for it: secInvalCallState
+#. Programmer's name for it: secInvalCallState
+#: ggsetup_TpAsyncPro.inc:590
+msgid "Invalid call state"
+msgstr "Ugyldig kald status"
+
+#  Programmer's name for it: AbInvalidCabTemplateS
+#  Programmer's name for it: secInvalCallStatelist
+#. Programmer's name for it: secInvalCallStatelist
+#: ggsetup_TpAsyncPro.inc:591
+msgid "Invalid call state list"
+msgstr "Ugyldig kald status liste"
+
+#  Programmer's name for it: AbBadStreamTypeS
+#  Programmer's name for it: secInvalCard
+#. Programmer's name for it: secInvalCard
+#: ggsetup_TpAsyncPro.inc:592
+msgid "Invalid card"
+msgstr "Ugyldig kort"
+
+#  Programmer's name for it: AbCmpndInvalidFile
+#  Programmer's name for it: secInvalCompletionID
+#. Programmer's name for it: secInvalCompletionID
+#: ggsetup_TpAsyncPro.inc:593
+msgid "Invalid completion ID"
+msgstr "Ugyldig afsluttelse ID"
+
+#  Programmer's name for it: secInvalConfCallHandle
+#. Programmer's name for it: secInvalConfCallHandle
+#: ggsetup_TpAsyncPro.inc:594
+msgid "Invalid conference call handle"
+msgstr "Ugyldig konference opkald håndtag"
+
+#  Programmer's name for it: secInvalConsultCallHandle
+#. Programmer's name for it: secInvalConsultCallHandle
+#: ggsetup_TpAsyncPro.inc:595
+msgid "Invalid consultation call handle"
+msgstr "Ugyldig konsultation opkald håndtag"
+
+#  Programmer's name for it: AbCmpndInvalidFile
+#  Programmer's name for it: secInvalCountryCode
+#. Programmer's name for it: secInvalCountryCode
+#: ggsetup_TpAsyncPro.inc:596
+msgid "Invalid country code"
+msgstr "Ugyldig lande kode"
+
+#  Programmer's name for it: AbInvalidFactorS
+#  Programmer's name for it: AbInvalidFactorS
+#  Programmer's name for it: secInvalDeviceClass
+#. Programmer's name for it: secInvalDeviceClass
+#: ggsetup_TpAsyncPro.inc:597
+msgid "Invalid device class"
+msgstr "Ugyldig enheds klasse"
+
+#  Programmer's name for it: AbInvalidIndexS
+#  Programmer's name for it: secInvalDeviceHandle
+#. Programmer's name for it: secInvalDeviceHandle
+#: ggsetup_TpAsyncPro.inc:598
+msgid "Invalid device handle"
+msgstr "Ugyldig enheds håndtag"
+
+#  Programmer's name for it: AbBadStreamTypeS
+#  Programmer's name for it: secInvalDialParams
+#. Programmer's name for it: secInvalDialParams
+#: ggsetup_TpAsyncPro.inc:599
+msgid "Invalid dial params"
+msgstr "Ugyldig opkalds parametre"
+
+#  Programmer's name for it: AbBBSInvalidOriginS
+#  Programmer's name for it: secInvalDigitList
+#. Programmer's name for it: secInvalDigitList
+#: ggsetup_TpAsyncPro.inc:600
+msgid "Invalid digit list"
+msgstr "Ugyldig cifre liste"
+
+#  Programmer's name for it: AbInvalidIndexS
+#  Programmer's name for it: secInvalDigitMode
+#. Programmer's name for it: secInvalDigitMode
+#: ggsetup_TpAsyncPro.inc:601
+msgid "Invalid digit mode"
+msgstr "Ugyldig cifre mode"
+
+#  Programmer's name for it: AbGzipInvalidS
+#  Programmer's name for it: secInvalDigits
+#. Programmer's name for it: secInvalDigits
+#: ggsetup_TpAsyncPro.inc:602
+msgid "Invalid digits"
+msgstr "Ugyldig cifre"
+
+#  Programmer's name for it: AbBadStreamTypeS
+#  Programmer's name for it: secInvalExtVersion
+#. Programmer's name for it: secInvalExtVersion
+#: ggsetup_TpAsyncPro.inc:603
+msgid "Invalid ext version"
+msgstr "Ugyldig udvidelses version"
+
+#  Programmer's name for it: AbGzipInvalidS
+#  Programmer's name for it: secInvalGroupID
+#. Programmer's name for it: secInvalGroupID
+#: ggsetup_TpAsyncPro.inc:604
+msgid "Invalid group ID"
+msgstr "Ugyldig gruppe ID"
+
+#  Programmer's name for it: AbBBSInvalidOriginS
+#  Programmer's name for it: secInvalLineHandle
+#. Programmer's name for it: secInvalLineHandle
+#: ggsetup_TpAsyncPro.inc:605
+msgid "Invalid line handle"
+msgstr "Ugyldig linie håndtag"
+
+#  Programmer's name for it: AbInvalidCabTemplateS
+#  Programmer's name for it: secInvalLineState
+#. Programmer's name for it: secInvalLineState
+#: ggsetup_TpAsyncPro.inc:606
+msgid "Invalid line state"
+msgstr "Ugyldig linie status"
+
+#  Programmer's name for it: AbInvalidFactorS
+#  Programmer's name for it: AbInvalidFactorS
+#  Programmer's name for it: secInvalLocation
+#. Programmer's name for it: secInvalLocation
+#: ggsetup_TpAsyncPro.inc:607
+msgid "Invalid location"
+msgstr "Ugyldig lokation"
+
+#  Programmer's name for it: AbBadStreamTypeS
+#  Programmer's name for it: secInvalMediaList
+#. Programmer's name for it: secInvalMediaList
+#: ggsetup_TpAsyncPro.inc:608
+msgid "Invalid media list"
+msgstr "Ugyldig medie liste"
+
+#  Programmer's name for it: AbBadStreamTypeS
+#  Programmer's name for it: secInvalMediaMode
+#. Programmer's name for it: secInvalMediaMode
+#: ggsetup_TpAsyncPro.inc:609
+msgid "Invalid media mode"
+msgstr "Ugyldig medie mode"
+
+#  Programmer's name for it: AbBadStreamTypeS
+#  Programmer's name for it: secInvalMessageID
+#. Programmer's name for it: secInvalMessageID
+#: ggsetup_TpAsyncPro.inc:610
+msgid "Invalid message ID"
+msgstr "Ugyldig meddelelse ID"
+
+#  Programmer's name for it: AbBadStreamTypeS
+#  Programmer's name for it: secInvalParam
+#  Programmer's name for it: ApdStrTTSERR_INVALIDPARAM
+#  Programmer's name for it: ApdStrSRERR_INVALIDPARAM
+#. Programmer's name for it: secInvalParam
+#. Programmer's name for it: ApdStrTTSERR_INVALIDPARAM
+#. Programmer's name for it: ApdStrSRERR_INVALIDPARAM
+#: ggsetup_TpAsyncPro.inc:611 ggsetup_TpAsyncPro.inc:868
+#: ggsetup_TpAsyncPro.inc:885
+msgid "Invalid parameter"
+msgstr "Ugyldig parameter"
+
+#  Programmer's name for it: AbGzipInvalidS
+#  Programmer's name for it: secInvalParkID
+#. Programmer's name for it: secInvalParkID
+#: ggsetup_TpAsyncPro.inc:612
+msgid "Invalid park ID"
+msgstr "Ugyldig park ID"
+
+#  Programmer's name for it: AbInvalidIndexS
+#  Programmer's name for it: secInvalParkMode
+#. Programmer's name for it: secInvalParkMode
+#: ggsetup_TpAsyncPro.inc:613
+msgid "Invalid park mode"
+msgstr "Ugyldig park mode"
+
+#  Programmer's name for it: AbBadStreamTypeS
+#  Programmer's name for it: secInvalPointer
+#. Programmer's name for it: secInvalPointer
+#: ggsetup_TpAsyncPro.inc:614
+msgid "Invalid pointer"
+msgstr "Ugyldig peger"
+
+#  Programmer's name for it: sRSAPrivateKeyErr
+#  Programmer's name for it: secInvalPrivSelect
+#. Programmer's name for it: secInvalPrivSelect
+#: ggsetup_TpAsyncPro.inc:615
+msgid "Invalid privilege select"
+msgstr "Ugyldig tilladelse valg"
+
+#  Programmer's name for it: AbBadStreamTypeS
+#  Programmer's name for it: secInvalRate
+#. Programmer's name for it: secInvalRate
+#: ggsetup_TpAsyncPro.inc:616
+msgid "Invalid rate"
+msgstr "Ugyldig rate"
+
+#  Programmer's name for it: AbBadStreamTypeS
+#  Programmer's name for it: secInvalRequestMode
+#. Programmer's name for it: secInvalRequestMode
+#: ggsetup_TpAsyncPro.inc:617
+msgid "Invalid request mode"
+msgstr "Ugyldig forespørgelse mode"
+
+#  Programmer's name for it: AbBadStreamTypeS
+#  Programmer's name for it: secInvalTerminalID
+#. Programmer's name for it: secInvalTerminalID
+#: ggsetup_TpAsyncPro.inc:618
+msgid "Invalid terminal ID"
+msgstr "Ugyldig terminal ID"
+
+#  Programmer's name for it: AbBadStreamTypeS
+#  Programmer's name for it: secInvalTerminalMode
+#. Programmer's name for it: secInvalTerminalMode
+#: ggsetup_TpAsyncPro.inc:619
+msgid "Invalid terminal mode"
+msgstr "Ugyldig terminal mode"
+
+#  Programmer's name for it: AbBadStreamTypeS
+#  Programmer's name for it: secInvalTimeout
+#. Programmer's name for it: secInvalTimeout
+#: ggsetup_TpAsyncPro.inc:620
+msgid "Invalid timeout"
+msgstr "Ugyldig tids udløb"
+
+#  Programmer's name for it: AbBadStreamTypeS
+#  Programmer's name for it: secInvalTone
+#. Programmer's name for it: secInvalTone
+#: ggsetup_TpAsyncPro.inc:621
+msgid "Invalid tone"
+msgstr "Ugyldig tone"
+
+#  Programmer's name for it: AbBadStreamTypeS
+#  Programmer's name for it: secInvalToneList
+#. Programmer's name for it: secInvalToneList
+#: ggsetup_TpAsyncPro.inc:622
+msgid "Invalid tone list"
+msgstr "Ugyldig tone list"
+
+#  Programmer's name for it: AbBadStreamTypeS
+#  Programmer's name for it: secInvalToneMode
+#. Programmer's name for it: secInvalToneMode
+#: ggsetup_TpAsyncPro.inc:623
+msgid "Invalid tone mode"
+msgstr "Ugyldig tone mode"
+
+#  Programmer's name for it: AbBadStreamTypeS
+#  Programmer's name for it: secInvalTransferMode
+#. Programmer's name for it: secInvalTransferMode
+#: ggsetup_TpAsyncPro.inc:624
+msgid "Invalid transfer mode"
+msgstr "Ugyldig overførelses mode"
+
+#  Programmer's name for it: secLineMapperFailed
+#. Programmer's name for it: secLineMapperFailed
+#: ggsetup_TpAsyncPro.inc:625
+msgid "Line mapper failed"
+msgstr "Linie mapper fejl"
+
+#  Programmer's name for it: secNoConference
+#. Programmer's name for it: secNoConference
+#: ggsetup_TpAsyncPro.inc:626
+msgid "No conference"
+msgstr "Ingen konference"
+
+#  Programmer's name for it: secNoDevice
+#. Programmer's name for it: secNoDevice
+#: ggsetup_TpAsyncPro.inc:627
+msgid "No device"
+msgstr "Ingen enhed"
+
+#  Programmer's name for it: secNoDriver
+#. Programmer's name for it: secNoDriver
+#: ggsetup_TpAsyncPro.inc:628
+msgid "No driver"
+msgstr "Ingen driver"
+
+#  Programmer's name for it: sBINoNumber
+#  Programmer's name for it: secNoMem
+#. Programmer's name for it: secNoMem
+#: ggsetup_TpAsyncPro.inc:629
+msgid "No memory"
+msgstr "Ingen hukommelse"
+
+#  Programmer's name for it: secNoRequest
+#. Programmer's name for it: secNoRequest
+#: ggsetup_TpAsyncPro.inc:630
+msgid "No request"
+msgstr "Ingen forespørgsel"
+
+#  Programmer's name for it: secNotOwner
+#. Programmer's name for it: secNotOwner
+#: ggsetup_TpAsyncPro.inc:631
+msgid "Not owner"
+msgstr "Ikke ejer"
+
+#  Programmer's name for it: secNotRegistered
+#. Programmer's name for it: secNotRegistered
+#: ggsetup_TpAsyncPro.inc:632
+msgid "Not registered"
+msgstr "Ikke registreret"
+
+#  Programmer's name for it: sRSADecryptErr
+#  Programmer's name for it: secOperationFailed
+#. Programmer's name for it: secOperationFailed
+#: ggsetup_TpAsyncPro.inc:633
+msgid "Operation failed"
+msgstr "Operation fejlede"
+
+#  Programmer's name for it: secOperationUnavail
+#. Programmer's name for it: secOperationUnavail
+#: ggsetup_TpAsyncPro.inc:634
+msgid "Operation unavailable"
+msgstr "Operation ikke tilgængelig"
+
+#  Programmer's name for it: secRateUnavail
+#. Programmer's name for it: secRateUnavail
+#: ggsetup_TpAsyncPro.inc:635
+msgid "Rate unavailable"
+msgstr "Rate ikke tilgængelig"
+
+#  Programmer's name for it: secResourceUnavail
+#. Programmer's name for it: secResourceUnavail
+#: ggsetup_TpAsyncPro.inc:636
+msgid "Resource unavailable"
+msgstr "Resource ikke tilgængelig"
+
+#  Programmer's name for it: secRequestOverrun
+#. Programmer's name for it: secRequestOverrun
+#: ggsetup_TpAsyncPro.inc:637
+msgid "Request overrun"
+msgstr "Forespørgsel overløb"
+
+#  Programmer's name for it: secStructureTooSmall
+#. Programmer's name for it: secStructureTooSmall
+#: ggsetup_TpAsyncPro.inc:638
+msgid "Structure too small"
+msgstr "Struktur for lille"
+
+#  Programmer's name for it: AbCmpndFileNotFound
+#  Programmer's name for it: secTargetNotFound
+#. Programmer's name for it: secTargetNotFound
+#: ggsetup_TpAsyncPro.inc:639
+msgid "Target not found"
+msgstr "Destination ikke fundet"
+
+#  Programmer's name for it: secTargetSelf
+#. Programmer's name for it: secTargetSelf
+#: ggsetup_TpAsyncPro.inc:640
+msgid "Target is self"
+msgstr "Destination ikke selv"
+
+#  Programmer's name for it: secUninitialized
+#. Programmer's name for it: secUninitialized
+#: ggsetup_TpAsyncPro.inc:641
+msgid "Uninitialized"
+msgstr "Ikke initialiseret"
+
+#  Programmer's name for it: sModulusStringTooBig
+#  Programmer's name for it: secUserUserInfoTooBig
+#. Programmer's name for it: secUserUserInfoTooBig
+#: ggsetup_TpAsyncPro.inc:642
+msgid "User info too big"
+msgstr "Bruger info for stor"
+
+#  Programmer's name for it: secReinit
+#. Programmer's name for it: secReinit
+#: ggsetup_TpAsyncPro.inc:643
+msgid "Reinit failed"
+msgstr "Gen-initialiseringen fejlede"
+
+#  Programmer's name for it: secAddressBlocked
+#. Programmer's name for it: secAddressBlocked
+#: ggsetup_TpAsyncPro.inc:644
+msgid "Address blocked"
+msgstr "Adresse blokeret"
+
+#  Programmer's name for it: secBillingRejected
+#. Programmer's name for it: secBillingRejected
+#: ggsetup_TpAsyncPro.inc:645
+msgid "Billing rejected"
+msgstr "Afregning forkastet"
+
+#  Programmer's name for it: AbBadStreamTypeS
+#  Programmer's name for it: secInvalFeature
+#. Programmer's name for it: secInvalFeature
+#: ggsetup_TpAsyncPro.inc:646
+msgid "Invalid feature"
+msgstr "Ugyldig egenskab"
+
+#  Programmer's name for it: secNoMultipleInstance
+#. Programmer's name for it: secNoMultipleInstance
+#: ggsetup_TpAsyncPro.inc:647
+msgid "No multiple instance"
+msgstr "Ingen flere instans"
+
+#  Programmer's name for it: secTapiBusy
+#. Programmer's name for it: secTapiBusy
+#: ggsetup_TpAsyncPro.inc:652
+msgid "TAPI already open, dialing or answering"
+msgstr "TAPI allerede åben, ringer eller besvarer"
+
+#  Programmer's name for it: secTapiNotSet
+#. Programmer's name for it: secTapiNotSet
+#: ggsetup_TpAsyncPro.inc:653
+msgid "TapiMode not set in TApdComPort"
+msgstr "TapiMode ikke sat i TApdComPort"
+
+#  Programmer's name for it: secTapiNoSelect
+#. Programmer's name for it: secTapiNoSelect
+#: ggsetup_TpAsyncPro.inc:654
+msgid "No TAPI device selected"
+msgstr "Ingen TAPI enhed valgt"
+
+#  Programmer's name for it: secTapiLoadFail
+#. Programmer's name for it: secTapiLoadFail
+#: ggsetup_TpAsyncPro.inc:655
+msgid "Failed to find/load TAPI.DLL"
+msgstr "Fejlede af finde/hente TAPI.DLL"
+
+#  Programmer's name for it: secTapiGetAddrFail
+#. Programmer's name for it: secTapiGetAddrFail
+#: ggsetup_TpAsyncPro.inc:656
+msgid "Failed to get TAPI address"
+msgstr "Fejlede at hente TAPI adresse"
+
+#  Programmer's name for it: sTAPIdisabled16bit
+#. Programmer's name for it: sTAPIdisabled16bit
+#: ggsetup_TpAsyncPro.inc:657
+msgid "TAPI disabled for 16-bit environments"
+msgstr "TAPI slået fra i 16-bit miljø"
+
+#  Programmer's name for it: secTapiUnexpected
+#. Programmer's name for it: secTapiUnexpected
+#: ggsetup_TpAsyncPro.inc:658
+msgid "Unexpected TAPI error"
+msgstr "Ikke forventet TAPI fejl"
+
+#  Programmer's name for it: secTapiVoiceNotSupported
+#. Programmer's name for it: secTapiVoiceNotSupported
+#: ggsetup_TpAsyncPro.inc:659
+msgid "TAPI device does not support voice extensions"
+msgstr "TAPI enhed undstøtter ikke stemme udvidelse"
+
+#  Programmer's name for it: AbFCIFileCloseErrorS
+#  Programmer's name for it: secTapiWaveFail
+#. Programmer's name for it: secTapiWaveFail
+#: ggsetup_TpAsyncPro.inc:660
+msgid "TAPI wave file error"
+msgstr "TAPI wav fil fejl"
+
+#  Programmer's name for it: secTapiCIDBlocked
+#. Programmer's name for it: secTapiCIDBlocked
+#: ggsetup_TpAsyncPro.inc:661
+msgid "Caller ID Blocked"
+msgstr "Opkald ID blokeret"
+
+#  Programmer's name for it: secTapiCIDOutOfArea
+#. Programmer's name for it: secTapiCIDOutOfArea
+#: ggsetup_TpAsyncPro.inc:662
+msgid "Out of Area Call"
+msgstr "Uden for område Opkald"
+
+#  Programmer's name for it: AbInvalidCabFileS
+#  Programmer's name for it: secTapiWaveFormatError
+#. Programmer's name for it: secTapiWaveFormatError
+#: ggsetup_TpAsyncPro.inc:663
+msgid "The selected file is not a wave file"
+msgstr "Den valgte fil er ikke en wav fil"
+
+#  Programmer's name for it: secTapiWaveReadError
+#. Programmer's name for it: secTapiWaveReadError
+#: ggsetup_TpAsyncPro.inc:664
+msgid "Unable to read wave file data"
+msgstr "Ikke i stand til at læse wav fil data"
+
+#  Programmer's name for it: secTapiWaveBadFormat
+#. Programmer's name for it: secTapiWaveBadFormat
+#: ggsetup_TpAsyncPro.inc:665
+msgid "Unsupported wave format"
+msgstr "Ikke understøttet wav format"
+
+#  Programmer's name for it: secTapiTranslateFail
+#. Programmer's name for it: secTapiTranslateFail
+#: ggsetup_TpAsyncPro.inc:666
+msgid "Unable to translate address"
+msgstr "Ikke i stand til at oversætte adresse"
+
+#  Programmer's name for it: secTapiWaveDeviceInUse
+#. Programmer's name for it: secTapiWaveDeviceInUse
+#: ggsetup_TpAsyncPro.inc:667
+msgid "Wave device in use"
+msgstr "Wav enhed er i brug"
+
+#  Programmer's name for it: secTapiWaveFileExists
+#. Programmer's name for it: secTapiWaveFileExists
+#: ggsetup_TpAsyncPro.inc:668
+msgid "Wave file already exists"
+msgstr "Wav fil findes allerede"
+
+#  Programmer's name for it: secTapiWaveNoData
+#. Programmer's name for it: secTapiWaveNoData
+#: ggsetup_TpAsyncPro.inc:669
+msgid "No wave data available"
+msgstr "Ingen wav data tilgængelig"
+
+#  Programmer's name for it: secVoIPNotSupported
+#  Programmer's name for it: sVoIPNotAvailable
+#. Programmer's name for it: secVoIPNotSupported
+#. Programmer's name for it: sVoIPNotAvailable
+#: ggsetup_TpAsyncPro.inc:671 ggsetup_TpAsyncPro.inc:800
+msgid "Voice over IP not available (requires Windows 2000 and above)"
+msgstr "Stemme over IP ikke tilgængelig (kræver Windows 2000 eller større)"
+
+#  Programmer's name for it: secVoIPCallBusy
+#. Programmer's name for it: secVoIPCallBusy
+#: ggsetup_TpAsyncPro.inc:672
+msgid "Remote was busy"
+msgstr "Fjern var optaget"
+
+#  Programmer's name for it: secVoIPBadAddress
+#. Programmer's name for it: secVoIPBadAddress
+#: ggsetup_TpAsyncPro.inc:673
+msgid "Destination address bad"
+msgstr "Forkert Destination adresse "
+
+#  Programmer's name for it: secVoIPNoAnswer
+#. Programmer's name for it: secVoIPNoAnswer
+#: ggsetup_TpAsyncPro.inc:674
+msgid "Remote did not answer"
+msgstr "Fjern svarede ikke"
+
+#  Programmer's name for it: secVoIPRejected
+#. Programmer's name for it: secVoIPRejected
+#: ggsetup_TpAsyncPro.inc:676
+msgid "Remote rejected the call"
+msgstr "Fjern forkastede opkaldet"
+
+#  Programmer's name for it: sDSASignatureErr
+#  Programmer's name for it: secVoIPTapi3NotInstalled
+#. Programmer's name for it: secVoIPTapi3NotInstalled
+#: ggsetup_TpAsyncPro.inc:678
+msgid "ITTapi interface failure"
+msgstr "ITTapi interface fejl"
+
+#  Programmer's name for it: secVoIPH323NotFound
+#. Programmer's name for it: secVoIPH323NotFound
+#: ggsetup_TpAsyncPro.inc:679
+msgid "H.323 line not found"
+msgstr "H.323 linie ikke fundet"
+
+#  Programmer's name for it: secVoIPTapi3EventFailure
+#. Programmer's name for it: secVoIPTapi3EventFailure
+#: ggsetup_TpAsyncPro.inc:680
+msgid "Event notify failure"
+msgstr "Hændelse giv besked fejl"
+
+#  Programmer's name for it: secRasLoadFail
+#. Programmer's name for it: secRasLoadFail
+#: ggsetup_TpAsyncPro.inc:683
+msgid "Failed to find/load RASAPI32.DLL"
+msgstr "Fejlede af finde/hente RASAPI32.DLL"
+
+#  Programmer's name for it: sIENotInstalled
+#. Programmer's name for it: sIENotInstalled
+#: ggsetup_TpAsyncPro.inc:693
+msgid "Cannot open WININET, Microsoft IE required"
+msgstr "Kan ikke åbne WININET, Microsoft IE krævet"
+
+#  Programmer's name for it: AbFCIFileOpenErrorS
+#  Programmer's name for it: sOpenFileFailed
+#. Programmer's name for it: sOpenFileFailed
+#: ggsetup_TpAsyncPro.inc:694
+msgid "Unable to open file "
+msgstr "Kan ikke åbne fil"
+
+#  Programmer's name for it: AbCmpndFileNotFound
+#  Programmer's name for it: sFileNotFound
+#. Programmer's name for it: sFileNotFound
+#: ggsetup_TpAsyncPro.inc:695
+msgid "File %s could not be found"
+msgstr "File %s blev ikke fundet"
+
+#  Programmer's name for it: sAllocSrcMemFailed
+#. Programmer's name for it: sAllocSrcMemFailed
+#: ggsetup_TpAsyncPro.inc:696
+msgid "Unable to allocate memory for XML source"
+msgstr "Ikke i stand til at allokere hukommelse til XML source"
+
+#  Programmer's name for it: sHttpReadReqFailed
+#. Programmer's name for it: sHttpReadReqFailed
+#: ggsetup_TpAsyncPro.inc:697
+msgid "Http read request failed"
+msgstr "Http læse forspørgsel fejlede"
+
+#  Programmer's name for it: sHttpDataNotAvail
+#. Programmer's name for it: sHttpDataNotAvail
+#: ggsetup_TpAsyncPro.inc:698
+msgid "Http data not available"
+msgstr "Http data ikke tilgængelig"
+
+#  Programmer's name for it: sHttpReqSendFailed
+#. Programmer's name for it: sHttpReqSendFailed
+#: ggsetup_TpAsyncPro.inc:699
+msgid "Unable to send http request"
+msgstr "Ikke i stand til at sende http forespørgsel"
+
+#  Programmer's name for it: sHttpReqOpenFailed
+#. Programmer's name for it: sHttpReqOpenFailed
+#: ggsetup_TpAsyncPro.inc:700
+msgid "Unable to open http request"
+msgstr "Ikke i stand til at åbne http forespørgsel"
+
+#  Programmer's name for it: sInetConnectFailed
+#. Programmer's name for it: sInetConnectFailed
+#: ggsetup_TpAsyncPro.inc:701
+msgid "Unable to make Internet connection"
+msgstr "Ikke i stand til at lave en internet forbindelse"
+
+#  Programmer's name for it: sInetOpenFailed
+#. Programmer's name for it: sInetOpenFailed
+#: ggsetup_TpAsyncPro.inc:702
+msgid "Unable to open Internet"
+msgstr "Ikke i stand til at åbne Internet"
+
+#  Programmer's name for it: AbInvalidCabTemplateS
+#  Programmer's name for it: sInvalidFtpLoc
+#. Programmer's name for it: sInvalidFtpLoc
+#: ggsetup_TpAsyncPro.inc:703
+msgid "Invalid ftp location"
+msgstr "Ugyldig ftp lokation"
+
+#  Programmer's name for it: AbInvalidFactorS
+#  Programmer's name for it: AbInvalidFactorS
+#  Programmer's name for it: sInvalidFtpDir
+#. Programmer's name for it: sInvalidFtpDir
+#: ggsetup_TpAsyncPro.inc:704
+msgid "Invalid ftp directory"
+msgstr "Ugyldig ftp folder"
+
+#  Programmer's name for it: sFtpReadReqFailed
+#. Programmer's name for it: sFtpReadReqFailed
+#: ggsetup_TpAsyncPro.inc:705
+msgid "Ftp read request failed"
+msgstr "Ftp læse forespørgsel fejlede"
+
+#  Programmer's name for it: sFtpDataNotAvail
+#. Programmer's name for it: sFtpDataNotAvail
+#: ggsetup_TpAsyncPro.inc:706
+msgid "Ftp data not available"
+msgstr "Ftp data ikke tilgængelig"
+
+#  Programmer's name for it: sFtpOpenFileFailed
+#. Programmer's name for it: sFtpOpenFileFailed
+#: ggsetup_TpAsyncPro.inc:707
+msgid "Unable to open ftp file"
+msgstr "Ikke i stand til at åbne ftp fil"
+
+#  Programmer's name for it: sFtpPutFileFailed
+#. Programmer's name for it: sFtpPutFileFailed
+#: ggsetup_TpAsyncPro.inc:708
+msgid "Could not save file via ftp to %s"
+msgstr "Kunne ikke gemme fil via ftp til %s"
+
+#  Programmer's name for it: sSrcLoadFailed
+#. Programmer's name for it: sSrcLoadFailed
+#: ggsetup_TpAsyncPro.inc:709
+msgid "Unable to load source "
+msgstr "Ikke i stand til at hente source"
+
+#  Programmer's name for it: AbCmpndInvalidFile
+#  Programmer's name for it: sInvalidMemPtr
+#. Programmer's name for it: sInvalidMemPtr
+#: ggsetup_TpAsyncPro.inc:710
+msgid "Invalid memory Pointer"
+msgstr "Ugyldig hukommelses peger"
+
+#  Programmer's name for it: sFmtErrorMsg
+#. Programmer's name for it: sFmtErrorMsg
+#: ggsetup_TpAsyncPro.inc:711
+msgid "Line: %d Col: %d Error: %s"
+msgstr "Linie: %d Kol: %d Fejl: %s"
+
+#  Programmer's name for it: sIndexOutOfBounds
+#. Programmer's name for it: sIndexOutOfBounds
+#: ggsetup_TpAsyncPro.inc:712
+msgid "ERROR INDEX OUT OF BOUNDS"
+msgstr "ERROR INDEX OUT OF BOUNDS"
+
+#  Programmer's name for it: sExpMarkupDecl
+#. Programmer's name for it: sExpMarkupDecl
+#: ggsetup_TpAsyncPro.inc:713
+msgid "Expected markup declaration, but found: "
+msgstr "Forventede makeup erklæring, men fandt: "
+
+#  Programmer's name for it: sIllAttrType
+#. Programmer's name for it: sIllAttrType
+#: ggsetup_TpAsyncPro.inc:714
+msgid "Illegal attribute type: "
+msgstr "Ugyldig attribut type: "
+
+#  Programmer's name for it: sIllAttrDefKeyw
+#. Programmer's name for it: sIllAttrDefKeyw
+#: ggsetup_TpAsyncPro.inc:715
+msgid "Illegal keyword for attribute default value: "
+msgstr "Ugyldig nøgleord for attribut standard værdi: "
+
+#  Programmer's name for it: sSysIdMissing
+#. Programmer's name for it: sSysIdMissing
+#: ggsetup_TpAsyncPro.inc:716
+msgid "System identifier missing "
+msgstr "System identificer manger"
+
+#  Programmer's name for it: sExtModifMissing
+#. Programmer's name for it: sExtModifMissing
+#: ggsetup_TpAsyncPro.inc:717
+msgid "External modifier missing: "
+msgstr "Ekstern ændre mangler: "
+
+#  Programmer's name for it: sIllCondSectStart
+#. Programmer's name for it: sIllCondSectStart
+#: ggsetup_TpAsyncPro.inc:718
+msgid "Conditional section must begin with INCLUDE or IGNORE"
+msgstr "Betingelig sektion skal begynde med INCLUDE eller IGNORE"
+
+#  Programmer's name for it: sBadSepInModel
+#. Programmer's name for it: sBadSepInModel
+#: ggsetup_TpAsyncPro.inc:719
+msgid "Bad separator in content model: "
+msgstr "Dårlig seperator i indholds model: "
+
+#  Programmer's name for it: sExpCommentOrCDATA
+#. Programmer's name for it: sExpCommentOrCDATA
+#: ggsetup_TpAsyncPro.inc:720
+msgid "Expected comment or CDATA section "
+msgstr "Forventede kommentar eller CDATA sektion"
+
+#  Programmer's name for it: sUnexpectedEof
+#. Programmer's name for it: sUnexpectedEof
+#: ggsetup_TpAsyncPro.inc:721
+msgid "Unexpected end of file "
+msgstr "Ikke forventet slutning på fil"
+
+#  Programmer's name for it: sMismatchEndTag
+#. Programmer's name for it: sMismatchEndTag
+#: ggsetup_TpAsyncPro.inc:722
+msgid "Mismatched end tag: "
+msgstr "Forkert slut mærke: "
+
+#  Programmer's name for it: sIllCharInRef
+#. Programmer's name for it: sIllCharInRef
+#: ggsetup_TpAsyncPro.inc:723
+msgid "Illegal character in reference"
+msgstr "Ugyldig tegn i reference"
+
+#  Programmer's name for it: sUndeclaredEntity
+#. Programmer's name for it: sUndeclaredEntity
+#: ggsetup_TpAsyncPro.inc:724
+msgid "Reference to undeclared entity: "
+msgstr "Reference til ikke erklæret entitet: "
+
+#  Programmer's name for it: sExponentStringTooBig
+#  Programmer's name for it: sExpectedString
+#. Programmer's name for it: sExpectedString
+#: ggsetup_TpAsyncPro.inc:725
+msgid "Expected String: "
+msgstr "Forventet streng: "
+
+#  Programmer's name for it: sSpaceExpectedAt
+#. Programmer's name for it: sSpaceExpectedAt
+#: ggsetup_TpAsyncPro.inc:726
+msgid "Whitespace expected at byte "
+msgstr "Whitespace forventet ved byte "
+
+#  Programmer's name for it: sUnexpEndOfInput
+#. Programmer's name for it: sUnexpEndOfInput
+#: ggsetup_TpAsyncPro.inc:727
+msgid "End of input while looking for delimiter: "
+msgstr "Slutning på indput mens der blev kigget efter adskiller: "
+
+#  Programmer's name for it: sQuoteExpected
+#  Programmer's name for it: sQuoteExpected
+#. Programmer's name for it: sQuoteExpected
+#: ggsetup_TpAsyncPro.inc:728
+msgid "Expected \" or '"
+msgstr "Forventede \" eller '"
+
+#  Programmer's name for it: sInvalidXMLVersion
+#. Programmer's name for it: sInvalidXMLVersion
+#: ggsetup_TpAsyncPro.inc:729
+msgid "XMLPartner does not support XML specification greater than %s"
+msgstr "XMLPartner understøtter ikke XML specifikatiohn større end %s"
+
+#  Programmer's name for it: sUnableCreateStr
+#. Programmer's name for it: sUnableCreateStr
+#: ggsetup_TpAsyncPro.inc:730
+msgid "Unable to create stream for input."
+msgstr "Ikke i stand til at oprette strøm til input."
+
+#  Programmer's name for it: AbBadStreamTypeS
+#  Programmer's name for it: sInvalidName
+#. Programmer's name for it: sInvalidName
+#: ggsetup_TpAsyncPro.inc:731
+msgid "Invalid XML name: "
+msgstr "Ugyldig XML navn: "
+
+#  Programmer's name for it: AbCmpndInvalidFile
+#  Programmer's name for it: sInvalidCommentText
+#. Programmer's name for it: sInvalidCommentText
+#: ggsetup_TpAsyncPro.inc:732
+msgid "Invalid comment text"
+msgstr "Ugyldig kommentar tekst"
+
+#  Programmer's name for it: sCommentBeforeXMLDecl
+#. Programmer's name for it: sCommentBeforeXMLDecl
+#: ggsetup_TpAsyncPro.inc:733
+msgid ""
+"Document cannot start with a comment if it also contains an XML declaration"
+msgstr ""
+"Dokument kan ikke starte med en kommentar hvis den også indeholder en XML "
+"erklæring"
+
+#  Programmer's name for it: sInvalidCDataSection
+#. Programmer's name for it: sInvalidCDataSection
+#: ggsetup_TpAsyncPro.inc:734
+msgid "Invalid characters in CDATA section"
+msgstr "Ugyldig tegn i CDATA sektion"
+
+#  Programmer's name for it: sRedefinedAttr
+#. Programmer's name for it: sRedefinedAttr
+#: ggsetup_TpAsyncPro.inc:735
+msgid "Attributes cannot be redefined in a start tag"
+msgstr "Attribut kan ikke gendefineres i start mærke"
+
+#  Programmer's name for it: sCircularEntRef
+#. Programmer's name for it: sCircularEntRef
+#: ggsetup_TpAsyncPro.inc:736
+msgid "Circular reference to: "
+msgstr "Cirkular referenge til: "
+
+#  Programmer's name for it: sInvAttrChar
+#. Programmer's name for it: sInvAttrChar
+#: ggsetup_TpAsyncPro.inc:737
+msgid "Invalid character in attribute value: "
+msgstr "Ugyldig tegn i attribut værdi: "
+
+#  Programmer's name for it: sInvPCData
+#. Programmer's name for it: sInvPCData
+#: ggsetup_TpAsyncPro.inc:738
+msgid "Invalid characters in element's character data: "
+msgstr "Ugyldig tegn i elemets tegn data: "
+
+#  Programmer's name for it: sDataAfterValDoc
+#. Programmer's name for it: sDataAfterValDoc
+#: ggsetup_TpAsyncPro.inc:739
+msgid "There is invalid data after valid XML document"
+msgstr "Der er ugyldige data efter gyldig XML dokument"
+
+#  Programmer's name for it: sNoIntConditional
+#. Programmer's name for it: sNoIntConditional
+#: ggsetup_TpAsyncPro.inc:740
+msgid ""
+"Conditional sections not allowed in internal subset of document type "
+"declaration"
+msgstr ""
+"Betingelsesfuld sektion ikke tilladt i intern underset af dokument type "
+"erklæringen"
+
+#  Programmer's name for it: sNotationNotDeclared
+#. Programmer's name for it: sNotationNotDeclared
+#: ggsetup_TpAsyncPro.inc:741
+msgid "Notation not declared: "
+msgstr "Notation ikke erklæret: "
+
+#  Programmer's name for it: AbInvalidFactorS
+#  Programmer's name for it: AbInvalidFactorS
+#  Programmer's name for it: sInvPubIDChar
+#. Programmer's name for it: sInvPubIDChar
+#: ggsetup_TpAsyncPro.inc:742
+msgid "Invalid PublicID character: "
+msgstr "Ugyldig PublicID tegn: "
+
+#  Programmer's name for it: sNoNDATAInPeDecl
+#. Programmer's name for it: sNoNDATAInPeDecl
+#: ggsetup_TpAsyncPro.inc:743
+msgid "NDATA not allowed in parameter entity declaration"
+msgstr "NDATA ikke tilladt i parameter erklæringen"
+
+#  Programmer's name for it: sInvStandAloneVal
+#. Programmer's name for it: sInvStandAloneVal
+#: ggsetup_TpAsyncPro.inc:744
+msgid "Standalone value must equal 'yes' or 'no'"
+msgstr "Alenestående værdi skal være 'yes' eller 'no'"
+
+#  Programmer's name for it: sInvEncName
+#. Programmer's name for it: sInvEncName
+#: ggsetup_TpAsyncPro.inc:745
+msgid "Invalid encoding declaration: "
+msgstr "Ugyldig"
+
+#  Programmer's name for it: sInvVerNum
+#. Programmer's name for it: sInvVerNum
+#: ggsetup_TpAsyncPro.inc:746
+msgid "Invalid XML version number: "
+msgstr "Ugyldig XML version nummer: "
+
+#  Programmer's name for it: sInvEntityValue
+#. Programmer's name for it: sInvEntityValue
+#: ggsetup_TpAsyncPro.inc:747
+msgid "Invalid character in entity value: "
+msgstr "Ugyldig tegn i værdi: "
+
+#  Programmer's name for it: sNoCommentInMarkup
+#. Programmer's name for it: sNoCommentInMarkup
+#: ggsetup_TpAsyncPro.inc:748
+msgid "Comments can not be placed within other markup"
+msgstr "Kommentar kan ikke være placeret i anden makup"
+
+#  Programmer's name for it: sNoPEInIntDTD
+#. Programmer's name for it: sNoPEInIntDTD
+#: ggsetup_TpAsyncPro.inc:749
+msgid "Parameter entities not allowed in DTD internal subset"
+msgstr "Parameter ikke tilladt i DTD intern undersæt"
+
+#  Programmer's name for it: sXMLDecNotAtBeg
+#. Programmer's name for it: sXMLDecNotAtBeg
+#: ggsetup_TpAsyncPro.inc:750
+msgid "The XML declaration must appear before the first element"
+msgstr "XML erklæringen skal forekomme før det første element"
+
+#  Programmer's name for it: AbBadStreamTypeS
+#  Programmer's name for it: sInvalidElementName
+#. Programmer's name for it: sInvalidElementName
+#: ggsetup_TpAsyncPro.inc:751
+msgid "Invalid element name: "
+msgstr "Ugyldig element navn: "
+
+#  Programmer's name for it: sBadParamEntNesting
+#. Programmer's name for it: sBadParamEntNesting
+#: ggsetup_TpAsyncPro.inc:752
+msgid "Parameter-entity text must be properly nested: "
+msgstr "Parameter tekst skal være forsvarlig indbygget: "
+
+#  Programmer's name for it: sInvalidCharEncoding
+#. Programmer's name for it: sInvalidCharEncoding
+#: ggsetup_TpAsyncPro.inc:753
+msgid "Invalid character encoding specified."
+msgstr "Ugyldig tegn indkodning specificeret."
+
+#  Programmer's name for it: sAttrNotNum
+#. Programmer's name for it: sAttrNotNum
+#: ggsetup_TpAsyncPro.inc:754
+msgid "Attribute %s of element %s does not have an integer value."
+msgstr "Attributten %s af element %s har ikke en heltals værdi."
+
+#  Programmer's name for it: sUnknownAxis
+#. Programmer's name for it: sUnknownAxis
+#: ggsetup_TpAsyncPro.inc:755
+msgid "Unknown axis specifier: %s"
+msgstr "Ukendt akse angiver: %s"
+
+#  Programmer's name for it: AbInvalidIndexS
+#  Programmer's name for it: sInvalidXMLChar
+#. Programmer's name for it: sInvalidXMLChar
+#: ggsetup_TpAsyncPro.inc:758
+msgid "Invalid XML Character found"
+msgstr "Ugyldig XML tegn fundet"
+
+#  Programmer's name for it: sInvalidBEChar
+#. Programmer's name for it: sInvalidBEChar
+#: ggsetup_TpAsyncPro.inc:759
+msgid "Invalid (big-endian) UTF-16 character encoding"
+msgstr "Ugyldig (big-endian) UTF-16 tegn indkodning"
+
+#  Programmer's name for it: sInvalidLEChar
+#. Programmer's name for it: sInvalidLEChar
+#: ggsetup_TpAsyncPro.inc:760
+msgid "Invalid (little-endian) UTF-16 character encoding"
+msgstr "Ugyldig (little-endian) UTF-16 tegn indkodning"
+
+#  Programmer's name for it: sBadUTF8Char
+#. Programmer's name for it: sBadUTF8Char
+#: ggsetup_TpAsyncPro.inc:761
+msgid "Badly formed UTF-8 character in stream"
+msgstr "Forkert formet UTF-8 tegn i strøm"
+
+#  Programmer's name for it: sErrEndOfDocument
+#. Programmer's name for it: sErrEndOfDocument
+#: ggsetup_TpAsyncPro.inc:762
+msgid "Unexpected end of document stream"
+msgstr "Ikke forventet ende på dokument stream"
+
+#  Programmer's name for it: sUCS_ISOConvertErr
+#. Programmer's name for it: sUCS_ISOConvertErr
+#: ggsetup_TpAsyncPro.inc:763
+msgid "Cannot convert UCS-4 character to ISO-8859-1"
+msgstr "Kan ikke konverteres UCS-.4 tegn til ISO-8859-1"
+
+#  Programmer's name for it: sUCS_U16ConvertErr
+#. Programmer's name for it: sUCS_U16ConvertErr
+#: ggsetup_TpAsyncPro.inc:764
+msgid "Cannot convert UCS-4 character to UTF-16"
+msgstr "Kan ikke konvertere USC-4 tegn til UTF-16"
+
+#  Programmer's name for it: sUCS_U8ConverErr
+#. Programmer's name for it: sUCS_U8ConverErr
+#: ggsetup_TpAsyncPro.inc:765
+msgid "Cannot convert UCS-4 character to UTF-8"
+msgstr "Kan ikke konvertere USC-4 tegn til UTF-8"
+
+#  Programmer's name for it: sModemDetectedBusy
+#. Programmer's name for it: sModemDetectedBusy
+#: ggsetup_TpAsyncPro.inc:768
+msgid "Line is Busy"
+msgstr "Linie er Optaget"
+
+#  Programmer's name for it: sModemNoCarrier
+#. Programmer's name for it: sModemNoCarrier
+#: ggsetup_TpAsyncPro.inc:770
+msgid "No Carrier"
+msgstr "Ingen Bærebølge"
+
+#  Programmer's name for it: sConnected
+#. Programmer's name for it: sConnected
+#: ggsetup_TpAsyncPro.inc:777
+msgid "Modem Connected"
+msgstr "Modem Forbundet"
+
+#  Programmer's name for it: sCancelled
+#. Programmer's name for it: sCancelled
+#: ggsetup_TpAsyncPro.inc:778
+msgid "Cancel Requested"
+msgstr "Afbrydelse Forespurgt"
+
+#  Programmer's name for it: sLineBusy
+#. Programmer's name for it: sLineBusy
+#: ggsetup_TpAsyncPro.inc:779
+msgid "Line Busy"
+msgstr "Linie er Optaget"
+
+#  Programmer's name for it: sDisconnect
+#. Programmer's name for it: sDisconnect
+#: ggsetup_TpAsyncPro.inc:780
+msgid "Disconnecing"
+msgstr "Afbryder"
+
+#  Programmer's name for it: sMsgNotSent
+#. Programmer's name for it: sMsgNotSent
+#: ggsetup_TpAsyncPro.inc:782
+msgid "Message not sent"
+msgstr "Meddelelse ikke sendt"
+
+#  Programmer's name for it: sWaitingToRedial
+#. Programmer's name for it: sWaitingToRedial
+#: ggsetup_TpAsyncPro.inc:783
+msgid "Waiting to Redial"
+msgstr "Venter på Genopkald"
+
+#  Programmer's name for it: sLoginPrompt
+#. Programmer's name for it: sLoginPrompt
+#: ggsetup_TpAsyncPro.inc:784
+msgid "Received Prompt for Login"
+msgstr "Modtog Login forespørgsel"
+
+#  Programmer's name for it: sLoggedIn
+#. Programmer's name for it: sLoggedIn
+#: ggsetup_TpAsyncPro.inc:785
+msgid "Successful Login"
+msgstr "Succesfuld Login"
+
+#  Programmer's name for it: sDialing
+#. Programmer's name for it: sDialing
+#: ggsetup_TpAsyncPro.inc:786
+msgid "Now Dialing"
+msgstr "Ringer Nu"
+
+#  Programmer's name for it: sRedialing
+#. Programmer's name for it: sRedialing
+#: ggsetup_TpAsyncPro.inc:787
+msgid "Now Redialing"
+msgstr "Genringer Nu"
+
+#  Programmer's name for it: sLoginRetry
+#. Programmer's name for it: sLoginRetry
+#: ggsetup_TpAsyncPro.inc:788
+msgid "Retry Password for Login"
+msgstr "Genindtast Kodeord til Login"
+
+#  Programmer's name for it: sMsgOkToSend
+#. Programmer's name for it: sMsgOkToSend
+#: ggsetup_TpAsyncPro.inc:789
+msgid "Ready to Send Message"
+msgstr "Klar til at Sende Meddelelse"
+
+#  Programmer's name for it: sSendingMsg
+#. Programmer's name for it: sSendingMsg
+#: ggsetup_TpAsyncPro.inc:790
+msgid "Now sending Message"
+msgstr "Sender Meddelelse Nu"
+
+#  Programmer's name for it: sMsgAck
+#. Programmer's name for it: sMsgAck
+#: ggsetup_TpAsyncPro.inc:791
+msgid "Received, Send next block or end"
+msgstr "Modtaget. Send næste blok eller afslut"
+
+#  Programmer's name for it: sMsgNak
+#. Programmer's name for it: sMsgNak
+#: ggsetup_TpAsyncPro.inc:792
+msgid "Received Error, Resend Message"
+msgstr "Modtaget Fejl, Gensend Meddelelse"
+
+#  Programmer's name for it: sMsgRs
+#. Programmer's name for it: sMsgRs
+#: ggsetup_TpAsyncPro.inc:793
+msgid "Unable to Send Page"
+msgstr "Kan ikke Sende Side"
+
+#  Programmer's name for it: sMsgCompleted
+#. Programmer's name for it: sMsgCompleted
+#: ggsetup_TpAsyncPro.inc:794
+msgid "Page Complete - Logging out if done"
+msgstr "Side Afsluttet - Logger af hvis færdig"
+
+#  Programmer's name for it: sSendTimedOut
+#. Programmer's name for it: sSendTimedOut
+#: ggsetup_TpAsyncPro.inc:795
+msgid "Timed Out - No Response"
+msgstr "Tids udløb - Ingen Svar"
+
+#  Programmer's name for it: AbLtStartS
+#  Programmer's name for it: sLoggingOut
+#. Programmer's name for it: sLoggingOut
+#: ggsetup_TpAsyncPro.inc:796
+msgid "Logging Out"
+msgstr "Logger af"
+
+#  Programmer's name for it: sDone
+#. Programmer's name for it: sDone
+#: ggsetup_TpAsyncPro.inc:797
+msgid "Done with Page"
+msgstr "Færdig med Side"
+
+#  Programmer's name for it: slfaxNone
+#. Programmer's name for it: slfaxNone
+#: ggsetup_TpAsyncPro.inc:803
+msgid "none"
+msgstr "ingen"
+
+#  Programmer's name for it: slfaxTransmitStart
+#. Programmer's name for it: slfaxTransmitStart
+#: ggsetup_TpAsyncPro.inc:804
+msgid "transmit started"
+msgstr "afsendelse påbegyndt"
+
+#  Programmer's name for it: slfaxTransmitOk
+#. Programmer's name for it: slfaxTransmitOk
+#: ggsetup_TpAsyncPro.inc:805
+msgid "transmit finished okay"
+msgstr "afsendelse færdig OK"
+
+#  Programmer's name for it: slfaxTransmitFail
+#. Programmer's name for it: slfaxTransmitFail
+#: ggsetup_TpAsyncPro.inc:806
+msgid "transmit failed"
+msgstr "afsendelse fejlede"
+
+#  Programmer's name for it: slfaxReceiveStart
+#. Programmer's name for it: slfaxReceiveStart
+#: ggsetup_TpAsyncPro.inc:807
+msgid "receive started"
+msgstr "modtagelse påbegyndt"
+
+#  Programmer's name for it: slfaxReceiveOk
+#. Programmer's name for it: slfaxReceiveOk
+#: ggsetup_TpAsyncPro.inc:808
+msgid "receive finished okay"
+msgstr "modtagelse færdig OK"
+
+#  Programmer's name for it: slfaxReceiveSkip
+#. Programmer's name for it: slfaxReceiveSkip
+#: ggsetup_TpAsyncPro.inc:809
+msgid "receive skipped on request"
+msgstr "modtagelse valgt spruget over"
+
+#  Programmer's name for it: slfaxReceiveFail
+#. Programmer's name for it: slfaxReceiveFail
+#: ggsetup_TpAsyncPro.inc:810
+msgid "receive failed"
+msgstr "modtagelse fejlede"
+
+#  From AdFaxCvt1.pas
+#  Programmer's name for it: ApdEcStrNoClipboard
+#. From AdFaxCvt1.pas
+#. Programmer's name for it: ApdEcStrNoClipboard
+#: ggsetup_TpAsyncPro.inc:813
+msgid "Clipboard format not supported"
+msgstr "Klippebord format ikke understøttet"
+
+#  Programmer's name for it: ApdEcStrBadFaxFmt
+#. Programmer's name for it: ApdEcStrBadFaxFmt
+#: ggsetup_TpAsyncPro.inc:814
+msgid "Bad fax format"
+msgstr "Forkert fax format"
+
+#  Programmer's name for it: AbGzipInvalidS
+#  Programmer's name for it: ApdEcStrInvalidPage
+#. Programmer's name for it: ApdEcStrInvalidPage
+#: ggsetup_TpAsyncPro.inc:815
+msgid "Invalid page"
+msgstr "Ugyldig side"
+
+#  From AdSapiGr.pas
+#  Programmer's name for it: ApdAskAreaCode
+#. From AdSapiGr.pas
+#. Programmer's name for it: ApdAskAreaCode
+#: ggsetup_TpAsyncPro.inc:819
+msgid "What is the area code?"
+msgstr "Hvad er område koden?"
+
+#  Programmer's name for it: ApdAskLastFour
+#. Programmer's name for it: ApdAskLastFour
+#: ggsetup_TpAsyncPro.inc:820
+msgid "What are the last four digits of the phone number?"
+msgstr "Hvad er de sidste 4 cifre i telefonnummeret?"
+
+#  Programmer's name for it: ApdAskNextThree
+#. Programmer's name for it: ApdAskNextThree
+#: ggsetup_TpAsyncPro.inc:821
+msgid "What are the next three digits of the phone number?"
+msgstr "hvad er de næste 3 cifre i telefon nummeret?"
+
+#  Programmer's name for it: AbInflateBlockErrorS
+#  Programmer's name for it: ApdCannotGoBack
+#. Programmer's name for it: ApdCannotGoBack
+#: ggsetup_TpAsyncPro.inc:822
+msgid "Cannot go back."
+msgstr "Kan ikke gå tilbage"
+
+#  Programmer's name for it: ApdCannotHangUp
+#. Programmer's name for it: ApdCannotHangUp
+#: ggsetup_TpAsyncPro.inc:823
+msgid "Cannot hang up now."
+msgstr "Kan ikke lægge på nu."
+
+#  Programmer's name for it: ApdHangingUp
+#. Programmer's name for it: ApdHangingUp
+#: ggsetup_TpAsyncPro.inc:824
+msgid "Goodbye."
+msgstr "Farvel."
+
+#  Programmer's name for it: ApdHelp
+#. Programmer's name for it: ApdHelp
+#: ggsetup_TpAsyncPro.inc:825
+msgid "This is help."
+msgstr "Dette er hjælp."
+
+#  Programmer's name for it: ApdHelp2
+#. Programmer's name for it: ApdHelp2
+#: ggsetup_TpAsyncPro.inc:826
+msgid "This is additional help."
+msgstr "Dette er yderligere hjælp."
+
+#  Programmer's name for it: ApdHelpVerify
+#. Programmer's name for it: ApdHelpVerify
+#: ggsetup_TpAsyncPro.inc:827
+msgid "You can speak yes or no, or press 1 for yes, or 2 for no."
+msgstr "Du kan sige yes eller no, eller trykke på 1 for yes, eller 2 for no."
+
+#  Programmer's name for it: ApdGoingBack
+#. Programmer's name for it: ApdGoingBack
+#: ggsetup_TpAsyncPro.inc:828
+msgid "Going back."
+msgstr "Går tilbage."
+
+#  Programmer's name for it: ApdMain
+#. Programmer's name for it: ApdMain
+#: ggsetup_TpAsyncPro.inc:829
+msgid "Please say something."
+msgstr "Vær venlig at sige noget,"
+
+#  Programmer's name for it: ApdMain2
+#. Programmer's name for it: ApdMain2
+#: ggsetup_TpAsyncPro.inc:830
+msgid "Please say the something. - Shorter prompt"
+msgstr "Vær venlig at sige noget, - Kortere"
+
+#  Programmer's name for it: ApdMaxSpeed
+#. Programmer's name for it: ApdMaxSpeed
+#: ggsetup_TpAsyncPro.inc:831
+msgid "I am speaking as fast as I can."
+msgstr "Jeg taler så hurtig som jeg kan."
+
+#  Programmer's name for it: ApdMinSpeed
+#. Programmer's name for it: ApdMinSpeed
+#: ggsetup_TpAsyncPro.inc:832
+msgid "I am speaking as slowly as I can."
+msgstr "Jeg taler så langsom som jeg kan."
+
+#  Programmer's name for it: ApdOperator
+#. Programmer's name for it: ApdOperator
+#: ggsetup_TpAsyncPro.inc:833
+msgid "Connecting to an operator."
+msgstr "Forbinder til en operatør."
+
+#  Programmer's name for it: ApdNoOperator
+#. Programmer's name for it: ApdNoOperator
+#: ggsetup_TpAsyncPro.inc:834
+msgid "An operator is not available."
+msgstr "En operatør er ikke tilgængelig."
+
+#  Programmer's name for it: ApdNoSpeedChange
+#. Programmer's name for it: ApdNoSpeedChange
+#: ggsetup_TpAsyncPro.inc:835
+msgid "Cannot change speed."
+msgstr "Kan ikke ændre hastighed."
+
+#  Programmer's name for it: ApdSpeakingFaster
+#. Programmer's name for it: ApdSpeakingFaster
+#: ggsetup_TpAsyncPro.inc:836
+msgid "Speaking faster."
+msgstr "Taler hurtigere."
+
+#  Programmer's name for it: ApdSpeakingSlower
+#. Programmer's name for it: ApdSpeakingSlower
+#: ggsetup_TpAsyncPro.inc:837
+msgid "Speaking slower."
+msgstr "Taler langsomere."
+
+#  Programmer's name for it: ApdTooFewDigits
+#. Programmer's name for it: ApdTooFewDigits
+#: ggsetup_TpAsyncPro.inc:838
+msgid "Not enough digits for the extension."
+msgstr "Ikke nok cifre for udvidelsen."
+
+#  Programmer's name for it: ApdTooManyDigits
+#  Programmer's name for it: ApdTooManyDigits
+#. Programmer's name for it: ApdTooManyDigits
+#: ggsetup_TpAsyncPro.inc:839
+msgid "Too many digits for the extension."
+msgstr "For mange cifre til udvidelsen."
+
+#  Programmer's name for it: ApdUnrecognized
+#. Programmer's name for it: ApdUnrecognized
+#: ggsetup_TpAsyncPro.inc:840
+msgid "Sorry, I didn't understand."
+msgstr "Undskyld, jeg forstod ikke."
+
+#  Programmer's name for it: ApdVerifyPost
+#. Programmer's name for it: ApdVerifyPost
+#: ggsetup_TpAsyncPro.inc:841
+msgid "Is this correct?"
+msgstr "Er det korrekt?"
+
+#  Programmer's name for it: ApdVerifyPre
+#. Programmer's name for it: ApdVerifyPre
+#: ggsetup_TpAsyncPro.inc:842
+msgid "I heard:"
+msgstr "Jeg hørte: "
+
+#  Programmer's name for it: ApdWhere
+#. Programmer's name for it: ApdWhere
+#: ggsetup_TpAsyncPro.inc:843
+msgid "You are somewhere."
+msgstr "Du er et eller andet sted."
+
+#  Programmer's name for it: ApdWhere2
+#. Programmer's name for it: ApdWhere2
+#: ggsetup_TpAsyncPro.inc:844
+msgid "You are somewhere - Shorter prompt."
+msgstr "Du er et eller andet sted- Kortere."
+
+#  Programmer's name for it: ApdYouHaveSpelled
+#. Programmer's name for it: ApdYouHaveSpelled
+#: ggsetup_TpAsyncPro.inc:845
+msgid "You have spelled: "
+msgstr "Du har stavet: "
+
+#  Programmer's name for it: ecApdNoSS
+#. Programmer's name for it: ecApdNoSS
+#: ggsetup_TpAsyncPro.inc:849
+msgid "Speech synthesis engine is not assigned"
+msgstr "Tale synthesizer motor ikke tildelt"
+
+#  Programmer's name for it: ecApdNoSR
+#. Programmer's name for it: ecApdNoSR
+#: ggsetup_TpAsyncPro.inc:850
+msgid "Speech recognition engine is not assigned"
+msgstr "Tale genkendelse motor ikke tildelt"
+
+#  Programmer's name for it: AbInvalidIndexS
+#  Programmer's name for it: ecApdBadIndex
+#. Programmer's name for it: ecApdBadIndex
+#: ggsetup_TpAsyncPro.inc:851
+msgid "Invalid speech engine"
+msgstr "Ugyldig tale motor"
+
+#  Programmer's name for it: ecNoSREngines
+#. Programmer's name for it: ecNoSREngines
+#: ggsetup_TpAsyncPro.inc:852
+msgid "No speech recognition engines are installed"
+msgstr "Ingen talegenkendelse motor er installeret"
+
+#  Programmer's name for it: ecNoSSEngines
+#. Programmer's name for it: ecNoSSEngines
+#: ggsetup_TpAsyncPro.inc:853
+msgid "No speech synthesis engines are installed"
+msgstr "Ingen tale synthesizer motor er installeret"
+
+#  Programmer's name for it: ecApdNoSapiEngine
+#. Programmer's name for it: ecApdNoSapiEngine
+#: ggsetup_TpAsyncPro.inc:855
+msgid "No SAPI engine"
+msgstr "Ingen SAPI motor"
+
+#  Programmer's name for it: ecApdNoPrompts
+#. Programmer's name for it: ecApdNoPrompts
+#: ggsetup_TpAsyncPro.inc:856
+msgid "No prompts"
+msgstr "Ingen prompt"
+
+#  Programmer's name for it: ecApdBadDeviceNum
+#. Programmer's name for it: ecApdBadDeviceNum
+#: ggsetup_TpAsyncPro.inc:857
+msgid "Unable to set device number: "
+msgstr "Ikke i stand til at sætte enheds nummer: "
+
+#  Programmer's name for it: AbFCICreateErrorS
+#  Programmer's name for it: ecApdCannotCreateCOM
+#. Programmer's name for it: ecApdCannotCreateCOM
+#: ggsetup_TpAsyncPro.inc:858
+msgid "Cannot create COM Object"
+msgstr "Kan ikke oprette COM Objekt"
+
+#  Programmer's name for it: ecApdNotPhone
+#. Programmer's name for it: ecApdNotPhone
+#: ggsetup_TpAsyncPro.inc:859
+msgid "SAPI Engine is not phone optimized"
+msgstr "SAPI motor ikke optimeret til telefonbrug"
+
+#  Programmer's name for it: AbBadStreamTypeS
+#  Programmer's name for it: ApdStrTTSERR_INVALIDINTERFACE
+#  Programmer's name for it: ApdStrSRERR_INVALIDINTERFACE
+#. Programmer's name for it: ApdStrTTSERR_INVALIDINTERFACE
+#. Programmer's name for it: ApdStrSRERR_INVALIDINTERFACE
+#: ggsetup_TpAsyncPro.inc:863 ggsetup_TpAsyncPro.inc:894
+msgid "Invalid interface"
+msgstr "Ugyldig interface"
+
+#  Programmer's name for it: ApdStrTTSERR_OUTOFDISK
+#  Programmer's name for it: ApdStrSRERR_OUTOFDISK
+#. Programmer's name for it: ApdStrTTSERR_OUTOFDISK
+#. Programmer's name for it: ApdStrSRERR_OUTOFDISK
+#: ggsetup_TpAsyncPro.inc:864 ggsetup_TpAsyncPro.inc:878
+msgid "Out of disk space"
+msgstr "Ikke nok plads på disken"
+
+#  Programmer's name for it: ApdStrTTSERR_VALUEOUTOFRANGE
+#  Programmer's name for it: ApdStrSRERR_VALUEOUTOFRANGE
+#  Programmer's name for it: ApdStrTTSERR_VALUEOUTOFRANGE
+#  Programmer's name for it: ApdStrSRERR_VALUEOUTOFRANGE
+#. Programmer's name for it: ApdStrTTSERR_VALUEOUTOFRANGE
+#. Programmer's name for it: ApdStrSRERR_VALUEOUTOFRANGE
+#: ggsetup_TpAsyncPro.inc:866 ggsetup_TpAsyncPro.inc:881
+msgid "Value out of range"
+msgstr "Værdi er ude af tilladt område"
+
+#  Programmer's name for it: AbGzipInvalidS
+#  Programmer's name for it: ApdStrTTSERR_INVALIDWINDOW
+#  Programmer's name for it: ApdStrSRERR_INVALIDWINDOW
+#. Programmer's name for it: ApdStrTTSERR_INVALIDWINDOW
+#. Programmer's name for it: ApdStrSRERR_INVALIDWINDOW
+#: ggsetup_TpAsyncPro.inc:867 ggsetup_TpAsyncPro.inc:884
+msgid "Invalid window"
+msgstr "Ugyldig vindue"
+
+#  Programmer's name for it: AbCmpndInvalidFile
+#  Programmer's name for it: ApdStrTTSERR_INVALIDMODE
+#  Programmer's name for it: ApdStrSRERR_INVALIDMODE
+#. Programmer's name for it: ApdStrTTSERR_INVALIDMODE
+#. Programmer's name for it: ApdStrSRERR_INVALIDMODE
+#: ggsetup_TpAsyncPro.inc:869 ggsetup_TpAsyncPro.inc:886
+msgid "Invalid mode"
+msgstr "Ugyldig mode"
+
+#  Programmer's name for it: sRSAKeyBadKey
+#  Programmer's name for it: ApdStrTTSERR_INVALIDKEY
+#  Programmer's name for it: ApdStrSRERR_INVALIDKEY
+#. Programmer's name for it: ApdStrTTSERR_INVALIDKEY
+#. Programmer's name for it: ApdStrSRERR_INVALIDKEY
+#: ggsetup_TpAsyncPro.inc:870 ggsetup_TpAsyncPro.inc:895
+msgid "Invalid key"
+msgstr "Ugyldige nøgle"
+
+#  Programmer's name for it: ApdStrTTSERR_WAVEFORMATNOTSUPPORTED
+#  Programmer's name for it: ApdStrSRERR_WAVEFORMATNOTSUPPORTED
+#. Programmer's name for it: ApdStrTTSERR_WAVEFORMATNOTSUPPORTED
+#. Programmer's name for it: ApdStrSRERR_WAVEFORMATNOTSUPPORTED
+#: ggsetup_TpAsyncPro.inc:871 ggsetup_TpAsyncPro.inc:890
+msgid "Wave format not supported"
+msgstr "Ikke understøttet Wav format"
+
+#  Programmer's name for it: AbInvalidFactorS
+#  Programmer's name for it: AbInvalidFactorS
+#  Programmer's name for it: ApdStrTTSERR_INVALIDCHAR
+#  Programmer's name for it: ApdStrSRERR_INVALIDCHAR
+#. Programmer's name for it: ApdStrTTSERR_INVALIDCHAR
+#. Programmer's name for it: ApdStrSRERR_INVALIDCHAR
+#: ggsetup_TpAsyncPro.inc:872 ggsetup_TpAsyncPro.inc:891
+msgid "Invalid character"
+msgstr "Ugyldig tegn"
+
+#  Programmer's name for it: ApdStrTTSERR_QUEUEFULL
+#. Programmer's name for it: ApdStrTTSERR_QUEUEFULL
+#: ggsetup_TpAsyncPro.inc:873
+msgid "Queue full"
+msgstr "Kø er Fuld"
+
+#  Programmer's name for it: ApdStrTTSERR_WAVEDEVICEBUSY
+#  Programmer's name for it: ApdStrSRERR_WAVEDEVICEBUSY
+#. Programmer's name for it: ApdStrTTSERR_WAVEDEVICEBUSY
+#. Programmer's name for it: ApdStrSRERR_WAVEDEVICEBUSY
+#: ggsetup_TpAsyncPro.inc:874 ggsetup_TpAsyncPro.inc:889
+msgid "Wave device busy"
+msgstr "Wav enhed er optaget"
+
+#  Programmer's name for it: AbNotEncryptedS
+#  Programmer's name for it: ApdStrTTSERR_NOTPAUSED
+#. Programmer's name for it: ApdStrTTSERR_NOTPAUSED
+#: ggsetup_TpAsyncPro.inc:875
+msgid "Not paused"
+msgstr "Ikke pauset"
+
+#  Programmer's name for it: ApdStrTTSERR_ALREADYPAUSED
+#. Programmer's name for it: ApdStrTTSERR_ALREADYPAUSED
+#: ggsetup_TpAsyncPro.inc:876
+msgid "Already paused"
+msgstr "Allerede pauset"
+
+#  Programmer's name for it: ApdStrSRERR_NOTENOUGHDATA
+#. Programmer's name for it: ApdStrSRERR_NOTENOUGHDATA
+#: ggsetup_TpAsyncPro.inc:880
+msgid "Not enough data"
+msgstr "Ikke nok data"
+
+#  Programmer's name for it: ApdStrSRERR_GRAMMARTOOCOMPLEX
+#  Programmer's name for it: ApdStrSRERR_GRAMTOOCOMPLEX
+#. Programmer's name for it: ApdStrSRERR_GRAMMARTOOCOMPLEX
+#. Programmer's name for it: ApdStrSRERR_GRAMTOOCOMPLEX
+#: ggsetup_TpAsyncPro.inc:882 ggsetup_TpAsyncPro.inc:892
+msgid "Grammar too complex"
+msgstr "Grammatik for kompleks"
+
+#  Programmer's name for it: ApdStrSRERR_GRAMMARWRONGTYPE
+#. Programmer's name for it: ApdStrSRERR_GRAMMARWRONGTYPE
+#: ggsetup_TpAsyncPro.inc:883
+msgid "Grammar is of the wrong type"
+msgstr "Grammatik er af forkert type"
+
+#  Programmer's name for it: ApdStrSRERR_TOOMANYGRAMMARS
+#. Programmer's name for it: ApdStrSRERR_TOOMANYGRAMMARS
+#: ggsetup_TpAsyncPro.inc:887
+msgid "Too many grammars"
+msgstr "For meget grammatik"
+
+#  Programmer's name for it: AbGzipInvalidS
+#  Programmer's name for it: ApdStrSRERR_INVALIDLIST
+#. Programmer's name for it: ApdStrSRERR_INVALIDLIST
+#: ggsetup_TpAsyncPro.inc:888
+msgid "Invalid list"
+msgstr "Ugyldig liste"
+
+#  Programmer's name for it: ApdStrSRERR_GRAMTOOLARGE
+#. Programmer's name for it: ApdStrSRERR_GRAMTOOLARGE
+#: ggsetup_TpAsyncPro.inc:893
+msgid "Grammar too large"
+msgstr "Grammatik for stor"
+
+#  Programmer's name for it: AbBadStreamTypeS
+#  Programmer's name for it: ApdStrSRERR_INVALIDFLAG
+#. Programmer's name for it: ApdStrSRERR_INVALIDFLAG
+#: ggsetup_TpAsyncPro.inc:896
+msgid "Invalid flag"
+msgstr "Ugyldig flag"
+
+#  Programmer's name for it: ApdStrSRERR_GRAMMARERROR
+#. Programmer's name for it: ApdStrSRERR_GRAMMARERROR
+#: ggsetup_TpAsyncPro.inc:897
+msgid "Grammar error"
+msgstr "Grammatik fejl"
+
+#  Programmer's name for it: AbBadStreamTypeS
+#  Programmer's name for it: ApdStrSRERR_INVALIDRULE
+#. Programmer's name for it: ApdStrSRERR_INVALIDRULE
+#: ggsetup_TpAsyncPro.inc:898
+msgid "Invalid rule"
+msgstr "Ugyldig regel"
+
+#  Programmer's name for it: ApdStrSRERR_RULEALREADYACTIVE
+#. Programmer's name for it: ApdStrSRERR_RULEALREADYACTIVE
+#: ggsetup_TpAsyncPro.inc:899
+msgid "Rule already active"
+msgstr "Regel allerede aktiv"
+
+#  Programmer's name for it: ApdStrSRERR_RULENOTACTIVE
+#. Programmer's name for it: ApdStrSRERR_RULENOTACTIVE
+#: ggsetup_TpAsyncPro.inc:900
+msgid "Rule not active"
+msgstr "Regel ikke aktiv"
+
+#  Programmer's name for it: ApdStrSRERR_NOUSERSELECTED
+#. Programmer's name for it: ApdStrSRERR_NOUSERSELECTED
+#: ggsetup_TpAsyncPro.inc:901
+msgid "No users selected"
+msgstr "Ingen brugere er valgt"
+
+#  Programmer's name for it: ApdStrSRERR_BAD_PRONUNCIATION
+#. Programmer's name for it: ApdStrSRERR_BAD_PRONUNCIATION
+#: ggsetup_TpAsyncPro.inc:902
+msgid "Bad pronunciation"
+msgstr "Dårlig udtalelse"
+
+#  Programmer's name for it: AbFCIFileSeekErrorS
+#  Programmer's name for it: ApdStrSRERR_DATAFILEERROR
+#. Programmer's name for it: ApdStrSRERR_DATAFILEERROR
+#: ggsetup_TpAsyncPro.inc:903
+msgid "Data file error"
+msgstr "Data fil fejl"
+
+#  Programmer's name for it: AbReadErrorS
+#  Programmer's name for it: ApdStrSRERR_GRAMMARALREADYACTIVE
+#. Programmer's name for it: ApdStrSRERR_GRAMMARALREADYACTIVE
+#: ggsetup_TpAsyncPro.inc:904
+msgid "Grammar already active"
+msgstr "Grammatik allerede aktiv"
+
+#  Programmer's name for it: ApdStrSRERR_GRAMMARNOTACTIVE
+#. Programmer's name for it: ApdStrSRERR_GRAMMARNOTACTIVE
+#: ggsetup_TpAsyncPro.inc:905
+msgid "Grammar not active"
+msgstr "Grammatik ikke aktiv"
+
+#  Programmer's name for it: ApdStrSRERR_GLOBALGRAMMARALREADYACTIVE
+#. Programmer's name for it: ApdStrSRERR_GLOBALGRAMMARALREADYACTIVE
+#: ggsetup_TpAsyncPro.inc:906
+msgid "Global grammar already active"
+msgstr "Global grammatik allerede aktiv"
+
+#  Programmer's name for it: ApdStrSRERR_LANGUAGEMISMATCH
+#. Programmer's name for it: ApdStrSRERR_LANGUAGEMISMATCH
+#: ggsetup_TpAsyncPro.inc:907
+msgid "Language mismatch"
+msgstr "Sprog fejl"
+
+#  Programmer's name for it: ApdStrSRERR_MULTIPLELANG
+#. Programmer's name for it: ApdStrSRERR_MULTIPLELANG
+#: ggsetup_TpAsyncPro.inc:908
+msgid "Multiple languages"
+msgstr "Flere sprog"
+
+#  Programmer's name for it: ApdStrSRERR_LDGRAMMARNOWORDS
+#. Programmer's name for it: ApdStrSRERR_LDGRAMMARNOWORDS
+#: ggsetup_TpAsyncPro.inc:909
+msgid "No words in grammar"
+msgstr "Ingen ord i grammatik"
+
+#  Programmer's name for it: ApdStrSRERR_NOLEXICON
+#. Programmer's name for it: ApdStrSRERR_NOLEXICON
+#: ggsetup_TpAsyncPro.inc:910
+msgid "No lexicon"
+msgstr "Ingen leksikon"
+
+#  Programmer's name for it: ApdStrSRERR_SPEAKEREXISTS
+#. Programmer's name for it: ApdStrSRERR_SPEAKEREXISTS
+#: ggsetup_TpAsyncPro.inc:911
+msgid "Speaker exists"
+msgstr "Taler findes"
+
+#  Programmer's name for it: ApdStrSRERR_GRAMMARENGINEMISMATCH
+#. Programmer's name for it: ApdStrSRERR_GRAMMARENGINEMISMATCH
+#: ggsetup_TpAsyncPro.inc:912
+msgid "Grammar engine mismatch"
+msgstr "Gammatik motor fejl"
+
+#  Programmer's name for it: ApdStrSRERR_BOOKMARKEXISTS
+#. Programmer's name for it: ApdStrSRERR_BOOKMARKEXISTS
+#: ggsetup_TpAsyncPro.inc:913
+msgid "Bookmark exists"
+msgstr "Bogmærke eksistere"
+
+#  Programmer's name for it: AbNoSuchDirectoryS
+#  Programmer's name for it: ApdStrSRERR_BOOKMARKDOESNOTEXIST
+#. Programmer's name for it: ApdStrSRERR_BOOKMARKDOESNOTEXIST
+#: ggsetup_TpAsyncPro.inc:914
+msgid "Bookmark does not exist"
+msgstr "Bogmærke findes ikke"
+
+#  Programmer's name for it: ApdStrSRERR_MICWIZARDCANCELED
+#. Programmer's name for it: ApdStrSRERR_MICWIZARDCANCELED
+#: ggsetup_TpAsyncPro.inc:915
+msgid "Microphone wizard cancelled"
+msgstr "Mikrofon wizard afbrudt"
+
+#  Programmer's name for it: ApdStrSRERR_WORDTOOLONG
+#. Programmer's name for it: ApdStrSRERR_WORDTOOLONG
+#: ggsetup_TpAsyncPro.inc:916
+msgid "Word too long"
+msgstr "Ord er for langt"
+
+#  Programmer's name for it: ApdStrSRERR_BAD_WORD
+#. Programmer's name for it: ApdStrSRERR_BAD_WORD
+#: ggsetup_TpAsyncPro.inc:917
+msgid "Bad word"
+msgstr "Dårligt ord"
+
+#  Programmer's name for it: ApdStrE_WRONGTYPE
+#. Programmer's name for it: ApdStrE_WRONGTYPE
+#: ggsetup_TpAsyncPro.inc:918
+msgid "Wrong type"
+msgstr "Forkert type"
+
+#  Programmer's name for it: sASNKeyBufferTooSmall
+#  Programmer's name for it: ApdStrE_BUFFERTOOSMALL
+#. Programmer's name for it: ApdStrE_BUFFERTOOSMALL
+#: ggsetup_TpAsyncPro.inc:919
+msgid "Bufer too small"
+msgstr "Buffer for lille"
+
+#  Programmer's name for it: ApdStrE_CANNOTCREATESS
+#. Programmer's name for it: ApdStrE_CANNOTCREATESS
+#: ggsetup_TpAsyncPro.inc:924
+msgid "Unable to create speech synthesis interface"
+msgstr "Ikke i stand til at oprette tale synthesizer interface"
+
+#  Programmer's name for it: ApdStrE_CANNOTCREATESR
+#. Programmer's name for it: ApdStrE_CANNOTCREATESR
+#: ggsetup_TpAsyncPro.inc:926
+msgid "Unable to create speech recognition interface"
+msgstr "Ikke i stand til at oprette talegenkendelse interface"
+
+#  Programmer's name for it: ApdStrE_CANNOTSETSPEAKER
+#. Programmer's name for it: ApdStrE_CANNOTSETSPEAKER
+#: ggsetup_TpAsyncPro.inc:928
+msgid "Cannot set speech recognition speaker"
+msgstr "Kan ikke sætte talegenkendelse taler"
+
+#  Programmer's name for it: AbFCICreateErrorS
+#  Programmer's name for it: ApdStrE_CANNOTSETMIC
+#. Programmer's name for it: ApdStrE_CANNOTSETMIC
+#: ggsetup_TpAsyncPro.inc:929
+msgid "Cannot set microphone"
+msgstr "Kan ikke sætte mikrofon"
+
+#  Programmer's name for it: ApdStrE_NOSAPI4
+#. Programmer's name for it: ApdStrE_NOSAPI4
+#: ggsetup_TpAsyncPro.inc:930
+msgid "SAPI 4 Engine was not found"
+msgstr "SAPI 4 Motor blev ikke fundet"
+
+#  Programmer's name for it: scApdTrainGeneral
+#. Programmer's name for it: scApdTrainGeneral
+#: ggsetup_TpAsyncPro.inc:933
+msgid "General Training"
+msgstr "Generel Træning"
+
+#  Programmer's name for it: scApdTrainMic
+#. Programmer's name for it: scApdTrainMic
+#: ggsetup_TpAsyncPro.inc:934
+msgid "Microphone Training"
+msgstr "Mikrofon Træning"
+
+#  Programmer's name for it: scApdTrainGrammar
+#. Programmer's name for it: scApdTrainGrammar
+#: ggsetup_TpAsyncPro.inc:935
+msgid "Phrase Training"
+msgstr "Frase Træning"

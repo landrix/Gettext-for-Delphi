@@ -1,0 +1,2710 @@
+# SOME DESCRIPTIVE TITLE.
+# Copyright (C) YEAR THE PACKAGE'S COPYRIGHT HOLDER
+# This file is distributed under the same license as the PACKAGE package.
+# FIRST AUTHOR <EMAIL@ADDRESS>, YEAR.
+# 
+msgid ""
+msgstr ""
+"Project-Id-Version: indy9_RO_1.0\n"
+"POT-Creation-Date: 2005-04-19 10:13\n"
+"PO-Revision-Date: 2005-05-10 02:43+0200\n"
+"Last-Translator: George Motru <office@sollinx.com>\n"
+"Language-Team: Sollinx Services srl <office@sollinx.com>\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"X-Generator: dxgettext 1.2.1 beta 1\n"
+"X-Poedit-Language: Romanian\n"
+"X-Poedit-Country: ROMANIA\n"
+
+#. Programmer's name for it: RSEmptyHost
+#: IdMappedPortTCP.pas:165 
+msgid "Host is empty"
+msgstr "Nu s-a specificat nimic la \"Host\""
+
+#. Programmer's name for it: RSPop3ProxyGreeting
+#: IdMappedPortTCP.pas:166 
+msgid "POP3 proxy ready"
+msgstr "Proxy-ul POP3 este gata"
+
+#. Programmer's name for it: RSPop3UnknownCommand
+#: IdMappedPortTCP.pas:167 
+msgid "command must be either USER or QUIT"
+msgstr "comanda trebuie sa fie ori USER or QUIT"
+
+#. Programmer's name for it: RSPop3QuitMsg
+#: IdMappedPortTCP.pas:168 
+msgid "POP3 proxy signing off"
+msgstr "Proxy-ul POP3 isi semnalizeaza deconectarea"
+
+#. General
+#. Programmer's name for it: RSAlreadyConnected
+#: IdResourceStrings.pas:32 
+msgid "Already connected."
+msgstr "Deja conectat."
+
+#. Programmer's name for it: RSByteIndexOutOfBounds
+#: IdResourceStrings.pas:33 
+msgid "Byte index out of range."
+msgstr "Indexul octetului in afara domeniului."
+
+#. Programmer's name for it: RSCannotAllocateSocket
+#: IdResourceStrings.pas:34 
+msgid "Cannot allocate socket."
+msgstr "Nu pot aloca socket."
+
+#. Programmer's name for it: RSConnectionClosedGracefully
+#: IdResourceStrings.pas:35 
+msgid "Connection Closed Gracefully."
+msgstr "Conexiunea Inchisa La Cerere."
+
+#. Programmer's name for it: RSCouldNotBindSocket
+#: IdResourceStrings.pas:36 
+msgid "Could not bind socket. Address and port are already in use."
+msgstr ""
+"Nu pot initializa socket-ul la adresa si portul cerut deoarece acestea sunt "
+"deja utilizate."
+
+#. Programmer's name for it: RSFailedTimeZoneInfo
+#: IdResourceStrings.pas:37 
+msgid "Failed attempting to retrieve time zone information."
+msgstr "Nu pot gasi informatia de Time Zone."
+
+#. Programmer's name for it: RSNoBindingsSpecified
+#: IdResourceStrings.pas:38 
+msgid "No bindings specified."
+msgstr "Nu s-au specificat legaturi (bindings)."
+
+#. Programmer's name for it: RSOnExecuteNotAssigned
+#: IdResourceStrings.pas:39 
+msgid "OnExecute not assigned."
+msgstr "Nu s-a asignat nimic pt. OnExecute."
+
+#. Programmer's name for it: RSNotAllBytesSent
+#: IdResourceStrings.pas:40 
+msgid "Not all bytes sent."
+msgstr "Nu s-au trimis toti octetii de date."
+
+#. Programmer's name for it: RSNotEnoughDataInBuffer
+#: IdResourceStrings.pas:41 
+msgid "Not enough data in buffer."
+msgstr "Nu sunt destul data in buffer."
+
+#. Programmer's name for it: RSPackageSizeTooBig
+#: IdResourceStrings.pas:42 
+msgid "Package Size Too Big."
+msgstr "Marimea Pachetului prea mare."
+
+#. Programmer's name for it: RSRawReceiveError0
+#: IdResourceStrings.pas:43 
+msgid "Raw Receive Error = 0."
+msgstr "Eroare la Receptionare (Raw) = 0."
+
+#. Programmer's name for it: RSICMPReceiveError0
+#: IdResourceStrings.pas:44 
+msgid "ICMP Receive Error = 0."
+msgstr "Eroare la Receptionare ICMP = 0."
+
+#. Programmer's name for it: RSWinsockInitializationError
+#: IdResourceStrings.pas:45 
+msgid "Winsock Initialization Error."
+msgstr "Eroare la Initializare Winsock."
+
+#. Programmer's name for it: RSCouldNotLoad
+#: IdResourceStrings.pas:46 
+msgid "%s could not be loaded."
+msgstr "%s nu se poate incarca."
+
+#. Programmer's name for it: RSSetSizeExceeded
+#: IdResourceStrings.pas:47 
+msgid "Set Size Exceeded."
+msgstr "Marimea Set-ului depaseste maximul admis."
+
+#. Programmer's name for it: RSThreadClassNotSpecified
+#: IdResourceStrings.pas:48 
+msgid "Thread Class Not Specified."
+msgstr "Clasa Thread-ului Nu este Specificata."
+
+#. Programmer's name for it: RSFileNotFound
+#: IdResourceStrings.pas:49 
+msgid "File \"%s\" not found"
+msgstr "Fisierul \"%s\" nu este gasit"
+
+#. Programmer's name for it: RSCannotChangeDebugTargetAtWhileActive
+#: IdResourceStrings.pas:50 
+msgid "Cannot change target while active."
+msgstr "Nu pot schimba destinatia atat timp cat este activa."
+
+#. Programmer's name for it: RSOnlyOneAntiFreeze
+#: IdResourceStrings.pas:51 
+msgid "Only one TIdAntiFreeze can exist per application."
+msgstr "Numai o instanta TIdAntiFreeze poate exista per aplicatie."
+
+#. Programmer's name for it: RSInterceptCircularLink
+#: IdResourceStrings.pas:52 
+msgid "%d: Circular links are not allowed"
+msgstr "%d: Legaturile Circulare (links) nu sunt permise"
+
+#. Programmer's name for it: RSInterceptPropIsNil
+#: IdResourceStrings.pas:53 
+msgid "InterceptEnabled cannot be set to true when Intercept is nil."
+msgstr "InterceptEnabled nu poate trece pe TRUE daca Intercept este NIL."
+
+#. Programmer's name for it: RSIOHandlerPropInvalid
+#: IdResourceStrings.pas:54 
+msgid "IOHandler value is not valid"
+msgstr "Valoarea lui IOHandler nu este valida."
+
+#. Programmer's name for it: RSNotConnected
+#. Programmer's name for it: RSHL7StatusNotConnected
+#: IdResourceStrings.pas:55  IdResourceStrings.pas:643
+msgid "Not Connected"
+msgstr "Neconectat"
+
+#. Programmer's name for it: RSObjectTypeNotSupported
+#: IdResourceStrings.pas:56 
+msgid "Object type not supported."
+msgstr "Tipul obiectului nu este implementat."
+
+#: IdResourceStrings.pas:58 
+msgid "AcceptWait property cannot be modified while server is active."
+msgstr ""
+"Proprietatea AcceptWait nu se poate modifica atat timp cat server-ul este "
+"activ."
+
+#. Programmer's name for it: RSTerminateThreadTimeout
+#: IdResourceStrings.pas:59 
+msgid "Terminate Thread Timeout"
+msgstr "Terminare Fir de execuţie prin Expirare timp alocat"
+
+#. Programmer's name for it: RSNoExecuteSpecified
+#: IdResourceStrings.pas:60 
+msgid "No execute handler found."
+msgstr "Nu s-a găsit un handler de execuţie."
+
+#. Programmer's name for it: RSIdNoDataToRead
+#: IdResourceStrings.pas:61 
+msgid "No data to read."
+msgstr "Nu sunt date de citit."
+
+#. Programmer's name for it: RSCanNotBindRange
+#: IdResourceStrings.pas:62 
+msgid "Can not bind in port range (%d - %d)"
+msgstr "Nu pot utiliza portul din domeniul aferent: %d - %d"
+
+#. Programmer's name for it: RSInvalidPortRange
+#: IdResourceStrings.pas:63 
+msgid "Invalid Port Range (%d - %d)"
+msgstr "Domeniul de Port(uri) este Invalid (%d - %d)"
+
+#. Programmer's name for it: RSReadTimeout
+#: IdResourceStrings.pas:64 
+msgid "Read Timeout"
+msgstr "Expirare timp alocat pt. Citire"
+
+#. Programmer's name for it: RSReadLnMaxLineLengthExceeded
+#: IdResourceStrings.pas:65 
+msgid "Max line length exceeded."
+msgstr "Lungimea liniei depăşeşte maximul alocat."
+
+#. Programmer's name for it: RSUDPReceiveError0
+#: IdResourceStrings.pas:66 
+msgid "UDP Receive Error = 0."
+msgstr "Eroare la Recepţie prin UDP = 0."
+
+#. Programmer's name for it: RSNoCommandHandlerFound
+#: IdResourceStrings.pas:67 
+msgid "No command handler found."
+msgstr "Nici un handler de comandă nu a fost găsit."
+
+#. Programmer's name for it: RSCannotPerformTaskWhileServerIsActive
+#: IdResourceStrings.pas:68 
+msgid "Cannot perform task while server is active."
+msgstr "Nu pot executa sarcina dată atât timp cât server-ul este activ."
+
+#. TIdEMailAddress
+#. Programmer's name for it: RSEMailSymbolOutsideAddress
+#: IdResourceStrings.pas:70 
+msgid "@ Outside address"
+msgstr "@ Adresa Ieşire"
+
+#. ZLIB Intercept
+#. Programmer's name for it: RSZLCompressorInitializeFailure
+#: IdResourceStrings.pas:72 
+msgid "Unable to initialize compressor"
+msgstr "Nu pot iniţializa compresorul"
+
+#. Programmer's name for it: RSZLDecompressorInitializeFailure
+#: IdResourceStrings.pas:73 
+msgid "Unable to initialize decompressor"
+msgstr "Nu pot iniţializa decompresorul"
+
+#. Programmer's name for it: RSZLCompressionError
+#: IdResourceStrings.pas:74 
+msgid "Compression error"
+msgstr "Eroare la Compresie"
+
+#. Programmer's name for it: RSZLDecompressionError
+#: IdResourceStrings.pas:75 
+msgid "Decompression error"
+msgstr "Eroare la Decompresie"
+
+#. Winsock 2 Stub
+#. Programmer's name for it: RSWS2CallError
+#: IdResourceStrings.pas:77 
+msgid "Error on call Winsock2 library function %s"
+msgstr "Eroare la apelarea funcţiei Winsock2 %s"
+
+#. Programmer's name for it: RSWS2LoadError
+#: IdResourceStrings.pas:78 
+msgid "Error on loading Winsock2 library (%s)"
+msgstr "Eroare la încărcarea librăriei Winsock2 (%s)"
+
+#. MIME Types
+#. Programmer's name for it: RSMIMEExtensionEmpty
+#: IdResourceStrings.pas:80 
+msgid "Extension is empty"
+msgstr "Extensia este goală"
+
+#. Programmer's name for it: RSMIMEMIMETypeEmpty
+#: IdResourceStrings.pas:81 
+msgid "Mimetype is empty"
+msgstr "Tipul MIME (Mimetype) este gol"
+
+#. Programmer's name for it: RSMIMEMIMEExtAlreadyExists
+#: IdResourceStrings.pas:82 
+msgid "Extension already exits"
+msgstr "Extensia deja există"
+
+#. IdRegister
+#. Programmer's name for it: RSRegIndyClients
+#: IdResourceStrings.pas:84 
+msgid "Indy Clients"
+msgstr "Clienţi tip Indy"
+
+#. Programmer's name for it: RSRegIndyServers
+#: IdResourceStrings.pas:85 
+msgid "Indy Servers"
+msgstr "Server-e tip Indy"
+
+#. Programmer's name for it: RSRegIndyIntercepts
+#: IdResourceStrings.pas:86 
+msgid "Indy Intercepts"
+msgstr "Interceptări tip Indy"
+
+#. Programmer's name for it: RSRegIndyIOHandlers
+#: IdResourceStrings.pas:87 
+msgid "Indy I/O Handlers"
+msgstr "Handle I/O tip Indy"
+
+#. Programmer's name for it: RSRegIndyMisc
+#: IdResourceStrings.pas:88 
+msgid "Indy Misc"
+msgstr "Alte facilităţi tip Indy"
+
+#. Status Strings
+#. Programmer's name for it: RSStatusResolving
+#: IdResourceStrings.pas:90 
+msgid "Resolving hostname %s."
+msgstr "Aflare nume de domeniu %s."
+
+#. Programmer's name for it: RSStatusConnecting
+#: IdResourceStrings.pas:91 
+msgid "Connecting to %s."
+msgstr "Conectare la %s."
+
+#. Programmer's name for it: RSStatusConnected
+#. Log strings
+#. Programmer's name for it: RSLogConnected
+#: IdResourceStrings.pas:92  IdResourceStrings.pas:110
+msgid "Connected."
+msgstr "Conectat."
+
+#. Programmer's name for it: RSStatusDisconnecting
+#: IdResourceStrings.pas:93 
+msgid "Disconnecting."
+msgstr "Deconectare."
+
+#. Programmer's name for it: RSStatusDisconnected
+#. Programmer's name for it: RSLogDisconnected
+#: IdResourceStrings.pas:94  IdResourceStrings.pas:111
+msgid "Disconnected."
+msgstr "Deconectat."
+
+#. Programmer's name for it: RSStatusText
+#: IdResourceStrings.pas:95 
+msgid "%s"
+msgstr "%s"
+
+#. TIdTCPClient
+#. Programmer's name for it: RSConnectTimeout
+#: IdResourceStrings.pas:97 
+msgid "Connect timed out."
+msgstr "Timpul alocat pt. Conectare a expirat."
+
+#. MessageClient Strings
+#. Programmer's name for it: RSMsgClientEncodingText
+#: IdResourceStrings.pas:99 
+msgid "Encoding text"
+msgstr "Codificare text"
+
+#. Programmer's name for it: RSMsgClientEncodingAttachment
+#: IdResourceStrings.pas:100 
+msgid "Encoding attachment"
+msgstr "Codificare ataşament"
+
+#. Programmer's name for it: RSMsgClientUnkownMessagePartType
+#: IdResourceStrings.pas:101 
+msgid "Unknown Message Part Type."
+msgstr "Tipul Părţii de Mesaj este Necunoscut."
+
+#. Programmer's name for it: RSMsgClientInvalidEncoding
+#: IdResourceStrings.pas:102 
+msgid "Invalid Encoding. UU only allows Body and Attachments"
+msgstr "Codificare Invalidă. UU acceptă numai Body şi Attachments"
+
+#. NNTP Exceptions
+#. Programmer's name for it: RSNNTPConnectionRefused
+#: IdResourceStrings.pas:104 
+msgid "Connection explicitly refused by NNTP server."
+msgstr "Conexiunea explicit refuzată de server-ul NNTP."
+
+#. Programmer's name for it: RSNNTPStringListNotInitialized
+#: IdResourceStrings.pas:105 
+msgid "Stringlist not initialized!"
+msgstr "Lista de string-uri (Stringlist) nu este iniţializată!"
+
+#. Programmer's name for it: RSNNTPNoOnNewsgroupList
+#: IdResourceStrings.pas:106 
+msgid "No OnNewsgroupList event has been defined."
+msgstr "Nici un eveniment OnNewsgroupList nu s-a definit."
+
+#. Programmer's name for it: RSNNTPNoOnNewGroupsList
+#: IdResourceStrings.pas:107 
+msgid "No OnNewGroupsList event has been defined."
+msgstr "Nici un eveniment OnNewGroupsList nu s-a definit."
+
+#. Programmer's name for it: RSNNTPNoOnNewNewsList
+#: IdResourceStrings.pas:108 
+msgid "No OnNewNewsList event has been defined."
+msgstr "Nici un eveniment OnNewNewsList nu s-a definit."
+
+#. End of Line
+#. Programmer's name for it: RSLogEOL
+#: IdResourceStrings.pas:112 
+msgid "<EOL>"
+msgstr "<EOL>"
+
+#. Carriage Return
+#. Programmer's name for it: RSLogCR
+#: IdResourceStrings.pas:113 
+msgid "<CR>"
+msgstr "<CR>"
+
+#. Line feed
+#. Programmer's name for it: RSLogLF
+#: IdResourceStrings.pas:114 
+msgid "<LF>"
+msgstr "<LF>"
+
+#. Receive
+#. Programmer's name for it: RSLogRecv
+#: IdResourceStrings.pas:115 
+msgid "Recv "
+msgstr "Recv "
+
+#. Send
+#. Programmer's name for it: RSLogSent
+#: IdResourceStrings.pas:116 
+msgid "Sent "
+msgstr "Sent "
+
+#. Status
+#. Programmer's name for it: RSLogStat
+#: IdResourceStrings.pas:117 
+msgid "Stat "
+msgstr "Stat "
+
+#. HTTP Status
+#. Programmer's name for it: RSHTTPChunkStarted
+#: IdResourceStrings.pas:119 
+msgid "Chunk Started"
+msgstr "Porţionarea Începută"
+
+#. Programmer's name for it: RSHTTPContinue
+#: IdResourceStrings.pas:120 
+msgid "Continue"
+msgstr "Continuă"
+
+#. Programmer's name for it: RSHTTPSwitchingProtocols
+#: IdResourceStrings.pas:121 
+msgid "Switching protocols"
+msgstr "Comutare protocoale"
+
+#. Programmer's name for it: RSHTTPOK
+#. Programmer's name for it: RSAAboutOk
+#. Programmer's name for it: RSBindingOkButton
+#: IdResourceStrings.pas:122  IdResourceStrings.pas:410
+#: IdResourceStrings.pas:429
+msgid "OK"
+msgstr "OK"
+
+#. Programmer's name for it: RSHTTPCreated
+#: IdResourceStrings.pas:123 
+msgid "Created"
+msgstr "Creat"
+
+#. Programmer's name for it: RSHTTPAccepted
+#: IdResourceStrings.pas:124 
+msgid "Accepted"
+msgstr "Aceptat"
+
+#. Programmer's name for it: RSHTTPNonAuthoritativeInformation
+#: IdResourceStrings.pas:125 
+msgid "Non-authoritative Information"
+msgstr "Informaţie Ne-autoritară"
+
+#. Programmer's name for it: RSHTTPNoContent
+#: IdResourceStrings.pas:126 
+msgid "No Content"
+msgstr "Fără Conţinut"
+
+#. Programmer's name for it: RSHTTPResetContent
+#: IdResourceStrings.pas:127 
+msgid "Reset Content"
+msgstr "Resetare Conţinut"
+
+#. Programmer's name for it: RSHTTPPartialContent
+#: IdResourceStrings.pas:128 
+msgid "Partial Content"
+msgstr "Conţinut Parţial"
+
+#. Programmer's name for it: RSHTTPMovedPermanently
+#: IdResourceStrings.pas:129 
+msgid "Moved Permanently"
+msgstr "Mutat Permanent"
+
+#. Programmer's name for it: RSHTTPMovedTemporarily
+#: IdResourceStrings.pas:130 
+msgid "Moved Temporarily"
+msgstr "Mutat Temporar"
+
+#. Programmer's name for it: RSHTTPSeeOther
+#: IdResourceStrings.pas:131 
+msgid "See Other"
+msgstr "Vezi Altele"
+
+#. Programmer's name for it: RSHTTPNotModified
+#: IdResourceStrings.pas:132 
+msgid "Not Modified"
+msgstr "Nu s-a Modificat"
+
+#. Programmer's name for it: RSHTTPUseProxy
+#: IdResourceStrings.pas:133 
+msgid "Use Proxy"
+msgstr "Utilizare Proxy"
+
+#. Programmer's name for it: RSHTTPBadRequest
+#: IdResourceStrings.pas:134 
+msgid "Bad Request"
+msgstr "Cerere necorespunzătoare (Bad Request)"
+
+#. Programmer's name for it: RSHTTPUnauthorized
+#: IdResourceStrings.pas:135 
+msgid "Unauthorized"
+msgstr "Neautorizat (Unauthorized)"
+
+#. Programmer's name for it: RSHTTPForbidden
+#: IdResourceStrings.pas:136 
+msgid "Forbidden"
+msgstr "Interzis (Forbidden)"
+
+#. Programmer's name for it: RSHTTPNotFound
+#: IdResourceStrings.pas:137 
+msgid "Not Found"
+msgstr "Negăsit (Not Found)"
+
+#. Programmer's name for it: RSHTTPMethodeNotallowed
+#: IdResourceStrings.pas:138 
+msgid "Method not allowed"
+msgstr "Metoda nu este acceptată"
+
+#. Programmer's name for it: RSHTTPNotAcceptable
+#: IdResourceStrings.pas:139 
+msgid "Not Acceptable"
+msgstr "Inacceptabil (Not Acceptable)"
+
+#. Programmer's name for it: RSHTTPProxyAuthenticationRequired
+#: IdResourceStrings.pas:140 
+msgid "Proxy Authentication Required"
+msgstr "Se cere Autentificare pt. Proxy"
+
+#. Programmer's name for it: RSHTTPRequestTimeout
+#: IdResourceStrings.pas:141 
+msgid "Request Timeout"
+msgstr "Timpul alocat efectuării Cerererii a expirat (Request Timeout)"
+
+#. Programmer's name for it: RSHTTPConflict
+#: IdResourceStrings.pas:142 
+msgid "Conflict"
+msgstr "Conflict"
+
+#. Programmer's name for it: RSHTTPGone
+#: IdResourceStrings.pas:143 
+msgid "Gone"
+msgstr "Dus (Gone)"
+
+#. Programmer's name for it: RSHTTPLengthRequired
+#: IdResourceStrings.pas:144 
+msgid "Length Required"
+msgstr "Se cere lungimea (Length Required)"
+
+#. Programmer's name for it: RSHTTPPreconditionFailed
+#: IdResourceStrings.pas:145 
+msgid "Precondition Failed"
+msgstr "Precondiţia a eşuat (Precondition Failed)"
+
+#. Programmer's name for it: RSHTTPRequestEntityToLong
+#: IdResourceStrings.pas:146 
+msgid "Request Entity To Long"
+msgstr "Entitatea cerută este prea lungă (Request Entity To Long)"
+
+#. Programmer's name for it: RSHTTPRequestURITooLong
+#: IdResourceStrings.pas:147 
+msgid "Request-URI Too Long. 256 Chars max"
+msgstr "Request-URI este prea lung. 256 caractere (Chars) max"
+
+#. Programmer's name for it: RSHTTPUnsupportedMediaType
+#: IdResourceStrings.pas:148 
+msgid "Unsupported Media Type"
+msgstr "Tip Media neimplementat (Unsupported Media Type)"
+
+#. Programmer's name for it: RSHTTPInternalServerError
+#: IdResourceStrings.pas:149 
+msgid "Internal Server Error"
+msgstr "Eroare Interna a Server-ului (Internal Server Error)"
+
+#. Programmer's name for it: RSHTTPNotImplemented
+#: IdResourceStrings.pas:150 
+msgid "Not Implemented"
+msgstr "Ne-implementat (Not Implemented)"
+
+#. Programmer's name for it: RSHTTPBadGateway
+#: IdResourceStrings.pas:151 
+msgid "Bad Gateway"
+msgstr "Gateway necorespunzător (Bad Gateway)"
+
+#. Programmer's name for it: RSHTTPServiceUnavailable
+#: IdResourceStrings.pas:152 
+msgid "Service Unavailable"
+msgstr "Serviciu (temporar) inexistent (Service Unavailable)"
+
+#. Programmer's name for it: RSHTTPGatewayTimeout
+#: IdResourceStrings.pas:153 
+msgid "Gateway timeout"
+msgstr "Timpul alocat pt. Gateway a expirat (Gateway timeout)"
+
+#. Programmer's name for it: RSHTTPHTTPVersionNotSupported
+#: IdResourceStrings.pas:154 
+msgid "HTTP version not supported"
+msgstr "Versiunea HTTP nu este implementata (suportată)"
+
+#. Programmer's name for it: RSHTTPUnknownResponseCode
+#: IdResourceStrings.pas:155 
+msgid "Unknown Response Code"
+msgstr "Cod Necunoscut de Raspuns"
+
+#. HTTP Other
+#. Programmer's name for it: RSHTTPHeaderAlreadyWritten
+#: IdResourceStrings.pas:157 
+msgid "Header has already been written."
+msgstr "Antetul a fost scris deja"
+
+#. Programmer's name for it: RSHTTPErrorParsingCommand
+#: IdResourceStrings.pas:158 
+msgid "Error in parsing command."
+msgstr "Eroare in interpretarea comenzii."
+
+#. Programmer's name for it: RSHTTPUnsupportedAuthorisationScheme
+#: IdResourceStrings.pas:159 
+msgid "Unsupported authorization scheme."
+msgstr "Schema de autoriza neimplementata."
+
+#. Programmer's name for it: RSHTTPCannotSwitchSessionStateWhenActive
+#: IdResourceStrings.pas:160 
+msgid "Cannot change session state when the server is active."
+msgstr "Nu se poate schimba starea sesiunii cand server-ul este activ."
+
+#. HTTP Authentication
+#. Programmer's name for it: RSHTTPAuthAlreadyRegistered
+#: IdResourceStrings.pas:162 
+msgid "This authentication method is already registered with class name %s."
+msgstr "Metoda de autentificare este deja inregistrata in clasa numita %s."
+
+#. HTTP Authentication Digeest
+#. Programmer's name for it: RSHTTPAuthInvalidHash
+#: IdResourceStrings.pas:164 
+msgid ""
+"Unsupported hash algorithm. This implementation supports only MD5 encoding."
+msgstr "Algoritm de hash neimplementat. Numai codarea MD5 este valabila."
+
+#. SSPI Authentication
+#. Programmer's name for it: RSHTTPSSPISuccess
+#: IdResourceStrings.pas:169 
+msgid "Successfull API call"
+msgstr "Apelare API cu succes"
+
+#. Programmer's name for it: RSHTTPSSPINotEnoughMem
+#: IdResourceStrings.pas:170 
+msgid "Not enough memory is available to complete this request"
+msgstr "Memorie insuficienta pentru terminarea cererii"
+
+#. Programmer's name for it: RSHTTPSSPIInvalidHandle
+#: IdResourceStrings.pas:171 
+msgid "The handle specified is invalid"
+msgstr "Handle-ul specificat este invalid"
+
+#. Programmer's name for it: RSHTTPSSPIFuncNotSupported
+#: IdResourceStrings.pas:172 
+msgid "The function requested is not supported"
+msgstr "Functia ceruta nu este implementata"
+
+#. Programmer's name for it: RSHTTPSSPIUnknownTarget
+#: IdResourceStrings.pas:173 
+msgid "The specified target is unknown or unreachable"
+msgstr "Destinatia specificata este necunoscuta sau de negasit"
+
+#. Programmer's name for it: RSHTTPSSPIInternalError
+#: IdResourceStrings.pas:174 
+msgid "The Local Security Authority cannot be contacted"
+msgstr "Autoritatea Locala de Securitate nu se poate contacta"
+
+#. Programmer's name for it: RSHTTPSSPISecPackageNotFound
+#. Programmer's name for it: RSHTTPSSPIBadPackageID
+#: IdResourceStrings.pas:175  IdResourceStrings.pas:192
+msgid "The requested security package does not exist"
+msgstr "Pachetul de securitate cerut nu exista"
+
+#. Programmer's name for it: RSHTTPSSPINotOwner
+#: IdResourceStrings.pas:176 
+msgid "The caller is not the owner of the desired credentials"
+msgstr "Apelantul nu detine datele necesare accesului"
+
+#. Programmer's name for it: RSHTTPSSPIPackageCannotBeInstalled
+#: IdResourceStrings.pas:177 
+msgid "The security package failed to initialize, and cannot be installed"
+msgstr ""
+"Pachetul de securitate nu s-a initializat corect si nu se poate instala"
+
+#. Programmer's name for it: RSHTTPSSPIInvalidToken
+#: IdResourceStrings.pas:178 
+msgid "The token supplied to the function is invalid"
+msgstr "Paramentrul de accesare dat functiei este invalid"
+
+#. Programmer's name for it: RSHTTPSSPICannotPack
+#: IdResourceStrings.pas:179 
+msgid ""
+"The security package is not able to marshall the logon buffer, so the logon "
+"attempt has failed"
+msgstr ""
+"Pachetul de securitate nu poate pasa datele de logare, incercare de logare "
+"nu a reusit  "
+
+#. Programmer's name for it: RSHTTPSSPIQOPNotSupported
+#: IdResourceStrings.pas:180 
+msgid ""
+"The per-message Quality of Protection is not supported by the security "
+"package"
+msgstr ""
+"Calitatea Protectiei per mesaj nu este implementata de pachetul de securitate"
+
+#. Programmer's name for it: RSHTTPSSPINoImpersonation
+#: IdResourceStrings.pas:181 
+msgid "The security context does not allow impersonation of the client"
+msgstr "Contextul de securitate nu permite simularea de persoana a clientului"
+
+#. Programmer's name for it: RSHTTPSSPILoginDenied
+#: IdResourceStrings.pas:182 
+msgid "The logon attempt failed"
+msgstr "Incercarea de logare a esuat"
+
+#. Programmer's name for it: RSHTTPSSPIUnknownCredentials
+#: IdResourceStrings.pas:183 
+msgid "The credentials supplied to the package were not recognized"
+msgstr ""
+"Datele necesare accesului nu au fost recunoscute de pachetul de securitate"
+
+#. Programmer's name for it: RSHTTPSSPINoCredentials
+#: IdResourceStrings.pas:184 
+msgid "No credentials are available in the security package"
+msgstr "Nu sunt valabile datele necesare accesului in pachetul de securitate"
+
+#. Programmer's name for it: RSHTTPSSPIMessageAltered
+#: IdResourceStrings.pas:185 
+msgid "The message or signature supplied for verification has been altered"
+msgstr "Mesajul / semnatura data spre verificare a fost alterat(a)"
+
+#. Programmer's name for it: RSHTTPSSPIOutOfSequence
+#: IdResourceStrings.pas:186 
+msgid "The message supplied for verification is out of sequence"
+msgstr "Mesajul dat spre verificare este desincronizat"
+
+#. Programmer's name for it: RSHTTPSSPINoAuthAuthority
+#: IdResourceStrings.pas:187 
+msgid "No authority could be contacted for authentication."
+msgstr "Nici o autoritate nu se gaseste in vederea autentificarii"
+
+#. Programmer's name for it: RSHTTPSSPIContinueNeeded
+#: IdResourceStrings.pas:188 
+msgid ""
+"The function completed successfully, but must be called again to complete "
+"the context"
+msgstr "Functia a reusit dar trebuie reapelata pt. completarea contextului"
+
+#. Programmer's name for it: RSHTTPSSPICompleteNeeded
+#: IdResourceStrings.pas:189 
+msgid "The function completed successfully, but CompleteToken must be called"
+msgstr "Functia a reusit, dar functia CompleteToken trebuie reapelata"
+
+#. Programmer's name for it: RSHTTPSSPICompleteContinueNeeded
+#: IdResourceStrings.pas:190 
+msgid ""
+"The function completed successfully, but both CompleteToken and this "
+"function must be called to complete the context"
+msgstr ""
+"Functia a reusit, dar atat ea cat si functia CompleteToken trebuie reapelate "
+"pt. completarea contextului"
+
+#. Programmer's name for it: RSHTTPSSPILocalLogin
+#: IdResourceStrings.pas:191 
+msgid ""
+"The logon was completed, but no network authority was available. The logon "
+"was made using locally known information"
+msgstr ""
+"Logarea a reusit, dar nici o autoritate de autentificare in retea nu a fost "
+"gasita. Logarea s-a facut cu informatiile locale cunoscute"
+
+#. Programmer's name for it: RSHTTPSSPIContextExpired
+#: IdResourceStrings.pas:193 
+msgid "The context has expired and can no longer be used."
+msgstr "Contextul a expirat si ca atare nu se mai poate utiliza"
+
+#. Programmer's name for it: RSHTTPSSPIIncompleteMessage
+#: IdResourceStrings.pas:194 
+msgid "The supplied message is incomplete.  The signature was not verified."
+msgstr "Mesajul trimis este incomplet. Semnatura nu a fost verificata."
+
+#. Programmer's name for it: RSHTTPSSPIIncompleteCredentialNotInit
+#: IdResourceStrings.pas:195 
+msgid ""
+"The credentials supplied were not complete, and could not be verified. The "
+"context could not be initialized."
+msgstr ""
+"Datele necesare accesului nu au fost complete si nu s-au putut verifica. "
+"Contextul nu s-a putut initializa."
+
+#. Programmer's name for it: RSHTTPSSPIBufferTooSmall
+#: IdResourceStrings.pas:196 
+msgid "The buffers supplied to a function was too small."
+msgstr "Memoria tampon (buffer) pasata functiei a fost prea mica."
+
+#. Programmer's name for it: RSHTTPSSPIIncompleteCredentialsInit
+#: IdResourceStrings.pas:197 
+msgid ""
+"The credentials supplied were not complete, and could not be verified. "
+"Additional information can be returned from the context."
+msgstr ""
+"Datele necesare accesului nu au fost complete si nu s-au putut verifica. O "
+"informatie aditionala poate rezulta din context."
+
+#. Programmer's name for it: RSHTTPSSPIRengotiate
+#: IdResourceStrings.pas:198 
+msgid "The context data must be renegotiated with the peer."
+msgstr "Datele contextului trebuiesc renegociate.."
+
+#. Programmer's name for it: RSHTTPSSPIWrongPrincipal
+#: IdResourceStrings.pas:199 
+msgid "The target principal name is incorrect."
+msgstr "Numele principal al destinaţiei este corect."
+
+#. Programmer's name for it: RSHTTPSSPINoLSACode
+#: IdResourceStrings.pas:200 
+msgid "There is no LSA mode context associated with this context."
+msgstr ""
+
+#. Programmer's name for it: RSHTTPSSPITimeScew
+#: IdResourceStrings.pas:201 
+msgid "The clocks on the client and server machines are skewed."
+msgstr ""
+
+#. Programmer's name for it: RSHTTPSSPIUntrustedRoot
+#: IdResourceStrings.pas:202 
+msgid "The certificate chain was issued by an untrusted authority."
+msgstr ""
+
+#. Programmer's name for it: RSHTTPSSPIIllegalMessage
+#: IdResourceStrings.pas:203 
+msgid "The message received was unexpected or badly formatted."
+msgstr ""
+
+#. Programmer's name for it: RSHTTPSSPICertUnknown
+#: IdResourceStrings.pas:204 
+msgid "An unknown error occurred while processing the certificate."
+msgstr ""
+
+#. Programmer's name for it: RSHTTPSSPICertExpired
+#: IdResourceStrings.pas:205 
+msgid "The received certificate has expired."
+msgstr ""
+
+#. Programmer's name for it: RSHTTPSSPIEncryptionFailure
+#: IdResourceStrings.pas:206 
+msgid "The specified data could not be encrypted."
+msgstr ""
+
+#. Programmer's name for it: RSHTTPSSPIDecryptionFailure
+#: IdResourceStrings.pas:207 
+msgid "The specified data could not be decrypted."
+msgstr ""
+
+#. Programmer's name for it: RSHTTPSSPIAlgorithmMismatch
+#: IdResourceStrings.pas:208 
+msgid ""
+"The client and server cannot communicate, because they do not possess a "
+"common algorithm."
+msgstr ""
+
+#. Programmer's name for it: RSHTTPSSPISecurityQOSFailure
+#: IdResourceStrings.pas:209 
+msgid ""
+"The security context could not be established due to a failure in the "
+"requested quality of service (e.g. mutual authentication or delegation)."
+msgstr ""
+
+#. Programmer's name for it: RSHTTPSSPIUnknwonError
+#: IdResourceStrings.pas:210 
+msgid "Unknown error"
+msgstr "Eroare necunoscută"
+
+#. Programmer's name for it: RSHTTPSSPIErrorMsg
+#: IdResourceStrings.pas:220 
+msgid "SSPI %s returns error #%d(0x%x): %s"
+msgstr "SSPI %s raportează eroare #%d(0x%x): %s"
+
+#. Programmer's name for it: RSHTTPSSPIInterfaceInitFailed
+#: IdResourceStrings.pas:222 
+msgid "SSPI interface has failed to initialise properly"
+msgstr "Interfaţa SSPI a eşuat în a se iniţializa corect"
+
+#. Programmer's name for it: RSHTTPSSPINoPkgInfoSpecified
+#: IdResourceStrings.pas:223 
+msgid "No PSecPkgInfo specified"
+msgstr "Nu s-a specificat PSecPkgInfo"
+
+#. Programmer's name for it: RSHTTPSSPINoCredentialHandle
+#: IdResourceStrings.pas:224 
+msgid "No credential handle acquired"
+msgstr "Nu s-a obţinut un handle credenţial"
+
+#. Programmer's name for it: RSHTTPSSPICanNotChangeCredentials
+#: IdResourceStrings.pas:225 
+msgid "Can not change credentials after handle aquired. Use Release first"
+msgstr ""
+
+#. Programmer's name for it: RSHTTPSSPIUnknwonCredentialUse
+#: IdResourceStrings.pas:226 
+msgid "Unknown credentials use"
+msgstr ""
+
+#. Programmer's name for it: RSHTTPSSPIDoAuquireCredentialHandle
+#: IdResourceStrings.pas:227 
+msgid "Do AcquireCredentialsHandle first"
+msgstr "Apelaţi mai întâi metoda AcquireCredentialsHandle"
+
+#. Programmer's name for it: RSHTTPSSPICompleteTokenNotSupported
+#: IdResourceStrings.pas:228 
+msgid "CompleteAuthToken is not supported"
+msgstr ""
+
+#. Block Cipher Intercept
+#. Programmer's name for it: RSBlockIncorrectLength
+#: IdResourceStrings.pas:231 
+msgid "Incorrect length in received block"
+msgstr ""
+
+#. FTP
+#. Programmer's name for it: RSFTPUnknownHost
+#. Programmer's name for it: RSLPRUnknown
+#: IdResourceStrings.pas:234  IdResourceStrings.pas:628
+msgid "Unknown"
+msgstr "Necunoscut(ă)"
+
+#. Programmer's name for it: RSInvalidFTPListingFormat
+#: IdResourceStrings.pas:235 
+msgid "Unknown FTP listing format"
+msgstr ""
+
+#. Programmer's name for it: RSFTPStatusReady
+#: IdResourceStrings.pas:236 
+msgid "Connection established"
+msgstr ""
+
+#. Programmer's name for it: RSFTPStatusStartTransfer
+#: IdResourceStrings.pas:237 
+msgid "Starting FTP transfer"
+msgstr ""
+
+#. Programmer's name for it: RSFTPStatusDoneTransfer
+#: IdResourceStrings.pas:238 
+msgid "Transfer complete"
+msgstr ""
+
+#. Programmer's name for it: RSFTPStatusAbortTransfer
+#: IdResourceStrings.pas:239 
+msgid "Transfer aborted"
+msgstr ""
+
+#. Property editor exceptions
+#. Programmer's name for it: RSCorruptServicesFile
+#: IdResourceStrings.pas:242 
+msgid "%s is corrupt."
+msgstr "%s este corupt."
+
+#. Programmer's name for it: RSInvalidServiceName
+#: IdResourceStrings.pas:243 
+msgid "%s is not a valid service."
+msgstr "%s nu este un serviciu valid."
+
+#. Stack Error Messages
+#. Programmer's name for it: RSStackError
+#: IdResourceStrings.pas:245 
+msgid ""
+"Socket Error # %d\n"
+"%s"
+msgstr ""
+"Eroare Socket # %d\n"
+"%s"
+
+#. Programmer's name for it: RSStackInvalidIP
+#: IdResourceStrings.pas:246 
+msgid "%s is not a valid IP address."
+msgstr "%s nu este o adresă IP validă."
+
+#. Programmer's name for it: RSStackEINTR
+#: IdResourceStrings.pas:247 
+msgid "Interrupted system call."
+msgstr "Apel de sistem întrerupt."
+
+#. Programmer's name for it: RSStackEBADF
+#: IdResourceStrings.pas:248 
+msgid "Bad file number."
+msgstr "Număr fişier necorespunzător."
+
+#. Programmer's name for it: RSStackEACCES
+#: IdResourceStrings.pas:249 
+msgid "Access denied."
+msgstr "Accesul interzis."
+
+#. Programmer's name for it: RSStackEFAULT
+#: IdResourceStrings.pas:250 
+msgid "Bad address."
+msgstr "Addresă necorespunzătoare."
+
+#. Programmer's name for it: RSStackEINVAL
+#: IdResourceStrings.pas:251 
+msgid "Invalid argument."
+msgstr "Argument invalid."
+
+#. Programmer's name for it: RSStackEMFILE
+#: IdResourceStrings.pas:252 
+msgid "Too many open files."
+msgstr "Prea multe fişiere deschise."
+
+#. Programmer's name for it: RSStackEWOULDBLOCK
+#: IdResourceStrings.pas:253 
+msgid "Operation would block. "
+msgstr "Operaţiunea se va bloca. "
+
+#. Programmer's name for it: RSStackEINPROGRESS
+#: IdResourceStrings.pas:254 
+msgid "Operation now in progress."
+msgstr "Operatiunea continuă."
+
+#. Programmer's name for it: RSStackEALREADY
+#: IdResourceStrings.pas:255 
+msgid "Operation already in progress."
+msgstr "Operaţia continuă deja."
+
+#. Programmer's name for it: RSStackENOTSOCK
+#: IdResourceStrings.pas:256 
+msgid "Socket operation on non-socket."
+msgstr "Operaţiune tip Socket pe modul non-socket."
+
+#. Programmer's name for it: RSStackEDESTADDRREQ
+#: IdResourceStrings.pas:257 
+msgid "Destination address required."
+msgstr "Se cere adresa Destinaţiei."
+
+#. Programmer's name for it: RSStackEMSGSIZE
+#: IdResourceStrings.pas:258 
+msgid "Message too long."
+msgstr "Mesaj prea lung."
+
+#. Programmer's name for it: RSStackEPROTOTYPE
+#: IdResourceStrings.pas:259 
+msgid "Protocol wrong type for socket."
+msgstr "Tip de protocol greşit pentru socket."
+
+#. Programmer's name for it: RSStackENOPROTOOPT
+#: IdResourceStrings.pas:260 
+msgid "Bad protocol option."
+msgstr "Opţiunea nu există pt. acest protocol."
+
+#. Programmer's name for it: RSStackEPROTONOSUPPORT
+#: IdResourceStrings.pas:261 
+msgid "Protocol not supported."
+msgstr "Acest protocol nu este implementat."
+
+#. Programmer's name for it: RSStackESOCKTNOSUPPORT
+#: IdResourceStrings.pas:262 
+msgid "Socket type not supported."
+msgstr "Tip de Socket ne-implementat."
+
+#. Programmer's name for it: RSStackEOPNOTSUPP
+#: IdResourceStrings.pas:263 
+msgid "Operation not supported on socket."
+msgstr "Operaţit ne-implementată pt. acest socket."
+
+#. Programmer's name for it: RSStackEPFNOSUPPORT
+#: IdResourceStrings.pas:264 
+msgid "Protocol family not supported."
+msgstr "Familie de protocoale family ne-implementată."
+
+#. Programmer's name for it: RSStackEAFNOSUPPORT
+#: IdResourceStrings.pas:265 
+msgid "Address family not supported by protocol family."
+msgstr "Adresarea familiei de protocoale nu este implementată."
+
+#. Programmer's name for it: RSStackEADDRINUSE
+#: IdResourceStrings.pas:266 
+msgid "Address already in use."
+msgstr "Adresă aflată în uz deja."
+
+#. Programmer's name for it: RSStackEADDRNOTAVAIL
+#: IdResourceStrings.pas:267 
+msgid "Cannot assign requested address."
+msgstr "Nu pot asigna adresa cerută."
+
+#. Programmer's name for it: RSStackENETDOWN
+#: IdResourceStrings.pas:268 
+msgid "Network is down."
+msgstr "Reţeaua nu funcţionează."
+
+#. Programmer's name for it: RSStackENETUNREACH
+#: IdResourceStrings.pas:269 
+msgid "Network is unreachable."
+msgstr "Reţeaua nu se poate contacta."
+
+#. Programmer's name for it: RSStackENETRESET
+#: IdResourceStrings.pas:270 
+msgid "Net dropped connection or reset."
+msgstr "Conexiune refuzată de reţea sau resetată."
+
+#. Programmer's name for it: RSStackECONNABORTED
+#: IdResourceStrings.pas:271 
+msgid "Software caused connection abort."
+msgstr "Abandon cauzat de conexiunea software."
+
+#. Programmer's name for it: RSStackECONNRESET
+#: IdResourceStrings.pas:272 
+msgid "Connection reset by peer."
+msgstr "Conexiune resetată de partener."
+
+#. Programmer's name for it: RSStackENOBUFS
+#: IdResourceStrings.pas:273 
+msgid "No buffer space available."
+msgstr "Nu mai există spaţiu în buffer."
+
+#. Programmer's name for it: RSStackEISCONN
+#: IdResourceStrings.pas:274 
+msgid "Socket is already connected."
+msgstr "Socket-ul este deja conectat."
+
+#. Programmer's name for it: RSStackENOTCONN
+#: IdResourceStrings.pas:275 
+msgid "Socket is not connected."
+msgstr "Socket-ul nu este conectat."
+
+#. Programmer's name for it: RSStackESHUTDOWN
+#: IdResourceStrings.pas:276 
+msgid "Cannot send or receive after socket is closed."
+msgstr "Nu pot emite/recepţiona după închidere socket."
+
+#. Programmer's name for it: RSStackETOOMANYREFS
+#: IdResourceStrings.pas:277 
+msgid "Too many references, cannot splice."
+msgstr "Prea multe referinţe, nu le pot împărţi."
+
+#. Programmer's name for it: RSStackETIMEDOUT
+#: IdResourceStrings.pas:278 
+msgid "Connection timed out."
+msgstr "Timpul alocat conexiunii a expirat."
+
+#. Programmer's name for it: RSStackECONNREFUSED
+#. Programmer's name for it: RSSocksServerConnectionRefusedError
+#: IdResourceStrings.pas:279  IdResourceStrings.pas:460
+msgid "Connection refused."
+msgstr "Conexiune refuzată."
+
+#. Programmer's name for it: RSStackELOOP
+#: IdResourceStrings.pas:280 
+msgid "Too many levels of symbolic links."
+msgstr "Prea multe nivele de legături simbolice."
+
+#. Programmer's name for it: RSStackENAMETOOLONG
+#: IdResourceStrings.pas:281 
+msgid "File name too long."
+msgstr "Nume de fişier prea lung."
+
+#. Programmer's name for it: RSStackEHOSTDOWN
+#: IdResourceStrings.pas:282 
+msgid "Host is down."
+msgstr "Host is down."
+
+#. Programmer's name for it: RSStackEHOSTUNREACH
+#: IdResourceStrings.pas:283 
+msgid "No route to host."
+msgstr ""
+
+#. Programmer's name for it: RSStackENOTEMPTY
+#: IdResourceStrings.pas:284 
+msgid "Directory not empty"
+msgstr ""
+
+#. Programmer's name for it: RSStackEPROCLIM
+#: IdResourceStrings.pas:285 
+msgid "Too many processes."
+msgstr ""
+
+#. Programmer's name for it: RSStackEUSERS
+#: IdResourceStrings.pas:286 
+msgid "Too many users."
+msgstr ""
+
+#. Programmer's name for it: RSStackEDQUOT
+#: IdResourceStrings.pas:287 
+msgid "Disk Quota Exceeded."
+msgstr ""
+
+#. Programmer's name for it: RSStackESTALE
+#: IdResourceStrings.pas:288 
+msgid "Stale NFS file handle."
+msgstr ""
+
+#. Programmer's name for it: RSStackEREMOTE
+#: IdResourceStrings.pas:289 
+msgid "Too many levels of remote in path."
+msgstr ""
+
+#. Programmer's name for it: RSStackSYSNOTREADY
+#: IdResourceStrings.pas:290 
+msgid "Network subsystem is unavailable."
+msgstr ""
+
+#. Programmer's name for it: RSStackVERNOTSUPPORTED
+#: IdResourceStrings.pas:291 
+msgid "WINSOCK DLL Version out of range."
+msgstr ""
+
+#. Programmer's name for it: RSStackNOTINITIALISED
+#: IdResourceStrings.pas:292 
+msgid "Winsock not loaded yet."
+msgstr ""
+
+#. Programmer's name for it: RSStackHOST_NOT_FOUND
+#: IdResourceStrings.pas:293 
+msgid "Host not found."
+msgstr ""
+
+#. Programmer's name for it: RSStackTRY_AGAIN
+#: IdResourceStrings.pas:294 
+msgid "Non-authoritative response (try again or check DNS setup)."
+msgstr ""
+
+#. Programmer's name for it: RSStackNO_RECOVERY
+#: IdResourceStrings.pas:295 
+msgid "Non-recoverable errors: FORMERR, REFUSED, NOTIMP."
+msgstr ""
+
+#. Programmer's name for it: RSStackNO_DATA
+#: IdResourceStrings.pas:296 
+msgid "Valid name, no data record (check DNS setup)."
+msgstr ""
+
+#. Programmer's name for it: RSCMDNotRecognized
+#: IdResourceStrings.pas:298 
+msgid "command not recognized"
+msgstr ""
+
+#. Programmer's name for it: RSGopherNotGopherPlus
+#: IdResourceStrings.pas:300 
+msgid "%s is not a Gopher+ server"
+msgstr ""
+
+#. Programmer's name for it: RSCodeNoError
+#: IdResourceStrings.pas:302 
+msgid "RCode NO Error"
+msgstr ""
+
+#. Programmer's name for it: RSCodeQueryFormat
+#: IdResourceStrings.pas:303 
+msgid "DNS Server Reports Query Format Error"
+msgstr ""
+
+#. Programmer's name for it: RSCodeQueryServer
+#: IdResourceStrings.pas:304 
+msgid "DNS Server Reports Query Server Error"
+msgstr ""
+
+#. Programmer's name for it: RSCodeQueryName
+#: IdResourceStrings.pas:305 
+msgid "DNS Server Reports Query Name Error"
+msgstr ""
+
+#. Programmer's name for it: RSCodeQueryNotImplemented
+#: IdResourceStrings.pas:306 
+msgid "DNS Server Reports Query Not Implemented Error"
+msgstr ""
+
+#. Programmer's name for it: RSCodeQueryQueryRefused
+#: IdResourceStrings.pas:307 
+msgid "DNS Server Reports Query Refused Error"
+msgstr ""
+
+#. Programmer's name for it: RSCodeQueryUnknownError
+#: IdResourceStrings.pas:308 
+msgid "Server Returned Unknown Error"
+msgstr ""
+
+#. Programmer's name for it: RSDNSTimeout
+#: IdResourceStrings.pas:310 
+msgid "TimedOut"
+msgstr ""
+
+#. Programmer's name for it: RSDNSMFIsObsolete
+#: IdResourceStrings.pas:311 
+msgid "MF is an Obsolete Command. USE MX."
+msgstr ""
+
+#. Programmer's name for it: RSDNSMDISObsolete
+#: IdResourceStrings.pas:312 
+msgid "MD is an Obsolete Command. Use MX."
+msgstr ""
+
+#. Programmer's name for it: RSDNSMailAObsolete
+#: IdResourceStrings.pas:313 
+msgid "MailA is an Obsolete Command. USE MX."
+msgstr ""
+
+#. Programmer's name for it: RSDNSMailBNotImplemented
+#: IdResourceStrings.pas:314 
+msgid "-Err 501 MailB is not implemented"
+msgstr ""
+
+#. Programmer's name for it: RSQueryInvalidQueryCount
+#: IdResourceStrings.pas:316 
+msgid "Invalid Query Count %d"
+msgstr ""
+
+#. Programmer's name for it: RSQueryInvalidPacketSize
+#: IdResourceStrings.pas:317 
+msgid "Invalid Packet Size %d"
+msgstr ""
+
+#. Programmer's name for it: RSQueryLessThanFour
+#: IdResourceStrings.pas:318 
+msgid "Received Packet is too small. Less than 4 bytes %d"
+msgstr ""
+
+#. Programmer's name for it: RSQueryInvalidHeaderID
+#: IdResourceStrings.pas:319 
+msgid "Invalid Header Id %d"
+msgstr ""
+
+#. Programmer's name for it: RSQueryLessThanTwelve
+#: IdResourceStrings.pas:320 
+msgid "Received Packet is too small. Less than 12 bytes %d"
+msgstr ""
+
+#. Programmer's name for it: RSQueryPackReceivedTooSmall
+#: IdResourceStrings.pas:321 
+msgid "Received Packet is too small. %d"
+msgstr ""
+
+#. Programmer's name for it: RSLPDDataFileSaved
+#: IdResourceStrings.pas:324 
+msgid "Data file saved to %s"
+msgstr ""
+
+#. Programmer's name for it: RSLPDControlFileSaved
+#: IdResourceStrings.pas:325 
+msgid "Control file save to %s"
+msgstr ""
+
+#. Programmer's name for it: RSLPDDirectoryDoesNotExist
+#: IdResourceStrings.pas:326 
+msgid "Directory %s does not exist"
+msgstr ""
+
+#. Programmer's name for it: RSLPDServerStartTitle
+#: IdResourceStrings.pas:327 
+msgid "Winshoes LPD Server %s "
+msgstr ""
+
+#. Programmer's name for it: RSLPDServerActive
+#: IdResourceStrings.pas:328 
+msgid "Server status: active"
+msgstr ""
+
+#. Programmer's name for it: RSLPDQueueStatus
+#: IdResourceStrings.pas:329 
+msgid "Queue %s status: %s"
+msgstr ""
+
+#. Programmer's name for it: RSLPDClosingConnection
+#: IdResourceStrings.pas:330 
+msgid "closing connection"
+msgstr ""
+
+#. Programmer's name for it: RSLPDUnknownQueue
+#: IdResourceStrings.pas:331 
+msgid "Unknown queue %s"
+msgstr ""
+
+#. Programmer's name for it: RSLPDConnectTo
+#: IdResourceStrings.pas:332 
+msgid "connected with %s"
+msgstr ""
+
+#. Programmer's name for it: RSLPDAbortJob
+#: IdResourceStrings.pas:333 
+msgid "abort job"
+msgstr ""
+
+#. Programmer's name for it: RSLPDReceiveControlFile
+#: IdResourceStrings.pas:334 
+msgid "Receive control file"
+msgstr ""
+
+#. Programmer's name for it: RSLPDReceiveDataFile
+#: IdResourceStrings.pas:335 
+msgid "Receive data file"
+msgstr ""
+
+#. Programmer's name for it: RSLPDNoQueuesDefined
+#: IdResourceStrings.pas:338 
+msgid "Error: no queues defined"
+msgstr ""
+
+#. Programmer's name for it: RSTimeOut
+#: IdResourceStrings.pas:341 
+msgid "Timeout"
+msgstr ""
+
+#. Programmer's name for it: RSTFTPUnexpectedOp
+#: IdResourceStrings.pas:342 
+msgid "Unexpected operation from %s:%d"
+msgstr ""
+
+#. Programmer's name for it: RSTFTPUnsupportedTrxMode
+#: IdResourceStrings.pas:343 
+msgid "Unsupported transfer mode: \"%s\""
+msgstr ""
+
+#. Programmer's name for it: RSTFTPDiskFull
+#: IdResourceStrings.pas:344 
+msgid "Unable to complete write request, progress halted at %d bytes"
+msgstr ""
+
+#. Programmer's name for it: RSTFTPFileNotFound
+#: IdResourceStrings.pas:345 
+msgid "Unable to open %s"
+msgstr ""
+
+#. Programmer's name for it: RSTFTPAccessDenied
+#: IdResourceStrings.pas:346 
+msgid "Access to %s denied"
+msgstr ""
+
+#. Programmer's name for it: RSTIdTextInvalidCount
+#: IdResourceStrings.pas:349 
+msgid "Invalid Text count. TIdText must be greater than 1"
+msgstr ""
+
+#. Programmer's name for it: RSTIdMessagePartCreate
+#: IdResourceStrings.pas:350 
+msgid "TIdMessagePart can not be created.  Use descendant classes. "
+msgstr ""
+
+#. Programmer's name for it: RSTIdMessageErrorSavingAttachment
+#: IdResourceStrings.pas:351 
+msgid "Error saving attachment."
+msgstr ""
+
+#. Programmer's name for it: RSPOP3FieldNotSpecified
+#: IdResourceStrings.pas:354 
+msgid " not specified"
+msgstr ""
+
+#. APR: user will see Server response    {Do not Localize}
+#. Programmer's name for it: RSPOP3UnrecognizedPOP3ResponseHeader
+#: IdResourceStrings.pas:355 
+msgid ""
+"Unrecognized POP3 Response Header:\n"
+"\"%s\""
+msgstr ""
+
+#. APR    {Do not Localize}
+#. Programmer's name for it: RSPOP3ServerDoNotSupportAPOP
+#: IdResourceStrings.pas:356 
+msgid "Server do not support APOP (no timestamp)"
+msgstr ""
+
+#. Programmer's name for it: RSIMAP4ConnectionStateError
+#: IdResourceStrings.pas:360 
+msgid ""
+"Unable to execute command, wrong connection state;Current connection state: %"
+"s."
+msgstr ""
+
+#. Programmer's name for it: RSUnrecognizedIMAP4ResponseHeader
+#: IdResourceStrings.pas:361 
+msgid "Unrecognized IMAP4 Response Header."
+msgstr ""
+
+#. Programmer's name for it: RSIMAP4ConnectionStateAny
+#. any port
+#. Programmer's name for it: RSBindingAny
+#: IdResourceStrings.pas:364  IdResourceStrings.pas:433
+msgid "Any"
+msgstr ""
+
+#. Programmer's name for it: RSIMAP4ConnectionStateNonAuthenticated
+#: IdResourceStrings.pas:365 
+msgid "Non Authenticated"
+msgstr ""
+
+#. Programmer's name for it: RSIMAP4ConnectionStateAuthenticated
+#: IdResourceStrings.pas:366 
+msgid "Authenticated"
+msgstr ""
+
+#. Programmer's name for it: RSIMAP4ConnectionStateSelected
+#: IdResourceStrings.pas:367 
+msgid "Selected"
+msgstr ""
+
+#. Programmer's name for it: RSTELNETSRVUsernamePrompt
+#: IdResourceStrings.pas:370 
+msgid "Username: "
+msgstr ""
+
+#. Programmer's name for it: RSTELNETSRVPasswordPrompt
+#: IdResourceStrings.pas:371 
+msgid "Password: "
+msgstr ""
+
+#. Programmer's name for it: RSTELNETSRVInvalidLogin
+#: IdResourceStrings.pas:372 
+msgid "Invalid Login."
+msgstr ""
+
+#. Programmer's name for it: RSTELNETSRVMaxloginAttempt
+#: IdResourceStrings.pas:373 
+msgid "Allowed login attempts exceeded, good bye."
+msgstr ""
+
+#. Programmer's name for it: RSTELNETSRVNoAuthHandler
+#: IdResourceStrings.pas:374 
+msgid "No authentication handler has been specified."
+msgstr ""
+
+#. Programmer's name for it: RSTELNETSRVWelcomeString
+#: IdResourceStrings.pas:375 
+msgid "Indy Telnet Server"
+msgstr ""
+
+#. Programmer's name for it: RSTELNETSRVOnDataAvailableIsNil
+#: IdResourceStrings.pas:376 
+msgid "OnDataAvailable event is nil."
+msgstr ""
+
+#. Programmer's name for it: RSTELNETCLIConnectError
+#: IdResourceStrings.pas:379 
+msgid "server not responding"
+msgstr ""
+
+#. Programmer's name for it: RSTELNETCLIReadError
+#: IdResourceStrings.pas:380 
+msgid "Server did not respond."
+msgstr ""
+
+#. Programmer's name for it: RSNETCALInvalidIPString
+#: IdResourceStrings.pas:383 
+msgid "The string %s does not translate into a valid IP."
+msgstr ""
+
+#. Programmer's name for it: RSNETCALCInvalidNetworkMask
+#: IdResourceStrings.pas:384 
+msgid "Invalid network mask."
+msgstr ""
+
+#. Programmer's name for it: RSNETCALCInvalidValueLength
+#: IdResourceStrings.pas:385 
+msgid "Invalid value length: Should be 32."
+msgstr ""
+
+#. Programmer's name for it: RSNETCALConfirmLongIPList
+#: IdResourceStrings.pas:386 
+msgid ""
+"There is too many IP addresses in the specified range (%d) to be displayed "
+"at design time."
+msgstr ""
+
+#. Programmer's name for it: RSIdentReplyTimeout
+#: IdResourceStrings.pas:388 
+msgid ""
+"Reply Timed Out:  The server did not return a response and the query has "
+"been abandoned"
+msgstr ""
+
+#. Programmer's name for it: RSIdentInvalidPort
+#: IdResourceStrings.pas:389 
+msgid ""
+"Invalid Port:  The foreign or local port is not specified correctly or "
+"invalid"
+msgstr ""
+
+#. Programmer's name for it: RSIdentNoUser
+#: IdResourceStrings.pas:390 
+msgid "No User:  Port pair is not used or not used by an identifiable user"
+msgstr ""
+
+#. Programmer's name for it: RSIdentHiddenUser
+#: IdResourceStrings.pas:391 
+msgid "Hidden User:  Information was not returned at a user's request"
+msgstr ""
+
+#. Programmer's name for it: RSIdentUnknownError
+#: IdResourceStrings.pas:392 
+msgid ""
+"Unknown or other error: Can not determine owner, other error, or the error "
+"can not be revealed."
+msgstr ""
+
+#. Programmer's name for it: RSAAboutFormCaption
+#: IdResourceStrings.pas:394 
+msgid "About"
+msgstr ""
+
+#. Programmer's name for it: RSAAboutBoxCompName
+#: IdResourceStrings.pas:395 
+msgid "Internet Direct (Indy)"
+msgstr ""
+
+#. Programmer's name for it: RSAAboutMenuItemName
+#: IdResourceStrings.pas:396 
+msgid "About Internet &Direct (Indy) %s..."
+msgstr ""
+
+#. Programmer's name for it: RSAAboutBoxVersion
+#: IdResourceStrings.pas:397 
+msgid "Version %s"
+msgstr ""
+
+#. Programmer's name for it: RSAAboutBoxCopyright
+#: IdResourceStrings.pas:401 
+msgid ""
+"Copyright (c) 1993 - 2003\n"
+"Kudzu (Chad Z. Hower)\n"
+"and the\n"
+"Indy Pit Crew"
+msgstr ""
+
+#. Programmer's name for it: RSAAboutBoxPleaseVisit
+#: IdResourceStrings.pas:402 
+msgid "For the latest updates and information please visit:"
+msgstr ""
+
+#. Programmer's name for it: RSAAboutBoxIndyWebsite
+#: IdResourceStrings.pas:403 
+msgid "http://www.nevrona.com/indy/"
+msgstr ""
+
+#. Programmer's name for it: RSAAboutCreditsCoordinator
+#: IdResourceStrings.pas:404 
+msgid "Project Coordinator"
+msgstr ""
+
+#. Programmer's name for it: RSAAboutCreditsCoCordinator
+#: IdResourceStrings.pas:405 
+msgid "Project Co-Coordinator"
+msgstr ""
+
+#. Programmer's name for it: RSAAboutCreditsDocumentation
+#: IdResourceStrings.pas:406 
+msgid "Documentation Coordinator"
+msgstr ""
+
+#. Programmer's name for it: RSAAboutCreditsDemos
+#: IdResourceStrings.pas:407 
+msgid "Demos Coordinator"
+msgstr ""
+
+#. Programmer's name for it: RSAAboutCreditsDistribution
+#: IdResourceStrings.pas:408 
+msgid "Distribution Coordinator"
+msgstr ""
+
+#. Programmer's name for it: RSAAboutCreditsRetiredPast
+#: IdResourceStrings.pas:409 
+msgid "Retired/Past Contributors"
+msgstr ""
+
+#. Programmer's name for it: RSBindingFormCaption
+#: IdResourceStrings.pas:423 
+msgid "Binding Editor"
+msgstr ""
+
+#. Programmer's name for it: RSBindingAddCaption
+#: IdResourceStrings.pas:424 
+msgid "&Add"
+msgstr ""
+
+#. Programmer's name for it: RSBindingRemoveCaption
+#: IdResourceStrings.pas:425 
+msgid "&Remove"
+msgstr ""
+
+#. Programmer's name for it: RSBindingLabelBindings
+#: IdResourceStrings.pas:426 
+msgid "&Bindings"
+msgstr ""
+
+#. Programmer's name for it: RSBindingHostnameLabel
+#: IdResourceStrings.pas:427 
+msgid "&IP Address"
+msgstr ""
+
+#. Programmer's name for it: RSBindingPortLabel
+#: IdResourceStrings.pas:428 
+msgid "&Port"
+msgstr ""
+
+#. Programmer's name for it: RSBindingCancel
+#: IdResourceStrings.pas:430 
+msgid "Cancel"
+msgstr ""
+
+#. all IP addresses
+#. Programmer's name for it: RSBindingAll
+#: IdResourceStrings.pas:432 
+msgid "All"
+msgstr ""
+
+#. Programmer's name for it: RSTunnelGetByteRange
+#: IdResourceStrings.pas:435 
+msgid "Call to %s.GetByte [property Bytes] with index <> [0..%d]"
+msgstr ""
+
+#. Programmer's name for it: RSTunnelTransformErrorBS
+#: IdResourceStrings.pas:436 
+msgid "Error in transformation before send"
+msgstr ""
+
+#. Programmer's name for it: RSTunnelTransformError
+#: IdResourceStrings.pas:437 
+msgid "Transform failed"
+msgstr ""
+
+#. Programmer's name for it: RSTunnelCRCFailed
+#: IdResourceStrings.pas:438 
+msgid "CRC Failed"
+msgstr ""
+
+#. Programmer's name for it: RSTunnelConnectMsg
+#. Programmer's name for it: RSHL7StatusConnecting
+#: IdResourceStrings.pas:439  IdResourceStrings.pas:647
+msgid "Connecting"
+msgstr ""
+
+#. Programmer's name for it: RSTunnelDisconnectMsg
+#: IdResourceStrings.pas:440 
+msgid "Disconnect"
+msgstr ""
+
+#. Programmer's name for it: RSTunnelConnectToMasterFailed
+#: IdResourceStrings.pas:441 
+msgid "Cannt connect to the Master server"
+msgstr ""
+
+#. Programmer's name for it: RSTunnelDontAllowConnections
+#: IdResourceStrings.pas:442 
+msgid "Do not allow connctions now"
+msgstr ""
+
+#. Programmer's name for it: RSTunnelMessageTypeError
+#: IdResourceStrings.pas:443 
+msgid "Message type recognition error"
+msgstr ""
+
+#. Programmer's name for it: RSTunnelMessageHandlingError
+#: IdResourceStrings.pas:444 
+msgid "Message handling failed"
+msgstr ""
+
+#. Programmer's name for it: RSTunnelMessageInterpretError
+#: IdResourceStrings.pas:445 
+msgid "Interpretation of message failed"
+msgstr ""
+
+#. Programmer's name for it: RSTunnelMessageCustomInterpretError
+#: IdResourceStrings.pas:446 
+msgid "Custom message interpretation failed"
+msgstr ""
+
+#. Programmer's name for it: RSSocksRequestFailed
+#: IdResourceStrings.pas:449 
+msgid "Request rejected or failed."
+msgstr ""
+
+#. Programmer's name for it: RSSocksRequestServerFailed
+#: IdResourceStrings.pas:450 
+msgid "Request rejected because SOCKS server cannot connect."
+msgstr ""
+
+#. Programmer's name for it: RSSocksRequestIdentFailed
+#: IdResourceStrings.pas:451 
+msgid ""
+"Request rejected because the client program and identd report different user-"
+"ids."
+msgstr ""
+
+#. Programmer's name for it: RSSocksUnknownError
+#: IdResourceStrings.pas:452 
+msgid "Unknown socks error."
+msgstr ""
+
+#. Programmer's name for it: RSSocksServerRespondError
+#: IdResourceStrings.pas:453 
+msgid "Socks server did not respond."
+msgstr ""
+
+#. Programmer's name for it: RSSocksAuthMethodError
+#: IdResourceStrings.pas:454 
+msgid "Invalid socks authentication method."
+msgstr ""
+
+#. Programmer's name for it: RSSocksAuthError
+#: IdResourceStrings.pas:455 
+msgid "Authentication error to socks server."
+msgstr ""
+
+#. Programmer's name for it: RSSocksServerGeneralError
+#: IdResourceStrings.pas:456 
+msgid "General SOCKS server failure."
+msgstr ""
+
+#. Programmer's name for it: RSSocksServerPermissionError
+#: IdResourceStrings.pas:457 
+msgid "Connection not allowed by ruleset."
+msgstr ""
+
+#. Programmer's name for it: RSSocksServerNetUnreachableError
+#: IdResourceStrings.pas:458 
+msgid "Network unreachable."
+msgstr ""
+
+#. Programmer's name for it: RSSocksServerHostUnreachableError
+#: IdResourceStrings.pas:459 
+msgid "Host unreachable."
+msgstr ""
+
+#. Programmer's name for it: RSSocksServerTTLExpiredError
+#: IdResourceStrings.pas:461 
+msgid "TTL expired."
+msgstr ""
+
+#. Programmer's name for it: RSSocksServerCommandError
+#: IdResourceStrings.pas:462 
+msgid "Command not supported."
+msgstr ""
+
+#. Programmer's name for it: RSSocksServerAddressError
+#: IdResourceStrings.pas:463 
+msgid "Address type not supported."
+msgstr ""
+
+#. Programmer's name for it: RSDestinationFileAlreadyExists
+#: IdResourceStrings.pas:466 
+msgid "Destination file already exists."
+msgstr ""
+
+#. Programmer's name for it: RSSSLAcceptError
+#: IdResourceStrings.pas:469 
+msgid "Error accepting connection with SSL."
+msgstr ""
+
+#. Programmer's name for it: RSSSLConnectError
+#: IdResourceStrings.pas:470 
+msgid "Error connecting with SSL."
+msgstr ""
+
+#. Programmer's name for it: RSSSLSettingCipherError
+#: IdResourceStrings.pas:471 
+msgid "SetCipher failed."
+msgstr ""
+
+#. Programmer's name for it: RSSSLCreatingContextError
+#: IdResourceStrings.pas:472 
+msgid "Error creating SSL context."
+msgstr ""
+
+#. Programmer's name for it: RSSSLLoadingRootCertError
+#: IdResourceStrings.pas:473 
+msgid "Could not load root certificate."
+msgstr ""
+
+#. Programmer's name for it: RSSSLLoadingCertError
+#: IdResourceStrings.pas:474 
+msgid "Could not load certificate."
+msgstr ""
+
+#. Programmer's name for it: RSSSLLoadingKeyError
+#: IdResourceStrings.pas:475 
+msgid "Could not load key, check password."
+msgstr ""
+
+#. Programmer's name for it: RSSSLGetMethodError
+#: IdResourceStrings.pas:476 
+msgid "Error geting SSL method."
+msgstr ""
+
+#. Programmer's name for it: RSSSLDataBindingError
+#: IdResourceStrings.pas:477 
+msgid "Error binding data to SSL socket."
+msgstr ""
+
+#. Programmer's name for it: RSMsgCmpEdtrNew
+#: IdResourceStrings.pas:479 
+msgid "&New Message Part..."
+msgstr ""
+
+#. Programmer's name for it: RSMsgCmpEdtrExtraHead
+#: IdResourceStrings.pas:480 
+msgid "Extra Headers Text Editor"
+msgstr ""
+
+#. Programmer's name for it: RSMsgCmpEdtrBodyText
+#: IdResourceStrings.pas:481 
+msgid "Body Text Editor"
+msgstr ""
+
+#. Programmer's name for it: RSICMPNotEnoughtBytes
+#: IdResourceStrings.pas:483 
+msgid "Not enough bytes received"
+msgstr ""
+
+#. Programmer's name for it: RSICMPNonEchoResponse
+#: IdResourceStrings.pas:484 
+msgid "Non-echo type response received"
+msgstr ""
+
+#. Programmer's name for it: RSICMPWrongDestination
+#: IdResourceStrings.pas:485 
+msgid "Received someone else's packet"
+msgstr ""
+
+#. Programmer's name for it: RSNNTPServerNotRecognized
+#: IdResourceStrings.pas:487 
+msgid "Command not recognized"
+msgstr ""
+
+#. Programmer's name for it: RSNNTPServerGoodBye
+#: IdResourceStrings.pas:488 
+msgid "Goodbye"
+msgstr ""
+
+#. Programmer's name for it: RSGopherServerNoProgramCode
+#: IdResourceStrings.pas:490 
+msgid "Error: No program code to return request!"
+msgstr ""
+
+#. Programmer's name for it: RSInvalidSyslogPRI
+#: IdResourceStrings.pas:493 
+msgid "Invalid syslog message: incorrect PRI section"
+msgstr ""
+
+#. Programmer's name for it: RSInvalidSyslogPRINumber
+#: IdResourceStrings.pas:494 
+msgid "Invalid syslog message: incorrect PRI number \"%s\""
+msgstr ""
+
+#. Programmer's name for it: RSInvalidSyslogTimeStamp
+#: IdResourceStrings.pas:495 
+msgid "Invalid syslog message: incorrect timestamp \"%s\""
+msgstr ""
+
+#. Programmer's name for it: RSInvalidSyslogPacketSize
+#: IdResourceStrings.pas:496 
+msgid "Invalid Syslog message: packet too large (%d bytes)"
+msgstr ""
+
+#. Programmer's name for it: RSInvalidHostName
+#: IdResourceStrings.pas:497 
+msgid ""
+"Invalid host name. A SYSLOG host name cannot contain any space (\"%s\")+"
+msgstr ""
+
+#. Programmer's name for it: RSOSSLModeNotSet
+#: IdResourceStrings.pas:500 
+msgid "Mode has not been set."
+msgstr ""
+
+#. Programmer's name for it: RSOSSLCouldNotLoadSSLLibrary
+#: IdResourceStrings.pas:501 
+msgid "Could not load SSL library."
+msgstr ""
+
+#. Programmer's name for it: RSOSSLStatusString
+#: IdResourceStrings.pas:502 
+msgid "SSL status: \"%s\""
+msgstr ""
+
+#. Programmer's name for it: RSOSSLConnectionDropped
+#: IdResourceStrings.pas:503 
+msgid "SSL connection has dropped."
+msgstr ""
+
+#. Programmer's name for it: RSOSSLCertificateLookup
+#: IdResourceStrings.pas:504 
+msgid "SSL certificate request error."
+msgstr ""
+
+#. Programmer's name for it: RSOSSLInternal
+#: IdResourceStrings.pas:505 
+msgid "SSL library internal error."
+msgstr ""
+
+#. Programmer's name for it: RSWSockStack
+#: IdResourceStrings.pas:508 
+msgid "Winsock stack"
+msgstr ""
+
+#. Programmer's name for it: RSSMTPSvrCmdNotRecognized
+#: IdResourceStrings.pas:510 
+msgid "Command Not Recognised"
+msgstr ""
+
+#. Programmer's name for it: RSSMTPSvrQuit
+#: IdResourceStrings.pas:511 
+msgid "Signing Off"
+msgstr ""
+
+#. Programmer's name for it: RSSMTPSvrOk
+#: IdResourceStrings.pas:512 
+msgid "Ok"
+msgstr ""
+
+#. Programmer's name for it: RSSMTPSvrStartData
+#: IdResourceStrings.pas:513 
+msgid "Start mail input; end with <CRLF>.<CRLF>"
+msgstr ""
+
+#. Programmer's name for it: RSSMTPSvrAddressOk
+#: IdResourceStrings.pas:514 
+msgid "%s Address Okay"
+msgstr ""
+
+#. Programmer's name for it: RSSMTPSvrAddressError
+#: IdResourceStrings.pas:515 
+msgid "%s Address Error"
+msgstr ""
+
+#. Programmer's name for it: RSSMTPSvrAddressWillForward
+#: IdResourceStrings.pas:516 
+msgid "User not local, Will forward"
+msgstr ""
+
+#. Programmer's name for it: RSSMTPSvrWelcome
+#: IdResourceStrings.pas:517 
+msgid "Welcome to the INDY SMTP Server"
+msgstr ""
+
+#. Programmer's name for it: RSSMTPSvrHello
+#: IdResourceStrings.pas:518 
+msgid "Hello %s"
+msgstr ""
+
+#. Programmer's name for it: RSSMTPSvrNoHello
+#: IdResourceStrings.pas:519 
+msgid "Polite people say HELO"
+msgstr ""
+
+#. Programmer's name for it: RSSMTPSvrCmdGeneralError
+#: IdResourceStrings.pas:520 
+msgid "Syntax Error - Command not understood: %s"
+msgstr ""
+
+#. Programmer's name for it: RSSMTPSvrXServer
+#: IdResourceStrings.pas:521 
+msgid "Indy SMTP Server"
+msgstr ""
+
+#. Programmer's name for it: RSSMTPSvrReceivedHeader
+#: IdResourceStrings.pas:522 
+msgid "by DNSName [127.0.0.1] running Indy SMTP"
+msgstr ""
+
+#. Programmer's name for it: RSSMTPSvrAuthFailed
+#: IdResourceStrings.pas:523 
+msgid "Authentication Failed"
+msgstr ""
+
+#. Programmer's name for it: RSPOP3SvrNotHandled
+#: IdResourceStrings.pas:525 
+msgid "Command Not Handled: %s"
+msgstr ""
+
+#. TIdCoder3to4
+#. Programmer's name for it: RSUnevenSizeInDecodeStream
+#: IdResourceStrings.pas:527 
+msgid "Uneven size in DecodeToStream."
+msgstr ""
+
+#. Programmer's name for it: RSUnevenSizeInEncodeStream
+#: IdResourceStrings.pas:528 
+msgid "Uneven size in Encode."
+msgstr ""
+
+#. TIdMessageCoder
+#. Programmer's name for it: RSMessageDecoderNotFound
+#: IdResourceStrings.pas:530 
+msgid "Message decoder not found"
+msgstr ""
+
+#. Programmer's name for it: RSMessageEncoderNotFound
+#: IdResourceStrings.pas:531 
+msgid "Message encoder not found"
+msgstr ""
+
+#. TIdMessageCoderMIME
+#. Programmer's name for it: RSMessageCoderMIMEUnrecognizedContentTrasnferEncoding
+#: IdResourceStrings.pas:533 
+msgid "Unrecognized content trasnfer encoding."
+msgstr ""
+
+#. TIdMessageCoderUUE
+#. Programmer's name for it: RSUnrecognizedUUEEncodingScheme
+#: IdResourceStrings.pas:535 
+msgid "Unrecognized UUE encoding scheme."
+msgstr ""
+
+#. TIdICMPCast
+#. Programmer's name for it: RSIPMCastInvalidMulticastAddress
+#: IdResourceStrings.pas:537 
+msgid ""
+"The supplied IP address is not a valid multicast address [224.0.0.0 to "
+"239.255.255.255]."
+msgstr ""
+
+#. Programmer's name for it: RSIPMCastNotSupportedOnWin32
+#: IdResourceStrings.pas:538 
+msgid "This function is not supported on Win32."
+msgstr ""
+
+#. Programmer's name for it: RSFTPDefaultGreeting
+#: IdResourceStrings.pas:540 
+msgid "Indy FTP Server ready."
+msgstr ""
+
+#. Programmer's name for it: RSFTPOpenDataConn
+#: IdResourceStrings.pas:541 
+msgid "Data connection already open; transfer starting."
+msgstr ""
+
+#. Programmer's name for it: RSFTPDataConnToOpen
+#: IdResourceStrings.pas:542 
+msgid "File status okay; about to open data connection."
+msgstr ""
+
+#. Programmer's name for it: RSFTPCmdSuccessful
+#: IdResourceStrings.pas:543 
+msgid "%s Command successful."
+msgstr ""
+
+#. Programmer's name for it: RSFTPServiceOpen
+#: IdResourceStrings.pas:544 
+msgid "Service ready for new user."
+msgstr ""
+
+#. Programmer's name for it: RSFTPServerClosed
+#: IdResourceStrings.pas:545 
+msgid "Service closing control connection."
+msgstr ""
+
+#. Programmer's name for it: RSFTPDataConn
+#: IdResourceStrings.pas:546 
+msgid "Data connection open; no transfer in progress."
+msgstr ""
+
+#. Programmer's name for it: RSFTPDataConnClosed
+#: IdResourceStrings.pas:547 
+msgid "Closing data connection."
+msgstr ""
+
+#. Programmer's name for it: RSFTPDataConnClosedAbnormally
+#: IdResourceStrings.pas:548 
+msgid "Data connection closed abnormally."
+msgstr ""
+
+#. Programmer's name for it: RSFTPPassiveMode
+#: IdResourceStrings.pas:549 
+msgid "Entering Passive Mode (%s)."
+msgstr ""
+
+#. Programmer's name for it: RSFTPUserLogged
+#: IdResourceStrings.pas:550 
+msgid "User logged in, proceed."
+msgstr ""
+
+#. Programmer's name for it: RSFTPAnonymousUserLogged
+#: IdResourceStrings.pas:551 
+msgid "Anonymous user logged in, proceed."
+msgstr ""
+
+#. Programmer's name for it: RSFTPFileActionCompleted
+#: IdResourceStrings.pas:552 
+msgid "Requested file action okay, completed."
+msgstr ""
+
+#. Programmer's name for it: RSFTPDirFileCreated
+#: IdResourceStrings.pas:553 
+msgid "\"%s\" created."
+msgstr ""
+
+#. Programmer's name for it: RSFTPUserOkay
+#: IdResourceStrings.pas:554 
+msgid "User name okay, need password."
+msgstr ""
+
+#. Programmer's name for it: RSFTPAnonymousUserOkay
+#: IdResourceStrings.pas:555 
+msgid "Anonymous login OK, send e-mail as password."
+msgstr ""
+
+#. Programmer's name for it: RSFTPNeedLoginWithUser
+#: IdResourceStrings.pas:556 
+msgid "Login with USER first."
+msgstr ""
+
+#. Programmer's name for it: RSFTPNeedAccountForLogin
+#: IdResourceStrings.pas:557 
+msgid "Need account for login."
+msgstr ""
+
+#. Programmer's name for it: RSFTPFileActionPending
+#: IdResourceStrings.pas:558 
+msgid "Requested file action pending further information."
+msgstr ""
+
+#. Programmer's name for it: RSFTPServiceNotAvailable
+#: IdResourceStrings.pas:559 
+msgid "Service not available, closing control connection."
+msgstr ""
+
+#. Programmer's name for it: RSFTPCantOpenDataConn
+#: IdResourceStrings.pas:560 
+msgid "Can't open data connection."
+msgstr ""
+
+#. Programmer's name for it: RSFTPFileActionNotTaken
+#: IdResourceStrings.pas:561 
+msgid "Requested file action not taken."
+msgstr ""
+
+#. Programmer's name for it: RSFTPFileActionAborted
+#: IdResourceStrings.pas:562 
+msgid "Requested action aborted: local error in processing."
+msgstr ""
+
+#. Programmer's name for it: RSFTPRequestedActionNotTaken
+#. Programmer's name for it: RSFTPActionNotTaken
+#. Programmer's name for it: RSFTPRequestedFileActionNotTaken
+#: IdResourceStrings.pas:563  IdResourceStrings.pas:568
+#: IdResourceStrings.pas:571
+msgid "Requested action not taken."
+msgstr ""
+
+#. Programmer's name for it: RSFTPCmdSyntaxError
+#: IdResourceStrings.pas:564 
+msgid "Syntax error, command unrecognized."
+msgstr "Eroare de sintaxă, comandă necunoscută."
+
+#. Programmer's name for it: RSFTPCmdNotImplemented
+#: IdResourceStrings.pas:565 
+msgid "\"%s\" Command not implemented."
+msgstr "\"%s\" Comanda nu este implementată."
+
+#. Programmer's name for it: RSFTPUserNotLoggedIn
+#: IdResourceStrings.pas:566 
+msgid "Not logged in."
+msgstr "Nu s-a logat (login)."
+
+#. Programmer's name for it: RSFTPNeedAccForFiles
+#: IdResourceStrings.pas:567 
+msgid "Need account for storing files."
+msgstr "Un cont este necesar pt. a stoca fişiere."
+
+#. Programmer's name for it: RSFTPActionAborted
+#: IdResourceStrings.pas:569 
+msgid "Requested action aborted: page type unknown."
+msgstr "Acţiunea cerută s-a abandonat: tip pagină necunoscut."
+
+#. Programmer's name for it: RSFTPRequestedFileActionAborted
+#: IdResourceStrings.pas:570 
+msgid "Requested file action aborted."
+msgstr "Acţiunea cerută pt. fişier s-a abandonat."
+
+#. Programmer's name for it: RSFTPMaxConnections
+#: IdResourceStrings.pas:572 
+msgid "Maximum connections limit exceeded. Try again later."
+msgstr "Limita maximă de conexiuni s-a depăşit. Încercaţi mai târziu."
+
+#. part of any phrase otherwise, a FTP client might get confused.
+#. Programmer's name for it: RSFTPCurrentDirectoryIs
+#: IdResourceStrings.pas:575 
+msgid "\"%s\" is working directory."
+msgstr "\"%s\" este director de lucru."
+
+#. Programmer's name for it: RSFTPTYPEChanged
+#: IdResourceStrings.pas:576 
+msgid "Type set to %s."
+msgstr "Tip setat la %s."
+
+#. Programmer's name for it: RSFTPMODEChanged
+#: IdResourceStrings.pas:577 
+msgid "Mode set to %s."
+msgstr "Mod setat la %s."
+
+#. Programmer's name for it: RSFTPSTRUChanged
+#: IdResourceStrings.pas:578 
+msgid "Structure set to %s."
+msgstr "Structură setată la %s."
+
+#. Programmer's name for it: RSFTPSITECmdsSupported
+#: IdResourceStrings.pas:580 
+msgid "The following SITE commands are supported: HELP  DIRSTYLE"
+msgstr "Următoarele comenzi SITE sunt suportate: HELP  DIRSTYLE"
+
+#. Programmer's name for it: RSFTPDirectorySTRU
+#: IdResourceStrings.pas:581 
+msgid "%s directory structure."
+msgstr "structura de directoare %s."
+
+#. Programmer's name for it: RSFTPCmdEndOfStat
+#: IdResourceStrings.pas:582 
+msgid "End of Status"
+msgstr "Comandă tip End of Status"
+
+#. Programmer's name for it: RSFTPCmdExtsSupported
+#: IdResourceStrings.pas:583 
+msgid ""
+"Extensions supported:\n"
+"SIZE\n"
+"PASV\n"
+"REST\n"
+"End of extentions."
+msgstr ""
+"Extensiile suportă:\n"
+"SIZE\n"
+"PASV\n"
+"REST\n"
+"Sfărţit de extensii."
+
+#. Programmer's name for it: RSFTPNoOnDirEvent
+#: IdResourceStrings.pas:585 
+msgid "No OnListDirectory event found!"
+msgstr "Nu s-a găsit nici un eveniment OnListDirectory!"
+
+#. facility
+#. Programmer's name for it: STR_SYSLOG_FACILITY_KERNEL
+#: IdResourceStrings.pas:589 
+msgid "kernel messages"
+msgstr "mesaje de kernel (kernel messages)"
+
+#. Programmer's name for it: STR_SYSLOG_FACILITY_USER
+#: IdResourceStrings.pas:590 
+msgid "user-level messages"
+msgstr "mesaje la nivel de utilizator (user-level messages)"
+
+#. Programmer's name for it: STR_SYSLOG_FACILITY_MAIL
+#: IdResourceStrings.pas:591 
+msgid "mail system"
+msgstr "sistem mail"
+
+#. Programmer's name for it: STR_SYSLOG_FACILITY_SYS_DAEMON
+#: IdResourceStrings.pas:592 
+msgid "system daemons"
+msgstr "demoni de sistem"
+
+#. Programmer's name for it: STR_SYSLOG_FACILITY_SECURITY1
+#: IdResourceStrings.pas:593 
+msgid "security/authorization messages (1)"
+msgstr "mesaje de securitate/autorizare (1)"
+
+#. Programmer's name for it: STR_SYSLOG_FACILITY_INTERNAL
+#: IdResourceStrings.pas:594 
+msgid "messages generated internally by syslogd"
+msgstr "mesaje generate intern de syslogd"
+
+#. Programmer's name for it: STR_SYSLOG_FACILITY_LPR
+#: IdResourceStrings.pas:595 
+msgid "line printer subsystem"
+msgstr "subsystem de imprimare linie (line printer subsystem)"
+
+#. Programmer's name for it: STR_SYSLOG_FACILITY_NNTP
+#: IdResourceStrings.pas:596 
+msgid "network news subsystem"
+msgstr "subsistem de reţea de ştiri (network news subsystem)"
+
+#. Programmer's name for it: STR_SYSLOG_FACILITY_UUCP
+#: IdResourceStrings.pas:597 
+msgid "UUCP subsystem"
+msgstr "subsistem tip UUCP"
+
+#. Programmer's name for it: STR_SYSLOG_FACILITY_CLOCK1
+#: IdResourceStrings.pas:598 
+msgid "clock daemon (1)"
+msgstr "demon de ceas (1)"
+
+#. Programmer's name for it: STR_SYSLOG_FACILITY_SECURITY2
+#: IdResourceStrings.pas:599 
+msgid "security/authorization messages (2)"
+msgstr "mesaje de securitate/autorizare (2)"
+
+#. Programmer's name for it: STR_SYSLOG_FACILITY_FTP
+#: IdResourceStrings.pas:600 
+msgid "FTP daemon"
+msgstr "demon tip FTP"
+
+#. Programmer's name for it: STR_SYSLOG_FACILITY_NTP
+#: IdResourceStrings.pas:601 
+msgid "NTP subsystem"
+msgstr "subsistem tip NTP"
+
+#. Programmer's name for it: STR_SYSLOG_FACILITY_AUDIT
+#: IdResourceStrings.pas:602 
+msgid "log audit"
+msgstr "jurnal audit"
+
+#. Programmer's name for it: STR_SYSLOG_FACILITY_ALERT
+#: IdResourceStrings.pas:603 
+msgid "log alert"
+msgstr "jurnal alertă"
+
+#. Programmer's name for it: STR_SYSLOG_FACILITY_CLOCK2
+#: IdResourceStrings.pas:604 
+msgid "clock daemon (2)"
+msgstr "demon de ceas (2)"
+
+#. Programmer's name for it: STR_SYSLOG_FACILITY_LOCAL0
+#: IdResourceStrings.pas:605 
+msgid "local use 0  (local0)"
+msgstr "uz local 0  (local0)"
+
+#. Programmer's name for it: STR_SYSLOG_FACILITY_LOCAL1
+#: IdResourceStrings.pas:606 
+msgid "local use 1  (local1)"
+msgstr "uz local 1  (local1)"
+
+#. Programmer's name for it: STR_SYSLOG_FACILITY_LOCAL2
+#: IdResourceStrings.pas:607 
+msgid "local use 2  (local2)"
+msgstr "uz local 2  (local2)"
+
+#. Programmer's name for it: STR_SYSLOG_FACILITY_LOCAL3
+#: IdResourceStrings.pas:608 
+msgid "local use 3  (local3)"
+msgstr "uz local 3  (local3)"
+
+#. Programmer's name for it: STR_SYSLOG_FACILITY_LOCAL4
+#: IdResourceStrings.pas:609 
+msgid "local use 4  (local4)"
+msgstr "uz local 4  (local4)"
+
+#. Programmer's name for it: STR_SYSLOG_FACILITY_LOCAL5
+#: IdResourceStrings.pas:610 
+msgid "local use 5  (local5)"
+msgstr "uz local 5  (local5)"
+
+#. Programmer's name for it: STR_SYSLOG_FACILITY_LOCAL6
+#: IdResourceStrings.pas:611 
+msgid "local use 6  (local6)"
+msgstr "uz local 6  (local6)"
+
+#. Programmer's name for it: STR_SYSLOG_FACILITY_LOCAL7
+#: IdResourceStrings.pas:612 
+msgid "local use 7  (local7)"
+msgstr "uz local 7  (local7)"
+
+#. Programmer's name for it: STR_SYSLOG_FACILITY_UNKNOWN
+#: IdResourceStrings.pas:613 
+msgid "Unknown or illegale facility code"
+msgstr "Cod facilitate necunoscut sau ilegal"
+
+#. Severity
+#. Programmer's name for it: STR_SYSLOG_SEVERITY_EMERGENCY
+#: IdResourceStrings.pas:616 
+msgid "Emergency: system is unusable"
+msgstr "Situaţie de urgenţă: sistemul este inutilizabil"
+
+#. Programmer's name for it: STR_SYSLOG_SEVERITY_ALERT
+#: IdResourceStrings.pas:617 
+msgid "Alert: action must be taken immediately"
+msgstr "Alertă: o acţiune se impune a fi luată imediat"
+
+#. Programmer's name for it: STR_SYSLOG_SEVERITY_CRITICAL
+#: IdResourceStrings.pas:618 
+msgid "Critical: critical conditions"
+msgstr "Critic: condiţii critice"
+
+#. Programmer's name for it: STR_SYSLOG_SEVERITY_ERROR
+#: IdResourceStrings.pas:619 
+msgid "Error: error conditions"
+msgstr "Eroare: condiţii de eroare"
+
+#. Programmer's name for it: STR_SYSLOG_SEVERITY_WARNING
+#: IdResourceStrings.pas:620 
+msgid "Warning: warning conditions"
+msgstr "Avertisment: condiţii de avertisment"
+
+#. Programmer's name for it: STR_SYSLOG_SEVERITY_NOTICE
+#: IdResourceStrings.pas:621 
+msgid "Notice: normal but significant condition"
+msgstr "Notificare: o condiţie normală dar importantă"
+
+#. Programmer's name for it: STR_SYSLOG_SEVERITY_INFORMATIONAL
+#: IdResourceStrings.pas:622 
+msgid "Informational: informational messages"
+msgstr "Informativ: mesaje informative"
+
+#. Programmer's name for it: STR_SYSLOG_SEVERITY_DEBUG
+#: IdResourceStrings.pas:623 
+msgid "Debug: debug-level messages"
+msgstr "Depanare: mesaje de nivel de depanare"
+
+#. Programmer's name for it: STR_SYSLOG_SEVERITY_UNKNOWN
+#: IdResourceStrings.pas:624 
+msgid "Unknown or illegale security code"
+msgstr "Cod de securitate necunoscut sau ilegal"
+
+#. Programmer's name for it: RSLPRError
+#: IdResourceStrings.pas:627 
+msgid "Reply %s on Job ID %s"
+msgstr "Răspuns %s la Job ID %s"
+
+#. Programmer's name for it: RSIRCCanNotConnect
+#: IdResourceStrings.pas:631 
+msgid "IRC Connect Failed"
+msgstr "Eşuare la conectare IRC"
+
+#. Programmer's name for it: RSIRCNotConnected
+#: IdResourceStrings.pas:632 
+msgid "Not connected to server."
+msgstr "Nu s-a conectat la server."
+
+#. Programmer's name for it: RSIRCClientVersion
+#: IdResourceStrings.pas:633 
+msgid "TIdIRC 1.061 by Steve Williams"
+msgstr "TIdIRC 1.061 de Steve Williams"
+
+#. Programmer's name for it: RSIRCClientInfo
+#: IdResourceStrings.pas:634 
+msgid "%s Non-visual component for 32-bit Delphi."
+msgstr "%s Componentă non-vizuală pt. Delphi 32-bit."
+
+#. Programmer's name for it: RSIRCNick
+#: IdResourceStrings.pas:635 
+msgid "Nick"
+msgstr "Nick"
+
+#. Programmer's name for it: RSIRCAltNick
+#: IdResourceStrings.pas:636 
+msgid "OtherNick"
+msgstr "OtherNick"
+
+#. Programmer's name for it: RSIRCUserName
+#: IdResourceStrings.pas:637 
+msgid "username"
+msgstr "username"
+
+#. Programmer's name for it: RSIRCRealName
+#: IdResourceStrings.pas:638 
+msgid "Real name"
+msgstr "Nume real"
+
+#. Programmer's name for it: RSIRCTimeIsNow
+#: IdResourceStrings.pas:639 
+msgid "Local time is %s"
+msgstr "Ora locală este %s"
+
+#. Programmer's name for it: RSHL7StatusStopped
+#: IdResourceStrings.pas:642 
+msgid "Stopped"
+msgstr "Stopat"
+
+#. Programmer's name for it: RSHL7StatusFailedToStart
+#: IdResourceStrings.pas:644 
+msgid "Failed to Start: %s"
+msgstr "Eşuare la Start: %s"
+
+#. Programmer's name for it: RSHL7StatusFailedToStop
+#: IdResourceStrings.pas:645 
+msgid "Failed to Stop: %s"
+msgstr "Eşuare la Stop: %s"
+
+#. Programmer's name for it: RSHL7StatusConnected
+#: IdResourceStrings.pas:646 
+msgid "Connected"
+msgstr "Conectat"
+
+#. Programmer's name for it: RSHL7StatusReConnect
+#: IdResourceStrings.pas:648 
+msgid "Reconnect at %s: %s"
+msgstr "Reconectare la %s: %s"
+
+#. Programmer's name for it: RSHL7NotWhileWorking
+#: IdResourceStrings.pas:649 
+msgid "You cannot set %s while the HL7 Component is working"
+msgstr "Nu puteţi seta %s atât timp cât Component HL7 lucrează"
+
+#. Programmer's name for it: RSHL7NotWorking
+#: IdResourceStrings.pas:650 
+msgid "Attempt to %s while the HL7 Component is not working"
+msgstr "Încercare de %s în timp ce Component HL7 nu lucrează"
+
+#. Programmer's name for it: RSHL7NotFailedToStop
+#: IdResourceStrings.pas:651 
+msgid "Interface is unusable due to failure to stop"
+msgstr "Interfaţa este neutilizabilă - stop eşuat"
+
+#. Programmer's name for it: RSHL7AlreadyStarted
+#: IdResourceStrings.pas:652 
+msgid "Interface was already started"
+msgstr "Interfaţa a pornit deja"
+
+#. Programmer's name for it: RSHL7AlreadyStopped
+#: IdResourceStrings.pas:653 
+msgid "Interface was already stopped"
+msgstr "Interfaţa s-a oprit deja"
+
+#. Programmer's name for it: RSHL7ModeNotSet
+#: IdResourceStrings.pas:654 
+msgid "Mode is not initialised"
+msgstr "Acest mod nu este iniţializat"
+
+#. Programmer's name for it: RSHL7NoAsynEvent
+#: IdResourceStrings.pas:655 
+msgid ""
+"Component is in Asynchronous mode but OnMessageArrive has not been hooked"
+msgstr ""
+"Componenta este în modul Asynchronous dar evenimentul OnMessageArrive nu a "
+"fost definit"
+
+#. Programmer's name for it: RSHL7NoSynEvent
+#: IdResourceStrings.pas:656 
+msgid ""
+"Component is in Synchronous mode but  OnMessageReceive has not been hooked"
+msgstr ""
+"Componenta este în modul Synchronous dar evenimentul OnMessageReceive nu a "
+"fost definit"
+
+#. Programmer's name for it: RSHL7InvalidPort
+#: IdResourceStrings.pas:657 
+msgid "Assigned Port value %d is invalid"
+msgstr "Portul asignat cu valoarea %d este invalid"
+
+#. Programmer's name for it: RSHL7ImpossibleMessage
+#: IdResourceStrings.pas:658 
+msgid "A message has been received but the commication mode is unknown"
+msgstr "Un mesaj a fost recepţionat dar modul de comunicaţie este necunoscut"
+
+#. Programmer's name for it: RSHL7UnexpectedMessage
+#: IdResourceStrings.pas:659 
+msgid "Unexpected message arrived to an interface that is not listening"
+msgstr ""
+"Un mesaj neaşteptat a sosit la o interfaţă care nu este pe modul de recepţie"
+
+#. Programmer's name for it: RSHL7UnknownMode
+#: IdResourceStrings.pas:660 
+msgid "Unknown mode"
+msgstr "Mod necunoscut"
+
+#. Programmer's name for it: RSHL7ClientThreadNotStopped
+#: IdResourceStrings.pas:661 
+msgid "Unable to stop client thread"
+msgstr "Nu pot stopa firul de execuţie client"
+
+#. Programmer's name for it: RSHL7SendMessage
+#: IdResourceStrings.pas:662 
+msgid "Send a message"
+msgstr "Trimite un mesaj"
+
+#. Programmer's name for it: RSHL7NoConnectionFound
+#: IdResourceStrings.pas:663 
+msgid "Server Connection not locatable when sending message"
+msgstr "Conexiunea Server-ului nu este locatabilă când se trimite mesaj"
+
+#. Programmer's name for it: RSHL7WaitForAnswer
+#: IdResourceStrings.pas:664 
+msgid "You cannot send a message while you are still waiting for an answer"
+msgstr "Nu puteţi trimite un mesaj în timp ce aşteptaţi un răspuns"
+
+#. Programmer's name for it: RSMFDIvalidObjectType
+#: IdResourceStrings.pas:667 
+msgid ""
+"Unsupported object type. You can assign only one of the following types or "
+"thir descendants: TStrings, TStream."
+msgstr ""
+"Tip de obiect neimplementat. Puteţi asigna numai unul din aceste tipuri "
+"descendente: TStrings, TStream."
+
+#. Programmer's name for it: RSURINoProto
+#: IdResourceStrings.pas:669 
+msgid "Protocol field is empty"
+msgstr "Campul ce conţine Protocolul este gol"
+
+#. Programmer's name for it: RSURINoHost
+#: IdResourceStrings.pas:670 
+msgid "Host field is empty"
+msgstr "Câmpul Host este gol"
+
+#. Programmer's name for it: RSIHTChainedNotAssigned
+#: IdResourceStrings.pas:672 
+msgid "You must chain this component to another I/O Handler before using it"
+msgstr ""
+"Trebuie să legaţi această componentă cu un alt Handler I/O înainte de "
+"utilizare"
+
+#. Programmer's name for it: RSSNPPNoMultiLine
+#: IdResourceStrings.pas:674 
+msgid "TIdSNPP Mess command only supports single line Messages."
+msgstr "Comanda TIdSNPP Mess suportă numai mesaj pe o singur[ linie."
+
+#. Programmer's name for it: RSThreadTerminateAndWaitFor
+#: IdResourceStrings.pas:676 
+msgid "Cannot call TerminateAndWaitFor on FreeAndTerminate threads"
+msgstr ""
+"Nu pot apela metoda TerminateAndWaitFor pe fire de execuţie tip "
+"FreeAndTerminate"

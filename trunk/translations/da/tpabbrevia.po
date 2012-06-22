@@ -1,0 +1,935 @@
+# SOME DESCRIPTIVE TITLE.
+# Copyright (C) YEAR THE PACKAGE'S COPYRIGHT HOLDER
+# This file is distributed under the same license as the PACKAGE package.
+# FIRST AUTHOR <EMAIL@ADDRESS>, YEAR.
+# 
+msgid ""
+msgstr ""
+"Project-Id-Version: TurboPower Abbrevia\n"
+"POT-Creation-Date: 2004-08-26 21:20\n"
+"PO-Revision-Date: 2004-08-22 23:17+0100\n"
+"Last-Translator: Pelle F. S. Liljendal <pelle@liljendal.dk>\n"
+"Language-Team: Pelle F. S. Liljendal <pelle@liljendal.dk>\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+
+#  Programmer's name for it: AbErrZipInvalidS
+#  Programmer's name for it: AbErrZipInvalidS
+#  Programmer's name for it: AbErrZipInvalidS
+#  Programmer's name for it: AbErrZipInvalidS
+#  Programmer's name for it: AbErrZipInvalidS
+#  Programmer's name for it: AbErrZipInvalidS
+#. Programmer's name for it: AbErrZipInvalidS
+#: ggsetup_TpAbbrevia.inc:209
+msgid "Invalid file - not a PKZip file"
+msgstr "Ugyldig fil - ikke en PKZip fil"
+
+#  Programmer's name for it: AbZipVersionNeededS
+#  Programmer's name for it: AbZipVersionNeededS
+#. Programmer's name for it: AbZipVersionNeededS
+#: ggsetup_TpAbbrevia.inc:210
+msgid "Cannot extract file - newer version required"
+msgstr "Kan ikke trække fil ud - nyere version krævet"
+
+#  Programmer's name for it: AbUnknownCompressionMethodS
+#  Programmer's name for it: AbUnknownCompressionMethodS
+#. Programmer's name for it: AbUnknownCompressionMethodS
+#: ggsetup_TpAbbrevia.inc:211
+msgid "Cannot extract file - unsupported compression method"
+msgstr "Kan ikke udtrække fil - ikke supporteret paknings metode"
+
+#  Programmer's name for it: AbNoExtractionMethodS
+#  Programmer's name for it: AbNoExtractionMethodS
+#. Programmer's name for it: AbNoExtractionMethodS
+#: ggsetup_TpAbbrevia.inc:212
+msgid "Cannot extract file - no extraction support provided"
+msgstr "Kan ikke trække fil ud - udtræknings understøttelse ikke angivet"
+
+#  Programmer's name for it: AbInvalidPasswordS
+#  Programmer's name for it: AbInvalidPasswordS
+#. Programmer's name for it: AbInvalidPasswordS
+#: ggsetup_TpAbbrevia.inc:213
+msgid "Cannot extract file - invalid password"
+msgstr "Kan ikke udtrække fil - ugyldig kodeord"
+
+#  Programmer's name for it: AbNoInsertionMethodS
+#  Programmer's name for it: AbNoInsertionMethodS
+#. Programmer's name for it: AbNoInsertionMethodS
+#: ggsetup_TpAbbrevia.inc:214
+msgid "Cannot insert file - no insertion support provided"
+msgstr "Kan ikke indsætte fil - ingen indsættelse understøttelse angivet"
+
+#  Programmer's name for it: AbInvalidFactorS
+#  Programmer's name for it: AbInvalidFactorS
+#. Programmer's name for it: AbInvalidFactorS
+#: ggsetup_TpAbbrevia.inc:215
+msgid "Invalid Reduce Factor"
+msgstr "Ugyldig Reducerings Faktor"
+
+#  Programmer's name for it: AbDuplicateNameS
+#  Programmer's name for it: AbDuplicateNameS
+#  Programmer's name for it: AbDuplicateNameS
+#. Programmer's name for it: AbDuplicateNameS
+#: ggsetup_TpAbbrevia.inc:216
+msgid "Cannot insert file - duplicates stored name"
+msgstr "Kan ikke indsætte fil - dublikeret gemt navn"
+
+#  Programmer's name for it: AbUnsupportedCompressionMethodS
+#  Programmer's name for it: AbUnsupportedCompressionMethodS
+#. Programmer's name for it: AbUnsupportedCompressionMethodS
+#: ggsetup_TpAbbrevia.inc:217
+msgid "Cannot insert file - unsupported compression method"
+msgstr "Kan ikke indsætte fil - ikke understøttet paknings metode"
+
+#  Programmer's name for it: AbUserAbortS
+#  Programmer's name for it: AbUserAbortS
+#. Programmer's name for it: AbUserAbortS
+#: ggsetup_TpAbbrevia.inc:218
+msgid "Process aborted by user"
+msgstr "Process afbrudt af bruger"
+
+#  Programmer's name for it: AbArchiveBusyS
+#  Programmer's name for it: AbArchiveBusyS
+#. Programmer's name for it: AbArchiveBusyS
+#: ggsetup_TpAbbrevia.inc:219
+msgid "Archive is busy - cannot process new requests"
+msgstr "Pakker er aktiv - kan ikke behandle nye opgaver"
+
+#  Programmer's name for it: AbLastDiskRequestS
+#  Programmer's name for it: AbLastDiskRequestS
+#. Programmer's name for it: AbLastDiskRequestS
+#: ggsetup_TpAbbrevia.inc:220
+msgid "Insert the last disk in the spanned disk set"
+msgstr "Indsæt sidste disk i det spredte disk sæt"
+
+#  Programmer's name for it: AbDiskRequestS
+#  Programmer's name for it: AbDiskRequestS
+#. Programmer's name for it: AbDiskRequestS
+#: ggsetup_TpAbbrevia.inc:221
+msgid "Insert floppy"
+msgstr "Indsæt diskette"
+
+#  Programmer's name for it: AbNthImageRequestS
+#  Programmer's name for it: AbNthImageRequestS
+#. Programmer's name for it: AbNthImageRequestS
+#: ggsetup_TpAbbrevia.inc:222
+msgid "Specify spanned image file # "
+msgstr "Specificer sprednings billed file #"
+
+#  Programmer's name for it: AbLastImageRequestS
+#  Programmer's name for it: AbLastImageRequestS
+#. Programmer's name for it: AbLastImageRequestS
+#: ggsetup_TpAbbrevia.inc:223
+msgid "Specify the last file name in the spanned image set"
+msgstr "Specificer det sidste fil navn i det spredte billed sæt"
+
+#  Programmer's name for it: AbImageRequestS
+#  Programmer's name for it: AbImageRequestS
+#. Programmer's name for it: AbImageRequestS
+#: ggsetup_TpAbbrevia.inc:224
+msgid "Image file name"
+msgstr "Billed fil navn"
+
+#  Programmer's name for it: AbBadSpanStreamS
+#  Programmer's name for it: AbBadSpanStreamS
+#. Programmer's name for it: AbBadSpanStreamS
+#: ggsetup_TpAbbrevia.inc:225
+msgid "Spanned archives must be opened as file streams"
+msgstr "Spredte arkiver skal åbnes som en fil stream"
+
+#  Programmer's name for it: AbDiskNumRequestS
+#. Programmer's name for it: AbDiskNumRequestS
+#: ggsetup_TpAbbrevia.inc:226
+msgid "Insert disk number %d of the spanned disk set"
+msgstr "Indsæt disk nummer %d af det spredte disk sæt"
+
+#  Programmer's name for it: AbImageNumRequestS
+#. Programmer's name for it: AbImageNumRequestS
+#: ggsetup_TpAbbrevia.inc:227
+msgid "Insert span number %d of the spanned file set"
+msgstr "Indsæt spredt nummer %d af det spredte fil sæt"
+
+#  Programmer's name for it: AbNoOverwriteSpanStreamS
+#. Programmer's name for it: AbNoOverwriteSpanStreamS
+#: ggsetup_TpAbbrevia.inc:228
+msgid "Cannot update an existing spanned disk set"
+msgstr "Kan ikke opdatere et eksisterede spredt sæt"
+
+#  Programmer's name for it: AbNoSpannedSelfExtractS
+#. Programmer's name for it: AbNoSpannedSelfExtractS
+#: ggsetup_TpAbbrevia.inc:229
+msgid "Cannot make a self-extracting spanned disk set"
+msgstr "Kan ikke oprette et selv-udpakkende spredt disk sæt"
+
+#  Programmer's name for it: AbBlankDiskS
+#. Programmer's name for it: AbBlankDiskS
+#: ggsetup_TpAbbrevia.inc:230
+msgid "Insert a blank floppy disk"
+msgstr "Indsæt en blank diskette"
+
+#  Programmer's name for it: AbNoSuchDirectoryS
+#. Programmer's name for it: AbNoSuchDirectoryS
+#: ggsetup_TpAbbrevia.inc:232
+msgid "Directory does not exist"
+msgstr "Folder findes ikke"
+
+#  Programmer's name for it: AbInflateBlockErrorS
+#. Programmer's name for it: AbInflateBlockErrorS
+#: ggsetup_TpAbbrevia.inc:233
+msgid "Cannot inflate block"
+msgstr "Kan ikke udpakke blok"
+
+#  Programmer's name for it: AbBadStreamTypeS
+#. Programmer's name for it: AbBadStreamTypeS
+#: ggsetup_TpAbbrevia.inc:234
+msgid "Invalid Stream"
+msgstr "Ugyldig Stream"
+
+#  Programmer's name for it: AbTruncateErrorS
+#. Programmer's name for it: AbTruncateErrorS
+#: ggsetup_TpAbbrevia.inc:235
+msgid "Error truncating Zip File"
+msgstr "Fejl ved komprimering af Zip Fil"
+
+#  Programmer's name for it: AbZipBadCRCS
+#. Programmer's name for it: AbZipBadCRCS
+#: ggsetup_TpAbbrevia.inc:236
+msgid "Failed CRC Check"
+msgstr "Fejlede CRC Check"
+
+#  Programmer's name for it: AbZipBadStubS
+#. Programmer's name for it: AbZipBadStubS
+#: ggsetup_TpAbbrevia.inc:237
+msgid "Stub must be an executable"
+msgstr "Stub smal være eksekverbar"
+
+#  Programmer's name for it: AbInvalidLFHS
+#. Programmer's name for it: AbInvalidLFHS
+#: ggsetup_TpAbbrevia.inc:239
+msgid "Invalid Local File Header entry"
+msgstr "Ugyldig Lokal Fil Hoved angivelse"
+
+#  Programmer's name for it: AbNoArchiveS
+#. Programmer's name for it: AbNoArchiveS
+#: ggsetup_TpAbbrevia.inc:240
+msgid "Archive does not exist - Filename is blank"
+msgstr "Akriv findes ikke - Filnavn er blank"
+
+#  Programmer's name for it: AbReadErrorS
+#. Programmer's name for it: AbReadErrorS
+#: ggsetup_TpAbbrevia.inc:241
+msgid "Error reading archive"
+msgstr "Fejl ved læsning af arkiv"
+
+#  Programmer's name for it: AbInvalidIndexS
+#. Programmer's name for it: AbInvalidIndexS
+#: ggsetup_TpAbbrevia.inc:242
+msgid "Invalid archive item index"
+msgstr "Ugyldig arkiv element index"
+
+#  Programmer's name for it: AbInvalidThresholdS
+#. Programmer's name for it: AbInvalidThresholdS
+#: ggsetup_TpAbbrevia.inc:243
+msgid "Invalid archive size threshold"
+msgstr "Ugyldig arkiv størrelses grænse"
+
+#  Programmer's name for it: AbUnhandledFileTypeS
+#. Programmer's name for it: AbUnhandledFileTypeS
+#: ggsetup_TpAbbrevia.inc:244
+msgid "Unhandled Archive Type"
+msgstr "Ikke håndteret Arkiv Type"
+
+#  Programmer's name for it: AbSpanningNotSupportedS
+#. Programmer's name for it: AbSpanningNotSupportedS
+#: ggsetup_TpAbbrevia.inc:245
+msgid "Spanning not supported by this Archive type"
+msgstr "Spredning ikke understøttet af denne Arkiv type"
+
+#  Programmer's name for it: AbLogCreateErrorS
+#. Programmer's name for it: AbLogCreateErrorS
+#: ggsetup_TpAbbrevia.inc:246
+msgid "Error creating Log File"
+msgstr "Fejl ved opretteslse af Log Fil"
+
+#  Programmer's name for it: abMoveFileErrorS
+#. Programmer's name for it: abMoveFileErrorS
+#: ggsetup_TpAbbrevia.inc:247
+msgid "Error Moving File %s to %s"
+msgstr "Fejl ved Flytning af File %s til %s"
+
+#  Programmer's name for it: AbNoCabinetDllErrorS
+#. Programmer's name for it: AbNoCabinetDllErrorS
+#: ggsetup_TpAbbrevia.inc:249
+msgid "Cannot load cabinet.dll"
+msgstr "Kan ikke hente cabinet.dll"
+
+#  Programmer's name for it: AbFCIFileOpenErrorS
+#. Programmer's name for it: AbFCIFileOpenErrorS
+#: ggsetup_TpAbbrevia.inc:250
+msgid "FCI cannot open file"
+msgstr "FCI kan ikke åbne fil"
+
+#  Programmer's name for it: AbFCIFileReadErrorS
+#. Programmer's name for it: AbFCIFileReadErrorS
+#: ggsetup_TpAbbrevia.inc:251
+msgid "FCI cannot read file"
+msgstr "FCI kan ikke læse fil"
+
+#  Programmer's name for it: AbFCIFileWriteErrorS
+#. Programmer's name for it: AbFCIFileWriteErrorS
+#: ggsetup_TpAbbrevia.inc:252
+msgid "FCI cannot write file"
+msgstr "FCI kan ikke skrive fil"
+
+#  Programmer's name for it: AbFCIFileCloseErrorS
+#. Programmer's name for it: AbFCIFileCloseErrorS
+#: ggsetup_TpAbbrevia.inc:253
+msgid "FCI close file error"
+msgstr "FCI luknings fil fejl"
+
+#  Programmer's name for it: AbFCIFileSeekErrorS
+#. Programmer's name for it: AbFCIFileSeekErrorS
+#: ggsetup_TpAbbrevia.inc:254
+msgid "FCI file seek error"
+msgstr "FCI fil positionerings fejl"
+
+#  Programmer's name for it: AbFCIFileDeleteErrorS
+#. Programmer's name for it: AbFCIFileDeleteErrorS
+#: ggsetup_TpAbbrevia.inc:255
+msgid "FCI file delete error"
+msgstr "FCI fil sletnings fejl"
+
+#  Programmer's name for it: AbFCIAddFileErrorS
+#. Programmer's name for it: AbFCIAddFileErrorS
+#: ggsetup_TpAbbrevia.inc:256
+msgid "FCI cannot add file"
+msgstr "FCI kan ikke tilføje fil"
+
+#  Programmer's name for it: AbFCICreateErrorS
+#. Programmer's name for it: AbFCICreateErrorS
+#: ggsetup_TpAbbrevia.inc:257
+msgid "FCI cannot create context"
+msgstr "FCI kan ikke oprette context"
+
+#  Programmer's name for it: AbFCIFlushCabinetErrorS
+#. Programmer's name for it: AbFCIFlushCabinetErrorS
+#: ggsetup_TpAbbrevia.inc:258
+msgid "FCI cannot flush cabinet"
+msgstr "FCI kan ikke skrive cabinet"
+
+#  Programmer's name for it: AbFCIFlushFolderErrorS
+#. Programmer's name for it: AbFCIFlushFolderErrorS
+#: ggsetup_TpAbbrevia.inc:259
+msgid "FCI cannot flush folder"
+msgstr "FCI kan ikke skrive folder"
+
+#  Programmer's name for it: AbFDICopyErrorS
+#. Programmer's name for it: AbFDICopyErrorS
+#: ggsetup_TpAbbrevia.inc:260
+msgid "FDI cannot enumerate files"
+msgstr "FCI kan ikke gennemløbe filer"
+
+#  Programmer's name for it: AbFDICreateErrorS
+#. Programmer's name for it: AbFDICreateErrorS
+#: ggsetup_TpAbbrevia.inc:261
+msgid "FDI cannot create context"
+msgstr "FCI kan ikke oprette contect"
+
+#  Programmer's name for it: AbInvalidCabTemplateS
+#. Programmer's name for it: AbInvalidCabTemplateS
+#: ggsetup_TpAbbrevia.inc:262
+msgid "Invalid cab file template"
+msgstr "Ugyldig cab fil skabelon"
+
+#  Programmer's name for it: AbInvalidCabFileS
+#. Programmer's name for it: AbInvalidCabFileS
+#: ggsetup_TpAbbrevia.inc:263
+msgid "Invalid file - not a cabinet file"
+msgstr "Ugyldig fil - ikke en cabinet fil"
+
+#  Programmer's name for it: AbMethod0S
+#. Programmer's name for it: AbMethod0S
+#: ggsetup_TpAbbrevia.inc:265
+msgid "Stored"
+msgstr "Gemt"
+
+#  Programmer's name for it: AbMethod1S
+#. Programmer's name for it: AbMethod1S
+#: ggsetup_TpAbbrevia.inc:266
+msgid "Shrunk"
+msgstr "Skrumpet"
+
+#  Programmer's name for it: AbMethod2S
+#  Programmer's name for it: AbMethod3S
+#  Programmer's name for it: AbMethod4S
+#  Programmer's name for it: AbMethod5S
+#. Programmer's name for it: AbMethod2S
+#. Programmer's name for it: AbMethod3S
+#. Programmer's name for it: AbMethod4S
+#. Programmer's name for it: AbMethod5S
+#: ggsetup_TpAbbrevia.inc:267 ggsetup_TpAbbrevia.inc:268
+#: ggsetup_TpAbbrevia.inc:269 ggsetup_TpAbbrevia.inc:270
+msgid "Reduced"
+msgstr "Reduceret"
+
+#  Programmer's name for it: AbMethod6S
+#. Programmer's name for it: AbMethod6S
+#: ggsetup_TpAbbrevia.inc:271
+msgid "Imploded"
+msgstr "Imploderet"
+
+#  Programmer's name for it: AbMethod7S
+#. Programmer's name for it: AbMethod7S
+#: ggsetup_TpAbbrevia.inc:272
+msgid "Tokenized"
+msgstr "Tokenized"
+
+#  Programmer's name for it: AbMethod8S
+#. Programmer's name for it: AbMethod8S
+#: ggsetup_TpAbbrevia.inc:273
+msgid "Deflated"
+msgstr "Udfladet"
+
+#  Programmer's name for it: AbMethod9S
+#. Programmer's name for it: AbMethod9S
+#: ggsetup_TpAbbrevia.inc:274
+msgid "Enhanced Deflation"
+msgstr "Udvidet Udfladning"
+
+#  Programmer's name for it: AbMethod10S
+#. Programmer's name for it: AbMethod10S
+#: ggsetup_TpAbbrevia.inc:275
+msgid "DCL Imploded"
+msgstr "DCL Imploderet"
+
+#  Programmer's name for it: AbMethod11S
+#. Programmer's name for it: AbMethod11S
+#: ggsetup_TpAbbrevia.inc:276
+msgid "Best Method"
+msgstr "Bedste Metode"
+
+#  Programmer's name for it: AbCompressedSizeFormatS
+#. Programmer's name for it: AbCompressedSizeFormatS
+#: ggsetup_TpAbbrevia.inc:279
+msgid "Compressed Size: %d"
+msgstr "Komprimeret Størrelse: %d"
+
+#  Programmer's name for it: AbUncompressedSizeFormatS
+#. Programmer's name for it: AbUncompressedSizeFormatS
+#: ggsetup_TpAbbrevia.inc:280
+msgid "Uncompressed Size: %d"
+msgstr "Ukormprimeret Størrelse: %d"
+
+#  Programmer's name for it: AbCompressionMethodFormatS
+#. Programmer's name for it: AbCompressionMethodFormatS
+#: ggsetup_TpAbbrevia.inc:281
+msgid "Compression Method: %s"
+msgstr "Komprimerings Metode: %s"
+
+#  Programmer's name for it: AbCompressionRatioFormatS
+#. Programmer's name for it: AbCompressionRatioFormatS
+#: ggsetup_TpAbbrevia.inc:282
+msgid "Compression Ratio: %2.0f%%"
+msgstr "Komprimerings Faktor: %2.0f%%"
+
+#  Programmer's name for it: AbCRCFormatS
+#. Programmer's name for it: AbCRCFormatS
+#: ggsetup_TpAbbrevia.inc:283
+msgid "CRC: %x"
+msgstr "CRC: %x"
+
+#  Programmer's name for it: AbEFAFormatS
+#  Programmer's name for it: AbEFAFormatS
+#. Programmer's name for it: AbEFAFormatS
+#: ggsetup_TpAbbrevia.inc:288
+msgid "External File Attributes: %s"
+msgstr "Ekstern Fil Attributter: %s"
+
+#  Programmer's name for it: AbIFAFormatS
+#  Programmer's name for it: AbIFAFormatS
+#. Programmer's name for it: AbIFAFormatS
+#: ggsetup_TpAbbrevia.inc:289
+msgid "File Type: %s"
+msgstr "Fil Type: %s"
+
+#  Programmer's name for it: AbTextS
+#  Programmer's name for it: AbTextS
+#. Programmer's name for it: AbTextS
+#: ggsetup_TpAbbrevia.inc:290
+msgid "Text"
+msgstr "Tekst"
+
+#  Programmer's name for it: AbBinaryS
+#. Programmer's name for it: AbBinaryS
+#: ggsetup_TpAbbrevia.inc:291
+msgid "Binary"
+msgstr "Binær"
+
+#  Programmer's name for it: AbEncryptionFormatS
+#. Programmer's name for it: AbEncryptionFormatS
+#: ggsetup_TpAbbrevia.inc:292
+msgid "Encryption: %s"
+msgstr "Indkodning: %s"
+
+#  Programmer's name for it: AbEncryptedS
+#  Programmer's name for it: AbEncryptionHeadingS
+#. Programmer's name for it: AbEncryptedS
+#. Programmer's name for it: AbEncryptionHeadingS
+#: ggsetup_TpAbbrevia.inc:293 ggsetup_TpAbbrevia.inc:345
+msgid "Encrypted"
+msgstr "Indkodet"
+
+#  Programmer's name for it: AbNotEncryptedS
+#. Programmer's name for it: AbNotEncryptedS
+#: ggsetup_TpAbbrevia.inc:294
+msgid "Not Encrypted"
+msgstr "Ikke Indkodet"
+
+#  Programmer's name for it: AbTimeStampFormatS
+#. Programmer's name for it: AbTimeStampFormatS
+#: ggsetup_TpAbbrevia.inc:296
+msgid "Time Stamp: %s"
+msgstr "Tidsstempling: %s"
+
+#  Programmer's name for it: AbMadeByFormatS
+#. Programmer's name for it: AbMadeByFormatS
+#: ggsetup_TpAbbrevia.inc:297
+msgid "Made by Version: %f"
+msgstr "Lavet med version: %f"
+
+#  Programmer's name for it: AbNeededFormatS
+#. Programmer's name for it: AbNeededFormatS
+#: ggsetup_TpAbbrevia.inc:298
+msgid "Version Needed to Extract: %f"
+msgstr "Version nødvendig for Udpakning: %f"
+
+#  Programmer's name for it: AbCommentFormatS
+#. Programmer's name for it: AbCommentFormatS
+#: ggsetup_TpAbbrevia.inc:299
+msgid "Comment: %s"
+msgstr "Kommentar: %s"
+
+#  Programmer's name for it: AbDefaultExtS
+#. Programmer's name for it: AbDefaultExtS
+#: ggsetup_TpAbbrevia.inc:300
+msgid "*.zip"
+msgstr "*.zip"
+
+#  Programmer's name for it: AbFilterS
+#. Programmer's name for it: AbFilterS
+#: ggsetup_TpAbbrevia.inc:301
+msgid ""
+"PKZip Archives (*.zip)|*.zip|Self Extracting Archives (*.exe)|*.exe|All "
+"Files (*.*)|*.*"
+msgstr ""
+"PKZip Arkiver (*.zip)|*.zip|Selvudpakkende Arkiver (*.exe)|*.exe|Alle Filer "
+"(*.*)|*.*"
+
+#  Programmer's name for it: AbFileNameTitleS
+#. Programmer's name for it: AbFileNameTitleS
+#: ggsetup_TpAbbrevia.inc:302
+msgid "Select File Name"
+msgstr "Vælg Fil Navn"
+
+#  Programmer's name for it: AbEnterPasswordS
+#. Programmer's name for it: AbEnterPasswordS
+#: ggsetup_TpAbbrevia.inc:308
+msgid "Enter Password"
+msgstr "Indtast kodeord"
+
+#  Programmer's name for it: AbPasswordS
+#. Programmer's name for it: AbPasswordS
+#: ggsetup_TpAbbrevia.inc:309
+msgid "&Password"
+msgstr "&Kodeord"
+
+#  Programmer's name for it: AbVerifyS
+#. Programmer's name for it: AbVerifyS
+#: ggsetup_TpAbbrevia.inc:310
+msgid "&Verify"
+msgstr "&Verificer"
+
+#  Programmer's name for it: AbCabExtS
+#. Programmer's name for it: AbCabExtS
+#: ggsetup_TpAbbrevia.inc:312
+msgid "*.cab"
+msgstr "*.cab"
+
+#  Programmer's name for it: AbCabFilterS
+#. Programmer's name for it: AbCabFilterS
+#: ggsetup_TpAbbrevia.inc:313
+msgid "Cabinet Archives (*.cab)|*.CAB|All Files (*.*)|*.*"
+msgstr "Cabinet Arkiver (*.cab)|*.CAB|Alle Filer (*.*)|*.*"
+
+#  Programmer's name for it: AbLogExtS
+#. Programmer's name for it: AbLogExtS
+#: ggsetup_TpAbbrevia.inc:314
+msgid "*.txt"
+msgstr "*.txt"
+
+#  Programmer's name for it: AbLogFilterS
+#. Programmer's name for it: AbLogFilterS
+#: ggsetup_TpAbbrevia.inc:315
+msgid "Text Files (*.txt)|*.TXT|All Files (*.*)|*.*"
+msgstr "Text Filer (*.txt)|*.TXT|Alle Filer (*.*)|*.*"
+
+#  Programmer's name for it: AbExeExtS
+#. Programmer's name for it: AbExeExtS
+#: ggsetup_TpAbbrevia.inc:316
+msgid "*.exe"
+msgstr "*.exe"
+
+#  Programmer's name for it: AbExeFilterS
+#. Programmer's name for it: AbExeFilterS
+#: ggsetup_TpAbbrevia.inc:317
+msgid "Self-Extracting Zip Files (*.exe)|*.EXE|All Files (*.*)|*.*"
+msgstr "Selv-Udpakkende Zip Filer (*.exe)|*.EXE|Alle Filer (*.*)|*.*"
+
+#  Programmer's name for it: AbVMSReadTooManyBytesS
+#. Programmer's name for it: AbVMSReadTooManyBytesS
+#: ggsetup_TpAbbrevia.inc:319
+msgid "VMS: request to read too many bytes [%d]"
+msgstr "VMS: bedt om at læse for mange tegn [%d]"
+
+#  Programmer's name for it: AbVMSInvalidOriginS
+#. Programmer's name for it: AbVMSInvalidOriginS
+#: ggsetup_TpAbbrevia.inc:320
+msgid "VMS: invalid origin %d, should be 0, 1, 2"
+msgstr "VMS: Ugyldig postition %dm burde være 0, 1, 2"
+
+#  Programmer's name for it: AbVMSErrorOpenSwapS
+#. Programmer's name for it: AbVMSErrorOpenSwapS
+#: ggsetup_TpAbbrevia.inc:321
+msgid "VMS: Cannot open swap file %s"
+msgstr "VMS: Kan ikke åbne swap fil %s"
+
+#  Programmer's name for it: AbVMSSeekFailS
+#. Programmer's name for it: AbVMSSeekFailS
+#: ggsetup_TpAbbrevia.inc:322
+msgid "VMS: Failed to seek in swap file %s"
+msgstr "VMS: Fejlede at positionere i swap fil %s"
+
+#  Programmer's name for it: AbVMSReadFailS
+#. Programmer's name for it: AbVMSReadFailS
+#: ggsetup_TpAbbrevia.inc:323
+msgid "VMS: Failed to read %d bytes from swap file %s"
+msgstr "VMS: Fejlede at læse %d tegn fra swap fil %s"
+
+#  Programmer's name for it: AbVMSWriteFailS
+#. Programmer's name for it: AbVMSWriteFailS
+#: ggsetup_TpAbbrevia.inc:324
+msgid "VMS: Failed to write %d bytes to swap file %s"
+msgstr "VMS: Fejlede at skrive %d tegn til swap fil %s"
+
+#  Programmer's name for it: AbVMSWriteTooManyBytesS
+#. Programmer's name for it: AbVMSWriteTooManyBytesS
+#: ggsetup_TpAbbrevia.inc:325
+msgid "VMS: request to write too many bytes [%d]"
+msgstr "VMS: bedt om at skrive for mange tegn [%d]"
+
+#  Programmer's name for it: AbBBSReadTooManyBytesS
+#. Programmer's name for it: AbBBSReadTooManyBytesS
+#: ggsetup_TpAbbrevia.inc:327
+msgid "BBS: request to read too many bytes [%d]"
+msgstr "BBS: bedt om at læse for mange tegn [%d]"
+
+#  Programmer's name for it: AbBBSSeekOutsideBufferS
+#. Programmer's name for it: AbBBSSeekOutsideBufferS
+#: ggsetup_TpAbbrevia.inc:328
+msgid "BBS: New position is outside the buffer"
+msgstr "BBS: Ny position uden for buffer"
+
+#  Programmer's name for it: AbBBSInvalidOriginS
+#. Programmer's name for it: AbBBSInvalidOriginS
+#: ggsetup_TpAbbrevia.inc:329
+msgid "BBS: Invalid Origin value"
+msgstr "BBS: Ugyldig positions værdi"
+
+#  Programmer's name for it: AbBBSWriteTooManyBytesS
+#. Programmer's name for it: AbBBSWriteTooManyBytesS
+#: ggsetup_TpAbbrevia.inc:330
+msgid "BBS: request to write too many bytes [%d]"
+msgstr "BBS: bedt om at skrive for mange tegn [%d]"
+
+#  Programmer's name for it: AbSWSNotEndofStreamS
+#. Programmer's name for it: AbSWSNotEndofStreamS
+#: ggsetup_TpAbbrevia.inc:332
+msgid "TabSlidingWindowStream.Write: Not at end of stream"
+msgstr "TabSlidingWindowStream.Write: Ikke ved enden at stream"
+
+#  Programmer's name for it: AbSWSSeekFailedS
+#. Programmer's name for it: AbSWSSeekFailedS
+#: ggsetup_TpAbbrevia.inc:333
+msgid "TabSlidingWindowStream.bsWriteChunk: seek failed"
+msgstr "TabSlidingWindowStream.bsWriteChunk: positionering fejlede"
+
+#  Programmer's name for it: AbSWSWriteFailedS
+#. Programmer's name for it: AbSWSWriteFailedS
+#: ggsetup_TpAbbrevia.inc:334
+msgid "TabSlidingWindowStream.bsWriteChunk: write failed"
+msgstr "TabSlidingWindowStream.bsWriteChunk: skrivning fejlede"
+
+#  Programmer's name for it: AbSWSInvalidOriginS
+#. Programmer's name for it: AbSWSInvalidOriginS
+#: ggsetup_TpAbbrevia.inc:335
+msgid "TabSlidingWindowStream.Seek: invalid origin"
+msgstr "TabSlidingWindowStream.Seek: ugyldig position"
+
+#  Programmer's name for it: AbSWSInvalidNewOriginS
+#. Programmer's name for it: AbSWSInvalidNewOriginS
+#: ggsetup_TpAbbrevia.inc:336
+msgid "TabSlidingWindowStream.Seek: invalid new position"
+msgstr "TabSlidingWindowStream.Seek: ugyldig ny position"
+
+#  Programmer's name for it: AbPackedHeadingS
+#. Programmer's name for it: AbPackedHeadingS
+#: ggsetup_TpAbbrevia.inc:339
+msgid "Packed"
+msgstr "Pakket"
+
+#  Programmer's name for it: AbMethodHeadingS
+#. Programmer's name for it: AbMethodHeadingS
+#: ggsetup_TpAbbrevia.inc:340
+msgid "Method"
+msgstr "Metode"
+
+#  Programmer's name for it: AbRatioHeadingS
+#. Programmer's name for it: AbRatioHeadingS
+#: ggsetup_TpAbbrevia.inc:341
+msgid "Ratio (%)"
+msgstr "Faktor (%)"
+
+#  Programmer's name for it: AbCRCHeadingS
+#. Programmer's name for it: AbCRCHeadingS
+#: ggsetup_TpAbbrevia.inc:342
+msgid "CRC32"
+msgstr "CRC32"
+
+#  Programmer's name for it: AbTimeStampHeadingS
+#. Programmer's name for it: AbTimeStampHeadingS
+#: ggsetup_TpAbbrevia.inc:346
+msgid "Time Stamp"
+msgstr "Tidsstempling"
+
+#  Programmer's name for it: AbVersionMadeHeadingS
+#. Programmer's name for it: AbVersionMadeHeadingS
+#: ggsetup_TpAbbrevia.inc:348
+msgid "Version Made"
+msgstr "Version Lavet"
+
+#  Programmer's name for it: AbVersionNeededHeadingS
+#. Programmer's name for it: AbVersionNeededHeadingS
+#: ggsetup_TpAbbrevia.inc:349
+msgid "Version Needed"
+msgstr "Version Krævet"
+
+#  Programmer's name for it: AbPartialHeadingS
+#. Programmer's name for it: AbPartialHeadingS
+#: ggsetup_TpAbbrevia.inc:351
+msgid "Partial"
+msgstr "Delvis"
+
+#  Programmer's name for it: AbExecutableHeadingS
+#. Programmer's name for it: AbExecutableHeadingS
+#: ggsetup_TpAbbrevia.inc:352
+msgid "Executable"
+msgstr "Udførbar"
+
+#  Programmer's name for it: AbCabMethod1S
+#. Programmer's name for it: AbCabMethod1S
+#: ggsetup_TpAbbrevia.inc:355
+msgid "MSZip"
+msgstr "MSZip"
+
+#  Programmer's name for it: AbLtAddS
+#. Programmer's name for it: AbLtAddS
+#: ggsetup_TpAbbrevia.inc:357
+msgid " added "
+msgstr " tilføjet "
+
+#  Programmer's name for it: AbLtDeleteS
+#. Programmer's name for it: AbLtDeleteS
+#: ggsetup_TpAbbrevia.inc:358
+msgid " deleted "
+msgstr " slettet "
+
+#  Programmer's name for it: AbLtExtractS
+#. Programmer's name for it: AbLtExtractS
+#: ggsetup_TpAbbrevia.inc:359
+msgid " extracted "
+msgstr " udpakket "
+
+#  Programmer's name for it: AbLtFreshenS
+#. Programmer's name for it: AbLtFreshenS
+#: ggsetup_TpAbbrevia.inc:360
+msgid " freshened "
+msgstr " opfrisket "
+
+#  Programmer's name for it: AbLtMoveS
+#. Programmer's name for it: AbLtMoveS
+#: ggsetup_TpAbbrevia.inc:361
+msgid " moved "
+msgstr " flyttet "
+
+#  Programmer's name for it: AbLtReplaceS
+#. Programmer's name for it: AbLtReplaceS
+#: ggsetup_TpAbbrevia.inc:362
+msgid " replaced "
+msgstr " erstattet "
+
+#  Programmer's name for it: AbLtStartS
+#. Programmer's name for it: AbLtStartS
+#: ggsetup_TpAbbrevia.inc:363
+msgid " logging "
+msgstr " logget "
+
+#  Programmer's name for it: AbGzipInvalidS
+#. Programmer's name for it: AbGzipInvalidS
+#: ggsetup_TpAbbrevia.inc:365
+msgid "Invalid Gzip"
+msgstr "Ugyldig Gzip"
+
+#  Programmer's name for it: AbGzipBadCRCS
+#. Programmer's name for it: AbGzipBadCRCS
+#: ggsetup_TpAbbrevia.inc:366
+msgid "Bad CRC"
+msgstr "Dårlig CRC"
+
+#  Programmer's name for it: AbGzipBadFileSizeS
+#. Programmer's name for it: AbGzipBadFileSizeS
+#: ggsetup_TpAbbrevia.inc:367
+msgid "Bad File Size"
+msgstr "Dårlig Fil Størrelse"
+
+#  Programmer's name for it: AbUnhandledEntityS
+#. Programmer's name for it: AbUnhandledEntityS
+#: ggsetup_TpAbbrevia.inc:369
+msgid "Unhandled Entity"
+msgstr "Uhægtet Enhed"
+
+#  Programmer's name for it: AbGzOsFat
+#. Programmer's name for it: AbGzOsFat
+#: ggsetup_TpAbbrevia.inc:373
+msgid "FAT File System (MS-DOS, OS/2, NT/Win32)"
+msgstr "FAT Fil System (MS-DOS, OS/2, NT/Win32)"
+
+#  Programmer's name for it: AbGzOsAmiga
+#. Programmer's name for it: AbGzOsAmiga
+#: ggsetup_TpAbbrevia.inc:374
+msgid "Amiga"
+msgstr "Amiga"
+
+#  Programmer's name for it: AbGzOsVMS
+#. Programmer's name for it: AbGzOsVMS
+#: ggsetup_TpAbbrevia.inc:375
+msgid "VMS (or OpenVMS)"
+msgstr "VMS (or OpenVMS)"
+
+#  Programmer's name for it: AbGzOsUnix
+#. Programmer's name for it: AbGzOsUnix
+#: ggsetup_TpAbbrevia.inc:376
+msgid "Unix"
+msgstr "Unix"
+
+#  Programmer's name for it: AbGzOsVM_CMS
+#. Programmer's name for it: AbGzOsVM_CMS
+#: ggsetup_TpAbbrevia.inc:377
+msgid "VM/CMS"
+msgstr "VM/CMS"
+
+#  Programmer's name for it: AbGzOsAtari
+#. Programmer's name for it: AbGzOsAtari
+#: ggsetup_TpAbbrevia.inc:378
+msgid "Atari TOS"
+msgstr "Atari TOS"
+
+#  Programmer's name for it: AbGzOsHPFS
+#. Programmer's name for it: AbGzOsHPFS
+#: ggsetup_TpAbbrevia.inc:379
+msgid "HPFS File System (OS/2, NT)"
+msgstr "HPFS File System (OS/2, NT)"
+
+#  Programmer's name for it: AbGzOsMacintosh
+#. Programmer's name for it: AbGzOsMacintosh
+#: ggsetup_TpAbbrevia.inc:380
+msgid "Macintosh"
+msgstr "Macintosh"
+
+#  Programmer's name for it: AbGzOsZ_System
+#. Programmer's name for it: AbGzOsZ_System
+#: ggsetup_TpAbbrevia.inc:381
+msgid "Z-System"
+msgstr "Z-System"
+
+#  Programmer's name for it: AbGzOsCP_M
+#. Programmer's name for it: AbGzOsCP_M
+#: ggsetup_TpAbbrevia.inc:382
+msgid "CP/M"
+msgstr "CP/M"
+
+#  Programmer's name for it: AbGzOsTOPS_20
+#. Programmer's name for it: AbGzOsTOPS_20
+#: ggsetup_TpAbbrevia.inc:383
+msgid "TOPS-20"
+msgstr "TOPS-20"
+
+#  Programmer's name for it: AbGzOsNTFS
+#. Programmer's name for it: AbGzOsNTFS
+#: ggsetup_TpAbbrevia.inc:384
+msgid "NTFS File System (NT)"
+msgstr "NTFS File System (NT)"
+
+#  Programmer's name for it: AbGzOsQDOS
+#. Programmer's name for it: AbGzOsQDOS
+#: ggsetup_TpAbbrevia.inc:385
+msgid "QDOS"
+msgstr "QDOS"
+
+#  Programmer's name for it: AbGzOsAcornRISCOS
+#. Programmer's name for it: AbGzOsAcornRISCOS
+#: ggsetup_TpAbbrevia.inc:386
+msgid "Acorn RISCOS"
+msgstr "Acorn RISCOS"
+
+#  Programmer's name for it: AbGzOsUndefined
+#. Programmer's name for it: AbGzOsUndefined
+#: ggsetup_TpAbbrevia.inc:388
+msgid "ID undefined by gzip"
+msgstr "ID ikke defineret af gzip"
+
+#  Programmer's name for it: AbCmpndIndexOutOfBounds
+#. Programmer's name for it: AbCmpndIndexOutOfBounds
+#: ggsetup_TpAbbrevia.inc:394
+msgid "Index out of bounds"
+msgstr "Indeks uden for område"
+
+#  Programmer's name for it: AbCmpndBusyUpdating
+#. Programmer's name for it: AbCmpndBusyUpdating
+#: ggsetup_TpAbbrevia.inc:395
+msgid "Compound file is busy updating"
+msgstr "Sammensat fil er ved at blive opdateret"
+
+#  Programmer's name for it: AbCmpndInvalidFile
+#. Programmer's name for it: AbCmpndInvalidFile
+#: ggsetup_TpAbbrevia.inc:396
+msgid "Invalid compound file"
+msgstr "Ugyldig sammensat fil"
+
+#  Programmer's name for it: AbCmpndFileNotFound
+#. Programmer's name for it: AbCmpndFileNotFound
+#: ggsetup_TpAbbrevia.inc:397
+msgid "File/Directory not found"
+msgstr "Fil/Folder ikke fundet"
+
+#  Programmer's name for it: AbCmpndFolderNotEmpty
+#. Programmer's name for it: AbCmpndFolderNotEmpty
+#: ggsetup_TpAbbrevia.inc:398
+msgid "Folder not empty"
+msgstr "Folder er ikke tom"
+
+#  Programmer's name for it: AbCmpndExceedsMaxFileSize
+#. Programmer's name for it: AbCmpndExceedsMaxFileSize
+#: ggsetup_TpAbbrevia.inc:399
+msgid "File size exceeds maximum allowable"
+msgstr "Fil størrelse overskrider maksimalt tilladt"

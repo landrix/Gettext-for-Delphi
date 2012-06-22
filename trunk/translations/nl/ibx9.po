@@ -1,0 +1,7753 @@
+msgid ""
+msgstr ""
+"Project-Id-Version: Delphi7Rtl\n"
+"POT-Creation-Date: 2005-04-19 10:12\n"
+"PO-Revision-Date: 2003-12-27 14:18+0100\n"
+"Last-Translator: Hans Landsheer <h.landsheer@planbis.nl>\n"
+"Language-Team: z <z@z.z>\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+
+#. frmIBAvailableFields..Caption
+#: Property_Editors/frmIBAvailableFieldsU.dfm:5 
+#, fuzzy
+msgid "Available Fields"
+msgstr "Niet beschikbaar"
+
+#. frmIBAvailableFields..Font.Name
+#. frmIBAvailableFields..GroupBox1..lstFields..Font.Name
+#. frmIBFilterFieldEditor..Font.Name
+#. frmIBFilterFieldEditor..lstFieldList..Font.Name
+#: Property_Editors/frmIBAvailableFieldsU.dfm:12 
+#: Property_Editors/frmIBAvailableFieldsU.dfm:32
+#: Property_Editors/frmIBFilterFieldEditorU.dfm:12
+#: Property_Editors/frmIBFilterFieldEditorU.dfm:39
+msgid "MS Sans Serif"
+msgstr ""
+
+#. frmIBAvailableFields..GroupBox1..Caption
+#. frmIBFilterFieldEditor..Label1..Caption
+#: Property_Editors/frmIBAvailableFieldsU.dfm:22 
+#: Property_Editors/frmIBFilterFieldEditorU.dfm:22
+#, fuzzy
+msgid "Fields"
+msgstr "Veld"
+
+#. frmIBFilterFieldEditor..Caption
+#: Property_Editors/frmIBFilterFieldEditorU.dfm:5 
+msgid "Filter Field Editor"
+msgstr ""
+
+#. frmIBFilterFieldEditor..Label2..Caption
+#: Property_Editors/frmIBFilterFieldEditorU.dfm:29 
+#, fuzzy
+msgid "Alias"
+msgstr "Arial"
+
+#. frmIBFilterFieldEditor..btnAdd..Caption
+#: Property_Editors/frmIBFilterFieldEditorU.dfm:61 
+#, fuzzy
+msgid "Add Fields"
+msgstr "Veld"
+
+#. frmIBFilterFieldEditor..btnRemove..Caption
+#: Property_Editors/frmIBFilterFieldEditorU.dfm:70 
+#, fuzzy
+msgid "Remove Fields"
+msgstr "Nieuwe map"
+
+#. Programmer's name for it: SBackupCaption
+#: IBDCLConst.pas:17 
+msgid "Backup Database files"
+msgstr ""
+
+#. Programmer's name for it: SRestoreSize
+#: IBDCLConst.pas:18 
+msgid "Size(Bytes)"
+msgstr ""
+
+#. Programmer's name for it: SFileNames
+#: IBDCLConst.pas:19 
+msgid "Filename(s)"
+msgstr ""
+
+#. Programmer's name for it: SPages
+#: IBDCLConst.pas:20 
+msgid "Pages"
+msgstr "Pagina's"
+
+#. Programmer's name for it: SDatabasefiles
+#. Programmer's name for it: SDatabaseFilter
+#: IBDCLConst.pas:21  IBXConst.pas:30
+#, fuzzy
+msgid "Database Files (*.ib;*.gdb)|*.ib;*.gdb|All files (*.*)|*.*"
+msgstr "Alle bestanden (*)|*|"
+
+#. Programmer's name for it: SIBFilterBeginning
+#: IBVisualConst.pas:18 
+msgid "Partial match at beginning"
+msgstr ""
+
+#. Programmer's name for it: SIBFilterAnywhere
+#: IBVisualConst.pas:19 
+msgid "Partial match anywhere"
+msgstr ""
+
+#. Programmer's name for it: SIBFilterExact
+#: IBVisualConst.pas:20 
+msgid "Exact Match"
+msgstr ""
+
+#. Programmer's name for it: SIBFilterAtEnd
+#: IBVisualConst.pas:21 
+msgid "Partial match at end"
+msgstr ""
+
+#. Programmer's name for it: SIBFilterRange
+#: IBVisualConst.pas:22 
+msgid "Match Range"
+msgstr ""
+
+#. Programmer's name for it: SIBFilterNot
+#: IBVisualConst.pas:23 
+#, fuzzy
+msgid "Not "
+msgstr "Niet gevonden"
+
+#. Programmer's name for it: SIBFilterCaption
+#: IBVisualConst.pas:24 
+msgid "IBX Filter Dialog"
+msgstr ""
+
+#. Programmer's name for it: SIBFilterNonIBXError
+#: IBVisualConst.pas:25 
+msgid "IBFilterDialog only works with IBDataSet or IBQuery components"
+msgstr ""
+
+#. Programmer's name for it: SIBDatabaseEditor
+#: IBXConst.pas:28 
+msgid "Da&tabase Editor..."
+msgstr ""
+
+#. Programmer's name for it: SIBTransactionEditor
+#: IBXConst.pas:29 
+#, fuzzy
+msgid "&Transaction Editor..."
+msgstr "Transactie is actief"
+
+#. Programmer's name for it: SDisconnectDatabase
+#: IBXConst.pas:31 
+msgid "Database is currently connected. Disconnect and continue?"
+msgstr ""
+
+#. Programmer's name for it: SCommitTransaction
+#: IBXConst.pas:32 
+msgid "Transaction is currently Active. Rollback and continue?"
+msgstr ""
+
+#. Programmer's name for it: SExecute
+#: IBXConst.pas:33 
+msgid "E&xecute"
+msgstr ""
+
+#. Programmer's name for it: SNoDataSet
+#: IBXConst.pas:34 
+msgid "No dataset association"
+msgstr ""
+
+#. Programmer's name for it: SSQLGenSelect
+#: IBXConst.pas:35 
+msgid "Must select at least one key field and one update field"
+msgstr ""
+
+#. Programmer's name for it: SSQLNotGenerated
+#: IBXConst.pas:36 
+msgid "Update SQL statements not generated, exit anyway?"
+msgstr ""
+
+#. Programmer's name for it: SIBUpdateSQLEditor
+#: IBXConst.pas:37 
+msgid "&UpdateSQL Editor..."
+msgstr ""
+
+#. Programmer's name for it: SIBDataSetEditor
+#: IBXConst.pas:38 
+#, fuzzy
+msgid "&Dataset Editor..."
+msgstr "Dataset is te groot"
+
+#. Programmer's name for it: SSQLDataSetOpen
+#: IBXConst.pas:39 
+#, fuzzy
+msgid "Unable to determine field names for %s"
+msgstr "Niet-afgesloten veldnaam"
+
+#. Programmer's name for it: SDefaultTransaction
+#: IBXConst.pas:40 
+#, fuzzy
+msgid "%s, Default"
+msgstr "Standaard grootte"
+
+#. Programmer's name for it: SUnknownError
+#: IBXConst.pas:43 
+msgid "Unknown error"
+msgstr "Onbekende fout"
+
+#. Programmer's name for it: SInterBaseMissing
+#: IBXConst.pas:45 
+msgid ""
+"InterBase library gds32.dll not found in the path. Please install InterBase "
+"to use this functionality"
+msgstr ""
+
+#. Programmer's name for it: SInterBaseMissing
+#: IBXConst.pas:48 
+#, fuzzy
+msgid ""
+"InterBase library gds.so.0 not found in the path. Please install InterBase "
+"to use this functionality"
+msgstr ""
+"%s is een InterBase6 functie. Een upgrade naar InterBase6 is nodig om dit te "
+"gebruiken"
+
+#. Programmer's name for it: SInterBaseInstallMissing
+#: IBXConst.pas:50 
+msgid ""
+"InterBase Install DLL ibinstall.dll not found in the path. Please install "
+"InterBase 6 to use this functionality"
+msgstr ""
+
+#. Programmer's name for it: SIB60feature
+#: IBXConst.pas:51 
+#, fuzzy
+msgid ""
+"%s is an InterBase 6 function. Please upgrade to InterBase 6 to use this "
+"functonality"
+msgstr ""
+"%s is een InterBase6 functie. Een upgrade naar InterBase6 is nodig om dit te "
+"gebruiken"
+
+#. Programmer's name for it: SNotSupported
+#: IBXConst.pas:52 
+msgid "Unsupported feature"
+msgstr "Niet ondersteunde mogelijkheid"
+
+#. Programmer's name for it: SNotPermitted
+#: IBXConst.pas:53 
+msgid "Not permitted"
+msgstr "Niet toegestaan"
+
+#. Programmer's name for it: SFileAccessError
+#: IBXConst.pas:54 
+msgid "Temporary file access error"
+msgstr ""
+
+#. Programmer's name for it: SConnectionTimeout
+#: IBXConst.pas:55 
+msgid "Database connection timed out"
+msgstr ""
+
+#. Programmer's name for it: SCannotSetDatabase
+#: IBXConst.pas:56 
+msgid "Cannot set database"
+msgstr "Kan database niet instellen"
+
+#. Programmer's name for it: SCannotSetTransaction
+#: IBXConst.pas:57 
+msgid "Cannot set transaction"
+msgstr "Kan transactie niet instellen"
+
+#. Programmer's name for it: SOperationCancelled
+#: IBXConst.pas:58 
+msgid "Operation cancelled at user's request"
+msgstr "De actie is afgebroken door de gebruiker"
+
+#. Programmer's name for it: SDPBConstantNotSupported
+#: IBXConst.pas:59 
+msgid "DPB Constant (isc_dpb_%s) is unsupported"
+msgstr ""
+
+#. Programmer's name for it: SDPBConstantUnknown
+#: IBXConst.pas:60 
+msgid "DPB Constant (%d) is unknown"
+msgstr "DPB constante (%d) is onbekend"
+
+#. Programmer's name for it: STPBConstantNotSupported
+#: IBXConst.pas:61 
+msgid "TPB Constant (isc_tpb_%s) is unsupported"
+msgstr ""
+
+#. Programmer's name for it: STPBConstantUnknown
+#: IBXConst.pas:62 
+msgid "TPB Constant (%d) is unknown"
+msgstr "TPB Constant (%d) is onbekend"
+
+#. Programmer's name for it: SDatabaseClosed
+#: IBXConst.pas:63 
+msgid "Cannot perform operation -- DB is not open"
+msgstr "Operatie kan niet uitgevoerd worden - DB is niet geopend"
+
+#. Programmer's name for it: SDatabaseOpen
+#: IBXConst.pas:64 
+msgid "Cannot perform operation -- DB is currently open"
+msgstr "Operatie kan niet uitgevoerd worden - DB is geopend"
+
+#. Programmer's name for it: SDatabaseNameMissing
+#: IBXConst.pas:65 
+msgid "Database name is missing"
+msgstr "Ontbrekende databasenaam"
+
+#. Programmer's name for it: SNotInTransaction
+#: IBXConst.pas:66 
+msgid "Transaction is not active"
+msgstr "Transactie is niet actief"
+
+#. Programmer's name for it: SInTransaction
+#: IBXConst.pas:67 
+msgid "Transaction is active"
+msgstr "Transactie is actief"
+
+#. Programmer's name for it: STimeoutNegative
+#: IBXConst.pas:68 
+msgid "Timeout values cannot be negative"
+msgstr ""
+
+#. Programmer's name for it: SNoDatabasesInTransaction
+#: IBXConst.pas:69 
+msgid "No databases are listed in transaction component"
+msgstr ""
+
+#. Programmer's name for it: SUpdateWrongDB
+#: IBXConst.pas:70 
+msgid "Updating wrong database"
+msgstr "Bijwerken van verkeerde database "
+
+#. Programmer's name for it: SUpdateWrongTR
+#: IBXConst.pas:71 
+msgid "Updating wrong transaction. Unique transaction expected in set"
+msgstr ""
+
+#. Programmer's name for it: SDatabaseNotAssigned
+#: IBXConst.pas:72 
+msgid "Database not assigned"
+msgstr "Database niet toegekend"
+
+#. Programmer's name for it: STransactionNotAssigned
+#: IBXConst.pas:73 
+msgid "Transaction not assigned"
+msgstr "Transactie niet toegekend"
+
+#. Programmer's name for it: SXSQLDAIndexOutOfRange
+#: IBXConst.pas:74 
+msgid "XSQLDA index out of range"
+msgstr "XSQLDA index buiten bereik"
+
+#. Programmer's name for it: SXSQLDANameDoesNotExist
+#: IBXConst.pas:75 
+msgid "XSQLDA name does not exist (%s)"
+msgstr "XSQLDA naam bestaat niet (%s)"
+
+#. Programmer's name for it: SEOF
+#: IBXConst.pas:76 
+msgid "End of file"
+msgstr "Voorbij einde bestand gelezen"
+
+#. Programmer's name for it: SBOF
+#: IBXConst.pas:77 
+msgid "Beginning of file"
+msgstr "Begin van bestand"
+
+#. Programmer's name for it: SInvalidStatementHandle
+#: IBXConst.pas:78 
+msgid "Invalid statement handle"
+msgstr "Ongeldige statement handle"
+
+#. Programmer's name for it: SSQLOpen
+#: IBXConst.pas:79 
+msgid "IBSQL Open"
+msgstr "IBSQL open"
+
+#. Programmer's name for it: SSQLClosed
+#: IBXConst.pas:80 
+msgid "IBSQL Closed"
+msgstr "IBSQL Gesloten"
+
+#. Programmer's name for it: SDatasetOpen
+#: IBXConst.pas:81 
+msgid "Dataset open"
+msgstr "Dataset open"
+
+#. Programmer's name for it: SDatasetClosed
+#: IBXConst.pas:82 
+msgid "Dataset closed"
+msgstr "Gesloten dataset"
+
+#. Programmer's name for it: SUnknownSQLDataType
+#: IBXConst.pas:83 
+msgid "Unknown SQL Data type (%d)"
+msgstr "Onbekend SQL Data type (%d)"
+
+#. Programmer's name for it: SInvalidColumnIndex
+#: IBXConst.pas:84 
+msgid "Invalid column index (index exceeds permitted range)"
+msgstr ""
+
+#. Programmer's name for it: SInvalidParamColumnIndex
+#: IBXConst.pas:85 
+msgid "Invalid parameter index (index exceeds permitted range)"
+msgstr ""
+
+#. Programmer's name for it: SInvalidDataConversion
+#: IBXConst.pas:86 
+msgid "Invalid data conversion"
+msgstr "Ongeldige data conversie"
+
+#. Programmer's name for it: SColumnIsNotNullable
+#: IBXConst.pas:87 
+msgid "Column cannot be set to null (%s)"
+msgstr ""
+
+#. Programmer's name for it: SBlobCannotBeRead
+#: IBXConst.pas:88 
+msgid "Blob stream cannot be read"
+msgstr "Blob stream kan niet gelezen worden"
+
+#. Programmer's name for it: SBlobCannotBeWritten
+#: IBXConst.pas:89 
+msgid "Blob stream cannot be written"
+msgstr "Blob stream kan niet geschreven worden"
+
+#. Programmer's name for it: SEmptyQuery
+#: IBXConst.pas:90 
+msgid "Empty query"
+msgstr "Query is leeg"
+
+#. Programmer's name for it: SCannotOpenNonSQLSelect
+#: IBXConst.pas:91 
+msgid "Cannot \"open\" a non-select statement. Use ExecQuery"
+msgstr " \"open\" van een non-select statement onmogelijk. Gebuik ExecQuery"
+
+#. Programmer's name for it: SNoFieldAccess
+#: IBXConst.pas:92 
+msgid "No access to field \"%s\""
+msgstr "Geen toegang tot veld \"%s\""
+
+#. Programmer's name for it: SFieldReadOnly
+#: IBXConst.pas:93 
+msgid "Field \"%s\" is read-only"
+msgstr "Veld \"%s\" is alleen-lezen"
+
+#. Programmer's name for it: SFieldNotFound
+#: IBXConst.pas:94 
+msgid "Field \"%s\" not found"
+msgstr "Veld \"%s\" niet gevonden"
+
+#. Programmer's name for it: SNotEditing
+#: IBXConst.pas:95 
+#, fuzzy
+msgid "Not in edit mode"
+msgstr "Niet in 'cached update mode'"
+
+#. Programmer's name for it: SCannotInsert
+#: IBXConst.pas:96 
+msgid "Cannot insert into dataset. (No insert query)"
+msgstr "De wijzigingen kunnen niet verwerkt worden. (No insert query)"
+
+#. Programmer's name for it: SCannotPost
+#: IBXConst.pas:97 
+msgid "Cannot post. (No update/insert query)"
+msgstr "De wijzigingen kunnen niet verwerkt worden"
+
+#. Programmer's name for it: SCannotUpdate
+#: IBXConst.pas:98 
+msgid "Cannot update. (No update query)"
+msgstr "De wijzigingen kunnen niet verwerkt worden"
+
+#. Programmer's name for it: SCannotDelete
+#: IBXConst.pas:99 
+msgid "Cannot delete from dataset. (No delete query)"
+msgstr "De records kunnen niet gewist worden. (No delete query)"
+
+#. Programmer's name for it: SCannotRefresh
+#: IBXConst.pas:100 
+msgid "Cannot refresh row. (No refresh query)"
+msgstr "Het record kan niet worden ververst"
+
+#. Programmer's name for it: SBufferNotSet
+#: IBXConst.pas:101 
+msgid "Buffer not set"
+msgstr "Buffer niet ingesteld"
+
+#. Programmer's name for it: SCircularReference
+#: IBXConst.pas:102 
+msgid "Circular references not permitted"
+msgstr "Circulaire linking niet toegestaan"
+
+#. Programmer's name for it: SSQLParseError
+#: IBXConst.pas:103 
+msgid ""
+"SQL Parse Error:\n"
+"\n"
+"%s"
+msgstr ""
+"SQL Parse fout:\n"
+"\n"
+"%s"
+
+#. Programmer's name for it: SUserAbort
+#: IBXConst.pas:104 
+msgid "User abort"
+msgstr ""
+
+#. Programmer's name for it: SDataSetUniDirectional
+#: IBXConst.pas:105 
+msgid "Data set is uni-directional"
+msgstr "Data set is uni-directional"
+
+#. Programmer's name for it: SCannotCreateSharedResource
+#: IBXConst.pas:106 
+msgid "Cannot create shared resource. (Windows error %d)"
+msgstr ""
+
+#. Programmer's name for it: SWindowsAPIError
+#: IBXConst.pas:107 
+msgid "Windows API error. (Windows error %d [$%.8x])"
+msgstr "Windows API fout. (Windows fout %d [$%.8x])"
+
+#. Programmer's name for it: SColumnListsDontMatch
+#: IBXConst.pas:108 
+msgid "Column lists do not match"
+msgstr ""
+
+#. Programmer's name for it: SColumnTypesDontMatch
+#: IBXConst.pas:109 
+msgid "Column types don't match. (From index: %d; To index: %d)"
+msgstr ""
+
+#. Programmer's name for it: SCantEndSharedTransaction
+#: IBXConst.pas:111 
+msgid ""
+"Can't end a shared transaction unless it is forced and equal to the "
+"transaction's TimeoutAction"
+msgstr ""
+
+#. Programmer's name for it: SFieldUnsupportedType
+#: IBXConst.pas:112 
+msgid "Unsupported Field Type"
+msgstr "Veld van een niet-ondersteund type"
+
+#. Programmer's name for it: SCircularDataLink
+#: IBXConst.pas:113 
+msgid "Circular DataLink Reference"
+msgstr "Circulaire linking niet toegestaan"
+
+#. Programmer's name for it: SEmptySQLStatement
+#: IBXConst.pas:114 
+msgid "Empty SQL Statement"
+msgstr "Geen SQL opdracht beschikbaar"
+
+#. Programmer's name for it: SIsASelectStatement
+#: IBXConst.pas:115 
+msgid "use Open for a Select Statement"
+msgstr "Gebruik \"open\" als select statement"
+
+#. Programmer's name for it: SRequiredParamNotSet
+#: IBXConst.pas:116 
+msgid "Required Param value not set"
+msgstr ""
+
+#. Programmer's name for it: SNoStoredProcName
+#: IBXConst.pas:117 
+msgid "No Stored Procedure Name assigned"
+msgstr ""
+
+#. Programmer's name for it: SIsAExecuteProcedure
+#: IBXConst.pas:118 
+msgid "use ExecProc for Procedure; use TQuery for Select procedures"
+msgstr ""
+
+#. Programmer's name for it: SUpdateFailed
+#: IBXConst.pas:119 
+msgid "Update Failed"
+msgstr "Update mislukt"
+
+#. Programmer's name for it: SNotCachedUpdates
+#: IBXConst.pas:120 
+msgid "CachedUpdates not enabled"
+msgstr "CachedUpdates niet toegestaan"
+
+#. Programmer's name for it: SNotLiveRequest
+#: IBXConst.pas:121 
+msgid "Request is not live - cannot modify"
+msgstr ""
+
+#. Programmer's name for it: SNoProvider
+#: IBXConst.pas:122 
+msgid "No Provider"
+msgstr "Provider ontbreekt"
+
+#. Programmer's name for it: SNoRecordsAffected
+#: IBXConst.pas:123 
+msgid "No Records Affected"
+msgstr "Geen records gewijzigd"
+
+#. Programmer's name for it: SNoTableName
+#: IBXConst.pas:124 
+msgid "No Table Name assigned"
+msgstr "Geen tabelnaam toegekend"
+
+#. Programmer's name for it: SCannotCreatePrimaryIndex
+#: IBXConst.pas:125 
+msgid "Cannot Create Primary Index; are created automatically"
+msgstr ""
+
+#. Programmer's name for it: SCannotDropSystemIndex
+#: IBXConst.pas:126 
+msgid "Cannot Drop System Index"
+msgstr "Kan System Index niet verwijderen"
+
+#. Programmer's name for it: STableNameMismatch
+#: IBXConst.pas:127 
+msgid "Table Name Mismatch"
+msgstr "Ongeldige tabelnaam"
+
+#. Programmer's name for it: SIndexFieldMissing
+#: IBXConst.pas:128 
+msgid "Index Field Missing"
+msgstr "Indexveld ontbreekt"
+
+#. Programmer's name for it: SInvalidCancellation
+#: IBXConst.pas:129 
+msgid "Cannot Cancel events while processing"
+msgstr "Kan niet Annuleren terwijl proces gaande is"
+
+#. Programmer's name for it: SInvalidEvent
+#: IBXConst.pas:130 
+msgid "Invalid Event"
+msgstr "Ongeldige Event"
+
+#. Programmer's name for it: SMaximumEvents
+#: IBXConst.pas:131 
+msgid "Exceded Maximum Event limits"
+msgstr ""
+
+#. Programmer's name for it: SNoEventsRegistered
+#: IBXConst.pas:132 
+msgid "No Events Registered"
+msgstr "Ongregistreerde event"
+
+#. Programmer's name for it: SInvalidQueueing
+#: IBXConst.pas:133 
+msgid "Invalid Queueing"
+msgstr "Ongeldige Queueing"
+
+#. Programmer's name for it: SInvalidRegistration
+#: IBXConst.pas:134 
+msgid "Invalid Registration"
+msgstr "Ongeldige registratie"
+
+#. Programmer's name for it: SInvalidBatchMove
+#: IBXConst.pas:135 
+msgid "Invalid Batch Move"
+msgstr "Ongeldige batch move"
+
+#. Programmer's name for it: SSQLDialectInvalid
+#: IBXConst.pas:136 
+msgid "SQL Dialect Invalid"
+msgstr "Ongeldige SQL-dialect"
+
+#. Programmer's name for it: SSPBConstantNotSupported
+#: IBXConst.pas:137 
+msgid "SPB Constant Not supported"
+msgstr "SPB Constant wordt niet ondersteund"
+
+#. Programmer's name for it: SSPBConstantUnknown
+#: IBXConst.pas:138 
+msgid "SPB Constant Unknown"
+msgstr "Onbekende SPB Constante"
+
+#. Programmer's name for it: SServiceActive
+#: IBXConst.pas:139 
+msgid "Cannot perform operation -- service is not attached"
+msgstr "Operatie kan niet uitgevoerd worden - service is not attached"
+
+#. Programmer's name for it: SServiceInActive
+#: IBXConst.pas:140 
+msgid "Cannot perform operation -- service is attached"
+msgstr "Operatie kan niet uitgevoerd worden - service is atached"
+
+#. Programmer's name for it: SServerNameMissing
+#: IBXConst.pas:141 
+msgid "Server Name Missing"
+msgstr "Servernaam ontbreekt"
+
+#. Programmer's name for it: SQueryParamsError
+#: IBXConst.pas:142 
+msgid "Query Parameters missing or incorrect"
+msgstr ""
+
+#. Programmer's name for it: SStartParamsError
+#: IBXConst.pas:143 
+msgid "start Parameters missing or incorrect"
+msgstr ""
+
+#. Programmer's name for it: SOutputParsingError
+#: IBXConst.pas:144 
+msgid "Unexpected Output buffer value"
+msgstr ""
+
+#. Programmer's name for it: SUseSpecificProcedures
+#: IBXConst.pas:145 
+msgid ""
+"Generic ServiceStart not applicable: Use Specific Procedures to set "
+"configuration params"
+msgstr ""
+
+#. Programmer's name for it: SSQLMonitorAlreadyPresent
+#: IBXConst.pas:146 
+msgid "SQL Monitor Instance is already present"
+msgstr ""
+
+#. Programmer's name for it: SCantPrintValue
+#: IBXConst.pas:147 
+msgid "Cannot print value"
+msgstr "De waarde kan niet afgedrukt worden"
+
+#. Programmer's name for it: SEOFReached
+#: IBXConst.pas:148 
+msgid "SEOFReached"
+msgstr ""
+
+#. Programmer's name for it: SEOFInComment
+#: IBXConst.pas:149 
+msgid "EOF in comment detected"
+msgstr ""
+
+#. Programmer's name for it: SEOFInString
+#: IBXConst.pas:150 
+msgid "EOF in string detected"
+msgstr ""
+
+#. Programmer's name for it: SParamNameExpected
+#: IBXConst.pas:151 
+msgid "Parameter name expected"
+msgstr "Parameternaam verwacht"
+
+#. Programmer's name for it: SSuccess
+#: IBXConst.pas:152 
+msgid "Successful execution"
+msgstr ""
+
+#. Programmer's name for it: SDelphiException
+#: IBXConst.pas:153 
+msgid "DelphiException %s"
+msgstr "DelphiExceptie %s"
+
+#. Programmer's name for it: SNoOptionsSet
+#: IBXConst.pas:154 
+msgid "No Install Options selected"
+msgstr ""
+
+#. Programmer's name for it: SNoDestinationDirectory
+#: IBXConst.pas:155 
+#, fuzzy
+msgid "DestinationDirectory is not set"
+msgstr "De map \"%s\" is niet leeg."
+
+#. Programmer's name for it: SNosourceDirectory
+#: IBXConst.pas:156 
+#, fuzzy
+msgid "SourceDirectory is not set"
+msgstr "De map \"%s\" is niet leeg."
+
+#. Programmer's name for it: SNoUninstallFile
+#: IBXConst.pas:157 
+msgid "Uninstall File Name is not set"
+msgstr ""
+
+#. Programmer's name for it: SOptionNeedsClient
+#: IBXConst.pas:158 
+msgid "%s component requires Client to function properly"
+msgstr ""
+
+#. Programmer's name for it: SOptionNeedsServer
+#: IBXConst.pas:159 
+msgid "%s component requires Server to function properly"
+msgstr ""
+
+#. Programmer's name for it: SInvalidOption
+#: IBXConst.pas:160 
+#, fuzzy
+msgid "Invalid option specified"
+msgstr "Ongeldig formaat of waarde opgegeven"
+
+#. Programmer's name for it: SInvalidOnErrorResult
+#: IBXConst.pas:161 
+#, fuzzy
+msgid "Unexpected onError return value"
+msgstr "Onverwachte antwoord type"
+
+#. Programmer's name for it: SInvalidOnStatusResult
+#: IBXConst.pas:162 
+#, fuzzy
+msgid "Unexpected onStatus return value"
+msgstr "Onverwachte antwoord type"
+
+#. Programmer's name for it: SInterbaseExpressVersion
+#: IBXConst.pas:164 
+msgid "InterbaseExpress 4.3"
+msgstr ""
+
+#. Programmer's name for it: SEditSQL
+#: IBXConst.pas:165 
+msgid "Edit SQL"
+msgstr ""
+
+#. Programmer's name for it: SDPBConstantUnknownEx
+#: IBXConst.pas:166 
+#, fuzzy
+msgid "DPB Constant (%s) is unknown"
+msgstr "DPB constante (%d) is onbekend"
+
+#. Programmer's name for it: STPBConstantUnknownEx
+#: IBXConst.pas:167 
+#, fuzzy
+msgid "TPB Constant (%s) is unknown"
+msgstr "TPB Constant (%d) is onbekend"
+
+#. Programmer's name for it: SInterbaseExpressVersionEx
+#: IBXConst.pas:168 
+msgid "InterbaseExpress %g"
+msgstr ""
+
+#. Programmer's name for it: SUnknownPlan
+#: IBXConst.pas:169 
+msgid "Unknown Error - Can't retrieve plan"
+msgstr ""
+
+#. Programmer's name for it: SFieldSizeMismatch
+#: IBXConst.pas:170 
+msgid "Size Mismatch - Field %s size is too small for data"
+msgstr ""
+
+#. Programmer's name for it: SEventAlreadyRegistered
+#: IBXConst.pas:171 
+#, fuzzy
+msgid "Events already registered"
+msgstr "Ongregistreerde event"
+
+#. Programmer's name for it: SStringTooLarge
+#: IBXConst.pas:172 
+msgid ""
+"Trying to store a string of length %d into a field that can only contain %d"
+msgstr ""
+
+#. Programmer's name for it: SIBServiceEditor
+#: IBXConst.pas:173 
+msgid "&Service Editor ..."
+msgstr ""
+
+#. Programmer's name for it: SIBSuccessConnect
+#: IBXConst.pas:174 
+msgid "Successful Connection"
+msgstr ""
+
+#. Programmer's name for it: SNoTimers
+#: IBXConst.pas:175 
+msgid "Not enough timers available"
+msgstr "Onvoldoende timers beschikbaar"
+
+#. Programmer's name for it: SIB65feature
+#: IBXConst.pas:176 
+#, fuzzy
+msgid ""
+"%s is an InterBase 6.5 function. Please upgrade to InterBase 6.5 to use this "
+"functonality"
+msgstr ""
+"%s is een InterBase6 functie. Een upgrade naar InterBase6 is nodig om dit te "
+"gebruiken"
+
+#. Programmer's name for it: SLoginPromptFailure
+#: IBXConst.pas:177 
+msgid ""
+"Can not find default login prompt dialog.  Please add DBLogDlg to the uses "
+"section of your main file."
+msgstr ""
+
+#. Programmer's name for it: SIBMemoryError
+#: IBXConst.pas:178 
+msgid "Out of memory"
+msgstr "Geen geheugen meer"
+
+#. Programmer's name for it: SIBInvalidStatement
+#: IBXConst.pas:179 
+#, fuzzy
+msgid "Invalid statement"
+msgstr "Ongeldige ouderobject"
+
+#. Programmer's name for it: SIBInvalidComment
+#: IBXConst.pas:180 
+#, fuzzy
+msgid "Invalid Comment"
+msgstr "Ongeldige Event"
+
+#. Programmer's name for it: SIBBrokerOpen
+#: IBXConst.pas:181 
+#, fuzzy
+msgid "  Opening connection "
+msgstr "Kan transactie niet instellen"
+
+#. Programmer's name for it: SIBBrokerVersion
+#: IBXConst.pas:182 
+msgid "Starting IBConnectionBroker Version 1.0.1:"
+msgstr ""
+
+#. Programmer's name for it: SIBBrokerDatabase
+#: IBXConst.pas:183 
+#, fuzzy
+msgid "Database Name = "
+msgstr "Databasenaam ontbreekt"
+
+#. Programmer's name for it: SIBBrokerUser
+#: IBXConst.pas:184 
+#, fuzzy
+msgid "User Name = "
+msgstr "Naam"
+
+#. Programmer's name for it: SIBBrokerMinConnections
+#: IBXConst.pas:185 
+#, fuzzy
+msgid "Min Connections = "
+msgstr "Verbinding maken met %s."
+
+#. Programmer's name for it: SIBBrokerMaxConnections
+#: IBXConst.pas:186 
+#, fuzzy
+msgid "Max Connections = "
+msgstr "Verbinding maken met %s."
+
+#. Programmer's name for it: SIBBrokerIdleTimer
+#: IBXConst.pas:187 
+msgid "IdleTimer = "
+msgstr ""
+
+#. Programmer's name for it: SIBBrokerGiveOut
+#: IBXConst.pas:188 
+#, fuzzy
+msgid "gave out connection "
+msgstr "Kan transactie niet instellen"
+
+#. Programmer's name for it: SIBBrokerUnavailable
+#: IBXConst.pas:189 
+#, fuzzy
+msgid "Unable to create new connection: "
+msgstr "Kon map niet aanmaken"
+
+#. Programmer's name for it: SIBBrokerExhausted
+#: IBXConst.pas:190 
+msgid "-----> Connections Exhausted!  Will wait and try again in loop "
+msgstr ""
+
+#. Programmer's name for it: SIBBrokerNilError
+#: IBXConst.pas:191 
+msgid "Nil database tried to be released"
+msgstr ""
+
+#. Programmer's name for it: SIBBrokerRelease
+#: IBXConst.pas:192 
+#, fuzzy
+msgid "Release connection "
+msgstr "Record wissen"
+
+#. Programmer's name for it: SIBDatabaseINISection
+#: IBXConst.pas:193 
+#, fuzzy
+msgid "Database Settings"
+msgstr "Dataset open"
+
+#. Programmer's name for it: SIBDatabaseINISectionEmpty
+#: IBXConst.pas:194 
+#, fuzzy
+msgid "Section name can not be empty"
+msgstr "IN-lijst kan niet leeg zijn"
+
+#. Programmer's name for it: SIB70feature
+#: IBXConst.pas:195 
+#, fuzzy
+msgid ""
+"%s is an InterBase 7.0 function. Please upgrade to InterBase 7.0 to use this "
+"functonality"
+msgstr ""
+"%s is een InterBase6 functie. Een upgrade naar InterBase6 is nodig om dit te "
+"gebruiken"
+
+#. Programmer's name for it: SIB71feature
+#: IBXConst.pas:196 
+#, fuzzy
+msgid ""
+"%s is an InterBase 7.1 function. Please upgrade to InterBase 7.1 to use this "
+"functonality"
+msgstr ""
+"%s is een InterBase6 functie. Een upgrade naar InterBase6 is nodig om dit te "
+"gebruiken"
+
+#. Programmer's name for it: SIB75feature
+#: IBXConst.pas:197 
+#, fuzzy
+msgid ""
+"%s is an InterBase 7.5 function. Please upgrade to InterBase 7.5 to use this "
+"functonality"
+msgstr ""
+"%s is een InterBase6 functie. Een upgrade naar InterBase6 is nodig om dit te "
+"gebruiken"
+
+#, fuzzy
+#~ msgid "Customize"
+#~ msgstr "Custom Size"
+
+#, fuzzy
+#~ msgid "Close"
+#~ msgstr "&Sluiten"
+
+#, fuzzy
+#~ msgid "None"
+#~ msgstr "(Leeg)"
+
+#, fuzzy
+#~ msgid "Selective"
+#~ msgstr "%s verwacht"
+
+#~ msgid "All"
+#~ msgstr "Alle"
+
+#, fuzzy
+#~ msgid "Actions"
+#~ msgstr "Iconen"
+
+#, fuzzy
+#~ msgid "Cate&gories:"
+#~ msgstr "D&rives:"
+
+#~ msgid "Other"
+#~ msgstr "Ander"
+
+#~ msgid "Default"
+#~ msgstr "Standaard grootte"
+
+#~ msgid "(None)"
+#~ msgstr "(Leeg)"
+
+#, fuzzy
+#~ msgid "Slide"
+#~ msgstr "Regel"
+
+#, fuzzy
+#~ msgid "Fade"
+#~ msgstr "Onwaar"
+
+#, fuzzy
+#~ msgid "Drag to create Separators"
+#~ msgstr "Kon map niet aanmaken"
+
+#~ msgid "&Close"
+#~ msgstr "&Sluiten"
+
+#, fuzzy
+#~ msgid "U"
+#~ msgstr "Op"
+
+#, fuzzy
+#~ msgid "Original idea"
+#~ msgstr "Andere waarden"
+
+#, fuzzy
+#~ msgid "Gamma"
+#~ msgstr "Gram"
+
+#, fuzzy
+#~ msgid "Contributions"
+#~ msgstr "Verbinding maken met %s."
+
+#, fuzzy
+#~ msgid "Brett Shearer"
+#~ msgstr "&Server"
+
+#~ msgid "&Help"
+#~ msgstr "&Help"
+
+#~ msgid "File"
+#~ msgstr "Bestand"
+
+#~ msgid "Help"
+#~ msgstr "Help"
+
+#, fuzzy
+#~ msgid "&About"
+#~ msgstr "Afbreken"
+
+#, fuzzy
+#~ msgid "TreePanel"
+#~ msgstr "Detail"
+
+#, fuzzy
+#~ msgid "ToolBar"
+#~ msgstr "Balk"
+
+#, fuzzy
+#~ msgid "Tests"
+#~ msgstr "Voet"
+
+#, fuzzy
+#~ msgid "Run"
+#~ msgstr "Zon"
+
+#, fuzzy
+#~ msgid "Failures"
+#~ msgstr "Bestand"
+
+#, fuzzy
+#~ msgid "Errors"
+#~ msgstr "Fout"
+
+#, fuzzy
+#~ msgid "Test Name"
+#~ msgstr "Veldnaam"
+
+#, fuzzy
+#~ msgid "Failure Type"
+#~ msgstr "Veldtype"
+
+#, fuzzy
+#~ msgid "Message"
+#~ msgstr "Gemiddelde"
+
+#, fuzzy
+#~ msgid "Location"
+#~ msgstr "Verbinding maken met %s."
+
+#, fuzzy
+#~ msgid "Commands"
+#~ msgstr "Hand"
+
+#, fuzzy
+#~ msgid "&Run"
+#~ msgstr "Zon"
+
+#, fuzzy
+#~ msgid "Select &All"
+#~ msgstr "Altijd &Ja"
+
+#, fuzzy
+#~ msgid "Select all tests"
+#~ msgstr "Altijd &Ja"
+
+#, fuzzy
+#~ msgid "&Deselect All"
+#~ msgstr "Altijd &Ja"
+
+#, fuzzy
+#~ msgid "Select Fai&led"
+#~ msgstr "%s verwacht"
+
+#, fuzzy
+#~ msgid "Select &Current"
+#~ msgstr "Selecteer map"
+
+#, fuzzy
+#~ msgid "Select current test"
+#~ msgstr "Retourneert huidige tijd als een string"
+
+#, fuzzy
+#~ msgid "&Error Box Visible"
+#~ msgstr "Fout bij het openen van het bestand"
+
+#, fuzzy
+#~ msgid "Ex&pand All"
+#~ msgstr "Eind"
+
+#, fuzzy
+#~ msgid "Copy testname to clipboard"
+#~ msgstr "Kan klembord niet openen"
+
+#, fuzzy
+#~ msgid "Run current test"
+#~ msgstr "Retourneert huidige tijd als een string"
+
+#, fuzzy
+#~ msgid "&File"
+#~ msgstr "Bestand"
+
+#, fuzzy
+#~ msgid "&Options"
+#~ msgstr "Iconen"
+
+#, fuzzy
+#~ msgid "Actio&ns"
+#~ msgstr "Iconen"
+
+#, fuzzy
+#~ msgid "xAltBackspace"
+#~ msgstr "Backspace"
+
+#, fuzzy
+#~ msgid "Ctrl A"
+#~ msgstr "Ctrl+"
+
+#, fuzzy
+#~ msgid "F8"
+#~ msgstr "8"
+
+#, fuzzy
+#~ msgid "Project &name"
+#~ msgstr "Map&naam"
+
+#, fuzzy
+#~ msgid "..."
+#~ msgstr "optellen"
+
+#, fuzzy
+#~ msgid "&Cancel"
+#~ msgstr "Annuleren"
+
+#, fuzzy
+#~ msgid "C&reate"
+#~ msgstr "Crème"
+
+#, fuzzy
+#~ msgid "New TestModule"
+#~ msgstr "Nieuwe map"
+
+#, fuzzy
+#~ msgid "Parameters"
+#~ msgstr "Gigameter"
+
+#, fuzzy
+#~ msgid "Code skeleton Parameter templates"
+#~ msgstr "Boolean parameter verwacht"
+
+#, fuzzy
+#~ msgid "&Select parameter..."
+#~ msgstr "Onverwachte parameter type"
+
+#, fuzzy
+#~ msgid "&Template"
+#~ msgstr "Spatie"
+
+#, fuzzy
+#~ msgid "&Macros"
+#~ msgstr "Micron"
+
+#, fuzzy
+#~ msgid "&Apply"
+#~ msgstr "&Alle"
+
+#, fuzzy
+#~ msgid "Apply"
+#~ msgstr "&Alle"
+
+#, fuzzy
+#~ msgid "&Insert"
+#~ msgstr "Record invoegen"
+
+#, fuzzy
+#~ msgid "&Defaults"
+#~ msgstr "Standaard grootte"
+
+#, fuzzy
+#~ msgid "Selected IDE unit"
+#~ msgstr "%s verwacht"
+
+#, fuzzy
+#~ msgid "Selected class"
+#~ msgstr "%s verwacht"
+
+#, fuzzy
+#~ msgid "Ca&ncel"
+#~ msgstr "Annuleren"
+
+#, fuzzy
+#~ msgid "C&opy to clipboard"
+#~ msgstr "Kan klembord niet openen"
+
+#, fuzzy
+#~ msgid "&Unit name"
+#~ msgstr "Map&naam"
+
+#, fuzzy
+#~ msgid "Unit filename"
+#~ msgstr "Ongeldige bestandsnaam"
+
+#, fuzzy
+#~ msgid "Registration Options"
+#~ msgstr "Ongeldige registratie"
+
+#, fuzzy
+#~ msgid "Postfix"
+#~ msgstr "Punt"
+
+#, fuzzy
+#~ msgid "Folder Name"
+#~ msgstr "Veldnaam"
+
+#~ msgid "OK"
+#~ msgstr "Ok"
+
+#, fuzzy
+#~ msgid "xpGen"
+#~ msgstr "Open"
+
+#, fuzzy
+#~ msgid "&Open..."
+#~ msgstr "Open"
+
+#, fuzzy
+#~ msgid "&Edit"
+#~ msgstr "Query is leeg"
+
+#, fuzzy
+#~ msgid "pas"
+#~ msgstr "Onwaar"
+
+#, fuzzy
+#~ msgid "*.pas"
+#~ msgstr "Onwaar"
+
+#, fuzzy
+#~ msgid "Database Engine Error"
+#~ msgstr "Dataset open"
+
+#, fuzzy
+#~ msgid "ErrorText"
+#~ msgstr "Fout"
+
+#, fuzzy
+#~ msgid "BDE Error:"
+#~ msgstr "DOM fout:"
+
+#, fuzzy
+#~ msgid "Server Error:"
+#~ msgstr "Algemene fout bij array"
+
+#, fuzzy
+#~ msgid "DbResult"
+#~ msgstr "Standaard grootte"
+
+#, fuzzy
+#~ msgid "< &Back"
+#~ msgstr "Backspace"
+
+#, fuzzy
+#~ msgid "&Details"
+#~ msgstr "Detail"
+
+#, fuzzy
+#~ msgid "Database Login"
+#~ msgstr "Dataset open"
+
+#, fuzzy
+#~ msgid "&OK"
+#~ msgstr "Ok"
+
+#~ msgid "Cancel"
+#~ msgstr "Annuleren"
+
+#, fuzzy
+#~ msgid "Database:"
+#~ msgstr "Datum"
+
+#, fuzzy
+#~ msgid "Enter password"
+#~ msgstr "Ongeldig wachtwoord"
+
+#, fuzzy
+#~ msgid "&Add"
+#~ msgstr "optellen"
+
+#, fuzzy
+#~ msgid "Decision Cube Editor"
+#~ msgstr "Decision Cube Editor.."
+
+#, fuzzy
+#~ msgid "Display &Name"
+#~ msgstr "Map&naam"
+
+#, fuzzy
+#~ msgid "&Active Type"
+#~ msgstr "Veldtype"
+
+#, fuzzy
+#~ msgid "&Initial Value"
+#~ msgstr "Ongeldige Enum waarde"
+
+#, fuzzy
+#~ msgid "Available &Fields"
+#~ msgstr "Niet beschikbaar"
+
+#, fuzzy
+#~ msgid "&Base Field"
+#~ msgstr "Veld"
+
+#, fuzzy
+#~ msgid "CaptionEdit"
+#~ msgstr "Bewerking annuleren"
+
+#, fuzzy
+#~ msgid "As Needed"
+#~ msgstr "%s verwacht"
+
+#, fuzzy
+#~ msgid "Inactive"
+#~ msgstr "Ongeldige actie aanmaak"
+
+#, fuzzy
+#~ msgid "Year"
+#~ msgstr "Jaren"
+
+#, fuzzy
+#~ msgid "Quarter"
+#~ msgstr "UKQuarts"
+
+#, fuzzy
+#~ msgid "Month"
+#~ msgstr "Maanden"
+
+#, fuzzy
+#~ msgid "Single Value"
+#~ msgstr "Andere waarden"
+
+#, fuzzy
+#~ msgid "Dimension"
+#~ msgstr "Open dimensie"
+
+#, fuzzy
+#~ msgid "Count"
+#~ msgstr "Knippen"
+
+#, fuzzy
+#~ msgid "Average"
+#~ msgstr "Gemiddelde"
+
+#, fuzzy
+#~ msgid "Min"
+#~ msgstr "Maa"
+
+#, fuzzy
+#~ msgid "Max"
+#~ msgstr "Mei"
+
+#~ msgid "Unknown"
+#~ msgstr "Onbekend"
+
+#, fuzzy
+#~ msgid "FormatEdit"
+#~ msgstr "Fortnights"
+
+#, fuzzy
+#~ msgid "BaseNameEdit"
+#~ msgstr "Naam"
+
+#, fuzzy
+#~ msgid "&Run Time Display Only"
+#~ msgstr "Toon alleen data"
+
+#, fuzzy
+#~ msgid "Cube Maximums"
+#~ msgstr "Maximum van %s"
+
+#, fuzzy
+#~ msgid "&Dimensions"
+#~ msgstr "Open dimensie"
+
+#, fuzzy
+#~ msgid "&Summaries"
+#~ msgstr "Samenvatting"
+
+#~ msgid "&Cells"
+#~ msgstr "&Cellen"
+
+#, fuzzy
+#~ msgid "Maximum"
+#~ msgstr "Maximum van %s"
+
+#, fuzzy
+#~ msgid "Current"
+#~ msgstr "Corrigeer"
+
+#, fuzzy
+#~ msgid "Decision Query Editor"
+#~ msgstr "Decision Cube Editor.."
+
+#, fuzzy
+#~ msgid "&Dimensions:"
+#~ msgstr "Open dimensie"
+
+#, fuzzy
+#~ msgid "&Summaries:"
+#~ msgstr "Samenvatting"
+
+#, fuzzy
+#~ msgid "&Table:"
+#~ msgstr "Tab"
+
+#, fuzzy
+#~ msgid "All &Fields"
+#~ msgstr "Veld"
+
+#, fuzzy
+#~ msgid "&Cancel Edit"
+#~ msgstr "Bewerking annuleren"
+
+#, fuzzy
+#~ msgid "&Edit Query"
+#~ msgstr "Query is leeg"
+
+#, fuzzy
+#~ msgid "&average"
+#~ msgstr "Gemiddelde"
+
+#, fuzzy
+#~ msgid "CollectionEditor"
+#~ msgstr "Verbinding maken met %s."
+
+#, fuzzy
+#~ msgid "Add New"
+#~ msgstr "optellen"
+
+#, fuzzy
+#~ msgid "&Delete"
+#~ msgstr "Record wissen"
+
+#, fuzzy
+#~ msgid "Delete Selected"
+#~ msgstr "Record wissen"
+
+#, fuzzy
+#~ msgid " Database "
+#~ msgstr "Dataset open"
+
+#, fuzzy
+#~ msgid "&Driver name:"
+#~ msgstr "Map&naam"
+
+#, fuzzy
+#~ msgid "&Parameter overrides:"
+#~ msgstr "Parameter verwacht"
+
+#, fuzzy
+#~ msgid "&Name:"
+#~ msgstr "Naam"
+
+#, fuzzy
+#~ msgid "D&efaults"
+#~ msgstr "Standaard grootte"
+
+#, fuzzy
+#~ msgid "&Clear"
+#~ msgstr "&Sluiten"
+
+#, fuzzy
+#~ msgid "&Property Name:"
+#~ msgstr "Map&naam"
+
+#, fuzzy
+#~ msgid "&Field Name:"
+#~ msgstr "Veldnaam"
+
+#, fuzzy
+#~ msgid "C&lear"
+#~ msgstr "Autos"
+
+#, fuzzy
+#~ msgid "Available fields"
+#~ msgstr "Niet beschikbaar"
+
+#, fuzzy
+#~ msgid "New Field"
+#~ msgstr "Nieuwe map"
+
+#, fuzzy
+#~ msgid "D&ataset:"
+#~ msgstr "Dataset open"
+
+#, fuzzy
+#~ msgid "Field properties"
+#~ msgstr "Veld type"
+
+#~ msgid "Field type"
+#~ msgstr "Veld type"
+
+#, fuzzy
+#~ msgid "&Data"
+#~ msgstr "Datum"
+
+#, fuzzy
+#~ msgid "Aggregates"
+#~ msgstr "Megameter"
+
+#, fuzzy
+#~ msgid "Cu&t"
+#~ msgstr "Knippen"
+
+#~ msgid "&Paste"
+#~ msgstr "&Plakken"
+
+#, fuzzy
+#~ msgid "D&etail Fields"
+#~ msgstr "Detail nr"
+
+#, fuzzy
+#~ msgid "Index Files"
+#~ msgstr "Indexveld ontbreekt"
+
+#, fuzzy
+#~ msgid "&Add..."
+#~ msgstr "optellen"
+
+#~ msgid "Open"
+#~ msgstr "Open"
+
+#, fuzzy
+#~ msgid "&Fields:"
+#~ msgstr "Veld"
+
+#~ msgid "TXT"
+#~ msgstr "TXT"
+
+#, fuzzy
+#~ msgid "Load string list"
+#~ msgstr "Ongeldige string constante"
+
+#, fuzzy
+#~ msgid "&Arrange"
+#~ msgstr "Gemiddelde"
+
+#, fuzzy
+#~ msgid "Cascade"
+#~ msgstr "Annuleren"
+
+#, fuzzy
+#~ msgid "C&lose"
+#~ msgstr "&Sluiten"
+
+#, fuzzy
+#~ msgid "&Contents"
+#~ msgstr "Centimeter"
+
+#, fuzzy
+#~ msgid "&Topic Search"
+#~ msgstr "Zoeken"
+
+#, fuzzy
+#~ msgid "Topic Search"
+#~ msgstr "Zoeken"
+
+#, fuzzy
+#~ msgid "Exit|Quits the application"
+#~ msgstr "Applicatie zonder naam"
+
+#~ msgid "Search"
+#~ msgstr "Zoeken"
+
+#, fuzzy
+#~ msgid "Find &Next"
+#~ msgstr "Veldnaam"
+
+#, fuzzy
+#~ msgid "&Replace"
+#~ msgstr "Spatie"
+
+#, fuzzy
+#~ msgid "&Center"
+#~ msgstr "Enter"
+
+#, fuzzy
+#~ msgid "Color Select"
+#~ msgstr "Corrigeer"
+
+#, fuzzy
+#~ msgid "Save Picture"
+#~ msgstr "Bewaar rapport"
+
+#, fuzzy
+#~ msgid "open"
+#~ msgstr "Open"
+
+#~ msgid "Tab"
+#~ msgstr "Tab"
+
+#, fuzzy
+#~ msgid "HelpContextAction1"
+#~ msgstr "Verbinding maken met %s."
+
+#~ msgid "List"
+#~ msgstr "Lijst"
+
+#, fuzzy
+#~ msgid "&Delete Selection"
+#~ msgstr "Record wissen"
+
+#, fuzzy
+#~ msgid "Delete Selection"
+#~ msgstr "Record wissen"
+
+#, fuzzy
+#~ msgid "Clear Selection"
+#~ msgstr "Ongeldige selectie"
+
+#, fuzzy
+#~ msgid "&Move Selection"
+#~ msgstr "Ongeldige selectie"
+
+#, fuzzy
+#~ msgid "Move Selection"
+#~ msgstr "Ongeldige selectie"
+
+#, fuzzy
+#~ msgid "Internet"
+#~ msgstr "Enter"
+
+#, fuzzy
+#~ msgid "Send email"
+#~ msgstr "Sub Detail"
+
+#, fuzzy
+#~ msgid "Interpreter"
+#~ msgstr "Identifier verwacht"
+
+#, fuzzy
+#~ msgid "&Generator"
+#~ msgstr "Scheidingsteken"
+
+#, fuzzy
+#~ msgid "&Field"
+#~ msgstr "Veld"
+
+#, fuzzy
+#~ msgid "cbxFields"
+#~ msgstr "Veld"
+
+#, fuzzy
+#~ msgid "On New Record"
+#~ msgstr "Volgende record"
+
+#, fuzzy
+#~ msgid "On Post"
+#~ msgstr "Punt"
+
+#, fuzzy
+#~ msgid "On Server"
+#~ msgstr "&Server"
+
+#, fuzzy
+#~ msgid "ServerInfo"
+#~ msgstr "&Server"
+
+#, fuzzy
+#~ msgid "/List"
+#~ msgstr "Lijst"
+
+#, fuzzy
+#~ msgid "/Clean"
+#~ msgstr "boolean"
+
+#, fuzzy
+#~ msgid "/Details"
+#~ msgstr "Detail"
+
+#, fuzzy
+#~ msgid "<h2>Registered Servers</h2>"
+#~ msgstr "Decisteres"
+
+#, fuzzy
+#~ msgid "LogDetail"
+#~ msgstr "Detail"
+
+#, fuzzy
+#~ msgid "&Details..."
+#~ msgstr "Detail"
+
+#, fuzzy
+#~ msgid "Tahoma"
+#~ msgstr "Vadem"
+
+#, fuzzy
+#~ msgid "Default URL:"
+#~ msgstr "Standaard grootte"
+
+#~ msgid "Home"
+#~ msgstr "Home"
+
+#, fuzzy
+#~ msgid "Port:"
+#~ msgstr "Punt"
+
+#, fuzzy
+#~ msgid "Port"
+#~ msgstr "Punt"
+
+#, fuzzy
+#~ msgid "&Log To List"
+#~ msgstr "LongTons"
+
+#, fuzzy
+#~ msgid "S&top Server"
+#~ msgstr "&Server"
+
+#, fuzzy
+#~ msgid "&Start Server"
+#~ msgstr "&Server"
+
+#, fuzzy
+#~ msgid "&About..."
+#~ msgstr "&Afbreken"
+
+#~ msgid "&Server"
+#~ msgstr "&Server"
+
+#, fuzzy
+#~ msgid "&Connection"
+#~ msgstr "Verbinding maken met %s."
+
+#, fuzzy
+#~ msgid "&Port:"
+#~ msgstr "&Afbreken"
+
+#, fuzzy
+#~ msgid "&Search Path:"
+#~ msgstr "Zoeken"
+
+#, fuzzy
+#~ msgid "&Default URL:"
+#~ msgstr "Standaard grootte"
+
+#, fuzzy
+#~ msgid "cbPort"
+#~ msgstr "Punt"
+
+#, fuzzy
+#~ msgid "edDefault"
+#~ msgstr "Standaard grootte"
+
+#, fuzzy
+#~ msgid "edPath"
+#~ msgstr "Plakken"
+
+#, fuzzy
+#~ msgid "&Reset"
+#~ msgstr "&Opnieuw"
+
+#, fuzzy
+#~ msgid "Version 4.0"
+#~ msgstr "%s op %s"
+
+#, fuzzy
+#~ msgid "Web Application Debugger"
+#~ msgstr "Toepassingsfout"
+
+#, fuzzy
+#~ msgid "Borland Software Corporation"
+#~ msgstr "Kon reele deel niet parsen"
+
+#~ msgid "Invalid Enum Value"
+#~ msgstr "Ongeldige Enum waarde"
+
+#~ msgid "Missing %s property"
+#~ msgstr "Ontbrekende %s property"
+
+#~ msgid "Unsupported field type (%s) in field %s"
+#~ msgstr "Niet-ondersteund veldtype (%s) in veld %s"
+
+#, fuzzy
+#~ msgid "No matching ADO data type for %s"
+#~ msgstr "Ongeldig data type voor '%s'"
+
+#~ msgid "A connection component is required for async ExecuteOptions"
+#~ msgstr "Er is een connection component nodig voor async ExecuteOptions"
+
+#~ msgid "FilterOptions are not supported"
+#~ msgstr "FilterOptions worden niet ondersteund"
+
+#, fuzzy
+#~ msgid "Recordset is not open"
+#~ msgstr "Record niet gevonden"
+
+#~ msgid "Name"
+#~ msgstr "Naam"
+
+#~ msgid "Value"
+#~ msgstr "Waarde"
+
+#~ msgid ""
+#~ "Cannot enable AutoSessionName property with more than one session on a "
+#~ "form or data-module"
+#~ msgstr ""
+#~ "Kan de AutoSessionName property niet gebruiken met meer dan een sessie op "
+#~ "een form van data-module"
+
+#~ msgid ""
+#~ "Cannot add a session to the form or data-module while session '%s' has "
+#~ "AutoSessionName enabled"
+#~ msgstr ""
+#~ "Kan niet geen sessie toevoegen voor de form van data-module terwijl "
+#~ "sessie '%s' AutoSessionName gebruikt"
+
+#~ msgid "Cannot modify SessionName while AutoSessionName is enabled"
+#~ msgstr "Kan SessionName niet wijzigen terwijl AutoSessionName in gebruik is"
+
+#~ msgid "Duplicate database name '%s'"
+#~ msgstr "Dubbel gebruik databasenaam '%s'"
+
+#~ msgid "Duplicate session name '%s'"
+#~ msgstr "Dubbel gebruik sessienaam '%s'"
+
+#~ msgid "Invalid session name %s"
+#~ msgstr "Ongeldig sessienaam %s"
+
+#~ msgid "Database name missing"
+#~ msgstr "Databasenaam ontbreekt"
+
+#~ msgid "Session name missing"
+#~ msgstr "Sessienaam ontbreekt"
+
+#~ msgid "Cannot perform this operation on an open database"
+#~ msgstr "Kan deze operatie niet uitvoeren op een geopende database"
+
+#~ msgid "Cannot perform this operation on a closed database"
+#~ msgstr "Kan deze operatie niet uitvoeren op een gesloten database"
+
+#~ msgid "Database handle owned by a different session"
+#~ msgstr "Databasehandle in bezit van een andere sessie"
+
+#~ msgid "Cannot perform this operation on an active session"
+#~ msgstr "Kan deze operatie niet uitvoeren op een actieve sessie"
+
+#~ msgid "Error creating cursor handle"
+#~ msgstr "Fout bij aanmaken cursorhandle"
+
+#, fuzzy
+#~ msgid "Cannot convert field '%s' to a floating point value"
+#~ msgstr "Kan veld '%s' niet in een filter aanspreken"
+
+#, fuzzy
+#~ msgid "Cannot convert field '%s' to an integer value"
+#~ msgstr "Kan veld '%s' niet in een filter aanspreken"
+
+#~ msgid "ReferenceTableName not specified for field '%s'"
+#~ msgstr "ReferentieTableName niet opgegeven voor veld '%s'"
+
+#~ msgid "Cannot use array of Field values with Expression Indices"
+#~ msgstr "Kan geen veldwaarden-array gebruiken met Expressie Indices"
+
+#~ msgid "Invalid batch move parameters"
+#~ msgstr "Ongeldige batch move parameters"
+
+#~ msgid "No SQL statement available"
+#~ msgstr "Geen SQL opdracht beschikbaar"
+
+#~ msgid "No value for parameter '%s'"
+#~ msgstr "Geen waarde voor parameter %s"
+
+#~ msgid "No parameter type for parameter '%s'"
+#~ msgstr "Parametertype voor parameter '%s' ontbreekt"
+
+#~ msgid "Cannot connect to database '%s'"
+#~ msgstr "Kan geen verbinding krijgen met database %s"
+
+#~ msgid ""
+#~ "An error occurred while attempting to initialize the Borland Database "
+#~ "Engine (error $%.4x)"
+#~ msgstr ""
+#~ "Fout bij het initialiseren van de Borland Database Engine (fout $%.4x)"
+
+#, fuzzy
+#~ msgid "'%s' cannot be opened"
+#~ msgstr "Veld '%s' kan niet worden gewijzigd"
+
+#, fuzzy
+#~ msgid "Unable to open the MasterSource Table"
+#~ msgstr "Kon geen regel invoegen"
+
+#~ msgid "0009"
+#~ msgstr "0009"
+
+#~ msgid "BDE error $%.4x"
+#~ msgstr "BDE fout $%.4x"
+
+#~ msgid "%s must be the lookup table's active index"
+#~ msgstr "%s moet de actieve index zijn van de opzoektabel"
+
+#~ msgid "Index does not exist. Index: %s"
+#~ msgstr "Index niet gevonden. Index: %s"
+
+#~ msgid "Missing TableName property"
+#~ msgstr "Ontbrekende TableName property"
+
+#~ msgid "Missing DataSetField property"
+#~ msgstr "Ontbrekende DataSetField property"
+
+#~ msgid "Not in cached update mode"
+#~ msgstr "Niet in 'cached update mode'"
+
+#~ msgid "Invalid alias name %s"
+#~ msgstr "Ongeldige alias %s"
+
+#~ msgid "Cannot access field '%s' in a filter"
+#~ msgstr "Kan veld '%s' niet in een filter aanspreken"
+
+#~ msgid "Untitled Application"
+#~ msgstr "Applicatie zonder naam"
+
+#~ msgid "Update failed"
+#~ msgstr "Update mislukt"
+
+#~ msgid ""
+#~ "The transaction isolation level must be dirty read for local databases"
+#~ msgstr ""
+#~ "Het transactie isolatie niveau moet 'dirty read' zijn voor lokale "
+#~ "databases"
+
+#~ msgid "Missing DataSet property"
+#~ msgstr "Ontbrekende DataSet property"
+
+#, fuzzy
+#~ msgid "No provider available"
+#~ msgstr "Geen server beschikbaar"
+
+#~ msgid "Dataset is not a query"
+#~ msgstr "Dataset is geen query"
+
+#~ msgid "Invalid field size"
+#~ msgstr "Ongeldig veldgrootte"
+
+#~ msgid "Invalid FieldKind"
+#~ msgstr "Ongeldig Veldsoort"
+
+#~ msgid "Invalid field registration"
+#~ msgstr "Ongeldige Field registratie"
+
+#~ msgid "Field '%s' is of an unknown type"
+#~ msgstr "Veld '%s' is van een onbekend type"
+
+#~ msgid "Field name missing"
+#~ msgstr "Veldnaam ontbreekt"
+
+#~ msgid "Duplicate field name '%s'"
+#~ msgstr "Dubbel gebruik veldnaam '%s'"
+
+#~ msgid "Field '%s' not found"
+#~ msgstr "Veld '%s' niet gevonden"
+
+#~ msgid "Cannot access field '%s' as type %s"
+#~ msgstr "Kan veld '%s' niet benaderen als type '%s'"
+
+#~ msgid "Invalid value for field '%s'"
+#~ msgstr "Ongeldige waarde voor veld '%s'"
+
+#~ msgid ""
+#~ "%g is not a valid value for field '%s'. The allowed range is %g to %g"
+#~ msgstr ""
+#~ "%g is geen geldige waarde voor veld '%s'. Het toegestane bereik is %g tot "
+#~ "%g"
+
+#~ msgid ""
+#~ "%s is not a valid value for field '%s'. The allowed range is %s to %s"
+#~ msgstr ""
+#~ "%s is geen geldige waarde voor veld '%s'. Het toegestane bereik is %s tot "
+#~ "%s"
+
+#~ msgid "'%s' is not a valid integer value for field '%s'"
+#~ msgstr "'%s' is geen geldig geheel getal voor veld '%s'"
+
+#~ msgid "'%s' is not a valid boolean value for field '%s'"
+#~ msgstr "'%s' is geen geldig booleaanse waarde voor veld '%s'"
+
+#~ msgid "'%s' is not a valid floating point value for field '%s'"
+#~ msgstr "'%s' is geen geldig gebroken getal voor veld '%s'"
+
+#~ msgid "Type mismatch for field '%s', expecting: %s actual: %s"
+#~ msgstr "Verkeerd type voor veld '%s', verwacht: %s gevonden: %s"
+
+#~ msgid "Size mismatch for field '%s', expecting: %d actual: %d"
+#~ msgstr "Grootte niet passend voor veld '%s', verwacht: %d gevonden: %d"
+
+#~ msgid "Invalid variant type or size for field '%s'"
+#~ msgstr "Ongeldig variant type voor veld '%s'"
+
+#~ msgid "Value of field '%s' is out of range"
+#~ msgstr "Waarde van veld '%s' valt buiten bereik"
+
+#~ msgid "Field '%s' must have a value"
+#~ msgstr "Veld '%s' moet een waarde hebben"
+
+#~ msgid "Field '%s' has no dataset"
+#~ msgstr "Veld '%s' heeft geen dataset"
+
+#~ msgid "Field '%s' cannot be a calculated or lookup field"
+#~ msgstr "Veld '%s' kan geen berekend- of opzoekveld zijn"
+
+#~ msgid "Field '%s' cannot be modified"
+#~ msgstr "Veld '%s' kan niet worden gewijzigd"
+
+#~ msgid "Field index out of range"
+#~ msgstr "Veldindex buiten bereik"
+
+#~ msgid "No index currently active"
+#~ msgstr "Geen actieve index"
+
+#~ msgid "Field '%s' is not indexed and cannot be modified"
+#~ msgstr "Veld '%s' is niet geïndexeerd en kan niet worden gewijzigd"
+
+#~ msgid "Cannot access index field '%s'"
+#~ msgstr "Geen toegang tot index veld '%s'"
+
+#, fuzzy
+#~ msgid "Duplicate index name '%s'"
+#~ msgstr "Dubbel gebruik veldnaam '%s'"
+
+#~ msgid "No index for fields '%s'"
+#~ msgstr "Geen index voor velden '%s'"
+
+#~ msgid "Index '%s' not found"
+#~ msgstr "Index '%s' niet gevonden"
+
+#, fuzzy
+#~ msgid "Duplicate name '%s' in %s"
+#~ msgstr "Dubbel gebruik veldnaam '%s'"
+
+#~ msgid "Circular datalinks are not allowed"
+#~ msgstr "Circulaire datalinks zijn niet toegestaan"
+
+#~ msgid "Lookup information for field '%s' is incomplete"
+#~ msgstr "De opzoek-informatie voor veld '%s' is onvolledig"
+
+#~ msgid "DataSource cannot be changed"
+#~ msgstr "Databron kan niet worden gewijzijgd"
+
+#~ msgid "Cannot perform this operation on an open dataset"
+#~ msgstr "Kan deze operatie niet uitvoeren op een geopende dataset"
+
+#~ msgid "Dataset not in edit or insert mode"
+#~ msgstr "Dataset niet in bewerkings- of invoegmodus"
+
+#~ msgid "Cannot perform this operation on a closed dataset"
+#~ msgstr "Kan deze operatie niet uitvoeren op een gesloten dataset"
+
+#~ msgid "Cannot perform this operation on an empty dataset"
+#~ msgstr "Kan deze operatie niet uitvoeren op een lege dataset"
+
+#~ msgid "Cannot modify a read-only dataset"
+#~ msgstr "Kan een alleen-lezen dataset niet wijzigen"
+
+#~ msgid "Nested dataset must inherit from %s"
+#~ msgstr "Geneste dataset moet erven van %s"
+
+#~ msgid "Filter expression incorrectly terminated"
+#~ msgstr "Filter expressie onjuist afgesloten"
+
+#~ msgid "Unterminated field name"
+#~ msgstr "Niet-afgesloten veldnaam"
+
+#~ msgid "Unterminated string constant"
+#~ msgstr " Niet-afgesloten stringconstante"
+
+#~ msgid "Invalid filter expression character: '%s'"
+#~ msgstr "Ongeldig karakter in filter expressie: '%s'"
+
+#~ msgid "'(' expected but %s found"
+#~ msgstr "'(' verwacht maar %s gevonden"
+
+#~ msgid "')' expected but %s found"
+#~ msgstr "')' verwacht maar %s gevonden"
+
+#~ msgid "')' or ',' expected but %s found"
+#~ msgstr "')' of ',' verwacht maar %s gevonden"
+
+#~ msgid "Expression expected but %s found"
+#~ msgstr "Expressie verwacht maar %s gevonden"
+
+#~ msgid "Field '%s' cannot be used in a filter expression"
+#~ msgstr "Veld '%s' kan niet worden gebruikt in een filter expressie"
+
+#~ msgid "NULL only allowed with '=' and '<>'"
+#~ msgstr "NULL alleen toegestaan met '=' en '<>'"
+
+#~ msgid "Constant out of range"
+#~ msgstr "Constante buiten bereik"
+
+#~ msgid "Field '%s' is not of type Boolean"
+#~ msgstr "Veld '%s' is niet van het type boolean "
+
+#~ msgid "Incorrectly formed filter expression"
+#~ msgstr "Verkeerd gevormde filter expressie"
+
+#~ msgid "nothing"
+#~ msgstr "niets"
+
+#~ msgid "Type mismatch in expression"
+#~ msgstr "Verkeerd type in expressie"
+
+#~ msgid "Operation cannot mix aggregate value with record-varying value"
+#~ msgstr ""
+#~ "Operatie kan geen aggregatie waarde combineren met waarden die per record "
+#~ "verschillen"
+
+#~ msgid "Arithmetic in filter expressions not supported"
+#~ msgstr "Rekenen in filter expressies is niet mogelijk"
+
+#~ msgid "Expression is not an aggregate expression"
+#~ msgstr "Expressie is geen aggregatie expressie"
+
+#~ msgid "Constant is not correct type %s"
+#~ msgstr "Constante is van foutief type %s"
+
+#~ msgid "Aggregate expressions not allowed in filters"
+#~ msgstr "Aggregatie-expressies niet toegestaan in filters"
+
+#~ msgid "IN predicate list may not be empty"
+#~ msgstr "IN-lijst kan niet leeg zijn"
+
+#~ msgid "Invalid use of keyword"
+#~ msgstr "Ongeldig gebruiken van sleutelwoord"
+
+#~ msgid "False"
+#~ msgstr "Onwaar"
+
+#~ msgid "True"
+#~ msgstr "Waar"
+
+#~ msgid "Parameter '%s' not found"
+#~ msgstr "Parameter '%s' niet gevonden"
+
+#~ msgid "Unable to load bind parameters"
+#~ msgstr "Kan bindingsparameters niet opvragen"
+
+#~ msgid "Field '%s' is of an unsupported type"
+#~ msgstr "Veld '%s' is van een niet-ondersteund type"
+
+#~ msgid "SQL not supported: %s"
+#~ msgstr "SQL ondersteunt niet: %s"
+
+#~ msgid "Execute not supported: %s"
+#~ msgstr "Uitvoering niet ondersteund: %s"
+
+#~ msgid ""
+#~ "Field '%s' is not the correct type of calculated field to be used in an "
+#~ "aggregate, use an internalcalc"
+#~ msgstr ""
+#~ "Berekend veld '%s' is niet van het juiste type om te worden gebruikt in "
+#~ "een aggregatie, gebruik een internalcalc"
+
+#~ msgid "Operation not allowed on a unidirectional dataset"
+#~ msgstr "Operatie niet toegestaan op een unidirectionele dataset"
+
+#~ msgid "Unassigned variant value"
+#~ msgstr "Niet-toegekende variante waarde"
+
+#~ msgid "Record not found"
+#~ msgstr "Record niet gevonden"
+
+#~ msgid "BCD overflow"
+#~ msgstr "BCD overloop"
+
+#~ msgid "%s is not a valid BCD value"
+#~ msgstr "%s is geen geldige BCD waarde"
+
+#~ msgid "Invalid format type for BCD"
+#~ msgstr "Ongeldige opmaak voor BCD"
+
+#~ msgid "Could not parse SQL TimeStamp string"
+#~ msgstr "Kan SQL TimeStamp string niet ontleden"
+
+#~ msgid "Invalid SQL date/time values"
+#~ msgstr "Ongeldige SQL datum/tijd waarde"
+
+#~ msgid "Delete record?"
+#~ msgstr "Record wissen?"
+
+#~ msgid "Delete all selected records?"
+#~ msgstr "Alle geselecteerde records wissen?"
+
+#~ msgid "Grid requested to display more than 256 columns"
+#~ msgstr "Grid kan niet meer dan 256 kolommen tonen"
+
+#~ msgid "Abort"
+#~ msgstr "Afbreken"
+
+#, fuzzy
+#~ msgid "Merge"
+#~ msgstr "Gemiddelde"
+
+#~ msgid "Correct"
+#~ msgstr "Corrigeer"
+
+#~ msgid "Refresh"
+#~ msgstr "Ververs"
+
+#~ msgid "Modified"
+#~ msgstr "Gewijzigd"
+
+#, fuzzy
+#~ msgid "Inserted"
+#~ msgstr "Record invoegen"
+
+#, fuzzy
+#~ msgid "Deleted"
+#~ msgstr "Record wissen"
+
+#~ msgid "Field Name"
+#~ msgstr "Veldnaam"
+
+#, fuzzy
+#~ msgid "Original Value"
+#~ msgstr "Andere waarden"
+
+#~ msgid " Value"
+#~ msgstr " Waarde"
+
+#, fuzzy
+#~ msgid "<No Records>"
+#~ msgstr "Geen records gewijzigd"
+
+#~ msgid "Provider not exported: %s"
+#~ msgstr "Provider niet geëxporteerd: %s"
+
+#~ msgid "Invalid data packet"
+#~ msgstr "Ongeldige data packet"
+
+#~ msgid "Circular provider references not allowed"
+#~ msgstr "Circulaire datalinks zijn niet toegestaan"
+
+#~ msgid "Error loading MIDAS.DLL"
+#~ msgstr "Fout bij het laden van MIDAS.DLL"
+
+#, fuzzy
+#~ msgid "Connection not allowed to TConnectionBroker"
+#~ msgstr "Operatie niet toegestaan op een lege OLE container"
+
+#~ msgid "Error reading from socket"
+#~ msgstr "Fout bij lezen van socket"
+
+#~ msgid "Unsupported variant type: %s"
+#~ msgstr "Ongeldig varianttype: %s"
+
+#~ msgid "Invalid action received: %d"
+#~ msgstr "Ongeldige actie ontvangen: %d"
+
+#, fuzzy
+#~ msgid "ParentConnection is not assigned"
+#~ msgstr "Transactie niet toegekend"
+
+#~ msgid "Invalid response"
+#~ msgstr "Ongeldige reponse"
+
+#~ msgid "Field"
+#~ msgstr "Veld"
+
+#~ msgid "Cannot apply updates to a ReadOnly provider"
+#~ msgstr "Kan geen wijzigingen doorvoeren met een ReadOnly provider"
+
+#, fuzzy
+#~ msgid "Unable to find record.  No key specified"
+#~ msgstr "Ongeldig formaat of waarde opgegeven"
+
+#~ msgid "Array elements of type %s are not supported"
+#~ msgstr "Array elementen van type %s worden niet ondersteund"
+
+#~ msgid "Modifications are not allowed"
+#~ msgstr "Wijzigingen zijn niet toegestaan"
+
+#~ msgid "Deletes are not allowed"
+#~ msgstr "Verwijderen is niet toegestaan"
+
+#~ msgid "Inserts are not allowed"
+#~ msgstr "Invoegen niet toegestaan"
+
+#~ msgid "CommandText changes are not allowed"
+#~ msgstr "CoomandText wijzigingen zijn niet toegestaan"
+
+#, fuzzy
+#~ msgid "Operation not allowed with aggregates active"
+#~ msgstr "Operatie niet toegestaan op een gesorteerde lijst"
+
+#~ msgid "No server available"
+#~ msgstr "Geen server beschikbaar"
+
+#, fuzzy
+#~ msgid "Circular reference to Connection not allowed"
+#~ msgstr "Circulaire datalinks zijn niet toegestaan"
+
+#~ msgid "URL required"
+#~ msgstr "Onbekende URL"
+
+#, fuzzy
+#~ msgid "Server is busy"
+#~ msgstr "Servernaam ontbreekt"
+
+#~ msgid "Object not available: %s"
+#~ msgstr "Object niet beschikbaar: %s"
+
+#, fuzzy
+#~ msgid "DataTable"
+#~ msgstr "Datum"
+
+#, fuzzy
+#~ msgid "Invalid source dataset"
+#~ msgstr "Ongeldige ouderobject"
+
+#, fuzzy
+#~ msgid "Invalid record buffer"
+#~ msgstr "Ongeldige selectie"
+
+#, fuzzy
+#~ msgid "Invalid operation for calculated field value."
+#~ msgstr "Invalid operation on TOleGraphic"
+
+#, fuzzy
+#~ msgid "Refresh not supported."
+#~ msgstr "Methode niet ondersteund"
+
+#, fuzzy
+#~ msgid "Nested detail sets not supported"
+#~ msgstr "Klembord ondersteunt geen Iconen"
+
+#, fuzzy
+#~ msgid "DataObject does not support record deletion"
+#~ msgstr "Klembord ondersteunt geen Iconen"
+
+#, fuzzy
+#~ msgid "Partial locates not supported"
+#~ msgstr "Protocol niet ondersteund."
+
+#, fuzzy
+#~ msgid "DataObject does not support searching"
+#~ msgstr "Object type niet ondersteund"
+
+#, fuzzy
+#~ msgid "Cannot change connection on Active Monitor"
+#~ msgstr "Kan de grootte van een icoon niet wijzigen"
+
+#, fuzzy
+#~ msgid "Missing SQLConnection property"
+#~ msgstr "Ontbrekende DataSet property"
+
+#, fuzzy
+#~ msgid "Cannot perform this operation on an open connection"
+#~ msgstr "Kan deze operatie niet uitvoeren op een geopende dataset"
+
+#, fuzzy
+#~ msgid "Cannot perform this operation on a closed connection"
+#~ msgstr "Kan deze operatie niet uitvoeren op een gesloten dataset"
+
+#, fuzzy
+#~ msgid "SQLConnection property required for this operation"
+#~ msgstr "Er is een connection component nodig voor async ExecuteOptions"
+
+#, fuzzy
+#~ msgid "Connection name missing"
+#~ msgstr "Sessienaam ontbreekt"
+
+#, fuzzy
+#~ msgid "Missing query, table name or procedure name"
+#~ msgstr "Ontbrekende TableName property"
+
+#, fuzzy
+#~ msgid "Missing Database property"
+#~ msgstr "Ontbrekende DataSet property"
+
+#, fuzzy
+#~ msgid "Missing DriverName property"
+#~ msgstr "Ontbrekende TableName property"
+
+#~ msgid "Unable to execute Query"
+#~ msgstr "Kan query niet uitvoeren"
+
+#~ msgid "Table/Procedure not found"
+#~ msgstr "Tabel/Procedure niet gevonden"
+
+#, fuzzy
+#~ msgid "There is no active transaction"
+#~ msgstr "Kan transactie niet instellen"
+
+#, fuzzy
+#~ msgid "A transaction is already active"
+#~ msgstr "Transactie is actief"
+
+#~ msgid "Unable to Load %s"
+#~ msgstr "Kan %s niet laden"
+
+#~ msgid "Unable to Find Procedure %s"
+#~ msgstr "Kan procedure %s niet vinden"
+
+#, fuzzy
+#~ msgid "Driver/Connection Registry File '%s' not found"
+#~ msgstr "Configuratie bestand %s niet gevonden"
+
+#, fuzzy
+#~ msgid "Unable to Open Metadata"
+#~ msgstr "Kan %s niet openen"
+
+#, fuzzy
+#~ msgid "SQL Error: Error mapping failed"
+#~ msgstr "Fout bij het openen van het bestand"
+
+#, fuzzy
+#~ msgid "dbExpress Error: Unknown Error Code '%s'"
+#~ msgstr "dbExpress foutmelding: Operatie niet ondersteund"
+
+#, fuzzy
+#~ msgid ""
+#~ "dbExpress Error: Connection not found, error message cannot be retrieved"
+#~ msgstr ""
+#~ "dbExpress foutmelding: Applicatie heeft geen licentie om deze "
+#~ "functionaliteit te gebruiken"
+
+#, fuzzy
+#~ msgid "[0x0003]: Invalid Field Type"
+#~ msgstr "dbExpress foutmelding: Operatie niet ondersteund"
+
+#, fuzzy
+#~ msgid "[0x0005]: Operation Not Supported"
+#~ msgstr "Operation not supported"
+
+#, fuzzy
+#~ msgid "[0x0006]: Invalid Time"
+#~ msgstr "Ongeldige image grootte"
+
+#, fuzzy
+#~ msgid "[0x0008]: Parameter/Column out of Range"
+#~ msgstr "dbExpress foutmelding: Operatie niet ondersteund"
+
+#, fuzzy
+#~ msgid "[0x0009]: Invalid Parameter"
+#~ msgstr "dbExpress foutmelding: Operatie niet ondersteund"
+
+#, fuzzy
+#~ msgid "[0x000A]: Result set at EOF"
+#~ msgstr "dbExpress foutmelding: Operatie niet ondersteund"
+
+#, fuzzy
+#~ msgid "dbExpress Error [0x000B]: Parameter Not Set"
+#~ msgstr "dbExpress foutmelding: Operatie niet ondersteund"
+
+#, fuzzy
+#~ msgid "[0x000C] Invalid Username/Password"
+#~ msgstr "Ongeldig wachtwoord"
+
+#, fuzzy
+#~ msgid "[0x000D]: Invalid Precision"
+#~ msgstr "Ongeldige reponse"
+
+#, fuzzy
+#~ msgid "[0x000F]: Invalid Transaction Isolation Level"
+#~ msgstr "dbExpress foutmelding: Operatie niet ondersteund"
+
+#, fuzzy
+#~ msgid "[0x0010]: Invalid Transaction ID"
+#~ msgstr "dbExpress foutmelding: Operatie niet ondersteund"
+
+#, fuzzy
+#~ msgid "[0x0011]: Duplicate Transaction ID"
+#~ msgstr "dbExpress foutmelding: Operatie niet ondersteund"
+
+#, fuzzy
+#~ msgid "[0x0012]: Application is not licensed to use this feature"
+#~ msgstr "De toepassing heeft geen rechten om deze mogelijkheid te gebruiken"
+
+#, fuzzy
+#~ msgid "[0x0013]: Local Transaction already active"
+#~ msgstr "dbExpress foutmelding: Operatie niet ondersteund"
+
+#, fuzzy
+#~ msgid "[0x0014]: Multiple Transactions not Enabled"
+#~ msgstr "dbExpress foutmelding: Operatie niet ondersteund"
+
+#, fuzzy
+#~ msgid "[0x0015]: Connection failed"
+#~ msgstr "Verbinding maken met %s."
+
+#, fuzzy
+#~ msgid "dbExpress Error: %s"
+#~ msgstr "dbExpress foutmelding: Operatie niet ondersteund"
+
+#, fuzzy
+#~ msgid "Database Server Error: %s"
+#~ msgstr "Algemene fout bij array"
+
+#~ msgid "Unable to move %s to %s"
+#~ msgstr "Kan %s niet verplaatsen naar %s"
+
+#~ msgid "Configuration file %s not found"
+#~ msgstr "Configuratie bestand %s niet gevonden"
+
+#~ msgid "Cannot create file %s"
+#~ msgstr "Kan bestand %s niet aanmaken"
+
+#, fuzzy
+#~ msgid "Text files (*.txt)|*.txt|All files (*.*)|*.*"
+#~ msgstr "Alle bestanden (*)|*|"
+
+#, fuzzy
+#~ msgid "Log files (*.log)"
+#~ msgstr "Alle bestanden (*)|*|"
+
+#, fuzzy
+#~ msgid "Circular provider references not allowed."
+#~ msgstr "Circulaire datalinks zijn niet toegestaan"
+
+#~ msgid "First record"
+#~ msgstr "Eerste record"
+
+#~ msgid "Prior record"
+#~ msgstr "Eesrte record"
+
+#~ msgid "Next record"
+#~ msgstr "Volgende record"
+
+#~ msgid "Last record"
+#~ msgstr "Laatste record"
+
+#~ msgid "Insert record"
+#~ msgstr "Record invoegen"
+
+#~ msgid "Delete record"
+#~ msgstr "Record wissen"
+
+#~ msgid "Edit record"
+#~ msgstr "Record bewerken"
+
+#~ msgid "Post edit"
+#~ msgstr "Bewerking versturen"
+
+#~ msgid "Cancel edit"
+#~ msgstr "Bewerking annuleren"
+
+#~ msgid "Confirm"
+#~ msgstr "Bevestig"
+
+#~ msgid "Refresh data"
+#~ msgstr "Data verversen"
+
+#~ msgid "Operation not allowed in a DBCtrlGrid"
+#~ msgstr "Operatie niet toegestaan in een DBCtrlGrid"
+
+#~ msgid "Control cannot be used in a DBCtrlGrid"
+#~ msgstr "Control kan niet worden gebruikt in een DBCtrlGrid"
+
+#~ msgid "Property already defined by lookup field"
+#~ msgstr "Property reeds bepaald door lookup veld"
+
+#~ msgid "Remote Login"
+#~ msgstr "Login van verre"
+
+#, fuzzy
+#~ msgid "TMethod instance is not callable"
+#~ msgstr "Methode niet toegestaan"
+
+#, fuzzy
+#~ msgid "Value given is out of Currency's range"
+#~ msgstr "Waarde van veld '%s' valt buiten bereik"
+
+#, fuzzy
+#~ msgid "Value given is out of TDateTime's range"
+#~ msgstr "Waarde van veld '%s' valt buiten bereik"
+
+#, fuzzy
+#~ msgid "TDateTime value cannot be converted to a string"
+#~ msgstr "Variant kan niet worden geconverteerd naar een CORBA Any"
+
+#, fuzzy
+#~ msgid "String value cannot be converted to a TDateTime"
+#~ msgstr "%f Julian kan niet als DatumTijd worden gerepresenteerd"
+
+#, fuzzy
+#~ msgid "Object value cannot be converted to a TDateTime"
+#~ msgstr "%f Julian kan niet als DatumTijd worden gerepresenteerd"
+
+#, fuzzy
+#~ msgid "Date values given cannot be converted to a TDateTime"
+#~ msgstr "%f Julian kan niet als DatumTijd worden gerepresenteerd"
+
+#, fuzzy
+#~ msgid "Time values given cannot be converted to a TDateTime"
+#~ msgstr "%f Julian kan niet als DatumTijd worden gerepresenteerd"
+
+#, fuzzy
+#~ msgid "Date and Time values given cannot be converted to a TDateTime"
+#~ msgstr "%f Julian kan niet als DatumTijd worden gerepresenteerd"
+
+#~ msgid "Division by zero"
+#~ msgstr "Delen door nul"
+
+#~ msgid "Range check error"
+#~ msgstr "Bereikcontrole fout"
+
+#~ msgid "Integer overflow"
+#~ msgstr "Overloop bij geheel getal"
+
+#~ msgid "Invalid floating point operation"
+#~ msgstr "Ongeldige operatie bij gebroken getal"
+
+#~ msgid "Floating point division by zero"
+#~ msgstr "Deling door nul bij gebroken getal"
+
+#~ msgid "Floating point overflow"
+#~ msgstr "Overschreiding bij gebroken getal"
+
+#~ msgid "Floating point underflow"
+#~ msgstr "Te kleine waarde bij gebroken getal"
+
+#, fuzzy
+#~ msgid "Invalid format string"
+#~ msgstr "Ongeldige datum string: %s"
+
+#, fuzzy
+#~ msgid "Invalid cast operation"
+#~ msgstr "Ongeldig stream operatie"
+
+#, fuzzy
+#~ msgid "Invalid cast"
+#~ msgstr "Ongeldige ouderobject"
+
+#, fuzzy
+#~ msgid "File not open for input"
+#~ msgstr "Bestand niet gevonden"
+
+#, fuzzy
+#~ msgid "File not open for output"
+#~ msgstr "Bestand niet gevonden"
+
+#~ msgid "File not found"
+#~ msgstr "Bestand niet gevonden"
+
+#~ msgid "Invalid filename"
+#~ msgstr "Ongeldige bestandsnaam"
+
+#~ msgid "Too many open files"
+#~ msgstr "Te veel open bestanden"
+
+#~ msgid "File access denied"
+#~ msgstr "Toegang tot bestand ontzegd"
+
+#~ msgid "Read beyond end of file"
+#~ msgstr "Leespoging voorbij het bestandseinde"
+
+#~ msgid "Disk full"
+#~ msgstr "Disk vol"
+
+#~ msgid "Invalid numeric input"
+#~ msgstr "Invoer van ongeldig getal"
+
+#, fuzzy
+#~ msgid "Class delegator not found"
+#~ msgstr "Class %s niet gevonden"
+
+#~ msgid "Error creating system registry entry"
+#~ msgstr "Fout bij aanmaken van systeem registry regel"
+
+#~ msgid "OLE error %.8x"
+#~ msgstr "OLE fout %.8x"
+
+#~ msgid "Object factory for class %s missing"
+#~ msgstr "Object factory voor class %s ontbreekt"
+
+#~ msgid "Type information missing for class %s"
+#~ msgstr "Type informatie ontbreekt voor class %s"
+
+#~ msgid "Incorrect type information for class %s"
+#~ msgstr "Incorrecte type informatie voor class %s"
+
+#~ msgid "Dispatch interface missing from class %s"
+#~ msgstr "Dispatch interface ontbreekt in class %s"
+
+#~ msgid "Method '%s' not supported by automation object"
+#~ msgstr "Methode '%s' niet ondersteund door automation object"
+
+#~ msgid "Variant does not reference an automation object"
+#~ msgstr "Variant verwijst niet naar een automation object"
+
+#~ msgid "Dispatch methods do not support more than 64 parameters"
+#~ msgstr "Dispatch methods ondersteunen niet meer dan 64 parameters"
+
+#~ msgid "DCOM not installed"
+#~ msgstr "DCOM niet geinstalleerd"
+
+#~ msgid "DAX Error"
+#~ msgstr "DAX fout"
+
+#~ msgid "COM Server Warning"
+#~ msgstr "COM Server waarschuwing"
+
+#~ msgid ""
+#~ "There are still active COM objects in this application.  One or more "
+#~ "clients may have references to these objects, so manually closing "
+#~ msgstr ""
+#~ "Er zijn nog actieve COM objecten in deze applicatie.  Een of meer "
+#~ "clienten kunnen referenties hebben naar deze objecten, handmatig sluiten "
+
+#~ msgid ""
+#~ "this application may cause those client application(s) to fail.\n"
+#~ "\n"
+#~ "Are you sure you want to close this application?"
+#~ msgstr ""
+#~ "van deze applicatie kan het falen van deze client applicatie(s) "
+#~ "veroorzaken.\n"
+#~ "\n"
+#~ "Weet u zeker dat u deze applicatie wilt sluiten?"
+
+#~ msgid "Unable to find a Table of Contents"
+#~ msgstr "Kan inhoudsopgave niet vinden"
+
+#~ msgid "No help found for %s"
+#~ msgstr "Geen hulp gevonden bij %s"
+
+#~ msgid "No context-sensitive help installed"
+#~ msgstr "Contextgevoelige hulp niet geïnstalleerd"
+
+#, fuzzy
+#~ msgid "No help found for context"
+#~ msgstr "Geen hulp gevonden bij %s"
+
+#~ msgid "No topic-based help system installed"
+#~ msgstr "Geen topic-based helpsysteem geïnstalleerd"
+
+#~ msgid "Ancestor for '%s' not found"
+#~ msgstr "Ancestor for '%s' not found"
+
+#~ msgid "Cannot assign a %s to a %s"
+#~ msgstr "Kan geen %s toekennen aan %s"
+
+#~ msgid "Bits index out of range"
+#~ msgstr "Bits index buiten bereik"
+
+#~ msgid "List is locked during an active ForEach"
+#~ msgstr "Lijst is geblokkeerd tijdens een actieve ForEach"
+
+#~ msgid "Can't write to a read-only resource stream"
+#~ msgstr "Kan niet schrijven naar een alleen-lezen resource stream"
+
+#~ msgid "''%s'' expected"
+#~ msgstr "''%s'' verwacht"
+
+#~ msgid ""
+#~ "CheckSynchronize called from thread $%x, which is NOT the main thread"
+#~ msgstr ""
+#~ "CheckSynchronize aangeroepen vanuit thread $%x, welke NIET de hoofd "
+#~ "thread is"
+
+#~ msgid "Class %s not found"
+#~ msgstr "Class %s niet gevonden"
+
+#~ msgid "Delimiter and QuoteChar properties cannot have the same value"
+#~ msgstr ""
+#~ "Scheidingsteken en aanhalingskarakter kunnen niet dezelfde waarde hebben"
+
+#~ msgid "A class named %s already exists"
+#~ msgstr "Een class met de naam %s bestaat al"
+
+#~ msgid "List does not allow duplicates ($0%x)"
+#~ msgstr "List does not allow duplicates ($0%x)"
+
+#~ msgid "A component named %s already exists"
+#~ msgstr "Een component met de naam %s bestaat al"
+
+#~ msgid "String list does not allow duplicates"
+#~ msgstr "String list does not allow duplicates"
+
+#~ msgid "Cannot create file \"%s\". %s"
+#~ msgstr "Kan bestand \"%s\" niet aanmaken. %s"
+
+#~ msgid "Fixed column count must be less than column count"
+#~ msgstr "Aantal vaste kolommen moet minder zijn dan het aantal kolommen"
+
+#~ msgid "Fixed row count must be less than row count"
+#~ msgstr "Aantal vaste rijen moet minder zijn dan het aantal rijen"
+
+#~ msgid "Cannot open file %s"
+#~ msgstr "Kan bestand %s niet openen"
+
+#~ msgid "Cannot open file \"%s\". %s"
+#~ msgstr "Kan bestand \"%s\" niet openen. %s"
+
+#~ msgid "Grid too large for operation"
+#~ msgstr "Grid is te groot voor deze operatie"
+
+#~ msgid "Identifier expected"
+#~ msgstr "Identifier verwacht"
+
+#~ msgid "Grid index out of range"
+#~ msgstr "Grid index buiten bereik"
+
+#~ msgid "Unable to write to %s"
+#~ msgstr "Kan niet schrijven naar %s"
+
+#~ msgid "Invalid action creation"
+#~ msgstr "Ongeldige actie aanmaak"
+
+#~ msgid "Invalid action enumeration"
+#~ msgstr "Ongeldige actie enumeratie"
+
+#~ msgid "Invalid action registration"
+#~ msgstr "Ongeldige actie registratie"
+
+#~ msgid "Invalid action unregistration"
+#~ msgstr "Ongeldige actie deregistratie"
+
+#~ msgid "Invalid binary value"
+#~ msgstr "Ongeldige binaire waarde"
+
+#~ msgid "Invalid file name - %s"
+#~ msgstr "Ongeldige bestandsnaam - %s"
+
+#~ msgid "Invalid stream format"
+#~ msgstr "Ongeldig stream formaat"
+
+#~ msgid "'%s' is an invalid mask at (%d)"
+#~ msgstr "'%s' is een ongeldig masker op (%d)"
+
+#~ msgid "''%s'' is not a valid component name"
+#~ msgstr "''%s'' is geen geldige component naam"
+
+#~ msgid "Invalid property value"
+#~ msgstr "Invalid property value"
+
+#~ msgid "Invalid property element: %s"
+#~ msgstr "Invalid property element: %s"
+
+#~ msgid "Invalid property path"
+#~ msgstr "Invalid property path"
+
+#~ msgid "Invalid property type: %s"
+#~ msgstr "Invalid property type: %s"
+
+#, fuzzy
+#~ msgid "Method (%s) not found"
+#~ msgstr "Sleutel \"%s\" niet gevonden"
+
+#~ msgid "Invalid data type for '%s'"
+#~ msgstr "Ongeldig data type voor '%s'"
+
+#~ msgid "Invalid string constant"
+#~ msgstr "Ongeldige string constante"
+
+#~ msgid "Cannot insert or delete rows from grid"
+#~ msgstr "Kan geen rijen invoegen of verwijderen van grid"
+
+#~ msgid "Item not found ($0%x)"
+#~ msgstr "Item niet gevonden ($0%x)"
+
+#~ msgid "Line too long"
+#~ msgstr "Regel te lang"
+
+#~ msgid "List capacity out of bounds (%d)"
+#~ msgstr "Lijst capaciteit buiten bereik (%d)"
+
+#~ msgid "List count out of bounds (%d)"
+#~ msgstr "Lijst telling buiten bereik (%d)"
+
+#~ msgid "List index out of bounds (%d)"
+#~ msgstr "Lijst index buiten bereik (%d)"
+
+#~ msgid "Invalid input value"
+#~ msgstr "Ingevoerde waarde ongeldig"
+
+#~ msgid "Invalid input value.  Use escape key to abandon changes"
+#~ msgstr ""
+#~ "Ongeldige invoerwaarde.  Gebruik escape toets om wijzigingen te annuleren"
+
+#~ msgid "Out of memory while expanding memory stream"
+#~ msgstr "Geheugen vol tijdens het uitbreieden van een geheugen Stream"
+
+#~ msgid "%s has not been registered as a COM class"
+#~ msgstr "%s is niet geregistreerd als een COM class"
+
+#~ msgid "Printer is not currently printing"
+#~ msgstr "Niet bezig met afdrukken"
+
+#~ msgid "Number expected"
+#~ msgstr "Cijfer verwacht"
+
+#~ msgid "%s on line %d"
+#~ msgstr "%s op regel %d"
+
+#~ msgid "Component name '%s' exceeds 64 character limit"
+#~ msgstr "Component naam '%s' overschrijdt 64 karakter limiet"
+
+#~ msgid "Error reading %s%s%s: %s"
+#~ msgstr "Leesfout %s%s%s: %s"
+
+#~ msgid "Printing in progress"
+#~ msgstr "Bezig met afdrukken"
+
+#~ msgid "Stream read error"
+#~ msgstr "Stream leesfout"
+
+#~ msgid "Property is read-only"
+#~ msgstr "Property is read-only"
+
+#~ msgid "Failed to create key %s"
+#~ msgstr "Aanmaken key %s mislukt"
+
+#~ msgid "Failed to get data for '%s'"
+#~ msgstr "Ophalen data voor '%s' mislukt"
+
+#~ msgid "Invalid component registration"
+#~ msgstr "Ongeldige component registratie"
+
+#~ msgid "Failed to set data for '%s'"
+#~ msgstr "Toewijzen data aan '%s' mislukt"
+
+#~ msgid "Resource %s not found"
+#~ msgstr "Resource %s niet gevonden"
+
+#~ msgid "%s.Seek not implemented"
+#~ msgstr "%s.Seek niet geïmplementeerd"
+
+#~ msgid "Operation not allowed on sorted list"
+#~ msgstr "Operatie niet toegestaan op een gesorteerde lijst"
+
+#~ msgid "String expected"
+#~ msgstr "String verwacht"
+
+#~ msgid "%s expected"
+#~ msgstr "%s verwacht"
+
+#~ msgid "Too many rows or columns deleted"
+#~ msgstr "Te veel rijen of kolommen gewist"
+
+#~ msgid "%s not in a class registration group"
+#~ msgstr "%s niet in een class registratie groep"
+
+#~ msgid "Property %s does not exist"
+#~ msgstr "Property %s does not exist"
+
+#~ msgid "Stream write error"
+#~ msgstr "Stream write error"
+
+#~ msgid "Error setting stream size"
+#~ msgstr "Fout bij toewijzen stream grootte"
+
+#~ msgid "Thread creation error: %s"
+#~ msgstr "Thread creation error: %s"
+
+#~ msgid "Thread Error: %s (%d)"
+#~ msgstr "Thread Error: %s (%d)"
+
+#~ msgid "(%d, %d) is not a valid DateDay pair"
+#~ msgstr "(%d, %d) is geen geldig DatumDag paar"
+
+#~ msgid "(%d, %d, %d) is not a valid DateWeek triplet"
+#~ msgstr "(%d, %d, %d) is geen geldig DatumWeek trio"
+
+#~ msgid "(%d, %d, %d, %d) is not a valid DateMonthWeek quad"
+#~ msgstr "(%d, %d, %d, %d) is geen geldig DatumMaanWeek viertal"
+
+#~ msgid "(%d, %d, %d, %d) is not a valid DayOfWeekInMonth quad"
+#~ msgstr "(%d, %d, %d, %d) is geen geldig DagVanWeekInMaand viertal"
+
+#~ msgid "%f Julian cannot be represented as a DateTime"
+#~ msgstr "%f Julian kan niet als DatumTijd worden gerepresenteerd"
+
+#~ msgid "?"
+#~ msgstr "?"
+
+#~ msgid "Incompatible conversion types [%s, %s]"
+#~ msgstr "Onverenigbare conversie types [%s, %s]"
+
+#~ msgid "Incompatible conversion types [%s, %s, %s]"
+#~ msgstr "Onverenigbare conversie types [%s, %s, %s]"
+
+#~ msgid "Incompatible conversion types [%s - %s, %s - %s]"
+#~ msgstr "Onverenigbare conversie types [%s - %s, %s - %s]"
+
+#~ msgid "Unknown conversion type %s"
+#~ msgstr "Onbekend conversie type %s"
+
+#~ msgid "Conversion type (%s) already registered in %s"
+#~ msgstr "Conversie type (%s) al geregistreerd in %s"
+
+#~ msgid "Unknown conversion family %s"
+#~ msgstr "Onbekende conversie familie %s"
+
+#~ msgid "Conversion family (%s) already registered"
+#~ msgstr "Conversie familie (%s) al geregistreerd"
+
+#~ msgid "Illegal type"
+#~ msgstr "Verboden type"
+
+#~ msgid "Illegal family"
+#~ msgstr "Verboden familie"
+
+#~ msgid "%s has a factor of zero"
+#~ msgstr "%s heeft een factor nul"
+
+#~ msgid "Could not parse %s"
+#~ msgstr "Kon %s niet parsen"
+
+#~ msgid "TStrings descendant %s failed to call inherited constructor"
+#~ msgstr ""
+#~ "TStrings descendant %s verzuimde om de inherited constructor aan te roepen"
+
+#~ msgid "Windows socket error: %s (%d), on API '%s'"
+#~ msgstr "Windows socket fout: %s (%d), op API '%s'"
+
+#~ msgid "Asynchronous socket error %d"
+#~ msgstr "Asynchrone socket fout %d"
+
+#~ msgid "No address specified"
+#~ msgstr "Geen adres opgegeven"
+
+#~ msgid "Can't listen on an open socket"
+#~ msgstr "Kan niet luisteren op een open socket"
+
+#~ msgid "Can't create new socket"
+#~ msgstr "Kan geen nieuwe socket aanmaken"
+
+#~ msgid "Socket already open"
+#~ msgstr "Socket al open"
+
+#~ msgid "Can't change value while socket is active"
+#~ msgstr "Kan waarde niet veranderen terwijl socket actief is"
+
+#~ msgid "Socket must be in blocking mode"
+#~ msgstr "Socket moet in blocking mode zijn"
+
+#~ msgid "%s error %d, %s"
+#~ msgstr "%s fout %d, %s"
+
+#~ msgid "Read"
+#~ msgstr "Lees"
+
+#~ msgid "Write"
+#~ msgstr "Schrijf"
+
+#~ msgid "Could not parse imaginary portion"
+#~ msgstr "Kon imaginaire deel niet parsen"
+
+#~ msgid "Could not parse required '%s' symbol"
+#~ msgstr "Kon vereiste '%s' symbool niet parsen"
+
+#~ msgid "Could not parse required '+' (or '-') symbol"
+#~ msgstr "Kon vereiste '+' of '-' symbool niet parsen"
+
+#~ msgid "Could not parse real portion"
+#~ msgstr "Kon reele deel niet parsen"
+
+#~ msgid "Unexpected end of string [%s]"
+#~ msgstr "Onverwacht einde van string [%s]"
+
+#~ msgid "Unexpected characters"
+#~ msgstr "Onverwachte karakters"
+
+#~ msgid "%s [%s<?>%s]"
+#~ msgstr "%s [%s<?>%s]"
+
+#, fuzzy
+#~ msgid "No Help Manager installed."
+#~ msgstr "Geen onderwerp-gebaseerd help systeem geinstalleerd"
+
+#~ msgid "No topic-based Help installed."
+#~ msgstr "Geen onderwerp-gebaseerd help systeem geinstalleerd"
+
+#~ msgid "No context-sensitive Help installed."
+#~ msgstr "Geen context-gevoelig help systeem geinstalleerd"
+
+#, fuzzy
+#~ msgid "No context-sensitive help found"
+#~ msgstr "Contextgevoelige hulp niet geïnstalleerd"
+
+#~ msgid "No help found for \"%s\""
+#~ msgstr "Geen help gevonden voor \"%s\""
+
+#~ msgid "No Table of Contents found."
+#~ msgstr "Kan geen inhoudsopgave vinden."
+
+#~ msgid "Distance"
+#~ msgstr "Afstand"
+
+#~ msgid "Micromicrons"
+#~ msgstr "Micromicron"
+
+#~ msgid "Angstroms"
+#~ msgstr "Angstrom"
+
+#~ msgid "Millimicrons"
+#~ msgstr "Millimicron"
+
+#~ msgid "Microns"
+#~ msgstr "Micron"
+
+#~ msgid "Millimeters"
+#~ msgstr "Millimeter"
+
+#~ msgid "Centimeters"
+#~ msgstr "Centimeter"
+
+#~ msgid "Decimeters"
+#~ msgstr "Decimeter"
+
+#~ msgid "Meters"
+#~ msgstr "Meter"
+
+#~ msgid "Decameters"
+#~ msgstr "Decameter"
+
+#~ msgid "Hectometers"
+#~ msgstr "Hectometer"
+
+#~ msgid "Kilometers"
+#~ msgstr "Kilometer"
+
+#~ msgid "Megameters"
+#~ msgstr "Megameter"
+
+#~ msgid "Gigameters"
+#~ msgstr "Gigameter"
+
+#~ msgid "Inches"
+#~ msgstr "Inches"
+
+#~ msgid "Feet"
+#~ msgstr "Voet"
+
+#~ msgid "Yards"
+#~ msgstr "Yards"
+
+#~ msgid "Miles"
+#~ msgstr "Mijl"
+
+#~ msgid "NauticalMiles"
+#~ msgstr "NautischeMijl"
+
+#~ msgid "AstronomicalUnits"
+#~ msgstr "AstronimischeEenheden"
+
+#~ msgid "LightYears"
+#~ msgstr "Lichtjaar"
+
+#~ msgid "Parsecs"
+#~ msgstr "Parsecs"
+
+#~ msgid "Cubits"
+#~ msgstr "Cubits"
+
+#~ msgid "Fathoms"
+#~ msgstr "Vadem"
+
+#~ msgid "Furlongs"
+#~ msgstr "Furlongs"
+
+#~ msgid "Hands"
+#~ msgstr "Hand"
+
+#~ msgid "Paces"
+#~ msgstr "Passen"
+
+#~ msgid "Rods"
+#~ msgstr "Rods"
+
+#~ msgid "Chains"
+#~ msgstr "Chains"
+
+#~ msgid "Links"
+#~ msgstr "Links"
+
+#~ msgid "Picas"
+#~ msgstr "Picas"
+
+#~ msgid "Points"
+#~ msgstr "Points"
+
+#~ msgid "Area"
+#~ msgstr "Gebied"
+
+#~ msgid "SquareMillimeters"
+#~ msgstr "VierkanteMillimeter"
+
+#~ msgid "SquareCentimeters"
+#~ msgstr "VierkanteCentimeter"
+
+#~ msgid "SquareDecimeters"
+#~ msgstr "VierkanteDecimeter"
+
+#~ msgid "SquareMeters"
+#~ msgstr "VierkanteMeter"
+
+#~ msgid "SquareDecameters"
+#~ msgstr "VierkanteDecameter"
+
+#~ msgid "SquareHectometers"
+#~ msgstr "VierkanteHectometer"
+
+#~ msgid "SquareKilometers"
+#~ msgstr "VierkanteKilometer"
+
+#~ msgid "SquareInches"
+#~ msgstr "VierkanteInch"
+
+#~ msgid "SquareFeet"
+#~ msgstr "VierkanteVoet"
+
+#~ msgid "SquareYards"
+#~ msgstr "VierkanteYard"
+
+#~ msgid "SquareMiles"
+#~ msgstr "VierkanteMijl"
+
+#~ msgid "Acres"
+#~ msgstr "Acres"
+
+#~ msgid "Centares"
+#~ msgstr "CentiAre"
+
+#~ msgid "Ares"
+#~ msgstr "Are"
+
+#~ msgid "Hectares"
+#~ msgstr "Hectare"
+
+#~ msgid "SquareRods"
+#~ msgstr "SquareRods"
+
+#~ msgid "Volume"
+#~ msgstr "Volume"
+
+#~ msgid "CubicMillimeters"
+#~ msgstr "KubiekeMillimeter"
+
+#~ msgid "CubicCentimeters"
+#~ msgstr "KubiekeCentimeter"
+
+#~ msgid "CubicDecimeters"
+#~ msgstr "KubiekeDecimeter"
+
+#~ msgid "CubicMeters"
+#~ msgstr "KubiekeMeter"
+
+#~ msgid "CubicDecameters"
+#~ msgstr "KubiekeDecameter"
+
+#~ msgid "CubicHectometers"
+#~ msgstr "KubiekeHectometer"
+
+#~ msgid "CubicKilometers"
+#~ msgstr "KubiekeKilometer"
+
+#~ msgid "CubicInches"
+#~ msgstr "KubiekeInch"
+
+#~ msgid "CubicFeet"
+#~ msgstr "KubiekeVoet"
+
+#~ msgid "CubicYards"
+#~ msgstr "KubiekeYard"
+
+#~ msgid "CubicMiles"
+#~ msgstr "KubiekeMijl"
+
+#~ msgid "MilliLiters"
+#~ msgstr "MilliLiter"
+
+#~ msgid "CentiLiters"
+#~ msgstr "CentiLiter"
+
+#~ msgid "DeciLiters"
+#~ msgstr "DeciLiter"
+
+#~ msgid "Liters"
+#~ msgstr "Liter"
+
+#~ msgid "DecaLiters"
+#~ msgstr "DecaLiter"
+
+#~ msgid "HectoLiters"
+#~ msgstr "HectoLiter"
+
+#~ msgid "KiloLiters"
+#~ msgstr "KiloLiter"
+
+#~ msgid "AcreFeet"
+#~ msgstr "AcreFeet"
+
+#~ msgid "AcreInches"
+#~ msgstr "AcreInches"
+
+#~ msgid "Cords"
+#~ msgstr "Cords"
+
+#~ msgid "CordFeet"
+#~ msgstr "CordFeet"
+
+#~ msgid "Decisteres"
+#~ msgstr "Decisteres"
+
+#~ msgid "Steres"
+#~ msgstr "Steres"
+
+#~ msgid "Decasteres"
+#~ msgstr "Decasteres"
+
+#~ msgid "FluidGallons"
+#~ msgstr "FluidGallons"
+
+#~ msgid "FluidQuarts"
+#~ msgstr "FluidQuarts"
+
+#~ msgid "FluidPints"
+#~ msgstr "FluidPints"
+
+#~ msgid "FluidCups"
+#~ msgstr "FluidCups"
+
+#~ msgid "FluidGills"
+#~ msgstr "FluidGills"
+
+#~ msgid "FluidOunces"
+#~ msgstr "FluidOunces"
+
+#~ msgid "FluidTablespoons"
+#~ msgstr "FluidTablespoons"
+
+#~ msgid "FluidTeaspoons"
+#~ msgstr "FluidTeaspoons"
+
+#~ msgid "DryGallons"
+#~ msgstr "DryGallons"
+
+#~ msgid "DryQuarts"
+#~ msgstr "DryQuarts"
+
+#~ msgid "DryPints"
+#~ msgstr "DryPints"
+
+#~ msgid "DryPecks"
+#~ msgstr "DryPecks"
+
+#~ msgid "DryBuckets"
+#~ msgstr "DryBuckets"
+
+#~ msgid "DryBushels"
+#~ msgstr "DryBushels"
+
+#~ msgid "UKGallons"
+#~ msgstr "UKGallons"
+
+#~ msgid "UKPottle"
+#~ msgstr "UKPottle"
+
+#~ msgid "UKQuarts"
+#~ msgstr "UKQuarts"
+
+#~ msgid "UKPints"
+#~ msgstr "UKPints"
+
+#~ msgid "UKGill"
+#~ msgstr "UKGill"
+
+#~ msgid "UKOunces"
+#~ msgstr "UKOunces"
+
+#~ msgid "UKPecks"
+#~ msgstr "UKPecks"
+
+#~ msgid "UKBuckets"
+#~ msgstr "UKBuckets"
+
+#~ msgid "UKBushels"
+#~ msgstr "UKBushels"
+
+#~ msgid "Mass"
+#~ msgstr "Massa"
+
+#~ msgid "Nanograms"
+#~ msgstr "Nanogram"
+
+#~ msgid "Micrograms"
+#~ msgstr "Microgram"
+
+#~ msgid "Milligrams"
+#~ msgstr "Milligram"
+
+#~ msgid "Centigrams"
+#~ msgstr "Centigram"
+
+#~ msgid "Decigrams"
+#~ msgstr "Decigram"
+
+#~ msgid "Grams"
+#~ msgstr "Gram"
+
+#~ msgid "Decagrams"
+#~ msgstr "Decagram"
+
+#~ msgid "Hectograms"
+#~ msgstr "Hectogram"
+
+#~ msgid "Kilograms"
+#~ msgstr "Kilogram"
+
+#~ msgid "MetricTons"
+#~ msgstr "MetrischeTon"
+
+#~ msgid "Drams"
+#~ msgstr "Drams"
+
+#~ msgid "Grains"
+#~ msgstr "Grains"
+
+#~ msgid "Tons"
+#~ msgstr "Ton"
+
+#~ msgid "LongTons"
+#~ msgstr "LongTons"
+
+#~ msgid "Ounces"
+#~ msgstr "Ounces"
+
+#~ msgid "Pounds"
+#~ msgstr "Pond"
+
+#, fuzzy
+#~ msgid "Stones"
+#~ msgstr "Steres"
+
+#~ msgid "Temperature"
+#~ msgstr "Temperatuur"
+
+#~ msgid "Celsius"
+#~ msgstr "Celsius"
+
+#~ msgid "Kelvin"
+#~ msgstr "Kelvin"
+
+#~ msgid "Fahrenheit"
+#~ msgstr "Fahrenheit"
+
+#~ msgid "Rankine"
+#~ msgstr "Rankine"
+
+#~ msgid "Reaumur"
+#~ msgstr "Reaumur"
+
+#~ msgid "Time"
+#~ msgstr "Tijd"
+
+#~ msgid "MilliSeconds"
+#~ msgstr "MilliSecondes"
+
+#~ msgid "Seconds"
+#~ msgstr "Secondes"
+
+#~ msgid "Minutes"
+#~ msgstr "Minuten"
+
+#~ msgid "Hours"
+#~ msgstr "Uren"
+
+#~ msgid "Days"
+#~ msgstr "Dagen"
+
+#~ msgid "Weeks"
+#~ msgstr "Weken"
+
+#~ msgid "Fortnights"
+#~ msgstr "Fortnights"
+
+#~ msgid "Months"
+#~ msgstr "Maanden"
+
+#~ msgid "Years"
+#~ msgstr "Jaren"
+
+#~ msgid "Decades"
+#~ msgstr "Decennia"
+
+#~ msgid "Centuries"
+#~ msgstr "Eeuwen"
+
+#~ msgid "Millennia"
+#~ msgstr "Millenia"
+
+#~ msgid "DateTime"
+#~ msgstr "DagTijd"
+
+#~ msgid "JulianDate"
+#~ msgstr "JuliaanseDatum"
+
+#~ msgid "ModifiedJulianDate"
+#~ msgstr "AangepasteJuliaanseDatum"
+
+#, fuzzy
+#~ msgid "Could not simplify, imaginary part is non-zero [%s]"
+#~ msgstr "Kon imaginaire deel niet parsen"
+
+#, fuzzy
+#~ msgid "Invalid property info type"
+#~ msgstr "Invalid property type: %s"
+
+#, fuzzy
+#~ msgid "Invalid property typeinfo type"
+#~ msgstr "Invalid property type: %s"
+
+#, fuzzy
+#~ msgid "No suitiable constructor found"
+#~ msgstr "Kan geen inhoudsopgave vinden."
+
+#, fuzzy
+#~ msgid "Item not found (%s%x)"
+#~ msgstr "Item niet gevonden ($0%x)"
+
+#, fuzzy
+#~ msgid "string does not represent a valid Conversion type value."
+#~ msgstr "'%s' is geen geldige property waarde"
+
+#~ msgid "<unknown>"
+#~ msgstr "<onbekend>"
+
+#~ msgid "'%s' is not a valid integer value"
+#~ msgstr "'%s' is geen geldig gebroken getal"
+
+#~ msgid "'%s' is not a valid floating point value"
+#~ msgstr "'%s' is geen geldig gebroken getal"
+
+#~ msgid "'%s' is not a valid currency value"
+#~ msgstr "'%s' is geen geldige geldwaarde"
+
+#~ msgid "'%s' is not a valid date"
+#~ msgstr "'%s' is geen geldige datum"
+
+#~ msgid "'%s' is not a valid time"
+#~ msgstr "'%s' is geen geldige tijd"
+
+#~ msgid "'%s' is not a valid date and time"
+#~ msgstr "'%s' is geen geldige datum of tijd"
+
+#~ msgid "'%g' is not a valid date and time"
+#~ msgstr "'%g' is geen gedlige datum of tijd"
+
+#~ msgid "'%d.%d' is not a valid timestamp"
+#~ msgstr "'%d.%d' is geen geldig tijdwaarmerk"
+
+#~ msgid "'%s' is not a valid GUID value"
+#~ msgstr "'%s' is geen geldige GUID waarde"
+
+#~ msgid "'%s' is not a valid boolean value"
+#~ msgstr "'%s' is geen geldige boolean waarde"
+
+#~ msgid "Invalid argument to time encode"
+#~ msgstr "Ongeldig argument voor tijdcodering"
+
+#~ msgid "Invalid argument to date encode"
+#~ msgstr "Ongeldig argument voor datumcodering"
+
+#~ msgid "I/O error %d"
+#~ msgstr "I/O fout %d"
+
+#~ msgid "Invalid pointer operation"
+#~ msgstr "ongeldige pointer operatie"
+
+#~ msgid "Invalid class typecast"
+#~ msgstr "Ongeldige class typecast"
+
+#~ msgid "Access violation at address %p. %s of address %p"
+#~ msgstr "Toegangsschending bij adres %p. %s van adres %p"
+
+#~ msgid "Stack overflow"
+#~ msgstr "Stack overloop"
+
+#~ msgid "Control-C hit"
+#~ msgstr "Ctrl-C aanslag"
+
+#~ msgid "Quit key hit"
+#~ msgstr "Quit key gebruikt"
+
+#~ msgid "Privileged instruction"
+#~ msgstr "Gepriviligeerde instructie"
+
+#~ msgid "Operation aborted"
+#~ msgstr "Operatie afgebroken"
+
+#~ msgid ""
+#~ "Exception %s in module %s at %p.\n"
+#~ "%s%s\n"
+#~ msgstr ""
+#~ "Exception %s in module %s at %p.\n"
+#~ "%s%s\n"
+
+#~ msgid "Application Error"
+#~ msgstr "Toepassingsfout"
+
+#~ msgid "Format '%s' invalid or incompatible with argument"
+#~ msgstr "Format '%s' ongeldig of niet overeenkomstig met argument"
+
+#~ msgid "No argument for format '%s'"
+#~ msgstr "No argument for format '%s'"
+
+#~ msgid "Variant method calls not supported"
+#~ msgstr "Variant method calls not supported"
+
+#~ msgid "Format result longer than 4096 characters"
+#~ msgstr "Format resultaat langer dan 4096 karakters"
+
+#~ msgid "Format string too long"
+#~ msgstr "Format string te lang"
+
+#~ msgid "Error creating variant or safe array"
+#~ msgstr "Fout bij aanmaken van variant of safe array"
+
+#~ msgid "Variant or safe array index out of bounds"
+#~ msgstr "Variant of safe array index buiten grenswaarden"
+
+#~ msgid "Variant or safe array is locked"
+#~ msgstr "Variant of safe array is geblokkeerd"
+
+#, fuzzy
+#~ msgid "Unexpected variant or safe array error: %s%.8x"
+#~ msgstr "Onverwachte variant fout"
+
+#, fuzzy
+#~ msgid "Invalid variant operation on %s variant"
+#~ msgstr "Ongeldige variantbewerking"
+
+#, fuzzy
+#~ msgid "Invalid variant operation with %s and %s variants"
+#~ msgstr ""
+#~ "Ongeldige variant operatie (%s%.8x)\n"
+#~ "%s"
+
+#, fuzzy
+#~ msgid "Invalid variant operation (%s) with %s and %s variants"
+#~ msgstr ""
+#~ "Ongeldige variant operatie (%s%.8x)\n"
+#~ "%s"
+
+#, fuzzy
+#~ msgid "Invalid variant invocation (%s) on %s variant"
+#~ msgstr ""
+#~ "Ongeldige variant operatie (%s%.8x)\n"
+#~ "%s"
+
+#, fuzzy
+#~ msgid "Invalid variant type (0x%.4x)"
+#~ msgstr "Ongeldig varianttype"
+
+#, fuzzy
+#~ msgid "Invalid variant type conversion of %s variant"
+#~ msgstr "Ongeldige omzetting van varianttype"
+
+#, fuzzy
+#~ msgid "Invalid variant type conversion of %s variant into %s"
+#~ msgstr "Ongeldige omzetting van varianttype"
+
+#, fuzzy
+#~ msgid "Invalid variant array dimension (%d)"
+#~ msgstr "Ongeldige variantbewerking ($%.8x)"
+
+#~ msgid "Invalid variant type conversion"
+#~ msgstr "Ongeldige omzetting van varianttype"
+
+#~ msgid "Invalid variant operation"
+#~ msgstr "Ongeldige variantbewerking"
+
+#, fuzzy
+#~ msgid "Invalid NULL variant operation (%s)"
+#~ msgstr "Ongeldige NULL variant operatie"
+
+#, fuzzy
+#~ msgid "Range check error for %s variant"
+#~ msgstr ""
+#~ "Overflow fout tijdens converteren variant van type (%s) naar type (%s)"
+
+#, fuzzy
+#~ msgid "Range check error while converting %s variant into %s"
+#~ msgstr ""
+#~ "Overflow fout tijdens converteren variant van type (%s) naar type (%s)"
+
+#~ msgid "Too many custom variant types have been registered"
+#~ msgstr "Er zijn teveel custom varianttypes geregistreerd"
+
+#, fuzzy
+#~ msgid "Could not convert %s variant into %s"
+#~ msgstr "Kon variant van type (%s) niet converteren naar type (%s)"
+
+#, fuzzy
+#~ msgid "Overflow while converting %s variant"
+#~ msgstr "Overflow tijdens converteren variant van type (%s) naar type (%s)"
+
+#, fuzzy
+#~ msgid "Overflow while converting %s variant into %s"
+#~ msgstr "Overflow tijdens converteren variant van type (%s) naar type (%s)"
+
+#~ msgid "Variant overflow"
+#~ msgstr "Variant overflow"
+
+#~ msgid "Invalid argument"
+#~ msgstr "Ongeldig argument"
+
+#~ msgid "Invalid variant type"
+#~ msgstr "Ongeldig varianttype"
+
+#~ msgid "Operation not supported"
+#~ msgstr "Operation not supported"
+
+#~ msgid "Variant operation ran out memory"
+#~ msgstr "Variant operatie had niet genoeg geheugen"
+
+#~ msgid "Unexpected variant error"
+#~ msgstr "Onverwachte variant fout"
+
+#~ msgid "Recursion while doing a VarDataClear"
+#~ msgstr "Recursie tijdens VarDataClear"
+
+#~ msgid "Recursion while doing a VarDataCopy"
+#~ msgstr "Recursie tijdens VarDataCopy"
+
+#~ msgid "Recursion while doing a VarDataCopyNoInd"
+#~ msgstr "Recursie tijdens VarDataCopyNoInd"
+
+#~ msgid "Recursion while doing a VarDataInit"
+#~ msgstr "Recursie tijdens VarDataInit"
+
+#~ msgid "Recursion while doing a VarDataCastTo"
+#~ msgstr "Recursie tijdens VarDataCastTo"
+
+#~ msgid "Variant is empty"
+#~ msgstr "Variant is leeg"
+
+#, fuzzy
+#~ msgid ""
+#~ "Invalid variant operation: %s%.8x\n"
+#~ "%s"
+#~ msgstr ""
+#~ "Ongeldige variant operatie (%s%.8x)\n"
+#~ "%s"
+
+#~ msgid "Custom variant type (%s%.4x) is out of range"
+#~ msgstr "Custom variant type (%s%.4x) is buiten bereik"
+
+#~ msgid "Custom variant type (%s%.4x) already used by %s"
+#~ msgstr "Custom variant type (%s%.4x) wordt al gebruikt door %s"
+
+#~ msgid "Custom variant type (%s%.4x) is not usable"
+#~ msgstr "Custom variant type (%s%.4x) is niet bruikbaar"
+
+#~ msgid "Cannot convert from the specified type"
+#~ msgstr "Kan niet converteren van gespecificeerde type"
+
+#~ msgid "Cannot convert to the specified type"
+#~ msgstr "Kan niet converteren naar gespecificeerde type"
+
+#~ msgid "External exception %x"
+#~ msgstr "External exception %x"
+
+#~ msgid "Assertion failed"
+#~ msgstr "Toetsing faalde"
+
+#~ msgid "Interface not supported"
+#~ msgstr "Interface niet ondersteund"
+
+#~ msgid "Exception in safecall method"
+#~ msgstr "Exception in safecall method"
+
+#~ msgid "%s (%s, line %d)"
+#~ msgstr "%s (%s, regel %d)"
+
+#~ msgid "Abstract Error"
+#~ msgstr "Abstracte Fout"
+
+#~ msgid "Access violation at address %p in module '%s'. %s of address %p"
+#~ msgstr "Toegangsschending op adres %p in module '%s'. %s van adres %p"
+
+#~ msgid "Cannot access package information for package '%s'"
+#~ msgstr "Cannot access package information for package '%s'"
+
+#~ msgid ""
+#~ "Can't load package %s.\n"
+#~ "%s"
+#~ msgstr ""
+#~ "Kan package %s niet laden.\n"
+#~ "%s"
+
+#~ msgid "Invalid package file '%s'"
+#~ msgstr "Ongeldig package bestand '%s'"
+
+#~ msgid "Invalid package handle"
+#~ msgstr "Ongeldige package handle"
+
+#~ msgid ""
+#~ "Cannot load package '%s.'  It contains unit '%s,'which is also contained "
+#~ "in package '%s'"
+#~ msgstr ""
+#~ "Kan package '%s' niet laden.  Het bevat unit '%s,'dat ook is opgenomen in "
+#~ "package '%s'"
+
+#~ msgid ""
+#~ "System Error.  Code: %d.\n"
+#~ "%s"
+#~ msgstr ""
+#~ "Systeem fout.  Code: %d.\n"
+#~ "%s"
+
+#~ msgid "A call to an OS function failed"
+#~ msgstr "Een aanroep naar een OS functie faalde"
+
+#~ msgid ""
+#~ "Win32 Error.  Code: %d.\n"
+#~ "%s"
+#~ msgstr ""
+#~ "Win32 Fout.  Code: %d.\n"
+#~ "%s"
+
+#~ msgid "A Win32 API function failed"
+#~ msgstr "Een Win32 API functie is mislukt"
+
+#~ msgid "Application is not licensed to use this feature"
+#~ msgstr "De toepassing heeft geen rechten om deze mogelijkheid te gebruiken"
+
+#~ msgid "Jan"
+#~ msgstr "Jan"
+
+#~ msgid "Feb"
+#~ msgstr "Feb"
+
+#~ msgid "Mar"
+#~ msgstr "Maart"
+
+#~ msgid "Apr"
+#~ msgstr "Apr"
+
+#~ msgid "May"
+#~ msgstr "Mei"
+
+#~ msgid "Jun"
+#~ msgstr "Jun"
+
+#~ msgid "Jul"
+#~ msgstr "Jul"
+
+#~ msgid "Aug"
+#~ msgstr "Aug"
+
+#~ msgid "Sep"
+#~ msgstr "Sep"
+
+#~ msgid "Oct"
+#~ msgstr "Okt"
+
+#~ msgid "Nov"
+#~ msgstr "Nov"
+
+#~ msgid "Dec"
+#~ msgstr "Dec"
+
+#~ msgid "January"
+#~ msgstr "Januari"
+
+#~ msgid "February"
+#~ msgstr "Februari"
+
+#~ msgid "March"
+#~ msgstr "Maart"
+
+#~ msgid "April"
+#~ msgstr "April"
+
+#~ msgid "June"
+#~ msgstr "Juni"
+
+#~ msgid "July"
+#~ msgstr "Juli"
+
+#~ msgid "August"
+#~ msgstr "Augustus"
+
+#~ msgid "September"
+#~ msgstr "September"
+
+#~ msgid "October"
+#~ msgstr "Oktober"
+
+#~ msgid "November"
+#~ msgstr "November"
+
+#~ msgid "December"
+#~ msgstr "December"
+
+#~ msgid "Sun"
+#~ msgstr "Zon"
+
+#~ msgid "Mon"
+#~ msgstr "Maa"
+
+#~ msgid "Tue"
+#~ msgstr "Din"
+
+#~ msgid "Wed"
+#~ msgstr "Woe"
+
+#~ msgid "Thu"
+#~ msgstr "Don"
+
+#~ msgid "Fri"
+#~ msgstr "Vrij"
+
+#~ msgid "Sat"
+#~ msgstr "Zat"
+
+#~ msgid "Sunday"
+#~ msgstr "Zondag"
+
+#~ msgid "Monday"
+#~ msgstr "Maandag"
+
+#~ msgid "Tuesday"
+#~ msgstr "Dinsdag"
+
+#~ msgid "Wednesday"
+#~ msgstr "Woensdag"
+
+#~ msgid "Thursday"
+#~ msgstr "Donderdag"
+
+#~ msgid "Friday"
+#~ msgstr "Vrijdag"
+
+#~ msgid "Saturday"
+#~ msgstr "Zaterdag"
+
+#~ msgid "Unable to create directory"
+#~ msgstr "Kon map niet aanmaken"
+
+#, fuzzy
+#~ msgid "Codeset conversion failure"
+#~ msgstr "Onbekende conversie familie %s"
+
+#, fuzzy
+#~ msgid "Exception %s"
+#~ msgstr "DelphiExceptie %s"
+
+#, fuzzy
+#~ msgid "Invalid type conversion"
+#~ msgstr "Ongeldige data conversie"
+
+#~ msgid "Failed to clear tab control"
+#~ msgstr "Kon tab control niet leegmaken"
+
+#~ msgid "Failed to delete tab at index %d"
+#~ msgstr "Kon tab niet wissen op index %d"
+
+#~ msgid "Failed to retrieve tab at index %d"
+#~ msgstr "Kon tab niet herstellen op index %d"
+
+#~ msgid "Failed to get object at index %d"
+#~ msgstr "Kon object niet ophalen op index %d"
+
+#~ msgid "Failed to set tab \"%s\" at index %d"
+#~ msgstr "Kon tab \"%s\" niet instellen op index %d"
+
+#~ msgid "Failed to set object at index %d"
+#~ msgstr "Kon object op index %d niet instellen"
+
+#~ msgid "MultiLine must be True when TabPosition is tpLeft or tpRight"
+#~ msgstr "MultiLine moet Waar zijn als TabPosition is tpLeft of tpRight"
+
+#, fuzzy
+#~ msgid "Invalid item level assignment"
+#~ msgstr "Ongeldig veldgrootte"
+
+#, fuzzy
+#~ msgid "Invalid level (%d) for item \"%s\""
+#~ msgstr "Ongeldige waarde voor veld '%s'"
+
+#~ msgid "Invalid index"
+#~ msgstr "Ongeldige index"
+
+#~ msgid "Unable to insert an item"
+#~ msgstr "Niet mogelijk om een item in te voegen"
+
+#~ msgid "Invalid owner"
+#~ msgstr "Ongeldige eigenaar"
+
+#, fuzzy
+#~ msgid "Unable to create new column"
+#~ msgstr "Kon map niet aanmaken"
+
+#, fuzzy
+#~ msgid "Unable to create new item"
+#~ msgstr "Niet mogelijk om een item in te voegen"
+
+#~ msgid "Failed to Load Stream"
+#~ msgstr "Load Stream mislukt"
+
+#~ msgid "Failed to Save Stream"
+#~ msgstr "Save Stream mislukt"
+
+#, fuzzy
+#~ msgid "Hot-Key is invalid"
+#~ msgstr "Metafile is not valid"
+
+#~ msgid "%s is already associated with %s"
+#~ msgstr "%s is al geassocieerd met %s"
+
+#, fuzzy
+#~ msgid ""
+#~ "%d is an invalid PageIndex value.  PageIndex must be between 0 and %d"
+#~ msgstr ""
+#~ "%d is een ongeldige PageIndex waarde. PageIndex moet tussen 0 en %d zijn"
+
+#~ msgid "This control requires version 4.70 or greater of COMCTL32.DLL"
+#~ msgstr "Deze control vereist versie 4.70 of hoger van COMCTL32.DLL"
+
+#~ msgid "Date exceeds maximum of %s"
+#~ msgstr "Datum overschrijdt maximum van %s"
+
+#~ msgid "Date is less than minimum of %s"
+#~ msgstr "Datum is minder dan minimum van %s"
+
+#~ msgid "You must be in ShowCheckbox mode to set to this date"
+#~ msgstr "U moet in ShowCheckbox modus zijn om deze datum in te stellen"
+
+#~ msgid "Failed to set calendar date or time"
+#~ msgstr "Kalenderdatum of -tijd instelling mislukt"
+
+#~ msgid "Failed to set maximum selection range"
+#~ msgstr "Instelling maximum selectiebereik mislukt"
+
+#~ msgid "Failed to set calendar min/max range"
+#~ msgstr "Kalender min/max bereik kon niet ingesteld worden"
+
+#~ msgid "Failed to set calendar selected range"
+#~ msgstr "Gekozen bereik kalender kon niet ingesteld worden"
+
+#~ msgid "Tab index out of bounds"
+#~ msgstr "Tab index buiten bereik"
+
+#~ msgid "Tab position incompatible with current tab style"
+#~ msgstr "Tab position incompatible with current tab style"
+
+#~ msgid "Tab style incompatible with current tab position"
+#~ msgstr "Tab style incompatible with current tab position"
+
+#~ msgid "Bitmap image is not valid"
+#~ msgstr "Bitmap is not ongeldig"
+
+#~ msgid "Icon image is not valid"
+#~ msgstr "Icon image is not valid"
+
+#~ msgid "Metafile is not valid"
+#~ msgstr "Metafile is not valid"
+
+#~ msgid "Invalid pixel format"
+#~ msgstr "Ongeldig pixel formaat"
+
+#, fuzzy
+#~ msgid "Invalid image"
+#~ msgstr "Ongeldige image grootte"
+
+#~ msgid "Bitmap is empty"
+#~ msgstr "Bitmap is leeg"
+
+#, fuzzy
+#~ msgid "Scan line index out of range"
+#~ msgstr "Printer index valt buiten bereik"
+
+#~ msgid "Cannot change the size of an icon"
+#~ msgstr "Kan de grootte van een icoon niet wijzigen"
+
+#~ msgid "Invalid operation on TOleGraphic"
+#~ msgstr "Invalid operation on TOleGraphic"
+
+#~ msgid "Unsupported clipboard format"
+#~ msgstr "Ongeldig klembord formaat"
+
+#~ msgid "Out of system resources"
+#~ msgstr "Systeembronnen uitgeput"
+
+#~ msgid "Canvas does not allow drawing"
+#~ msgstr "Canvas staat tekenen niet toe"
+
+#~ msgid "Invalid image size"
+#~ msgstr "Ongeldige image grootte"
+
+#, fuzzy
+#~ msgid "Too many images"
+#~ msgstr "Te veel argumenten"
+
+#~ msgid "Invalid ImageList"
+#~ msgstr "Ongeldige ImageList"
+
+#~ msgid "Unable to Replace Image"
+#~ msgstr "Kan image niet vervangen"
+
+#~ msgid "Invalid ImageList Index"
+#~ msgstr "Ongeldige ImageList index"
+
+#~ msgid "Error creating window class"
+#~ msgstr "Fout bij aanmaken window class"
+
+#, fuzzy
+#~ msgid "Error creating window"
+#~ msgstr "Fout bij aanmaken window class"
+
+#~ msgid "Control '%s' has no parent window"
+#~ msgstr "Control '%s' heeft geen parent-window"
+
+#~ msgid "Parent given is not a parent of '%s'"
+#~ msgstr "Parent given is not a parent of '%s'"
+
+#~ msgid "Scrollbar property out of range"
+#~ msgstr "Scrollbar property buiten bereik"
+
+#~ msgid "%s property out of range"
+#~ msgstr "%s property is buiten het geldige bereik"
+
+#~ msgid "Menu index out of range"
+#~ msgstr "Menu index buiten bereik"
+
+#~ msgid "Menu inserted twice"
+#~ msgstr "Menu tweemaal ingevoegd"
+
+#~ msgid "Sub-menu is not in menu"
+#~ msgstr "Sub-menu is niet in menu"
+
+#~ msgid "Printer index out of range"
+#~ msgstr "Printer index valt buiten bereik"
+
+#~ msgid "Printer selected is not valid"
+#~ msgstr "Geslecteerde printer niet geldig"
+
+#~ msgid "%s on %s"
+#~ msgstr "%s op %s"
+
+#~ msgid "GroupIndex cannot be less than a previous menu item's GroupIndex"
+#~ msgstr ""
+#~ "Groepindex kan niet minder zijn dan de groepindex van een vorig menu-item"
+
+#, fuzzy
+#~ msgid "Cannot have more than one MDI form per application"
+#~ msgstr "Kan geen form aanmaken. Er zijn geen actieve MDI forms"
+
+#~ msgid "Cannot create form. No MDI forms are currently active"
+#~ msgstr "Kan geen form aanmaken. Er zijn geen actieve MDI forms"
+
+#~ msgid "A control cannot have itself as its parent"
+#~ msgstr "Een control kan zichzelf niet als ouder hebben"
+
+#~ msgid "&Yes"
+#~ msgstr "&Ja"
+
+#~ msgid "&No"
+#~ msgstr "&Nee"
+
+#~ msgid "&Ignore"
+#~ msgstr "&Negeer"
+
+#~ msgid "&Retry"
+#~ msgstr "&Opnieuw"
+
+#~ msgid "&All"
+#~ msgstr "&Alle"
+
+#~ msgid "Cannot drag a form"
+#~ msgstr "Slepen van form niet mogelijk"
+
+#, fuzzy
+#~ msgid "Duplicate CardId found"
+#~ msgstr "Dubbel gebruik action naam"
+
+#, fuzzy
+#~ msgid "An error returned from DDE  ($0%x)"
+#~ msgstr "Foutmelding afkomstig van DDE ($0%x)"
+
+#~ msgid "BG"
+#~ msgstr "BG"
+
+#~ msgid "Metafiles"
+#~ msgstr "Metabestanden"
+
+#~ msgid "Enhanced Metafiles"
+#~ msgstr "Uitgebreide metabestanden"
+
+#~ msgid "Icons"
+#~ msgstr "Iconen"
+
+#~ msgid "Bitmaps"
+#~ msgstr "Bitmappen"
+
+#, fuzzy
+#~ msgid "JPEG Images"
+#~ msgstr "Pagina's"
+
+#, fuzzy
+#~ msgid "PNG Images"
+#~ msgstr "Pagina's"
+
+#~ msgid "Invalid numeric value"
+#~ msgstr "Ongeldige numerieke invoer"
+
+#~ msgid "Outline index not found"
+#~ msgstr "Outline index niet gevonden"
+
+#~ msgid "Parent must be expanded"
+#~ msgstr "Parent must be expanded"
+
+#~ msgid "Invalid outline index"
+#~ msgstr "Ongeldige outline index"
+
+#~ msgid "Invalid selection"
+#~ msgstr "Ongeldige selectie"
+
+#~ msgid "File load error"
+#~ msgstr "Fout bij lezen bestand"
+
+#~ msgid "Warning"
+#~ msgstr "Waarschuwing"
+
+#~ msgid "Error"
+#~ msgstr "Fout"
+
+#~ msgid "Information"
+#~ msgstr "Informatie"
+
+#~ msgid "No help available"
+#~ msgstr "Geen help beschikbaar"
+
+#~ msgid "&Abort"
+#~ msgstr "&Afbreken"
+
+#~ msgid "N&o to All"
+#~ msgstr "Altijd N&ee"
+
+#~ msgid "Yes to &All"
+#~ msgstr "Altijd &Ja"
+
+#~ msgid "BkSp"
+#~ msgstr "BkSp"
+
+#~ msgid "Esc"
+#~ msgstr "Esc"
+
+#~ msgid "Enter"
+#~ msgstr "Enter"
+
+#~ msgid "Space"
+#~ msgstr "Spatie"
+
+#~ msgid "PgUp"
+#~ msgstr "PgUp"
+
+#~ msgid "PgDn"
+#~ msgstr "PgDn"
+
+#~ msgid "End"
+#~ msgstr "Eind"
+
+#~ msgid "Left"
+#~ msgstr "Links"
+
+#~ msgid "Up"
+#~ msgstr "Op"
+
+#~ msgid "Right"
+#~ msgstr "Rechts"
+
+#~ msgid "Down"
+#~ msgstr "Neer"
+
+#~ msgid "Ins"
+#~ msgstr "Ins"
+
+#~ msgid "Del"
+#~ msgstr "Del"
+
+#~ msgid "Shift+"
+#~ msgstr "Shift+"
+
+#~ msgid "Ctrl+"
+#~ msgstr "Ctrl+"
+
+#~ msgid "Alt+"
+#~ msgstr "Alt+"
+
+#~ msgid "(Unknown)"
+#~ msgstr "(onbekend)"
+
+#~ msgid "Value must be between %d and %d"
+#~ msgstr "Waarde moet tussen %d en %d zijn"
+
+#~ msgid "All files (*.*)|*.*"
+#~ msgstr "Alle bestanden (*)|*|"
+
+#~ msgid "Unable to insert a line"
+#~ msgstr "Kon geen regel invoegen"
+
+#~ msgid "The specified directory does not exist. Create it?"
+#~ msgstr "De opgegeven map bestaat niet. Aanmaken?"
+
+#~ msgid "Select Directory"
+#~ msgstr "Selecteer map"
+
+#~ msgid "Directory &Name:"
+#~ msgstr "Map&naam"
+
+#~ msgid "D&rives:"
+#~ msgstr "D&rives:"
+
+#~ msgid "&Directories:"
+#~ msgstr "&Folders:"
+
+#~ msgid "&Files: (*.*)"
+#~ msgstr "&Bestanden: (*.*)"
+
+#~ msgid "Ne&twork..."
+#~ msgstr "Ne&twerk..."
+
+#, fuzzy
+#~ msgid "Color"
+#~ msgstr "Cords"
+
+#~ msgid "Invalid clipboard format"
+#~ msgstr "Ongeldig klembordformaat"
+
+#~ msgid "Clipboard does not support Icons"
+#~ msgstr "Klembord ondersteunt geen Iconen"
+
+#~ msgid "Cannot open clipboard"
+#~ msgstr "Kan klembord niet openen"
+
+#~ msgid "Text exceeds memo capacity"
+#~ msgstr "Tekst overschreidt geheugencapaciteit"
+
+#~ msgid "Operation not supported on selected printer"
+#~ msgstr "Operatie niet ondersteund door de geselecteerde printer"
+
+#~ msgid "There is no default printer currently selected"
+#~ msgstr "Er is geen standaard printer ingesteld"
+
+#, fuzzy
+#~ msgid "Unknown RichEdit conversion file extension (.%s)"
+#~ msgstr "Onbekende conversie familie %s"
+
+#~ msgid "Menu '%s' is already being used by another form"
+#~ msgstr "Menu '%s' wordt reeds gebruikt door een andere form"
+
+#~ msgid " (%dx%d)"
+#~ msgstr " (%dx%d)"
+
+#~ msgid "Cannot open AVI"
+#~ msgstr "Kan AVI niet openen"
+
+#, fuzzy
+#~ msgid "Sequencer"
+#~ msgstr "VierkanteInch"
+
+#~ msgid "Unknown error code"
+#~ msgstr "Onbekende foutcode"
+
+#, fuzzy
+#~ msgid "execute"
+#~ msgstr "%s verwacht"
+
+#, fuzzy
+#~ msgid "start"
+#~ msgstr "aftrekken"
+
+#, fuzzy
+#~ msgid "pause"
+#~ msgstr "Onwaar"
+
+#~ msgid "Docked control must have a name"
+#~ msgstr "Docked control moet een naam hebben"
+
+#~ msgid "Error removing control from dock tree"
+#~ msgstr "Fout bij het verwijderen van de control uit de dock tree"
+
+#~ msgid " - Dock zone not found"
+#~ msgstr " - Dokzone niet gevonden"
+
+#~ msgid " - Dock zone has no control"
+#~ msgstr " - Dokzone heeft geen control"
+
+#~ msgid "Text not found: \"%s\""
+#~ msgstr "Tekst niet gevonden: \"%s\""
+
+#~ msgid "No default browser is specified"
+#~ msgstr "Er is geen standaard browser geselecteerd"
+
+#, fuzzy
+#~ msgid "Custom..."
+#~ msgstr "Custom Size"
+
+#~ msgid "Multiselect mode must be on for this feature"
+#~ msgstr "Kies Multiselect modus voor deze eigenschap"
+
+#~ msgid "A key with the name of \"%s\" already exists"
+#~ msgstr "Een sleutel met de naam \"%s\" bestaat al"
+
+#~ msgid "Key \"%s\" not found"
+#~ msgstr "Sleutel \"%s\" niet gevonden"
+
+#~ msgid "Error sending mail"
+#~ msgstr "Fout bij het versturen van mail"
+
+#~ msgid "Error downloading URL: %s"
+#~ msgstr "Fout bij het downloaden van URL: %s"
+
+#~ msgid "Unable to load %s"
+#~ msgstr "Kan %s niet laden"
+
+#, fuzzy
+#~ msgid "Expand"
+#~ msgstr "Eind"
+
+#~ msgid "Error setting path: \"%s\""
+#~ msgstr "Kan pad niet wijzigen naar \"%s\""
+
+#, fuzzy
+#~ msgid "(No Name)"
+#~ msgstr "(Leeg)"
+
+#, fuzzy
+#~ msgid "&Customize"
+#~ msgstr "Custom Size"
+
+#~ msgid "Separator"
+#~ msgstr "Scheidingsteken"
+
+#, fuzzy
+#~ msgid "Circular references not allowed"
+#~ msgstr "Circulaire datalinks zijn niet toegestaan"
+
+#, fuzzy
+#~ msgid "%s does not allow hiding"
+#~ msgstr "Canvas staat tekenen niet toe"
+
+#~ msgid "Error setting %s.Count"
+#~ msgstr "Fout bij instellen %s.Count"
+
+#~ msgid "Listbox (%s) style must be virtual in order to set Count"
+#~ msgstr "Listbox (%s) styl moet virtueel zijn om Count te kunnen instellen"
+
+#, fuzzy
+#~ msgid "Unable to save settings"
+#~ msgstr "Kan %s niet verplaatsen naar %s"
+
+#~ msgid "A style named %s has already been registered"
+#~ msgstr "Een style met de naam %s bestaat reeds (is geregistreerd)"
+
+#, fuzzy
+#~ msgid "Invalid Color string"
+#~ msgstr "Ongeldige datum string: %s"
+
+#, fuzzy
+#~ msgid "\"%s\" is an invalid path"
+#~ msgstr "'%s' is een ongeldig masker op (%d)"
+
+#, fuzzy
+#~ msgid "Invalid path"
+#~ msgstr "Ongeldige ouderobject"
+
+#, fuzzy
+#~ msgid "Encoding:"
+#~ msgstr "niets"
+
+#, fuzzy
+#~ msgid "Maroon"
+#~ msgstr "Maa"
+
+#, fuzzy
+#~ msgid "Teal"
+#~ msgstr "Detail"
+
+#~ msgid "Gray"
+#~ msgstr "Grijs"
+
+#, fuzzy
+#~ msgid "Silver"
+#~ msgstr "&Server"
+
+#~ msgid "Red"
+#~ msgstr "Rood"
+
+#, fuzzy
+#~ msgid "Lime"
+#~ msgstr "Tijd"
+
+#, fuzzy
+#~ msgid "Blue"
+#~ msgstr "Waarde"
+
+#~ msgid "White"
+#~ msgstr "Wit"
+
+#~ msgid "Cream"
+#~ msgstr "Crème"
+
+#, fuzzy
+#~ msgid "Application Workspace"
+#~ msgstr "Toepassingsfout"
+
+#, fuzzy
+#~ msgid "Gray Text"
+#~ msgstr "Grijs"
+
+#, fuzzy
+#~ msgid "Hot Light"
+#~ msgstr "Rechts"
+
+#, fuzzy
+#~ msgid "Inactive Caption"
+#~ msgstr "Ongeldige actie aanmaak"
+
+#, fuzzy
+#~ msgid "3D Light"
+#~ msgstr "Rechts"
+
+#, fuzzy
+#~ msgid "No help keyword specified."
+#~ msgstr "Er is geen standaard browser geselecteerd"
+
+#, fuzzy
+#~ msgid "Property or Method \"%s\" is not supported by DOM Vendor \"%s\""
+#~ msgstr "Methode '%s' not ondersteund door OLE object"
+
+#, fuzzy
+#~ msgid "Node cannot be null"
+#~ msgstr "Node niet gevonden"
+
+#, fuzzy
+#~ msgid "Microsoft MSXML is not installed"
+#~ msgstr "DCOM niet geinstalleerd"
+
+#, fuzzy
+#~ msgid "Invalid string offset"
+#~ msgstr "Ongeldige string constante"
+
+#, fuzzy
+#~ msgid "Invalid DOMString size"
+#~ msgstr "Ongeldige image grootte"
+
+#, fuzzy
+#~ msgid "Cannot insert child node"
+#~ msgstr "De waarde kan niet afgedrukt worden"
+
+#, fuzzy
+#~ msgid "Node is owned by a different document"
+#~ msgstr "Databasehandle in bezit van een andere sessie"
+
+#~ msgid "Invalid character in name"
+#~ msgstr "Ongeldig karakter in de naam"
+
+#, fuzzy
+#~ msgid "No data allowed"
+#~ msgstr "Methode niet toegestaan"
+
+#, fuzzy
+#~ msgid "No modification allowed (readonly data)"
+#~ msgstr "Kan een alleen-lezen dataset niet wijzigen"
+
+#~ msgid "Node not found"
+#~ msgstr "Node niet gevonden"
+
+#~ msgid "Not supported"
+#~ msgstr "Niet ondersteund"
+
+#, fuzzy
+#~ msgid "Attribute already associated with another element"
+#~ msgstr "%s is al geassocieerd met %s"
+
+#, fuzzy
+#~ msgid "Invalid state"
+#~ msgstr "Ongeldige ouderobject"
+
+#, fuzzy
+#~ msgid "Invalid syntax"
+#~ msgstr "Ongeldige Event"
+
+#, fuzzy
+#~ msgid "Invalid modification"
+#~ msgstr "Ongeldige selectie"
+
+#, fuzzy
+#~ msgid "Invalid namespace request"
+#~ msgstr "Ongeldige SOAP request"
+
+#, fuzzy
+#~ msgid "Invalid access"
+#~ msgstr "Ongeldige reponse"
+
+#~ msgid "Error creating file \"%s\""
+#~ msgstr "Kan bestand \"%s\" niet aanmaken"
+
+#~ msgid "DOM Error: "
+#~ msgstr "DOM fout:"
+
+#, fuzzy
+#~ msgid "Error loading library \"%s\": \"%s\""
+#~ msgstr "Leesfout %s%s%s: %s"
+
+#, fuzzy
+#~ msgid "Node \"%s\" not found"
+#~ msgstr "Sleutel \"%s\" niet gevonden"
+
+#, fuzzy
+#~ msgid "IDOMNode required"
+#~ msgstr "Onbekende URL"
+
+#, fuzzy
+#~ msgid "Invalid node type"
+#~ msgstr "Ongeldig varianttype"
+
+#, fuzzy
+#~ msgid "Invalid operation on a hosted node"
+#~ msgstr "Invalid operation on TOleGraphic"
+
+#~ msgid "Node is readonly"
+#~ msgstr "Node is alleen-lezen"
+
+#, fuzzy
+#~ msgid "FileName cannot be blank"
+#~ msgstr "Blob stream kan niet gelezen worden"
+
+#~ msgid "Line"
+#~ msgstr "Regel"
+
+#, fuzzy
+#~ msgid "Unknown datatype \"%s\""
+#~ msgstr "Onbekend type"
+
+#, fuzzy
+#~ msgid "Invalid %s value: \"%s\""
+#~ msgstr "Ongeldige alias %s"
+
+#, fuzzy
+#~ msgid "Invalid group declaration in \"%s\""
+#~ msgstr "Ongeldig stream operatie"
+
+#, fuzzy
+#~ msgid "Missing Type name"
+#~ msgstr "Ontbrekende TableName property"
+
+#, fuzzy
+#~ msgid "Invalid complex type derivation: %s"
+#~ msgstr "Ongeldige component registratie"
+
+#, fuzzy
+#~ msgid "Name not allowed on a ref item"
+#~ msgstr "Operatie niet toegestaan op een gesorteerde lijst"
+
+#, fuzzy
+#~ msgid "%s cannot be set on a ref item"
+#~ msgstr "Veld '%s' kan niet worden gebruikt in een filter expressie"
+
+#, fuzzy
+#~ msgid "Invalid built-in type name \"%s\""
+#~ msgstr "Ongeldige bestandsnaam - %s"
+
+#, fuzzy
+#~ msgid "Built-in Type"
+#~ msgstr "Veldtype"
+
+#, fuzzy
+#~ msgid "Projects"
+#~ msgstr "Parsecs"
+
+#, fuzzy
+#~ msgid "Forms"
+#~ msgstr "Vadem"
+
+#, fuzzy
+#~ msgid "About"
+#~ msgstr "Afbreken"
+
+#, fuzzy
+#~ msgid "Version %s"
+#~ msgstr "%s op %s"
+
+#, fuzzy
+#~ msgid "Binding Editor"
+#~ msgstr "Opbouwen van dataopslag .."
+
+#, fuzzy
+#~ msgid "&New"
+#~ msgstr "Nieuwe map"
+
+#, fuzzy
+#~ msgid "&Port"
+#~ msgstr "&Afbreken"
+
+#, fuzzy
+#~ msgid "IP &Version"
+#~ msgstr "%s op %s"
+
+#, fuzzy
+#~ msgid "Move Down"
+#~ msgstr "Neer"
+
+#~ msgid "Add"
+#~ msgstr "optellen"
+
+#, fuzzy
+#~ msgid "&Available"
+#~ msgstr "Niet beschikbaar"
+
+#, fuzzy
+#~ msgid "Edit &List"
+#~ msgstr "Lijst"
+
+#, fuzzy
+#~ msgid "Indy Servers"
+#~ msgstr "&Server"
+
+#~ msgid "Cannot allocate socket."
+#~ msgstr "Kan geen nieuwe socket aanmaken."
+
+#, fuzzy
+#~ msgid "Unknown socks error."
+#~ msgstr "Onbekende fout"
+
+#, fuzzy
+#~ msgid "Invalid socks authentication method."
+#~ msgstr "Ongeldige actie enumeratie"
+
+#, fuzzy
+#~ msgid "Connection not allowed by ruleset."
+#~ msgstr "Operatie niet toegestaan op een gesorteerde lijst"
+
+#, fuzzy
+#~ msgid "Connection refused."
+#~ msgstr "Verbinding maken met %s."
+
+#, fuzzy
+#~ msgid "Command not supported."
+#~ msgstr "Methode niet ondersteund"
+
+#, fuzzy
+#~ msgid "Address type not supported."
+#~ msgstr "Object type niet ondersteund"
+
+#, fuzzy
+#~ msgid "Invalid IP Address"
+#~ msgstr "Ongeldige reponse"
+
+#, fuzzy
+#~ msgid "%d: Circular links are not allowed"
+#~ msgstr "Circulaire datalinks zijn niet toegestaan"
+
+#, fuzzy
+#~ msgid "Not enough data in buffer."
+#~ msgstr "Onvoldoende timers beschikbaar"
+
+#, fuzzy
+#~ msgid "Too much data in buffer."
+#~ msgstr "Onvoldoende timers beschikbaar"
+
+#~ msgid "File \"%s\" not found"
+#~ msgstr "Bestand  \"%s\" niet gevonden"
+
+#, fuzzy
+#~ msgid "Not Connected"
+#~ msgstr "Niet verbonden met de server."
+
+#~ msgid "Object type not supported."
+#~ msgstr "Object type niet ondersteund"
+
+#, fuzzy
+#~ msgid "Connect timed out."
+#~ msgstr "Verbinding maken met %s."
+
+#, fuzzy
+#~ msgid "Not enough bytes received"
+#~ msgstr "Onvoldoende timers beschikbaar"
+
+#, fuzzy
+#~ msgid "Already connected."
+#~ msgstr "Socket is reeds open."
+
+#~ msgid "Cannot perform task while server is active."
+#~ msgstr "Kan actie niet uitvoeren zolang server actief is"
+
+#, fuzzy
+#~ msgid "Error resolving host %s: %s (%d)"
+#~ msgstr "Leesfout %s%s%s: %s"
+
+#, fuzzy
+#~ msgid "Error resolving Address %s: %s (%d)"
+#~ msgstr "Leesfout %s%s%s: %s"
+
+#, fuzzy
+#~ msgid "Fibers are not supported on this system."
+#~ msgstr "Operation not supported"
+
+#, fuzzy
+#~ msgid "Connected."
+#~ msgstr "Voltooid"
+
+#, fuzzy
+#~ msgid "Stat "
+#~ msgstr "Zat"
+
+#, fuzzy
+#~ msgid "Buffer terminator must be specified."
+#~ msgstr "Ongeldig formaat of waarde opgegeven"
+
+#, fuzzy
+#~ msgid "Cannot change a connected IOHandler."
+#~ msgstr "Kan de grootte van een icoon niet wijzigen"
+
+#, fuzzy
+#~ msgid "No IOHandler of type %s is installed."
+#~ msgstr "Icon image is not valid"
+
+#, fuzzy
+#~ msgid "Reply Code is not valid: %s"
+#~ msgstr "Metafile is not valid"
+
+#, fuzzy
+#~ msgid "Cannot set ThreadName when the Thread is already running."
+#~ msgstr "Socket is reeds open."
+
+#, fuzzy
+#~ msgid "Cannot change the scheduler while the server is Active."
+#~ msgstr "Kan actie niet uitvoeren zolang server actief is"
+
+#, fuzzy
+#~ msgid "IOHandler value is not valid"
+#~ msgstr "Icon image is not valid"
+
+#, fuzzy
+#~ msgid "No bindings specified."
+#~ msgstr "Geen adres opgegeven"
+
+#, fuzzy
+#~ msgid "Unable to initialize compressor"
+#~ msgstr "Kon geen regel invoegen"
+
+#, fuzzy
+#~ msgid "Unable to initialize decompressor"
+#~ msgstr "Kon map niet aanmaken"
+
+#, fuzzy
+#~ msgid "Compression error"
+#~ msgstr "Conversie fout"
+
+#, fuzzy
+#~ msgid "Decompression error"
+#~ msgstr "Conversie fout"
+
+#, fuzzy
+#~ msgid "Extension is empty"
+#~ msgstr "Variant is leeg"
+
+#~ msgid "Mimetype is empty"
+#~ msgstr "Mimetype is leeg"
+
+#, fuzzy
+#~ msgid "Cannot load message from file %s"
+#~ msgstr "Kan bestand %s niet aanmaken"
+
+#, fuzzy
+#~ msgid "Encoding attachment"
+#~ msgstr "Fout bij wegschrijven van attachment"
+
+#, fuzzy
+#~ msgid "Unknown Message Part Type."
+#~ msgstr "Onbekend type"
+
+#, fuzzy
+#~ msgid "Created"
+#~ msgstr "Crème"
+
+#, fuzzy
+#~ msgid "See Other"
+#~ msgstr "Ander"
+
+#, fuzzy
+#~ msgid "Not Modified"
+#~ msgstr "Gewijzigd"
+
+#~ msgid "Not Found"
+#~ msgstr "Niet gevonden"
+
+#~ msgid "Method not allowed"
+#~ msgstr "Methode niet toegestaan"
+
+#, fuzzy
+#~ msgid "Not Acceptable"
+#~ msgstr "Niet beschikbaar"
+
+#, fuzzy
+#~ msgid "Conflict"
+#~ msgstr "Bevestig"
+
+#, fuzzy
+#~ msgid "Gone"
+#~ msgstr "geen"
+
+#, fuzzy
+#~ msgid "Length Required"
+#~ msgstr "Onbekende URL"
+
+#, fuzzy
+#~ msgid "Precondition Failed"
+#~ msgstr "Toetsing faalde"
+
+#, fuzzy
+#~ msgid "Unsupported Media Type"
+#~ msgstr "Veld van een niet-ondersteund type"
+
+#, fuzzy
+#~ msgid "Internal Server Error"
+#~ msgstr "Algemene fout bij array"
+
+#~ msgid "Not Implemented"
+#~ msgstr "Niet geïmplementeerd"
+
+#, fuzzy
+#~ msgid "Service Unavailable"
+#~ msgstr "Geen server beschikbaar"
+
+#~ msgid "HTTP version not supported"
+#~ msgstr "HTTP versie niet ondersteund"
+
+#, fuzzy
+#~ msgid "Unknown Response Code"
+#~ msgstr "Onbekende foutcode"
+
+#, fuzzy
+#~ msgid "Header has already been written."
+#~ msgstr "Een style met de naam %s bestaat reeds (is geregistreerd)"
+
+#, fuzzy
+#~ msgid "Error in parsing command."
+#~ msgstr "Fout bij wegschrijven van attachment"
+
+#, fuzzy
+#~ msgid "Unsupported authorization scheme."
+#~ msgstr "Ongeldig varianttype: %s"
+
+#, fuzzy
+#~ msgid "Cannot change session state when the server is active."
+#~ msgstr "Kan actie niet uitvoeren zolang server actief is"
+
+#, fuzzy
+#~ msgid "Not enough memory is available to complete this request"
+#~ msgstr "Onvoldoende timers beschikbaar"
+
+#, fuzzy
+#~ msgid "The handle specified is invalid"
+#~ msgstr "Geslecteerde printer niet geldig"
+
+#, fuzzy
+#~ msgid "The function requested is not supported"
+#~ msgstr "FilterOptions worden niet ondersteund"
+
+#, fuzzy
+#~ msgid "The specified data could not be encrypted."
+#~ msgstr "De opgegeven map bestaat niet. Aanmaken?"
+
+#, fuzzy
+#~ msgid "The specified data could not be decrypted."
+#~ msgstr "De opgegeven map bestaat niet. Aanmaken?"
+
+#, fuzzy
+#~ msgid "No PSecPkgInfo specified"
+#~ msgstr "Geen adres opgegeven"
+
+#, fuzzy
+#~ msgid "CompleteAuthToken is not supported"
+#~ msgstr "Methode niet ondersteund"
+
+#, fuzzy
+#~ msgid "Connection established"
+#~ msgstr "Verbinding maken met %s."
+
+#, fuzzy
+#~ msgid "Transfer complete"
+#~ msgstr "Transfer afgebroken"
+
+#~ msgid "Transfer aborted"
+#~ msgstr "Transfer afgebroken"
+
+#, fuzzy
+#~ msgid "Error in parameters to %s"
+#~ msgstr "Incorrect aantal parameters voor methode %s"
+
+#, fuzzy
+#~ msgid "Parameter %s Not Implemented"
+#~ msgstr "Niet geïmplementeerd"
+
+#, fuzzy
+#~ msgid "Invalid port number"
+#~ msgstr "Ongeldige eigenaar"
+
+#, fuzzy
+#~ msgid "Protocol not supported, use"
+#~ msgstr "Protocol niet ondersteund."
+
+#, fuzzy
+#~ msgid "SSCN is not supported on both servers."
+#~ msgstr "Operation not supported"
+
+#, fuzzy
+#~ msgid "Can not set CCC without encyption."
+#~ msgstr "Kan transactie niet instellen"
+
+#, fuzzy
+#~ msgid "Transfer modes must be the same."
+#~ msgstr "Ongeldig formaat of waarde opgegeven"
+
+#, fuzzy
+#~ msgid "%s is not a Gopher+ server"
+#~ msgstr "'%s' is geen geldige property waarde"
+
+#, fuzzy
+#~ msgid "TimedOut"
+#~ msgstr "Tijd"
+
+#, fuzzy
+#~ msgid "-Err 501 MailB is not implemented"
+#~ msgstr "%s.Seek niet geïmplementeerd"
+
+#, fuzzy
+#~ msgid "Invalid Query Count %d"
+#~ msgstr "Ongeldige Queueing"
+
+#, fuzzy
+#~ msgid "Invalid Packet Size %d"
+#~ msgstr "Ongeldig package bestand '%s'"
+
+#, fuzzy
+#~ msgid "Invalid Header Id %d"
+#~ msgstr "Ongeldige bestandsnaam - %s"
+
+#, fuzzy
+#~ msgid "Invalid IP V6 Address. %s"
+#~ msgstr "Ongeldige waarde voor veld '%s'"
+
+#, fuzzy
+#~ msgid "Data file saved to %s"
+#~ msgstr "Ongeldige bestandsnaam - %s"
+
+#, fuzzy
+#~ msgid "Control file save to %s"
+#~ msgstr "Ongeldige bestandsnaam - %s"
+
+#~ msgid "Directory %s does not exist"
+#~ msgstr "De map %s bestaat niet"
+
+#, fuzzy
+#~ msgid "Unknown queue %s"
+#~ msgstr "Onbekende functie: %s"
+
+#, fuzzy
+#~ msgid "connected with %s"
+#~ msgstr "Verbinding maken met %s."
+
+#, fuzzy
+#~ msgid "Timeout"
+#~ msgstr "Tijd"
+
+#, fuzzy
+#~ msgid "Unexpected operation from %s:%d"
+#~ msgstr "Onverwacht einde van string [%s]"
+
+#, fuzzy
+#~ msgid "Unsupported transfer mode: \"%s\""
+#~ msgstr "Ongeldig varianttype: %s"
+
+#~ msgid "Unable to open %s"
+#~ msgstr "Kan %s niet openen"
+
+#~ msgid "Access to %s denied"
+#~ msgstr "Toegang tot %s geweigerd"
+
+#~ msgid "Error saving attachment."
+#~ msgstr "Fout bij wegschrijven van attachment"
+
+#, fuzzy
+#~ msgid " not specified"
+#~ msgstr "Geen adres opgegeven"
+
+#, fuzzy
+#~ msgid "Selected"
+#~ msgstr "%s verwacht"
+
+#, fuzzy
+#~ msgid "Invalid Login."
+#~ msgstr "Ongeldige pointer"
+
+#, fuzzy
+#~ msgid "Invalid network mask."
+#~ msgstr "Ongeldige eigenaar"
+
+#, fuzzy
+#~ msgid "Hidden User:  Information was not returned at a user's request"
+#~ msgstr "De actie is afgebroken door de gebruiker"
+
+#, fuzzy
+#~ msgid "Transform failed"
+#~ msgstr "Transfer afgebroken"
+
+#, fuzzy
+#~ msgid "CRC Failed"
+#~ msgstr "Update mislukt"
+
+#, fuzzy
+#~ msgid "Connecting"
+#~ msgstr "Verbinding maken met %s."
+
+#, fuzzy
+#~ msgid "Cannt connect to the Master server"
+#~ msgstr "Kan geen verbinding krijgen met database %s"
+
+#, fuzzy
+#~ msgid "Message handling failed"
+#~ msgstr "Toetsing faalde"
+
+#, fuzzy
+#~ msgid "Destination file already exists."
+#~ msgstr "Een class met de naam %s bestaat al"
+
+#, fuzzy
+#~ msgid "Error connecting with SSL."
+#~ msgstr "Fout bij aanmaken widget"
+
+#, fuzzy
+#~ msgid "SetCipher failed."
+#~ msgstr "Toetsing faalde"
+
+#, fuzzy
+#~ msgid "Error creating SSL context."
+#~ msgstr "Fout bij aanmaken widget"
+
+#, fuzzy
+#~ msgid "Could not load certificate."
+#~ msgstr "Kon bestand %s niet openen"
+
+#, fuzzy
+#~ msgid "Error geting SSL method."
+#~ msgstr "Fout bij aanmaken widget"
+
+#, fuzzy
+#~ msgid "Error binding data to SSL socket."
+#~ msgstr "Fout bij lezen van socket"
+
+#, fuzzy
+#~ msgid "Command not recognized"
+#~ msgstr "Klasse niet geregistreerd"
+
+#, fuzzy
+#~ msgid "%s Sender Not Permitted"
+#~ msgstr "Niet toegestaan"
+
+#, fuzzy
+#~ msgid "We do not relay %s"
+#~ msgstr "Kon %s niet parsen"
+
+#, fuzzy
+#~ msgid "Authentication Failed"
+#~ msgstr "Toetsing faalde"
+
+#, fuzzy
+#~ msgid "Syntax error in parameters or arguments"
+#~ msgstr "Incorrect aantal parameters voor methode %s"
+
+#, fuzzy
+#~ msgid "Not logged in"
+#~ msgstr "Bewerken niet toegestaan"
+
+#, fuzzy
+#~ msgid "Too Many recipients."
+#~ msgstr "Teveel processen."
+
+#, fuzzy
+#~ msgid "%s Account Disabled"
+#~ msgstr "Kon bestand %s niet openen"
+
+#, fuzzy
+#~ msgid "Local Processing Error"
+#~ msgstr "Conversie fout"
+
+#, fuzzy
+#~ msgid " Transaction failed"
+#~ msgstr "Transactie is actief"
+
+#, fuzzy
+#~ msgid "Command not permitted when TLS active"
+#~ msgstr "Kan actie niet uitvoeren zolang server actief is"
+
+#, fuzzy
+#~ msgid "Invalid Syntax"
+#~ msgstr "Ongeldige Event"
+
+#, fuzzy
+#~ msgid "Closing Connection Channel."
+#~ msgstr "Ongeldige data conversie"
+
+#, fuzzy
+#~ msgid "Password required"
+#~ msgstr "Onbekende URL"
+
+#, fuzzy
+#~ msgid "Login failed"
+#~ msgstr "Toetsing faalde"
+
+#, fuzzy
+#~ msgid "Invalid Message Number"
+#~ msgstr "Ongeldig argument"
+
+#, fuzzy
+#~ msgid "Reset"
+#~ msgstr "Voet"
+
+#, fuzzy
+#~ msgid "Sorry, Unknown Command"
+#~ msgstr "Onbekende foutcode"
+
+#, fuzzy
+#~ msgid "Unknown Internal Error"
+#~ msgstr "Onbekende fout"
+
+#, fuzzy
+#~ msgid "Illegal character in input string."
+#~ msgstr "Ongeldig karakter in numerieke constante \"%s\""
+
+#, fuzzy
+#~ msgid "Message decoder not found"
+#~ msgstr "Record niet gevonden"
+
+#, fuzzy
+#~ msgid "Message encoder not found"
+#~ msgstr "Record niet gevonden"
+
+#, fuzzy
+#~ msgid "Closing data connection."
+#~ msgstr "Ongeldige data conversie"
+
+#, fuzzy
+#~ msgid "Can't open data connection."
+#~ msgstr "Kan transactie niet instellen"
+
+#, fuzzy
+#~ msgid "Network protocol not supported, use %s"
+#~ msgstr "Protocol niet ondersteund."
+
+#, fuzzy
+#~ msgid "Invalid %s options"
+#~ msgstr "Ongeldige reponse"
+
+#, fuzzy
+#~ msgid "Option not recognized."
+#~ msgstr "Klasse niet geregistreerd"
+
+#, fuzzy
+#~ msgid "Noted."
+#~ msgstr "Voltooid"
+
+#, fuzzy
+#~ msgid "'%s': command not understood."
+#~ msgstr "Methode niet ondersteund"
+
+#, fuzzy
+#~ msgid "\"%s\" Command not implemented."
+#~ msgstr "%s.Seek niet geïmplementeerd"
+
+#, fuzzy
+#~ msgid "Unknown command %s."
+#~ msgstr "Onbekende foutcode"
+
+#, fuzzy
+#~ msgid "Not logged in."
+#~ msgstr "Bewerken niet toegestaan"
+
+#, fuzzy
+#~ msgid "About to open data connection for %s"
+#~ msgstr "Kan transactie niet instellen"
+
+#, fuzzy
+#~ msgid "PROT Command OK. Using Clear data connection"
+#~ msgstr "Ongeldige data conversie"
+
+#, fuzzy
+#~ msgid "PROT Command OK. Using Private data connection"
+#~ msgstr "Ongeldige data conversie"
+
+#, fuzzy
+#~ msgid "Clear command channel is not permitted."
+#~ msgstr "Wijzigingen zijn niet toegestaan"
+
+#, fuzzy
+#~ msgid "AUTH Data required."
+#~ msgstr "Onbekende URL"
+
+#, fuzzy
+#~ msgid "Not permitted after CCC"
+#~ msgstr "Niet toegestaan"
+
+#, fuzzy
+#~ msgid "Command not implemented for that parameter."
+#~ msgstr "%s.Seek niet geïmplementeerd"
+
+#, fuzzy
+#~ msgid "Unknown OTP method"
+#~ msgstr "Onbekend type"
+
+#, fuzzy
+#~ msgid "\"%s\" is working directory."
+#~ msgstr "Eén map omhoog"
+
+#, fuzzy
+#~ msgid "Mode set to %s."
+#~ msgstr "Verbinding maken met %s."
+
+#, fuzzy
+#~ msgid "Extensions supported:"
+#~ msgstr "Uitvoering niet ondersteund: %s"
+
+#, fuzzy
+#~ msgid "Permission denied."
+#~ msgstr "Toegang geweigerd."
+
+#, fuzzy
+#~ msgid "on"
+#~ msgstr "Maa"
+
+#, fuzzy
+#~ msgid "off"
+#~ msgstr "van"
+
+#~ msgid "Not connected to server."
+#~ msgstr "Niet verbonden met de server."
+
+#, fuzzy
+#~ msgid "OtherNick"
+#~ msgstr "Ander"
+
+#, fuzzy
+#~ msgid "Real name"
+#~ msgstr "Veldnaam"
+
+#, fuzzy
+#~ msgid "Local time is %s"
+#~ msgstr "Ongeldige tijd string: %s"
+
+#, fuzzy
+#~ msgid "Failed to Start: %s"
+#~ msgstr "Aanmaken key %s mislukt"
+
+#, fuzzy
+#~ msgid "Failed to Stop: %s"
+#~ msgstr "Kan %s niet openen"
+
+#, fuzzy
+#~ msgid "Connected"
+#~ msgstr "Voltooid"
+
+#, fuzzy
+#~ msgid "Reconnect at %s: %s"
+#~ msgstr "Verbinding maken met %s."
+
+#, fuzzy
+#~ msgid "Interface was already started"
+#~ msgstr "Interface niet geregistreerd"
+
+#, fuzzy
+#~ msgid "Interface was already stopped"
+#~ msgstr "Interface niet geregistreerd"
+
+#, fuzzy
+#~ msgid "Mode is not initialised"
+#~ msgstr "Metafile is not valid"
+
+#, fuzzy
+#~ msgid "Assigned Port value %d is invalid"
+#~ msgstr "Licentie informatie voor %s is ongeldig"
+
+#, fuzzy
+#~ msgid "Unknown mode"
+#~ msgstr "Onbekend type"
+
+#, fuzzy
+#~ msgid "Unable to stop client thread"
+#~ msgstr "Kon geen regel invoegen"
+
+#, fuzzy
+#~ msgid "Host field is empty"
+#~ msgstr "Mimetype is leeg"
+
+#, fuzzy
+#~ msgid "Invalid Email Address %s"
+#~ msgstr "Ongeldige alias %s"
+
+#, fuzzy
+#~ msgid "Can not connect to MX servers for address %s"
+#~ msgstr "Kan geen verbinding krijgen met database %s"
+
+#, fuzzy
+#~ msgid "Invalid Size"
+#~ msgstr "Ongeldige index"
+
+#, fuzzy
+#~ msgid "Invalid CRC"
+#~ msgstr "Ongeldige ouderobject"
+
+#, fuzzy
+#~ msgid "Invalid Login"
+#~ msgstr "Ongeldige pointer"
+
+#, fuzzy
+#~ msgid "Access Denied"
+#~ msgstr "Toegang geweigerd."
+
+#, fuzzy
+#~ msgid "Unexpected Close."
+#~ msgstr "Onverwachte script fout"
+
+#, fuzzy
+#~ msgid "SSL IOHandler is required for this setting"
+#~ msgstr "Er is een connection component nodig voor async ExecuteOptions"
+
+#, fuzzy
+#~ msgid "This value can not be set while the server is active."
+#~ msgstr "Kan actie niet uitvoeren zolang server actief is"
+
+#, fuzzy
+#~ msgid "SSL is not available on this server."
+#~ msgstr "'%s' is geen geldige tijd"
+
+#, fuzzy
+#~ msgid "Invalid Enhanced Code: "
+#~ msgstr "Ongeldig varianttype"
+
+#, fuzzy
+#~ msgid "Invalid Reply String."
+#~ msgstr "Ongeldige selectie"
+
+#, fuzzy
+#~ msgid "Invalid Reply Class."
+#~ msgstr "Ongeldig wachtwoord"
+
+#, fuzzy
+#~ msgid "Unsupported operation."
+#~ msgstr "Niet ondersteunde mogelijkheid"
+
+#, fuzzy
+#~ msgid "Host is empty"
+#~ msgstr "Bitmap is leeg"
+
+#, fuzzy
+#~ msgid "The count must be greater than 1."
+#~ msgstr "Aantal vaste rijen moet minder zijn dan het aantal rijen"
+
+#, fuzzy
+#~ msgid "Error on loading Winsock2 library (%s)"
+#~ msgstr "Fout bij het downloaden van URL: %s"
+
+#~ msgid "Connecting to %s."
+#~ msgstr "Verbinding maken met %s."
+
+#, fuzzy
+#~ msgid "Disconnecting."
+#~ msgstr "Verbinding maken met %s."
+
+#, fuzzy
+#~ msgid ""
+#~ "Socket Error # %d\n"
+#~ "%s"
+#~ msgstr ""
+#~ "Systeem fout. Code: %d.\n"
+#~ "%s"
+
+#, fuzzy
+#~ msgid "Bad file number."
+#~ msgstr "Ongeldige bestandsnaam"
+
+#~ msgid "Access denied."
+#~ msgstr "Toegang geweigerd."
+
+#, fuzzy
+#~ msgid "Buffer fault."
+#~ msgstr "Standaard grootte"
+
+#~ msgid "Invalid argument."
+#~ msgstr "Ongeldig argument."
+
+#~ msgid "Too many open files."
+#~ msgstr "Teveel open bestanden."
+
+#, fuzzy
+#~ msgid "Operation would block."
+#~ msgstr "Operatie afgebroken"
+
+#, fuzzy
+#~ msgid "Operation now in progress."
+#~ msgstr "Bezig met afdrukken"
+
+#, fuzzy
+#~ msgid "Operation already in progress."
+#~ msgstr "Bezig met afdrukken"
+
+#~ msgid "Message too long."
+#~ msgstr "Bericht is te lang."
+
+#~ msgid "Protocol not supported."
+#~ msgstr "Protocol niet ondersteund."
+
+#~ msgid "Socket type not supported."
+#~ msgstr "Socket type niet ondersteund."
+
+#, fuzzy
+#~ msgid "Operation not supported on socket."
+#~ msgstr "Operation not supported"
+
+#, fuzzy
+#~ msgid "Protocol family not supported."
+#~ msgstr "Protocol niet ondersteund."
+
+#, fuzzy
+#~ msgid "Cannot assign requested address."
+#~ msgstr "Kan geen %s toekennen aan %s"
+
+#, fuzzy
+#~ msgid "Connection reset by peer."
+#~ msgstr "Verbinding maken met CORBA server..."
+
+#, fuzzy
+#~ msgid "No buffer space available."
+#~ msgstr "Geen server beschikbaar"
+
+#~ msgid "Socket is already connected."
+#~ msgstr "Socket is reeds open."
+
+#, fuzzy
+#~ msgid "Socket is not connected."
+#~ msgstr "Socket is reeds open."
+
+#, fuzzy
+#~ msgid "Connection timed out."
+#~ msgstr "Verbinding maken met %s."
+
+#~ msgid "File name too long."
+#~ msgstr "Bestandsnaam is te lang."
+
+#, fuzzy
+#~ msgid "Host is down."
+#~ msgstr "Host niet gevonden."
+
+#, fuzzy
+#~ msgid "Directory not empty"
+#~ msgstr "De map \"%s\" is niet leeg."
+
+#~ msgid "Host not found."
+#~ msgstr "Host niet gevonden."
+
+#, fuzzy
+#~ msgid "Stack already created."
+#~ msgstr "Socket is reeds open."
+
+#, fuzzy
+#~ msgid "Cannot change IPVersion when connected"
+#~ msgstr "Kan de grootte van een icoon niet wijzigen"
+
+#, fuzzy
+#~ msgid "Invalid Port Range (%d - %d)"
+#~ msgstr "Ongeldige bestandsnaam - %s"
+
+#, fuzzy
+#~ msgid "%s is not a valid service."
+#~ msgstr "'%s' is geen geldige tijd"
+
+#, fuzzy
+#~ msgid "IPv6 unavailable"
+#~ msgstr "Geen server beschikbaar"
+
+#, fuzzy
+#~ msgid "The requested IPVersion / Address family is not supported."
+#~ msgstr "FilterOptions worden niet ondersteund"
+
+#, fuzzy
+#~ msgid "Not all bytes sent."
+#~ msgstr "Kan geen nieuwe socket aanmaken."
+
+#, fuzzy
+#~ msgid "Not enough bytes read from stream."
+#~ msgstr "Onvoldoende timers beschikbaar"
+
+#, fuzzy
+#~ msgid "Permission denied"
+#~ msgstr "Toegang geweigerd."
+
+#, fuzzy
+#~ msgid "ShowMessage not supported"
+#~ msgstr "Methode niet ondersteund"
+
+#, fuzzy
+#~ msgid "Secure mode is required for this form."
+#~ msgstr "Er is een connection component nodig voor async ExecuteOptions"
+
+#, fuzzy
+#~ msgid "Non-Secure mode is required for this form."
+#~ msgstr "Er is een connection component nodig voor async ExecuteOptions"
+
+#, fuzzy
+#~ msgid "WebApplication is requiered in order to use this function."
+#~ msgstr "De toepassing heeft geen rechten om deze mogelijkheid te gebruiken"
+
+#, fuzzy
+#~ msgid "&Device Simulation"
+#~ msgstr "Record wissen"
+
+#, fuzzy
+#~ msgid "Unknown client type."
+#~ msgstr "Onbekend conversie type %s"
+
+#, fuzzy
+#~ msgid "Cannot show non-app forms."
+#~ msgstr "Slepen van form niet mogelijk"
+
+#, fuzzy
+#~ msgid "Cannot hide non-app forms."
+#~ msgstr "Slepen van form niet mogelijk"
+
+#, fuzzy
+#~ msgid "Cannot release non-app forms."
+#~ msgstr "Slepen van form niet mogelijk"
+
+#, fuzzy
+#~ msgid "Unknown browser type."
+#~ msgstr "Onbekende foutcode"
+
+#, fuzzy
+#~ msgid "A value must be selected for %s."
+#~ msgstr "Waarde moet tussen %d en %d zijn"
+
+#, fuzzy
+#~ msgid "\"%s\" is not a valid component name."
+#~ msgstr "''%s'' is geen geldige component naam"
+
+#, fuzzy
+#~ msgid "Client Dropped Connection"
+#~ msgstr "Kan transactie niet instellen"
+
+#, fuzzy
+#~ msgid "%s not found."
+#~ msgstr "Host niet gevonden."
+
+#, fuzzy
+#~ msgid "\"%s\" is not a valid height."
+#~ msgstr "'%s' is geen geldige tijd"
+
+#, fuzzy
+#~ msgid "\"%s\" is not a valid width."
+#~ msgstr "'%s' is geen geldige datum"
+
+#, fuzzy
+#~ msgid "Index out of bounds."
+#~ msgstr "Tab index buiten bereik"
+
+#, fuzzy
+#~ msgid "Resource %s not found."
+#~ msgstr "Resource %s niet gevonden"
+
+#, fuzzy
+#~ msgid "No main form is defined."
+#~ msgstr "Icon image is not valid"
+
+#, fuzzy
+#~ msgid "Device not supported"
+#~ msgstr "Interface niet ondersteund"
+
+#, fuzzy
+#~ msgid "Message Dialog"
+#~ msgstr "Bericht is te lang."
+
+#, fuzzy
+#~ msgid "red"
+#~ msgstr "Woe"
+
+#, fuzzy
+#~ msgid "blue"
+#~ msgstr "Waarde"
+
+#, fuzzy
+#~ msgid "brown"
+#~ msgstr "Neer"
+
+#~ msgid "Error: "
+#~ msgstr "Fout:"
+
+#, fuzzy
+#~ msgid "Error creating session"
+#~ msgstr "Fout bij aanmaken window class"
+
+#, fuzzy
+#~ msgid "Unknown or Unrecognized"
+#~ msgstr "Onbekende foutcode"
+
+#, fuzzy
+#~ msgid "Internet Explorer"
+#~ msgstr "Identifier verwacht"
+
+#, fuzzy
+#~ msgid "Opera"
+#~ msgstr "Open"
+
+#, fuzzy
+#~ msgid "Cannot find internal file: %s"
+#~ msgstr "Kan bestand %s niet openen"
+
+#, fuzzy
+#~ msgid "Intraweb Version: %s"
+#~ msgstr "%s op %s"
+
+#, fuzzy
+#~ msgid "First"
+#~ msgstr "Lijst"
+
+#, fuzzy
+#~ msgid "Prior"
+#~ msgstr "Punt"
+
+#, fuzzy
+#~ msgid "Last"
+#~ msgstr "Lijst"
+
+#, fuzzy
+#~ msgid "Insert"
+#~ msgstr "Record invoegen"
+
+#, fuzzy
+#~ msgid "Delete"
+#~ msgstr "Del"
+
+#, fuzzy
+#~ msgid "Post"
+#~ msgstr "Punt"
+
+#, fuzzy
+#~ msgid "Unsupported field type in DBLink"
+#~ msgstr "Niet-ondersteund veldtype (%s) in veld %s"
+
+#, fuzzy
+#~ msgid "Cannot refresh grid while data is in edit or insert mode."
+#~ msgstr "Dataset niet in bewerkings- of invoegmodus"
+
+#, fuzzy
+#~ msgid "%s is not a valid response."
+#~ msgstr "'%s' is geen geldige tijd"
+
+#, fuzzy
+#~ msgid "Invalid session timeout value."
+#~ msgstr "Ingevoerde waarde ongeldig"
+
+#, fuzzy
+#~ msgid "Event"
+#~ msgstr "Enter"
+
+#, fuzzy
+#~ msgid "Code"
+#~ msgstr "Cords"
+
+#, fuzzy
+#~ msgid "&Delete Item"
+#~ msgstr "Record wissen"
+
+#, fuzzy
+#~ msgid "&Edit Caption"
+#~ msgstr "Ongeldige actie aanmaak"
+
+#, fuzzy
+#~ msgid "Delete \"%s\"?"
+#~ msgstr "Del"
+
+#, fuzzy
+#~ msgid "Standalone must be .exe"
+#~ msgstr "Parent must be expanded"
+
+#, fuzzy
+#~ msgid "Authentication Failed."
+#~ msgstr "Toetsing faalde"
+
+#, fuzzy
+#~ msgid "Error loading toolbar button images."
+#~ msgstr "Leesfout %s%s%s: %s"
+
+#, fuzzy
+#~ msgid "Redirecting..."
+#~ msgstr "De map"
+
+#, fuzzy
+#~ msgid "MetaFile not supported"
+#~ msgstr "Methode niet ondersteund"
+
+#, fuzzy
+#~ msgid "Could not load image"
+#~ msgstr "Kon bestand %s niet openen"
+
+#, fuzzy
+#~ msgid "Execute: "
+#~ msgstr "%s verwacht"
+
+#, fuzzy
+#~ msgid "Internal Graphic: "
+#~ msgstr "Ongeldig pixel formaat"
+
+#, fuzzy
+#~ msgid "External File: "
+#~ msgstr "External exception %x"
+
+#, fuzzy
+#~ msgid "Sent: "
+#~ msgstr "Secondes"
+
+#, fuzzy
+#~ msgid "Resize: "
+#~ msgstr "Voet"
+
+#, fuzzy
+#~ msgid "C&lear Sessions"
+#~ msgstr "Ongeldige selectie"
+
+#, fuzzy
+#~ msgid "&Copy URL to Clipboard"
+#~ msgstr "Kan klembord niet openen"
+
+#, fuzzy
+#~ msgid "&Show Debug Information"
+#~ msgstr "Informatie"
+
+#, fuzzy
+#~ msgid "&Parameters"
+#~ msgstr "Parameter verwacht"
+
+#, fuzzy
+#~ msgid "Display about box."
+#~ msgstr "Toon alleen data"
+
+#, fuzzy
+#~ msgid "Select browser"
+#~ msgstr "Selecteer map"
+
+#, fuzzy
+#~ msgid "URL Parameters"
+#~ msgstr "Databasenaam ontbreekt"
+
+#, fuzzy
+#~ msgid "Simulated Connection speed"
+#~ msgstr "Verbinding maken met %s."
+
+#, fuzzy
+#~ msgid "Connection Speed: "
+#~ msgstr "Verbinding maken met %s."
+
+#, fuzzy
+#~ msgid "zlib.dll       not found in %s"
+#~ msgstr "Record niet gevonden"
+
+#, fuzzy
+#~ msgid "Today"
+#~ msgstr "Maandag"
+
+#, fuzzy
+#~ msgid "Frame container not found."
+#~ msgstr "Parameter '%s' niet gevonden"
+
+#, fuzzy
+#~ msgid "line"
+#~ msgstr "Regel"
+
+#, fuzzy
+#~ msgid "lines"
+#~ msgstr "Regel"
+
+#, fuzzy
+#~ msgid "Invalid graphic format"
+#~ msgstr "Ongeldig pixel formaat"
+
+#, fuzzy
+#~ msgid "Unable to locate form/component, '%s'"
+#~ msgstr "Kan %s niet openen"
+
+#, fuzzy
+#~ msgid "Load Picture"
+#~ msgstr "Rapport inlezen"
+
+#, fuzzy
+#~ msgid "About..."
+#~ msgstr "Afbreken"
+
+#, fuzzy
+#~ msgid "String"
+#~ msgstr "string"
+
+#, fuzzy
+#~ msgid "Unknown Type"
+#~ msgstr "Onbekend type"
+
+#, fuzzy
+#~ msgid "Editing %s%s%s"
+#~ msgstr "Leesfout %s%s%s: %s"
+
+#, fuzzy
+#~ msgid "All Files (*)|*"
+#~ msgstr "Alle bestanden (*)|*|"
+
+#, fuzzy
+#~ msgid "All Files (*.*)|*.*"
+#~ msgstr "Alle bestanden (*.*)|*.*|"
+
+#, fuzzy
+#~ msgid "(Not available)"
+#~ msgstr "Niet beschikbaar"
+
+#~ msgid "Cut"
+#~ msgstr "Knippen"
+
+#~ msgid "Paste"
+#~ msgstr "Plakken"
+
+#, fuzzy
+#~ msgid "Control"
+#~ msgstr "Ctrl-C aanslag"
+
+#, fuzzy
+#~ msgid "Data"
+#~ msgstr "Datum"
+
+#, fuzzy
+#~ msgid "Database"
+#~ msgstr "Datum"
+
+#, fuzzy
+#~ msgid "Linkage"
+#~ msgstr "Regel"
+
+#, fuzzy
+#~ msgid "Error opening port %d with error: %s"
+#~ msgstr "Kan pad niet wijzigen naar \"%s\""
+
+#, fuzzy
+#~ msgid "(Not Shown)"
+#~ msgstr "Niet gevonden"
+
+#, fuzzy
+#~ msgid "The Socket Server is already running"
+#~ msgstr "Socket is reeds open."
+
+#~ msgid "row error"
+#~ msgstr "Rij fout"
+
+#~ msgid "All Values"
+#~ msgstr "Alle waarden"
+
+#~ msgid "Open Dimension"
+#~ msgstr "Open dimensie"
+
+# Onduidelijke betekenis
+#~ msgid "Drilled In"
+#~ msgstr "Drilled In"
+
+#~ msgid "[Error]"
+#~ msgstr "[Fout]"
+
+#~ msgid "Display Data Only"
+#~ msgstr "Toon alleen data"
+
+#~ msgid "Display Subtotals Only"
+#~ msgstr "Toon alleen subtotalen"
+
+#~ msgid "Drill in to this value"
+#~ msgstr "Drill in to this value"
+
+#~ msgid "Subtotals on/off"
+#~ msgstr "Subtotalen aan/uit"
+
+#~ msgid "Decision Cube Editor.."
+#~ msgstr "Decision Cube Editor.."
+
+#, fuzzy
+#~ msgid "Decision Query Editor.."
+#~ msgstr "Decision Cube Editor.."
+
+#~ msgid "Unsupported data type : %s"
+#~ msgstr "Niet ondersteund data type : %s"
+
+#~ msgid "Row index out of range : %d"
+#~ msgstr "Rij index buiten bereik : %d"
+
+#~ msgid "Column index out of range : %d"
+#~ msgstr "Kolom index buiten bereik : %d"
+
+#~ msgid "Array index out of range : %d"
+#~ msgstr "Array-index buiten bereik: %d"
+
+#~ msgid "Operation not allowed on sorted string list."
+#~ msgstr "Operatie niet toegestaan op gesorteerde lijst"
+
+#~ msgid "String list does not allow duplicates."
+#~ msgstr "String list staat geen dubbelen toe."
+
+#~ msgid "General array error."
+#~ msgstr "Algemene fout bij array"
+
+#~ msgid "Not Available"
+#~ msgstr "Niet beschikbaar"
+
+#~ msgid "Cannot build the Decision Cube with an empty data set"
+#~ msgstr "Kan geen Decision Cube aanmaken met een lege dataset"
+
+#~ msgid "All dimension fields must be grouped. "
+#~ msgstr "Alle dimensievelden moeten gegroepeerd zijn"
+
+#~ msgid "COUNTALL"
+#~ msgstr "COUNTALL"
+
+#, fuzzy
+#~ msgid " is already in the query"
+#~ msgstr "%s is al geassocieerd met %s"
+
+#, fuzzy
+#~ msgid " is not an allowed summary type"
+#~ msgstr "'%s' is geen geldige datum"
+
+#, fuzzy
+#~ msgid " is not an allowed dimension type"
+#~ msgstr "'%d.%d' is geen geldig tijdwaarmerk"
+
+#, fuzzy
+#~ msgid "Could not remove the field"
+#~ msgstr "Kon bestand %s niet openen"
+
+#, fuzzy
+#~ msgid "All Fields"
+#~ msgstr "Veld"
+
+#, fuzzy
+#~ msgid "Decision Cube size excedes limits"
+#~ msgstr "Decision Cube Editor.."
+
+#~ msgid "Scanning data set values..."
+#~ msgstr "Data set values worden gescand ..."
+
+#~ msgid "Grouping values ..."
+#~ msgstr "Groeperings waarden ..."
+
+#~ msgid "Creating Cube index for %s ..."
+#~ msgstr "Cube Index wordt aangemaakt voor %s ..."
+
+#~ msgid "Dataset is too large"
+#~ msgstr "Dataset is te groot"
+
+#~ msgid "Building data store..."
+#~ msgstr "Opbouwen van dataopslag .."
+
+#~ msgid "Count of %s"
+#~ msgstr "Aantal %s"
+
+#~ msgid "Maximum of %s"
+#~ msgstr "Maximum van %s"
+
+#~ msgid "Average of %s"
+#~ msgstr "Gemiddelde van %s"
+
+#, fuzzy
+#~ msgid "Variance of %s"
+#~ msgstr "Gemiddelde van %s"
+
+#~ msgid "Summary of %s"
+#~ msgstr "Samenvatting van %s"
+
+#, fuzzy
+#~ msgid "Unsupported Data Type %d"
+#~ msgstr "Niet ondersteund data type : %s"
+
+#~ msgid "Other Values"
+#~ msgstr "Andere waarden"
+
+#~ msgid "An expression cannot be used for a grouping field"
+#~ msgstr "Veld '%s' kan niet worden gebruikt bij  een groepringsveld"
+
+#~ msgid "Out of Bounds"
+#~ msgstr "Buiten bereik"
+
+#, fuzzy
+#~ msgid "Decision Cube"
+#~ msgstr "Decision Cube Editor.."
+
+#, fuzzy
+#~ msgid "&Decision Query Editor..."
+#~ msgstr "Decision Cube Editor.."
+
+#, fuzzy
+#~ msgid "&Decision Cube Editor..."
+#~ msgstr "Decision Cube Editor.."
+
+#, fuzzy
+#~ msgid "Sub&totals on/off"
+#~ msgstr "Subtotalen aan/uit"
+
+#, fuzzy
+#~ msgid "Byte index out of range."
+#~ msgstr "Bits index buiten bereik"
+
+#, fuzzy
+#~ msgid "OnExecute not assigned."
+#~ msgstr "Database niet toegekend"
+
+#, fuzzy
+#~ msgid "%s could not be loaded."
+#~ msgstr "Kon bestand %s niet openen"
+
+#, fuzzy
+#~ msgid "Cannot change target while active."
+#~ msgstr "Kan waarde niet veranderen terwijl socket actief is"
+
+#, fuzzy
+#~ msgid "AcceptWait property cannot be modified while server is active."
+#~ msgstr "Kan actie niet uitvoeren zolang server actief is"
+
+#, fuzzy
+#~ msgid "%s is not a valid IP address."
+#~ msgstr "'%s' is geen geldige tijd"
+
+#, fuzzy
+#~ msgid "Operation would block. "
+#~ msgstr "Operatie afgebroken"
+
+#~ msgid "Too many processes."
+#~ msgstr "Teveel processen."
+
+#~ msgid "Too many users."
+#~ msgstr "Teveel gebruikers."
+
+#, fuzzy
+#~ msgid "WINSOCK DLL Version out of range."
+#~ msgstr "XSQLDA index buiten bereik"
+
+#, fuzzy
+#~ msgid "No data modules registered"
+#~ msgstr "Ongregistreerde event"
+
+#, fuzzy
+#~ msgid "Socket read error"
+#~ msgstr "Stream leesfout"
+
+#, fuzzy
+#~ msgid "Invalid ISAPI application: %s"
+#~ msgstr "Ongeldige alias %s"
+
+#, fuzzy
+#~ msgid "Error loading ISAPI Application: %s"
+#~ msgstr "Fout bij het downloaden van URL: %s"
+
+#, fuzzy
+#~ msgid "Invalid Redirect parameter"
+#~ msgstr "Ongeldige batch move parameters"
+
+#, fuzzy
+#~ msgid "ISAPI Application Error"
+#~ msgstr "Toepassingsfout"
+
+#, fuzzy
+#~ msgid "Servers"
+#~ msgstr "&Server"
+
+#, fuzzy
+#~ msgid "ActiveX"
+#~ msgstr "Veldtype"
+
+#, fuzzy
+#~ msgid "Unknown command"
+#~ msgstr "Onbekende foutcode"
+
+#, fuzzy
+#~ msgid "Unable to not open registry key: %s"
+#~ msgstr "Kan %s niet openen"
+
+#, fuzzy
+#~ msgid "Invalid Action %d"
+#~ msgstr "Ongeldige selectie"
+
+#, fuzzy
+#~ msgid "Bad variant type %x"
+#~ msgstr "Ongeldig varianttype"
+
+#, fuzzy
+#~ msgid "Start"
+#~ msgstr "Zat"
+
+#, fuzzy
+#~ msgid "Invalid Action registration"
+#~ msgstr "Ongeldige actie registratie"
+
+#~ msgid "Date"
+#~ msgstr "Datum"
+
+#, fuzzy
+#~ msgid "Path"
+#~ msgstr "Plakken"
+
+#, fuzzy
+#~ msgid "Thread"
+#~ msgstr "Waar"
+
+#, fuzzy
+#~ msgid "(none)"
+#~ msgstr "(Leeg)"
+
+#, fuzzy
+#~ msgid "Send"
+#~ msgstr "Secondes"
+
+#, fuzzy
+#~ msgid "%s %s Error: (%d)%s"
+#~ msgstr "%s fout %d, %s"
+
+#, fuzzy
+#~ msgid "Build"
+#~ msgstr "Veld"
+
+#, fuzzy
+#~ msgid "Data set field is blank"
+#~ msgstr "Dataset is te groot"
+
+#, fuzzy
+#~ msgid "Data set field not found: %s"
+#~ msgstr "Veld niet gevonden: %s"
+
+#, fuzzy
+#~ msgid "Field is not a dataset field: %s"
+#~ msgstr "Veld '%s' heeft geen dataset"
+
+#, fuzzy
+#~ msgid "%0:s: Field \"%1:s\" not found"
+#~ msgstr "Veld \"%s\" niet gevonden"
+
+#, fuzzy
+#~ msgid "Submit"
+#~ msgstr "Cubits"
+
+#, fuzzy
+#~ msgid "%s.FieldName = ''"
+#~ msgstr "Veldnaam"
+
+#, fuzzy
+#~ msgid "%s_Names"
+#~ msgstr "Naam"
+
+#, fuzzy
+#~ msgid "%s_IDs"
+#~ msgstr "%s_Doc"
+
+#, fuzzy
+#~ msgid "%s_Disp"
+#~ msgstr "%s_Doc"
+
+#~ msgid "Invalid parent"
+#~ msgstr "Ongeldige ouderobject"
+
+#, fuzzy
+#~ msgid "Invalid parent class: %s"
+#~ msgstr "Ongeldige ouderobject"
+
+#, fuzzy
+#~ msgid " - "
+#~ msgstr "%s van %s"
+
+#~ msgid ""
+#~ "<TABLE BORDER=1 CELLPADDING=4>\n"
+#~ "<TR><TD><P ALIGN=CENTER>Design-time Warnings<P>\n"
+#~ "%s\n"
+#~ "</TD></TD>\n"
+#~ "</TABLE>\n"
+#~ msgstr ""
+#~ "<TABLE BORDER=1 CELLPADDING=4>\n"
+#~ "<TR><TD><P ALIGN=CENTER>Design-time Warnings<P>\n"
+#~ "%s\n"
+#~ "</TD></TD>\n"
+#~ "</TABLE>\n"
+
+#~ msgid "%s_Doc"
+#~ msgstr "%s_Doc"
+
+#~ msgid "%s_XML"
+#~ msgstr "%s_XML"
+
+#, fuzzy
+#~ msgid "Invalid Web component creation"
+#~ msgstr "Ongeldige component registratie"
+
+#~ msgid "%s_RS"
+#~ msgstr "%s_RS"
+
+#, fuzzy
+#~ msgid "ApplyUpdates error.  Error count: %d."
+#~ msgstr "ApplyUpdates fout. Aantal fouten: %d"
+
+#, fuzzy
+#~ msgid "Missing Delta Packet"
+#~ msgstr "Ontbrekende DataSet property"
+
+#, fuzzy
+#~ msgid "DataSet: %s is not active"
+#~ msgstr "Dataset is geen query"
+
+#~ msgid "Duplicate action name"
+#~ msgstr "Dubbel gebruik action naam"
+
+#, fuzzy
+#~ msgid "Web Module Factory already registered"
+#~ msgstr "Conversie familie (%s) al geregistreerd"
+
+#~ msgid "Enabled"
+#~ msgstr "Aan"
+
+#~ msgid "Too many table columns"
+#~ msgstr "Teveel tablekolommen"
+
+#~ msgid "Field Type"
+#~ msgstr "Veldtype"
+
+#, fuzzy
+#~ msgid "Invalid Web component registration"
+#~ msgstr "Ongeldige component registratie"
+
+#, fuzzy
+#~ msgid "Invalid Web component enumeration"
+#~ msgstr "Ongeldige component registratie"
+
+#, fuzzy
+#~ msgid "Variable %s is not a container"
+#~ msgstr "Variant is not an array"
+
+#, fuzzy
+#~ msgid "PortName"
+#~ msgstr "Naam"
+
+#, fuzzy
+#~ msgid "address"
+#~ msgstr "optellen"
+
+#, fuzzy
+#~ msgid "Method %s of class %s not found"
+#~ msgstr "Methode %s niet gevonden"
+
+#, fuzzy
+#~ msgid "Type mismatch in parameter %d for method %s"
+#~ msgstr "Incorrect aantal parameters voor methode %s"
+
+#, fuzzy
+#~ msgid "Too many parameters for method %s"
+#~ msgstr "Incorrect aantal parameters voor methode %s"
+
+#~ msgid "''%s'' is not a valid date"
+#~ msgstr "''%s'' is geen geldige datum"
+
+#~ msgid "''%s'' is not a valid date and time"
+#~ msgstr "''%s'' is geen geldige datum of tijd"
+
+#~ msgid "''%s'' is not a valid integer value"
+#~ msgstr "''%s'' is geen geldige integer waarde"
+
+#~ msgid "''%s'' is not a valid time"
+#~ msgstr "''%s'' is geen geldige tijd"
+
+#~ msgid "Invalid stream operation"
+#~ msgstr "Ongeldig stream operatie"
+
+#~ msgid "Access violation at address %p, accessing address %p"
+#~ msgstr "Access violation op adres %p, benaderen van adres  %p"
+
+#~ msgid "sigaction call failed"
+#~ msgstr "sigaction aanroep mislukt"
+
+#~ msgid "Invalid NULL variant operation"
+#~ msgstr "Ongeldige NULL variant operatie"
+
+#~ msgid ""
+#~ "Invalid variant operation (%s%.8x)\n"
+#~ "%s"
+#~ msgstr ""
+#~ "Ongeldige variant operatie (%s%.8x)\n"
+#~ "%s"
+
+#, fuzzy
+#~ msgid "Range check error for variant of type (%s)"
+#~ msgstr ""
+#~ "Overflow fout tijdens converteren variant van type (%s) naar type (%s)"
+
+#~ msgid ""
+#~ "Range check error while converting variant of type (%s) into type (%s)"
+#~ msgstr ""
+#~ "Overflow fout tijdens converteren variant van type (%s) naar type (%s)"
+
+#~ msgid "Variant is not an array"
+#~ msgstr "Variant is not an array"
+
+#~ msgid "Unknown custom variant type ($%.4x)"
+#~ msgstr "Onbekend custom variant type ($%.4x)"
+
+#~ msgid "Custom variant type ($%.4x) is out of range"
+#~ msgstr "Custom variant type ($%.4x) is buiten bereik"
+
+#~ msgid "Custom variant type ($%.4x) already used by %s"
+#~ msgstr "Custom variant type ($%.4x) wordt al gebruikt door %s"
+
+#~ msgid "Custom variant type ($%.4x) is not usable"
+#~ msgstr "Custom variant type ($%.4x) is niet bruikbaar"
+
+#~ msgid "Invalid variant operation ($%.8x)"
+#~ msgstr "Ongeldige variantbewerking ($%.8x)"
+
+#~ msgid "Could not convert variant of type (%s) into type (%s)"
+#~ msgstr "Kon variant van type (%s) niet converteren naar type (%s)"
+
+#~ msgid "Overflow while converting variant of type (%s) into type (%s)"
+#~ msgstr "Overflow tijdens converteren variant van type (%s) naar type (%s)"
+
+#~ msgid "''%s'' is not connected to an InterBase database"
+#~ msgstr "''%s'' is niet vebonden met een InterBase database"
+
+#~ msgid "Class not registered"
+#~ msgstr "Klasse niet geregistreerd"
+
+#~ msgid "Interface %s not registered"
+#~ msgstr "Interface niet geregistreerd"
+
+#, fuzzy
+#~ msgid "Unsupported SOAP encodingStyle %s"
+#~ msgstr "Ongeldig varianttype: %s"
+
+#~ msgid "Invalid SOAP request"
+#~ msgstr "Ongeldige SOAP request"
+
+#, fuzzy
+#~ msgid "Invalid SOAP response"
+#~ msgstr "Ongeldige reponse"
+
+#, fuzzy
+#~ msgid "Multiple body elements not supported"
+#~ msgstr "Klembord ondersteunt geen Iconen"
+
+#, fuzzy
+#~ msgid "Unsupported calling convention: %s"
+#~ msgstr "Ongeldig varianttype: %s"
+
+#, fuzzy
+#~ msgid "No interface  registered for URL '%s'"
+#~ msgstr "Interface niet geregistreerd"
+
+#, fuzzy
+#~ msgid "Remotable Type %s not registered"
+#~ msgstr "Interface niet geregistreerd"
+
+#, fuzzy
+#~ msgid "Type mismatch in parameter %s"
+#~ msgstr "Verkeerd type in expressie"
+
+#, fuzzy
+#~ msgid "No method named '%s' is supported by interface '%s'"
+#~ msgstr "Methode '%s' not ondersteund door OLE object"
+
+#, fuzzy
+#~ msgid "Interface not registered, UUID = %s"
+#~ msgstr "Interface niet geregistreerd"
+
+#, fuzzy
+#~ msgid "Empty document"
+#~ msgstr "HTML document"
+
+#, fuzzy
+#~ msgid "Unknown SOAPAction %s"
+#~ msgstr "Onbekende functie: %s"
+
+#, fuzzy
+#~ msgid "Too many parameters in method %s"
+#~ msgstr "Incorrect aantal parameters voor methode %s"
+
+#, fuzzy
+#~ msgid "Invalid SOAP Response"
+#~ msgstr "Ongeldige reponse"
+
+#, fuzzy
+#~ msgid "Invalid SOAP array specification"
+#~ msgstr "Ongeldige variantbewerking"
+
+#~ msgid "varDate type not supported"
+#~ msgstr "varDate type niet ondersteund"
+
+#~ msgid "varDispatch type not supported"
+#~ msgstr "verDispatch type niet ondersteund"
+
+#~ msgid "varError type not supported"
+#~ msgstr "varError type niet ondersteund"
+
+#~ msgid "varVariant type not supported"
+#~ msgstr "varVariant type niet ondersteund"
+
+#~ msgid "Invalid Pointer"
+#~ msgstr "Ongeldige pointer"
+
+#, fuzzy
+#~ msgid "Interface %s has no RTTI"
+#~ msgstr "Interface niet geregistreerd"
+
+#~ msgid "Invalid date string: %s"
+#~ msgstr "Ongeldige datum string: %s"
+
+#~ msgid "Invalid time string: %s"
+#~ msgstr "Ongeldige tijd string: %s"
+
+#, fuzzy
+#~ msgid "Invalid hour: %d"
+#~ msgstr "Ongeldige eigenaar"
+
+#, fuzzy
+#~ msgid "Invalid minute: %d"
+#~ msgstr "Ongeldige pointer"
+
+#, fuzzy
+#~ msgid "Invalid second: %d"
+#~ msgstr "Ongeldige selectie"
+
+#, fuzzy
+#~ msgid "Invalid second: %f"
+#~ msgstr "Ongeldige selectie"
+
+#, fuzzy
+#~ msgid "Invalid millisecond: %d"
+#~ msgstr "Ongeldig Veldsoort"
+
+#, fuzzy
+#~ msgid "Invalid fractional second: %f"
+#~ msgstr "Ongeldige actie ontvangen: %d"
+
+#, fuzzy
+#~ msgid "Invalid hour offset: %d"
+#~ msgstr "Ongeldig gebruik van NOT"
+
+#, fuzzy
+#~ msgid "Invalid day: %d"
+#~ msgstr "Ongeldige datum string: %s"
+
+#, fuzzy
+#~ msgid "Invalid month: %d"
+#~ msgstr "Ongeldige pointer"
+
+#, fuzzy
+#~ msgid "Invalid duration string: %s"
+#~ msgstr "Ongeldige datum string: %s"
+
+#, fuzzy
+#~ msgid "Millisecond Values must be between 000 - 999"
+#~ msgstr "Waarde moet tussen %d en %d zijn"
+
+#, fuzzy
+#~ msgid "Year portion of date too large for conversion"
+#~ msgstr "Grid is te groot voor deze operatie"
+
+#, fuzzy
+#~ msgid "Invalid decimal string: ''%s''"
+#~ msgstr "Ongeldige datum string: %s"
+
+#, fuzzy
+#~ msgid "Cannot convert empty string to TBcd value"
+#~ msgstr "De waarde kan niet afgedrukt worden"
+
+#, fuzzy
+#~ msgid "Cannot convert NAN to TBcd value"
+#~ msgstr "Kan niet converteren naar gespecificeerde type"
+
+#, fuzzy
+#~ msgid "%s is not a valid hex string"
+#~ msgstr "'%s' is geen geldige tijd"
+
+#, fuzzy
+#~ msgid "Invalid HTTP Request: Length is 0"
+#~ msgstr "Ongeldige SOAP request"
+
+#, fuzzy
+#~ msgid "Invalid HTTP Response: Length is 0"
+#~ msgstr "Ongeldige reponse"
+
+#, fuzzy
+#~ msgid "WideString index out of bounds"
+#~ msgstr "Tab index buiten bereik"
+
+#, fuzzy
+#~ msgid "No service available for URL %s"
+#~ msgstr "Geen server beschikbaar"
+
+#, fuzzy
+#~ msgid "No interface is registered to handle URL %s"
+#~ msgstr "Interface niet geregistreerd"
+
+#, fuzzy
+#~ msgid "No URL was specified for 'GET'"
+#~ msgstr "Geen adres opgegeven"
+
+#, fuzzy
+#~ msgid "Method has no RTTI"
+#~ msgstr "Methode %s niet gevonden"
+
+#, fuzzy
+#~ msgid "Unsuppported variant type %d"
+#~ msgstr "Ongeldig varianttype: %s"
+
+#, fuzzy
+#~ msgid "Invalid or Unknown Time Zone"
+#~ msgstr "Ongeldig argument voor tijdcodering"
+
+#, fuzzy
+#~ msgid "Unknown Error"
+#~ msgstr "Onbekende fout"
+
+#, fuzzy
+#~ msgid "Registered Types"
+#~ msgstr "Decisteres"
+
+#~ msgid "method not supported"
+#~ msgstr "Methode niet ondersteund"
+
+#, fuzzy
+#~ msgid "Content-Length header not found"
+#~ msgstr "Component %s niet gevonden"
+
+#, fuzzy
+#~ msgid "Error reading from Mime Request Stream"
+#~ msgstr "Fout bij lezen van socket"
+
+#, fuzzy
+#~ msgid "No access to temporary file"
+#~ msgstr "Geen toegang tot veld \"%s\""
+
+#, fuzzy
+#~ msgid "%s - %s"
+#~ msgstr "%s van %s"
+
+#~ msgid "'%s' is not a valid property value"
+#~ msgstr "'%s' is geen geldige property waarde"
+
+#~ msgid "OLE control activation failed"
+#~ msgstr "Activering van OLE control mislukt"
+
+#~ msgid "Could not obtain OLE control window handle"
+#~ msgstr "Handel voor OLE control venster ongeldig"
+
+#~ msgid "Variant does not reference an OLE object"
+#~ msgstr "Variant refereert niet aan een OLE object"
+
+#~ msgid "Method '%s' not supported by OLE object"
+#~ msgstr "Methode '%s' not ondersteund door OLE object"
+
+#, fuzzy
+#~ msgid "Cannot link to an invalid source."
+#~ msgstr "Kan niet luisteren op een open socket"
+
+#, fuzzy
+#~ msgid "Break link operation is not supported."
+#~ msgstr "Operation not supported"
+
+#, fuzzy
+#~ msgid "Linked %s"
+#~ msgstr "Links"
+
+#~ msgid "Operation not allowed on an empty OLE container"
+#~ msgstr "Operatie niet toegestaan op een lege OLE container"
+
+#~ msgid "Invalid object verb"
+#~ msgstr "Ongeldige object verb"
+
+#~ msgid "License information for %s is invalid"
+#~ msgstr "Licentie informatie voor %s is ongeldig"
+
+#~ msgid ""
+#~ "License information for %s not found. You cannot use this control in "
+#~ "design mode"
+#~ msgstr ""
+#~ "Licentie informatie voor %s niet gevonden. U kunt deze control niet "
+#~ "gebruiken in design mode"
+
+#~ msgid "Script Error"
+#~ msgstr "Script fout "
+
+#, fuzzy
+#~ msgid "Field %s requires a value"
+#~ msgstr "Veld '%s' moet een waarde hebben"
+
+#~ msgid "%s does not allow multiple values"
+#~ msgstr "%s staat geen dubbele waarden toe"
+
+#~ msgid "%s does not allow multiple files"
+#~ msgstr "%s staat geen meerdere bestanden toe"
+
+#, fuzzy
+#~ msgid "Modification of %s is not permitted"
+#~ msgstr "Wijzigingen zijn niet toegestaan"
+
+#, fuzzy
+#~ msgid "Field view not permitted"
+#~ msgstr "Niet toegestaan"
+
+#, fuzzy
+#~ msgid "Data Modification is not permitted"
+#~ msgstr "Wijzigingen zijn niet toegestaan"
+
+#, fuzzy
+#~ msgid "%s does not support file upload"
+#~ msgstr "Klembord ondersteunt geen Iconen"
+
+#, fuzzy
+#~ msgid "Login page is not defined"
+#~ msgstr "Icon image is not valid"
+
+#~ msgid "Web Page not found: %s"
+#~ msgstr "Web pagina niet gevonden: %s"
+
+#, fuzzy
+#~ msgid "Field %s did not provide an image"
+#~ msgstr "Veldindex buiten bereik"
+
+#, fuzzy
+#~ msgid "Unknown Adapter mode: %s"
+#~ msgstr "Onbekende foutcode"
+
+#, fuzzy
+#~ msgid "DataSet is nil"
+#~ msgstr "Dataset is te groot"
+
+#, fuzzy
+#~ msgid "Row not found in %s"
+#~ msgstr "Record niet gevonden"
+
+#~ msgid "Field not found: %s"
+#~ msgstr "Veld niet gevonden: %s"
+
+#, fuzzy
+#~ msgid "%s: DataSet property is nil"
+#~ msgstr "Ontbrekende DataSet property"
+
+#, fuzzy
+#~ msgid "%0:s: Dataset %1:s not active"
+#~ msgstr "Dataset is geen query"
+
+#, fuzzy
+#~ msgid "%0:s: ValueField property value is blank"
+#~ msgstr "Invalid property value"
+
+#, fuzzy
+#~ msgid "Missing XML Data Component"
+#~ msgstr "Ontbrekende DataSet property"
+
+#, fuzzy
+#~ msgid "%s: Fieldname is blank"
+#~ msgstr "Veldnaam ontbreekt"
+
+#~ msgid "Page access denied"
+#~ msgstr "Pagina toegang geweigerd"
+
+#, fuzzy
+#~ msgid "Web Page does not support redirect"
+#~ msgstr "Klembord ondersteunt geen Iconen"
+
+#, fuzzy
+#~ msgid "Can't find included page: %s"
+#~ msgstr ""
+#~ "Kan package %s niet laden.\n"
+#~ "%s"
+
+#, fuzzy
+#~ msgid "Page %s does not support inclusion"
+#~ msgstr "Klembord ondersteunt geen Iconen"
+
+#, fuzzy
+#~ msgid "Incorrect image format (%0:s) for field %1:s"
+#~ msgstr "Incorrecte type informatie voor class %s"
+
+#, fuzzy
+#~ msgid "Uploaded file expected for field %s"
+#~ msgstr "Geen index voor velden '%s'"
+
+#, fuzzy
+#~ msgid "UserName"
+#~ msgstr "Naam"
+
+#, fuzzy
+#~ msgid "UserID not found"
+#~ msgstr "Record niet gevonden"
+
+#~ msgid "Invalid password"
+#~ msgstr "Ongeldig wachtwoord"
+
+#, fuzzy
+#~ msgid "Missing password"
+#~ msgstr "Ontbrekend %s"
+
+#, fuzzy
+#~ msgid "Unknown user name"
+#~ msgstr "Onbekende foutcode"
+
+#, fuzzy
+#~ msgid "Missing user name"
+#~ msgstr "Ontbrekend %s"
+
+#, fuzzy
+#~ msgid "Cannot create script engine: %s.  Error: %x"
+#~ msgstr "Kan bestand \"%s\" niet aanmaken. %s"
+
+#, fuzzy
+#~ msgid "Script engine not found: %s."
+#~ msgstr "Veld niet gevonden: %s"
+
+#, fuzzy
+#~ msgid "Script Object expected"
+#~ msgstr "String verwacht"
+
+#, fuzzy
+#~ msgid "Integer parameter expected"
+#~ msgstr "String parameter verwacht"
+
+#~ msgid "Unexpected parameter type"
+#~ msgstr "Onverwachte parameter type"
+
+#~ msgid "Unexpected return type"
+#~ msgstr "Onverwachte antwoord type"
+
+#, fuzzy
+#~ msgid "Duplication prototype name"
+#~ msgstr "Dubbel gebruik action naam"
+
+#~ msgid "Boolean parameter expected"
+#~ msgstr "Boolean parameter verwacht"
+
+#~ msgid "Double parameter expected"
+#~ msgstr "Double parameter verwacht"
+
+#~ msgid "Unexpected script error"
+#~ msgstr "Onverwachte script fout"
+
+#~ msgid "Variable not found: %s"
+#~ msgstr "Variabele niet gevonden: %s"
+
+#~ msgid "Parameter expected"
+#~ msgstr "Parameter verwacht"
+
+#~ msgid "String parameter expected"
+#~ msgstr "String parameter verwacht"
+
+#~ msgid "unknown"
+#~ msgstr "onbekend"
+
+#~ msgid "Component %s not found"
+#~ msgstr "Component %s niet gevonden"
+
+#, fuzzy
+#~ msgid "WebSnap Application"
+#~ msgstr "Applicatie zonder naam"
+
+#, fuzzy
+#~ msgid "There is currently no active project."
+#~ msgstr "Geen actieve index"
+
+#, fuzzy
+#~ msgid "Data Packet"
+#~ msgstr "Ongeldige data packet"
+
+#, fuzzy
+#~ msgid "Unable to execute %s"
+#~ msgstr "Kan query niet uitvoeren"
+
+#, fuzzy
+#~ msgid "Unexpected error occurred executing %s"
+#~ msgstr "Onverwacht einde van string [%s]"
+
+#~ msgid "Found"
+#~ msgstr "Gevonden"
+
+#~ msgid "Not found"
+#~ msgstr "Niet gevonden"
+
+#, fuzzy
+#~ msgid "Missing ProgID"
+#~ msgstr "Ontbrekend %s"
+
+#, fuzzy
+#~ msgid "Fetch &Params"
+#~ msgstr "Decagram"
+
+#, fuzzy
+#~ msgid "Restore Defaults"
+#~ msgstr "Standaard grootte"
+
+#, fuzzy
+#~ msgid "XTR files (*.xtr)|*.xtr"
+#~ msgstr "Alle bestanden (*)|*|"
+
+#, fuzzy
+#~ msgid "XML files (*.xml)|*.xml"
+#~ msgstr "Alle bestanden (*)|*|"
+
+#, fuzzy
+#~ msgid "TransformationFile must be specified"
+#~ msgstr "Ongeldig formaat of waarde opgegeven"
+
+#, fuzzy
+#~ msgid "Version of Transformation File not supported"
+#~ msgstr "Operation not supported"
+
+#~ msgid "Error saving file"
+#~ msgstr "Fout bij het wegschrijven van het bestand"
+
+#~ msgid "Error opening file"
+#~ msgstr "Fout bij het openen van het bestand"
+
+#~ msgid "Could not open file "
+#~ msgstr "Kon bestand %s niet openen"
+
+#, fuzzy
+#~ msgid "Error Loading XML"
+#~ msgstr "Fout bij het laden van MIDAS.DLL"
+
+#, fuzzy
+#~ msgid "Error on line %d, position %d"
+#~ msgstr "Fout in expressie: %s"
+
+#, fuzzy
+#~ msgid "Reason: %s\n"
+#~ msgstr "%s op %s"
+
+#, fuzzy
+#~ msgid "XML Parse Error:\n"
+#~ msgstr ""
+#~ "SQL Parse fout:\n"
+#~ "\n"
+#~ "%s"
+
+#, fuzzy
+#~ msgid "StringFileInfo"
+#~ msgstr "string"
+
+#, fuzzy
+#~ msgid "FileVersion"
+#~ msgstr "%s op %s"
+
+#, fuzzy
+#~ msgid "InternalName"
+#~ msgstr "Enter"
+
+#, fuzzy
+#~ msgid "ProductName"
+#~ msgstr "Naam"
+
+#, fuzzy
+#~ msgid "Translation"
+#~ msgstr "Transactie is actief"
+
+#, fuzzy
+#~ msgid "BackTab"
+#~ msgstr "Backspace"
+
+#, fuzzy
+#~ msgid "Return"
+#~ msgstr "&Opnieuw"
+
+#, fuzzy
+#~ msgid "Invalid canvas state request"
+#~ msgstr "Ongeldige SOAP request"
+
+#~ msgid "Invalid widget handle"
+#~ msgstr "Ongeldige widget handle"
+
+#, fuzzy
+#~ msgid "Invalid XImage"
+#~ msgstr "Ongeldige ImageList"
+
+#~ msgid "Error creating widget"
+#~ msgstr "Fout bij aanmaken widget"
+
+#, fuzzy
+#~ msgid "Control '%s' has no parent widget"
+#~ msgstr "Control '%s' heeft geen parent-window"
+
+#, fuzzy
+#~ msgid "Menu insertion recursion not allowed"
+#~ msgstr "Invoegen niet toegestaan"
+
+#, fuzzy
+#~ msgid "Pixmaps"
+#~ msgstr "Bitmappen"
+
+#~ msgid "PNGs"
+#~ msgstr "PNGs"
+
+#, fuzzy
+#~ msgid "Drawings"
+#~ msgstr "Grains"
+
+#~ msgid "Jpegs"
+#~ msgstr "Jpegs"
+
+#~ msgid "Unable to create directory \"%s\"."
+#~ msgstr "Kan map \"%s\" niet maken"
+
+#~ msgid "Access denied to \"%s\""
+#~ msgstr "Bestandstoegang geweigerd voor \"%s\""
+
+#, fuzzy
+#~ msgid ""
+#~ "Cannot read directory:\n"
+#~ "\"%s\""
+#~ msgstr "Kan de map \"%s\" niet lezen."
+
+#~ msgid "Directory \"%s\" is not empty."
+#~ msgstr "De map \"%s\" is niet leeg."
+
+#~ msgid "Unable to read directory \"%s\"."
+#~ msgstr "Kan de map \"%s\" niet lezen."
+
+#~ msgid "New Folder"
+#~ msgstr "Nieuwe map"
+
+#~ msgid ""
+#~ "\"%s\"\n"
+#~ "File not found."
+#~ msgstr ""
+#~ "\"%s\"\n"
+#~ "Bestand niet gevonden."
+
+#, fuzzy
+#~ msgid "Continue delete operation?"
+#~ msgstr "Ongeldig stream operatie"
+
+#, fuzzy
+#~ msgid "Date Modified"
+#~ msgstr "Gewijzigd"
+
+#~ msgid "Owner"
+#~ msgstr "Eigenaar"
+
+#~ msgid "All Files (*)|*|"
+#~ msgstr "Alle bestanden (*)|*|"
+
+#~ msgid "All Files (*.*)|*.*|"
+#~ msgstr "Alle bestanden (*.*)|*.*|"
+
+#~ msgid "Free Space"
+#~ msgstr "Vrije ruimte"
+
+#~ msgid "%d MB"
+#~ msgstr "%d MB"
+
+#~ msgid "Directory"
+#~ msgstr "De map"
+
+#, fuzzy
+#~ msgid "Link to "
+#~ msgstr "Regel te lang"
+
+#, fuzzy
+#~ msgid "No Preview Available"
+#~ msgstr "Geen server beschikbaar"
+
+#, fuzzy
+#~ msgid "A property category called %s already exists"
+#~ msgstr "Een component met de naam %s bestaat al"
+
+#, fuzzy
+#~ msgid "Property category does not exist (%s)"
+#~ msgstr "Property bestaat niet"
+
+#, fuzzy
+#~ msgid "Operation not allowed while dispatching application events"
+#~ msgstr "Operatie niet toegestaan op gesorteerde lijst"
+
+#, fuzzy
+#~ msgid "Invalid image type"
+#~ msgstr "Ongeldige image grootte"
+
+#, fuzzy
+#~ msgid "Invalid image dimension"
+#~ msgstr "Ongeldige image grootte"
+
+#, fuzzy
+#~ msgid "Error resizing ImageList"
+#~ msgstr "Fout bij het versturen van mail"
+
+#, fuzzy
+#~ msgid "Mime format not supported for TIcon"
+#~ msgstr "Operation not supported"
+
+#, fuzzy
+#~ msgid "Save"
+#~ msgstr "Spatie"
+
+#, fuzzy
+#~ msgid "&Find Next"
+#~ msgstr "Veldnaam"
+
+#, fuzzy
+#~ msgid "Find"
+#~ msgstr "Veld"
+
+#, fuzzy
+#~ msgid "&Up"
+#~ msgstr "Op"
+
+#, fuzzy
+#~ msgid "&Down"
+#~ msgstr "Neer"
+
+#, fuzzy
+#~ msgid "Replace"
+#~ msgstr "Spatie"
+
+#, fuzzy
+#~ msgid "Invalid handle value for %s"
+#~ msgstr "Ongeldige waarde voor veld '%s'"
+
+#, fuzzy
+#~ msgid "Unable to write bitmap"
+#~ msgstr "Kan niet schrijven naar %s"
+
+#, fuzzy
+#~ msgid "Invalid LCDNumber value"
+#~ msgstr "Ongeldige numerieke invoer"
+
+#, fuzzy
+#~ msgid "%s is already in the StatusBar"
+#~ msgstr "%s is al geassocieerd met %s"
+
+#, fuzzy
+#~ msgid "Redo"
+#~ msgstr "Rood"
+
+#, fuzzy
+#~ msgid "Clear"
+#~ msgstr "Autos"
+
+#, fuzzy
+#~ msgid "Movie not loaded"
+#~ msgstr "Methode niet toegestaan"
+
+#, fuzzy
+#~ msgid "Multiple Connections not supported by %s driver"
+#~ msgstr "Operatie niet ondersteund door de geselecteerde printer"
+
+#, fuzzy
+#~ msgid "&Open"
+#~ msgstr "Open"
+
+#, fuzzy
+#~ msgid "New &Directory"
+#~ msgstr "De map"
+
+#~ msgid "&Up one directory"
+#~ msgstr "Eén map omhoog"
+
+#, fuzzy
+#~ msgid "Ho&me"
+#~ msgstr "Home"
+
+#, fuzzy
+#~ msgid "&Reload"
+#~ msgstr "Lees"
+
+#~ msgid "Open as &read-only"
+#~ msgstr "Openen als alleen-lezen"
+
+#, fuzzy
+#~ msgid "Auto Preview"
+#~ msgstr "Provider ontbreekt"
+
+#, fuzzy
+#~ msgid "Home directory"
+#~ msgstr "Eén map omhoog"
+
+#, fuzzy
+#~ msgid "Reload"
+#~ msgstr "Lees"
+
+#, fuzzy
+#~ msgid "List view"
+#~ msgstr "Lijst"
+
+#, fuzzy
+#~ msgid "Detaul view"
+#~ msgstr "Standaard grootte"
+
+#~ msgid "Create new directory"
+#~ msgstr "Maak nieuwe map"
+
+#, fuzzy
+#~ msgid "&Items"
+#~ msgstr "&Ja"
+
+#, fuzzy
+#~ msgid "I&mage Index:"
+#~ msgstr "Ongeldige ImageList index"
+
+#, fuzzy
+#~ msgid "N&ew SubNode"
+#~ msgstr "Nieuwe map"
+
+#, fuzzy
+#~ msgid "De&lete"
+#~ msgstr "Record wissen"
+
+#, fuzzy
+#~ msgid "Ima&ge Index:"
+#~ msgstr "Ongeldige ImageList index"
+
+#, fuzzy
+#~ msgid "All Files(*)"
+#~ msgstr "Alle bestanden (*)|*|"
+
+#, fuzzy
+#~ msgid "String list editor"
+#~ msgstr "String verwacht"
+
+#, fuzzy
+#~ msgid "&Server:"
+#~ msgstr "&Server"
+
+#, fuzzy
+#~ msgid "&Remote"
+#~ msgstr "Login van verre"
+
+#, fuzzy
+#~ msgid "&Browse"
+#~ msgstr "&Sluiten"
+
+#, fuzzy
+#~ msgid "Users"
+#~ msgstr "Jaren"
+
+#, fuzzy
+#~ msgid "Host"
+#~ msgstr "Uren"
+
+#, fuzzy
+#~ msgid "&Ports"
+#~ msgstr "Points"
+
+#~ msgid "##0.## %"
+#~ msgstr "##0.## %"
+
+#~ msgid "#,##0.###"
+#~ msgstr "#,##0.###"
+
+#~ msgid "%s Angle must be between 0 and 359 degrees"
+#~ msgstr "%s hoek moet tussen 0 en 359 graden zijn"
+
+#~ msgid "(Overflow)"
+#~ msgstr "(Overschreiding)"
+
+#~ msgid "10x14 in"
+#~ msgstr "10x14 in"
+
+#~ msgid "11x17 in"
+#~ msgstr "11x17 in"
+
+#~ msgid "3D effect percent must be between %d and %d"
+#~ msgstr "3D effect percentage moet tussen %d en %d zijn"
+
+#~ msgid "A3 297 x 420 mm"
+#~ msgstr "A3 297 x 420 mm"
+
+#~ msgid "A4 210 x 297 mm"
+#~ msgstr "A4 210 x 297 mm"
+
+#~ msgid "A4 Small 210 x 297 mm"
+#~ msgstr "A4 klein 210 x 297 mm"
+
+#~ msgid "A5 148 x 210 mm"
+#~ msgstr "A5 148 x 210 mm"
+
+#~ msgid "Abstract filter"
+#~ msgstr "Abstract filter"
+
+#~ msgid "Abstract non-working export filter"
+#~ msgstr "Abstract niet-werkende export filter"
+
+#~ msgid "Angle"
+#~ msgstr "Hoek"
+
+#~ msgid "Axis increment must be >= 0"
+#~ msgstr "Astoename moet >= 0 zijn"
+
+#~ msgid "Axis Labels"
+#~ msgstr "Astitel"
+
+#~ msgid "Axis Logarithmic Base should be >= 2"
+#~ msgstr "Het logaritmisch grondtal van de as moet >= 2 zijn"
+
+#~ msgid "Axis Maximum Value must be >= Minimum"
+#~ msgstr "Het maximum van de as moet >= minimum zijn"
+
+#~ msgid "Axis Minimum Value must be <= Maximum"
+#~ msgstr "Het minimum van de as moet <= maximum zijn"
+
+#~ msgid "Axis Title"
+#~ msgstr "Astitel"
+
+#~ msgid "B4 250 x 354 mm"
+#~ msgstr "B4 250 x 354 mm"
+
+#~ msgid "B5 182 x 257 mm"
+#~ msgstr "B5 182 x 257 mm"
+
+#~ msgid "Bar Offset Percent must be between -100% and 100%"
+#~ msgstr "Bar Offset percentage moet tussen -100% en 100% zijn"
+
+#~ msgid "Bar Width Percent must be between 1 and 100"
+#~ msgstr "Bar Width percentage moet tussen 1 en 100 ziijn"
+
+#~ msgid "Bikes"
+#~ msgstr "Fietsen"
+
+#~ msgid "boolean value"
+#~ msgstr "Booleaanse waarde"
+
+#~ msgid "C size sheet"
+#~ msgstr "C size sheet"
+
+#~ msgid "Cannot %s %s expressions"
+#~ msgstr "Kan geen %s %s expressies"
+
+#~ msgid "Cannot divide by 0"
+#~ msgstr "Kan niet delen door 0"
+
+#~ msgid "Chairs"
+#~ msgstr "Stoelen"
+
+#~ msgid "Child"
+#~ msgstr "Kind"
+
+#~ msgid "Circular linking not allowed"
+#~ msgstr "Circulaire linking niet toegestaan"
+
+#~ msgid "Column Header"
+#~ msgstr "Kolomtitel"
+
+#~ msgid "ColumnHeaderBand"
+#~ msgstr "ColumnHeaderBand"
+
+#~ msgid "Comma separated text file"
+#~ msgstr "Komma gescheiden tekstbestand"
+
+#~ msgid "Comma Separated"
+#~ msgstr "Komma gescheiden"
+
+#~ msgid "Convert a numeric <X> to a string"
+#~ msgstr "Converteertd getal <X> naar een string"
+
+#~ msgid "Converts a string to lower case letters"
+#~ msgstr "Converteert een string naar kleine letters"
+
+#~ msgid "Converts a string to upper case letters"
+#~ msgstr "Converteert een string naar hoofdletters"
+
+#~ msgid "CORBA client stub not registered"
+#~ msgstr "CORBA client stub niet geregistreerd"
+
+#~ msgid "CORBA libraries are unavailable or not initialized"
+#~ msgstr "CORBA libraries niet beschikbaar of niet geinitialiseerd"
+
+#~ msgid "Could not perform CORBA Dispatch, no interface repository found"
+#~ msgstr ""
+#~ "Kon CORBA Dispatch niet uitvoeren, geen interface repository gevonden"
+
+#~ msgid "Custom variant type (%.4x) already used by %s"
+#~ msgstr "Custom variant type (%.4x) already used by %s"
+
+#~ msgid "Custom variant type (%.4x) is not usable"
+#~ msgstr "Custom variant type (%.4x) is not usable"
+
+#~ msgid "Custom variant type (%.4x) is out of range"
+#~ msgstr "Custom variant type (%.4x) is out of range"
+
+#~ msgid "D size sheet"
+#~ msgstr "D size sheet"
+
+#~ msgid "Date/Time"
+#~ msgstr "Datum/Tijd"
+
+#~ msgid "DateTime Axis cannot be Logarithmic"
+#~ msgstr "DateTime as kan niet logaritmisch zijn"
+
+#~ msgid "Detail count"
+#~ msgstr "Detail telling"
+
+#~ msgid "DetailBand"
+#~ msgstr "DetailBand"
+
+#~ msgid "divide"
+#~ msgstr "delen"
+
+#~ msgid "Divide"
+#~ msgstr "delen"
+
+#~ msgid "Division by Zero"
+#~ msgstr "Deling door nul"
+
+#~ msgid "E size sheet"
+#~ msgstr "E size sheet"
+
+#~ msgid "Envelope #10 4 1/8 x 9 1/2"
+#~ msgstr "Envelop #10 4 1/8 x 9 1/2"
+
+#~ msgid "Envelope #11 4 1/2 x 10 3/8"
+#~ msgstr "Envelop #11 4 1/2 x 10 3/8"
+
+#~ msgid "Envelope #12 4 \\276 x 11"
+#~ msgstr "Envelop #12 4 \\276 x 11"
+
+#~ msgid "Envelope #14 4 \\276 x 11"
+#~ msgstr "Envelop #14 4 \\276 x 11"
+
+#~ msgid "Envelope #9 3 7/8 x 8 7/8"
+#~ msgstr "Envelop #9 3 7/8 x 8 7/8"
+
+#~ msgid "Error creating variant array"
+#~ msgstr "Fout bij aanmaken variant array"
+
+#~ msgid "Evaluator not prepared"
+#~ msgstr "Evaluator niet voorbereid"
+
+#~ msgid ""
+#~ "Exception %s in module %s at %p.\n"
+#~ "%s%s"
+#~ msgstr ""
+#~ "Exception %s in module %s op %p.\n"
+#~ "%s%s"
+
+#~ msgid "Executive7 1/2 x 10 in"
+#~ msgstr "Executive7 1/2 x 10 in"
+
+#~ msgid "Fast Line"
+#~ msgstr "Fast Line"
+
+#~ msgid "Field %s is of unknown type"
+#~ msgstr "Veld %s is van een onbekend type"
+
+#~ msgid "File does not exist"
+#~ msgstr "Bestand niet gevonden"
+
+#~ msgid "FillSampleValues NumValues must be > 0"
+#~ msgstr "FillSampleValues NumValues moet >= 0 zijn"
+
+#~ msgid "First Legend Value must be > 0"
+#~ msgstr "Eerste Legend Value moet > 0 zijn"
+
+#~ msgid "Folio 8 1/2 x 13 in"
+#~ msgstr "Folio 8 1/2 x 13 in"
+
+#~ msgid "Formats numeric <N> using the mask in <F>"
+#~ msgstr "Formatteert getal <N> met masker <F>"
+
+#~ msgid "Function Period should be >= 0"
+#~ msgstr "De functie-periode moet >= 0 zijn"
+
+#~ msgid "Group Footer"
+#~ msgstr "Groep voettekst"
+
+#~ msgid "Group Header"
+#~ msgstr "Groep koptekst"
+
+#~ msgid "HTML document for web publishing"
+#~ msgstr "HTML document voor webpublicatie"
+
+#~ msgid "Illegal call to NewPage"
+#~ msgstr "Ongeldige aanroep van NewPage"
+
+#~ msgid "Increments for each iteration"
+#~ msgstr "Neemt toe bij elke iteratie"
+
+#~ msgid "Integer division of <X> by <Y>"
+#~ msgstr "Geheel-getaldeling van <X> door <Y>"
+
+#~ msgid "Invalid argument to SQRT function"
+#~ msgstr "Ongeldig argument voor SQRT functie"
+
+#~ msgid "Invalid input value. Use escape key to abandon changes"
+#~ msgstr ""
+#~ "Ongeldige invoerwaarde.  Gebruik escape toets om wijzigingen te annuleren"
+
+#~ msgid "Ledger 17 x 11 in"
+#~ msgstr "Ledger 17 x 11 in"
+
+#~ msgid "Legal 8 1/2 x 14 in"
+#~ msgstr "Legal 8 1/2 x 14 in"
+
+#~ msgid "Legend Color Width must be between 0 and 100 %"
+#~ msgstr "Legend Color Width moet tussen 0 en 100% ziijn"
+
+#~ msgid "Letter 8 1/2 x 11 in"
+#~ msgstr "Letter 8 1/2 x 11 in"
+
+#~ msgid "Letter Small 8 1/2 x 11 in"
+#~ msgstr "Letter Small 8 1/2 x 11 in"
+
+#~ msgid "Makes the first character upper case and the rest lower case"
+#~ msgstr ""
+#~ "Maakt het eerste karakter om in een hoofdletter en de rest naar kleine "
+#~ "letters"
+
+#~ msgid "MaxPointsPerPage must be >= 0"
+#~ msgstr "MaxPointsPerPage moet >= 0 zijn"
+
+#~ msgid "Missing argument for %s"
+#~ msgstr "Ontbrekend argument voor %s"
+
+#~ msgid "multiply"
+#~ msgstr "vermenigvuldigen"
+
+#~ msgid "Multiply"
+#~ msgstr "vermenigvuldigen"
+
+#~ msgid "No valid DataSource: %s"
+#~ msgstr "Geen geldige databron: %s"
+
+#~ msgid "Note 8 1/2 x 11 in"
+#~ msgstr "Note 8 1/2 x 11 in"
+
+#~ msgid "numeric"
+#~ msgstr "numeriek"
+
+#~ msgid "Operator %s is not compatible with %s expressions"
+#~ msgstr "Operator %s is niet compatibel met %s expressies"
+
+#~ msgid "Page Footer"
+#~ msgstr "Pagina voettekst"
+
+#~ msgid "Page Header"
+#~ msgstr "Pagina koptekst"
+
+#~ msgid "Page"
+#~ msgstr "Pagina"
+
+#~ msgid "Page#"
+#~ msgstr "Pagina#"
+
+#~ msgid "PageFooterBand"
+#~ msgstr "PageFooterBand"
+
+#~ msgid "PageHeaderBand"
+#~ msgstr "PageHeaderBand"
+
+#~ msgid ""
+#~ "Parameter (%d) of method %s is an out or in/out parameter and requires a "
+#~ "variable reference"
+#~ msgstr ""
+#~ "Parameter (%d) van methode %s is een out of in/out parameter and vereist "
+#~ "een variabele referentie"
+
+#~ msgid "Parameter (%d) of method %s not of the correct type"
+#~ msgstr "Parameter (%d) van methode %s heeft niet het juiste type"
+
+#~ msgid "QRPrinter not ready"
+#~ msgstr "QRPrinter niet klaar"
+
+#~ msgid "Quarto 215 x 275 mm"
+#~ msgstr "Quarto 215 x 275 mm"
+
+#~ msgid "QuickReport file"
+#~ msgstr "QuickReport bestand"
+
+#~ msgid "QuSoft AS"
+#~ msgstr "QuSoft AS"
+
+#~ msgid "Recursive calls not allowed"
+#~ msgstr "Recursieve aanroep niet toegestaan"
+
+#~ msgid "Report title"
+#~ msgstr "Rapport titel"
+
+#~ msgid "Return current date as a string"
+#~ msgstr "Retourneert huidige datum als een string"
+
+#~ msgid "Returns <X> or <Y> depending on the boolean expression <Exp>"
+#~ msgstr "Retourneer <X> of <Y> afhankelijk van Booleaanse expressie <Exp>"
+
+#~ msgid "Returns a substring of string X"
+#~ msgstr "Retourneert een substring van <X>"
+
+#~ msgid "Returns square root of <X>"
+#~ msgstr "Retourneert de vierkantswortel van <X>"
+
+#~ msgid "Returns the average of numeric <X>"
+#~ msgstr "Retourneert het gemiddelde van getal <X>"
+
+#~ msgid "Returns the data type of <Exp>"
+#~ msgstr "Retourneert het data type van <Exp>"
+
+#~ msgid "Returns the fractional part of <X>"
+#~ msgstr "Retourneert de fractie van <X>"
+
+#~ msgid "Returns the highest <X>"
+#~ msgstr "Retourneert de hoogste <X>"
+
+#~ msgid "Returns the integer part of <X>"
+#~ msgstr "Retourneert het gehele deel van <X>"
+
+#~ msgid "Returns the lowest <X>"
+#~ msgstr "Retourneert de laagste <X>"
+
+#~ msgid "Statement 5 1/2 x 8 1/2 in"
+#~ msgstr "Statement 5 1/2 x 8 1/2 in"
+
+#~ msgid "SubDetailBand"
+#~ msgstr "SubDetailBand"
+
+#~ msgid "Subtract"
+#~ msgstr "aftrekken"
+
+#~ msgid "SummaryBand"
+#~ msgstr "SummaryBand"
+
+#~ msgid "Sums the numeric <X>"
+#~ msgstr "Sommeert de getallen <X>"
+
+#~ msgid "Tabloid 11 x 17 in"
+#~ msgstr "Tabloid 11 x 17 in"
+
+#~ msgid "Text export (ASCII) filter"
+#~ msgstr "Tekst export (ASCII) filter"
+
+#~ msgid "Text file"
+#~ msgstr "Tekstbestand"
+
+#~ msgid "Title"
+#~ msgstr "Titel"
+
+#~ msgid "TitleBand"
+#~ msgstr "TitleBand"
+
+#~ msgid "Unknown Error No. "
+#~ msgstr "Onbekend foutnummer"
+
+#~ msgid "Variant array index out of bounds"
+#~ msgstr "Variant array index out of bounds"
+
+#~ msgid "Variant array is locked"
+#~ msgstr "Variant array is locked"
+
+#~ msgid "Variant/Any not a CORBA object"
+#~ msgstr "Variant/Any is geen CORBA object"
+
+#~ msgid ""
+#~ "Win32 Error. Code: %d.\n"
+#~ "%s"
+#~ msgstr ""
+#~ "Win32 Fout.  Code: %d.\n"
+#~ "%s"
+
+#~ msgid "Wrong arguments for %s"
+#~ msgstr "Verkeerde argumenten voor %s"
+
+#~ msgid "X"
+#~ msgstr "X"
+
+#~ msgid "Y"
+#~ msgstr "Y"

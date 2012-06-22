@@ -1,0 +1,2527 @@
+msgid ""
+msgstr ""
+"Project-Id-Version: DeveloperExpress\n"
+"POT-Creation-Date: 2004-08-26 21:20\n"
+"PO-Revision-Date: 2004-08-24 19:30+0100\n"
+"Last-Translator: Pelle F. S. Liljendal <pelle@liljendal.dk>\n"
+"Language-Team: Pelle F. S. Liljendal <pelle@liljendal.dk>\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+
+#  --- cxLibraryStrs.pas (DeveloperExpress) ---
+#  --- cxLibraryStrs.pas (DeveloperExpress) ---
+#  --- cxLibraryStrs.pas (DeveloperExpress) ---
+#  --- cxLibraryStrs.pas (DeveloperExpress) ---
+#  --- cxLibraryStrs.pas (DeveloperExpress) ---
+#. --- cxLibraryStrs.pas (DeveloperExpress) ---
+#: ggsetup_dxCommon.inc:3
+msgid "Can't create the registry key: \\%s"
+msgstr "Kan ikke registrere nøglen: \\%s"
+
+#: ggsetup_dxCommon.inc:7
+msgid "Item already exists"
+msgstr "Element findes allerede"
+
+#: ggsetup_dxCommon.inc:8
+msgid "RecordIndex out of range"
+msgstr "RecordIndex uden for tilladte område"
+
+#: ggsetup_dxCommon.inc:9
+msgid "ItemIndex out of range"
+msgstr "ItemIndex uden for tilladte område"
+
+#: ggsetup_dxCommon.inc:10
+msgid "This operation is not supported in provider mode"
+msgstr "Dette operation er ikke supporteret i provider mode"
+
+#: ggsetup_dxCommon.inc:12
+msgid "RowIndex out of range"
+msgstr "RowIndex ikke i tilladte område"
+
+#: ggsetup_dxCommon.inc:13
+msgid "GetInfoForCompare not implemented"
+msgstr "GetInfoForCompare ikke implementeret"
+
+#: ggsetup_dxCommon.inc:14
+msgid "DetailFilterController not found"
+msgstr "DetailFilterController ikke fundet"
+
+#: ggsetup_dxCommon.inc:15
+msgid "DataController not in GridMode"
+msgstr "DataController ikke i GridMode"
+
+#: ggsetup_dxCommon.inc:16
+msgid "Key Field not found"
+msgstr "Nøgle Felt ikke fundet"
+
+#  all
+#. all
+#: ggsetup_dxCommon.inc:19 ggsetup_dxCommon.inc:42
+msgid "AND"
+msgstr "OG"
+
+#. any
+#: ggsetup_dxCommon.inc:20 ggsetup_dxCommon.inc:43
+msgid "OR"
+msgstr "ELLER"
+
+#. not all
+#: ggsetup_dxCommon.inc:21
+msgid "NOT AND"
+msgstr "IKKE OK"
+
+#. not any
+#: ggsetup_dxCommon.inc:22
+msgid "NOT OR"
+msgstr "IKKE ELLER"
+
+#: ggsetup_dxCommon.inc:24
+msgid "Filter"
+msgstr "Filter"
+
+#: ggsetup_dxCommon.inc:25
+msgid "Add &Condition"
+msgstr "Tilføj &Betingelse"
+
+#: ggsetup_dxCommon.inc:26
+msgid "Add &Group"
+msgstr "Tilføj &Gruppe"
+
+#: ggsetup_dxCommon.inc:27
+msgid "&Remove Row"
+msgstr "&Fjern Række"
+
+#: ggsetup_dxCommon.inc:28
+msgid "Clear &All"
+msgstr "Nulstil &Alt"
+
+#: ggsetup_dxCommon.inc:29
+msgid "press the button to add a new condition"
+msgstr "tryk på knappen for at tilføje ny betingelse"
+
+#: ggsetup_dxCommon.inc:31
+msgid "applies to the following conditions"
+msgstr "gælder for følgende betingelser"
+
+#: ggsetup_dxCommon.inc:32
+msgid "<root>"
+msgstr "<roden>"
+
+#: ggsetup_dxCommon.inc:33
+msgid "<empty>"
+msgstr "<tom>"
+
+#: ggsetup_dxCommon.inc:35
+msgid "Can't build filter from source"
+msgstr "Kan ikke bygge filter fra Source"
+
+#. FilterDialog
+#: ggsetup_dxCommon.inc:37
+msgid "Custom Filter"
+msgstr "Bruger definerbar Filter"
+
+#: ggsetup_dxCommon.inc:38
+msgid "Invalid value"
+msgstr "Ugyldig værdi"
+
+#: ggsetup_dxCommon.inc:39
+msgid "Use"
+msgstr "Brug"
+
+#: ggsetup_dxCommon.inc:40
+msgid "to represent any single character"
+msgstr "til repræsenterer ethvert enkelt tegn"
+
+#: ggsetup_dxCommon.inc:41
+msgid "to represent any series of characters"
+msgstr "til repræsenterer enhver serie af tegn"
+
+#: ggsetup_dxCommon.inc:44
+msgid "Show rows where:"
+msgstr "Vis rækker hvor:"
+
+#. FilterControlDialog
+#: ggsetup_dxCommon.inc:46
+msgid "Filter builder"
+msgstr "Filter-Bygger"
+
+#: ggsetup_dxCommon.inc:47
+msgid "untitled.flt"
+msgstr "udennavn.flt"
+
+#: ggsetup_dxCommon.inc:48
+msgid "Open an existing filter"
+msgstr "Åben et eksisterende filter"
+
+#: ggsetup_dxCommon.inc:49
+msgid "Save the active filter to file"
+msgstr "Gem det aktive filter til fil"
+
+#: ggsetup_dxCommon.inc:50
+msgid "&Save As..."
+msgstr "Gem &Som..."
+
+#: ggsetup_dxCommon.inc:55
+msgid "flt"
+msgstr "flt"
+
+#: ggsetup_dxCommon.inc:56
+msgid "Filters (*.flt)|*.flt"
+msgstr "Filtre (*.flt)|*.flt"
+
+#. base operators
+#: ggsetup_dxCommon.inc:59
+msgid "equals"
+msgstr "lig med"
+
+#: ggsetup_dxCommon.inc:60
+msgid "does not equal"
+msgstr "ikke lig med"
+
+#: ggsetup_dxCommon.inc:61
+msgid "is less than"
+msgstr "er mindre end"
+
+#: ggsetup_dxCommon.inc:62
+msgid "is less than or equal to"
+msgstr "er mindre end eller lige med"
+
+#: ggsetup_dxCommon.inc:63
+msgid "is greater than"
+msgstr "er større end"
+
+#: ggsetup_dxCommon.inc:64
+msgid "is greater than or equal to"
+msgstr "er større end eller lige med"
+
+#: ggsetup_dxCommon.inc:65
+msgid "like"
+msgstr "som"
+
+#: ggsetup_dxCommon.inc:66
+msgid "not like"
+msgstr "ikke som"
+
+#: ggsetup_dxCommon.inc:67
+msgid "between"
+msgstr "imellem"
+
+#: ggsetup_dxCommon.inc:68
+msgid "not between"
+msgstr "ikke imellem"
+
+#: ggsetup_dxCommon.inc:69
+msgid "in"
+msgstr "i"
+
+#: ggsetup_dxCommon.inc:70
+msgid "not in"
+msgstr "ikke i"
+
+#: ggsetup_dxCommon.inc:72
+msgid "is yesterday"
+msgstr "er i dag"
+
+#: ggsetup_dxCommon.inc:73
+msgid "is today"
+msgstr "er i dag"
+
+#: ggsetup_dxCommon.inc:74
+msgid "is tomorrow"
+msgstr "er i morgen"
+
+#: ggsetup_dxCommon.inc:76
+msgid "is last week"
+msgstr "er sidste uge"
+
+#: ggsetup_dxCommon.inc:77
+msgid "is last month"
+msgstr "er sidste måned"
+
+#: ggsetup_dxCommon.inc:78
+msgid "is last year"
+msgstr "er sidste år"
+
+#: ggsetup_dxCommon.inc:80
+msgid "is this week"
+msgstr "er dette år"
+
+#: ggsetup_dxCommon.inc:81
+msgid "is this month"
+msgstr "er denne måned"
+
+#: ggsetup_dxCommon.inc:82
+msgid "is this year"
+msgstr "er dette år"
+
+#: ggsetup_dxCommon.inc:84
+msgid "is next week"
+msgstr "er næste uge"
+
+#: ggsetup_dxCommon.inc:85
+msgid "is next month"
+msgstr "er næste måned"
+
+#: ggsetup_dxCommon.inc:86
+msgid "is next year"
+msgstr "er næste år"
+
+#: ggsetup_dxCommon.inc:88
+msgid "and"
+msgstr "og"
+
+#: ggsetup_dxCommon.inc:89
+msgid "or"
+msgstr "eller"
+
+#: ggsetup_dxCommon.inc:90
+msgid "not"
+msgstr "ikke"
+
+#: ggsetup_dxCommon.inc:91
+msgid "blank"
+msgstr "blank"
+
+#. derived
+#: ggsetup_dxCommon.inc:93
+msgid "is blank"
+msgstr "er blank"
+
+#: ggsetup_dxCommon.inc:94
+msgid "is not blank"
+msgstr "er ikke blank"
+
+#: ggsetup_dxCommon.inc:95
+msgid "begins with"
+msgstr "begynder med"
+
+#: ggsetup_dxCommon.inc:96
+msgid "does not begin with"
+msgstr "begynder ikke med"
+
+#: ggsetup_dxCommon.inc:97
+msgid "ends with"
+msgstr "ender med"
+
+#: ggsetup_dxCommon.inc:98
+msgid "does not end with"
+msgstr "ender ikke med"
+
+#: ggsetup_dxCommon.inc:99
+msgid "contains"
+msgstr "indeholder"
+
+#: ggsetup_dxCommon.inc:100
+msgid "does not contain"
+msgstr "indeholder ikke"
+
+#. filter listbox's values
+#: ggsetup_dxCommon.inc:102
+msgid "(All)"
+msgstr "(Alle)"
+
+#: ggsetup_dxCommon.inc:103
+msgid "(Custom...)"
+msgstr "(Bruger definerbar)"
+
+#: ggsetup_dxCommon.inc:104
+msgid "(Blanks)"
+msgstr "(Blanke)"
+
+#: ggsetup_dxCommon.inc:105
+msgid "(NonBlanks)"
+msgstr "(Ikke Blanke)"
+
+#. --- cxEditConsts.pas (DeveloperExpress) ---
+#: ggsetup_dxCommon.inc:107
+msgid "Could not convert to date"
+msgstr "Kunne ikke konvertere til dato"
+
+#: ggsetup_dxCommon.inc:108
+msgid "The repository item is not acceptable"
+msgstr "Pulje element accepteres ikke"
+
+#: ggsetup_dxCommon.inc:109
+msgid "Could not convert to numeric value"
+msgstr "Kunne ikke konvertere til en numerisk værdi"
+
+#: ggsetup_dxCommon.inc:110
+msgid "Circular referencing is not allowed"
+msgstr "Cirkular reference er ikke tilladt"
+
+#: ggsetup_dxCommon.inc:111
+msgid "An error occured during posting edit value"
+msgstr "En fejl opstod under posteringen af edit værdien"
+
+#: ggsetup_dxCommon.inc:112
+msgid "Could not convert to time"
+msgstr "Kunne ikke konvertere til tidspunk"
+
+#: ggsetup_dxCommon.inc:113
+msgid "Invalid input value. Use escape key to abandon changes"
+msgstr "Ugyldig input værdi. Brug escape tasten til at fortryde ændringerne"
+
+#: ggsetup_dxCommon.inc:114
+msgid "Value out of bounds"
+msgstr "Værdi uden for tilladte grænse"
+
+#: ggsetup_dxCommon.inc:127
+msgid "(MEMO)"
+msgstr "(BEMÆRKNING)"
+
+#: ggsetup_dxCommon.inc:128
+msgid "(memo)"
+msgstr "(bemærkning)"
+
+#: ggsetup_dxCommon.inc:129
+msgid "(PICTURE)"
+msgstr "(BILLED)"
+
+#: ggsetup_dxCommon.inc:130
+msgid "(picture)"
+msgstr "(billed)"
+
+#: ggsetup_dxCommon.inc:140
+msgid "Now"
+msgstr "Nu"
+
+#: ggsetup_dxCommon.inc:142
+msgid "Today"
+msgstr "I dag"
+
+#: ggsetup_dxCommon.inc:143
+msgid "Invalid Date"
+msgstr "Ugyldig Dato"
+
+#. smart input consts
+#: ggsetup_dxCommon.inc:145
+msgid "today"
+msgstr "i dag"
+
+#: ggsetup_dxCommon.inc:146
+msgid "yesterday"
+msgstr "i går"
+
+#: ggsetup_dxCommon.inc:147
+msgid "tomorrow"
+msgstr "i morgen"
+
+#: ggsetup_dxCommon.inc:155
+msgid "first"
+msgstr "første"
+
+#: ggsetup_dxCommon.inc:156
+msgid "second"
+msgstr "anden"
+
+#: ggsetup_dxCommon.inc:157
+msgid "third"
+msgstr "tredie"
+
+#: ggsetup_dxCommon.inc:158
+msgid "fourth"
+msgstr "fjerde"
+
+#: ggsetup_dxCommon.inc:159
+msgid "fifth"
+msgstr "femte"
+
+#: ggsetup_dxCommon.inc:160
+msgid "sixth"
+msgstr "sjete"
+
+#: ggsetup_dxCommon.inc:161
+msgid "seventh"
+msgstr "syvende"
+
+#: ggsetup_dxCommon.inc:164
+msgid "now"
+msgstr "nu"
+
+#  edit repository
+#. edit repository
+#: ggsetup_dxCommon.inc:171
+msgid "BlobEdit|Represents the BLOB editor"
+msgstr "BlobEdit|Repræsentere en BLOB editor"
+
+#: ggsetup_dxCommon.inc:172
+msgid "ButtonEdit|Represents an edit control with embedded buttons"
+msgstr "ButtonEdit|Repræsentere et indtastningsfelt med indbyggede knapper"
+
+#: ggsetup_dxCommon.inc:173
+msgid "CalcEdit|Represents an edit control with a dropdown calculator window"
+msgstr "CalcEdit|Repræsentere et indtastnings felt med en dropdown regnemaskine"
+
+#: ggsetup_dxCommon.inc:174
+msgid "CheckBox|Represents a check box control that allows selecting an option"
+msgstr "CheckBox|Repræsentere et afkrydsnings felt der tillader valg af en mulighed"
+
+#: ggsetup_dxCommon.inc:175
+msgid "ComboBox|Represents the combo box editor"
+msgstr "ComboBox|Repræsentere en combo box editor"
+
+#: ggsetup_dxCommon.inc:176
+msgid "CurrencyEdit|Represents an editor enabling editing currency data"
+msgstr "CurrencyEdit|Repræsentere et indtastnings felt til indtastning af beløb"
+
+#: ggsetup_dxCommon.inc:177
+msgid "DateEdit|Represents an edit control with a dropdown calendar"
+msgstr "DateEdit|Repræsentere et indtastnings felt med en dropdown kalender"
+
+#: ggsetup_dxCommon.inc:178
+msgid "HyperLink|Represents a text editor with hyperlink functionality"
+msgstr "HyperLink|Repræsentere et indtastnings felt med hyperlink funktionalitet"
+
+#: ggsetup_dxCommon.inc:179
+msgid "ImageComboBox|Represents an editor displaying the list of images and text strings within the dropdown window"
+msgstr "ImageComboBox|Repræsentere en editor der viser en liste af billeder og tekst-strenge i et dropdown vindue"
+
+#: ggsetup_dxCommon.inc:180
+msgid "Image|Represents an image editor"
+msgstr "Image|Repræsentere en billed editor"
+
+#: ggsetup_dxCommon.inc:181
+msgid "LookupComboBox|Represents a lookup combo box control"
+msgstr "LookupComboBox|Repræsentere et lookup combo box indtastnings felt"
+
+#: ggsetup_dxCommon.inc:182
+msgid "MaskEdit|Represents a generic masked edit control."
+msgstr "MaskEdit|Repræsentere et maske indtastnings felt"
+
+#: ggsetup_dxCommon.inc:183
+msgid "Memo|Represents an edit control that allows editing memo data"
+msgstr "Memo|Repræsentere en edit-kontrol der tillader editering af memo data"
+
+#: ggsetup_dxCommon.inc:184
+msgid "MRUEdit|Represents a text editor displaying the list of most recently used items (MRU) within a dropdown window"
+msgstr "MRUEdit|Repræsentere en tekst editor der viser en list indeholdende seneste anvendte elementer (MRU) i et dropdown vindue"
+
+#: ggsetup_dxCommon.inc:185
+msgid "PopupEdit|Represents an edit control with a dropdown list"
+msgstr "PopupEdit|Repræsentere en edit-kontrol med en dropdown liste"
+
+#: ggsetup_dxCommon.inc:186
+msgid "SpinEdit|Represents a spin editor"
+msgstr "SpinEdit|Repræsentere en spin-editor"
+
+#: ggsetup_dxCommon.inc:187
+msgid "RadioGroup|Represents a group of radio buttons"
+msgstr "RadioGroup|Repræsentere en radio-knap"
+
+#: ggsetup_dxCommon.inc:188
+msgid "TextEdit|Represents a single line text editor"
+msgstr "TextEdit|Repræsentere en editor til indtastning af enkelt linie"
+
+#: ggsetup_dxCommon.inc:189
+msgid "TimeEdit|Represents an editor displaying time values"
+msgstr "TimeEdit|Repræsentere en editor til indtastning af tids-værdier"
+
+#: ggsetup_dxCommon.inc:192
+msgid "Char"
+msgstr "Tegn"
+
+#: ggsetup_dxCommon.inc:193
+msgid "The source stream is not assigned"
+msgstr "Source stream er ikke tilknyttet"
+
+#: ggsetup_dxCommon.inc:194
+msgid "The source stream is empty"
+msgstr "Source stream er tom"
+
+#: ggsetup_dxCommon.inc:195
+msgid "The '+' quantifier cannot be applied here"
+msgstr "Værdien '+' kan ikke anvendes her"
+
+#: ggsetup_dxCommon.inc:196
+msgid "The '*' quantifier cannot be applied here"
+msgstr "Værdien '*' kan ikke anvendes her"
+
+#: ggsetup_dxCommon.inc:197
+msgid "The alternative should not be empty"
+msgstr "Alternativet bør ikke være tom"
+
+#: ggsetup_dxCommon.inc:198
+msgid "The block should not be empty"
+msgstr "Blokken bør ikke være tom"
+
+#: ggsetup_dxCommon.inc:199
+msgid "Illegal '%s'"
+msgstr "Ugyldig '%s'"
+
+#: ggsetup_dxCommon.inc:200
+msgid "Illegal quantifier '%s'"
+msgstr "Ugyldig værdi '%s'"
+
+#: ggsetup_dxCommon.inc:201
+msgid "The parameter quantifiers are not supported"
+msgstr "Parameter værdier er ikke understøttet"
+
+#: ggsetup_dxCommon.inc:202
+msgid "Illegal integer value"
+msgstr "Ugyldig heltals værdi"
+
+#: ggsetup_dxCommon.inc:203
+msgid "Too big reference number"
+msgstr "Reference nummeret er for stort"
+
+#: ggsetup_dxCommon.inc:204
+msgid "Can't create empty enumeration"
+msgstr "Kan ikke oprete en tom enumeration"
+
+#: ggsetup_dxCommon.inc:205
+msgid "The starting character of the subrange must be less than the finishing one"
+msgstr "Start tegnet i underområdet skal være mindre end slut tegnet"
+
+#: ggsetup_dxCommon.inc:206
+msgid "Hexadecimal number expected"
+msgstr "Hexadecimal nummer er forventet"
+
+#: ggsetup_dxCommon.inc:207
+msgid "Hexadecimal number expected but '%s' found"
+msgstr "Hexadecimal nummer forventet men '%s' blev fundet"
+
+#: ggsetup_dxCommon.inc:208
+msgid "Missing '%s'"
+msgstr "Mangler '%s'"
+
+#: ggsetup_dxCommon.inc:209
+msgid "Unnecessary '%s'"
+msgstr "Unødvendig '%s'"
+
+#: ggsetup_dxCommon.inc:210
+msgid "The space character is not allowed after '\\'"
+msgstr "Mellerums tegnet er ikke tilladt efter '\\'"
+
+#: ggsetup_dxCommon.inc:211
+msgid "Regular expression is not compiled"
+msgstr "Almindelig udtryk er ikke compileret"
+
+#: ggsetup_dxCommon.inc:212
+msgid "Incorrect parameter quantifier"
+msgstr "Inkorrekt parameter værdi"
+
+#: ggsetup_dxCommon.inc:213
+msgid "The parameter quantifier cannot be applied here"
+msgstr "Parameter værdi kan ikke anvendes her"
+
+#: ggsetup_dxCommon.inc:215
+msgid "Regular expression errors:"
+msgstr "Fejl i udtryk"
+
+#: ggsetup_dxCommon.inc:216
+msgid "The edit value is invalid"
+msgstr "Indtastnings værdien er ugyldig"
+
+#: ggsetup_dxCommon.inc:218
+msgid "Illegal file format"
+msgstr "Ugyldig fil format"
+
+#: ggsetup_dxCommon.inc:219
+msgid "The mask collection file is empty"
+msgstr "Maske-samlings filen er tom"
+
+#: ggsetup_dxCommon.inc:220
+msgid "Mask collection files"
+msgstr "Maske-samlings filer"
+
+#. --- cxPCConsts.pas (DeveloperExpress) ---
+#: ggsetup_dxCommon.inc:223
+msgid "Index (%d) must be between 0 and %d"
+msgstr "Index (%d) skal være mellem 0 og %d"
+
+#: ggsetup_dxCommon.inc:224
+msgid "BaseImages is not assigned"
+msgstr "BaseImages er ikke sat"
+
+#: ggsetup_dxCommon.inc:225
+msgid "There are no styles registered"
+msgstr "Der er ikke registreret nogen styles"
+
+#: ggsetup_dxCommon.inc:227
+msgid "PCPainterClass is nil"
+msgstr "PCPainterClass er nil"
+
+#: ggsetup_dxCommon.inc:228
+msgid "%s is an unsupported standard style"
+msgstr "%s er en ikke supporteret standard style"
+
+#: ggsetup_dxCommon.inc:229
+msgid "%s is an unregistered style name"
+msgstr "%s er et ikke registreret style navn"
+
+#: ggsetup_dxCommon.inc:230
+msgid "Tabs.Count, _(0"
+msgstr "Tabs.Count, _(0"
+
+#: ggsetup_dxCommon.inc:231
+msgid "Tab's index (%d) out of bounds"
+msgstr "Tab's index (%d) er uden for tilladte grænse"
+
+#: ggsetup_dxCommon.inc:232
+msgid "TabVisibleIndex (%d) must be between 0 and %d"
+msgstr "TabVisibleIndex (%d) skal være mellem 0 og %d"
+
+#: ggsetup_dxCommon.inc:233
+msgid "There are no visible tabs"
+msgstr "Der er ikke nogen synlig tabs"
+
+#. --- cxExportStrs.pas (DeveloperExpress) ---
+#: ggsetup_dxCommon.inc:235
+msgid "Unsupported export type: %1"
+msgstr "Ikke supporteret eksport type %1"
+
+#: ggsetup_dxCommon.inc:236
+msgid "The Style Manager is currently being used elsewhere and can not be released at this stage"
+msgstr "Style manager bruges p.t. andetsteds og kan ikke frigøres på dette tidspunkt"
+
+#: ggsetup_dxCommon.inc:237
+msgid "Can't create style manager"
+msgstr "Kan ikke oprette style manager"
+
+#: ggsetup_dxCommon.inc:239
+msgid "Export to Web page (*.html)"
+msgstr "Eksport til Web side (*.html)"
+
+#: ggsetup_dxCommon.inc:240
+msgid "Export to XML document (*.xml)"
+msgstr "Eksport til XML dokument (*.xml)"
+
+#: ggsetup_dxCommon.inc:241
+msgid "Export to text format (*.txt)"
+msgstr "Eksport til tekst format (*.txt)"
+
+#: ggsetup_dxCommon.inc:243
+msgid "Export cache is empty"
+msgstr "Ekspor cache er tom"
+
+#: ggsetup_dxCommon.inc:244
+msgid "Incorrect union of cells"
+msgstr "Inkorrekt sammenføjning af celler"
+
+#: ggsetup_dxCommon.inc:245
+msgid "Illegal width of the column"
+msgstr "Ugyldig bredde på kolonnen"
+
+#: ggsetup_dxCommon.inc:246
+msgid "Invalid column or row count"
+msgstr "Ugyldig kolonne eller række antal"
+
+#: ggsetup_dxCommon.inc:247
+msgid "Illegal height of the row"
+msgstr "Ugyldig række højde"
+
+#: ggsetup_dxCommon.inc:248
+msgid "The column index %d out of bounds"
+msgstr "Kolonne index %d uden for tilladte grænse"
+
+#: ggsetup_dxCommon.inc:249
+msgid "The row index %d out of bounds"
+msgstr "Række index %d uden for tilladte grænse"
+
+#: ggsetup_dxCommon.inc:250
+msgid "Invalid style index %d"
+msgstr "Ugyldig stile index %d"
+
+#: ggsetup_dxCommon.inc:252
+msgid "Export to MS Excel (*.xls)"
+msgstr "Eksporter til MS Excel (*.xls)"
+
+#: ggsetup_dxCommon.inc:253
+msgid "Error write XLS file"
+msgstr "Fejl ved skrivning af XLS fil"
+
+#: ggsetup_dxCommon.inc:254
+msgid "Invalid cell dimension"
+msgstr "Ugyldig celle dimension"
+
+#  --- dxBarStrs.pas (DeveloperExpress) ---
+#  --- dxBarStrs.pas (DeveloperExpress) ---
+#. --- dxBarStrs.pas (DeveloperExpress) ---
+#: ggsetup_dxExpressBars.inc:3
+msgid "Select value"
+msgstr "Vælg værdi"
+
+#  color box dialog strings
+#: ggsetup_dxExpressBars.inc:25
+msgid "(automatic)"
+msgstr "(automatisk)"
+
+#: ggsetup_dxExpressBars.inc:26
+msgid "(custom)"
+msgstr "(Bruger definerbar)"
+
+#: ggsetup_dxExpressBars.inc:29
+msgid "Select the date"
+msgstr "Vælg dato"
+
+#: ggsetup_dxExpressBars.inc:30 ggsetup_dxExpressBars.inc:31
+msgid "Select item"
+msgstr "Vælg element"
+
+#: ggsetup_dxExpressBars.inc:32
+msgid "Image Index"
+msgstr "Billed Index"
+
+#: ggsetup_dxExpressBars.inc:33 ggsetup_dxSpreadSheet.inc:115
+msgid "Text"
+msgstr "Tekst"
+
+#: ggsetup_dxExpressBars.inc:34
+msgid "The place for the "
+msgstr " Placeringen af "
+
+#: ggsetup_dxExpressBars.inc:35
+msgid "You cannot assign the same control to more than one TdxBarControlContainerItem."
+msgstr "Du kan ikke tildele samme kontrol til mere end et TdxBarControlContainerItem."
+
+#: ggsetup_dxExpressBars.inc:37
+msgid "Are you sure you want to reset the changes made to the '%s' toolbar?"
+msgstr "Er du sikker på at ud vil nulstille ændringerne lavet til værktøjslinie '%s' ?"
+
+#: ggsetup_dxExpressBars.inc:38
+msgid "This will delete the record of the commands you've used in this application and restore the default set of visible commands to the menus and toolbars. It will not undo any explicit customizations.   Are you sure you want to proceed?"
+msgstr "Dette vil slette posten med kommandoer du har brugt i dette program og vil retunere til standard sættet af synlig kommandoer i menuer og værktøjslinier. Det vil ikke fjerne eksplisitte tilpasninger. Er du sikker på at du vil fortsætte?"
+
+#: ggsetup_dxExpressBars.inc:39
+msgid "A Form should contain only a single TdxBarManager"
+msgstr "En form bør kun indeholde en enkelt TdxBarManager"
+
+#: ggsetup_dxExpressBars.inc:40
+msgid "TdxBarManager should have as its Owner - TForm (TCustomForm)"
+msgstr "TdxBarManager bør have en TForm (TCustomForm) som dens ejer"
+
+#: ggsetup_dxExpressBars.inc:41
+msgid "There are no TdxBarManagers available"
+msgstr "Der er ikke nogel tilgængelig TdxBarMagager til rådighed"
+
+#: ggsetup_dxExpressBars.inc:42
+msgid "Are you sure you want to delete the '%s' toolbar?"
+msgstr "Er du sikker på at ud vil slette '%s' værktøjslinien ?"
+
+#: ggsetup_dxExpressBars.inc:43
+msgid "Are you sure you want to delete the '%s' category?"
+msgstr "Er du sikker på at du vil slette '%s' kategorien?"
+
+#: ggsetup_dxExpressBars.inc:44
+msgid "Are you sure you want to delete all commands in the '%s' category?"
+msgstr "Er du sikker på at du vil slette alle kommandoer i '%s' kategorien?"
+
+#: ggsetup_dxExpressBars.inc:45
+msgid "You cannot create recursive subitems"
+msgstr "Du kan ikke oprette rekursive underelementer"
+
+#: ggsetup_dxExpressBars.inc:46
+msgid "A command name cannot be blank. Please enter a name."
+msgstr "Et kommando navn kan ikke være blankt. Indtast et navn."
+
+#: ggsetup_dxExpressBars.inc:47
+msgid "A toolbar named '%s' already exists. Type another name."
+msgstr "Der findes allerede en værktøjslinie ved navn '%s'. Skriv et andet navn."
+
+#: ggsetup_dxExpressBars.inc:48
+msgid "You cannot create recursive groups"
+msgstr "Du kan ikke oprette gentagne grupper"
+
+#: ggsetup_dxExpressBars.inc:53
+msgid "Add &Button"
+msgstr "Tilføj &Knap"
+
+#: ggsetup_dxExpressBars.inc:54
+msgid "Add &Item"
+msgstr "Tilføj &Element"
+
+#: ggsetup_dxExpressBars.inc:55
+msgid "Delete Bar"
+msgstr "Slet Værktøjslinie"
+
+#: ggsetup_dxExpressBars.inc:61
+msgid "Defa&ult style"
+msgstr "Stan&dard stil"
+
+#: ggsetup_dxExpressBars.inc:62
+msgid "&Text Only (Always)"
+msgstr "Kun &Tekst (Altid)"
+
+#: ggsetup_dxExpressBars.inc:63
+msgid "Text &Only (in Menus)"
+msgstr "Kun Te&kst (i Menuer)"
+
+#: ggsetup_dxExpressBars.inc:64
+msgid "Image &and Text"
+msgstr "Billed &og Tekst"
+
+#: ggsetup_dxExpressBars.inc:65
+msgid "Begin a &Group"
+msgstr "Påbegynd en &Gruppe"
+
+#: ggsetup_dxExpressBars.inc:66
+msgid "&Visible"
+msgstr "&Synlig"
+
+#: ggsetup_dxExpressBars.inc:67
+msgid "&Most recently used"
+msgstr "&Senest anvendte (MRU)"
+
+#: ggsetup_dxExpressBars.inc:69
+msgid "Add..."
+msgstr "Tilføj..."
+
+#: ggsetup_dxExpressBars.inc:70
+msgid "Rename..."
+msgstr "Omdøb..."
+
+#: ggsetup_dxExpressBars.inc:73
+msgid "Visible"
+msgstr "Synlig"
+
+#: ggsetup_dxExpressBars.inc:76
+msgid "SubMenu Editor..."
+msgstr "UnderMenu Editor..."
+
+#: ggsetup_dxExpressBars.inc:77
+msgid "ExpressBars SubMenu Editor"
+msgstr "ExpressBars UnderMenu Editor"
+
+#: ggsetup_dxExpressBars.inc:78
+msgid "Insert..."
+msgstr "Indsæt..."
+
+#: ggsetup_dxExpressBars.inc:80
+msgid "Move Up"
+msgstr "Flyt Op"
+
+#: ggsetup_dxExpressBars.inc:81
+msgid "Move Down"
+msgstr "Flyt Ned"
+
+#: ggsetup_dxExpressBars.inc:82
+msgid "PopupMenu Editor..."
+msgstr "PopopoMenu Editor..."
+
+#: ggsetup_dxExpressBars.inc:83
+msgid " Toolbars "
+msgstr " Værktøjslinier "
+
+#: ggsetup_dxExpressBars.inc:84
+msgid " Commands "
+msgstr " Kommandoer "
+
+#: ggsetup_dxExpressBars.inc:87 ggsetup_dxVGrid.inc:15
+msgid "&New..."
+msgstr "&Ny..."
+
+#: ggsetup_dxExpressBars.inc:88
+msgid "R&ename..."
+msgstr "O&mdøb"
+
+#: ggsetup_dxExpressBars.inc:94
+msgid "Comman&ds:"
+msgstr "Komman&doer:"
+
+#: ggsetup_dxExpressBars.inc:95
+msgid "Description  "
+msgstr "Beskrivelse"
+
+#: ggsetup_dxExpressBars.inc:97
+msgid "&Customize..."
+msgstr "&Tilpas..."
+
+#: ggsetup_dxExpressBars.inc:100
+msgid "&Reset Toolbar"
+msgstr "&Nulstil Værktøjslinie"
+
+#: ggsetup_dxExpressBars.inc:101
+msgid "Expand (Ctrl-Down)"
+msgstr "Udvid (Ctrl-Ned)"
+
+#: ggsetup_dxExpressBars.inc:102
+msgid "Drag to make this menu float"
+msgstr "Træk for at gøre dette en flydende menu"
+
+#: ggsetup_dxExpressBars.inc:104
+msgid "Custom "
+msgstr "Definerbar"
+
+#: ggsetup_dxExpressBars.inc:105
+msgid "Add Category"
+msgstr "Tilføj Kategori"
+
+#: ggsetup_dxExpressBars.inc:106
+msgid "Insert Category"
+msgstr "Indsæt Kategori"
+
+#: ggsetup_dxExpressBars.inc:107
+msgid "Rename Category"
+msgstr "Omdøb Kategori"
+
+#: ggsetup_dxExpressBars.inc:108
+msgid "Add Toolbar"
+msgstr "Tilføj Værktøjslinie"
+
+#: ggsetup_dxExpressBars.inc:109
+msgid "Rename Toolbar"
+msgstr "Omdøb Værktøjslinie"
+
+#: ggsetup_dxExpressBars.inc:110
+msgid "&Category name:"
+msgstr "&Kategori navn:"
+
+#: ggsetup_dxExpressBars.inc:111
+msgid "&Toolbar name:"
+msgstr "&Værktøjslinie navn:"
+
+#: ggsetup_dxExpressBars.inc:112
+msgid "Customization Form..."
+msgstr "Tilpasnings Form..."
+
+#: ggsetup_dxExpressBars.inc:114
+msgid "... modify"
+msgstr "... ændre"
+
+#: ggsetup_dxExpressBars.inc:115
+msgid "Personalized Menus and Toolbars  "
+msgstr "Tilpassede Menuer og Værktøjslinier"
+
+#: ggsetup_dxExpressBars.inc:116
+msgid "Me&nus show recently used commands first"
+msgstr "Me&nuer vis seneste brugte kommandoer først"
+
+#: ggsetup_dxExpressBars.inc:118
+msgid "&Reset my usage data"
+msgstr "&Nulstil brugs data"
+
+#: ggsetup_dxExpressBars.inc:120
+msgid "Other  "
+msgstr "Andet"
+
+#: ggsetup_dxExpressBars.inc:122
+msgid "Show Tool&Tips on toolbars"
+msgstr "Vis Værktøjs&Tips på Værktøjslinierne"
+
+#: ggsetup_dxExpressBars.inc:123
+msgid "Show s&hortcut keys in ToolTips"
+msgstr "Vis &genvejs taster i VærktøjsTipsene"
+
+#: ggsetup_dxExpressBars.inc:126
+msgid "Random"
+msgstr "Tilfældig"
+
+#: ggsetup_dxExpressBars.inc:127
+msgid "Unfold"
+msgstr "Udfold"
+
+#: ggsetup_dxExpressBars.inc:128
+msgid "Slide"
+msgstr "Glid"
+
+#: ggsetup_dxExpressBars.inc:129
+msgid "Fade"
+msgstr "Opløs"
+
+#  --- dxBarDBNavStrs.pas (DeveloperExpress) ---
+#. --- dxBarDBNavStrs.pas (DeveloperExpress) ---
+#: ggsetup_dxExpressBars.inc:131
+msgid "You already have an existing DBNavigator button with the same defined style"
+msgstr "Du har allerede en eksisterende DBNavigator knap med samme defineret stil"
+
+#: ggsetup_dxExpressBars.inc:133
+msgid "DB Navigator"
+msgstr "DB Navigator"
+
+#: ggsetup_dxExpressBars.inc:134
+msgid "Do you want to delete the current record?"
+msgstr "Vil du slette aktive post?"
+
+#: ggsetup_dxExpressBars.inc:136
+msgid "First"
+msgstr "Første"
+
+#: ggsetup_dxExpressBars.inc:137
+msgid "Prior"
+msgstr "Forrige"
+
+#: ggsetup_dxExpressBars.inc:138
+msgid "Next"
+msgstr "Næste"
+
+#: ggsetup_dxExpressBars.inc:139
+msgid "Last"
+msgstr "Sidste"
+
+#: ggsetup_dxExpressBars.inc:140 ggsetup_dxSpreadSheet.inc:36
+msgid "Insert"
+msgstr "Indsæt"
+
+#. Header popup menu captions
+#: ggsetup_dxGrid.inc:5
+msgid "Sort Ascending"
+msgstr "Sorter Stigende"
+
+#: ggsetup_dxGrid.inc:6
+msgid "Sort Descending"
+msgstr "Sorter Faldende"
+
+#: ggsetup_dxGrid.inc:7
+msgid "Clear Sorting"
+msgstr "Nulstil Sortering"
+
+#: ggsetup_dxGrid.inc:8
+msgid "Group By This Field"
+msgstr "Grupper efter dette Felt"
+
+#: ggsetup_dxGrid.inc:9
+msgid "Remove from grouping"
+msgstr "Fjern fra gruppering"
+
+#: ggsetup_dxGrid.inc:10
+msgid "Group By Box"
+msgstr "Grupperings område"
+
+#: ggsetup_dxGrid.inc:11
+msgid "Alignment"
+msgstr "Justering"
+
+#: ggsetup_dxGrid.inc:12
+msgid "Align Left"
+msgstr "Juster Venstre"
+
+#: ggsetup_dxGrid.inc:13
+msgid "Align Right"
+msgstr "Juster Højre"
+
+#: ggsetup_dxGrid.inc:14
+msgid "Align Center"
+msgstr "Juster Centreret"
+
+#: ggsetup_dxGrid.inc:15
+msgid "Remove This Column"
+msgstr "Fjern denne kolonne"
+
+#: ggsetup_dxGrid.inc:16
+msgid "Field Chooser"
+msgstr "Felt-Vælger"
+
+#: ggsetup_dxGrid.inc:17
+msgid "Best Fit"
+msgstr "Tilpas kolonne bredde"
+
+#: ggsetup_dxGrid.inc:18
+msgid "Best Fit (all columns)"
+msgstr "Tilpas kolonne bredde (alle kolonne)"
+
+#: ggsetup_dxGrid.inc:19
+msgid "Footer"
+msgstr "Bund"
+
+#: ggsetup_dxGrid.inc:20
+msgid "Group Footers"
+msgstr "Grupperings bund"
+
+#: ggsetup_dxGrid.inc:23
+msgid "Min"
+msgstr "Min"
+
+#: ggsetup_dxGrid.inc:24
+msgid "Max"
+msgstr "Max"
+
+#: ggsetup_dxGrid.inc:25
+msgid "Count"
+msgstr "Antal"
+
+#: ggsetup_dxGrid.inc:26
+msgid "Average"
+msgstr "Gennemsnit"
+
+#. --- cxGridStrs.pas (DeveloperExpress) ---
+#: ggsetup_dxGrid.inc:29
+msgid "You cannot create recursive levels"
+msgstr "Du kan ikke oprette gentagne niveauer"
+
+#: ggsetup_dxGrid.inc:35
+msgid "<No data to display>"
+msgstr "<ingen data at vise>"
+
+#: ggsetup_dxGrid.inc:37
+msgid "Click here to add a new row"
+msgstr "Klik her for at tilføje en ny række"
+
+#: ggsetup_dxGrid.inc:39
+msgid "<Filter is Empty>"
+msgstr "<Filter er Tom>"
+
+#: ggsetup_dxGrid.inc:41
+msgid "Customization"
+msgstr "Tilpasning"
+
+#: ggsetup_dxGrid.inc:42
+msgid "Columns"
+msgstr "Kolonner"
+
+#: ggsetup_dxGrid.inc:43
+msgid "Drag a column header here to group by that column"
+msgstr "Træk en kolonne hertil for at gruppere efter den kolonne"
+
+#: ggsetup_dxGrid.inc:44
+msgid "Customize..."
+msgstr "Tilpas..."
+
+#: ggsetup_dxGrid.inc:45
+msgid "Click here to select visible columns"
+msgstr "Klik her for at vælge usynlige kolonner"
+
+#: ggsetup_dxGrid.inc:47
+msgid "Bands"
+msgstr "Bånd"
+
+#: ggsetup_dxGrid.inc:48
+msgid "Click here to select visible bands"
+msgstr "Klik her for at vælge usynlige bånd"
+
+#: ggsetup_dxGrid.inc:50 ggsetup_dxVGrid.inc:16
+msgid "Rows"
+msgstr "Rækker"
+
+#: ggsetup_dxGrid.inc:52
+msgid ""
+"Missing an intermediary component!\n"
+"Please add a %s component to the form."
+msgstr ""
+"Mangler et komponent\n"
+"Vær venlig at tilføjje et %s komponent til formen."
+
+#: ggsetup_dxGrid.inc:53
+msgid "cxGrid does not exist"
+msgstr "cxGrid findes ikke"
+
+#: ggsetup_dxGrid.inc:54
+msgid "Component does not exist"
+msgstr "Komponent eksistere ikke"
+
+#: ggsetup_dxGrid.inc:55
+msgid "Import error"
+msgstr "Import fejl"
+
+#: ggsetup_dxGrid.inc:57
+msgid "Grid view does not exist"
+msgstr "Grid view findes ikke"
+
+#: ggsetup_dxGrid.inc:58
+msgid "Active grid level does not exist"
+msgstr "Aktive grid niveau findes ikke"
+
+#: ggsetup_dxGrid.inc:59
+msgid "Can't create the export output file"
+msgstr "Kan ikke oprette export filen"
+
+#: ggsetup_dxGrid.inc:61
+msgid "ExtLookupComboBox|Represents an ultra-advanced lookup using the QuantumGrid as its drop down control"
+msgstr "ExtLookupComboBox|Repræsentere et ultra avanceret lookup ved brug af QuantumGrid som en drop down kontrol"
+
+#. --- dxNavBarConsts.pas (DeveloperExpress) ---
+#: ggsetup_dxNavBar.inc:3
+msgid "Invalid the TdxNavBarGroupControl parent or group."
+msgstr "Ugyldig TdxNavBarGroupControl forældre eller gruppe."
+
+#: ggsetup_dxNavBar.inc:4
+msgid "Configure buttons"
+msgstr "Konfigurer knapper"
+
+#. --- cxSchedulerStrs.pas (DeveloperExpress) ---
+#: ggsetup_dxScheduler.inc:3
+msgid "Untitled event"
+msgstr "Unavngiven hændelse"
+
+#: ggsetup_dxScheduler.inc:5
+msgid "Vertical"
+msgstr "Vertical"
+
+#: ggsetup_dxScheduler.inc:6
+msgid "Horizontal"
+msgstr "Horisontal"
+
+#: ggsetup_dxScheduler.inc:7
+msgid "TimeGrid"
+msgstr "TidsGrid"
+
+#: ggsetup_dxScheduler.inc:9
+msgid "Minute"
+msgstr "Minut"
+
+#: ggsetup_dxScheduler.inc:11
+msgid "Hour"
+msgstr "Time"
+
+#. dialogs constants
+#: ggsetup_dxScheduler.inc:14
+msgid "is a recurring event. Do you want to delete only this occurrence or the series?"
+msgstr "er en gentagende hændelse. Vil du kun slette denne forefindelse eller serierne?"
+
+#: ggsetup_dxScheduler.inc:15
+msgid "is a recurring event. Do you want to open only this occurrence or the series?"
+msgstr "er en gentagende hændelse. Vil du kun åbne denne forefindelse eller serierne?"
+
+#: ggsetup_dxScheduler.inc:17
+msgid "Go To Date"
+msgstr "Gå Til Dato"
+
+#: ggsetup_dxScheduler.inc:18
+msgid "Confirm Delete"
+msgstr "Bekræft sletning"
+
+#: ggsetup_dxScheduler.inc:19
+msgid "Delete this occurrence"
+msgstr "Slet denne forfindelse"
+
+#: ggsetup_dxScheduler.inc:20
+msgid "Delete the series"
+msgstr "Slet serierne"
+
+#: ggsetup_dxScheduler.inc:21
+msgid "Open Recurring Item"
+msgstr "Åben gentagende Element"
+
+#: ggsetup_dxScheduler.inc:22
+msgid "Open this occurrence"
+msgstr "Åben denne forfindelse"
+
+#: ggsetup_dxScheduler.inc:23
+msgid "Open the series"
+msgstr "Åben serierne"
+
+#: ggsetup_dxScheduler.inc:25
+msgid "Do you want to save changes?"
+msgstr "Vil du gemme ændringerne?"
+
+#: ggsetup_dxScheduler.inc:26
+msgid "This item has been changed. Are you sure you want to delete it?"
+msgstr "Dette element er blevet ændret. Er du sikker på at du vil slette det."
+
+#: ggsetup_dxScheduler.inc:27
+msgid "The end date you entered occurs before the start date."
+msgstr "Slut datoen du indtastede ligger tidligere end start datoen."
+
+#: ggsetup_dxScheduler.inc:28
+msgid "The recurrence pattern is not valid."
+msgstr "Resource mønster er ikke valid."
+
+#: ggsetup_dxScheduler.inc:29
+msgid "Some months have fewer than %s days. For these months, the occurrence will fall on the last day of the month."
+msgstr "Nogle måneder har færre end %s dage. For disse måneder vil hændelsen finde sted den sidste dag i måneden."
+
+#: ggsetup_dxScheduler.inc:30
+msgid "The duration of the event must be shorter than how frequently it occurs. Shorten the duration, or change the recurrence pattern in the Recurrence dialog box."
+msgstr "Hændelsens varighed skal være kortere end hvor ofte den forefindes. Afkort varigheden, eller ændre gentagelsesmønsteret i Gentagelses vinduet."
+
+#: ggsetup_dxScheduler.inc:33
+msgid "Untitled"
+msgstr "Unavngiven"
+
+#: ggsetup_dxScheduler.inc:35
+msgid "simple event"
+msgstr "simpel hændelse"
+
+#: ggsetup_dxScheduler.inc:36
+msgid "recurrence event"
+msgstr "gentagelse hændelse"
+
+#: ggsetup_dxScheduler.inc:37
+msgid "exception event"
+msgstr "undtagelse hændelse"
+
+#: ggsetup_dxScheduler.inc:38
+msgid "occurence event"
+msgstr "forekomst hændelse"
+
+#: ggsetup_dxScheduler.inc:41
+msgid "&Edit"
+msgstr "&Rediger"
+
+#: ggsetup_dxScheduler.inc:43
+msgid "&Recurrence"
+msgstr "&Gentagelse"
+
+#: ggsetup_dxScheduler.inc:45
+msgid "&Date:"
+msgstr "&Dato:"
+
+#: ggsetup_dxScheduler.inc:46
+msgid "&Show in:"
+msgstr "&Vis i:"
+
+#: ggsetup_dxScheduler.inc:47
+msgid "Day Calendar"
+msgstr "Dag Kalender"
+
+#: ggsetup_dxScheduler.inc:48
+msgid "Week Calendar"
+msgstr "Uge Kalender"
+
+#: ggsetup_dxScheduler.inc:49
+msgid "Month Calendar"
+msgstr "Måned Kalender"
+
+#: ggsetup_dxScheduler.inc:50
+msgid "Work Week Calendar"
+msgstr "Arbejds-uge Kalender"
+
+#: ggsetup_dxScheduler.inc:52
+msgid "Resource"
+msgstr "Resource"
+
+#: ggsetup_dxScheduler.inc:53
+msgid "&Subject:"
+msgstr "&Vedrørende:"
+
+#: ggsetup_dxScheduler.inc:54
+msgid "&Location:"
+msgstr "&Lokation:"
+
+#: ggsetup_dxScheduler.inc:55
+msgid "La&bel:"
+msgstr "La&bel"
+
+#: ggsetup_dxScheduler.inc:56
+msgid "S&tart time:"
+msgstr "S&tart tid:"
+
+#: ggsetup_dxScheduler.inc:57
+msgid "&End time:"
+msgstr "&Slut tid:"
+
+#: ggsetup_dxScheduler.inc:58
+msgid "&All day event"
+msgstr "&Heldags Hændelse"
+
+#: ggsetup_dxScheduler.inc:60
+msgid "Reminder:"
+msgstr "Påminder:"
+
+#: ggsetup_dxScheduler.inc:61
+msgid "Sho&w time as:"
+msgstr "V&is tid som:"
+
+#: ggsetup_dxScheduler.inc:63
+msgid "minutes"
+msgstr "minutter"
+
+#: ggsetup_dxScheduler.inc:64
+msgid "hour"
+msgstr "time"
+
+#: ggsetup_dxScheduler.inc:65
+msgid "hours"
+msgstr "timer"
+
+#: ggsetup_dxScheduler.inc:66 ggsetup_dxScheduler.inc:108
+msgid "day"
+msgstr "dag"
+
+#: ggsetup_dxScheduler.inc:67
+msgid "days"
+msgstr "dage"
+
+#: ggsetup_dxScheduler.inc:68
+msgid "week"
+msgstr "uge"
+
+#: ggsetup_dxScheduler.inc:69
+msgid "weeks"
+msgstr "uger"
+
+#: ggsetup_dxScheduler.inc:71
+msgid "Busy"
+msgstr "Optaget"
+
+#: ggsetup_dxScheduler.inc:72
+msgid "Free"
+msgstr "Fri"
+
+#: ggsetup_dxScheduler.inc:73
+msgid "Tentative"
+msgstr "Følsom"
+
+#: ggsetup_dxScheduler.inc:74
+msgid "Out of office"
+msgstr "Ikke på kontoret"
+
+#: ggsetup_dxScheduler.inc:76
+msgid "Event recurrence"
+msgstr "Hændelse gentagelse"
+
+#: ggsetup_dxScheduler.inc:77
+msgid " Event time "
+msgstr "Hændelse tid"
+
+#: ggsetup_dxScheduler.inc:78
+msgid " Recurrence pattern "
+msgstr "Gentagelses mønster"
+
+#: ggsetup_dxScheduler.inc:79
+msgid " Range of recurrence "
+msgstr "Varrighed af gentagelse"
+
+#: ggsetup_dxScheduler.inc:80
+msgid "&Start:"
+msgstr "&Start:"
+
+#: ggsetup_dxScheduler.inc:81
+msgid "S&tart:"
+msgstr "S&tart:"
+
+#: ggsetup_dxScheduler.inc:82
+msgid "&End:"
+msgstr "&Slut:"
+
+#. Pattern
+#: ggsetup_dxScheduler.inc:84
+msgid "&Daily"
+msgstr "&Daglig"
+
+#: ggsetup_dxScheduler.inc:85
+msgid "&Weekly"
+msgstr "&Ugentlig"
+
+#: ggsetup_dxScheduler.inc:86
+msgid "&Monthly"
+msgstr "&Månedlig"
+
+#: ggsetup_dxScheduler.inc:87
+msgid "&Yearly"
+msgstr "&Årlig"
+
+#. daily
+#: ggsetup_dxScheduler.inc:89
+msgid "E&very"
+msgstr "H&ver"
+
+#: ggsetup_dxScheduler.inc:90
+msgid "Every wee&kday"
+msgstr "Hver ug&edag"
+
+#: ggsetup_dxScheduler.inc:91
+msgid "day(s)"
+msgstr "dag(e)"
+
+#. weekly
+#: ggsetup_dxScheduler.inc:93
+msgid "week(s) on:"
+msgstr "uge(r) på:"
+
+#: ggsetup_dxScheduler.inc:94
+msgid "Rec&ur every"
+msgstr "Gen&tag hver"
+
+#. monthly
+#: ggsetup_dxScheduler.inc:96
+msgid "of every"
+msgstr "af hver"
+
+#: ggsetup_dxScheduler.inc:97
+msgid "month(s)"
+msgstr "måned(er)"
+
+#. yearly
+#: ggsetup_dxScheduler.inc:99
+msgid "T&he"
+msgstr "&Den"
+
+#: ggsetup_dxScheduler.inc:100
+msgid "of"
+msgstr "af"
+
+#: ggsetup_dxScheduler.inc:106
+msgid "last"
+msgstr "sidste"
+
+#: ggsetup_dxScheduler.inc:107
+msgid "D&ay"
+msgstr "D&ag"
+
+#: ggsetup_dxScheduler.inc:109
+msgid "weekday"
+msgstr "ugedag"
+
+#: ggsetup_dxScheduler.inc:110
+msgid "weekend day"
+msgstr "weekend dag"
+
+#: ggsetup_dxScheduler.inc:111
+msgid "&No end date"
+msgstr "&Ikke slut dato"
+
+#: ggsetup_dxScheduler.inc:112
+msgid "End a&fter:"
+msgstr "Slut e&fter:"
+
+#: ggsetup_dxScheduler.inc:113
+msgid "End &by:"
+msgstr "Slut &ved:"
+
+#: ggsetup_dxScheduler.inc:114
+msgid "occurrences"
+msgstr "forekomster"
+
+#: ggsetup_dxScheduler.inc:120
+msgid "&Remove recurrence"
+msgstr "&Fjern gentagelse"
+
+#: ggsetup_dxScheduler.inc:123
+msgid "Resources layout editor"
+msgstr "Resource layout editor"
+
+#. popup menu resources
+#: ggsetup_dxScheduler.inc:125
+msgid "&New Event"
+msgstr "&Ny hændelse"
+
+#: ggsetup_dxScheduler.inc:126
+msgid "New All Day &Event"
+msgstr "Ny heldags &Hændelse"
+
+#: ggsetup_dxScheduler.inc:127
+msgid "New &Recurring Event"
+msgstr "Ny &Gentagende hændelse"
+
+#: ggsetup_dxScheduler.inc:128
+msgid "T&oday"
+msgstr "I &dag"
+
+#: ggsetup_dxScheduler.inc:129
+msgid "Go to This &Day"
+msgstr "Gå til denne &Dag"
+
+#: ggsetup_dxScheduler.inc:130
+msgid "Go &to Date..."
+msgstr "Gå &til Dato..."
+
+#: ggsetup_dxScheduler.inc:131
+msgid "Resources layout editor..."
+msgstr "Resource layout editor..."
+
+#: ggsetup_dxScheduler.inc:134
+msgid "Edit Se&ries"
+msgstr "Editer Se&rier"
+
+#: ggsetup_dxScheduler.inc:135
+msgid "S&how Time As"
+msgstr "V&is Tid Som"
+
+#: ggsetup_dxScheduler.inc:137
+msgid "&Free"
+msgstr "&Fri"
+
+#: ggsetup_dxScheduler.inc:138
+msgid "&Tentative"
+msgstr "&Følsom"
+
+#: ggsetup_dxScheduler.inc:139
+msgid "&Busy"
+msgstr "&Optaget"
+
+#: ggsetup_dxScheduler.inc:140
+msgid "&Out of Office"
+msgstr "&Ikke på kontoret"
+
+#: ggsetup_dxScheduler.inc:141
+msgid "&Label"
+msgstr "&Ledetekst"
+
+#: ggsetup_dxScheduler.inc:144
+msgid "Important"
+msgstr "Vigtig"
+
+#: ggsetup_dxScheduler.inc:145
+msgid "Business"
+msgstr "Forretning"
+
+#: ggsetup_dxScheduler.inc:146
+msgid "Personal"
+msgstr "Personlig"
+
+#: ggsetup_dxScheduler.inc:147
+msgid "Vacation"
+msgstr "Ferie"
+
+#: ggsetup_dxScheduler.inc:148
+msgid "Must Attend"
+msgstr "Skal Deltage"
+
+#: ggsetup_dxScheduler.inc:149
+msgid "Travel Required"
+msgstr "Rejse nødvendig"
+
+#: ggsetup_dxScheduler.inc:150
+msgid "Needs Preparation"
+msgstr "Kræver Forberedelse"
+
+#: ggsetup_dxScheduler.inc:151
+msgid "Birthday"
+msgstr "Fødselsdag"
+
+#: ggsetup_dxScheduler.inc:152
+msgid "Anniversary"
+msgstr "Jubilæum"
+
+#: ggsetup_dxScheduler.inc:153
+msgid "Phone Call"
+msgstr "Telefon opringning"
+
+#. for time ruler menu items
+#: ggsetup_dxScheduler.inc:155
+msgid "Chan&ge Time Zone"
+msgstr "Ænd&re Tids-Zone"
+
+#: ggsetup_dxScheduler.inc:156
+msgid "6&0 Minutes"
+msgstr "6&0 Minutter"
+
+#: ggsetup_dxScheduler.inc:157
+msgid "&30 Minutes"
+msgstr "&30 Minutter"
+
+#: ggsetup_dxScheduler.inc:158
+msgid "&15 Minutes"
+msgstr "&15 Minutter"
+
+#: ggsetup_dxScheduler.inc:159
+msgid "10 &Minutes"
+msgstr "10 &Minutter"
+
+#: ggsetup_dxScheduler.inc:160
+msgid "&6 Minutes"
+msgstr "&6 Minutter"
+
+#: ggsetup_dxScheduler.inc:161
+msgid "&5 Minutes"
+msgstr "&5 Minutter"
+
+#. for reminder
+#: ggsetup_dxScheduler.inc:163
+msgid "1 Reminder"
+msgstr "1 Påmindelse"
+
+#: ggsetup_dxScheduler.inc:164
+msgid "%d Reminders"
+msgstr "%d Påmindelser"
+
+#: ggsetup_dxScheduler.inc:165
+msgid "&Dismiss"
+msgstr "&Forkast"
+
+#: ggsetup_dxScheduler.inc:166
+msgid "Dismiss &All"
+msgstr "Forkast &Alle"
+
+#: ggsetup_dxScheduler.inc:167
+msgid "Due in"
+msgstr "oprinder om"
+
+#: ggsetup_dxScheduler.inc:168
+msgid "&Open Item"
+msgstr "&Åben Element"
+
+#: ggsetup_dxScheduler.inc:169 ggsetup_dxScheduler.inc:171
+msgid "&Snooze"
+msgstr "&Snooze"
+
+#: ggsetup_dxScheduler.inc:170 ggsetup_dxScheduler.inc:205
+msgid "Subject"
+msgstr "Vedrørende"
+
+#: ggsetup_dxScheduler.inc:172
+msgid "%d reminders are selected"
+msgstr "%d påmindelser er valgt"
+
+#: ggsetup_dxScheduler.inc:173
+msgid "Start time: %s"
+msgstr "Start tid: %s"
+
+#. time
+#: ggsetup_dxScheduler.inc:175
+msgid "0 minutes"
+msgstr "0 minutter"
+
+#: ggsetup_dxScheduler.inc:176
+msgid "5 minutes"
+msgstr "5 minutter"
+
+#: ggsetup_dxScheduler.inc:177
+msgid "10 minutes"
+msgstr "10 minutter"
+
+#: ggsetup_dxScheduler.inc:178
+msgid "15 minutes"
+msgstr "15 minutter"
+
+#: ggsetup_dxScheduler.inc:179
+msgid "20 minutes"
+msgstr "20 minutter"
+
+#: ggsetup_dxScheduler.inc:180
+msgid "30 minutes"
+msgstr "30 minutter"
+
+#: ggsetup_dxScheduler.inc:181
+msgid "1 hour"
+msgstr "1 time"
+
+#: ggsetup_dxScheduler.inc:182
+msgid "2 hours"
+msgstr "2 timer"
+
+#: ggsetup_dxScheduler.inc:183
+msgid "3 hours"
+msgstr "3 timer"
+
+#: ggsetup_dxScheduler.inc:184
+msgid "4 hours"
+msgstr "4 timer"
+
+#: ggsetup_dxScheduler.inc:185
+msgid "5 hours"
+msgstr "5 timer"
+
+#: ggsetup_dxScheduler.inc:186
+msgid "6 hours"
+msgstr "6 timer"
+
+#: ggsetup_dxScheduler.inc:187
+msgid "7 hours"
+msgstr "7 timer"
+
+#: ggsetup_dxScheduler.inc:188
+msgid "8 hours"
+msgstr "8 timer"
+
+#: ggsetup_dxScheduler.inc:189
+msgid "9 hours"
+msgstr "9 timer"
+
+#: ggsetup_dxScheduler.inc:190
+msgid "10 hours"
+msgstr "10 timer"
+
+#: ggsetup_dxScheduler.inc:191
+msgid "11 hours"
+msgstr "11 timer"
+
+#: ggsetup_dxScheduler.inc:192
+msgid "12 hours"
+msgstr "12 timer"
+
+#: ggsetup_dxScheduler.inc:193
+msgid "18 hours"
+msgstr "18 timer"
+
+#: ggsetup_dxScheduler.inc:194
+msgid "1 day"
+msgstr "1 dag"
+
+#: ggsetup_dxScheduler.inc:195
+msgid "2 days"
+msgstr "2 dage"
+
+#: ggsetup_dxScheduler.inc:196
+msgid "3 days"
+msgstr "3 dage"
+
+#: ggsetup_dxScheduler.inc:197
+msgid "4 days"
+msgstr "4 dage"
+
+#: ggsetup_dxScheduler.inc:198
+msgid "1 week"
+msgstr "1 uge"
+
+#: ggsetup_dxScheduler.inc:199
+msgid "2 weeks"
+msgstr "2 uger"
+
+#. for export
+#: ggsetup_dxScheduler.inc:201
+msgid "Storage not assigned"
+msgstr "ikke tildelt"
+
+#. card field names
+#: ggsetup_dxScheduler.inc:203
+msgid "Yes"
+msgstr "Ja"
+
+#: ggsetup_dxScheduler.inc:204
+msgid "No"
+msgstr "Nej"
+
+#: ggsetup_dxScheduler.inc:206
+msgid "Location"
+msgstr "Lokation"
+
+#: ggsetup_dxScheduler.inc:208
+msgid "All day"
+msgstr "Hele dagen"
+
+#: ggsetup_dxScheduler.inc:210
+msgid "Finish"
+msgstr "Afslut"
+
+#: ggsetup_dxScheduler.inc:211
+msgid "State"
+msgstr "Status"
+
+#: ggsetup_dxScheduler.inc:212
+msgid "Reminder"
+msgstr "Påminder"
+
+#. table fields
+#: ggsetup_dxScheduler.inc:214
+msgid "StartDate"
+msgstr "StartDato"
+
+#: ggsetup_dxScheduler.inc:215
+msgid "StartTime"
+msgstr "StartTid"
+
+#: ggsetup_dxScheduler.inc:216
+msgid "EndDate"
+msgstr "SlutDato"
+
+#: ggsetup_dxScheduler.inc:217
+msgid "EndTime"
+msgstr "SlutDato"
+
+#: ggsetup_dxScheduler.inc:218
+msgid "Alldayevent"
+msgstr "Heledageshændelse"
+
+#: ggsetup_dxScheduler.inc:219
+msgid "Reminderonoff"
+msgstr "Påmindertilfra"
+
+#: ggsetup_dxScheduler.inc:220
+msgid "ReminderDate"
+msgstr "PåminderDato"
+
+#: ggsetup_dxScheduler.inc:221
+msgid "ReminderTime"
+msgstr "PåminderTid"
+
+#: ggsetup_dxScheduler.inc:222
+msgid "MeetingOrganizer"
+msgstr "MødeArrangør"
+
+#: ggsetup_dxScheduler.inc:223
+msgid "RequiredAttendees"
+msgstr "NødvendigeDeltagere"
+
+#: ggsetup_dxScheduler.inc:224
+msgid "OptionalAttendees"
+msgstr "ValgfrieDeltagere"
+
+#: ggsetup_dxScheduler.inc:225
+msgid "MeetingResources"
+msgstr "MødeResourcer"
+
+#: ggsetup_dxScheduler.inc:226
+msgid "BillingInformation"
+msgstr "BetalingsInformationer"
+
+#: ggsetup_dxScheduler.inc:227 ggsetup_dxVGrid.inc:13
+msgid "Categories"
+msgstr "Kategorier"
+
+#: ggsetup_dxScheduler.inc:228
+msgid "Mileage"
+msgstr "Kørsel"
+
+#: ggsetup_dxScheduler.inc:229
+msgid "Priority"
+msgstr "Prioritet"
+
+#: ggsetup_dxScheduler.inc:230
+msgid "Private"
+msgstr "Privat"
+
+#: ggsetup_dxScheduler.inc:231
+msgid "Sensitivity"
+msgstr "Følsomhed"
+
+#: ggsetup_dxScheduler.inc:232
+msgid "Showtimeas"
+msgstr "Vistidsom"
+
+#: ggsetup_dxScheduler.inc:234
+msgid "Normal"
+msgstr "Normal"
+
+#. storage
+#: ggsetup_dxScheduler.inc:236
+msgid ""
+"The following required fields\n"
+"%sare not assigned!"
+msgstr ""
+"Følgende krævede felter\n"
+"%s er ikke tildelt!"
+
+#: ggsetup_dxScheduler.inc:237
+msgid "Invalid field name"
+msgstr "Ugyldig felt navn"
+
+#: ggsetup_dxScheduler.inc:238
+msgid "Invalid custom field"
+msgstr "Ugyldig bruger felt"
+
+#. --- cxSSRes.pas (DeveloperExpress) ---
+#: ggsetup_dxSpreadSheet.inc:3
+msgid "Sheet"
+msgstr "Ark"
+
+#. categories constants
+#: ggsetup_dxSpreadSheet.inc:5
+msgid "SpreadSheet"
+msgstr "RegneArk"
+
+#: ggsetup_dxSpreadSheet.inc:6
+msgid "SpreadSheet properties and/or events"
+msgstr "RegneArk indstillinger og/eller hændelser"
+
+#. SpreadSheetBook errors
+#: ggsetup_dxSpreadSheet.inc:8
+msgid "Reading SST record error"
+msgstr "Fejl ved læsning af SST post"
+
+#: ggsetup_dxSpreadSheet.inc:9
+msgid "Invalid page number"
+msgstr "Ugyldig side nummer"
+
+#: ggsetup_dxSpreadSheet.inc:10
+msgid "Invalid file %s name"
+msgstr "Ugyldig file %s navn"
+
+#: ggsetup_dxSpreadSheet.inc:11
+msgid "Invalid %s file format"
+msgstr "Ugyldig %s fil format"
+
+#: ggsetup_dxSpreadSheet.inc:13
+msgid "Sheet caption invalid or already exist"
+msgstr "Ark overskrift ugyldig eller findes allerede"
+
+#: ggsetup_dxSpreadSheet.inc:14
+msgid "Page already exists"
+msgstr "Side findes allerede"
+
+#: ggsetup_dxSpreadSheet.inc:15
+msgid "Merge cell error, certain cells already merged"
+msgstr "Fejl ved samling af celler, nogle celler indgår i forvejen i samling"
+
+#: ggsetup_dxSpreadSheet.inc:16
+msgid "Cannot change part of merged cells"
+msgstr "Kan ikke ændre del af samlede celler"
+
+#: ggsetup_dxSpreadSheet.inc:17
+msgid "Some modified cells are merged"
+msgstr "Nogle ændrede celler er samlet"
+
+#: ggsetup_dxSpreadSheet.inc:18
+msgid "Error define name, name already exist"
+msgstr "Fejl definition navn, navn findes allerede"
+
+#: ggsetup_dxSpreadSheet.inc:19
+msgid "Error define name, name contains extra characters"
+msgstr "Fejl definition navn, navn indeholder ekstra tegn"
+
+#. sheet popup menu constants
+#: ggsetup_dxSpreadSheet.inc:21 ggsetup_dxSpreadSheet.inc:129
+msgid "Merge cells"
+msgstr "Sammel celler"
+
+#: ggsetup_dxSpreadSheet.inc:22 ggsetup_dxSpreadSheet.inc:130
+msgid "Split cells"
+msgstr "Slit celler"
+
+#. format form strings
+#. history constants
+#: ggsetup_dxSpreadSheet.inc:23 ggsetup_dxSpreadSheet.inc:72
+#: ggsetup_dxSpreadSheet.inc:123
+msgid "Format cells"
+msgstr "Formater celler"
+
+#: ggsetup_dxSpreadSheet.inc:24
+msgid "Hide rows"
+msgstr "Skjul rækker"
+
+#: ggsetup_dxSpreadSheet.inc:25
+msgid "Unhide rows"
+msgstr "Ophæv skjulning af rækker"
+
+#: ggsetup_dxSpreadSheet.inc:26
+msgid "Hide column"
+msgstr "Skjul kolonne"
+
+#: ggsetup_dxSpreadSheet.inc:27
+msgid "Unhide column"
+msgstr "Ophæv skjulning af kolonne"
+
+#. insert and deliting cells constants
+#: ggsetup_dxSpreadSheet.inc:29
+msgid "Shift cells left"
+msgstr "Flyt celler til venstre"
+
+#: ggsetup_dxSpreadSheet.inc:30
+msgid "Shift cells top"
+msgstr "Flyt celler til top"
+
+#: ggsetup_dxSpreadSheet.inc:31
+msgid "Shift cells right"
+msgstr "Flyt celler til højre"
+
+#: ggsetup_dxSpreadSheet.inc:32
+msgid "Shift cells bottom"
+msgstr "Flyt celler til bund"
+
+#: ggsetup_dxSpreadSheet.inc:33
+msgid "Entire row"
+msgstr "Hele rækken"
+
+#: ggsetup_dxSpreadSheet.inc:34
+msgid "Entire column"
+msgstr "Hele konlonnen"
+
+#. datastorage
+#: ggsetup_dxSpreadSheet.inc:38
+msgid "Error reading cell record"
+msgstr "Fejl ved læsning af celle post"
+
+#: ggsetup_dxSpreadSheet.inc:39
+msgid "Error setting cell record"
+msgstr "Fejl ved skrivning af celle post"
+
+#. style
+#: ggsetup_dxSpreadSheet.inc:41
+msgid "Invalid color index"
+msgstr "Ugyldig farve index"
+
+#: ggsetup_dxSpreadSheet.inc:42
+msgid "Invalid cell style"
+msgstr "Ugyldig celle stil"
+
+#. calculation error
+#: ggsetup_dxSpreadSheet.inc:44
+msgid "Calculation error. Formula cycled indexes present"
+msgstr "Beregnings fejl. Formular gennemløb indexer"
+
+#: ggsetup_dxSpreadSheet.inc:45
+msgid "Error constructing formula. Parsed expression error offset at"
+msgstr "Fejl konstrueret formular. Gennemløb udtryksfejl på position"
+
+#: ggsetup_dxSpreadSheet.inc:46
+msgid "Error parsing formula at string position"
+msgstr "Fejl ved gennemløbning på streng position"
+
+#: ggsetup_dxSpreadSheet.inc:47
+msgid "Error syntax in string expression"
+msgstr "Syntax fejl i streng udtryk"
+
+#: ggsetup_dxSpreadSheet.inc:48
+msgid "Invalid function index"
+msgstr "Ugyldig funktion index"
+
+#: ggsetup_dxSpreadSheet.inc:49
+msgid "Invalid function name"
+msgstr "Ugyldig funktions navn"
+
+#: ggsetup_dxSpreadSheet.inc:50
+msgid "Error - symbol ')' expected!"
+msgstr "Fejl - symbolet ')' forventet!"
+
+#: ggsetup_dxSpreadSheet.inc:51
+msgid "Error - unterminated string!"
+msgstr "Fejl - Ikke termineret streng!"
+
+#: ggsetup_dxSpreadSheet.inc:52
+msgid "Unknown string expression"
+msgstr "Ukendt streng udtryk"
+
+#: ggsetup_dxSpreadSheet.inc:53
+msgid "Unknown token in expression"
+msgstr "Ukendt enhed i udtryk"
+
+#: ggsetup_dxSpreadSheet.inc:54
+msgid "Division by zero!"
+msgstr "Division med nul!"
+
+#: ggsetup_dxSpreadSheet.inc:55
+msgid "Incompatible operands type!"
+msgstr "Inkompatibel operand type!"
+
+#: ggsetup_dxSpreadSheet.inc:56
+msgid "Missing tokens"
+msgstr "Mangler token"
+
+#: ggsetup_dxSpreadSheet.inc:57
+msgid "Missing stack parameters"
+msgstr "Manglende stak parametre"
+
+#: ggsetup_dxSpreadSheet.inc:58
+msgid "Function need result"
+msgstr "Funktion forventer resultat"
+
+#. error codes such as excel program
+#: ggsetup_dxSpreadSheet.inc:60
+msgid "#NULL!"
+msgstr "#NULL!"
+
+#: ggsetup_dxSpreadSheet.inc:61
+msgid "#DIV/0!"
+msgstr "#NULL!"
+
+#: ggsetup_dxSpreadSheet.inc:62
+msgid "#VALUE!"
+msgstr "#VALUE!"
+
+#: ggsetup_dxSpreadSheet.inc:63
+msgid "#NAME!"
+msgstr "#NAME!"
+
+#: ggsetup_dxSpreadSheet.inc:64
+msgid "#NUM!"
+msgstr "#NUM!"
+
+#: ggsetup_dxSpreadSheet.inc:65
+msgid "#REF!"
+msgstr "#REF!"
+
+#: ggsetup_dxSpreadSheet.inc:66
+msgid "#N/A!"
+msgstr "#N/A!"
+
+#  forms resources
+#  forms resources
+#. forms resources
+#: ggsetup_dxSpreadSheet.inc:68
+msgid "Apply"
+msgstr "Anvend"
+
+#: ggsetup_dxSpreadSheet.inc:73
+msgid "Cell style"
+msgstr "Celle type"
+
+#: ggsetup_dxSpreadSheet.inc:74
+msgid "Style type"
+msgstr "Stil type"
+
+#: ggsetup_dxSpreadSheet.inc:75
+msgid "Style settings"
+msgstr "Stil indstilling"
+
+#: ggsetup_dxSpreadSheet.inc:77
+msgid "&General"
+msgstr "&Generelt"
+
+#: ggsetup_dxSpreadSheet.inc:78
+msgid "&Currency"
+msgstr "&Valuta"
+
+#: ggsetup_dxSpreadSheet.inc:79
+msgid "&Number"
+msgstr "&Nummer"
+
+#: ggsetup_dxSpreadSheet.inc:80
+msgid "&Date/Time"
+msgstr "&Dato/Tid"
+
+#: ggsetup_dxSpreadSheet.inc:81
+msgid "&Text"
+msgstr "&Tekst"
+
+#: ggsetup_dxSpreadSheet.inc:83
+msgid "General format cells have no specific format."
+msgstr "Generelt formaterede celler har ikke et specifikt format."
+
+#: ggsetup_dxSpreadSheet.inc:84
+msgid "Number is used for general display of numbers."
+msgstr "Nummer bruges til gennerel visning af numre."
+
+#: ggsetup_dxSpreadSheet.inc:85
+msgid "Currency formats are used for general monetary amounts."
+msgstr "Valuta formater bruges til gennerelle beløbs angivelser."
+
+#: ggsetup_dxSpreadSheet.inc:86
+msgid "Date/Time formats are used for date and time serial numbers as Date/Time values."
+msgstr "Dato/Tid formater bruges til dato og tid serielle numre som Dato/Tid værdier."
+
+#: ggsetup_dxSpreadSheet.inc:87
+msgid "Text formatted cells are treated as text even when a number is in the cell.  The cell is displayed exactly as entered."
+msgstr "Tekst-formaterede celler bliver behandlet som tekst selv hvis cellen indeholder et tal. Cellen bliver vist nøjagtig som indtastet."
+
+#: ggsetup_dxSpreadSheet.inc:89
+msgid "&Alignment"
+msgstr "&Justering"
+
+#: ggsetup_dxSpreadSheet.inc:90
+msgid "&Border"
+msgstr "%Ramme"
+
+#: ggsetup_dxSpreadSheet.inc:91
+msgid "&Patterns"
+msgstr "&Møstre"
+
+#: ggsetup_dxSpreadSheet.inc:92
+msgid "&Horizontal"
+msgstr "&Horisontal"
+
+#: ggsetup_dxSpreadSheet.inc:93
+msgid "&Vertical"
+msgstr "&Vertical"
+
+#: ggsetup_dxSpreadSheet.inc:94
+msgid "Text alignment"
+msgstr "Tekst justering"
+
+#: ggsetup_dxSpreadSheet.inc:95
+msgid "Text control"
+msgstr "Tekst kontrol"
+
+#: ggsetup_dxSpreadSheet.inc:96
+msgid "General"
+msgstr "Generel"
+
+#: ggsetup_dxSpreadSheet.inc:98
+msgid "Center"
+msgstr "Centrer"
+
+#: ggsetup_dxSpreadSheet.inc:100
+msgid "Fill"
+msgstr "Udfyld"
+
+#: ggsetup_dxSpreadSheet.inc:101
+msgid "Justify"
+msgstr "Juster"
+
+#: ggsetup_dxSpreadSheet.inc:102
+msgid "Top"
+msgstr "Top"
+
+#: ggsetup_dxSpreadSheet.inc:103
+msgid "Bottom"
+msgstr "Bund"
+
+#: ggsetup_dxSpreadSheet.inc:104
+msgid "&Word wrap"
+msgstr "&Ord ombrydning"
+
+#: ggsetup_dxSpreadSheet.inc:105
+msgid "&Font"
+msgstr "&Skrifttype"
+
+#: ggsetup_dxSpreadSheet.inc:106
+msgid "&None"
+msgstr "&Ingen"
+
+#: ggsetup_dxSpreadSheet.inc:108
+msgid "&Ou&tl&ine"
+msgstr "&Om&r&ids"
+
+#: ggsetup_dxSpreadSheet.inc:109
+msgid "&Inside"
+msgstr "&Inderside"
+
+#: ggsetup_dxSpreadSheet.inc:110
+msgid "Items"
+msgstr "Elementer"
+
+#: ggsetup_dxSpreadSheet.inc:111
+msgid "All borders"
+msgstr "Alle rammer"
+
+#: ggsetup_dxSpreadSheet.inc:113
+msgid "&Style:"
+msgstr "&Stil:"
+
+#: ggsetup_dxSpreadSheet.inc:114
+msgid "&Color:"
+msgstr "&Farve:"
+
+#: ggsetup_dxSpreadSheet.inc:116
+msgid "Cell shading"
+msgstr "Celle skygge"
+
+#: ggsetup_dxSpreadSheet.inc:117
+msgid "Sample"
+msgstr "Eksempel"
+
+#: ggsetup_dxSpreadSheet.inc:118
+msgid "&Pattern:"
+msgstr "&Mønster:"
+
+#: ggsetup_dxSpreadSheet.inc:119
+msgid "The quick brown fox jumps over the lazy dog"
+msgstr "Den hurtige brune ræv hopper over den dogne hund"
+
+#: ggsetup_dxSpreadSheet.inc:120
+msgid "Use default color"
+msgstr "Brug standard farve"
+
+#: ggsetup_dxSpreadSheet.inc:121
+msgid "Color property editor"
+msgstr "Farve indstilling editor"
+
+#: ggsetup_dxSpreadSheet.inc:124
+msgid "Change cells"
+msgstr "Ændre celler"
+
+#: ggsetup_dxSpreadSheet.inc:125
+msgid "Insert cells"
+msgstr "Indsæt celler"
+
+#: ggsetup_dxSpreadSheet.inc:126
+msgid "Delete cells"
+msgstr "Slet celler"
+
+#: ggsetup_dxSpreadSheet.inc:127
+msgid "Paste cells"
+msgstr "Indsæt celler"
+
+#: ggsetup_dxSpreadSheet.inc:128
+msgid "Cut cells"
+msgstr "Slet celler"
+
+#: ggsetup_dxSpreadSheet.inc:131
+msgid "Sort cells"
+msgstr "Sorter celler"
+
+#: ggsetup_dxSpreadSheet.inc:132
+msgid "Clear cells"
+msgstr "Slet celler"
+
+#: ggsetup_dxSpreadSheet.inc:133
+msgid "Clear all"
+msgstr "Slet alle"
+
+#  color box dialog strings
+#. color box dialog strings
+#: ggsetup_dxSpreadSheet.inc:135
+msgid "Automatic"
+msgstr "Automatisk"
+
+#. import/export strings
+#: ggsetup_dxSpreadSheet.inc:138
+msgid "Undefined string in shared string table!"
+msgstr "Udefineret streng i delt streng tabel!"
+
+#: ggsetup_dxSpreadSheet.inc:139
+msgid "Formula not construct"
+msgstr "Formular ikke konstrueret"
+
+#: ggsetup_dxSpreadSheet.inc:140
+msgid "Unknown function"
+msgstr "Ukendt funktion"
+
+#: ggsetup_dxSpreadSheet.inc:141
+msgid "Shared"
+msgstr "Delt"
+
+#: ggsetup_dxSpreadSheet.inc:142
+msgid "Invalid name reference: "
+msgstr "Ugyldig navn reference:"
+
+#: ggsetup_dxSpreadSheet.inc:144
+msgid "Error store workbook stream"
+msgstr "Fejl ved skrivning af arbejdsbog stream"
+
+#: ggsetup_dxSpreadSheet.inc:145
+msgid "Error read workbook stream"
+msgstr "Fejl ved læsning af arbejdsbog stream"
+
+#. --- cxTLStrs.pas (DeveloperExpress) ---
+#: ggsetup_dxTreeList.inc:3
+msgid "Index %d out of bounds"
+msgstr "Index %d er uden for tilladte grænse"
+
+#: ggsetup_dxTreeList.inc:5
+msgid "Multi select required"
+msgstr "Valg af flere er krævet"
+
+#  designers constants
+#. designers constants
+#: ggsetup_dxTreeList.inc:7
+msgid "TreeListDesigner editing - "
+msgstr "TreeListDesigner retter -"
+
+#: ggsetup_dxTreeList.inc:8
+msgid "Bands..."
+msgstr "Bånd..."
+
+#: ggsetup_dxTreeList.inc:9
+msgid "Columns..."
+msgstr "Kolonner..."
+
+#: ggsetup_dxTreeList.inc:10
+msgid "Create all columns"
+msgstr "Opret alle kolonner"
+
+#: ggsetup_dxTreeList.inc:11
+msgid "Delete all columns"
+msgstr "Slet alle kolonner"
+
+#: ggsetup_dxTreeList.inc:12
+msgid "Items editor..."
+msgstr "Element editor..."
+
+#: ggsetup_dxTreeList.inc:15
+msgid "   Columns   "
+msgstr "   Kolonner   "
+
+#: ggsetup_dxTreeList.inc:16
+msgid "    Bands    "
+msgstr "    Bånd    "
+
+#: ggsetup_dxTreeList.inc:18
+msgid "Invalid integer value"
+msgstr "Ugyldig heltals værdi"
+
+#: ggsetup_dxTreeList.inc:21
+msgid "Delete record(s)?"
+msgstr "Slet post(er)?"
+
+#: ggsetup_dxTreeList.inc:24
+msgid "Control must be visible for export"
+msgstr "Kontrol skal være synlig for eksport"
+
+#  --- cxVGridConsts.pas (DeveloperExpress) ---
+#. --- cxVGridConsts.pas (DeveloperExpress) ---
+#: ggsetup_dxVGrid.inc:3
+msgid "Index error"
+msgstr "Index fejl"
+
+#: ggsetup_dxVGrid.inc:4
+msgid "Can't create row"
+msgstr "Kan ikke oprette række"
+
+#: ggsetup_dxVGrid.inc:5
+msgid "Can't assign rows"
+msgstr "Kan ikke tildele celler"
+
+#: ggsetup_dxVGrid.inc:18
+msgid "New Category"
+msgstr "Ny Kategori"
+
+#: ggsetup_dxVGrid.inc:19
+msgid "&Category:"
+msgstr "&Kategori:"
+
+#: ggsetup_dxVGrid.inc:21
+msgid "Layout editor"
+msgstr "Layout editor"
+
+#: ggsetup_dxVGrid.inc:26
+msgid "Can't export invisible control"
+msgstr "Kan ikke eksportere usynlig kontrol"
+
+#: ggsetup_dxVGrid.inc:33
+msgid "&Toolbar"
+msgstr "&Værktøjsbar"
+
+#: ggsetup_dxVGrid.inc:34
+msgid "Text &Labels"
+msgstr "&Ledetekster"

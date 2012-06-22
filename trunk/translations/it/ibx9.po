@@ -1,0 +1,5145 @@
+msgid ""
+msgstr ""
+"Project-Id-Version: PACKAGE VERSION\n"
+"POT-Creation-Date: 2005-04-19 10:12\n"
+"PO-Revision-Date: 2003-04-02 17:48+0100\n"
+"Last-Translator: Andrea Carli <ctime@bin.it>\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"License: Freeware\n"
+
+#. frmIBAvailableFields..Caption
+#: Property_Editors/frmIBAvailableFieldsU.dfm:5 
+#, fuzzy
+msgid "Available Fields"
+msgstr "Metafile"
+
+#. frmIBAvailableFields..Font.Name
+#. frmIBAvailableFields..GroupBox1..lstFields..Font.Name
+#. frmIBFilterFieldEditor..Font.Name
+#. frmIBFilterFieldEditor..lstFieldList..Font.Name
+#: Property_Editors/frmIBAvailableFieldsU.dfm:12 
+#: Property_Editors/frmIBAvailableFieldsU.dfm:32
+#: Property_Editors/frmIBFilterFieldEditorU.dfm:12
+#: Property_Editors/frmIBFilterFieldEditorU.dfm:39
+msgid "MS Sans Serif"
+msgstr ""
+
+#. frmIBAvailableFields..GroupBox1..Caption
+#. frmIBFilterFieldEditor..Label1..Caption
+#: Property_Editors/frmIBAvailableFieldsU.dfm:22 
+#: Property_Editors/frmIBFilterFieldEditorU.dfm:22
+#, fuzzy
+msgid "Fields"
+msgstr "Nome Campo"
+
+#. frmIBFilterFieldEditor..Caption
+#: Property_Editors/frmIBFilterFieldEditorU.dfm:5 
+#, fuzzy
+msgid "Filter Field Editor"
+msgstr "Picture:"
+
+#. frmIBFilterFieldEditor..Label2..Caption
+#: Property_Editors/frmIBFilterFieldEditorU.dfm:29 
+msgid "Alias"
+msgstr ""
+
+#. frmIBFilterFieldEditor..btnAdd..Caption
+#: Property_Editors/frmIBFilterFieldEditorU.dfm:61 
+msgid "Add Fields"
+msgstr ""
+
+#. frmIBFilterFieldEditor..btnRemove..Caption
+#: Property_Editors/frmIBFilterFieldEditorU.dfm:70 
+#, fuzzy
+msgid "Remove Fields"
+msgstr "Nome Campo"
+
+#. Programmer's name for it: SBackupCaption
+#: IBDCLConst.pas:17 
+msgid "Backup Database files"
+msgstr ""
+
+#. Programmer's name for it: SRestoreSize
+#: IBDCLConst.pas:18 
+msgid "Size(Bytes)"
+msgstr ""
+
+#. Programmer's name for it: SFileNames
+#: IBDCLConst.pas:19 
+msgid "Filename(s)"
+msgstr ""
+
+#. Programmer's name for it: SPages
+#: IBDCLConst.pas:20 
+msgid "Pages"
+msgstr ""
+
+#. Programmer's name for it: SDatabasefiles
+#. Programmer's name for it: SDatabaseFilter
+#: IBDCLConst.pas:21  IBXConst.pas:30
+#, fuzzy
+msgid "Database Files (*.ib;*.gdb)|*.ib;*.gdb|All files (*.*)|*.*"
+msgstr "Tutti i file (*.*)|*.*"
+
+#. Programmer's name for it: SIBFilterBeginning
+#: IBVisualConst.pas:18 
+msgid "Partial match at beginning"
+msgstr ""
+
+#. Programmer's name for it: SIBFilterAnywhere
+#: IBVisualConst.pas:19 
+msgid "Partial match anywhere"
+msgstr ""
+
+#. Programmer's name for it: SIBFilterExact
+#: IBVisualConst.pas:20 
+msgid "Exact Match"
+msgstr ""
+
+#. Programmer's name for it: SIBFilterAtEnd
+#: IBVisualConst.pas:21 
+msgid "Partial match at end"
+msgstr ""
+
+#. Programmer's name for it: SIBFilterRange
+#: IBVisualConst.pas:22 
+msgid "Match Range"
+msgstr ""
+
+#. Programmer's name for it: SIBFilterNot
+#: IBVisualConst.pas:23 
+#, fuzzy
+msgid "Not "
+msgstr "Record non trovato"
+
+#. Programmer's name for it: SIBFilterCaption
+#: IBVisualConst.pas:24 
+msgid "IBX Filter Dialog"
+msgstr ""
+
+#. Programmer's name for it: SIBFilterNonIBXError
+#: IBVisualConst.pas:25 
+msgid "IBFilterDialog only works with IBDataSet or IBQuery components"
+msgstr ""
+
+#. Programmer's name for it: SIBDatabaseEditor
+#: IBXConst.pas:28 
+msgid "Da&tabase Editor..."
+msgstr "Database &Editor..."
+
+#. Programmer's name for it: SIBTransactionEditor
+#: IBXConst.pas:29 
+#, fuzzy
+msgid "&Transaction Editor..."
+msgstr "Database &Editor..."
+
+#. Programmer's name for it: SDisconnectDatabase
+#: IBXConst.pas:31 
+msgid "Database is currently connected. Disconnect and continue?"
+msgstr "Il database è attualmente connesso. Disconnetti e continua?"
+
+#. Programmer's name for it: SCommitTransaction
+#: IBXConst.pas:32 
+#, fuzzy
+msgid "Transaction is currently Active. Rollback and continue?"
+msgstr "Il database è attualmente connesso. Disconnetti e continua?"
+
+#. Programmer's name for it: SExecute
+#: IBXConst.pas:33 
+msgid "E&xecute"
+msgstr "E&xecute"
+
+#. Programmer's name for it: SNoDataSet
+#: IBXConst.pas:34 
+msgid "No dataset association"
+msgstr "Nessuna associazione di dataset"
+
+#. Programmer's name for it: SSQLGenSelect
+#: IBXConst.pas:35 
+msgid "Must select at least one key field and one update field"
+msgstr ""
+"Deve essere selezionato almeno un campo chiave e un campo aggiornamento"
+
+#. Programmer's name for it: SSQLNotGenerated
+#: IBXConst.pas:36 
+msgid "Update SQL statements not generated, exit anyway?"
+msgstr "Statement Update SQL non generati, uscire lo stesso?"
+
+#. Programmer's name for it: SIBUpdateSQLEditor
+#: IBXConst.pas:37 
+msgid "&UpdateSQL Editor..."
+msgstr "&UpdateSQL Editor..."
+
+#. Programmer's name for it: SIBDataSetEditor
+#: IBXConst.pas:38 
+#, fuzzy
+msgid "&Dataset Editor..."
+msgstr "Database &Editor..."
+
+#. Programmer's name for it: SSQLDataSetOpen
+#: IBXConst.pas:39 
+msgid "Unable to determine field names for %s"
+msgstr "Impossibile determinare il nome dei campi per %s"
+
+#. Programmer's name for it: SDefaultTransaction
+#: IBXConst.pas:40 
+#, fuzzy
+msgid "%s, Default"
+msgstr "Default"
+
+#. Programmer's name for it: SUnknownError
+#: IBXConst.pas:43 
+#, fuzzy
+msgid "Unknown error"
+msgstr "Codice d'errore sconosciuto"
+
+#. Programmer's name for it: SInterBaseMissing
+#: IBXConst.pas:45 
+msgid ""
+"InterBase library gds32.dll not found in the path. Please install InterBase "
+"to use this functionality"
+msgstr ""
+
+#. Programmer's name for it: SInterBaseMissing
+#: IBXConst.pas:48 
+msgid ""
+"InterBase library gds.so.0 not found in the path. Please install InterBase "
+"to use this functionality"
+msgstr ""
+
+#. Programmer's name for it: SInterBaseInstallMissing
+#: IBXConst.pas:50 
+msgid ""
+"InterBase Install DLL ibinstall.dll not found in the path. Please install "
+"InterBase 6 to use this functionality"
+msgstr ""
+
+#. Programmer's name for it: SIB60feature
+#: IBXConst.pas:51 
+msgid ""
+"%s is an InterBase 6 function. Please upgrade to InterBase 6 to use this "
+"functonality"
+msgstr ""
+
+#. Programmer's name for it: SNotSupported
+#: IBXConst.pas:52 
+#, fuzzy
+msgid "Unsupported feature"
+msgstr "Formato Appunti non supportato"
+
+#. Programmer's name for it: SNotPermitted
+#: IBXConst.pas:53 
+msgid "Not permitted"
+msgstr ""
+
+#. Programmer's name for it: SFileAccessError
+#: IBXConst.pas:54 
+msgid "Temporary file access error"
+msgstr ""
+
+#. Programmer's name for it: SConnectionTimeout
+#: IBXConst.pas:55 
+msgid "Database connection timed out"
+msgstr ""
+
+#. Programmer's name for it: SCannotSetDatabase
+#: IBXConst.pas:56 
+#, fuzzy
+msgid "Cannot set database"
+msgstr "Connessione impossibile al database '%s'"
+
+#. Programmer's name for it: SCannotSetTransaction
+#: IBXConst.pas:57 
+msgid "Cannot set transaction"
+msgstr ""
+
+#. Programmer's name for it: SOperationCancelled
+#: IBXConst.pas:58 
+msgid "Operation cancelled at user's request"
+msgstr ""
+
+#. Programmer's name for it: SDPBConstantNotSupported
+#: IBXConst.pas:59 
+msgid "DPB Constant (isc_dpb_%s) is unsupported"
+msgstr ""
+
+#. Programmer's name for it: SDPBConstantUnknown
+#: IBXConst.pas:60 
+msgid "DPB Constant (%d) is unknown"
+msgstr ""
+
+#. Programmer's name for it: STPBConstantNotSupported
+#: IBXConst.pas:61 
+msgid "TPB Constant (isc_tpb_%s) is unsupported"
+msgstr ""
+
+#. Programmer's name for it: STPBConstantUnknown
+#: IBXConst.pas:62 
+msgid "TPB Constant (%d) is unknown"
+msgstr ""
+
+#. Programmer's name for it: SDatabaseClosed
+#: IBXConst.pas:63 
+#, fuzzy
+msgid "Cannot perform operation -- DB is not open"
+msgstr "Impossibile eseguire questa operazione su di un database aperto"
+
+#. Programmer's name for it: SDatabaseOpen
+#: IBXConst.pas:64 
+#, fuzzy
+msgid "Cannot perform operation -- DB is currently open"
+msgstr "Impossibile eseguire questa operazione su di un database aperto"
+
+#. Programmer's name for it: SDatabaseNameMissing
+#: IBXConst.pas:65 
+#, fuzzy
+msgid "Database name is missing"
+msgstr "Nome database mancante"
+
+#. Programmer's name for it: SNotInTransaction
+#: IBXConst.pas:66 
+msgid "Transaction is not active"
+msgstr ""
+
+#. Programmer's name for it: SInTransaction
+#: IBXConst.pas:67 
+msgid "Transaction is active"
+msgstr ""
+
+#. Programmer's name for it: STimeoutNegative
+#: IBXConst.pas:68 
+msgid "Timeout values cannot be negative"
+msgstr ""
+
+#. Programmer's name for it: SNoDatabasesInTransaction
+#: IBXConst.pas:69 
+msgid "No databases are listed in transaction component"
+msgstr ""
+
+#. Programmer's name for it: SUpdateWrongDB
+#: IBXConst.pas:70 
+msgid "Updating wrong database"
+msgstr ""
+
+#. Programmer's name for it: SUpdateWrongTR
+#: IBXConst.pas:71 
+msgid "Updating wrong transaction. Unique transaction expected in set"
+msgstr ""
+
+#. Programmer's name for it: SDatabaseNotAssigned
+#: IBXConst.pas:72 
+#, fuzzy
+msgid "Database not assigned"
+msgstr "Nome database mancante"
+
+#. Programmer's name for it: STransactionNotAssigned
+#: IBXConst.pas:73 
+msgid "Transaction not assigned"
+msgstr ""
+
+#. Programmer's name for it: SXSQLDAIndexOutOfRange
+#: IBXConst.pas:74 
+#, fuzzy
+msgid "XSQLDA index out of range"
+msgstr "Indice di menu fuori intervallo"
+
+#. Programmer's name for it: SXSQLDANameDoesNotExist
+#: IBXConst.pas:75 
+#, fuzzy
+msgid "XSQLDA name does not exist (%s)"
+msgstr "L'indice non esiste. Indice: %s"
+
+#. Programmer's name for it: SEOF
+#: IBXConst.pas:76 
+msgid "End of file"
+msgstr ""
+
+#. Programmer's name for it: SBOF
+#: IBXConst.pas:77 
+msgid "Beginning of file"
+msgstr ""
+
+#. Programmer's name for it: SInvalidStatementHandle
+#: IBXConst.pas:78 
+#, fuzzy
+msgid "Invalid statement handle"
+msgstr "Argomento non valido per la codifica della data"
+
+#. Programmer's name for it: SSQLOpen
+#: IBXConst.pas:79 
+msgid "IBSQL Open"
+msgstr ""
+
+#. Programmer's name for it: SSQLClosed
+#: IBXConst.pas:80 
+msgid "IBSQL Closed"
+msgstr ""
+
+#. Programmer's name for it: SDatasetOpen
+#: IBXConst.pas:81 
+msgid "Dataset open"
+msgstr ""
+
+#. Programmer's name for it: SDatasetClosed
+#: IBXConst.pas:82 
+msgid "Dataset closed"
+msgstr ""
+
+#. Programmer's name for it: SUnknownSQLDataType
+#: IBXConst.pas:83 
+msgid "Unknown SQL Data type (%d)"
+msgstr ""
+
+#. Programmer's name for it: SInvalidColumnIndex
+#: IBXConst.pas:84 
+msgid "Invalid column index (index exceeds permitted range)"
+msgstr ""
+
+#. Programmer's name for it: SInvalidParamColumnIndex
+#: IBXConst.pas:85 
+msgid "Invalid parameter index (index exceeds permitted range)"
+msgstr ""
+
+#. Programmer's name for it: SInvalidDataConversion
+#: IBXConst.pas:86 
+#, fuzzy
+msgid "Invalid data conversion"
+msgstr "Creazione azione non valida"
+
+#. Programmer's name for it: SColumnIsNotNullable
+#: IBXConst.pas:87 
+msgid "Column cannot be set to null (%s)"
+msgstr ""
+
+#. Programmer's name for it: SBlobCannotBeRead
+#: IBXConst.pas:88 
+msgid "Blob stream cannot be read"
+msgstr ""
+
+#. Programmer's name for it: SBlobCannotBeWritten
+#: IBXConst.pas:89 
+msgid "Blob stream cannot be written"
+msgstr ""
+
+#. Programmer's name for it: SEmptyQuery
+#: IBXConst.pas:90 
+msgid "Empty query"
+msgstr ""
+
+#. Programmer's name for it: SCannotOpenNonSQLSelect
+#: IBXConst.pas:91 
+msgid "Cannot \"open\" a non-select statement. Use ExecQuery"
+msgstr ""
+
+#. Programmer's name for it: SNoFieldAccess
+#: IBXConst.pas:92 
+#, fuzzy
+msgid "No access to field \"%s\""
+msgstr "Impossibile accedere al campo indice '%s'"
+
+#. Programmer's name for it: SFieldReadOnly
+#: IBXConst.pas:93 
+msgid "Field \"%s\" is read-only"
+msgstr ""
+
+#. Programmer's name for it: SFieldNotFound
+#: IBXConst.pas:94 
+#, fuzzy
+msgid "Field \"%s\" not found"
+msgstr "%s: Campo '%s' non trovato"
+
+#. Programmer's name for it: SNotEditing
+#: IBXConst.pas:95 
+#, fuzzy
+msgid "Not in edit mode"
+msgstr "Non in modalità cached update"
+
+#. Programmer's name for it: SCannotInsert
+#: IBXConst.pas:96 
+#, fuzzy
+msgid "Cannot insert into dataset. (No insert query)"
+msgstr "Impossibile inserire o cancellare righe dalla griglia"
+
+#. Programmer's name for it: SCannotPost
+#: IBXConst.pas:97 
+msgid "Cannot post. (No update/insert query)"
+msgstr ""
+
+#. Programmer's name for it: SCannotUpdate
+#: IBXConst.pas:98 
+msgid "Cannot update. (No update query)"
+msgstr ""
+
+#. Programmer's name for it: SCannotDelete
+#: IBXConst.pas:99 
+msgid "Cannot delete from dataset. (No delete query)"
+msgstr ""
+
+#. Programmer's name for it: SCannotRefresh
+#: IBXConst.pas:100 
+msgid "Cannot refresh row. (No refresh query)"
+msgstr ""
+
+#. Programmer's name for it: SBufferNotSet
+#: IBXConst.pas:101 
+msgid "Buffer not set"
+msgstr ""
+
+#. Programmer's name for it: SCircularReference
+#: IBXConst.pas:102 
+msgid "Circular references not permitted"
+msgstr ""
+
+#. Programmer's name for it: SSQLParseError
+#: IBXConst.pas:103 
+msgid ""
+"SQL Parse Error:\n"
+"\n"
+"%s"
+msgstr ""
+
+#. Programmer's name for it: SUserAbort
+#: IBXConst.pas:104 
+msgid "User abort"
+msgstr ""
+
+#. Programmer's name for it: SDataSetUniDirectional
+#: IBXConst.pas:105 
+msgid "Data set is uni-directional"
+msgstr ""
+
+#. Programmer's name for it: SCannotCreateSharedResource
+#: IBXConst.pas:106 
+msgid "Cannot create shared resource. (Windows error %d)"
+msgstr ""
+
+#. Programmer's name for it: SWindowsAPIError
+#: IBXConst.pas:107 
+msgid "Windows API error. (Windows error %d [$%.8x])"
+msgstr ""
+
+#. Programmer's name for it: SColumnListsDontMatch
+#: IBXConst.pas:108 
+msgid "Column lists do not match"
+msgstr ""
+
+#. Programmer's name for it: SColumnTypesDontMatch
+#: IBXConst.pas:109 
+msgid "Column types don't match. (From index: %d; To index: %d)"
+msgstr ""
+
+#. Programmer's name for it: SCantEndSharedTransaction
+#: IBXConst.pas:111 
+msgid ""
+"Can't end a shared transaction unless it is forced and equal to the "
+"transaction's TimeoutAction"
+msgstr ""
+
+#. Programmer's name for it: SFieldUnsupportedType
+#: IBXConst.pas:112 
+#, fuzzy
+msgid "Unsupported Field Type"
+msgstr "Tipo Campo"
+
+#. Programmer's name for it: SCircularDataLink
+#: IBXConst.pas:113 
+#, fuzzy
+msgid "Circular DataLink Reference"
+msgstr "Datalinks circolari non sono ammessi"
+
+#. Programmer's name for it: SEmptySQLStatement
+#: IBXConst.pas:114 
+msgid "Empty SQL Statement"
+msgstr ""
+
+#. Programmer's name for it: SIsASelectStatement
+#: IBXConst.pas:115 
+msgid "use Open for a Select Statement"
+msgstr ""
+
+#. Programmer's name for it: SRequiredParamNotSet
+#: IBXConst.pas:116 
+msgid "Required Param value not set"
+msgstr ""
+
+#. Programmer's name for it: SNoStoredProcName
+#: IBXConst.pas:117 
+msgid "No Stored Procedure Name assigned"
+msgstr ""
+
+#. Programmer's name for it: SIsAExecuteProcedure
+#: IBXConst.pas:118 
+msgid "use ExecProc for Procedure; use TQuery for Select procedures"
+msgstr ""
+
+#. Programmer's name for it: SUpdateFailed
+#: IBXConst.pas:119 
+#, fuzzy
+msgid "Update Failed"
+msgstr "Aggiornameto fallito"
+
+#. Programmer's name for it: SNotCachedUpdates
+#: IBXConst.pas:120 
+msgid "CachedUpdates not enabled"
+msgstr ""
+
+#. Programmer's name for it: SNotLiveRequest
+#: IBXConst.pas:121 
+#, fuzzy
+msgid "Request is not live - cannot modify"
+msgstr "Il campo '%s' non è indicizzato e non può essere modificato"
+
+#. Programmer's name for it: SNoProvider
+#: IBXConst.pas:122 
+#, fuzzy
+msgid "No Provider"
+msgstr "Provider non disponibile"
+
+#. Programmer's name for it: SNoRecordsAffected
+#: IBXConst.pas:123 
+msgid "No Records Affected"
+msgstr ""
+
+#. Programmer's name for it: SNoTableName
+#: IBXConst.pas:124 
+msgid "No Table Name assigned"
+msgstr ""
+
+#. Programmer's name for it: SCannotCreatePrimaryIndex
+#: IBXConst.pas:125 
+msgid "Cannot Create Primary Index; are created automatically"
+msgstr ""
+
+#. Programmer's name for it: SCannotDropSystemIndex
+#: IBXConst.pas:126 
+#, fuzzy
+msgid "Cannot Drop System Index"
+msgstr "Impossibile aprire AVI"
+
+#. Programmer's name for it: STableNameMismatch
+#: IBXConst.pas:127 
+msgid "Table Name Mismatch"
+msgstr ""
+
+#. Programmer's name for it: SIndexFieldMissing
+#: IBXConst.pas:128 
+#, fuzzy
+msgid "Index Field Missing"
+msgstr "Nome campo mancante"
+
+#. Programmer's name for it: SInvalidCancellation
+#: IBXConst.pas:129 
+msgid "Cannot Cancel events while processing"
+msgstr ""
+
+#. Programmer's name for it: SInvalidEvent
+#: IBXConst.pas:130 
+#, fuzzy
+msgid "Invalid Event"
+msgstr "Indice non valido"
+
+#. Programmer's name for it: SMaximumEvents
+#: IBXConst.pas:131 
+msgid "Exceded Maximum Event limits"
+msgstr ""
+
+#. Programmer's name for it: SNoEventsRegistered
+#: IBXConst.pas:132 
+msgid "No Events Registered"
+msgstr ""
+
+#. Programmer's name for it: SInvalidQueueing
+#: IBXConst.pas:133 
+#, fuzzy
+msgid "Invalid Queueing"
+msgstr "Selezione non valida"
+
+#. Programmer's name for it: SInvalidRegistration
+#: IBXConst.pas:134 
+#, fuzzy
+msgid "Invalid Registration"
+msgstr "Registrazione campo non valida"
+
+#. Programmer's name for it: SInvalidBatchMove
+#: IBXConst.pas:135 
+#, fuzzy
+msgid "Invalid Batch Move"
+msgstr "Parametri batch move non validi"
+
+#. Programmer's name for it: SSQLDialectInvalid
+#: IBXConst.pas:136 
+msgid "SQL Dialect Invalid"
+msgstr ""
+
+#. Programmer's name for it: SSPBConstantNotSupported
+#: IBXConst.pas:137 
+#, fuzzy
+msgid "SPB Constant Not supported"
+msgstr "Costante fuori intervallo"
+
+#. Programmer's name for it: SSPBConstantUnknown
+#: IBXConst.pas:138 
+msgid "SPB Constant Unknown"
+msgstr ""
+
+#. Programmer's name for it: SServiceActive
+#: IBXConst.pas:139 
+#, fuzzy
+msgid "Cannot perform operation -- service is not attached"
+msgstr "Impossibile eseguire questa operazione su di un database aperto"
+
+#. Programmer's name for it: SServiceInActive
+#: IBXConst.pas:140 
+#, fuzzy
+msgid "Cannot perform operation -- service is attached"
+msgstr "Impossibile eseguire questa operazione su di un dataset chiuso"
+
+#. Programmer's name for it: SServerNameMissing
+#: IBXConst.pas:141 
+#, fuzzy
+msgid "Server Name Missing"
+msgstr "Nome session mancante"
+
+#. Programmer's name for it: SQueryParamsError
+#: IBXConst.pas:142 
+msgid "Query Parameters missing or incorrect"
+msgstr ""
+
+#. Programmer's name for it: SStartParamsError
+#: IBXConst.pas:143 
+msgid "start Parameters missing or incorrect"
+msgstr ""
+
+#. Programmer's name for it: SOutputParsingError
+#: IBXConst.pas:144 
+msgid "Unexpected Output buffer value"
+msgstr ""
+
+#. Programmer's name for it: SUseSpecificProcedures
+#: IBXConst.pas:145 
+msgid ""
+"Generic ServiceStart not applicable: Use Specific Procedures to set "
+"configuration params"
+msgstr ""
+
+#. Programmer's name for it: SSQLMonitorAlreadyPresent
+#: IBXConst.pas:146 
+msgid "SQL Monitor Instance is already present"
+msgstr ""
+
+#. Programmer's name for it: SCantPrintValue
+#: IBXConst.pas:147 
+#, fuzzy
+msgid "Cannot print value"
+msgstr "DCOM non installato"
+
+#. Programmer's name for it: SEOFReached
+#: IBXConst.pas:148 
+msgid "SEOFReached"
+msgstr ""
+
+#. Programmer's name for it: SEOFInComment
+#: IBXConst.pas:149 
+msgid "EOF in comment detected"
+msgstr ""
+
+#. Programmer's name for it: SEOFInString
+#: IBXConst.pas:150 
+msgid "EOF in string detected"
+msgstr ""
+
+#. Programmer's name for it: SParamNameExpected
+#: IBXConst.pas:151 
+#, fuzzy
+msgid "Parameter name expected"
+msgstr "Il genitore deve essere espanso"
+
+#. Programmer's name for it: SSuccess
+#: IBXConst.pas:152 
+msgid "Successful execution"
+msgstr ""
+
+#. Programmer's name for it: SDelphiException
+#: IBXConst.pas:153 
+msgid "DelphiException %s"
+msgstr ""
+
+#. Programmer's name for it: SNoOptionsSet
+#: IBXConst.pas:154 
+msgid "No Install Options selected"
+msgstr ""
+
+#. Programmer's name for it: SNoDestinationDirectory
+#: IBXConst.pas:155 
+msgid "DestinationDirectory is not set"
+msgstr ""
+
+#. Programmer's name for it: SNosourceDirectory
+#: IBXConst.pas:156 
+msgid "SourceDirectory is not set"
+msgstr ""
+
+#. Programmer's name for it: SNoUninstallFile
+#: IBXConst.pas:157 
+msgid "Uninstall File Name is not set"
+msgstr ""
+
+#. Programmer's name for it: SOptionNeedsClient
+#: IBXConst.pas:158 
+msgid "%s component requires Client to function properly"
+msgstr ""
+
+#. Programmer's name for it: SOptionNeedsServer
+#: IBXConst.pas:159 
+msgid "%s component requires Server to function properly"
+msgstr ""
+
+#. Programmer's name for it: SInvalidOption
+#: IBXConst.pas:160 
+#, fuzzy
+msgid "Invalid option specified"
+msgstr "Indice dell'outline non valido"
+
+#. Programmer's name for it: SInvalidOnErrorResult
+#: IBXConst.pas:161 
+msgid "Unexpected onError return value"
+msgstr ""
+
+#. Programmer's name for it: SInvalidOnStatusResult
+#: IBXConst.pas:162 
+msgid "Unexpected onStatus return value"
+msgstr ""
+
+#. Programmer's name for it: SInterbaseExpressVersion
+#: IBXConst.pas:164 
+msgid "InterbaseExpress 4.3"
+msgstr ""
+
+#. Programmer's name for it: SEditSQL
+#: IBXConst.pas:165 
+msgid "Edit SQL"
+msgstr ""
+
+#. Programmer's name for it: SDPBConstantUnknownEx
+#: IBXConst.pas:166 
+msgid "DPB Constant (%s) is unknown"
+msgstr ""
+
+#. Programmer's name for it: STPBConstantUnknownEx
+#: IBXConst.pas:167 
+msgid "TPB Constant (%s) is unknown"
+msgstr ""
+
+#. Programmer's name for it: SInterbaseExpressVersionEx
+#: IBXConst.pas:168 
+msgid "InterbaseExpress %g"
+msgstr ""
+
+#. Programmer's name for it: SUnknownPlan
+#: IBXConst.pas:169 
+msgid "Unknown Error - Can't retrieve plan"
+msgstr ""
+
+#. Programmer's name for it: SFieldSizeMismatch
+#: IBXConst.pas:170 
+msgid "Size Mismatch - Field %s size is too small for data"
+msgstr ""
+
+#. Programmer's name for it: SEventAlreadyRegistered
+#: IBXConst.pas:171 
+msgid "Events already registered"
+msgstr ""
+
+#. Programmer's name for it: SStringTooLarge
+#: IBXConst.pas:172 
+msgid ""
+"Trying to store a string of length %d into a field that can only contain %d"
+msgstr ""
+
+#. Programmer's name for it: SIBServiceEditor
+#: IBXConst.pas:173 
+#, fuzzy
+msgid "&Service Editor ..."
+msgstr "Database &Editor..."
+
+#. Programmer's name for it: SIBSuccessConnect
+#: IBXConst.pas:174 
+msgid "Successful Connection"
+msgstr ""
+
+#. Programmer's name for it: SNoTimers
+#: IBXConst.pas:175 
+msgid "Not enough timers available"
+msgstr "Non ci sono timers sufficienti"
+
+#. Programmer's name for it: SIB65feature
+#: IBXConst.pas:176 
+msgid ""
+"%s is an InterBase 6.5 function. Please upgrade to InterBase 6.5 to use this "
+"functonality"
+msgstr ""
+
+#. Programmer's name for it: SLoginPromptFailure
+#: IBXConst.pas:177 
+msgid ""
+"Can not find default login prompt dialog.  Please add DBLogDlg to the uses "
+"section of your main file."
+msgstr ""
+
+#. Programmer's name for it: SIBMemoryError
+#: IBXConst.pas:178 
+#, fuzzy
+msgid "Out of memory"
+msgstr "Risorse del sistema esaurite"
+
+#. Programmer's name for it: SIBInvalidStatement
+#: IBXConst.pas:179 
+#, fuzzy
+msgid "Invalid statement"
+msgstr "Formato stream non valido"
+
+#. Programmer's name for it: SIBInvalidComment
+#: IBXConst.pas:180 
+#, fuzzy
+msgid "Invalid Comment"
+msgstr "Indice non valido"
+
+#. Programmer's name for it: SIBBrokerOpen
+#: IBXConst.pas:181 
+msgid "  Opening connection "
+msgstr ""
+
+#. Programmer's name for it: SIBBrokerVersion
+#: IBXConst.pas:182 
+msgid "Starting IBConnectionBroker Version 1.0.1:"
+msgstr ""
+
+#. Programmer's name for it: SIBBrokerDatabase
+#: IBXConst.pas:183 
+#, fuzzy
+msgid "Database Name = "
+msgstr "Nome database mancante"
+
+#. Programmer's name for it: SIBBrokerUser
+#: IBXConst.pas:184 
+#, fuzzy
+msgid "User Name = "
+msgstr "Nome"
+
+#. Programmer's name for it: SIBBrokerMinConnections
+#: IBXConst.pas:185 
+#, fuzzy
+msgid "Min Connections = "
+msgstr "Proprietà DataSet mancante"
+
+#. Programmer's name for it: SIBBrokerMaxConnections
+#: IBXConst.pas:186 
+msgid "Max Connections = "
+msgstr ""
+
+#. Programmer's name for it: SIBBrokerIdleTimer
+#: IBXConst.pas:187 
+msgid "IdleTimer = "
+msgstr ""
+
+#. Programmer's name for it: SIBBrokerGiveOut
+#: IBXConst.pas:188 
+msgid "gave out connection "
+msgstr ""
+
+#. Programmer's name for it: SIBBrokerUnavailable
+#: IBXConst.pas:189 
+#, fuzzy
+msgid "Unable to create new connection: "
+msgstr "Impossibile creare nuove colonne"
+
+#. Programmer's name for it: SIBBrokerExhausted
+#: IBXConst.pas:190 
+msgid "-----> Connections Exhausted!  Will wait and try again in loop "
+msgstr ""
+
+#. Programmer's name for it: SIBBrokerNilError
+#: IBXConst.pas:191 
+msgid "Nil database tried to be released"
+msgstr ""
+
+#. Programmer's name for it: SIBBrokerRelease
+#: IBXConst.pas:192 
+#, fuzzy
+msgid "Release connection "
+msgstr "Cancella il record?"
+
+#. Programmer's name for it: SIBDatabaseINISection
+#: IBXConst.pas:193 
+#, fuzzy
+msgid "Database Settings"
+msgstr "Nome database mancante"
+
+#. Programmer's name for it: SIBDatabaseINISectionEmpty
+#: IBXConst.pas:194 
+#, fuzzy
+msgid "Section name can not be empty"
+msgstr "IN predicate list may not be empty"
+
+#. Programmer's name for it: SIB70feature
+#: IBXConst.pas:195 
+msgid ""
+"%s is an InterBase 7.0 function. Please upgrade to InterBase 7.0 to use this "
+"functonality"
+msgstr ""
+
+#. Programmer's name for it: SIB71feature
+#: IBXConst.pas:196 
+msgid ""
+"%s is an InterBase 7.1 function. Please upgrade to InterBase 7.1 to use this "
+"functonality"
+msgstr ""
+
+#. Programmer's name for it: SIB75feature
+#: IBXConst.pas:197 
+msgid ""
+"%s is an InterBase 7.5 function. Please upgrade to InterBase 7.5 to use this "
+"functonality"
+msgstr ""
+
+#, fuzzy
+#~ msgid "Close"
+#~ msgstr "&Chiudi"
+
+#, fuzzy
+#~ msgid "None"
+#~ msgstr "(Nessuno)"
+
+#, fuzzy
+#~ msgid "Selective"
+#~ msgstr "esegui"
+
+#~ msgid "All"
+#~ msgstr "Tutti"
+
+#, fuzzy
+#~ msgid "Actions"
+#~ msgstr "Icone"
+
+#~ msgid "Other"
+#~ msgstr "Altri"
+
+#~ msgid "Default"
+#~ msgstr "Default"
+
+#~ msgid "(None)"
+#~ msgstr "(Nessuno)"
+
+#, fuzzy
+#~ msgid "UnFold"
+#~ msgstr "Grassetto"
+
+#, fuzzy
+#~ msgid "Fade"
+#~ msgstr "Falso"
+
+#~ msgid "&Close"
+#~ msgstr "&Chiudi"
+
+#, fuzzy
+#~ msgid "U"
+#~ msgstr "Su"
+
+#, fuzzy
+#~ msgid "Original idea"
+#~ msgstr "DigitalVideo"
+
+#, fuzzy
+#~ msgid "Contributions"
+#~ msgstr "Ctrl+"
+
+#~ msgid "&Help"
+#~ msgstr "A&iuto"
+
+#, fuzzy
+#~ msgid "File"
+#~ msgstr "Falso"
+
+#~ msgid "Help"
+#~ msgstr "Aiuto"
+
+#, fuzzy
+#~ msgid "&About"
+#~ msgstr "&Fine"
+
+#, fuzzy
+#~ msgid "ResultsPanel"
+#~ msgstr "Result"
+
+#, fuzzy
+#~ msgid "Progress: "
+#~ msgstr "Proprietà"
+
+#, fuzzy
+#~ msgid "LbProgress"
+#~ msgstr "Proprietà"
+
+#, fuzzy
+#~ msgid "Tests"
+#~ msgstr "Result"
+
+#, fuzzy
+#~ msgid "Failures"
+#~ msgstr "Falso"
+
+#, fuzzy
+#~ msgid "Errors"
+#~ msgstr "Errore"
+
+#, fuzzy
+#~ msgid "Test Name"
+#~ msgstr "Nome Campo"
+
+#, fuzzy
+#~ msgid "Failure Type"
+#~ msgstr "Tipo Campo"
+
+#, fuzzy
+#~ msgid "Location"
+#~ msgstr "Icone"
+
+#, fuzzy
+#~ msgid "Commands"
+#~ msgstr "Tutti i comandi"
+
+#, fuzzy
+#~ msgid "&Run"
+#~ msgstr "&Riprova"
+
+#, fuzzy
+#~ msgid "E&xit"
+#~ msgstr "E&xecute"
+
+#, fuzzy
+#~ msgid "&Stop"
+#~ msgstr "stop"
+
+#, fuzzy
+#~ msgid "Stop"
+#~ msgstr "stop"
+
+#, fuzzy
+#~ msgid "Select &All"
+#~ msgstr "S&ì a tutti"
+
+#, fuzzy
+#~ msgid "Select all tests"
+#~ msgstr "S&ì a tutti"
+
+#, fuzzy
+#~ msgid "&Deselect All"
+#~ msgstr "S&ì a tutti"
+
+#, fuzzy
+#~ msgid "Select Fai&led"
+#~ msgstr "esegui"
+
+#, fuzzy
+#~ msgid "Select &Current"
+#~ msgstr "Seleziona cartella"
+
+#, fuzzy
+#~ msgid "&Error Box Visible"
+#~ msgstr "Errore creando la finestra"
+
+#, fuzzy
+#~ msgid "Copy testname to clipboard"
+#~ msgstr "Impossibile aprire gli Appunti"
+
+#, fuzzy
+#~ msgid "&File"
+#~ msgstr "Falso"
+
+#, fuzzy
+#~ msgid "&Options"
+#~ msgstr "Icone"
+
+#, fuzzy
+#~ msgid "Actio&ns"
+#~ msgstr "Icone"
+
+#, fuzzy
+#~ msgid "Ctrl A"
+#~ msgstr "Ctrl+"
+
+#, fuzzy
+#~ msgid "Project &name"
+#~ msgstr "&Nome Cartella:"
+
+#, fuzzy
+#~ msgid "&Cancel"
+#~ msgstr "&Annulla"
+
+#, fuzzy
+#~ msgid "Parameters"
+#~ msgstr "%s%s%s Parameters"
+
+#, fuzzy
+#~ msgid "&Select parameter..."
+#~ msgstr "Define &Parameters..."
+
+#, fuzzy
+#~ msgid "&Template"
+#~ msgstr "Spazio"
+
+#, fuzzy
+#~ msgid "&Macros"
+#~ msgstr "Icone"
+
+#, fuzzy
+#~ msgid "&Insert"
+#~ msgstr "Invio"
+
+#, fuzzy
+#~ msgid "&Defaults"
+#~ msgstr "Default"
+
+#, fuzzy
+#~ msgid "Selected IDE unit"
+#~ msgstr "esegui"
+
+#, fuzzy
+#~ msgid "Selected class"
+#~ msgstr "esegui"
+
+#, fuzzy
+#~ msgid "Ca&ncel"
+#~ msgstr "&Annulla"
+
+#, fuzzy
+#~ msgid "C&opy to clipboard"
+#~ msgstr "Impossibile aprire gli Appunti"
+
+#, fuzzy
+#~ msgid "&Unit name"
+#~ msgstr "&Nome Cartella:"
+
+#, fuzzy
+#~ msgid "Unit filename"
+#~ msgstr "Indice non valido"
+
+#, fuzzy
+#~ msgid "Registration Options"
+#~ msgstr "Registrazione campo non valida"
+
+#, fuzzy
+#~ msgid "Prefix"
+#~ msgstr "Anteprima"
+
+#, fuzzy
+#~ msgid "Folder Name"
+#~ msgstr "Nome Campo"
+
+#~ msgid "OK"
+#~ msgstr "&OK"
+
+#, fuzzy
+#~ msgid "xpGen"
+#~ msgstr "Apri"
+
+#, fuzzy
+#~ msgid "&Open..."
+#~ msgstr "Apri"
+
+#, fuzzy
+#~ msgid "Exit"
+#~ msgstr "E&xecute"
+
+#, fuzzy
+#~ msgid "&Edit"
+#~ msgstr "E&xecute"
+
+#, fuzzy
+#~ msgid "pas"
+#~ msgstr "pausa"
+
+#, fuzzy
+#~ msgid "*.pas"
+#~ msgstr "pausa"
+
+#, fuzzy
+#~ msgid "Database Engine Error"
+#~ msgstr "Nome database mancante"
+
+#, fuzzy
+#~ msgid "ErrorText"
+#~ msgstr "Errore"
+
+#, fuzzy
+#~ msgid "BDE Error:"
+#~ msgstr "Errore DAX"
+
+#, fuzzy
+#~ msgid "Server Error:"
+#~ msgstr "D&rive:"
+
+#, fuzzy
+#~ msgid "DbResult"
+#~ msgstr "Result"
+
+#, fuzzy
+#~ msgid "NativeResult"
+#~ msgstr "Result"
+
+#, fuzzy
+#~ msgid "&Details"
+#~ msgstr "Metafile"
+
+#, fuzzy
+#~ msgid "Database Login"
+#~ msgstr "Nome database mancante"
+
+#, fuzzy
+#~ msgid "&OK"
+#~ msgstr "&OK"
+
+#~ msgid "Cancel"
+#~ msgstr "&Annulla"
+
+#, fuzzy
+#~ msgid "Database:"
+#~ msgstr "%s%s%s Database"
+
+#, fuzzy
+#~ msgid "Display &Name"
+#~ msgstr "&Nome Cartella:"
+
+#, fuzzy
+#~ msgid "&Active Type"
+#~ msgstr "Tipo Campo"
+
+#, fuzzy
+#~ msgid "CaptionEdit"
+#~ msgstr "&Annulla"
+
+#, fuzzy
+#~ msgid "As Needed"
+#~ msgstr "esegui"
+
+#, fuzzy
+#~ msgid "Inactive"
+#~ msgstr "Creazione azione non valida"
+
+#, fuzzy
+#~ msgid "Year"
+#~ msgstr "&Sì"
+
+#, fuzzy
+#~ msgid "Dimension"
+#~ msgstr "&Cartelle:"
+
+#, fuzzy
+#~ msgid "Count"
+#~ msgstr "Ctrl+"
+
+#, fuzzy
+#~ msgid "Min"
+#~ msgstr "Icone"
+
+#, fuzzy
+#~ msgid "Unknown"
+#~ msgstr "(Sconosciuto)"
+
+#, fuzzy
+#~ msgid "BaseNameEdit"
+#~ msgstr "Nome"
+
+#, fuzzy
+#~ msgid "&Cells"
+#~ msgstr "&Chiudi"
+
+#, fuzzy
+#~ msgid "&Summaries:"
+#~ msgstr "D&rive:"
+
+#, fuzzy
+#~ msgid "Databas&e:"
+#~ msgstr "%s%s%s Database"
+
+#, fuzzy
+#~ msgid "&Cancel Edit"
+#~ msgstr "&Annulla"
+
+#, fuzzy
+#~ msgid "SQL &Builder ..."
+#~ msgstr "&SQL Builder..."
+
+#, fuzzy
+#~ msgid "B&uild..."
+#~ msgstr "&SQL Builder..."
+
+#, fuzzy
+#~ msgid "Delete Selected"
+#~ msgstr "Cancella il record?"
+
+#, fuzzy
+#~ msgid " Database "
+#~ msgstr "%s%s%s Database"
+
+#, fuzzy
+#~ msgid "&Driver name:"
+#~ msgstr "&Nome Cartella:"
+
+#, fuzzy
+#~ msgid "&Name:"
+#~ msgstr "Nome"
+
+#, fuzzy
+#~ msgid "D&efaults"
+#~ msgstr "Default"
+
+#, fuzzy
+#~ msgid "&Clear"
+#~ msgstr "&Chiudi"
+
+#, fuzzy
+#~ msgid "&Property Name:"
+#~ msgstr "&Nome Cartella:"
+
+#, fuzzy
+#~ msgid "&Field Name:"
+#~ msgstr "Nome Campo"
+
+#, fuzzy
+#~ msgid "Field properties"
+#~ msgstr "Proprietà"
+
+#, fuzzy
+#~ msgid "Field type"
+#~ msgstr "Tipo Campo"
+
+#, fuzzy
+#~ msgid "&Data"
+#~ msgstr "%s%s%s Database"
+
+#, fuzzy
+#~ msgid "D&etail Fields"
+#~ msgstr "Metafile"
+
+#, fuzzy
+#~ msgid "Index Files"
+#~ msgstr "%s%s%s Index Files"
+
+#~ msgid "Open"
+#~ msgstr "Apri"
+
+#, fuzzy
+#~ msgid "Picture Editor"
+#~ msgstr "Picture:"
+
+#, fuzzy
+#~ msgid "&Fields:"
+#~ msgstr "D&rive:"
+
+#, fuzzy
+#~ msgid "&Code Editor..."
+#~ msgstr "&UpdateSQL Editor..."
+
+#, fuzzy
+#~ msgid "Cascade"
+#~ msgstr "&Annulla"
+
+#, fuzzy
+#~ msgid "C&lose"
+#~ msgstr "&Chiudi"
+
+#, fuzzy
+#~ msgid "Exit|Quits the application"
+#~ msgstr "(Senza Nome)"
+
+#, fuzzy
+#~ msgid "&Bold"
+#~ msgstr "Grassetto"
+
+#~ msgid "Bold"
+#~ msgstr "Grassetto"
+
+#, fuzzy
+#~ msgid "&Italic"
+#~ msgstr "Corsivo"
+
+#~ msgid "Italic"
+#~ msgstr "Corsivo"
+
+#, fuzzy
+#~ msgid "&Replace"
+#~ msgstr "Spazio"
+
+#, fuzzy
+#~ msgid "&Center"
+#~ msgstr "Invio"
+
+#, fuzzy
+#~ msgid "Open Picture"
+#~ msgstr "Picture:"
+
+#, fuzzy
+#~ msgid "Save Picture"
+#~ msgstr "Picture:"
+
+#, fuzzy
+#~ msgid "open"
+#~ msgstr "Apri"
+
+#~ msgid "Tab"
+#~ msgstr "Tab"
+
+#, fuzzy
+#~ msgid "&Previous"
+#~ msgstr "Anteprima"
+
+#, fuzzy
+#~ msgid "&Delete Selection"
+#~ msgstr "Cancella il record?"
+
+#, fuzzy
+#~ msgid "Delete Selection"
+#~ msgstr "Cancella il record?"
+
+#, fuzzy
+#~ msgid "Clear Selection"
+#~ msgstr "Selezione non valida"
+
+#, fuzzy
+#~ msgid "&Move Selection"
+#~ msgstr "Selezione non valida"
+
+#, fuzzy
+#~ msgid "Move Selection"
+#~ msgstr "Selezione non valida"
+
+#, fuzzy
+#~ msgid "Internet"
+#~ msgstr "Invio"
+
+#, fuzzy
+#~ msgid "Interpreter"
+#~ msgstr "interrogazione"
+
+#, fuzzy
+#~ msgid "&Field"
+#~ msgstr "Nome Campo"
+
+#, fuzzy
+#~ msgid "On New Record"
+#~ msgstr "Cancella il record?"
+
+#, fuzzy
+#~ msgid "On Server"
+#~ msgstr "D&rive:"
+
+#, fuzzy
+#~ msgid "/Details"
+#~ msgstr "Metafile"
+
+#, fuzzy
+#~ msgid "<h2>Registered Servers</h2>"
+#~ msgstr "Tipo Campo"
+
+#, fuzzy
+#~ msgid "Default URL:"
+#~ msgstr "Default"
+
+#~ msgid "Home"
+#~ msgstr "Home"
+
+#, fuzzy
+#~ msgid "Port"
+#~ msgstr "&Fine"
+
+#, fuzzy
+#~ msgid "&About..."
+#~ msgstr "&Fine"
+
+#, fuzzy
+#~ msgid "&Port:"
+#~ msgstr "&Fine"
+
+#, fuzzy
+#~ msgid "&Default URL:"
+#~ msgstr "Default"
+
+#, fuzzy
+#~ msgid "cbPort"
+#~ msgstr "&Fine"
+
+#, fuzzy
+#~ msgid "edDefault"
+#~ msgstr "Default"
+
+#, fuzzy
+#~ msgid "edPath"
+#~ msgstr "PathInfo"
+
+#, fuzzy
+#~ msgid "&Reset"
+#~ msgstr "Result"
+
+#, fuzzy
+#~ msgid "Version 4.0"
+#~ msgstr "%s su %s"
+
+#, fuzzy
+#~ msgid "Borland Software Corporation"
+#~ msgstr "Griglia troppo larga per l'operazione"
+
+#, fuzzy
+#~ msgid "Missing %s property"
+#~ msgstr "Proprietà DataSet mancante"
+
+#, fuzzy
+#~ msgid "No matching ADO data type for %s"
+#~ msgstr "Tipo di dati non valido per '%s'"
+
+#, fuzzy
+#~ msgid "FilterOptions are not supported"
+#~ msgstr "Aritmetica non supportata in espressioni filtro"
+
+#, fuzzy
+#~ msgid "Recordset is not open"
+#~ msgstr "Record non trovato"
+
+#~ msgid "Name"
+#~ msgstr "Nome"
+
+#~ msgid ""
+#~ "Cannot enable AutoSessionName property with more than one session on a "
+#~ "form or data-module"
+#~ msgstr ""
+#~ "Impossibile abilitare la proprietà AutoSessionName con più di una "
+#~ "sessione in una form o data-module"
+
+#~ msgid ""
+#~ "Cannot add a session to the form or data-module while session '%s' has "
+#~ "AutoSessionName enabled"
+#~ msgstr ""
+#~ "Impossibile aggiungere una sessione alla form o data-module mentre la "
+#~ "sessione '%s' ha AutoSessionName = enabled"
+
+#~ msgid "Cannot modify SessionName while AutoSessionName is enabled"
+#~ msgstr ""
+#~ "Impossibile modificare SessionName mentre AutoSessionName è abilitato"
+
+#~ msgid "Duplicate database name '%s'"
+#~ msgstr "Nome database duplicato '%s'"
+
+#~ msgid "Duplicate session name '%s'"
+#~ msgstr "Nome sessione duplicato '%s'"
+
+#~ msgid "Invalid session name %s"
+#~ msgstr "Nome sessione non valido %s"
+
+#~ msgid "Database name missing"
+#~ msgstr "Nome database mancante"
+
+#~ msgid "Session name missing"
+#~ msgstr "Nome session mancante"
+
+#~ msgid "Cannot perform this operation on an open database"
+#~ msgstr "Non posso eseguire questa operazione su di un database aperto"
+
+#~ msgid "Cannot perform this operation on a closed database"
+#~ msgstr "Non posso eseguire questa operazione su di un database chiuso"
+
+#~ msgid "Database handle owned by a different session"
+#~ msgstr "Handle del database posseduto da un'altra sessione"
+
+#~ msgid "Cannot perform this operation on an active session"
+#~ msgstr "Non posso eseguire questa operazione su di una sessione attiva"
+
+#~ msgid "Error creating cursor handle"
+#~ msgstr "Errore creando l'handle del cursore"
+
+#~ msgid "Cannot convert field '%s' to a floating point value"
+#~ msgstr "Impossibile convertire il campo '%s' in un valore floating point"
+
+#~ msgid "Cannot convert field '%s' to an integer value"
+#~ msgstr "Impossibile convertire il campo '%s' in un valore integer"
+
+#~ msgid "Source and destination tables are incompatible"
+#~ msgstr "La tabella sorgente e destinazione sono incompatibili"
+
+#~ msgid "Fields '%s' and '%s' are not assignment compatible"
+#~ msgstr "I campi '%s' e '%s' non sono compatibili in assegnamento"
+
+#~ msgid "ReferenceTableName not specified for field '%s'"
+#~ msgstr "ReferenceTableName non specificato per il campo '%s'"
+
+#~ msgid "Cannot use array of Field values with Expression Indices"
+#~ msgstr "Impossibile usare array di valori di campi con Expression Indices"
+
+#~ msgid "Invalid batch move parameters"
+#~ msgstr "Parametri batch move non validi"
+
+#~ msgid "No SQL statement available"
+#~ msgstr "Nessun statement SQL disponibile"
+
+#~ msgid "No value for parameter '%s'"
+#~ msgstr "Nessun valore per il parametro '%s'"
+
+#~ msgid "No parameter type for parameter '%s'"
+#~ msgstr "Nessun tipo per il parametro '%s'"
+
+#~ msgid "Cannot connect to database '%s'"
+#~ msgstr "Connessione impossibile al database '%s'"
+
+#~ msgid ""
+#~ "An error occurred while attempting to initialize the Borland Database "
+#~ "Engine (error $%.4x)"
+#~ msgstr ""
+#~ "Errore durante l'inizializzazione del Borland Database Engine (errore $"
+#~ "%.4x)"
+
+#~ msgid "E&xplore"
+#~ msgstr "E&xplore"
+
+#~ msgid "'%s' cannot be opened"
+#~ msgstr "'%s' non può essere aperto"
+
+#~ msgid "The MasterSource property of '%s' must be linked to a DataSource"
+#~ msgstr ""
+#~ "La proprietà MasterSource di '%s' deve essere collegata ad un DataSource"
+
+#~ msgid "Unable to open the MasterSource Table"
+#~ msgstr "Impossibile aprire la tabella MasterSource"
+
+#~ msgid "S&QL Builder..."
+#~ msgstr "&SQL Builder..."
+
+#~ msgid "Define &Parameters..."
+#~ msgstr "Define &Parameters..."
+
+#~ msgid "0009"
+#~ msgstr "0009"
+
+#~ msgid "BDE error $%.4x"
+#~ msgstr "Errore BDE $%.4x"
+
+#~ msgid "Unable to use duplicate DataSource and LookupSource"
+#~ msgstr "Impossibile usare duplicati di DataSource e LookupSource"
+
+#~ msgid "LookupSource must be connected to TTable component"
+#~ msgstr "LookupSource deve essere connesso ad un componente TTable"
+
+#~ msgid "%s must be the lookup table's active index"
+#~ msgstr "%s deve essere l'indice attivo della tabella di lookup"
+
+#~ msgid ";Input;Output;Input/Output;Result"
+#~ msgstr ";Input;Output;Input/Output;Result"
+
+#~ msgid "Must have a valid field type selected"
+#~ msgstr "Deve essere selezionato un tipo campo valido"
+
+#~ msgid "Parameter '%s' truncated on output"
+#~ msgstr "Parametro '%s' troncato in output"
+
+#~ msgid ""
+#~ ";String;SmallInt;Integer;Word;Boolean;Float;Currency;BCD;Date;Time;"
+#~ "DateTime;;;;Blob;Memo;Graphic;;;;;Cursor;"
+#~ msgstr ""
+#~ ";String;SmallInt;Integer;Word;Boolean;Float;Currency;BCD;Date;Time;"
+#~ "DateTime;;;;Blob;Memo;Graphic;;;;;Cursor;"
+
+#~ msgid "Result"
+#~ msgstr "Result"
+
+#~ msgid "%s%s%s Database"
+#~ msgstr "%s%s%s Database"
+
+#~ msgid "%s%s%s Parameters"
+#~ msgstr "%s%s%s Parameters"
+
+#~ msgid "%s%s%s Index Files"
+#~ msgstr "%s%s%s Index Files"
+
+#~ msgid "Index does not exist. Index: %s"
+#~ msgstr "L'indice non esiste. Indice: %s"
+
+#~ msgid "Missing TableName property"
+#~ msgstr "proprietà TableName mancante"
+
+#~ msgid "Missing DataSetField property"
+#~ msgstr "proprietà DataSetField mancante"
+
+#~ msgid "Not in cached update mode"
+#~ msgstr "Non in modalità cached update"
+
+#~ msgid "Invalid alias name %s"
+#~ msgstr "Nome alias %s non valido"
+
+#~ msgid "Cannot access field '%s' in a filter"
+#~ msgstr "Impossibile accedere al campo '%s' in un filtro"
+
+#~ msgid "Untitled Application"
+#~ msgstr "(Senza Nome)"
+
+#~ msgid "Cannot update, %s is not owned by %s"
+#~ msgstr "Impossibile aggiornare, %s non è posseduto da %s"
+
+#~ msgid "Update failed"
+#~ msgstr "Aggiornameto fallito"
+
+#~ msgid ""
+#~ "The transaction isolation level must be dirty read for local databases"
+#~ msgstr ""
+#~ "La Transaction Isolation Level deve essere \"Dirty Read\" per i databese "
+#~ "locali"
+
+#~ msgid "Missing DataSet property"
+#~ msgstr "Proprietà DataSet mancante"
+
+#~ msgid "No provider available"
+#~ msgstr "Provider non disponibile"
+
+#~ msgid "Dataset is not a query"
+#~ msgstr "Il Dataset non è una query"
+
+#~ msgid "Invalid field size"
+#~ msgstr "Dimensione campo non valida"
+
+#~ msgid "Invalid FieldKind"
+#~ msgstr "FieldKind non valido"
+
+#~ msgid "Invalid field registration"
+#~ msgstr "Registrazione campo non valida"
+
+#~ msgid "Field '%s' is of an unknown type"
+#~ msgstr "Il campo '%s' è di tipo sconosciuto"
+
+#~ msgid "Field name missing"
+#~ msgstr "Nome campo mancante"
+
+#~ msgid "Duplicate field name '%s'"
+#~ msgstr "Nome campo duplicato '%s'"
+
+#~ msgid "Field '%s' not found"
+#~ msgstr "%s: Campo '%s' non trovato"
+
+#~ msgid "Cannot access field '%s' as type %s"
+#~ msgstr "Impossibile accedere al campo '%s' come tipo %s"
+
+#~ msgid "Invalid value for field '%s'"
+#~ msgstr "Valore non valido per il campo '%s'"
+
+#~ msgid ""
+#~ "%g is not a valid value for field '%s'. The allowed range is %g to %g"
+#~ msgstr ""
+#~ "%g non Š un valore valido per il campo '%s'. L'intervallo consentito è da "
+#~ "%g a %g"
+
+#~ msgid "'%s' is not a valid integer value for field '%s'"
+#~ msgstr "'%s' non è un valore integer valido per il campo '%s'"
+
+#~ msgid "'%s' is not a valid boolean value for field '%s'"
+#~ msgstr "'%s' non è un valore boolean valido per il campo '%s'"
+
+#~ msgid "'%s' is not a valid floating point value for field '%s'"
+#~ msgstr "'%s' non è un valore floating point valido per il campo '%s'"
+
+#~ msgid "Type mismatch for field '%s', expecting: %s actual: %s"
+#~ msgstr "Il campo '%s' non è del tipo aspettato"
+
+#~ msgid "Size mismatch for field '%s', expecting: %d actual: %d"
+#~ msgstr ""
+#~ "Incongruenza di dimenzione per il campo '%s', richiesto: %d attuale: %d"
+
+#~ msgid "Invalid variant type or size for field '%s'"
+#~ msgstr "Tipo o dimensioni variant non validi"
+
+#~ msgid "Value of field '%s' is out of range"
+#~ msgstr "Il valore del campo '%s' è fuori intervallo"
+
+#~ msgid "Field '%s' must have a value"
+#~ msgstr "Il campo '%s' deve avere un valore"
+
+#~ msgid "Field '%s' has no dataset"
+#~ msgstr "Il campo '%s' non ha dataset"
+
+#~ msgid "Field '%s' cannot be a calculated or lookup field"
+#~ msgstr "Il campo '%s' non può essere un campo calcolato o di lookup"
+
+#~ msgid "Field '%s' cannot be modified"
+#~ msgstr "Il campo '%s' non può essere modificato"
+
+#~ msgid "Field index out of range"
+#~ msgstr "Indice campo fuori intervallo"
+
+#~ msgid "No index currently active"
+#~ msgstr "Nessun indice è attivo al momento"
+
+#~ msgid "Field '%s' is not indexed and cannot be modified"
+#~ msgstr "Il campo '%s' non è indicizzato e non può essere modificato"
+
+#~ msgid "Cannot access index field '%s'"
+#~ msgstr "Impossibile accedere al campo indice '%s'"
+
+#~ msgid "Duplicate index name '%s'"
+#~ msgstr "Nome indice duplicato '%s'"
+
+#~ msgid "No index for fields '%s'"
+#~ msgstr "'%s' non ha indice per i campi '%s'"
+
+#~ msgid "Index '%s' not found"
+#~ msgstr "Indice '%s' non trovato"
+
+#~ msgid "Duplicate name '%s' in %s"
+#~ msgstr "Un componente chiamato %s esiste già"
+
+#~ msgid "Circular datalinks are not allowed"
+#~ msgstr "Datalinks circolari non sono ammessi"
+
+#~ msgid "Lookup information for field '%s' is incomplete"
+#~ msgstr "L'informazione Lookup per il campo '%s' è incompleta"
+
+#~ msgid "DataSource cannot be changed"
+#~ msgstr "Il DataSource non può essere cambiato"
+
+#~ msgid "Nested datasets cannot have a MasterSource"
+#~ msgstr "I dataset Nested non possono avere un MasterSource"
+
+#~ msgid "Cannot perform this operation on an open dataset"
+#~ msgstr "Impossibile eseguire questa operazione su di un database aperto"
+
+#~ msgid "Dataset not in edit or insert mode"
+#~ msgstr "Il dataset non è nel modo Insert o Edit"
+
+#~ msgid "Cannot perform this operation on a closed dataset"
+#~ msgstr "Impossibile eseguire questa operazione su di un dataset chiuso"
+
+#~ msgid "Cannot perform this operation on an empty dataset"
+#~ msgstr "Impossibile eseguire questa operazione su di un dataset vuoto"
+
+#~ msgid "Cannot modify a read-only dataset"
+#~ msgstr "Impossibile modificare un dataset solo-lettura"
+
+#~ msgid "Nested dataset must inherit from %s"
+#~ msgstr "I dataset Nested devono discendere da %s"
+
+#~ msgid "Filter expression incorrectly terminated"
+#~ msgstr "Espressione filtro terminata non correttamente"
+
+#~ msgid "Unterminated field name"
+#~ msgstr "Nome campo indeterminato"
+
+#~ msgid "Unterminated string constant"
+#~ msgstr "Costante stringa indeterminata"
+
+#~ msgid "Invalid filter expression character: '%s'"
+#~ msgstr "Espressione filtro non valida, carattere: '%s'"
+
+#~ msgid "'(' expected but %s found"
+#~ msgstr "'(' richiesto ma trovato %s"
+
+#~ msgid "')' expected but %s found"
+#~ msgstr "')' richiesto ma trovato %s"
+
+#~ msgid "')' or ',' expected but %s found"
+#~ msgstr "')' o ',' richiesto ma trovato %s"
+
+#~ msgid "Expression expected but %s found"
+#~ msgstr "Espressione richiesta ma trovato %s"
+
+#~ msgid "Field '%s' cannot be used in a filter expression"
+#~ msgstr "Il campo '%s' non può essere usato in una espressione filtro"
+
+#~ msgid "NULL only allowed with '=' and '<>'"
+#~ msgstr "NULL consentito solo con '=' e '<>'"
+
+#~ msgid "Constant out of range"
+#~ msgstr "Costante fuori intervallo"
+
+#~ msgid "Field '%s' is not of type Boolean"
+#~ msgstr "Il campo '%s' non è del tipo Boolean"
+
+#~ msgid "Incorrectly formed filter expression"
+#~ msgstr "Espressione filtro formata non correttamente"
+
+#~ msgid "nothing"
+#~ msgstr "niente"
+
+#~ msgid "Type mismatch in expression"
+#~ msgstr "Tipo incongruente nella espressione"
+
+#~ msgid "Operation cannot mix aggregate value with record-varying value"
+#~ msgstr ""
+#~ "L'operazione non può mixare valori aggregati con valori record-varying"
+
+#~ msgid "Arithmetic in filter expressions not supported"
+#~ msgstr "Aritmetica non supportata in espressioni filtro"
+
+#~ msgid "Expression is not an aggregate expression"
+#~ msgstr "L'espressione non è una espressione aggregata"
+
+#~ msgid "Constant is not correct type %s"
+#~ msgstr "La costante non è del tipo corretto %s"
+
+#~ msgid "Aggregate expressions not allowed in filters"
+#~ msgstr "Le espressioni aggregate non sono consentite nei filtri"
+
+#~ msgid "IN predicate list may not be empty"
+#~ msgstr "IN predicate list may not be empty"
+
+#~ msgid "Invalid use of keyword"
+#~ msgstr "Uso errato della parola chiave"
+
+#~ msgid "False"
+#~ msgstr "Falso"
+
+#~ msgid "True"
+#~ msgstr "Vero"
+
+#~ msgid "Parameter '%s' not found"
+#~ msgstr "Parametro '%s' non trovato"
+
+#~ msgid "Unable to load bind parameters"
+#~ msgstr "Impossibile caricare parametri legati"
+
+#~ msgid "Parameter '%s', cannot save data larger than %d bytes"
+#~ msgstr "Il parametro '%s', non può salvare dati più grandi di %d bytes"
+
+#~ msgid "Property may not be modified while aggregate is active"
+#~ msgstr "La proprietà non può essere modificata mentre Aggregate è attivo"
+
+#~ msgid "Record not found"
+#~ msgstr "Record non trovato"
+
+#~ msgid "BCD overflow"
+#~ msgstr "(Overflow)"
+
+#~ msgid "Delete record?"
+#~ msgstr "Cancella il record?"
+
+#~ msgid "Delete all selected records?"
+#~ msgstr "Cancella tutti i record selezionati?"
+
+#~ msgid "Grid requested to display more than 256 columns"
+#~ msgstr "La griglia non può visualizzare più di 256 colonne"
+
+#~ msgid "Abort"
+#~ msgstr "&Fine"
+
+#~ msgid "Field Name"
+#~ msgstr "Nome Campo"
+
+#, fuzzy
+#~ msgid "Invalid data packet"
+#~ msgstr "Tipo di dati non valido per '%s'"
+
+#, fuzzy
+#~ msgid "Circular provider references not allowed"
+#~ msgstr "Datalinks circolari non sono ammessi"
+
+#, fuzzy
+#~ msgid "Error reading from socket"
+#~ msgstr "Errore rimovendo il controllo dall'albero del Dock"
+
+#, fuzzy
+#~ msgid "Invalid action received: %d"
+#~ msgstr "Creazione azione non valida"
+
+#, fuzzy
+#~ msgid "Invalid response"
+#~ msgstr "Owner non valido"
+
+#, fuzzy
+#~ msgid "Field"
+#~ msgstr "Nome Campo"
+
+#, fuzzy
+#~ msgid "Preparation of field constraint failed with error \"%s\""
+#~ msgstr "Servizio \"%s\" non disinstallato per errore: \"%s\""
+
+#, fuzzy
+#~ msgid "Modifications are not allowed"
+#~ msgstr "Datalinks circolari non sono ammessi"
+
+#, fuzzy
+#~ msgid "Deletes are not allowed"
+#~ msgstr "Datalinks circolari non sono ammessi"
+
+#, fuzzy
+#~ msgid "Inserts are not allowed"
+#~ msgstr "Datalinks circolari non sono ammessi"
+
+#, fuzzy
+#~ msgid "CommandText changes are not allowed"
+#~ msgstr "Datalinks circolari non sono ammessi"
+
+#, fuzzy
+#~ msgid "Operation not allowed with aggregates active"
+#~ msgstr "La proprietà non può essere modificata mentre Aggregate è attivo"
+
+#, fuzzy
+#~ msgid "No server available"
+#~ msgstr "Provider non disponibile"
+
+#, fuzzy
+#~ msgid "Circular reference to Connection not allowed"
+#~ msgstr "Datalinks circolari non sono ammessi"
+
+#, fuzzy
+#~ msgid "DataTable"
+#~ msgstr "%s%s%s Database"
+
+#, fuzzy
+#~ msgid "Invalid source dataset"
+#~ msgstr "Formato stream non valido"
+
+#, fuzzy
+#~ msgid "Invalid record buffer"
+#~ msgstr "Selezione non valida"
+
+#, fuzzy
+#~ msgid "Invalid operation for calculated field value."
+#~ msgstr "Operazione non valida su TOleGraphic"
+
+#, fuzzy
+#~ msgid "Refresh not supported."
+#~ msgstr "Operazione non supportata dalla stampante selezionata"
+
+#, fuzzy
+#~ msgid "Nested detail sets not supported"
+#~ msgstr "Gli Appunti non supportano icone"
+
+#, fuzzy
+#~ msgid "DataObject does not support record deletion"
+#~ msgstr "Gli Appunti non supportano icone"
+
+#, fuzzy
+#~ msgid "Partial locates not supported"
+#~ msgstr "Operazione non supportata dalla stampante selezionata"
+
+#, fuzzy
+#~ msgid "DataObject does not support searching"
+#~ msgstr "Gli Appunti non supportano icone"
+
+#, fuzzy
+#~ msgid "Cannot change connection on Active Monitor"
+#~ msgstr "Impossibile cambiare le dimensioni di una icona"
+
+#, fuzzy
+#~ msgid "Missing SQLConnection property"
+#~ msgstr "Proprietà DataSet mancante"
+
+#, fuzzy
+#~ msgid "Cannot perform this operation on an open connection"
+#~ msgstr "Impossibile eseguire questa operazione su di un database aperto"
+
+#, fuzzy
+#~ msgid "Cannot perform this operation on a closed connection"
+#~ msgstr "Impossibile eseguire questa operazione su di un dataset chiuso"
+
+#, fuzzy
+#~ msgid "Connection name missing"
+#~ msgstr "Nome session mancante"
+
+#, fuzzy
+#~ msgid "Missing query, table name or procedure name"
+#~ msgstr "proprietà TableName mancante"
+
+#, fuzzy
+#~ msgid "Missing Database property"
+#~ msgstr "Proprietà DataSet mancante"
+
+#, fuzzy
+#~ msgid "Missing DriverName property"
+#~ msgstr "proprietà TableName mancante"
+
+#, fuzzy
+#~ msgid "Unable to execute Query"
+#~ msgstr "Impossibile sostituire l'immagine"
+
+#, fuzzy
+#~ msgid "Table/Procedure not found"
+#~ msgstr "Risorsa %s non trovata"
+
+#, fuzzy
+#~ msgid "Unable to Load %s"
+#~ msgstr "Impossibile scrivere su %s"
+
+#, fuzzy
+#~ msgid "Unable to Find Procedure %s"
+#~ msgstr "Impossibile scrivere su %s"
+
+#, fuzzy
+#~ msgid "Unable to Open Metadata"
+#~ msgstr "Impossibile inserire un elemento"
+
+#, fuzzy
+#~ msgid "[0x0003]: Invalid Field Type"
+#~ msgstr "Formato stream non valido"
+
+#, fuzzy
+#~ msgid "[0x0005]: Operation Not Supported"
+#~ msgstr "Operazione non supportata dalla stampante selezionata"
+
+#, fuzzy
+#~ msgid "[0x0006]: Invalid Time"
+#~ msgstr "Formato stream non valido"
+
+#, fuzzy
+#~ msgid "[0x0009]: Invalid Parameter"
+#~ msgstr "Formato stream non valido"
+
+#, fuzzy
+#~ msgid "[0x000C] Invalid Username/Password"
+#~ msgstr "Owner non valido"
+
+#, fuzzy
+#~ msgid "[0x000D]: Invalid Precision"
+#~ msgstr "Owner non valido"
+
+#, fuzzy
+#~ msgid "[0x0011]: Duplicate Transaction ID"
+#~ msgstr "Nome azione duplicato"
+
+#, fuzzy
+#~ msgid "Unable to move %s to %s"
+#~ msgstr "Impossibile scrivere su %s"
+
+#, fuzzy
+#~ msgid "Configuration file %s not found"
+#~ msgstr "Risorsa %s non trovata"
+
+#, fuzzy
+#~ msgid "Cannot create file %s"
+#~ msgstr "Impossibile accedere al campo indice '%s'"
+
+#, fuzzy
+#~ msgid "Text files (*.txt)|*.txt|All files (*.*)|*.*"
+#~ msgstr "Tutti i file (*.*)|*.*"
+
+#, fuzzy
+#~ msgid "Log files (*.log)"
+#~ msgstr "Tutti i file (*.*)|*.*"
+
+#, fuzzy
+#~ msgid "Circular provider references not allowed."
+#~ msgstr "Datalinks circolari non sono ammessi"
+
+#, fuzzy
+#~ msgid "First record"
+#~ msgstr "Cancella il record?"
+
+#, fuzzy
+#~ msgid "Next record"
+#~ msgstr "Cancella il record?"
+
+#, fuzzy
+#~ msgid "Last record"
+#~ msgstr "Cancella il record?"
+
+#, fuzzy
+#~ msgid "Insert record"
+#~ msgstr "Cancella il record?"
+
+#, fuzzy
+#~ msgid "Delete record"
+#~ msgstr "Cancella il record?"
+
+#, fuzzy
+#~ msgid "Edit record"
+#~ msgstr "Cancella il record?"
+
+#, fuzzy
+#~ msgid "Cancel edit"
+#~ msgstr "&Annulla"
+
+#~ msgid "Confirm"
+#~ msgstr "Conferma"
+
+#, fuzzy
+#~ msgid "Control cannot be used in a DBCtrlGrid"
+#~ msgstr "Il campo '%s' non può essere usato in una espressione filtro"
+
+#, fuzzy
+#~ msgid "TMethod instance is not callable"
+#~ msgstr "DCOM non installato"
+
+#, fuzzy
+#~ msgid "Value given is out of Currency's range"
+#~ msgstr "Il valore del campo '%s' è fuori intervallo"
+
+#, fuzzy
+#~ msgid "Value given is out of TDateTime's range"
+#~ msgstr "Il valore del campo '%s' è fuori intervallo"
+
+#, fuzzy
+#~ msgid "Integer overflow"
+#~ msgstr "(Overflow)"
+
+#, fuzzy
+#~ msgid "Invalid floating point operation"
+#~ msgstr "Creazione azione non valida"
+
+#, fuzzy
+#~ msgid "Invalid format string"
+#~ msgstr "Tipo di dati non valido per '%s'"
+
+#, fuzzy
+#~ msgid "Invalid cast operation"
+#~ msgstr "Selezione non valida"
+
+#, fuzzy
+#~ msgid "Invalid cast"
+#~ msgstr "Formato stream non valido"
+
+#, fuzzy
+#~ msgid "File not open for input"
+#~ msgstr "%s: Campo '%s' non trovato"
+
+#, fuzzy
+#~ msgid "File not open for output"
+#~ msgstr "%s: Campo '%s' non trovato"
+
+#, fuzzy
+#~ msgid "File not found"
+#~ msgstr "%s: Campo '%s' non trovato"
+
+#, fuzzy
+#~ msgid "Invalid filename"
+#~ msgstr "Indice non valido"
+
+#, fuzzy
+#~ msgid "Too many open files"
+#~ msgstr "Troppe immagini"
+
+#, fuzzy
+#~ msgid "Invalid numeric input"
+#~ msgstr "Valore numerico non valido"
+
+#, fuzzy
+#~ msgid "Class delegator not found"
+#~ msgstr "%s: Campo '%s' non trovato"
+
+#~ msgid "Error creating system registry entry"
+#~ msgstr "Errore creando voce nel registro di sistema"
+
+#~ msgid "OLE error %.8x"
+#~ msgstr "errore OLE %.8x"
+
+#~ msgid "Object factory for class %s missing"
+#~ msgstr "Object factory per la classe %s mancante"
+
+#~ msgid "Type information missing for class %s"
+#~ msgstr "Informazione di tipo mancante per la classe %s"
+
+#~ msgid "Incorrect type information for class %s"
+#~ msgstr "Informazione di tipo non corretta per la classe %s"
+
+#~ msgid "Dispatch interface missing from class %s"
+#~ msgstr "Interfaccia dispatch mancante dalla classe %s"
+
+#~ msgid "Method '%s' not supported by automation object"
+#~ msgstr "Metodo '%s' non supportato dall'oggetto OLE"
+
+#~ msgid "Variant does not reference an automation object"
+#~ msgstr "Variant non referenzia un oggetto OLE"
+
+#~ msgid "DCOM not installed"
+#~ msgstr "DCOM non installato"
+
+#~ msgid "DAX Error"
+#~ msgstr "Errore DAX"
+
+#~ msgid "COM Server Warning"
+#~ msgstr "COM Server Warning"
+
+#~ msgid ""
+#~ "There are still active COM objects in this application.  One or more "
+#~ "clients may have references to these objects, so manually closing "
+#~ msgstr ""
+#~ "Ci sono ancora oggetti COM attivi in questa applicazione. Uno o più "
+#~ "clients potrebbero avere riferimenti a questi oggetti, cosi è necessaria "
+#~ "una chiusura manuale "
+
+#~ msgid ""
+#~ "this application may cause those client application(s) to fail.\n"
+#~ "\n"
+#~ "Are you sure you want to close this application?"
+#~ msgstr ""
+#~ "questa applicazione può danneggiare l'esecuzione dell'applicazione(i) "
+#~ "client.\n"
+#~ "\n"
+#~ "Siete sicuri di voler chiudere questa applicazione?"
+
+#, fuzzy
+#~ msgid "Unable to find a Table of Contents"
+#~ msgstr "Impossibile inserire una linea"
+
+#, fuzzy
+#~ msgid "Ancestor for '%s' not found"
+#~ msgstr "Indice '%s' non trovato"
+
+#, fuzzy
+#~ msgid "Cannot assign a %s to a %s"
+#~ msgstr "Impossibile accedere al campo '%s' come tipo %s"
+
+#~ msgid "Bits index out of range"
+#~ msgstr "Indice Bits fuori intervallo"
+
+#~ msgid "Can't write to a read-only resource stream"
+#~ msgstr "Can't write to a read-only resource stream"
+
+#, fuzzy
+#~ msgid "Class %s not found"
+#~ msgstr "%s: Campo '%s' non trovato"
+
+#, fuzzy
+#~ msgid "String list does not allow duplicates"
+#~ msgstr "Il canvas non permette di disegnare"
+
+#, fuzzy
+#~ msgid "Cannot create file \"%s\". %s"
+#~ msgstr "Impossibile accedere al campo '%s' come tipo %s"
+
+#~ msgid "Fixed column count must be less than column count"
+#~ msgstr ""
+#~ "Il numero di colonne fisse deve essere minore del numero di colonne totale"
+
+#~ msgid "Fixed row count must be less than row count"
+#~ msgstr ""
+#~ "Il numero di righe fisse deve essere minore del numero di righe totale"
+
+#, fuzzy
+#~ msgid "Cannot open file %s"
+#~ msgstr "Impossibile aprire AVI"
+
+#~ msgid "Grid too large for operation"
+#~ msgstr "Griglia troppo larga per l'operazione"
+
+#~ msgid "Grid index out of range"
+#~ msgstr "Indice di griglia fuori intervallo"
+
+#~ msgid "Unable to write to %s"
+#~ msgstr "Impossibile scrivere su %s"
+
+#~ msgid "Invalid action creation"
+#~ msgstr "Creazione azione non valida"
+
+#~ msgid "Invalid action enumeration"
+#~ msgstr "Enumerazione azione non valida"
+
+#~ msgid "Invalid action registration"
+#~ msgstr "Registrazione Azione non valida"
+
+#~ msgid "Invalid action unregistration"
+#~ msgstr "Deregistrazione azione non valida"
+
+#, fuzzy
+#~ msgid "Invalid binary value"
+#~ msgstr "Valore di input non valido"
+
+#, fuzzy
+#~ msgid "Invalid file name - %s"
+#~ msgstr "Nome alias %s non valido"
+
+#, fuzzy
+#~ msgid "Invalid stream format"
+#~ msgstr "Formato pixel non valido"
+
+#, fuzzy
+#~ msgid "''%s'' is not a valid component name"
+#~ msgstr "'%s' non è un valore boolean valido per il campo '%s'"
+
+#, fuzzy
+#~ msgid "Invalid property value"
+#~ msgstr "Valore di input non valido"
+
+#, fuzzy
+#~ msgid "Invalid property path"
+#~ msgstr "Owner non valido"
+
+#, fuzzy
+#~ msgid "Invalid property type: %s"
+#~ msgstr "Tipo di dati non valido per '%s'"
+
+#, fuzzy
+#~ msgid "Method (%s) not found"
+#~ msgstr "Indice '%s' non trovato"
+
+#~ msgid "Invalid data type for '%s'"
+#~ msgstr "Tipo di dati non valido per '%s'"
+
+#, fuzzy
+#~ msgid "Invalid string constant"
+#~ msgstr "Costante stringa indeterminata"
+
+#~ msgid "Cannot insert or delete rows from grid"
+#~ msgstr "Impossibile inserire o cancellare righe dalla griglia"
+
+#~ msgid "Line too long"
+#~ msgstr "Linea troppo lunga"
+
+#, fuzzy
+#~ msgid "List count out of bounds (%d)"
+#~ msgstr "Indice tab fuori intervallo"
+
+#, fuzzy
+#~ msgid "List index out of bounds (%d)"
+#~ msgstr "Indice tab fuori intervallo"
+
+#~ msgid "Invalid input value"
+#~ msgstr "Valore di input non valido"
+
+#~ msgid "Invalid input value.  Use escape key to abandon changes"
+#~ msgstr ""
+#~ "Valore di input non valido.  Premi ESC per abbandonare i cambiamenti"
+
+#~ msgid "Printer is not currently printing"
+#~ msgstr "La stampante non sta stampando attualmente"
+
+#, fuzzy
+#~ msgid "%s on line %d"
+#~ msgstr "%s su %s"
+
+#~ msgid "Printing in progress"
+#~ msgstr "Stampa in esecuzione"
+
+#, fuzzy
+#~ msgid "Stream read error"
+#~ msgstr "Errore caricando il file"
+
+#, fuzzy
+#~ msgid "Failed to create key %s"
+#~ msgstr "Impossibile creare nuovi elementi"
+
+#, fuzzy
+#~ msgid "Failed to get data for '%s'"
+#~ msgstr "Failed to read ImageList data from stream"
+
+#, fuzzy
+#~ msgid "Invalid component registration"
+#~ msgstr "Registrazione Azione non valida"
+
+#, fuzzy
+#~ msgid "Failed to set data for '%s'"
+#~ msgstr "Impossibile impostare la data o l'ora del calendario"
+
+#~ msgid "Resource %s not found"
+#~ msgstr "Risorsa %s non trovata"
+
+#, fuzzy
+#~ msgid "Operation not allowed on sorted list"
+#~ msgstr "Operazione non supportata dalla stampante selezionata"
+
+#, fuzzy
+#~ msgid "%s expected"
+#~ msgstr "esegui"
+
+#~ msgid "Too many rows or columns deleted"
+#~ msgstr "Troppe righe o colonne cancellate"
+
+#, fuzzy
+#~ msgid "Error setting stream size"
+#~ msgstr "Errore creando voce nel registro di sistema"
+
+#, fuzzy
+#~ msgid "Unknown conversion type %s"
+#~ msgstr "Unknown RichEdit conversion file extension (.%s)"
+
+#, fuzzy
+#~ msgid "Unknown conversion family %s"
+#~ msgstr "Unknown RichEdit conversion file extension (.%s)"
+
+#, fuzzy
+#~ msgid "Can't listen on an open socket"
+#~ msgstr "Impossibile eseguire questa operazione su di un database aperto"
+
+#, fuzzy
+#~ msgid "Can't create new socket"
+#~ msgstr "Impossibile creare nuovi elementi"
+
+#, fuzzy
+#~ msgid "%s error %d, %s"
+#~ msgstr "%s su %s"
+
+#, fuzzy
+#~ msgid "No Help Manager installed."
+#~ msgstr "Nessuno aiuto disponibile"
+
+#, fuzzy
+#~ msgid "No Table of Contents found."
+#~ msgstr " - zona Dock non trovata"
+
+#, fuzzy
+#~ msgid "Microns"
+#~ msgstr "Icone"
+
+#, fuzzy
+#~ msgid "Meters"
+#~ msgstr "Metafile"
+
+#, fuzzy
+#~ msgid "Inches"
+#~ msgstr "Ins"
+
+#, fuzzy
+#~ msgid "Miles"
+#~ msgstr "Metafile"
+
+#, fuzzy
+#~ msgid "SquareInches"
+#~ msgstr "Sequencer"
+
+#, fuzzy
+#~ msgid "Decisteres"
+#~ msgstr "&Cartelle:"
+
+#, fuzzy
+#~ msgid "Decasteres"
+#~ msgstr "&Cartelle:"
+
+#, fuzzy
+#~ msgid "Tons"
+#~ msgstr "Icone"
+
+#, fuzzy
+#~ msgid "Seconds"
+#~ msgstr "Icone"
+
+#, fuzzy
+#~ msgid "Years"
+#~ msgstr "&Sì"
+
+#, fuzzy
+#~ msgid "Invalid property info type"
+#~ msgstr "Tipo di dati non valido per '%s'"
+
+#, fuzzy
+#~ msgid "Invalid property typeinfo type"
+#~ msgstr "Tipo di dati non valido per '%s'"
+
+#, fuzzy
+#~ msgid "No suitiable constructor found"
+#~ msgstr " - zona Dock non trovata"
+
+#, fuzzy
+#~ msgid "Item not found (%s%x)"
+#~ msgstr "%s: Campo '%s' non trovato"
+
+#, fuzzy
+#~ msgid "string does not represent a valid Conversion type value."
+#~ msgstr "'%s' non è un valore integer valido per il campo '%s'"
+
+#, fuzzy
+#~ msgid "<unknown>"
+#~ msgstr "(Sconosciuto)"
+
+#, fuzzy
+#~ msgid "'%s' is not a valid integer value"
+#~ msgstr "'%s' non è un valore integer valido per il campo '%s'"
+
+#, fuzzy
+#~ msgid "'%s' is not a valid floating point value"
+#~ msgstr "'%s' non è un valore floating point valido per il campo '%s'"
+
+#, fuzzy
+#~ msgid "'%s' is not a valid currency value"
+#~ msgstr "'%s' non è un valore boolean valido per il campo '%s'"
+
+#, fuzzy
+#~ msgid "'%s' is not a valid date"
+#~ msgstr "'%s' non è un valore integer valido per il campo '%s'"
+
+#, fuzzy
+#~ msgid "'%s' is not a valid time"
+#~ msgstr "'%s' non è un valore integer valido per il campo '%s'"
+
+#, fuzzy
+#~ msgid "'%s' is not a valid date and time"
+#~ msgstr "'%s' non è un valore integer valido per il campo '%s'"
+
+#, fuzzy
+#~ msgid "'%g' is not a valid date and time"
+#~ msgstr "'%s' non è un valore integer valido per il campo '%s'"
+
+#, fuzzy
+#~ msgid "'%s' is not a valid GUID value"
+#~ msgstr "'%s' non è un valore integer valido per il campo '%s'"
+
+#, fuzzy
+#~ msgid "'%s' is not a valid boolean value"
+#~ msgstr "'%s' non è un valore boolean valido per il campo '%s'"
+
+#, fuzzy
+#~ msgid "Invalid argument to time encode"
+#~ msgstr "Argomento non valido per la codifica della data"
+
+#~ msgid "Invalid argument to date encode"
+#~ msgstr "Argomento non valido per la codifica della data"
+
+#, fuzzy
+#~ msgid "I/O error %d"
+#~ msgstr "errore OLE %.8x"
+
+#, fuzzy
+#~ msgid "Invalid pointer operation"
+#~ msgstr "Formato pixel non valido"
+
+#, fuzzy
+#~ msgid "Invalid class typecast"
+#~ msgstr "Nome alias %s non valido"
+
+#, fuzzy
+#~ msgid "Stack overflow"
+#~ msgstr "(Overflow)"
+
+#, fuzzy
+#~ msgid "No argument for format '%s'"
+#~ msgstr "Nessun valore per il parametro '%s'"
+
+#, fuzzy
+#~ msgid "Format string too long"
+#~ msgstr "Linea troppo lunga"
+
+#, fuzzy
+#~ msgid "Error creating variant or safe array"
+#~ msgstr "Errore creando l'handle del cursore"
+
+#, fuzzy
+#~ msgid "Variant or safe array index out of bounds"
+#~ msgstr "Indice tab fuori intervallo"
+
+#, fuzzy
+#~ msgid "Invalid variant operation on %s variant"
+#~ msgstr "Creazione azione non valida"
+
+#, fuzzy
+#~ msgid "Invalid variant operation with %s and %s variants"
+#~ msgstr "Enumerazione azione non valida"
+
+#, fuzzy
+#~ msgid "Invalid variant operation (%s) with %s and %s variants"
+#~ msgstr "Enumerazione azione non valida"
+
+#, fuzzy
+#~ msgid "Invalid variant invocation (%s) on %s variant"
+#~ msgstr "Enumerazione azione non valida"
+
+#, fuzzy
+#~ msgid "Invalid variant type (0x%.4x)"
+#~ msgstr "Indice non valido"
+
+#, fuzzy
+#~ msgid "Invalid variant type conversion of %s variant"
+#~ msgstr "Tipo o dimensioni variant non validi"
+
+#, fuzzy
+#~ msgid "Invalid variant type conversion of %s variant into %s"
+#~ msgstr "Tipo o dimensioni variant non validi"
+
+#, fuzzy
+#~ msgid "Invalid variant array dimension (%d)"
+#~ msgstr "Enumerazione azione non valida"
+
+#, fuzzy
+#~ msgid "Invalid variant type conversion"
+#~ msgstr "Tipo o dimensioni variant non validi"
+
+#, fuzzy
+#~ msgid "Invalid variant operation"
+#~ msgstr "Creazione azione non valida"
+
+#, fuzzy
+#~ msgid "Invalid NULL variant operation (%s)"
+#~ msgstr "Creazione azione non valida"
+
+#, fuzzy
+#~ msgid "Variant overflow"
+#~ msgstr "(Overflow)"
+
+#, fuzzy
+#~ msgid "Invalid argument"
+#~ msgstr "Formato stream non valido"
+
+#, fuzzy
+#~ msgid "Invalid variant type"
+#~ msgstr "Indice non valido"
+
+#, fuzzy
+#~ msgid "Operation not supported"
+#~ msgstr "Operazione non supportata dalla stampante selezionata"
+
+#, fuzzy
+#~ msgid "Variant is empty"
+#~ msgstr "La bitmap è vuota"
+
+#, fuzzy
+#~ msgid ""
+#~ "Invalid variant operation: %s%.8x\n"
+#~ "%s"
+#~ msgstr "Enumerazione azione non valida"
+
+#, fuzzy
+#~ msgid "Custom variant type (%s%.4x) is out of range"
+#~ msgstr "Il valore del campo '%s' è fuori intervallo"
+
+#, fuzzy
+#~ msgid "Abstract Error"
+#~ msgstr "Errore DAX"
+
+#, fuzzy
+#~ msgid "Cannot access package information for package '%s'"
+#~ msgstr "Informazione di tipo non corretta per la classe %s"
+
+#, fuzzy
+#~ msgid "Invalid package file '%s'"
+#~ msgstr "Valore non valido per il campo '%s'"
+
+#, fuzzy
+#~ msgid "Invalid package handle"
+#~ msgstr "Indice dell'ImageList non valido"
+
+#, fuzzy
+#~ msgid "Nov"
+#~ msgstr "&No"
+
+#, fuzzy
+#~ msgid "Dec"
+#~ msgstr "Canc"
+
+#, fuzzy
+#~ msgid "October"
+#~ msgstr "Altri"
+
+#, fuzzy
+#~ msgid "Tue"
+#~ msgstr "Vero"
+
+#, fuzzy
+#~ msgid "Unable to create directory"
+#~ msgstr "Impossibile creare nuove colonne"
+
+#, fuzzy
+#~ msgid "Exception %s"
+#~ msgstr "%s su %s"
+
+#, fuzzy
+#~ msgid "Invalid type conversion"
+#~ msgstr "Creazione azione non valida"
+
+#~ msgid "Failed to clear tab control"
+#~ msgstr "Impossibile azzerare il controllo tab"
+
+#~ msgid "Failed to delete tab at index %d"
+#~ msgstr "Impossibile cancellare il tab all'indice %d"
+
+#~ msgid "Failed to retrieve tab at index %d"
+#~ msgstr "Impossibile recuperare il tab all'indice %d"
+
+#~ msgid "Failed to get object at index %d"
+#~ msgstr "Impossibile prelevare l'oggetto all'indice %d"
+
+#~ msgid "Failed to set tab \"%s\" at index %d"
+#~ msgstr "Impossibile impostare il tab \"%s\" all'indice %d"
+
+#~ msgid "Failed to set object at index %d"
+#~ msgstr "Impossibile impostare l'oggetto all'indice %d"
+
+#~ msgid "MultiLine must be True when TabPosition is tpLeft or tpRight"
+#~ msgstr ""
+#~ "MultiLine deve essere \"True\" quando TabPosition è tpLeft o tpRight"
+
+#~ msgid "Invalid item level assignment"
+#~ msgstr "Assegnamento livello elemento non valido"
+
+#~ msgid "Invalid level (%d) for item \"%s\""
+#~ msgstr "Livello non valido (%d) per l'elemento \"%s\""
+
+#~ msgid "Invalid index"
+#~ msgstr "Indice non valido"
+
+#~ msgid "Unable to insert an item"
+#~ msgstr "Impossibile inserire un elemento"
+
+#~ msgid "Invalid owner"
+#~ msgstr "Owner non valido"
+
+#~ msgid "Unable to create new column"
+#~ msgstr "Impossibile creare nuove colonne"
+
+#~ msgid "Unable to create new item"
+#~ msgstr "Impossibile creare nuovi elementi"
+
+#~ msgid "RichEdit line insertion error"
+#~ msgstr "Errore di inserimento linea in RichEdit"
+
+#~ msgid "Failed to Load Stream"
+#~ msgstr "Caricamento Stream fallito"
+
+#~ msgid "Failed to Save Stream"
+#~ msgstr "Salvataggio Stream fallito"
+
+#~ msgid "StatusBar cannot have more than 64 panels"
+#~ msgstr "La StatusBar non può avere più di 64 Panels"
+
+#~ msgid "Error assigning Hot-Key to %s. %s"
+#~ msgstr "Errore assegnando l'Hot-Key a %s. %s"
+
+#~ msgid "Hot-Key is invalid"
+#~ msgstr "Hot-Key non valido"
+
+#~ msgid "Window is invalid or a child window"
+#~ msgstr "La finestra non è valida o è una Child Window"
+
+#~ msgid "Hot-Key is assigned to another window"
+#~ msgstr "L'Hot-Key è assegnato ad un'altra finestra"
+
+#~ msgid "%s is already associated with %s"
+#~ msgstr "%s è già associato(a) con %s"
+
+#~ msgid ""
+#~ "%d is an invalid PageIndex value.  PageIndex must be between 0 and %d"
+#~ msgstr ""
+#~ "%d è un valore PageIndex non valido.  PageIndex deve essere tra 0 e %d"
+
+#~ msgid "This control requires version 4.70 or greater of COMCTL32.DLL"
+#~ msgstr ""
+#~ "Questo controllo richiede la versione 4.70 o superiore di COMCTL32.DLL"
+
+#~ msgid "Date exceeds maximum of %s"
+#~ msgstr "La data supera il massimo di %s"
+
+#~ msgid "Date is less than minimum of %s"
+#~ msgstr "La data è inferiore al minimo di %s"
+
+#~ msgid "You must be in ShowCheckbox mode to set to this date"
+#~ msgstr "Dovete essere in modalità ShowCheckbox per impostare questa data"
+
+#~ msgid "Failed to set calendar date or time"
+#~ msgstr "Impossibile impostare la data o l'ora del calendario"
+
+#~ msgid "Failed to set maximum selection range"
+#~ msgstr "Impossibile impostare l'intervallo massimo di selezione"
+
+#~ msgid "Failed to set calendar min/max range"
+#~ msgstr "Impossibile impostare l'intervallo min/max del calendario"
+
+#~ msgid "Date range can only be used in multiselect mode"
+#~ msgstr "L'intervallo di data può essere usato in modalità multiselezione"
+
+#~ msgid "Failed to set calendar selected range"
+#~ msgstr "Impossibile impostare l'intervallo di selezione del calendario"
+
+#~ msgid "WriteObject called twice for the same instance"
+#~ msgstr "WriteObject chiamato due volte per la stessa istanza"
+
+#~ msgid "Resource %s is of incorrect class"
+#~ msgstr "La risorsa %s è della classe sbagliata"
+
+#~ msgid "Tab index out of bounds"
+#~ msgstr "Indice tab fuori intervallo"
+
+#~ msgid "Tab position incompatible with current tab style"
+#~ msgstr "Posizione Tab incompatibile con il corrente stile del Tab"
+
+#~ msgid "Tab style incompatible with current tab position"
+#~ msgstr "Stile Tab incompatibile con la corrente posizione del Tab"
+
+#~ msgid "Bitmap image is not valid"
+#~ msgstr "Immagine Bitmap non valida"
+
+#~ msgid "Icon image is not valid"
+#~ msgstr "Immagine Icona non valida"
+
+#~ msgid "Metafile is not valid"
+#~ msgstr "Metafile non valido"
+
+#~ msgid "Invalid pixel format"
+#~ msgstr "Formato pixel non valido"
+
+#~ msgid "Invalid image"
+#~ msgstr "Formato stream non valido"
+
+#~ msgid "Bitmap is empty"
+#~ msgstr "La bitmap è vuota"
+
+#~ msgid "Scan line index out of range"
+#~ msgstr "Indice di scansione linea fuori intervallo"
+
+#~ msgid "Cannot change the size of an icon"
+#~ msgstr "Impossibile cambiare le dimensioni di una icona"
+
+#~ msgid "Invalid operation on TOleGraphic"
+#~ msgstr "Operazione non valida su TOleGraphic"
+
+#~ msgid "Unknown picture file extension (.%s)"
+#~ msgstr "Estenzione del file sconosciuta (.%s)"
+
+#~ msgid "Unsupported clipboard format"
+#~ msgstr "Formato Appunti non supportato"
+
+#~ msgid "Out of system resources"
+#~ msgstr "Risorse del sistema esaurite"
+
+#~ msgid "Canvas does not allow drawing"
+#~ msgstr "Il canvas non permette di disegnare"
+
+#~ msgid "Invalid image size"
+#~ msgstr "Dimenzioni immagine non valide"
+
+#~ msgid "Too many images"
+#~ msgstr "Troppe immagini"
+
+#~ msgid "Image dimensions do not match image list dimensions"
+#~ msgstr "Le dimensioni dell'immagine non corrispondono a quelle della lista"
+
+#~ msgid "Invalid ImageList"
+#~ msgstr "ImageList non valida"
+
+#~ msgid "Unable to Replace Image"
+#~ msgstr "Impossibile sostituire l'immagine"
+
+#~ msgid "Invalid ImageList Index"
+#~ msgstr "Indice dell'ImageList non valido"
+
+#~ msgid "Failed to read ImageList data from stream"
+#~ msgstr "Failed to read ImageList data from stream"
+
+#~ msgid "Failed to write ImageList data to stream"
+#~ msgstr "Failed to write ImageList data to stream"
+
+#~ msgid "Error creating window device context"
+#~ msgstr "Error creating window device context"
+
+#~ msgid "Client of TDrag not initialized"
+#~ msgstr "Il Client di TDrag non è stato inizializzato"
+
+#~ msgid "Error creating window class"
+#~ msgstr "Errore creando la classe finestra"
+
+#~ msgid "Error creating window"
+#~ msgstr "Errore creando la finestra"
+
+#~ msgid "Cannot focus a disabled or invisible window"
+#~ msgstr "Non posso date il focus ad una finestra disabilitata o invisibile"
+
+#~ msgid "Control '%s' has no parent window"
+#~ msgstr "Il controllo '%s' non ha una finestra di appartenenza"
+
+#~ msgid "Cannot hide an MDI Child Form"
+#~ msgstr "Non posso nascondere una Child Form MDI"
+
+#~ msgid "Cannot change Visible in OnShow or OnHide"
+#~ msgstr "Non posso cambiare Visible in OnShow o OnHide"
+
+#~ msgid "Cannot make a visible window modal"
+#~ msgstr "Non posso trasformare un finestra visibile in modale"
+
+#~ msgid "Scrollbar property out of range"
+#~ msgstr "Proprietà Scrollbar fuori intervallo"
+
+#~ msgid "%s property out of range"
+#~ msgstr "Propriet… %s fuori intervallo"
+
+#~ msgid "Menu index out of range"
+#~ msgstr "Indice di menu fuori intervallo"
+
+#~ msgid "Menu inserted twice"
+#~ msgstr "Menu inserito due volte"
+
+#~ msgid "Sub-menu is not in menu"
+#~ msgstr "Il sub-menu non è nel menu"
+
+#~ msgid "Printer index out of range"
+#~ msgstr "Indice stampante fuori intervallo"
+
+#~ msgid "Printer selected is not valid"
+#~ msgstr "La stampante selezionata non è valida"
+
+#~ msgid "%s on %s"
+#~ msgstr "%s su %s"
+
+#~ msgid "GroupIndex cannot be less than a previous menu item's GroupIndex"
+#~ msgstr ""
+#~ "Il GroupIndex non può essere minore di quello del precedente menu item"
+
+#~ msgid "Cannot have more than one MDI form per application"
+#~ msgstr "Non si può avere più di una form MDI per applicazione"
+
+#~ msgid "Cannot create form. No MDI forms are currently active"
+#~ msgstr "Impossibile creare la form. Nessuna form MDI è attiva"
+
+#~ msgid "Can only modify an image if it contains a bitmap"
+#~ msgstr "Un'immagine può essere modificata solo se contiene una bitmap"
+
+#~ msgid "A control cannot have itself as its parent"
+#~ msgstr "Un controllo non può avere se stesso come genitore"
+
+#~ msgid "&Yes"
+#~ msgstr "&Sì"
+
+#~ msgid "&No"
+#~ msgstr "&No"
+
+#~ msgid "&Ignore"
+#~ msgstr "I&gnora"
+
+#~ msgid "&Retry"
+#~ msgstr "&Riprova"
+
+#~ msgid "&All"
+#~ msgstr "&Tutto"
+
+#~ msgid "Cannot drag a form"
+#~ msgstr "Impossibile trascinare una form"
+
+#~ msgid "PutObject to undefined item"
+#~ msgstr "PutObject ad un elemento non definito"
+
+#~ msgid "Could not load CARDS.DLL"
+#~ msgstr "Impossibile caricare CARDS.DLL"
+
+#~ msgid "Duplicate CardId found"
+#~ msgstr "Trovato duplicato di CardId"
+
+#~ msgid "An error returned from DDE  ($0%x)"
+#~ msgstr "Un errore ritornato dal DDE  ($0%x)"
+
+#~ msgid "DDE Error - conversation not established ($0%x)"
+#~ msgstr "Errore DDE - conversazione non stabilita ($0%x)"
+
+#~ msgid "Error occurred when DDE ran out of memory ($0%x)"
+#~ msgstr "Errore occorso quando il DDE era eseguito fuori memoria ($0%x)"
+
+#~ msgid "Unable to connect DDE conversation"
+#~ msgstr "Impossibile connettere la conversazione DDE"
+
+#~ msgid "FB"
+#~ msgstr "FB"
+
+#~ msgid "FG"
+#~ msgstr "FG"
+
+#~ msgid "BG"
+#~ msgstr "BG"
+
+#~ msgid "Cannot load older version of TShape"
+#~ msgstr "Impossibile caricare vecchie versioni di TShape"
+
+#~ msgid "Metafiles"
+#~ msgstr "Metafile"
+
+#~ msgid "Enhanced Metafiles"
+#~ msgstr "Metafile avanzato"
+
+#~ msgid "Icons"
+#~ msgstr "Icone"
+
+#~ msgid "Bitmaps"
+#~ msgstr "Bitmap"
+
+#~ msgid "Invalid numeric value"
+#~ msgstr "Valore numerico non valido"
+
+#~ msgid "Outline index not found"
+#~ msgstr "Indice dell'outline non trovato"
+
+#~ msgid "Parent must be expanded"
+#~ msgstr "Il genitore deve essere espanso"
+
+#~ msgid "Invalid value for current item"
+#~ msgstr "Valore non valido per l'elemento corrente"
+
+#~ msgid "Invalid outline index"
+#~ msgstr "Indice dell'outline non valido"
+
+#~ msgid "Incorrect level assignment"
+#~ msgstr "Assegnazione di livello non corretta"
+
+#~ msgid "Invalid selection"
+#~ msgstr "Selezione non valida"
+
+#~ msgid "File load error"
+#~ msgstr "Errore caricando il file"
+
+#~ msgid "Maximum outline depth exceeded"
+#~ msgstr "Superata la profondità massima dell'outline"
+
+#~ msgid "Warning"
+#~ msgstr "Attenzione"
+
+#~ msgid "Error"
+#~ msgstr "Errore"
+
+#~ msgid "Information"
+#~ msgstr "Informazione"
+
+#~ msgid "No help available"
+#~ msgstr "Nessuno aiuto disponibile"
+
+#~ msgid "&Abort"
+#~ msgstr "&Fine"
+
+#~ msgid "N&o to All"
+#~ msgstr "N&o a tutti"
+
+#~ msgid "Yes to &All"
+#~ msgstr "S&ì a tutti"
+
+#~ msgid "BkSp"
+#~ msgstr "BkSp"
+
+#~ msgid "Esc"
+#~ msgstr "Esc"
+
+#~ msgid "Enter"
+#~ msgstr "Invio"
+
+#~ msgid "Space"
+#~ msgstr "Spazio"
+
+#~ msgid "PgUp"
+#~ msgstr "PgUp"
+
+#~ msgid "PgDn"
+#~ msgstr "PgDn"
+
+#~ msgid "End"
+#~ msgstr "Fine"
+
+#~ msgid "Left"
+#~ msgstr "Sinistra"
+
+#~ msgid "Up"
+#~ msgstr "Su"
+
+#~ msgid "Right"
+#~ msgstr "Destra"
+
+#~ msgid "Down"
+#~ msgstr "Giù"
+
+#~ msgid "Ins"
+#~ msgstr "Ins"
+
+#~ msgid "Del"
+#~ msgstr "Canc"
+
+#~ msgid "Shift+"
+#~ msgstr "Shift+"
+
+#~ msgid "Ctrl+"
+#~ msgstr "Ctrl+"
+
+#~ msgid "Alt+"
+#~ msgstr "Alt+"
+
+#~ msgid "(Unknown)"
+#~ msgstr "(Sconosciuto)"
+
+#~ msgid "Value must be between %d and %d"
+#~ msgstr "Il valore deve essere compreso tra %d e %d"
+
+#~ msgid "All files (*.*)|*.*"
+#~ msgstr "Tutti i file (*.*)|*.*"
+
+#~ msgid ": [ - no volume label - ]"
+#~ msgstr ": [ - etichetta vuota - ]"
+
+#~ msgid "Unable to insert a line"
+#~ msgstr "Impossibile inserire una linea"
+
+#~ msgid "The specified directory does not exist. Create it?"
+#~ msgstr "La cartella specificata non esiste. Volete crearla?"
+
+#~ msgid "Select Directory"
+#~ msgstr "Seleziona cartella"
+
+#~ msgid "Directory &Name:"
+#~ msgstr "&Nome Cartella:"
+
+#~ msgid "D&rives:"
+#~ msgstr "D&rive:"
+
+#~ msgid "&Directories:"
+#~ msgstr "&Cartelle:"
+
+#~ msgid "&Files: (*.*)"
+#~ msgstr "&File: (*.*)"
+
+#~ msgid "Ne&twork..."
+#~ msgstr "Re&te..."
+
+#~ msgid "Color"
+#~ msgstr "Colore"
+
+#~ msgid "ABCDEFGHIJKLMNOP"
+#~ msgstr "ABCDEFGHIJKLMNOP"
+
+#~ msgid "Invalid clipboard format"
+#~ msgstr "Formato Appunti non valido"
+
+#~ msgid "Clipboard does not support Icons"
+#~ msgstr "Gli Appunti non supportano icone"
+
+#~ msgid "Cannot open clipboard"
+#~ msgstr "Impossibile aprire gli Appunti"
+
+#~ msgid "Text exceeds memo capacity"
+#~ msgstr "Il testo supera la capacità del memo"
+
+#~ msgid "Custom Colors"
+#~ msgstr "Colori Personalizzati"
+
+#~ msgid "Operation not supported on selected printer"
+#~ msgstr "Operazione non supportata dalla stampante selezionata"
+
+#~ msgid "There is no default printer currently selected"
+#~ msgstr "Attualmente non c'è una stampante di default selezionata"
+
+#~ msgid "(Untitled)"
+#~ msgstr "(Senza Nome)"
+
+#~ msgid "Unknown RichEdit conversion file extension (.%s)"
+#~ msgstr "Unknown RichEdit conversion file extension (.%s)"
+
+#~ msgid "Menu '%s' is already being used by another form"
+#~ msgstr "Il menu '%s' è già usato da un altra form"
+
+#~ msgid "Picture:"
+#~ msgstr "Picture:"
+
+#~ msgid " (%dx%d)"
+#~ msgstr " (%dx%d)"
+
+#~ msgid "Preview"
+#~ msgstr "Anteprima"
+
+#~ msgid "Cannot open AVI"
+#~ msgstr "Impossibile aprire AVI"
+
+#~ msgid "No MCI device open"
+#~ msgstr "Nessun device MCI aperto"
+
+#~ msgid ""
+#~ "All files (*.*)|*.*|Wave files (*.wav)|*.wav|Midi files (*.mid)|*.mid|"
+#~ "Video for Windows (*.avi)|*.avi"
+#~ msgstr ""
+#~ "Tutti i file (*.*)|*.*|File wave (*.wav)|*.wav|File midi (*.mid)|*.mid|"
+#~ "Video for Windows (*.avi)|*.avi"
+
+#~ msgid "AVIVideo"
+#~ msgstr "AVIVideo"
+
+#~ msgid "CDAudio"
+#~ msgstr "CDAudio"
+
+#~ msgid "DAT"
+#~ msgstr "DAT"
+
+#~ msgid "DigitalVideo"
+#~ msgstr "DigitalVideo"
+
+#~ msgid "MMMovie"
+#~ msgstr "MMMovie"
+
+#~ msgid "Overlay"
+#~ msgstr "Overlay"
+
+#~ msgid "Scanner"
+#~ msgstr "Scanner"
+
+#~ msgid "Sequencer"
+#~ msgstr "Sequencer"
+
+#~ msgid "VCR"
+#~ msgstr "VCR"
+
+#~ msgid "Videodisc"
+#~ msgstr "Videodisc"
+
+#~ msgid "WaveAudio"
+#~ msgstr "WaveAudio"
+
+#~ msgid "Unknown error code"
+#~ msgstr "Codice d'errore sconosciuto"
+
+#~ msgid "Bold Italic"
+#~ msgstr "Grassetto Corsivo"
+
+#~ msgid "Regular"
+#~ msgstr "Regolare"
+
+#~ msgid "Properties"
+#~ msgstr "Proprietà"
+
+#~ msgid "Service failed on %s: %s"
+#~ msgstr "Servizio fallito in %s: %s"
+
+#~ msgid "execute"
+#~ msgstr "esegui"
+
+#~ msgid "start"
+#~ msgstr "inizio"
+
+#~ msgid "stop"
+#~ msgstr "stop"
+
+#~ msgid "pause"
+#~ msgstr "pausa"
+
+#~ msgid "continue"
+#~ msgstr "continua"
+
+#~ msgid "interrogate"
+#~ msgstr "interrogazione"
+
+#~ msgid "shutdown"
+#~ msgstr "shutdown"
+
+#~ msgid "Service failed in custom message(%d): %s"
+#~ msgstr "Servizio fallito nel messaggio personalizzato(%d): %s"
+
+#~ msgid "Service installed successfully"
+#~ msgstr "Servizio installato con successo"
+
+#~ msgid "Service \"%s\" failed to install with error: \"%s\""
+#~ msgstr "Servizio \"%s\" non installato per errore: \"%s\""
+
+#~ msgid "Service uninstalled successfully"
+#~ msgstr "Servizio disinstallato con successo"
+
+#~ msgid "Service \"%s\" failed to uninstall with error: \"%s\""
+#~ msgstr "Servizio \"%s\" non disinstallato per errore: \"%s\""
+
+#~ msgid "Docked control must have a name"
+#~ msgstr "Il controllo Docked deve avere un nome"
+
+#~ msgid "Error removing control from dock tree"
+#~ msgstr "Errore rimovendo il controllo dall'albero del Dock"
+
+#~ msgid " - Dock zone not found"
+#~ msgstr " - zona Dock non trovata"
+
+#~ msgid " - Dock zone has no control"
+#~ msgstr " - la zona Dock non ha controllo"
+
+#~ msgid "All Commands"
+#~ msgstr "Tutti i comandi"
+
+#, fuzzy
+#~ msgid "Invalid Color string"
+#~ msgstr "Tipo di dati non valido per '%s'"
+
+#, fuzzy
+#~ msgid "\"%s\" is an invalid path"
+#~ msgstr "'%s' non è un valore integer valido per il campo '%s'"
+
+#, fuzzy
+#~ msgid "Invalid path"
+#~ msgstr "Formato stream non valido"
+
+#, fuzzy
+#~ msgid "Encoding:"
+#~ msgstr "niente"
+
+#, fuzzy
+#~ msgid "Hot Light"
+#~ msgstr "Destra"
+
+#, fuzzy
+#~ msgid "Inactive Caption"
+#~ msgstr "Creazione azione non valida"
+
+#, fuzzy
+#~ msgid "3D Light"
+#~ msgstr "Destra"
+
+#, fuzzy
+#~ msgid "Invalid string offset"
+#~ msgstr "Dimenzioni immagine non valide"
+
+#, fuzzy
+#~ msgid "Invalid DOMString size"
+#~ msgstr "Dimenzioni immagine non valide"
+
+#, fuzzy
+#~ msgid "Cannot insert child node"
+#~ msgstr "Non posso nascondere una Child Form MDI"
+
+#, fuzzy
+#~ msgid "Node is owned by a different document"
+#~ msgstr "Handle del database posseduto da un'altra sessione"
+
+#, fuzzy
+#~ msgid "Invalid character in name"
+#~ msgstr "Nome sessione non valido %s"
+
+#, fuzzy
+#~ msgid "No modification allowed (readonly data)"
+#~ msgstr "Impossibile modificare un dataset solo-lettura"
+
+#, fuzzy
+#~ msgid "Node not found"
+#~ msgstr "Record non trovato"
+
+#, fuzzy
+#~ msgid "Attribute already associated with another element"
+#~ msgstr "%s è già associato(a) con %s"
+
+#, fuzzy
+#~ msgid "Invalid state"
+#~ msgstr "Formato stream non valido"
+
+#, fuzzy
+#~ msgid "Invalid syntax"
+#~ msgstr "Indice non valido"
+
+#, fuzzy
+#~ msgid "Invalid modification"
+#~ msgstr "Selezione non valida"
+
+#, fuzzy
+#~ msgid "Invalid namespace request"
+#~ msgstr "Valore numerico non valido"
+
+#, fuzzy
+#~ msgid "Invalid access"
+#~ msgstr "Formato stream non valido"
+
+#, fuzzy
+#~ msgid "Error creating file \"%s\""
+#~ msgstr "Errore creando la finestra"
+
+#, fuzzy
+#~ msgid "DOM Error: "
+#~ msgstr "Errore DAX"
+
+#, fuzzy
+#~ msgid "Node \"%s\" not found"
+#~ msgstr "Indice '%s' non trovato"
+
+#, fuzzy
+#~ msgid "Invalid node type"
+#~ msgstr "Indice non valido"
+
+#, fuzzy
+#~ msgid "Invalid operation on a hosted node"
+#~ msgstr "Operazione non valida su TOleGraphic"
+
+#, fuzzy
+#~ msgid "ItemTag property is not initialized"
+#~ msgstr "Il Client di TDrag non è stato inizializzato"
+
+#, fuzzy
+#~ msgid "Invalid %s value: \"%s\""
+#~ msgstr "Nome alias %s non valido"
+
+#, fuzzy
+#~ msgid "Invalid group declaration in \"%s\""
+#~ msgstr "Operazione non valida su TOleGraphic"
+
+#, fuzzy
+#~ msgid "Missing Type name"
+#~ msgstr "proprietà TableName mancante"
+
+#, fuzzy
+#~ msgid "Invalid complex type derivation: %s"
+#~ msgstr "Enumerazione azione non valida"
+
+#, fuzzy
+#~ msgid "%s cannot be set on a ref item"
+#~ msgstr "'%s' non può essere aperto"
+
+#, fuzzy
+#~ msgid "Invalid built-in type name \"%s\""
+#~ msgstr "Nome alias %s non valido"
+
+#, fuzzy
+#~ msgid "Built-in Type"
+#~ msgstr "Tipo Campo"
+
+#, fuzzy
+#~ msgid "Projects"
+#~ msgstr "Proprietà"
+
+#, fuzzy
+#~ msgid "About"
+#~ msgstr "&Fine"
+
+#, fuzzy
+#~ msgid "Version %s"
+#~ msgstr "%s su %s"
+
+#, fuzzy
+#~ msgid "&New"
+#~ msgstr "Nome"
+
+#, fuzzy
+#~ msgid "&Port"
+#~ msgstr "&Fine"
+
+#, fuzzy
+#~ msgid "IP &Version"
+#~ msgstr "%s su %s"
+
+#, fuzzy
+#~ msgid "Move Down"
+#~ msgstr "Giù"
+
+#, fuzzy
+#~ msgid "&Available"
+#~ msgstr "Nessuno aiuto disponibile"
+
+#, fuzzy
+#~ msgid "Unknown socks error."
+#~ msgstr "Codice d'errore sconosciuto"
+
+#, fuzzy
+#~ msgid "Invalid socks authentication method."
+#~ msgstr "Enumerazione azione non valida"
+
+#, fuzzy
+#~ msgid "Invalid IP Address"
+#~ msgstr "Owner non valido"
+
+#, fuzzy
+#~ msgid "%d: Circular links are not allowed"
+#~ msgstr "Datalinks circolari non sono ammessi"
+
+#, fuzzy
+#~ msgid "Not enough data in buffer."
+#~ msgstr "Non ci sono timers sufficienti"
+
+#, fuzzy
+#~ msgid "Too much data in buffer."
+#~ msgstr "Non ci sono timers sufficienti"
+
+#, fuzzy
+#~ msgid "File \"%s\" not found"
+#~ msgstr "%s: Campo '%s' non trovato"
+
+#, fuzzy
+#~ msgid "Max line length exceeded."
+#~ msgstr "Superata la profondità massima dell'outline"
+
+#, fuzzy
+#~ msgid "Not enough bytes received"
+#~ msgstr "Non ci sono timers sufficienti"
+
+#, fuzzy
+#~ msgid "Cannot perform task while server is active."
+#~ msgstr "Non posso eseguire questa operazione su di una sessione attiva"
+
+#, fuzzy
+#~ msgid "Maximum number of line allowed exceeded"
+#~ msgstr "Superata la profondità massima dell'outline"
+
+#, fuzzy
+#~ msgid "Error resolving Address %s: %s (%d)"
+#~ msgstr "Errore assegnando l'Hot-Key a %s. %s"
+
+#, fuzzy
+#~ msgid "Fibers are not supported on this system."
+#~ msgstr "Operazione non supportata dalla stampante selezionata"
+
+#, fuzzy
+#~ msgid "Cannot change a connected IOHandler."
+#~ msgstr "Impossibile cambiare le dimensioni di una icona"
+
+#, fuzzy
+#~ msgid "No IOHandler of type %s is installed."
+#~ msgstr "Immagine Icona non valida"
+
+#, fuzzy
+#~ msgid "Reply Code is not valid: %s"
+#~ msgstr "Metafile non valido"
+
+#, fuzzy
+#~ msgid "Cannot change the scheduler while the server is Active."
+#~ msgstr "Non posso eseguire questa operazione su di una sessione attiva"
+
+#, fuzzy
+#~ msgid "IOHandler value is not valid"
+#~ msgstr "Immagine Icona non valida"
+
+#, fuzzy
+#~ msgid "Unable to initialize compressor"
+#~ msgstr "Impossibile inserire una linea"
+
+#, fuzzy
+#~ msgid "Unable to initialize decompressor"
+#~ msgstr "Impossibile inserire una linea"
+
+#, fuzzy
+#~ msgid "Extension is empty"
+#~ msgstr "La bitmap è vuota"
+
+#, fuzzy
+#~ msgid "Mimetype is empty"
+#~ msgstr "La bitmap è vuota"
+
+#, fuzzy
+#~ msgid "Cannot load message from file %s"
+#~ msgstr "Impossibile accedere al campo indice '%s'"
+
+#, fuzzy
+#~ msgid "Stringlist not initialized!"
+#~ msgstr "Il Client di TDrag non è stato inizializzato"
+
+#, fuzzy
+#~ msgid "Continue"
+#~ msgstr "continua"
+
+#, fuzzy
+#~ msgid "See Other"
+#~ msgstr "Altri"
+
+#, fuzzy
+#~ msgid "Method not allowed"
+#~ msgstr "DCOM non installato"
+
+#, fuzzy
+#~ msgid "Conflict"
+#~ msgstr "Conferma"
+
+#, fuzzy
+#~ msgid "Service Unavailable"
+#~ msgstr "Provider non disponibile"
+
+#, fuzzy
+#~ msgid "Unknown Response Code"
+#~ msgstr "Codice d'errore sconosciuto"
+
+#, fuzzy
+#~ msgid "Error in parsing command."
+#~ msgstr "Errore creando l'handle del cursore"
+
+#, fuzzy
+#~ msgid "Not enough memory is available to complete this request"
+#~ msgstr "Non ci sono timers sufficienti"
+
+#, fuzzy
+#~ msgid "The function requested is not supported"
+#~ msgstr "Aritmetica non supportata in espressioni filtro"
+
+#, fuzzy
+#~ msgid "The specified data could not be encrypted."
+#~ msgstr "La cartella specificata non esiste. Volete crearla?"
+
+#, fuzzy
+#~ msgid "The specified data could not be decrypted."
+#~ msgstr "La cartella specificata non esiste. Volete crearla?"
+
+#, fuzzy
+#~ msgid "Error in parameters to %s"
+#~ msgstr "Nessun tipo per il parametro '%s'"
+
+#, fuzzy
+#~ msgid "Parameter %s Not Implemented"
+#~ msgstr "Parametro '%s' non trovato"
+
+#, fuzzy
+#~ msgid "Invalid port number"
+#~ msgstr "Owner non valido"
+
+#, fuzzy
+#~ msgid "Protocol not supported, use"
+#~ msgstr "Operazione non supportata dalla stampante selezionata"
+
+#, fuzzy
+#~ msgid "SSCN is not supported on both servers."
+#~ msgstr "Operazione non supportata dalla stampante selezionata"
+
+#, fuzzy
+#~ msgid "Invalid Query Count %d"
+#~ msgstr "Uso errato della parola chiave"
+
+#, fuzzy
+#~ msgid "Invalid Packet Size %d"
+#~ msgstr "Dimenzioni immagine non valide"
+
+#, fuzzy
+#~ msgid "Invalid Header Id %d"
+#~ msgstr "Valore non valido per il campo '%s'"
+
+#, fuzzy
+#~ msgid "Invalid IP V6 Address. %s"
+#~ msgstr "Valore non valido per il campo '%s'"
+
+#, fuzzy
+#~ msgid "Unable to open %s"
+#~ msgstr "Impossibile scrivere su %s"
+
+#, fuzzy
+#~ msgid "Selected"
+#~ msgstr "esegui"
+
+#, fuzzy
+#~ msgid "Invalid Login."
+#~ msgstr "Indice non valido"
+
+#, fuzzy
+#~ msgid "Invalid network mask."
+#~ msgstr "Owner non valido"
+
+#, fuzzy
+#~ msgid "Cannt connect to the Master server"
+#~ msgstr "Connessione impossibile al database '%s'"
+
+#, fuzzy
+#~ msgid "Error connecting with SSL."
+#~ msgstr "Errore creando la finestra"
+
+#, fuzzy
+#~ msgid "Error creating SSL context."
+#~ msgstr "Error creating window device context"
+
+#, fuzzy
+#~ msgid "Could not load certificate."
+#~ msgstr "Impossibile caricare CARDS.DLL"
+
+#, fuzzy
+#~ msgid "Could not load SSL library."
+#~ msgstr "Impossibile caricare CARDS.DLL"
+
+#, fuzzy
+#~ msgid "%s Sender Not Permitted"
+#~ msgstr "Il campo '%s' non può essere modificato"
+
+#, fuzzy
+#~ msgid "Syntax error in parameters or arguments"
+#~ msgstr "Nessun tipo per il parametro '%s'"
+
+#, fuzzy
+#~ msgid "Too Many recipients."
+#~ msgstr "Troppe immagini"
+
+#, fuzzy
+#~ msgid "%s Account Disabled"
+#~ msgstr "'%s' non può essere aperto"
+
+#, fuzzy
+#~ msgid " Transaction failed"
+#~ msgstr "Database &Editor..."
+
+#, fuzzy
+#~ msgid "Command not permitted when TLS active"
+#~ msgstr "Non posso eseguire questa operazione su di una sessione attiva"
+
+#, fuzzy
+#~ msgid "Invalid Syntax"
+#~ msgstr "Indice non valido"
+
+#, fuzzy
+#~ msgid "Invalid Message Number"
+#~ msgstr "Formato stream non valido"
+
+#, fuzzy
+#~ msgid "Reset"
+#~ msgstr "Result"
+
+#, fuzzy
+#~ msgid "Sorry, Unknown Command"
+#~ msgstr "Codice d'errore sconosciuto"
+
+#, fuzzy
+#~ msgid "Unknown Internal Error"
+#~ msgstr "Codice d'errore sconosciuto"
+
+#, fuzzy
+#~ msgid "Illegal character in input string."
+#~ msgstr "Nome sessione non valido %s"
+
+#, fuzzy
+#~ msgid "Message decoder not found"
+#~ msgstr "Record non trovato"
+
+#, fuzzy
+#~ msgid "Message encoder not found"
+#~ msgstr "Record non trovato"
+
+#, fuzzy
+#~ msgid "Invalid %s options"
+#~ msgstr "Owner non valido"
+
+#, fuzzy
+#~ msgid "Option not recognized."
+#~ msgstr "Stampa in esecuzione"
+
+#, fuzzy
+#~ msgid "Noted."
+#~ msgstr "(Nessuno)"
+
+#, fuzzy
+#~ msgid "'%s': command not understood."
+#~ msgstr "'%s' non può essere aperto"
+
+#, fuzzy
+#~ msgid "Unknown command %s."
+#~ msgstr "Codice d'errore sconosciuto"
+
+#, fuzzy
+#~ msgid "Unknown OTP method"
+#~ msgstr "Codice d'errore sconosciuto"
+
+#, fuzzy
+#~ msgid "\"%s\" is working directory."
+#~ msgstr "Seleziona cartella"
+
+#, fuzzy
+#~ msgid "Extensions supported:"
+#~ msgstr "La bitmap è vuota"
+
+#, fuzzy
+#~ msgid "on"
+#~ msgstr "Apri"
+
+#, fuzzy
+#~ msgid "OtherNick"
+#~ msgstr "Altri"
+
+#, fuzzy
+#~ msgid "Real name"
+#~ msgstr "Nome Campo"
+
+#, fuzzy
+#~ msgid "Failed to Start: %s"
+#~ msgstr "Caricamento Stream fallito"
+
+#, fuzzy
+#~ msgid "Failed to Stop: %s"
+#~ msgstr "Caricamento Stream fallito"
+
+#, fuzzy
+#~ msgid "Mode is not initialised"
+#~ msgstr "Metafile non valido"
+
+#, fuzzy
+#~ msgid "Unknown mode"
+#~ msgstr "Codice d'errore sconosciuto"
+
+#, fuzzy
+#~ msgid "Unable to stop client thread"
+#~ msgstr "Impossibile inserire una linea"
+
+#, fuzzy
+#~ msgid "Invalid Email Address %s"
+#~ msgstr "Nome alias %s non valido"
+
+#, fuzzy
+#~ msgid "Can not connect to MX servers for address %s"
+#~ msgstr "Connessione impossibile al database '%s'"
+
+#, fuzzy
+#~ msgid "Invalid Size"
+#~ msgstr "Indice non valido"
+
+#, fuzzy
+#~ msgid "Invalid CRC"
+#~ msgstr "Formato stream non valido"
+
+#, fuzzy
+#~ msgid "Invalid Login"
+#~ msgstr "Indice non valido"
+
+#, fuzzy
+#~ msgid "This value can not be set while the server is active."
+#~ msgstr "Non posso eseguire questa operazione su di una sessione attiva"
+
+#, fuzzy
+#~ msgid "SSL is not available on this server."
+#~ msgstr "'%s' non è un valore integer valido per il campo '%s'"
+
+#, fuzzy
+#~ msgid "Invalid Enhanced Code: "
+#~ msgstr "Indice non valido"
+
+#, fuzzy
+#~ msgid "Invalid Reply String."
+#~ msgstr "Selezione non valida"
+
+#, fuzzy
+#~ msgid "Invalid Reply Class."
+#~ msgstr "Owner non valido"
+
+#, fuzzy
+#~ msgid "Unsupported operation."
+#~ msgstr "Formato Appunti non supportato"
+
+#, fuzzy
+#~ msgid "Host is empty"
+#~ msgstr "La bitmap è vuota"
+
+#, fuzzy
+#~ msgid "The count must be greater than 1."
+#~ msgstr ""
+#~ "Il numero di righe fisse deve essere minore del numero di righe totale"
+
+#, fuzzy
+#~ msgid "Buffer fault."
+#~ msgstr "Default"
+
+#, fuzzy
+#~ msgid "Invalid argument."
+#~ msgstr "Formato stream non valido"
+
+#, fuzzy
+#~ msgid "Too many open files."
+#~ msgstr "Troppe immagini"
+
+#, fuzzy
+#~ msgid "Operation would block."
+#~ msgstr "Operazione non supportata dalla stampante selezionata"
+
+#, fuzzy
+#~ msgid "Operation now in progress."
+#~ msgstr "Stampa in esecuzione"
+
+#, fuzzy
+#~ msgid "Operation already in progress."
+#~ msgstr "Stampa in esecuzione"
+
+#, fuzzy
+#~ msgid "Message too long."
+#~ msgstr "Linea troppo lunga"
+
+#, fuzzy
+#~ msgid "Operation not supported on socket."
+#~ msgstr "Operazione non supportata dalla stampante selezionata"
+
+#, fuzzy
+#~ msgid "No buffer space available."
+#~ msgstr "Nessuno aiuto disponibile"
+
+#, fuzzy
+#~ msgid "File name too long."
+#~ msgstr "Linea troppo lunga"
+
+#, fuzzy
+#~ msgid "Directory not empty"
+#~ msgstr "&Nome Cartella:"
+
+#, fuzzy
+#~ msgid "Host not found."
+#~ msgstr "Record non trovato"
+
+#, fuzzy
+#~ msgid "Cannot change IPVersion when connected"
+#~ msgstr "Impossibile cambiare le dimensioni di una icona"
+
+#, fuzzy
+#~ msgid "%s is not a valid service."
+#~ msgstr "'%s' non è un valore integer valido per il campo '%s'"
+
+#, fuzzy
+#~ msgid "IPv6 unavailable"
+#~ msgstr "Provider non disponibile"
+
+#, fuzzy
+#~ msgid "The requested IPVersion / Address family is not supported."
+#~ msgstr "Aritmetica non supportata in espressioni filtro"
+
+#, fuzzy
+#~ msgid "Not enough bytes read from stream."
+#~ msgstr "Non ci sono timers sufficienti"
+
+#, fuzzy
+#~ msgid "ShowMessage not supported"
+#~ msgstr "Operazione non supportata dalla stampante selezionata"
+
+#, fuzzy
+#~ msgid "&Device Simulation"
+#~ msgstr "Cancella il record?"
+
+#, fuzzy
+#~ msgid "Unknown client type."
+#~ msgstr "Unknown RichEdit conversion file extension (.%s)"
+
+#, fuzzy
+#~ msgid "Cannot show non-app forms."
+#~ msgstr "Impossibile trascinare una form"
+
+#, fuzzy
+#~ msgid "Cannot hide non-app forms."
+#~ msgstr "Impossibile trascinare una form"
+
+#, fuzzy
+#~ msgid "Cannot release non-app forms."
+#~ msgstr "Impossibile trascinare una form"
+
+#, fuzzy
+#~ msgid "Unknown browser type."
+#~ msgstr "Codice d'errore sconosciuto"
+
+#, fuzzy
+#~ msgid "A value must be selected for %s."
+#~ msgstr "Il valore deve essere compreso tra %d e %d"
+
+#, fuzzy
+#~ msgid "\"%s\" is not a valid component name."
+#~ msgstr "'%s' non è un valore boolean valido per il campo '%s'"
+
+#, fuzzy
+#~ msgid "%s not found."
+#~ msgstr "Record non trovato"
+
+#, fuzzy
+#~ msgid "\"%s\" is not a valid height."
+#~ msgstr "'%s' non è un valore integer valido per il campo '%s'"
+
+#, fuzzy
+#~ msgid "\"%s\" is not a valid width."
+#~ msgstr "'%s' non è un valore integer valido per il campo '%s'"
+
+#, fuzzy
+#~ msgid "Index out of bounds."
+#~ msgstr "Indice tab fuori intervallo"
+
+#, fuzzy
+#~ msgid "Resource %s not found."
+#~ msgstr "Risorsa %s non trovata"
+
+#, fuzzy
+#~ msgid "No main form is defined."
+#~ msgstr "Immagine Icona non valida"
+
+#, fuzzy
+#~ msgid "Device not supported"
+#~ msgstr "Operazione non supportata dalla stampante selezionata"
+
+#, fuzzy
+#~ msgid "Message Dialog"
+#~ msgstr "Linea troppo lunga"
+
+#, fuzzy
+#~ msgid "brown"
+#~ msgstr "Giù"
+
+#, fuzzy
+#~ msgid "Error: "
+#~ msgstr "Errore"
+
+#, fuzzy
+#~ msgid "Error creating session"
+#~ msgstr "Errore creando la finestra"
+
+#, fuzzy
+#~ msgid "Unknown or Unrecognized"
+#~ msgstr "Codice d'errore sconosciuto"
+
+#, fuzzy
+#~ msgid "Internet Explorer"
+#~ msgstr "interrogazione"
+
+#, fuzzy
+#~ msgid "Opera"
+#~ msgstr "Overlay"
+
+#, fuzzy
+#~ msgid "Cannot find internal file: %s"
+#~ msgstr "Impossibile aprire AVI"
+
+#, fuzzy
+#~ msgid "Intraweb Version: %s"
+#~ msgstr "%s su %s"
+
+#, fuzzy
+#~ msgid "Prior"
+#~ msgstr "&Fine"
+
+#, fuzzy
+#~ msgid "Insert"
+#~ msgstr "Invio"
+
+#, fuzzy
+#~ msgid "Delete"
+#~ msgstr "Canc"
+
+#, fuzzy
+#~ msgid "Unsupported field type in DBLink"
+#~ msgstr "Tipo Campo"
+
+#, fuzzy
+#~ msgid "Cannot refresh grid while data is in edit or insert mode."
+#~ msgstr "Il dataset non è nel modo Insert o Edit"
+
+#, fuzzy
+#~ msgid "%s is not a valid response."
+#~ msgstr "'%s' non è un valore integer valido per il campo '%s'"
+
+#, fuzzy
+#~ msgid "Invalid session timeout value."
+#~ msgstr "Valore di input non valido"
+
+#, fuzzy
+#~ msgid "&Delete Item"
+#~ msgstr "Cancella il record?"
+
+#, fuzzy
+#~ msgid "&Edit Caption"
+#~ msgstr "Creazione azione non valida"
+
+#, fuzzy
+#~ msgid "Delete \"%s\"?"
+#~ msgstr "Canc"
+
+#, fuzzy
+#~ msgid "Standalone must be .exe"
+#~ msgstr "Il genitore deve essere espanso"
+
+#, fuzzy
+#~ msgid "Redirecting..."
+#~ msgstr "&Cartelle:"
+
+#, fuzzy
+#~ msgid "MetaFile not supported"
+#~ msgstr "Operazione non supportata dalla stampante selezionata"
+
+#, fuzzy
+#~ msgid "Could not load image"
+#~ msgstr "Impossibile caricare CARDS.DLL"
+
+#, fuzzy
+#~ msgid "Execute: "
+#~ msgstr "E&xecute"
+
+#, fuzzy
+#~ msgid "Internal Graphic: "
+#~ msgstr "Formato pixel non valido"
+
+#, fuzzy
+#~ msgid "Resize: "
+#~ msgstr "Result"
+
+#, fuzzy
+#~ msgid "C&lear Sessions"
+#~ msgstr "Selezione non valida"
+
+#, fuzzy
+#~ msgid "&Copy URL to Clipboard"
+#~ msgstr "Impossibile aprire gli Appunti"
+
+#, fuzzy
+#~ msgid "&Show Debug Information"
+#~ msgstr "Informazione"
+
+#, fuzzy
+#~ msgid "Execute via &IE"
+#~ msgstr "E&xecute"
+
+#, fuzzy
+#~ msgid "&Parameters"
+#~ msgstr "%s%s%s Parameters"
+
+#, fuzzy
+#~ msgid "Select browser"
+#~ msgstr "Seleziona cartella"
+
+#, fuzzy
+#~ msgid "URL Parameters"
+#~ msgstr "%s%s%s Parameters"
+
+#, fuzzy
+#~ msgid "Connection Speed: "
+#~ msgstr "Nome session mancante"
+
+#, fuzzy
+#~ msgid "zlib.dll       not found in %s"
+#~ msgstr "Record non trovato"
+
+#, fuzzy
+#~ msgid "Previous"
+#~ msgstr "Anteprima"
+
+#, fuzzy
+#~ msgid "Frame container not found."
+#~ msgstr "Parametro '%s' non trovato"
+
+#, fuzzy
+#~ msgid "Invalid graphic format"
+#~ msgstr "Formato pixel non valido"
+
+#, fuzzy
+#~ msgid "Load Picture"
+#~ msgstr "Picture:"
+
+#, fuzzy
+#~ msgid "Save Picture As"
+#~ msgstr "Picture:"
+
+#, fuzzy
+#~ msgid "About..."
+#~ msgstr "&Fine"
+
+#, fuzzy
+#~ msgid "(Unassigned)"
+#~ msgstr "(Senza Nome)"
+
+#, fuzzy
+#~ msgid "String"
+#~ msgstr "Attenzione"
+
+#, fuzzy
+#~ msgid "Unknown Type"
+#~ msgstr "(Sconosciuto)"
+
+#, fuzzy
+#~ msgid "All Files (*)|*"
+#~ msgstr "Tutti i file (*.*)|*.*"
+
+#, fuzzy
+#~ msgid "All Files (*.*)|*.*"
+#~ msgstr "Tutti i file (*.*)|*.*"
+
+#, fuzzy
+#~ msgid "(Not available)"
+#~ msgstr "Nessuno aiuto disponibile"
+
+#, fuzzy
+#~ msgid "Control"
+#~ msgstr "Ctrl+"
+
+#, fuzzy
+#~ msgid "Database"
+#~ msgstr "%s%s%s Database"
+
+#, fuzzy
+#~ msgid "Not enough room available to load a summary. "
+#~ msgstr "Non ci sono timers sufficienti"
+
+#, fuzzy
+#~ msgid "[Error]"
+#~ msgstr "Errore"
+
+#, fuzzy
+#~ msgid "Unsupported data type : %s"
+#~ msgstr "Tipo di dati non valido per '%s'"
+
+#, fuzzy
+#~ msgid "Row index out of range : %d"
+#~ msgstr "Indice di menu fuori intervallo"
+
+#, fuzzy
+#~ msgid "Column index out of range : %d"
+#~ msgstr "Indice di menu fuori intervallo"
+
+#, fuzzy
+#~ msgid "Duplicate item in array"
+#~ msgstr "Nome azione duplicato"
+
+#, fuzzy
+#~ msgid "Array index out of range : %d"
+#~ msgstr "Indice di griglia fuori intervallo"
+
+#, fuzzy
+#~ msgid "Operation not allowed on sorted string list."
+#~ msgstr "Operazione non supportata dalla stampante selezionata"
+
+#, fuzzy
+#~ msgid "Cannot perform this action on an active Dimension Map"
+#~ msgstr "Non posso eseguire questa operazione su di una sessione attiva"
+
+#, fuzzy
+#~ msgid "Not Available"
+#~ msgstr "Nessuno aiuto disponibile"
+
+#, fuzzy
+#~ msgid "Cannot build the Decision Cube with an empty data set"
+#~ msgstr "Impossibile eseguire questa operazione su di un dataset vuoto"
+
+#, fuzzy
+#~ msgid "Data set property is not assigned"
+#~ msgstr "Il Dataset non è una query"
+
+#, fuzzy
+#~ msgid " is already in the query"
+#~ msgstr "%s è già associato(a) con %s"
+
+#, fuzzy
+#~ msgid "Total cell count of %d exceeds the maximum of %d."
+#~ msgstr "La data supera il massimo di %s"
+
+#, fuzzy
+#~ msgid "Field %s has an unsupported data type: %s"
+#~ msgstr "Il campo '%s' non ha dataset"
+
+#, fuzzy
+#~ msgid "Unable to create derived summary."
+#~ msgstr "Impossibile creare nuovi elementi"
+
+#, fuzzy
+#~ msgid "Dataset is too large"
+#~ msgstr "Il Dataset non è una query"
+
+#, fuzzy
+#~ msgid "Maximum of %s"
+#~ msgstr "La data supera il massimo di %s"
+
+#, fuzzy
+#~ msgid "Out of Bounds"
+#~ msgstr "Indice tab fuori intervallo"
+
+#, fuzzy
+#~ msgid "&Graphical Query Builder..."
+#~ msgstr "&SQL Builder..."
+
+#, fuzzy
+#~ msgid "&Decision Cube Editor..."
+#~ msgstr "Database &Editor..."
+
+#, fuzzy
+#~ msgid "&Query Editor..."
+#~ msgstr "Database &Editor..."
+
+#, fuzzy
+#~ msgid "Cube Properties"
+#~ msgstr "Proprietà"
+
+#, fuzzy
+#~ msgid "Byte index out of range."
+#~ msgstr "Indice Bits fuori intervallo"
+
+#, fuzzy
+#~ msgid "%s could not be loaded."
+#~ msgstr "'%s' non può essere aperto"
+
+#, fuzzy
+#~ msgid "Cannot change target while active."
+#~ msgstr "Impossibile cambiare le dimensioni di una icona"
+
+#, fuzzy
+#~ msgid "AcceptWait property cannot be modified while server is active."
+#~ msgstr "La proprietà non può essere modificata mentre Aggregate è attivo"
+
+#, fuzzy
+#~ msgid "%s is not a valid IP address."
+#~ msgstr "'%s' non è un valore integer valido per il campo '%s'"
+
+#, fuzzy
+#~ msgid "Too many processes."
+#~ msgstr "Troppe immagini"
+
+#, fuzzy
+#~ msgid "Too many users."
+#~ msgstr "Troppe immagini"
+
+#, fuzzy
+#~ msgid "Only one data module per application"
+#~ msgstr "Non si può avere più di una form MDI per applicazione"
+
+#, fuzzy
+#~ msgid "No dispatcher component found on data module"
+#~ msgstr "Solo un WebDispatcher per form/data-module"
+
+#, fuzzy
+#~ msgid "Socket read error"
+#~ msgstr "Errore caricando il file"
+
+#, fuzzy
+#~ msgid "Invalid ISAPI application: %s"
+#~ msgstr "Nome alias %s non valido"
+
+#, fuzzy
+#~ msgid "Invalid Redirect parameter"
+#~ msgstr "Parametri batch move non validi"
+
+#, fuzzy
+#~ msgid "Servers"
+#~ msgstr "D&rive:"
+
+#, fuzzy
+#~ msgid "ActiveX"
+#~ msgstr "Tipo Campo"
+
+#, fuzzy
+#~ msgid "Unknown command"
+#~ msgstr "Codice d'errore sconosciuto"
+
+#, fuzzy
+#~ msgid "Unable to not open registry key: %s"
+#~ msgstr "Impossibile inserire un elemento"
+
+#, fuzzy
+#~ msgid "Invalid Action %d"
+#~ msgstr "Selezione non valida"
+
+#, fuzzy
+#~ msgid "Start"
+#~ msgstr "inizio"
+
+#~ msgid "Invalid Action registration"
+#~ msgstr "Registrazione Azione non valida"
+
+#, fuzzy
+#~ msgid "Path"
+#~ msgstr "PathInfo"
+
+#, fuzzy
+#~ msgid "(none)"
+#~ msgstr "(Nessuno)"
+
+#, fuzzy
+#~ msgid "Build"
+#~ msgstr "Grassetto"
+
+#, fuzzy
+#~ msgid "Field is not a dataset field: %s"
+#~ msgstr "Il campo '%s' non ha dataset"
+
+#, fuzzy
+#~ msgid "%0:s: Field \"%1:s\" not found"
+#~ msgstr "%s: Campo '%s' non trovato"
+
+#, fuzzy
+#~ msgid "%s.FieldName = ''"
+#~ msgstr "Nome Campo"
+
+#, fuzzy
+#~ msgid "%s_Names"
+#~ msgstr "Nome"
+
+#, fuzzy
+#~ msgid "Invalid parent class: %s"
+#~ msgstr "Nome alias %s non valido"
+
+#, fuzzy
+#~ msgid " - "
+#~ msgstr "%s su %s"
+
+#, fuzzy
+#~ msgid "Invalid Web component creation"
+#~ msgstr "Creazione azione non valida"
+
+#, fuzzy
+#~ msgid "Missing Delta Packet"
+#~ msgstr "Proprietà DataSet mancante"
+
+#, fuzzy
+#~ msgid "DataSet: %s is not active"
+#~ msgstr "Il Dataset non è una query"
+
+#~ msgid "Duplicate action name"
+#~ msgstr "Nome azione duplicato"
+
+#~ msgid "Only one WebDispatcher per form/data module"
+#~ msgstr "Solo un WebDispatcher per form/data-module"
+
+#~ msgid "PathInfo"
+#~ msgstr "PathInfo"
+
+#~ msgid "Enabled"
+#~ msgstr "Abilitato"
+
+#~ msgid "Too many table columns"
+#~ msgstr "La griglia non può visualizzare più di 256 colonne"
+
+#~ msgid "Field Type"
+#~ msgstr "Tipo Campo"
+
+#, fuzzy
+#~ msgid "PortName"
+#~ msgstr "Nome"
+
+#, fuzzy
+#~ msgid "%s%s%s %s"
+#~ msgstr "%s%s%s Database"
+
+#, fuzzy
+#~ msgid "Method %s of class %s not found"
+#~ msgstr "Risorsa %s non trovata"
+
+#, fuzzy
+#~ msgid "Too many parameters for method %s"
+#~ msgstr "Nessun tipo per il parametro '%s'"
+
+#, fuzzy
+#~ msgid "''%s'' is not a valid date and time"
+#~ msgstr "'%s' non è un valore integer valido per il campo '%s'"
+
+#, fuzzy
+#~ msgid "''%s'' is not a valid integer value"
+#~ msgstr "'%s' non è un valore integer valido per il campo '%s'"
+
+#, fuzzy
+#~ msgid "''%s'' is not a valid time"
+#~ msgstr "'%s' non è un valore integer valido per il campo '%s'"
+
+#, fuzzy
+#~ msgid "Invalid stream operation"
+#~ msgstr "Selezione non valida"
+
+#, fuzzy
+#~ msgid "Invalid NULL variant operation"
+#~ msgstr "Creazione azione non valida"
+
+#, fuzzy
+#~ msgid ""
+#~ "Invalid variant operation (%s%.8x)\n"
+#~ "%s"
+#~ msgstr "Enumerazione azione non valida"
+
+#, fuzzy
+#~ msgid "Variant is not an array"
+#~ msgstr "Il Dataset non è una query"
+
+#, fuzzy
+#~ msgid "Invalid variant operation ($%.8x)"
+#~ msgstr "Enumerazione azione non valida"
+
+#, fuzzy
+#~ msgid "Component is not connected to an open Database"
+#~ msgstr "Non posso eseguire questa operazione su di un database aperto"
+
+#, fuzzy
+#~ msgid "Failed to lookup isc_free"
+#~ msgstr "Caricamento Stream fallito"
+
+#, fuzzy
+#~ msgid "Invalid SOAP response"
+#~ msgstr "Owner non valido"
+
+#, fuzzy
+#~ msgid "Multiple body elements not supported"
+#~ msgstr "Gli Appunti non supportano icone"
+
+#, fuzzy
+#~ msgid "Type mismatch in parameter %s"
+#~ msgstr "Tipo incongruente nella espressione"
+
+#, fuzzy
+#~ msgid "Invalid SOAP Response"
+#~ msgstr "Owner non valido"
+
+#, fuzzy
+#~ msgid "Invalid SOAP array specification"
+#~ msgstr "Creazione azione non valida"
+
+#, fuzzy
+#~ msgid "Error Processing Header (%s)%s"
+#~ msgstr "Errore assegnando l'Hot-Key a %s. %s"
+
+#, fuzzy
+#~ msgid "Invalid Pointer"
+#~ msgstr "Owner non valido"
+
+#, fuzzy
+#~ msgid "Invalid date string: %s"
+#~ msgstr "Tipo di dati non valido per '%s'"
+
+#, fuzzy
+#~ msgid "Invalid time string: %s"
+#~ msgstr "Dimenzioni immagine non valide"
+
+#, fuzzy
+#~ msgid "Invalid hour: %d"
+#~ msgstr "Owner non valido"
+
+#, fuzzy
+#~ msgid "Invalid minute: %d"
+#~ msgstr "Indice non valido"
+
+#, fuzzy
+#~ msgid "Invalid second: %d"
+#~ msgstr "Selezione non valida"
+
+#, fuzzy
+#~ msgid "Invalid second: %f"
+#~ msgstr "Selezione non valida"
+
+#, fuzzy
+#~ msgid "Invalid millisecond: %d"
+#~ msgstr "Selezione non valida"
+
+#, fuzzy
+#~ msgid "Invalid fractional second: %f"
+#~ msgstr "Creazione azione non valida"
+
+#, fuzzy
+#~ msgid "Invalid hour offset: %d"
+#~ msgstr "Uso errato della parola chiave"
+
+#, fuzzy
+#~ msgid "Invalid day: %d"
+#~ msgstr "Indice non valido"
+
+#, fuzzy
+#~ msgid "Invalid month: %d"
+#~ msgstr "Indice non valido"
+
+#, fuzzy
+#~ msgid "Invalid duration string: %s"
+#~ msgstr "Registrazione Azione non valida"
+
+#, fuzzy
+#~ msgid "Millisecond Values must be between 000 - 999"
+#~ msgstr "Il valore deve essere compreso tra %d e %d"
+
+#, fuzzy
+#~ msgid "Year portion of date too large for conversion"
+#~ msgstr "Griglia troppo larga per l'operazione"
+
+#, fuzzy
+#~ msgid "Invalid decimal string: ''%s''"
+#~ msgstr "Tipo di dati non valido per '%s'"
+
+#, fuzzy
+#~ msgid "Cannot convert empty string to TBcd value"
+#~ msgstr "Impossibile convertire il campo '%s' in un valore floating point"
+
+#, fuzzy
+#~ msgid "Cannot convert scientific notation to TBcd value"
+#~ msgstr "Impossibile convertire il campo '%s' in un valore floating point"
+
+#, fuzzy
+#~ msgid "Cannot convert NAN to TBcd value"
+#~ msgstr "Impossibile convertire il campo '%s' in un valore integer"
+
+#, fuzzy
+#~ msgid "WideString index out of bounds"
+#~ msgstr "Indice tab fuori intervallo"
+
+#, fuzzy
+#~ msgid "No service available for URL %s"
+#~ msgstr "Provider non disponibile"
+
+#, fuzzy
+#~ msgid "Unknown Error"
+#~ msgstr "Codice d'errore sconosciuto"
+
+#, fuzzy
+#~ msgid "Registered Types"
+#~ msgstr "Tipo Campo"
+
+#, fuzzy
+#~ msgid "%s - %s"
+#~ msgstr "%s su %s"
+
+#, fuzzy
+#~ msgid "'%s' is not a valid property value"
+#~ msgstr "'%s' non è un valore integer valido per il campo '%s'"
+
+#, fuzzy
+#~ msgid "Variant does not reference an OLE object"
+#~ msgstr "Variant non referenzia un oggetto OLE"
+
+#, fuzzy
+#~ msgid "Method '%s' not supported by OLE object"
+#~ msgstr "Metodo '%s' non supportato dall'oggetto OLE"
+
+#, fuzzy
+#~ msgid "Link Properties"
+#~ msgstr "Proprietà"
+
+#, fuzzy
+#~ msgid "Break link operation is not supported."
+#~ msgstr "Aritmetica non supportata in espressioni filtro"
+
+#, fuzzy
+#~ msgid "Operation not allowed on an empty OLE container"
+#~ msgstr "Operazione non supportata dalla stampante selezionata"
+
+#, fuzzy
+#~ msgid "Invalid object verb"
+#~ msgstr "Owner non valido"
+
+#, fuzzy
+#~ msgid "%s Properties"
+#~ msgstr "Proprietà"
+
+#, fuzzy
+#~ msgid "License information for %s is invalid"
+#~ msgstr "L'informazione Lookup per il campo '%s' è incompleta"
+
+#, fuzzy
+#~ msgid "Field %s requires a value"
+#~ msgstr "Il campo '%s' deve avere un valore"
+
+#, fuzzy
+#~ msgid "Field view not permitted"
+#~ msgstr "Il campo '%s' non può essere modificato"
+
+#, fuzzy
+#~ msgid "%s does not support file upload"
+#~ msgstr "Gli Appunti non supportano icone"
+
+#, fuzzy
+#~ msgid "Login page is not defined"
+#~ msgstr "Immagine Icona non valida"
+
+#, fuzzy
+#~ msgid "Field %s did not provide an image"
+#~ msgstr "Indice campo fuori intervallo"
+
+#, fuzzy
+#~ msgid "Unknown Adapter mode: %s"
+#~ msgstr "Codice d'errore sconosciuto"
+
+#, fuzzy
+#~ msgid "DataSet is nil"
+#~ msgstr "Il Dataset non è una query"
+
+#, fuzzy
+#~ msgid "Row not found in %s"
+#~ msgstr "Record non trovato"
+
+#, fuzzy
+#~ msgid "Field not found: %s"
+#~ msgstr "%s: Campo '%s' non trovato"
+
+#, fuzzy
+#~ msgid "%s: DataSet property is nil"
+#~ msgstr "Proprietà DataSet mancante"
+
+#, fuzzy
+#~ msgid "%0:s: Dataset %1:s not active"
+#~ msgstr "Il Dataset non è una query"
+
+#, fuzzy
+#~ msgid "Missing XML Data Component"
+#~ msgstr "Proprietà DataSet mancante"
+
+#, fuzzy
+#~ msgid "Add Commands..."
+#~ msgstr "Tutti i comandi"
+
+#, fuzzy
+#~ msgid "Add All Commands"
+#~ msgstr "Tutti i comandi"
+
+#, fuzzy
+#~ msgid "Add Commands"
+#~ msgstr "Tutti i comandi"
+
+#, fuzzy
+#~ msgid "Add All Columns"
+#~ msgstr "Tutti i comandi"
+
+#, fuzzy
+#~ msgid "Add Columns"
+#~ msgstr "Tutti i comandi"
+
+#, fuzzy
+#~ msgid "%s: Fieldname is blank"
+#~ msgstr "Nome campo mancante"
+
+#, fuzzy
+#~ msgid "Web Page does not support redirect"
+#~ msgstr "Gli Appunti non supportano icone"
+
+#, fuzzy
+#~ msgid "Page %s does not support inclusion"
+#~ msgstr "Gli Appunti non supportano icone"
+
+#, fuzzy
+#~ msgid "Incorrect image format (%0:s) for field %1:s"
+#~ msgstr "Informazione di tipo non corretta per la classe %s"
+
+#, fuzzy
+#~ msgid "Uploaded file expected for field %s"
+#~ msgstr "'%s' non ha indice per i campi '%s'"
+
+#, fuzzy
+#~ msgid "UserName"
+#~ msgstr "Nome"
+
+#, fuzzy
+#~ msgid "UserID not found"
+#~ msgstr "Record non trovato"
+
+#, fuzzy
+#~ msgid "Invalid password"
+#~ msgstr "Owner non valido"
+
+#, fuzzy
+#~ msgid "Unknown user name"
+#~ msgstr "Codice d'errore sconosciuto"
+
+#, fuzzy
+#~ msgid "Duplication prototype name"
+#~ msgstr "Nome azione duplicato"
+
+#, fuzzy
+#~ msgid "Maximum sessions exceeded"
+#~ msgstr "Superata la profondità massima dell'outline"
+
+#, fuzzy
+#~ msgid "Variable not found: %s"
+#~ msgstr "Parametro '%s' non trovato"
+
+#, fuzzy
+#~ msgid "unknown"
+#~ msgstr "(Sconosciuto)"
+
+#, fuzzy
+#~ msgid "Component %s not found"
+#~ msgstr "Indice '%s' non trovato"
+
+#, fuzzy
+#~ msgid "WebSnap Application"
+#~ msgstr "(Senza Nome)"
+
+#, fuzzy
+#~ msgid "There is currently no active project."
+#~ msgstr "Nessun indice è attivo al momento"
+
+#, fuzzy
+#~ msgid "Unable to execute %s"
+#~ msgstr "Impossibile scrivere su %s"
+
+#, fuzzy
+#~ msgid "Not found"
+#~ msgstr "Record non trovato"
+
+#, fuzzy
+#~ msgid "&Web Page Editor..."
+#~ msgstr "Database &Editor..."
+
+#, fuzzy
+#~ msgid "Restore Defaults"
+#~ msgstr "Default"
+
+#, fuzzy
+#~ msgid "XTR files (*.xtr)|*.xtr"
+#~ msgstr "Tutti i file (*.*)|*.*"
+
+#, fuzzy
+#~ msgid "XML files (*.xml)|*.xml"
+#~ msgstr "Tutti i file (*.*)|*.*"
+
+#, fuzzy
+#~ msgid "Error saving file"
+#~ msgstr "Errore creando la finestra"
+
+#, fuzzy
+#~ msgid "Error opening file"
+#~ msgstr "Errore creando la finestra"
+
+#, fuzzy
+#~ msgid "Reason: %s\n"
+#~ msgstr "%s su %s"
+
+#, fuzzy
+#~ msgid "Must have a target stream"
+#~ msgstr "Deve essere selezionato un tipo campo valido"
+
+#, fuzzy
+#~ msgid "StringFileInfo"
+#~ msgstr "Attenzione"
+
+#, fuzzy
+#~ msgid "FileVersion"
+#~ msgstr "%s su %s"
+
+#, fuzzy
+#~ msgid "InternalName"
+#~ msgstr "Invio"
+
+#, fuzzy
+#~ msgid "ProductName"
+#~ msgstr "Nome"
+
+#, fuzzy
+#~ msgid "Translation"
+#~ msgstr "Database &Editor..."
+
+#, fuzzy
+#~ msgid "Invalid canvas state request"
+#~ msgstr "Nome alias %s non valido"
+
+#, fuzzy
+#~ msgid "Invalid widget handle"
+#~ msgstr "Indice non valido"
+
+#, fuzzy
+#~ msgid "Invalid XImage"
+#~ msgstr "Formato stream non valido"
+
+#, fuzzy
+#~ msgid "Error creating widget"
+#~ msgstr "Errore creando la finestra"
+
+#, fuzzy
+#~ msgid "Cannot focus a disabled or invisible window (%s)"
+#~ msgstr "Non posso date il focus ad una finestra disabilitata o invisibile"
+
+#, fuzzy
+#~ msgid "Control '%s' has no parent widget"
+#~ msgstr "Il controllo '%s' non ha una finestra di appartenenza"
+
+#, fuzzy
+#~ msgid "No printer adapter available for printing"
+#~ msgstr "Provider non disponibile"
+
+#, fuzzy
+#~ msgid "Pixmaps"
+#~ msgstr "Bitmap"
+
+#, fuzzy
+#~ msgid "Unable to create directory \"%s\"."
+#~ msgstr "Impossibile scrivere su %s"
+
+#, fuzzy
+#~ msgid "Unable to read directory \"%s\"."
+#~ msgstr "Impossibile scrivere su %s"
+
+#, fuzzy
+#~ msgid ""
+#~ "\"%s\"\n"
+#~ "File not found."
+#~ msgstr "%s: Campo '%s' non trovato"
+
+#, fuzzy
+#~ msgid "Date Modified"
+#~ msgstr "Aggiornameto fallito"
+
+#, fuzzy
+#~ msgid "All Files (*)|*|"
+#~ msgstr "Tutti i file (*.*)|*.*"
+
+#, fuzzy
+#~ msgid "All Files (*.*)|*.*|"
+#~ msgstr "Tutti i file (*.*)|*.*"
+
+#, fuzzy
+#~ msgid "Free Space"
+#~ msgstr "Spazio"
+
+#, fuzzy
+#~ msgid "Directory"
+#~ msgstr "&Cartelle:"
+
+#, fuzzy
+#~ msgid "Link to "
+#~ msgstr "Linea troppo lunga"
+
+#, fuzzy
+#~ msgid "No Preview Available"
+#~ msgstr "Provider non disponibile"
+
+#, fuzzy
+#~ msgid "Invalid image dimension"
+#~ msgstr "Dimenzioni immagine non valide"
+
+#, fuzzy
+#~ msgid "Save"
+#~ msgstr "Spazio"
+
+#, fuzzy
+#~ msgid "&Up"
+#~ msgstr "Su"
+
+#, fuzzy
+#~ msgid "&Down"
+#~ msgstr "Giù"
+
+#, fuzzy
+#~ msgid "Replace"
+#~ msgstr "Spazio"
+
+#, fuzzy
+#~ msgid "Invalid handle value for %s"
+#~ msgstr "Valore non valido per il campo '%s'"
+
+#, fuzzy
+#~ msgid "Unable to write bitmap"
+#~ msgstr "Impossibile scrivere su %s"
+
+#, fuzzy
+#~ msgid "Invalid LCDNumber value"
+#~ msgstr "Valore numerico non valido"
+
+#, fuzzy
+#~ msgid "%s is already in the StatusBar"
+#~ msgstr "%s è già associato(a) con %s"
+
+#, fuzzy
+#~ msgid "Fatal error: Cannot create more than one TApplication instance"
+#~ msgstr "Non si può avere più di una form MDI per applicazione"
+
+#, fuzzy
+#~ msgid "Items Editor..."
+#~ msgstr "Database &Editor..."
+
+#, fuzzy
+#~ msgid "Multiple Connections not supported by %s driver"
+#~ msgstr "Operazione non supportata dalla stampante selezionata"
+
+#, fuzzy
+#~ msgid "&Open"
+#~ msgstr "Apri"
+
+#, fuzzy
+#~ msgid "New &Directory"
+#~ msgstr "Seleziona cartella"
+
+#, fuzzy
+#~ msgid "&Up one directory"
+#~ msgstr "Seleziona cartella"
+
+#, fuzzy
+#~ msgid "Ho&me"
+#~ msgstr "Home"
+
+#, fuzzy
+#~ msgid "Auto Preview"
+#~ msgstr "Anteprima"
+
+#, fuzzy
+#~ msgid "PreviewLabel"
+#~ msgstr "Anteprima"
+
+#, fuzzy
+#~ msgid "Home directory"
+#~ msgstr "Seleziona cartella"
+
+#, fuzzy
+#~ msgid "Reload"
+#~ msgstr "Regolare"
+
+#, fuzzy
+#~ msgid "Create new directory"
+#~ msgstr "Seleziona cartella"
+
+#, fuzzy
+#~ msgid "Item Properties"
+#~ msgstr "Proprietà"
+
+#, fuzzy
+#~ msgid "I&mage Index:"
+#~ msgstr "Indice dell'ImageList non valido"
+
+#, fuzzy
+#~ msgid "E&xport..."
+#~ msgstr "E&xplore"
+
+#, fuzzy
+#~ msgid "Sub Item &Properties"
+#~ msgstr "Proprietà"
+
+#, fuzzy
+#~ msgid "Ima&ge Index:"
+#~ msgstr "Indice dell'ImageList non valido"
+
+#, fuzzy
+#~ msgid "All Files(*)"
+#~ msgstr "Tutti i file (*.*)|*.*"
+
+#, fuzzy
+#~ msgid "&Remote"
+#~ msgstr "&Riprova"
+
+#, fuzzy
+#~ msgid "Database Parameters"
+#~ msgstr "%s%s%s Parameters"
+
+#, fuzzy
+#~ msgid "&Browse"
+#~ msgstr "&Chiudi"
+
+#, fuzzy
+#~ msgid "&Properties"
+#~ msgstr "Proprietà"
+
+#, fuzzy
+#~ msgid "&Ports"
+#~ msgstr "&Fine"

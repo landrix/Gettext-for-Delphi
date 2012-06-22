@@ -1,0 +1,3033 @@
+# SOME DESCRIPTIVE TITLE.
+# Copyright (C) YEAR THE PACKAGE'S COPYRIGHT HOLDER
+# This file is distributed under the same license as the PACKAGE package.
+# FIRST AUTHOR <EMAIL@ADDRESS>, YEAR.
+# 
+msgid ""
+msgstr ""
+"Project-Id-Version: EMS Export3\n"
+"POT-Creation-Date: 2004-08-26 21:20\n"
+"PO-Revision-Date: 2004-08-22 22:23+0100\n"
+"Last-Translator: Pelle F. S. Liljendal <pelle@liljendal.dk>\n"
+"Language-Team: Pelle F. S. Liljendal <pelle@liljendal.dk>\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+
+#  Programmer's name for it: SMSExcelFilter
+#  Programmer's name for it: SMSExcelFilter
+#  Programmer's name for it: SMSExcelFilter
+#  Programmer's name for it: SMSExcelFilter
+#. Programmer's name for it: SMSExcelFilter
+#: ggsetup_EmsExport3.inc:7
+msgid "Microsoft Excel files (*.xls)|*.xls"
+msgstr "Microsoft Excel filer (*.xls)|*.xls"
+
+#  since 2.6
+#  Programmer's name for it: SMSAccessFilter
+#. since 2.6
+#. Programmer's name for it: SMSAccessFilter
+#: ggsetup_EmsExport3.inc:8
+msgid "Microsoft Access files (*.mdb)|*.mdb"
+msgstr "Microsoft Access filer (*.mdb)|*.mdb"
+
+#  Programmer's name for it: SMSWordFilter
+#. Programmer's name for it: SMSWordFilter
+#: ggsetup_EmsExport3.inc:9
+msgid "Microsoft Word files (*.doc)|*.doc"
+msgstr "Microsoft Word filer (*.doc)|*.doc"
+
+#  Programmer's name for it: SRTFFilter
+#  Programmer's name for it: SRTFFilter
+#. Programmer's name for it: SRTFFilter
+#: ggsetup_EmsExport3.inc:10
+msgid "RTF files (*.rtf)|*.rtf"
+msgstr "RTF filer (*.rtf)|*.rtf"
+
+#  Programmer's name for it: SHTMLFilter
+#. Programmer's name for it: SHTMLFilter
+#: ggsetup_EmsExport3.inc:11
+msgid "HTML files (*.html, *.htm)|*.html;*.htm"
+msgstr "HTML filer (*.html, *.htm)|*.html;*.htm"
+
+#  since 2.7
+#  Programmer's name for it: SPDFFilter
+#. since 2.7
+#. Programmer's name for it: SPDFFilter
+#: ggsetup_EmsExport3.inc:12
+msgid "PDF Documents (*pdf)|*.pdf"
+msgstr "PDF Dokumenter (*pdf)|*.pdf"
+
+#  Programmer's name for it: STextFilter
+#. Programmer's name for it: STextFilter
+#: ggsetup_EmsExport3.inc:13
+msgid "Text files (*.txt)|*.txt"
+msgstr "Tekst filer (*.txt)|*.txt"
+
+#  Programmer's name for it: SCSVFilter
+#. Programmer's name for it: SCSVFilter
+#: ggsetup_EmsExport3.inc:15
+msgid "CSV files (*.csv)|*.csv"
+msgstr "CSV filer (*.csv)|*.csv"
+
+#  Programmer's name for it: SDIFFFilter
+#. Programmer's name for it: SDIFFFilter
+#: ggsetup_EmsExport3.inc:16
+msgid "DIF files (*.dif)|*.dif"
+msgstr "DIF filer (*.dif)|*.dif"
+
+#  Programmer's name for it: SSYLKFilter
+#. Programmer's name for it: SSYLKFilter
+#: ggsetup_EmsExport3.inc:17
+msgid "SYLK files (*.slk)|*.slk"
+msgstr "SYLK filer (*.slk)|*.slk"
+
+#  Programmer's name for it: SLaTeXFilter
+#. Programmer's name for it: SLaTeXFilter
+#: ggsetup_EmsExport3.inc:18
+msgid "LaTeX files (*.tex)|*.tex"
+msgstr "LaTeX filer (*.tex)|*.tex"
+
+#  Programmer's name for it: SSQLFilter
+#. Programmer's name for it: SSQLFilter
+#: ggsetup_EmsExport3.inc:19
+msgid "SQL files (*.sql)|*.sql"
+msgstr "SQL filer (*.sql)|*.sql"
+
+#  Programmer's name for it: SDBFFilter
+#. Programmer's name for it: SDBFFilter
+#: ggsetup_EmsExport3.inc:20
+msgid "DBF files (*.dbf)|*.dbf"
+msgstr "DBF filer (*.dbf)|*.dbf"
+
+#  Programmer's name for it: SMSExcelFilter
+#. Programmer's name for it: SMSExcelFilter
+#: ggsetup_EmsExport3.inc:23
+msgid "Microsoft Excel files (*.xls)"
+msgstr "Microsoft Excel filer (*.xls)"
+
+#  Programmer's name for it: SMSWordFilter
+#. Programmer's name for it: SMSWordFilter
+#: ggsetup_EmsExport3.inc:24
+msgid "Microsoft Word files (*.doc)"
+msgstr "Microsoft Word filer (*.doc)"
+
+#  Programmer's name for it: SRTFFilter
+#. Programmer's name for it: SRTFFilter
+#: ggsetup_EmsExport3.inc:25
+msgid "RTF files (*.rtf)"
+msgstr "RTF filer (*.rtf)"
+
+#  Programmer's name for it: SHTMLFilter
+#. Programmer's name for it: SHTMLFilter
+#: ggsetup_EmsExport3.inc:26
+msgid "HTML files (*.html;*.htm)"
+msgstr "HTML filer (*.html;*.htm)"
+
+#  since 2.7
+#  Programmer's name for it: SPDFFilter
+#. since 2.7
+#. Programmer's name for it: SPDFFilter
+#: ggsetup_EmsExport3.inc:27
+msgid "PDF Documents (*pdf)"
+msgstr "PDF Dokumenter (*pdf)"
+
+#  Programmer's name for it: STextFilter
+#. Programmer's name for it: STextFilter
+#: ggsetup_EmsExport3.inc:28
+msgid "Text files (*.txt)"
+msgstr "Tekst filer (*.txt)"
+
+#  Programmer's name for it: SXMLFilter
+#. Programmer's name for it: SXMLFilter
+#: ggsetup_EmsExport3.inc:29
+msgid "XML files (*.xml)"
+msgstr "XML filer (*.xml)"
+
+#  Programmer's name for it: SCSVFilter
+#. Programmer's name for it: SCSVFilter
+#: ggsetup_EmsExport3.inc:30
+msgid "CSV files (*.csv)"
+msgstr "CSV filer (*.csv)"
+
+#  Programmer's name for it: SDIFFFilter
+#. Programmer's name for it: SDIFFFilter
+#: ggsetup_EmsExport3.inc:31
+msgid "DIF files (*.dif)"
+msgstr "DIF filer (*.dif)"
+
+#  Programmer's name for it: SSYLKFilter
+#. Programmer's name for it: SSYLKFilter
+#: ggsetup_EmsExport3.inc:32
+msgid "SYLK files (*.slk)"
+msgstr "SYLK filer (*.slk)"
+
+#  Programmer's name for it: SLaTeXFilter
+#. Programmer's name for it: SLaTeXFilter
+#: ggsetup_EmsExport3.inc:33
+msgid "LaTeX files (*.tex)"
+msgstr "LaTeX filer (*.tex)"
+
+#  Programmer's name for it: SSQLFilter
+#. Programmer's name for it: SSQLFilter
+#: ggsetup_EmsExport3.inc:34
+msgid "SQL files (*.sql)"
+msgstr "SQL filer (*.sql)"
+
+#  Programmer's name for it: SDBFFilter
+#. Programmer's name for it: SDBFFilter
+#: ggsetup_EmsExport3.inc:35
+msgid "DBF files (*.dbf)"
+msgstr "DBF filer (*.dbf)"
+
+#  Programmer's name for it: QEM_ExportSourceNotAssigned
+#. Programmer's name for it: QEM_ExportSourceNotAssigned
+#: ggsetup_EmsExport3.inc:38
+msgid "Export source (%s) is not assigned"
+msgstr "Export oprindelse (%s) er ikke tildelt"
+
+#  Programmer's name for it: QEM_DefineSheetError
+#. Programmer's name for it: QEM_DefineSheetError
+#: ggsetup_EmsExport3.inc:39
+msgid "Sheet %s define with error: %s"
+msgstr "Ark %s defineret med fejl: %s"
+
+#  Programmer's name for it: QEM_ExportSourceNotActive
+#. Programmer's name for it: QEM_ExportSourceNotActive
+#: ggsetup_EmsExport3.inc:40
+msgid "Export source (%s) is closed"
+msgstr "Eksport oprindelse (%s) er lukket"
+
+#  Programmer's name for it: QEM_ExportSourceEmpty
+#. Programmer's name for it: QEM_ExportSourceEmpty
+#: ggsetup_EmsExport3.inc:41
+msgid "Export source (%s) is empty"
+msgstr "Eksport oprindeles (%s) er tom"
+
+#  Programmer's name for it: QEM_AllowedExportsEmpty
+#. Programmer's name for it: QEM_AllowedExportsEmpty
+#: ggsetup_EmsExport3.inc:42
+msgid "Property Allowed cannot be empty"
+msgstr "Egenskaben Allowed kan ikke være tom"
+
+#  Programmer's name for it: QEM_StopExportCaption
+#. Programmer's name for it: QEM_StopExportCaption
+#: ggsetup_EmsExport3.inc:43
+msgid "Are you sure?"
+msgstr "Er du sikker?"
+
+#  Programmer's name for it: QEM_StopExportConfirm
+#. Programmer's name for it: QEM_StopExportConfirm
+#: ggsetup_EmsExport3.inc:44
+msgid "Do you want to abort export?"
+msgstr "Vil du afbryde eksporteringen?"
+
+#  Programmer's name for it: QEM_NewFormatValue
+#. Programmer's name for it: QEM_NewFormatValue
+#: ggsetup_EmsExport3.inc:45
+msgid "New format value"
+msgstr "Ny format værdi"
+
+#  Programmer's name for it: QEM_EnterValue
+#. Programmer's name for it: QEM_EnterValue
+#: ggsetup_EmsExport3.inc:46
+msgid "Enter Value:"
+msgstr "Indtast Værdi:"
+
+#  Programmer's name for it: QEM_FileNotPresent
+#  Programmer's name for it: QEM_FileNotPresent
+#. Programmer's name for it: QEM_FileNotPresent
+#: ggsetup_EmsExport3.inc:47
+msgid "Result file name not present"
+msgstr "Resultat fil navn ikke angivet"
+
+#  Programmer's name for it: QEM_ExportAccessOleError
+#. Programmer's name for it: QEM_ExportAccessOleError
+#: ggsetup_EmsExport3.inc:48
+msgid "You need install and register the MS Access application"
+msgstr "Du skal installere og registrere MS Access programmet"
+
+#  since 2.81
+#  Programmer's name for it: QEM_DirNotFound
+#. since 2.81
+#. Programmer's name for it: QEM_DirNotFound
+#: ggsetup_EmsExport3.inc:49
+msgid "Directory '%s' not found and cannot be created"
+msgstr "Folderen '%s' er ikke fundet og kan ikke oprettes"
+
+#  since 2.8
+#  Programmer's name for it: QEPF_User
+#  Programmer's name for it: QED_Formats_User
+#. since 2.8
+#. Programmer's name for it: QEPF_User
+#. Programmer's name for it: QED_Formats_User
+#: ggsetup_EmsExport3.inc:59 ggsetup_EmsExport3.inc:136
+msgid "User"
+msgstr "Bruger"
+
+#  since 2.8
+#  Programmer's name for it: QEUN_Dot
+#  since 2.8
+#  Programmer's name for it: QEUN_Dot
+#. since 2.8
+#. Programmer's name for it: QEUN_Dot
+#: ggsetup_EmsExport3.inc:63
+msgid "Dots"
+msgstr "Dots"
+
+#  since 2.8
+#  Programmer's name for it: QEPO_Portrait
+#. since 2.8
+#. Programmer's name for it: QEPO_Portrait
+#: ggsetup_EmsExport3.inc:65
+msgid "Portrait"
+msgstr "Stående"
+
+#  since 2.8
+#  Programmer's name for it: QEPO_Landscape
+#. since 2.8
+#. Programmer's name for it: QEPO_Landscape
+#: ggsetup_EmsExport3.inc:66
+msgid "Landscape"
+msgstr "Liggende"
+
+#  Programmer's name for it: QED_Title
+#. Programmer's name for it: QED_Title
+#: ggsetup_EmsExport3.inc:68
+msgid "Export dialog"
+msgstr "Eksport dialog"
+
+#  Programmer's name for it: QED_AdvancedTitle
+#. Programmer's name for it: QED_AdvancedTitle
+#: ggsetup_EmsExport3.inc:69
+msgid "Export dialog -- Export to [%s]"
+msgstr "Eksport dialog -- Eksporter til [%s]"
+
+#  Programmer's name for it: QED_ExportTitle
+#  Progress
+#  Programmer's name for it: QEDP_Caption
+#  Programmer's name for it: QEDP_Exporting
+#. Programmer's name for it: QED_ExportTitle
+#. Progress
+#. Programmer's name for it: QEDP_Caption
+#. Programmer's name for it: QEDP_Exporting
+#: ggsetup_EmsExport3.inc:71 ggsetup_EmsExport3.inc:586
+#: ggsetup_EmsExport3.inc:593
+msgid "Exporting..."
+msgstr "Eksporterer..."
+
+#  Programmer's name for it: QED_FileName
+#. Programmer's name for it: QED_FileName
+#: ggsetup_EmsExport3.inc:73
+msgid "Destination file"
+msgstr "Destination fil"
+
+#  Programmer's name for it: QED_SelectFile
+#. Programmer's name for it: QED_SelectFile
+#: ggsetup_EmsExport3.inc:74
+msgid "Select..."
+msgstr "Vælg..."
+
+#  Programmer's name for it: QED_OpenAfterExport
+#. Programmer's name for it: QED_OpenAfterExport
+#: ggsetup_EmsExport3.inc:75
+msgid "Open file after export"
+msgstr "Åben fil efter eksport"
+
+#  Programmer's name for it: QED_PrintAfterExport
+#. Programmer's name for it: QED_PrintAfterExport
+#: ggsetup_EmsExport3.inc:76
+msgid "Print file after export"
+msgstr "Udskriv fil efter eksport"
+
+#  Export Type
+#  Programmer's name for it: QED_ExportType_Title
+#. Export Type
+#. Programmer's name for it: QED_ExportType_Title
+#: ggsetup_EmsExport3.inc:79
+msgid "Export &Type"
+msgstr "Eksport &Type"
+
+#  Programmer's name for it: QED_ExportType_Formats
+#. Programmer's name for it: QED_ExportType_Formats
+#: ggsetup_EmsExport3.inc:80
+msgid " &Formats"
+msgstr "&Formater"
+
+#  Programmer's name for it: QED_ExportType_ExportTo
+#. Programmer's name for it: QED_ExportType_ExportTo
+#: ggsetup_EmsExport3.inc:81
+msgid " Export to "
+msgstr "Eksporter til"
+
+#  #-#-#-#-#  EmsExport3.po (PACKAGE VERSION)  #-#-#-#-#
+#  Programmer's name for it: QED_ExportType_XLS
+#  #-#-#-#-#  EmsImport2.po (PACKAGE VERSION)  #-#-#-#-#
+#  Programmer's name for it: QIW_XLS
+#. Programmer's name for it: QED_ExportType_XLS
+#: ggsetup_EmsExport3.inc:82
+msgid "MS Excel"
+msgstr "MS Excel"
+
+#  #-#-#-#-#  EmsExport3.po (PACKAGE VERSION)  #-#-#-#-#
+#  since 2.6
+#  Programmer's name for it: QED_ExportType_Access
+#  #-#-#-#-#  EmsImport2.po (PACKAGE VERSION)  #-#-#-#-#
+#  since 1.4
+#  Programmer's name for it: QIW_Access
+#. since 2.6
+#. Programmer's name for it: QED_ExportType_Access
+#: ggsetup_EmsExport3.inc:83
+msgid "MS Access"
+msgstr "MS Access"
+
+#  Programmer's name for it: QED_ExportType_DOC
+#. Programmer's name for it: QED_ExportType_DOC
+#: ggsetup_EmsExport3.inc:84
+msgid "MS Word"
+msgstr "MS Word"
+
+#  Programmer's name for it: QED_ExportType_RTF
+#. Programmer's name for it: QED_ExportType_RTF
+#: ggsetup_EmsExport3.inc:85
+msgid "RTF"
+msgstr "RTF"
+
+#  Programmer's name for it: QED_ExportType_HTML
+#. Programmer's name for it: QED_ExportType_HTML
+#: ggsetup_EmsExport3.inc:86
+msgid "HTML"
+msgstr "HTML"
+
+#  since 2.7
+#  Programmer's name for it: QED_ExportType_PDF
+#. since 2.7
+#. Programmer's name for it: QED_ExportType_PDF
+#: ggsetup_EmsExport3.inc:87
+msgid "PDF"
+msgstr "PDF"
+
+#  Programmer's name for it: QED_ExportType_TXT
+#. Programmer's name for it: QED_ExportType_TXT
+#: ggsetup_EmsExport3.inc:88
+msgid "Text File"
+msgstr "Tekst Fil"
+
+#  #-#-#-#-#  EmsExport3.po (PACKAGE VERSION)  #-#-#-#-#
+#  Programmer's name for it: QED_ExportType_XML
+#  #-#-#-#-#  EmsImport2.po (PACKAGE VERSION)  #-#-#-#-#
+#  since 2.0
+#  Programmer's name for it: QIW_XML
+#. Programmer's name for it: QED_ExportType_XML
+#: ggsetup_EmsExport3.inc:89
+msgid "XML"
+msgstr "XML"
+
+#  #-#-#-#-#  EmsExport3.po (PACKAGE VERSION)  #-#-#-#-#
+#  Programmer's name for it: QED_ExportType_DBF
+#  #-#-#-#-#  EmsImport2.po (PACKAGE VERSION)  #-#-#-#-#
+#  Programmer's name for it: QIW_DBF
+#. Programmer's name for it: QED_ExportType_DBF
+#: ggsetup_EmsExport3.inc:90
+msgid "DBF"
+msgstr "DBF"
+
+#  Programmer's name for it: QED_ExportType_CSV
+#. Programmer's name for it: QED_ExportType_CSV
+#: ggsetup_EmsExport3.inc:91
+msgid "CSV File"
+msgstr "CSV Fil"
+
+#  Programmer's name for it: QED_ExportType_DIFF
+#. Programmer's name for it: QED_ExportType_DIFF
+#: ggsetup_EmsExport3.inc:92
+msgid "DIF File"
+msgstr "DIF Fil"
+
+#  Programmer's name for it: QED_ExportType_SYLK
+#. Programmer's name for it: QED_ExportType_SYLK
+#: ggsetup_EmsExport3.inc:93
+msgid "SYLK File"
+msgstr "SYLK Fil"
+
+#  Programmer's name for it: QED_ExportType_LaTeX
+#. Programmer's name for it: QED_ExportType_LaTeX
+#: ggsetup_EmsExport3.inc:94
+msgid "LaTeX"
+msgstr "LaTeX"
+
+#  Programmer's name for it: QED_ExportType_SQL
+#. Programmer's name for it: QED_ExportType_SQL
+#: ggsetup_EmsExport3.inc:95
+msgid "SQL"
+msgstr "SQL"
+
+#  Programmer's name for it: QED_ExportType_Clipboard
+#. Programmer's name for it: QED_ExportType_Clipboard
+#: ggsetup_EmsExport3.inc:96
+msgid "Windows Clipboard"
+msgstr "Vindows Klippebord"
+
+#  Programmer's name for it: QED_ExportType_Options
+#. Programmer's name for it: QED_ExportType_Options
+#: ggsetup_EmsExport3.inc:98
+msgid "&Options"
+msgstr "&Indstillinger"
+
+#  Programmer's name for it: QED_ExportType_Constraints
+#. Programmer's name for it: QED_ExportType_Constraints
+#: ggsetup_EmsExport3.inc:99
+msgid " Constraints "
+msgstr "Begrænsninger"
+
+#  Programmer's name for it: QED_ExportType_Options_GoToFirstRecord
+#. Programmer's name for it: QED_ExportType_Options_GoToFirstRecord
+#: ggsetup_EmsExport3.inc:100
+msgid "Go to the first record"
+msgstr "Gå til første post"
+
+#  since 2.25
+#  Programmer's name for it: QED_ExportType_Options_CurrentRecordOnly
+#. since 2.25
+#. Programmer's name for it: QED_ExportType_Options_CurrentRecordOnly
+#: ggsetup_EmsExport3.inc:101
+msgid "Current record only"
+msgstr "Kun aktuelle post"
+
+#  since 2.6
+#  Programmer's name for it: QED_ExportType_Options_ExportEmpty
+#. since 2.6
+#. Programmer's name for it: QED_ExportType_Options_ExportEmpty
+#: ggsetup_EmsExport3.inc:102
+msgid "Allow export empty data source"
+msgstr "Tillad eksportering af tom data source"
+
+#  Programmer's name for it: QED_ExportType_ExportAllRecords
+#. Programmer's name for it: QED_ExportType_ExportAllRecords
+#: ggsetup_EmsExport3.inc:103
+msgid "Export all records"
+msgstr "Eksporter alle poster"
+
+#  Programmer's name for it: QED_ExportType_Options_ExportRecCount
+#. Programmer's name for it: QED_ExportType_Options_ExportRecCount
+#: ggsetup_EmsExport3.inc:104
+msgid "Export only"
+msgstr "Kun Eksport"
+
+#  Programmer's name for it: QED_ExportType_Options_Records
+#. Programmer's name for it: QED_ExportType_Options_Records
+#: ggsetup_EmsExport3.inc:106
+msgid "records"
+msgstr "poster"
+
+#  since 2.7
+#  Programmer's name for it: QED_Tools
+#. since 2.7
+#. Programmer's name for it: QED_Tools
+#: ggsetup_EmsExport3.inc:108
+msgid "Tools"
+msgstr "Værktøjer"
+
+#  Programmer's name for it: QED_ExportType_Save
+#. Programmer's name for it: QED_ExportType_Save
+#: ggsetup_EmsExport3.inc:109
+msgid "Save Export Options..."
+msgstr "Gem Eksport Indstillinger..."
+
+#  Programmer's name for it: QED_ExportType_Load
+#. Programmer's name for it: QED_ExportType_Load
+#: ggsetup_EmsExport3.inc:110
+msgid "Load Export Options..."
+msgstr "Hent Eksport Indstillinger..."
+
+#  Programmer's name for it: QED_ExportType_Start
+#. Programmer's name for it: QED_ExportType_Start
+#: ggsetup_EmsExport3.inc:112
+msgid "&Start Export"
+msgstr "&Begynd Eksport"
+
+#  Fields
+#  Programmer's name for it: QED_Fields_Title
+#. Fields
+#. Programmer's name for it: QED_Fields_Title
+#: ggsetup_EmsExport3.inc:116
+msgid "F&ields"
+msgstr "F&elter"
+
+#  Programmer's name for it: QED_Fields_Available
+#. Programmer's name for it: QED_Fields_Available
+#: ggsetup_EmsExport3.inc:117
+msgid "Available fields:"
+msgstr "Tilgænglige felter:"
+
+#  Programmer's name for it: QED_Fields_Exported
+#. Programmer's name for it: QED_Fields_Exported
+#: ggsetup_EmsExport3.inc:118
+msgid "Exported fields:"
+msgstr "Eksporterede felter:"
+
+#  Formats
+#  Programmer's name for it: QED_Formats_Title
+#. Formats
+#. Programmer's name for it: QED_Formats_Title
+#: ggsetup_EmsExport3.inc:125
+msgid "&Formats"
+msgstr "&Formater"
+
+#  Programmer's name for it: QED_Formats_Common
+#. Programmer's name for it: QED_Formats_Common
+#: ggsetup_EmsExport3.inc:126
+msgid "Common"
+msgstr "Almindlig"
+
+#  Programmer's name for it: QED_Formats_Integer
+#. Programmer's name for it: QED_Formats_Integer
+#: ggsetup_EmsExport3.inc:127
+msgid "Integer Format"
+msgstr "Heltals Format"
+
+#  Programmer's name for it: QED_Formats_Float
+#. Programmer's name for it: QED_Formats_Float
+#: ggsetup_EmsExport3.inc:128
+msgid "Float Format"
+msgstr "Flydende-kommatal Format"
+
+#  Programmer's name for it: QED_Formats_Date
+#. Programmer's name for it: QED_Formats_Date
+#: ggsetup_EmsExport3.inc:129
+msgid "Date Format"
+msgstr "Dato Format"
+
+#  Programmer's name for it: QED_Formats_Time
+#. Programmer's name for it: QED_Formats_Time
+#: ggsetup_EmsExport3.inc:130
+msgid "Time Format"
+msgstr "Tids Format"
+
+#  Programmer's name for it: QED_Formats_DateTime
+#  since 3.1
+#  Programmer's name for it: QED_XLS_Cell_DateTimeFormat
+#. Programmer's name for it: QED_Formats_DateTime
+#. since 3.1
+#. Programmer's name for it: QED_XLS_Cell_DateTimeFormat
+#: ggsetup_EmsExport3.inc:131 ggsetup_EmsExport3.inc:504
+msgid "DateTime Format"
+msgstr "DatoTid Format"
+
+#  Programmer's name for it: QED_Formats_Currency
+#. Programmer's name for it: QED_Formats_Currency
+#: ggsetup_EmsExport3.inc:132
+msgid "Currency Format"
+msgstr "Beløbs Format"
+
+#  #-#-#-#-#  EmsExport3.po (PACKAGE VERSION)  #-#-#-#-#
+#  Programmer's name for it: QED_Formats_BooleanTrue
+#  #-#-#-#-#  EmsImport2.po (PACKAGE VERSION)  #-#-#-#-#
+#  Programmer's name for it: QIW_BooleanTrue
+#. Programmer's name for it: QED_Formats_BooleanTrue
+#: ggsetup_EmsExport3.inc:133
+msgid "Boolean true"
+msgstr "Boolean sandt"
+
+#  #-#-#-#-#  EmsExport3.po (PACKAGE VERSION)  #-#-#-#-#
+#  Programmer's name for it: QED_Formats_BooleanFalse
+#  #-#-#-#-#  EmsImport2.po (PACKAGE VERSION)  #-#-#-#-#
+#  Programmer's name for it: QIW_BooleanFalse
+#. Programmer's name for it: QED_Formats_BooleanFalse
+#: ggsetup_EmsExport3.inc:134
+msgid "Boolean false"
+msgstr "Boolean falsk"
+
+#  Programmer's name for it: QED_Formats_NullString
+#. Programmer's name for it: QED_Formats_NullString
+#: ggsetup_EmsExport3.inc:135
+msgid "Null string"
+msgstr "Nul streng"
+
+#  Header & Footer
+#  Programmer's name for it: QED_Header_Footer_Title
+#. Header & Footer
+#. Programmer's name for it: QED_Header_Footer_Title
+#: ggsetup_EmsExport3.inc:143
+msgid "Hea&der && Footer"
+msgstr "Hove&d og Fod"
+
+#  Programmer's name for it: QED_Header_Footer_Header
+#. Programmer's name for it: QED_Header_Footer_Header
+#: ggsetup_EmsExport3.inc:144
+msgid "Header text:"
+msgstr "Hoved tekst:"
+
+#  Programmer's name for it: QED_Header_Footer_Footer
+#. Programmer's name for it: QED_Header_Footer_Footer
+#: ggsetup_EmsExport3.inc:145
+msgid "Footer text:"
+msgstr "Fod tekst:"
+
+#  Captions
+#  Programmer's name for it: QED_Captions_AllowCaptions
+#. Captions
+#. Programmer's name for it: QED_Captions_AllowCaptions
+#: ggsetup_EmsExport3.inc:148
+msgid "Allow captions"
+msgstr "Tillad overskrifter"
+
+#  Programmer's name for it: QED_Captions_Title
+#. Programmer's name for it: QED_Captions_Title
+#: ggsetup_EmsExport3.inc:149
+msgid "&Captions"
+msgstr "&Overskrifter"
+
+#  Programmer's name for it: QED_Captions_FeldName
+#. Programmer's name for it: QED_Captions_FeldName
+#: ggsetup_EmsExport3.inc:150
+msgid "Field name"
+msgstr "Felt navne"
+
+#  Programmer's name for it: QED_Captions_Caption
+#. Programmer's name for it: QED_Captions_Caption
+#: ggsetup_EmsExport3.inc:151
+msgid "Caption"
+msgstr "Overskrift"
+
+#  Programmer's name for it: QED_Captions_Width
+#  since 3.0
+#  Programmer's name for it: QED_XLS_Chart_Width
+#  since 2.8
+#  Programmer's name for it: QED_PDF_PageWidth
+#. Programmer's name for it: QED_Captions_Width
+#. since 3.0
+#. Programmer's name for it: QED_XLS_Chart_Width
+#. since 2.8
+#. Programmer's name for it: QED_PDF_PageWidth
+#: ggsetup_EmsExport3.inc:152 ggsetup_EmsExport3.inc:455
+#: ggsetup_EmsExport3.inc:570
+msgid "Width"
+msgstr "Bredde"
+
+#  Programmer's name for it: QED_Captions_Align
+#. Programmer's name for it: QED_Captions_Align
+#: ggsetup_EmsExport3.inc:153
+msgid "Align"
+msgstr "Juster"
+
+#  since 2.25
+#  Programmer's name for it: QED_Align_Center
+#  since 3.0
+#  Programmer's name for it: QED_RTF_Center
+#  Programmer's name for it: QED_XLS_Alignment_Horizontal_Center
+#  Programmer's name for it: QED_XLS_Alignment_Vertical_Center
+#  since 3.0
+#  Programmer's name for it: QED_XLS_Note_Horizontal_Center
+#  since 3.0
+#  Programmer's name for it: QED_XLS_Note_Vertical_Center
+#. since 2.25
+#. Programmer's name for it: QED_Align_Center
+#. since 3.0
+#. Programmer's name for it: QED_RTF_Center
+#. Programmer's name for it: QED_XLS_Alignment_Horizontal_Center
+#. Programmer's name for it: QED_XLS_Alignment_Vertical_Center
+#. since 3.0
+#. Programmer's name for it: QED_XLS_Note_Horizontal_Center
+#. since 3.0
+#. Programmer's name for it: QED_XLS_Note_Vertical_Center
+#: ggsetup_EmsExport3.inc:156 ggsetup_EmsExport3.inc:182
+#: ggsetup_EmsExport3.inc:334 ggsetup_EmsExport3.inc:338
+#: ggsetup_EmsExport3.inc:400 ggsetup_EmsExport3.inc:404
+msgid "Center"
+msgstr "Centrer"
+
+#  since 2.6
+#  Programmer's name for it: QED_StringGrid_CaptionRow
+#. since 2.6
+#. Programmer's name for it: QED_StringGrid_CaptionRow
+#: ggsetup_EmsExport3.inc:157
+msgid "Caption row"
+msgstr "Overskrift række"
+
+#  Word / RTF
+#  Programmer's name for it: QED_RTF_Title
+#. Word / RTF
+#. Programmer's name for it: QED_RTF_Title
+#: ggsetup_EmsExport3.inc:160
+msgid "Word / RTF Options"
+msgstr "Word / RTF Indstillinger"
+
+#  since 3.0
+#  Programmer's name for it: QED_RTF_DataStyles
+#. since 3.0
+#. Programmer's name for it: QED_RTF_DataStyles
+#: ggsetup_EmsExport3.inc:161
+msgid "Data Styles"
+msgstr "Data Stiler"
+
+#  since 3.0
+#  Programmer's name for it: QED_RTF_BaseStyles
+#. since 3.0
+#. Programmer's name for it: QED_RTF_BaseStyles
+#: ggsetup_EmsExport3.inc:162
+msgid "Base Styles"
+msgstr "Grund Stiler"
+
+#  since 3.0
+#  Programmer's name for it: QED_RTF_StripStyles
+#. since 3.0
+#. Programmer's name for it: QED_RTF_StripStyles
+#: ggsetup_EmsExport3.inc:163
+msgid "Strip Styles"
+msgstr "Strip Stiler"
+
+#  since 3.0
+#  Programmer's name for it: QED_RTF_AddRTFStyle
+#. since 3.0
+#. Programmer's name for it: QED_RTF_AddRTFStyle
+#: ggsetup_EmsExport3.inc:164
+msgid "Add Style"
+msgstr "Tilføj Stiler"
+
+#  since 3.0
+#  Programmer's name for it: QED_RTF_DelRTFStyle
+#. since 3.0
+#. Programmer's name for it: QED_RTF_DelRTFStyle
+#: ggsetup_EmsExport3.inc:165
+msgid "Del Style"
+msgstr "Slet Stiler"
+
+#  since 3.0
+#  Programmer's name for it: QED_RTF_MoveRTFStyleUp
+#. since 3.0
+#. Programmer's name for it: QED_RTF_MoveRTFStyleUp
+#: ggsetup_EmsExport3.inc:166
+msgid "Move Style Up"
+msgstr "Flyt Stil Op"
+
+#  since 3.0
+#  Programmer's name for it: QED_RTF_MoveRTFStyleDown
+#. since 3.0
+#. Programmer's name for it: QED_RTF_MoveRTFStyleDown
+#: ggsetup_EmsExport3.inc:167
+msgid "Move Style Down"
+msgstr "Flyt Stil Ned"
+
+#  since 3.0
+#  Programmer's name for it: QED_RTF_LoadRTFStyle
+#. since 3.0
+#. Programmer's name for it: QED_RTF_LoadRTFStyle
+#: ggsetup_EmsExport3.inc:168
+msgid "Load Styles"
+msgstr "Hent Stiler"
+
+#  since 3.0
+#  Programmer's name for it: QED_RTF_SaveRTFStyle
+#. since 3.0
+#. Programmer's name for it: QED_RTF_SaveRTFStyle
+#: ggsetup_EmsExport3.inc:169
+msgid "Save Styles"
+msgstr "Gem Stiler"
+
+#  since 3.0
+#  Programmer's name for it: QED_RTF_StripType
+#. since 3.0
+#. Programmer's name for it: QED_RTF_StripType
+#: ggsetup_EmsExport3.inc:170
+msgid " Strip type "
+msgstr " Strip type "
+
+#  #-#-#-#-#  EmsExport3.po (PACKAGE VERSION)  #-#-#-#-#
+#  since 3.0
+#  Programmer's name for it: QED_RTF_StripType_Col
+#  since 2.2
+#  Programmer's name for it: QED_XLS_DataFormat_Styles_StripStyle_Col
+#  since 3.0
+#  Programmer's name for it: QED_XLS_Hyperlink_Col
+#  since 3.0
+#  Programmer's name for it: QED_XLS_Note_Col
+#  since 3.1
+#  Programmer's name for it: QED_XLS_Cell_Col
+#  #-#-#-#-#  EmsImport2.po (PACKAGE VERSION)  #-#-#-#-#
+#  since 2.0
+#  Programmer's name for it: QIRE_RangeType_Col
+#. since 3.0
+#. Programmer's name for it: QED_RTF_StripType_Col
+#. since 2.2
+#. Programmer's name for it: QED_XLS_DataFormat_Styles_StripStyle_Col
+#. since 3.0
+#. Programmer's name for it: QED_XLS_Hyperlink_Col
+#. since 3.0
+#. Programmer's name for it: QED_XLS_Note_Col
+#. since 3.1
+#. Programmer's name for it: QED_XLS_Cell_Col
+#: ggsetup_EmsExport3.inc:172 ggsetup_EmsExport3.inc:297
+#: ggsetup_EmsExport3.inc:371 ggsetup_EmsExport3.inc:385
+#: ggsetup_EmsExport3.inc:496
+msgid "Col"
+msgstr "Kolonne"
+
+#  #-#-#-#-#  EmsExport3.po (PACKAGE VERSION)  #-#-#-#-#
+#  since 3.0
+#  Programmer's name for it: QED_RTF_StripType_Row
+#  since 2.2
+#  Programmer's name for it: QED_XLS_DataFormat_Styles_StripStyle_Row
+#  since 3.0
+#  Programmer's name for it: QED_XLS_Hyperlink_Row
+#  since 3.0
+#  Programmer's name for it: QED_XLS_Note_Row
+#  since 3.1
+#  Programmer's name for it: QED_XLS_Cell_Row
+#  #-#-#-#-#  EmsImport2.po (PACKAGE VERSION)  #-#-#-#-#
+#  since 2.0
+#  Programmer's name for it: QIRE_RangeType_Row
+#. since 3.0
+#. Programmer's name for it: QED_RTF_StripType_Row
+#. since 2.2
+#. Programmer's name for it: QED_XLS_DataFormat_Styles_StripStyle_Row
+#. since 3.0
+#. Programmer's name for it: QED_XLS_Hyperlink_Row
+#. since 3.0
+#. Programmer's name for it: QED_XLS_Note_Row
+#. since 3.1
+#. Programmer's name for it: QED_XLS_Cell_Row
+#: ggsetup_EmsExport3.inc:173 ggsetup_EmsExport3.inc:298
+#: ggsetup_EmsExport3.inc:372 ggsetup_EmsExport3.inc:386
+#: ggsetup_EmsExport3.inc:497
+msgid "Row"
+msgstr "Række"
+
+#  since 3.0
+#  Programmer's name for it: QED_RTF_Font
+#  Programmer's name for it: QED_XLS_Font
+#  since 3.0
+#  Programmer's name for it: QED_XLS_Note_Font
+#  since 3.0
+#  Programmer's name for it: QED_XLS_Note_FontName
+#. since 3.0
+#. Programmer's name for it: QED_RTF_Font
+#. Programmer's name for it: QED_XLS_Font
+#. since 3.0
+#. Programmer's name for it: QED_XLS_Note_Font
+#. since 3.0
+#. Programmer's name for it: QED_XLS_Note_FontName
+#: ggsetup_EmsExport3.inc:174 ggsetup_EmsExport3.inc:323
+#: ggsetup_EmsExport3.inc:388 ggsetup_EmsExport3.inc:389
+msgid "Font"
+msgstr "Skrifttype"
+
+#  since 3.0
+#  Programmer's name for it: QED_RTF_FontColor
+#  since 2.7
+#  Programmer's name for it: QED_PDF_FontColor
+#. since 3.0
+#. Programmer's name for it: QED_RTF_FontColor
+#. since 2.7
+#. Programmer's name for it: QED_PDF_FontColor
+#: ggsetup_EmsExport3.inc:176 ggsetup_EmsExport3.inc:560
+msgid "Font Color"
+msgstr "Skrift Farve"
+
+#  since 3.0
+#  Programmer's name for it: QED_RTF_FontStrikeOut
+#. since 3.0
+#. Programmer's name for it: QED_RTF_FontStrikeOut
+#: ggsetup_EmsExport3.inc:179
+msgid "Strike Out"
+msgstr "Omrids"
+
+#  since 3.0
+#  Programmer's name for it: QED_RTF_Fill
+#  Programmer's name for it: QED_XLS_Alignment_Horizontal_Fill
+#  since 3.0
+#  Programmer's name for it: QED_XLS_Note_Horizontal_Fill
+#  since 3.0
+#  Programmer's name for it: QED_XLS_Note_Fill
+#. since 3.0
+#. Programmer's name for it: QED_RTF_Fill
+#. Programmer's name for it: QED_XLS_Alignment_Horizontal_Fill
+#. since 3.0
+#. Programmer's name for it: QED_XLS_Note_Horizontal_Fill
+#. since 3.0
+#. Programmer's name for it: QED_XLS_Note_Fill
+#: ggsetup_EmsExport3.inc:184 ggsetup_EmsExport3.inc:336
+#: ggsetup_EmsExport3.inc:402 ggsetup_EmsExport3.inc:411
+msgid "Fill"
+msgstr "Udfyldt"
+
+#  since 3.0
+#  Programmer's name for it: QED_RTF_BackgroundColor
+#  since 3.0
+#  Programmer's name for it: QED_XLS_Note_BackgroundColor
+#. since 3.0
+#. Programmer's name for it: QED_RTF_BackgroundColor
+#. since 3.0
+#. Programmer's name for it: QED_XLS_Note_BackgroundColor
+#: ggsetup_EmsExport3.inc:185 ggsetup_EmsExport3.inc:421
+msgid "Background Color"
+msgstr "Baggrunds Farve"
+
+#  since 3.0
+#  Programmer's name for it: QED_RTF_HighlightColor
+#. since 3.0
+#. Programmer's name for it: QED_RTF_HighlightColor
+#: ggsetup_EmsExport3.inc:186
+msgid "Highlight Color"
+msgstr "Fremhæv Farve"
+
+#  since 3.0
+#  Programmer's name for it: QED_RTF_AllowBackground
+#. since 3.0
+#. Programmer's name for it: QED_RTF_AllowBackground
+#: ggsetup_EmsExport3.inc:187
+msgid "Allow Background"
+msgstr "Tillad Baggrund"
+
+#  since 3.0
+#  Programmer's name for it: QED_RTF_AllowHighlight
+#. since 3.0
+#. Programmer's name for it: QED_RTF_AllowHighlight
+#: ggsetup_EmsExport3.inc:188
+msgid "Allow Highlight"
+msgstr "Tillad Fremhæv"
+
+#  since 3.0
+#  Programmer's name for it: QED_RTF_Sample
+#. since 3.0
+#. Programmer's name for it: QED_RTF_Sample
+#: ggsetup_EmsExport3.inc:189
+msgid "  Sample"
+msgstr "  Eksempel"
+
+#  #-#-#-#-#  EmsExport3.po (PACKAGE VERSION)  #-#-#-#-#
+#  since 3.0
+#  Programmer's name for it: QED_RTF_Advanced
+#  #-#-#-#-#  EmsImport2.po (PACKAGE VERSION)  #-#-#-#-#
+#  since 1.7
+#  Programmer's name for it: QIW_ImportAdvanced
+#. since 3.0
+#. Programmer's name for it: QED_RTF_Advanced
+#: ggsetup_EmsExport3.inc:190
+msgid "Advanced"
+msgstr "Advanceret"
+
+#  Programmer's name for it: QED_RTF_PageOrientation
+#. Programmer's name for it: QED_RTF_PageOrientation
+#: ggsetup_EmsExport3.inc:191
+msgid " Page Orientation "
+msgstr " Side Retning"
+
+#  since 3.0
+#  Programmer's name for it: QED_RTF_Reset_Item
+#  Programmer's name for it: QED_XLS_Reset_Item
+#. since 3.0
+#. Programmer's name for it: QED_RTF_Reset_Item
+#. Programmer's name for it: QED_XLS_Reset_Item
+#: ggsetup_EmsExport3.inc:193 ggsetup_EmsExport3.inc:300
+msgid "Reset item"
+msgstr "Nulstil element"
+
+#  since 3.0
+#  Programmer's name for it: QED_RTF_Reset_SelectedItems
+#  Programmer's name for it: QED_XLS_Reset_SelectedItems
+#. since 3.0
+#. Programmer's name for it: QED_RTF_Reset_SelectedItems
+#. Programmer's name for it: QED_XLS_Reset_SelectedItems
+#: ggsetup_EmsExport3.inc:194 ggsetup_EmsExport3.inc:301
+msgid "Reset selected"
+msgstr "Nulstil valgte"
+
+#  since 3.0
+#  Programmer's name for it: QED_RTF_Reset_All
+#  Programmer's name for it: QED_XLS_Reset_All
+#. since 3.0
+#. Programmer's name for it: QED_RTF_Reset_All
+#. Programmer's name for it: QED_XLS_Reset_All
+#: ggsetup_EmsExport3.inc:195 ggsetup_EmsExport3.inc:302
+msgid "Reset all"
+msgstr "Nulstil alt"
+
+#  #-#-#-#-#  EmsExport3.po (PACKAGE VERSION)  #-#-#-#-#
+#  since 3.0
+#  Programmer's name for it: QED_RTF_Reset_All_Question_Caption
+#  Programmer's name for it: QED_XLS_Reset_All_Question_Caption
+#  #-#-#-#-#  EmsQueryBuilder.po (PACKAGE VERSION)  #-#-#-#-#
+#  Programmer's name for it: rsLinksAttention
+#. since 3.0
+#. Programmer's name for it: QED_RTF_Reset_All_Question_Caption
+#. Programmer's name for it: QED_XLS_Reset_All_Question_Caption
+#: ggsetup_EmsExport3.inc:196 ggsetup_EmsExport3.inc:303
+msgid "Attention!"
+msgstr "Opmærksom!"
+
+#  since 3.0
+#  Programmer's name for it: QED_RTF_Reset_All_Question
+#  Programmer's name for it: QED_XLS_Reset_All_Question
+#. since 3.0
+#. Programmer's name for it: QED_RTF_Reset_All_Question
+#. Programmer's name for it: QED_XLS_Reset_All_Question
+#: ggsetup_EmsExport3.inc:199 ggsetup_EmsExport3.inc:306
+msgid ""
+"All field formats will be reset the default values.\n"
+"Are you sure?"
+msgstr ""
+"Alle felt formater vil blive nulstillet til standard værdierne.\n"
+"Er du sikker?"
+
+#  since 3.0
+#  Programmer's name for it: QED_RTF_Header
+#  Programmer's name for it: QED_XLS_Header
+#. since 3.0
+#. Programmer's name for it: QED_RTF_Header
+#. Programmer's name for it: QED_XLS_Header
+#: ggsetup_EmsExport3.inc:201 ggsetup_EmsExport3.inc:310
+msgid "HEADER"
+msgstr "HOVED"
+
+#  since 3.0
+#  Programmer's name for it: QED_RTF_Caption
+#  Programmer's name for it: QED_XLS_Caption
+#. since 3.0
+#. Programmer's name for it: QED_RTF_Caption
+#. Programmer's name for it: QED_XLS_Caption
+#: ggsetup_EmsExport3.inc:202 ggsetup_EmsExport3.inc:311
+msgid "CAPTION"
+msgstr "OVERSKRIFT"
+
+#  since 3.0
+#  Programmer's name for it: QED_RTF_Data
+#  since 3.0
+#  Programmer's name for it: QED_XLS_Data
+#. since 3.0
+#. Programmer's name for it: QED_RTF_Data
+#. since 3.0
+#. Programmer's name for it: QED_XLS_Data
+#: ggsetup_EmsExport3.inc:203 ggsetup_EmsExport3.inc:312
+msgid "DATA"
+msgstr "DATA"
+
+#  since 3.0
+#  Programmer's name for it: QED_RTF_Footer
+#  Programmer's name for it: QED_XLS_Footer
+#. since 3.0
+#. Programmer's name for it: QED_RTF_Footer
+#. Programmer's name for it: QED_XLS_Footer
+#: ggsetup_EmsExport3.inc:204 ggsetup_EmsExport3.inc:314
+msgid "FOOTER"
+msgstr "FOD"
+
+#  since 3.0
+#  Programmer's name for it: QED_RTF_StyleItem
+#  since 2.2
+#  Programmer's name for it: QED_XLS_StyleItem
+#. since 3.0
+#. Programmer's name for it: QED_RTF_StyleItem
+#. since 2.2
+#. Programmer's name for it: QED_XLS_StyleItem
+#: ggsetup_EmsExport3.inc:206 ggsetup_EmsExport3.inc:320
+msgid "ITEM_"
+msgstr "ELEMENT_"
+
+#  XML
+#  Programmer's name for it: QED_XML_Title
+#. XML
+#. Programmer's name for it: QED_XML_Title
+#: ggsetup_EmsExport3.inc:209
+msgid "XML Options"
+msgstr "XML Indstillinger"
+
+#  Programmer's name for it: QED_XML_Standalone
+#. Programmer's name for it: QED_XML_Standalone
+#: ggsetup_EmsExport3.inc:210
+msgid "Standalone"
+msgstr "Enkeltstående"
+
+#  Programmer's name for it: QED_XML_Encoding
+#. Programmer's name for it: QED_XML_Encoding
+#: ggsetup_EmsExport3.inc:211
+msgid "Encoding"
+msgstr "Indkodning"
+
+#  SQL
+#  Programmer's name for it: QED_SQL_Title
+#. SQL
+#. Programmer's name for it: QED_SQL_Title
+#: ggsetup_EmsExport3.inc:214
+msgid "&SQL Options"
+msgstr "&SQL Indstillinger"
+
+#  Programmer's name for it: QED_SQL_TableOptions
+#  Programmer's name for it: QED_HTML_Advanced_Table_Options
+#. Programmer's name for it: QED_SQL_TableOptions
+#. Programmer's name for it: QED_HTML_Advanced_Table_Options
+#: ggsetup_EmsExport3.inc:215 ggsetup_EmsExport3.inc:268
+msgid "Table options"
+msgstr "Tabel indstillinger"
+
+#  Programmer's name for it: QED_SQL_AddCreateTable
+#. Programmer's name for it: QED_SQL_AddCreateTable
+#: ggsetup_EmsExport3.inc:216
+msgid "Add \"Create Table\" statement"
+msgstr "Tilføj \"Create Table\" udtryk"
+
+#  Programmer's name for it: QED_SQL_TableName
+#. Programmer's name for it: QED_SQL_TableName
+#: ggsetup_EmsExport3.inc:217
+msgid "Table name"
+msgstr "Tabel navn"
+
+#  Programmer's name for it: QED_SQL_Commit
+#. Programmer's name for it: QED_SQL_Commit
+#: ggsetup_EmsExport3.inc:218
+msgid "Commit options"
+msgstr "Commit indstillinger"
+
+#  Programmer's name for it: QED_SQL_CommitAfter_01
+#. Programmer's name for it: QED_SQL_CommitAfter_01
+#: ggsetup_EmsExport3.inc:219
+msgid "Commit after"
+msgstr "Commit efter"
+
+#  #-#-#-#-#  EmsExport3.po (PACKAGE VERSION)  #-#-#-#-#
+#  Programmer's name for it: QED_SQL_CommitAfter_02
+#  #-#-#-#-#  EmsImport2.po (PACKAGE VERSION)  #-#-#-#-#
+#  Programmer's name for it: QIW_Records
+#. Programmer's name for it: QED_SQL_CommitAfter_02
+#: ggsetup_EmsExport3.inc:220
+msgid "record(s)"
+msgstr "post(er)"
+
+#  Programmer's name for it: QED_SQL_CommitAfterScript
+#. Programmer's name for it: QED_SQL_CommitAfterScript
+#: ggsetup_EmsExport3.inc:221
+msgid "Commit after script"
+msgstr "Commit efter script"
+
+#  Programmer's name for it: QED_SQL_CommitStatement
+#. Programmer's name for it: QED_SQL_CommitStatement
+#: ggsetup_EmsExport3.inc:222
+msgid "Commit statement"
+msgstr "Commit kommando"
+
+#  Programmer's name for it: QED_SQL_Other
+#. Programmer's name for it: QED_SQL_Other
+#: ggsetup_EmsExport3.inc:223
+msgid "Other Options"
+msgstr "Andre Indstillinger"
+
+#  Programmer's name for it: QED_SQL_NullAs
+#. Programmer's name for it: QED_SQL_NullAs
+#: ggsetup_EmsExport3.inc:224
+msgid "Export null values as"
+msgstr "Eksporter null værdier som"
+
+#  Programmer's name for it: QED_SQL_StatementTerm
+#. Programmer's name for it: QED_SQL_StatementTerm
+#: ggsetup_EmsExport3.inc:225
+msgid "Statement term"
+msgstr "Kommando terminologi"
+
+#  HTML
+#  Programmer's name for it: QED_HTML_Title
+#. HTML
+#. Programmer's name for it: QED_HTML_Title
+#: ggsetup_EmsExport3.inc:228
+msgid "&HTML Options"
+msgstr "&HTML Indstillinger"
+
+#  Programmer's name for it: QED_HTML_Preview_Title
+#  Programmer's name for it: QED_HTML_Preview_Title
+#. Programmer's name for it: QED_HTML_Preview_Title
+#: ggsetup_EmsExport3.inc:229
+msgid "&Preview"
+msgstr "&Vis udskrift"
+
+#  Programmer's name for it: QED_HTML_Preview_DefaultText
+#  Programmer's name for it: QED_HTML_Preview_DefaultText
+#. Programmer's name for it: QED_HTML_Preview_DefaultText
+#: ggsetup_EmsExport3.inc:230
+msgid "Default text"
+msgstr "Standard tekst"
+
+#  Programmer's name for it: QED_HTML_Preview_NonVisitedLink
+#  Programmer's name for it: QED_HTML_Preview_NonVisitedLink
+#. Programmer's name for it: QED_HTML_Preview_NonVisitedLink
+#: ggsetup_EmsExport3.inc:231
+msgid "Non-visited link"
+msgstr "Ikke-besøgt link"
+
+#  Programmer's name for it: QED_HTML_Preview_VisitedLink
+#  Programmer's name for it: QED_HTML_Preview_VisitedLink
+#. Programmer's name for it: QED_HTML_Preview_VisitedLink
+#: ggsetup_EmsExport3.inc:232
+msgid "Visited link"
+msgstr "Besøgt link"
+
+#  Programmer's name for it: QED_HTML_Preview_ActiveLink
+#. Programmer's name for it: QED_HTML_Preview_ActiveLink
+#: ggsetup_EmsExport3.inc:233
+msgid "Active link"
+msgstr "Aktiv link"
+
+#  Programmer's name for it: QED_HTML_Preview_Template
+#. Programmer's name for it: QED_HTML_Preview_Template
+#: ggsetup_EmsExport3.inc:234
+msgid "Template"
+msgstr "Skabelon"
+
+#  Programmer's name for it: QED_HTML_Preview_SaveTemplate
+#. Programmer's name for it: QED_HTML_Preview_SaveTemplate
+#: ggsetup_EmsExport3.inc:235
+msgid "Save as template..."
+msgstr "Gem som skabelon..."
+
+#  Programmer's name for it: QED_HTML_Preview_LoadTemplate
+#. Programmer's name for it: QED_HTML_Preview_LoadTemplate
+#: ggsetup_EmsExport3.inc:236
+msgid "Load template..."
+msgstr "Hent skabelon..."
+
+#  Programmer's name for it: QED_HTML_Basic_Title
+#. Programmer's name for it: QED_HTML_Basic_Title
+#: ggsetup_EmsExport3.inc:238
+msgid "&Basic"
+msgstr "&Standard"
+
+#  Programmer's name for it: QED_HTML_Basic_PageTitle
+#  since 3.0
+#  Programmer's name for it: QED_XLS_Hyperlink_Title
+#  since 3.0
+#  Programmer's name for it: QED_XLS_Chart_Title
+#  since 3.0
+#  Programmer's name for it: QED_XLS_Series_Title
+#. Programmer's name for it: QED_HTML_Basic_PageTitle
+#. since 3.0
+#. Programmer's name for it: QED_XLS_Hyperlink_Title
+#. since 3.0
+#. Programmer's name for it: QED_XLS_Chart_Title
+#. since 3.0
+#. Programmer's name for it: QED_XLS_Series_Title
+#: ggsetup_EmsExport3.inc:239 ggsetup_EmsExport3.inc:376
+#: ggsetup_EmsExport3.inc:430 ggsetup_EmsExport3.inc:481
+msgid "Title"
+msgstr "Overskrift"
+
+#  Programmer's name for it: QED_HTML_Basic_CSS
+#. Programmer's name for it: QED_HTML_Basic_CSS
+#: ggsetup_EmsExport3.inc:240
+msgid "Cascade Style Sheets using"
+msgstr "Cascade Style Sheets brugt"
+
+#  Programmer's name for it: QED_HTML_Basic_CSSInternal
+#. Programmer's name for it: QED_HTML_Basic_CSSInternal
+#: ggsetup_EmsExport3.inc:241
+msgid "Internal"
+msgstr "Intern"
+
+#  Programmer's name for it: QED_HTML_Basic_CSSExternal
+#. Programmer's name for it: QED_HTML_Basic_CSSExternal
+#: ggsetup_EmsExport3.inc:242
+msgid "External"
+msgstr "Ekstern"
+
+#  Programmer's name for it: QED_HTML_Basic_CSSFileName
+#. Programmer's name for it: QED_HTML_Basic_CSSFileName
+#: ggsetup_EmsExport3.inc:243
+msgid "CSS file name"
+msgstr "CSS fil navn"
+
+#  since 2.7
+#  Programmer's name for it: QED_HTML_Basic_OverwriteCSSFile
+#. since 2.7
+#. Programmer's name for it: QED_HTML_Basic_OverwriteCSSFile
+#: ggsetup_EmsExport3.inc:244
+msgid "Overwrite CSS file if exists"
+msgstr "Overskriv CCS fil hvis eksisterer"
+
+#  since 2.7
+#  Programmer's name for it: QED_HTML_Multifile_Title
+#. since 2.7
+#. Programmer's name for it: QED_HTML_Multifile_Title
+#: ggsetup_EmsExport3.inc:246
+msgid "&Multi-File"
+msgstr "&Multi-Fil"
+
+#  since 2.7
+#  Programmer's name for it: QED_HTML_MultiFile_IndexLinkTemplate
+#. since 2.7
+#. Programmer's name for it: QED_HTML_MultiFile_IndexLinkTemplate
+#: ggsetup_EmsExport3.inc:247
+msgid "Index Link Template"
+msgstr "Index Link Skabelon"
+
+#  Programmer's name for it: QED_HTML_Basic_MultiFile_Options
+#. Programmer's name for it: QED_HTML_Basic_MultiFile_Options
+#: ggsetup_EmsExport3.inc:249
+msgid "Multi-file export"
+msgstr "Multi-fil eksport"
+
+#  Programmer's name for it: QED_HTML_Basic_MultiFile_Use
+#. Programmer's name for it: QED_HTML_Basic_MultiFile_Use
+#: ggsetup_EmsExport3.inc:250
+msgid "Use multi-file export"
+msgstr "Brug multi-fil eksport"
+
+#  Programmer's name for it: QED_HTML_Basic_MultiFile_RecCount_02
+#. Programmer's name for it: QED_HTML_Basic_MultiFile_RecCount_02
+#: ggsetup_EmsExport3.inc:252
+msgid "record(s) in single file"
+msgstr "post(er) i enkel fil"
+
+#  Programmer's name for it: QED_HTML_Basic_MultiFile_GenerateIndex
+#. Programmer's name for it: QED_HTML_Basic_MultiFile_GenerateIndex
+#: ggsetup_EmsExport3.inc:253
+msgid "Generate index"
+msgstr "Generer index"
+
+#  since 2.7
+#  Programmer's name for it: QED_HTML_Basic_MultiFile_Navigation
+#. since 2.7
+#. Programmer's name for it: QED_HTML_Basic_MultiFile_Navigation
+#: ggsetup_EmsExport3.inc:254
+msgid " Navigation "
+msgstr "Navigation"
+
+#  since 2.7
+#  Programmer's name for it: QED_HTML_Basic_MultiFile_Navigation_OnTop
+#. since 2.7
+#. Programmer's name for it: QED_HTML_Basic_MultiFile_Navigation_OnTop
+#: ggsetup_EmsExport3.inc:255
+msgid "On Top"
+msgstr "I Toppen"
+
+#  since 2.7
+#  Programmer's name for it: QED_HTML_Basic_MultiFile_Navigation_OnBottom
+#. since 2.7
+#. Programmer's name for it: QED_HTML_Basic_MultiFile_Navigation_OnBottom
+#: ggsetup_EmsExport3.inc:256
+msgid "On Bottom"
+msgstr "I Bunden"
+
+#  since 2.7
+#  Programmer's name for it: QED_HTML_Basic_MultiFile_IndexLinkTitle
+#. since 2.7
+#. Programmer's name for it: QED_HTML_Basic_MultiFile_IndexLinkTitle
+#: ggsetup_EmsExport3.inc:257
+msgid "Index"
+msgstr "Indeks"
+
+#  #-#-#-#-#  EmsExport3.po (PACKAGE VERSION)  #-#-#-#-#
+#  since 2.7
+#  Programmer's name for it: QED_HTML_Basic_MultiFile_FirstLinkTitle
+#  #-#-#-#-#  EmsQueryBuilder.po (PACKAGE VERSION)  #-#-#-#-#
+#  Programmer's name for it: rsWindowFirst
+#. since 2.7
+#. Programmer's name for it: QED_HTML_Basic_MultiFile_FirstLinkTitle
+#: ggsetup_EmsExport3.inc:258
+msgid "First"
+msgstr "Første"
+
+#  since 2.7
+#  Programmer's name for it: QED_HTML_Basic_MultiFile_PriorLinkTitle
+#. since 2.7
+#. Programmer's name for it: QED_HTML_Basic_MultiFile_PriorLinkTitle
+#: ggsetup_EmsExport3.inc:259
+msgid "Prior"
+msgstr "Forrige"
+
+#  since 2.7
+#  Programmer's name for it: QED_HTML_Basic_MultiFile_NextLinkTitle
+#. since 2.7
+#. Programmer's name for it: QED_HTML_Basic_MultiFile_NextLinkTitle
+#: ggsetup_EmsExport3.inc:260
+msgid "Next"
+msgstr "Næste"
+
+#  since 2.7
+#  Programmer's name for it: QED_HTML_Basic_MultiFile_LastLinkTitle
+#. since 2.7
+#. Programmer's name for it: QED_HTML_Basic_MultiFile_LastLinkTitle
+#: ggsetup_EmsExport3.inc:261
+msgid "Last"
+msgstr "Sidste"
+
+#  Programmer's name for it: QED_HTML_Advanced_Title
+#. Programmer's name for it: QED_HTML_Advanced_Title
+#: ggsetup_EmsExport3.inc:263
+msgid "&Advanced"
+msgstr "&Advanceret"
+
+#  Programmer's name for it: QED_HTML_Advanced_Body_Options
+#. Programmer's name for it: QED_HTML_Advanced_Body_Options
+#: ggsetup_EmsExport3.inc:264
+msgid "Body options"
+msgstr "Krop indstillinger"
+
+#  Programmer's name for it: QED_HTML_Advanced_Body_FontName
+#. Programmer's name for it: QED_HTML_Advanced_Body_FontName
+#: ggsetup_EmsExport3.inc:265
+msgid "Font name"
+msgstr "Skrifttype navn"
+
+#  Programmer's name for it: QED_HTML_Advanced_Body_Attributes
+#  Programmer's name for it: QED_HTML_Advanced_Table_Attributes
+#. Programmer's name for it: QED_HTML_Advanced_Body_Attributes
+#. Programmer's name for it: QED_HTML_Advanced_Table_Attributes
+#: ggsetup_EmsExport3.inc:267 ggsetup_EmsExport3.inc:273
+msgid "Advanced attributes"
+msgstr "Advancerede attributter"
+
+#  Programmer's name for it: QED_HTML_Advanced_Table_CellPadding
+#. Programmer's name for it: QED_HTML_Advanced_Table_CellPadding
+#: ggsetup_EmsExport3.inc:269
+msgid "Cell padding"
+msgstr "Cell udfyldelse"
+
+#  Programmer's name for it: QED_HTML_Advanced_Table_CellSpasing
+#. Programmer's name for it: QED_HTML_Advanced_Table_CellSpasing
+#: ggsetup_EmsExport3.inc:270
+msgid "Cell spacing"
+msgstr "Celle afstand"
+
+#  Programmer's name for it: QED_HTML_Advanced_Table_Border
+#. Programmer's name for it: QED_HTML_Advanced_Table_Border
+#: ggsetup_EmsExport3.inc:271
+msgid "Border"
+msgstr "Ramme"
+
+#  XLS
+#  Programmer's name for it: QED_XLS_Title
+#. XLS
+#. Programmer's name for it: QED_XLS_Title
+#: ggsetup_EmsExport3.inc:276
+msgid "&Excel Options"
+msgstr "&Excel Instillinger"
+
+#  Programmer's name for it: QED_XLS_Advanced_Title
+#. Programmer's name for it: QED_XLS_Advanced_Title
+#: ggsetup_EmsExport3.inc:277
+msgid "A&dvanced"
+msgstr "A&dvanceret"
+
+#  Programmer's name for it: QED_XLS_Page_Header
+#. Programmer's name for it: QED_XLS_Page_Header
+#: ggsetup_EmsExport3.inc:278
+msgid "Page header"
+msgstr "Side overskrift"
+
+#  Programmer's name for it: QED_XLS_Page_Footer
+#. Programmer's name for it: QED_XLS_Page_Footer
+#: ggsetup_EmsExport3.inc:279
+msgid "Page footer"
+msgstr "Side fod"
+
+#  Programmer's name for it: QED_XLS_Sheet_Title
+#. Programmer's name for it: QED_XLS_Sheet_Title
+#: ggsetup_EmsExport3.inc:280
+msgid "Sheet title"
+msgstr "Ark titel"
+
+#  since 2.7
+#  Programmer's name for it: QED_XLS_AutoCalcColWidth
+#. since 2.7
+#. Programmer's name for it: QED_XLS_AutoCalcColWidth
+#: ggsetup_EmsExport3.inc:281
+msgid "Auto calculate column width"
+msgstr "Auto beregn kolonne bredde"
+
+#  Programmer's name for it: QED_XLS_DataFormat_Title
+#. Programmer's name for it: QED_XLS_DataFormat_Title
+#: ggsetup_EmsExport3.inc:284
+msgid "&Data format"
+msgstr "&Data format"
+
+#  since 2.2
+#  Programmer's name for it: QED_XLS_DataFormat_Styles
+#. since 2.2
+#. Programmer's name for it: QED_XLS_DataFormat_Styles
+#: ggsetup_EmsExport3.inc:288
+msgid "Styles"
+msgstr "Stiler"
+
+#  since 2.2
+#  Programmer's name for it: QED_XLS_DataFormat_Styles_Add
+#. since 2.2
+#. Programmer's name for it: QED_XLS_DataFormat_Styles_Add
+#: ggsetup_EmsExport3.inc:289
+msgid "Add style"
+msgstr "Tilføj stil"
+
+#  since 2.2
+#  Programmer's name for it: QED_XLS_DataFormat_Styles_Del
+#. since 2.2
+#. Programmer's name for it: QED_XLS_DataFormat_Styles_Del
+#: ggsetup_EmsExport3.inc:290
+msgid "Delete style"
+msgstr "Slet stil"
+
+#  since 2.2
+#  Programmer's name for it: QED_XLS_DataFormat_Styles_Up
+#. since 2.2
+#. Programmer's name for it: QED_XLS_DataFormat_Styles_Up
+#: ggsetup_EmsExport3.inc:291
+msgid "Move up"
+msgstr "Flyt op"
+
+#  since 2.2
+#  Programmer's name for it: QED_XLS_DataFormat_Styles_Down
+#. since 2.2
+#. Programmer's name for it: QED_XLS_DataFormat_Styles_Down
+#: ggsetup_EmsExport3.inc:292
+msgid "Move down"
+msgstr "Flyt ned"
+
+#  since 2.2
+#  Programmer's name for it: QED_XLS_DataFormat_Styles_Save
+#. since 2.2
+#. Programmer's name for it: QED_XLS_DataFormat_Styles_Save
+#: ggsetup_EmsExport3.inc:293
+msgid "Save style"
+msgstr "Gem stil"
+
+#  since 2.2
+#  Programmer's name for it: QED_XLS_DataFormat_Styles_Load
+#. since 2.2
+#. Programmer's name for it: QED_XLS_DataFormat_Styles_Load
+#: ggsetup_EmsExport3.inc:294
+msgid "Load style"
+msgstr "Hent stil"
+
+#  since 2.2
+#  Programmer's name for it: QED_XLS_DataFormat_Styles_StripStyle_Caption
+#. since 2.2
+#. Programmer's name for it: QED_XLS_DataFormat_Styles_StripStyle_Caption
+#: ggsetup_EmsExport3.inc:295
+msgid "Strip style"
+msgstr "Stip stil"
+
+#  Programmer's name for it: QED_XLS_SampleCell
+#. Programmer's name for it: QED_XLS_SampleCell
+#: ggsetup_EmsExport3.inc:308
+msgid "  Sample cell"
+msgstr "  Eksempel celle"
+
+#  Programmer's name for it: QED_XLS_Aggregate
+#. Programmer's name for it: QED_XLS_Aggregate
+#: ggsetup_EmsExport3.inc:313
+msgid "AGGREGATE"
+msgstr "SAMMENTÆL"
+
+#  since 3.0
+#  Programmer's name for it: QED_XLS_Hyperlink
+#. since 3.0
+#. Programmer's name for it: QED_XLS_Hyperlink
+#: ggsetup_EmsExport3.inc:315
+msgid "HYPERLINK"
+msgstr "HYPERLINK"
+
+#  since 3.0
+#  Programmer's name for it: QED_XLS_Note
+#. since 3.0
+#. Programmer's name for it: QED_XLS_Note
+#: ggsetup_EmsExport3.inc:316
+msgid "NOTE"
+msgstr "BEMÆRKNING"
+
+#  since 3.0
+#  Programmer's name for it: QED_XLS_StripStyle
+#. since 3.0
+#. Programmer's name for it: QED_XLS_StripStyle
+#: ggsetup_EmsExport3.inc:317
+msgid "STYLE_%d"
+msgstr "STIL_%d"
+
+#  since 3.1
+#  Programmer's name for it: QED_XLS_Cell
+#. since 3.1
+#. Programmer's name for it: QED_XLS_Cell
+#: ggsetup_EmsExport3.inc:318
+msgid "CELL"
+msgstr "CELLE"
+
+#  Programmer's name for it: QED_XLS_Font_Title
+#. Programmer's name for it: QED_XLS_Font_Title
+#: ggsetup_EmsExport3.inc:322
+msgid "&Font"
+msgstr "&Skrifttype"
+
+#  Programmer's name for it: QED_XLS_Font_Color
+#. Programmer's name for it: QED_XLS_Font_Color
+#: ggsetup_EmsExport3.inc:325
+msgid "Font color"
+msgstr "Skrift farve"
+
+#  Programmer's name for it: QED_XLS_Font_StrikeOut
+#. Programmer's name for it: QED_XLS_Font_StrikeOut
+#: ggsetup_EmsExport3.inc:328
+msgid "Strike out"
+msgstr "Omrids"
+
+#  Programmer's name for it: QED_XLS_Underline_Single
+#. Programmer's name for it: QED_XLS_Underline_Single
+#: ggsetup_EmsExport3.inc:329
+msgid "Underline single"
+msgstr "Enkelt understreget"
+
+#  Programmer's name for it: QED_XLS_Underline_Single_Accounting
+#. Programmer's name for it: QED_XLS_Underline_Single_Accounting
+#: ggsetup_EmsExport3.inc:330
+msgid "Underline single accounting"
+msgstr "Enkelt understreget regnskab"
+
+#  Programmer's name for it: QED_XLS_Underline_Double
+#. Programmer's name for it: QED_XLS_Underline_Double
+#: ggsetup_EmsExport3.inc:331
+msgid "Underline double"
+msgstr "Dobbelt understreget"
+
+#  Programmer's name for it: QED_XLS_Underline_Double_Accounting
+#. Programmer's name for it: QED_XLS_Underline_Double_Accounting
+#: ggsetup_EmsExport3.inc:332
+msgid "Underline double accounting"
+msgstr "Dobbelt understreget regnskab"
+
+#  Programmer's name for it: QED_XLS_Borders_Title
+#. Programmer's name for it: QED_XLS_Borders_Title
+#: ggsetup_EmsExport3.inc:341
+msgid "&Borders"
+msgstr "&Rammer"
+
+#  Programmer's name for it: QED_XLS_Border_Top
+#. Programmer's name for it: QED_XLS_Border_Top
+#: ggsetup_EmsExport3.inc:343
+msgid "Top border"
+msgstr "Top ramme"
+
+#  Programmer's name for it: QED_XLS_Border_Top_Color
+#. Programmer's name for it: QED_XLS_Border_Top_Color
+#: ggsetup_EmsExport3.inc:344
+msgid "Top border color"
+msgstr "Top ramme farve"
+
+#  Programmer's name for it: QED_XLS_Border_Bottom
+#. Programmer's name for it: QED_XLS_Border_Bottom
+#: ggsetup_EmsExport3.inc:345
+msgid "Bottom border"
+msgstr "Bund ramme"
+
+#  Programmer's name for it: QED_XLS_Border_Bottom_Color
+#. Programmer's name for it: QED_XLS_Border_Bottom_Color
+#: ggsetup_EmsExport3.inc:346
+msgid "Bottom border color"
+msgstr "Bund ramme farve"
+
+#  Programmer's name for it: QED_XLS_Border_Left
+#. Programmer's name for it: QED_XLS_Border_Left
+#: ggsetup_EmsExport3.inc:347
+msgid "Left border"
+msgstr "Venstre ramme"
+
+#  Programmer's name for it: QED_XLS_Border_Left_Color
+#. Programmer's name for it: QED_XLS_Border_Left_Color
+#: ggsetup_EmsExport3.inc:348
+msgid "Left border color"
+msgstr "Venstre ramme farve"
+
+#  Programmer's name for it: QED_XLS_Border_Right
+#. Programmer's name for it: QED_XLS_Border_Right
+#: ggsetup_EmsExport3.inc:349
+msgid "Right border"
+msgstr "Højre ramme"
+
+#  Programmer's name for it: QED_XLS_Border_Right_Color
+#. Programmer's name for it: QED_XLS_Border_Right_Color
+#: ggsetup_EmsExport3.inc:350
+msgid "Right border color"
+msgstr "Højre ramme farve"
+
+#  Programmer's name for it: QED_XLS_Fill_Title
+#. Programmer's name for it: QED_XLS_Fill_Title
+#: ggsetup_EmsExport3.inc:352
+msgid "F&ill"
+msgstr "Udf&yld"
+
+#  Programmer's name for it: QED_XLS_Fill_Background
+#. Programmer's name for it: QED_XLS_Fill_Background
+#: ggsetup_EmsExport3.inc:353
+msgid "Background color"
+msgstr "Baggrunds farve"
+
+#  Programmer's name for it: QED_XLS_Fill_Foreground
+#. Programmer's name for it: QED_XLS_Fill_Foreground
+#: ggsetup_EmsExport3.inc:355
+msgid "Foreground color"
+msgstr "Forgrunds farve"
+
+#  Programmer's name for it: QED_XLS_Aggregate_Title
+#. Programmer's name for it: QED_XLS_Aggregate_Title
+#: ggsetup_EmsExport3.inc:357
+msgid "&Aggregate"
+msgstr "&Sammetælling"
+
+#  #-#-#-#-#  EmsExport3.po (PACKAGE VERSION)  #-#-#-#-#
+#  Programmer's name for it: QED_XLS_Function
+#  #-#-#-#-#  EmsQueryBuilder.po (PACKAGE VERSION)  #-#-#-#-#
+#  Programmer's name for it: rsSelectOrderAggregate
+#. Programmer's name for it: QED_XLS_Function
+#: ggsetup_EmsExport3.inc:358
+msgid "Aggregate"
+msgstr "Sammetælling"
+
+#  Programmer's name for it: QED_XLS_Function_Sum
+#. Programmer's name for it: QED_XLS_Function_Sum
+#: ggsetup_EmsExport3.inc:360
+msgid "SUM"
+msgstr "SUM"
+
+#  Programmer's name for it: QED_XLS_Function_Avg
+#. Programmer's name for it: QED_XLS_Function_Avg
+#: ggsetup_EmsExport3.inc:361
+msgid "AVG"
+msgstr "AVG"
+
+#  Programmer's name for it: QED_XLS_Function_Min
+#. Programmer's name for it: QED_XLS_Function_Min
+#: ggsetup_EmsExport3.inc:362
+msgid "MIN"
+msgstr "MIN"
+
+#  Programmer's name for it: QED_XLS_Function_Max
+#. Programmer's name for it: QED_XLS_Function_Max
+#: ggsetup_EmsExport3.inc:363
+msgid "MAX"
+msgstr "MAX"
+
+#  since 3.0
+#  Programmer's name for it: QED_XLS_Extensions
+#. since 3.0
+#. Programmer's name for it: QED_XLS_Extensions
+#: ggsetup_EmsExport3.inc:365
+msgid "Extensions"
+msgstr "Extension"
+
+#  since 3.0
+#  Programmer's name for it: QED_XLS_Hyperlinks
+#. since 3.0
+#. Programmer's name for it: QED_XLS_Hyperlinks
+#: ggsetup_EmsExport3.inc:367
+msgid "Hyperlinks"
+msgstr "Hyperlink"
+
+#  since 3.0
+#  Programmer's name for it: QED_XLS_AddHyperlink
+#. since 3.0
+#. Programmer's name for it: QED_XLS_AddHyperlink
+#: ggsetup_EmsExport3.inc:368
+msgid "Add hyperlink"
+msgstr "Tilføj hyperlink"
+
+#  since 3.0
+#  Programmer's name for it: QED_XLS_DelHyperlink
+#. since 3.0
+#. Programmer's name for it: QED_XLS_DelHyperlink
+#: ggsetup_EmsExport3.inc:369
+msgid "Delete hyperlink"
+msgstr "Slet hyperlink"
+
+#  since 3.0
+#  Programmer's name for it: QED_XLS_Hyperlink_DefaultTitle
+#. since 3.0
+#. Programmer's name for it: QED_XLS_Hyperlink_DefaultTitle
+#: ggsetup_EmsExport3.inc:370
+msgid "Hyperlink"
+msgstr "Hyperlink"
+
+#  since 3.0
+#  Programmer's name for it: QED_XLS_Hyperlink_Style
+#. since 3.0
+#. Programmer's name for it: QED_XLS_Hyperlink_Style
+#: ggsetup_EmsExport3.inc:373
+msgid " Style "
+msgstr " Stil "
+
+#  since 3.0
+#  Programmer's name for it: QED_XLS_Hyperlink_Style_URL
+#. since 3.0
+#. Programmer's name for it: QED_XLS_Hyperlink_Style_URL
+#: ggsetup_EmsExport3.inc:374
+msgid "URL"
+msgstr "URL"
+
+#  since 3.0
+#  Programmer's name for it: QED_XLS_Hyperlink_Style_LocalFile
+#. since 3.0
+#. Programmer's name for it: QED_XLS_Hyperlink_Style_LocalFile
+#: ggsetup_EmsExport3.inc:375
+msgid "Local File"
+msgstr "Lokal Fil"
+
+#  since 3.0
+#  Programmer's name for it: QED_XLS_Hyperlink_Target
+#. since 3.0
+#. Programmer's name for it: QED_XLS_Hyperlink_Target
+#: ggsetup_EmsExport3.inc:377
+msgid "Target"
+msgstr "Mål"
+
+#  since 3.1
+#  Programmer's name for it: QED_XLS_Hyperlink_ScreenTip
+#. since 3.1
+#. Programmer's name for it: QED_XLS_Hyperlink_ScreenTip
+#: ggsetup_EmsExport3.inc:378
+msgid "Screen Tip"
+msgstr "Skærm Tip"
+
+#  since 3.0
+#  Programmer's name for it: QED_XLS_Notes
+#. since 3.0
+#. Programmer's name for it: QED_XLS_Notes
+#: ggsetup_EmsExport3.inc:380
+msgid "Notes"
+msgstr "Bemærkninger"
+
+#  since 3.0
+#  Programmer's name for it: QED_XLS_AddNote
+#. since 3.0
+#. Programmer's name for it: QED_XLS_AddNote
+#: ggsetup_EmsExport3.inc:381
+msgid "Add note"
+msgstr "Tilføj bemærkning"
+
+#  since 3.0
+#  Programmer's name for it: QED_XLS_DelNote
+#. since 3.0
+#. Programmer's name for it: QED_XLS_DelNote
+#: ggsetup_EmsExport3.inc:382
+msgid "Delete note"
+msgstr "Slet bemærkning"
+
+#  since 3.0
+#  Programmer's name for it: QED_XLS_Note_DefaultTitle
+#. since 3.0
+#. Programmer's name for it: QED_XLS_Note_DefaultTitle
+#: ggsetup_EmsExport3.inc:383
+msgid "Note"
+msgstr "Bemærkning"
+
+#  since 3.0
+#  Programmer's name for it: QED_XLS_Note_Base
+#  since 3.0
+#  Programmer's name for it: QED_XLS_Chart_Base
+#  since 3.1
+#  Programmer's name for it: QED_XLS_Cell_Base
+#. since 3.0
+#. Programmer's name for it: QED_XLS_Note_Base
+#. since 3.0
+#. Programmer's name for it: QED_XLS_Chart_Base
+#. since 3.1
+#. Programmer's name for it: QED_XLS_Cell_Base
+#: ggsetup_EmsExport3.inc:384 ggsetup_EmsExport3.inc:429
+#: ggsetup_EmsExport3.inc:495
+msgid "Base"
+msgstr "Base"
+
+#  since 3.0
+#  Programmer's name for it: QED_XLS_Note_Lines
+#. since 3.0
+#. Programmer's name for it: QED_XLS_Note_Lines
+#: ggsetup_EmsExport3.inc:387
+msgid "Text"
+msgstr "Tekst"
+
+#  since 3.0
+#  Programmer's name for it: QED_XLS_Note_FontStrikeOut
+#. since 3.0
+#. Programmer's name for it: QED_XLS_Note_FontStrikeOut
+#: ggsetup_EmsExport3.inc:394
+msgid "StrikeOut"
+msgstr "Omrids"
+
+#  since 3.0
+#  Programmer's name for it: QED_XLS_Note_Underline_Single
+#. since 3.0
+#. Programmer's name for it: QED_XLS_Note_Underline_Single
+#: ggsetup_EmsExport3.inc:395
+msgid "Single"
+msgstr "Enkel"
+
+#  since 3.0
+#  Programmer's name for it: QED_XLS_Note_Underline_SingleAccounting
+#. since 3.0
+#. Programmer's name for it: QED_XLS_Note_Underline_SingleAccounting
+#: ggsetup_EmsExport3.inc:396
+msgid "Single Accounting"
+msgstr "Enkel regnskab"
+
+#  since 3.0
+#  Programmer's name for it: QED_XLS_Note_Underline_Double
+#. since 3.0
+#. Programmer's name for it: QED_XLS_Note_Underline_Double
+#: ggsetup_EmsExport3.inc:397
+msgid "Double"
+msgstr "Dobbelt"
+
+#  since 3.0
+#  Programmer's name for it: QED_XLS_Note_Underline_DoubleAccounting
+#. since 3.0
+#. Programmer's name for it: QED_XLS_Note_Underline_DoubleAccounting
+#: ggsetup_EmsExport3.inc:398
+msgid "Double Accounting"
+msgstr "Dobbelt regnskab"
+
+#  since 3.0
+#  Programmer's name for it: QED_XLS_Note_Orientation
+#. since 3.0
+#. Programmer's name for it: QED_XLS_Note_Orientation
+#: ggsetup_EmsExport3.inc:406
+msgid " Orientation "
+msgstr "Retning"
+
+#  since 3.0
+#  Programmer's name for it: QED_XLS_Note_Orientation_NoRotation
+#. since 3.0
+#. Programmer's name for it: QED_XLS_Note_Orientation_NoRotation
+#: ggsetup_EmsExport3.inc:407
+msgid "No Rotation"
+msgstr "Ingen Rotation"
+
+#  since 3.0
+#  Programmer's name for it: QED_XLS_Note_Orientation_TopToBottom
+#. since 3.0
+#. Programmer's name for it: QED_XLS_Note_Orientation_TopToBottom
+#: ggsetup_EmsExport3.inc:408
+msgid "Top to bottom"
+msgstr "Top til bund"
+
+#  since 3.0
+#  Programmer's name for it: QED_XLS_Note_Orientation_CounterClockWise
+#. since 3.0
+#. Programmer's name for it: QED_XLS_Note_Orientation_CounterClockWise
+#: ggsetup_EmsExport3.inc:409
+msgid "Counter clock wise"
+msgstr "Imod uret"
+
+#  since 3.0
+#  Programmer's name for it: QED_XLS_Note_Orientation_ClockWise
+#. since 3.0
+#. Programmer's name for it: QED_XLS_Note_Orientation_ClockWise
+#: ggsetup_EmsExport3.inc:410
+msgid "Clock wise"
+msgstr "Med uret"
+
+#  since 3.0
+#  Programmer's name for it: QED_XLS_Note_FillType
+#. since 3.0
+#. Programmer's name for it: QED_XLS_Note_FillType
+#: ggsetup_EmsExport3.inc:412
+msgid " Fill Type "
+msgstr "Ufyld Type"
+
+#  since 3.0
+#  Programmer's name for it: QED_XLS_Note_FillType_Solid
+#. since 3.0
+#. Programmer's name for it: QED_XLS_Note_FillType_Solid
+#: ggsetup_EmsExport3.inc:413
+msgid "Solid"
+msgstr "Solid"
+
+#  since 3.0
+#  Programmer's name for it: QED_XLS_Note_FillType_Gradient
+#. since 3.0
+#. Programmer's name for it: QED_XLS_Note_FillType_Gradient
+#: ggsetup_EmsExport3.inc:414
+msgid "Gradient"
+msgstr "Gradient"
+
+#  since 3.0
+#  Programmer's name for it: QED_XLS_Note_Gradient_Horizontal
+#. since 3.0
+#. Programmer's name for it: QED_XLS_Note_Gradient_Horizontal
+#: ggsetup_EmsExport3.inc:415
+msgid "Horizontal"
+msgstr "Horisontal"
+
+#  since 3.0
+#  Programmer's name for it: QED_XLS_Note_Gradient_Vertical
+#. since 3.0
+#. Programmer's name for it: QED_XLS_Note_Gradient_Vertical
+#: ggsetup_EmsExport3.inc:416
+msgid "Vertical"
+msgstr "Vertical"
+
+#  since 3.0
+#  Programmer's name for it: QED_XLS_Note_Gradient_DiagonalUp
+#. since 3.0
+#. Programmer's name for it: QED_XLS_Note_Gradient_DiagonalUp
+#: ggsetup_EmsExport3.inc:417
+msgid "Diagonal Up"
+msgstr "Diagonal Op"
+
+#  since 3.0
+#  Programmer's name for it: QED_XLS_Note_Gradient_DiagonalDown
+#. since 3.0
+#. Programmer's name for it: QED_XLS_Note_Gradient_DiagonalDown
+#: ggsetup_EmsExport3.inc:418
+msgid "Diagonal Down"
+msgstr "Diagonal Ned"
+
+#  since 3.0
+#  Programmer's name for it: QED_XLS_Note_Gradient_FromCorner
+#. since 3.0
+#. Programmer's name for it: QED_XLS_Note_Gradient_FromCorner
+#: ggsetup_EmsExport3.inc:419
+msgid "From Corner"
+msgstr "Fra Hjørne"
+
+#  since 3.0
+#  Programmer's name for it: QED_XLS_Note_Gradient_FromCenter
+#. since 3.0
+#. Programmer's name for it: QED_XLS_Note_Gradient_FromCenter
+#: ggsetup_EmsExport3.inc:420
+msgid "From Center"
+msgstr "Fra Center"
+
+#  since 3.0
+#  Programmer's name for it: QED_XLS_Note_ForegroundColor
+#. since 3.0
+#. Programmer's name for it: QED_XLS_Note_ForegroundColor
+#: ggsetup_EmsExport3.inc:422
+msgid "Foreground Color"
+msgstr "Forgrunds Farve"
+
+#  since 3.0
+#  Programmer's name for it: QED_XLS_Note_Transparency
+#. since 3.0
+#. Programmer's name for it: QED_XLS_Note_Transparency
+#: ggsetup_EmsExport3.inc:423
+msgid "Transparency"
+msgstr "Gennemsigtighed"
+
+#  since 3.0
+#  Programmer's name for it: QED_XLS_Charts
+#. since 3.0
+#. Programmer's name for it: QED_XLS_Charts
+#: ggsetup_EmsExport3.inc:425
+msgid "Charts"
+msgstr "Kort"
+
+#  since 3.0
+#  Programmer's name for it: QED_XLS_AddChart
+#. since 3.0
+#. Programmer's name for it: QED_XLS_AddChart
+#: ggsetup_EmsExport3.inc:426
+msgid "Add chart"
+msgstr "Tilføj kort"
+
+#  since 3.0
+#  Programmer's name for it: QED_XLS_DelChart
+#. since 3.0
+#. Programmer's name for it: QED_XLS_DelChart
+#: ggsetup_EmsExport3.inc:427
+msgid "Delete chart"
+msgstr "Slet kort"
+
+#  since 3.0
+#  Programmer's name for it: QED_XLS_Chart_DefaultTitle
+#. since 3.0
+#. Programmer's name for it: QED_XLS_Chart_DefaultTitle
+#: ggsetup_EmsExport3.inc:428
+msgid "Chart"
+msgstr "Kort"
+
+#  since 3.0
+#  Programmer's name for it: QED_XLS_Chart_Style
+#. since 3.0
+#. Programmer's name for it: QED_XLS_Chart_Style
+#: ggsetup_EmsExport3.inc:431
+msgid "Style"
+msgstr "Stil"
+
+#  since 3.0
+#  Programmer's name for it: QED_XLS_Chart_Style_Column
+#  Since 3.0
+#  Programmer's name for it: QED_XLS_Chart_CategoryLabel_Column
+#  since 3.0
+#  Programmer's name for it: QED_XLS_Series_Column
+#. since 3.0
+#. Programmer's name for it: QED_XLS_Chart_Style_Column
+#. Since 3.0
+#. Programmer's name for it: QED_XLS_Chart_CategoryLabel_Column
+#. since 3.0
+#. Programmer's name for it: QED_XLS_Series_Column
+#: ggsetup_EmsExport3.inc:432 ggsetup_EmsExport3.inc:462
+#: ggsetup_EmsExport3.inc:483
+msgid "Column"
+msgstr "Kolonne"
+
+#  since 3.0
+#  Programmer's name for it: QED_XLS_Chart_Style_Column3D
+#. since 3.0
+#. Programmer's name for it: QED_XLS_Chart_Style_Column3D
+#: ggsetup_EmsExport3.inc:433
+msgid "Column 3D"
+msgstr "Kolonne 3D"
+
+#  since 3.0
+#  Programmer's name for it: QED_XLS_Chart_Style_Bar
+#. since 3.0
+#. Programmer's name for it: QED_XLS_Chart_Style_Bar
+#: ggsetup_EmsExport3.inc:434
+msgid "Bar"
+msgstr "Søjle"
+
+#  since 3.0
+#  Programmer's name for it: QED_XLS_Chart_Style_Bar3D
+#. since 3.0
+#. Programmer's name for it: QED_XLS_Chart_Style_Bar3D
+#: ggsetup_EmsExport3.inc:435
+msgid "Bar 3D"
+msgstr "Søjle 3D"
+
+#  since 3.0
+#  Programmer's name for it: QED_XLS_Chart_Style_LineMark
+#. since 3.0
+#. Programmer's name for it: QED_XLS_Chart_Style_LineMark
+#: ggsetup_EmsExport3.inc:437
+msgid "Line Mark"
+msgstr "Linie Markering"
+
+#  since 3.0
+#  Programmer's name for it: QED_XLS_Chart_Style_Line3D
+#. since 3.0
+#. Programmer's name for it: QED_XLS_Chart_Style_Line3D
+#: ggsetup_EmsExport3.inc:438
+msgid "Line 3D"
+msgstr "Linie 3D"
+
+#  since 3.0
+#  Programmer's name for it: QED_XLS_Chart_Style_Pie
+#. since 3.0
+#. Programmer's name for it: QED_XLS_Chart_Style_Pie
+#: ggsetup_EmsExport3.inc:439
+msgid "Pie"
+msgstr "Lagkage"
+
+#  since 3.0
+#  Programmer's name for it: QED_XLS_Chart_Style_Pie3D
+#. since 3.0
+#. Programmer's name for it: QED_XLS_Chart_Style_Pie3D
+#: ggsetup_EmsExport3.inc:440
+msgid "Pie 3D"
+msgstr "Lagkage 3D"
+
+#  since 3.0
+#  Programmer's name for it: QED_XLS_Chart_Style_Area3D
+#. since 3.0
+#. Programmer's name for it: QED_XLS_Chart_Style_Area3D
+#: ggsetup_EmsExport3.inc:442
+msgid "Area 3D"
+msgstr "Område 3D"
+
+#  since 3.0
+#  Programmer's name for it: QED_XLS_Chart_Style_Surface
+#. since 3.0
+#. Programmer's name for it: QED_XLS_Chart_Style_Surface
+#: ggsetup_EmsExport3.inc:443
+msgid "Surface"
+msgstr "Overfalde"
+
+#  since 3.0
+#  Programmer's name for it: QED_XLS_Chart_Style_Surface3D
+#. since 3.0
+#. Programmer's name for it: QED_XLS_Chart_Style_Surface3D
+#: ggsetup_EmsExport3.inc:444
+msgid "Surface 3D"
+msgstr "Overflade 3D"
+
+#  since 3.0
+#  Programmer's name for it: QED_XLS_Chart_Style_Radar
+#. since 3.0
+#. Programmer's name for it: QED_XLS_Chart_Style_Radar
+#: ggsetup_EmsExport3.inc:445
+msgid "Radar"
+msgstr "Radar"
+
+#  since 3.0
+#  Programmer's name for it: QED_XLS_Chart_Style_RadarArea
+#. since 3.0
+#. Programmer's name for it: QED_XLS_Chart_Style_RadarArea
+#: ggsetup_EmsExport3.inc:446
+msgid "Radar Area"
+msgstr "Radar Område"
+
+#  since 3.0
+#  Programmer's name for it: QED_XLS_Chart_Position
+#. since 3.0
+#. Programmer's name for it: QED_XLS_Chart_Position
+#: ggsetup_EmsExport3.inc:447
+msgid " Position "
+msgstr " Position "
+
+#  since 3.0
+#  Programmer's name for it: QED_XLS_Chart_AutoPosition
+#. since 3.0
+#. Programmer's name for it: QED_XLS_Chart_AutoPosition
+#: ggsetup_EmsExport3.inc:448
+msgid "Auto Position"
+msgstr "Tilføj Position"
+
+#  since 3.0
+#  Programmer's name for it: QED_XLS_Chart_Placement
+#. since 3.0
+#. Programmer's name for it: QED_XLS_Chart_Placement
+#: ggsetup_EmsExport3.inc:449
+msgid " Placement "
+msgstr " Placering "
+
+#  since 3.0
+#  Programmer's name for it: QED_XLS_Chart_CustomPosition
+#. since 3.0
+#. Programmer's name for it: QED_XLS_Chart_CustomPosition
+#: ggsetup_EmsExport3.inc:456
+msgid "Custom Position"
+msgstr "Bruger Placering"
+
+#  since 3.0
+#  Programmer's name for it: QED_XLS_Chart_Position_X1
+#. since 3.0
+#. Programmer's name for it: QED_XLS_Chart_Position_X1
+#: ggsetup_EmsExport3.inc:457
+msgid "X1"
+msgstr "X1"
+
+#  since 3.0
+#  Programmer's name for it: QED_XLS_Chart_Position_Y1
+#. since 3.0
+#. Programmer's name for it: QED_XLS_Chart_Position_Y1
+#: ggsetup_EmsExport3.inc:458
+msgid "Y1"
+msgstr "Y1"
+
+#  since 3.0
+#  Programmer's name for it: QED_XLS_Chart_Position_X2
+#. since 3.0
+#. Programmer's name for it: QED_XLS_Chart_Position_X2
+#: ggsetup_EmsExport3.inc:459
+msgid "X2"
+msgstr "X2"
+
+#  since 3.0
+#  Programmer's name for it: QED_XLS_Chart_Position_Y2
+#. since 3.0
+#. Programmer's name for it: QED_XLS_Chart_Position_Y2
+#: ggsetup_EmsExport3.inc:460
+msgid "Y2"
+msgstr "Y2"
+
+#  since 3.0
+#  Programmer's name for it: QED_XLS_Chart_CategoryLabels
+#. since 3.0
+#. Programmer's name for it: QED_XLS_Chart_CategoryLabels
+#: ggsetup_EmsExport3.inc:461
+msgid " Category Labels "
+msgstr " Kategori Ledetekster "
+
+#  Since 3.0
+#  Programmer's name for it: QED_XLS_Chart_CategoryLabel_Custom
+#  since 3.0
+#  Programmer's name for it: QED_XLS_Series_Custom
+#. Since 3.0
+#. Programmer's name for it: QED_XLS_Chart_CategoryLabel_Custom
+#. since 3.0
+#. Programmer's name for it: QED_XLS_Series_Custom
+#: ggsetup_EmsExport3.inc:463 ggsetup_EmsExport3.inc:484
+msgid "Custom"
+msgstr "Bruger"
+
+#  since 3.0
+#  Programmer's name for it: QED_XLS_Chart_CategoryLabels_Col1
+#  since 3.0
+#  Programmer's name for it: QED_XLS_Series_DataRange_Col1
+#. since 3.0
+#. Programmer's name for it: QED_XLS_Chart_CategoryLabels_Col1
+#. since 3.0
+#. Programmer's name for it: QED_XLS_Series_DataRange_Col1
+#: ggsetup_EmsExport3.inc:464 ggsetup_EmsExport3.inc:485
+msgid "Col 1"
+msgstr "Kol 1"
+
+#  since 3.0
+#  Programmer's name for it: QED_XLS_Chart_CategoryLabels_Row1
+#  since 3.0
+#  Programmer's name for it: QED_XLS_Series_DataRange_Row1
+#. since 3.0
+#. Programmer's name for it: QED_XLS_Chart_CategoryLabels_Row1
+#. since 3.0
+#. Programmer's name for it: QED_XLS_Series_DataRange_Row1
+#: ggsetup_EmsExport3.inc:465 ggsetup_EmsExport3.inc:486
+msgid "Row 1"
+msgstr "Række 1"
+
+#  since 3.0
+#  Programmer's name for it: QED_XLS_Chart_CategoryLabels_Col2
+#  since 3.0
+#  Programmer's name for it: QED_XLS_Series_DataRange_Col2
+#. since 3.0
+#. Programmer's name for it: QED_XLS_Chart_CategoryLabels_Col2
+#. since 3.0
+#. Programmer's name for it: QED_XLS_Series_DataRange_Col2
+#: ggsetup_EmsExport3.inc:466 ggsetup_EmsExport3.inc:487
+msgid "Col 2"
+msgstr "Kol 2"
+
+#  since 3.0
+#  Programmer's name for it: QED_XLS_Chart_CategoryLabels_Row2
+#  since 3.0
+#  Programmer's name for it: QED_XLS_Series_DataRange_Row2
+#. since 3.0
+#. Programmer's name for it: QED_XLS_Chart_CategoryLabels_Row2
+#. since 3.0
+#. Programmer's name for it: QED_XLS_Series_DataRange_Row2
+#: ggsetup_EmsExport3.inc:467 ggsetup_EmsExport3.inc:488
+msgid "Row 2"
+msgstr "Række 2"
+
+#  since 3.0
+#  Programmer's name for it: QED_XLS_Chart_LegendPosition
+#. since 3.0
+#. Programmer's name for it: QED_XLS_Chart_LegendPosition
+#: ggsetup_EmsExport3.inc:468
+msgid "Legend Position"
+msgstr "Forklaring Position"
+
+#  since 3.0
+#  Programmer's name for it: QED_XLS_Chart_LegendPosition_Corner
+#. since 3.0
+#. Programmer's name for it: QED_XLS_Chart_LegendPosition_Corner
+#: ggsetup_EmsExport3.inc:470
+msgid "Corner"
+msgstr "Hjørne"
+
+#  since 3.0
+#  Programmer's name for it: QED_XLS_Chart_ShowLegend
+#. since 3.0
+#. Programmer's name for it: QED_XLS_Chart_ShowLegend
+#: ggsetup_EmsExport3.inc:474
+msgid "Show Legend"
+msgstr "Vis Forklaring"
+
+#  since 3.0
+#  Programmer's name for it: QED_XLS_Chart_AutoColor
+#. since 3.0
+#. Programmer's name for it: QED_XLS_Chart_AutoColor
+#: ggsetup_EmsExport3.inc:475
+msgid "Auto Color"
+msgstr "Auto Farve"
+
+#  since 3.0
+#  Programmer's name for it: QED_XLS_Series
+#  since 3.0
+#  Programmer's name for it: QED_XLS_Series_DefaultTitle
+#. since 3.0
+#. Programmer's name for it: QED_XLS_Series
+#. since 3.0
+#. Programmer's name for it: QED_XLS_Series_DefaultTitle
+#: ggsetup_EmsExport3.inc:477 ggsetup_EmsExport3.inc:480
+msgid "Series"
+msgstr "Serier"
+
+#  since 3.0
+#  Programmer's name for it: QED_XLS_AddSeries
+#. since 3.0
+#. Programmer's name for it: QED_XLS_AddSeries
+#: ggsetup_EmsExport3.inc:478
+msgid "Add series"
+msgstr "Tilføj serie"
+
+#  since 3.0
+#  Programmer's name for it: QED_XLS_DelSeries
+#. since 3.0
+#. Programmer's name for it: QED_XLS_DelSeries
+#: ggsetup_EmsExport3.inc:479
+msgid "Delete series"
+msgstr "Slet serie"
+
+#  since 3.0
+#  Programmer's name for it: QED_XLS_Series_DataRange
+#. since 3.0
+#. Programmer's name for it: QED_XLS_Series_DataRange
+#: ggsetup_EmsExport3.inc:482
+msgid " Data Range "
+msgstr " Data Område "
+
+#  since 3.1
+#  Programmer's name for it: QED_XLS_Cells
+#. since 3.1
+#. Programmer's name for it: QED_XLS_Cells
+#: ggsetup_EmsExport3.inc:491
+msgid "Cells"
+msgstr "Celler"
+
+#  since 3.1
+#  Programmer's name for it: QED_XLS_AddCell
+#. since 3.1
+#. Programmer's name for it: QED_XLS_AddCell
+#: ggsetup_EmsExport3.inc:492
+msgid "Add cell"
+msgstr "TIlføj celle"
+
+#  since 3.1
+#  Programmer's name for it: QED_XLS_DelCell
+#. since 3.1
+#. Programmer's name for it: QED_XLS_DelCell
+#: ggsetup_EmsExport3.inc:493
+msgid "Delete cell"
+msgstr "Slet celle"
+
+#  since 3.1
+#  Programmer's name for it: QED_XLS_Cell_DisplayName
+#. since 3.1
+#. Programmer's name for it: QED_XLS_Cell_DisplayName
+#: ggsetup_EmsExport3.inc:494
+msgid "Cell(Col: %d Row: %d)"
+msgstr "Celle(Kol: %d Række: %d)"
+
+#  since 3.1
+#  Programmer's name for it: QED_XLS_Cell_Type
+#. since 3.1
+#. Programmer's name for it: QED_XLS_Cell_Type
+#: ggsetup_EmsExport3.inc:498
+msgid "Cell Type"
+msgstr "Celle Type"
+
+#  since 3.1
+#  Programmer's name for it: QED_XLS_Cell_Type_Boolean
+#. since 3.1
+#. Programmer's name for it: QED_XLS_Cell_Type_Boolean
+#: ggsetup_EmsExport3.inc:499
+msgid "Boolean"
+msgstr "Boolean"
+
+#  since 3.1
+#  Programmer's name for it: QED_XLS_Cell_Type_Numeric
+#. since 3.1
+#. Programmer's name for it: QED_XLS_Cell_Type_Numeric
+#: ggsetup_EmsExport3.inc:501
+msgid "Numeric"
+msgstr "Numerisk"
+
+#  since 3.1
+#  Programmer's name for it: QED_XLS_Cell_NumericFormat
+#. since 3.1
+#. Programmer's name for it: QED_XLS_Cell_NumericFormat
+#: ggsetup_EmsExport3.inc:505
+msgid "Numeric Format"
+msgstr "Numerisk Format"
+
+#  since 3.1
+#  Programmer's name for it: QED_XLS_MergedCells
+#  since 3.1
+#  Programmer's name for it: QED_XLS_MergedCell_DefaultTitle
+#. since 3.1
+#. Programmer's name for it: QED_XLS_MergedCells
+#. since 3.1
+#. Programmer's name for it: QED_XLS_MergedCell_DefaultTitle
+#: ggsetup_EmsExport3.inc:507 ggsetup_EmsExport3.inc:510
+msgid "Merged Cells"
+msgstr "Flettede Celler"
+
+#  since 3.1
+#  Programmer's name for it: QED_XLS_AddMergedCell
+#. since 3.1
+#. Programmer's name for it: QED_XLS_AddMergedCell
+#: ggsetup_EmsExport3.inc:508
+msgid "Add merged cells"
+msgstr "Tilføj flettede celler"
+
+#  since 3.1
+#  Programmer's name for it: QED_XLS_DelMergedCell
+#. since 3.1
+#. Programmer's name for it: QED_XLS_DelMergedCell
+#: ggsetup_EmsExport3.inc:509
+msgid "Delete merged cells"
+msgstr "Slet flettede celler"
+
+#  since 3.1
+#  Programmer's name for it: QED_XLS_MergedCell_FirstCol
+#. since 3.1
+#. Programmer's name for it: QED_XLS_MergedCell_FirstCol
+#: ggsetup_EmsExport3.inc:511
+msgid "First Col"
+msgstr "Første Kol"
+
+#  since 3.1
+#  Programmer's name for it: QED_XLS_MergedCell_FirstRow
+#  since 3.1
+#  Programmer's name for it: QED_XLS_MergedCell_FirstRow
+#. since 3.1
+#. Programmer's name for it: QED_XLS_MergedCell_FirstRow
+#: ggsetup_EmsExport3.inc:512
+msgid "First Row"
+msgstr "Første Række"
+
+#  since 3.1
+#  Programmer's name for it: QED_XLS_MergedCell_LastCol
+#. since 3.1
+#. Programmer's name for it: QED_XLS_MergedCell_LastCol
+#: ggsetup_EmsExport3.inc:513
+msgid "Last Col"
+msgstr "Sidste Kol"
+
+#  since 3.1
+#  Programmer's name for it: QED_XLS_MergedCell_LastRow
+#. since 3.1
+#. Programmer's name for it: QED_XLS_MergedCell_LastRow
+#: ggsetup_EmsExport3.inc:514
+msgid "Last Row"
+msgstr "Sidste Række"
+
+#  since 3.0
+#  Programmer's name for it: QEE_Caption
+#. since 3.0
+#. Programmer's name for it: QEE_Caption
+#: ggsetup_EmsExport3.inc:516
+msgid "%s - Component editor"
+msgstr "%s - Komponent editor"
+
+#  since 3.0
+#  Programmer's name for it: QEE_XLS_ExportSourceConfirm
+#. since 3.0
+#. Programmer's name for it: QEE_XLS_ExportSourceConfirm
+#: ggsetup_EmsExport3.inc:519
+msgid ""
+"The '%s' sheet has no export source component assigned.\n"
+"Would you like to select it from a list?"
+msgstr ""
+"Arket '%s' er ikke længere tilknyttet et eksport komponent.\n"
+"Ønsker du at vælge en fra listen?"
+
+#  sinxe 3.0
+#  Programmer's name for it: QEE_XLS_NewSheet
+#. sinxe 3.0
+#. Programmer's name for it: QEE_XLS_NewSheet
+#: ggsetup_EmsExport3.inc:521
+msgid "New Sheet %d"
+msgstr "Nyt Ark %d"
+
+#  since 3.0
+#  Programmer's name for it: QEE_XLS_AddNewSheet
+#. since 3.0
+#. Programmer's name for it: QEE_XLS_AddNewSheet
+#: ggsetup_EmsExport3.inc:522
+msgid "Add new sheet"
+msgstr "Tilføj nyt ark"
+
+#  since 3.0
+#  Programmer's name for it: QEE_XLS_DefineSheetTitle
+#. since 3.0
+#. Programmer's name for it: QEE_XLS_DefineSheetTitle
+#: ggsetup_EmsExport3.inc:523
+msgid "Define the new sheet title"
+msgstr "Definer titlen på det nye ark"
+
+#  since 3.0
+#  Programmer's name for it: QEE_XLS_EditSheet
+#. since 3.0
+#. Programmer's name for it: QEE_XLS_EditSheet
+#: ggsetup_EmsExport3.inc:524
+msgid "Edit sheet"
+msgstr "Edit ark"
+
+#  since 3.0
+#  Programmer's name for it: QEE_XLS_EditSheetTitle
+#. since 3.0
+#. Programmer's name for it: QEE_XLS_EditSheetTitle
+#: ggsetup_EmsExport3.inc:525
+msgid "Edit the sheet title"
+msgstr "Edit arkets titel"
+
+#  since 3.0
+#  Programmer's name for it: QEE_XLS_SheetTitleIsEmpty
+#. since 3.0
+#. Programmer's name for it: QEE_XLS_SheetTitleIsEmpty
+#: ggsetup_EmsExport3.inc:526
+msgid "Sheet title cannot be empty"
+msgstr "Ark titel kan ikke være tom"
+
+#  since 3.0
+#  Programmer's name for it: QEE_XLS_ColumnName
+#. since 3.0
+#. Programmer's name for it: QEE_XLS_ColumnName
+#: ggsetup_EmsExport3.inc:527
+msgid "Column Name %d"
+msgstr "Kolonne Navn %d"
+
+#  since 3.0
+#  Programmer's name for it: QEE_XLS_AddFieldFormat
+#. since 3.0
+#. Programmer's name for it: QEE_XLS_AddFieldFormat
+#: ggsetup_EmsExport3.inc:528
+msgid "Add field format"
+msgstr "Tilføj felt format"
+
+#  since 3.0
+#  Programmer's name for it: QEE_XLS_DefineColumnName
+#. since 3.0
+#. Programmer's name for it: QEE_XLS_DefineColumnName
+#: ggsetup_EmsExport3.inc:529
+msgid "Define name for the column"
+msgstr "Definer navnet for kolonnen"
+
+#  since 3.0
+#  Programmer's name for it: QEE_XLS_ColumnAlreadyExists
+#. since 3.0
+#. Programmer's name for it: QEE_XLS_ColumnAlreadyExists
+#: ggsetup_EmsExport3.inc:530
+msgid "Column with name %s already exists"
+msgstr "En kolonne med navn %s findes allerede"
+
+#  since 3.0
+#  Programmer's name for it: QEE_XLS_EditColumnName
+#. since 3.0
+#. Programmer's name for it: QEE_XLS_EditColumnName
+#: ggsetup_EmsExport3.inc:531
+msgid "Edit field name"
+msgstr "Edit felt navn"
+
+#  since 3.0
+#  Programmer's name for it: QEE_XLS_SetAllToDefaultConfirm
+#. since 3.0
+#. Programmer's name for it: QEE_XLS_SetAllToDefaultConfirm
+#: ggsetup_EmsExport3.inc:533
+msgid ""
+"All item formats will be set default. \n"
+"Would you like to continue?"
+msgstr ""
+"Alle element formater vil blive sat til standar. \n"
+"Vil du fortsætte?"
+
+#  since 3.0
+#  Programmer's name for it: QEE_XLS_SetSelToDefaultConfirm
+#. since 3.0
+#. Programmer's name for it: QEE_XLS_SetSelToDefaultConfirm
+#: ggsetup_EmsExport3.inc:535
+msgid ""
+"All selected item formats will be set default.\n"
+"Would you like to continue?"
+msgstr ""
+"Alle valgte element formater vil blive sat til standard.\n"
+"Vil du fortsætte?"
+
+#  #-#-#-#-#  EmsExport3.po (PACKAGE VERSION)  #-#-#-#-#
+#  since 3.0
+#  Programmer's name for it: QEE_XLS_Question
+#  #-#-#-#-#  EmsImport2.po (PACKAGE VERSION)  #-#-#-#-#
+#  since 2.0
+#  Programmer's name for it: QIW_Question
+#. since 3.0
+#. Programmer's name for it: QEE_XLS_Question
+#: ggsetup_EmsExport3.inc:536
+msgid "Question"
+msgstr "Spørgsmål"
+
+#  since 3.0
+#  Programmer's name for it: QEE_XLS_ExportSourceUndefined
+#. since 3.0
+#. Programmer's name for it: QEE_XLS_ExportSourceUndefined
+#: ggsetup_EmsExport3.inc:537
+msgid "Undefined"
+msgstr "Udefineret"
+
+#  ASCII
+#  Programmer's name for it: QED_ASCII_Title
+#. ASCII
+#. Programmer's name for it: QED_ASCII_Title
+#: ggsetup_EmsExport3.inc:540
+msgid "ASCII Options"
+msgstr "ASCII Indstillinger"
+
+#  Programmer's name for it: QED_TXT_Title
+#. Programmer's name for it: QED_TXT_Title
+#: ggsetup_EmsExport3.inc:541
+msgid " TXT Options "
+msgstr "TXT Indstillinger"
+
+#  Programmer's name for it: QED_TXT_AutoCalcColWidth
+#. Programmer's name for it: QED_TXT_AutoCalcColWidth
+#: ggsetup_EmsExport3.inc:542
+msgid "Calculate column width"
+msgstr "Beregn kolonne bredde"
+
+#  Programmer's name for it: QED_TXT_Spacing
+#. Programmer's name for it: QED_TXT_Spacing
+#: ggsetup_EmsExport3.inc:543
+msgid "Spacing"
+msgstr "Afstand"
+
+#  Programmer's name for it: QED_CSV_Title
+#. Programmer's name for it: QED_CSV_Title
+#: ggsetup_EmsExport3.inc:544
+msgid " CSV Options "
+msgstr " CSV Indstillinger"
+
+#  Programmer's name for it: QED_CSV_QuoteStrings
+#. Programmer's name for it: QED_CSV_QuoteStrings
+#: ggsetup_EmsExport3.inc:545
+msgid "Quote strings"
+msgstr "Anførselstegn strenge"
+
+#  #-#-#-#-#  EmsExport3.po (PACKAGE VERSION)  #-#-#-#-#
+#  Programmer's name for it: QED_CSV_Comma
+#  #-#-#-#-#  EmsImport2.po (PACKAGE VERSION)  #-#-#-#-#
+#  since 2.0
+#  Programmer's name for it: QIW_Comma
+#. Programmer's name for it: QED_CSV_Comma
+#: ggsetup_EmsExport3.inc:546
+msgid "Comma"
+msgstr "Komma"
+
+#  #-#-#-#-#  EmsExport3.po (PACKAGE VERSION)  #-#-#-#-#
+#  since 2.6
+#  Programmer's name for it: QED_CSV_Quote
+#  #-#-#-#-#  EmsImport2.po (PACKAGE VERSION)  #-#-#-#-#
+#  since 1.65
+#  Programmer's name for it: QIW_Quote
+#. since 2.6
+#. Programmer's name for it: QED_CSV_Quote
+#: ggsetup_EmsExport3.inc:547
+msgid "Quote"
+msgstr "Anførselstegn"
+
+#  since 2.6
+#  Programmer's name for it: QED_Access_Title
+#. since 2.6
+#. Programmer's name for it: QED_Access_Title
+#: ggsetup_EmsExport3.inc:550
+msgid "Access Options"
+msgstr "Access Indstillinger"
+
+#  since 2.6
+#  Programmer's name for it: QED_Access_TableOptions
+#. since 2.6
+#. Programmer's name for it: QED_Access_TableOptions
+#: ggsetup_EmsExport3.inc:551
+msgid "Table Options"
+msgstr "Table Indstillinger"
+
+#  since 2.6
+#  Programmer's name for it: QED_Access_TableName
+#. since 2.6
+#. Programmer's name for it: QED_Access_TableName
+#: ggsetup_EmsExport3.inc:552
+msgid "Table Name"
+msgstr "Tabel Navn"
+
+#  since 2.6
+#  Programmer's name for it: QED_Access_CreateTable
+#. since 2.6
+#. Programmer's name for it: QED_Access_CreateTable
+#: ggsetup_EmsExport3.inc:553
+msgid "Create table if it does not exist"
+msgstr "Opret tabel hvis den ikke findes"
+
+#  since 2.7
+#  Programmer's name for it: QED_PDF_Title
+#. since 2.7
+#. Programmer's name for it: QED_PDF_Title
+#: ggsetup_EmsExport3.inc:556
+msgid "PDF Options"
+msgstr "PDF Indstillinger"
+
+#  since 2.7
+#  Programmer's name for it: QED_PDF_FontName
+#. since 2.7
+#. Programmer's name for it: QED_PDF_FontName
+#: ggsetup_EmsExport3.inc:557
+msgid "Font Name"
+msgstr "Skrifttype Navn"
+
+#  since 2.7
+#  Programmer's name for it: QED_PDF_FontEncoding
+#. since 2.7
+#. Programmer's name for it: QED_PDF_FontEncoding
+#: ggsetup_EmsExport3.inc:558
+msgid "Font Encoding"
+msgstr "Skrifttype Indkodning"
+
+#  since 2.7
+#  Programmer's name for it: QED_PDF_FontSize
+#. since 2.7
+#. Programmer's name for it: QED_PDF_FontSize
+#: ggsetup_EmsExport3.inc:559
+msgid "Font Size"
+msgstr "Skrifttype Størrelse"
+
+#  since 2.7
+#  Programmer's name for it: QED_PDF_Sample
+#. since 2.7
+#. Programmer's name for it: QED_PDF_Sample
+#: ggsetup_EmsExport3.inc:561
+msgid "Sample"
+msgstr "Eksempel"
+
+#  since 2.7
+#  Programmer's name for it: QED_PDF_GridOptions
+#. since 2.7
+#. Programmer's name for it: QED_PDF_GridOptions
+#: ggsetup_EmsExport3.inc:563
+msgid "Grid Options"
+msgstr "Grid Indstillinger"
+
+#  since 2.7
+#  Programmer's name for it: QED_PDF_ColSpacing
+#. since 2.7
+#. Programmer's name for it: QED_PDF_ColSpacing
+#: ggsetup_EmsExport3.inc:564
+msgid "Col Spacing"
+msgstr "Kolonne Afstand"
+
+#  since 2.7
+#  Programmer's name for it: QED_PDF_RowSpacing
+#. since 2.7
+#. Programmer's name for it: QED_PDF_RowSpacing
+#: ggsetup_EmsExport3.inc:565
+msgid "Row Spacing"
+msgstr "Række Afstand"
+
+#  since 2.7
+#  Programmer's name for it: QED_PDF_GridLineWidth
+#. since 2.7
+#. Programmer's name for it: QED_PDF_GridLineWidth
+#: ggsetup_EmsExport3.inc:566
+msgid "Grid Line Width"
+msgstr "Grid Linie bredde"
+
+#  since 2.8
+#  Programmer's name for it: QED_PDF_PageOptions
+#. since 2.8
+#. Programmer's name for it: QED_PDF_PageOptions
+#: ggsetup_EmsExport3.inc:568
+msgid "Page Options"
+msgstr "Side Indstillinger"
+
+#  since 2.8
+#  Programmer's name for it: QED_PDF_PageSize
+#. since 2.8
+#. Programmer's name for it: QED_PDF_PageSize
+#: ggsetup_EmsExport3.inc:569
+msgid "Page Size"
+msgstr "Side Størrelse"
+
+#  since 2.8
+#  Programmer's name for it: QED_PDF_PageOrientation
+#. since 2.8
+#. Programmer's name for it: QED_PDF_PageOrientation
+#: ggsetup_EmsExport3.inc:573
+msgid "Page Orientation"
+msgstr "Side Retning"
+
+#  since 2.8
+#  Programmer's name for it: QED_PDF_Margins
+#. since 2.8
+#. Programmer's name for it: QED_PDF_Margins
+#: ggsetup_EmsExport3.inc:574
+msgid "Margins"
+msgstr "Maginer"
+
+#  since 2.7
+#  Programmer's name for it: QED_PDF_HeaderFont
+#. since 2.7
+#. Programmer's name for it: QED_PDF_HeaderFont
+#: ggsetup_EmsExport3.inc:580
+msgid "Header Font"
+msgstr "Hoved Skrifttype"
+
+#  since 2.7
+#  Programmer's name for it: QED_PDF_DataFont
+#. since 2.7
+#. Programmer's name for it: QED_PDF_DataFont
+#: ggsetup_EmsExport3.inc:582
+msgid "Data Font"
+msgstr "Data Skrifttype"
+
+#  since 2.7
+#  Programmer's name for it: QED_PDF_FooterFont
+#. since 2.7
+#. Programmer's name for it: QED_PDF_FooterFont
+#: ggsetup_EmsExport3.inc:583
+msgid "Footer Font"
+msgstr "Fod Skrifttype"
+
+#  Programmer's name for it: QEDP_Status
+#. Programmer's name for it: QEDP_Status
+#: ggsetup_EmsExport3.inc:587
+msgid "Status"
+msgstr "Status"
+
+#  Programmer's name for it: QEDP_Speed
+#. Programmer's name for it: QEDP_Speed
+#: ggsetup_EmsExport3.inc:589
+msgid "Speed"
+msgstr "Hastighed"
+
+#  Programmer's name for it: QEDP_Preparing
+#. Programmer's name for it: QEDP_Preparing
+#: ggsetup_EmsExport3.inc:590
+msgid "Preparing..."
+msgstr "Forbereder..."
+
+#  Programmer's name for it: QEDP_Skipping
+#. Programmer's name for it: QEDP_Skipping
+#: ggsetup_EmsExport3.inc:591
+msgid "Skipping..."
+msgstr "Springer over..."
+
+#  Programmer's name for it: QEDP_Skipped
+#. Programmer's name for it: QEDP_Skipped
+#: ggsetup_EmsExport3.inc:592
+msgid "Skipped"
+msgstr "Sparng over"
+
+#  Programmer's name for it: QEDP_Exported
+#. Programmer's name for it: QEDP_Exported
+#: ggsetup_EmsExport3.inc:594
+msgid "Exported"
+msgstr "Eksporterede"
+
+#  Programmer's name for it: QEDP_Fetching
+#. Programmer's name for it: QEDP_Fetching
+#: ggsetup_EmsExport3.inc:595
+msgid "Fetching..."
+msgstr "Henter..."
+
+#  Programmer's name for it: QEDP_Fetched
+#. Programmer's name for it: QEDP_Fetched
+#: ggsetup_EmsExport3.inc:596
+msgid "Fetched"
+msgstr "Hentede"
+
+#  Programmer's name for it: QEDP_Pause
+#. Programmer's name for it: QEDP_Pause
+#: ggsetup_EmsExport3.inc:597
+msgid "Pause"
+msgstr "Pause"
+
+#  Programmer's name for it: QEDP_Aborted
+#. Programmer's name for it: QEDP_Aborted
+#: ggsetup_EmsExport3.inc:600
+msgid "Aborted"
+msgstr "Afbrudt"
+
+#  Programmer's name for it: QEDP_Finished
+#. Programmer's name for it: QEDP_Finished
+#: ggsetup_EmsExport3.inc:601
+msgid "Finished"
+msgstr "Færdig"
+
+#  Programmer's name for it: QEDP_RowsPerSec
+#. Programmer's name for it: QEDP_RowsPerSec
+#: ggsetup_EmsExport3.inc:602
+msgid "%d rows/sec"
+msgstr "%d rækker/sek"
+
+#  Programmer's name for it: QEDP_TimeFormat
+#. Programmer's name for it: QEDP_TimeFormat
+#: ggsetup_EmsExport3.inc:603
+msgid "h:nn:ss"
+msgstr "h:nn:ss"
