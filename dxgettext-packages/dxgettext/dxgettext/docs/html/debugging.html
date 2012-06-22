@@ -1,0 +1,340 @@
+<!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.01//EN">
+<HTML
+><HEAD
+><TITLE
+>Debugging</TITLE
+><META
+NAME="GENERATOR"
+CONTENT="Modular DocBook HTML Stylesheet Version 1.76b+
+"><LINK
+REL="HOME"
+TITLE="GNU gettext for Delphi, C++ Builder and Kylix 1.2 beta"
+HREF="index.html"><LINK
+REL="UP"
+TITLE="Experienced programmers' topics"
+HREF="programmertasks.html"><LINK
+REL="PREVIOUS"
+TITLE="The better alternative to resourcestring"
+HREF="gettextfunction.html"><LINK
+REL="NEXT"
+TITLE="Directives"
+HREF="directives.html"></HEAD
+><BODY
+CLASS="SECT1"
+BGCOLOR="#FFFFFF"
+TEXT="#000000"
+LINK="#0000FF"
+VLINK="#840084"
+ALINK="#0000FF"
+><DIV
+CLASS="NAVHEADER"
+><TABLE
+SUMMARY="Header navigation table"
+WIDTH="100%"
+BORDER="0"
+CELLPADDING="0"
+CELLSPACING="0"
+><TR
+><TH
+COLSPAN="3"
+ALIGN="center"
+>GNU gettext for Delphi, C++ Builder and Kylix 1.2 beta</TH
+></TR
+><TR
+><TD
+WIDTH="10%"
+ALIGN="left"
+VALIGN="bottom"
+><A
+HREF="gettextfunction.html"
+ACCESSKEY="P"
+>&#60;&#60;&#60; Previous</A
+></TD
+><TD
+WIDTH="80%"
+ALIGN="center"
+VALIGN="bottom"
+>Experienced programmers' topics</TD
+><TD
+WIDTH="10%"
+ALIGN="right"
+VALIGN="bottom"
+><A
+HREF="directives.html"
+ACCESSKEY="N"
+>Next &#62;&#62;&#62;</A
+></TD
+></TR
+></TABLE
+><HR
+ALIGN="LEFT"
+WIDTH="100%"></DIV
+><DIV
+CLASS="SECT1"
+><H1
+CLASS="SECT1"
+><A
+NAME="DEBUGGING"
+></A
+>Debugging</H1
+><P
+>You will typically experience two types of errors:</P
+><P
+></P
+><UL
+><LI
+><P
+>Something is not translated</P
+></LI
+><LI
+><P
+>An error occurs when using <TT
+CLASS="LITERAL"
+>TranslateComponent()</TT
+></P
+></LI
+></UL
+><P
+>The first item often happens because the translation files (.mo files) are not present for the
+current language, not placed where they are expected to be etc. The second occurs because a property
+of some component should not be translated. When possible, you should get an Exception that is easy
+to understand, but sometimes you don't. This section is about finding the error anyway.</P
+><P
+>The <TT
+CLASS="FILENAME"
+>gnugettext.pas</TT
+> file has a logging system for debugging built-in.
+You activate it by defining the conditional define <TT
+CLASS="LITERAL"
+>DXGETTEXTDEBUG</TT
+>. You can also
+find the first occurence of this string in <TT
+CLASS="FILENAME"
+>gnugettext.pas</TT
+> - here you will find
+the following code:</P
+><TABLE
+BORDER="0"
+BGCOLOR="#E0E0E0"
+WIDTH="100%"
+><TR
+><TD
+><PRE
+CLASS="PROGRAMLISTING"
+>// DEBUGGING stuff. If the conditional define DXGETTEXTDEBUG is defined, it is activated.
+{ $define DXGETTEXTDEBUG}
+{$ifdef DXGETTEXTDEBUG}
+const
+  DebugLogFilename='c:\dxgettext-log.txt';
+{$endif}</PRE
+></TD
+></TR
+></TABLE
+><P
+>One way to activate the debugging log is to change <TABLE
+BORDER="0"
+BGCOLOR="#E0E0E0"
+WIDTH="100%"
+><TR
+><TD
+><PRE
+CLASS="PROGRAMLISTING"
+>{ $define DXGETTEXTDEBUG}</PRE
+></TD
+></TR
+></TABLE
+>
+to <TABLE
+BORDER="0"
+BGCOLOR="#E0E0E0"
+WIDTH="100%"
+><TR
+><TD
+><PRE
+CLASS="PROGRAMLISTING"
+>{$define DXGETTEXTDEBUG}</PRE
+></TD
+></TR
+></TABLE
+> by removing the space. As you can see, you can also here
+modify the location where the log-file is written to.</P
+><P
+>The log-file contains a lot of information. At the beginning, you will find very useful information about
+what settings the system uses:</P
+><TABLE
+BORDER="0"
+BGCOLOR="#E0E0E0"
+WIDTH="100%"
+><TR
+><TD
+><PRE
+CLASS="SCREEN"
+>Debug log started 21-08-2003 10:32:08
+
+UseLanguage(''); called
+LANG env variable is ''.
+Found Windows language code to be 'da_DK'.
+Language code that will be set is 'da_DK'.
+Plural form for the language was not found. English plurality system assumed.
+
+Text domain "default" is now located at "C:\source\sf\dxgettext-devel\dxgettext\sample\locale\"
+Changed text domain to "default"
+Globally, the NAME property of class TComponent is being ignored.
+Globally, the PROPNAME property of class TCollection is being ignored.
+Extra domain for resourcestring: delphi
+Globally, class TFont is being ignored.</PRE
+></TD
+></TR
+></TABLE
+><P
+>In this example, we can see that the program was running on a Danish language Windows, which uses
+the same plurality system as English. It also tells us where it will look for .mo files, and what ignore settings
+were specified. When <TT
+CLASS="LITERAL"
+>TranslateComponent()</TT
+> is used, it looks like this:</P
+><TABLE
+BORDER="0"
+BGCOLOR="#E0E0E0"
+WIDTH="100%"
+><TR
+><TD
+><PRE
+CLASS="SCREEN"
+>======================================================================
+TranslateComponent() was called for a component with name FormMain.
+A retranslator was created.
+----------------------------------------------------------------------
+TranslateProperties() was called for an object of class TFormMain with domain "".
+Reading .mo data from file 'C:\source\sf\dxgettext-devel\dxgettext\sample\locale\da_DK\LC_MESSAGES\default.mo'
+Found in .mo (default): ""-&#62;"Project-Id-Version: PACKAGE VERSIONPOT-Creation-Date: 2003-02-16 21:36PO-Revision-Date: 2003-02-17 23:01+0100Last-Translator: Lars B. Dybdahl &#60;lars@dybdahl.dk&#62;Language-Team:  &#60;&#62;MIME-Version: 1.0Content-Type: text/plain; charset=UTF-8Content-Transfer-Encoding: 8bit"
+GetTranslationProperty(CONTENT-TYPE: ) returns 'text/plain; charset=UTF-8'.
+Found in .mo (default): "GNU gettext sample application"-&#62;"GNU gettext eksempel"
+Found in .mo (default): "Click me"-&#62;"Klik mig"
+Found in .mo (default): "Click me"-&#62;"Klik mig"
+----------------------------------------------------------------------
+This is the first time, that this component has been translated. A retranslator component has been created for this component.
+======================================================================</PRE
+></TD
+></TR
+></TABLE
+><P
+>The log simply specifies exactly the filename from which translations are fetched, and it
+also specifies exactly, which strings are translated to what using which text domain. The "retranslator component"
+is a component that is added to the form to make it remember the untranslated properties, in case
+you want to do a language switch at runtime.</P
+><P
+>The first time that the application wants to translate an "OK" button, it looks like this:</P
+><TABLE
+BORDER="0"
+BGCOLOR="#E0E0E0"
+WIDTH="100%"
+><TR
+><TD
+><PRE
+CLASS="SCREEN"
+>Loaded resourcestring: OK
+Translation not found in .mo file (default) : "OK"
+Reading .mo data from file 'C:\source\sf\dxgettext-devel\dxgettext\sample\locale\da_DK\LC_MESSAGES\delphi.mo'
+Found in .mo (delphi): ""-&#62;"Project-Id-Version: Delphi 7 RTLPOT-Creation-Date: 2003-03-02 18:54PO-Revision-Date: 2003-03-03 00:31+0100Last-Translator: Lars B. Dybdahl &#62;lars@dybdahl.dk&#60;Language-Team: Dansk &#62;da@li.org&#60;MIME-Version: 1.0Content-Type: text/plain; charset=UTF-8Content-Transfer-Encoding: 8bit"
+GetTranslationProperty(CONTENT-TYPE: ) returns 'text/plain; charset=UTF-8'.
+Found in .mo (delphi): "OK"-&#62;"O.k."</PRE
+></TD
+></TR
+></TABLE
+><P
+>Here you can see, that it first searches <TT
+CLASS="FILENAME"
+>default.mo</TT
+> for a translation, but doesn't
+find one. Because it's a resourcestring translation, and because we specified the "delphi" textdomain to be searched
+for resourcestrings, it decides to try out delphi.mo. This file has not been opened, yet, and therefore
+the file is opened at this point, and the full filename is written to the log file. The first action when opening
+a new .mo file is to check wether the Content-Type is set to use utf-8. Once it found out that this is the case,
+it looks up "OK" in the delphi.mo file, and finds the Danish "O.k." translation.</P
+><P
+>Log-files can be huge if your program runs for a long time. If that happens, load the logfile into an editor
+that is capable of handling huge files, and search for the keywords that you saw in this section.</P
+><P
+>If your program breaks because a string property is translated that shouldn't, try to search for the
+Exception error message in the log file (error messages are translated, too, and are also mentioned in the
+log file). The last translation mentioned before that error mesage is probably the one that made your program fail.</P
+><P
+>When you have identified a property that should not be translated, you can either specify it globally
+that it should not be translated, by calling <TT
+CLASS="LITERAL"
+>TP_GlobalIgnoreClassProperty()</TT
+>, or you can
+disable it only for the next call to <TT
+CLASS="LITERAL"
+>TranslateComponent()</TT
+> using <TT
+CLASS="LITERAL"
+>TP_Ignore</TT
+>.</P
+></DIV
+><DIV
+CLASS="NAVFOOTER"
+><HR
+ALIGN="LEFT"
+WIDTH="100%"><TABLE
+SUMMARY="Footer navigation table"
+WIDTH="100%"
+BORDER="0"
+CELLPADDING="0"
+CELLSPACING="0"
+><TR
+><TD
+WIDTH="33%"
+ALIGN="left"
+VALIGN="top"
+><A
+HREF="gettextfunction.html"
+ACCESSKEY="P"
+>&#60;&#60;&#60; Previous</A
+></TD
+><TD
+WIDTH="34%"
+ALIGN="center"
+VALIGN="top"
+><A
+HREF="index.html"
+ACCESSKEY="H"
+>Home</A
+></TD
+><TD
+WIDTH="33%"
+ALIGN="right"
+VALIGN="top"
+><A
+HREF="directives.html"
+ACCESSKEY="N"
+>Next &#62;&#62;&#62;</A
+></TD
+></TR
+><TR
+><TD
+WIDTH="33%"
+ALIGN="left"
+VALIGN="top"
+>The better alternative to resourcestring</TD
+><TD
+WIDTH="34%"
+ALIGN="center"
+VALIGN="top"
+><A
+HREF="programmertasks.html"
+ACCESSKEY="U"
+>Up</A
+></TD
+><TD
+WIDTH="33%"
+ALIGN="right"
+VALIGN="top"
+>Directives</TD
+></TR
+></TABLE
+></DIV
+></BODY
+></HTML
+>

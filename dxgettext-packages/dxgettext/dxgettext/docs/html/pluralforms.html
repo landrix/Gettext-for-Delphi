@@ -1,0 +1,356 @@
+<!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.01//EN">
+<HTML
+><HEAD
+><TITLE
+>Plural forms</TITLE
+><META
+NAME="GENERATOR"
+CONTENT="Modular DocBook HTML Stylesheet Version 1.76b+
+"><LINK
+REL="HOME"
+TITLE="GNU gettext for Delphi, C++ Builder and Kylix 1.2 beta"
+HREF="index.html"><LINK
+REL="UP"
+TITLE="Action"
+HREF="howtochapter.html"><LINK
+REL="PREVIOUS"
+TITLE="Solving ambiguities"
+HREF="ambiguities.html"><LINK
+REL="NEXT"
+TITLE="Database applications"
+HREF="databaseapps.html"></HEAD
+><BODY
+CLASS="SECT1"
+BGCOLOR="#FFFFFF"
+TEXT="#000000"
+LINK="#0000FF"
+VLINK="#840084"
+ALINK="#0000FF"
+><DIV
+CLASS="NAVHEADER"
+><TABLE
+SUMMARY="Header navigation table"
+WIDTH="100%"
+BORDER="0"
+CELLPADDING="0"
+CELLSPACING="0"
+><TR
+><TH
+COLSPAN="3"
+ALIGN="center"
+>GNU gettext for Delphi, C++ Builder and Kylix 1.2 beta</TH
+></TR
+><TR
+><TD
+WIDTH="10%"
+ALIGN="left"
+VALIGN="bottom"
+><A
+HREF="ambiguities.html"
+ACCESSKEY="P"
+>&#60;&#60;&#60; Previous</A
+></TD
+><TD
+WIDTH="80%"
+ALIGN="center"
+VALIGN="bottom"
+>Action</TD
+><TD
+WIDTH="10%"
+ALIGN="right"
+VALIGN="bottom"
+><A
+HREF="databaseapps.html"
+ACCESSKEY="N"
+>Next &#62;&#62;&#62;</A
+></TD
+></TR
+></TABLE
+><HR
+ALIGN="LEFT"
+WIDTH="100%"></DIV
+><DIV
+CLASS="SECT1"
+><H1
+CLASS="SECT1"
+><A
+NAME="PLURALFORMS"
+></A
+>Plural forms</H1
+><P
+>The <TT
+CLASS="LITERAL"
+>ngettext()</TT
+> function is a very powerful function for handling plural forms.
+In order to understand this function, you should first understand the <TT
+CLASS="LITERAL"
+>gettext()</TT
+>
+function in <A
+HREF="api-gettext.html"
+>the Section called <I
+>function gettext(msg:widestring):widestring;</I
+> in the appendix called <I
+>API reference</I
+></A
+>&#62;.</P
+><P
+>A well known problem is to specify the number of files in a list of filenames. With this function,
+it can be done like this:</P
+><TABLE
+BORDER="0"
+BGCOLOR="#E0E0E0"
+WIDTH="100%"
+><TR
+><TD
+><PRE
+CLASS="PROGRAMLISTING"
+>LabelCount.Caption:=format(ngettext('%s file','%s files',filelist.Count),[filelist.Count]);</PRE
+></TD
+></TR
+></TABLE
+><P
+>If no translations are available, the <TT
+CLASS="LITERAL"
+>ngettext()</TT
+> function will return
+'%s file' if filelist.Count=1, and it will return '%s files' otherwise. The <TT
+CLASS="LITERAL"
+>format()</TT
+>
+function will then put the actual number of files in place of the %s, and the result will be something
+like '0 files', '1 file', '2 files', '3 files' etc.</P
+><P
+>If you would want to translate this to french, the entry in the po file should look like this:</P
+><TABLE
+BORDER="0"
+BGCOLOR="#E0E0E0"
+WIDTH="100%"
+><TR
+><TD
+><PRE
+CLASS="SCREEN"
+>msgid "%s file"
+msgid_plural "%s files"
+msgstr[0] "%s fichier"
+msgstr[1] "%s fichiers"</PRE
+></TD
+></TR
+></TABLE
+><P
+>The idea with ngettext is, that it doesn't just translate "%s file" to "%s fichier", but it takes
+into account, that the french use numbers differently. The English say "0 files", but the french use singular
+to describe the value zero: "0 fichier". So in the above example, the french version would be: '0 fichier',
+'1 fichier', '2 fichiers', '3 fichiers'...</P
+><P
+>Some languages are even more complicated. In Polish, there are three plural forms, and the translation would
+look like this:</P
+><TABLE
+BORDER="0"
+BGCOLOR="#E0E0E0"
+WIDTH="100%"
+><TR
+><TD
+><PRE
+CLASS="SCREEN"
+>msgid "%s file"
+msgid_plural "%s files"
+msgstr[0] "%s plik"
+msgstr[1] "%s pliki"
+msgstr[2] "%s plików"</PRE
+></TD
+></TR
+></TABLE
+><P
+>When counting files, it will become: '0 plików', '1 plik', '2 pliki', '3 pliki', '4 pliki', '5 plików'.
+Confused? Don't be. Just use <TT
+CLASS="LITERAL"
+>ngettext()</TT
+> wherever your text depends on a number,
+and the translator will provide the correct translations.</P
+><DIV
+CLASS="NOTE"
+><P
+></P
+><TABLE
+CLASS="NOTE"
+WIDTH="100%"
+BORDER="0"
+><TR
+><TD
+WIDTH="25"
+ALIGN="CENTER"
+VALIGN="TOP"
+><IMG
+SRC="./stylesheet-images/note.gif"
+HSPACE="5"
+ALT="Note"></TD
+><TH
+ALIGN="LEFT"
+VALIGN="CENTER"
+><B
+>Not all tools handle msgid_plural well</B
+></TH
+></TR
+><TR
+><TD
+>&nbsp;</TD
+><TD
+ALIGN="LEFT"
+VALIGN="TOP"
+><P
+>Please note, that not all tools handle msgid_plural well. This includes poEdit and KBabel.
+If a po file contains msgid_plural translations, you should use a text editor to edit it/translate.
+A good text editor for po files is <A
+HREF="http://unired.sf.net/"
+TARGET="_top"
+>UniRed</A
+>.</P
+></TD
+></TR
+></TABLE
+></DIV
+><DIV
+CLASS="NOTE"
+><P
+></P
+><TABLE
+CLASS="NOTE"
+WIDTH="100%"
+BORDER="0"
+><TR
+><TD
+WIDTH="25"
+ALIGN="CENTER"
+VALIGN="TOP"
+><IMG
+SRC="./stylesheet-images/note.gif"
+HSPACE="5"
+ALT="Note"></TD
+><TH
+ALIGN="LEFT"
+VALIGN="CENTER"
+><B
+>How does it work?</B
+></TH
+></TR
+><TR
+><TD
+>&nbsp;</TD
+><TD
+ALIGN="LEFT"
+VALIGN="TOP"
+><P
+>The ngettext and dngettext functions use gettext(singular+#0+plural) to get a #0-separated
+list of plural forms.</P
+></TD
+></TR
+></TABLE
+></DIV
+><P
+>Because some tools don't handle msgid_plural forms well, you should put all plural
+forms translations into a separate po file. You can do this using <TT
+CLASS="LITERAL"
+>dngettext()</TT
+>,
+which is equivalent to <TT
+CLASS="LITERAL"
+>ngettext()</TT
+> except that it takes a text domain name as
+first parameter:</P
+><TABLE
+BORDER="0"
+BGCOLOR="#E0E0E0"
+WIDTH="100%"
+><TR
+><TD
+><PRE
+CLASS="PROGRAMLISTING"
+>LabelCount.Caption:=format(dngettext('plurals','%s file','%s files',filelist.Count),[filelist.Count]);</PRE
+></TD
+></TR
+></TABLE
+><P
+>In this case, the source code string extraction will put the translation into a file
+named <TT
+CLASS="FILENAME"
+>plurals.po</TT
+>, and the <TT
+CLASS="LITERAL"
+>dngettext()</TT
+> function will
+retrieve the translations from <TT
+CLASS="FILENAME"
+>plurals.mo</TT
+>. You can then ask the translator
+to use notepad to translate the <TT
+CLASS="FILENAME"
+>plurals.po</TT
+> file. Notepad is not always
+very handy, but it's surely compatible with the msgid_plural notation.</P
+></DIV
+><DIV
+CLASS="NAVFOOTER"
+><HR
+ALIGN="LEFT"
+WIDTH="100%"><TABLE
+SUMMARY="Footer navigation table"
+WIDTH="100%"
+BORDER="0"
+CELLPADDING="0"
+CELLSPACING="0"
+><TR
+><TD
+WIDTH="33%"
+ALIGN="left"
+VALIGN="top"
+><A
+HREF="ambiguities.html"
+ACCESSKEY="P"
+>&#60;&#60;&#60; Previous</A
+></TD
+><TD
+WIDTH="34%"
+ALIGN="center"
+VALIGN="top"
+><A
+HREF="index.html"
+ACCESSKEY="H"
+>Home</A
+></TD
+><TD
+WIDTH="33%"
+ALIGN="right"
+VALIGN="top"
+><A
+HREF="databaseapps.html"
+ACCESSKEY="N"
+>Next &#62;&#62;&#62;</A
+></TD
+></TR
+><TR
+><TD
+WIDTH="33%"
+ALIGN="left"
+VALIGN="top"
+>Solving ambiguities</TD
+><TD
+WIDTH="34%"
+ALIGN="center"
+VALIGN="top"
+><A
+HREF="howtochapter.html"
+ACCESSKEY="U"
+>Up</A
+></TD
+><TD
+WIDTH="33%"
+ALIGN="right"
+VALIGN="top"
+>Database applications</TD
+></TR
+></TABLE
+></DIV
+></BODY
+></HTML
+>

@@ -1,0 +1,309 @@
+<!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.01//EN">
+<HTML
+><HEAD
+><TITLE
+>function gettext(msg:widestring):widestring;</TITLE
+><META
+NAME="GENERATOR"
+CONTENT="Modular DocBook HTML Stylesheet Version 1.76b+
+"><LINK
+REL="HOME"
+TITLE="GNU gettext for Delphi, C++ Builder and Kylix 1.2 beta"
+HREF="index.html"><LINK
+REL="UP"
+TITLE="API reference"
+HREF="apireference.html"><LINK
+REL="PREVIOUS"
+TITLE="function GetCurrentLanguage:string;"
+HREF="api-getcurrentlanguage.html"><LINK
+REL="NEXT"
+TITLE="function dgettext(Domain: string; MsgId: widestring): widestring;"
+HREF="api-dgettext.html"></HEAD
+><BODY
+CLASS="SECT1"
+BGCOLOR="#FFFFFF"
+TEXT="#000000"
+LINK="#0000FF"
+VLINK="#840084"
+ALINK="#0000FF"
+><DIV
+CLASS="NAVHEADER"
+><TABLE
+SUMMARY="Header navigation table"
+WIDTH="100%"
+BORDER="0"
+CELLPADDING="0"
+CELLSPACING="0"
+><TR
+><TH
+COLSPAN="3"
+ALIGN="center"
+>GNU gettext for Delphi, C++ Builder and Kylix 1.2 beta</TH
+></TR
+><TR
+><TD
+WIDTH="10%"
+ALIGN="left"
+VALIGN="bottom"
+><A
+HREF="api-getcurrentlanguage.html"
+ACCESSKEY="P"
+>&#60;&#60;&#60; Previous</A
+></TD
+><TD
+WIDTH="80%"
+ALIGN="center"
+VALIGN="bottom"
+>API reference</TD
+><TD
+WIDTH="10%"
+ALIGN="right"
+VALIGN="bottom"
+><A
+HREF="api-dgettext.html"
+ACCESSKEY="N"
+>Next &#62;&#62;&#62;</A
+></TD
+></TR
+></TABLE
+><HR
+ALIGN="LEFT"
+WIDTH="100%"></DIV
+><DIV
+CLASS="SECT1"
+><H1
+CLASS="SECT1"
+><A
+NAME="API-GETTEXT"
+></A
+>function gettext(msg:widestring):widestring;</H1
+><P
+>This function is the most important function of them all, and is the function
+that names GNU gettext. It takes a string as parameter and returns the translation
+of that string, if a translation can be found. It is used like this:</P
+><TABLE
+BORDER="0"
+BGCOLOR="#E0E0E0"
+WIDTH="100%"
+><TR
+><TD
+><PRE
+CLASS="PROGRAMLISTING"
+>MessageDlg (gettext('Hello, World'),mtInformation,[mbOK],0);</PRE
+></TD
+></TR
+></TABLE
+><P
+>Because the <TT
+CLASS="LITERAL"
+>_()</TT
+> function is the same as <TT
+CLASS="LITERAL"
+>gettext()</TT
+>,
+the line above is normally written like this:</P
+><TABLE
+BORDER="0"
+BGCOLOR="#E0E0E0"
+WIDTH="100%"
+><TR
+><TD
+><PRE
+CLASS="PROGRAMLISTING"
+>MessageDlg (_('Hello, World'),mtInformation,[mbOK],0);</PRE
+></TD
+></TR
+></TABLE
+><P
+>The string parameter should only contain ascii characters. If it contains non-ascii characters,
+the conversion from ansistring to widestring may be sensitive to current Windows locale.</P
+><P
+>The result value is a widestring. If you use this in context with the Delphi
+<TT
+CLASS="LITERAL"
+>string</TT
+> type (<TT
+CLASS="LITERAL"
+>ansistring</TT
+>), Delphi 6 and later
+will automatically convert the string types. The MessageDlg example above show this,
+the first parameter in <TT
+CLASS="LITERAL"
+>MessageDlg()</TT
+> is a <TT
+CLASS="LITERAL"
+>string</TT
+>,
+not a <TT
+CLASS="LITERAL"
+>widestring</TT
+>. Delphi converts between <TT
+CLASS="LITERAL"
+>string</TT
+> and
+<TT
+CLASS="LITERAL"
+>widestring</TT
+> using Windows API calls, and therefore converts perfectly
+to and from multibyte character sets. On Linux, the behaviour is identical.</P
+><P
+>The <TT
+CLASS="LITERAL"
+>gettext()</TT
+> functions looks up translations in the default.mo
+file (the default text domain) unless the <TT
+CLASS="LITERAL"
+>textdomain()</TT
+> procedure has
+been called.</P
+><DIV
+CLASS="NOTE"
+><P
+></P
+><TABLE
+CLASS="NOTE"
+WIDTH="100%"
+BORDER="0"
+><TR
+><TD
+WIDTH="25"
+ALIGN="CENTER"
+VALIGN="TOP"
+><IMG
+SRC="./stylesheet-images/note.gif"
+HSPACE="5"
+ALT="Note"></TD
+><TH
+ALIGN="LEFT"
+VALIGN="CENTER"
+><B
+>Special case: The empty string</B
+></TH
+></TR
+><TR
+><TD
+>&nbsp;</TD
+><TD
+ALIGN="LEFT"
+VALIGN="TOP"
+><P
+>Please note that you should never try to translate an empty string (<TT
+CLASS="LITERAL"
+>_('')</TT
+>).
+The translation of the empty string is the message header, which contains information about the translator,
+the character set, modification date etc.</P
+></TD
+></TR
+></TABLE
+></DIV
+><DIV
+CLASS="NOTE"
+><P
+></P
+><TABLE
+CLASS="NOTE"
+WIDTH="100%"
+BORDER="0"
+><TR
+><TD
+WIDTH="25"
+ALIGN="CENTER"
+VALIGN="TOP"
+><IMG
+SRC="./stylesheet-images/note.gif"
+HSPACE="5"
+ALT="Note"></TD
+><TH
+ALIGN="LEFT"
+VALIGN="CENTER"
+><B
+>Performance</B
+></TH
+></TR
+><TR
+><TD
+>&nbsp;</TD
+><TD
+ALIGN="LEFT"
+VALIGN="TOP"
+><P
+>The <TT
+CLASS="LITERAL"
+>gettext()</TT
+> function is very fast at looking up translations.
+It does a binary search on the translation data, which are sorted in binary,
+and the search is case sensitive and only a perfect match will give a translation.
+The translation files are memory mapped on Windows and read into memory on Linux, and
+therefore it doesn't take much time to find a translation. However, you should consider
+to store a translated value if you need it a lot of times, like when populating a big array.</P
+></TD
+></TR
+></TABLE
+></DIV
+></DIV
+><DIV
+CLASS="NAVFOOTER"
+><HR
+ALIGN="LEFT"
+WIDTH="100%"><TABLE
+SUMMARY="Footer navigation table"
+WIDTH="100%"
+BORDER="0"
+CELLPADDING="0"
+CELLSPACING="0"
+><TR
+><TD
+WIDTH="33%"
+ALIGN="left"
+VALIGN="top"
+><A
+HREF="api-getcurrentlanguage.html"
+ACCESSKEY="P"
+>&#60;&#60;&#60; Previous</A
+></TD
+><TD
+WIDTH="34%"
+ALIGN="center"
+VALIGN="top"
+><A
+HREF="index.html"
+ACCESSKEY="H"
+>Home</A
+></TD
+><TD
+WIDTH="33%"
+ALIGN="right"
+VALIGN="top"
+><A
+HREF="api-dgettext.html"
+ACCESSKEY="N"
+>Next &#62;&#62;&#62;</A
+></TD
+></TR
+><TR
+><TD
+WIDTH="33%"
+ALIGN="left"
+VALIGN="top"
+>function GetCurrentLanguage:string;</TD
+><TD
+WIDTH="34%"
+ALIGN="center"
+VALIGN="top"
+><A
+HREF="apireference.html"
+ACCESSKEY="U"
+>Up</A
+></TD
+><TD
+WIDTH="33%"
+ALIGN="right"
+VALIGN="top"
+>function dgettext(Domain: string; MsgId: widestring): widestring;</TD
+></TR
+></TABLE
+></DIV
+></BODY
+></HTML
+>

@@ -1,0 +1,194 @@
+<!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.01//EN">
+<HTML
+><HEAD
+><TITLE
+>The better alternative to resourcestring</TITLE
+><META
+NAME="GENERATOR"
+CONTENT="Modular DocBook HTML Stylesheet Version 1.76b+
+"><LINK
+REL="HOME"
+TITLE="GNU gettext for Delphi, C++ Builder and Kylix 1.2 beta"
+HREF="index.html"><LINK
+REL="UP"
+TITLE="Experienced programmers' topics"
+HREF="programmertasks.html"><LINK
+REL="PREVIOUS"
+TITLE="Text domain management"
+HREF="textdomainmanagement.html"><LINK
+REL="NEXT"
+TITLE="Debugging"
+HREF="debugging.html"></HEAD
+><BODY
+CLASS="SECT1"
+BGCOLOR="#FFFFFF"
+TEXT="#000000"
+LINK="#0000FF"
+VLINK="#840084"
+ALINK="#0000FF"
+><DIV
+CLASS="NAVHEADER"
+><TABLE
+SUMMARY="Header navigation table"
+WIDTH="100%"
+BORDER="0"
+CELLPADDING="0"
+CELLSPACING="0"
+><TR
+><TH
+COLSPAN="3"
+ALIGN="center"
+>GNU gettext for Delphi, C++ Builder and Kylix 1.2 beta</TH
+></TR
+><TR
+><TD
+WIDTH="10%"
+ALIGN="left"
+VALIGN="bottom"
+><A
+HREF="textdomainmanagement.html"
+ACCESSKEY="P"
+>&#60;&#60;&#60; Previous</A
+></TD
+><TD
+WIDTH="80%"
+ALIGN="center"
+VALIGN="bottom"
+>Experienced programmers' topics</TD
+><TD
+WIDTH="10%"
+ALIGN="right"
+VALIGN="bottom"
+><A
+HREF="debugging.html"
+ACCESSKEY="N"
+>Next &#62;&#62;&#62;</A
+></TD
+></TR
+></TABLE
+><HR
+ALIGN="LEFT"
+WIDTH="100%"></DIV
+><DIV
+CLASS="SECT1"
+><H1
+CLASS="SECT1"
+><A
+NAME="GETTEXTFUNCTION"
+></A
+>The better alternative to resourcestring</H1
+><P
+>Instead of using resourcestrings, there is a better alternative:</P
+><TABLE
+BORDER="0"
+BGCOLOR="#E0E0E0"
+WIDTH="100%"
+><TR
+><TD
+><PRE
+CLASS="PROGRAMLISTING"
+>ShowMessage (_('Action aborted'));</PRE
+></TD
+></TR
+></TABLE
+><P
+>The _() is a pascal function inside gnugettext.pas, which translates the text. It returns a widestring, unlike resourcestring, which is limited to ansistring. You can use _() together with ansistrings as you like, because Delphi automatically converts widestrings to strings when needed. Another benefit of this is that you can write comments, that the translator can use to make better translations:</P
+><TABLE
+BORDER="0"
+BGCOLOR="#E0E0E0"
+WIDTH="100%"
+><TR
+><TD
+><PRE
+CLASS="PROGRAMLISTING"
+>// Message shown to the user after the user clicks Abort button
+ShowMessage (_('Action aborted'));</PRE
+></TD
+></TR
+></TABLE
+><P
+>You can also write the comment in the same line:</P
+><TABLE
+BORDER="0"
+BGCOLOR="#E0E0E0"
+WIDTH="100%"
+><TR
+><TD
+><PRE
+CLASS="PROGRAMLISTING"
+>ShowMessage (_('Action aborted')); // Message to user when clicking Abort button</PRE
+></TD
+></TR
+></TABLE
+><P
+>But only the // style comment is supported - you cannot use { } or (* *) comments for this purpose.</P
+><P
+>Good comments normally lead to good translations. If the translator has a copy of the source code, poedit and kbabel can both show the location in the source code to the translator. This makes sense with _(), because the translator might get a good idea, what this is about, even if the translator isn't a programmer.</P
+><P
+>In other words, there are many reasons to use _() instead of resourcestrings. If you create a new application, don't even think about resourcestrings - just go directly for the _() solution.</P
+></DIV
+><DIV
+CLASS="NAVFOOTER"
+><HR
+ALIGN="LEFT"
+WIDTH="100%"><TABLE
+SUMMARY="Footer navigation table"
+WIDTH="100%"
+BORDER="0"
+CELLPADDING="0"
+CELLSPACING="0"
+><TR
+><TD
+WIDTH="33%"
+ALIGN="left"
+VALIGN="top"
+><A
+HREF="textdomainmanagement.html"
+ACCESSKEY="P"
+>&#60;&#60;&#60; Previous</A
+></TD
+><TD
+WIDTH="34%"
+ALIGN="center"
+VALIGN="top"
+><A
+HREF="index.html"
+ACCESSKEY="H"
+>Home</A
+></TD
+><TD
+WIDTH="33%"
+ALIGN="right"
+VALIGN="top"
+><A
+HREF="debugging.html"
+ACCESSKEY="N"
+>Next &#62;&#62;&#62;</A
+></TD
+></TR
+><TR
+><TD
+WIDTH="33%"
+ALIGN="left"
+VALIGN="top"
+>Text domain management</TD
+><TD
+WIDTH="34%"
+ALIGN="center"
+VALIGN="top"
+><A
+HREF="programmertasks.html"
+ACCESSKEY="U"
+>Up</A
+></TD
+><TD
+WIDTH="33%"
+ALIGN="right"
+VALIGN="top"
+>Debugging</TD
+></TR
+></TABLE
+></DIV
+></BODY
+></HTML
+>

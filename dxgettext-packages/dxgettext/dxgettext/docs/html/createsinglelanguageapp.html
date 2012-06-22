@@ -1,0 +1,221 @@
+<!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.01//EN">
+<HTML
+><HEAD
+><TITLE
+>Create a single language application with localized runtime library</TITLE
+><META
+NAME="GENERATOR"
+CONTENT="Modular DocBook HTML Stylesheet Version 1.76b+
+"><LINK
+REL="HOME"
+TITLE="GNU gettext for Delphi, C++ Builder and Kylix 1.2 beta"
+HREF="index.html"><LINK
+REL="UP"
+TITLE="Action"
+HREF="howtochapter.html"><LINK
+REL="PREVIOUS"
+TITLE="New program versions, old translation files"
+HREF="merging.html"><LINK
+REL="NEXT"
+TITLE="Uses clauses"
+HREF="usesclauses.html"></HEAD
+><BODY
+CLASS="SECT1"
+BGCOLOR="#FFFFFF"
+TEXT="#000000"
+LINK="#0000FF"
+VLINK="#840084"
+ALINK="#0000FF"
+><DIV
+CLASS="NAVHEADER"
+><TABLE
+SUMMARY="Header navigation table"
+WIDTH="100%"
+BORDER="0"
+CELLPADDING="0"
+CELLSPACING="0"
+><TR
+><TH
+COLSPAN="3"
+ALIGN="center"
+>GNU gettext for Delphi, C++ Builder and Kylix 1.2 beta</TH
+></TR
+><TR
+><TD
+WIDTH="10%"
+ALIGN="left"
+VALIGN="bottom"
+><A
+HREF="merging.html"
+ACCESSKEY="P"
+>&#60;&#60;&#60; Previous</A
+></TD
+><TD
+WIDTH="80%"
+ALIGN="center"
+VALIGN="bottom"
+>Action</TD
+><TD
+WIDTH="10%"
+ALIGN="right"
+VALIGN="bottom"
+><A
+HREF="usesclauses.html"
+ACCESSKEY="N"
+>Next &#62;&#62;&#62;</A
+></TD
+></TR
+></TABLE
+><HR
+ALIGN="LEFT"
+WIDTH="100%"></DIV
+><DIV
+CLASS="SECT1"
+><H1
+CLASS="SECT1"
+><A
+NAME="CREATESINGLELANGUAGEAPP"
+></A
+>Create a single language application with localized runtime library</H1
+><P
+>A typical problem with Delphi is to create a program in a non-English language,
+because the runtime library is in English. You can easily put a chinese caption on a button,
+but you cannot easily make the "Division by zero" message turn chinese,
+because that message is hidden deeply in the Delphi runtime library.
+With GNU gettext for Delphi, you can easily solve this problem:</P
+><P
+></P
+><OL
+TYPE="1"
+><LI
+><P
+>Install GNU gettext for Delphi</P
+></LI
+><LI
+><P
+>Add <TT
+CLASS="FILENAME"
+>gnugettext.pas</TT
+> to your project.</P
+></LI
+><LI
+><P
+>Get the <TT
+CLASS="FILENAME"
+>default.po</TT
+> file for the Delphi runtime libraries and
+translate it to your language. Maybe there is already a translation for your
+language <A
+HREF="http://dybdahl.dk/dxgettext/translations/"
+TARGET="_top"
+>online</A
+>.</P
+></LI
+><LI
+><P
+>Compile the default.po file to a default.mo file by clicking on it
+with the right mouse button and choose "compile to .mo file".</P
+></LI
+><LI
+><P
+>Create a <TT
+CLASS="FILENAME"
+>locale\LL\LC_MESSAGES</TT
+> subdirectory to where your exe
+file is, where LL is the two letter ISO 639 language code (see <A
+HREF="standards.html#ISO639"
+>the Section called <I
+>ISO 639 language codes</I
+> in the appendix called <I
+>Standards</I
+></A
+>&#62;) of the language that your
+program uses (da for danish, de for german etc.) and put your <TT
+CLASS="FILENAME"
+>default.mo</TT
+> file there.</P
+></LI
+><LI
+><P
+>Give your translations to us, so that other people may use your translation.</P
+></LI
+></OL
+><P
+>In order to have one .exe file that contains everything, including the translations,
+you can now click with the right mouse button on the executable, and choose "Embed translations".
+This will append the <TT
+CLASS="FILENAME"
+>default.mo</TT
+> file, that is in the
+<TT
+CLASS="FILENAME"
+>locale\LL\LC_MESSAGES</TT
+> subdirectory into the .exe file.
+Please note that you have to do this
+every time that you have compiled and generated a new .exe file.</P
+></DIV
+><DIV
+CLASS="NAVFOOTER"
+><HR
+ALIGN="LEFT"
+WIDTH="100%"><TABLE
+SUMMARY="Footer navigation table"
+WIDTH="100%"
+BORDER="0"
+CELLPADDING="0"
+CELLSPACING="0"
+><TR
+><TD
+WIDTH="33%"
+ALIGN="left"
+VALIGN="top"
+><A
+HREF="merging.html"
+ACCESSKEY="P"
+>&#60;&#60;&#60; Previous</A
+></TD
+><TD
+WIDTH="34%"
+ALIGN="center"
+VALIGN="top"
+><A
+HREF="index.html"
+ACCESSKEY="H"
+>Home</A
+></TD
+><TD
+WIDTH="33%"
+ALIGN="right"
+VALIGN="top"
+><A
+HREF="usesclauses.html"
+ACCESSKEY="N"
+>Next &#62;&#62;&#62;</A
+></TD
+></TR
+><TR
+><TD
+WIDTH="33%"
+ALIGN="left"
+VALIGN="top"
+>New program versions, old translation files</TD
+><TD
+WIDTH="34%"
+ALIGN="center"
+VALIGN="top"
+><A
+HREF="howtochapter.html"
+ACCESSKEY="U"
+>Up</A
+></TD
+><TD
+WIDTH="33%"
+ALIGN="right"
+VALIGN="top"
+>Uses clauses</TD
+></TR
+></TABLE
+></DIV
+></BODY
+></HTML
+>

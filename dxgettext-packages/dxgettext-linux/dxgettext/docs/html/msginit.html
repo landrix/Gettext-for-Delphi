@@ -1,0 +1,225 @@
+<!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.01//EN">
+<HTML
+><HEAD
+><TITLE
+>msginit</TITLE
+><META
+NAME="GENERATOR"
+CONTENT="Modular DocBook HTML Stylesheet Version 1.76b+
+"><LINK
+REL="HOME"
+TITLE="GNU gettext for Delphi, C++ Builder and Kylix 1.2 beta"
+HREF="index.html"><LINK
+REL="UP"
+TITLE="GNU Command-line tools reference"
+HREF="gnucommandlinereference.html"><LINK
+REL="PREVIOUS"
+TITLE="msghack"
+HREF="msghack.html"><LINK
+REL="NEXT"
+TITLE="msgmerge"
+HREF="msgmerge.html"></HEAD
+><BODY
+CLASS="SECT1"
+BGCOLOR="#FFFFFF"
+TEXT="#000000"
+LINK="#0000FF"
+VLINK="#840084"
+ALINK="#0000FF"
+><DIV
+CLASS="NAVHEADER"
+><TABLE
+SUMMARY="Header navigation table"
+WIDTH="100%"
+BORDER="0"
+CELLPADDING="0"
+CELLSPACING="0"
+><TR
+><TH
+COLSPAN="3"
+ALIGN="center"
+>GNU gettext for Delphi, C++ Builder and Kylix 1.2 beta</TH
+></TR
+><TR
+><TD
+WIDTH="10%"
+ALIGN="left"
+VALIGN="bottom"
+><A
+HREF="msghack.html"
+ACCESSKEY="P"
+>&#60;&#60;&#60; Previous</A
+></TD
+><TD
+WIDTH="80%"
+ALIGN="center"
+VALIGN="bottom"
+>GNU Command-line tools reference</TD
+><TD
+WIDTH="10%"
+ALIGN="right"
+VALIGN="bottom"
+><A
+HREF="msgmerge.html"
+ACCESSKEY="N"
+>Next &#62;&#62;&#62;</A
+></TD
+></TR
+></TABLE
+><HR
+ALIGN="LEFT"
+WIDTH="100%"></DIV
+><DIV
+CLASS="SECT1"
+><H1
+CLASS="SECT1"
+><A
+NAME="MSGINIT"
+></A
+>msginit</H1
+><TABLE
+BORDER="0"
+BGCOLOR="#E0E0E0"
+WIDTH="100%"
+><TR
+><TD
+><PRE
+CLASS="SCREEN"
+>NAME
+       msginit - initialize a message catalog
+
+SYNOPSIS
+       msginit [OPTION]
+
+DESCRIPTION
+       Creates	a  new	PO file, initializing the meta information with values
+       from the user's environment.
+
+       Mandatory arguments to long options are	mandatory  for	short  options
+       too.
+
+   Input file location:
+       -i, --input=INPUTFILE
+	      input POT file
+
+       If  no  input  file is given, the current directory is searched for the
+       POT file.  If it is -, standard input is read.
+
+   Output file location:
+       -o, --output-file=FILE
+	      write output to specified PO file
+
+       If no output file is given, it depends on the --locale  option  or  the
+       user's locale setting.  If it is -, the results are written to standard
+       output.
+
+   Output details:
+       -l, --locale=LL_CC
+	      set target locale
+
+       --no-translator
+	      assume the PO file is automatically generated
+
+       -w, --width=NUMBER
+	      set output page width
+
+       --no-wrap
+	      do not break long message lines, longer  than  the  output  page
+	      width, into several lines
+
+   Informative output:
+       -h, --help
+	      display this help and exit
+
+       -V, --version
+	      output version information and exit
+
+AUTHOR
+       Written by Bruno Haible.
+
+REPORTING BUGS
+       Report bugs to &#60;bug-gnu-gettext@gnu.org&#62;.
+
+COPYRIGHT
+       Copyright (C) 2001-2002 Free Software Foundation, Inc.
+       This is free software; see the source for copying conditions.  There is
+       NO warranty; not even for MERCHANTABILITY or FITNESS FOR	 A  PARTICULAR
+       PURPOSE.
+
+SEE ALSO
+       The  full  documentation for msginit is maintained as a Texinfo manual.
+       If the info and msginit programs are properly installed at  your	 site,
+       the command
+
+	      info msginit
+
+       should give you access to the complete manual.</PRE
+></TD
+></TR
+></TABLE
+></DIV
+><DIV
+CLASS="NAVFOOTER"
+><HR
+ALIGN="LEFT"
+WIDTH="100%"><TABLE
+SUMMARY="Footer navigation table"
+WIDTH="100%"
+BORDER="0"
+CELLPADDING="0"
+CELLSPACING="0"
+><TR
+><TD
+WIDTH="33%"
+ALIGN="left"
+VALIGN="top"
+><A
+HREF="msghack.html"
+ACCESSKEY="P"
+>&#60;&#60;&#60; Previous</A
+></TD
+><TD
+WIDTH="34%"
+ALIGN="center"
+VALIGN="top"
+><A
+HREF="index.html"
+ACCESSKEY="H"
+>Home</A
+></TD
+><TD
+WIDTH="33%"
+ALIGN="right"
+VALIGN="top"
+><A
+HREF="msgmerge.html"
+ACCESSKEY="N"
+>Next &#62;&#62;&#62;</A
+></TD
+></TR
+><TR
+><TD
+WIDTH="33%"
+ALIGN="left"
+VALIGN="top"
+>msghack</TD
+><TD
+WIDTH="34%"
+ALIGN="center"
+VALIGN="top"
+><A
+HREF="gnucommandlinereference.html"
+ACCESSKEY="U"
+>Up</A
+></TD
+><TD
+WIDTH="33%"
+ALIGN="right"
+VALIGN="top"
+>msgmerge</TD
+></TR
+></TABLE
+></DIV
+></BODY
+></HTML
+>

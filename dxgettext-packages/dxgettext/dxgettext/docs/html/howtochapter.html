@@ -1,0 +1,308 @@
+<!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.01//EN">
+<HTML
+><HEAD
+><TITLE
+>Action</TITLE
+><META
+NAME="GENERATOR"
+CONTENT="Modular DocBook HTML Stylesheet Version 1.76b+
+"><LINK
+REL="HOME"
+TITLE="GNU gettext for Delphi, C++ Builder and Kylix 1.2 beta"
+HREF="index.html"><LINK
+REL="PREVIOUS"
+TITLE="Forms"
+HREF="forms.html"><LINK
+REL="NEXT"
+TITLE="New program versions, old translation files"
+HREF="merging.html"></HEAD
+><BODY
+CLASS="CHAPTER"
+BGCOLOR="#FFFFFF"
+TEXT="#000000"
+LINK="#0000FF"
+VLINK="#840084"
+ALINK="#0000FF"
+><DIV
+CLASS="NAVHEADER"
+><TABLE
+SUMMARY="Header navigation table"
+WIDTH="100%"
+BORDER="0"
+CELLPADDING="0"
+CELLSPACING="0"
+><TR
+><TH
+COLSPAN="3"
+ALIGN="center"
+>GNU gettext for Delphi, C++ Builder and Kylix 1.2 beta</TH
+></TR
+><TR
+><TD
+WIDTH="10%"
+ALIGN="left"
+VALIGN="bottom"
+><A
+HREF="forms.html"
+ACCESSKEY="P"
+>&#60;&#60;&#60; Previous</A
+></TD
+><TD
+WIDTH="80%"
+ALIGN="center"
+VALIGN="bottom"
+></TD
+><TD
+WIDTH="10%"
+ALIGN="right"
+VALIGN="bottom"
+><A
+HREF="merging.html"
+ACCESSKEY="N"
+>Next &#62;&#62;&#62;</A
+></TD
+></TR
+></TABLE
+><HR
+ALIGN="LEFT"
+WIDTH="100%"></DIV
+><DIV
+CLASS="CHAPTER"
+><H1
+><A
+NAME="HOWTOCHAPTER"
+></A
+>Action</H1
+><DIV
+CLASS="SECT1"
+><H1
+CLASS="SECT1"
+><A
+NAME="CREATEYOURFIRST"
+></A
+>Localize your first application</H1
+><P
+>Assuming that you have created a simple application in Delphi, this
+section will show you how to localize it.</P
+><P
+>First, you must add <TT
+CLASS="LITERAL"
+>gnugettext.pas</TT
+> to your project.
+It is recommended to copy this file to your project directory, making it
+part of your application.</P
+><P
+>In order to translate your forms and datamodules, you must add
+<TT
+CLASS="LITERAL"
+>gnugettext</TT
+> to the uses-clause of all units that have a
+form or datamodule, and put this line into the OnCreate event of your forms
+and datamodules:</P
+><TABLE
+BORDER="0"
+BGCOLOR="#E0E0E0"
+WIDTH="100%"
+><TR
+><TD
+><PRE
+CLASS="PROGRAMLISTING"
+>TranslateComponent (self);</PRE
+></TD
+></TR
+></TABLE
+><P
+>In this line, <TT
+CLASS="LITERAL"
+>self</TT
+> refers to the form or datamodule
+to which this event belongs. The <TT
+CLASS="LITERAL"
+>TranslateComponent</TT
+>
+procedure then translates all string properties of all components on the
+form or datamodule. Please note that all subcomponents are translated - for
+a TDataset component this includes the TField subcomponents etc.</P
+><P
+>Unfortunately, some string properties will raise an Exception or create
+unwanted side effects if they
+are translated. For instance, if you translate the IndexFieldName property
+of a TClientDataset to something that is not the name of an index, it will
+raise an Exception. In order to instruct the
+<TT
+CLASS="LITERAL"
+>TranslateComponent</TT
+> procedure that it should not translate
+certain string properties, you should add procedure calls like the ones
+specified in <A
+HREF="handlingclasses.html"
+>the appendix called <I
+>How to handle specific classes</I
+></A
+>&#62; just before the
+<TT
+CLASS="LITERAL"
+>TranslateComponent(self)</TT
+> call in your main form
+or in the .dpr file. You can see the source code for a small, localized
+application in <A
+HREF="helloworldsource.html"
+>the appendix called <I
+>"Hello, World" source code</I
+></A
+>&#62;</P
+><P
+>Now, you must ensure that all strings inside your source code are
+translated properly. If you have a line like this:</P
+><TABLE
+BORDER="0"
+BGCOLOR="#E0E0E0"
+WIDTH="100%"
+><TR
+><TD
+><PRE
+CLASS="PROGRAMLISTING"
+>ShowMessage ('Hello, World');</PRE
+></TD
+></TR
+></TABLE
+><P
+>Then you must add <TT
+CLASS="LITERAL"
+>_()</TT
+> around the string, like
+this:</P
+><TABLE
+BORDER="0"
+BGCOLOR="#E0E0E0"
+WIDTH="100%"
+><TR
+><TD
+><PRE
+CLASS="PROGRAMLISTING"
+>ShowMessage (_('Hello, World'));</PRE
+></TD
+></TR
+></TABLE
+><P
+>Now your program is internationalized, but it hasn't been localized,
+yet. This means that your program can run in another language, if a
+translation would be present, but we didn't make a translation, yet. In
+order to make a translation, we have to get a list of messages first.</P
+><DIV
+CLASS="FIGURE"
+><A
+NAME="SCREENSHOT-EXTRACTFILES"
+></A
+><P
+><IMG
+SRC="screenshot-extractfiles.png"></P
+><P
+><B
+>Figure 1. Explorer integration of string extraction</B
+></P
+></DIV
+><P
+>In order to get this list, click with the right mouse button on the
+file folder that contains your Delphi source code, and choose "Extract
+translations to template", just as you can see it in <A
+HREF="howtochapter.html#SCREENSHOT-EXTRACTFILES"
+>Figure 1</A
+>&#62;.</P
+><P
+>This will create a file named default.po with all the texts to be translated. Because it has no translations
+in it, it is named a "translation template". You should download <A
+HREF="http://poedit.sf.net/"
+TARGET="_top"
+>poEdit</A
+>
+and use this program to translate the messages in the po file.</P
+><P
+>When you have translated the po file, click with your right mouse button on the filename in
+the Windows Explorer, and choose "Compile to mo file". This will compile the po file and generate the
+binary mo file needed by your application. If your application is located in
+<TT
+CLASS="LITERAL"
+>c:\my\program\path\myprogram.exe</TT
+>, you must put the default.mo file in
+<TT
+CLASS="LITERAL"
+>c:\my\program\path\locale\##\LC_MESSAGES\default.mo</TT
+>. In this path,
+<TT
+CLASS="LITERAL"
+>##</TT
+> represents the two-letter language code that you can find in <A
+HREF="standards.html#ISO639"
+>the Section called <I
+>ISO 639 language codes</I
+> in the appendix called <I
+>Standards</I
+></A
+>&#62;.</P
+><P
+>That should be it - your application now uses the translation when the Windows settings
+corresponds to the two-letter language code that you chose.</P
+></DIV
+></DIV
+><DIV
+CLASS="NAVFOOTER"
+><HR
+ALIGN="LEFT"
+WIDTH="100%"><TABLE
+SUMMARY="Footer navigation table"
+WIDTH="100%"
+BORDER="0"
+CELLPADDING="0"
+CELLSPACING="0"
+><TR
+><TD
+WIDTH="33%"
+ALIGN="left"
+VALIGN="top"
+><A
+HREF="forms.html"
+ACCESSKEY="P"
+>&#60;&#60;&#60; Previous</A
+></TD
+><TD
+WIDTH="34%"
+ALIGN="center"
+VALIGN="top"
+><A
+HREF="index.html"
+ACCESSKEY="H"
+>Home</A
+></TD
+><TD
+WIDTH="33%"
+ALIGN="right"
+VALIGN="top"
+><A
+HREF="merging.html"
+ACCESSKEY="N"
+>Next &#62;&#62;&#62;</A
+></TD
+></TR
+><TR
+><TD
+WIDTH="33%"
+ALIGN="left"
+VALIGN="top"
+>Forms</TD
+><TD
+WIDTH="34%"
+ALIGN="center"
+VALIGN="top"
+>&nbsp;</TD
+><TD
+WIDTH="33%"
+ALIGN="right"
+VALIGN="top"
+>New program versions, old translation files</TD
+></TR
+></TABLE
+></DIV
+></BODY
+></HTML
+>

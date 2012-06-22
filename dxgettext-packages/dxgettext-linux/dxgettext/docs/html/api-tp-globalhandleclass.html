@@ -1,0 +1,183 @@
+<!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.01//EN">
+<HTML
+><HEAD
+><TITLE
+>procedure TP_GlobalHandleClass (HClass:TClass;Handler:TTranslator);</TITLE
+><META
+NAME="GENERATOR"
+CONTENT="Modular DocBook HTML Stylesheet Version 1.76b+
+"><LINK
+REL="HOME"
+TITLE="GNU gettext for Delphi, C++ Builder and Kylix 1.2 beta"
+HREF="index.html"><LINK
+REL="UP"
+TITLE="API reference"
+HREF="apireference.html"><LINK
+REL="PREVIOUS"
+TITLE="procedure TP_GlobalIgnoreClassProperty (IgnClass:TClass;propertyname:string);"
+HREF="api-tp-globalignoreclassproperty.html"><LINK
+REL="NEXT"
+TITLE='"Hello, World" source code'
+HREF="helloworldsource.html"></HEAD
+><BODY
+CLASS="SECT1"
+BGCOLOR="#FFFFFF"
+TEXT="#000000"
+LINK="#0000FF"
+VLINK="#840084"
+ALINK="#0000FF"
+><DIV
+CLASS="NAVHEADER"
+><TABLE
+SUMMARY="Header navigation table"
+WIDTH="100%"
+BORDER="0"
+CELLPADDING="0"
+CELLSPACING="0"
+><TR
+><TH
+COLSPAN="3"
+ALIGN="center"
+>GNU gettext for Delphi, C++ Builder and Kylix 1.2 beta</TH
+></TR
+><TR
+><TD
+WIDTH="10%"
+ALIGN="left"
+VALIGN="bottom"
+><A
+HREF="api-tp-globalignoreclassproperty.html"
+ACCESSKEY="P"
+>&#60;&#60;&#60; Previous</A
+></TD
+><TD
+WIDTH="80%"
+ALIGN="center"
+VALIGN="bottom"
+>API reference</TD
+><TD
+WIDTH="10%"
+ALIGN="right"
+VALIGN="bottom"
+><A
+HREF="helloworldsource.html"
+ACCESSKEY="N"
+>Next &#62;&#62;&#62;</A
+></TD
+></TR
+></TABLE
+><HR
+ALIGN="LEFT"
+WIDTH="100%"></DIV
+><DIV
+CLASS="SECT1"
+><H1
+CLASS="SECT1"
+><A
+NAME="API-TP-GLOBALHANDLECLASS"
+></A
+>procedure TP_GlobalHandleClass (HClass:TClass;Handler:TTranslator);</H1
+><P
+>This procedure makes it possible implement another translation handling of a class
+than what you can control with
+<TT
+CLASS="LITERAL"
+>TranslateProperties()</TT
+>, <TT
+CLASS="LITERAL"
+>TranslateComponent()</TT
+>
+and the TP_* procedures. For instance, if you create a new class that does not use
+the <TT
+CLASS="LITERAL"
+>published</TT
+> keyword, its properties cannot be iterated by
+<TT
+CLASS="LITERAL"
+>TranslateProperties()</TT
+> and <TT
+CLASS="LITERAL"
+>TranslateComponent()</TT
+>.
+Another example is, when you get 3rd party components, that fail when you translate it's
+properties, but if you do something special to them, they translate well.</P
+><P
+>Basically, if you cannot translate a component using
+<TT
+CLASS="LITERAL"
+>TranslateComponent</TT
+>, but you can write a procedure yourself
+that can, then use <TT
+CLASS="LITERAL"
+>TP_GlobalHandleClass</TT
+> to make
+<TT
+CLASS="LITERAL"
+>TranslateComponent</TT
+> use your procedure.</P
+></DIV
+><DIV
+CLASS="NAVFOOTER"
+><HR
+ALIGN="LEFT"
+WIDTH="100%"><TABLE
+SUMMARY="Footer navigation table"
+WIDTH="100%"
+BORDER="0"
+CELLPADDING="0"
+CELLSPACING="0"
+><TR
+><TD
+WIDTH="33%"
+ALIGN="left"
+VALIGN="top"
+><A
+HREF="api-tp-globalignoreclassproperty.html"
+ACCESSKEY="P"
+>&#60;&#60;&#60; Previous</A
+></TD
+><TD
+WIDTH="34%"
+ALIGN="center"
+VALIGN="top"
+><A
+HREF="index.html"
+ACCESSKEY="H"
+>Home</A
+></TD
+><TD
+WIDTH="33%"
+ALIGN="right"
+VALIGN="top"
+><A
+HREF="helloworldsource.html"
+ACCESSKEY="N"
+>Next &#62;&#62;&#62;</A
+></TD
+></TR
+><TR
+><TD
+WIDTH="33%"
+ALIGN="left"
+VALIGN="top"
+>procedure TP_GlobalIgnoreClassProperty (IgnClass:TClass;propertyname:string);</TD
+><TD
+WIDTH="34%"
+ALIGN="center"
+VALIGN="top"
+><A
+HREF="apireference.html"
+ACCESSKEY="U"
+>Up</A
+></TD
+><TD
+WIDTH="33%"
+ALIGN="right"
+VALIGN="top"
+>"Hello, World" source code</TD
+></TR
+></TABLE
+></DIV
+></BODY
+></HTML
+>

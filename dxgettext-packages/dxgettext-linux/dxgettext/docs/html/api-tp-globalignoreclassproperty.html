@@ -1,0 +1,180 @@
+<!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.01//EN">
+<HTML
+><HEAD
+><TITLE
+>procedure TP_GlobalIgnoreClassProperty (IgnClass:TClass;propertyname:string);</TITLE
+><META
+NAME="GENERATOR"
+CONTENT="Modular DocBook HTML Stylesheet Version 1.76b+
+"><LINK
+REL="HOME"
+TITLE="GNU gettext for Delphi, C++ Builder and Kylix 1.2 beta"
+HREF="index.html"><LINK
+REL="UP"
+TITLE="API reference"
+HREF="apireference.html"><LINK
+REL="PREVIOUS"
+TITLE="procedure TP_GlobalIgnoreClass (IgnClass:TClass);"
+HREF="api-tp-globalignoreclass.html"><LINK
+REL="NEXT"
+TITLE="procedure TP_GlobalHandleClass (HClass:TClass;Handler:TTranslator);"
+HREF="api-tp-globalhandleclass.html"></HEAD
+><BODY
+CLASS="SECT1"
+BGCOLOR="#FFFFFF"
+TEXT="#000000"
+LINK="#0000FF"
+VLINK="#840084"
+ALINK="#0000FF"
+><DIV
+CLASS="NAVHEADER"
+><TABLE
+SUMMARY="Header navigation table"
+WIDTH="100%"
+BORDER="0"
+CELLPADDING="0"
+CELLSPACING="0"
+><TR
+><TH
+COLSPAN="3"
+ALIGN="center"
+>GNU gettext for Delphi, C++ Builder and Kylix 1.2 beta</TH
+></TR
+><TR
+><TD
+WIDTH="10%"
+ALIGN="left"
+VALIGN="bottom"
+><A
+HREF="api-tp-globalignoreclass.html"
+ACCESSKEY="P"
+>&#60;&#60;&#60; Previous</A
+></TD
+><TD
+WIDTH="80%"
+ALIGN="center"
+VALIGN="bottom"
+>API reference</TD
+><TD
+WIDTH="10%"
+ALIGN="right"
+VALIGN="bottom"
+><A
+HREF="api-tp-globalhandleclass.html"
+ACCESSKEY="N"
+>Next &#62;&#62;&#62;</A
+></TD
+></TR
+></TABLE
+><HR
+ALIGN="LEFT"
+WIDTH="100%"></DIV
+><DIV
+CLASS="SECT1"
+><H1
+CLASS="SECT1"
+><A
+NAME="API-TP-GLOBALIGNORECLASSPROPERTY"
+></A
+>procedure TP_GlobalIgnoreClassProperty (IgnClass:TClass;propertyname:string);</H1
+><P
+>This procedure puts one property of a class on a global ignore list,
+so that this property won't be translated by
+<TT
+CLASS="LITERAL"
+>TranslateProperties()</TT
+> or <TT
+CLASS="LITERAL"
+>TranslateComponent()</TT
+>
+for all objects of this type or of a type that descends from this type.
+For instance, it is not very useful to have TField.Fieldname translated, and therefore this
+line would make a lot of sense in most database applications:</P
+><TABLE
+BORDER="0"
+BGCOLOR="#E0E0E0"
+WIDTH="100%"
+><TR
+><TD
+><PRE
+CLASS="PROGRAMLISTING"
+>TP_GlobalIgnoreClassProperty (TField,'Fieldname');</PRE
+></TD
+></TR
+></TABLE
+><P
+>A good place to put this line is in the .dpr file. See <A
+HREF="helloworldsource.html#HELLOWORLD-DPR"
+>the Section called <I
+>Sample.dpr</I
+> in the appendix called <I
+>"Hello, World" source code</I
+></A
+>&#62; for
+further information.</P
+></DIV
+><DIV
+CLASS="NAVFOOTER"
+><HR
+ALIGN="LEFT"
+WIDTH="100%"><TABLE
+SUMMARY="Footer navigation table"
+WIDTH="100%"
+BORDER="0"
+CELLPADDING="0"
+CELLSPACING="0"
+><TR
+><TD
+WIDTH="33%"
+ALIGN="left"
+VALIGN="top"
+><A
+HREF="api-tp-globalignoreclass.html"
+ACCESSKEY="P"
+>&#60;&#60;&#60; Previous</A
+></TD
+><TD
+WIDTH="34%"
+ALIGN="center"
+VALIGN="top"
+><A
+HREF="index.html"
+ACCESSKEY="H"
+>Home</A
+></TD
+><TD
+WIDTH="33%"
+ALIGN="right"
+VALIGN="top"
+><A
+HREF="api-tp-globalhandleclass.html"
+ACCESSKEY="N"
+>Next &#62;&#62;&#62;</A
+></TD
+></TR
+><TR
+><TD
+WIDTH="33%"
+ALIGN="left"
+VALIGN="top"
+>procedure TP_GlobalIgnoreClass (IgnClass:TClass);</TD
+><TD
+WIDTH="34%"
+ALIGN="center"
+VALIGN="top"
+><A
+HREF="apireference.html"
+ACCESSKEY="U"
+>Up</A
+></TD
+><TD
+WIDTH="33%"
+ALIGN="right"
+VALIGN="top"
+>procedure TP_GlobalHandleClass (HClass:TClass;Handler:TTranslator);</TD
+></TR
+></TABLE
+></DIV
+></BODY
+></HTML
+>

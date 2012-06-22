@@ -1,0 +1,196 @@
+<!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.01//EN">
+<HTML
+><HEAD
+><TITLE
+>procedure bindtextdomainToFile (Domain,Filename:string);</TITLE
+><META
+NAME="GENERATOR"
+CONTENT="Modular DocBook HTML Stylesheet Version 1.76b+
+"><LINK
+REL="HOME"
+TITLE="GNU gettext for Delphi, C++ Builder and Kylix 1.2 beta"
+HREF="index.html"><LINK
+REL="UP"
+TITLE="API reference"
+HREF="apireference.html"><LINK
+REL="PREVIOUS"
+TITLE="procedure bindtextdomain(Domain:string; Directory:string);"
+HREF="api-bindtextdomain.html"><LINK
+REL="NEXT"
+TITLE="procedure GetListOfLanguages (domain:string; list:TStrings);"
+HREF="api-getlistoflanguages.html"></HEAD
+><BODY
+CLASS="SECT1"
+BGCOLOR="#FFFFFF"
+TEXT="#000000"
+LINK="#0000FF"
+VLINK="#840084"
+ALINK="#0000FF"
+><DIV
+CLASS="NAVHEADER"
+><TABLE
+SUMMARY="Header navigation table"
+WIDTH="100%"
+BORDER="0"
+CELLPADDING="0"
+CELLSPACING="0"
+><TR
+><TH
+COLSPAN="3"
+ALIGN="center"
+>GNU gettext for Delphi, C++ Builder and Kylix 1.2 beta</TH
+></TR
+><TR
+><TD
+WIDTH="10%"
+ALIGN="left"
+VALIGN="bottom"
+><A
+HREF="api-bindtextdomain.html"
+ACCESSKEY="P"
+>&#60;&#60;&#60; Previous</A
+></TD
+><TD
+WIDTH="80%"
+ALIGN="center"
+VALIGN="bottom"
+>API reference</TD
+><TD
+WIDTH="10%"
+ALIGN="right"
+VALIGN="bottom"
+><A
+HREF="api-getlistoflanguages.html"
+ACCESSKEY="N"
+>Next &#62;&#62;&#62;</A
+></TD
+></TR
+></TABLE
+><HR
+ALIGN="LEFT"
+WIDTH="100%"></DIV
+><DIV
+CLASS="SECT1"
+><H1
+CLASS="SECT1"
+><A
+NAME="API-BINDTEXTDOMAINTOFILE"
+></A
+>procedure bindtextdomainToFile (Domain,Filename:string);</H1
+><P
+>If you want to use <TT
+CLASS="LITERAL"
+>gettext()</TT
+> as a string translation table that is independent of
+languages, you might want to bind a domain to a specific file on the harddisk. For instance, you might
+want to translate the ISO language codes to English language names. This could be done like this:</P
+><TABLE
+BORDER="0"
+BGCOLOR="#E0E0E0"
+WIDTH="100%"
+><TR
+><TD
+><PRE
+CLASS="PROGRAMLISTING"
+>function GetLanguageName (isocode:string):string;
+var
+  EnglishLanguageName:string;
+begin
+  bindtextdomainToFile ('isocodes','c:\isocodes.mo');
+  EnglishLanguageName:=dgettext('isocodes',isocode);
+  Result:=dgettext('languagenames',EnglishLanguageName);
+end;</PRE
+></TD
+></TR
+></TABLE
+><P
+>There are many ways this can be used. For instance, the <TT
+CLASS="LITERAL"
+>msgshowheader</TT
+> command line
+tool uses <TT
+CLASS="LITERAL"
+>bindtextdomainToFile()</TT
+> to fetch the header from a specific file that is given
+as parameter. It is done something like this:</P
+><TABLE
+BORDER="0"
+BGCOLOR="#E0E0E0"
+WIDTH="100%"
+><TR
+><TD
+><PRE
+CLASS="PROGRAMLISTING"
+>bindtextdomainToFile ('parameterfile',paramstr(1));
+writeln (dgettext('parameterfile',''));</PRE
+></TD
+></TR
+></TABLE
+><P
+>The translation of the empty string is always the header.</P
+></DIV
+><DIV
+CLASS="NAVFOOTER"
+><HR
+ALIGN="LEFT"
+WIDTH="100%"><TABLE
+SUMMARY="Footer navigation table"
+WIDTH="100%"
+BORDER="0"
+CELLPADDING="0"
+CELLSPACING="0"
+><TR
+><TD
+WIDTH="33%"
+ALIGN="left"
+VALIGN="top"
+><A
+HREF="api-bindtextdomain.html"
+ACCESSKEY="P"
+>&#60;&#60;&#60; Previous</A
+></TD
+><TD
+WIDTH="34%"
+ALIGN="center"
+VALIGN="top"
+><A
+HREF="index.html"
+ACCESSKEY="H"
+>Home</A
+></TD
+><TD
+WIDTH="33%"
+ALIGN="right"
+VALIGN="top"
+><A
+HREF="api-getlistoflanguages.html"
+ACCESSKEY="N"
+>Next &#62;&#62;&#62;</A
+></TD
+></TR
+><TR
+><TD
+WIDTH="33%"
+ALIGN="left"
+VALIGN="top"
+>procedure bindtextdomain(Domain:string; Directory:string);</TD
+><TD
+WIDTH="34%"
+ALIGN="center"
+VALIGN="top"
+><A
+HREF="apireference.html"
+ACCESSKEY="U"
+>Up</A
+></TD
+><TD
+WIDTH="33%"
+ALIGN="right"
+VALIGN="top"
+>procedure GetListOfLanguages (domain:string; list:TStrings);</TD
+></TR
+></TABLE
+></DIV
+></BODY
+></HTML
+>

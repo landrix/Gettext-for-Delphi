@@ -1,0 +1,254 @@
+<!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.01//EN">
+<HTML
+><HEAD
+><TITLE
+>procedure UseLanguage(LanguageCode: string);</TITLE
+><META
+NAME="GENERATOR"
+CONTENT="Modular DocBook HTML Stylesheet Version 1.76b+
+"><LINK
+REL="HOME"
+TITLE="GNU gettext for Delphi, C++ Builder and Kylix 1.2 beta"
+HREF="index.html"><LINK
+REL="UP"
+TITLE="API reference"
+HREF="apireference.html"><LINK
+REL="PREVIOUS"
+TITLE="TGnuGettextInstance class"
+HREF="api-tgnugettextinstance.html"><LINK
+REL="NEXT"
+TITLE="function _(msg:widestring):widestring;"
+HREF="api-underscore.html"></HEAD
+><BODY
+CLASS="SECT1"
+BGCOLOR="#FFFFFF"
+TEXT="#000000"
+LINK="#0000FF"
+VLINK="#840084"
+ALINK="#0000FF"
+><DIV
+CLASS="NAVHEADER"
+><TABLE
+SUMMARY="Header navigation table"
+WIDTH="100%"
+BORDER="0"
+CELLPADDING="0"
+CELLSPACING="0"
+><TR
+><TH
+COLSPAN="3"
+ALIGN="center"
+>GNU gettext for Delphi, C++ Builder and Kylix 1.2 beta</TH
+></TR
+><TR
+><TD
+WIDTH="10%"
+ALIGN="left"
+VALIGN="bottom"
+><A
+HREF="api-tgnugettextinstance.html"
+ACCESSKEY="P"
+>&#60;&#60;&#60; Previous</A
+></TD
+><TD
+WIDTH="80%"
+ALIGN="center"
+VALIGN="bottom"
+>API reference</TD
+><TD
+WIDTH="10%"
+ALIGN="right"
+VALIGN="bottom"
+><A
+HREF="api-underscore.html"
+ACCESSKEY="N"
+>Next &#62;&#62;&#62;</A
+></TD
+></TR
+></TABLE
+><HR
+ALIGN="LEFT"
+WIDTH="100%"></DIV
+><DIV
+CLASS="SECT1"
+><H1
+CLASS="SECT1"
+><A
+NAME="API-USELANGUAGE"
+></A
+>procedure UseLanguage(LanguageCode: string);</H1
+><P
+>When an application starts up, the initialization section of <TT
+CLASS="FILENAME"
+>gnugettext.pas</TT
+>
+makes this call:</P
+><TABLE
+BORDER="0"
+BGCOLOR="#E0E0E0"
+WIDTH="100%"
+><TR
+><TD
+><PRE
+CLASS="PROGRAMLISTING"
+>UseLanguage('');</PRE
+></TD
+></TR
+></TABLE
+><P
+>This call examines the system language settings and sets the language values accordingly.
+On Windows, GetLocaleInfo() is used to determine the language settings, although on Windows 95,
+GetThreadLocale() is used because GetLocaleInfo() wasn't implemented in that version.</P
+><P
+>The OS language settings can always be overridden by setting the <TT
+CLASS="LITERAL"
+>LANG</TT
+>
+environment variable like this (example is for Windows):</P
+><TABLE
+BORDER="0"
+BGCOLOR="#E0E0E0"
+WIDTH="100%"
+><TR
+><TD
+><PRE
+CLASS="SCREEN"
+>set LANG=de_DE
+myapp</PRE
+></TD
+></TR
+></TABLE
+><P
+>or on Linux:</P
+><TABLE
+BORDER="0"
+BGCOLOR="#E0E0E0"
+WIDTH="100%"
+><TR
+><TD
+><PRE
+CLASS="SCREEN"
+>LANG=de_DE &#38;&#38; ./myapp</PRE
+></TD
+></TR
+></TABLE
+><P
+>When a language has been set, UseLanguage will examine the first two letters and find out
+which plural forms that apply to this language. See <A
+HREF="pluralforms.html"
+>the Section called <I
+>Plural forms</I
+> in the chapter called <I
+>Action</I
+></A
+>&#62; for more
+information on this topic.</P
+><P
+>All mo files that were open are closed. mo files are opened again when the text domains
+are accessed.</P
+><P
+>A language code usually consists of a two-letter lowercase language code, an underscore,
+and a two-letter uppercase country code. On Windows, this is not case sensitive, but on Linux, it is.
+German in Germany becomes <TT
+CLASS="LITERAL"
+>de_DE</TT
+>, English in England becomes <TT
+CLASS="LITERAL"
+>en_GB</TT
+>
+and flamish becomes <TT
+CLASS="LITERAL"
+>nl_BE</TT
+>. If no translations can be found or a 5-character
+language code, the system automatically attempts to use only the first two digits. This means that
+if there is no <TT
+CLASS="FILENAME"
+>nl_BE/default.mo</TT
+> file, <TT
+CLASS="FILENAME"
+>nl/default.mo</TT
+> will be used
+instead, if present.</P
+><P
+>You can find the two-letter ISO 639 language codes in <A
+HREF="standards.html#ISO639"
+>the Section called <I
+>ISO 639 language codes</I
+> in the appendix called <I
+>Standards</I
+></A
+>&#62; and the two-letter ISO 3166
+country codes in <A
+HREF="iso3166.html"
+>the Section called <I
+>ISO 3166 country codes</I
+> in the appendix called <I
+>Standards</I
+></A
+>&#62;.</P
+></DIV
+><DIV
+CLASS="NAVFOOTER"
+><HR
+ALIGN="LEFT"
+WIDTH="100%"><TABLE
+SUMMARY="Footer navigation table"
+WIDTH="100%"
+BORDER="0"
+CELLPADDING="0"
+CELLSPACING="0"
+><TR
+><TD
+WIDTH="33%"
+ALIGN="left"
+VALIGN="top"
+><A
+HREF="api-tgnugettextinstance.html"
+ACCESSKEY="P"
+>&#60;&#60;&#60; Previous</A
+></TD
+><TD
+WIDTH="34%"
+ALIGN="center"
+VALIGN="top"
+><A
+HREF="index.html"
+ACCESSKEY="H"
+>Home</A
+></TD
+><TD
+WIDTH="33%"
+ALIGN="right"
+VALIGN="top"
+><A
+HREF="api-underscore.html"
+ACCESSKEY="N"
+>Next &#62;&#62;&#62;</A
+></TD
+></TR
+><TR
+><TD
+WIDTH="33%"
+ALIGN="left"
+VALIGN="top"
+>TGnuGettextInstance class</TD
+><TD
+WIDTH="34%"
+ALIGN="center"
+VALIGN="top"
+><A
+HREF="apireference.html"
+ACCESSKEY="U"
+>Up</A
+></TD
+><TD
+WIDTH="33%"
+ALIGN="right"
+VALIGN="top"
+>function _(msg:widestring):widestring;</TD
+></TR
+></TABLE
+></DIV
+></BODY
+></HTML
+>

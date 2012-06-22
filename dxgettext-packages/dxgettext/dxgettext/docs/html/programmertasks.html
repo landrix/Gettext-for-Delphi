@@ -1,0 +1,187 @@
+<!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.01//EN">
+<HTML
+><HEAD
+><TITLE
+>Experienced programmers' topics</TITLE
+><META
+NAME="GENERATOR"
+CONTENT="Modular DocBook HTML Stylesheet Version 1.76b+
+"><LINK
+REL="HOME"
+TITLE="GNU gettext for Delphi, C++ Builder and Kylix 1.2 beta"
+HREF="index.html"><LINK
+REL="PREVIOUS"
+TITLE="The translator"
+HREF="translatortasks.html"><LINK
+REL="NEXT"
+TITLE="Text domain management"
+HREF="textdomainmanagement.html"></HEAD
+><BODY
+CLASS="CHAPTER"
+BGCOLOR="#FFFFFF"
+TEXT="#000000"
+LINK="#0000FF"
+VLINK="#840084"
+ALINK="#0000FF"
+><DIV
+CLASS="NAVHEADER"
+><TABLE
+SUMMARY="Header navigation table"
+WIDTH="100%"
+BORDER="0"
+CELLPADDING="0"
+CELLSPACING="0"
+><TR
+><TH
+COLSPAN="3"
+ALIGN="center"
+>GNU gettext for Delphi, C++ Builder and Kylix 1.2 beta</TH
+></TR
+><TR
+><TD
+WIDTH="10%"
+ALIGN="left"
+VALIGN="bottom"
+><A
+HREF="translatortasks.html"
+ACCESSKEY="P"
+>&#60;&#60;&#60; Previous</A
+></TD
+><TD
+WIDTH="80%"
+ALIGN="center"
+VALIGN="bottom"
+></TD
+><TD
+WIDTH="10%"
+ALIGN="right"
+VALIGN="bottom"
+><A
+HREF="textdomainmanagement.html"
+ACCESSKEY="N"
+>Next &#62;&#62;&#62;</A
+></TD
+></TR
+></TABLE
+><HR
+ALIGN="LEFT"
+WIDTH="100%"></DIV
+><DIV
+CLASS="CHAPTER"
+><H1
+><A
+NAME="PROGRAMMERTASKS"
+></A
+>Experienced programmers' topics</H1
+><DIV
+CLASS="SECT1"
+><H1
+CLASS="SECT1"
+><A
+NAME="DETERMINISM"
+></A
+>Determinism and responsibility</H1
+><P
+>It is very important for the software development process, that the
+programmer decides, what gets translated, and what doesn't. Also, it is
+important for the programmer to ensure, that the translator cannot break the
+application, no matter how bad the translations are made.</P
+><P
+>GNU gettext is based on function calls (gettext, dgettext etc.),
+comments to the translator and a proper localization release procedure.</P
+><P
+>The system doesn't translate anything that isn't put through the
+<TT
+CLASS="LITERAL"
+>dgettext()</TT
+> function in a way or the other. The programmer fully controls
+what gets translated, and what doesn't, and has the responsibility to
+ensure, that everything that gets translated, can be translated to virtually
+anything without breaking the program. For instance, if the caption of a
+label on a form is made translatable by the programmer, the translator can
+only change the look of the label. But if the component name of a label
+would be translatable, the translator could break the program by translating
+the name of a label to something that is already the name of another
+component.</P
+><P
+>In order to get a program translated, the programmer must provide
+information to the translator about what gets translated and where to find
+it. He also needs to ensure, that the texts are unambigious, that one msgid
+cannot be translated into two different things in another language. Since it
+may not always be clear to the translator, in which context a message is
+used, the programmer can provide comments to the translator, even access to
+the source code locations, if the translator is able to read source code.
+The comments should also make the translator able to run the program with
+his/her translations, and find the place where a particular text can be
+found inside the program.</P
+><P
+>The translator is often also a beta-tester for a specific language.
+The translator is often the only one that is able to control the program
+while running in the other language, and is often also the only one
+internally in the organization that is capable to see if labels are put
+correctly, translations are made correctly etc. GNU gettext helps out here
+by making the translator able to apply his or her translation without
+involving the programmer.</P
+></DIV
+></DIV
+><DIV
+CLASS="NAVFOOTER"
+><HR
+ALIGN="LEFT"
+WIDTH="100%"><TABLE
+SUMMARY="Footer navigation table"
+WIDTH="100%"
+BORDER="0"
+CELLPADDING="0"
+CELLSPACING="0"
+><TR
+><TD
+WIDTH="33%"
+ALIGN="left"
+VALIGN="top"
+><A
+HREF="translatortasks.html"
+ACCESSKEY="P"
+>&#60;&#60;&#60; Previous</A
+></TD
+><TD
+WIDTH="34%"
+ALIGN="center"
+VALIGN="top"
+><A
+HREF="index.html"
+ACCESSKEY="H"
+>Home</A
+></TD
+><TD
+WIDTH="33%"
+ALIGN="right"
+VALIGN="top"
+><A
+HREF="textdomainmanagement.html"
+ACCESSKEY="N"
+>Next &#62;&#62;&#62;</A
+></TD
+></TR
+><TR
+><TD
+WIDTH="33%"
+ALIGN="left"
+VALIGN="top"
+>The translator</TD
+><TD
+WIDTH="34%"
+ALIGN="center"
+VALIGN="top"
+>&nbsp;</TD
+><TD
+WIDTH="33%"
+ALIGN="right"
+VALIGN="top"
+>Text domain management</TD
+></TR
+></TABLE
+></DIV
+></BODY
+></HTML
+>

@@ -1,0 +1,724 @@
+<!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.01//EN">
+<HTML
+><HEAD
+><TITLE
+>Advanced topics</TITLE
+><META
+NAME="GENERATOR"
+CONTENT="Modular DocBook HTML Stylesheet Version 1.76b+
+"><LINK
+REL="HOME"
+TITLE="GNU gettext for Delphi, C++ Builder and Kylix 1.2 beta"
+HREF="index.html"><LINK
+REL="PREVIOUS"
+TITLE="Directives"
+HREF="directives.html"><LINK
+REL="NEXT"
+TITLE="Translation statistics"
+HREF="translationstatistics.html"></HEAD
+><BODY
+CLASS="CHAPTER"
+BGCOLOR="#FFFFFF"
+TEXT="#000000"
+LINK="#0000FF"
+VLINK="#840084"
+ALINK="#0000FF"
+><DIV
+CLASS="NAVHEADER"
+><TABLE
+SUMMARY="Header navigation table"
+WIDTH="100%"
+BORDER="0"
+CELLPADDING="0"
+CELLSPACING="0"
+><TR
+><TH
+COLSPAN="3"
+ALIGN="center"
+>GNU gettext for Delphi, C++ Builder and Kylix 1.2 beta</TH
+></TR
+><TR
+><TD
+WIDTH="10%"
+ALIGN="left"
+VALIGN="bottom"
+><A
+HREF="directives.html"
+ACCESSKEY="P"
+>&#60;&#60;&#60; Previous</A
+></TD
+><TD
+WIDTH="80%"
+ALIGN="center"
+VALIGN="bottom"
+></TD
+><TD
+WIDTH="10%"
+ALIGN="right"
+VALIGN="bottom"
+><A
+HREF="translationstatistics.html"
+ACCESSKEY="N"
+>Next &#62;&#62;&#62;</A
+></TD
+></TR
+></TABLE
+><HR
+ALIGN="LEFT"
+WIDTH="100%"></DIV
+><DIV
+CLASS="CHAPTER"
+><H1
+><A
+NAME="ADVANCEDTOPICS"
+></A
+>Advanced topics</H1
+><DIV
+CLASS="SECT1"
+><H1
+CLASS="SECT1"
+><A
+NAME="CONVERTFROMDELPHIITE"
+></A
+>Migrating from the ITE to dxgettext</H1
+><P
+>This chapter was written by Peter Thornqvist.</P
+><DIV
+CLASS="SECT2"
+><H2
+CLASS="SECT2"
+><A
+NAME="DELPHIITE-INTO"
+></A
+>Introduction</H2
+><P
+>Although I've been somewhat involved in the development of dxgettext - mainly
+      donating a couple of tools to convert translations from ITE to
+      dxgettext - I had not myself been ready to take the final step in moving any
+      larger application over. It was both a matter of lack of time but also a
+      hesitation about the usefulness of the po file format and the possible loss of
+      information.</P
+><P
+>Well, one day the ITE gave up on me (for the umpteenth time) and I just
+      couldn't get it to compile my project anymore. It complained about "ancestor
+      not found". Checking out the files from VCS and even going back in history
+      didn't solve it. I was stranded with a non-compiling project and I had no
+      solution how to get it to work again.</P
+><P
+>It was time for me to get down and dirty with dxgettext and this is the report
+      on how I did it, what I had to change and how it all worked out in the end.</P
+></DIV
+><DIV
+CLASS="SECT2"
+><H2
+CLASS="SECT2"
+><A
+NAME="DELPHIITE-PROJECT"
+></A
+>The project</H2
+><P
+>The application I am going to migrate is called EQ Plan and is a graphical
+      planning tool mainly for manufacturing companies 
+      (see <A
+HREF="http://www.timemetrics.se/"
+TARGET="_top"
+>http://www.timemetrics.se/</A
+> for details and
+      trial downloads). As far as localization is concerned, this is a mid-sized
+      application consisting of about 45 forms, 5 or so frames (I avoided frames
+      since
+      I knew the ITE didn't like them) and about 10-15 additional files. Since I was
+      using the ITE, all strings (except property values) were declared as
+      resourcestrings and most of them was located in a single unit. Additionally,
+      the application uses a wide variety of components and controls; some
+      third-party
+      components from JVCL and KWizard and a couple of custom made components (like
+      the Gantt-chart and a VS.Net style treeview). The application is not
+      Unicode enabled, limiting it's usability to western Windows versions. All
+    string in the program are in English and we have translated it to Danish and
+    Swedish. Translation to Norwegian and German is planned but not
+      started
+      (as of this writing), making this a good time to do the change.</P
+></DIV
+><DIV
+CLASS="SECT2"
+><H2
+CLASS="SECT2"
+><A
+NAME="DELPHIITE-PLANNING"
+></A
+>Planning</H2
+><P
+>I didn't do much planning because the task was pretty straightforward but I
+      at least made the following to-do list:</P
+><P
+></P
+><UL
+><LI
+><P
+>Isolate any remaining strings used in the program and
+      convert them to resourcestring. Since I already used resourcestrings and
+        the
+      program isn't Unicode anyway, I decided to stick with resourcestrings, although
+        I probably would have used the _() syntax if this had been a new program (see the
+      dxgettext documentation for an explanation of "_()")</P
+></LI
+><LI
+><P
+>Extract any existing ITE translations from the dfn
+      and rc files in the language subfolders.</P
+></LI
+><LI
+><P
+>Since all forms already inherited from a common
+      ancestor, I decided to use this ancestor to implement as much as possible of
+      the basic translation functionality and add any special handling in each
+      derived form or utility unit as needed.</P
+></LI
+><LI
+><P
+>After successfully moving the translation, find all
+      components and/or units that have untranslated strings even when running a
+      localized version of the program. Add special handling of the components as
+      necessary and add any missing strings as resourcestrings.</P
+></LI
+><LI
+><P
+>Since gnugettext doesn't localize component bounds
+      (top, left, width, height), go through all forms and check that texts and label
+      alignments and the like looks good in all languages.</P
+></LI
+><LI
+><P
+>Create installation packages for the language file(s).</P
+></LI
+><LI
+><P
+>Implement a language switch functionality inside the
+      program so the end-user easily can change the used language.</P
+></LI
+><LI
+><P
+>Test the new translations on as many systems as possible, i.e. different Windows versions as well as
+        different language
+        versions of Windows.</P
+></LI
+></UL
+></DIV
+><DIV
+CLASS="SECT2"
+><H2
+CLASS="SECT2"
+><A
+NAME="DELPHIITE-TOOLS"
+></A
+>Tools I needed (and used)</H2
+><P
+>There are several tools I need to be able to migrate my application.
+      Specifically, I used the following:</P
+><P
+></P
+><UL
+><LI
+><P
+>dxgettext (or actually the shell integration) to
+      extract strings and properties from the application sources to create the
+      template po file</P
+></LI
+><LI
+><P
+>dfntopo (include din dxgettext distribution) to
+      extract the translations from the dfn and rc files and update the language
+      specific po file.</P
+></LI
+><LI
+><P
+>poEdit (<A
+HREF="http://poEdit.sourceforge.net/"
+TARGET="_top"
+>http://poEdit.sourceforge.net/</A
+>)
+        to
+        view the po files, provide additional and compile the mo file (the
+        binary translation file)</P
+></LI
+></UL
+></DIV
+><DIV
+CLASS="SECT2"
+><H2
+CLASS="SECT2"
+><A
+NAME="DELPHIITE-DOINGIT"
+></A
+>Doing the conversion</H2
+><P
+>I started with extracting the po template from my source folder: I
+      right-clicked on the source folder and clicked on "Extract translations to
+      template". A file named default.po was created in the selected folder and it
+      contained all the original strings found by dxgettext. Since there were a lot
+      of
+      strings, there was no way I could determine how successful dxgettext had been. I
+      just had to trust it for the time being. One thing that I didn't do at this
+      stage (because I wasn't aware of it) but that I recommend you to do is this:
+      Run
+      the msgmkignore.exe on the default.po file. This will create a new file
+      8typicaly named ignore.po) with all the strings that probably shouldn't be in
+      default.po. This is strings like numbers, component names, font names etc. It
+      does an amazingly good job too: all the strings it found in my sources were
+      such
+      that I did actually want to remove them. To actually remove the strings from
+      default.po, I ran the command line tool mskremove.exe. Now the (first) template
+      was ready for use.</P
+><P
+>Since I now had a template, I needed to retrieve as many of the available
+      translations as possible from the ITE. I certainly didn't want to translate all
+      this again. I made this simple for myself. I copied the dfntopo.exe program
+      along with the default.po file into each of my ITE language folders (where the
+      dfn files are located) and ran dfntopo.exe from a command-prompt. I used the -f
+      option to force dfntopo to add all new translations that it couldn't find in
+      the
+      po file. Although this will probably reinsert the items we just removed with
+    msgremove, I wanted to make sure that all the translations I had, made it over
+      into the po file. I can always run msgremove again at a later time.</P
+><P
+>So, I now have a default.po in Danish and one in Swedish. I also have the
+      template default.po file (the one without any translations) in the original
+      source folder. This means that I am now actually ready to test the translations
+      with gnugettext and this after only about an hours work! Of course, I still
+      have
+      to enable my application to read the translations and this is a three step
+      process:</P
+><P
+></P
+><UL
+><LI
+><P
+>Create the correct subfolder structure for my
+      application folder and put the translated default.po files there.</P
+></LI
+><LI
+><P
+>Open each po file with poEdit and save it to create
+      the mo file.</P
+></LI
+><LI
+><P
+>Add gnugettext.pas to my application so it can read the mo file (almost)
+        automatically</P
+></LI
+></UL
+><P
+>The subfolder structure on my machine looked like this after I've added the
+    Swedish and Danish folders:</P
+><DIV
+CLASS="MEDIAOBJECT"
+><P
+><IMG
+SRC="MigrateFolderStructure.jpg"></P
+></DIV
+><P
+>Each of the translated default.po files are located in
+      the language specific LC_MESSAGES folder. As you can see, the folder structure
+      is somewhat convoluted and uses some predefined language identifiers (these 
+      names are actually standard ISO639
+      identifiers, sometimes combined with ISO3166 country abbreviations) to 
+      enable gnugettext
+      to automatically select the correct language file (this is based on the users
+      current
+      locale). I suppose one could modify gnugettext.pas to, as an example, place all
+      the language files in one folder and call them se.po, da.po etc instead but I
+      decided
+      to use the default settings. If the po/mo files are correctly placed and it 
+      still
+      doesn't work at run-time, at least I know that it's something else that isn't
+      working.</P
+><P
+>Now I could open and save the po files with poEdit. This
+      creates an mo file - a compiled binary version of the po file - in the same 
+      folder as the po
+      file and it's actually this file that gnugettext needs. The po file is only 
+      used to allow
+      humans
+      to read and edit the content. Now I was ready to edit my project
+      to
+      read the translations.</P
+><P
+>I had some errors when I opened the po files with poEdit: TABS (#9) had been translated to \x9\ but
+    poEdit expected \x9 and embedded
+  double-quotes weren't properly escaped (should have been \"
+  instead of just "). The quote escaping I fixed by modifying the source of
+    dfntopo and the \x9\ problem I fixed manually by doing a search and replace
+    on the po files.</P
+></DIV
+><DIV
+CLASS="SECT2"
+><H2
+CLASS="SECT2"
+><A
+NAME="DELPHIITE-COMMONANCESTORS"
+></A
+>Common ancestor forms are good!</H2
+><P
+>Since all my forms already had a common ancestor form (a good coding
+      practice, by the way: you loose nothing and can gain a lot), I decided to add 
+      as
+      much gnugettext functionality to that form. The other forms would then inherit
+    the behavior and I would have to add the code everywhere. Additionally, any new
+      forms I decide to add in the future will also have the functionality
+      automatically. So I added the following overridden AfterConstruction code to my
+      ancestor form:</P
+><TABLE
+BORDER="0"
+BGCOLOR="#E0E0E0"
+WIDTH="100%"
+><TR
+><TD
+><PRE
+CLASS="PROGRAMLISTING"
+>var
+  AlreadyDone:boolean = false;
+  
+procedure TfrmGnuGT.AfterConstruction;
+begin 
+  inherited; 
+  if not AlreadyDone then
+  // this should only be done once for the whole app
+  begin
+    TP_GlobalIgnoreClassProperty(TAction,'Category'); 
+    TP_GlobalIgnoreClassProperty(TControl,'ImeName');
+    TP_GlobalIgnoreClassProperty(TControl,'HelpKeyword');
+    TP_GlobalIgnoreClass(TMonthCalendar);
+    TP_GlobalIgnoreClass(TFont);
+    // TP_GlobalIgnoreClass(TStatusBar); 
+    // TP_GlobalIgnoreClass(TWebBrowser); 
+    // TP_GlobalIgnoreClass(TNoteBook);  
+    // TP_GlobalHandleClass(TCustomTreeView,HandleTreeView); 
+    // TP_GlobalHandleClass(TKWizardCustomPage,HandleWizardPage); 
+    AlreadyDone := true;
+  end;
+  TranslateComponent(self,'default');
+end;</PRE
+></TD
+></TR
+></TABLE
+><P
+>The AlreadyDone variable is needed because this code will be called for each 
+form in the application and gnugettext raises an exception if the TP_GlobalXXXX 
+functions are called more than once for the same class. Personally, I think this 
+is unnecessary. There is no risks involved adding 
+these call many times as the class or property is to be ignored anyway. But 
+since repeated calls to TP_GlobalHandleClass class <I
+CLASS="EMPHASIS"
+>should </I
+>generate an 
+exception in my opinion, I would still need the AlreadyDone variable, so this is no big 
+issue with me.</P
+><P
+>The TranslateComponent call is the one doing all the magic: this function 
+iterates all the components on the form and all it's subcomponents, hunting out 
+published properties that can be translated. If a property is found, it searches 
+the mo file for a translation and uses RTTI to change the property value (if it 
+isn't read-only). Actually, there is another piece of hidden magic working for 
+us as well: remember that I use resourcestrings? Well, these are also handled 
+automatically thanks to a dynamic replacement of the LoadResString function 
+in gnugettext.pas. This replacement function calls into gnugettext instead of 
+into the resource DLL as the ITE does. Together, they cover almost everything 
+that can be translated in an application (unless you are using Unicode in which 
+case resourcestring translation won't work). </P
+><P
+>When I ran the program, a lot of the strings were translated but not all. 
+Among other things, neither menus, treeviews nor all strings in the KWizard we 
+translated. Additionally, some of the forms I opened generated Access Violations 
+and strange errors. Something seemed to be amiss and how to fix that is our next 
+priority.</P
+></DIV
+><DIV
+CLASS="SECT2"
+><H2
+CLASS="SECT2"
+><A
+NAME="DELPHIITE-DOESNT"
+></A
+>Handling components dxgettext doesn't handle</H2
+><P
+>If you read the documentation for dxgettext (and you should!), you soon 
+realize that it doesn't handle <I
+CLASS="EMPHASIS"
+>everything</I
+> that you throw at it. It can 
+handle published properties of the components passed into TranslateComponent or 
+published properties of components owned by that component. If you create components dynamically at run-time
+    (with Owner set to nil), these components won't be translated unless you call
+    TranslateComponent explicitly. Additionally, public properties won't be
+    translated (they don't have any RTTI). Some components, like treeviews and listviews, have
+    item list properties that you need to handle manually by adding your own procedure to
+    explicitly iterate over the list and use _() to translate them. For a
+    treeview, here's the code I added to my base form:</P
+><TABLE
+BORDER="0"
+BGCOLOR="#E0E0E0"
+WIDTH="100%"
+><TR
+><TD
+><PRE
+CLASS="PROGRAMLISTING"
+>type
+  THackTreeView = class(TCustomTreView);
+
+procedure TfrmGnuGT.HandleTreeView(Obj: TObject);
+var N:TTreeNode;T:THackTreeView;
+begin
+  T := THackTreeView(Obj);
+  N := T.Items.GetFirstNode;
+  while N &#60;&#62; nil do
+  begin
+    N.Text := _(N.Text);
+    N := N.GetNext;
+  end;
+end;</PRE
+></TD
+></TR
+></TABLE
+><P
+>I also had to tell dxgettext that I want to handle treeview translations myself, so I
+    added a call to TP_GlobalHandleClass in AfterConstruction:</P
+><TABLE
+BORDER="0"
+BGCOLOR="#E0E0E0"
+WIDTH="100%"
+><TR
+><TD
+><PRE
+CLASS="PROGRAMLISTING"
+>TP_GlobalHandleClass(TCustomTreeView,HandleTreeView);</PRE
+></TD
+></TR
+></TABLE
+><P
+>I also added similar handlers for listviews and the KWizard.</P
+></DIV
+><DIV
+CLASS="SECT2"
+><H2
+CLASS="SECT2"
+><A
+NAME="DELPHIITE-PROBLEMS"
+></A
+>Problems</H2
+><P
+>When running the program, I noticed that some of my menu items weren't translated correctly. I use TActionLists exclusively
+    and those items were correctly translated but the top level menu items (those without actions) weren't translated.
+    I ran gnugettext in debug mode and found that it was caused by the menu component(s) having their AutoHotKeys property set to automatic.
+    I changed this to manual and explicitly assigned
+    hot keys (Alt+F, Alt+E etc) to all top level menu items. Since I didn't want to regenerate the
+    po, I just added these new strings manually to the po file. Now these items
+    were also translated correctly.</P
+><P
+> I also noticed that the color combobox from JVCL that I was using didn't translate it's text captions (the ColorNameMap property). 
+    After some searching, debugging and hair pulling I found a
+    problem in the way the component retrieved the color names, fixed it
+    (thankfully, I am a developer on JVCL so I can do these things!) and then it worked like a charm.</P
+><P
+> Running the program again everything seemed to work fine until I tried to open the report form: this form uses a TWebBrowser
+    (these are HTML reports and the TWebBrowser is used to preview and print
+    them) and I got a nasty Exception telling me that the StatusText property of
+    the control couldn't be translated. The error message also suggested how I should fix the problem (very nice!). Since there is no visible UI elements in TWebBrowser (except for the main
+    window, which contains nothing to translate) I elected to add a TP_GlobalIgnoreClass
+    for it and the form then opened without problems.</P
+><P
+> Next, I started to work through all my menus, popups and forms one by
+    one to see if everything was translated and worked as expected. I found that I had some comboboxes that lost their stored 
+    ItemIndex when they were translated (it was reset to -1) so I added some code to set these programmatically. Also, I found some items that
+    hadn't been translated in the po and I fixed these with poEdit.</P
+><P
+> Everything seemed to work fine until I tried to open one of the forms: I got an unexpected AV. I tried to trace the AV but didn't get too far: 
+    the code in gnugettext is highly recursive making it problematic to find the spot where an error occurs. Since the form used an "interposer class" - 
+    a class declaration that overrides an existing class, I thought at first that this was the cause of the problem. I tried temporarily removing it but that didn't help. 
+    After some more debugging I finally
+    figured out that the AV was caused by a TNotebook on the form and after adding it to the ignore list, the error disappeared.
+    Had I read the documentation a little more carefully, I probably wouldn't
+    have had this problem since it mentions notebooks as one component that
+    causes problems.</P
+><P
+> The next weird error was with one of my toolbars: suddenly the rightmost buttons on the toolbar had switched event handlers! I couldn't believe this at first and had to check several times to make sure that I was seeing things right. It turned out that I had a button on the toolbar that was hidden at run-time
+    and this seemed to cause gnugettext to somehow switch the buttons around, so what
+    I thought was the fifth button was actually the sixth according to
+    gnugettext. Since I didn't really need the hidden button, I removed it and didn't investigate
+    it further but it might be something to be vary of.</P
+><P
+> Next issue was the KWizard I was using: the button captions and everything on the pages
+    was translated properly but the Header.Title.Text and Header.SubTitle.Text were not.
+    I suspect this has to do with the fact that these properties use nested
+    (TPersistent) classes and dxgettext doesn't handle that. I added a TP_GlobalHandleClass
+    for TKWizardCustomPage to TfrmGnuGT and got it running fine.</P
+><P
+> One other oddity in the wizard
+    form was a TStaticText that disappeared when translated. I checked the debug log from gnugettext and the string was found and translated but nothing showed up at run-time. At first I thought it had to do with the anchoring (it was anchored
+    left, bottom) but that wasn't it. I finally figured out that it had to do with AutoSize being set to
+    true and setting it to false fixed the problem. Apparently, the label was resized to
+    zero width when the Caption changed but it was never resized according to the width of the new Caption.</P
+></DIV
+><DIV
+CLASS="SECT2"
+><H2
+CLASS="SECT2"
+><A
+NAME="DELPHIITE-CONCLUSION"
+></A
+>Conclusion</H2
+><P
+>The whole process of moving an app from ITE to dxgettext can be broken
+    down into the following steps:</P
+><P
+></P
+><UL
+><LI
+><P
+>Get and install the latest version of dxgettext (<A
+HREF="http://dxgettext.sf.net/"
+TARGET="_top"
+>http://dxgettext.sf.net/</A
+>)</P
+></LI
+><LI
+><P
+>Get and install latest version of poEdit (<A
+HREF="http://poedit.sf.net/"
+TARGET="_top"
+>http://poedit.sf.net/</A
+>)</P
+></LI
+><LI
+><P
+>Add a form (let's call it TfrmGnuGT) to your project. Use this form
+        as the ancestor for all other forms in the application. Override the AfterConstruction
+        method and add calls to TP_GlobalIgnoreClass, TP_GlobalHandleClass,TP_GlobalIgnoreClassProperty
+        and to TranslateComponent as necessary.</P
+></LI
+><LI
+><P
+>Add gnugettext.pas to the new form's uses clause. Make sure gnugettext is in your path or copy it to your project folder.</P
+></LI
+><LI
+><P
+>Go through all the forms in the project and change their inheritance so they now inherit from TfrmGnuGT. 
+      Add the TfrmGnuGT unit's name to the forms interface uses clause.</P
+></LI
+><LI
+><P
+>In the Explorer, right-click your project folder and select "Extract translations to template". 
+      Your sources are parsed and all found strings are put into a file named deafult.po</P
+></LI
+><LI
+><P
+>Double-click the default.po file to open with poEdit. Verify that everything
+        looks OK. Close it again.</P
+></LI
+><LI
+><P
+>Copy dfntopo.exe and the default.po into (one of) your ITE language subfolders.
+        Open a command prompt in that folder and type dfntopo &#60;ENTER&#62; to see the command-line switches for the tool.
+	Run the tool to extract translations from the dfn and rc files in the folder. The resulting default.po should now contain at
+	least some translated strings: open with poEdit to verify.</P
+></LI
+><LI
+><P
+>Repeat above step for each of your languages</P
+></LI
+><LI
+><P
+>Create a subfolder structure below your projects output folder for each of
+        your languages using this format: 
+&#60;root&#62;\&#60;langcode&#62;\LC_MESSAGES\ and put each of the previously created default.po files into each folder.</P
+></LI
+><LI
+><P
+>Manually change "\x9\" in the po file to "\x9" and
+        make sure quote characters are properly escaped.</P
+></LI
+><LI
+><P
+>Create your own translation handlers for classes like treeviews,
+        listviews and any third-party that refuses to translate.</P
+></LI
+><LI
+><P
+>Disable handling of some classes (like TFont, TWebBrowser and
+        TNotebook), that obviously shouldn't be translated or that can cause
+        problems with dxgettext.</P
+></LI
+></UL
+><P
+>I had initially planned to add dynamic switching functionality to the
+    program but decided against it. Our users don't really need to switch
+    languages at run-time since they once and for all deicde which language they
+    want to use and stick with that.</P
+><P
+>All in all, the migration went better than I had thought. There was some
+    problems but nothing unsolvable and it took about 4-5 hours to do it from
+    start to finish. In conclusion, well worth the effort.</P
+></DIV
+></DIV
+></DIV
+><DIV
+CLASS="NAVFOOTER"
+><HR
+ALIGN="LEFT"
+WIDTH="100%"><TABLE
+SUMMARY="Footer navigation table"
+WIDTH="100%"
+BORDER="0"
+CELLPADDING="0"
+CELLSPACING="0"
+><TR
+><TD
+WIDTH="33%"
+ALIGN="left"
+VALIGN="top"
+><A
+HREF="directives.html"
+ACCESSKEY="P"
+>&#60;&#60;&#60; Previous</A
+></TD
+><TD
+WIDTH="34%"
+ALIGN="center"
+VALIGN="top"
+><A
+HREF="index.html"
+ACCESSKEY="H"
+>Home</A
+></TD
+><TD
+WIDTH="33%"
+ALIGN="right"
+VALIGN="top"
+><A
+HREF="translationstatistics.html"
+ACCESSKEY="N"
+>Next &#62;&#62;&#62;</A
+></TD
+></TR
+><TR
+><TD
+WIDTH="33%"
+ALIGN="left"
+VALIGN="top"
+>Directives</TD
+><TD
+WIDTH="34%"
+ALIGN="center"
+VALIGN="top"
+>&nbsp;</TD
+><TD
+WIDTH="33%"
+ALIGN="right"
+VALIGN="top"
+>Translation statistics</TD
+></TR
+></TABLE
+></DIV
+></BODY
+></HTML
+>

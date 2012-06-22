@@ -1,0 +1,206 @@
+<!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.01//EN">
+<HTML
+><HEAD
+><TITLE
+>Translation statistics</TITLE
+><META
+NAME="GENERATOR"
+CONTENT="Modular DocBook HTML Stylesheet Version 1.76b+
+"><LINK
+REL="HOME"
+TITLE="GNU gettext for Delphi, C++ Builder and Kylix 1.2 beta"
+HREF="index.html"><LINK
+REL="UP"
+TITLE="Advanced topics"
+HREF="advancedtopics.html"><LINK
+REL="PREVIOUS"
+TITLE="Advanced topics"
+HREF="advancedtopics.html"><LINK
+REL="NEXT"
+TITLE="Multiple instances"
+HREF="multipleinstances.html"></HEAD
+><BODY
+CLASS="SECT1"
+BGCOLOR="#FFFFFF"
+TEXT="#000000"
+LINK="#0000FF"
+VLINK="#840084"
+ALINK="#0000FF"
+><DIV
+CLASS="NAVHEADER"
+><TABLE
+SUMMARY="Header navigation table"
+WIDTH="100%"
+BORDER="0"
+CELLPADDING="0"
+CELLSPACING="0"
+><TR
+><TH
+COLSPAN="3"
+ALIGN="center"
+>GNU gettext for Delphi, C++ Builder and Kylix 1.2 beta</TH
+></TR
+><TR
+><TD
+WIDTH="10%"
+ALIGN="left"
+VALIGN="bottom"
+><A
+HREF="advancedtopics.html"
+ACCESSKEY="P"
+>&#60;&#60;&#60; Previous</A
+></TD
+><TD
+WIDTH="80%"
+ALIGN="center"
+VALIGN="bottom"
+>Advanced topics</TD
+><TD
+WIDTH="10%"
+ALIGN="right"
+VALIGN="bottom"
+><A
+HREF="multipleinstances.html"
+ACCESSKEY="N"
+>Next &#62;&#62;&#62;</A
+></TD
+></TR
+></TABLE
+><HR
+ALIGN="LEFT"
+WIDTH="100%"></DIV
+><DIV
+CLASS="SECT1"
+><H1
+CLASS="SECT1"
+><A
+NAME="TRANSLATIONSTATISTICS"
+></A
+>Translation statistics</H1
+><P
+>The <TT
+CLASS="LITERAL"
+>msgfmt</TT
+> program is able to output some statistics about the contents
+of a po file:</P
+><TABLE
+BORDER="0"
+BGCOLOR="#E0E0E0"
+WIDTH="100%"
+><TR
+><TD
+><PRE
+CLASS="SCREEN"
+>C:\source\sf\DXGETT~1\TRANSL~1\de&#62;msgfmt --statistics kylix3.po
+1815 translated messages, 113 fuzzy translations, 53 untranslated messages.</PRE
+></TD
+></TR
+></TABLE
+><P
+>Additionally, the <TT
+CLASS="LITERAL"
+>msgshowheader</TT
+> tool is able to show the header of
+a compiled mo file:</P
+><TABLE
+BORDER="0"
+BGCOLOR="#E0E0E0"
+WIDTH="100%"
+><TR
+><TD
+><PRE
+CLASS="SCREEN"
+>C:\source\sf\DXGETT~1\TRANSL~1\de&#62;msgshowheader kylix3.mo
+Project-Id-Version: Kylix 3 German
+POT-Creation-Date: 2003-03-02 18:54
+PO-Revision-Date: 2003-07-02 17:20+0100
+Last-Translator: Sandro Wendt &#60;info@xan.de&#62;
+Language-Team: XAN &#60;info@xan.de&#62;
+MIME-Version: 1.0
+Content-Type: text/plain; charset=utf-8
+Content-Transfer-Encoding: 8bit</PRE
+></TD
+></TR
+></TABLE
+><P
+>In order to generate statistics about translations, we just need to be able to create a web page
+by iterating over all po files and parse the output from the above programs. There is a
+<A
+HREF="http://www.python.org/"
+TARGET="_top"
+>Python</A
+> script in the translations CVS module on SourceForge for this
+purpose.</P
+><P
+>For further information on this topic, ask in our
+<A
+HREF="http://groups.yahoo.com/group/dxgettext/"
+TARGET="_top"
+>forum</A
+>.</P
+></DIV
+><DIV
+CLASS="NAVFOOTER"
+><HR
+ALIGN="LEFT"
+WIDTH="100%"><TABLE
+SUMMARY="Footer navigation table"
+WIDTH="100%"
+BORDER="0"
+CELLPADDING="0"
+CELLSPACING="0"
+><TR
+><TD
+WIDTH="33%"
+ALIGN="left"
+VALIGN="top"
+><A
+HREF="advancedtopics.html"
+ACCESSKEY="P"
+>&#60;&#60;&#60; Previous</A
+></TD
+><TD
+WIDTH="34%"
+ALIGN="center"
+VALIGN="top"
+><A
+HREF="index.html"
+ACCESSKEY="H"
+>Home</A
+></TD
+><TD
+WIDTH="33%"
+ALIGN="right"
+VALIGN="top"
+><A
+HREF="multipleinstances.html"
+ACCESSKEY="N"
+>Next &#62;&#62;&#62;</A
+></TD
+></TR
+><TR
+><TD
+WIDTH="33%"
+ALIGN="left"
+VALIGN="top"
+>Advanced topics</TD
+><TD
+WIDTH="34%"
+ALIGN="center"
+VALIGN="top"
+><A
+HREF="advancedtopics.html"
+ACCESSKEY="U"
+>Up</A
+></TD
+><TD
+WIDTH="33%"
+ALIGN="right"
+VALIGN="top"
+>Multiple instances</TD
+></TR
+></TABLE
+></DIV
+></BODY
+></HTML
+>

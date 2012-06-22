@@ -1,0 +1,207 @@
+<!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.01//EN">
+<HTML
+><HEAD
+><TITLE
+>TMS Software TAdvStringGrid</TITLE
+><META
+NAME="GENERATOR"
+CONTENT="Modular DocBook HTML Stylesheet Version 1.76b+
+"><LINK
+REL="HOME"
+TITLE="GNU gettext for Delphi, C++ Builder and Kylix 1.2 beta"
+HREF="index.html"><LINK
+REL="UP"
+TITLE="How to handle specific classes"
+HREF="handlingclasses.html"><LINK
+REL="PREVIOUS"
+TITLE="Turbopower Essentials"
+HREF="ignore-tpessentials.html"><LINK
+REL="NEXT"
+TITLE="Frequently Asked Questions"
+HREF="faq.html"></HEAD
+><BODY
+CLASS="SECT1"
+BGCOLOR="#FFFFFF"
+TEXT="#000000"
+LINK="#0000FF"
+VLINK="#840084"
+ALINK="#0000FF"
+><DIV
+CLASS="NAVHEADER"
+><TABLE
+SUMMARY="Header navigation table"
+WIDTH="100%"
+BORDER="0"
+CELLPADDING="0"
+CELLSPACING="0"
+><TR
+><TH
+COLSPAN="3"
+ALIGN="center"
+>GNU gettext for Delphi, C++ Builder and Kylix 1.2 beta</TH
+></TR
+><TR
+><TD
+WIDTH="10%"
+ALIGN="left"
+VALIGN="bottom"
+><A
+HREF="ignore-tpessentials.html"
+ACCESSKEY="P"
+>&#60;&#60;&#60; Previous</A
+></TD
+><TD
+WIDTH="80%"
+ALIGN="center"
+VALIGN="bottom"
+>How to handle specific classes</TD
+><TD
+WIDTH="10%"
+ALIGN="right"
+VALIGN="bottom"
+><A
+HREF="faq.html"
+ACCESSKEY="N"
+>Next &#62;&#62;&#62;</A
+></TD
+></TR
+></TABLE
+><HR
+ALIGN="LEFT"
+WIDTH="100%"></DIV
+><DIV
+CLASS="SECT1"
+><H1
+CLASS="SECT1"
+><A
+NAME="IGNORE-TADVSTRINGGRID"
+></A
+>TMS Software TAdvStringGrid</H1
+><P
+>The TAdvStringGrid is not compatible with TranslateComponent(). You should therefore put it on ignore:</P
+><TABLE
+BORDER="0"
+BGCOLOR="#E0E0E0"
+WIDTH="100%"
+><TR
+><TD
+><PRE
+CLASS="PROGRAMLISTING"
+>TP_GlobalIgnoreClass (TAdvStringGrid);</PRE
+></TD
+></TR
+></TABLE
+><P
+>But there is a solution to get it translated. The following text was provided by
+Sandro Wendt:</P
+><P
+>As I needed to translate one of its descendants ( a TAdvColumnGrid ), I checked with Bruno
+and found that the reason for the exceptions "Controls '' has no parent window" were probably the inplace
+editors of the grid. There are two you can get at through properties, but several you cannot as they are
+only contained in private member fields. However, using the components array of the grid, you can get
+at these as well.</P
+><P
+>This is the code I used:</P
+><TABLE
+BORDER="0"
+BGCOLOR="#E0E0E0"
+WIDTH="100%"
+><TR
+><TD
+><PRE
+CLASS="PROGRAMLISTING"
+>var
+  i: integer;
+  FCompList: TObjectList;
+begin
+  FCompList := TObjectList.Create( false );
+  try
+    for i := 0 to FieldDefinition_grid.ComponentCount - 1 do begin
+      if FieldDefinition_grid.Components[i] is TWinControl then begin
+        if TWinControl( FieldDefinition_grid.Components[i] ).Parent = nil then begin
+          TWinControl( FieldDefinition_grid.Components[i] ).Parent := FieldDefinition_grid;
+          FCompList.Add( FieldDefinition_grid.Components[i] );
+        end;
+      end;
+    end;
+    TranslateComponent (self);
+    for i := 0 to FCompList.Count - 1 do begin
+      TWinControl( FCompList[i] ).Parent := nil;
+    end;
+  finally
+    FCompList.Free;
+  end;
+end;</PRE
+></TD
+></TR
+></TABLE
+><P
+>You need to set the Parent's back to nil because otherwise especially the RichEdit editors will display on
+top of the grid. Also, most inplace editors actually have a parent assigned, so you only want to nil the ones you
+gave a parent in order for the translation to succeed.</P
+></DIV
+><DIV
+CLASS="NAVFOOTER"
+><HR
+ALIGN="LEFT"
+WIDTH="100%"><TABLE
+SUMMARY="Footer navigation table"
+WIDTH="100%"
+BORDER="0"
+CELLPADDING="0"
+CELLSPACING="0"
+><TR
+><TD
+WIDTH="33%"
+ALIGN="left"
+VALIGN="top"
+><A
+HREF="ignore-tpessentials.html"
+ACCESSKEY="P"
+>&#60;&#60;&#60; Previous</A
+></TD
+><TD
+WIDTH="34%"
+ALIGN="center"
+VALIGN="top"
+><A
+HREF="index.html"
+ACCESSKEY="H"
+>Home</A
+></TD
+><TD
+WIDTH="33%"
+ALIGN="right"
+VALIGN="top"
+><A
+HREF="faq.html"
+ACCESSKEY="N"
+>Next &#62;&#62;&#62;</A
+></TD
+></TR
+><TR
+><TD
+WIDTH="33%"
+ALIGN="left"
+VALIGN="top"
+>Turbopower Essentials</TD
+><TD
+WIDTH="34%"
+ALIGN="center"
+VALIGN="top"
+><A
+HREF="handlingclasses.html"
+ACCESSKEY="U"
+>Up</A
+></TD
+><TD
+WIDTH="33%"
+ALIGN="right"
+VALIGN="top"
+>Frequently Asked Questions</TD
+></TR
+></TABLE
+></DIV
+></BODY
+></HTML
+>

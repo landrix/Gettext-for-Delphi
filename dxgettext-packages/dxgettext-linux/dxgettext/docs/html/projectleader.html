@@ -1,0 +1,206 @@
+<!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.01//EN">
+<HTML
+><HEAD
+><TITLE
+>Project management</TITLE
+><META
+NAME="GENERATOR"
+CONTENT="Modular DocBook HTML Stylesheet Version 1.76b+
+"><LINK
+REL="HOME"
+TITLE="GNU gettext for Delphi, C++ Builder and Kylix 1.2 beta"
+HREF="index.html"><LINK
+REL="PREVIOUS"
+TITLE="Translation repositories"
+HREF="repositories.html"><LINK
+REL="NEXT"
+TITLE="Coordinating translations"
+HREF="coordinatingtranslations.html"></HEAD
+><BODY
+CLASS="CHAPTER"
+BGCOLOR="#FFFFFF"
+TEXT="#000000"
+LINK="#0000FF"
+VLINK="#840084"
+ALINK="#0000FF"
+><DIV
+CLASS="NAVHEADER"
+><TABLE
+SUMMARY="Header navigation table"
+WIDTH="100%"
+BORDER="0"
+CELLPADDING="0"
+CELLSPACING="0"
+><TR
+><TH
+COLSPAN="3"
+ALIGN="center"
+>GNU gettext for Delphi, C++ Builder and Kylix 1.2 beta</TH
+></TR
+><TR
+><TD
+WIDTH="10%"
+ALIGN="left"
+VALIGN="bottom"
+><A
+HREF="repositories.html"
+ACCESSKEY="P"
+>&#60;&#60;&#60; Previous</A
+></TD
+><TD
+WIDTH="80%"
+ALIGN="center"
+VALIGN="bottom"
+></TD
+><TD
+WIDTH="10%"
+ALIGN="right"
+VALIGN="bottom"
+><A
+HREF="coordinatingtranslations.html"
+ACCESSKEY="N"
+>Next &#62;&#62;&#62;</A
+></TD
+></TR
+></TABLE
+><HR
+ALIGN="LEFT"
+WIDTH="100%"></DIV
+><DIV
+CLASS="CHAPTER"
+><H1
+><A
+NAME="PROJECTLEADER"
+></A
+>Project management</H1
+><DIV
+CLASS="SECT1"
+><H1
+CLASS="SECT1"
+><A
+NAME="PROJECTLEADER-INTRODUCTION"
+></A
+>Introduction</H1
+><P
+>Localizing an application is not a simple task. In Germany, the first floor is the first one above
+ground. In USA, it's at ground level. How do you put that into a database? If you make an integer field named
+<TT
+CLASS="LITERAL"
+>floor</TT
+> that contains <TT
+CLASS="LITERAL"
+>0</TT
+> for ground level and <TT
+CLASS="LITERAL"
+>1</TT
+>
+for the first floor above ground, it is very easy to understand in Germany, but you'll have to modify the user
+interface quite a bit to make the same data accessible by Americans in a way that they understand easily.</P
+><P
+>The GNU gettext system only helps you with translating messages, but this can go wrong, too. For
+instance, the Math unit in Delphi has functionality to convert between different units. The names of these
+units can be translated, but if you translate two unit names to the same thing, all programs that use the Math
+unit will generate an exception during initialization. Actually, this already happened. The first Danish translation
+of the Borland Delphi 7 runtime library had "Hektar" as the translation for both "SquareHectometers" and "Hectares".
+It's the same thing, and the correct word is "Hektar", so why not use it? Now that the program doesn't work, whose fault is it?</P
+><P
+>The answer is very simple: It's the programmer's fault. He didn't live up to the responsibility of ensuring that the translator
+couldn't do anything to break the program. It might take unnecessary extra programming to ensure this, but it can be very, very
+difficult to debug the program if this is not ensured.</P
+><P
+>Let's take another example: The translator translates the application, but the users cannot find out how to operate
+the program. The English version works well and users know how to operate the English version. Whose fault is this?</P
+><P
+>Here, the answer is more complex: it might be the translator that made a bad translation, but it could also be the
+programmer that designed a user interface that is hard to translate. Often, user interfaces use concepts that can be described with
+one word in the programmer's own language, but if it takes 10 words to describe the same concept in another language, people that
+only know that other language might not understand the concept. For instance, zip-files could be represented by a zipper
+in English (Windows XP does that), but in other languages thsi relationship makes absolutely no sense. In Danish, zip-files are named
+"zip-filer", and zipper is "lynlaas". There is absolutely no relationship between "zip-filer" and "lynlaas", and whoever invented that icon
+definitely didn't think of internationalization.</P
+><P
+>The leader of an internationalized project has to:</P
+><P
+></P
+><UL
+><LI
+><P
+>Ensure that all programmers understand the concept of internationalization.</P
+></LI
+><LI
+><P
+>Ensure that translators can give feedback to the programmers in order to ensure that everything is localizable.</P
+></LI
+><LI
+><P
+>Ensure that there is a release procedure with beta-testing for each language. Having debugged
+the program in one language doesn't mean that it is bugfree in other languages, too.</P
+></LI
+><LI
+><P
+>Ensure that the beta-testers know, that they must give feedback on the translation, too.</P
+></LI
+></UL
+></DIV
+></DIV
+><DIV
+CLASS="NAVFOOTER"
+><HR
+ALIGN="LEFT"
+WIDTH="100%"><TABLE
+SUMMARY="Footer navigation table"
+WIDTH="100%"
+BORDER="0"
+CELLPADDING="0"
+CELLSPACING="0"
+><TR
+><TD
+WIDTH="33%"
+ALIGN="left"
+VALIGN="top"
+><A
+HREF="repositories.html"
+ACCESSKEY="P"
+>&#60;&#60;&#60; Previous</A
+></TD
+><TD
+WIDTH="34%"
+ALIGN="center"
+VALIGN="top"
+><A
+HREF="index.html"
+ACCESSKEY="H"
+>Home</A
+></TD
+><TD
+WIDTH="33%"
+ALIGN="right"
+VALIGN="top"
+><A
+HREF="coordinatingtranslations.html"
+ACCESSKEY="N"
+>Next &#62;&#62;&#62;</A
+></TD
+></TR
+><TR
+><TD
+WIDTH="33%"
+ALIGN="left"
+VALIGN="top"
+>Translation repositories</TD
+><TD
+WIDTH="34%"
+ALIGN="center"
+VALIGN="top"
+>&nbsp;</TD
+><TD
+WIDTH="33%"
+ALIGN="right"
+VALIGN="top"
+>Coordinating translations</TD
+></TR
+></TABLE
+></DIV
+></BODY
+></HTML
+>

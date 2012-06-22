@@ -1,0 +1,199 @@
+<!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.01//EN">
+<HTML
+><HEAD
+><TITLE
+>procedure TP_Ignore(AnObject:TObject; const name:string);</TITLE
+><META
+NAME="GENERATOR"
+CONTENT="Modular DocBook HTML Stylesheet Version 1.76b+
+"><LINK
+REL="HOME"
+TITLE="GNU gettext for Delphi, C++ Builder and Kylix 1.2 beta"
+HREF="index.html"><LINK
+REL="UP"
+TITLE="API reference"
+HREF="apireference.html"><LINK
+REL="PREVIOUS"
+TITLE="function TP_CreateRetranslator:TExecutable;"
+HREF="api-tp-createretranslator.html"><LINK
+REL="NEXT"
+TITLE="procedure TP_GlobalIgnoreClass (IgnClass:TClass);"
+HREF="api-tp-globalignoreclass.html"></HEAD
+><BODY
+CLASS="SECT1"
+BGCOLOR="#FFFFFF"
+TEXT="#000000"
+LINK="#0000FF"
+VLINK="#840084"
+ALINK="#0000FF"
+><DIV
+CLASS="NAVHEADER"
+><TABLE
+SUMMARY="Header navigation table"
+WIDTH="100%"
+BORDER="0"
+CELLPADDING="0"
+CELLSPACING="0"
+><TR
+><TH
+COLSPAN="3"
+ALIGN="center"
+>GNU gettext for Delphi, C++ Builder and Kylix 1.2 beta</TH
+></TR
+><TR
+><TD
+WIDTH="10%"
+ALIGN="left"
+VALIGN="bottom"
+><A
+HREF="api-tp-createretranslator.html"
+ACCESSKEY="P"
+>&#60;&#60;&#60; Previous</A
+></TD
+><TD
+WIDTH="80%"
+ALIGN="center"
+VALIGN="bottom"
+>API reference</TD
+><TD
+WIDTH="10%"
+ALIGN="right"
+VALIGN="bottom"
+><A
+HREF="api-tp-globalignoreclass.html"
+ACCESSKEY="N"
+>Next &#62;&#62;&#62;</A
+></TD
+></TR
+></TABLE
+><HR
+ALIGN="LEFT"
+WIDTH="100%"></DIV
+><DIV
+CLASS="SECT1"
+><H1
+CLASS="SECT1"
+><A
+NAME="API-TP-IGNORE"
+></A
+>procedure TP_Ignore(AnObject:TObject; const name:string);</H1
+><P
+>This procedure only affects the next execution of <TT
+CLASS="LITERAL"
+>TranslateProperties()</TT
+>
+or <TT
+CLASS="LITERAL"
+>TranslateComponent()</TT
+>. The first parameter must be the same as the first
+parameter in those other two procedures, and the name parameter specifies, which property you
+don't want to be translated. Several syntaxes are allowed:</P
+><TABLE
+BORDER="0"
+BGCOLOR="#E0E0E0"
+WIDTH="100%"
+><TR
+><TD
+><PRE
+CLASS="SCREEN"
+> TP_Ignore (self,'ButtonOK.Caption');   // Ignores caption on ButtonOK
+ TP_Ignore (self,'MyDBGrid');           // Ignores all properties on component MyDBGrid
+ TP_Ignore (self,'.Caption');           // Ignores self's caption</PRE
+></TD
+></TR
+></TABLE
+><P
+>Since this procedure only has effect on the upcoming translation, it should always be
+used just before <TT
+CLASS="LITERAL"
+>TranslateProperties()</TT
+>
+or <TT
+CLASS="LITERAL"
+>TranslateComponent()</TT
+>. Example:</P
+><TABLE
+BORDER="0"
+BGCOLOR="#E0E0E0"
+WIDTH="100%"
+><TR
+><TD
+><PRE
+CLASS="PROGRAMLISTING"
+>procedure TFormMain.FormCreate(Sender: TObject);
+begin
+  TP_Ignore (self, 'Listbox1.Items');
+  TranslateComponent (self);
+end;</PRE
+></TD
+></TR
+></TABLE
+><P
+>In this example, that shows an implementation in the form's FormCreate event handler,
+all components on the form except the items in Listbox1 are translated.</P
+></DIV
+><DIV
+CLASS="NAVFOOTER"
+><HR
+ALIGN="LEFT"
+WIDTH="100%"><TABLE
+SUMMARY="Footer navigation table"
+WIDTH="100%"
+BORDER="0"
+CELLPADDING="0"
+CELLSPACING="0"
+><TR
+><TD
+WIDTH="33%"
+ALIGN="left"
+VALIGN="top"
+><A
+HREF="api-tp-createretranslator.html"
+ACCESSKEY="P"
+>&#60;&#60;&#60; Previous</A
+></TD
+><TD
+WIDTH="34%"
+ALIGN="center"
+VALIGN="top"
+><A
+HREF="index.html"
+ACCESSKEY="H"
+>Home</A
+></TD
+><TD
+WIDTH="33%"
+ALIGN="right"
+VALIGN="top"
+><A
+HREF="api-tp-globalignoreclass.html"
+ACCESSKEY="N"
+>Next &#62;&#62;&#62;</A
+></TD
+></TR
+><TR
+><TD
+WIDTH="33%"
+ALIGN="left"
+VALIGN="top"
+>function TP_CreateRetranslator:TExecutable;</TD
+><TD
+WIDTH="34%"
+ALIGN="center"
+VALIGN="top"
+><A
+HREF="apireference.html"
+ACCESSKEY="U"
+>Up</A
+></TD
+><TD
+WIDTH="33%"
+ALIGN="right"
+VALIGN="top"
+>procedure TP_GlobalIgnoreClass (IgnClass:TClass);</TD
+></TR
+></TABLE
+></DIV
+></BODY
+></HTML
+>

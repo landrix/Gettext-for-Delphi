@@ -1,0 +1,306 @@
+<!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.01//EN">
+<HTML
+><HEAD
+><TITLE
+>msgmerge</TITLE
+><META
+NAME="GENERATOR"
+CONTENT="Modular DocBook HTML Stylesheet Version 1.76b+
+"><LINK
+REL="HOME"
+TITLE="GNU gettext for Delphi, C++ Builder and Kylix 1.2 beta"
+HREF="index.html"><LINK
+REL="UP"
+TITLE="GNU Command-line tools reference"
+HREF="gnucommandlinereference.html"><LINK
+REL="PREVIOUS"
+TITLE="msginit"
+HREF="msginit.html"><LINK
+REL="NEXT"
+TITLE="msgunfmt"
+HREF="msgunfmt.html"></HEAD
+><BODY
+CLASS="SECT1"
+BGCOLOR="#FFFFFF"
+TEXT="#000000"
+LINK="#0000FF"
+VLINK="#840084"
+ALINK="#0000FF"
+><DIV
+CLASS="NAVHEADER"
+><TABLE
+SUMMARY="Header navigation table"
+WIDTH="100%"
+BORDER="0"
+CELLPADDING="0"
+CELLSPACING="0"
+><TR
+><TH
+COLSPAN="3"
+ALIGN="center"
+>GNU gettext for Delphi, C++ Builder and Kylix 1.2 beta</TH
+></TR
+><TR
+><TD
+WIDTH="10%"
+ALIGN="left"
+VALIGN="bottom"
+><A
+HREF="msginit.html"
+ACCESSKEY="P"
+>&#60;&#60;&#60; Previous</A
+></TD
+><TD
+WIDTH="80%"
+ALIGN="center"
+VALIGN="bottom"
+>GNU Command-line tools reference</TD
+><TD
+WIDTH="10%"
+ALIGN="right"
+VALIGN="bottom"
+><A
+HREF="msgunfmt.html"
+ACCESSKEY="N"
+>Next &#62;&#62;&#62;</A
+></TD
+></TR
+></TABLE
+><HR
+ALIGN="LEFT"
+WIDTH="100%"></DIV
+><DIV
+CLASS="SECT1"
+><H1
+CLASS="SECT1"
+><A
+NAME="MSGMERGE"
+></A
+>msgmerge</H1
+><P
+>This tool can merge two PO files, where it takes the msgids from one
+file and the translations from another file. It is normally used to update a
+translation that was made for one version of a program, to be useful for the
+next version of the program, by merging the translation with a template that
+was extracted from the new source code.</P
+><TABLE
+BORDER="0"
+BGCOLOR="#E0E0E0"
+WIDTH="100%"
+><TR
+><TD
+><PRE
+CLASS="SCREEN"
+>NAME
+       msgmerge - merge message catalog and template
+
+SYNOPSIS
+       msgmerge [OPTION] def.po ref.pot
+
+DESCRIPTION
+       Merges  two  Uniforum  style .po files together.	 The def.po file is an
+       existing PO file with translations which will  be  taken	 over  to  the
+       newly  created  file as long as they still match; comments will be pre-
+       served, but extracted comments and file positions  will	be  discarded.
+       The  ref.pot  file  is  the last created PO file with up-to-date source
+       references but old translations, or a PO Template file (generally  cre-
+       ated  by	 xgettext);  any  translations or comments in the file will be
+       discarded, however dot comments and file positions will	be  preserved.
+       Where an exact match cannot be found, fuzzy matching is used to produce
+       better results.
+
+       Mandatory arguments to long options are	mandatory  for	short  options
+       too.
+
+   Input file location:
+       def.po translations referring to old sources
+
+       ref.pot
+	      references to new sources
+
+       -D, --directory=DIRECTORY
+	      add DIRECTORY to list for input files search
+
+       -C, --compendium=FILE
+	      additional  library  of  message	translations, may be specified
+	      more than once
+
+   Operation mode:
+       -U, --update
+	      update def.po, do nothing if def.po already up to date
+
+   Output file location:
+       -o, --output-file=FILE
+	      write output to specified file
+
+       The results are written to standard output if no output file is	speci-
+       fied or if it is -.
+
+       Output  file  location  in  update  mode: The result is written back to
+       def.po.
+
+       --backup=CONTROL
+	      make a backup of def.po
+
+       --suffix=SUFFIX
+	      override the usual backup suffix
+
+       The version control method may be selected via the --backup  option  or
+       through the VERSION_CONTROL environment variable.  Here are the values:
+
+       none, off
+	      never make backups (even if --backup is given)
+
+       numbered, t
+	      make numbered backups
+
+       existing, nil
+	      numbered if numbered backups exist, simple otherwise
+
+       simple, never
+	      always make simple backups
+
+       The backup suffix  is  `~',  unless  set	 with  --suffix	 or  the  SIM-
+       PLE_BACKUP_SUFFIX environment variable.
+
+   Operation modifiers:
+       -m, --multi-domain
+	      apply ref.pot to each of the domains in def.po
+
+   Output details:
+       -e, --no-escape
+	      do not use C escapes in output (default)
+
+       -E, --escape
+	      use C escapes in output, no extended chars
+
+       --force-po
+	      write PO file even if empty
+
+       -i, --indent
+	      indented output style
+
+       --no-location
+	      suppress '#: filename:line' lines
+
+       --add-location
+	      preserve '#: filename:line' lines (default)
+
+       --strict
+	      strict Uniforum output style
+
+       -w, --width=NUMBER
+	      set output page width
+
+       --no-wrap
+	      do  not  break  long  message lines, longer than the output page
+	      width, into several lines
+
+       -s, --sort-output
+	      generate sorted output
+
+       -F, --sort-by-file
+	      sort output by file location
+
+   Informative output:
+       -h, --help
+	      display this help and exit
+
+       -V, --version
+	      output version information and exit
+
+       -v, --verbose
+	      increase verbosity level
+
+       -q, --quiet, --silent
+	      suppress progress indicators
+
+AUTHOR
+       Written by Peter Miller.
+
+REPORTING BUGS
+       Report bugs to &#60;bug-gnu-gettext@gnu.org&#62;.
+
+COPYRIGHT
+       Copyright (C) 1995-1998, 2000-2002 Free Software Foundation, Inc.
+       This is free software; see the source for copying conditions.  There is
+       NO  warranty;  not even for MERCHANTABILITY or FITNESS FOR A PARTICULAR
+       PURPOSE.
+
+SEE ALSO
+       The full documentation for msgmerge is maintained as a Texinfo  manual.
+       If  the info and msgmerge programs are properly installed at your site,
+       the command
+
+	      info msgmerge
+
+       should give you access to the complete manual.</PRE
+></TD
+></TR
+></TABLE
+></DIV
+><DIV
+CLASS="NAVFOOTER"
+><HR
+ALIGN="LEFT"
+WIDTH="100%"><TABLE
+SUMMARY="Footer navigation table"
+WIDTH="100%"
+BORDER="0"
+CELLPADDING="0"
+CELLSPACING="0"
+><TR
+><TD
+WIDTH="33%"
+ALIGN="left"
+VALIGN="top"
+><A
+HREF="msginit.html"
+ACCESSKEY="P"
+>&#60;&#60;&#60; Previous</A
+></TD
+><TD
+WIDTH="34%"
+ALIGN="center"
+VALIGN="top"
+><A
+HREF="index.html"
+ACCESSKEY="H"
+>Home</A
+></TD
+><TD
+WIDTH="33%"
+ALIGN="right"
+VALIGN="top"
+><A
+HREF="msgunfmt.html"
+ACCESSKEY="N"
+>Next &#62;&#62;&#62;</A
+></TD
+></TR
+><TR
+><TD
+WIDTH="33%"
+ALIGN="left"
+VALIGN="top"
+>msginit</TD
+><TD
+WIDTH="34%"
+ALIGN="center"
+VALIGN="top"
+><A
+HREF="gnucommandlinereference.html"
+ACCESSKEY="U"
+>Up</A
+></TD
+><TD
+WIDTH="33%"
+ALIGN="right"
+VALIGN="top"
+>msgunfmt</TD
+></TR
+></TABLE
+></DIV
+></BODY
+></HTML
+>

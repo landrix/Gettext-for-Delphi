@@ -1,0 +1,193 @@
+<!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.01//EN">
+<HTML
+><HEAD
+><TITLE
+>ixtopo</TITLE
+><META
+NAME="GENERATOR"
+CONTENT="Modular DocBook HTML Stylesheet Version 1.76b+
+"><LINK
+REL="HOME"
+TITLE="GNU gettext for Delphi, C++ Builder and Kylix 1.2 beta"
+HREF="index.html"><LINK
+REL="UP"
+TITLE="Dxgettext command-line tools reference"
+HREF="dxgettextcommandlinereference.html"><LINK
+REL="PREVIOUS"
+TITLE="dxgreg"
+HREF="dxgreg.html"><LINK
+REL="NEXT"
+TITLE="msgimport"
+HREF="msgimport.html"></HEAD
+><BODY
+CLASS="SECT1"
+BGCOLOR="#FFFFFF"
+TEXT="#000000"
+LINK="#0000FF"
+VLINK="#840084"
+ALINK="#0000FF"
+><DIV
+CLASS="NAVHEADER"
+><TABLE
+SUMMARY="Header navigation table"
+WIDTH="100%"
+BORDER="0"
+CELLPADDING="0"
+CELLSPACING="0"
+><TR
+><TH
+COLSPAN="3"
+ALIGN="center"
+>GNU gettext for Delphi, C++ Builder and Kylix 1.2 beta</TH
+></TR
+><TR
+><TD
+WIDTH="10%"
+ALIGN="left"
+VALIGN="bottom"
+><A
+HREF="dxgreg.html"
+ACCESSKEY="P"
+>&#60;&#60;&#60; Previous</A
+></TD
+><TD
+WIDTH="80%"
+ALIGN="center"
+VALIGN="bottom"
+>Dxgettext command-line tools reference</TD
+><TD
+WIDTH="10%"
+ALIGN="right"
+VALIGN="bottom"
+><A
+HREF="msgimport.html"
+ACCESSKEY="N"
+>Next &#62;&#62;&#62;</A
+></TD
+></TR
+></TABLE
+><HR
+ALIGN="LEFT"
+WIDTH="100%"></DIV
+><DIV
+CLASS="SECT1"
+><H1
+CLASS="SECT1"
+><A
+NAME="IXTOPO"
+></A
+>ixtopo</H1
+><P
+>This tool is useful for converting Delphi ITE translations to GNU
+gettext. This is the text that appears when you run the program without parameters:</P
+><TABLE
+BORDER="0"
+BGCOLOR="#E0E0E0"
+WIDTH="100%"
+><TR
+><TD
+><PRE
+CLASS="SCREEN"
+>IXTOPO 1.0: extracts strings from an ITE xml file and inserts any translations into a PO file.
+
+This program is subject to the Mozilla Public License
+Version 1.1 (the "License"); you may not use this program except
+in compliance with the License. You may obtain a copy of the License at
+http://www.mozilla.org/MPL/MPL-1.1.html
+
+Portions created by Peter Thornqvist are
+Copyright (c) 2003 by Peter Thornqvist; all rights reserved.
+
+Usage:
+
+ixtopo &#60;xmlfile&#62; &#60;pofile&#62; &#60;locale&#62; [-f]
+
+where:
+
+&#60;xmlfile&#62;    is the xml file to read from (REQUIRED)
+&#60;pofile&#62;     is the po file to write to (REQUIRED)
+&#60;locale&#62;     is the locale to extract and insert into the po file (REQUIRED)
+-f           forces the creation of new entries in the po file if not found (OPTIONAL, defaults to FALSE)
+
+NOTE:
+Since locale names in XML files contains spaces, you must
+put quotes around the locale, i.e use "US en" to extract
+the American english translations</PRE
+></TD
+></TR
+></TABLE
+><P
+>See <A
+HREF="advancedtopics.html#CONVERTFROMDELPHIITE"
+>the Section called <I
+>Migrating from the ITE to dxgettext</I
+> in the chapter called <I
+>Advanced topics</I
+></A
+>&#62; for further information.</P
+></DIV
+><DIV
+CLASS="NAVFOOTER"
+><HR
+ALIGN="LEFT"
+WIDTH="100%"><TABLE
+SUMMARY="Footer navigation table"
+WIDTH="100%"
+BORDER="0"
+CELLPADDING="0"
+CELLSPACING="0"
+><TR
+><TD
+WIDTH="33%"
+ALIGN="left"
+VALIGN="top"
+><A
+HREF="dxgreg.html"
+ACCESSKEY="P"
+>&#60;&#60;&#60; Previous</A
+></TD
+><TD
+WIDTH="34%"
+ALIGN="center"
+VALIGN="top"
+><A
+HREF="index.html"
+ACCESSKEY="H"
+>Home</A
+></TD
+><TD
+WIDTH="33%"
+ALIGN="right"
+VALIGN="top"
+><A
+HREF="msgimport.html"
+ACCESSKEY="N"
+>Next &#62;&#62;&#62;</A
+></TD
+></TR
+><TR
+><TD
+WIDTH="33%"
+ALIGN="left"
+VALIGN="top"
+>dxgreg</TD
+><TD
+WIDTH="34%"
+ALIGN="center"
+VALIGN="top"
+><A
+HREF="dxgettextcommandlinereference.html"
+ACCESSKEY="U"
+>Up</A
+></TD
+><TD
+WIDTH="33%"
+ALIGN="right"
+VALIGN="top"
+>msgimport</TD
+></TR
+></TABLE
+></DIV
+></BODY
+></HTML
+>
