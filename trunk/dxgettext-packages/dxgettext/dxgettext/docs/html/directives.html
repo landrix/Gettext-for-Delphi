@@ -1,0 +1,248 @@
+<!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.01//EN">
+<HTML
+><HEAD
+><TITLE
+>Directives</TITLE
+><META
+NAME="GENERATOR"
+CONTENT="Modular DocBook HTML Stylesheet Version 1.76b+
+"><LINK
+REL="HOME"
+TITLE="GNU gettext for Delphi, C++ Builder and Kylix 1.2 beta"
+HREF="index.html"><LINK
+REL="UP"
+TITLE="Experienced programmers' topics"
+HREF="programmertasks.html"><LINK
+REL="PREVIOUS"
+TITLE="Debugging"
+HREF="debugging.html"><LINK
+REL="NEXT"
+TITLE="Advanced topics"
+HREF="advancedtopics.html"></HEAD
+><BODY
+CLASS="SECT1"
+BGCOLOR="#FFFFFF"
+TEXT="#000000"
+LINK="#0000FF"
+VLINK="#840084"
+ALINK="#0000FF"
+><DIV
+CLASS="NAVHEADER"
+><TABLE
+SUMMARY="Header navigation table"
+WIDTH="100%"
+BORDER="0"
+CELLPADDING="0"
+CELLSPACING="0"
+><TR
+><TH
+COLSPAN="3"
+ALIGN="center"
+>GNU gettext for Delphi, C++ Builder and Kylix 1.2 beta</TH
+></TR
+><TR
+><TD
+WIDTH="10%"
+ALIGN="left"
+VALIGN="bottom"
+><A
+HREF="debugging.html"
+ACCESSKEY="P"
+>&#60;&#60;&#60; Previous</A
+></TD
+><TD
+WIDTH="80%"
+ALIGN="center"
+VALIGN="bottom"
+>Experienced programmers' topics</TD
+><TD
+WIDTH="10%"
+ALIGN="right"
+VALIGN="bottom"
+><A
+HREF="advancedtopics.html"
+ACCESSKEY="N"
+>Next &#62;&#62;&#62;</A
+></TD
+></TR
+></TABLE
+><HR
+ALIGN="LEFT"
+WIDTH="100%"></DIV
+><DIV
+CLASS="SECT1"
+><H1
+CLASS="SECT1"
+><A
+NAME="DIRECTIVES"
+></A
+>Directives</H1
+><P
+>It is possible to control the string extraction from Pascal source code using directives,
+very much like the compiler directives. Currently, the directives only support extraction
+of string constants defined using the <TT
+CLASS="LITERAL"
+>const</TT
+> keyword, into a specified text domain:</P
+><TABLE
+BORDER="0"
+BGCOLOR="#E0E0E0"
+WIDTH="100%"
+><TR
+><TD
+><PRE
+CLASS="SCREEN"
+>{gnugetext: scan-all [text-domain='domain name'] }
+.
+. in this section the string constants will be extracted
+.
+{gnugettext: reset }</PRE
+></TD
+></TR
+></TABLE
+><P
+><TT
+CLASS="LITERAL"
+>{gnugettext: scan-all }</TT
+> is named the 'start directive' in this document.
+<TT
+CLASS="LITERAL"
+>{gnugettext: reset }</TT
+> is named the 'end directive' in this document.</P
+><P
+>If a start directive exists, the end one must exist in the same file. 
+The directives are local to a file.
+Several start directive can exists before the end one and is used to change the target domain.
+This directive actually works for constants only! Initialized variables are not taken in care.
+The domain name, if present, must be enclosed by single quote.
+If the domain name include a single quote (but remember that the domain name will becomes a file name), it must be doubled.
+There are no check on the domain name. It is assumed that you know what you type!</P
+><DIV
+CLASS="NOTE"
+><P
+></P
+><TABLE
+CLASS="NOTE"
+WIDTH="100%"
+BORDER="0"
+><TR
+><TD
+WIDTH="25"
+ALIGN="CENTER"
+VALIGN="TOP"
+><IMG
+SRC="./stylesheet-images/note.gif"
+HSPACE="5"
+ALT="Note"></TD
+><TH
+ALIGN="LEFT"
+VALIGN="CENTER"
+><B
+>Example:</B
+></TH
+></TR
+><TR
+><TD
+>&nbsp;</TD
+><TD
+ALIGN="LEFT"
+VALIGN="TOP"
+><TABLE
+BORDER="0"
+BGCOLOR="#E0E0E0"
+WIDTH="100%"
+><TR
+><TD
+><PRE
+CLASS="SCREEN"
+>{gnugettext: scan-all text-domain='toto' }
+Const
+  a = 'toto';
+{gnugettext: scan-all text-domain='titi' }
+  b = 'titi';
+{gnugettext: reset }</PRE
+></TD
+></TR
+></TABLE
+><P
+>In this example, the msgid 'toto' will be put into <TT
+CLASS="FILENAME"
+>toto.po</TT
+>
+and 'titi' will be put into the file named <TT
+CLASS="FILENAME"
+>titi.po</TT
+>.</P
+></TD
+></TR
+></TABLE
+></DIV
+><P
+>It is the plan to extend the directive system in the future to disable/enable string
+extraction etc.</P
+></DIV
+><DIV
+CLASS="NAVFOOTER"
+><HR
+ALIGN="LEFT"
+WIDTH="100%"><TABLE
+SUMMARY="Footer navigation table"
+WIDTH="100%"
+BORDER="0"
+CELLPADDING="0"
+CELLSPACING="0"
+><TR
+><TD
+WIDTH="33%"
+ALIGN="left"
+VALIGN="top"
+><A
+HREF="debugging.html"
+ACCESSKEY="P"
+>&#60;&#60;&#60; Previous</A
+></TD
+><TD
+WIDTH="34%"
+ALIGN="center"
+VALIGN="top"
+><A
+HREF="index.html"
+ACCESSKEY="H"
+>Home</A
+></TD
+><TD
+WIDTH="33%"
+ALIGN="right"
+VALIGN="top"
+><A
+HREF="advancedtopics.html"
+ACCESSKEY="N"
+>Next &#62;&#62;&#62;</A
+></TD
+></TR
+><TR
+><TD
+WIDTH="33%"
+ALIGN="left"
+VALIGN="top"
+>Debugging</TD
+><TD
+WIDTH="34%"
+ALIGN="center"
+VALIGN="top"
+><A
+HREF="programmertasks.html"
+ACCESSKEY="U"
+>Up</A
+></TD
+><TD
+WIDTH="33%"
+ALIGN="right"
+VALIGN="top"
+>Advanced topics</TD
+></TR
+></TABLE
+></DIV
+></BODY
+></HTML
+>

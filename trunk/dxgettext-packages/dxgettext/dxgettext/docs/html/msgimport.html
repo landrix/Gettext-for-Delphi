@@ -1,0 +1,221 @@
+<!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.01//EN">
+<HTML
+><HEAD
+><TITLE
+>msgimport</TITLE
+><META
+NAME="GENERATOR"
+CONTENT="Modular DocBook HTML Stylesheet Version 1.76b+
+"><LINK
+REL="HOME"
+TITLE="GNU gettext for Delphi, C++ Builder and Kylix 1.2 beta"
+HREF="index.html"><LINK
+REL="UP"
+TITLE="Dxgettext command-line tools reference"
+HREF="dxgettextcommandlinereference.html"><LINK
+REL="PREVIOUS"
+TITLE="ixtopo"
+HREF="ixtopo.html"><LINK
+REL="NEXT"
+TITLE="msgmergePOT"
+HREF="msgmergepot.html"></HEAD
+><BODY
+CLASS="SECT1"
+BGCOLOR="#FFFFFF"
+TEXT="#000000"
+LINK="#0000FF"
+VLINK="#840084"
+ALINK="#0000FF"
+><DIV
+CLASS="NAVHEADER"
+><TABLE
+SUMMARY="Header navigation table"
+WIDTH="100%"
+BORDER="0"
+CELLPADDING="0"
+CELLSPACING="0"
+><TR
+><TH
+COLSPAN="3"
+ALIGN="center"
+>GNU gettext for Delphi, C++ Builder and Kylix 1.2 beta</TH
+></TR
+><TR
+><TD
+WIDTH="10%"
+ALIGN="left"
+VALIGN="bottom"
+><A
+HREF="ixtopo.html"
+ACCESSKEY="P"
+>&#60;&#60;&#60; Previous</A
+></TD
+><TD
+WIDTH="80%"
+ALIGN="center"
+VALIGN="bottom"
+>Dxgettext command-line tools reference</TD
+><TD
+WIDTH="10%"
+ALIGN="right"
+VALIGN="bottom"
+><A
+HREF="msgmergepot.html"
+ACCESSKEY="N"
+>Next &#62;&#62;&#62;</A
+></TD
+></TR
+></TABLE
+><HR
+ALIGN="LEFT"
+WIDTH="100%"></DIV
+><DIV
+CLASS="SECT1"
+><H1
+CLASS="SECT1"
+><A
+NAME="MSGIMPORT"
+></A
+>msgimport</H1
+><P
+>This tool makes it possible to create a po file from an ascii tabulated
+text file. It does not support multiline msgstr values.
+In order to use it, it must conform to these rules:</P
+><P
+></P
+><UL
+><LI
+><P
+>Be an utf-8 encoded text file</P
+></LI
+><LI
+><P
+>It may not contain any header lines etc.</P
+></LI
+><LI
+><P
+>It must contain exactly two columns, separated by a tabulator (ascii 9), where
+the first column contains the msgid, and the second column contains the msgstr.</P
+></LI
+></UL
+><P
+>If you have something in tabular form that you want to convert to a po file, do it like this:</P
+><P
+></P
+><UL
+><LI
+><P
+>Load the tabulated data into a spreadsheet. If you don't have a spreadsheet on your computer,
+get it at <A
+HREF="http://www.openoffice.org/"
+TARGET="_top"
+>openoffice.org</A
+>.</P
+></LI
+><LI
+><P
+>Delete all columns except the two that contain msgid and msgstr. Make sure the first column is msgstr.</P
+></LI
+><LI
+><P
+>Delete all rows that do not contains data to be converted.</P
+></LI
+><LI
+><P
+>Save the file as a text-file, tabulator separated with no text delimiters.</P
+></LI
+><LI
+><P
+>Load the text file into an utf-8 capable text editor like <A
+HREF="http://unired.sf.net/"
+TARGET="_top"
+>Unired</A
+>.</P
+></LI
+><LI
+><P
+>Save the text file as an utf-8 text file with "no BOM".</P
+></LI
+><LI
+><P
+>Run <TABLE
+BORDER="0"
+BGCOLOR="#E0E0E0"
+WIDTH="90%"
+><TR
+><TD
+><PRE
+CLASS="SCREEN"
+>msgimport textfile.txt -o output.po</PRE
+></TD
+></TR
+></TABLE
+> and you got a valid .po file.</P
+></LI
+></UL
+></DIV
+><DIV
+CLASS="NAVFOOTER"
+><HR
+ALIGN="LEFT"
+WIDTH="100%"><TABLE
+SUMMARY="Footer navigation table"
+WIDTH="100%"
+BORDER="0"
+CELLPADDING="0"
+CELLSPACING="0"
+><TR
+><TD
+WIDTH="33%"
+ALIGN="left"
+VALIGN="top"
+><A
+HREF="ixtopo.html"
+ACCESSKEY="P"
+>&#60;&#60;&#60; Previous</A
+></TD
+><TD
+WIDTH="34%"
+ALIGN="center"
+VALIGN="top"
+><A
+HREF="index.html"
+ACCESSKEY="H"
+>Home</A
+></TD
+><TD
+WIDTH="33%"
+ALIGN="right"
+VALIGN="top"
+><A
+HREF="msgmergepot.html"
+ACCESSKEY="N"
+>Next &#62;&#62;&#62;</A
+></TD
+></TR
+><TR
+><TD
+WIDTH="33%"
+ALIGN="left"
+VALIGN="top"
+>ixtopo</TD
+><TD
+WIDTH="34%"
+ALIGN="center"
+VALIGN="top"
+><A
+HREF="dxgettextcommandlinereference.html"
+ACCESSKEY="U"
+>Up</A
+></TD
+><TD
+WIDTH="33%"
+ALIGN="right"
+VALIGN="top"
+>msgmergePOT</TD
+></TR
+></TABLE
+></DIV
+></BODY
+></HTML
+>

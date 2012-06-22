@@ -1,0 +1,208 @@
+<!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.01//EN">
+<HTML
+><HEAD
+><TITLE
+>SampleForm.pas</TITLE
+><META
+NAME="GENERATOR"
+CONTENT="Modular DocBook HTML Stylesheet Version 1.76b+
+"><LINK
+REL="HOME"
+TITLE="GNU gettext for Delphi, C++ Builder and Kylix 1.2 beta"
+HREF="index.html"><LINK
+REL="UP"
+TITLE='"Hello, World" source code'
+HREF="helloworldsource.html"><LINK
+REL="PREVIOUS"
+TITLE="gginitializer.pas"
+HREF="helloworld-gginitializer.html"><LINK
+REL="NEXT"
+TITLE="SampleForm.dfm"
+HREF="helloworld-sampleform-dfm.html"></HEAD
+><BODY
+CLASS="SECT1"
+BGCOLOR="#FFFFFF"
+TEXT="#000000"
+LINK="#0000FF"
+VLINK="#840084"
+ALINK="#0000FF"
+><DIV
+CLASS="NAVHEADER"
+><TABLE
+SUMMARY="Header navigation table"
+WIDTH="100%"
+BORDER="0"
+CELLPADDING="0"
+CELLSPACING="0"
+><TR
+><TH
+COLSPAN="3"
+ALIGN="center"
+>GNU gettext for Delphi, C++ Builder and Kylix 1.2 beta</TH
+></TR
+><TR
+><TD
+WIDTH="10%"
+ALIGN="left"
+VALIGN="bottom"
+><A
+HREF="helloworld-gginitializer.html"
+ACCESSKEY="P"
+>&#60;&#60;&#60; Previous</A
+></TD
+><TD
+WIDTH="80%"
+ALIGN="center"
+VALIGN="bottom"
+>"Hello, World" source code</TD
+><TD
+WIDTH="10%"
+ALIGN="right"
+VALIGN="bottom"
+><A
+HREF="helloworld-sampleform-dfm.html"
+ACCESSKEY="N"
+>Next &#62;&#62;&#62;</A
+></TD
+></TR
+></TABLE
+><HR
+ALIGN="LEFT"
+WIDTH="100%"></DIV
+><DIV
+CLASS="SECT1"
+><H1
+CLASS="SECT1"
+><A
+NAME="HELLOWORLD-SAMPLEFORM-PAS"
+></A
+>SampleForm.pas</H1
+><TABLE
+BORDER="0"
+BGCOLOR="#E0E0E0"
+WIDTH="100%"
+><TR
+><TD
+><PRE
+CLASS="PROGRAMLISTING"
+>unit SampleForm;
+
+interface
+
+uses
+  Windows, Messages, SysUtils, Classes, Graphics, Controls, Forms,
+  Dialogs, StdCtrls;
+
+type
+  TFormMain = class(TForm)
+    ButtonTestGettext: TButton;
+    ButtonTestResourcestring: TButton;
+    procedure ButtonTestGettextClick(Sender: TObject);
+    procedure ButtonTestResourcestringClick(Sender: TObject);
+    procedure FormCreate(Sender: TObject);
+  private
+    { Private declarations }
+  public
+    { Public declarations }
+  end;
+
+var
+  FormMain: TFormMain;
+
+implementation
+
+uses
+  gnugettext;
+
+{$R *.dfm}
+
+procedure TFormMain.FormCreate(Sender: TObject);
+begin
+  TranslateComponent (self);
+end;
+
+resourcestring
+  MessageToUser='Thank you for clicking this button';
+
+procedure TFormMain.ButtonTestResourcestringClick(Sender: TObject);
+begin
+  // This is a demonstration of automatic resourcestring translation
+  MessageDlg (MessageToUser,mtInformation,[mbOK],0);
+end;
+
+procedure TFormMain.ButtonTestGettextClick(Sender: TObject);
+begin
+  // This is a demo of the _() syntax
+  MessageDlg (_('Thank you for clicking this button'),mtInformation,[mbOK],0);
+end;
+
+end.</PRE
+></TD
+></TR
+></TABLE
+></DIV
+><DIV
+CLASS="NAVFOOTER"
+><HR
+ALIGN="LEFT"
+WIDTH="100%"><TABLE
+SUMMARY="Footer navigation table"
+WIDTH="100%"
+BORDER="0"
+CELLPADDING="0"
+CELLSPACING="0"
+><TR
+><TD
+WIDTH="33%"
+ALIGN="left"
+VALIGN="top"
+><A
+HREF="helloworld-gginitializer.html"
+ACCESSKEY="P"
+>&#60;&#60;&#60; Previous</A
+></TD
+><TD
+WIDTH="34%"
+ALIGN="center"
+VALIGN="top"
+><A
+HREF="index.html"
+ACCESSKEY="H"
+>Home</A
+></TD
+><TD
+WIDTH="33%"
+ALIGN="right"
+VALIGN="top"
+><A
+HREF="helloworld-sampleform-dfm.html"
+ACCESSKEY="N"
+>Next &#62;&#62;&#62;</A
+></TD
+></TR
+><TR
+><TD
+WIDTH="33%"
+ALIGN="left"
+VALIGN="top"
+>gginitializer.pas</TD
+><TD
+WIDTH="34%"
+ALIGN="center"
+VALIGN="top"
+><A
+HREF="helloworldsource.html"
+ACCESSKEY="U"
+>Up</A
+></TD
+><TD
+WIDTH="33%"
+ALIGN="right"
+VALIGN="top"
+>SampleForm.dfm</TD
+></TR
+></TABLE
+></DIV
+></BODY
+></HTML
+>

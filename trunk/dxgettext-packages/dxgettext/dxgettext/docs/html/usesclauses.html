@@ -1,0 +1,329 @@
+<!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.01//EN">
+<HTML
+><HEAD
+><TITLE
+>Uses clauses</TITLE
+><META
+NAME="GENERATOR"
+CONTENT="Modular DocBook HTML Stylesheet Version 1.76b+
+"><LINK
+REL="HOME"
+TITLE="GNU gettext for Delphi, C++ Builder and Kylix 1.2 beta"
+HREF="index.html"><LINK
+REL="UP"
+TITLE="Action"
+HREF="howtochapter.html"><LINK
+REL="PREVIOUS"
+TITLE="Create a single language application with localized runtime library"
+HREF="createsinglelanguageapp.html"><LINK
+REL="NEXT"
+TITLE="Solving ambiguities"
+HREF="ambiguities.html"></HEAD
+><BODY
+CLASS="SECT1"
+BGCOLOR="#FFFFFF"
+TEXT="#000000"
+LINK="#0000FF"
+VLINK="#840084"
+ALINK="#0000FF"
+><DIV
+CLASS="NAVHEADER"
+><TABLE
+SUMMARY="Header navigation table"
+WIDTH="100%"
+BORDER="0"
+CELLPADDING="0"
+CELLSPACING="0"
+><TR
+><TH
+COLSPAN="3"
+ALIGN="center"
+>GNU gettext for Delphi, C++ Builder and Kylix 1.2 beta</TH
+></TR
+><TR
+><TD
+WIDTH="10%"
+ALIGN="left"
+VALIGN="bottom"
+><A
+HREF="createsinglelanguageapp.html"
+ACCESSKEY="P"
+>&#60;&#60;&#60; Previous</A
+></TD
+><TD
+WIDTH="80%"
+ALIGN="center"
+VALIGN="bottom"
+>Action</TD
+><TD
+WIDTH="10%"
+ALIGN="right"
+VALIGN="bottom"
+><A
+HREF="ambiguities.html"
+ACCESSKEY="N"
+>Next &#62;&#62;&#62;</A
+></TD
+></TR
+></TABLE
+><HR
+ALIGN="LEFT"
+WIDTH="100%"></DIV
+><DIV
+CLASS="SECT1"
+><H1
+CLASS="SECT1"
+><A
+NAME="USESCLAUSES"
+></A
+>Uses clauses</H1
+><P
+>The order, with which Delphi executes the initialization sections of your units depend on
+the order that the units are included in your application. A typical application has a .dpr file
+that looks like this:</P
+><TABLE
+BORDER="0"
+BGCOLOR="#E0E0E0"
+WIDTH="100%"
+><TR
+><TD
+><PRE
+CLASS="PROGRAMLISTING"
+>program Project1;
+
+uses
+  Forms,
+  Unit1 in 'Unit1.pas' {Form1};
+
+{$R *.res}
+
+begin
+  Application.Initialize;
+  Application.CreateForm(TForm1, Form1);
+  Application.Run;
+end.</PRE
+></TD
+></TR
+></TABLE
+><P
+>Here, the initialization section of the <TT
+CLASS="LITERAL"
+>Forms</TT
+> unit will be executed before the initialization
+section of the unit named <TT
+CLASS="LITERAL"
+>Unit1</TT
+>. All units that are used by the <TT
+CLASS="LITERAL"
+>Forms</TT
+> unit
+will also have their initialization section executed before the section of <TT
+CLASS="LITERAL"
+>Unit1</TT
+>.</P
+><P
+>Not all units have an initialization section, but the <TT
+CLASS="LITERAL"
+>gnugettext.pas</TT
+> file does.
+It detects the language, starts the resourcestring translation etc. Therefore, all resourcestrings, that
+are fetched before this intitialization section has been run, will not be translated, but all that are
+fetched afterwards, will. If you include the <TT
+CLASS="LITERAL"
+>DBClient</TT
+> unit, and this unit fails to
+initialize because there is no <TT
+CLASS="FILENAME"
+>MIDAS.DLL</TT
+>, then it will show an error message in English
+if gnugettext was later in the uses list, but it will show it in the local language if gnugettext was first.</P
+><P
+>A translated application's .dpr file could look like this:</P
+><TABLE
+BORDER="0"
+BGCOLOR="#E0E0E0"
+WIDTH="100%"
+><TR
+><TD
+><PRE
+CLASS="PROGRAMLISTING"
+>program Project1;
+
+uses
+  gnugettext in 'gnugettext.pas',
+  Forms,
+  Unit1 in 'Unit1.pas' {Form1};
+
+{$R *.res}
+
+begin
+  // Add extra domain for runtime library translations
+  AddDomainForResourceString ('delphi');
+
+  // Force program to use Danish instead of the current Windows settings
+  UseLanguage ('da');
+
+  // Put ignores on the properties that cannot be translated
+  TP_GlobalIgnoreClassProperty (TMyComponent1,'property1');
+  TP_GlobalIgnoreClassProperty (TMyComponent2,'property2');
+  TP_GlobalIgnoreClassProperty (TMyComponent3,'property3');
+  TP_GlobalIgnoreClassProperty (TMyComponent4,'property4');
+
+  Application.Initialize;
+  Application.CreateForm(TForm1, Form1);
+  Application.Run;
+end.</PRE
+></TD
+></TR
+></TABLE
+><P
+>This works very, very well for most situations, but if you want translations to start as early as possible,
+your .dpr file should look like this:</P
+><TABLE
+BORDER="0"
+BGCOLOR="#E0E0E0"
+WIDTH="100%"
+><TR
+><TD
+><PRE
+CLASS="PROGRAMLISTING"
+>program Project1;
+
+uses
+  gnugettext in 'gnugettext.pas',
+  gginitializer in 'gginitializer.pas',
+  Forms,
+  Unit1 in 'Unit1.pas' {Form1};
+
+{$R *.res}
+
+begin
+  // Put ignores on the properties that cannot be translated
+  // These just have to be placed before the first call
+  // to TranslateComponents()
+  TP_GlobalIgnoreClassProperty (TMyComponent1,'property1');
+  TP_GlobalIgnoreClassProperty (TMyComponent2,'property2');
+  TP_GlobalIgnoreClassProperty (TMyComponent3,'property3');
+  TP_GlobalIgnoreClassProperty (TMyComponent4,'property4');
+
+  Application.Initialize;
+  Application.CreateForm(TForm1, Form1);
+  Application.Run;
+end.</PRE
+></TD
+></TR
+></TABLE
+><P
+>In this example, gginitializer sets all the necessary settings in <TT
+CLASS="FILENAME"
+>gnugettext.pas</TT
+>.
+It could look like this:</P
+><TABLE
+BORDER="0"
+BGCOLOR="#E0E0E0"
+WIDTH="100%"
+><TR
+><TD
+><PRE
+CLASS="PROGRAMLISTING"
+>unit gginitializer;
+
+interface
+
+implementation
+
+uses
+  gnugettext;
+
+initialization
+  // Add extra domain for runtime library translations
+  AddDomainForResourceString ('delphi');
+
+  // Force program to use Danish instead of the current Windows settings
+  UseLanguage ('da');
+  
+  // Do not put TP_GlobalIgnoreClass* statements here, because
+  // that would require this unit to use other units than gnugettext,
+  // and then all these units would have their initialization
+  // section executed before this one.
+
+end.</PRE
+></TD
+></TR
+></TABLE
+><P
+>In this example, the initialization section of gginitializer will be run before the initialization sections
+of units like <TT
+CLASS="LITERAL"
+>Forms</TT
+> and <TT
+CLASS="LITERAL"
+>Unit1</TT
+> are run.</P
+></DIV
+><DIV
+CLASS="NAVFOOTER"
+><HR
+ALIGN="LEFT"
+WIDTH="100%"><TABLE
+SUMMARY="Footer navigation table"
+WIDTH="100%"
+BORDER="0"
+CELLPADDING="0"
+CELLSPACING="0"
+><TR
+><TD
+WIDTH="33%"
+ALIGN="left"
+VALIGN="top"
+><A
+HREF="createsinglelanguageapp.html"
+ACCESSKEY="P"
+>&#60;&#60;&#60; Previous</A
+></TD
+><TD
+WIDTH="34%"
+ALIGN="center"
+VALIGN="top"
+><A
+HREF="index.html"
+ACCESSKEY="H"
+>Home</A
+></TD
+><TD
+WIDTH="33%"
+ALIGN="right"
+VALIGN="top"
+><A
+HREF="ambiguities.html"
+ACCESSKEY="N"
+>Next &#62;&#62;&#62;</A
+></TD
+></TR
+><TR
+><TD
+WIDTH="33%"
+ALIGN="left"
+VALIGN="top"
+>Create a single language application with localized runtime library</TD
+><TD
+WIDTH="34%"
+ALIGN="center"
+VALIGN="top"
+><A
+HREF="howtochapter.html"
+ACCESSKEY="U"
+>Up</A
+></TD
+><TD
+WIDTH="33%"
+ALIGN="right"
+VALIGN="top"
+>Solving ambiguities</TD
+></TR
+></TABLE
+></DIV
+></BODY
+></HTML
+>

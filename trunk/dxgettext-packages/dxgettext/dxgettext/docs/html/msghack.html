@@ -1,0 +1,175 @@
+<!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.01//EN">
+<HTML
+><HEAD
+><TITLE
+>msghack</TITLE
+><META
+NAME="GENERATOR"
+CONTENT="Modular DocBook HTML Stylesheet Version 1.76b+
+"><LINK
+REL="HOME"
+TITLE="GNU gettext for Delphi, C++ Builder and Kylix 1.2 beta"
+HREF="index.html"><LINK
+REL="UP"
+TITLE="GNU Command-line tools reference"
+HREF="gnucommandlinereference.html"><LINK
+REL="PREVIOUS"
+TITLE="msggrep"
+HREF="msggrep.html"><LINK
+REL="NEXT"
+TITLE="msginit"
+HREF="msginit.html"></HEAD
+><BODY
+CLASS="SECT1"
+BGCOLOR="#FFFFFF"
+TEXT="#000000"
+LINK="#0000FF"
+VLINK="#840084"
+ALINK="#0000FF"
+><DIV
+CLASS="NAVHEADER"
+><TABLE
+SUMMARY="Header navigation table"
+WIDTH="100%"
+BORDER="0"
+CELLPADDING="0"
+CELLSPACING="0"
+><TR
+><TH
+COLSPAN="3"
+ALIGN="center"
+>GNU gettext for Delphi, C++ Builder and Kylix 1.2 beta</TH
+></TR
+><TR
+><TD
+WIDTH="10%"
+ALIGN="left"
+VALIGN="bottom"
+><A
+HREF="msggrep.html"
+ACCESSKEY="P"
+>&#60;&#60;&#60; Previous</A
+></TD
+><TD
+WIDTH="80%"
+ALIGN="center"
+VALIGN="bottom"
+>GNU Command-line tools reference</TD
+><TD
+WIDTH="10%"
+ALIGN="right"
+VALIGN="bottom"
+><A
+HREF="msginit.html"
+ACCESSKEY="N"
+>Next &#62;&#62;&#62;</A
+></TD
+></TR
+></TABLE
+><HR
+ALIGN="LEFT"
+WIDTH="100%"></DIV
+><DIV
+CLASS="SECT1"
+><H1
+CLASS="SECT1"
+><A
+NAME="MSGHACK"
+></A
+>msghack</H1
+><P
+>This very special tool can swap msgid and msgstr in a PO file, remove
+all translations in order to convert a translation file into a template
+file, and can also append the contents of one PO file to another.</P
+><P
+>It is part of Red Hat Linux 9, but hasn't been seen compiled for Windows yet. It
+also doesn't have a man-page on Red Hat Linux, but here you can see the help when running <TT
+CLASS="LITERAL"
+>msghack --help</TT
+>:</P
+><TABLE
+BORDER="0"
+BGCOLOR="#E0E0E0"
+WIDTH="100%"
+><TR
+><TD
+><PRE
+CLASS="SCREEN"
+>Usage:  /usr/bin/msghack  [OPTION] file.po [ref.po]
+This program can be used to alter .po files in ways no sane mind would think about.
+      -o                result will be written to FILE
+      --invert          invert a po file by switching msgid and msgstr
+      --master          join any number of files in a master-formatted catalog
+      --empty           empty the contents of the .po file, creating a .pot
+      --append          append entries from ref.po that don't exist in file.po
+
+Note: It is just a replacement of msghack for backward support.</PRE
+></TD
+></TR
+></TABLE
+></DIV
+><DIV
+CLASS="NAVFOOTER"
+><HR
+ALIGN="LEFT"
+WIDTH="100%"><TABLE
+SUMMARY="Footer navigation table"
+WIDTH="100%"
+BORDER="0"
+CELLPADDING="0"
+CELLSPACING="0"
+><TR
+><TD
+WIDTH="33%"
+ALIGN="left"
+VALIGN="top"
+><A
+HREF="msggrep.html"
+ACCESSKEY="P"
+>&#60;&#60;&#60; Previous</A
+></TD
+><TD
+WIDTH="34%"
+ALIGN="center"
+VALIGN="top"
+><A
+HREF="index.html"
+ACCESSKEY="H"
+>Home</A
+></TD
+><TD
+WIDTH="33%"
+ALIGN="right"
+VALIGN="top"
+><A
+HREF="msginit.html"
+ACCESSKEY="N"
+>Next &#62;&#62;&#62;</A
+></TD
+></TR
+><TR
+><TD
+WIDTH="33%"
+ALIGN="left"
+VALIGN="top"
+>msggrep</TD
+><TD
+WIDTH="34%"
+ALIGN="center"
+VALIGN="top"
+><A
+HREF="gnucommandlinereference.html"
+ACCESSKEY="U"
+>Up</A
+></TD
+><TD
+WIDTH="33%"
+ALIGN="right"
+VALIGN="top"
+>msginit</TD
+></TR
+></TABLE
+></DIV
+></BODY
+></HTML
+>

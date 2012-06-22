@@ -1,0 +1,202 @@
+Next version
+============
+- Fixed bug in poparser.pas, that removed fuzzy flag from entries, if poparser.pas was used in other applications than the ones supplied by dxgettext
+
+Version 1.2.1 (2005-09-09)
+==========================
+- Fixed Exception throw for corrupt mo files (by Michiel Spoor)
+- Fixed backslash handling when scanning .rc files (by Ivan Johansen)
+
+Version 1.2.1 beta 4 (2005-06-18)
+=================================
+- Fixed translation embedding into exe files, that have multiple gnugettext.pas versions inside (does not happen with normal use)
+- Fixed endless loop problem that occured in 1.2.1 beta versions.
+
+Version 1.2.1 beta 3 (2005-05-20)
+=================================
+- Bugfix: dxgettext no longer marks all entries as fuzzy.
+
+Version 1.2.1 beta 2 (2005-05-05)
+=================================
+- Bugfix in Ignore Detector
+- Fixed Delphi 5 compilation of gnugettextD5.pas
+- Removed warning when using ngettext()
+- Initial headers in po files are now marked as being fuzzy
+- poparser.pas now supports fuzzy entries
+- gnugettext.pas: Improved handling of translatecomponent() when a subcomponent was already translated
+- gnugettext.pas: Changed case in getlistoflanguages() to match the standard
+- gnugettext.pas: Improved translatecomponent() speed
+- gnugettext.pas: Added subversion control version to debug log.
+- gnugettext.pas: Added more info about what mo files are opened to debug log.
+- Improved source code scanning for ngettext() with linebreaks in source code
+- Fixed dxgettext parameters --useignorepo and --detectwarnings
+- gnugettext.pas: Automatically disables resourcestring translation when used inside a design-time component
+- String extraction now supports ggexclude.cfg to configure what strings not to include
+
+Version 1.2.1 beta 1 (2005-04-02)
+=================================
+- Empty lines in DFM files are now skipped, which should generate more correct comments
+- Multiline entries in DFM files were not detected correctly, generating incorrect comments
+- Source code scanner now recognizes EOF and EOL constants
+- Made more functions virtual
+- Scanning RC files with escaped characters now works better.
+- Fixed very tiny memory leak in gnugettext.pas that only occured once for a program run.
+- Fixed d_() source code scanning problem
+- Fixed double utf-8 encoding of mo header properties
+- Improved ignore detector in dxgettext and ggdxgettext
+- gnugettext.pas: Ignoring a class now means that retranslation mechanism doesn't remember objects of that class
+- gnugettext.pas: Now has subversion version number in header
+- gnugettext.pas: Added PreferExternal constant, which uses external mo files instead of embedded mo files when possible
+- gnugettext.pas: Changed the way that the module name is retrieved, when using bpl's and dll's.
+- Added --detectwarnings to dxgettext program
+
+Version 1.2 (2005-03-27)
+========================
+- Fixed a long time bug in dxgettext, where non-identifiers might be identified as identifiers. This should reduce the number of warnings displayed when scanning source code.
+
+Version 1.2 Release Candidate 2 (2005-03-22)
+============================================
+Tools changes:
+- The following app do no longer require write access to files they only read: dxgettext
+- poparser.pas now has filemode:=fmOpenRead
+- Upgraded version number to "1.2 RC 2"
+
+gnugettext.pas changes:
+- The non-member procedure TranslateProperties, which was not accessible outside the gnugettextpas unit, has been removed from the file.
+- Removed exception when using DebugLogToFile() without having set DXGETTEXTDEBUG
+- The ansi versions of _() etc. have been removed from gnugettext.pas
+- gnugettext.pas now automatically converts the old 'no' language code to the correct 'nb' when Windows reports 'no'
+- Reimplemented the way environment variables are retrieved because Delphi's RTL isn't 100% Windows 2003 compatible
+- Fixed the rare case, where a resourcestring is an empty string. This should be translated to an empty string.
+- Fixed lack of initialization of lang local variable in TGnuGettextInstance.Create
+- Added const to more string parameters of procedures and functions in order to improve speed
+- Fixed _(#0) problem
+
+Version 1.2 Release Candidate 1 (2004-02-19)
+============================================
+- Finally fixed the multithreading bug that was present in many of the 1.2 beta versions
+
+Version 1.2 beta 5 (2003-12-27)
+===============================
+- Bugfix: TranslateComponent() traversal across owners is now like in beta 3 and before.
+- All command line tools now have non-zero exit codes if they fail. This is good for scripting.
+- TranslateStrings() now calls TStrings.BeginUpdate and TStrings.EndUpdate.
+
+Version 1.2 beta 4 (2003-12-14)
+===============================
+- If debugging is enabled, a message is displayed at program start.
+- Most likely fixed LoadResString multithreading protection mechanism
+- Improved shell integration for .ocx, .dll and .bpl files
+- Fixed problem with embedding translations
+- Error reporting when reading .po files now reports linenumbers
+- Added support for FreePascal
+- TranslateComponent() no longer recurses into TComponent properties that have
+  a different owner. This solves the "translation across forms" problem. It
+  should not break backwards compatibility except for very few cases, where
+  something is not translated. Please report any problem you might see.
+
+Version 1.2 beta 3 (2003-11-25)
+===============================
+- Introduced DesignTimeCodePage, which allows non-ascii translations to run on Windows machines with different code pages than the designtime codepage
+- Fixed bug with dngettext() extraction, if too many spaces are used between parameters
+- Improved dublicate TP_GlobalIgnoreProperty() error message
+- Improved debug log output
+- Added --useignorepo option to dxgettext
+- Fixed compilation problem
+- Resourcestring now only auto-translates in main thread. This solves multithreading problem.
+
+Version 1.2 beta 2 (2003-09-23)
+===============================
+- Performance increase in looking up translations
+- Fixed the incorrect character set survival mechanism
+- Added documentation
+
+Version 1.2 beta 1 (2003-08-26)
+===============================
+- Bugfix: Only TPersistent objects are now translated. This solves a lot of access violation problems.
+- TP_GlobalIgnoreClassProperty() now raises Exception if called twice with same parameters
+- Moved runtime language switching from TranslateComponent to the new RetranslateComponent
+- Big improvements to debug log system
+- Removed all function calls to Libc, including native gettext support
+- Application now survives an .mo file with incorrect character set
+- Removed functions that were marked as deprecated in version 1.1.
+- Major restructuring of gnugettext.pas
+- Added Exception types to gnugettext.pas
+- Added languagecodes.pas, languagecodes.txt and languagecodes.po
+- Added "--so" parameter (for poedit integration support)
+- Fixed character set issue in German locale
+- Added msgimport tool for converting tabulated data to po files
+- Added ability to extract non-ascii strings with dxgettext (--nonascii option)
+- Added msgmergedx tool for merging po files that have non-ascii characters in msgid
+- GUI merge tool now supports non-ascii characters (although using this will remove support for fuzzy translations)
+- Added TP_IgnoreClass and TP_IgnoreClassProperty procedures
+
+Version 1.1 RC 1 (2003-06-20)
+=============================
+- Added automatic translation of resourcestrings
+- Added "Last-Translator:" line to default po file header
+- Improved error message when a property disappears in a retranslation.
+- Added the full license of gnugettext.pas to the file as a comment
+- Added check for utf-8 character set in mo files to gnugettext.pas
+
+Version 1.1 beta 4 (2003-06-05)
+===============================
+- Now uses build instead of make when producing releases
+- Added automatic DLL filename recognition, making DLL translations easier
+
+Version 1.1 beta 3 (2003-06-04)
+===============================
+- Switched from using kylix3.mo to using kylix.mo
+- Added bindtextdomainToFile() to gnugettext.pas
+- Added msgshowheader tool
+
+Version 1.1 beta 2 (2003-05-25)
+===============================
+- Loading the GNU gettext DLL is now marked as deprecated
+- TranslateProperties() has been marked as deprecated (use DefaultInstance.TranslateProperties() if you don't want to use TranslateComponent())
+- Added version numbers to all tools
+- All executables will be recompiled for each release as of this version
+- Added GetListOfLanguages() to gnugettext.pas
+
+Version 1.1 beta (2003-05-22)
+=============================
+- Bugfix: Translating a TStrings that has objects works now
+- Added logging for debug purposes
+- Added WhenNewLanguage, WhenNewDomain, WhenNewDomainDirectory for classes that inherit from TGnuGettextInstance
+- Improved string constant extraction
+- Removed warning that occured if a space was in path name when extracting texts
+
+Changes for version 1.0
+=======================
+- The version number
+- gnugettext.pas: Bugfix in the way that tabulators are handled
+- gnugettext.pas: Added ExecutableFilename variable to make shared objects easier
+
+Changes for 2003-04-28
+======================
+- gnugettext.pas: Bugfix, removed small memory leak
+- gnugettext.pas: Bugfix in code that handles ignoring components
+- gnugettext.pas: Bugfix if an invalid character set was used for the .mo files, the system did not raise an Exception.
+- gnugettext.pas: Bugfix when using multiple instances of TGnuGettextInstance, translation info was not retrieved correctly for the additional instances
+- gnugettext.pas: Added GetTranslationProperty()
+- gnugettext.pas: Added ngettext() and dngettext()
+- Improved license information
+- Added German localization of tools
+- Added "--help" option to msgremove, assemble, dxgettext and msgmkignore
+- Command line tools now handle msgid_plural items
+
+Changes for 2003-04-05
+======================
+- Changed behaviour of TStrings translations. Now each array item is translated separately.
+  Please use the new tool msgsplitTStrings to convert your own translations to this new behaviour
+- dxgettext: bugfix: A _ in the same lines as _() would prevent extraction.
+- dxgettext: -o parameter for specifying output directory
+- dxgettext: multiple -b parameters can now be specified
+- dxgettext: Now always outputs identifier for resourcestrings
+- gnugettext: Added TranslateComponent()
+- msgremove: Bugfix: under certain rare circumstances, multi-line msgids were not removed
+- msgmergePOT: fixed help text
+- msgmergePOT: fixed header in output file
+- msgmergePOT: Improved
+- Moved msgmergePOT and msgsplitTStrings into migration subfolder
+

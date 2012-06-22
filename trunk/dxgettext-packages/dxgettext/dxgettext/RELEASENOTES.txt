@@ -1,0 +1,35 @@
+Release notes
+=============
+
+Documentation
+=============
+See http://dybdahl.dk/dxgettext/ for documentation.
+
+
+C++ Builder
+===========
+C++ Builder users should read the CPPBUILDER.txt file.
+
+
+If you are converting from Delphi Integrated Translation Environment
+====================================================================
+Use the ixtopo and dfntopo to convert Delphi ITE XML files and
+DFN files to .po files.
+
+
+Delphi 5 users
+==============
+There is a special version of gnugettext.pas for Delphi 5 users
+located in the delphi5 subdirectory.
+
+
+Freepascal users
+================
+Have a look in the freepascal subdirectory.
+
+
+How to best see the example
+===========================
+Before you can run the example, you must compile the .po files
+in the locale subdirectory. Just click on the with the right mouse
+button and choose "Compile to mo file".

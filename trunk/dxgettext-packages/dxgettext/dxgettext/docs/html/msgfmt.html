@@ -1,0 +1,285 @@
+<!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.01//EN">
+<HTML
+><HEAD
+><TITLE
+>msgfmt</TITLE
+><META
+NAME="GENERATOR"
+CONTENT="Modular DocBook HTML Stylesheet Version 1.76b+
+"><LINK
+REL="HOME"
+TITLE="GNU gettext for Delphi, C++ Builder and Kylix 1.2 beta"
+HREF="index.html"><LINK
+REL="UP"
+TITLE="GNU Command-line tools reference"
+HREF="gnucommandlinereference.html"><LINK
+REL="PREVIOUS"
+TITLE="msgfilter"
+HREF="msgfilter.html"><LINK
+REL="NEXT"
+TITLE="msggrep"
+HREF="msggrep.html"></HEAD
+><BODY
+CLASS="SECT1"
+BGCOLOR="#FFFFFF"
+TEXT="#000000"
+LINK="#0000FF"
+VLINK="#840084"
+ALINK="#0000FF"
+><DIV
+CLASS="NAVHEADER"
+><TABLE
+SUMMARY="Header navigation table"
+WIDTH="100%"
+BORDER="0"
+CELLPADDING="0"
+CELLSPACING="0"
+><TR
+><TH
+COLSPAN="3"
+ALIGN="center"
+>GNU gettext for Delphi, C++ Builder and Kylix 1.2 beta</TH
+></TR
+><TR
+><TD
+WIDTH="10%"
+ALIGN="left"
+VALIGN="bottom"
+><A
+HREF="msgfilter.html"
+ACCESSKEY="P"
+>&#60;&#60;&#60; Previous</A
+></TD
+><TD
+WIDTH="80%"
+ALIGN="center"
+VALIGN="bottom"
+>GNU Command-line tools reference</TD
+><TD
+WIDTH="10%"
+ALIGN="right"
+VALIGN="bottom"
+><A
+HREF="msggrep.html"
+ACCESSKEY="N"
+>Next &#62;&#62;&#62;</A
+></TD
+></TR
+></TABLE
+><HR
+ALIGN="LEFT"
+WIDTH="100%"></DIV
+><DIV
+CLASS="SECT1"
+><H1
+CLASS="SECT1"
+><A
+NAME="MSGFMT"
+></A
+>msgfmt</H1
+><P
+>Compiles a PO file to an MO file.</P
+><TABLE
+BORDER="0"
+BGCOLOR="#E0E0E0"
+WIDTH="100%"
+><TR
+><TD
+><PRE
+CLASS="SCREEN"
+>NAME
+       msgfmt - compile message catalog to binary format
+
+SYNOPSIS
+       msgfmt [OPTION] filename.po ...
+
+DESCRIPTION
+       Generate binary message catalog from textual translation description.
+
+       Mandatory  arguments  to	 long  options are mandatory for short options
+       too.
+
+   Input file location:
+       filename.po ...
+	      input files
+
+       -D, --directory=DIRECTORY
+	      add DIRECTORY to list for input files search
+
+       If input file is -, standard input is read.
+
+   Operation mode:
+       -j, --java
+	      Java mode: generate a Java ResourceBundle class
+
+       --java2
+	      like --java, and assume Java2 (JDK 1.2 or higher)
+
+       --tcl  Tcl mode: generate a tcl/msgcat .msg file
+
+   Output file location:
+       -o, --output-file=FILE
+	      write output to specified file
+
+       --strict
+	      enable strict Uniforum mode
+
+       If output file is -, output is written to standard output.
+
+   Output file location in Java mode:
+       -r, --resource=RESOURCE
+	      resource name
+
+       -l, --locale=LOCALE
+	      locale name, either language or language_COUNTRY
+
+       -d DIRECTORY
+	      base directory of classes directory hierarchy
+
+       The class name is determined  by	 appending  the	 locale	 name  to  the
+       resource	 name,	separated with an underscore.  The -d option is manda-
+       tory.  The class is written under the specified directory.
+
+   Output file location in Tcl mode:
+       -l, --locale=LOCALE
+	      locale name, either language or language_COUNTRY
+
+       -d DIRECTORY
+	      base directory of .msg message catalogs
+
+       The -l and -d options are mandatory.  The .msg file is written  in  the
+       specified directory.
+
+   Input file interpretation:
+       -c, --check
+	      perform	 all	the    checks	implied	  by   --check-format,
+	      --check-header, --check-domain
+
+       --check-format
+	      check language dependent format strings
+
+       --check-header
+	      verify presence and contents of the header entry
+
+       --check-domain
+	      check for conflicts between domain  directives  and  the	--out-
+	      put-file option
+
+       -C, --check-compatibility
+	      check that GNU msgfmt behaves like X/Open msgfmt
+
+       --check-accelerators[=CHAR]
+	      check presence of keyboard accelerators for menu items
+
+       -f, --use-fuzzy
+	      use fuzzy entries in output
+
+   Output details:
+       -a, --alignment=NUMBER
+	      align strings to NUMBER bytes (default: 1)
+
+       --no-hash
+	      binary file will not include the hash table
+
+   Informative output:
+       -h, --help
+	      display this help and exit
+
+       -V, --version
+	      output version information and exit
+
+       --statistics
+	      print statistics about translations
+
+       -v, --verbose
+	      increase verbosity level
+
+AUTHOR
+       Written by Ulrich Drepper.
+
+REPORTING BUGS
+       Report bugs to &#60;bug-gnu-gettext@gnu.org&#62;.
+
+COPYRIGHT
+       Copyright (C) 1995-1998, 2000-2002 Free Software Foundation, Inc.
+       This is free software; see the source for copying conditions.  There is
+       NO warranty; not even for MERCHANTABILITY or FITNESS FOR	 A  PARTICULAR
+       PURPOSE.
+
+SEE ALSO
+       The  full  documentation	 for msgfmt is maintained as a Texinfo manual.
+       If the info and msgfmt programs are properly installed  at  your	 site,
+       the command
+
+	      info msgfmt
+
+       should give you access to the complete manual.</PRE
+></TD
+></TR
+></TABLE
+></DIV
+><DIV
+CLASS="NAVFOOTER"
+><HR
+ALIGN="LEFT"
+WIDTH="100%"><TABLE
+SUMMARY="Footer navigation table"
+WIDTH="100%"
+BORDER="0"
+CELLPADDING="0"
+CELLSPACING="0"
+><TR
+><TD
+WIDTH="33%"
+ALIGN="left"
+VALIGN="top"
+><A
+HREF="msgfilter.html"
+ACCESSKEY="P"
+>&#60;&#60;&#60; Previous</A
+></TD
+><TD
+WIDTH="34%"
+ALIGN="center"
+VALIGN="top"
+><A
+HREF="index.html"
+ACCESSKEY="H"
+>Home</A
+></TD
+><TD
+WIDTH="33%"
+ALIGN="right"
+VALIGN="top"
+><A
+HREF="msggrep.html"
+ACCESSKEY="N"
+>Next &#62;&#62;&#62;</A
+></TD
+></TR
+><TR
+><TD
+WIDTH="33%"
+ALIGN="left"
+VALIGN="top"
+>msgfilter</TD
+><TD
+WIDTH="34%"
+ALIGN="center"
+VALIGN="top"
+><A
+HREF="gnucommandlinereference.html"
+ACCESSKEY="U"
+>Up</A
+></TD
+><TD
+WIDTH="33%"
+ALIGN="right"
+VALIGN="top"
+>msggrep</TD
+></TR
+></TABLE
+></DIV
+></BODY
+></HTML
+>

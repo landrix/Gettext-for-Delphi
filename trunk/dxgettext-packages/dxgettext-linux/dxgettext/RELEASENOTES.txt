@@ -1,0 +1,21 @@
+Release notes
+=============
+
+Command line tools
+==================
+Tools like msgmerge, msgfmt, msgunfmt, msgcat etc. are part of all normal
+Linux distributions and are therefore not included in this package.
+
+If they are not present already, you should install them from your Linux
+distribution. If you Linux distribution is package-based, like most of them
+are, the package is most likely named "gettext-devel" or something similar.
+
+
+Freepascal users
+================
+Have a look in the freepascal subdirectory.
+
+
+C/C++ users
+===========
+Please read CPPBUILDER.txt

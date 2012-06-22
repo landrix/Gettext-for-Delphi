@@ -1,0 +1,266 @@
+<!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.01//EN">
+<HTML
+><HEAD
+><TITLE
+>msgfilter</TITLE
+><META
+NAME="GENERATOR"
+CONTENT="Modular DocBook HTML Stylesheet Version 1.76b+
+"><LINK
+REL="HOME"
+TITLE="GNU gettext for Delphi, C++ Builder and Kylix 1.2 beta"
+HREF="index.html"><LINK
+REL="UP"
+TITLE="GNU Command-line tools reference"
+HREF="gnucommandlinereference.html"><LINK
+REL="PREVIOUS"
+TITLE="msgexec"
+HREF="msgexec.html"><LINK
+REL="NEXT"
+TITLE="msgfmt"
+HREF="msgfmt.html"></HEAD
+><BODY
+CLASS="SECT1"
+BGCOLOR="#FFFFFF"
+TEXT="#000000"
+LINK="#0000FF"
+VLINK="#840084"
+ALINK="#0000FF"
+><DIV
+CLASS="NAVHEADER"
+><TABLE
+SUMMARY="Header navigation table"
+WIDTH="100%"
+BORDER="0"
+CELLPADDING="0"
+CELLSPACING="0"
+><TR
+><TH
+COLSPAN="3"
+ALIGN="center"
+>GNU gettext for Delphi, C++ Builder and Kylix 1.2 beta</TH
+></TR
+><TR
+><TD
+WIDTH="10%"
+ALIGN="left"
+VALIGN="bottom"
+><A
+HREF="msgexec.html"
+ACCESSKEY="P"
+>&#60;&#60;&#60; Previous</A
+></TD
+><TD
+WIDTH="80%"
+ALIGN="center"
+VALIGN="bottom"
+>GNU Command-line tools reference</TD
+><TD
+WIDTH="10%"
+ALIGN="right"
+VALIGN="bottom"
+><A
+HREF="msgfmt.html"
+ACCESSKEY="N"
+>Next &#62;&#62;&#62;</A
+></TD
+></TR
+></TABLE
+><HR
+ALIGN="LEFT"
+WIDTH="100%"></DIV
+><DIV
+CLASS="SECT1"
+><H1
+CLASS="SECT1"
+><A
+NAME="MSGFILTER"
+></A
+>msgfilter</H1
+><P
+>Runs an external command line tool once for each message, but uses it
+to make changes to each translation. The external tool takes the translation
+as input on stdin, and writes the new translation out on stdout.</P
+><TABLE
+BORDER="0"
+BGCOLOR="#E0E0E0"
+WIDTH="100%"
+><TR
+><TD
+><PRE
+CLASS="SCREEN"
+>NAME
+       msgfilter - edit translations of message catalog
+
+SYNOPSIS
+       msgfilter [OPTION] FILTER [FILTER-OPTION]
+
+DESCRIPTION
+       Applies a filter to all translations of a translation catalog.
+
+       Mandatory  arguments  to	 long  options are mandatory for short options
+       too.
+
+   Input file location:
+       -i, --input=INPUTFILE
+	      input PO file
+
+       -D, --directory=DIRECTORY
+	      add DIRECTORY to list for input files search
+
+       If no input file is given or if it is -, standard input is read.
+
+   Output file location:
+       -o, --output-file=FILE
+	      write output to specified file
+
+       The results are written to standard output if no output file is	speci-
+       fied or if it is -.
+
+       The  FILTER  can	 be any program that reads a translation from standard
+       input and writes a modified translation to standard output.
+
+   Useful FILTER-OPTIONs when the FILTER is 'sed':
+       -e, --expression=SCRIPT
+	      add SCRIPT to the commands to be executed
+
+       -f, --file=SCRIPTFILE
+	      add the contents of SCRIPTFILE to the commands to be executed
+
+       -n, --quiet, --silent
+	      suppress automatic printing of pattern space
+
+   Output details:
+       --no-escape
+	      do not use C escapes in output (default)
+
+       -E, --escape
+	      use C escapes in output, no extended chars
+
+       --force-po
+	      write PO file even if empty
+
+       --indent
+	      indented output style
+
+       --keep-header
+	      keep header entry unmodified, don't filter it
+
+       --no-location
+	      suppress '#: filename:line' lines
+
+       --add-location
+	      preserve '#: filename:line' lines (default)
+
+       --strict
+	      strict Uniforum output style
+
+       -w, --width=NUMBER
+	      set output page width
+
+       --no-wrap
+	      do not break long message lines, longer  than  the  output  page
+	      width, into several lines
+
+       -s, --sort-output
+	      generate sorted output
+
+       -F, --sort-by-file
+	      sort output by file location
+
+   Informative output:
+       -h, --help
+	      display this help and exit
+
+       -V, --version
+	      output version information and exit
+
+AUTHOR
+       Written by Bruno Haible.
+
+REPORTING BUGS
+       Report bugs to &#60;bug-gnu-gettext@gnu.org&#62;.
+
+COPYRIGHT
+       Copyright (C) 2001-2002 Free Software Foundation, Inc.
+       This is free software; see the source for copying conditions.  There is
+       NO warranty; not even for MERCHANTABILITY or FITNESS FOR	 A  PARTICULAR
+       PURPOSE.
+
+SEE ALSO
+       The full documentation for msgfilter is maintained as a Texinfo manual.
+       If the info and msgfilter programs are properly installed at your site,
+       the command
+
+	      info msgfilter
+
+       should give you access to the complete manual.</PRE
+></TD
+></TR
+></TABLE
+></DIV
+><DIV
+CLASS="NAVFOOTER"
+><HR
+ALIGN="LEFT"
+WIDTH="100%"><TABLE
+SUMMARY="Footer navigation table"
+WIDTH="100%"
+BORDER="0"
+CELLPADDING="0"
+CELLSPACING="0"
+><TR
+><TD
+WIDTH="33%"
+ALIGN="left"
+VALIGN="top"
+><A
+HREF="msgexec.html"
+ACCESSKEY="P"
+>&#60;&#60;&#60; Previous</A
+></TD
+><TD
+WIDTH="34%"
+ALIGN="center"
+VALIGN="top"
+><A
+HREF="index.html"
+ACCESSKEY="H"
+>Home</A
+></TD
+><TD
+WIDTH="33%"
+ALIGN="right"
+VALIGN="top"
+><A
+HREF="msgfmt.html"
+ACCESSKEY="N"
+>Next &#62;&#62;&#62;</A
+></TD
+></TR
+><TR
+><TD
+WIDTH="33%"
+ALIGN="left"
+VALIGN="top"
+>msgexec</TD
+><TD
+WIDTH="34%"
+ALIGN="center"
+VALIGN="top"
+><A
+HREF="gnucommandlinereference.html"
+ACCESSKEY="U"
+>Up</A
+></TD
+><TD
+WIDTH="33%"
+ALIGN="right"
+VALIGN="top"
+>msgfmt</TD
+></TR
+></TABLE
+></DIV
+></BODY
+></HTML
+>

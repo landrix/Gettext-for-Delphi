@@ -1,0 +1,172 @@
+<!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.01//EN">
+<HTML
+><HEAD
+><TITLE
+>Text domain management</TITLE
+><META
+NAME="GENERATOR"
+CONTENT="Modular DocBook HTML Stylesheet Version 1.76b+
+"><LINK
+REL="HOME"
+TITLE="GNU gettext for Delphi, C++ Builder and Kylix 1.2 beta"
+HREF="index.html"><LINK
+REL="UP"
+TITLE="Experienced programmers' topics"
+HREF="programmertasks.html"><LINK
+REL="PREVIOUS"
+TITLE="Experienced programmers' topics"
+HREF="programmertasks.html"><LINK
+REL="NEXT"
+TITLE="The better alternative to resourcestring"
+HREF="gettextfunction.html"></HEAD
+><BODY
+CLASS="SECT1"
+BGCOLOR="#FFFFFF"
+TEXT="#000000"
+LINK="#0000FF"
+VLINK="#840084"
+ALINK="#0000FF"
+><DIV
+CLASS="NAVHEADER"
+><TABLE
+SUMMARY="Header navigation table"
+WIDTH="100%"
+BORDER="0"
+CELLPADDING="0"
+CELLSPACING="0"
+><TR
+><TH
+COLSPAN="3"
+ALIGN="center"
+>GNU gettext for Delphi, C++ Builder and Kylix 1.2 beta</TH
+></TR
+><TR
+><TD
+WIDTH="10%"
+ALIGN="left"
+VALIGN="bottom"
+><A
+HREF="programmertasks.html"
+ACCESSKEY="P"
+>&#60;&#60;&#60; Previous</A
+></TD
+><TD
+WIDTH="80%"
+ALIGN="center"
+VALIGN="bottom"
+>Experienced programmers' topics</TD
+><TD
+WIDTH="10%"
+ALIGN="right"
+VALIGN="bottom"
+><A
+HREF="gettextfunction.html"
+ACCESSKEY="N"
+>Next &#62;&#62;&#62;</A
+></TD
+></TR
+></TABLE
+><HR
+ALIGN="LEFT"
+WIDTH="100%"></DIV
+><DIV
+CLASS="SECT1"
+><H1
+CLASS="SECT1"
+><A
+NAME="TEXTDOMAINMANAGEMENT"
+></A
+>Text domain management</H1
+><P
+>Different text domains are basically different po files. Usually, one
+application uses one text domain, but often, several applications share one
+text domain. Sometimes it is necessary to use an extra text domain for a
+special purpose.</P
+><P
+>As a project leader, it is important to know, that you can always easily
+split a project into two parts. The key is to create two template files instead
+of one. Just merge the old translation file with the new templates, and you have
+two new, smaller translation files.</P
+><P
+>It is a bit trickier to assemble two smaller subprojects into one big
+translation project with just one file. There might be messages, that were
+translated differently in the two projects, and this has to be taken care of.
+Several tools can assemble two po files, and these include <TT
+CLASS="LITERAL"
+>msgcat</TT
+>
+and <TT
+CLASS="LITERAL"
+>msghack</TT
+>. See <A
+HREF="gnucommandlinereference.html"
+>the appendix called <I
+>GNU Command-line tools reference</I
+></A
+>&#62; for more information.</P
+></DIV
+><DIV
+CLASS="NAVFOOTER"
+><HR
+ALIGN="LEFT"
+WIDTH="100%"><TABLE
+SUMMARY="Footer navigation table"
+WIDTH="100%"
+BORDER="0"
+CELLPADDING="0"
+CELLSPACING="0"
+><TR
+><TD
+WIDTH="33%"
+ALIGN="left"
+VALIGN="top"
+><A
+HREF="programmertasks.html"
+ACCESSKEY="P"
+>&#60;&#60;&#60; Previous</A
+></TD
+><TD
+WIDTH="34%"
+ALIGN="center"
+VALIGN="top"
+><A
+HREF="index.html"
+ACCESSKEY="H"
+>Home</A
+></TD
+><TD
+WIDTH="33%"
+ALIGN="right"
+VALIGN="top"
+><A
+HREF="gettextfunction.html"
+ACCESSKEY="N"
+>Next &#62;&#62;&#62;</A
+></TD
+></TR
+><TR
+><TD
+WIDTH="33%"
+ALIGN="left"
+VALIGN="top"
+>Experienced programmers' topics</TD
+><TD
+WIDTH="34%"
+ALIGN="center"
+VALIGN="top"
+><A
+HREF="programmertasks.html"
+ACCESSKEY="U"
+>Up</A
+></TD
+><TD
+WIDTH="33%"
+ALIGN="right"
+VALIGN="top"
+>The better alternative to resourcestring</TD
+></TR
+></TABLE
+></DIV
+></BODY
+></HTML
+>

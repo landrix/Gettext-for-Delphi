@@ -1,0 +1,227 @@
+<!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.01//EN">
+<HTML
+><HEAD
+><TITLE
+>Forms</TITLE
+><META
+NAME="GENERATOR"
+CONTENT="Modular DocBook HTML Stylesheet Version 1.76b+
+"><LINK
+REL="HOME"
+TITLE="GNU gettext for Delphi, C++ Builder and Kylix 1.2 beta"
+HREF="index.html"><LINK
+REL="UP"
+TITLE="Introduction"
+HREF="introduction.html"><LINK
+REL="PREVIOUS"
+TITLE="Resourcestrings"
+HREF="resourcestringtranslation.html"><LINK
+REL="NEXT"
+TITLE="Action"
+HREF="howtochapter.html"></HEAD
+><BODY
+CLASS="SECT1"
+BGCOLOR="#FFFFFF"
+TEXT="#000000"
+LINK="#0000FF"
+VLINK="#840084"
+ALINK="#0000FF"
+><DIV
+CLASS="NAVHEADER"
+><TABLE
+SUMMARY="Header navigation table"
+WIDTH="100%"
+BORDER="0"
+CELLPADDING="0"
+CELLSPACING="0"
+><TR
+><TH
+COLSPAN="3"
+ALIGN="center"
+>GNU gettext for Delphi, C++ Builder and Kylix 1.2 beta</TH
+></TR
+><TR
+><TD
+WIDTH="10%"
+ALIGN="left"
+VALIGN="bottom"
+><A
+HREF="resourcestringtranslation.html"
+ACCESSKEY="P"
+>&#60;&#60;&#60; Previous</A
+></TD
+><TD
+WIDTH="80%"
+ALIGN="center"
+VALIGN="bottom"
+>Introduction</TD
+><TD
+WIDTH="10%"
+ALIGN="right"
+VALIGN="bottom"
+><A
+HREF="howtochapter.html"
+ACCESSKEY="N"
+>Next &#62;&#62;&#62;</A
+></TD
+></TR
+></TABLE
+><HR
+ALIGN="LEFT"
+WIDTH="100%"></DIV
+><DIV
+CLASS="SECT1"
+><H1
+CLASS="SECT1"
+><A
+NAME="FORMS"
+></A
+>Forms</H1
+><P
+>It would not be practical to use _() function calls to assign all
+strings used in a form. If a string has 200 translatable strings, you would
+have to type 200 lines of code that assigns strings. Therefore, a procedure
+named <TT
+CLASS="LITERAL"
+>TranslateComponent</TT
+> was created. This procedure
+translates all string properties of a specified component, and all
+components owned by this component. You can use this to translate an entire
+form by putting this line into the OnCreate event of a form:</P
+><TABLE
+BORDER="0"
+BGCOLOR="#E0E0E0"
+WIDTH="100%"
+><TR
+><TD
+><PRE
+CLASS="PROGRAMLISTING"
+>procedure TMyForm.FormCreate (Sender: TObject);
+begin
+  TranslateComponent (self);
+end;</PRE
+></TD
+></TR
+></TABLE
+><P
+>This single function call replaces lots of _() function calls, which
+is nice. And since the strings are put into dfm files, which are already
+extracted, everything works perfectly, except that some string properties
+should not be translated.</P
+><P
+>A default setting is that the .Name property of TComponents are not
+translated. That wouldn't make much sense, and would break your program.
+You can specify additional string properties, that should not be translated
+using the TP_GlobalIgnoreClass and TP_GlobalIgnoreClassProperty procedures:</P
+><TABLE
+BORDER="0"
+BGCOLOR="#E0E0E0"
+WIDTH="100%"
+><TR
+><TD
+><PRE
+CLASS="SCREEN"
+>TP_GlobalIgnoreClass(TParam);
+TP_GlobalIgnoreClassProperty(TField,'FieldName');</PRE
+></TD
+></TR
+></TABLE
+><P
+>In this example, no TParams will be translated at all, and the
+Fieldname property of TField objects will not be translated either. These
+are global settings and should therefore be placed at a global place in your
+program. It is recommended to put these lines into your .dpr file, see
+<A
+HREF="helloworldsource.html#HELLOWORLD-DPR"
+>the Section called <I
+>Sample.dpr</I
+> in the appendix called <I
+>"Hello, World" source code</I
+></A
+>&#62;. You can
+also specify a custom handler for a class like this:</P
+><TABLE
+BORDER="0"
+BGCOLOR="#E0E0E0"
+WIDTH="100%"
+><TR
+><TD
+><PRE
+CLASS="SCREEN"
+>TP_GlobalHandleClass (TSpecialClass,Myhandler);</PRE
+></TD
+></TR
+></TABLE
+><P
+>You can read more about typical ignores in <A
+HREF="handlingclasses.html"
+>the appendix called <I
+>How to handle specific classes</I
+></A
+>&#62;.</P
+></DIV
+><DIV
+CLASS="NAVFOOTER"
+><HR
+ALIGN="LEFT"
+WIDTH="100%"><TABLE
+SUMMARY="Footer navigation table"
+WIDTH="100%"
+BORDER="0"
+CELLPADDING="0"
+CELLSPACING="0"
+><TR
+><TD
+WIDTH="33%"
+ALIGN="left"
+VALIGN="top"
+><A
+HREF="resourcestringtranslation.html"
+ACCESSKEY="P"
+>&#60;&#60;&#60; Previous</A
+></TD
+><TD
+WIDTH="34%"
+ALIGN="center"
+VALIGN="top"
+><A
+HREF="index.html"
+ACCESSKEY="H"
+>Home</A
+></TD
+><TD
+WIDTH="33%"
+ALIGN="right"
+VALIGN="top"
+><A
+HREF="howtochapter.html"
+ACCESSKEY="N"
+>Next &#62;&#62;&#62;</A
+></TD
+></TR
+><TR
+><TD
+WIDTH="33%"
+ALIGN="left"
+VALIGN="top"
+>Resourcestrings</TD
+><TD
+WIDTH="34%"
+ALIGN="center"
+VALIGN="top"
+><A
+HREF="introduction.html"
+ACCESSKEY="U"
+>Up</A
+></TD
+><TD
+WIDTH="33%"
+ALIGN="right"
+VALIGN="top"
+>Action</TD
+></TR
+></TABLE
+></DIV
+></BODY
+></HTML
+>

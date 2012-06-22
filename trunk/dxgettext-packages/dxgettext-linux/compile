@@ -1,0 +1,60 @@
+#!/bin/sh
+export DCC=/home/lars/kylix3/bin/dcc
+export TODAY=`date +"%Y-%m-%d"`
+export RELEASE=dxgettext-$TODAY.tar.gz
+
+# Compile all programs
+
+cd ../../dxgettext/dxgettext
+$DCC -B dxgettext.dpr
+mv dxgettext ../../dxgettext-packages/dxgettext-linux/dxgettext/toolkit
+
+cd ../tools/assemble
+$DCC -B assemble.dpr
+mv assemble ../../../dxgettext-packages/dxgettext-linux/dxgettext/toolkit
+
+cd ../msgmergePOT
+$DCC -B msgmergePOT.dpr
+mv msgmergePOT ../../../dxgettext-packages/dxgettext-linux/dxgettext/toolkit
+
+cd ../msgsplitTStrings
+$DCC -B msgsplitTStrings.dpr
+mv msgsplitTStrings ../../../dxgettext-packages/dxgettext-linux/dxgettext/toolkit
+
+cd ../msgimport
+$DCC -B msgimport.dpr
+mv msgimport ../../../dxgettext-packages/dxgettext-linux/dxgettext/toolkit
+
+cd ../ggmerge
+$DCC -B msgmergedx.dpr
+mv msgmergedx ../../../dxgettext-packages/dxgettext-linux/dxgettext/toolkit
+
+cd ../msgmkignore
+$DCC -B msgmkignore.dpr
+mv msgmkignore ../../../dxgettext-packages/dxgettext-linux/dxgettext/toolkit
+
+cd ../msgremove
+$DCC -B msgremove.dpr
+mv msgremove ../../../dxgettext-packages/dxgettext-linux/dxgettext/toolkit
+
+cd ../msgshowheader
+$DCC -B msgshowheader.dpr
+mv msgshowheader ../../../dxgettext-packages/dxgettext-linux/dxgettext/toolkit
+
+cd ../../../dxgettext-packages/dxgettext-linux
+
+# Update gnugettext.pas
+./stripifdef ../../dxgettext/sample/gnugettext.pas dxgettext/toolkit/gnugettext.pas
+cp dxgettext/toolkit/gnugettext.pas dxgettext/example/gnugettext.pas
+
+# Update other files that are copied
+cp ../../dxgettext/languages/languagecodes.pas dxgettext/
+cp ../../dxgettext/languages/languagecodes.txt dxgettext/
+cp ../../dxgettext/languages/languagecodes.po dxgettext/
+
+ls -l dxgettext/toolkit
+
+find * | grep CVS >excludes
+tar cz -X excludes -f $RELEASE dxgettext
+tar tfz $RELEASE
+

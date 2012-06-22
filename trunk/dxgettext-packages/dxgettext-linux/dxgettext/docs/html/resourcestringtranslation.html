@@ -1,0 +1,204 @@
+<!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.01//EN">
+<HTML
+><HEAD
+><TITLE
+>Resourcestrings</TITLE
+><META
+NAME="GENERATOR"
+CONTENT="Modular DocBook HTML Stylesheet Version 1.76b+
+"><LINK
+REL="HOME"
+TITLE="GNU gettext for Delphi, C++ Builder and Kylix 1.2 beta"
+HREF="index.html"><LINK
+REL="UP"
+TITLE="Introduction"
+HREF="introduction.html"><LINK
+REL="PREVIOUS"
+TITLE="More gettext functions"
+HREF="advancedgettext.html"><LINK
+REL="NEXT"
+TITLE="Forms"
+HREF="forms.html"></HEAD
+><BODY
+CLASS="SECT1"
+BGCOLOR="#FFFFFF"
+TEXT="#000000"
+LINK="#0000FF"
+VLINK="#840084"
+ALINK="#0000FF"
+><DIV
+CLASS="NAVHEADER"
+><TABLE
+SUMMARY="Header navigation table"
+WIDTH="100%"
+BORDER="0"
+CELLPADDING="0"
+CELLSPACING="0"
+><TR
+><TH
+COLSPAN="3"
+ALIGN="center"
+>GNU gettext for Delphi, C++ Builder and Kylix 1.2 beta</TH
+></TR
+><TR
+><TD
+WIDTH="10%"
+ALIGN="left"
+VALIGN="bottom"
+><A
+HREF="advancedgettext.html"
+ACCESSKEY="P"
+>&#60;&#60;&#60; Previous</A
+></TD
+><TD
+WIDTH="80%"
+ALIGN="center"
+VALIGN="bottom"
+>Introduction</TD
+><TD
+WIDTH="10%"
+ALIGN="right"
+VALIGN="bottom"
+><A
+HREF="forms.html"
+ACCESSKEY="N"
+>Next &#62;&#62;&#62;</A
+></TD
+></TR
+></TABLE
+><HR
+ALIGN="LEFT"
+WIDTH="100%"></DIV
+><DIV
+CLASS="SECT1"
+><H1
+CLASS="SECT1"
+><A
+NAME="RESOURCESTRINGTRANSLATION"
+></A
+>Resourcestrings</H1
+><P
+>If you have tried the Integrated Translation Environment of Borland Delphi,
+you will know about the <TT
+CLASS="LITERAL"
+>resourcestring</TT
+> keyword. It works like this:</P
+><TABLE
+BORDER="0"
+BGCOLOR="#E0E0E0"
+WIDTH="100%"
+><TR
+><TD
+><PRE
+CLASS="SCREEN"
+>resourcestring
+  msg='Hello, World';
+
+begin
+  ShowMessage (msg);
+end.</PRE
+></TD
+></TR
+></TABLE
+><P
+>Delphi automatically replaces the reference to msg with a call to the system function
+<TT
+CLASS="LITERAL"
+>LoadResString()</TT
+>, which retrieves the string "Hello, World" from the resource
+part of the executable. The Delphi ITE achieves its translation mechanism by redirecting these
+fetches to other files.</P
+><P
+>By including gnugettext.pas in your project, these fetches are replaced with another function,
+which translates all the strings. The default is, that resourcestrings are translated using the
+default textdomain, i.e. default.mo. In case you want the system to search other mo files, if the
+translation isn't found in default.mo just make some calls to the <TT
+CLASS="LITERAL"
+>AddDomainForResourceString</TT
+>.
+It is very common to have the Delphi runtime translation in a file named delphi.mo, and this line
+in the .dpr file to make sure that the Delphi runtime is translated:</P
+><TABLE
+BORDER="0"
+BGCOLOR="#E0E0E0"
+WIDTH="100%"
+><TR
+><TD
+><PRE
+CLASS="SCREEN"
+>AddDomainForResourceString ('delphi');</PRE
+></TD
+></TR
+></TABLE
+><P
+>Using <TT
+CLASS="LITERAL"
+>resourcestring</TT
+> is not recommended, because
+Delphi only handles ansistring this way - not Unicode. But it works.</P
+></DIV
+><DIV
+CLASS="NAVFOOTER"
+><HR
+ALIGN="LEFT"
+WIDTH="100%"><TABLE
+SUMMARY="Footer navigation table"
+WIDTH="100%"
+BORDER="0"
+CELLPADDING="0"
+CELLSPACING="0"
+><TR
+><TD
+WIDTH="33%"
+ALIGN="left"
+VALIGN="top"
+><A
+HREF="advancedgettext.html"
+ACCESSKEY="P"
+>&#60;&#60;&#60; Previous</A
+></TD
+><TD
+WIDTH="34%"
+ALIGN="center"
+VALIGN="top"
+><A
+HREF="index.html"
+ACCESSKEY="H"
+>Home</A
+></TD
+><TD
+WIDTH="33%"
+ALIGN="right"
+VALIGN="top"
+><A
+HREF="forms.html"
+ACCESSKEY="N"
+>Next &#62;&#62;&#62;</A
+></TD
+></TR
+><TR
+><TD
+WIDTH="33%"
+ALIGN="left"
+VALIGN="top"
+>More gettext functions</TD
+><TD
+WIDTH="34%"
+ALIGN="center"
+VALIGN="top"
+><A
+HREF="introduction.html"
+ACCESSKEY="U"
+>Up</A
+></TD
+><TD
+WIDTH="33%"
+ALIGN="right"
+VALIGN="top"
+>Forms</TD
+></TR
+></TABLE
+></DIV
+></BODY
+></HTML
+>

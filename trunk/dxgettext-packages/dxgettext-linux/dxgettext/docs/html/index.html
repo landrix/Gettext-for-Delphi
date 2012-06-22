@@ -1,0 +1,905 @@
+<!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.01//EN">
+<HTML
+><HEAD
+><TITLE
+>GNU gettext for Delphi, C++ Builder and Kylix 1.2 beta</TITLE
+><META
+NAME="GENERATOR"
+CONTENT="Modular DocBook HTML Stylesheet Version 1.76b+
+"><LINK
+REL="NEXT"
+TITLE="Preface"
+HREF="preface.html"></HEAD
+><BODY
+CLASS="BOOK"
+BGCOLOR="#FFFFFF"
+TEXT="#000000"
+LINK="#0000FF"
+VLINK="#840084"
+ALINK="#0000FF"
+><DIV
+CLASS="BOOK"
+><A
+NAME="INDEX"
+></A
+><DIV
+CLASS="TITLEPAGE"
+><H1
+CLASS="TITLE"
+><A
+NAME="INDEX"
+></A
+>GNU gettext for Delphi, C++ Builder and Kylix 1.2 beta</H1
+><H3
+CLASS="AUTHOR"
+><A
+NAME="AEN6"
+></A
+>Lars B. Dybdahl</H3
+><H3
+CLASS="AUTHOR"
+><A
+NAME="AEN9"
+></A
+>Peter Thornqvist</H3
+><H3
+CLASS="AUTHOR"
+><A
+NAME="AEN12"
+></A
+>Jacquez Garcia Vasquez</H3
+><H3
+CLASS="AUTHOR"
+><A
+NAME="AEN15"
+></A
+>Sandro Wendt</H3
+><P
+CLASS="COPYRIGHT"
+><A
+HREF="LEGALNOTICE.html"
+>Copyright</A
+> &copy; 2003 by Lars B. Dybdahl, Free Software Foundation and others</P
+><HR></DIV
+><DIV
+CLASS="TOC"
+><DL
+><DT
+><B
+>Table of Contents</B
+></DT
+><DT
+><A
+HREF="preface.html"
+>Preface</A
+></DT
+><DT
+><A
+HREF="introduction.html"
+>Introduction</A
+></DT
+><DD
+><DL
+><DT
+><A
+HREF="introduction.html#POFILES"
+>How does GNU gettext work?</A
+></DT
+><DT
+><A
+HREF="scanningsource.html"
+>Creating po files</A
+></DT
+><DT
+><A
+HREF="advancedgettext.html"
+>More gettext functions</A
+></DT
+><DT
+><A
+HREF="resourcestringtranslation.html"
+>Resourcestrings</A
+></DT
+><DT
+><A
+HREF="forms.html"
+>Forms</A
+></DT
+></DL
+></DD
+><DT
+><A
+HREF="howtochapter.html"
+>Action</A
+></DT
+><DD
+><DL
+><DT
+><A
+HREF="howtochapter.html#CREATEYOURFIRST"
+>Localize your first application</A
+></DT
+><DT
+><A
+HREF="merging.html"
+>New program versions, old translation files</A
+></DT
+><DT
+><A
+HREF="createsinglelanguageapp.html"
+>Create a single language application with localized runtime library</A
+></DT
+><DT
+><A
+HREF="usesclauses.html"
+>Uses clauses</A
+></DT
+><DT
+><A
+HREF="ambiguities.html"
+>Solving ambiguities</A
+></DT
+><DD
+><DL
+><DT
+><A
+HREF="ambiguities.html#AMB-CHANGEWORDS"
+>Change words</A
+></DT
+><DT
+><A
+HREF="ambiguities.html#AMB-ADDSPACES"
+>Adding spaces</A
+></DT
+><DT
+><A
+HREF="ambiguities.html#AMB-DOMAINS"
+>Using domains</A
+></DT
+><DT
+><A
+HREF="ambiguities.html#AMB-USINGCODES"
+>Using trailing comments</A
+></DT
+></DL
+></DD
+><DT
+><A
+HREF="pluralforms.html"
+>Plural forms</A
+></DT
+><DT
+><A
+HREF="databaseapps.html"
+>Database applications</A
+></DT
+><DD
+><DL
+><DT
+><A
+HREF="databaseapps.html#DATABASEAPPSIGNORES"
+>Preventing unwanted translations</A
+></DT
+><DT
+><A
+HREF="databaseapps.html#DISPLAYLABELEXPLAINED"
+>DisplayLabel property explained</A
+></DT
+><DT
+><A
+HREF="databaseapps.html#DISPLAYLABELATRUNTIME"
+>Setting displaylabel at runtime</A
+></DT
+><DT
+><A
+HREF="databaseapps.html#FIELDLISTDISPLAYLABEL"
+>Display label at design time</A
+></DT
+><DT
+><A
+HREF="databaseapps.html#DBEXPORTDISPLAYLABEL"
+>Multiple field name translations</A
+></DT
+></DL
+></DD
+><DT
+><A
+HREF="repositories.html"
+>Translation repositories</A
+></DT
+></DL
+></DD
+><DT
+><A
+HREF="projectleader.html"
+>Project management</A
+></DT
+><DD
+><DL
+><DT
+><A
+HREF="projectleader.html#PROJECTLEADER-INTRODUCTION"
+>Introduction</A
+></DT
+><DT
+><A
+HREF="coordinatingtranslations.html"
+>Coordinating translations</A
+></DT
+><DT
+><A
+HREF="translatortasks.html"
+>The translator</A
+></DT
+></DL
+></DD
+><DT
+><A
+HREF="programmertasks.html"
+>Experienced programmers' topics</A
+></DT
+><DD
+><DL
+><DT
+><A
+HREF="programmertasks.html#DETERMINISM"
+>Determinism and responsibility</A
+></DT
+><DT
+><A
+HREF="textdomainmanagement.html"
+>Text domain management</A
+></DT
+><DT
+><A
+HREF="gettextfunction.html"
+>The better alternative to resourcestring</A
+></DT
+><DT
+><A
+HREF="debugging.html"
+>Debugging</A
+></DT
+><DT
+><A
+HREF="directives.html"
+>Directives</A
+></DT
+></DL
+></DD
+><DT
+><A
+HREF="advancedtopics.html"
+>Advanced topics</A
+></DT
+><DD
+><DL
+><DT
+><A
+HREF="advancedtopics.html#CONVERTFROMDELPHIITE"
+>Migrating from the ITE to dxgettext</A
+></DT
+><DD
+><DL
+><DT
+><A
+HREF="advancedtopics.html#DELPHIITE-INTO"
+>Introduction</A
+></DT
+><DT
+><A
+HREF="advancedtopics.html#DELPHIITE-PROJECT"
+>The project</A
+></DT
+><DT
+><A
+HREF="advancedtopics.html#DELPHIITE-PLANNING"
+>Planning</A
+></DT
+><DT
+><A
+HREF="advancedtopics.html#DELPHIITE-TOOLS"
+>Tools I needed (and used)</A
+></DT
+><DT
+><A
+HREF="advancedtopics.html#DELPHIITE-DOINGIT"
+>Doing the conversion</A
+></DT
+><DT
+><A
+HREF="advancedtopics.html#DELPHIITE-COMMONANCESTORS"
+>Common ancestor forms are good!</A
+></DT
+><DT
+><A
+HREF="advancedtopics.html#DELPHIITE-DOESNT"
+>Handling components dxgettext doesn't handle</A
+></DT
+><DT
+><A
+HREF="advancedtopics.html#DELPHIITE-PROBLEMS"
+>Problems</A
+></DT
+><DT
+><A
+HREF="advancedtopics.html#DELPHIITE-CONCLUSION"
+>Conclusion</A
+></DT
+></DL
+></DD
+><DT
+><A
+HREF="translationstatistics.html"
+>Translation statistics</A
+></DT
+><DT
+><A
+HREF="multipleinstances.html"
+>Multiple instances</A
+></DT
+><DT
+><A
+HREF="multithreading.html"
+>Multithreading issues</A
+></DT
+></DL
+></DD
+><DT
+><A
+HREF="apireference.html"
+>API reference</A
+></DT
+><DD
+><DL
+><DT
+><A
+HREF="apireference.html#API-ADDDOMAINFORRESOURCESTRING"
+>procedure AddDomainForResourceString (domain:string);</A
+></DT
+><DT
+><A
+HREF="api-removedomainforresourcestring.html"
+>procedure RemoveDomainForResourceString (domain:string);</A
+></DT
+><DT
+><A
+HREF="api-loadresstring.html"
+>function LoadResString(ResStringRec: PResStringRec): widestring;</A
+></DT
+><DT
+><A
+HREF="api-loadresstringw.html"
+>function LoadResStringW(ResStringRec: PResStringRec): widestring;</A
+></DT
+><DT
+><A
+HREF="api-loadresstringa.html"
+>function LoadResStringA(ResStringRec: PResStringRec): ansistring;</A
+></DT
+><DT
+><A
+HREF="api-executablefilename.html"
+>var ExecutableFilename:string;</A
+></DT
+><DT
+><A
+HREF="api-hookintoresourcestrings.html"
+>procedure HookIntoResourceStrings (enabled:boolean=true; SupportPackages:boolean=false);</A
+></DT
+><DT
+><A
+HREF="api-debuglogfilename.html"
+>const DebugLogFilename='c:\dxgettext-log.txt';</A
+></DT
+><DT
+><A
+HREF="api-texecutable.html"
+>TExecutable</A
+></DT
+><DT
+><A
+HREF="api-tgetpluralform.html"
+>TGetPluralForm</A
+></DT
+><DT
+><A
+HREF="api-tgnugettextinstance.html"
+>TGnuGettextInstance class</A
+></DT
+><DT
+><A
+HREF="api-uselanguage.html"
+>procedure UseLanguage(LanguageCode: string);</A
+></DT
+><DT
+><A
+HREF="api-underscore.html"
+>function _(msg:widestring):widestring;</A
+></DT
+><DT
+><A
+HREF="api-getcurrentlanguage.html"
+>function GetCurrentLanguage:string;</A
+></DT
+><DT
+><A
+HREF="api-gettext.html"
+>function gettext(msg:widestring):widestring;</A
+></DT
+><DT
+><A
+HREF="api-dgettext.html"
+>function dgettext(Domain: string; MsgId: widestring): widestring;</A
+></DT
+><DT
+><A
+HREF="api-ngettext.html"
+>function ngettext(const singular,plural:widestring;Number:longint):widestring;</A
+></DT
+><DT
+><A
+HREF="api-dngettext.html"
+>function dngettext(Domain,singular,plural:widestring;Number:longint):widestring;</A
+></DT
+><DT
+><A
+HREF="api-getcurrenttextdomain.html"
+>function getcurrenttextdomain:string;</A
+></DT
+><DT
+><A
+HREF="api-textdomain.html"
+>procedure textdomain(Domain:string);</A
+></DT
+><DT
+><A
+HREF="api-bindtextdomain.html"
+>procedure bindtextdomain(Domain:string; Directory:string);</A
+></DT
+><DT
+><A
+HREF="api-bindtextdomaintofile.html"
+>procedure bindtextdomainToFile (Domain,Filename:string);</A
+></DT
+><DT
+><A
+HREF="api-getlistoflanguages.html"
+>procedure GetListOfLanguages (domain:string; list:TStrings);</A
+></DT
+><DT
+><A
+HREF="api-gettranslationproperty.html"
+>function GetTranslationProperty (Propertyname:string):WideString;</A
+></DT
+><DT
+><A
+HREF="api-gettranslatornameandemail.html"
+>function GetTranslatorNameAndEmail:widestring;</A
+></DT
+><DT
+><A
+HREF="api-saveuntranslatedmsgids.html"
+>procedure SaveUntranslatedMsgids(filename: string);</A
+></DT
+><DT
+><A
+HREF="api-translateproperties.html"
+>procedure TranslateProperties(AnObject:TObject; textdomain:string='');</A
+></DT
+><DT
+><A
+HREF="api-translatecomponent.html"
+>procedure TranslateComponent(AnObject: TComponent; TextDomain:string='');</A
+></DT
+><DT
+><A
+HREF="api-tp-createretranslator.html"
+>function TP_CreateRetranslator:TExecutable;</A
+></DT
+><DT
+><A
+HREF="api-tp-ignore.html"
+>procedure TP_Ignore(AnObject:TObject; const name:string);</A
+></DT
+><DT
+><A
+HREF="api-tp-globalignoreclass.html"
+>procedure TP_GlobalIgnoreClass (IgnClass:TClass);</A
+></DT
+><DT
+><A
+HREF="api-tp-globalignoreclassproperty.html"
+>procedure TP_GlobalIgnoreClassProperty (IgnClass:TClass;propertyname:string);</A
+></DT
+><DT
+><A
+HREF="api-tp-globalhandleclass.html"
+>procedure TP_GlobalHandleClass (HClass:TClass;Handler:TTranslator);</A
+></DT
+></DL
+></DD
+><DT
+><A
+HREF="helloworldsource.html"
+>"Hello, World" source code</A
+></DT
+><DD
+><DL
+><DT
+><A
+HREF="helloworldsource.html#HELLOWORLD-DPR"
+>Sample.dpr</A
+></DT
+><DT
+><A
+HREF="helloworld-gginitializer.html"
+>gginitializer.pas</A
+></DT
+><DT
+><A
+HREF="helloworld-sampleform-pas.html"
+>SampleForm.pas</A
+></DT
+><DT
+><A
+HREF="helloworld-sampleform-dfm.html"
+>SampleForm.dfm</A
+></DT
+></DL
+></DD
+><DT
+><A
+HREF="dxgettextcommandlinereference.html"
+>Dxgettext command-line tools reference</A
+></DT
+><DD
+><DL
+><DT
+><A
+HREF="dxgettextcommandlinereference.html#ASSEMBLE"
+>assemble</A
+></DT
+><DT
+><A
+HREF="dfntopo.html"
+>dfntopo</A
+></DT
+><DT
+><A
+HREF="dxgettext.html"
+>dxgettext</A
+></DT
+><DT
+><A
+HREF="dxgreg.html"
+>dxgreg</A
+></DT
+><DT
+><A
+HREF="ixtopo.html"
+>ixtopo</A
+></DT
+><DT
+><A
+HREF="msgimport.html"
+>msgimport</A
+></DT
+><DT
+><A
+HREF="msgmergepot.html"
+>msgmergePOT</A
+></DT
+><DT
+><A
+HREF="msgmkignore.html"
+>msgmkignore</A
+></DT
+><DT
+><A
+HREF="msgremove.html"
+>msgremove</A
+></DT
+><DT
+><A
+HREF="msgshowheader.html"
+>msgshowheader</A
+></DT
+><DT
+><A
+HREF="msgsplittstrings.html"
+>msgsplitTStrings</A
+></DT
+><DT
+><A
+HREF="msgstripcr.html"
+>msgstripCR</A
+></DT
+></DL
+></DD
+><DT
+><A
+HREF="gnucommandlinereference.html"
+>GNU Command-line tools reference</A
+></DT
+><DD
+><DL
+><DT
+><A
+HREF="gnucommandlinereference.html#MSGATTRIB"
+>msgattrib</A
+></DT
+><DT
+><A
+HREF="msgcat.html"
+>msgcat</A
+></DT
+><DT
+><A
+HREF="msgcmp.html"
+>msgcmp</A
+></DT
+><DT
+><A
+HREF="msgcomm.html"
+>msgcomm</A
+></DT
+><DT
+><A
+HREF="msgen.html"
+>msgen</A
+></DT
+><DT
+><A
+HREF="msgexec.html"
+>msgexec</A
+></DT
+><DT
+><A
+HREF="msgfilter.html"
+>msgfilter</A
+></DT
+><DT
+><A
+HREF="msgfmt.html"
+>msgfmt</A
+></DT
+><DT
+><A
+HREF="msggrep.html"
+>msggrep</A
+></DT
+><DT
+><A
+HREF="msghack.html"
+>msghack</A
+></DT
+><DT
+><A
+HREF="msginit.html"
+>msginit</A
+></DT
+><DT
+><A
+HREF="msgmerge.html"
+>msgmerge</A
+></DT
+><DT
+><A
+HREF="msgunfmt.html"
+>msgunfmt</A
+></DT
+><DT
+><A
+HREF="msguniq.html"
+>msguniq</A
+></DT
+><DT
+><A
+HREF="xgettext.html"
+>xgettext</A
+></DT
+></DL
+></DD
+><DT
+><A
+HREF="guitoolreference.html"
+>GUI tools reference</A
+></DT
+><DD
+><DL
+><DT
+><A
+HREF="guitoolreference.html#GUI-PO"
+>PO files</A
+></DT
+><DT
+><A
+HREF="gui-mo.html"
+>MO files</A
+></DT
+><DT
+><A
+HREF="gui-exe.html"
+>Executables (DLL, EXE files)</A
+></DT
+><DT
+><A
+HREF="gui-folder.html"
+>File folders</A
+></DT
+></DL
+></DD
+><DT
+><A
+HREF="standards.html"
+>Standards</A
+></DT
+><DD
+><DL
+><DT
+><A
+HREF="standards.html#ISO639"
+>ISO 639 language codes</A
+></DT
+><DT
+><A
+HREF="iso3166.html"
+>ISO 3166 country codes</A
+></DT
+></DL
+></DD
+><DT
+><A
+HREF="fileformats.html"
+>File formats</A
+></DT
+><DD
+><DL
+><DT
+><A
+HREF="fileformats.html#FILEFORMAT-PO"
+>The format of GNU PO files</A
+></DT
+><DT
+><A
+HREF="fileformat-mo.html"
+>The format of GNU MO files</A
+></DT
+></DL
+></DD
+><DT
+><A
+HREF="handlingclasses.html"
+>How to handle specific classes</A
+></DT
+><DD
+><DL
+><DT
+><A
+HREF="handlingclasses.html#IGNORE-VCL"
+>VCL, important ones</A
+></DT
+><DT
+><A
+HREF="ignore-vcl-2.html"
+>VCL, not so important</A
+></DT
+><DT
+><A
+HREF="ignore-db.html"
+>Database (DB unit)</A
+></DT
+><DT
+><A
+HREF="ignore-midas.html"
+>MIDAS/Datasnap</A
+></DT
+><DT
+><A
+HREF="ignore-dbctrls.html"
+>Database controls</A
+></DT
+><DT
+><A
+HREF="ignore-ibx.html"
+>Interbase Express (IBX)</A
+></DT
+><DT
+><A
+HREF="ignore-bde.html"
+>Borland Database Engine (BDE)</A
+></DT
+><DT
+><A
+HREF="ignore-ado.html"
+>ADO components</A
+></DT
+><DT
+><A
+HREF="ignore-activex.html"
+>ActiveX stuff</A
+></DT
+><DT
+><A
+HREF="ignore-tporpheus.html"
+>Turbopower Orpheus</A
+></DT
+><DT
+><A
+HREF="ignore-tpessentials.html"
+>Turbopower Essentials</A
+></DT
+><DT
+><A
+HREF="ignore-tadvstringgrid.html"
+>TMS Software TAdvStringGrid</A
+></DT
+></DL
+></DD
+><DT
+><A
+HREF="faq.html"
+>Frequently Asked Questions</A
+></DT
+><DT
+><A
+HREF="i2104.html"
+>Index</A
+></DT
+></DL
+></DIV
+></DIV
+><DIV
+CLASS="NAVFOOTER"
+><HR
+ALIGN="LEFT"
+WIDTH="100%"><TABLE
+SUMMARY="Footer navigation table"
+WIDTH="100%"
+BORDER="0"
+CELLPADDING="0"
+CELLSPACING="0"
+><TR
+><TD
+WIDTH="33%"
+ALIGN="left"
+VALIGN="top"
+>&nbsp;</TD
+><TD
+WIDTH="34%"
+ALIGN="center"
+VALIGN="top"
+>&nbsp;</TD
+><TD
+WIDTH="33%"
+ALIGN="right"
+VALIGN="top"
+><A
+HREF="preface.html"
+ACCESSKEY="N"
+>Next &#62;&#62;&#62;</A
+></TD
+></TR
+><TR
+><TD
+WIDTH="33%"
+ALIGN="left"
+VALIGN="top"
+>&nbsp;</TD
+><TD
+WIDTH="34%"
+ALIGN="center"
+VALIGN="top"
+>&nbsp;</TD
+><TD
+WIDTH="33%"
+ALIGN="right"
+VALIGN="top"
+>Preface</TD
+></TR
+></TABLE
+></DIV
+></BODY
+></HTML
+>

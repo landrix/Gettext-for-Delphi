@@ -1,0 +1,221 @@
+<!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.01//EN">
+<HTML
+><HEAD
+><TITLE
+>Introduction</TITLE
+><META
+NAME="GENERATOR"
+CONTENT="Modular DocBook HTML Stylesheet Version 1.76b+
+"><LINK
+REL="HOME"
+TITLE="GNU gettext for Delphi, C++ Builder and Kylix 1.2 beta"
+HREF="index.html"><LINK
+REL="PREVIOUS"
+TITLE="Preface"
+HREF="preface.html"><LINK
+REL="NEXT"
+TITLE="Creating po files"
+HREF="scanningsource.html"></HEAD
+><BODY
+CLASS="CHAPTER"
+BGCOLOR="#FFFFFF"
+TEXT="#000000"
+LINK="#0000FF"
+VLINK="#840084"
+ALINK="#0000FF"
+><DIV
+CLASS="NAVHEADER"
+><TABLE
+SUMMARY="Header navigation table"
+WIDTH="100%"
+BORDER="0"
+CELLPADDING="0"
+CELLSPACING="0"
+><TR
+><TH
+COLSPAN="3"
+ALIGN="center"
+>GNU gettext for Delphi, C++ Builder and Kylix 1.2 beta</TH
+></TR
+><TR
+><TD
+WIDTH="10%"
+ALIGN="left"
+VALIGN="bottom"
+><A
+HREF="preface.html"
+ACCESSKEY="P"
+>&#60;&#60;&#60; Previous</A
+></TD
+><TD
+WIDTH="80%"
+ALIGN="center"
+VALIGN="bottom"
+></TD
+><TD
+WIDTH="10%"
+ALIGN="right"
+VALIGN="bottom"
+><A
+HREF="scanningsource.html"
+ACCESSKEY="N"
+>Next &#62;&#62;&#62;</A
+></TD
+></TR
+></TABLE
+><HR
+ALIGN="LEFT"
+WIDTH="100%"></DIV
+><DIV
+CLASS="CHAPTER"
+><H1
+><A
+NAME="INTRODUCTION"
+></A
+>Introduction</H1
+><DIV
+CLASS="SECT1"
+><H1
+CLASS="SECT1"
+><A
+NAME="POFILES"
+></A
+>How does GNU gettext work?</H1
+><P
+>GNU gettext is based on the mo file format (explained later), and
+everything is based on a function named gettext(), that can look up the English text in
+such a file, and find the translation which is also in this file.</P
+><P
+>The simplest (but not easiest) way to put a translated caption on a label would therefore be:</P
+><TABLE
+BORDER="0"
+BGCOLOR="#E0E0E0"
+WIDTH="100%"
+><TR
+><TD
+><PRE
+CLASS="PROGRAMLISTING"
+>Label1.Caption:=gettext('Enter username:');</PRE
+></TD
+></TR
+></TABLE
+><P
+>If there is a translation, the translation will be assigned to the label. If there is
+no translation, or the translation cannot be read for some reason, the text inside the ( ) is
+used instead.</P
+><P
+>In order to create an mo file, you write a po file and compile it
+using the msgfmt compiler. A po file looks like this:</P
+><TABLE
+BORDER="0"
+BGCOLOR="#E0E0E0"
+WIDTH="100%"
+><TR
+><TD
+><PRE
+CLASS="SCREEN"
+>msgid ""
+msgstr ""
+"Project-Id-Version: Delphi 6 runtime translation\n"
+"POT-Creation-Date: 2003-03-04 17:49\n"
+"PO-Revision-Date: 2003-04-02 17:48+0100\n"
+"Last-Translator: Lars B. Dybdahl &#60;lars@dybdahl.dk&#62;&#62;\n"
+"Language-Team: Dansk &#60;da@li.org&#62;\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"License: Freeware\n"
+
+#  This is a comment from the programmer to the translator
+#. Programmer's name for it: SInvalidCreateWidget
+#: Clx/QConsts.pas:22
+msgid "Class %s could not create QT widget"
+msgstr "Klassen % kunne ikke oprette en QT widget"
+
+#. Programmer's name for it: STooManyMessageBoxButtons
+#: Clx/QConsts.pas:23
+msgid "Too many buttons specified for message box"
+msgstr "For mange knapper angivet for meddelelsesvindue"</PRE
+></TD
+></TR
+></TABLE
+><P
+>Here, <TT
+CLASS="LITERAL"
+>msgid</TT
+> marks the English original text,
+and <TT
+CLASS="LITERAL"
+>msgstr</TT
+> marks the Danish translation. You can write
+this file using a text editor like notepad, wordpad etc.</P
+><P
+>As you might already guess, this system can be extended in many ways.
+The most obvious is that you can have several mo and po files. If an application
+has more than one file for each language, these are named text domains. The name
+of a text domain is also the name of an mo file, without the extension.
+The default text domain is name "default" an must therefore be in the file
+"default.mo", a compilation of "default.po".</P
+></DIV
+></DIV
+><DIV
+CLASS="NAVFOOTER"
+><HR
+ALIGN="LEFT"
+WIDTH="100%"><TABLE
+SUMMARY="Footer navigation table"
+WIDTH="100%"
+BORDER="0"
+CELLPADDING="0"
+CELLSPACING="0"
+><TR
+><TD
+WIDTH="33%"
+ALIGN="left"
+VALIGN="top"
+><A
+HREF="preface.html"
+ACCESSKEY="P"
+>&#60;&#60;&#60; Previous</A
+></TD
+><TD
+WIDTH="34%"
+ALIGN="center"
+VALIGN="top"
+><A
+HREF="index.html"
+ACCESSKEY="H"
+>Home</A
+></TD
+><TD
+WIDTH="33%"
+ALIGN="right"
+VALIGN="top"
+><A
+HREF="scanningsource.html"
+ACCESSKEY="N"
+>Next &#62;&#62;&#62;</A
+></TD
+></TR
+><TR
+><TD
+WIDTH="33%"
+ALIGN="left"
+VALIGN="top"
+>Preface</TD
+><TD
+WIDTH="34%"
+ALIGN="center"
+VALIGN="top"
+>&nbsp;</TD
+><TD
+WIDTH="33%"
+ALIGN="right"
+VALIGN="top"
+>Creating po files</TD
+></TR
+></TABLE
+></DIV
+></BODY
+></HTML
+>

@@ -1,0 +1,393 @@
+<!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.01//EN">
+<HTML
+><HEAD
+><TITLE
+>Database applications</TITLE
+><META
+NAME="GENERATOR"
+CONTENT="Modular DocBook HTML Stylesheet Version 1.76b+
+"><LINK
+REL="HOME"
+TITLE="GNU gettext for Delphi, C++ Builder and Kylix 1.2 beta"
+HREF="index.html"><LINK
+REL="UP"
+TITLE="Action"
+HREF="howtochapter.html"><LINK
+REL="PREVIOUS"
+TITLE="Plural forms"
+HREF="pluralforms.html"><LINK
+REL="NEXT"
+TITLE="Translation repositories"
+HREF="repositories.html"></HEAD
+><BODY
+CLASS="SECT1"
+BGCOLOR="#FFFFFF"
+TEXT="#000000"
+LINK="#0000FF"
+VLINK="#840084"
+ALINK="#0000FF"
+><DIV
+CLASS="NAVHEADER"
+><TABLE
+SUMMARY="Header navigation table"
+WIDTH="100%"
+BORDER="0"
+CELLPADDING="0"
+CELLSPACING="0"
+><TR
+><TH
+COLSPAN="3"
+ALIGN="center"
+>GNU gettext for Delphi, C++ Builder and Kylix 1.2 beta</TH
+></TR
+><TR
+><TD
+WIDTH="10%"
+ALIGN="left"
+VALIGN="bottom"
+><A
+HREF="pluralforms.html"
+ACCESSKEY="P"
+>&#60;&#60;&#60; Previous</A
+></TD
+><TD
+WIDTH="80%"
+ALIGN="center"
+VALIGN="bottom"
+>Action</TD
+><TD
+WIDTH="10%"
+ALIGN="right"
+VALIGN="bottom"
+><A
+HREF="repositories.html"
+ACCESSKEY="N"
+>Next &#62;&#62;&#62;</A
+></TD
+></TR
+></TABLE
+><HR
+ALIGN="LEFT"
+WIDTH="100%"></DIV
+><DIV
+CLASS="SECT1"
+><H1
+CLASS="SECT1"
+><A
+NAME="DATABASEAPPS"
+></A
+>Database applications</H1
+><DIV
+CLASS="SECT2"
+><H2
+CLASS="SECT2"
+><A
+NAME="DATABASEAPPSIGNORES"
+></A
+>Preventing unwanted translations</H2
+><P
+>When you create a database application, there will be a lot of component
+properties that you don't want to be translated when using <TT
+CLASS="LITERAL"
+>Translatecomponent()</TT
+>.
+Typically, the field names, table names and even database names of a database have
+meaningful translations, and the translation file from the translator may include translations
+for field names. Also, SQL statements should not be translated. They will get extracted, but
+if the translator modifies them, it would most likely break your program if this translation
+would be applied.</P
+><P
+>Therefore, it is very important, that you consult <A
+HREF="handlingclasses.html"
+>the appendix called <I
+>How to handle specific classes</I
+></A
+>&#62;
+to see what ignores you should add to your application. Make sure that these ignores are executed
+before the first call to <TT
+CLASS="LITERAL"
+>TranslateComponent()</TT
+>. The list in that appendix
+may not be complete - especially not if you use database components that are not mentioned.
+Therefore you must have a look at your components and make sure, that all properties, that
+should not be translated, have a corresponding
+<TT
+CLASS="LITERAL"
+>TP_GlobalIgnoreClassProperty()</TT
+> call.</P
+></DIV
+><DIV
+CLASS="SECT2"
+><H2
+CLASS="SECT2"
+><A
+NAME="DISPLAYLABELEXPLAINED"
+></A
+>DisplayLabel property explained</H2
+><P
+>Delphi is very good for creating a single-language database application, fast, if
+the application only needs one language. A typical single-language application uses field
+names that are easily understood, like "Name", "Address" etc. Let's assume that you use
+a query component with an SQL statement like this:</P
+><TABLE
+BORDER="0"
+BGCOLOR="#E0E0E0"
+WIDTH="100%"
+><TR
+><TD
+><PRE
+CLASS="PROGRAMLISTING"
+>select * from customer order by Name</PRE
+></TD
+></TR
+></TABLE
+><P
+>In this case, the name of the <TT
+CLASS="LITERAL"
+>Name</TT
+> field of the <TT
+CLASS="LITERAL"
+>customer</TT
+>
+table will propagate through all components, will become the column heading of a
+TDBGrid etc. Your grid column for names will read "Name". This is desired in an English language
+application, but absolutely not in all other languages.</P
+><P
+>The solution is to modify the <TT
+CLASS="LITERAL"
+>.DisplayLabel</TT
+> property of the <TT
+CLASS="LITERAL"
+>TField</TT
+>
+components, that your dataset possesses. Every <TT
+CLASS="LITERAL"
+>TDataset</TT
+> descendant has a <TT
+CLASS="LITERAL"
+>.Fields[]</TT
+>
+property that refers to the fields in the dataset, and all these field components are
+descendants of <TT
+CLASS="LITERAL"
+>TField</TT
+>, which has the <TT
+CLASS="LITERAL"
+>TField.DisplayLabel</TT
+> property.</P
+><P
+>Delphi provides two ways to modify this <TT
+CLASS="LITERAL"
+>DisplayLabel</TT
+> property: At runtime and at
+design time, which leads to two different ways of handling the localization of it.</P
+></DIV
+><DIV
+CLASS="SECT2"
+><H2
+CLASS="SECT2"
+><A
+NAME="DISPLAYLABELATRUNTIME"
+></A
+>Setting displaylabel at runtime</H2
+><P
+>The runtime assignment solution is to assign a displaylabel at runtime like this:</P
+><TABLE
+BORDER="0"
+BGCOLOR="#E0E0E0"
+WIDTH="100%"
+><TR
+><TD
+><PRE
+CLASS="PROGRAMLISTING"
+>procedure TForm1.Query1AfterOpen(DataSet: TDataSet);
+begin
+  Dataset.FieldByName('Name').DisplayLabel:=_('Name');
+end;</PRE
+></TD
+></TR
+></TABLE
+><P
+>This way, the field names are always the same in the database and the entire application,
+but the user will see a localized name. This works for all dataset type components, including
+table components, TClientDataset etc.</P
+></DIV
+><DIV
+CLASS="SECT2"
+><H2
+CLASS="SECT2"
+><A
+NAME="FIELDLISTDISPLAYLABEL"
+></A
+>Display label at design time</H2
+><P
+>Creating design-time DisplayLabel properties goes like this:</P
+><P
+></P
+><UL
+><LI
+><P
+>Double-click the dataset component. This brings up the field list window.</P
+></LI
+><LI
+><P
+>Click with your right mouse button on the field list window and choose "Add all fields".
+This requires your dataset to be able to actually fetch data from the database at design time, but will
+add all the fields of the dataset to the field list window.</P
+></LI
+><LI
+><P
+>Make sure that the form (or datamodule) that the dataset component is on, is translated
+using <TT
+CLASS="LITERAL"
+>TranslateComponent()</TT
+> before the dataset is opened. This means that the dataset
+needs to be closed by default, and that you have to open the dataset at runtime using <TT
+CLASS="LITERAL"
+>.Open</TT
+>
+or <TT
+CLASS="LITERAL"
+>.Active:=True</TT
+>.</P
+></LI
+></UL
+><P
+>By doing this, the field names will be present in the DFM files, and will therefore be extracted
+for the translator to be translated. Now, <TT
+CLASS="LITERAL"
+>TranslateComponent()</TT
+> will translate the
+<TT
+CLASS="LITERAL"
+>TField.DisplayLabel</TT
+> values:</P
+><TABLE
+BORDER="0"
+BGCOLOR="#E0E0E0"
+WIDTH="100%"
+><TR
+><TD
+><PRE
+CLASS="PROGRAMLISTING"
+>procedure TForm1.FormCreate(Sender: TObject);
+begin
+  TranslateComponent (self);
+  Query.Open;
+end;</PRE
+></TD
+></TR
+></TABLE
+></DIV
+><DIV
+CLASS="SECT2"
+><H2
+CLASS="SECT2"
+><A
+NAME="DBEXPORTDISPLAYLABEL"
+></A
+>Multiple field name translations</H2
+><P
+>Sometimes it is very handy to have field names translated to something else than what
+you put into the <TT
+CLASS="LITERAL"
+>.DisplayLabel</TT
+> property. For instance, you may want to have
+a short version for exported ASCII files, another version for exporting XML files, one
+version for reports, and again another version for the <TT
+CLASS="LITERAL"
+>.DisplayLabel</TT
+> property.</P
+><P
+>This is easily done by using several po files (which is the same as multiple text domains).
+The part of your program that writes a column header to an ascii file might look like this:</P
+><TABLE
+BORDER="0"
+BGCOLOR="#E0E0E0"
+WIDTH="100%"
+><TR
+><TD
+><PRE
+CLASS="PROGRAMLISTING"
+>write (mytextfile,dgettext('fieldnames',myfield.FieldName));</PRE
+></TD
+></TR
+></TABLE
+><P
+>This will find the field name in the <TT
+CLASS="FILENAME"
+>fieldnames.mo</TT
+> file
+and output the translation. The <TT
+CLASS="FILENAME"
+>fieldnames.po</TT
+> template can be written
+by hand (using notepad), or sometimes be extracted from a datamodule. Often, the number of field
+names is so low that the quickest solution is to write the po file by hand.</P
+></DIV
+></DIV
+><DIV
+CLASS="NAVFOOTER"
+><HR
+ALIGN="LEFT"
+WIDTH="100%"><TABLE
+SUMMARY="Footer navigation table"
+WIDTH="100%"
+BORDER="0"
+CELLPADDING="0"
+CELLSPACING="0"
+><TR
+><TD
+WIDTH="33%"
+ALIGN="left"
+VALIGN="top"
+><A
+HREF="pluralforms.html"
+ACCESSKEY="P"
+>&#60;&#60;&#60; Previous</A
+></TD
+><TD
+WIDTH="34%"
+ALIGN="center"
+VALIGN="top"
+><A
+HREF="index.html"
+ACCESSKEY="H"
+>Home</A
+></TD
+><TD
+WIDTH="33%"
+ALIGN="right"
+VALIGN="top"
+><A
+HREF="repositories.html"
+ACCESSKEY="N"
+>Next &#62;&#62;&#62;</A
+></TD
+></TR
+><TR
+><TD
+WIDTH="33%"
+ALIGN="left"
+VALIGN="top"
+>Plural forms</TD
+><TD
+WIDTH="34%"
+ALIGN="center"
+VALIGN="top"
+><A
+HREF="howtochapter.html"
+ACCESSKEY="U"
+>Up</A
+></TD
+><TD
+WIDTH="33%"
+ALIGN="right"
+VALIGN="top"
+>Translation repositories</TD
+></TR
+></TABLE
+></DIV
+></BODY
+></HTML
+>

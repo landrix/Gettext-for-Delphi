@@ -1,0 +1,235 @@
+<!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.01//EN">
+<HTML
+><HEAD
+><TITLE
+>Creating po files</TITLE
+><META
+NAME="GENERATOR"
+CONTENT="Modular DocBook HTML Stylesheet Version 1.76b+
+"><LINK
+REL="HOME"
+TITLE="GNU gettext for Delphi, C++ Builder and Kylix 1.2 beta"
+HREF="index.html"><LINK
+REL="UP"
+TITLE="Introduction"
+HREF="introduction.html"><LINK
+REL="PREVIOUS"
+TITLE="Introduction"
+HREF="introduction.html"><LINK
+REL="NEXT"
+TITLE="More gettext functions"
+HREF="advancedgettext.html"></HEAD
+><BODY
+CLASS="SECT1"
+BGCOLOR="#FFFFFF"
+TEXT="#000000"
+LINK="#0000FF"
+VLINK="#840084"
+ALINK="#0000FF"
+><DIV
+CLASS="NAVHEADER"
+><TABLE
+SUMMARY="Header navigation table"
+WIDTH="100%"
+BORDER="0"
+CELLPADDING="0"
+CELLSPACING="0"
+><TR
+><TH
+COLSPAN="3"
+ALIGN="center"
+>GNU gettext for Delphi, C++ Builder and Kylix 1.2 beta</TH
+></TR
+><TR
+><TD
+WIDTH="10%"
+ALIGN="left"
+VALIGN="bottom"
+><A
+HREF="introduction.html"
+ACCESSKEY="P"
+>&#60;&#60;&#60; Previous</A
+></TD
+><TD
+WIDTH="80%"
+ALIGN="center"
+VALIGN="bottom"
+>Introduction</TD
+><TD
+WIDTH="10%"
+ALIGN="right"
+VALIGN="bottom"
+><A
+HREF="advancedgettext.html"
+ACCESSKEY="N"
+>Next &#62;&#62;&#62;</A
+></TD
+></TR
+></TABLE
+><HR
+ALIGN="LEFT"
+WIDTH="100%"></DIV
+><DIV
+CLASS="SECT1"
+><H1
+CLASS="SECT1"
+><A
+NAME="SCANNINGSOURCE"
+></A
+>Creating po files</H1
+><P
+>Instead of typing the whole po file yourself, you can create it by scanning
+the source code. There are several ways of doing that:</P
+><P
+></P
+><UL
+><LI
+><P
+>There is a command line tool named <TT
+CLASS="LITERAL"
+>dxgettext</TT
+> that can
+scan Delphi pas, dfm, xfm, rc files</P
+></LI
+><LI
+><P
+>The <TT
+CLASS="LITERAL"
+>dxgettext</TT
+> commandline tool is also able to extract all the
+resourcestrings from an executable file on Windows - like .exe files, .dll files etc.</P
+></LI
+><LI
+><P
+>The <TT
+CLASS="LITERAL"
+>xgettext</TT
+> commandline tool can scan C and C++ files.</P
+></LI
+><LI
+><P
+>On Windows, you can right-click a file folder in Windows Explorer and choose "Extract strings"
+in the popup menu. From the window that then pops up, you can scan all types of files that can be
+scanned with the command line tools mentioned above.</P
+></LI
+></UL
+><P
+>These scanners are very advanced. They don't pick up every string they find in a .pas file
+- only the strings that are surrounded by calls to gettext() and similar functions. This means that
+in this example, the string will not be extracted:</P
+><TABLE
+BORDER="0"
+BGCOLOR="#E0E0E0"
+WIDTH="100%"
+><TR
+><TD
+><PRE
+CLASS="SCREEN"
+> a:='Hello, World';
+ a:=gettext(a);</PRE
+></TD
+></TR
+></TABLE
+><P
+>Actually, the system will give a warning that <TT
+CLASS="LITERAL"
+>a</TT
+> is unknown.
+But in this example, it will get extracted:</P
+><TABLE
+BORDER="0"
+BGCOLOR="#E0E0E0"
+WIDTH="100%"
+><TR
+><TD
+><PRE
+CLASS="SCREEN"
+> a:=gettext('Hello, World');</PRE
+></TD
+></TR
+></TABLE
+><P
+>This means that each single string has to be put in between the ( ) of the function call. In order to
+save you some typing, an alias for gettext() has been made, and is named _(). The above example can
+there also be written this way:</P
+><TABLE
+BORDER="0"
+BGCOLOR="#E0E0E0"
+WIDTH="100%"
+><TR
+><TD
+><PRE
+CLASS="SCREEN"
+> a:=_('Hello, World');</PRE
+></TD
+></TR
+></TABLE
+><P
+>In order to have access to this function, you must include gnugettext.pas in your Delphi or C++ Builder
+project. This file is part of the installation.</P
+></DIV
+><DIV
+CLASS="NAVFOOTER"
+><HR
+ALIGN="LEFT"
+WIDTH="100%"><TABLE
+SUMMARY="Footer navigation table"
+WIDTH="100%"
+BORDER="0"
+CELLPADDING="0"
+CELLSPACING="0"
+><TR
+><TD
+WIDTH="33%"
+ALIGN="left"
+VALIGN="top"
+><A
+HREF="introduction.html"
+ACCESSKEY="P"
+>&#60;&#60;&#60; Previous</A
+></TD
+><TD
+WIDTH="34%"
+ALIGN="center"
+VALIGN="top"
+><A
+HREF="index.html"
+ACCESSKEY="H"
+>Home</A
+></TD
+><TD
+WIDTH="33%"
+ALIGN="right"
+VALIGN="top"
+><A
+HREF="advancedgettext.html"
+ACCESSKEY="N"
+>Next &#62;&#62;&#62;</A
+></TD
+></TR
+><TR
+><TD
+WIDTH="33%"
+ALIGN="left"
+VALIGN="top"
+>Introduction</TD
+><TD
+WIDTH="34%"
+ALIGN="center"
+VALIGN="top"
+><A
+HREF="introduction.html"
+ACCESSKEY="U"
+>Up</A
+></TD
+><TD
+WIDTH="33%"
+ALIGN="right"
+VALIGN="top"
+>More gettext functions</TD
+></TR
+></TABLE
+></DIV
+></BODY
+></HTML
+>

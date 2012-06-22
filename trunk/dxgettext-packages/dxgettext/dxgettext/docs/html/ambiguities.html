@@ -1,0 +1,256 @@
+<!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.01//EN">
+<HTML
+><HEAD
+><TITLE
+>Solving ambiguities</TITLE
+><META
+NAME="GENERATOR"
+CONTENT="Modular DocBook HTML Stylesheet Version 1.76b+
+"><LINK
+REL="HOME"
+TITLE="GNU gettext for Delphi, C++ Builder and Kylix 1.2 beta"
+HREF="index.html"><LINK
+REL="UP"
+TITLE="Action"
+HREF="howtochapter.html"><LINK
+REL="PREVIOUS"
+TITLE="Uses clauses"
+HREF="usesclauses.html"><LINK
+REL="NEXT"
+TITLE="Plural forms"
+HREF="pluralforms.html"></HEAD
+><BODY
+CLASS="SECT1"
+BGCOLOR="#FFFFFF"
+TEXT="#000000"
+LINK="#0000FF"
+VLINK="#840084"
+ALINK="#0000FF"
+><DIV
+CLASS="NAVHEADER"
+><TABLE
+SUMMARY="Header navigation table"
+WIDTH="100%"
+BORDER="0"
+CELLPADDING="0"
+CELLSPACING="0"
+><TR
+><TH
+COLSPAN="3"
+ALIGN="center"
+>GNU gettext for Delphi, C++ Builder and Kylix 1.2 beta</TH
+></TR
+><TR
+><TD
+WIDTH="10%"
+ALIGN="left"
+VALIGN="bottom"
+><A
+HREF="usesclauses.html"
+ACCESSKEY="P"
+>&#60;&#60;&#60; Previous</A
+></TD
+><TD
+WIDTH="80%"
+ALIGN="center"
+VALIGN="bottom"
+>Action</TD
+><TD
+WIDTH="10%"
+ALIGN="right"
+VALIGN="bottom"
+><A
+HREF="pluralforms.html"
+ACCESSKEY="N"
+>Next &#62;&#62;&#62;</A
+></TD
+></TR
+></TABLE
+><HR
+ALIGN="LEFT"
+WIDTH="100%"></DIV
+><DIV
+CLASS="SECT1"
+><H1
+CLASS="SECT1"
+><A
+NAME="AMBIGUITIES"
+></A
+>Solving ambiguities</H1
+><P
+>Sometimes it may happen that the same English message should be translated to two
+different messages in another language. A very wellknown ambiguity is the word "free",
+which can be like free beer or free speech. For instance, if you have two radiobutton groups
+describing a piece of software, and the first is about the software price and the second is
+about the software type, both may include the choice "free". The software price "free" would be
+translated to "gratis" in Danish, and the software type "free" would be translated to "fri" in Danish.</P
+><P
+>It is the programmer's responsibility to ensure, that one msgid only can result in one translation.
+Sometimes this fails - and then the translator has to report back that something has to be changed.
+There are several ways to solve this</P
+><DIV
+CLASS="SECT2"
+><H2
+CLASS="SECT2"
+><A
+NAME="AMB-CHANGEWORDS"
+></A
+>Change words</H2
+><P
+>The first solution is to change the words. Instead of the price option "free" you could give the
+option "$0", or you could write "free software" in one of the choices. Do a brainstorm and pick the best.</P
+></DIV
+><DIV
+CLASS="SECT2"
+><H2
+CLASS="SECT2"
+><A
+NAME="AMB-ADDSPACES"
+></A
+>Adding spaces</H2
+><P
+>You could add a space to one of the strings. This would give the translations "free"-&#62;"fri" and "free "-&#62;"gratis".
+Spaces are not visible in a radiogroup. If you use this technique inside the source code, you may want to remove
+the space before the space. In this case, you should provide a comment to the translator that the space
+needs to be preserved:</P
+><TABLE
+BORDER="0"
+BGCOLOR="#E0E0E0"
+WIDTH="100%"
+><TR
+><TD
+><PRE
+CLASS="PROGRAMLISTING"
+>// Preserve the initial space in the translation.
+dataset.FieldByName('Name').DisplayLabel:=copy(_(' Name'),2,maxint);</PRE
+></TD
+></TR
+></TABLE
+><P
+>A good translator should always preserve leading and trailing spaces, but sometimes it is useful
+to give the translator a hint anyway.</P
+></DIV
+><DIV
+CLASS="SECT2"
+><H2
+CLASS="SECT2"
+><A
+NAME="AMB-DOMAINS"
+></A
+>Using domains</H2
+><P
+>In some occasions, the solution to ambiguities can be to use several text domains. In the case with
+two radio button groups, you would exclude one of them from <TT
+CLASS="LITERAL"
+>TranslateComponent()</TT
+>
+with <TT
+CLASS="LITERAL"
+>TP_Ignore()</TT
+>, and then translate it separately afterwards using
+<TT
+CLASS="LITERAL"
+>TranslateComponent(MyRadioButtonGroup,'separatedomain');</TT
+>.</P
+></DIV
+><DIV
+CLASS="SECT2"
+><H2
+CLASS="SECT2"
+><A
+NAME="AMB-USINGCODES"
+></A
+>Using trailing comments</H2
+><P
+>Some people using trailing comments to include a comment within the msgid:</P
+><TABLE
+BORDER="0"
+BGCOLOR="#E0E0E0"
+WIDTH="100%"
+><TR
+><TD
+><PRE
+CLASS="PROGRAMLISTING"
+>function stripafterdot(s:widestring):widestring;
+var
+  p:integer;
+begin
+  p:=pos('.',s);
+  if p&#60;&#62;0 then
+    s:=copy(s,1,p-1);
+  Result:=s;
+end;
+
+myfield.DisplayLabel:=stripafterdot(_('Name.Displaylabel for the field named "name"'));</PRE
+></TD
+></TR
+></TABLE
+><P
+>This solution requires the translator to know about this notation.</P
+></DIV
+></DIV
+><DIV
+CLASS="NAVFOOTER"
+><HR
+ALIGN="LEFT"
+WIDTH="100%"><TABLE
+SUMMARY="Footer navigation table"
+WIDTH="100%"
+BORDER="0"
+CELLPADDING="0"
+CELLSPACING="0"
+><TR
+><TD
+WIDTH="33%"
+ALIGN="left"
+VALIGN="top"
+><A
+HREF="usesclauses.html"
+ACCESSKEY="P"
+>&#60;&#60;&#60; Previous</A
+></TD
+><TD
+WIDTH="34%"
+ALIGN="center"
+VALIGN="top"
+><A
+HREF="index.html"
+ACCESSKEY="H"
+>Home</A
+></TD
+><TD
+WIDTH="33%"
+ALIGN="right"
+VALIGN="top"
+><A
+HREF="pluralforms.html"
+ACCESSKEY="N"
+>Next &#62;&#62;&#62;</A
+></TD
+></TR
+><TR
+><TD
+WIDTH="33%"
+ALIGN="left"
+VALIGN="top"
+>Uses clauses</TD
+><TD
+WIDTH="34%"
+ALIGN="center"
+VALIGN="top"
+><A
+HREF="howtochapter.html"
+ACCESSKEY="U"
+>Up</A
+></TD
+><TD
+WIDTH="33%"
+ALIGN="right"
+VALIGN="top"
+>Plural forms</TD
+></TR
+></TABLE
+></DIV
+></BODY
+></HTML
+>

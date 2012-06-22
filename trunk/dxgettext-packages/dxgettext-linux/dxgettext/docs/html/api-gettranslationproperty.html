@@ -1,0 +1,189 @@
+<!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.01//EN">
+<HTML
+><HEAD
+><TITLE
+>function GetTranslationProperty (Propertyname:string):WideString;</TITLE
+><META
+NAME="GENERATOR"
+CONTENT="Modular DocBook HTML Stylesheet Version 1.76b+
+"><LINK
+REL="HOME"
+TITLE="GNU gettext for Delphi, C++ Builder and Kylix 1.2 beta"
+HREF="index.html"><LINK
+REL="UP"
+TITLE="API reference"
+HREF="apireference.html"><LINK
+REL="PREVIOUS"
+TITLE="procedure GetListOfLanguages (domain:string; list:TStrings);"
+HREF="api-getlistoflanguages.html"><LINK
+REL="NEXT"
+TITLE="function GetTranslatorNameAndEmail:widestring;"
+HREF="api-gettranslatornameandemail.html"></HEAD
+><BODY
+CLASS="SECT1"
+BGCOLOR="#FFFFFF"
+TEXT="#000000"
+LINK="#0000FF"
+VLINK="#840084"
+ALINK="#0000FF"
+><DIV
+CLASS="NAVHEADER"
+><TABLE
+SUMMARY="Header navigation table"
+WIDTH="100%"
+BORDER="0"
+CELLPADDING="0"
+CELLSPACING="0"
+><TR
+><TH
+COLSPAN="3"
+ALIGN="center"
+>GNU gettext for Delphi, C++ Builder and Kylix 1.2 beta</TH
+></TR
+><TR
+><TD
+WIDTH="10%"
+ALIGN="left"
+VALIGN="bottom"
+><A
+HREF="api-getlistoflanguages.html"
+ACCESSKEY="P"
+>&#60;&#60;&#60; Previous</A
+></TD
+><TD
+WIDTH="80%"
+ALIGN="center"
+VALIGN="bottom"
+>API reference</TD
+><TD
+WIDTH="10%"
+ALIGN="right"
+VALIGN="bottom"
+><A
+HREF="api-gettranslatornameandemail.html"
+ACCESSKEY="N"
+>Next &#62;&#62;&#62;</A
+></TD
+></TR
+></TABLE
+><HR
+ALIGN="LEFT"
+WIDTH="100%"></DIV
+><DIV
+CLASS="SECT1"
+><H1
+CLASS="SECT1"
+><A
+NAME="API-GETTRANSLATIONPROPERTY"
+></A
+>function GetTranslationProperty (Propertyname:string):WideString;</H1
+><P
+>The translation files contain a header as the translation of an empty string. A typical
+header looks like this:</P
+><TABLE
+BORDER="0"
+BGCOLOR="#E0E0E0"
+WIDTH="100%"
+><TR
+><TD
+><PRE
+CLASS="SCREEN"
+>msgid ""
+msgstr ""
+ "Project-Id-Version: Delphi 7 RTL\n"
+ "POT-Creation-Date: 2003-03-02 18:54\n"
+ "PO-Revision-Date: 2003-06-01 11:52--100\n"
+ "Last-Translator: Lars B. Dybdahl &#60;Lars@dybdahl.dk&#62;\n"
+ "Language-Team: Dansk &#60;da@li.org&#62;\n"
+ "MIME-Version: 1.0\n"
+ "Content-Type: text/plain; charset=UTF-8\n"
+ "Content-Transfer-Encoding: 8bit\n"
+ "License: You may use this file any way you want\n"</PRE
+></TD
+></TR
+></TABLE
+><P
+>As you can see, all lines consist of a keyword, a colon, a space and a value. In order
+to retrieve these informations easily, you can use the <TT
+CLASS="LITERAL"
+>GetTranslationProperty()</TT
+> function
+like this:</P
+><TABLE
+BORDER="0"
+BGCOLOR="#E0E0E0"
+WIDTH="100%"
+><TR
+><TD
+><PRE
+CLASS="PROGRAMLISTING"
+>LabelTranslationLicense.Caption:=DefaultInstance.GetTranslationProperty('License');</PRE
+></TD
+></TR
+></TABLE
+></DIV
+><DIV
+CLASS="NAVFOOTER"
+><HR
+ALIGN="LEFT"
+WIDTH="100%"><TABLE
+SUMMARY="Footer navigation table"
+WIDTH="100%"
+BORDER="0"
+CELLPADDING="0"
+CELLSPACING="0"
+><TR
+><TD
+WIDTH="33%"
+ALIGN="left"
+VALIGN="top"
+><A
+HREF="api-getlistoflanguages.html"
+ACCESSKEY="P"
+>&#60;&#60;&#60; Previous</A
+></TD
+><TD
+WIDTH="34%"
+ALIGN="center"
+VALIGN="top"
+><A
+HREF="index.html"
+ACCESSKEY="H"
+>Home</A
+></TD
+><TD
+WIDTH="33%"
+ALIGN="right"
+VALIGN="top"
+><A
+HREF="api-gettranslatornameandemail.html"
+ACCESSKEY="N"
+>Next &#62;&#62;&#62;</A
+></TD
+></TR
+><TR
+><TD
+WIDTH="33%"
+ALIGN="left"
+VALIGN="top"
+>procedure GetListOfLanguages (domain:string; list:TStrings);</TD
+><TD
+WIDTH="34%"
+ALIGN="center"
+VALIGN="top"
+><A
+HREF="apireference.html"
+ACCESSKEY="U"
+>Up</A
+></TD
+><TD
+WIDTH="33%"
+ALIGN="right"
+VALIGN="top"
+>function GetTranslatorNameAndEmail:widestring;</TD
+></TR
+></TABLE
+></DIV
+></BODY
+></HTML
+>

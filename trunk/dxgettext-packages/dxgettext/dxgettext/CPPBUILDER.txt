@@ -1,0 +1,37 @@
+Notes for C++ Builder users
+===========================
+
+Important:
+  When you scan source-code for strings, the system will first
+  scan files that don't contain C/C++ source code, such as dfm
+  files, and afterwards scan C/C++ source code. The last scan
+  assumes that there are already .po files present for the
+  domains that are in use, including default.po. If you create
+  a GUI program, the scanning of .dfm files will create the
+  default.po file, and everything works OK. But if you create
+  a non-GUI program, or if you use other text domains than
+  default, the scanning will probably not succeed. The solution
+  is to use the command line scanner (dxgettext.exe), and
+  create empty .po files for each domain before activating
+  the scanner. This issue has been put into the buglist and
+  will be solved later.
+
+There are some important notes for C++ Builder users:
+- Borland C++ Builder automatically creates a header file
+  (.hpp file) when you compile gnugettext.pas.
+- The resourcestring keyword does not exist in C++ Builder.
+  But if you put strings into .rc files, they will be extracted.
+- If you want to use command line programs to scan source
+  code, please note that xgettext.exe is to be used for C/C++
+  source code and dxgettext.exe for all other kinds of files.
+  xgettext.exe needs the "--keyword=_" parameter.
+
+Since this toolkit was written using ObjectPascal, this
+information may be useful to you:
+- "Uses gnugettext;" becomes #include "gnugettext.hpp"
+- The keyword "self" in ObjectPascal is equivalent to "this"
+  in C++. Therefore, "TranslateComponents (self);" becomes
+  "TranslateComponents (this);".
+- "TP_GlobalIgnoreClassProperty (TClientDataset,'CommandText');" in
+  ObjectPascal becomes this in C++:
+  TP_GlobalIgnoreClassProperty(__classid(TClientDataSet),"CommandText"); 
