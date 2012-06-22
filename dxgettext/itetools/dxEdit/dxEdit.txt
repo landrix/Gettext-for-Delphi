@@ -1,0 +1,32 @@
+dxEdit is a Delphi GUI application to simplify working with PO files in Delphi. Note that Troy Wolbrink's TNT Controls (http://home.ccci.org/wolbrink/tnt/delphi_unicode_controls.htm) are needed to open the project in Delphi and compile the program.
+
+Currently, it can do next to nothing, but the following are some of the ideas for it:
+
+po files:
+* create
+* update (add new strings)
+* delete (?)
+
+po file entries (and comments):
+* add
+* edit
+* delete (?)
+* find
+
+languages:
+* create (copy po file and create folder structure)
+* update (add new strings)
+* delete (?)
+
+parsing:
+* parse pas, dfm, rc files (i.e dxgettext)
+* parse dfn/rc files (i.e dfntopo)
+* parse ITE xml files (i.e ixtopo)
+
+misc:
+* compile mo (i.e msgfmt)
+* remove duplicate entries in po files 
+* sort po files
+* merge po files (i.e msgmerge)
+
+Last updated 2003-03-20

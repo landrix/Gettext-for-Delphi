@@ -1,0 +1,13 @@
+What:
+dfntopo extracts translated strings from DFN files and puts them into a po file. The po file *must* exist and the msgid *must* be in the po file!
+
+How:
+Start by creating a po file from the pas and dfm sources using dxgettext. You should then copy the generated po file to each of the language folders in the project folder - i.e dk\LC_MESSAGES\default.po (se dxgettext help for more details). Run this program on the DFN files to replace the msgstr entries in the po file with the translations from the DFN files.
+
+Command line:
+dfntopo -s -p<pofile> -d<dfnpath> 
+-s - recurse into sub-directories
+-f - force cration of non-existent PO items (PO file must still exists!)
+-m - merge TStrings items into single \n delimited string
+-p<pofile> - the pofile to insert translation into 
+-d<dfnpath> - the path to the dfn folder *without* a filemask, i.e "C:\temp" or "C:\temp\" is OK, "C:\temp\*.dfn" is NOT.
