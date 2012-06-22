@@ -1,0 +1,98 @@
+#. Form1..Font.Name
+#: assemble/umain.dfm:12
+#. FormRun..Font.Name
+#: ggmerge/uRun.dfm:13
+#. FormConfig..Font.Name
+#: uconfig.dfm:12
+#. FormWork..Font.Name
+#: uWork.dfm:11
+msgid "MS Sans Serif"
+msgstr ""
+
+#. FormRun..ButtonChooseTemplate..Caption
+#: ggmerge/uRun.dfm:62
+#. FormRun..ButtonChooseTranslation..Caption
+#: ggmerge/uRun.dfm:72
+msgid "..."
+msgstr ""
+
+#. frmMain..panelClient..panel1..lbLoadInfo..Caption
+#: bplPoMerge/main_translation.dfm:155
+#. frmMain..panelClient..panel1..lbEntriesInfo..Caption
+#: bplPoMerge/main_translation.dfm:162
+msgid "-"
+msgstr ""
+
+#. frmMain..panelClient..panel1..edBPL..Text
+#: bplPoMerge/main_translation.dfm:170
+msgid "c:\\winnt\\system32\\*.bpl"
+msgstr ""
+
+#. frmMain..panelClient..panel1..edLang..Text
+#: bplPoMerge/main_translation.dfm:178
+msgid ".de"
+msgstr ""
+
+#. frmMain..MainMenu1..N1..Caption
+#: bplPoMerge/main_translation.dfm:241
+msgid "&?"
+msgstr ""
+
+#: msgimport/consoleapp.pas:74
+msgid "msgimport %s"
+msgstr ""
+
+#: msgmkignore/consoleapp.pas:74
+msgid "msgmkignore %s"
+msgstr ""
+
+#: msgremove/consoleapp.pas:79
+msgid "msgremove %s"
+msgstr ""
+
+#. Programmer's name: BLOCK
+#: dxgreg/test.rc:14
+msgid "StringFileInfo"
+msgstr ""
+
+#. Programmer's name: BLOCK
+#: dxgreg/test.rc:16
+msgid "040904B0"
+msgstr ""
+
+#. FormConfig..EditMask..Text
+#: uconfig.dfm:37
+msgid "*.pas *.dfm *.c *.cpp *.inc *.rc *.dfm *.xfm "
+"*.dpr"
+msgstr ""
+
+#. FormConfig..EditMask..Text
+#: uconfig.dfm:42
+msgid "*.pas *.dfm"
+msgstr ""
+
+#. Form1..Font.Name
+#: assemble/umain.dfm:12
+msgid "Arial"
+msgstr ""
+
+#. Messages about how to use this program
+#: msgmergePOT/msgmergePOT.dpr:165
+msgid "msgmergePOT %s"
+msgstr ""
+
+#. Messages about how to use this program
+#: msgsplitTStrings/msgsplitTStrings.dpr:44
+msgid "msgsplitTStrings %s"
+msgstr ""
+
+#: assemble/consoleapp.pas:75
+msgid "assemble %s"
+msgstr ""
+
+#: consoleapp.pas:230
+#. Write a dummy header that the user can modify
+#: xgettext.pas:743
+msgid "dxgettext %s"
+msgstr ""
+
