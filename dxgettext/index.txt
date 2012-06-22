@@ -1,0 +1,15 @@
+Directory           Contents
+============================================================================================================
+docs                Documentation for this project
+dxgettext           The utility to extracts texts from source code
+htmltranslator      A small tool to localize html files
+itetools            Several utilities to handle conversion from the Delphi ITE to PO files
+languages           Language lists in various formats
+locale              Scripts to translate this project
+packages            Not used any more.
+sample              The gnugettext.pas package and sample applications
+tools               Several tools for handling PO files
+wordlists           Not used any more.
+
+If you are searching for gnugettext.pas, it's the one in the sample subdirectory.
+
