@@ -1,0 +1,264 @@
+﻿	<Project xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+		<PropertyGroup>
+			<ProjectGuid>{CF1FCF2A-3425-4005-8849-A16BA1609123}</ProjectGuid>
+		</PropertyGroup>
+		<ItemGroup>
+			<Projects Include="dxgettext\dxgettext.dproj">
+				<Dependencies/>
+			</Projects>
+			<Projects Include="dxgettext\ggdxgettext.dproj">
+				<Dependencies/>
+			</Projects>
+			<Projects Include="tools\ggmerge\ggmerge.dproj">
+				<Dependencies/>
+			</Projects>
+			<Projects Include="tools\ggmerge\msgmergedx.dproj">
+				<Dependencies/>
+			</Projects>
+			<Projects Include="tools\assemble\assemble.dproj">
+				<Dependencies/>
+			</Projects>
+			<Projects Include="tools\assemble\ggassemble.dproj">
+				<Dependencies/>
+			</Projects>
+			<Projects Include="tools\bplPoMerge\translation.dproj">
+				<Dependencies/>
+			</Projects>
+			<Projects Include="tools\dxgreg\dxgreg.dproj">
+				<Dependencies/>
+			</Projects>
+			<Projects Include="tools\ggfmt\ggfmt.dproj">
+				<Dependencies/>
+			</Projects>
+			<Projects Include="tools\ExtractChangedTranslations\extractChangedTranslations.dproj">
+				<Dependencies/>
+			</Projects>
+			<Projects Include="tools\msgimport\msgimport.dproj">
+				<Dependencies/>
+			</Projects>
+			<Projects Include="tools\msgmergePOT\msgmergePOT.dproj">
+				<Dependencies/>
+			</Projects>
+			<Projects Include="tools\msgmkignore\msgmkignore.dproj">
+				<Dependencies/>
+			</Projects>
+			<Projects Include="tools\msgremove\msgremove.dproj">
+				<Dependencies/>
+			</Projects>
+			<Projects Include="tools\msgshowheader\msgshowheader.dproj">
+				<Dependencies/>
+			</Projects>
+			<Projects Include="tools\msgsplitTStrings\msgsplitTStrings.dproj">
+				<Dependencies/>
+			</Projects>
+			<Projects Include="tools\msgstripCR\msgstripCR.dproj">
+				<Dependencies/>
+			</Projects>
+			<Projects Include="tools\ResStringsToPo\ResStringsToPo.dproj">
+				<Dependencies/>
+			</Projects>
+			<Projects Include="tools\stripifdef\stripifdef.dproj">
+				<Dependencies/>
+			</Projects>
+			<Projects Include="tools\gorm\Gorm.dproj">
+				<Dependencies/>
+			</Projects>
+		</ItemGroup>
+		<ProjectExtensions>
+			<Borland.Personality>Default.Personality.12</Borland.Personality>
+			<Borland.ProjectType/>
+			<BorlandProject>
+				<Default.Personality/>
+			</BorlandProject>
+		</ProjectExtensions>
+		<Target Name="dxgettext">
+			<MSBuild Projects="dxgettext\dxgettext.dproj"/>
+		</Target>
+		<Target Name="dxgettext:Clean">
+			<MSBuild Projects="dxgettext\dxgettext.dproj" Targets="Clean"/>
+		</Target>
+		<Target Name="dxgettext:Make">
+			<MSBuild Projects="dxgettext\dxgettext.dproj" Targets="Make"/>
+		</Target>
+		<Target Name="ggdxgettext">
+			<MSBuild Projects="dxgettext\ggdxgettext.dproj"/>
+		</Target>
+		<Target Name="ggdxgettext:Clean">
+			<MSBuild Projects="dxgettext\ggdxgettext.dproj" Targets="Clean"/>
+		</Target>
+		<Target Name="ggdxgettext:Make">
+			<MSBuild Projects="dxgettext\ggdxgettext.dproj" Targets="Make"/>
+		</Target>
+		<Target Name="ggmerge">
+			<MSBuild Projects="tools\ggmerge\ggmerge.dproj"/>
+		</Target>
+		<Target Name="ggmerge:Clean">
+			<MSBuild Projects="tools\ggmerge\ggmerge.dproj" Targets="Clean"/>
+		</Target>
+		<Target Name="ggmerge:Make">
+			<MSBuild Projects="tools\ggmerge\ggmerge.dproj" Targets="Make"/>
+		</Target>
+		<Target Name="msgmergedx">
+			<MSBuild Projects="tools\ggmerge\msgmergedx.dproj"/>
+		</Target>
+		<Target Name="msgmergedx:Clean">
+			<MSBuild Projects="tools\ggmerge\msgmergedx.dproj" Targets="Clean"/>
+		</Target>
+		<Target Name="msgmergedx:Make">
+			<MSBuild Projects="tools\ggmerge\msgmergedx.dproj" Targets="Make"/>
+		</Target>
+		<Target Name="assemble">
+			<MSBuild Projects="tools\assemble\assemble.dproj"/>
+		</Target>
+		<Target Name="assemble:Clean">
+			<MSBuild Projects="tools\assemble\assemble.dproj" Targets="Clean"/>
+		</Target>
+		<Target Name="assemble:Make">
+			<MSBuild Projects="tools\assemble\assemble.dproj" Targets="Make"/>
+		</Target>
+		<Target Name="ggassemble">
+			<MSBuild Projects="tools\assemble\ggassemble.dproj"/>
+		</Target>
+		<Target Name="ggassemble:Clean">
+			<MSBuild Projects="tools\assemble\ggassemble.dproj" Targets="Clean"/>
+		</Target>
+		<Target Name="ggassemble:Make">
+			<MSBuild Projects="tools\assemble\ggassemble.dproj" Targets="Make"/>
+		</Target>
+		<Target Name="translation">
+			<MSBuild Projects="tools\bplPoMerge\translation.dproj"/>
+		</Target>
+		<Target Name="translation:Clean">
+			<MSBuild Projects="tools\bplPoMerge\translation.dproj" Targets="Clean"/>
+		</Target>
+		<Target Name="translation:Make">
+			<MSBuild Projects="tools\bplPoMerge\translation.dproj" Targets="Make"/>
+		</Target>
+		<Target Name="dxgreg">
+			<MSBuild Projects="tools\dxgreg\dxgreg.dproj"/>
+		</Target>
+		<Target Name="dxgreg:Clean">
+			<MSBuild Projects="tools\dxgreg\dxgreg.dproj" Targets="Clean"/>
+		</Target>
+		<Target Name="dxgreg:Make">
+			<MSBuild Projects="tools\dxgreg\dxgreg.dproj" Targets="Make"/>
+		</Target>
+		<Target Name="ggfmt">
+			<MSBuild Projects="tools\ggfmt\ggfmt.dproj"/>
+		</Target>
+		<Target Name="ggfmt:Clean">
+			<MSBuild Projects="tools\ggfmt\ggfmt.dproj" Targets="Clean"/>
+		</Target>
+		<Target Name="ggfmt:Make">
+			<MSBuild Projects="tools\ggfmt\ggfmt.dproj" Targets="Make"/>
+		</Target>
+		<Target Name="extractChangedTranslations">
+			<MSBuild Projects="tools\ExtractChangedTranslations\extractChangedTranslations.dproj"/>
+		</Target>
+		<Target Name="extractChangedTranslations:Clean">
+			<MSBuild Projects="tools\ExtractChangedTranslations\extractChangedTranslations.dproj" Targets="Clean"/>
+		</Target>
+		<Target Name="extractChangedTranslations:Make">
+			<MSBuild Projects="tools\ExtractChangedTranslations\extractChangedTranslations.dproj" Targets="Make"/>
+		</Target>
+		<Target Name="msgimport">
+			<MSBuild Projects="tools\msgimport\msgimport.dproj"/>
+		</Target>
+		<Target Name="msgimport:Clean">
+			<MSBuild Projects="tools\msgimport\msgimport.dproj" Targets="Clean"/>
+		</Target>
+		<Target Name="msgimport:Make">
+			<MSBuild Projects="tools\msgimport\msgimport.dproj" Targets="Make"/>
+		</Target>
+		<Target Name="msgmergePOT">
+			<MSBuild Projects="tools\msgmergePOT\msgmergePOT.dproj"/>
+		</Target>
+		<Target Name="msgmergePOT:Clean">
+			<MSBuild Projects="tools\msgmergePOT\msgmergePOT.dproj" Targets="Clean"/>
+		</Target>
+		<Target Name="msgmergePOT:Make">
+			<MSBuild Projects="tools\msgmergePOT\msgmergePOT.dproj" Targets="Make"/>
+		</Target>
+		<Target Name="msgmkignore">
+			<MSBuild Projects="tools\msgmkignore\msgmkignore.dproj"/>
+		</Target>
+		<Target Name="msgmkignore:Clean">
+			<MSBuild Projects="tools\msgmkignore\msgmkignore.dproj" Targets="Clean"/>
+		</Target>
+		<Target Name="msgmkignore:Make">
+			<MSBuild Projects="tools\msgmkignore\msgmkignore.dproj" Targets="Make"/>
+		</Target>
+		<Target Name="msgremove">
+			<MSBuild Projects="tools\msgremove\msgremove.dproj"/>
+		</Target>
+		<Target Name="msgremove:Clean">
+			<MSBuild Projects="tools\msgremove\msgremove.dproj" Targets="Clean"/>
+		</Target>
+		<Target Name="msgremove:Make">
+			<MSBuild Projects="tools\msgremove\msgremove.dproj" Targets="Make"/>
+		</Target>
+		<Target Name="msgshowheader">
+			<MSBuild Projects="tools\msgshowheader\msgshowheader.dproj"/>
+		</Target>
+		<Target Name="msgshowheader:Clean">
+			<MSBuild Projects="tools\msgshowheader\msgshowheader.dproj" Targets="Clean"/>
+		</Target>
+		<Target Name="msgshowheader:Make">
+			<MSBuild Projects="tools\msgshowheader\msgshowheader.dproj" Targets="Make"/>
+		</Target>
+		<Target Name="msgsplitTStrings">
+			<MSBuild Projects="tools\msgsplitTStrings\msgsplitTStrings.dproj"/>
+		</Target>
+		<Target Name="msgsplitTStrings:Clean">
+			<MSBuild Projects="tools\msgsplitTStrings\msgsplitTStrings.dproj" Targets="Clean"/>
+		</Target>
+		<Target Name="msgsplitTStrings:Make">
+			<MSBuild Projects="tools\msgsplitTStrings\msgsplitTStrings.dproj" Targets="Make"/>
+		</Target>
+		<Target Name="msgstripCR">
+			<MSBuild Projects="tools\msgstripCR\msgstripCR.dproj"/>
+		</Target>
+		<Target Name="msgstripCR:Clean">
+			<MSBuild Projects="tools\msgstripCR\msgstripCR.dproj" Targets="Clean"/>
+		</Target>
+		<Target Name="msgstripCR:Make">
+			<MSBuild Projects="tools\msgstripCR\msgstripCR.dproj" Targets="Make"/>
+		</Target>
+		<Target Name="ResStringsToPo">
+			<MSBuild Projects="tools\ResStringsToPo\ResStringsToPo.dproj"/>
+		</Target>
+		<Target Name="ResStringsToPo:Clean">
+			<MSBuild Projects="tools\ResStringsToPo\ResStringsToPo.dproj" Targets="Clean"/>
+		</Target>
+		<Target Name="ResStringsToPo:Make">
+			<MSBuild Projects="tools\ResStringsToPo\ResStringsToPo.dproj" Targets="Make"/>
+		</Target>
+		<Target Name="stripifdef">
+			<MSBuild Projects="tools\stripifdef\stripifdef.dproj"/>
+		</Target>
+		<Target Name="stripifdef:Clean">
+			<MSBuild Projects="tools\stripifdef\stripifdef.dproj" Targets="Clean"/>
+		</Target>
+		<Target Name="stripifdef:Make">
+			<MSBuild Projects="tools\stripifdef\stripifdef.dproj" Targets="Make"/>
+		</Target>
+		<Target Name="Gorm">
+			<MSBuild Projects="tools\gorm\Gorm.dproj"/>
+		</Target>
+		<Target Name="Gorm:Clean">
+			<MSBuild Projects="tools\gorm\Gorm.dproj" Targets="Clean"/>
+		</Target>
+		<Target Name="Gorm:Make">
+			<MSBuild Projects="tools\gorm\Gorm.dproj" Targets="Make"/>
+		</Target>
+		<Target Name="Build">
+			<CallTarget Targets="dxgettext;ggdxgettext;ggmerge;msgmergedx;assemble;ggassemble;translation;dxgreg;ggfmt;extractChangedTranslations;msgimport;msgmergePOT;msgmkignore;msgremove;msgshowheader;msgsplitTStrings;msgstripCR;ResStringsToPo;stripifdef;Gorm"/>
+		</Target>
+		<Target Name="Clean">
+			<CallTarget Targets="dxgettext:Clean;ggdxgettext:Clean;ggmerge:Clean;msgmergedx:Clean;assemble:Clean;ggassemble:Clean;translation:Clean;dxgreg:Clean;ggfmt:Clean;extractChangedTranslations:Clean;msgimport:Clean;msgmergePOT:Clean;msgmkignore:Clean;msgremove:Clean;msgshowheader:Clean;msgsplitTStrings:Clean;msgstripCR:Clean;ResStringsToPo:Clean;stripifdef:Clean;Gorm:Clean"/>
+		</Target>
+		<Target Name="Make">
+			<CallTarget Targets="dxgettext:Make;ggdxgettext:Make;ggmerge:Make;msgmergedx:Make;assemble:Make;ggassemble:Make;translation:Make;dxgreg:Make;ggfmt:Make;extractChangedTranslations:Make;msgimport:Make;msgmergePOT:Make;msgmkignore:Make;msgremove:Make;msgshowheader:Make;msgsplitTStrings:Make;msgstripCR:Make;ResStringsToPo:Make;stripifdef:Make;Gorm:Make"/>
+		</Target>
+		<Import Condition="Exists('$(BDS)\Bin\CodeGear.Group.Targets')" Project="$(BDS)\Bin\CodeGear.Group.Targets"/>
+	</Project>
