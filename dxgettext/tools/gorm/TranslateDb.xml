@@ -1,0 +1,94 @@
+<?xml version="1.0" encoding="WINDOWS-1252"?>
+<dzxmldb >
+  <header >
+    <program identifier="" name=""/>
+  </header>
+  <config />
+  <databasetypes >
+  </databasetypes>
+  <database name="TranslateDB">
+    <table name="dz_System">
+      <column name="ChangeDate" type="Date" size="0" comment="Date of latest change (of table struture, not content)" null="no"/>
+      <column name="ChangedBy" type="Text" size="20" comment="Name of whoever changed the database" null="no"/>
+      <column name="Comment" type="Text" size="255" comment="free text NULL" null="yes"/>
+      <column name="Version" type="Text" size="10" comment="Version nummer of database" null="no"/>
+    </table>
+    <table name="English">
+      <column name="ID" type="LongInt" size="0" null="yes"/>
+      <column name="Content" type="Text" size="255" null="no"/>
+      <index name="IX_PrimaryKey" primarykey="true" unique="true">
+        <column name="ID"/>
+      </index>
+      <index name="IX_IX_Content">
+        <column name="Content"/>
+      </index>
+    </table>
+    <table name="EnglishTags">
+      <column name="English_ID" type="LongInt" size="0" null="no" reftable="English" refcolumn="ID"/>
+      <column name="Tag_ID" type="LongInt" size="0" null="no" reftable="Tags" refcolumn="ID"/>
+      <index name="IX_PK_EnglishTags_PRIMARY" primarykey="true" unique="true">
+        <column name="Tag_ID"/>
+        <column name="English_ID"/>
+      </index>
+      <index name="FK_EnglishTags_English_ID_ID" foreignkey="true" referencetable="English">
+        <column name="English_ID"/>
+      </index>
+      <index name="FK_EnglishTags_Tag_ID_ID" foreignkey="true" referencetable="Tags">
+        <column name="Tag_ID"/>
+      </index>
+    </table>
+    <table name="IDs">
+      <column name="LastID" type="LongInt" size="0" null="no"/>
+      <column name="TableName" type="Text" size="20" null="no"/>
+    </table>
+    <table name="Tags">
+      <column name="ID" type="LongInt" size="0" null="no"/>
+      <column name="TagName" type="Text" size="20" null="no"/>
+      <index name="IX_PK_Tags_PRIMARY" primarykey="true" unique="true">
+        <column name="ID"/>
+      </index>
+      <index name="IX_IX_Tags_TagName">
+        <column name="TagName"/>
+      </index>
+    </table>
+	<table name="TranslationSources">
+	  <column name="ID" type="LongInt" size="0" null="no"/>
+	  <column name="Source" type="Text" size="50" null="no"/>
+      <index name="IX_PrimaryKey" primarykey="true" unique="true">
+        <column name="ID"/>
+      </index>
+	</table>
+    <table name="TargetLang">
+      <column name="ID" type="LongInt" size="0" null="yes"/>
+      <column name="English_ID" type="LongInt" size="0" null="no" reftable="English" refcolumn="ID"/>
+      <column name="Content" type="Text" size="255" null="no"/>
+      <column name="Source_ID" type="LongINt" size="0" null="yes"/>
+      <index name="IX_PrimaryKey" primarykey="true" unique="true">
+        <column name="ID"/>
+      </index>
+      <index name="FK_TargetLang_English_ID_ID" foreignkey="true" referencetable="English">
+        <column name="English_ID"/>
+      </index>
+	  <index name="FK_TranslationSources_ID" foreignkey="true" referencetable="TranslationSources">
+	    <column name="Source_ID"/>
+	  </index>
+      <index name="IX_IX_Content">
+        <column name="Content"/>
+      </index>
+    </table>
+    <table name="TargetTags">
+      <column name="Tag_ID" type="LongInt" size="0" null="no" reftable="Tags" refcolumn="ID"/>
+      <column name="Target_ID" type="LongInt" size="0" null="no" reftable="TargetLang" refcolumn="ID"/>
+      <index name="IX_PK_EnglishTags_PRIMARY" primarykey="true" unique="true">
+        <column name="Tag_ID"/>
+        <column name="Target_ID"/>
+      </index>
+      <index name="FK_TargetTags_Tag_ID_ID" foreignkey="true" referencetable="Tags">
+        <column name="Tag_ID"/>
+      </index>
+      <index name="FK_TargetTags_Target_ID_ID" foreignkey="true" referencetable="TargetLang">
+        <column name="Target_ID"/>
+      </index>
+    </table>
+  </database>
+</dzxmldb>
