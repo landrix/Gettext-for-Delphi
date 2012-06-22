@@ -1,0 +1,461 @@
+# SOME DESCRIPTIVE TITLE.
+# Copyright (C) YEAR THE PACKAGE'S COPYRIGHT HOLDER
+# This file is distributed under the same license as the PACKAGE package.
+# FIRST AUTHOR <EMAIL@ADDRESS>, YEAR.
+#
+msgid ""
+msgstr ""
+"Project-Id-Version: EMS QueryBuilder\n"
+"POT-Creation-Date: 2004-08-26 21:20\n"
+"PO-Revision-Date: 2006-06-13 15:10-0300\n"
+"Last-Translator: Victor Westmann <victor.westmann@gmail.com>\n"
+"Language-Team: \n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+
+#  QBFloatPanel
+#  Programmer's name for it: rsFloatPanelIsNotValidWorkArea
+#  QBFloatPanel
+#  Programmer's name for it: rsFloatPanelIsNotValidWorkArea
+#. QBFloatPanel
+#. Programmer's name for it: rsFloatPanelIsNotValidWorkArea
+#: ggsetup_EmsQB.inc:7
+msgid "Given parent is not valid for work area!"
+msgstr ""
+
+#  Programmer's name for it: rsFloatPanelTableWithAlias
+#. Programmer's name for it: rsFloatPanelTableWithAlias
+#: ggsetup_EmsQB.inc:8
+msgid "Table with alias"
+msgstr "Tabela com alias"
+
+#  Programmer's name for it: rsFloatPanelAlreadyExists
+#. Programmer's name for it: rsFloatPanelAlreadyExists
+#: ggsetup_EmsQB.inc:9
+msgid "already exists"
+msgstr "já existe"
+
+#  QBFloatTable
+#  Programmer's name for it: rsFloatTableInvalidParentForTable
+#. QBFloatTable
+#. Programmer's name for it: rsFloatTableInvalidParentForTable
+#: ggsetup_EmsQB.inc:12
+msgid "Invalid parent for table object!"
+msgstr ""
+
+#  Programmer's name for it: rsFloatTableCollapseExpandTable
+#. Programmer's name for it: rsFloatTableCollapseExpandTable
+#: ggsetup_EmsQB.inc:13
+msgid "Collapse/Expand table"
+msgstr "Contrair/Expandir tabela"
+
+#  Programmer's name for it: rsFloatTableUnlinkTable
+#. Programmer's name for it: rsFloatTableUnlinkTable
+#: ggsetup_EmsQB.inc:14
+msgid "Unlink table"
+msgstr "Desvincular tabela"
+
+#  Programmer's name for it: rsFloatTableCloseTable
+#. Programmer's name for it: rsFloatTableCloseTable
+#: ggsetup_EmsQB.inc:15
+msgid "Close table"
+msgstr "Fechar tabela"
+
+#  Programmer's name for it: rsFloatTableUnselectAllFields
+#. Programmer's name for it: rsFloatTableUnselectAllFields
+#: ggsetup_EmsQB.inc:16
+msgid "Unselect all fields"
+msgstr ""
+
+#  Programmer's name for it: rsFloatTableSelectAllFields
+#. Programmer's name for it: rsFloatTableSelectAllFields
+#: ggsetup_EmsQB.inc:17
+msgid "Select all fields"
+msgstr "Selecionar todos os campos"
+
+#  Programmer's name for it: rsFloatTableDoubleClickAlias
+#. Programmer's name for it: rsFloatTableDoubleClickAlias
+#: ggsetup_EmsQB.inc:18
+msgid "Double click to edit alias"
+msgstr "Duplo clique para editar alias"
+
+#  Programmer's name for it: rsFloatTableDeleteTable
+#. Programmer's name for it: rsFloatTableDeleteTable
+#: ggsetup_EmsQB.inc:19
+msgid "Delete table"
+msgstr "Apagar tabela"
+
+#  Programmer's name for it: rsFloatTableRenameTable
+#. Programmer's name for it: rsFloatTableRenameTable
+#: ggsetup_EmsQB.inc:20
+msgid "Rename table"
+msgstr "Renomear tabela"
+
+#  QBLinkProp
+#  Programmer's name for it: rsLinkPropInvalidLink
+#. QBLinkProp
+#. Programmer's name for it: rsLinkPropInvalidLink
+#: ggsetup_EmsQB.inc:23
+msgid "Invalid link"
+msgstr "Vínculo inválido"
+
+#  Programmer's name for it: rsLinkPropJoinTables
+#. Programmer's name for it: rsLinkPropJoinTables
+#: ggsetup_EmsQB.inc:24
+msgid "join tables: "
+msgstr "unir tabelas:"
+
+#  Programmer's name for it: rsLinkPropAnd
+#. Programmer's name for it: rsLinkPropAnd
+#: ggsetup_EmsQB.inc:25
+msgid "and"
+msgstr "e"
+
+#  Programmer's name for it: rsLinkPropIncludeAllFrom
+#. Programmer's name for it: rsLinkPropIncludeAllFrom
+#: ggsetup_EmsQB.inc:26
+msgid "Include all from"
+msgstr "Incluir tudo de"
+
+#  QBLinks
+#  Programmer's name for it: rsLinksInvalidIndex
+#. QBLinks
+#. Programmer's name for it: rsLinksInvalidIndex
+#: ggsetup_EmsQB.inc:29
+msgid "Invalid index = %d "
+msgstr "Índice inválido = %d"
+
+#  Programmer's name for it: rsLinksWantDeleteLink
+#. Programmer's name for it: rsLinksWantDeleteLink
+#: ggsetup_EmsQB.inc:30
+msgid "Do you really want to delete the link between "
+msgstr "Você realmente quer apagar o vínculo entre"
+
+#  #-#-#-#-#  EmsExport3.po (PACKAGE VERSION)  #-#-#-#-#
+#  since 3.0
+#  Programmer's name for it: QED_RTF_Reset_All_Question_Caption
+#  Programmer's name for it: QED_XLS_Reset_All_Question_Caption
+#  #-#-#-#-#  EmsQueryBuilder.po (PACKAGE VERSION)  #-#-#-#-#
+#  Programmer's name for it: rsLinksAttention
+#. Programmer's name for it: rsLinksAttention
+#: ggsetup_EmsQB.inc:31
+msgid "Attention!"
+msgstr "Atenção!"
+
+#  Programmer's name for it: rsLinksInvalidTable
+#. Programmer's name for it: rsLinksInvalidTable
+#: ggsetup_EmsQB.inc:32
+msgid "Invalid table %s in Link control"
+msgstr "Tabela %s inválida no Vínculo de controle"
+
+#  Programmer's name for it: rsLinksDeletePoint
+#. Programmer's name for it: rsLinksDeletePoint
+#: ggsetup_EmsQB.inc:33
+msgid "Delete point"
+msgstr "Apagar ponto"
+
+#  Programmer's name for it: rsLinksInsertPoint
+#. Programmer's name for it: rsLinksInsertPoint
+#: ggsetup_EmsQB.inc:34
+msgid "Insert point"
+msgstr "Inserir ponto"
+
+#  Programmer's name for it: rsLinksDeleteLink
+#. Programmer's name for it: rsLinksDeleteLink
+#: ggsetup_EmsQB.inc:35
+msgid "Delete link"
+msgstr "Apagar vínculo"
+
+#  Programmer's name for it: rsLinksProperty
+#. Programmer's name for it: rsLinksProperty
+#: ggsetup_EmsQB.inc:36
+msgid "Property"
+msgstr "Propriedade"
+
+#  Programmer's name for it: rsParserNotAll
+#. Programmer's name for it: rsParserNotAll
+#: ggsetup_EmsQB.inc:42
+msgid "Not all"
+msgstr "Não todos"
+
+#  ab 04.11.2003
+#  Programmer's name for it: rsParserNot
+#. ab 04.11.2003
+#. Programmer's name for it: rsParserNot
+#: ggsetup_EmsQB.inc:43
+msgid "Not"
+msgstr "Não"
+
+#  Programmer's name for it: rsParserUnknownError
+#. Programmer's name for it: rsParserUnknownError
+#: ggsetup_EmsQB.inc:44
+msgid "Unknown error (#%d)."
+msgstr "Erro desconhecido (#%d)."
+
+#  Programmer's name for it: rsParserInvalidToken
+#. Programmer's name for it: rsParserInvalidToken
+#: ggsetup_EmsQB.inc:45
+msgid "Invalid token '%s' at position %d of line %d."
+msgstr ""
+
+#  Programmer's name for it: rsParserUnexpectedEnd
+#. Programmer's name for it: rsParserUnexpectedEnd
+#: ggsetup_EmsQB.inc:46
+msgid "Unexpected end of statement."
+msgstr ""
+
+#  Programmer's name for it: rsParserUnterminatedString
+#. Programmer's name for it: rsParserUnterminatedString
+#: ggsetup_EmsQB.inc:47
+msgid "Unterminated string."
+msgstr "String não terminada."
+
+#  Programmer's name for it: rsFieldNotFound
+#. Programmer's name for it: rsFieldNotFound
+#: ggsetup_EmsQB.inc:48
+msgid "Field '%s' not found."
+msgstr "Campo '%s' não encontrado."
+
+#  Programmer's name for it: rsInadmissibleJoinExpression
+#. Programmer's name for it: rsInadmissibleJoinExpression
+#: ggsetup_EmsQB.inc:49
+msgid "Inadmissible JOIN expression."
+msgstr "Expressão JOIN inadmissível."
+
+#  QBSelectOrder
+#  Programmer's name for it: rsSelectOrderASC
+#. QBSelectOrder
+#. Programmer's name for it: rsSelectOrderASC
+#: ggsetup_EmsQB.inc:52
+msgid "Ascending"
+msgstr "Ascendente"
+
+#  Programmer's name for it: rsSelectOrderDESC
+#. Programmer's name for it: rsSelectOrderDESC
+#: ggsetup_EmsQB.inc:53
+msgid "Descending"
+msgstr "Descendente"
+
+#  Programmer's name for it: rsSelectOrderInvalidGridParent
+#. Programmer's name for it: rsSelectOrderInvalidGridParent
+#: ggsetup_EmsQB.inc:54
+msgid "Invalid parent for selection grid"
+msgstr ""
+
+#  Programmer's name for it: rsSelectOrderNameOfOutputField
+#. Programmer's name for it: rsSelectOrderNameOfOutputField
+#: ggsetup_EmsQB.inc:55
+msgid "Name of output field"
+msgstr "Nome do campo de saída"
+
+#  #-#-#-#-#  EmsExport3.po (PACKAGE VERSION)  #-#-#-#-#
+#  Programmer's name for it: QED_XLS_Function
+#  #-#-#-#-#  EmsQueryBuilder.po (PACKAGE VERSION)  #-#-#-#-#
+#  Programmer's name for it: rsSelectOrderAggregate
+#. Programmer's name for it: rsSelectOrderAggregate
+#: ggsetup_EmsQB.inc:56
+msgid "Aggregate"
+msgstr "Agregado"
+
+#  Programmer's name for it: rsSelectOrderSourceFieldName
+#. Programmer's name for it: rsSelectOrderSourceFieldName
+#: ggsetup_EmsQB.inc:57
+msgid "Source field name"
+msgstr "Nome do campo fonte"
+
+#  Programmer's name for it: rsSelectOrderDeleteCurrentRow
+#. Programmer's name for it: rsSelectOrderDeleteCurrentRow
+#: ggsetup_EmsQB.inc:58
+msgid "Delete current row"
+msgstr "Apagar linha atual"
+
+#  Programmer's name for it: rsSelectOrderSureWantDeleteRow
+#. Programmer's name for it: rsSelectOrderSureWantDeleteRow
+#: ggsetup_EmsQB.inc:59
+msgid "Are you sure you want to delete current row?"
+msgstr "VOcê tem certeza que deseja apagar a linha atual?"
+
+#  Programmer's name for it: rsSelectOrderConfirmation
+#. Programmer's name for it: rsSelectOrderConfirmation
+#: ggsetup_EmsQB.inc:60
+msgid "Confirmation"
+msgstr "Confirmação"
+
+#  Programmer's name for it: rsSelectOrderCantDeleteLastRow
+#. Programmer's name for it: rsSelectOrderCantDeleteLastRow
+#: ggsetup_EmsQB.inc:61
+msgid "Can't delete last row!"
+msgstr "Nõa é possível apagar última linha!"
+
+#  Programmer's name for it: rsSelectOrderInvalidOrderParent
+#. Programmer's name for it: rsSelectOrderInvalidOrderParent
+#: ggsetup_EmsQB.inc:62
+msgid "Invalid parent for OrderPanel"
+msgstr ""
+
+#  Programmer's name for it: rsSelectOrderDistinct
+#. Programmer's name for it: rsSelectOrderDistinct
+#: ggsetup_EmsQB.inc:63
+msgid "Select only unique records"
+msgstr "Selecione apenas registros únicos"
+
+#  Programmer's name for it: rsSelectOrderOutputFields
+#. Programmer's name for it: rsSelectOrderOutputFields
+#: ggsetup_EmsQB.inc:64
+msgid "Output fields"
+msgstr ""
+
+#  Programmer's name for it: rsSelectOrderSortedFields
+#. Programmer's name for it: rsSelectOrderSortedFields
+#: ggsetup_EmsQB.inc:65
+msgid "Sorted fields"
+msgstr "Campos ordenados"
+
+#  Programmer's name for it: rsSelectOrderSortOrder
+#. Programmer's name for it: rsSelectOrderSortOrder
+#: ggsetup_EmsQB.inc:66
+msgid "Sort order"
+msgstr ""
+
+#  QBWherePanel
+#  Programmer's name for it: rsWherePanelFollowingMet
+#. QBWherePanel
+#. Programmer's name for it: rsWherePanelFollowingMet
+#: ggsetup_EmsQB.inc:71
+msgid " of following are met"
+msgstr ""
+
+#  Programmer's name for it: rsWherePanelInvalidPanelParent
+#. Programmer's name for it: rsWherePanelInvalidPanelParent
+#: ggsetup_EmsQB.inc:72
+msgid "Invalid parent for conditions panel"
+msgstr ""
+
+#  Programmer's name for it: rsWherePanelInsertField
+#. Programmer's name for it: rsWherePanelInsertField
+#: ggsetup_EmsQB.inc:73
+msgid "Insert field"
+msgstr "Inserir campo"
+
+#  Programmer's name for it: rsWherePanelAddCondition
+#. Programmer's name for it: rsWherePanelAddCondition
+#: ggsetup_EmsQB.inc:74
+msgid "Add condition"
+msgstr "Adicionar condição"
+
+#  Programmer's name for it: rsWherePanelMakeComposeCondition
+#. Programmer's name for it: rsWherePanelMakeComposeCondition
+#: ggsetup_EmsQB.inc:75
+msgid "Make compose condition"
+msgstr ""
+
+#  Programmer's name for it: rsWherePanelDeleteCondition
+#. Programmer's name for it: rsWherePanelDeleteCondition
+#: ggsetup_EmsQB.inc:76
+msgid "Delete condition"
+msgstr "Apagar condição"
+
+#  Programmer's name for it: rsWherePanelExpandCondition
+#. Programmer's name for it: rsWherePanelExpandCondition
+#: ggsetup_EmsQB.inc:77
+msgid "Expand condition"
+msgstr "Expandir condição"
+
+#  Programmer's name for it: rsWherePanelCollapseCondition
+#. Programmer's name for it: rsWherePanelCollapseCondition
+#: ggsetup_EmsQB.inc:78
+msgid "Collapse condition"
+msgstr "Contrair condição"
+
+#  Programmer's name for it: rsWherePanelPressShiftEnter
+#. Programmer's name for it: rsWherePanelPressShiftEnter
+#: ggsetup_EmsQB.inc:79
+msgid "Press Shift+Enter to insert field"
+msgstr "Presisone Shift+Enter para inserir campo"
+
+#  Programmer's name for it: rsWherePanelThereIsNoActiveButton
+#. Programmer's name for it: rsWherePanelThereIsNoActiveButton
+#: ggsetup_EmsQB.inc:80
+msgid "There is no active button"
+msgstr "Não há botão ativo"
+
+#  Programmer's name for it: rsWherePanelSelectedConditionComposed
+#. Programmer's name for it: rsWherePanelSelectedConditionComposed
+#: ggsetup_EmsQB.inc:81
+msgid "Selected condition is already composed"
+msgstr ""
+
+#  Programmer's name for it: rsWherePanelCantDeleteFirstRow
+#. Programmer's name for it: rsWherePanelCantDeleteFirstRow
+#: ggsetup_EmsQB.inc:82
+msgid "Can't delete first row"
+msgstr "Não é possível deletar primeira linha"
+
+#  Programmer's name for it: rsWherePanelSureWantDeleteCondition
+#. Programmer's name for it: rsWherePanelSureWantDeleteCondition
+#: ggsetup_EmsQB.inc:83
+msgid "Are you sure you want to delete current condition(s)?"
+msgstr "Você tem certeza que deseja apagar condição(ões) atual(ais) ?"
+
+#  Programmer's name for it: rsWherePanelCantExpandSimpleCondition
+#. Programmer's name for it: rsWherePanelCantExpandSimpleCondition
+#: ggsetup_EmsQB.inc:84
+msgid "Can't expand/collapse simple condition"
+msgstr "Não é possível expandir/contrair condição simples"
+
+#  Programmer's name for it: rsWherePanelCantCollapseFirstCondition
+#. Programmer's name for it: rsWherePanelCantCollapseFirstCondition
+#: ggsetup_EmsQB.inc:85
+msgid "Can't collapse first condition"
+msgstr "Não é possível contrair primeira condição"
+
+#  Programmer's name for it: rsWherePanelError
+#. Programmer's name for it: rsWherePanelError
+#: ggsetup_EmsQB.inc:87
+msgid "Error!"
+msgstr "Erro!"
+
+#  QBWindow
+#  Programmer's name for it: rsWindowCriteria
+#. QBWindow
+#. Programmer's name for it: rsWindowCriteria
+#: ggsetup_EmsQB.inc:90
+msgid "Criteria"
+msgstr "Critério"
+
+#  Programmer's name for it: rsWindowGroupingCriteria
+#. Programmer's name for it: rsWindowGroupingCriteria
+#: ggsetup_EmsQB.inc:92
+msgid "Grouping criteria"
+msgstr "Critério de agrupamento"
+
+#  Programmer's name for it: rsWindowSorting
+#. Programmer's name for it: rsWindowSorting
+#: ggsetup_EmsQB.inc:93
+msgid "Sorting"
+msgstr "Ordenando"
+
+#  #-#-#-#-#  EmsExport3.po (PACKAGE VERSION)  #-#-#-#-#
+#  since 2.7
+#  Programmer's name for it: QED_HTML_Basic_MultiFile_FirstLinkTitle
+#  #-#-#-#-#  EmsQueryBuilder.po (PACKAGE VERSION)  #-#-#-#-#
+#  Programmer's name for it: rsWindowFirst
+#. Programmer's name for it: rsWindowFirst
+#: ggsetup_EmsQB.inc:95
+msgid "First"
+msgstr "Primeiro"
+
+#  Misc
+#  Programmer's name for it: rsIniFiles
+#. Misc
+#. Programmer's name for it: rsIniFiles
+#: ggsetup_EmsQB.inc:131
+msgid "Ini-files"
+msgstr "Arquivos-ini"
+
+#  Programmer's name for it: rsAllFiles
+#. Programmer's name for it: rsAllFiles
+#: ggsetup_EmsQB.inc:132
+msgid "All files"
+msgstr "Todos os arquivos"

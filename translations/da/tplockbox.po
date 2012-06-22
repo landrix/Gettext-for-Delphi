@@ -1,0 +1,249 @@
+# SOME DESCRIPTIVE TITLE.
+# Copyright (C) YEAR THE PACKAGE'S COPYRIGHT HOLDER
+# This file is distributed under the same license as the PACKAGE package.
+# FIRST AUTHOR <EMAIL@ADDRESS>, YEAR.
+# 
+msgid ""
+msgstr ""
+"Project-Id-Version: TurboPower LockBox\n"
+"POT-Creation-Date: 2004-08-26 21:20\n"
+"PO-Revision-Date: 2004-08-22 23:15+0100\n"
+"Last-Translator: Pelle F. S. Liljendal <pelle@liljendal.dk>\n"
+"Language-Team: Pelle F. S. Liljendal <pelle@liljendal.dk>\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+
+#  Programmer's name for it: sBIBufferUnderflow
+#  Programmer's name for it: sBIBufferUnderflow
+#  Programmer's name for it: sBIBufferUnderflow
+#. Programmer's name for it: sBIBufferUnderflow
+#: ggsetup_TpLockBox.inc:67
+msgid "Buffer UnderFlow"
+msgstr "Buffer Underløb"
+
+#  Programmer's name for it: sBIBufferNotAssigned
+#. Programmer's name for it: sBIBufferNotAssigned
+#: ggsetup_TpLockBox.inc:68
+msgid "Buffer not assigned"
+msgstr "Buffer ikke tildelt"
+
+#  Programmer's name for it: sBINoNumber
+#. Programmer's name for it: sBINoNumber
+#: ggsetup_TpLockBox.inc:69
+msgid "No Number"
+msgstr "Ingen Nummer"
+
+#  Programmer's name for it: sBISubtractErr
+#. Programmer's name for it: sBISubtractErr
+#: ggsetup_TpLockBox.inc:70
+msgid "Subtraction error"
+msgstr "Fratrækkelses fejl"
+
+#  Programmer's name for it: sBIQuotientErr
+#. Programmer's name for it: sBIQuotientErr
+#: ggsetup_TpLockBox.inc:72
+msgid "Quotient process error"
+msgstr "Quotient process fejl"
+
+#  Programmer's name for it: sBIZeroFactor
+#. Programmer's name for it: sBIZeroFactor
+#: ggsetup_TpLockBox.inc:73
+msgid "Factor is zero"
+msgstr "Faktor er nul"
+
+#  Programmer's name for it: sBIIterationCount
+#. Programmer's name for it: sBIIterationCount
+#: ggsetup_TpLockBox.inc:74
+msgid "Iterations must be more than 50"
+msgstr "Gennemløb skal være mere end 50"
+
+#  Programmer's name for it: sASNKeyTooLarge
+#. Programmer's name for it: sASNKeyTooLarge
+#: ggsetup_TpLockBox.inc:77
+msgid "ASN key too large"
+msgstr "ASN nøgle for stor"
+
+#  Programmer's name for it: sASNKeyBufferOverflow
+#. Programmer's name for it: sASNKeyBufferOverflow
+#: ggsetup_TpLockBox.inc:78
+msgid "Buffer OverFlow"
+msgstr "Buffer Overløb"
+
+#  Programmer's name for it: sASNKeyBadModulus
+#. Programmer's name for it: sASNKeyBadModulus
+#: ggsetup_TpLockBox.inc:79
+msgid "Asymmetric key modulus invalid"
+msgstr "Ugyldig Asymetrisk nøgle modul"
+
+#  Programmer's name for it: sASNKeyBadExponent
+#. Programmer's name for it: sASNKeyBadExponent
+#: ggsetup_TpLockBox.inc:80
+msgid "Asymmetric key exponent invalid"
+msgstr "Ugyldig Asymetrisk nøgle eksponent"
+
+#  Programmer's name for it: sASNKeyBufferTooSmall
+#. Programmer's name for it: sASNKeyBufferTooSmall
+#: ggsetup_TpLockBox.inc:81
+msgid "Buffer too small for key"
+msgstr "Buffer for lille til nøgle"
+
+#  Programmer's name for it: sASNKeyBadKey
+#. Programmer's name for it: sASNKeyBadKey
+#: ggsetup_TpLockBox.inc:82
+msgid "Invalid Asymmetric Key"
+msgstr "Ugyldig Asymetrisk Nøgle"
+
+#  Programmer's name for it: sRSAKeyBadKey
+#. Programmer's name for it: sRSAKeyBadKey
+#: ggsetup_TpLockBox.inc:85
+msgid "Invalid RSA Key"
+msgstr "Ugyldig RSA Nøgle"
+
+#  Programmer's name for it: sModulusStringTooBig
+#. Programmer's name for it: sModulusStringTooBig
+#: ggsetup_TpLockBox.inc:86
+msgid "Modulus string too big"
+msgstr "Modulus streng for stor"
+
+#  Programmer's name for it: sExponentStringTooBig
+#. Programmer's name for it: sExponentStringTooBig
+#: ggsetup_TpLockBox.inc:87
+msgid "Exponent string too big"
+msgstr "Eksponent streng for stor"
+
+#  Programmer's name for it: sRSAKeyPairErr
+#. Programmer's name for it: sRSAKeyPairErr
+#: ggsetup_TpLockBox.inc:88
+msgid "RSA key pair failure"
+msgstr "RSA nøgle par fejl"
+
+#  Programmer's name for it: sRSAPublicKeyErr
+#. Programmer's name for it: sRSAPublicKeyErr
+#: ggsetup_TpLockBox.inc:89
+msgid "Invalid RSA public key"
+msgstr "Ugyldig RSA offentlig nøgle"
+
+#  Programmer's name for it: sRSAPrivateKeyErr
+#. Programmer's name for it: sRSAPrivateKeyErr
+#: ggsetup_TpLockBox.inc:90
+msgid "Invalid RSA private key"
+msgstr "Ugyldig RSA privat nøgle"
+
+#  Programmer's name for it: sRSAEncryptErr
+#. Programmer's name for it: sRSAEncryptErr
+#: ggsetup_TpLockBox.inc:91
+msgid "RSA encryption failure"
+msgstr "RSA indkodnings fejl"
+
+#  Programmer's name for it: sRSADecryptErr
+#. Programmer's name for it: sRSADecryptErr
+#: ggsetup_TpLockBox.inc:92
+msgid "RSA decryption failure"
+msgstr "RSA udkodnings fejl"
+
+#  Programmer's name for it: sRSABlockSize128Err
+#. Programmer's name for it: sRSABlockSize128Err
+#: ggsetup_TpLockBox.inc:93
+msgid "Invalid block size for key128"
+msgstr "Ugyldig blok størrelse for nøgle128"
+
+#  Programmer's name for it: sRSABlockSize256Err
+#. Programmer's name for it: sRSABlockSize256Err
+#: ggsetup_TpLockBox.inc:94
+msgid "Invalid block size for key256"
+msgstr "Ugyldig blok størrelse for nøgle256"
+
+#  Programmer's name for it: sRSABlockSize512Err
+#. Programmer's name for it: sRSABlockSize512Err
+#: ggsetup_TpLockBox.inc:95
+msgid "Invalid block size for key512"
+msgstr "Ugyldig blok størrelse for nøgle512"
+
+#  Programmer's name for it: sRSABlockSize768Err
+#. Programmer's name for it: sRSABlockSize768Err
+#: ggsetup_TpLockBox.inc:96
+msgid "Invalid block size for key768"
+msgstr "Ugyldig blok størrelse for nøgle768"
+
+#  Programmer's name for it: sRSABlockSize1024Err
+#. Programmer's name for it: sRSABlockSize1024Err
+#: ggsetup_TpLockBox.inc:97
+msgid "Invalid block size for key1024"
+msgstr "Ugyldig blok størrelse for nøgle1024"
+
+#  Programmer's name for it: sRSAEncodingErr
+#. Programmer's name for it: sRSAEncodingErr
+#: ggsetup_TpLockBox.inc:98
+msgid "RSA encoding error: too much data for block"
+msgstr "RSA indkodnings fejl: for mange data for blokken"
+
+#  Programmer's name for it: sRSADecodingErrBTS
+#. Programmer's name for it: sRSADecodingErrBTS
+#: ggsetup_TpLockBox.inc:99
+msgid "RSA decoding error: Block too small"
+msgstr "RSA udkodnings fejl: Blok for lille"
+
+#  Programmer's name for it: sRSADecodingErrBTL
+#. Programmer's name for it: sRSADecodingErrBTL
+#: ggsetup_TpLockBox.inc:100
+msgid "RSA decoding error: Block too large"
+msgstr "RSA udkodnings fejl: Blok for stor"
+
+#  Programmer's name for it: sRSADecodingErrIBT
+#. Programmer's name for it: sRSADecodingErrIBT
+#: ggsetup_TpLockBox.inc:101
+msgid "RSA decoding error: Invalid block type"
+msgstr "RSA udkodnings fejl: Ugyldig blok type"
+
+#  Programmer's name for it: sRSADecodingErrIBF
+#. Programmer's name for it: sRSADecodingErrIBF
+#: ggsetup_TpLockBox.inc:102
+msgid "RSA decoding error: Invalid block format"
+msgstr "RSA udkodnings fejl: Ugyldig blok format"
+
+#  Programmer's name for it: sDSAKeyBadKey
+#. Programmer's name for it: sDSAKeyBadKey
+#: ggsetup_TpLockBox.inc:105
+msgid "Invalid DSA Key"
+msgstr "Ugyldig DSA Nøgle"
+
+#  Programmer's name for it: sDSAParametersPQGErr
+#. Programmer's name for it: sDSAParametersPQGErr
+#: ggsetup_TpLockBox.inc:106
+msgid "DSA PQG parameter failure"
+msgstr "DSA PQG parameter fejl"
+
+#  Programmer's name for it: sDSAParametersXYErr
+#. Programmer's name for it: sDSAParametersXYErr
+#: ggsetup_TpLockBox.inc:107
+msgid "DSA XY parameter failure"
+msgstr "DSA XY parameter fejl"
+
+#  Programmer's name for it: sDSASignatureZeroR
+#. Programmer's name for it: sDSASignatureZeroR
+#: ggsetup_TpLockBox.inc:108
+msgid "DSA Signature R is zero"
+msgstr "DSA Signatur R er nul"
+
+#  Programmer's name for it: sDSASignatureZeroS
+#. Programmer's name for it: sDSASignatureZeroS
+#: ggsetup_TpLockBox.inc:109
+msgid "DSA Signature S is zero"
+msgstr "DSA Signatur S er nul"
+
+#  Programmer's name for it: sDSASignatureErr
+#. Programmer's name for it: sDSASignatureErr
+#: ggsetup_TpLockBox.inc:110
+msgid "DSA Signature failure"
+msgstr "DSA Signatur fejl"
+
+#  Programmer's name for it: SNoStart
+#. Programmer's name for it: SNoStart
+#: ggsetup_TpLockBox.inc:114
+msgid ""
+"Unable to start web browser. Make sure you have it properly set-up on your "
+"system."
+msgstr ""
+"Ikke i stand til at starte web browser. Undersøg om dit system er sat "
+"korrekt op."

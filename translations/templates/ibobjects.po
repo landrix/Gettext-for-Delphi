@@ -1,0 +1,3151 @@
+# SOME DESCRIPTIVE TITLE.
+# Copyright (C) YEAR THE PACKAGE'S COPYRIGHT HOLDER
+# This file is distributed under the same license as the PACKAGE package.
+# FIRST AUTHOR <EMAIL@ADDRESS>, YEAR.
+#
+msgid ""
+msgstr "Project-Id-Version: IBObjects\n"
+"POT-Creation-Date: 2004-08-26 21:20\n"
+"PO-Revision-Date: 2004-08-23 23:52+0100\n"
+"Last-Translator: \n"
+"Language-Team: \n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+
+#  Programmer's name for it: E_CONNECTED
+#  Programmer's name for it: E_CONNECTED
+#. Programmer's name for it: E_CONNECTED
+#: ggsetup_IBObjects.inc:7
+msgid "Connection has already been established"
+msgstr ""
+
+#  Programmer's name for it: E_NOT_CONNECTED
+#. Programmer's name for it: E_NOT_CONNECTED
+#: ggsetup_IBObjects.inc:8
+msgid "Connection has not been established"
+msgstr ""
+
+#  Programmer's name for it: E_Invalid_conn_path
+#. Programmer's name for it: E_Invalid_conn_path
+#: ggsetup_IBObjects.inc:9
+msgid "Invalid connection path"
+msgstr ""
+
+#  Programmer's name for it: E_Cant_Repl_Int_Tr
+#. Programmer's name for it: E_Cant_Repl_Int_Tr
+#: ggsetup_IBObjects.inc:10
+msgid "Cannot replace internal transaction as default"
+msgstr ""
+
+#  Programmer's name for it: E_NO_TRANS_STARTED
+#. Programmer's name for it: E_NO_TRANS_STARTED
+#: ggsetup_IBObjects.inc:11
+msgid "Transaction has not been started"
+msgstr ""
+
+#  Programmer's name for it: E_TRANS_STARTED
+#. Programmer's name for it: E_TRANS_STARTED
+#: ggsetup_IBObjects.inc:12
+msgid "Transaction has already been started"
+msgstr ""
+
+#  Programmer's name for it: E_NO_CONNECTIONS
+#. Programmer's name for it: E_NO_CONNECTIONS
+#: ggsetup_IBObjects.inc:13
+msgid "Transaction has no connections"
+msgstr ""
+
+#  Programmer's name for it: E_NOT_ENOUGH_CONN
+#. Programmer's name for it: E_NOT_ENOUGH_CONN
+#: ggsetup_IBObjects.inc:14
+msgid "Transaction is missing one or more connections"
+msgstr ""
+
+#  Programmer's name for it: E_CONN_LOADING
+#. Programmer's name for it: E_CONN_LOADING
+#: ggsetup_IBObjects.inc:15
+msgid "Warning: Connection is still loading"
+msgstr ""
+
+#  Programmer's name for it: E_TRANS_CONN_SESS
+#. Programmer's name for it: E_TRANS_CONN_SESS
+#: ggsetup_IBObjects.inc:16
+msgid "Connections must all be in the same IB_Session"
+msgstr ""
+
+#  Programmer's name for it: E_TransactionPaused
+#. Programmer's name for it: E_TransactionPaused
+#: ggsetup_IBObjects.inc:17
+msgid "Transaction is Paused"
+msgstr ""
+
+#  Programmer's name for it: E_ALLOCATED
+#. Programmer's name for it: E_ALLOCATED
+#: ggsetup_IBObjects.inc:18
+msgid "Statement has already been allocated"
+msgstr ""
+
+#  Programmer's name for it: E_NOT_ALLOCATED
+#. Programmer's name for it: E_NOT_ALLOCATED
+#: ggsetup_IBObjects.inc:19
+msgid "Statement has not been allocated"
+msgstr ""
+
+#  Programmer's name for it: E_PREPARED
+#. Programmer's name for it: E_PREPARED
+#: ggsetup_IBObjects.inc:20
+msgid "Statement has already been prepared"
+msgstr ""
+
+#  Programmer's name for it: E_NOT_PREPARED
+#. Programmer's name for it: E_NOT_PREPARED
+#: ggsetup_IBObjects.inc:21
+msgid "Statement has not been prepared"
+msgstr ""
+
+#  Programmer's name for it: E_FAILED_TO_PREPARE
+#  Programmer's name for it: E_FAILED_TO_PREPARE
+#. Programmer's name for it: E_FAILED_TO_PREPARE
+#: ggsetup_IBObjects.inc:22
+msgid "Statement failed to prepare"
+msgstr ""
+
+#  Programmer's name for it: E_OPENED
+#  Programmer's name for it: E_OPENED
+#. Programmer's name for it: E_OPENED
+#: ggsetup_IBObjects.inc:23
+msgid "Statement has already been opened"
+msgstr ""
+
+#  Programmer's name for it: E_NOT_OPENED
+#  Programmer's name for it: E_NOT_OPENED
+#. Programmer's name for it: E_NOT_OPENED
+#: ggsetup_IBObjects.inc:24
+msgid "Statement has not been opened"
+msgstr ""
+
+#  Programmer's name for it: E_CANT_DELETE
+#. Programmer's name for it: E_CANT_DELETE
+#: ggsetup_IBObjects.inc:25
+msgid "Current record in the cursor cannot be deleted"
+msgstr ""
+
+#  Programmer's name for it: E_NO_CONNECTION
+#. Programmer's name for it: E_NO_CONNECTION
+#: ggsetup_IBObjects.inc:26
+msgid "Statement must have an IB_Connection assigned"
+msgstr ""
+
+#  Programmer's name for it: E_CONNECT_FAILED
+#  Programmer's name for it: E_CONNECT_FAILED
+#. Programmer's name for it: E_CONNECT_FAILED
+#: ggsetup_IBObjects.inc:27
+msgid "Unable to open IB_Connection"
+msgstr ""
+
+#  Programmer's name for it: E_NO_TRANSACTION
+#. Programmer's name for it: E_NO_TRANSACTION
+#: ggsetup_IBObjects.inc:28
+msgid "Must have an IB_Transaction assigned"
+msgstr ""
+
+#  Programmer's name for it: E_NO_ACTIVE_TRANS
+#. Programmer's name for it: E_NO_ACTIVE_TRANS
+#: ggsetup_IBObjects.inc:29
+msgid "No active transaction to execute with"
+msgstr ""
+
+#  Programmer's name for it: E_START_FAILED
+#. Programmer's name for it: E_START_FAILED
+#: ggsetup_IBObjects.inc:30
+msgid "Unable to start a transaction"
+msgstr ""
+
+#  Programmer's name for it: E_SVRAUTOCMT_NOEXP
+#. Programmer's name for it: E_SVRAUTOCMT_NOEXP
+#: ggsetup_IBObjects.inc:31
+msgid "Explicit trans. not allowed with ServerAutoCommit"
+msgstr ""
+
+#  Programmer's name for it: E_Cannot_Activate
+#. Programmer's name for it: E_Cannot_Activate
+#: ggsetup_IBObjects.inc:32
+msgid "Invalid transaction state. Cannot activate"
+msgstr ""
+
+#  Programmer's name for it: E_Transaction_Is_Active
+#. Programmer's name for it: E_Transaction_Is_Active
+#: ggsetup_IBObjects.inc:33
+msgid "Transaction has pending changes"
+msgstr ""
+
+#  Programmer's name for it: E_Failed_To_Post_Datasets
+#. Programmer's name for it: E_Failed_To_Post_Datasets
+#: ggsetup_IBObjects.inc:34
+msgid "Failed to post all datasets"
+msgstr ""
+
+#  Programmer's name for it: E_Failed_To_Cancel_Datasets
+#. Programmer's name for it: E_Failed_To_Cancel_Datasets
+#: ggsetup_IBObjects.inc:35
+msgid "Failed to cancel all datasets"
+msgstr ""
+
+#  Programmer's name for it: E_NO_BLANK_SQL
+#. Programmer's name for it: E_NO_BLANK_SQL
+#: ggsetup_IBObjects.inc:37
+msgid "Blank SQL statement not allowed"
+msgstr ""
+
+#  Programmer's name for it: E_AT_END_OF_FILE
+#. Programmer's name for it: E_AT_END_OF_FILE
+#: ggsetup_IBObjects.inc:38
+msgid "At end of file"
+msgstr ""
+
+#  Programmer's name for it: E_AT_END_OF_CURSOR
+#. Programmer's name for it: E_AT_END_OF_CURSOR
+#: ggsetup_IBObjects.inc:39
+msgid "At end of cursor"
+msgstr ""
+
+#  Programmer's name for it: E_AT_END_OF_BUFFER
+#. Programmer's name for it: E_AT_END_OF_BUFFER
+#: ggsetup_IBObjects.inc:40
+msgid "At end of buffer"
+msgstr ""
+
+#  Programmer's name for it: E_AT_END_OF_DATASET
+#. Programmer's name for it: E_AT_END_OF_DATASET
+#: ggsetup_IBObjects.inc:41
+msgid "At end of dataset"
+msgstr ""
+
+#  Programmer's name for it: E_BAD_SQL_INF_LEN
+#. Programmer's name for it: E_BAD_SQL_INF_LEN
+#: ggsetup_IBObjects.inc:42
+msgid "Unanticipated length in isc_dsql_sql_info"
+msgstr ""
+
+#  Programmer's name for it: E_BAD_SQL_INF_DATA
+#. Programmer's name for it: E_BAD_SQL_INF_DATA
+#: ggsetup_IBObjects.inc:43
+msgid "Invalid data returned from isc_dsql_sql_info"
+msgstr ""
+
+#  Programmer's name for it: E_CURSOR_NAME_LOCK
+#. Programmer's name for it: E_CURSOR_NAME_LOCK
+#: ggsetup_IBObjects.inc:44
+msgid "Cannot change cursor name while active"
+msgstr ""
+
+#  Programmer's name for it: E_REQUEST_LIVE_ACTIVE
+#. Programmer's name for it: E_REQUEST_LIVE_ACTIVE
+#: ggsetup_IBObjects.inc:45
+msgid "Cannot change RequestLive while active"
+msgstr ""
+
+#  Programmer's name for it: E_REQUEST_LIVE_READONLY
+#. Programmer's name for it: E_REQUEST_LIVE_READONLY
+#: ggsetup_IBObjects.inc:46
+msgid "Cannot RequestLive a ReadOnly dataset"
+msgstr ""
+
+#  Programmer's name for it: E_CURSOR_UNI
+#. Programmer's name for it: E_CURSOR_UNI
+#: ggsetup_IBObjects.inc:47
+msgid "IB_CURSOR is unidirectional"
+msgstr ""
+
+#  Programmer's name for it: E_UNSUPPORTED_COLUMN_TYPE
+#  Programmer's name for it: E_Unsupported_Column
+#. Programmer's name for it: E_UNSUPPORTED_COLUMN_TYPE
+#. Programmer's name for it: E_Unsupported_Column
+#: ggsetup_IBObjects.inc:48 ggsetup_IBObjects.inc:107
+msgid "Unsupported Column type: %d"
+msgstr ""
+
+#  Programmer's name for it: E_FIELDNO_NOT_FOUND
+#. Programmer's name for it: E_FIELDNO_NOT_FOUND
+#: ggsetup_IBObjects.inc:49
+msgid "FieldNo: %d not found"
+msgstr ""
+
+#  Programmer's name for it: E_FIELDNAME_NOT_FOUND
+#. Programmer's name for it: E_FIELDNAME_NOT_FOUND
+#: ggsetup_IBObjects.inc:50
+msgid "FieldName: %s not found"
+msgstr ""
+
+#  Programmer's name for it: E_INVALID_FOCUS_RELATION_NO
+#. Programmer's name for it: E_INVALID_FOCUS_RELATION_NO
+#: ggsetup_IBObjects.inc:51
+msgid "Invalid Focused Relation No: %d"
+msgstr ""
+
+#  Programmer's name for it: E_INVALID_FOCUS_RELATION_NAME
+#. Programmer's name for it: E_INVALID_FOCUS_RELATION_NAME
+#: ggsetup_IBObjects.inc:52
+msgid "Invalid Focused Relation Name: %s"
+msgstr ""
+
+#  Programmer's name for it: E_INVALID_QBE_IN
+#. Programmer's name for it: E_INVALID_QBE_IN
+#: ggsetup_IBObjects.inc:53
+msgid "IN( value [ , value ... ] ) syntax error"
+msgstr ""
+
+#  Programmer's name for it: E_INVALID_QBE_BETWEEN
+#. Programmer's name for it: E_INVALID_QBE_BETWEEN
+#: ggsetup_IBObjects.inc:54
+msgid "BETWEEN value AND value syntax error"
+msgstr ""
+
+#  Programmer's name for it: E_UNABLE_TO_LOCATE_DLL_IMPORT
+#. Programmer's name for it: E_UNABLE_TO_LOCATE_DLL_IMPORT
+#: ggsetup_IBObjects.inc:55
+msgid "Unable to locate DLL import %s"
+msgstr ""
+
+#  Programmer's name for it: E_INVALID_SQL_KEY_FIELDS
+#. Programmer's name for it: E_INVALID_SQL_KEY_FIELDS
+#: ggsetup_IBObjects.inc:56
+msgid "Invalid SQLKeyFields property"
+msgstr ""
+
+#  Programmer's name for it: E_GET_CURSOR_ERROR
+#  Programmer's name for it: E_GET_CURSOR_ERROR
+#. Programmer's name for it: E_GET_CURSOR_ERROR
+#: ggsetup_IBObjects.inc:57
+msgid "Cannot open cursor without key data"
+msgstr ""
+
+#  Programmer's name for it: E_SCROLL_ERROR
+#  Programmer's name for it: E_SCROLL_ERROR
+#. Programmer's name for it: E_SCROLL_ERROR
+#: ggsetup_IBObjects.inc:58
+msgid "Record key was lost\n"
+"Failed to open cursor"
+msgstr ""
+
+#  Programmer's name for it: E_INVALID_BUFFER_ROW_NUM
+#. Programmer's name for it: E_INVALID_BUFFER_ROW_NUM
+#: ggsetup_IBObjects.inc:59
+msgid "Invalid BufferRowNum before beginning"
+msgstr ""
+
+#  Programmer's name for it: E_BLANK_STATEMENT
+#. Programmer's name for it: E_BLANK_STATEMENT
+#: ggsetup_IBObjects.inc:60
+msgid "Cannot Prepare a blank statement"
+msgstr ""
+
+#  Programmer's name for it: E_UNKNOWN_STATEMENT
+#. Programmer's name for it: E_UNKNOWN_STATEMENT
+#: ggsetup_IBObjects.inc:61
+msgid "Attempt to execute an unknown statement"
+msgstr ""
+
+#  Programmer's name for it: E_CIRCULAR_REFERENCE
+#  Programmer's name for it: E_NoCircularRef
+#. Programmer's name for it: E_CIRCULAR_REFERENCE
+#. Programmer's name for it: E_NoCircularRef
+#: ggsetup_IBObjects.inc:62 ggsetup_IBObjects.inc:154
+msgid "Circular reference not allowed"
+msgstr ""
+
+#  Programmer's name for it: E_CANT_CHG_WITH_CONN
+#. Programmer's name for it: E_CANT_CHG_WITH_CONN
+#: ggsetup_IBObjects.inc:63
+msgid "Cannot change while connected"
+msgstr ""
+
+#  Programmer's name for it: E_LOGIN_FAILED
+#. Programmer's name for it: E_LOGIN_FAILED
+#: ggsetup_IBObjects.inc:64
+msgid "Login failed"
+msgstr ""
+
+#  Programmer's name for it: E_CANT_GET_CONN_CHR
+#. Programmer's name for it: E_CANT_GET_CONN_CHR
+#: ggsetup_IBObjects.inc:65
+msgid "Cannot get connection characteristics"
+msgstr ""
+
+#  Programmer's name for it: E_MAX_EVENTS_BLOCK
+#. Programmer's name for it: E_MAX_EVENTS_BLOCK
+#: ggsetup_IBObjects.inc:66
+msgid "Over maximum events for one block"
+msgstr ""
+
+#  Programmer's name for it: E_PROCESSING_EVENTS
+#. Programmer's name for it: E_PROCESSING_EVENTS
+#: ggsetup_IBObjects.inc:67
+msgid "Processing events\n"
+"Cannot unregister"
+msgstr ""
+
+#  Programmer's name for it: E_CANT_STORE_BLOB
+#. Programmer's name for it: E_CANT_STORE_BLOB
+#: ggsetup_IBObjects.inc:68
+msgid "Blob has been or cannot be stored"
+msgstr ""
+
+#  Programmer's name for it: E_CANT_LOAD_BLOB
+#. Programmer's name for it: E_CANT_LOAD_BLOB
+#: ggsetup_IBObjects.inc:69
+msgid "Blob has already been or cannot be loaded"
+msgstr ""
+
+#  Programmer's name for it: E_CANNOT_CANCEL_ROW
+#. Programmer's name for it: E_CANNOT_CANCEL_ROW
+#: ggsetup_IBObjects.inc:70
+msgid "Cannot cancel current Row"
+msgstr ""
+
+#  Programmer's name for it: E_CANNOT_POST_ROW
+#. Programmer's name for it: E_CANNOT_POST_ROW
+#: ggsetup_IBObjects.inc:71
+msgid "Cannot Post current Row"
+msgstr ""
+
+#  Programmer's name for it: E_DatasetClosed
+#. Programmer's name for it: E_DatasetClosed
+#: ggsetup_IBObjects.inc:72
+msgid "Dataset is inactive"
+msgstr ""
+
+#  Programmer's name for it: E_DatasetOpen
+#  Programmer's name for it: E_DatasetOpen
+#. Programmer's name for it: E_DatasetOpen
+#: ggsetup_IBObjects.inc:73
+msgid "Dataset is currently open"
+msgstr ""
+
+#  Programmer's name for it: E_DatasetCannotScroll
+#. Programmer's name for it: E_DatasetCannotScroll
+#: ggsetup_IBObjects.inc:74
+msgid "Dataset cannot scroll"
+msgstr ""
+
+#  Programmer's name for it: E_DatasetReadOnly
+#. Programmer's name for it: E_DatasetReadOnly
+#: ggsetup_IBObjects.inc:75
+msgid "Dataset is readonly"
+msgstr ""
+
+#  Programmer's name for it: E_DatasetIsFetching
+#. Programmer's name for it: E_DatasetIsFetching
+#: ggsetup_IBObjects.inc:76
+msgid "Dataset is currently fetching"
+msgstr ""
+
+#  Programmer's name for it: E_Invalid_KeyRelation
+#. Programmer's name for it: E_Invalid_KeyRelation
+#: ggsetup_IBObjects.inc:77
+msgid "Invalid KeyRelation value"
+msgstr ""
+
+#  Programmer's name for it: E_RowNum_Not_Implemented
+#. Programmer's name for it: E_RowNum_Not_Implemented
+#: ggsetup_IBObjects.inc:78
+msgid "RowNum is not implemented yet"
+msgstr ""
+
+#  Programmer's name for it: E_RowDeleted
+#. Programmer's name for it: E_RowDeleted
+#: ggsetup_IBObjects.inc:79
+msgid "Row is being deleted"
+msgstr ""
+
+#  Programmer's name for it: E_END_OF_DATASET
+#. Programmer's name for it: E_END_OF_DATASET
+#: ggsetup_IBObjects.inc:80
+msgid "At end of Dataset"
+msgstr ""
+
+#  Programmer's name for it: E_BEGINNING_OF_DATASET
+#. Programmer's name for it: E_BEGINNING_OF_DATASET
+#: ggsetup_IBObjects.inc:81
+msgid "At beginning of Dataset"
+msgstr ""
+
+#  Programmer's name for it: E_Cannot_Pessimistic_Lock
+#. Programmer's name for it: E_Cannot_Pessimistic_Lock
+#: ggsetup_IBObjects.inc:82
+msgid "Cannot use pessimistic locking with LockWait"
+msgstr ""
+
+#  Programmer's name for it: E_Cannot_Edit_Row
+#. Programmer's name for it: E_Cannot_Edit_Row
+#: ggsetup_IBObjects.inc:83
+msgid "Cannot Edit current Row"
+msgstr ""
+
+#  Programmer's name for it: E_Cannot_Insert_Row
+#. Programmer's name for it: E_Cannot_Insert_Row
+#: ggsetup_IBObjects.inc:84
+msgid "Cannot Insert a new Row"
+msgstr ""
+
+#  Programmer's name for it: E_Cannot_Delete_Row
+#. Programmer's name for it: E_Cannot_Delete_Row
+#: ggsetup_IBObjects.inc:85
+msgid "Cannot delete current Row"
+msgstr ""
+
+#  Programmer's name for it: E_Cannot_Search
+#. Programmer's name for it: E_Cannot_Search
+#: ggsetup_IBObjects.inc:86
+msgid "Searching is not allowed"
+msgstr ""
+
+#  Programmer's name for it: E_Cannot_Navigate
+#. Programmer's name for it: E_Cannot_Navigate
+#: ggsetup_IBObjects.inc:87
+msgid "Cannot navigate"
+msgstr ""
+
+#  Programmer's name for it: E_Record_Locked
+#. Programmer's name for it: E_Record_Locked
+#: ggsetup_IBObjects.inc:88
+msgid "Record is locked by another user"
+msgstr ""
+
+#  Programmer's name for it: E_Record_OutOfSynch
+#. Programmer's name for it: E_Record_OutOfSynch
+#: ggsetup_IBObjects.inc:89
+msgid "Record was changed by another user"
+msgstr ""
+
+#  Programmer's name for it: E_FLD_READONLY
+#. Programmer's name for it: E_FLD_READONLY
+#: ggsetup_IBObjects.inc:90
+msgid "%s is readonly"
+msgstr ""
+
+#  Programmer's name for it: E_Required_Field
+#. Programmer's name for it: E_Required_Field
+#: ggsetup_IBObjects.inc:91
+msgid "%s is a required field"
+msgstr ""
+
+#  Programmer's name for it: E_NO_POSTRTN_CACHED_UPDT
+#. Programmer's name for it: E_NO_POSTRTN_CACHED_UPDT
+#: ggsetup_IBObjects.inc:92
+msgid "Cannot Use PostRetaining with Cached Updates"
+msgstr ""
+
+#  Programmer's name for it: E_Multiple_Rows_In_Singleton
+#. Programmer's name for it: E_Multiple_Rows_In_Singleton
+#: ggsetup_IBObjects.inc:93
+msgid "Multiple rows in singleton fetch"
+msgstr ""
+
+#  Programmer's name for it: E_UnableToEditRow
+#. Programmer's name for it: E_UnableToEditRow
+#: ggsetup_IBObjects.inc:94
+msgid "Unable to edit row"
+msgstr ""
+
+#  Programmer's name for it: E_InvalidRowsAffectedBuf
+#  Programmer's name for it: E_Invalid_RowsAffected_Buffer
+#. Programmer's name for it: E_InvalidRowsAffectedBuf
+#. Programmer's name for it: E_Invalid_RowsAffected_Buffer
+#: ggsetup_IBObjects.inc:95 ggsetup_IBObjects.inc:130
+msgid "Invalid RowsAffected buffer"
+msgstr ""
+
+#  Programmer's name for it: E_Invalid_RowNum_Past_Eof
+#. Programmer's name for it: E_Invalid_RowNum_Past_Eof
+#: ggsetup_IBObjects.inc:96
+msgid "Invalid RowNum beyond Eof"
+msgstr ""
+
+#  Programmer's name for it: E_Invalid_RowNum_Before_Bof
+#. Programmer's name for it: E_Invalid_RowNum_Before_Bof
+#: ggsetup_IBObjects.inc:97
+msgid "Invalid RowNum before Bof"
+msgstr ""
+
+#  Programmer's name for it: E_Invalid_Bookmark
+#. Programmer's name for it: E_Invalid_Bookmark
+#: ggsetup_IBObjects.inc:98
+msgid "Invalid Bookmark String"
+msgstr ""
+
+#  Programmer's name for it: E_Assign_Column
+#. Programmer's name for it: E_Assign_Column
+#: ggsetup_IBObjects.inc:100
+msgid "Cannot assign from %s"
+msgstr ""
+
+#  Programmer's name for it: E_AssignTo_Column
+#. Programmer's name for it: E_AssignTo_Column
+#: ggsetup_IBObjects.inc:101
+msgid "Cannot assign to %s"
+msgstr ""
+
+#  Programmer's name for it: E_Value_Out_Of_Range
+#. Programmer's name for it: E_Value_Out_Of_Range
+#: ggsetup_IBObjects.inc:102
+msgid "Value out of range"
+msgstr ""
+
+#  Programmer's name for it: E_SmallintOverflow
+#. Programmer's name for it: E_SmallintOverflow
+#: ggsetup_IBObjects.inc:103
+msgid "Smallint overflow"
+msgstr ""
+
+#  Programmer's name for it: E_Int64Overflow
+#. Programmer's name for it: E_Int64Overflow
+#: ggsetup_IBObjects.inc:105
+msgid "Int64 overflow"
+msgstr ""
+
+#  Programmer's name for it: E_UndefinedMacro
+#. Programmer's name for it: E_UndefinedMacro
+#: ggsetup_IBObjects.inc:108
+msgid "Undefined macro"
+msgstr ""
+
+#  Programmer's name for it: E_GeneratorFailed
+#. Programmer's name for it: E_GeneratorFailed
+#: ggsetup_IBObjects.inc:109
+msgid "Unable to get generator value"
+msgstr ""
+
+#  Programmer's name for it: E_MustBe_Buffered_Dataset
+#. Programmer's name for it: E_MustBe_Buffered_Dataset
+#: ggsetup_IBObjects.inc:111
+msgid "Must be of TIB_BDataset ancestry (IB_Query)"
+msgstr ""
+
+#  Programmer's name for it: E_NO_CHANGE_READONLY
+#. Programmer's name for it: E_NO_CHANGE_READONLY
+#: ggsetup_IBObjects.inc:113
+msgid "Cannot change ReadOnly when started"
+msgstr ""
+
+#  Programmer's name for it: E_NO_CHANGE_ISOLATION
+#. Programmer's name for it: E_NO_CHANGE_ISOLATION
+#: ggsetup_IBObjects.inc:114
+msgid "Cannot change Isolation when started"
+msgstr ""
+
+#  Programmer's name for it: E_NO_CHANGE_RECVERSION
+#. Programmer's name for it: E_NO_CHANGE_RECVERSION
+#: ggsetup_IBObjects.inc:115
+msgid "Cannot change RecVersion when started"
+msgstr ""
+
+#  Programmer's name for it: E_NO_CHANGE_LOCKWAIT
+#. Programmer's name for it: E_NO_CHANGE_LOCKWAIT
+#: ggsetup_IBObjects.inc:116
+msgid "Cannot change LockWait when started"
+msgstr ""
+
+#  Programmer's name for it: E_Invalid_Reference_To_Delete
+#. Programmer's name for it: E_Invalid_Reference_To_Delete
+#: ggsetup_IBObjects.inc:118
+msgid "Invalid reference to Delete"
+msgstr ""
+
+#  Programmer's name for it: E_Invalid_Typecast
+#. Programmer's name for it: E_Invalid_Typecast
+#: ggsetup_IBObjects.inc:119
+msgid "Invalid typecast"
+msgstr ""
+
+#  Programmer's name for it: E_Invalid_DataPump_Statement
+#. Programmer's name for it: E_Invalid_DataPump_Statement
+#: ggsetup_IBObjects.inc:120
+msgid "Invalid statement type for DataPump"
+msgstr ""
+
+#  Programmer's name for it: E_FIELD_NOT_NULLABLE
+#. Programmer's name for it: E_FIELD_NOT_NULLABLE
+#: ggsetup_IBObjects.inc:121
+msgid "NOT NULL field set to null value"
+msgstr ""
+
+#  Programmer's name for it: E_DATABASE_BLANK
+#. Programmer's name for it: E_DATABASE_BLANK
+#: ggsetup_IBObjects.inc:122
+msgid "DatabaseName cannot be blank"
+msgstr ""
+
+#  Programmer's name for it: E_Unsupp_Col_Conversion
+#. Programmer's name for it: E_Unsupp_Col_Conversion
+#: ggsetup_IBObjects.inc:123
+msgid "Unsupported column conversion"
+msgstr ""
+
+#  Programmer's name for it: E_Unable_To_Locate_Record
+#. Programmer's name for it: E_Unable_To_Locate_Record
+#: ggsetup_IBObjects.inc:124
+msgid "Unable To Locate Record"
+msgstr ""
+
+#  Programmer's name for it: E_Record_Not_Inserted
+#. Programmer's name for it: E_Record_Not_Inserted
+#: ggsetup_IBObjects.inc:125
+msgid "Record was not inserted"
+msgstr ""
+
+#  Programmer's name for it: E_Invalid_KeyLinks
+#. Programmer's name for it: E_Invalid_KeyLinks
+#: ggsetup_IBObjects.inc:126
+msgid "Invalid KeyLinks entry: %s"
+msgstr ""
+
+#  Programmer's name for it: E_Unable_to_perform_search
+#. Programmer's name for it: E_Unable_to_perform_search
+#: ggsetup_IBObjects.inc:127
+msgid "Unable to perform search"
+msgstr ""
+
+#  Programmer's name for it: E_Unassigned_Blob_Node
+#. Programmer's name for it: E_Unassigned_Blob_Node
+#: ggsetup_IBObjects.inc:128
+msgid "Unassigned BlobNode"
+msgstr ""
+
+#  Programmer's name for it: E_Unassigned_Transaction
+#. Programmer's name for it: E_Unassigned_Transaction
+#: ggsetup_IBObjects.inc:129
+msgid "Unassigned Transaction"
+msgstr ""
+
+#  Programmer's name for it: E_Unable_Save_Graphic
+#. Programmer's name for it: E_Unable_Save_Graphic
+#: ggsetup_IBObjects.inc:131
+msgid "Unable to save to Graphic"
+msgstr ""
+
+#  Programmer's name for it: E_Cannot_Activate_Transaction
+#. Programmer's name for it: E_Cannot_Activate_Transaction
+#: ggsetup_IBObjects.inc:132
+msgid "Cannot Activate Transaction"
+msgstr ""
+
+#  Programmer's name for it: E_IB_Client_Not_Installed
+#. Programmer's name for it: E_IB_Client_Not_Installed
+#: ggsetup_IBObjects.inc:133
+msgid "InterBase Client GDS32.DLL is not installed"
+msgstr ""
+
+#  Programmer's name for it: E_Could_Not_Load_Memo
+#. Programmer's name for it: E_Could_Not_Load_Memo
+#: ggsetup_IBObjects.inc:134
+msgid "Could not load memo"
+msgstr ""
+
+#  Programmer's name for it: E_Invalid_DPB_Over_255
+#. Programmer's name for it: E_Invalid_DPB_Over_255
+#: ggsetup_IBObjects.inc:135
+msgid "Invalid DPB: Contents over 255 characters"
+msgstr ""
+
+#  Programmer's name for it: E_Inv_Custom_DML
+#. Programmer's name for it: E_Inv_Custom_DML
+#: ggsetup_IBObjects.inc:136
+msgid "Invalid custom DML column reference: %s"
+msgstr ""
+
+#  Programmer's name for it: E_Record_Not_Located_For_Update
+#. Programmer's name for it: E_Record_Not_Located_For_Update
+#: ggsetup_IBObjects.inc:137
+msgid "Record was not located to update"
+msgstr ""
+
+#  Programmer's name for it: E_Record_Not_Located_For_Delete
+#. Programmer's name for it: E_Record_Not_Located_For_Delete
+#: ggsetup_IBObjects.inc:138
+msgid "Record was not located to delete"
+msgstr ""
+
+#  Programmer's name for it: E_Init_Default_SQL_Failed
+#. Programmer's name for it: E_Init_Default_SQL_Failed
+#: ggsetup_IBObjects.inc:139
+msgid "Unable to initialize default %s"
+msgstr ""
+
+#  Programmer's name for it: E_Stringlist_Not_Sorted
+#. Programmer's name for it: E_Stringlist_Not_Sorted
+#: ggsetup_IBObjects.inc:140
+msgid "Stringlist must be sorted for this operation"
+msgstr ""
+
+#  Programmer's name for it: E_Cannot_Change_Events
+#. Programmer's name for it: E_Cannot_Change_Events
+#: ggsetup_IBObjects.inc:141
+msgid "Cannot change events while processing"
+msgstr ""
+
+#  Programmer's name for it: E_Cannot_Unregister_Events
+#. Programmer's name for it: E_Cannot_Unregister_Events
+#: ggsetup_IBObjects.inc:142
+msgid "Cannot unregister events while processing"
+msgstr ""
+
+#  Programmer's name for it: E_Invalid_Internal_Transaction
+#. Programmer's name for it: E_Invalid_Internal_Transaction
+#: ggsetup_IBObjects.inc:143
+msgid "Invalid Internal IB_Transaction"
+msgstr ""
+
+#  Programmer's name for it: E_InvalidStatementType
+#. Programmer's name for it: E_InvalidStatementType
+#: ggsetup_IBObjects.inc:144
+msgid "Invalid statement type"
+msgstr ""
+
+#  Programmer's name for it: E_Multiple_Records_Updated
+#. Programmer's name for it: E_Multiple_Records_Updated
+#: ggsetup_IBObjects.inc:145
+msgid "Multiple records updated"
+msgstr ""
+
+#  Programmer's name for it: E_Multiple_Records_Deleted
+#. Programmer's name for it: E_Multiple_Records_Deleted
+#: ggsetup_IBObjects.inc:146
+msgid "Multiple records deleted"
+msgstr ""
+
+#  Programmer's name for it: E_Multiple_Records_Inserted
+#. Programmer's name for it: E_Multiple_Records_Inserted
+#: ggsetup_IBObjects.inc:147
+msgid "Multiple records inserted"
+msgstr ""
+
+#  Programmer's name for it: E_DUP_DB_NAME
+#. Programmer's name for it: E_DUP_DB_NAME
+#: ggsetup_IBObjects.inc:148
+msgid "Duplicate DatabaseName not allowed"
+msgstr ""
+
+#  Programmer's name for it: E_INVALID_DB_NAME
+#. Programmer's name for it: E_INVALID_DB_NAME
+#: ggsetup_IBObjects.inc:149
+msgid "Invalid DatabaseName"
+msgstr ""
+
+#  Programmer's name for it: E_UnableToSearch_NoOrdering
+#. Programmer's name for it: E_UnableToSearch_NoOrdering
+#: ggsetup_IBObjects.inc:150
+msgid "Unable to perform search, no ordering defined"
+msgstr ""
+
+#  Programmer's name for it: E_UnableToSearch_DatasetBusy
+#. Programmer's name for it: E_UnableToSearch_DatasetBusy
+#: ggsetup_IBObjects.inc:151
+msgid "Unable to perform search, dataset is busy fetching data"
+msgstr ""
+
+#  Programmer's name for it: E_NoRecordsFound
+#. Programmer's name for it: E_NoRecordsFound
+#: ggsetup_IBObjects.inc:152
+msgid "No records found"
+msgstr ""
+
+#  Programmer's name for it: E_Session_Undefined
+#. Programmer's name for it: E_Session_Undefined
+#: ggsetup_IBObjects.inc:153
+msgid "Session is undefined"
+msgstr ""
+
+#  Programmer's name for it: E_InvalidClassType
+#. Programmer's name for it: E_InvalidClassType
+#: ggsetup_IBObjects.inc:155
+msgid "Invalid class type"
+msgstr ""
+
+#  Programmer's name for it: E_Invalid_RowNum
+#. Programmer's name for it: E_Invalid_RowNum
+#: ggsetup_IBObjects.inc:156
+msgid "Invalid RowNum"
+msgstr ""
+
+#  Programmer's name for it: E_Invalid_Syntax
+#. Programmer's name for it: E_Invalid_Syntax
+#: ggsetup_IBObjects.inc:157
+msgid "Invalid syntax: extra or missing parenthesis"
+msgstr ""
+
+#  Programmer's name for it: E_Array_Is_Null
+#. Programmer's name for it: E_Array_Is_Null
+#: ggsetup_IBObjects.inc:158
+msgid "Array is Null"
+msgstr ""
+
+#  Programmer's name for it: E_Cannot_add_blank_account
+#. Programmer's name for it: E_Cannot_add_blank_account
+#: ggsetup_IBObjects.inc:160
+msgid "Cannot add blank account"
+msgstr ""
+
+#  Programmer's name for it: E_Cannot_add_SYSDBA_account
+#. Programmer's name for it: E_Cannot_add_SYSDBA_account
+#: ggsetup_IBObjects.inc:161
+msgid "Cannot add SYSDBA account"
+msgstr ""
+
+#  Programmer's name for it: E_Cannot_delete_blank_account
+#. Programmer's name for it: E_Cannot_delete_blank_account
+#: ggsetup_IBObjects.inc:162
+msgid "Cannot delete blank account"
+msgstr ""
+
+#  Programmer's name for it: E_Cannot_delete_SYSDBA_account
+#. Programmer's name for it: E_Cannot_delete_SYSDBA_account
+#: ggsetup_IBObjects.inc:163
+msgid "Cannot delete SYSDBA account"
+msgstr ""
+
+#  Programmer's name for it: E_Cannot_modify_blank_account
+#. Programmer's name for it: E_Cannot_modify_blank_account
+#: ggsetup_IBObjects.inc:164
+msgid "Cannot modify blank account"
+msgstr ""
+
+#  Programmer's name for it: E_PLAN_ERROR
+#. Programmer's name for it: E_PLAN_ERROR
+#: ggsetup_IBObjects.inc:166
+msgid "PLAN ERROR!"
+msgstr ""
+
+#  Programmer's name for it: E_PLAN_EXCEPTION
+#. Programmer's name for it: E_PLAN_EXCEPTION
+#: ggsetup_IBObjects.inc:167
+msgid "PLAN EXCEPTION!"
+msgstr ""
+
+#  Programmer's name for it: E_INV_CREATE_CONNECT_DROP
+#. Programmer's name for it: E_INV_CREATE_CONNECT_DROP
+#: ggsetup_IBObjects.inc:169
+msgid "Invalid CREATE, CONNECT or DROP DATABASE syntax"
+msgstr ""
+
+#  Programmer's name for it: E_Unsupported
+#. Programmer's name for it: E_Unsupported
+#: ggsetup_IBObjects.inc:170
+msgid "Unsupported"
+msgstr ""
+
+#  Programmer's name for it: E_NotImplemented
+#. Programmer's name for it: E_NotImplemented
+#: ggsetup_IBObjects.inc:171
+msgid "Not implemented at this level"
+msgstr ""
+
+#  Programmer's name for it: E_Invalid_ColData
+#. Programmer's name for it: E_Invalid_ColData
+#: ggsetup_IBObjects.inc:172
+msgid "Invalid ColData"
+msgstr ""
+
+#  Programmer's name for it: E_Cant_Unprepare_executing_process
+#. Programmer's name for it: E_Cant_Unprepare_executing_process
+#: ggsetup_IBObjects.inc:174
+msgid "Cannot Unprepare an executing process"
+msgstr ""
+
+#  Programmer's name for it: E_FileName_Required
+#. Programmer's name for it: E_FileName_Required
+#: ggsetup_IBObjects.inc:175
+msgid "Filename is required"
+msgstr ""
+
+#  IBF_Users
+#  Programmer's name for it: L_USERS_FRM
+#. IBF_Users
+#. Programmer's name for it: L_USERS_FRM
+#: ggsetup_IBObjects.inc:180
+msgid "User Account Management"
+msgstr ""
+
+#  Programmer's name for it: L_USERS_MODIFIY
+#. Programmer's name for it: L_USERS_MODIFIY
+#: ggsetup_IBObjects.inc:183
+msgid "Modify"
+msgstr ""
+
+#  Programmer's name for it: L_USERS_ACCOUNT
+#. Programmer's name for it: L_USERS_ACCOUNT
+#: ggsetup_IBObjects.inc:184
+msgid "ACCOUNT"
+msgstr ""
+
+#  Programmer's name for it: L_USERS_PASSWORD_CONFIRM
+#. Programmer's name for it: L_USERS_PASSWORD_CONFIRM
+#: ggsetup_IBObjects.inc:186
+msgid "Password Confirm"
+msgstr ""
+
+#  Programmer's name for it: L_USERS_FIRSTNAME
+#. Programmer's name for it: L_USERS_FIRSTNAME
+#: ggsetup_IBObjects.inc:188
+msgid "First Name"
+msgstr ""
+
+#  Programmer's name for it: L_USERS_MIDDLENAME
+#. Programmer's name for it: L_USERS_MIDDLENAME
+#: ggsetup_IBObjects.inc:189
+msgid "Middle Name"
+msgstr ""
+
+#  Programmer's name for it: L_USERS_LASTNAME
+#. Programmer's name for it: L_USERS_LASTNAME
+#: ggsetup_IBObjects.inc:190
+msgid "Last Name"
+msgstr ""
+
+#  IBF_Export
+#  Programmer's name for it: L_EXPORT_FRM
+#  Programmer's name for it: L_EXPORT_SDEXPORTTITLE
+#  Programmer's name for it: C_wbExportBtnCaption
+#. IBF_Export
+#. Programmer's name for it: L_EXPORT_FRM
+#. Programmer's name for it: L_EXPORT_SDEXPORTTITLE
+#. Programmer's name for it: C_wbExportBtnCaption
+#: ggsetup_IBObjects.inc:193 ggsetup_IBObjects.inc:204
+#: ggsetup_IBObjects.inc:334
+msgid "Export"
+msgstr ""
+
+#  Programmer's name for it: L_EXPORT_ASCII
+#. Programmer's name for it: L_EXPORT_ASCII
+#: ggsetup_IBObjects.inc:194
+msgid " File Format "
+msgstr ""
+
+#  Programmer's name for it: L_EXPORT_FIXED
+#. Programmer's name for it: L_EXPORT_FIXED
+#: ggsetup_IBObjects.inc:195
+msgid "TXT Fixed Record Width"
+msgstr ""
+
+#  Programmer's name for it: L_EXPORT_DELIMITED
+#. Programmer's name for it: L_EXPORT_DELIMITED
+#: ggsetup_IBObjects.inc:196
+msgid "CSV Delimited"
+msgstr ""
+
+#  Programmer's name for it: L_EXPORT_DBF
+#. Programmer's name for it: L_EXPORT_DBF
+#: ggsetup_IBObjects.inc:197
+msgid "DBF  (Still needs some testing)"
+msgstr ""
+
+#  Programmer's name for it: L_EXPORT_ASCIIOPT
+#. Programmer's name for it: L_EXPORT_ASCIIOPT
+#: ggsetup_IBObjects.inc:198
+msgid " ASCII Options "
+msgstr ""
+
+#  Programmer's name for it: L_EXPORT_DELIMITER
+#. Programmer's name for it: L_EXPORT_DELIMITER
+#: ggsetup_IBObjects.inc:199
+msgid "Delimiter"
+msgstr ""
+
+#  Programmer's name for it: L_EXPORT_DATEFORMAT
+#. Programmer's name for it: L_EXPORT_DATEFORMAT
+#: ggsetup_IBObjects.inc:201
+msgid "Date Format"
+msgstr ""
+
+#  Programmer's name for it: L_EXPORT_INCLUDEHEADERS
+#. Programmer's name for it: L_EXPORT_INCLUDEHEADERS
+#: ggsetup_IBObjects.inc:202
+msgid "Include Headers"
+msgstr ""
+
+#  Programmer's name for it: L_EXPORT_INCLUDECRLF
+#. Programmer's name for it: L_EXPORT_INCLUDECRLF
+#: ggsetup_IBObjects.inc:203
+msgid "Include CRLF"
+msgstr ""
+
+#  Programmer's name for it: L_EXPORT_SDEXPORTFILTERCSV
+#. Programmer's name for it: L_EXPORT_SDEXPORTFILTERCSV
+#: ggsetup_IBObjects.inc:205
+msgid "Comma Separated Text Files ( *.CSV )|*.CSV"
+msgstr ""
+
+#  Programmer's name for it: L_EXPORT_SDEXPORTFILTERTXT
+#. Programmer's name for it: L_EXPORT_SDEXPORTFILTERTXT
+#: ggsetup_IBObjects.inc:206
+msgid "Text Files ( *.TXT )|*.TXT"
+msgstr ""
+
+#  Programmer's name for it: L_EXPORT_SDEXPORTFILTERDBF
+#. Programmer's name for it: L_EXPORT_SDEXPORTFILTERDBF
+#: ggsetup_IBObjects.inc:207
+msgid "DBF Files ( *.DBF )|*.DBF"
+msgstr ""
+
+#  Programmer's name for it: M_Abort_Fetching
+#. Programmer's name for it: M_Abort_Fetching
+#: ggsetup_IBObjects.inc:211
+msgid "Are you sure you want to abort?"
+msgstr ""
+
+#  Programmer's name for it: M_Fetching_Query_Results
+#. Programmer's name for it: M_Fetching_Query_Results
+#: ggsetup_IBObjects.inc:212
+msgid "Fetching Query Results"
+msgstr ""
+
+#  Programmer's name for it: M_Row_Num
+#. Programmer's name for it: M_Row_Num
+#: ggsetup_IBObjects.inc:213
+msgid "Row# %d"
+msgstr ""
+
+#  Programmer's name for it: M_Login_User
+#. Programmer's name for it: M_Login_User
+#: ggsetup_IBObjects.inc:217
+msgid "User"
+msgstr ""
+
+#  Programmer's name for it: M_Login_Dialog_Caption
+#. Programmer's name for it: M_Login_Dialog_Caption
+#: ggsetup_IBObjects.inc:222
+msgid "Login Dialog"
+msgstr ""
+
+#  Programmer's name for it: M_SB_REC_CNT
+#. Programmer's name for it: M_SB_REC_CNT
+#: ggsetup_IBObjects.inc:226
+msgid "Records counted: %d"
+msgstr ""
+
+#  Programmer's name for it: M_Save_Changes
+#  Programmer's name for it: M_SCRIPT_SAVE_CHANGES
+#. Programmer's name for it: M_Save_Changes
+#. Programmer's name for it: M_SCRIPT_SAVE_CHANGES
+#: ggsetup_IBObjects.inc:227 ggsetup_IBObjects.inc:240
+msgid "Save changes?"
+msgstr ""
+
+#  Programmer's name for it: M_Abort_Changes
+#. Programmer's name for it: M_Abort_Changes
+#: ggsetup_IBObjects.inc:228
+msgid "Changes will be lost. Ok to proceed?"
+msgstr ""
+
+#  Programmer's name for it: M_CancelTransactionPrompt
+#. Programmer's name for it: M_CancelTransactionPrompt
+#: ggsetup_IBObjects.inc:230
+msgid "Are you sure you want to cancel all changes?"
+msgstr ""
+
+#  Programmer's name for it: M_SCRIPT_ABORT_EXECUTE
+#. Programmer's name for it: M_SCRIPT_ABORT_EXECUTE
+#: ggsetup_IBObjects.inc:232
+msgid "Abort execution of this script?"
+msgstr ""
+
+#  Programmer's name for it: M_SCRIPT_CONTINUE_EXECUTING
+#. Programmer's name for it: M_SCRIPT_CONTINUE_EXECUTING
+#: ggsetup_IBObjects.inc:233
+msgid "Continue executing this script?"
+msgstr ""
+
+#  Programmer's name for it: M_SCRIPT_IS_EXECUTING
+#. Programmer's name for it: M_SCRIPT_IS_EXECUTING
+#: ggsetup_IBObjects.inc:234
+msgid "Script is currently executing"
+msgstr ""
+
+#  Programmer's name for it: M_SCRIPT_FAILED
+#. Programmer's name for it: M_SCRIPT_FAILED
+#: ggsetup_IBObjects.inc:235
+msgid "Script failed to complete"
+msgstr ""
+
+#  Programmer's name for it: M_SCRIPT_WAS_ABORTED
+#. Programmer's name for it: M_SCRIPT_WAS_ABORTED
+#: ggsetup_IBObjects.inc:236
+msgid "Script execution was aborted"
+msgstr ""
+
+#  Programmer's name for it: M_SCRIPT_COMPLETED
+#. Programmer's name for it: M_SCRIPT_COMPLETED
+#: ggsetup_IBObjects.inc:237
+msgid "Script completed without exceptions"
+msgstr ""
+
+#  Programmer's name for it: M_SCRIPT_CMPL_EXCEPT
+#. Programmer's name for it: M_SCRIPT_CMPL_EXCEPT
+#: ggsetup_IBObjects.inc:238
+msgid "Script completed with exceptions"
+msgstr ""
+
+#  Programmer's name for it: C_BTN_TODAY
+#. Programmer's name for it: C_BTN_TODAY
+#: ggsetup_IBObjects.inc:244
+msgid "Today"
+msgstr ""
+
+#  Programmer's name for it: C_BTN_FINDNEXT
+#. Programmer's name for it: C_BTN_FINDNEXT
+#: ggsetup_IBObjects.inc:247
+msgid "Find Next"
+msgstr ""
+
+#  Programmer's name for it: C_SG_Parameter
+#. Programmer's name for it: C_SG_Parameter
+#: ggsetup_IBObjects.inc:256
+msgid "Parameter"
+msgstr ""
+
+#  Programmer's name for it: C_SG_Info
+#. Programmer's name for it: C_SG_Info
+#: ggsetup_IBObjects.inc:260
+msgid "Info"
+msgstr ""
+
+#  Programmer's name for it: C_BF_APPLY
+#. Programmer's name for it: C_BF_APPLY
+#: ggsetup_IBObjects.inc:266
+msgid "Apply"
+msgstr ""
+
+#  Programmer's name for it: C_BF_EXECUTE
+#. Programmer's name for it: C_BF_EXECUTE
+#: ggsetup_IBObjects.inc:268
+msgid "Execute"
+msgstr ""
+
+#  Programmer's name for it: C_BF_FINISH
+#. Programmer's name for it: C_BF_FINISH
+#: ggsetup_IBObjects.inc:271
+msgid "Finish"
+msgstr ""
+
+#  Programmer's name for it: C_FRM_Ordering
+#. Programmer's name for it: C_FRM_Ordering
+#: ggsetup_IBObjects.inc:274
+msgid "Ordering"
+msgstr ""
+
+#  Programmer's name for it: C_FRM_RESTRUCTURE
+#. Programmer's name for it: C_FRM_RESTRUCTURE
+#: ggsetup_IBObjects.inc:275
+msgid "Customize Fields Displayed"
+msgstr ""
+
+#  Programmer's name for it: C_CB_WordWrap
+#. Programmer's name for it: C_CB_WordWrap
+#: ggsetup_IBObjects.inc:277
+msgid "Word Wrap"
+msgstr ""
+
+#  IBF_SQL
+#  Programmer's name for it: M_SQL_RowsAffected
+#. IBF_SQL
+#. Programmer's name for it: M_SQL_RowsAffected
+#: ggsetup_IBObjects.inc:280
+msgid "RowsAffected: "
+msgstr ""
+
+#  Programmer's name for it: M_SQL_RowsCounted
+#. Programmer's name for it: M_SQL_RowsCounted
+#: ggsetup_IBObjects.inc:281
+msgid "Rows Counted: "
+msgstr ""
+
+#  Programmer's name for it: M_SQL_SessionBusy
+#. Programmer's name for it: M_SQL_SessionBusy
+#: ggsetup_IBObjects.inc:282
+msgid "Session is currently busy"
+msgstr ""
+
+#  Programmer's name for it: M_SQL_CompleteTransaction
+#. Programmer's name for it: M_SQL_CompleteTransaction
+#: ggsetup_IBObjects.inc:283
+msgid "Please complete your transaction"
+msgstr ""
+
+#  Programmer's name for it: M_SQL_CannotDeleteDefaultGroup
+#. Programmer's name for it: M_SQL_CannotDeleteDefaultGroup
+#: ggsetup_IBObjects.inc:284
+msgid "The default group cannot be deleted"
+msgstr ""
+
+#  Programmer's name for it: M_SQL_ReservedName
+#. Programmer's name for it: M_SQL_ReservedName
+#: ggsetup_IBObjects.inc:285
+msgid "This name is reserved: "
+msgstr ""
+
+#  Programmer's name for it: M_SQL_BackSlashNotAllowed
+#. Programmer's name for it: M_SQL_BackSlashNotAllowed
+#: ggsetup_IBObjects.inc:286
+msgid "A back slash is not allowed"
+msgstr ""
+
+#  Programmer's name for it: M_SQL_BlankNameNotAllowed
+#. Programmer's name for it: M_SQL_BlankNameNotAllowed
+#: ggsetup_IBObjects.inc:287
+msgid "A blank name is not allowed"
+msgstr ""
+
+#  Programmer's name for it: M_SQL_RowsFetched
+#. Programmer's name for it: M_SQL_RowsFetched
+#: ggsetup_IBObjects.inc:288
+msgid "Rows Fetched: "
+msgstr ""
+
+#  Programmer's name for it: M_SQL_ConfirmDBCreation
+#. Programmer's name for it: M_SQL_ConfirmDBCreation
+#: ggsetup_IBObjects.inc:289
+msgid "Are you sure you want to create this database?"
+msgstr ""
+
+#  Programmer's name for it: M_SQL_ConfirmNoOtherDBSameName
+#. Programmer's name for it: M_SQL_ConfirmNoOtherDBSameName
+#: ggsetup_IBObjects.inc:290
+msgid "Please make sure that no database exists with the same name"
+msgstr ""
+
+#  Programmer's name for it: M_SQL_ConfirmDBDrop
+#. Programmer's name for it: M_SQL_ConfirmDBDrop
+#: ggsetup_IBObjects.inc:291
+msgid "Are you sure you want to drop this database?"
+msgstr ""
+
+#  Programmer's name for it: M_SQL_ReConfirmDBDrop
+#. Programmer's name for it: M_SQL_ReConfirmDBDrop
+#: ggsetup_IBObjects.inc:292
+msgid "This database will be permanently removed.\n"
+"\n"
+"Continue anyway?"
+msgstr ""
+
+#  Programmer's name for it: M_SQL_AskFormName
+#. Programmer's name for it: M_SQL_AskFormName
+#: ggsetup_IBObjects.inc:293
+msgid "Enter query form name:"
+msgstr ""
+
+#  Programmer's name for it: M_SQL_AskGroupName
+#. Programmer's name for it: M_SQL_AskGroupName
+#: ggsetup_IBObjects.inc:294
+msgid "Enter group name:"
+msgstr ""
+
+#  Programmer's name for it: M_SQL_AskLayoutName
+#. Programmer's name for it: M_SQL_AskLayoutName
+#: ggsetup_IBObjects.inc:295
+msgid "Enter layout name:"
+msgstr ""
+
+#  Programmer's name for it: M_SQL_ConfirmGroupDeletion
+#. Programmer's name for it: M_SQL_ConfirmGroupDeletion
+#: ggsetup_IBObjects.inc:296
+msgid "Are you sure you want to delete the %s group including all child items?"
+msgstr ""
+
+#  Programmer's name for it: M_SQL_ConfirmLayoutDeletion
+#. Programmer's name for it: M_SQL_ConfirmLayoutDeletion
+#: ggsetup_IBObjects.inc:297
+msgid "Are you sure you want to delete the %s layout?"
+msgstr ""
+
+#  Programmer's name for it: M_SQL_RecursiveCopyNotAllowed
+#. Programmer's name for it: M_SQL_RecursiveCopyNotAllowed
+#: ggsetup_IBObjects.inc:298
+msgid "Recursive copy not allowed"
+msgstr ""
+
+#  IBF_GenCustomSQL
+#  Programmer's name for it: M_GCSQL_DoubleClickOrEnterItem
+#. IBF_GenCustomSQL
+#. Programmer's name for it: M_GCSQL_DoubleClickOrEnterItem
+#: ggsetup_IBObjects.inc:301
+msgid "Double click an item or press enter with an item selected"
+msgstr ""
+
+#  Programmer's name for it: M_GCSQL_ParameterValue
+#. Programmer's name for it: M_GCSQL_ParameterValue
+#: ggsetup_IBObjects.inc:302
+msgid "Parameter value"
+msgstr ""
+
+#  Programmer's name for it: M_GCSQL_TypeAValueFor
+#. Programmer's name for it: M_GCSQL_TypeAValueFor
+#: ggsetup_IBObjects.inc:303
+msgid "Type a value for %s"
+msgstr ""
+
+#  Programmer's name for it: M_GCSQL_ProcedureWithoutParams
+#. Programmer's name for it: M_GCSQL_ProcedureWithoutParams
+#: ggsetup_IBObjects.inc:304
+msgid "This procedure does not have input parameters"
+msgstr ""
+
+#  IBF_DataPump
+#  Programmer's name for it: M_DP_STILL_ACTIVE
+#. IBF_DataPump
+#. Programmer's name for it: M_DP_STILL_ACTIVE
+#: ggsetup_IBObjects.inc:307
+msgid "Data Pump process is still active"
+msgstr ""
+
+#  Programmer's name for it: M_DP_ARE_YOU_SURE
+#. Programmer's name for it: M_DP_ARE_YOU_SURE
+#: ggsetup_IBObjects.inc:308
+msgid "Are you sure?"
+msgstr ""
+
+#  Programmer's name for it: M_DP_SELECT_SOURCE_DB
+#. Programmer's name for it: M_DP_SELECT_SOURCE_DB
+#: ggsetup_IBObjects.inc:309
+msgid "Select Source Database"
+msgstr ""
+
+#  Programmer's name for it: M_DP_SELECT_DEST_DB
+#. Programmer's name for it: M_DP_SELECT_DEST_DB
+#: ggsetup_IBObjects.inc:310
+msgid "Select Destination Database"
+msgstr ""
+
+#  Programmer's name for it: E_PASSWORD_NO_MATCH
+#. Programmer's name for it: E_PASSWORD_NO_MATCH
+#: ggsetup_IBObjects.inc:315
+msgid "Passwords do not match"
+msgstr ""
+
+#  Programmer's name for it: M_USERS_COMPLETED_OK
+#. Programmer's name for it: M_USERS_COMPLETED_OK
+#: ggsetup_IBObjects.inc:316
+msgid "Operation completed Successfully"
+msgstr ""
+
+#  Programmer's name for it: M_USERS_NO_CONNECTION
+#. Programmer's name for it: M_USERS_NO_CONNECTION
+#: ggsetup_IBObjects.inc:317
+msgid "No IB_Connection defined"
+msgstr ""
+
+#  IBF_Query
+#  Programmer's name for it: M_QRY_ASSIGN_ORDERING_ITEMS
+#. IBF_Query
+#. Programmer's name for it: M_QRY_ASSIGN_ORDERING_ITEMS
+#: ggsetup_IBObjects.inc:320
+msgid "Assign ordering items?"
+msgstr ""
+
+#  IBF_Export
+#  Programmer's name for it: C_BTN_EXPORT_BEGIN
+#. IBF_Export
+#. Programmer's name for it: C_BTN_EXPORT_BEGIN
+#: ggsetup_IBObjects.inc:323
+msgid "Begin Export"
+msgstr ""
+
+#  Programmer's name for it: M_EXPORT_STILL_ACTIVE
+#. Programmer's name for it: M_EXPORT_STILL_ACTIVE
+#: ggsetup_IBObjects.inc:324
+msgid "Export process is still active"
+msgstr ""
+
+#  IB_UtilityBar
+#  Programmer's name for it: C_wbBrowseBtnHint
+#. IB_UtilityBar
+#. Programmer's name for it: C_wbBrowseBtnHint
+#: ggsetup_IBObjects.inc:327
+msgid "Browse Database"
+msgstr ""
+
+#  Programmer's name for it: C_wbBrowseBtnCaption
+#. Programmer's name for it: C_wbBrowseBtnCaption
+#: ggsetup_IBObjects.inc:328
+msgid "Browse"
+msgstr ""
+
+#  Programmer's name for it: C_wbDSQLBtnHint
+#. Programmer's name for it: C_wbDSQLBtnHint
+#: ggsetup_IBObjects.inc:329
+msgid "Execute Statement In Database"
+msgstr ""
+
+#  Programmer's name for it: C_wbDSQLBtnCaption
+#. Programmer's name for it: C_wbDSQLBtnCaption
+#: ggsetup_IBObjects.inc:330
+msgid "DSQL"
+msgstr ""
+
+#  Programmer's name for it: C_wbEventsBtnHint
+#. Programmer's name for it: C_wbEventsBtnHint
+#: ggsetup_IBObjects.inc:331
+msgid "Monitor Database Events"
+msgstr ""
+
+#  Programmer's name for it: C_wbEventsBtnCaption
+#. Programmer's name for it: C_wbEventsBtnCaption
+#: ggsetup_IBObjects.inc:332
+msgid "Events"
+msgstr ""
+
+#  Programmer's name for it: C_wbExportBtnHint
+#. Programmer's name for it: C_wbExportBtnHint
+#: ggsetup_IBObjects.inc:333
+msgid "Export Dataset From Database"
+msgstr ""
+
+#  Programmer's name for it: C_wbDumpBtnHint
+#. Programmer's name for it: C_wbDumpBtnHint
+#: ggsetup_IBObjects.inc:335
+msgid "Dump Database"
+msgstr ""
+
+#  Programmer's name for it: C_wbDumpBtnCaption
+#. Programmer's name for it: C_wbDumpBtnCaption
+#: ggsetup_IBObjects.inc:336
+msgid "Dump"
+msgstr ""
+
+#  Programmer's name for it: C_wbPumpBtnHint
+#. Programmer's name for it: C_wbPumpBtnHint
+#: ggsetup_IBObjects.inc:337
+msgid "Pump Data From Another Database"
+msgstr ""
+
+#  Programmer's name for it: C_wbPumpBtnCaption
+#. Programmer's name for it: C_wbPumpBtnCaption
+#: ggsetup_IBObjects.inc:338
+msgid "Pump"
+msgstr ""
+
+#  Programmer's name for it: C_wbWhoBtnHint
+#. Programmer's name for it: C_wbWhoBtnHint
+#: ggsetup_IBObjects.inc:339
+msgid "See Who is Connected to the Database"
+msgstr ""
+
+#  Programmer's name for it: C_wbWhoBtnCaption
+#. Programmer's name for it: C_wbWhoBtnCaption
+#: ggsetup_IBObjects.inc:340
+msgid "Who"
+msgstr ""
+
+#  Programmer's name for it: C_wbScriptBtnHint
+#. Programmer's name for it: C_wbScriptBtnHint
+#: ggsetup_IBObjects.inc:341
+msgid "Execute Script"
+msgstr ""
+
+#  Programmer's name for it: C_wbScriptBtnCaption
+#  Programmer's name for it: STR_DDL_Script
+#. Programmer's name for it: C_wbScriptBtnCaption
+#. Programmer's name for it: STR_DDL_Script
+#: ggsetup_IBObjects.inc:342 ggsetup_IBObjects.inc:535
+msgid "Script"
+msgstr ""
+
+#  Programmer's name for it: C_wbExtractBtnHint
+#. Programmer's name for it: C_wbExtractBtnHint
+#: ggsetup_IBObjects.inc:343
+msgid "Extract Metadata DDL"
+msgstr ""
+
+#  Programmer's name for it: C_wbExtractBtnCaption
+#. Programmer's name for it: C_wbExtractBtnCaption
+#: ggsetup_IBObjects.inc:344
+msgid "DDL Extract"
+msgstr ""
+
+#  Programmer's name for it: C_wbMonitorBtnHint
+#. Programmer's name for it: C_wbMonitorBtnHint
+#: ggsetup_IBObjects.inc:345
+msgid "Trace SQL and API Calls"
+msgstr ""
+
+#  Programmer's name for it: C_wbMonitorBtnCaption
+#. Programmer's name for it: C_wbMonitorBtnCaption
+#: ggsetup_IBObjects.inc:346
+msgid "Monitor"
+msgstr ""
+
+#  Programmer's name for it: C_wbProfilerBtnHint
+#. Programmer's name for it: C_wbProfilerBtnHint
+#: ggsetup_IBObjects.inc:347
+msgid "Profile Database Activity"
+msgstr ""
+
+#  Programmer's name for it: C_wbProfilerBtnCaption
+#. Programmer's name for it: C_wbProfilerBtnCaption
+#: ggsetup_IBObjects.inc:348
+msgid "Profiler"
+msgstr ""
+
+#  Programmer's name for it: C_wbStatusBtnHint
+#. Programmer's name for it: C_wbStatusBtnHint
+#: ggsetup_IBObjects.inc:349
+msgid "View Status of IBO Components"
+msgstr ""
+
+#  Programmer's name for it: C_wbStatusBtnCaption
+#. Programmer's name for it: C_wbStatusBtnCaption
+#: ggsetup_IBObjects.inc:350
+msgid "Status"
+msgstr ""
+
+#  Programmer's name for it: C_wbUsersBtnHint
+#. Programmer's name for it: C_wbUsersBtnHint
+#: ggsetup_IBObjects.inc:351
+msgid "Administer Users for a Database Server"
+msgstr ""
+
+#  Array grid
+#  Programmer's name for it: C_AG_Row
+#. Array grid
+#. Programmer's name for it: C_AG_Row
+#: ggsetup_IBObjects.inc:355
+msgid "Row"
+msgstr ""
+
+#  Programmer's name for it: C_AG_Column
+#. Programmer's name for it: C_AG_Column
+#: ggsetup_IBObjects.inc:356
+msgid "Column"
+msgstr ""
+
+#  IBF_Who
+#  Programmer's name for it: C_WHO_FRM
+#. IBF_Who
+#. Programmer's name for it: C_WHO_FRM
+#: ggsetup_IBObjects.inc:359
+msgid "Who is connected"
+msgstr ""
+
+#  Programmer's name for it: C_NB_FIRST
+#. Programmer's name for it: C_NB_FIRST
+#: ggsetup_IBObjects.inc:362
+msgid "First"
+msgstr ""
+
+#  Programmer's name for it: C_NB_PRIOR
+#. Programmer's name for it: C_NB_PRIOR
+#: ggsetup_IBObjects.inc:363
+msgid "Prior"
+msgstr ""
+
+#  Programmer's name for it: C_NB_NEXT
+#. Programmer's name for it: C_NB_NEXT
+#: ggsetup_IBObjects.inc:364
+msgid "Next"
+msgstr ""
+
+#  Programmer's name for it: C_NB_LAST
+#. Programmer's name for it: C_NB_LAST
+#: ggsetup_IBObjects.inc:365
+msgid "Last"
+msgstr ""
+
+#  Programmer's name for it: C_ST_Prepare
+#. Programmer's name for it: C_ST_Prepare
+#: ggsetup_IBObjects.inc:369
+msgid "Prepare"
+msgstr ""
+
+#  Programmer's name for it: C_ST_Unprepare
+#. Programmer's name for it: C_ST_Unprepare
+#: ggsetup_IBObjects.inc:370
+msgid "Unprepare"
+msgstr ""
+
+#  Programmer's name for it: C_ST_ReadOnly
+#. Programmer's name for it: C_ST_ReadOnly
+#: ggsetup_IBObjects.inc:371
+msgid "Read Only"
+msgstr ""
+
+#  Programmer's name for it: C_ST_RefreshKeys
+#. Programmer's name for it: C_ST_RefreshKeys
+#: ggsetup_IBObjects.inc:377
+msgid "Refresh Keys"
+msgstr ""
+
+#  Programmer's name for it: C_ST_RefreshRows
+#. Programmer's name for it: C_ST_RefreshRows
+#: ggsetup_IBObjects.inc:378
+msgid "Refresh Rows"
+msgstr ""
+
+#  Programmer's name for it: H_UB_EDIT
+#. Programmer's name for it: H_UB_EDIT
+#: ggsetup_IBObjects.inc:383
+msgid "Edit Row"
+msgstr ""
+
+#  Programmer's name for it: H_UB_INSERT
+#. Programmer's name for it: H_UB_INSERT
+#: ggsetup_IBObjects.inc:384
+msgid "Insert Row"
+msgstr ""
+
+#  Programmer's name for it: H_UB_DELETE
+#. Programmer's name for it: H_UB_DELETE
+#: ggsetup_IBObjects.inc:385
+msgid "Delete Row"
+msgstr ""
+
+#  Programmer's name for it: H_UB_REFRESH
+#. Programmer's name for it: H_UB_REFRESH
+#: ggsetup_IBObjects.inc:386
+msgid "Refresh all records"
+msgstr ""
+
+#  Programmer's name for it: H_UB_REFRESHKEYS
+#. Programmer's name for it: H_UB_REFRESHKEYS
+#: ggsetup_IBObjects.inc:387
+msgid "Refresh record keys"
+msgstr ""
+
+#  Programmer's name for it: H_UB_REFRESHROWS
+#. Programmer's name for it: H_UB_REFRESHROWS
+#: ggsetup_IBObjects.inc:388
+msgid "Refresh record rows"
+msgstr ""
+
+#  Programmer's name for it: H_UB_REFRESHFILTROWS
+#. Programmer's name for it: H_UB_REFRESHFILTROWS
+#: ggsetup_IBObjects.inc:389
+msgid "Refresh filtered rows"
+msgstr ""
+
+#  Programmer's name for it: H_UB_POSTSEARCH
+#. Programmer's name for it: H_UB_POSTSEARCH
+#: ggsetup_IBObjects.inc:390
+msgid "Post search criteria"
+msgstr ""
+
+#  Programmer's name for it: H_UB_CANCELSEARCH
+#. Programmer's name for it: H_UB_CANCELSEARCH
+#: ggsetup_IBObjects.inc:391
+msgid "Cancel search criteria"
+msgstr ""
+
+#  Programmer's name for it: H_UB_POSTEDIT
+#. Programmer's name for it: H_UB_POSTEDIT
+#: ggsetup_IBObjects.inc:392
+msgid "Post edits"
+msgstr ""
+
+#  Programmer's name for it: H_UB_CANCELEDIT
+#. Programmer's name for it: H_UB_CANCELEDIT
+#: ggsetup_IBObjects.inc:393
+msgid "Cancel edits"
+msgstr ""
+
+#  Programmer's name for it: H_UB_POSTINSERT
+#. Programmer's name for it: H_UB_POSTINSERT
+#: ggsetup_IBObjects.inc:394
+msgid "Post insert"
+msgstr ""
+
+#  Programmer's name for it: H_UB_CANCELINSERT
+#. Programmer's name for it: H_UB_CANCELINSERT
+#: ggsetup_IBObjects.inc:395
+msgid "Cancel insert"
+msgstr ""
+
+#  Programmer's name for it: H_UB_POSTDELETE
+#. Programmer's name for it: H_UB_POSTDELETE
+#: ggsetup_IBObjects.inc:396
+msgid "Post delete"
+msgstr ""
+
+#  Programmer's name for it: H_UB_CANCELDELETE
+#. Programmer's name for it: H_UB_CANCELDELETE
+#: ggsetup_IBObjects.inc:397
+msgid "Cancel delete"
+msgstr ""
+
+#  Programmer's name for it: H_UB_POST
+#. Programmer's name for it: H_UB_POST
+#: ggsetup_IBObjects.inc:398
+msgid "Post changes"
+msgstr ""
+
+#  Programmer's name for it: H_UB_CANCEL
+#. Programmer's name for it: H_UB_CANCEL
+#: ggsetup_IBObjects.inc:399
+msgid "Cancel changes"
+msgstr ""
+
+#  Programmer's name for it: H_NB_FIRST
+#. Programmer's name for it: H_NB_FIRST
+#: ggsetup_IBObjects.inc:401
+msgid "First Row"
+msgstr ""
+
+#  Programmer's name for it: H_NB_PRIOR
+#. Programmer's name for it: H_NB_PRIOR
+#: ggsetup_IBObjects.inc:402
+msgid "Prior Row"
+msgstr ""
+
+#  Programmer's name for it: H_NB_NEXT
+#. Programmer's name for it: H_NB_NEXT
+#: ggsetup_IBObjects.inc:403
+msgid "Next Row"
+msgstr ""
+
+#  Programmer's name for it: H_NB_LAST
+#. Programmer's name for it: H_NB_LAST
+#: ggsetup_IBObjects.inc:404
+msgid "Last Row"
+msgstr ""
+
+#  Programmer's name for it: H_NB_JUMPBCK
+#. Programmer's name for it: H_NB_JUMPBCK
+#: ggsetup_IBObjects.inc:405
+msgid "Backwards"
+msgstr ""
+
+#  Programmer's name for it: H_NB_JUMPFWD
+#. Programmer's name for it: H_NB_JUMPFWD
+#: ggsetup_IBObjects.inc:406
+msgid "Forwards"
+msgstr ""
+
+#  Programmer's name for it: H_SB_ORDER
+#. Programmer's name for it: H_SB_ORDER
+#: ggsetup_IBObjects.inc:408
+msgid "Order Rows in Dataset"
+msgstr ""
+
+#  Programmer's name for it: H_SB_LAST_CRITERIA
+#. Programmer's name for it: H_SB_LAST_CRITERIA
+#: ggsetup_IBObjects.inc:409
+msgid "Recall Last Search Criteria"
+msgstr ""
+
+#  Programmer's name for it: H_SB_SEARCH
+#. Programmer's name for it: H_SB_SEARCH
+#: ggsetup_IBObjects.inc:410
+msgid "Search Dataset"
+msgstr ""
+
+#  Programmer's name for it: H_SB_SAVE_CRITERIA
+#. Programmer's name for it: H_SB_SAVE_CRITERIA
+#: ggsetup_IBObjects.inc:411
+msgid "Save Criteria"
+msgstr ""
+
+#  Programmer's name for it: H_SB_CLEAR_CRITERIA
+#. Programmer's name for it: H_SB_CLEAR_CRITERIA
+#: ggsetup_IBObjects.inc:412
+msgid "Clear Criteria"
+msgstr ""
+
+#  Programmer's name for it: H_SB_RECALL_CRITERIA
+#. Programmer's name for it: H_SB_RECALL_CRITERIA
+#: ggsetup_IBObjects.inc:413
+msgid "Recall Criteria"
+msgstr ""
+
+#  Programmer's name for it: H_SB_SEARCHCOUNT
+#. Programmer's name for it: H_SB_SEARCHCOUNT
+#: ggsetup_IBObjects.inc:414
+msgid "Count Rows in Dataset Matching Criteria"
+msgstr ""
+
+#  Programmer's name for it: H_SB_COUNT
+#. Programmer's name for it: H_SB_COUNT
+#: ggsetup_IBObjects.inc:415
+msgid "Count Rows in Dataset"
+msgstr ""
+
+#  Programmer's name for it: H_SB_RESTRUCTURE
+#. Programmer's name for it: H_SB_RESTRUCTURE
+#: ggsetup_IBObjects.inc:416
+msgid "Customize the Fields Displayed"
+msgstr ""
+
+#  Programmer's name for it: H_TB_StartTransaction
+#. Programmer's name for it: H_TB_StartTransaction
+#: ggsetup_IBObjects.inc:418
+msgid "Start Transaction"
+msgstr ""
+
+#  Programmer's name for it: H_TB_PostDatasets
+#. Programmer's name for it: H_TB_PostDatasets
+#: ggsetup_IBObjects.inc:419
+msgid "Post Datasets"
+msgstr ""
+
+#  Programmer's name for it: H_TB_CancelDatasets
+#. Programmer's name for it: H_TB_CancelDatasets
+#: ggsetup_IBObjects.inc:420
+msgid "Cancel Datasets"
+msgstr ""
+
+#  Programmer's name for it: H_TB_SavePoint
+#. Programmer's name for it: H_TB_SavePoint
+#: ggsetup_IBObjects.inc:421
+msgid "Commit and Retain Current Transaction"
+msgstr ""
+
+#  Programmer's name for it: H_TB_CommitRetain
+#. Programmer's name for it: H_TB_CommitRetain
+#: ggsetup_IBObjects.inc:422
+msgid "Post Datasets and Commit and Retain Current Transaction"
+msgstr ""
+
+#  Programmer's name for it: H_TB_Commit
+#. Programmer's name for it: H_TB_Commit
+#: ggsetup_IBObjects.inc:423
+msgid "Commit and End Current Transaction"
+msgstr ""
+
+#  Programmer's name for it: H_TB_Rollback
+#. Programmer's name for it: H_TB_Rollback
+#: ggsetup_IBObjects.inc:424
+msgid "Rollback and End Current Transaction"
+msgstr ""
+
+#  Programmer's name for it: H_TB_RollbackRetain
+#. Programmer's name for it: H_TB_RollbackRetain
+#: ggsetup_IBObjects.inc:425
+msgid "Rollback and Retain Current Transaction"
+msgstr ""
+
+#  Programmer's name for it: H_TB_Close
+#. Programmer's name for it: H_TB_Close
+#: ggsetup_IBObjects.inc:426
+msgid "Close Current Transaction"
+msgstr ""
+
+#  Programmer's name for it: H_ST_Prepare_Statement
+#. Programmer's name for it: H_ST_Prepare_Statement
+#: ggsetup_IBObjects.inc:428
+msgid "Prepare Statement"
+msgstr ""
+
+#  Programmer's name for it: H_ST_Unprepare_Statement
+#. Programmer's name for it: H_ST_Unprepare_Statement
+#: ggsetup_IBObjects.inc:429
+msgid "Unprepare Statement"
+msgstr ""
+
+#  Programmer's name for it: H_ST_Execute_Statement
+#. Programmer's name for it: H_ST_Execute_Statement
+#: ggsetup_IBObjects.inc:430
+msgid "Execute Statement"
+msgstr ""
+
+#  Programmer's name for it: H_DS_Open_Dataset
+#  Programmer's name for it: H_DS_Open_Dataset
+#. Programmer's name for it: H_DS_Open_Dataset
+#: ggsetup_IBObjects.inc:432
+msgid "Open Dataset"
+msgstr ""
+
+#  Programmer's name for it: H_DS_Close_Dataset
+#  Programmer's name for it: H_DS_Close_Dataset
+#. Programmer's name for it: H_DS_Close_Dataset
+#: ggsetup_IBObjects.inc:433
+msgid "Close Dataset"
+msgstr ""
+
+#  Programmer's name for it: H_DS_Prepare_Dataset
+#. Programmer's name for it: H_DS_Prepare_Dataset
+#: ggsetup_IBObjects.inc:434
+msgid "Prepare Dataset"
+msgstr ""
+
+#  Programmer's name for it: H_DS_Unprepare_Dataset
+#. Programmer's name for it: H_DS_Unprepare_Dataset
+#: ggsetup_IBObjects.inc:435
+msgid "Unprepare Dataset"
+msgstr ""
+
+#  Programmer's name for it: H_DS_ReadOnly_Dataset
+#. Programmer's name for it: H_DS_ReadOnly_Dataset
+#: ggsetup_IBObjects.inc:436
+msgid "Read Only Dataset"
+msgstr ""
+
+#  Programmer's name for it: H_CB_Create_Database
+#  CodeOption Names
+#  Programmer's name for it: STR_DDL_coCreateDatabase
+#. Programmer's name for it: H_CB_Create_Database
+#. CodeOption Names
+#. Programmer's name for it: STR_DDL_coCreateDatabase
+#: ggsetup_IBObjects.inc:438 ggsetup_IBObjects.inc:496
+msgid "Create Database"
+msgstr ""
+
+#  Programmer's name for it: H_CB_Connect_Database
+#. Programmer's name for it: H_CB_Connect_Database
+#: ggsetup_IBObjects.inc:439
+msgid "Connect Database"
+msgstr ""
+
+#  Programmer's name for it: H_CB_Disconnect_Database
+#. Programmer's name for it: H_CB_Disconnect_Database
+#: ggsetup_IBObjects.inc:440
+msgid "Disconnect Database"
+msgstr ""
+
+#  Programmer's name for it: H_CB_Drop_Database
+#. Programmer's name for it: H_CB_Drop_Database
+#: ggsetup_IBObjects.inc:441
+msgid "Drop Database"
+msgstr ""
+
+#  Programmer's name for it: H_RD_actHide
+#. Programmer's name for it: H_RD_actHide
+#: ggsetup_IBObjects.inc:443
+msgid "Hide selected Fields"
+msgstr ""
+
+#  Programmer's name for it: H_RD_actHideAll
+#. Programmer's name for it: H_RD_actHideAll
+#: ggsetup_IBObjects.inc:444
+msgid "Hide all Fields"
+msgstr ""
+
+#  Programmer's name for it: H_RD_actVisible
+#. Programmer's name for it: H_RD_actVisible
+#: ggsetup_IBObjects.inc:445
+msgid "Set selected fields visible"
+msgstr ""
+
+#  Programmer's name for it: H_RD_actVisibleAll
+#. Programmer's name for it: H_RD_actVisibleAll
+#: ggsetup_IBObjects.inc:446
+msgid "Set all selected fields visible"
+msgstr ""
+
+#  Programmer's name for it: H_RD_actUp
+#. Programmer's name for it: H_RD_actUp
+#: ggsetup_IBObjects.inc:447
+msgid "Move selected fields one up"
+msgstr ""
+
+#  Programmer's name for it: H_RD_actTop
+#. Programmer's name for it: H_RD_actTop
+#: ggsetup_IBObjects.inc:448
+msgid "Move selected fields to the top"
+msgstr ""
+
+#  Programmer's name for it: H_RD_actDown
+#. Programmer's name for it: H_RD_actDown
+#: ggsetup_IBObjects.inc:449
+msgid "Move selected fields one down"
+msgstr ""
+
+#  Programmer's name for it: H_RD_actBottom
+#. Programmer's name for it: H_RD_actBottom
+#: ggsetup_IBObjects.inc:450
+msgid "Move selected fields to the bottom"
+msgstr ""
+
+#  IBF_Export
+#  Programmer's name for it: H_BTN_EXPORT_BEGIN
+#. IBF_Export
+#. Programmer's name for it: H_BTN_EXPORT_BEGIN
+#: ggsetup_IBObjects.inc:453
+msgid "Export from SELECT statement"
+msgstr ""
+
+#  Error Messages - IB_Import
+#  Programmer's name for it: eNoAsciiFileEnty
+#. Error Messages - IB_Import
+#. Programmer's name for it: eNoAsciiFileEnty
+#: ggsetup_IBObjects.inc:456
+msgid "Missing entry for Ascii file"
+msgstr ""
+
+#  Programmer's name for it: eNoDestTableEntry
+#. Programmer's name for it: eNoDestTableEntry
+#: ggsetup_IBObjects.inc:457
+msgid "Missing entry for destination table"
+msgstr ""
+
+#  Programmer's name for it: eAsciiFileNotFound
+#. Programmer's name for it: eAsciiFileNotFound
+#: ggsetup_IBObjects.inc:458
+msgid "Ascii file %s not found"
+msgstr ""
+
+#  Programmer's name for it: eIniFileNotFound
+#. Programmer's name for it: eIniFileNotFound
+#: ggsetup_IBObjects.inc:459
+msgid "Ini-file %s not found"
+msgstr ""
+
+#  Programmer's name for it: eNoAsciiFileAccess
+#  Programmer's name for it: eNoAsciiFileAccess
+#. Programmer's name for it: eNoAsciiFileAccess
+#: ggsetup_IBObjects.inc:460
+msgid "Could not open ascii file %s"
+msgstr ""
+
+#  Programmer's name for it: eInvalidCharFound
+#. Programmer's name for it: eInvalidCharFound
+#: ggsetup_IBObjects.inc:461
+msgid "Invalid char / format error in ascii file"
+msgstr ""
+
+#  Programmer's name for it: eFieldDescriptionError
+#. Programmer's name for it: eFieldDescriptionError
+#: ggsetup_IBObjects.inc:463
+msgid "Error in field description"
+msgstr ""
+
+#  Programmer's name for it: eWrongAsciiFieldCount
+#. Programmer's name for it: eWrongAsciiFieldCount
+#: ggsetup_IBObjects.inc:464
+msgid "Wrong field count in ascii file, line (%d)"
+msgstr ""
+
+#  Programmer's name for it: eWrongDecimalCount
+#. Programmer's name for it: eWrongDecimalCount
+#: ggsetup_IBObjects.inc:465
+msgid "Wrong decimal count in fieldlist (%s)"
+msgstr ""
+
+#  Programmer's name for it: eWrongFieldWidth
+#. Programmer's name for it: eWrongFieldWidth
+#: ggsetup_IBObjects.inc:466
+msgid "Wrong field width in ascii file"
+msgstr ""
+
+#  Entity Type Names
+#  Programmer's name for it: STR_DDL_UnnamedItem
+#. Entity Type Names
+#. Programmer's name for it: STR_DDL_UnnamedItem
+#: ggsetup_IBObjects.inc:472
+msgid "<NO NAME>"
+msgstr ""
+
+#  Programmer's name for it: STR_DDL_etException
+#. Programmer's name for it: STR_DDL_etException
+#: ggsetup_IBObjects.inc:474
+msgid "Exception"
+msgstr ""
+
+#  Programmer's name for it: STR_DDL_etBlobFilter
+#. Programmer's name for it: STR_DDL_etBlobFilter
+#: ggsetup_IBObjects.inc:475
+msgid "Blob Filter"
+msgstr ""
+
+#  Programmer's name for it: STR_DDL_etUDF
+#. Programmer's name for it: STR_DDL_etUDF
+#: ggsetup_IBObjects.inc:476
+msgid "UDF"
+msgstr ""
+
+#  Programmer's name for it: STR_DDL_etGenerator
+#. Programmer's name for it: STR_DDL_etGenerator
+#: ggsetup_IBObjects.inc:477
+msgid "Generator"
+msgstr ""
+
+#  Programmer's name for it: STR_DDL_etDomain
+#. Programmer's name for it: STR_DDL_etDomain
+#: ggsetup_IBObjects.inc:478
+msgid "Domain"
+msgstr ""
+
+#  Programmer's name for it: STR_DDL_etTable
+#. Programmer's name for it: STR_DDL_etTable
+#: ggsetup_IBObjects.inc:479
+msgid "Table"
+msgstr ""
+
+#  Programmer's name for it: STR_DDL_etView
+#. Programmer's name for it: STR_DDL_etView
+#: ggsetup_IBObjects.inc:480
+msgid "View"
+msgstr ""
+
+#  Programmer's name for it: STR_DDL_etProcedure
+#. Programmer's name for it: STR_DDL_etProcedure
+#: ggsetup_IBObjects.inc:481
+msgid "Procedure"
+msgstr ""
+
+#  Programmer's name for it: STR_DDL_etRole
+#. Programmer's name for it: STR_DDL_etRole
+#: ggsetup_IBObjects.inc:482
+msgid "Role"
+msgstr ""
+
+#  Programmer's name for it: STR_DDL_etPrimaryKey
+#. Programmer's name for it: STR_DDL_etPrimaryKey
+#: ggsetup_IBObjects.inc:483
+msgid "Primary Key"
+msgstr ""
+
+#  Programmer's name for it: STR_DDL_etUniqueKey
+#. Programmer's name for it: STR_DDL_etUniqueKey
+#: ggsetup_IBObjects.inc:484
+msgid "Unique Key"
+msgstr ""
+
+#  Programmer's name for it: STR_DDL_etForeignKey
+#. Programmer's name for it: STR_DDL_etForeignKey
+#: ggsetup_IBObjects.inc:485
+msgid "Foreign Key"
+msgstr ""
+
+#  Programmer's name for it: STR_DDL_etConstraint
+#. Programmer's name for it: STR_DDL_etConstraint
+#: ggsetup_IBObjects.inc:486
+msgid "Constraint"
+msgstr ""
+
+#  Programmer's name for it: STR_DDL_etIndex
+#. Programmer's name for it: STR_DDL_etIndex
+#: ggsetup_IBObjects.inc:487
+msgid "Index"
+msgstr ""
+
+#  Programmer's name for it: STR_DDL_etTrigger
+#. Programmer's name for it: STR_DDL_etTrigger
+#: ggsetup_IBObjects.inc:488
+msgid "Trigger"
+msgstr ""
+
+#  Programmer's name for it: STR_DDL_etPermission
+#. Programmer's name for it: STR_DDL_etPermission
+#: ggsetup_IBObjects.inc:489
+msgid "Permission"
+msgstr ""
+
+#  Programmer's name for it: STR_DDL_etUDFParam
+#. Programmer's name for it: STR_DDL_etUDFParam
+#: ggsetup_IBObjects.inc:490
+msgid "UDF Parameter"
+msgstr ""
+
+#  Programmer's name for it: STR_DDL_etTableField
+#. Programmer's name for it: STR_DDL_etTableField
+#: ggsetup_IBObjects.inc:491
+msgid "Table Field"
+msgstr ""
+
+#  Programmer's name for it: STR_DDL_etViewField
+#. Programmer's name for it: STR_DDL_etViewField
+#: ggsetup_IBObjects.inc:492
+msgid "View Field"
+msgstr ""
+
+#  Programmer's name for it: STR_DDL_etProcParam
+#. Programmer's name for it: STR_DDL_etProcParam
+#: ggsetup_IBObjects.inc:493
+msgid "Procedure Parameter"
+msgstr ""
+
+#  Programmer's name for it: STR_DDL_coSecondaryFiles
+#. Programmer's name for it: STR_DDL_coSecondaryFiles
+#: ggsetup_IBObjects.inc:497
+msgid "Define Secondary Files"
+msgstr ""
+
+#  Programmer's name for it: STR_DDL_coDefineShadows
+#. Programmer's name for it: STR_DDL_coDefineShadows
+#: ggsetup_IBObjects.inc:498
+msgid "Define Shadows"
+msgstr ""
+
+#  Programmer's name for it: STR_DDL_coSetGeneratorVal
+#. Programmer's name for it: STR_DDL_coSetGeneratorVal
+#: ggsetup_IBObjects.inc:499
+msgid "Set Generator Value"
+msgstr ""
+
+#  Programmer's name for it: STR_DDL_coResetExceptionNo
+#. Programmer's name for it: STR_DDL_coResetExceptionNo
+#: ggsetup_IBObjects.inc:500
+msgid "Reset Exception Number"
+msgstr ""
+
+#  Programmer's name for it: STR_DDL_coRawFieldDefs
+#. Programmer's name for it: STR_DDL_coRawFieldDefs
+#: ggsetup_IBObjects.inc:501
+msgid "Raw Field Definitions"
+msgstr ""
+
+#  Programmer's name for it: STR_DDL_coIsolateAllComputed
+#. Programmer's name for it: STR_DDL_coIsolateAllComputed
+#: ggsetup_IBObjects.inc:502
+msgid "Isolate All Computed Fields"
+msgstr ""
+
+#  Programmer's name for it: STR_DDL_coReportMinor
+#. Programmer's name for it: STR_DDL_coReportMinor
+#: ggsetup_IBObjects.inc:503
+msgid "Report Minor"
+msgstr ""
+
+#  Programmer's name for it: STR_DDL_coAlwaysQuoted
+#. Programmer's name for it: STR_DDL_coAlwaysQuoted
+#: ggsetup_IBObjects.inc:504
+msgid "Always Quoted"
+msgstr ""
+
+#  Programmer's name for it: STR_DDL_coAlwaysCharSet
+#. Programmer's name for it: STR_DDL_coAlwaysCharSet
+#: ggsetup_IBObjects.inc:505
+msgid "Always Define Character Set"
+msgstr ""
+
+#  Programmer's name for it: STR_DDL_coIncludeDebug
+#. Programmer's name for it: STR_DDL_coIncludeDebug
+#: ggsetup_IBObjects.inc:506
+msgid "Include Debug Comments"
+msgstr ""
+
+#  Programmer's name for it: STR_DDL_coDescripAsComment
+#. Programmer's name for it: STR_DDL_coDescripAsComment
+#: ggsetup_IBObjects.inc:507
+msgid "Descriptions as Comments"
+msgstr ""
+
+#  Programmer's name for it: STR_DDL_coIgnoreDependencies
+#. Programmer's name for it: STR_DDL_coIgnoreDependencies
+#: ggsetup_IBObjects.inc:508
+msgid "Ignore Dependencies"
+msgstr ""
+
+#  Programmer's name for it: STR_DDL_coKeepCustomIndexNames
+#. Programmer's name for it: STR_DDL_coKeepCustomIndexNames
+#: ggsetup_IBObjects.inc:509
+msgid "Keep Custom Index Names"
+msgstr ""
+
+#  Programmer's name for it: STR_DDL_coUseBigInt
+#. Programmer's name for it: STR_DDL_coUseBigInt
+#: ggsetup_IBObjects.inc:510
+msgid "Use BIGINT"
+msgstr ""
+
+#  CodePass Names
+#  Programmer's name for it: STR_DDL_cpFull
+#. CodePass Names
+#. Programmer's name for it: STR_DDL_cpFull
+#: ggsetup_IBObjects.inc:513
+msgid "Full"
+msgstr ""
+
+#  Programmer's name for it: STR_DDL_cpInit
+#. Programmer's name for it: STR_DDL_cpInit
+#: ggsetup_IBObjects.inc:514
+msgid "Initial"
+msgstr ""
+
+#  Programmer's name for it: STR_DDL_cpFinal
+#. Programmer's name for it: STR_DDL_cpFinal
+#: ggsetup_IBObjects.inc:515
+msgid "Final"
+msgstr ""
+
+#  Programmer's name for it: STR_DDL_cpAuto
+#. Programmer's name for it: STR_DDL_cpAuto
+#: ggsetup_IBObjects.inc:516
+msgid "Automatic"
+msgstr ""
+
+#  Programmer's name for it: STD_DDL_plMinor
+#. Programmer's name for it: STD_DDL_plMinor
+#: ggsetup_IBObjects.inc:520
+msgid "Minor"
+msgstr ""
+
+#  Programmer's name for it: STD_DDL_plSuspicious
+#. Programmer's name for it: STD_DDL_plSuspicious
+#: ggsetup_IBObjects.inc:521
+msgid "Suspicious"
+msgstr ""
+
+#  abbreviated Problem level names (to 5 characters)
+#  Programmer's name for it: STD_DDL_plNone_s
+#. abbreviated Problem level names (to 5 characters)
+#. Programmer's name for it: STD_DDL_plNone_s
+#: ggsetup_IBObjects.inc:525
+msgid "NONE "
+msgstr ""
+
+#  Programmer's name for it: STD_DDL_plMinor_s
+#. Programmer's name for it: STD_DDL_plMinor_s
+#: ggsetup_IBObjects.inc:526
+msgid "MINOR"
+msgstr ""
+
+#  Programmer's name for it: STD_DDL_plSuspicious_s
+#. Programmer's name for it: STD_DDL_plSuspicious_s
+#: ggsetup_IBObjects.inc:527
+msgid "SUSP "
+msgstr ""
+
+#  Programmer's name for it: STD_DDL_plWarning_s
+#. Programmer's name for it: STD_DDL_plWarning_s
+#: ggsetup_IBObjects.inc:528
+msgid "WARN "
+msgstr ""
+
+#  Dialog strings
+#  Programmer's name for it: STR_DDL_DialogCaption
+#. Dialog strings
+#. Programmer's name for it: STR_DDL_DialogCaption
+#: ggsetup_IBObjects.inc:532
+msgid "Metadata Extract"
+msgstr ""
+
+#  Programmer's name for it: STR_DDL_Configure
+#. Programmer's name for it: STR_DDL_Configure
+#: ggsetup_IBObjects.inc:533
+msgid "Configure"
+msgstr ""
+
+#  Programmer's name for it: STR_DDL_Filters
+#. Programmer's name for it: STR_DDL_Filters
+#: ggsetup_IBObjects.inc:534
+msgid "Filters"
+msgstr ""
+
+#  Programmer's name for it: STR_DDL_MetadataControls
+#. Programmer's name for it: STR_DDL_MetadataControls
+#: ggsetup_IBObjects.inc:536
+msgid "Metadata Controls"
+msgstr ""
+
+#  Programmer's name for it: STR_DDL_CodeOptions
+#. Programmer's name for it: STR_DDL_CodeOptions
+#: ggsetup_IBObjects.inc:537
+msgid "Code Options"
+msgstr ""
+
+#  Programmer's name for it: STR_DDL_Entities
+#. Programmer's name for it: STR_DDL_Entities
+#: ggsetup_IBObjects.inc:538
+msgid "Entities"
+msgstr ""
+
+#  Programmer's name for it: STR_DDL_Terminator
+#. Programmer's name for it: STR_DDL_Terminator
+#: ggsetup_IBObjects.inc:539
+msgid "Terminator"
+msgstr ""
+
+#  Programmer's name for it: STR_DDL_InsertCommits
+#. Programmer's name for it: STR_DDL_InsertCommits
+#: ggsetup_IBObjects.inc:540
+msgid "Insert Commits"
+msgstr ""
+
+#  Programmer's name for it: STR_DDL_ExecuteControls
+#. Programmer's name for it: STR_DDL_ExecuteControls
+#: ggsetup_IBObjects.inc:541
+msgid "Execute Controls"
+msgstr ""
+
+#  Programmer's name for it: STR_DDL_CodePass
+#. Programmer's name for it: STR_DDL_CodePass
+#: ggsetup_IBObjects.inc:542
+msgid "Code Pass"
+msgstr ""
+
+#  Programmer's name for it: STR_DDL_ExtractToStrings
+#. Programmer's name for it: STR_DDL_ExtractToStrings
+#: ggsetup_IBObjects.inc:543
+msgid "Extract To Strings"
+msgstr ""
+
+#  Programmer's name for it: STR_DDL_ResetAll
+#. Programmer's name for it: STR_DDL_ResetAll
+#: ggsetup_IBObjects.inc:545
+msgid "Reset All"
+msgstr ""
+
+#  Programmer's name for it: STR_DDL_ProgressControls
+#. Programmer's name for it: STR_DDL_ProgressControls
+#: ggsetup_IBObjects.inc:546
+msgid "Progress Controls"
+msgstr ""
+
+#  Programmer's name for it: STR_DDL_IncludeSystem
+#. Programmer's name for it: STR_DDL_IncludeSystem
+#: ggsetup_IBObjects.inc:548
+msgid "Include System Objects"
+msgstr ""
+
+#  Programmer's name for it: STR_DDL_NameMasks
+#. Programmer's name for it: STR_DDL_NameMasks
+#: ggsetup_IBObjects.inc:549
+msgid "Name Masks"
+msgstr ""
+
+#  Programmer's name for it: STR_DDL_SaveToFile
+#. Programmer's name for it: STR_DDL_SaveToFile
+#: ggsetup_IBObjects.inc:550
+msgid "Save To File"
+msgstr ""
+
+#  Programmer's name for it: STR_DDL_RunScript
+#. Programmer's name for it: STR_DDL_RunScript
+#: ggsetup_IBObjects.inc:551
+msgid "Run Script"
+msgstr ""
+
+#  Programmer's name for it: STR_DDL_ScriptCommands
+#. Programmer's name for it: STR_DDL_ScriptCommands
+#: ggsetup_IBObjects.inc:552
+msgid "&Script Commands"
+msgstr ""
+
+#  conversions will be performed in the code.
+#  Programmer's name for it: E_DDL_CURSOR_NOT_CREATED
+#. conversions will be performed in the code.
+#. Programmer's name for it: E_DDL_CURSOR_NOT_CREATED
+#: ggsetup_IBObjects.inc:557
+msgid "Cursor Not Created"
+msgstr ""
+
+#  Programmer's name for it: E_DDL_BLANK_NAME
+#. Programmer's name for it: E_DDL_BLANK_NAME
+#: ggsetup_IBObjects.inc:558
+msgid "Blank Name"
+msgstr ""
+
+#  Programmer's name for it: E_DDL_ENTITY_NOT_FOUND
+#. Programmer's name for it: E_DDL_ENTITY_NOT_FOUND
+#: ggsetup_IBObjects.inc:559
+msgid "Entity Not Found"
+msgstr ""
+
+#  Programmer's name for it: E_DDL_RESERVED_NAME
+#. Programmer's name for it: E_DDL_RESERVED_NAME
+#: ggsetup_IBObjects.inc:560
+msgid "Reserved name used for non-system entity"
+msgstr ""
+
+#  Programmer's name for it: E_DDL_DB_CHARSET_NOT_FOUND
+#. Programmer's name for it: E_DDL_DB_CHARSET_NOT_FOUND
+#: ggsetup_IBObjects.inc:561
+msgid "Database Character set %s was not found to get its canonic name"
+msgstr ""
+
+#  Programmer's name for it: E_DDL_MODULE_NAME_EMPTY
+#. Programmer's name for it: E_DDL_MODULE_NAME_EMPTY
+#: ggsetup_IBObjects.inc:562
+msgid "Module name is empty"
+msgstr ""
+
+#  Programmer's name for it: E_DDL_ENTRY_POINT_EMPTY
+#. Programmer's name for it: E_DDL_ENTRY_POINT_EMPTY
+#: ggsetup_IBObjects.inc:563
+msgid "Entry point is empty"
+msgstr ""
+
+#  Programmer's name for it: E_DDL_DOMAIN_MUST_BE_EXPLICIT
+#. Programmer's name for it: E_DDL_DOMAIN_MUST_BE_EXPLICIT
+#: ggsetup_IBObjects.inc:564
+msgid "External domain only can be implicit"
+msgstr ""
+
+#  Programmer's name for it: E_DDL_DOMAIN_TYPE_16
+#. Programmer's name for it: E_DDL_DOMAIN_TYPE_16
+#: ggsetup_IBObjects.inc:565
+msgid "Type 16 can be only NUMERIC or DECIMAL"
+msgstr ""
+
+#  Programmer's name for it: E_DDL_CHARSET_NULL_ASSUME_NONE
+#. Programmer's name for it: E_DDL_CHARSET_NULL_ASSUME_NONE
+#: ggsetup_IBObjects.inc:566
+msgid "Charset Id was NULL, assuming NONE"
+msgstr ""
+
+#  Programmer's name for it: E_DDL_CHARSET_BLANK_ASSUME_NONE
+#. Programmer's name for it: E_DDL_CHARSET_BLANK_ASSUME_NONE
+#: ggsetup_IBObjects.inc:567
+msgid "Missing name for charset ID %s Assuming NONE"
+msgstr ""
+
+#  Programmer's name for it: E_DDL_BPC_ZERO_IN_CHARSET
+#. Programmer's name for it: E_DDL_BPC_ZERO_IN_CHARSET
+#: ggsetup_IBObjects.inc:568
+msgid "BytesPerCharacter was zero in charset %s"
+msgstr ""
+
+#  Programmer's name for it: E_DDL_FIELDLEN_MISMATCH
+#. Programmer's name for it: E_DDL_FIELDLEN_MISMATCH
+#: ggsetup_IBObjects.inc:569
+msgid "FieldLength %s should be multiple of %s bytes per character in charset name %s"
+msgstr ""
+
+#  Programmer's name for it: E_DDL_INVALID_COLLATIONID
+#. Programmer's name for it: E_DDL_INVALID_COLLATIONID
+#: ggsetup_IBObjects.inc:570
+msgid "Collation Id cannot be < 0 but is %s"
+msgstr ""
+
+#  Programmer's name for it: E_DDL_COLLATION_NULL_ASSUME
+#. Programmer's name for it: E_DDL_COLLATION_NULL_ASSUME
+#: ggsetup_IBObjects.inc:571
+msgid "Collation Id was NULL, assuming %s"
+msgstr ""
+
+#  Programmer's name for it: E_DDL_UNKNOWN_FIELD_TYPE
+#. Programmer's name for it: E_DDL_UNKNOWN_FIELD_TYPE
+#: ggsetup_IBObjects.inc:572
+msgid "Unknown FieldType %s"
+msgstr ""
+
+#  Programmer's name for it: E_DDL_CSTRING_IN_DSQL
+#. Programmer's name for it: E_DDL_CSTRING_IN_DSQL
+#: ggsetup_IBObjects.inc:573
+msgid "FieldType CSTRING is not accepted by DSQL"
+msgstr ""
+
+#  Programmer's name for it: E_DDL_QUAD_IN_DSQL
+#. Programmer's name for it: E_DDL_QUAD_IN_DSQL
+#: ggsetup_IBObjects.inc:574
+msgid "FieldType QUAD is not accepted by DSQL"
+msgstr ""
+
+#  Programmer's name for it: E_DDL_SUSPICIOUS_CHECK
+#. Programmer's name for it: E_DDL_SUSPICIOUS_CHECK
+#: ggsetup_IBObjects.inc:575
+msgid "Suspicious check: %s"
+msgstr ""
+
+#  Programmer's name for it: E_DDL_VOID_CHECK_CONSTRAINT
+#. Programmer's name for it: E_DDL_VOID_CHECK_CONSTRAINT
+#: ggsetup_IBObjects.inc:576
+msgid "Declared but void check constraint"
+msgstr ""
+
+#  Programmer's name for it: E_DDL_EXPLICIT_COMPUTED
+#. Programmer's name for it: E_DDL_EXPLICIT_COMPUTED
+#: ggsetup_IBObjects.inc:577
+msgid "Explicit domain cannot be COMPUTED"
+msgstr ""
+
+#  Programmer's name for it: E_DDL_VOID_COMPUTED
+#. Programmer's name for it: E_DDL_VOID_COMPUTED
+#: ggsetup_IBObjects.inc:578
+msgid "Declared but void COMPUTED BY clause"
+msgstr ""
+
+#  Programmer's name for it: E_DDL_SUSPICIOUS_DEFAULT
+#. Programmer's name for it: E_DDL_SUSPICIOUS_DEFAULT
+#: ggsetup_IBObjects.inc:579
+msgid "Suspicious default: %s"
+msgstr ""
+
+#  Programmer's name for it: E_DDL_VOID_DEFAULT
+#. Programmer's name for it: E_DDL_VOID_DEFAULT
+#: ggsetup_IBObjects.inc:580
+msgid "Declared but void default"
+msgstr ""
+
+#  Programmer's name for it: E_DDL_DIMENSIONS_MISMATCH
+#. Programmer's name for it: E_DDL_DIMENSIONS_MISMATCH
+#: ggsetup_IBObjects.inc:581
+msgid "Declared with %s dimensions but details for %s dimensions where found"
+msgstr ""
+
+#  Programmer's name for it: E_DDL_IMPLICIT_DOMAIN_NO_RELATION
+#. Programmer's name for it: E_DDL_IMPLICIT_DOMAIN_NO_RELATION
+#: ggsetup_IBObjects.inc:582
+msgid "Implicit Domain has no relation"
+msgstr ""
+
+#  Programmer's name for it: E_DDL_IMPLICIT_DOMAIN_NO_FIELD
+#. Programmer's name for it: E_DDL_IMPLICIT_DOMAIN_NO_FIELD
+#: ggsetup_IBObjects.inc:583
+msgid "Implicit Domain has missing relation or field name"
+msgstr ""
+
+#  Programmer's name for it: E_DDL_NO_OUTPUT_PARAMETER
+#. Programmer's name for it: E_DDL_NO_OUTPUT_PARAMETER
+#: ggsetup_IBObjects.inc:584
+msgid "No Output Parameter"
+msgstr ""
+
+#  Programmer's name for it: E_DDL_NO_GRANTOR
+#. Programmer's name for it: E_DDL_NO_GRANTOR
+#: ggsetup_IBObjects.inc:585
+msgid "Grantor not specified"
+msgstr ""
+
+#  Programmer's name for it: E_DDL_VIEW_NO_BLR
+#. Programmer's name for it: E_DDL_VIEW_NO_BLR
+#: ggsetup_IBObjects.inc:586
+msgid "Has not view_blr but it appears in rdb$view_relations as a VIEW"
+msgstr ""
+
+#  Programmer's name for it: E_DDL_VIEW_NO_VIEW_RELATION
+#. Programmer's name for it: E_DDL_VIEW_NO_VIEW_RELATION
+#: ggsetup_IBObjects.inc:587
+msgid "Has view_blr but it doesn't appear in rdb$view_relations as a VIEW"
+msgstr ""
+
+#  Programmer's name for it: E_DDL_NO_OWNER
+#. Programmer's name for it: E_DDL_NO_OWNER
+#: ggsetup_IBObjects.inc:588
+msgid "Owner name is not specified"
+msgstr ""
+
+#  Programmer's name for it: E_DDL_FORMAT_VERSION
+#. Programmer's name for it: E_DDL_FORMAT_VERSION
+#: ggsetup_IBObjects.inc:589
+msgid "Format version at %s"
+msgstr ""
+
+#  Programmer's name for it: E_DDL_DBKEY_LEN
+#. Programmer's name for it: E_DDL_DBKEY_LEN
+#: ggsetup_IBObjects.inc:590
+msgid "DbKey_Length should be 8 but is %s"
+msgstr ""
+
+#  Programmer's name for it: E_DDL_NO_DOMAIN_FOR_FIELD
+#. Programmer's name for it: E_DDL_NO_DOMAIN_FOR_FIELD
+#: ggsetup_IBObjects.inc:591
+msgid "Domain/Field Definition for field %s not found"
+msgstr ""
+
+#  Programmer's name for it: E_DDL_NO_SOURCE_CODE
+#. Programmer's name for it: E_DDL_NO_SOURCE_CODE
+#: ggsetup_IBObjects.inc:592
+msgid "Has no source code available"
+msgstr ""
+
+#  Programmer's name for it: E_DDL_WITH_CHECK_COMPLETION
+#. Programmer's name for it: E_DDL_WITH_CHECK_COMPLETION
+#: ggsetup_IBObjects.inc:593
+msgid "\"With check\" completed to \"with check option\""
+msgstr ""
+
+#  Programmer's name for it: E_DDL_NO_BLR
+#. Programmer's name for it: E_DDL_NO_BLR
+#: ggsetup_IBObjects.inc:594
+msgid "Has no BLR available"
+msgstr ""
+
+#  Programmer's name for it: E_DDL_CORRUPT_SOURCE
+#. Programmer's name for it: E_DDL_CORRUPT_SOURCE
+#: ggsetup_IBObjects.inc:595
+msgid "Source prefix not recognised, this could indicate corruption"
+msgstr ""
+
+#  Programmer's name for it: E_DDL_INDEX_ID_NULL_INACTIVE
+#. Programmer's name for it: E_DDL_INDEX_ID_NULL_INACTIVE
+#: ggsetup_IBObjects.inc:596
+msgid "Id is NULL and index is inactive"
+msgstr ""
+
+#  Programmer's name for it: E_DDL_INDEX_ID_NULL_ACTIVE
+#. Programmer's name for it: E_DDL_INDEX_ID_NULL_ACTIVE
+#: ggsetup_IBObjects.inc:597
+msgid "Id is NULL but index is active"
+msgstr ""
+
+#  Programmer's name for it: E_DDL_INVALID_INDEX_ID
+#. Programmer's name for it: E_DDL_INVALID_INDEX_ID
+#: ggsetup_IBObjects.inc:598
+msgid "Id should start at 1 not at %s"
+msgstr ""
+
+#  Programmer's name for it: E_DDL_FK_INDEX_NO_CONSTRAINT
+#. Programmer's name for it: E_DDL_FK_INDEX_NO_CONSTRAINT
+#: ggsetup_IBObjects.inc:599
+msgid "Declares foreign key but it is not found in relation constraints as FK index"
+msgstr ""
+
+#  Programmer's name for it: E_DDL_CONSTRAINT_NO_FK_INDEX
+#. Programmer's name for it: E_DDL_CONSTRAINT_NO_FK_INDEX
+#: ggsetup_IBObjects.inc:600
+msgid "Does not declare foreign key but it is found in relation constraints as FK index"
+msgstr ""
+
+#  Programmer's name for it: E_DDL_INDEX_MULTI_USE
+#. Programmer's name for it: E_DDL_INDEX_MULTI_USE
+#: ggsetup_IBObjects.inc:601
+msgid "Used in %s relation constraints at the same time"
+msgstr ""
+
+#  Programmer's name for it: E_DDL_INDEX_NO_FIELDS
+#. Programmer's name for it: E_DDL_INDEX_NO_FIELDS
+#: ggsetup_IBObjects.inc:602
+msgid "Uses %s fields"
+msgstr ""
+
+#  Programmer's name for it: E_DDL_INDEX_DUPLICATE
+#. Programmer's name for it: E_DDL_INDEX_DUPLICATE
+#: ggsetup_IBObjects.inc:603
+msgid "Appears to be a duplicate index definition on table: %s"
+msgstr ""
+
+#  Programmer's name for it: E_DDL_INDEX_SEG_MISMATCH
+#. Programmer's name for it: E_DDL_INDEX_SEG_MISMATCH
+#: ggsetup_IBObjects.inc:604
+msgid "Index on table: %s declared %s segments, but details for %s segments where found"
+msgstr ""
+
+#  Programmer's name for it: E_DDL_CONSTRAINT_OUT_OF_RANGE
+#. Programmer's name for it: E_DDL_CONSTRAINT_OUT_OF_RANGE
+#: ggsetup_IBObjects.inc:605
+msgid "Constraint type %s is out of range"
+msgstr ""
+
+#  Programmer's name for it: E_DDL_CONSTRAINT_USING_INDEX
+#. Programmer's name for it: E_DDL_CONSTRAINT_USING_INDEX
+#: ggsetup_IBObjects.inc:606
+msgid "Constraint type %s should not use an index but is using index: %s"
+msgstr ""
+
+#  Programmer's name for it: E_DDL_CONSTRAINT_NO_INDEX
+#. Programmer's name for it: E_DDL_CONSTRAINT_NO_INDEX
+#: ggsetup_IBObjects.inc:607
+msgid "Constraint type %s should use an index but is not using one"
+msgstr ""
+
+#  Programmer's name for it: E_DDL_UPDATE_RULE_INVALID
+#. Programmer's name for it: E_DDL_UPDATE_RULE_INVALID
+#: ggsetup_IBObjects.inc:608
+msgid "Update rule %s is out of range"
+msgstr ""
+
+#  Programmer's name for it: E_DDL_DELETE_RULE_INVALID
+#. Programmer's name for it: E_DDL_DELETE_RULE_INVALID
+#: ggsetup_IBObjects.inc:609
+msgid "Delete rule %s is out of range"
+msgstr ""
+
+#  Programmer's name for it: E_DDL_PARENT_CONSTRAINT_EMPTY
+#. Programmer's name for it: E_DDL_PARENT_CONSTRAINT_EMPTY
+#: ggsetup_IBObjects.inc:610
+msgid "Constraint name for parent relation is empty"
+msgstr ""
+
+#  Programmer's name for it: E_DDL_FOREIGN_NOT_DEFINED
+#. Programmer's name for it: E_DDL_FOREIGN_NOT_DEFINED
+#: ggsetup_IBObjects.inc:611
+msgid "Foreign Table or Index is not defined"
+msgstr ""
+
+#  Programmer's name for it: E_DDL_PARENT_SHOULD_BE_EMPTY
+#. Programmer's name for it: E_DDL_PARENT_SHOULD_BE_EMPTY
+#: ggsetup_IBObjects.inc:612
+msgid "Constraint name for parent relation should be empty but is %s"
+msgstr ""
+
+#  Programmer's name for it: E_DDL_UPDATE_SHOULD_BE_EMPTY
+#. Programmer's name for it: E_DDL_UPDATE_SHOULD_BE_EMPTY
+#: ggsetup_IBObjects.inc:613
+msgid "Update rule should be empty but is %s"
+msgstr ""
+
+#  Programmer's name for it: E_DDL_DELETE_SHOULD_BE_EMPTY
+#. Programmer's name for it: E_DDL_DELETE_SHOULD_BE_EMPTY
+#: ggsetup_IBObjects.inc:614
+msgid "Delete rule should be empty but is %s"
+msgstr ""
+
+#  Programmer's name for it: E_DDL_NO_BLR_WITH_CHECK
+#. Programmer's name for it: E_DDL_NO_BLR_WITH_CHECK
+#: ggsetup_IBObjects.inc:615
+msgid "Has no source code available, possibly used for view %s with check option"
+msgstr ""
+
+#  Programmer's name for it: E_DDL_TRIGGER_LOST_CHECK
+#. Programmer's name for it: E_DDL_TRIGGER_LOST_CHECK
+#: ggsetup_IBObjects.inc:616
+msgid "Starts with \"CHECK\" keyword. It is used by a check constraint that has been lost"
+msgstr ""
+
+#  Programmer's name for it: E_DDL_UNKNOWN_TRIGGER_TYPE
+#. Programmer's name for it: E_DDL_UNKNOWN_TRIGGER_TYPE
+#: ggsetup_IBObjects.inc:617
+msgid "Unknown trigger type %s"
+msgstr ""
+
+#  Programmer's name for it: E_DDL_NEGATIVE_SEQUENCE
+#. Programmer's name for it: E_DDL_NEGATIVE_SEQUENCE
+#: ggsetup_IBObjects.inc:618
+msgid "Has negative sequence %s"
+msgstr ""
+
+#  Programmer's name for it: E_DDL_NO_TARGET_RELATION
+#. Programmer's name for it: E_DDL_NO_TARGET_RELATION
+#: ggsetup_IBObjects.inc:619
+msgid "Target table or view is not specified"
+msgstr ""
+
+#  Programmer's name for it: E_DDL_NOT_IN_DEPENDENCIES
+#. Programmer's name for it: E_DDL_NOT_IN_DEPENDENCIES
+#: ggsetup_IBObjects.inc:620
+msgid "Declared but not found in dependencies. It is not a bug in some special cases"
+msgstr ""
+
+#  Programmer's name for it: E_DDL_SUSPICIOUS_TRIGGER
+#. Programmer's name for it: E_DDL_SUSPICIOUS_TRIGGER
+#: ggsetup_IBObjects.inc:621
+msgid "Suspicious trigger depends on other tables but not on the one it is attached to"
+msgstr ""
+
+#  Programmer's name for it: E_DDL_INVALID_TRIGGER_SEQ
+#. Programmer's name for it: E_DDL_INVALID_TRIGGER_SEQ
+#: ggsetup_IBObjects.inc:622
+msgid "Trigger sequence is %s but should be less than 1 for an implicit trigger"
+msgstr ""
+
+#  Programmer's name for it: E_DDL_GRANT_OUT_OF_RANGE
+#. Programmer's name for it: E_DDL_GRANT_OUT_OF_RANGE
+#: ggsetup_IBObjects.inc:623
+msgid "Grant/Admin option out of 0..2 range: %s"
+msgstr ""
+
+#  Programmer's name for it: E_DDL_GRANT_TO_USER_TYPE
+#. Programmer's name for it: E_DDL_GRANT_TO_USER_TYPE
+#: ggsetup_IBObjects.inc:624
+msgid "Grant/Admin option given to user type %s"
+msgstr ""
+
+#  Programmer's name for it: E_DDL_GRANT_FIELDS
+#. Programmer's name for it: E_DDL_GRANT_FIELDS
+#: ggsetup_IBObjects.inc:625
+msgid "Trying to set specific fields but the privilege is not U or R"
+msgstr ""
+
+#  Programmer's name for it: E_DDL_EXECUTE_TO_OBJECT
+#. Programmer's name for it: E_DDL_EXECUTE_TO_OBJECT
+#: ggsetup_IBObjects.inc:626
+msgid "Assigning EXECUTE on object type %s that should be 5 (proc) instead"
+msgstr ""
+
+#  Programmer's name for it: E_DDL_BAD_PRIV_ON_PROC
+#. Programmer's name for it: E_DDL_BAD_PRIV_ON_PROC
+#: ggsetup_IBObjects.inc:627
+msgid "Assigning %s on procedure %s"
+msgstr ""
+
+#  Programmer's name for it: E_DDL_MEMBER_TO_OBJECT
+#. Programmer's name for it: E_DDL_MEMBER_TO_OBJECT
+#: ggsetup_IBObjects.inc:628
+msgid "Assigning membership on object type %s that should be 13 (role) instead"
+msgstr ""
+
+#  Programmer's name for it: E_DDL_BAD_PRIV_ON_ROLE
+#. Programmer's name for it: E_DDL_BAD_PRIV_ON_ROLE
+#: ggsetup_IBObjects.inc:629
+msgid "Assigning %s on role %s"
+msgstr ""
+
+#  Programmer's name for it: E_DDL_BAD_ARG_POS
+#. Programmer's name for it: E_DDL_BAD_ARG_POS
+#: ggsetup_IBObjects.inc:630
+msgid "Argument position must be >=0 but is %s"
+msgstr ""
+
+#  Programmer's name for it: E_DDL_SYSTEM_FLAG_MISMATCH
+#. Programmer's name for it: E_DDL_SYSTEM_FLAG_MISMATCH
+#: ggsetup_IBObjects.inc:631
+msgid "SystemFlag different to parent"
+msgstr ""
+
+#  Programmer's name for it: E_DDL_BAD_FIELD_ID
+#. Programmer's name for it: E_DDL_BAD_FIELD_ID
+#: ggsetup_IBObjects.inc:632
+msgid "Field Id must be >=0 but is %s"
+msgstr ""
+
+#  Programmer's name for it: E_DDL_BAD_FIELD_POS
+#. Programmer's name for it: E_DDL_BAD_FIELD_POS
+#: ggsetup_IBObjects.inc:633
+msgid "Field position must be >=0 but is %s"
+msgstr ""
+
+#  Programmer's name for it: E_DDL_BAD_TABLE_BASEFIELD
+#. Programmer's name for it: E_DDL_BAD_TABLE_BASEFIELD
+#: ggsetup_IBObjects.inc:634
+msgid "BaseField should be empty for tables but is %s"
+msgstr ""
+
+#  Programmer's name for it: E_DDL_BAD_TABLE_VIEWCONTEXT
+#. Programmer's name for it: E_DDL_BAD_TABLE_VIEWCONTEXT
+#: ggsetup_IBObjects.inc:635
+msgid "ViewContext should be empty for tables but is %s"
+msgstr ""
+
+#  Programmer's name for it: E_DDL_MANDATORY_IN_VIEW
+#. Programmer's name for it: E_DDL_MANDATORY_IN_VIEW
+#: ggsetup_IBObjects.inc:636
+msgid "Cannot be mandatory in a view"
+msgstr ""
+
+#  Programmer's name for it: E_DDL_BASEFIELD_EMPTY
+#. Programmer's name for it: E_DDL_BASEFIELD_EMPTY
+#: ggsetup_IBObjects.inc:637
+msgid "BaseField should not be empty for views if ViewContext > 0"
+msgstr ""
+
+#  Programmer's name for it: E_DDL_VIEWCONTEXT_EMPTY
+#. Programmer's name for it: E_DDL_VIEWCONTEXT_EMPTY
+#: ggsetup_IBObjects.inc:638
+msgid "ViewContext cannot be empty for views"
+msgstr ""
+
+#  Programmer's name for it: E_DDL_VIEWCONTEXT_NEGATIVE
+#. Programmer's name for it: E_DDL_VIEWCONTEXT_NEGATIVE
+#: ggsetup_IBObjects.inc:639
+msgid "ViewContext should be >= 0 for views"
+msgstr ""
+
+#  Programmer's name for it: E_DDL_BAD_PARAM_TYPE
+#. Programmer's name for it: E_DDL_BAD_PARAM_TYPE
+#: ggsetup_IBObjects.inc:640
+msgid "Parameter type %s is out of range"
+msgstr ""
+
+#  Programmer's name for it: E_DDL_BAD_PARAM_NUM
+#. Programmer's name for it: E_DDL_BAD_PARAM_NUM
+#: ggsetup_IBObjects.inc:641
+msgid "Parameter number must be >=0 but is %s"
+msgstr ""
+
+#  Comments output with DDL statements
+#  Programmer's name for it: C_DDL_CONNECT_USERNAME
+#. Comments output with DDL statements
+#. Programmer's name for it: C_DDL_CONNECT_USERNAME
+#: ggsetup_IBObjects.inc:644
+msgid "Connect using username: %s"
+msgstr ""
+
+#  Programmer's name for it: C_DDL_CONNECT_SERVER_VER
+#. Programmer's name for it: C_DDL_CONNECT_SERVER_VER
+#: ggsetup_IBObjects.inc:645
+msgid "and server: %s"
+msgstr ""
+
+#  Programmer's name for it: C_DDL_SQL_DIALECT
+#. Programmer's name for it: C_DDL_SQL_DIALECT
+#: ggsetup_IBObjects.inc:646
+msgid "SQL DIALECT = %s"
+msgstr ""
+
+#  Programmer's name for it: C_DDL_CHARACTER_SET
+#. Programmer's name for it: C_DDL_CHARACTER_SET
+#: ggsetup_IBObjects.inc:647
+msgid "DEFAULT CHARACTER SET = %s"
+msgstr ""
+
+#  Programmer's name for it: C_DDL_NO_SEC_FILES
+#. Programmer's name for it: C_DDL_NO_SEC_FILES
+#: ggsetup_IBObjects.inc:648
+msgid "No Secondary Files"
+msgstr ""
+
+#  Programmer's name for it: C_DDL_SEC_FILES
+#. Programmer's name for it: C_DDL_SEC_FILES
+#: ggsetup_IBObjects.inc:649
+msgid "Secondary Files"
+msgstr ""
+
+#  Programmer's name for it: C_DDL_SEC_FILE_DESC
+#. Programmer's name for it: C_DDL_SEC_FILE_DESC
+#: ggsetup_IBObjects.inc:650
+msgid "%s, Start: %s, Length: %s"
+msgstr ""
+
+#  Programmer's name for it: C_DDL_NO_SHADOW_FILES
+#. Programmer's name for it: C_DDL_NO_SHADOW_FILES
+#: ggsetup_IBObjects.inc:651
+msgid "No Shadow Files"
+msgstr ""
+
+#  Programmer's name for it: C_DDL_SHADOW_FILES
+#. Programmer's name for it: C_DDL_SHADOW_FILES
+#: ggsetup_IBObjects.inc:652
+msgid "Shadow Files"
+msgstr ""
+
+#  Programmer's name for it: C_DDL_SHADOW_FILE_DESC
+#. Programmer's name for it: C_DDL_SHADOW_FILE_DESC
+#: ggsetup_IBObjects.inc:653
+msgid "%s, %s, Start: %s, Length: %s"
+msgstr ""
+
+#  Programmer's name for it: C_DDL_EXCEPTION_DESC
+#. Programmer's name for it: C_DDL_EXCEPTION_DESC
+#: ggsetup_IBObjects.inc:654
+msgid "Exception: %s, Original Number: %s"
+msgstr ""
+
+#  Programmer's name for it: C_DDL_FIELD_NOT_FOUND
+#. Programmer's name for it: C_DDL_FIELD_NOT_FOUND
+#: ggsetup_IBObjects.inc:655
+msgid "Field Not Found: %s"
+msgstr ""
+
+#  Programmer's name for it: C_DDL_INDEX_NOT_FOUND
+#. Programmer's name for it: C_DDL_INDEX_NOT_FOUND
+#: ggsetup_IBObjects.inc:656
+msgid "Index Not Found"
+msgstr ""
+
+#  Programmer's name for it: C_DDL_NO_FOREIGN_RELATION
+#. Programmer's name for it: C_DDL_NO_FOREIGN_RELATION
+#: ggsetup_IBObjects.inc:657
+msgid "No Foreign Relation or Index Defined To Constraint"
+msgstr ""
+
+#  Programmer's name for it: C_DDL_FOREIGN_NOT_FOUND
+#. Programmer's name for it: C_DDL_FOREIGN_NOT_FOUND
+#: ggsetup_IBObjects.inc:658
+msgid "Foreign Relation Not Found: %s"
+msgstr ""
+
+#  Programmer's name for it: C_DDL_FOREIGN_IDX_NOT_FOUND
+#. Programmer's name for it: C_DDL_FOREIGN_IDX_NOT_FOUND
+#: ggsetup_IBObjects.inc:659
+msgid "Foreign Index Not Found: %s"
+msgstr ""
+
+#  Programmer's name for it: C_DDL_TRIGGER_NOT_FOUND
+#. Programmer's name for it: C_DDL_TRIGGER_NOT_FOUND
+#: ggsetup_IBObjects.inc:660
+msgid "Trigger Not Found: %s"
+msgstr ""
+
+#  Programmer's name for it: C_DDL_INVALID_CONSTRAINT_TYPE
+#. Programmer's name for it: C_DDL_INVALID_CONSTRAINT_TYPE
+#: ggsetup_IBObjects.inc:661
+msgid "Invalid Constraint Type Name: %s"
+msgstr ""
+
+#  Programmer's name for it: C_DDL_NO_TRIGGER_SOURCE
+#. Programmer's name for it: C_DDL_NO_TRIGGER_SOURCE
+#: ggsetup_IBObjects.inc:662
+msgid "No Source For Trigger: %s"
+msgstr ""
+
+#  Programmer's name for it: C_DDL_BAD_TRIGGER_TYPE
+#. Programmer's name for it: C_DDL_BAD_TRIGGER_TYPE
+#: ggsetup_IBObjects.inc:663
+msgid "TriggerType Unknown: %s"
+msgstr ""
+
+#  Programmer's name for it: C_DDL_BAD_PRIVILEGE
+#. Programmer's name for it: C_DDL_BAD_PRIVILEGE
+#: ggsetup_IBObjects.inc:664
+msgid "Unknown Privilege: %s"
+msgstr ""
+

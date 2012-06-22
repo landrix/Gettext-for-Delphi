@@ -1,0 +1,1858 @@
+# SOME DESCRIPTIVE TITLE.
+# Copyright (C) YEAR THE PACKAGE'S COPYRIGHT HOLDER
+# This file is distributed under the same license as the PACKAGE package.
+# FIRST AUTHOR <EMAIL@ADDRESS>, YEAR.
+# 
+#, fuzzy
+msgid ""
+msgstr ""
+"Project-Id-Version: PACKAGE VERSION\n"
+"POT-Creation-Date: 2008-10-28 15:02\n"
+"PO-Revision-Date: 2008-10-28 15:02\n"
+"Last-Translator: Somebody <your.email@address.com>\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"X-Generator: dxgettext 1.3.0\n"
+
+#. frmIBFilterDialog..Caption
+#: IBFilterDialog.dfm:7
+#. Programmer's name for it: SIBFilterCaption
+#: IBVisualConst.pas:24
+msgid "IBX Filter Dialog"
+msgstr ""
+
+#. frmIBFilterDialog..Font.Name
+#: IBFilterDialog.dfm:14
+#. frmIBFilterSummary..Font.Name
+#: IBFilterSummary.dfm:13
+#. frmIBServiceEditor..Font.Name
+#: IBServiceEditor.dfm:12
+#. frmIBAvailableFields..Font.Name
+#: Property_Editors/frmIBAvailableFieldsU.dfm:12
+#. frmIBAvailableFields..GroupBox1..lstFields..Font.Name
+#: Property_Editors/frmIBAvailableFieldsU.dfm:33
+#. frmIBFilterFieldEditor..Font.Name
+#: Property_Editors/frmIBFilterFieldEditorU.dfm:13
+#. frmIBFilterFieldEditor..lstFieldList..Font.Name
+#: Property_Editors/frmIBFilterFieldEditorU.dfm:44
+#. IBEventsEditor..Font.Name
+#: Property_Editors/IBEventsEditor.dfm:12
+#. frmGeneratorEditor..Font.Name
+#: Property_Editors/IBGeneratorEditor.dfm:12
+#. frmIBRestoreEditor..Font.Name
+#: Property_Editors/IBRestoreEditor.dfm:12
+#. frmIBSecurityEditor..Font.Name
+#: Property_Editors/IBSecurityEditor.dfm:12
+msgid "MS Sans Serif"
+msgstr ""
+
+#. frmIBFilterDialog..Label1..Caption
+#: IBFilterDialog.dfm:29
+#. frmIBAvailableFields..GroupBox1..Caption
+#: Property_Editors/frmIBAvailableFieldsU.dfm:23
+#. frmIBFilterFieldEditor..Label1..Caption
+#: Property_Editors/frmIBFilterFieldEditorU.dfm:25
+msgid "Fields"
+msgstr ""
+
+#. frmIBFilterDialog..pgeFields..tabAll..Caption
+#: IBFilterDialog.dfm:44
+msgid "&All"
+msgstr ""
+
+#. frmIBFilterDialog..pgeFields..tabSelected..Caption
+#: IBFilterDialog.dfm:64
+msgid "&Selected"
+msgstr ""
+
+#. frmIBFilterDialog..pgeCriteria..tabByValue..Caption
+#: IBFilterDialog.dfm:96
+msgid "By &Value"
+msgstr ""
+
+#. frmIBFilterDialog..pgeCriteria..tabByValue..Label2..Caption
+#: IBFilterDialog.dfm:107
+msgid "&Field Value"
+msgstr ""
+
+#. frmIBFilterDialog..pgeCriteria..tabByValue..btnClearFieldValue..Caption
+#: IBFilterDialog.dfm:125
+#. frmIBFilterDialog..pgeCriteria..tabByRange..btnClearStartingRange..Caption
+#: IBFilterDialog.dfm:220
+#. frmIBFilterDialog..pgeCriteria..tabByRange..btnClearEndingRange..Caption
+#: IBFilterDialog.dfm:231
+msgid "Clear"
+msgstr ""
+
+#. frmIBFilterDialog..pgeCriteria..tabByValue..grpSearchType..Caption
+#: IBFilterDialog.dfm:136
+#. frmIBFilterSummary..lstSummary......Caption
+#: IBFilterSummary.dfm:29
+msgid "Search Type"
+msgstr ""
+
+#. frmIBFilterDialog..pgeCriteria..tabByValue..grpSearchType....Items.Strings
+#: IBFilterDialog.dfm:139
+msgid "&Exact Match"
+msgstr ""
+
+#. frmIBFilterDialog..pgeCriteria..tabByValue..grpSearchType....Items.Strings
+#: IBFilterDialog.dfm:140
+msgid "&Partial Match at Beginning"
+msgstr ""
+
+#. frmIBFilterDialog..pgeCriteria..tabByValue..grpSearchType....Items.Strings
+#: IBFilterDialog.dfm:141
+msgid "Par&tial Match at End"
+msgstr ""
+
+#. frmIBFilterDialog..pgeCriteria..tabByValue..grpSearchType....Items.Strings
+#: IBFilterDialog.dfm:142
+msgid "Partial Match Any&where"
+msgstr ""
+
+#. frmIBFilterDialog..pgeCriteria..tabByValue..Panel1..cbxCaseSensitive..Caption
+#: IBFilterDialog.dfm:160
+msgid "Case Sensi&tive"
+msgstr ""
+
+#. frmIBFilterDialog..pgeCriteria..tabByValue..Panel1..cbxNonMatching..Caption
+#: IBFilterDialog.dfm:169
+msgid "N&on-matching Records"
+msgstr ""
+
+#. frmIBFilterDialog..pgeCriteria..tabByRange..Caption
+#: IBFilterDialog.dfm:176
+msgid "By &Range"
+msgstr ""
+
+#. frmIBFilterDialog..pgeCriteria..tabByRange..Label3..Caption
+#: IBFilterDialog.dfm:184
+msgid "S&tarting Range"
+msgstr ""
+
+#. frmIBFilterDialog..pgeCriteria..tabByRange..Label4..Caption
+#: IBFilterDialog.dfm:193
+msgid "En&ding Range"
+msgstr ""
+
+#. frmIBFilterDialog..btnOk..Caption
+#: IBFilterDialog.dfm:245
+msgid "&OK      "
+msgstr ""
+
+#. frmIBFilterDialog..btnViewSummary..Caption
+#: IBFilterDialog.dfm:271
+msgid "View Su&mmary"
+msgstr ""
+
+#. frmIBFilterDialog..btnNewSearch..Caption
+#: IBFilterDialog.dfm:282
+msgid "&New Search"
+msgstr ""
+
+#. frmIBFilterSummary..Caption
+#: IBFilterSummary.dfm:6
+msgid "Filter Summary"
+msgstr ""
+
+#. frmIBFilterSummary..lstSummary......Caption
+#: IBFilterSummary.dfm:25
+msgid "Field"
+msgstr ""
+
+#. frmIBFilterSummary..lstSummary......Caption
+#: IBFilterSummary.dfm:33
+msgid "Value"
+msgstr ""
+
+#. frmIBServiceEditor..Caption
+#: IBServiceEditor.dfm:5
+#. frmIBSecurityEditor..Caption
+#: Property_Editors/IBSecurityEditor.dfm:5
+msgid "Service Editor"
+msgstr ""
+
+#. frmIBServiceEditor..GroupBox2..Caption
+#: IBServiceEditor.dfm:24
+#. IBDatabaseEditForm..GroupBox2..Caption
+#: Property_Editors/IBDatabaseEdit.dfm:71
+#. frmIBSecurityEditor..GroupBox2..Caption
+#: Property_Editors/IBSecurityEditor.dfm:24
+msgid "Connection"
+msgstr ""
+
+#. frmIBServiceEditor..GroupBox2..Label1..Caption
+#: IBServiceEditor.dfm:31
+#. IBDatabaseEditForm..GroupBox2..Label1..Caption
+#: Property_Editors/IBDatabaseEdit.dfm:78
+msgid "&Database:"
+msgstr ""
+
+#. frmIBServiceEditor..GroupBox2..Label7..Caption
+#: IBServiceEditor.dfm:39
+#. IBDatabaseEditForm..GroupBox2..Label7..Caption
+#: Property_Editors/IBDatabaseEdit.dfm:86
+#. frmIBSecurityEditor..GroupBox2..Label7..Caption
+#: Property_Editors/IBSecurityEditor.dfm:31
+msgid "&Server:"
+msgstr ""
+
+#. frmIBServiceEditor..GroupBox2..Label8..Caption
+#: IBServiceEditor.dfm:48
+#. IBDatabaseEditForm..GroupBox2..Label8..Caption
+#: Property_Editors/IBDatabaseEdit.dfm:95
+#. frmIBSecurityEditor..GroupBox2..Label8..Caption
+#: Property_Editors/IBSecurityEditor.dfm:40
+msgid "&Protocol:"
+msgstr ""
+
+#. frmIBServiceEditor..GroupBox2..LocalRbtn..Caption
+#: IBServiceEditor.dfm:64
+#. IBDatabaseEditForm..GroupBox2..LocalRbtn..Caption
+#: Property_Editors/IBDatabaseEdit.dfm:111
+#. frmIBSecurityEditor..GroupBox2..LocalRbtn..Caption
+#: Property_Editors/IBSecurityEditor.dfm:49
+msgid "&Local"
+msgstr ""
+
+#. frmIBServiceEditor..GroupBox2..RemoteRbtn..Caption
+#: IBServiceEditor.dfm:75
+#. IBDatabaseEditForm..GroupBox2..RemoteRbtn..Caption
+#: Property_Editors/IBDatabaseEdit.dfm:122
+#. frmIBSecurityEditor..GroupBox2..RemoteRbtn..Caption
+#: Property_Editors/IBSecurityEditor.dfm:60
+msgid "&Remote"
+msgstr ""
+
+#. frmIBServiceEditor..GroupBox2..Browse..Caption
+#: IBServiceEditor.dfm:84
+#. IBDatabaseEditForm..GroupBox2..Browse..Caption
+#: Property_Editors/IBDatabaseEdit.dfm:131
+msgid "&Browse"
+msgstr ""
+
+#. frmIBServiceEditor..GroupBox2..Protocol....Items.Strings
+#: IBServiceEditor.dfm:105
+#. IBDatabaseEditForm..GroupBox2..Protocol....Items.Strings
+#: Property_Editors/IBDatabaseEdit.dfm:153
+#. frmIBSecurityEditor..GroupBox2..Protocol....Items.Strings
+#: Property_Editors/IBSecurityEditor.dfm:82
+msgid "TCP"
+msgstr ""
+
+#. frmIBServiceEditor..GroupBox2..Protocol....Items.Strings
+#: IBServiceEditor.dfm:106
+#. IBDatabaseEditForm..GroupBox2..Protocol....Items.Strings
+#: Property_Editors/IBDatabaseEdit.dfm:154
+#. frmIBSecurityEditor..GroupBox2..Protocol....Items.Strings
+#: Property_Editors/IBSecurityEditor.dfm:83
+msgid "NamedPipe"
+msgstr ""
+
+#. frmIBServiceEditor..GroupBox2..Protocol....Items.Strings
+#: IBServiceEditor.dfm:107
+#. IBDatabaseEditForm..GroupBox2..Protocol....Items.Strings
+#: Property_Editors/IBDatabaseEdit.dfm:155
+#. frmIBSecurityEditor..GroupBox2..Protocol....Items.Strings
+#: Property_Editors/IBSecurityEditor.dfm:84
+msgid "SPX"
+msgstr ""
+
+#. frmIBServiceEditor..Panel1..OKBtn..Caption
+#: IBServiceEditor.dfm:123
+#. IBDatabaseEditForm..Panel1..OKBtn..Caption
+#: Property_Editors/IBDatabaseEdit.dfm:31
+#. frmGeneratorEditor..OKBtn..Caption
+#: Property_Editors/IBGeneratorEditor.dfm:50
+#. frmIBRestoreEditor..Panel1..OKBtn..Caption
+#: Property_Editors/IBRestoreEditor.dfm:51
+#. frmIBSecurityEditor..Panel1..OKBtn..Caption
+#: Property_Editors/IBSecurityEditor.dfm:100
+#. IBTransactionEditForm..Panel1..OKBtn..Caption
+#: Property_Editors/IBTransactionEdit.dfm:148
+msgid "OK"
+msgstr ""
+
+#. frmIBServiceEditor..Panel1..CancelBtn..Caption
+#: IBServiceEditor.dfm:134
+#. IBDatabaseEditForm..Panel1..CancelBtn..Caption
+#: Property_Editors/IBDatabaseEdit.dfm:42
+#. IBEventsEditor..Panel1..bCancel..Caption
+#: Property_Editors/IBEventsEditor.dfm:82
+#. frmGeneratorEditor..CancelBtn..Caption
+#: Property_Editors/IBGeneratorEditor.dfm:61
+#. frmIBRestoreEditor..Panel1..CancelBtn..Caption
+#: Property_Editors/IBRestoreEditor.dfm:62
+#. frmIBSecurityEditor..Panel1..CancelBtn..Caption
+#: Property_Editors/IBSecurityEditor.dfm:111
+#. IBTransactionEditForm..Panel1..Cancelbtn..Caption
+#: Property_Editors/IBTransactionEdit.dfm:139
+#. IBUpdateSQLEditForm..CancelButton..Caption
+#: Property_Editors/IBUpdateSQLEditor.dfm:40
+msgid "Cancel"
+msgstr ""
+
+#. frmIBServiceEditor..GroupBox1..Caption
+#: IBServiceEditor.dfm:145
+#. IBDatabaseEditForm..GroupBox1..Caption
+#: Property_Editors/IBDatabaseEdit.dfm:164
+#. frmIBSecurityEditor..GroupBox1..Caption
+#: Property_Editors/IBSecurityEditor.dfm:122
+msgid "Database Parameters"
+msgstr ""
+
+#. frmIBServiceEditor..GroupBox1..Label2..Caption
+#: IBServiceEditor.dfm:152
+#. IBDatabaseEditForm..GroupBox1..Label2..Caption
+#: Property_Editors/IBDatabaseEdit.dfm:171
+#. frmIBSecurityEditor..GroupBox1..Label2..Caption
+#: Property_Editors/IBSecurityEditor.dfm:129
+msgid "&User Name:"
+msgstr ""
+
+#. frmIBServiceEditor..GroupBox1..Label3..Caption
+#: IBServiceEditor.dfm:160
+#. IBDatabaseEditForm..GroupBox1..Label3..Caption
+#: Property_Editors/IBDatabaseEdit.dfm:179
+#. frmIBSecurityEditor..GroupBox1..Label3..Caption
+#: Property_Editors/IBSecurityEditor.dfm:137
+msgid "Pass&word:"
+msgstr ""
+
+#. frmIBServiceEditor..GroupBox1..Label5..Caption
+#: IBServiceEditor.dfm:168
+#. IBDatabaseEditForm..GroupBox1..Label5..Caption
+#: Property_Editors/IBDatabaseEdit.dfm:195
+#. frmIBSecurityEditor..GroupBox1..Label5..Caption
+#: Property_Editors/IBSecurityEditor.dfm:145
+#. IBTransactionEditForm..GroupBox1..Label1..Caption
+#: Property_Editors/IBTransactionEdit.dfm:32
+msgid "Se&ttings:"
+msgstr ""
+
+#. frmIBServiceEditor..GroupBox1..LoginPrompt..Caption
+#: IBServiceEditor.dfm:201
+#. IBDatabaseEditForm..GroupBox1..LoginPrompt..Caption
+#: Property_Editors/IBDatabaseEdit.dfm:245
+#. frmIBSecurityEditor..GroupBox1..LoginPrompt..Caption
+#: Property_Editors/IBSecurityEditor.dfm:178
+msgid "Lo&gin Prompt"
+msgstr ""
+
+#. frmIBServiceEditor..GroupBox1..chkActive..Caption
+#: IBServiceEditor.dfm:209
+#. frmIBSecurityEditor..GroupBox1..chkActive..Caption
+#: Property_Editors/IBSecurityEditor.dfm:186
+msgid "&Active"
+msgstr ""
+
+#. frmIBAvailableFields..Caption
+#: Property_Editors/frmIBAvailableFieldsU.dfm:5
+msgid "Available Fields"
+msgstr ""
+
+#. frmIBFilterFieldEditor..Caption
+#: Property_Editors/frmIBFilterFieldEditorU.dfm:6
+msgid "Filter Field Editor"
+msgstr ""
+
+#. frmIBFilterFieldEditor..Label2..Caption
+#: Property_Editors/frmIBFilterFieldEditorU.dfm:33
+msgid "Alias"
+msgstr ""
+
+#. frmIBFilterFieldEditor..btnAdd..Caption
+#: Property_Editors/frmIBFilterFieldEditorU.dfm:68
+msgid "Add Fields"
+msgstr ""
+
+#. frmIBFilterFieldEditor..btnRemove..Caption
+#: Property_Editors/frmIBFilterFieldEditorU.dfm:78
+msgid "Remove Fields"
+msgstr ""
+
+#. IBDatabaseEditForm..Caption
+#: Property_Editors/IBDatabaseEdit.dfm:7
+msgid "Database Component Editor"
+msgstr ""
+
+#. IBDatabaseEditForm..HelpFile
+#: Property_Editors/IBDatabaseEdit.dfm:12
+#. IBTransactionEditForm..HelpFile
+#: Property_Editors/IBTransactionEdit.dfm:12
+#. IBUpdateSQLEditForm..HelpFile
+#: Property_Editors/IBUpdateSQLEditor.dfm:10
+msgid "ibx.hlp"
+msgstr ""
+
+#. IBDatabaseEditForm..Panel1..HelpBtn..Caption
+#: Property_Editors/IBDatabaseEdit.dfm:51
+#. frmIBRestoreEditor..Panel1..HelpBtn..Caption
+#: Property_Editors/IBRestoreEditor.dfm:71
+#. IBTransactionEditForm..Panel1..HelpBtn..Caption
+#: Property_Editors/IBTransactionEdit.dfm:129
+#. IBUpdateSQLEditForm..HelpButton..Caption
+#: Property_Editors/IBUpdateSQLEditor.dfm:50
+msgid "&Help"
+msgstr ""
+
+#. IBDatabaseEditForm..Panel1..Test..Caption
+#: Property_Editors/IBDatabaseEdit.dfm:60
+msgid "&Test"
+msgstr ""
+
+#. IBDatabaseEditForm..GroupBox1..Label4..Caption
+#: Property_Editors/IBDatabaseEdit.dfm:187
+msgid "S&QLRole:"
+msgstr ""
+
+#. IBDatabaseEditForm..GroupBox1..Label6..Caption
+#: Property_Editors/IBDatabaseEdit.dfm:203
+msgid "&Character Set:"
+msgstr ""
+
+#. IBDatabaseEditForm..GroupBox1..CharacterSet..Text
+#: Property_Editors/IBDatabaseEdit.dfm:255
+#. IBDatabaseEditForm..GroupBox1..CharacterSet....Items.Strings
+#: Property_Editors/IBDatabaseEdit.dfm:258
+msgid "None"
+msgstr ""
+
+#. IBDatabaseEditForm..GroupBox1..CharacterSet....Items.Strings
+#: Property_Editors/IBDatabaseEdit.dfm:259
+msgid "ASCII"
+msgstr ""
+
+#. IBDatabaseEditForm..GroupBox1..CharacterSet....Items.Strings
+#: Property_Editors/IBDatabaseEdit.dfm:260
+msgid "BIG_5"
+msgstr ""
+
+#. IBDatabaseEditForm..GroupBox1..CharacterSet....Items.Strings
+#: Property_Editors/IBDatabaseEdit.dfm:261
+msgid "CYRL"
+msgstr ""
+
+#. IBDatabaseEditForm..GroupBox1..CharacterSet....Items.Strings
+#: Property_Editors/IBDatabaseEdit.dfm:262
+msgid "DOS437"
+msgstr ""
+
+#. IBDatabaseEditForm..GroupBox1..CharacterSet....Items.Strings
+#: Property_Editors/IBDatabaseEdit.dfm:263
+msgid "DOS850"
+msgstr ""
+
+#. IBDatabaseEditForm..GroupBox1..CharacterSet....Items.Strings
+#: Property_Editors/IBDatabaseEdit.dfm:264
+msgid "DOS852"
+msgstr ""
+
+#. IBDatabaseEditForm..GroupBox1..CharacterSet....Items.Strings
+#: Property_Editors/IBDatabaseEdit.dfm:265
+msgid "DOS857"
+msgstr ""
+
+#. IBDatabaseEditForm..GroupBox1..CharacterSet....Items.Strings
+#: Property_Editors/IBDatabaseEdit.dfm:266
+msgid "DOS860"
+msgstr ""
+
+#. IBDatabaseEditForm..GroupBox1..CharacterSet....Items.Strings
+#: Property_Editors/IBDatabaseEdit.dfm:267
+msgid "DOS861"
+msgstr ""
+
+#. IBDatabaseEditForm..GroupBox1..CharacterSet....Items.Strings
+#: Property_Editors/IBDatabaseEdit.dfm:268
+msgid "DOS863"
+msgstr ""
+
+#. IBDatabaseEditForm..GroupBox1..CharacterSet....Items.Strings
+#: Property_Editors/IBDatabaseEdit.dfm:269
+msgid "DOS865"
+msgstr ""
+
+#. IBDatabaseEditForm..GroupBox1..CharacterSet....Items.Strings
+#: Property_Editors/IBDatabaseEdit.dfm:270
+msgid "EUCJ_0208"
+msgstr ""
+
+#. IBDatabaseEditForm..GroupBox1..CharacterSet....Items.Strings
+#: Property_Editors/IBDatabaseEdit.dfm:271
+msgid "GB_2312"
+msgstr ""
+
+#. IBDatabaseEditForm..GroupBox1..CharacterSet....Items.Strings
+#: Property_Editors/IBDatabaseEdit.dfm:272
+msgid "ISO8859_1"
+msgstr ""
+
+#. IBDatabaseEditForm..GroupBox1..CharacterSet....Items.Strings
+#: Property_Editors/IBDatabaseEdit.dfm:273
+msgid "KSC_5601"
+msgstr ""
+
+#. IBDatabaseEditForm..GroupBox1..CharacterSet....Items.Strings
+#: Property_Editors/IBDatabaseEdit.dfm:274
+msgid "NEXT"
+msgstr ""
+
+#. IBDatabaseEditForm..GroupBox1..CharacterSet....Items.Strings
+#: Property_Editors/IBDatabaseEdit.dfm:275
+msgid "OCTETS"
+msgstr ""
+
+#. IBDatabaseEditForm..GroupBox1..CharacterSet....Items.Strings
+#: Property_Editors/IBDatabaseEdit.dfm:276
+msgid "SJIS_0208"
+msgstr ""
+
+#. IBDatabaseEditForm..GroupBox1..CharacterSet....Items.Strings
+#: Property_Editors/IBDatabaseEdit.dfm:277
+msgid "UNICODE_FSS"
+msgstr ""
+
+#. IBDatabaseEditForm..GroupBox1..CharacterSet....Items.Strings
+#: Property_Editors/IBDatabaseEdit.dfm:278
+msgid "WIN1250"
+msgstr ""
+
+#. IBDatabaseEditForm..GroupBox1..CharacterSet....Items.Strings
+#: Property_Editors/IBDatabaseEdit.dfm:279
+msgid "WIN1251"
+msgstr ""
+
+#. IBDatabaseEditForm..GroupBox1..CharacterSet....Items.Strings
+#: Property_Editors/IBDatabaseEdit.dfm:280
+msgid "WIN1252"
+msgstr ""
+
+#. IBDatabaseEditForm..GroupBox1..CharacterSet....Items.Strings
+#: Property_Editors/IBDatabaseEdit.dfm:281
+msgid "WIN1253"
+msgstr ""
+
+#. IBDatabaseEditForm..GroupBox1..CharacterSet....Items.Strings
+#: Property_Editors/IBDatabaseEdit.dfm:282
+msgid "WIN1254"
+msgstr ""
+
+#. IBDatabaseEditForm..GroupBox1..CharacterSet....Items.Strings
+#: Property_Editors/IBDatabaseEdit.dfm:283
+msgid "UTF8"
+msgstr ""
+
+#. IBEventsEditor..Caption
+#: Property_Editors/IBEventsEditor.dfm:5
+msgid "EventAlerter Events"
+msgstr ""
+
+#. IBEventsEditor..Panel1..Panel2..RequestedEvents..Caption
+#: Property_Editors/IBEventsEditor.dfm:41
+msgid "Requested Events"
+msgstr ""
+
+#. IBEventsEditor..Panel1..Panel2..RequestedEvents..Font.Name
+#: Property_Editors/IBEventsEditor.dfm:45
+msgid "Default"
+msgstr ""
+
+#. IBEventsEditor..Panel1..bOK..Caption
+#: Property_Editors/IBEventsEditor.dfm:71
+#. IBUpdateSQLEditForm..OkButton..Caption
+#: Property_Editors/IBUpdateSQLEditor.dfm:27
+msgid "&OK"
+msgstr ""
+
+#. IBEventsEditor..Panel1..Button1..Caption
+#: Property_Editors/IBEventsEditor.dfm:91
+msgid "&Add Event"
+msgstr ""
+
+#. frmGeneratorEditor..Caption
+#: Property_Editors/IBGeneratorEditor.dfm:5
+msgid "frmGeneratorEditor"
+msgstr ""
+
+#. frmGeneratorEditor..Label1..Caption
+#: Property_Editors/IBGeneratorEditor.dfm:24
+msgid "&Generator"
+msgstr ""
+
+#. frmGeneratorEditor..Label2..Caption
+#: Property_Editors/IBGeneratorEditor.dfm:34
+msgid "&Field"
+msgstr ""
+
+#. frmGeneratorEditor..Label3..Caption
+#: Property_Editors/IBGeneratorEditor.dfm:43
+msgid "Increment By"
+msgstr ""
+
+#. frmGeneratorEditor..cbxGenerators..Text
+#: Property_Editors/IBGeneratorEditor.dfm:73
+msgid "cbxGenerators"
+msgstr ""
+
+#. frmGeneratorEditor..cbxFields..Text
+#: Property_Editors/IBGeneratorEditor.dfm:83
+msgid "cbxFields"
+msgstr ""
+
+#. frmGeneratorEditor..grpApplyEvent..Caption
+#: Property_Editors/IBGeneratorEditor.dfm:90
+msgid "&Apply Event"
+msgstr ""
+
+#. frmGeneratorEditor..grpApplyEvent....Items.Strings
+#: Property_Editors/IBGeneratorEditor.dfm:93
+msgid "On New Record"
+msgstr ""
+
+#. frmGeneratorEditor..grpApplyEvent....Items.Strings
+#: Property_Editors/IBGeneratorEditor.dfm:94
+msgid "On Post"
+msgstr ""
+
+#. frmGeneratorEditor..grpApplyEvent....Items.Strings
+#: Property_Editors/IBGeneratorEditor.dfm:95
+msgid "On Server"
+msgstr ""
+
+#. frmGeneratorEditor..HelpBtn..Caption
+#: Property_Editors/IBGeneratorEditor.dfm:103
+msgid "Help"
+msgstr ""
+
+#. frmIBRestoreEditor..Caption
+#: Property_Editors/IBRestoreEditor.dfm:5
+msgid "Restore Database Files"
+msgstr ""
+
+#. IBTransactionEditForm..Caption
+#: Property_Editors/IBTransactionEdit.dfm:7
+msgid "Transaction Editor"
+msgstr ""
+
+#. IBTransactionEditForm..GroupBox1..Caption
+#: Property_Editors/IBTransactionEdit.dfm:24
+msgid "Transaction Properties"
+msgstr ""
+
+#. IBTransactionEditForm..GroupBox1..rbSnapShot..Caption
+#: Property_Editors/IBTransactionEdit.dfm:40
+msgid "&Snapshot"
+msgstr ""
+
+#. IBTransactionEditForm..GroupBox1..rbReadCommitted..Caption
+#: Property_Editors/IBTransactionEdit.dfm:49
+msgid "Read &Committed"
+msgstr ""
+
+#. IBTransactionEditForm..GroupBox1..rbReadOnlyTableStability..Caption
+#: Property_Editors/IBTransactionEdit.dfm:58
+msgid "&Read-Only Table Stability"
+msgstr ""
+
+#. IBTransactionEditForm..GroupBox1..rbReadWriteTableStability..Caption
+#: Property_Editors/IBTransactionEdit.dfm:67
+msgid "Read-&Write Table Stability "
+msgstr ""
+
+#. IBTransactionEditForm..GroupBox1..rbPreCommitted..Caption
+#: Property_Editors/IBTransactionEdit.dfm:89
+msgid "Precommitted"
+msgstr ""
+
+#. IBTransactionEditForm..GroupBox1..chkReadOnly..Caption
+#: Property_Editors/IBTransactionEdit.dfm:98
+msgid "Read Only"
+msgstr ""
+
+#. IBTransactionEditForm..GroupBox1..chkNoSavePoints..Hint
+#: Property_Editors/IBTransactionEdit.dfm:107
+msgid "Requires IB 7.51 or higher"
+msgstr ""
+
+#. IBTransactionEditForm..GroupBox1..chkNoSavePoints..Caption
+#: Property_Editors/IBTransactionEdit.dfm:108
+msgid "No Savepoints"
+msgstr ""
+
+#. IBUpdateSQLEditForm..PageControl..FieldsPage..Caption
+#: Property_Editors/IBUpdateSQLEditor.dfm:64
+msgid "Options"
+msgstr ""
+
+#. IBUpdateSQLEditForm..PageControl..FieldsPage..GroupBox1..Caption
+#: Property_Editors/IBUpdateSQLEditor.dfm:74
+msgid " SQL Generation "
+msgstr ""
+
+#. IBUpdateSQLEditForm..PageControl..FieldsPage..GroupBox1..Label1..Caption
+#: Property_Editors/IBUpdateSQLEditor.dfm:84
+msgid "Table &Name:"
+msgstr ""
+
+#. IBUpdateSQLEditForm..PageControl..FieldsPage..GroupBox1..Label3..Caption
+#: Property_Editors/IBUpdateSQLEditor.dfm:92
+msgid "&Key Fields:"
+msgstr ""
+
+#. IBUpdateSQLEditForm..PageControl..FieldsPage..GroupBox1..Label4..Caption
+#: Property_Editors/IBUpdateSQLEditor.dfm:100
+msgid "Update &Fields:"
+msgstr ""
+
+#. IBUpdateSQLEditForm..PageControl..FieldsPage..GroupBox1..GenerateButton..Caption
+#: Property_Editors/IBUpdateSQLEditor.dfm:144
+msgid "&Generate SQL"
+msgstr ""
+
+#. IBUpdateSQLEditForm..PageControl..FieldsPage..GroupBox1..PrimaryKeyButton..Caption
+#: Property_Editors/IBUpdateSQLEditor.dfm:153
+msgid "Select &Primary Keys"
+msgstr ""
+
+#. IBUpdateSQLEditForm..PageControl..FieldsPage..GroupBox1..DefaultButton..Caption
+#: Property_Editors/IBUpdateSQLEditor.dfm:162
+msgid "&Dataset Defaults"
+msgstr ""
+
+#. IBUpdateSQLEditForm..PageControl..FieldsPage..GroupBox1..QuoteFields..Caption
+#: Property_Editors/IBUpdateSQLEditor.dfm:172
+msgid "&Quote Identifiers"
+msgstr ""
+
+#. IBUpdateSQLEditForm..PageControl..FieldsPage..GroupBox1..GetTableFieldsButton..Caption
+#: Property_Editors/IBUpdateSQLEditor.dfm:181
+msgid "Get &Table Fields"
+msgstr ""
+
+#. IBUpdateSQLEditForm..PageControl..SQLPage..Caption
+#: Property_Editors/IBUpdateSQLEditor.dfm:188
+msgid "SQL"
+msgstr ""
+
+#. IBUpdateSQLEditForm..PageControl..SQLPage..Label2..Caption
+#: Property_Editors/IBUpdateSQLEditor.dfm:201
+msgid "S&QL Text:"
+msgstr ""
+
+#. IBUpdateSQLEditForm..PageControl..SQLPage..StatementType..Caption
+#: Property_Editors/IBUpdateSQLEditor.dfm:220
+msgid "Statement Type"
+msgstr ""
+
+#. IBUpdateSQLEditForm..PageControl..SQLPage..StatementType....Items.Strings
+#: Property_Editors/IBUpdateSQLEditor.dfm:224
+msgid "&Modify"
+msgstr ""
+
+#. IBUpdateSQLEditForm..PageControl..SQLPage..StatementType....Items.Strings
+#: Property_Editors/IBUpdateSQLEditor.dfm:225
+msgid "&Insert"
+msgstr ""
+
+#. IBUpdateSQLEditForm..PageControl..SQLPage..StatementType....Items.Strings
+#: Property_Editors/IBUpdateSQLEditor.dfm:226
+msgid "&Delete"
+msgstr ""
+
+#. IBUpdateSQLEditForm..PageControl..SQLPage..StatementType....Items.Strings
+#: Property_Editors/IBUpdateSQLEditor.dfm:227
+msgid "&Refresh"
+msgstr ""
+
+#. IBUpdateSQLEditForm..FieldListPopup..miSelectAll..Caption
+#: Property_Editors/IBUpdateSQLEditor.dfm:237
+msgid "&Select All"
+msgstr ""
+
+#. IBUpdateSQLEditForm..FieldListPopup..miClearAll..Caption
+#: Property_Editors/IBUpdateSQLEditor.dfm:241
+msgid "&Clear All"
+msgstr ""
+
+#. Programmer's name for it: SBackupCaption
+#: IBDCLConst.pas:17
+msgid "Backup Database files"
+msgstr ""
+
+#. Programmer's name for it: SRestoreSize
+#: IBDCLConst.pas:18
+msgid "Size(Bytes)"
+msgstr ""
+
+#. Programmer's name for it: SFileNames
+#: IBDCLConst.pas:19
+msgid "Filename(s)"
+msgstr ""
+
+#. Programmer's name for it: SPages
+#: IBDCLConst.pas:20
+msgid "Pages"
+msgstr ""
+
+#. Programmer's name for it: SDatabasefiles
+#: IBDCLConst.pas:21
+#. Programmer's name for it: SDatabaseFilter
+#: IBXConst.pas:30
+msgid "Database Files (*.ib;*.gdb)|*.ib;*.gdb|All files "
+"(*.*)|*.*"
+msgstr ""
+
+#. Programmer's name for it: SConnectionBrokerEditor
+#: IBDCLConst.pas:22
+msgid "Connection Broker Editor"
+msgstr ""
+
+#. Programmer's name for it: SIBDatabaseINIPush
+#: IBDCLConst.pas:23
+msgid "Push values"
+msgstr ""
+
+#. Programmer's name for it: SIBDatabaseINIPull
+#: IBDCLConst.pas:24
+msgid "Pull values"
+msgstr ""
+
+#. Programmer's name for it: SIBDatabaseINIWrite
+#: IBDCLConst.pas:25
+msgid "Write to INI"
+msgstr ""
+
+#. Programmer's name for it: SHelpNotFound
+#: IBDCLConst.pas:26
+msgid "Help topic not found"
+msgstr ""
+
+#. Programmer's name for it: StrConnect
+#: IBSQLMonitor.pas:106
+msgid ": [Connect]"
+msgstr ""
+
+#. Programmer's name for it: StrDisconnect
+#: IBSQLMonitor.pas:107
+msgid ": [Disconnect]"
+msgstr ""
+
+#. Programmer's name for it: StrMisc
+#: IBSQLMonitor.pas:108
+msgid "[Misc] "
+msgstr ""
+
+#. Programmer's name for it: StrError
+#: IBSQLMonitor.pas:109
+msgid "[Error] "
+msgstr ""
+
+#. Programmer's name for it: StrAttach
+#: IBSQLMonitor.pas:110
+msgid ": [Attach]"
+msgstr ""
+
+#. Programmer's name for it: StrDetach
+#: IBSQLMonitor.pas:111
+msgid ": [Detach]"
+msgstr ""
+
+#. Programmer's name for it: StrQuery
+#: IBSQLMonitor.pas:112
+msgid ": [Query]"
+msgstr ""
+
+#. Programmer's name for it: StrStart
+#: IBSQLMonitor.pas:113
+msgid ": [Start]"
+msgstr ""
+
+#. Programmer's name for it: StrExecute
+#: IBSQLMonitor.pas:114
+msgid ": [Execute] "
+msgstr ""
+
+#. Programmer's name for it: StrNULL
+#: IBSQLMonitor.pas:115
+msgid "<NULL>"
+msgstr ""
+
+#. Programmer's name for it: StrBLOB
+#: IBSQLMonitor.pas:116
+msgid "<BLOB>"
+msgstr ""
+
+#. Programmer's name for it: StrFetch
+#: IBSQLMonitor.pas:117
+msgid ": [Fetch] "
+msgstr ""
+
+#. Programmer's name for it: StrPrepare
+#: IBSQLMonitor.pas:118
+msgid ": [Prepare] "
+msgstr ""
+
+#. Programmer's name for it: StrPlan
+#: IBSQLMonitor.pas:119
+msgid "  Plan: "
+msgstr ""
+
+#. Programmer's name for it: StrPlanCantRetrive
+#: IBSQLMonitor.pas:120
+msgid "  Plan: Can't retrieve plan - too large"
+msgstr ""
+
+#. Programmer's name for it: StrCommitHardComm
+#: IBSQLMonitor.pas:121
+msgid ": [Commit (Hard commit)]"
+msgstr ""
+
+#. Programmer's name for it: StrCommitRetaining
+#: IBSQLMonitor.pas:122
+msgid ": [Commit retaining (Soft commit)]"
+msgstr ""
+
+#. Programmer's name for it: StrRollback
+#: IBSQLMonitor.pas:123
+msgid ": [Rollback]"
+msgstr ""
+
+#. Programmer's name for it: StrRollbackRetainin
+#: IBSQLMonitor.pas:124
+msgid ": [Rollback retaining (Soft rollback)]"
+msgstr ""
+
+#. Programmer's name for it: StrStartTransaction
+#: IBSQLMonitor.pas:125
+msgid ": [Start transaction]"
+msgstr ""
+
+#. Programmer's name for it: StrApplication
+#: IBSQLMonitor.pas:126
+msgid "[Application: "
+msgstr ""
+
+#. Programmer's name for it: SIBFilterBeginning
+#: IBVisualConst.pas:18
+msgid "Partial match at beginning"
+msgstr ""
+
+#. Programmer's name for it: SIBFilterAnywhere
+#: IBVisualConst.pas:19
+msgid "Partial match anywhere"
+msgstr ""
+
+#. Programmer's name for it: SIBFilterExact
+#: IBVisualConst.pas:20
+msgid "Exact Match"
+msgstr ""
+
+#. Programmer's name for it: SIBFilterAtEnd
+#: IBVisualConst.pas:21
+msgid "Partial match at end"
+msgstr ""
+
+#. Programmer's name for it: SIBFilterRange
+#: IBVisualConst.pas:22
+msgid "Match Range"
+msgstr ""
+
+#. Programmer's name for it: SIBFilterNot
+#: IBVisualConst.pas:23
+msgid "Not "
+msgstr ""
+
+#. Programmer's name for it: SIBFilterNonIBXError
+#: IBVisualConst.pas:25
+msgid "IBFilterDialog only works with IBDataSet or IBQuery "
+"components"
+msgstr ""
+
+#. Programmer's name for it: SIBDatabaseEditor
+#: IBXConst.pas:28
+msgid "Da&tabase Editor..."
+msgstr ""
+
+#. Programmer's name for it: SIBTransactionEditor
+#: IBXConst.pas:29
+msgid "&Transaction Editor..."
+msgstr ""
+
+#. Programmer's name for it: SDisconnectDatabase
+#: IBXConst.pas:31
+msgid "Database is currently connected. Disconnect and "
+"continue?"
+msgstr ""
+
+#. Programmer's name for it: SCommitTransaction
+#: IBXConst.pas:32
+msgid "Transaction is currently Active. Rollback and "
+"continue?"
+msgstr ""
+
+#. Programmer's name for it: SExecute
+#: IBXConst.pas:33
+msgid "E&xecute"
+msgstr ""
+
+#. Programmer's name for it: SNoDataSet
+#: IBXConst.pas:34
+msgid "No dataset association"
+msgstr ""
+
+#. Programmer's name for it: SSQLGenSelect
+#: IBXConst.pas:35
+msgid "Must select at least one key field and one update "
+"field"
+msgstr ""
+
+#. Programmer's name for it: SSQLNotGenerated
+#: IBXConst.pas:36
+msgid "Update SQL statements not generated, exit "
+"anyway?"
+msgstr ""
+
+#. Programmer's name for it: SIBUpdateSQLEditor
+#: IBXConst.pas:37
+msgid "&UpdateSQL Editor..."
+msgstr ""
+
+#. Programmer's name for it: SIBDataSetEditor
+#: IBXConst.pas:38
+msgid "&Dataset Editor..."
+msgstr ""
+
+#. Programmer's name for it: SSQLDataSetOpen
+#: IBXConst.pas:39
+msgid "Unable to determine field names for "
+"%s"
+msgstr ""
+
+#. Programmer's name for it: SDefaultTransaction
+#: IBXConst.pas:40
+msgid "%s, Default"
+msgstr ""
+
+#. Programmer's name for it: SUnknownError
+#: IBXConst.pas:43
+msgid "Unknown error"
+msgstr ""
+
+#. Programmer's name for it: SInterBaseMissing
+#: IBXConst.pas:45
+msgid "InterBase library gds32.dll not found in the path. Please install "
+"InterBase to use this functionality"
+msgstr ""
+
+#. Programmer's name for it: SInterBaseMissing
+#: IBXConst.pas:48
+msgid "InterBase library gds.so.0 not found in the path. Please install "
+"InterBase to use this functionality"
+msgstr ""
+
+#. Programmer's name for it: SInterBaseInstallMissing
+#: IBXConst.pas:50
+msgid "InterBase Install DLL ibinstall.dll not found in the path. Please "
+"install InterBase 6 to use this functionality"
+msgstr ""
+
+#. Programmer's name for it: SIB60feature
+#: IBXConst.pas:51
+msgid "%s is an InterBase 6 function. Please upgrade to InterBase 6 to use "
+"this functonality"
+msgstr ""
+
+#. Programmer's name for it: SNotSupported
+#: IBXConst.pas:52
+msgid "Unsupported feature"
+msgstr ""
+
+#. Programmer's name for it: SNotPermitted
+#: IBXConst.pas:53
+msgid "Not permitted"
+msgstr ""
+
+#. Programmer's name for it: SFileAccessError
+#: IBXConst.pas:54
+msgid "Temporary file access error"
+msgstr ""
+
+#. Programmer's name for it: SConnectionTimeout
+#: IBXConst.pas:55
+msgid "Database connection timed out"
+msgstr ""
+
+#. Programmer's name for it: SCannotSetDatabase
+#: IBXConst.pas:56
+msgid "Cannot set database"
+msgstr ""
+
+#. Programmer's name for it: SCannotSetTransaction
+#: IBXConst.pas:57
+msgid "Cannot set transaction"
+msgstr ""
+
+#. Programmer's name for it: SOperationCancelled
+#: IBXConst.pas:58
+msgid "Operation cancelled at user's request"
+msgstr ""
+
+#. Programmer's name for it: SDPBConstantNotSupported
+#: IBXConst.pas:59
+msgid "DPB Constant (isc_dpb_%s) is unsupported"
+msgstr ""
+
+#. Programmer's name for it: SDPBConstantUnknown
+#: IBXConst.pas:60
+msgid "DPB Constant (%d) is unknown"
+msgstr ""
+
+#. Programmer's name for it: STPBConstantNotSupported
+#: IBXConst.pas:61
+msgid "TPB Constant (isc_tpb_%s) is unsupported"
+msgstr ""
+
+#. Programmer's name for it: STPBConstantUnknown
+#: IBXConst.pas:62
+msgid "TPB Constant (%d) is unknown"
+msgstr ""
+
+#. Programmer's name for it: SDatabaseClosed
+#: IBXConst.pas:63
+msgid "Cannot perform operation -- DB is not "
+"open"
+msgstr ""
+
+#. Programmer's name for it: SDatabaseOpen
+#: IBXConst.pas:64
+msgid "Cannot perform operation -- DB is currently "
+"open"
+msgstr ""
+
+#. Programmer's name for it: SDatabaseNameMissing
+#: IBXConst.pas:65
+msgid "Database name is missing"
+msgstr ""
+
+#. Programmer's name for it: SNotInTransaction
+#: IBXConst.pas:66
+msgid "Transaction is not active"
+msgstr ""
+
+#. Programmer's name for it: SInTransaction
+#: IBXConst.pas:67
+msgid "Transaction is active"
+msgstr ""
+
+#. Programmer's name for it: STimeoutNegative
+#: IBXConst.pas:68
+msgid "Timeout values cannot be negative"
+msgstr ""
+
+#. Programmer's name for it: SNoDatabasesInTransaction
+#: IBXConst.pas:69
+msgid "No databases are listed in transaction "
+"component"
+msgstr ""
+
+#. Programmer's name for it: SUpdateWrongDB
+#: IBXConst.pas:70
+msgid "Updating wrong database"
+msgstr ""
+
+#. Programmer's name for it: SUpdateWrongTR
+#: IBXConst.pas:71
+msgid "Updating wrong transaction. Unique transaction expected in "
+"set"
+msgstr ""
+
+#. Programmer's name for it: SDatabaseNotAssigned
+#: IBXConst.pas:72
+msgid "Database not assigned"
+msgstr ""
+
+#. Programmer's name for it: STransactionNotAssigned
+#: IBXConst.pas:73
+msgid "Transaction not assigned"
+msgstr ""
+
+#. Programmer's name for it: SXSQLDAIndexOutOfRange
+#: IBXConst.pas:74
+msgid "XSQLDA index out of range"
+msgstr ""
+
+#. Programmer's name for it: SXSQLDANameDoesNotExist
+#: IBXConst.pas:75
+msgid "XSQLDA name does not exist (%s)"
+msgstr ""
+
+#. Programmer's name for it: SEOF
+#: IBXConst.pas:76
+msgid "End of file"
+msgstr ""
+
+#. Programmer's name for it: SBOF
+#: IBXConst.pas:77
+msgid "Beginning of file"
+msgstr ""
+
+#. Programmer's name for it: SInvalidStatementHandle
+#: IBXConst.pas:78
+msgid "Invalid statement handle"
+msgstr ""
+
+#. Programmer's name for it: SSQLOpen
+#: IBXConst.pas:79
+msgid "IBSQL Open"
+msgstr ""
+
+#. Programmer's name for it: SSQLClosed
+#: IBXConst.pas:80
+msgid "IBSQL Closed"
+msgstr ""
+
+#. Programmer's name for it: SDatasetOpen
+#: IBXConst.pas:81
+msgid "Dataset open"
+msgstr ""
+
+#. Programmer's name for it: SDatasetClosed
+#: IBXConst.pas:82
+msgid "Dataset closed"
+msgstr ""
+
+#. Programmer's name for it: SUnknownSQLDataType
+#: IBXConst.pas:83
+msgid "Unknown SQL Data type (%d)"
+msgstr ""
+
+#. Programmer's name for it: SInvalidColumnIndex
+#: IBXConst.pas:84
+msgid "Invalid column index (index exceeds permitted "
+"range)"
+msgstr ""
+
+#. Programmer's name for it: SInvalidParamColumnIndex
+#: IBXConst.pas:85
+msgid "Invalid parameter index (index exceeds permitted "
+"range)"
+msgstr ""
+
+#. Programmer's name for it: SInvalidDataConversion
+#: IBXConst.pas:86
+msgid "Invalid data conversion"
+msgstr ""
+
+#. Programmer's name for it: SColumnIsNotNullable
+#: IBXConst.pas:87
+msgid "Column cannot be set to null (%s)"
+msgstr ""
+
+#. Programmer's name for it: SBlobCannotBeRead
+#: IBXConst.pas:88
+msgid "Blob stream cannot be read"
+msgstr ""
+
+#. Programmer's name for it: SBlobCannotBeWritten
+#: IBXConst.pas:89
+msgid "Blob stream cannot be written"
+msgstr ""
+
+#. Programmer's name for it: SEmptyQuery
+#: IBXConst.pas:90
+msgid "Empty query"
+msgstr ""
+
+#. Programmer's name for it: SCannotOpenNonSQLSelect
+#: IBXConst.pas:91
+msgid "Cannot \"open\" a non-select statement. Use "
+"ExecQuery"
+msgstr ""
+
+#. Programmer's name for it: SNoFieldAccess
+#: IBXConst.pas:92
+msgid "No access to field \"%s\""
+msgstr ""
+
+#. Programmer's name for it: SFieldReadOnly
+#: IBXConst.pas:93
+msgid "Field \"%s\" is read-only"
+msgstr ""
+
+#. Programmer's name for it: SFieldNotFound
+#: IBXConst.pas:94
+msgid "Field \"%s\" not found"
+msgstr ""
+
+#. Programmer's name for it: SNotEditing
+#: IBXConst.pas:95
+msgid "Not in edit mode"
+msgstr ""
+
+#. Programmer's name for it: SCannotInsert
+#: IBXConst.pas:96
+msgid "Cannot insert into dataset. (No insert "
+"query)"
+msgstr ""
+
+#. Programmer's name for it: SCannotPost
+#: IBXConst.pas:97
+msgid "Cannot post. (No update/insert query)"
+msgstr ""
+
+#. Programmer's name for it: SCannotUpdate
+#: IBXConst.pas:98
+msgid "Cannot update. (No update query)"
+msgstr ""
+
+#. Programmer's name for it: SCannotDelete
+#: IBXConst.pas:99
+msgid "Cannot delete from dataset. (No delete "
+"query)"
+msgstr ""
+
+#. Programmer's name for it: SCannotRefresh
+#: IBXConst.pas:100
+msgid "Cannot refresh row. (No refresh query)"
+msgstr ""
+
+#. Programmer's name for it: SBufferNotSet
+#: IBXConst.pas:101
+msgid "Buffer not set"
+msgstr ""
+
+#. Programmer's name for it: SCircularReference
+#: IBXConst.pas:102
+msgid "Circular references not permitted"
+msgstr ""
+
+#. Programmer's name for it: SSQLParseError
+#: IBXConst.pas:103
+msgid "SQL Parse Error:\n"
+"\n"
+"%s"
+msgstr ""
+
+#. Programmer's name for it: SUserAbort
+#: IBXConst.pas:104
+msgid "User abort"
+msgstr ""
+
+#. Programmer's name for it: SDataSetUniDirectional
+#: IBXConst.pas:105
+msgid "Data set is uni-directional"
+msgstr ""
+
+#. Programmer's name for it: SCannotCreateSharedResource
+#: IBXConst.pas:106
+msgid "Cannot create shared resource. (Windows error "
+"%d)"
+msgstr ""
+
+#. Programmer's name for it: SWindowsAPIError
+#: IBXConst.pas:107
+msgid "Windows API error. (Windows error %d "
+"[$%.8x])"
+msgstr ""
+
+#. Programmer's name for it: SColumnListsDontMatch
+#: IBXConst.pas:108
+msgid "Column lists do not match"
+msgstr ""
+
+#. Programmer's name for it: SColumnTypesDontMatch
+#: IBXConst.pas:109
+msgid "Column types don't match. (From index: %d; To index: "
+"%d)"
+msgstr ""
+
+#. Programmer's name for it: SCantEndSharedTransaction
+#: IBXConst.pas:111
+msgid "Can't end a shared transaction unless it is forced and equal to the "
+"transaction's TimeoutAction"
+msgstr ""
+
+#. Programmer's name for it: SFieldUnsupportedType
+#: IBXConst.pas:112
+msgid "Unsupported Field Type"
+msgstr ""
+
+#. Programmer's name for it: SCircularDataLink
+#: IBXConst.pas:113
+msgid "Circular DataLink Reference"
+msgstr ""
+
+#. Programmer's name for it: SEmptySQLStatement
+#: IBXConst.pas:114
+msgid "Empty SQL Statement"
+msgstr ""
+
+#. Programmer's name for it: SIsASelectStatement
+#: IBXConst.pas:115
+msgid "use Open for a Select Statement"
+msgstr ""
+
+#. Programmer's name for it: SRequiredParamNotSet
+#: IBXConst.pas:116
+msgid "Required Param value not set"
+msgstr ""
+
+#. Programmer's name for it: SNoStoredProcName
+#: IBXConst.pas:117
+msgid "No Stored Procedure Name assigned"
+msgstr ""
+
+#. Programmer's name for it: SIsAExecuteProcedure
+#: IBXConst.pas:118
+msgid "use ExecProc for Procedure; use TQuery for Select "
+"procedures"
+msgstr ""
+
+#. Programmer's name for it: SUpdateFailed
+#: IBXConst.pas:119
+msgid "Update Failed"
+msgstr ""
+
+#. Programmer's name for it: SNotCachedUpdates
+#: IBXConst.pas:120
+msgid "CachedUpdates not enabled"
+msgstr ""
+
+#. Programmer's name for it: SNotLiveRequest
+#: IBXConst.pas:121
+msgid "Request is not live - cannot modify"
+msgstr ""
+
+#. Programmer's name for it: SNoProvider
+#: IBXConst.pas:122
+msgid "No Provider"
+msgstr ""
+
+#. Programmer's name for it: SNoRecordsAffected
+#: IBXConst.pas:123
+msgid "No Records Affected"
+msgstr ""
+
+#. Programmer's name for it: SNoTableName
+#: IBXConst.pas:124
+msgid "No Table Name assigned"
+msgstr ""
+
+#. Programmer's name for it: SCannotCreatePrimaryIndex
+#: IBXConst.pas:125
+msgid "Cannot Create Primary Index; are created "
+"automatically"
+msgstr ""
+
+#. Programmer's name for it: SCannotDropSystemIndex
+#: IBXConst.pas:126
+msgid "Cannot Drop System Index"
+msgstr ""
+
+#. Programmer's name for it: STableNameMismatch
+#: IBXConst.pas:127
+msgid "Table Name Mismatch"
+msgstr ""
+
+#. Programmer's name for it: SIndexFieldMissing
+#: IBXConst.pas:128
+msgid "Index Field Missing"
+msgstr ""
+
+#. Programmer's name for it: SInvalidCancellation
+#: IBXConst.pas:129
+msgid "Cannot Cancel events while processing"
+msgstr ""
+
+#. Programmer's name for it: SInvalidEvent
+#: IBXConst.pas:130
+msgid "Invalid Event"
+msgstr ""
+
+#. Programmer's name for it: SMaximumEvents
+#: IBXConst.pas:131
+msgid "Exceded Maximum Event limits"
+msgstr ""
+
+#. Programmer's name for it: SNoEventsRegistered
+#: IBXConst.pas:132
+msgid "No Events Registered"
+msgstr ""
+
+#. Programmer's name for it: SInvalidQueueing
+#: IBXConst.pas:133
+msgid "Invalid Queueing"
+msgstr ""
+
+#. Programmer's name for it: SInvalidRegistration
+#: IBXConst.pas:134
+msgid "Invalid Registration"
+msgstr ""
+
+#. Programmer's name for it: SInvalidBatchMove
+#: IBXConst.pas:135
+msgid "Invalid Batch Move"
+msgstr ""
+
+#. Programmer's name for it: SSQLDialectInvalid
+#: IBXConst.pas:136
+msgid "SQL Dialect Invalid"
+msgstr ""
+
+#. Programmer's name for it: SSPBConstantNotSupported
+#: IBXConst.pas:137
+msgid "SPB Constant Not supported"
+msgstr ""
+
+#. Programmer's name for it: SSPBConstantUnknown
+#: IBXConst.pas:138
+msgid "SPB Constant Unknown"
+msgstr ""
+
+#. Programmer's name for it: SServiceActive
+#: IBXConst.pas:139
+msgid "Cannot perform operation -- service is not "
+"attached"
+msgstr ""
+
+#. Programmer's name for it: SServiceInActive
+#: IBXConst.pas:140
+msgid "Cannot perform operation -- service is "
+"attached"
+msgstr ""
+
+#. Programmer's name for it: SServerNameMissing
+#: IBXConst.pas:141
+msgid "Server Name Missing"
+msgstr ""
+
+#. Programmer's name for it: SQueryParamsError
+#: IBXConst.pas:142
+msgid "Query Parameters missing or incorrect"
+msgstr ""
+
+#. Programmer's name for it: SStartParamsError
+#: IBXConst.pas:143
+msgid "start Parameters missing or incorrect"
+msgstr ""
+
+#. Programmer's name for it: SOutputParsingError
+#: IBXConst.pas:144
+msgid "Unexpected Output buffer value"
+msgstr ""
+
+#. Programmer's name for it: SUseSpecificProcedures
+#: IBXConst.pas:145
+msgid "Generic ServiceStart not applicable: Use Specific Procedures to set "
+"configuration params"
+msgstr ""
+
+#. Programmer's name for it: SSQLMonitorAlreadyPresent
+#: IBXConst.pas:146
+msgid "SQL Monitor Instance is already present"
+msgstr ""
+
+#. Programmer's name for it: SCantPrintValue
+#: IBXConst.pas:147
+msgid "Cannot print value"
+msgstr ""
+
+#. Programmer's name for it: SEOFReached
+#: IBXConst.pas:148
+msgid "SEOFReached"
+msgstr ""
+
+#. Programmer's name for it: SEOFInComment
+#: IBXConst.pas:149
+msgid "EOF in comment detected"
+msgstr ""
+
+#. Programmer's name for it: SEOFInString
+#: IBXConst.pas:150
+msgid "EOF in string detected"
+msgstr ""
+
+#. Programmer's name for it: SParamNameExpected
+#: IBXConst.pas:151
+msgid "Parameter name expected"
+msgstr ""
+
+#. Programmer's name for it: SSuccess
+#: IBXConst.pas:152
+msgid "Successful execution"
+msgstr ""
+
+#. Programmer's name for it: SDelphiException
+#: IBXConst.pas:153
+msgid "DelphiException %s"
+msgstr ""
+
+#. Programmer's name for it: SNoOptionsSet
+#: IBXConst.pas:154
+msgid "No Install Options selected"
+msgstr ""
+
+#. Programmer's name for it: SNoDestinationDirectory
+#: IBXConst.pas:155
+msgid "DestinationDirectory is not set"
+msgstr ""
+
+#. Programmer's name for it: SNosourceDirectory
+#: IBXConst.pas:156
+msgid "SourceDirectory is not set"
+msgstr ""
+
+#. Programmer's name for it: SNoUninstallFile
+#: IBXConst.pas:157
+msgid "Uninstall File Name is not set"
+msgstr ""
+
+#. Programmer's name for it: SOptionNeedsClient
+#: IBXConst.pas:158
+msgid "%s component requires Client to function "
+"properly"
+msgstr ""
+
+#. Programmer's name for it: SOptionNeedsServer
+#: IBXConst.pas:159
+msgid "%s component requires Server to function "
+"properly"
+msgstr ""
+
+#. Programmer's name for it: SInvalidOption
+#: IBXConst.pas:160
+msgid "Invalid option specified"
+msgstr ""
+
+#. Programmer's name for it: SInvalidOnErrorResult
+#: IBXConst.pas:161
+msgid "Unexpected onError return value"
+msgstr ""
+
+#. Programmer's name for it: SInvalidOnStatusResult
+#: IBXConst.pas:162
+msgid "Unexpected onStatus return value"
+msgstr ""
+
+#. Programmer's name for it: SInterbaseExpressVersion
+#: IBXConst.pas:164
+msgid "InterBaseExpress 4.3"
+msgstr ""
+
+#. Programmer's name for it: SEditSQL
+#: IBXConst.pas:165
+msgid "Edit SQL"
+msgstr ""
+
+#. Programmer's name for it: SDPBConstantUnknownEx
+#: IBXConst.pas:166
+msgid "DPB Constant (%s) is unknown"
+msgstr ""
+
+#. Programmer's name for it: STPBConstantUnknownEx
+#: IBXConst.pas:167
+msgid "TPB Constant (%s) is unknown"
+msgstr ""
+
+#. Programmer's name for it: SInterbaseExpressVersionEx
+#: IBXConst.pas:168
+msgid "InterBaseExpress %2.2f"
+msgstr ""
+
+#. Programmer's name for it: SUnknownPlan
+#: IBXConst.pas:169
+msgid "Unknown Error - Can't retrieve plan"
+msgstr ""
+
+#. Programmer's name for it: SFieldSizeMismatch
+#: IBXConst.pas:170
+msgid "Size Mismatch - Field %s size is too small for "
+"data"
+msgstr ""
+
+#. Programmer's name for it: SEventAlreadyRegistered
+#: IBXConst.pas:171
+msgid "Events already registered"
+msgstr ""
+
+#. Programmer's name for it: SStringTooLarge
+#: IBXConst.pas:172
+msgid "Trying to store a string of length %d into a field that can only "
+"contain %d"
+msgstr ""
+
+#. Programmer's name for it: SIBServiceEditor
+#: IBXConst.pas:173
+msgid "&Service Editor ..."
+msgstr ""
+
+#. Programmer's name for it: SIBSuccessConnect
+#: IBXConst.pas:174
+msgid "Successful Connection"
+msgstr ""
+
+#. Programmer's name for it: SNoTimers
+#: IBXConst.pas:175
+msgid "Not enough timers available"
+msgstr ""
+
+#. Programmer's name for it: SIB65feature
+#: IBXConst.pas:176
+msgid "%s is an InterBase 6.5 function. Please upgrade to InterBase 6.5 to "
+"use this functonality"
+msgstr ""
+
+#. Programmer's name for it: SLoginPromptFailure
+#: IBXConst.pas:177
+msgid "Can not find default login prompt dialog.  Please add DBLogDlg to the "
+"uses section of your main file."
+msgstr ""
+
+#. Programmer's name for it: SIBMemoryError
+#: IBXConst.pas:178
+msgid "Out of memory"
+msgstr ""
+
+#. Programmer's name for it: SIBInvalidStatement
+#: IBXConst.pas:179
+msgid "Invalid statement"
+msgstr ""
+
+#. Programmer's name for it: SIBInvalidComment
+#: IBXConst.pas:180
+msgid "Invalid Comment"
+msgstr ""
+
+#. Programmer's name for it: SIBBrokerOpen
+#: IBXConst.pas:181
+msgid "  Opening connection "
+msgstr ""
+
+#. Programmer's name for it: SIBBrokerVersion
+#: IBXConst.pas:182
+msgid "Starting IBConnectionBroker Version "
+"1.0.1:"
+msgstr ""
+
+#. Programmer's name for it: SIBBrokerDatabase
+#: IBXConst.pas:183
+msgid "Database Name = "
+msgstr ""
+
+#. Programmer's name for it: SIBBrokerUser
+#: IBXConst.pas:184
+msgid "User Name = "
+msgstr ""
+
+#. Programmer's name for it: SIBBrokerMinConnections
+#: IBXConst.pas:185
+msgid "Min Connections = "
+msgstr ""
+
+#. Programmer's name for it: SIBBrokerMaxConnections
+#: IBXConst.pas:186
+msgid "Max Connections = "
+msgstr ""
+
+#. Programmer's name for it: SIBBrokerIdleTimer
+#: IBXConst.pas:187
+msgid "IdleTimer = "
+msgstr ""
+
+#. Programmer's name for it: SIBBrokerGiveOut
+#: IBXConst.pas:188
+msgid "gave out connection "
+msgstr ""
+
+#. Programmer's name for it: SIBBrokerUnavailable
+#: IBXConst.pas:189
+msgid "Unable to create new connection: "
+msgstr ""
+
+#. Programmer's name for it: SIBBrokerExhausted
+#: IBXConst.pas:190
+msgid "-----> Connections Exhausted!  Will wait and try again in loop "
+msgstr ""
+
+#. Programmer's name for it: SIBBrokerNilError
+#: IBXConst.pas:191
+msgid "Nil database tried to be released"
+msgstr ""
+
+#. Programmer's name for it: SIBBrokerRelease
+#: IBXConst.pas:192
+msgid "Release connection "
+msgstr ""
+
+#. Programmer's name for it: SIBDatabaseINISection
+#: IBXConst.pas:193
+msgid "Database Settings"
+msgstr ""
+
+#. Programmer's name for it: SIBDatabaseINISectionEmpty
+#: IBXConst.pas:194
+msgid "Section name can not be empty"
+msgstr ""
+
+#. Programmer's name for it: SIB70feature
+#: IBXConst.pas:195
+msgid "%s is an InterBase 7.0 function. Please upgrade to InterBase 7.0 to "
+"use this functonality"
+msgstr ""
+
+#. Programmer's name for it: SIB71feature
+#: IBXConst.pas:196
+msgid "%s is an InterBase 7.1 function. Please upgrade to InterBase 7.1 to "
+"use this functonality"
+msgstr ""
+
+#. Programmer's name for it: SIB75feature
+#: IBXConst.pas:197
+msgid "%s is an InterBase 7.5 function. Please upgrade to InterBase 7.5 to "
+"use this functonality"
+msgstr ""
+
+#. Programmer's name for it: SIB751feature
+#: IBXConst.pas:198
+msgid "%s is an InterBase 7.51 function. Please upgrade to InterBase 7.51 to "
+"use this functonality"
+msgstr ""
+
+#. Programmer's name for it: SIB80feature
+#: IBXConst.pas:199
+msgid "%s is an InterBase 2007 function. Please upgrade to InterBase 2007 to "
+"use this functonality"
+msgstr ""
+
+#. Programmer's name for it: SNoVersionInfo
+#: IBXConst.pas:200
+msgid "Version infomation for this server is not "
+"retreived"
+msgstr ""
+
+#. Programmer's name for it: SFileSizeDumpCountIncompatibility
+#: IBXConst.pas:201
+msgid "If you supply sizes you must supply 1 size for every file in the "
+"Files list (last size optional)"
+msgstr ""
+
+#. Programmer's name for it: SDirectoriesSizeArchiveIncompatibility
+#: IBXConst.pas:202
+msgid "If you supply sizes you must supply 1 size for every file in the "
+"Directories list (last size optional)"
+msgstr ""
+
+#. Programmer's name for it: SInvalidBatchStatement
+#: IBXConst.pas:203
+msgid "Only DDL and DML (excluding Select statements) allowed within a Batch "
+"block"
+msgstr ""
+
+#. Programmer's name for it: SIBFecthJournalInfo
+#: IBXConst.pas:204
+msgid "&Retrieve Journal Information"
+msgstr ""
+

@@ -1,0 +1,1340 @@
+# SOME DESCRIPTIVE TITLE.
+# Copyright (C) YEAR THE PACKAGE'S COPYRIGHT HOLDER
+# This file is distributed under the same license as the PACKAGE package.
+# FIRST AUTHOR <EMAIL@ADDRESS>, YEAR.
+#
+msgid ""
+msgstr "Project-Id-Version: EMS Import2\n"
+"POT-Creation-Date: 2004-08-26 21:20\n"
+"PO-Revision-Date: 2004-08-24 08:36+0100\n"
+"Last-Translator: \n"
+"Language-Team: \n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+
+#  Errors
+#  Programmer's name for it: QIE_NoDataSet
+#  Errors
+#  Programmer's name for it: QIE_NoDataSet
+#  Errors
+#  Programmer's name for it: QIE_NoDataSet
+#. Errors
+#. Programmer's name for it: QIE_NoDataSet
+#: ggsetup_EmsImport2.inc:7
+msgid "DataSet is not defined"
+msgstr ""
+
+#  since 1.7
+#  Programmer's name for it: QIE_NoDBGrid
+#. since 1.7
+#. Programmer's name for it: QIE_NoDBGrid
+#: ggsetup_EmsImport2.inc:8
+msgid "DBGrid is not defined"
+msgstr ""
+
+#  since 1.7
+#  Programmer's name for it: QIE_NoListView
+#. since 1.7
+#. Programmer's name for it: QIE_NoListView
+#: ggsetup_EmsImport2.inc:9
+msgid "ListView is not defined"
+msgstr ""
+
+#  since 1.7
+#  Programmer's name for it: QIE_NoStringGrid
+#. since 1.7
+#. Programmer's name for it: QIE_NoStringGrid
+#: ggsetup_EmsImport2.inc:10
+msgid "StrinGrid is not defined"
+msgstr ""
+
+#  since 1.5
+#  Programmer's name for it: QIE_NoSource
+#. since 1.5
+#. Programmer's name for it: QIE_NoSource
+#: ggsetup_EmsImport2.inc:11
+msgid "Source DataSet is not defined"
+msgstr ""
+
+#  Programmer's name for it: QIE_NoFileName
+#. Programmer's name for it: QIE_NoFileName
+#: ggsetup_EmsImport2.inc:12
+msgid "File name is not specified"
+msgstr ""
+
+#  Programmer's name for it: QIE_FileNotExists
+#. Programmer's name for it: QIE_FileNotExists
+#: ggsetup_EmsImport2.inc:13
+msgid "File %s does not exist"
+msgstr ""
+
+#  Programmer's name for it: QIE_MappingEmpty
+#. Programmer's name for it: QIE_MappingEmpty
+#: ggsetup_EmsImport2.inc:14
+msgid "Map is empty"
+msgstr ""
+
+#  Programmer's name for it: QIE_CanceledByUser
+#. Programmer's name for it: QIE_CanceledByUser
+#: ggsetup_EmsImport2.inc:15
+msgid "Import canceled by user"
+msgstr ""
+
+#  Programmer's name for it: QIE_MapMissing
+#. Programmer's name for it: QIE_MapMissing
+#: ggsetup_EmsImport2.inc:16
+msgid "Missing definition of map"
+msgstr ""
+
+#  Programmer's name for it: QIE_FieldNotFound
+#. Programmer's name for it: QIE_FieldNotFound
+#: ggsetup_EmsImport2.inc:17
+msgid "Column %s is defined in the MAP is not found in the import destination"
+msgstr ""
+
+#  since 1.5
+#  Programmer's name for it: QIE_SourceFieldNotFound
+#. since 1.5
+#. Programmer's name for it: QIE_SourceFieldNotFound
+#: ggsetup_EmsImport2.inc:18
+msgid "Field %s not found in the source DataSet"
+msgstr ""
+
+#  Programmer's name for it: QIE_DataSetClosed
+#. Programmer's name for it: QIE_DataSetClosed
+#: ggsetup_EmsImport2.inc:19
+msgid "Cannot perform this operation on a closed Import Destination"
+msgstr ""
+
+#  Programmer's name for it: QIE_AllowedImportsEmpty
+#. Programmer's name for it: QIE_AllowedImportsEmpty
+#: ggsetup_EmsImport2.inc:20
+msgid "Property AllowedImports can not contain empty set"
+msgstr ""
+
+#  since 1.7
+#  Programmer's name for it: QIE_KeyColumnsNotDefined
+#. since 1.7
+#. Programmer's name for it: QIE_KeyColumnsNotDefined
+#: ggsetup_EmsImport2.inc:21
+msgid "Key columns are not defined"
+msgstr ""
+
+#  since 1.7
+#  Programmer's name for it: QIE_KeyColumnNotFound
+#. since 1.7
+#. Programmer's name for it: QIE_KeyColumnNotFound
+#: ggsetup_EmsImport2.inc:22
+msgid "Key column %s is not found in the import destination"
+msgstr ""
+
+#  since 2.0
+#  Programmer's name for it: QIE_XMLFieldListEmpty
+#. since 2.0
+#. Programmer's name for it: QIE_XMLFieldListEmpty
+#: ggsetup_EmsImport2.inc:23
+msgid "XML field list is empty"
+msgstr ""
+
+#  since 2.0
+#  Programmer's name for it: QIE_NeedDefineTextToFind
+#. since 2.0
+#. Programmer's name for it: QIE_NeedDefineTextToFind
+#: ggsetup_EmsImport2.inc:24
+msgid "Text to find must be defined"
+msgstr ""
+
+#  Programmer's name for it: QIF_ASCII
+#. Programmer's name for it: QIF_ASCII
+#: ggsetup_EmsImport2.inc:28
+msgid "ASCII files (*.txt;*.csv)|*.txt;*.csv|All files (*.*)|*.*"
+msgstr ""
+
+#  Programmer's name for it: QIF_CSV
+#. Programmer's name for it: QIF_CSV
+#: ggsetup_EmsImport2.inc:29
+msgid "CSV files (*.csv)|*.csv|All files (*.*)|*.*"
+msgstr ""
+
+#  Programmer's name for it: QIF_DBF
+#. Programmer's name for it: QIF_DBF
+#: ggsetup_EmsImport2.inc:30
+msgid "DBF files (*.dbf)|*.dbf|All files (*.*)|*.*"
+msgstr ""
+
+#  since 2.0
+#  Programmer's name for it: QIF_XML
+#  since 2.0
+#  Programmer's name for it: QIF_XML
+#. since 2.0
+#. Programmer's name for it: QIF_XML
+#: ggsetup_EmsImport2.inc:31
+msgid "XML files (*.xml)|*.xml|All files (*.*)|*.*"
+msgstr ""
+
+#  Programmer's name for it: QIF_XLS
+#. Programmer's name for it: QIF_XLS
+#: ggsetup_EmsImport2.inc:32
+msgid "Microsoft Excel files (*.xls)|*.xls|All files (*.*)|*.*"
+msgstr ""
+
+#  since 1.4
+#  Programmer's name for it: QIF_Access
+#  since 1.4
+#  Programmer's name for it: QIF_Access
+#. since 1.4
+#. Programmer's name for it: QIF_Access
+#: ggsetup_EmsImport2.inc:33
+msgid "Microsoft Access files (*.mdb)|*.mdb|All files (*.*)|*.*"
+msgstr ""
+
+#  Programmer's name for it: QIF_ALL
+#. Programmer's name for it: QIF_ALL
+#: ggsetup_EmsImport2.inc:34
+msgid "All allowed files (*.txt;*.csv;*.dbf;*.xls)|*.txt;*.csv;*.dbf;*.xls"
+msgstr ""
+
+#  since 1.2
+#  Programmer's name for it: QIF_TEMPLATE
+#. since 1.2
+#. Programmer's name for it: QIF_TEMPLATE
+#: ggsetup_EmsImport2.inc:35
+msgid "QuickImport Tmplate files (*.imp)| *.imp"
+msgstr ""
+
+#  since 1.8
+#  Programmer's name for it: QID_NullValue
+#. since 1.8
+#. Programmer's name for it: QID_NullValue
+#: ggsetup_EmsImport2.inc:43
+msgid "Null"
+msgstr ""
+
+#  Wizard
+#  Programmer's name for it: QIW_importWizard
+#. Wizard
+#. Programmer's name for it: QIW_importWizard
+#: ggsetup_EmsImport2.inc:46
+msgid "Import data wizard"
+msgstr ""
+
+#  Programmer's name for it: QIW_ImportFrom
+#. Programmer's name for it: QIW_ImportFrom
+#: ggsetup_EmsImport2.inc:47
+msgid "Import from"
+msgstr ""
+
+#  #-#-#-#-#  EmsExport3.po (PACKAGE VERSION)  #-#-#-#-#
+#  Programmer's name for it: QED_ExportType_XLS
+#  #-#-#-#-#  EmsImport2.po (PACKAGE VERSION)  #-#-#-#-#
+#  Programmer's name for it: QIW_XLS
+#. Programmer's name for it: QIW_XLS
+#: ggsetup_EmsImport2.inc:48
+msgid "MS Excel"
+msgstr ""
+
+#  #-#-#-#-#  EmsExport3.po (PACKAGE VERSION)  #-#-#-#-#
+#  since 2.6
+#  Programmer's name for it: QED_ExportType_Access
+#  #-#-#-#-#  EmsImport2.po (PACKAGE VERSION)  #-#-#-#-#
+#  since 1.4
+#  Programmer's name for it: QIW_Access
+#. since 1.4
+#. Programmer's name for it: QIW_Access
+#: ggsetup_EmsImport2.inc:49
+msgid "MS Access"
+msgstr ""
+
+#  #-#-#-#-#  EmsExport3.po (PACKAGE VERSION)  #-#-#-#-#
+#  Programmer's name for it: QED_ExportType_DBF
+#  #-#-#-#-#  EmsImport2.po (PACKAGE VERSION)  #-#-#-#-#
+#  Programmer's name for it: QIW_DBF
+#. Programmer's name for it: QIW_DBF
+#: ggsetup_EmsImport2.inc:50
+msgid "DBF"
+msgstr ""
+
+#  #-#-#-#-#  EmsExport3.po (PACKAGE VERSION)  #-#-#-#-#
+#  Programmer's name for it: QED_ExportType_XML
+#  #-#-#-#-#  EmsImport2.po (PACKAGE VERSION)  #-#-#-#-#
+#  since 2.0
+#  Programmer's name for it: QIW_XML
+#. since 2.0
+#. Programmer's name for it: QIW_XML
+#: ggsetup_EmsImport2.inc:51
+msgid "XML"
+msgstr ""
+
+#  Programmer's name for it: QIW_TXT
+#. Programmer's name for it: QIW_TXT
+#: ggsetup_EmsImport2.inc:52
+msgid "Text file"
+msgstr ""
+
+#  Programmer's name for it: QIW_CSV
+#. Programmer's name for it: QIW_CSV
+#: ggsetup_EmsImport2.inc:53
+msgid "CSV file"
+msgstr ""
+
+#  #-#-#-#-#  EmsExport3.po (PACKAGE VERSION)  #-#-#-#-#
+#  Programmer's name for it: QED_CSV_Comma
+#  #-#-#-#-#  EmsImport2.po (PACKAGE VERSION)  #-#-#-#-#
+#  since 2.0
+#  Programmer's name for it: QIW_Comma
+#. since 2.0
+#. Programmer's name for it: QIW_Comma
+#: ggsetup_EmsImport2.inc:54
+msgid "Comma"
+msgstr ""
+
+#  #-#-#-#-#  EmsExport3.po (PACKAGE VERSION)  #-#-#-#-#
+#  since 2.6
+#  Programmer's name for it: QED_CSV_Quote
+#  #-#-#-#-#  EmsImport2.po (PACKAGE VERSION)  #-#-#-#-#
+#  since 1.65
+#  Programmer's name for it: QIW_Quote
+#. since 1.65
+#. Programmer's name for it: QIW_Quote
+#: ggsetup_EmsImport2.inc:55
+msgid "Quote"
+msgstr ""
+
+#  Programmer's name for it: QIW_FileName
+#. Programmer's name for it: QIW_FileName
+#: ggsetup_EmsImport2.inc:56
+msgid "Source file name"
+msgstr ""
+
+#  Programmer's name for it: QIW_NeedCancelCaption
+#. Programmer's name for it: QIW_NeedCancelCaption
+#: ggsetup_EmsImport2.inc:57
+msgid "Are you sure..."
+msgstr ""
+
+#  Programmer's name for it: QIW_NeedCancel
+#. Programmer's name for it: QIW_NeedCancel
+#: ggsetup_EmsImport2.inc:58
+msgid "Are you sure you want to abort import?"
+msgstr ""
+
+#  #-#-#-#-#  EmsExport3.po (PACKAGE VERSION)  #-#-#-#-#
+#  since 3.0
+#  Programmer's name for it: QEE_XLS_Question
+#  #-#-#-#-#  EmsImport2.po (PACKAGE VERSION)  #-#-#-#-#
+#  since 2.0
+#  Programmer's name for it: QIW_Question
+#. since 2.0
+#. Programmer's name for it: QIW_Question
+#: ggsetup_EmsImport2.inc:59
+msgid "Question"
+msgstr ""
+
+#  since 2.0
+#  Programmer's name for it: QIW_CancelWizard
+#. since 2.0
+#. Programmer's name for it: QIW_CancelWizard
+#: ggsetup_EmsImport2.inc:60
+msgid "Do you want to quit?"
+msgstr ""
+
+#  Programmer's name for it: QIW_Execute
+#. Programmer's name for it: QIW_Execute
+#: ggsetup_EmsImport2.inc:66
+msgid "&Execute"
+msgstr ""
+
+#  Programmer's name for it: QIW_Step
+#. Programmer's name for it: QIW_Step
+#: ggsetup_EmsImport2.inc:67
+msgid "Step %d of %d"
+msgstr ""
+
+#  since 2.0
+#  Programmer's name for it: QIW_TemplateOptions
+#. since 2.0
+#. Programmer's name for it: QIW_TemplateOptions
+#: ggsetup_EmsImport2.inc:68
+msgid " Template Options "
+msgstr ""
+
+#  since 2.0
+#  Programmer's name for it: QIW_GoToLastPage
+#. since 2.0
+#. Programmer's name for it: QIW_GoToLastPage
+#: ggsetup_EmsImport2.inc:70
+msgid "Go to the last page after loading template"
+msgstr ""
+
+#  since 2.0
+#  Programmer's name for it: QIW_AutoSaveTemplate
+#. since 2.0
+#. Programmer's name for it: QIW_AutoSaveTemplate
+#: ggsetup_EmsImport2.inc:72
+msgid "Save template automatically when wizard closes"
+msgstr ""
+
+#  since 1.2
+#  Programmer's name for it: QIW_LoadTemplate
+#. since 1.2
+#. Programmer's name for it: QIW_LoadTemplate
+#: ggsetup_EmsImport2.inc:73
+msgid "Load template from file..."
+msgstr ""
+
+#  since 1.2
+#  Programmer's name for it: QIW_SaveTemplate
+#. since 1.2
+#. Programmer's name for it: QIW_SaveTemplate
+#: ggsetup_EmsImport2.inc:74
+msgid "Save template to file..."
+msgstr ""
+
+#  since 1.7
+#  Programmer's name for it: QIW_CommitOptions
+#. since 1.7
+#. Programmer's name for it: QIW_CommitOptions
+#: ggsetup_EmsImport2.inc:76
+msgid "Commit Options"
+msgstr ""
+
+#  Programmer's name for it: QIW_Commit
+#. Programmer's name for it: QIW_Commit
+#: ggsetup_EmsImport2.inc:77
+msgid "Commit"
+msgstr ""
+
+#  Programmer's name for it: QIW_CommitAfterDone
+#. Programmer's name for it: QIW_CommitAfterDone
+#: ggsetup_EmsImport2.inc:78
+msgid "Commit when done"
+msgstr ""
+
+#  Programmer's name for it: QIW_CommitRecCount
+#. Programmer's name for it: QIW_CommitRecCount
+#: ggsetup_EmsImport2.inc:79
+msgid "Commit after each"
+msgstr ""
+
+#  #-#-#-#-#  EmsExport3.po (PACKAGE VERSION)  #-#-#-#-#
+#  Programmer's name for it: QED_SQL_CommitAfter_02
+#  #-#-#-#-#  EmsImport2.po (PACKAGE VERSION)  #-#-#-#-#
+#  Programmer's name for it: QIW_Records
+#. Programmer's name for it: QIW_Records
+#: ggsetup_EmsImport2.inc:80
+msgid "record(s)"
+msgstr ""
+
+#  Programmer's name for it: QIW_RecordCount
+#. Programmer's name for it: QIW_RecordCount
+#: ggsetup_EmsImport2.inc:81
+msgid "Record count"
+msgstr ""
+
+#  Programmer's name for it: QIW_ImportAllRecords
+#. Programmer's name for it: QIW_ImportAllRecords
+#: ggsetup_EmsImport2.inc:82
+msgid "Import all records"
+msgstr ""
+
+#  Programmer's name for it: QIW_ImportRecCount
+#. Programmer's name for it: QIW_ImportRecCount
+#: ggsetup_EmsImport2.inc:83
+msgid "Import only first"
+msgstr ""
+
+#  since 1.8
+#  Programmer's name for it: QIW_CloseAfterImport
+#. since 1.8
+#. Programmer's name for it: QIW_CloseAfterImport
+#: ggsetup_EmsImport2.inc:84
+msgid "Close wizard after import"
+msgstr ""
+
+#  #-#-#-#-#  EmsExport3.po (PACKAGE VERSION)  #-#-#-#-#
+#  since 3.0
+#  Programmer's name for it: QED_RTF_Advanced
+#  #-#-#-#-#  EmsImport2.po (PACKAGE VERSION)  #-#-#-#-#
+#  since 1.7
+#  Programmer's name for it: QIW_ImportAdvanced
+#. since 1.7
+#. Programmer's name for it: QIW_ImportAdvanced
+#: ggsetup_EmsImport2.inc:86
+msgid "Advanced"
+msgstr ""
+
+#  since 1.6
+#  Programmer's name for it: QIW_AddType
+#. since 1.6
+#. Programmer's name for it: QIW_AddType
+#: ggsetup_EmsImport2.inc:87
+msgid "Add Type"
+msgstr ""
+
+#  since 1.6
+#  Programmer's name for it: QIW_AddType_Append
+#. since 1.6
+#. Programmer's name for it: QIW_AddType_Append
+#: ggsetup_EmsImport2.inc:88
+msgid "Append"
+msgstr ""
+
+#  since 1.6
+#  Programmer's name for it: QIW_AddType_Insert
+#. since 1.6
+#. Programmer's name for it: QIW_AddType_Insert
+#: ggsetup_EmsImport2.inc:89
+msgid "Insert"
+msgstr ""
+
+#  since 1.7
+#  Programmer's name for it: QIWIM_Caption
+#. since 1.7
+#. Programmer's name for it: QIWIM_Caption
+#: ggsetup_EmsImport2.inc:91
+msgid " Import Mode "
+msgstr ""
+
+#  since 1.7
+#  Programmer's name for it: QIWIM_Insert_All
+#. since 1.7
+#. Programmer's name for it: QIWIM_Insert_All
+#: ggsetup_EmsImport2.inc:92
+msgid "Insert All"
+msgstr ""
+
+#  since 1.7
+#  Programmer's name for it: QIWIM_Insert_New
+#. since 1.7
+#. Programmer's name for it: QIWIM_Insert_New
+#: ggsetup_EmsImport2.inc:93
+msgid "Insert New"
+msgstr ""
+
+#  since 1.7
+#  Programmer's name for it: QIWIM_Update
+#. since 1.7
+#. Programmer's name for it: QIWIM_Update
+#: ggsetup_EmsImport2.inc:94
+msgid "Update"
+msgstr ""
+
+#  since 1.7
+#  Programmer's name for it: QIWIM_Update_or_Insert
+#. since 1.7
+#. Programmer's name for it: QIWIM_Update_or_Insert
+#: ggsetup_EmsImport2.inc:95
+msgid "Update or Insert"
+msgstr ""
+
+#  since 1.7
+#  Programmer's name for it: QIWIM_Delete_or_Insert
+#. since 1.7
+#. Programmer's name for it: QIWIM_Delete_or_Insert
+#: ggsetup_EmsImport2.inc:97
+msgid "Delete or Insert"
+msgstr ""
+
+#  since 1.7
+#  Programmer's name for it: QIW_AvailableColumns
+#. since 1.7
+#. Programmer's name for it: QIW_AvailableColumns
+#: ggsetup_EmsImport2.inc:99
+msgid "Available Columns"
+msgstr ""
+
+#  since 1.7
+#  Programmer's name for it: QIW_SelectedColumns
+#. since 1.7
+#. Programmer's name for it: QIW_SelectedColumns
+#: ggsetup_EmsImport2.inc:100
+msgid "Key Columns"
+msgstr ""
+
+#  Programmer's name for it: QIW_ErrorLog
+#. Programmer's name for it: QIW_ErrorLog
+#: ggsetup_EmsImport2.inc:102
+msgid "Error log"
+msgstr ""
+
+#  Programmer's name for it: QIW_EnableErrorLog
+#. Programmer's name for it: QIW_EnableErrorLog
+#: ggsetup_EmsImport2.inc:103
+msgid "Enable error log"
+msgstr ""
+
+#  since 1.8
+#  Programmer's name for it: QIW_ErrorLogFileName
+#. since 1.8
+#. Programmer's name for it: QIW_ErrorLogFileName
+#: ggsetup_EmsImport2.inc:104
+msgid "Error Log File Name"
+msgstr ""
+
+#  since 1.8
+#  Programmer's name for it: QIW_RewriteErrorLogFile
+#. since 1.8
+#. Programmer's name for it: QIW_RewriteErrorLogFile
+#: ggsetup_EmsImport2.inc:106
+msgid "Rewrite error log file if it exists"
+msgstr ""
+
+#  Programmer's name for it: QIW_ShowErrorLog
+#. Programmer's name for it: QIW_ShowErrorLog
+#: ggsetup_EmsImport2.inc:107
+msgid "Show error log after import"
+msgstr ""
+
+#  since 1.8
+#  Programmer's name for it: QIW_ErrorLogStarted
+#. since 1.8
+#. Programmer's name for it: QIW_ErrorLogStarted
+#: ggsetup_EmsImport2.inc:108
+msgid "%s - Import process started"
+msgstr ""
+
+#  since 1.8
+#  Programmer's name for it: QIW_ErrorLogFinished
+#. since 1.8
+#. Programmer's name for it: QIW_ErrorLogFinished
+#: ggsetup_EmsImport2.inc:109
+msgid "%s - Import process finished"
+msgstr ""
+
+#  since 1.8
+#  Programmer's name for it: QIW_SomeErrorsFound
+#. since 1.8
+#. Programmer's name for it: QIW_SomeErrorsFound
+#: ggsetup_EmsImport2.inc:110
+msgid "%d error(s) found"
+msgstr ""
+
+#  since 1.8
+#  Programmer's name for it: QIW_NoErrorsFound
+#. since 1.8
+#. Programmer's name for it: QIW_NoErrorsFound
+#: ggsetup_EmsImport2.inc:111
+msgid "No error found"
+msgstr ""
+
+#  Programmer's name for it: QIW_BaseFormats
+#. Programmer's name for it: QIW_BaseFormats
+#: ggsetup_EmsImport2.inc:113
+msgid "Base formats"
+msgstr ""
+
+#  since 1.65
+#  Programmer's name for it: QIW_DateTimeFormats
+#. since 1.65
+#. Programmer's name for it: QIW_DateTimeFormats
+#: ggsetup_EmsImport2.inc:114
+msgid "Date and Time formats"
+msgstr ""
+
+#  since 1.65
+#  Programmer's name for it: QIW_Separators
+#. since 1.65
+#. Programmer's name for it: QIW_Separators
+#: ggsetup_EmsImport2.inc:115
+msgid "Separators"
+msgstr ""
+
+#  Programmer's name for it: QIW_DecimalSeparator
+#. Programmer's name for it: QIW_DecimalSeparator
+#: ggsetup_EmsImport2.inc:116
+msgid "Decimal"
+msgstr ""
+
+#  Programmer's name for it: QIW_ThousandSeparator
+#. Programmer's name for it: QIW_ThousandSeparator
+#: ggsetup_EmsImport2.inc:117
+msgid "Thousand"
+msgstr ""
+
+#  Programmer's name for it: QIW_ShortDateFormat
+#. Programmer's name for it: QIW_ShortDateFormat
+#: ggsetup_EmsImport2.inc:118
+msgid "Short date"
+msgstr ""
+
+#  Programmer's name for it: QIW_LongDateFormat
+#. Programmer's name for it: QIW_LongDateFormat
+#: ggsetup_EmsImport2.inc:119
+msgid "Long date"
+msgstr ""
+
+#  Programmer's name for it: QIW_ShortTimeFormat
+#. Programmer's name for it: QIW_ShortTimeFormat
+#: ggsetup_EmsImport2.inc:121
+msgid "Short time"
+msgstr ""
+
+#  Programmer's name for it: QIW_LongTimeFormat
+#. Programmer's name for it: QIW_LongTimeFormat
+#: ggsetup_EmsImport2.inc:122
+msgid "Long time"
+msgstr ""
+
+#  #-#-#-#-#  EmsExport3.po (PACKAGE VERSION)  #-#-#-#-#
+#  Programmer's name for it: QED_Formats_BooleanTrue
+#  #-#-#-#-#  EmsImport2.po (PACKAGE VERSION)  #-#-#-#-#
+#  Programmer's name for it: QIW_BooleanTrue
+#. Programmer's name for it: QIW_BooleanTrue
+#: ggsetup_EmsImport2.inc:125
+msgid "Boolean true"
+msgstr ""
+
+#  #-#-#-#-#  EmsExport3.po (PACKAGE VERSION)  #-#-#-#-#
+#  Programmer's name for it: QED_Formats_BooleanFalse
+#  #-#-#-#-#  EmsImport2.po (PACKAGE VERSION)  #-#-#-#-#
+#  Programmer's name for it: QIW_BooleanFalse
+#. Programmer's name for it: QIW_BooleanFalse
+#: ggsetup_EmsImport2.inc:126
+msgid "Boolean false"
+msgstr ""
+
+#  since 2.0
+#  Programmer's name for it: QIW_NullValue
+#. since 2.0
+#. Programmer's name for it: QIW_NullValue
+#: ggsetup_EmsImport2.inc:127
+msgid "Null Values"
+msgstr ""
+
+#  Programmer's name for it: QIWDF_Caption
+#. Programmer's name for it: QIWDF_Caption
+#: ggsetup_EmsImport2.inc:129
+msgid "Data formats"
+msgstr ""
+
+#  since 1.6
+#  Programmer's name for it: QIWDF_Tuning
+#. since 1.6
+#. Programmer's name for it: QIWDF_Tuning
+#: ggsetup_EmsImport2.inc:131
+msgid "Tuning"
+msgstr ""
+
+#  since 1.6
+#  Programmer's name for it: QIWDF_Replacements
+#. since 1.6
+#. Programmer's name for it: QIWDF_Replacements
+#: ggsetup_EmsImport2.inc:132
+msgid "Replacements"
+msgstr ""
+
+#  since 2.0
+#  Programmer's name for it: QIWDF_TextToFind
+#  since 2.0
+#  Programmer's name for it: QIWDF_RE_TextToFind
+#. since 2.0
+#. Programmer's name for it: QIWDF_TextToFind
+#. since 2.0
+#. Programmer's name for it: QIWDF_RE_TextToFind
+#: ggsetup_EmsImport2.inc:133 ggsetup_EmsImport2.inc:164
+msgid "Text to find"
+msgstr ""
+
+#  since 2.0
+#  Programmer's name for it: QIWDF_ReplaceWith
+#  since 2.0
+#  Programmer's name for it: QIWDF_RE_ReplaceWith
+#. since 2.0
+#. Programmer's name for it: QIWDF_ReplaceWith
+#. since 2.0
+#. Programmer's name for it: QIWDF_RE_ReplaceWith
+#: ggsetup_EmsImport2.inc:134 ggsetup_EmsImport2.inc:165
+msgid "Replace with"
+msgstr ""
+
+#  since 2.0
+#  Programmer's name for it: QIWDF_IgnoreCase
+#  since 2.0
+#  Programmer's name for it: QIWDF_RE_IgnoreCase
+#. since 2.0
+#. Programmer's name for it: QIWDF_IgnoreCase
+#. since 2.0
+#. Programmer's name for it: QIWDF_RE_IgnoreCase
+#: ggsetup_EmsImport2.inc:135 ggsetup_EmsImport2.inc:166
+msgid "Ignore case"
+msgstr ""
+
+#  since 2.0
+#  Programmer's name for it: QIWDF_IgnoreCase_Yes
+#. since 2.0
+#. Programmer's name for it: QIWDF_IgnoreCase_Yes
+#: ggsetup_EmsImport2.inc:136
+msgid "Yes"
+msgstr ""
+
+#  since 2.0
+#  Programmer's name for it: QIWDF_IgnoreCase_No
+#. since 2.0
+#. Programmer's name for it: QIWDF_IgnoreCase_No
+#: ggsetup_EmsImport2.inc:137
+msgid "No"
+msgstr ""
+
+#  since 2.0
+#  Programmer's name for it: QIWDF_AddReplacement
+#. since 2.0
+#. Programmer's name for it: QIWDF_AddReplacement
+#: ggsetup_EmsImport2.inc:138
+msgid "Add Replacement"
+msgstr ""
+
+#  since 2.0
+#  Programmer's name for it: QIWDF_EditReplacement
+#. since 2.0
+#. Programmer's name for it: QIWDF_EditReplacement
+#: ggsetup_EmsImport2.inc:139
+msgid "Edit Replacement"
+msgstr ""
+
+#  since 2.0
+#  Programmer's name for it: QIWDF_DelReplacement
+#. since 2.0
+#. Programmer's name for it: QIWDF_DelReplacement
+#: ggsetup_EmsImport2.inc:140
+msgid "Del Replacement"
+msgstr ""
+
+#  Programmer's name for it: QIWDF_GeneratorValue
+#. Programmer's name for it: QIWDF_GeneratorValue
+#: ggsetup_EmsImport2.inc:141
+msgid "Generator value"
+msgstr ""
+
+#  Programmer's name for it: QIWDF_GeneratorStep
+#. Programmer's name for it: QIWDF_GeneratorStep
+#: ggsetup_EmsImport2.inc:142
+msgid "Generator step"
+msgstr ""
+
+#  Programmer's name for it: QIWDF_ConstantValue
+#. Programmer's name for it: QIWDF_ConstantValue
+#: ggsetup_EmsImport2.inc:143
+msgid "Constant value"
+msgstr ""
+
+#  Programmer's name for it: QIWDF_NullValue
+#. Programmer's name for it: QIWDF_NullValue
+#: ggsetup_EmsImport2.inc:144
+msgid "Null value"
+msgstr ""
+
+#  Programmer's name for it: QIWDF_DefaultValue
+#. Programmer's name for it: QIWDF_DefaultValue
+#: ggsetup_EmsImport2.inc:145
+msgid "Default value"
+msgstr ""
+
+#  Programmer's name for it: QIWDF_LeftQuote
+#. Programmer's name for it: QIWDF_LeftQuote
+#: ggsetup_EmsImport2.inc:146
+msgid "Left quote"
+msgstr ""
+
+#  Programmer's name for it: QIWDF_RightQuote
+#. Programmer's name for it: QIWDF_RightQuote
+#: ggsetup_EmsImport2.inc:147
+msgid "Right quote"
+msgstr ""
+
+#  Programmer's name for it: QIWDF_QuoteAction
+#. Programmer's name for it: QIWDF_QuoteAction
+#: ggsetup_EmsImport2.inc:148
+msgid "Quote action"
+msgstr ""
+
+#  Programmer's name for it: QIWDF_CharCase
+#. Programmer's name for it: QIWDF_CharCase
+#: ggsetup_EmsImport2.inc:152
+msgid "Char case"
+msgstr ""
+
+#  Programmer's name for it: QIWDF_CharCaseNone
+#  Programmer's name for it: QIWDF_CharSetNone
+#. Programmer's name for it: QIWDF_CharCaseNone
+#. Programmer's name for it: QIWDF_CharSetNone
+#: ggsetup_EmsImport2.inc:153 ggsetup_EmsImport2.inc:159
+msgid "As Is"
+msgstr ""
+
+#  Programmer's name for it: QIWDF_CharCaseUpper
+#. Programmer's name for it: QIWDF_CharCaseUpper
+#: ggsetup_EmsImport2.inc:154
+msgid "Upper"
+msgstr ""
+
+#  Programmer's name for it: QIWDF_CharCaseLower
+#. Programmer's name for it: QIWDF_CharCaseLower
+#: ggsetup_EmsImport2.inc:155
+msgid "Lower"
+msgstr ""
+
+#  Programmer's name for it: QIWDF_CharCaseUpperFirst
+#. Programmer's name for it: QIWDF_CharCaseUpperFirst
+#: ggsetup_EmsImport2.inc:156
+msgid "Upper first"
+msgstr ""
+
+#  Programmer's name for it: QIWDF_CharCaseUpperWord
+#. Programmer's name for it: QIWDF_CharCaseUpperWord
+#: ggsetup_EmsImport2.inc:157
+msgid "Upper first word"
+msgstr ""
+
+#  Programmer's name for it: QIWDF_CharSet
+#. Programmer's name for it: QIWDF_CharSet
+#: ggsetup_EmsImport2.inc:158
+msgid "Char set"
+msgstr ""
+
+#  Programmer's name for it: QIWDF_CharSetAnsi
+#. Programmer's name for it: QIWDF_CharSetAnsi
+#: ggsetup_EmsImport2.inc:160
+msgid "Ansi"
+msgstr ""
+
+#  Programmer's name for it: QIWDF_CharSetOem
+#. Programmer's name for it: QIWDF_CharSetOem
+#: ggsetup_EmsImport2.inc:161
+msgid "Oem"
+msgstr ""
+
+#  since 2.0
+#  Programmer's name for it: QIWDF_RE_Title
+#. since 2.0
+#. Programmer's name for it: QIWDF_RE_Title
+#: ggsetup_EmsImport2.inc:163
+msgid "Replacement"
+msgstr ""
+
+#  since 2.0
+#  Programmer's name for it: QIW_TXT_Fields_Pos
+#. since 2.0
+#. Programmer's name for it: QIW_TXT_Fields_Pos
+#: ggsetup_EmsImport2.inc:169
+msgid "P"
+msgstr ""
+
+#  since 2.0
+#  Programmer's name for it: QIW_TXT_Fields_Size
+#. since 2.0
+#. Programmer's name for it: QIW_TXT_Fields_Size
+#: ggsetup_EmsImport2.inc:170
+msgid "S"
+msgstr ""
+
+#  Programmer's name for it: QIW_TXT_SkipLines
+#  Programmer's name for it: QIW_CSV_SkipLines
+#. Programmer's name for it: QIW_TXT_SkipLines
+#. Programmer's name for it: QIW_CSV_SkipLines
+#: ggsetup_EmsImport2.inc:172 ggsetup_EmsImport2.inc:180
+msgid "Skip line(s)"
+msgstr ""
+
+#  since 2.0
+#  Programmer's name for it: QIW_TXT_Tip
+#. since 2.0
+#. Programmer's name for it: QIW_TXT_Tip
+#: ggsetup_EmsImport2.inc:176
+msgid "Double click to add or remove column separators. Click at the area between separators to define the imported column."
+msgstr ""
+
+#  since 2.0
+#  Programmer's name for it: QIW_CSV_ColNumber
+#. since 2.0
+#. Programmer's name for it: QIW_CSV_ColNumber
+#: ggsetup_EmsImport2.inc:179
+msgid "Col Number"
+msgstr ""
+
+#  since 1.2
+#  Programmer's name for it: QIW_CSV_AutoFill
+#  since 1.2
+#  Programmer's name for it: QIW_DBF_AutoFill
+#  since 2.0
+#  Programmer's name for it: QIW_XML_AutoFill
+#  since 1.4
+#  Programmer's name for it: QIW_Access_AutoFill
+#. since 1.2
+#. Programmer's name for it: QIW_CSV_AutoFill
+#. since 1.2
+#. Programmer's name for it: QIW_DBF_AutoFill
+#. since 2.0
+#. Programmer's name for it: QIW_XML_AutoFill
+#. since 1.4
+#. Programmer's name for it: QIW_Access_AutoFill
+#: ggsetup_EmsImport2.inc:181 ggsetup_EmsImport2.inc:190
+#: ggsetup_EmsImport2.inc:201 ggsetup_EmsImport2.inc:261
+msgid "Auto fill"
+msgstr ""
+
+#  since 1.4
+#  Programmer's name for it: QIW_CSV_GridCol
+#. since 1.4
+#. Programmer's name for it: QIW_CSV_GridCol
+#: ggsetup_EmsImport2.inc:183
+msgid "Column_%d"
+msgstr ""
+
+#  Programmer's name for it: QIW_CSV_Tip
+#. Programmer's name for it: QIW_CSV_Tip
+#: ggsetup_EmsImport2.inc:186
+msgid "Select field name from the list box, then click at the column to import this field to."
+msgstr ""
+
+#  since 1.7
+#  Programmer's name for it: QIW_DBF_SkipDeleted
+#. since 1.7
+#. Programmer's name for it: QIW_DBF_SkipDeleted
+#: ggsetup_EmsImport2.inc:192
+msgid "Skip Deleted Rows"
+msgstr ""
+
+#  Programmer's name for it: QIW_DBF_Tip
+#  since 1.4
+#  Programmer's name for it: QIW_Access_Tip
+#. Programmer's name for it: QIW_DBF_Tip
+#. since 1.4
+#. Programmer's name for it: QIW_Access_Tip
+#: ggsetup_EmsImport2.inc:197 ggsetup_EmsImport2.inc:268
+msgid "Click the \"Add\" button to set the accordance between the imported column and the table field or click the \"Remove\" button to remove one."
+msgstr ""
+
+#  since 2.1
+#  Programmer's name for it: QIW_XML_WriteOnFly
+#. since 2.1
+#. Programmer's name for it: QIW_XML_WriteOnFly
+#: ggsetup_EmsImport2.inc:203
+msgid "Write on Fly"
+msgstr ""
+
+#  since 2.0
+#  Programmer's name for it: QIW_XML_Tip
+#. since 2.0
+#. Programmer's name for it: QIW_XML_Tip
+#: ggsetup_EmsImport2.inc:208
+msgid "Click the \"Add\" button to set the accordance between the imported column and the table field or click the \"Remove\"button to remove one."
+msgstr ""
+
+#  since 2.0
+#  Programmer's name for it: QIW_XLS_Ranges
+#. since 2.0
+#. Programmer's name for it: QIW_XLS_Ranges
+#: ggsetup_EmsImport2.inc:211
+msgid "Ranges"
+msgstr ""
+
+#  since 2.0
+#  Programmer's name for it: QIW_XLS_AddRange
+#. since 2.0
+#. Programmer's name for it: QIW_XLS_AddRange
+#: ggsetup_EmsImport2.inc:212
+msgid "Add Range"
+msgstr ""
+
+#  since 2.0
+#  Programmer's name for it: QIW_XLS_EditRange
+#. since 2.0
+#. Programmer's name for it: QIW_XLS_EditRange
+#: ggsetup_EmsImport2.inc:213
+msgid "Edit Range"
+msgstr ""
+
+#  since 2.0
+#  Programmer's name for it: QIW_XLS_DelRange
+#. since 2.0
+#. Programmer's name for it: QIW_XLS_DelRange
+#: ggsetup_EmsImport2.inc:214
+msgid "Del Range"
+msgstr ""
+
+#  since 2.0
+#  Programmer's name for it: QIW_XLS_MoveRangeUp
+#. since 2.0
+#. Programmer's name for it: QIW_XLS_MoveRangeUp
+#: ggsetup_EmsImport2.inc:215
+msgid "Move Range Up"
+msgstr ""
+
+#  since 2.0
+#  Programmer's name for it: QIW_XLS_MoveRangeDown
+#. since 2.0
+#. Programmer's name for it: QIW_XLS_MoveRangeDown
+#: ggsetup_EmsImport2.inc:216
+msgid "Move Range Down"
+msgstr ""
+
+#  since 2.0
+#  Programmer's name for it: QIW_XLS_SkipCols
+#. since 2.0
+#. Programmer's name for it: QIW_XLS_SkipCols
+#: ggsetup_EmsImport2.inc:217
+msgid "Skip col(s)"
+msgstr ""
+
+#  since 2.0
+#  Programmer's name for it: QIW_XLS_SkipRows
+#. since 2.0
+#. Programmer's name for it: QIW_XLS_SkipRows
+#: ggsetup_EmsImport2.inc:218
+msgid "Skip row(s)"
+msgstr ""
+
+#  since 1.2
+#  Programmer's name for it: QIW_XLS_AutoFillCols
+#. since 1.2
+#. Programmer's name for it: QIW_XLS_AutoFillCols
+#: ggsetup_EmsImport2.inc:219
+msgid "Auto fill cols"
+msgstr ""
+
+#  since 1.2
+#  Programmer's name for it: QIW_XLS_AutoFillRows
+#. since 1.2
+#. Programmer's name for it: QIW_XLS_AutoFillRows
+#: ggsetup_EmsImport2.inc:220
+msgid "Auto fill rows"
+msgstr ""
+
+#  since 2.0
+#  Programmer's name for it: QIW_XLS_ClearFieldRanges
+#. since 2.0
+#. Programmer's name for it: QIW_XLS_ClearFieldRanges
+#: ggsetup_EmsImport2.inc:221
+msgid "Clear field ranges"
+msgstr ""
+
+#  since 2.0
+#  Programmer's name for it: QIW_XLS_ClearAllRanges
+#. since 2.0
+#. Programmer's name for it: QIW_XLS_ClearAllRanges
+#: ggsetup_EmsImport2.inc:222
+msgid "Clear all ranges"
+msgstr ""
+
+#  Programmer's name for it: QIW_XLS_Tip
+#  Programmer's name for it: QIW_XLS_Tip
+#. Programmer's name for it: QIW_XLS_Tip
+#: ggsetup_EmsImport2.inc:227
+msgid "Use the Range Editor to add/edit ranges or click individual cells with Shift or Ctrl pressed. Press Enter to apply selection or Escape to cancel."
+msgstr ""
+
+#  since 2.0
+#  Programmer's name for it: QIRE_Caption
+#. since 2.0
+#. Programmer's name for it: QIRE_Caption
+#: ggsetup_EmsImport2.inc:229
+msgid "Range"
+msgstr ""
+
+#  since 2.0
+#  Programmer's name for it: QIRE_RangeType
+#. since 2.0
+#. Programmer's name for it: QIRE_RangeType
+#: ggsetup_EmsImport2.inc:230
+msgid " Range Type "
+msgstr ""
+
+#  #-#-#-#-#  EmsExport3.po (PACKAGE VERSION)  #-#-#-#-#
+#  since 3.0
+#  Programmer's name for it: QED_RTF_StripType_Col
+#  since 2.2
+#  Programmer's name for it: QED_XLS_DataFormat_Styles_StripStyle_Col
+#  since 3.0
+#  Programmer's name for it: QED_XLS_Hyperlink_Col
+#  since 3.0
+#  Programmer's name for it: QED_XLS_Note_Col
+#  since 3.1
+#  Programmer's name for it: QED_XLS_Cell_Col
+#  #-#-#-#-#  EmsImport2.po (PACKAGE VERSION)  #-#-#-#-#
+#  since 2.0
+#  Programmer's name for it: QIRE_RangeType_Col
+#. since 2.0
+#. Programmer's name for it: QIRE_RangeType_Col
+#: ggsetup_EmsImport2.inc:231
+msgid "Col"
+msgstr ""
+
+#  #-#-#-#-#  EmsExport3.po (PACKAGE VERSION)  #-#-#-#-#
+#  since 3.0
+#  Programmer's name for it: QED_RTF_StripType_Row
+#  since 2.2
+#  Programmer's name for it: QED_XLS_DataFormat_Styles_StripStyle_Row
+#  since 3.0
+#  Programmer's name for it: QED_XLS_Hyperlink_Row
+#  since 3.0
+#  Programmer's name for it: QED_XLS_Note_Row
+#  since 3.1
+#  Programmer's name for it: QED_XLS_Cell_Row
+#  #-#-#-#-#  EmsImport2.po (PACKAGE VERSION)  #-#-#-#-#
+#  since 2.0
+#  Programmer's name for it: QIRE_RangeType_Row
+#. since 2.0
+#. Programmer's name for it: QIRE_RangeType_Row
+#: ggsetup_EmsImport2.inc:232
+msgid "Row"
+msgstr ""
+
+#  since 2.0
+#  Programmer's name for it: QIRE_RangeType_Cell
+#. since 2.0
+#. Programmer's name for it: QIRE_RangeType_Cell
+#: ggsetup_EmsImport2.inc:233
+msgid "Cell"
+msgstr ""
+
+#  since 2.0
+#  Programmer's name for it: QIRE_Start
+#. since 2.0
+#. Programmer's name for it: QIRE_Start
+#: ggsetup_EmsImport2.inc:234
+msgid " Start "
+msgstr ""
+
+#  since 2.0
+#  Programmer's name for it: QIRE_Start_DataStarted
+#. since 2.0
+#. Programmer's name for it: QIRE_Start_DataStarted
+#: ggsetup_EmsImport2.inc:235
+msgid "Where data started"
+msgstr ""
+
+#  since 2.0
+#  Programmer's name for it: QIRE_Start_Col
+#. since 2.0
+#. Programmer's name for it: QIRE_Start_Col
+#: ggsetup_EmsImport2.inc:236
+msgid "Start Col"
+msgstr ""
+
+#  since 2.0
+#  Programmer's name for it: QIRE_Start_Row
+#. since 2.0
+#. Programmer's name for it: QIRE_Start_Row
+#: ggsetup_EmsImport2.inc:237
+msgid "Start Row"
+msgstr ""
+
+#  since 2.0
+#  Programmer's name for it: QIRE_Finish
+#. since 2.0
+#. Programmer's name for it: QIRE_Finish
+#: ggsetup_EmsImport2.inc:238
+msgid " Finish "
+msgstr ""
+
+#  since 2.0
+#  Programmer's name for it: QIRE_Finish_DataFinished
+#. since 2.0
+#. Programmer's name for it: QIRE_Finish_DataFinished
+#: ggsetup_EmsImport2.inc:239
+msgid "Where data finished"
+msgstr ""
+
+#  since 2.0
+#  Programmer's name for it: QIRE_Finish_Col
+#. since 2.0
+#. Programmer's name for it: QIRE_Finish_Col
+#: ggsetup_EmsImport2.inc:240
+msgid "Finish Col"
+msgstr ""
+
+#  since 2.0
+#  Programmer's name for it: QIRE_Finish_Row
+#. since 2.0
+#. Programmer's name for it: QIRE_Finish_Row
+#: ggsetup_EmsImport2.inc:241
+msgid "Finish Row"
+msgstr ""
+
+#  since 2.0
+#  Programmer's name for it: QIRE_Direction
+#. since 2.0
+#. Programmer's name for it: QIRE_Direction
+#: ggsetup_EmsImport2.inc:242
+msgid " Direction "
+msgstr ""
+
+#  since 2.0
+#  Programmer's name for it: QIRE_Sheet
+#. since 2.0
+#. Programmer's name for it: QIRE_Sheet
+#: ggsetup_EmsImport2.inc:247
+msgid " Sheet "
+msgstr ""
+
+#  since 2.0
+#  Programmer's name for it: QIRE_Sheet_Default
+#. since 2.0
+#. Programmer's name for it: QIRE_Sheet_Default
+#: ggsetup_EmsImport2.inc:248
+msgid "Default Sheet"
+msgstr ""
+
+#  since 2.0
+#  Programmer's name for it: QIRE_Sheet_Custom
+#. since 2.0
+#. Programmer's name for it: QIRE_Sheet_Custom
+#: ggsetup_EmsImport2.inc:249
+msgid "Custom Sheet"
+msgstr ""
+
+#  since 2.0
+#  Programmer's name for it: QIRE_Sheet_Custom_Number
+#. since 2.0
+#. Programmer's name for it: QIRE_Sheet_Custom_Number
+#: ggsetup_EmsImport2.inc:250
+msgid "Sheet Number"
+msgstr ""
+
+#  since 2.0
+#  Programmer's name for it: QIRE_Sheet_Custom_Name
+#. since 2.0
+#. Programmer's name for it: QIRE_Sheet_Custom_Name
+#: ggsetup_EmsImport2.inc:251
+msgid "Sheet Name"
+msgstr ""
+
+#  since 1.4
+#  Programmer's name for it: QIW_Access_Table
+#. since 1.4
+#. Programmer's name for it: QIW_Access_Table
+#: ggsetup_EmsImport2.inc:254
+msgid "I would like to import data from a table"
+msgstr ""
+
+#  since 1.4
+#  Programmer's name for it: QIW_Access_SQL
+#. since 1.4
+#. Programmer's name for it: QIW_Access_SQL
+#: ggsetup_EmsImport2.inc:256
+msgid "I would like to import data from an SQL query"
+msgstr ""
+
+#  since 1.4
+#  Programmer's name for it: QIW_Access_SQL_Load
+#. since 1.4
+#. Programmer's name for it: QIW_Access_SQL_Load
+#: ggsetup_EmsImport2.inc:257
+msgid "Load query from file"
+msgstr ""
+
+#  since 1.4
+#  Programmer's name for it: QIW_Access_SQL_Save
+#. since 1.4
+#. Programmer's name for it: QIW_Access_SQL_Save
+#: ggsetup_EmsImport2.inc:258
+msgid "Save query to file"
+msgstr ""
+
+#  Programmer's name for it: QIW_Access_CustomQuery
+#. Programmer's name for it: QIW_Access_CustomQuery
+#: ggsetup_EmsImport2.inc:263
+msgid "Custom query"
+msgstr ""
+

@@ -1,0 +1,6140 @@
+# SOME DESCRIPTIVE TITLE.
+# Copyright (C) YEAR THE PACKAGE'S COPYRIGHT HOLDER
+# This file is distributed under the same license as the PACKAGE package.
+# FIRST AUTHOR <EMAIL@ADDRESS>, YEAR.
+# 
+msgid ""
+msgstr ""
+"Project-Id-Version: PACKAGE VERSION\n"
+"POT-Creation-Date: 2005-04-19 10:13\n"
+"PO-Revision-Date: 2003-03-10 17:41+0100\n"
+"Last-Translator: David Vinyals <dvinyals@codifont.com>\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+
+#. Programmer's name for it: RSAAboutFormCaption
+#: Core/IdDsnCoreResourceStrings.pas:51 
+msgid "About"
+msgstr "Acerca de..."
+
+#. Programmer's name for it: RSAAboutBoxCompName
+#: Core/IdDsnCoreResourceStrings.pas:52 
+msgid "Internet Direct (Indy)"
+msgstr "Internet Direct (Indy)"
+
+#. Programmer's name for it: RSAAboutMenuItemName
+#: Core/IdDsnCoreResourceStrings.pas:53 
+msgid "About Internet &Direct (Indy) %s..."
+msgstr "Acerca de Internet &Direct (Indy) %s..."
+
+#. Programmer's name for it: RSAAboutBoxVersion
+#: Core/IdDsnCoreResourceStrings.pas:55 
+msgid "Version %s"
+msgstr "Versión %s"
+
+#. Programmer's name for it: RSAAboutBoxCopyright
+#: Core/IdDsnCoreResourceStrings.pas:57 
+#, fuzzy
+msgid ""
+"Copyright (c) 1993 - 2003\n"
+"Kudzu (Chad Z. Hower)\n"
+"and the\n"
+"Indy Pit Crew"
+msgstr ""
+"Copyright © 1993 - 2001\n"
+"Kudzu (Chad Z. Hower)\n"
+"y el\n"
+"Indy Pit Crew"
+
+#. Programmer's name for it: RSAAboutBoxPleaseVisit
+#: Core/IdDsnCoreResourceStrings.pas:59 
+msgid "For the latest updates and information please visit:"
+msgstr "For the latest updates and information please visit:"
+
+#. Programmer's name for it: RSAAboutBoxIndyWebsite
+#: Core/IdDsnCoreResourceStrings.pas:60 
+#, fuzzy
+msgid "http://www.indyproject.org/"
+msgstr "http://www.nevrona.com/indy/"
+
+#. Programmer's name for it: RSAAboutCreditsCoordinator
+#: Core/IdDsnCoreResourceStrings.pas:62 
+msgid "Project Coordinator"
+msgstr "Coordinador de proyecto"
+
+#. Programmer's name for it: RSAAboutCreditsCoCordinator
+#: Core/IdDsnCoreResourceStrings.pas:63 
+msgid "Project Co-Coordinator"
+msgstr "Ayte. de Coordinador de proyecto"
+
+#. Programmer's name for it: RSAAboutCreditsDocumentation
+#: Core/IdDsnCoreResourceStrings.pas:64 
+#, fuzzy
+msgid "Documentation Coordinator"
+msgstr "Coordinador de proyecto"
+
+#. Programmer's name for it: RSAAboutCreditsDemos
+#: Core/IdDsnCoreResourceStrings.pas:65 
+#, fuzzy
+msgid "Demos Coordinator"
+msgstr "Coordinador de proyecto"
+
+#. Programmer's name for it: RSAAboutCreditsRetiredPast
+#: Core/IdDsnCoreResourceStrings.pas:66 
+msgid "Retired/Past Contributors"
+msgstr ""
+
+#. Programmer's name for it: RSAAboutCreditsIndyCrew
+#: Core/IdDsnCoreResourceStrings.pas:67 
+msgid "The Indy Pit Crew"
+msgstr ""
+
+#. Programmer's name for it: RSAAboutCreditsIndyCrew
+#: Core/IdDsnCoreResourceStrings.pas:69 
+msgid ""
+"present the\n"
+"Kitchen Sink"
+msgstr ""
+
+#. Programmer's name for it: RSBindingFormCaption
+#: Core/IdDsnCoreResourceStrings.pas:82 
+msgid "Binding Editor"
+msgstr ""
+
+#. Programmer's name for it: RSBindingNewCaption
+#: Core/IdDsnCoreResourceStrings.pas:83 
+msgid "&New"
+msgstr ""
+
+#. Programmer's name for it: RSBindingDeleteCaption
+#: Core/IdDsnCoreResourceStrings.pas:84 
+msgid "&Delete"
+msgstr ""
+
+#. RSBindingAddCaption = '&Add';
+#. Programmer's name for it: RSBindingRemoveCaption
+#: Core/IdDsnCoreResourceStrings.pas:86 
+msgid "&Remove"
+msgstr ""
+
+#. Programmer's name for it: RSBindingLabelBindings
+#: Core/IdDsnCoreResourceStrings.pas:87 
+msgid "&Bindings"
+msgstr ""
+
+#. Programmer's name for it: RSBindingHostnameLabel
+#: Core/IdDsnCoreResourceStrings.pas:88 
+#, fuzzy
+msgid "&IP Address"
+msgstr "Dirección errónea."
+
+#. Programmer's name for it: RSBindingPortLabel
+#: Core/IdDsnCoreResourceStrings.pas:89 
+msgid "&Port"
+msgstr ""
+
+#. Programmer's name for it: RSBindingIPVerLabel
+#: Core/IdDsnCoreResourceStrings.pas:90 
+#, fuzzy
+msgid "IP &Version"
+msgstr "Versión %s"
+
+#. Programmer's name for it: RSBindingIPV4Item
+#: Core/IdDsnCoreResourceStrings.pas:91 
+msgid "IPv&4 (127.0.0.1)"
+msgstr ""
+
+#. Programmer's name for it: RSBindingIPV6Item
+#: Core/IdDsnCoreResourceStrings.pas:92 
+msgid "IPv&6 (::1)"
+msgstr ""
+
+#. Programmer's name for it: RSADlgSLMoveUp
+#. Programmer's name for it: RSADlgSLMoveUp
+#: Core/IdDsnCoreResourceStrings.pas:94 
+#: Protocols/IdDsnResourceStrings.pas:30
+msgid "Move Up"
+msgstr ""
+
+#. Programmer's name for it: RSADlgSLMoveDown
+#. Programmer's name for it: RSADlgSLMoveDown
+#: Core/IdDsnCoreResourceStrings.pas:95 
+#: Protocols/IdDsnResourceStrings.pas:31
+msgid "Move Down"
+msgstr ""
+
+#. Programmer's name for it: RSADlgSLAdd
+#. Programmer's name for it: RSADlgSLAdd
+#: Core/IdDsnCoreResourceStrings.pas:96 
+#: Protocols/IdDsnResourceStrings.pas:32
+msgid "Add"
+msgstr ""
+
+#. Programmer's name for it: RSADlgSLRemove
+#. Programmer's name for it: RSADlgSLRemove
+#: Core/IdDsnCoreResourceStrings.pas:97 
+#: Protocols/IdDsnResourceStrings.pas:33
+msgid "Remove"
+msgstr ""
+
+#. Caption that uses format with component name
+#. Programmer's name for it: RSADlgSLCaption
+#. Caption that uses format with component name
+#. Programmer's name for it: RSADlgSLCaption
+#: Core/IdDsnCoreResourceStrings.pas:99 
+#: Protocols/IdDsnResourceStrings.pas:35
+msgid "Editing SASL List for %s"
+msgstr ""
+
+#. Programmer's name for it: RSADlgSLAvailable
+#. Programmer's name for it: RSADlgSLAvailable
+#: Core/IdDsnCoreResourceStrings.pas:100 
+#: Protocols/IdDsnResourceStrings.pas:36
+#, fuzzy
+msgid "&Available"
+msgstr "No aceptable"
+
+#. Programmer's name for it: RSADlgSLAssigned
+#. Programmer's name for it: RSADlgSLAssigned
+#: Core/IdDsnCoreResourceStrings.pas:101 
+#: Protocols/IdDsnResourceStrings.pas:37
+msgid "A&ssigned (tried in order listed)"
+msgstr ""
+
+#. Programmer's name for it: RSADlgSLEditList
+#. Programmer's name for it: RSADlgSLEditList
+#: Core/IdDsnCoreResourceStrings.pas:103 
+#: Protocols/IdDsnResourceStrings.pas:39
+msgid "Edit &List"
+msgstr ""
+
+#. all IP addresses
+#. Programmer's name for it: RSBindingAll
+#: Core/IdDsnCoreResourceStrings.pas:105 
+msgid "All"
+msgstr ""
+
+#. any port
+#. Programmer's name for it: RSBindingAny
+#. Programmer's name for it: RSIMAP4ConnectionStateAny
+#: Core/IdDsnCoreResourceStrings.pas:106 
+#: Protocols/IdResourceStringsProtocols.pas:451
+msgid "Any"
+msgstr ""
+
+#. Programmer's name for it: RSOk
+#. Programmer's name for it: RSHTTPOK
+#: Core/IdDsnCoreResourceStrings.pas:109 
+#: Protocols/IdResourceStringsProtocols.pas:231
+msgid "OK"
+msgstr "Aceptar"
+
+#. Programmer's name for it: RSCancel
+#: Core/IdDsnCoreResourceStrings.pas:110 
+msgid "Cancel"
+msgstr ""
+
+#. Programmer's name for it: RSHelp
+#: Core/IdDsnCoreResourceStrings.pas:111 
+msgid "&Help"
+msgstr ""
+
+#. IdRegister
+#. Programmer's name for it: RSRegIndyClients
+#: Core/IdDsnCoreResourceStrings.pas:114 
+msgid "Indy Clients"
+msgstr ""
+
+#. Programmer's name for it: RSRegIndyServers
+#: Core/IdDsnCoreResourceStrings.pas:115 
+msgid "Indy Servers"
+msgstr "Servidores Indy"
+
+#. Programmer's name for it: RSRegIndyIntercepts
+#: Core/IdDsnCoreResourceStrings.pas:116 
+#, fuzzy
+msgid "Indy Intercepts"
+msgstr "Servidores Indy"
+
+#. Programmer's name for it: RSRegIndyIOHandlers
+#: Core/IdDsnCoreResourceStrings.pas:117 
+msgid "Indy I/O Handlers"
+msgstr ""
+
+#. Programmer's name for it: RSRegIndyMisc
+#: Core/IdDsnCoreResourceStrings.pas:118 
+msgid "Indy Misc"
+msgstr "Indy Misc"
+
+#. Programmer's name for it: RSCannotAllocateSocket
+#: Core/IdResourceStringsCore.pas:94 
+msgid "Cannot allocate socket."
+msgstr "No se encuentra el socket."
+
+#. Programmer's name for it: RSSocksRequestFailed
+#: Core/IdResourceStringsCore.pas:95 
+msgid "Request rejected or failed."
+msgstr "Respuesta rechazada o fallida."
+
+#. Programmer's name for it: RSSocksRequestServerFailed
+#: Core/IdResourceStringsCore.pas:96 
+msgid "Request rejected because SOCKS server cannot connect."
+msgstr "Request rejected because SOCKS server cannot connect."
+
+#. Programmer's name for it: RSSocksRequestIdentFailed
+#: Core/IdResourceStringsCore.pas:97 
+msgid ""
+"Request rejected because the client program and identd report different user-"
+"ids."
+msgstr ""
+"Request rejected because the client program and identd report different user-"
+"ids."
+
+#. Programmer's name for it: RSSocksUnknownError
+#: Core/IdResourceStringsCore.pas:98 
+msgid "Unknown socks error."
+msgstr "Error de sock desconocido."
+
+#. Programmer's name for it: RSSocksServerRespondError
+#: Core/IdResourceStringsCore.pas:99 
+msgid "Socks server did not respond."
+msgstr "El Sock del servidor no respondió."
+
+#. Programmer's name for it: RSSocksAuthMethodError
+#: Core/IdResourceStringsCore.pas:100 
+msgid "Invalid socks authentication method."
+msgstr "Método de autentificación de socks inválida."
+
+#. Programmer's name for it: RSSocksAuthError
+#: Core/IdResourceStringsCore.pas:101 
+msgid "Authentication error to socks server."
+msgstr "Error de autentificación al socks del servidor."
+
+#. Programmer's name for it: RSSocksServerGeneralError
+#: Core/IdResourceStringsCore.pas:102 
+msgid "General SOCKS server failure."
+msgstr "Error general de SOCKS del servidor."
+
+#. Programmer's name for it: RSSocksServerPermissionError
+#: Core/IdResourceStringsCore.pas:103 
+msgid "Connection not allowed by ruleset."
+msgstr "Conexión no soportada por ruleset."
+
+#. Programmer's name for it: RSSocksServerNetUnreachableError
+#: Core/IdResourceStringsCore.pas:104 
+msgid "Network unreachable."
+msgstr "Red inaccesible."
+
+#. Programmer's name for it: RSSocksServerHostUnreachableError
+#: Core/IdResourceStringsCore.pas:105 
+msgid "Host unreachable."
+msgstr "Host inaccesible."
+
+#. Programmer's name for it: RSSocksServerConnectionRefusedError
+#. Programmer's name for it: RSStackECONNREFUSED
+#: Core/IdResourceStringsCore.pas:106  System/IdResourceStrings.pas:73
+msgid "Connection refused."
+msgstr "Conexión rechazada."
+
+#. Programmer's name for it: RSSocksServerTTLExpiredError
+#: Core/IdResourceStringsCore.pas:107 
+msgid "TTL expired."
+msgstr "TTL caducada."
+
+#. Programmer's name for it: RSSocksServerCommandError
+#: Core/IdResourceStringsCore.pas:108 
+msgid "Command not supported."
+msgstr "Comando no soportado."
+
+#. Programmer's name for it: RSSocksServerAddressError
+#: Core/IdResourceStringsCore.pas:109 
+msgid "Address type not supported."
+msgstr "Tipo de dirección no soportada."
+
+#. Programmer's name for it: RSInvalidIPAddress
+#. Programmer's name for it: RSFTPInvalidIP
+#: Core/IdResourceStringsCore.pas:110 
+#: Protocols/IdResourceStringsProtocols.pas:353
+#, fuzzy
+msgid "Invalid IP Address"
+msgstr "Dirección errónea."
+
+#. Programmer's name for it: RSInterceptCircularLink
+#: Core/IdResourceStringsCore.pas:111 
+msgid "%d: Circular links are not allowed"
+msgstr ""
+
+#. Programmer's name for it: RSNotEnoughDataInBuffer
+#: Core/IdResourceStringsCore.pas:112 
+msgid "Not enough data in buffer."
+msgstr "No hay datos suficientes en el búfer."
+
+#. Programmer's name for it: RSTooMuchDataInBuffer
+#: Core/IdResourceStringsCore.pas:113 
+#, fuzzy
+msgid "Too much data in buffer."
+msgstr "No hay datos suficientes en el búfer."
+
+#. Programmer's name for it: RSFileNotFound
+#: Core/IdResourceStringsCore.pas:114 
+#, fuzzy
+msgid "File \"%s\" not found"
+msgstr "Host no encontrado."
+
+#. Programmer's name for it: RSNotConnected
+#. Programmer's name for it: RSHL7StatusNotConnected
+#: Core/IdResourceStringsCore.pas:115 
+#: Protocols/IdResourceStringsProtocols.pas:788
+#, fuzzy
+msgid "Not Connected"
+msgstr "No conectado."
+
+#. Programmer's name for it: RSObjectTypeNotSupported
+#: Core/IdResourceStringsCore.pas:116 
+msgid "Object type not supported."
+msgstr "Tipo de objeto no soportado."
+
+#. Programmer's name for it: RSIdNoDataToRead
+#: Core/IdResourceStringsCore.pas:117 
+msgid "No data to read."
+msgstr "No hay datos para leer."
+
+#. Programmer's name for it: RSReadTimeout
+#: Core/IdResourceStringsCore.pas:118 
+#, fuzzy
+msgid "Read Timeout"
+msgstr "Respuesta fuera de tiempo"
+
+#. Programmer's name for it: RSReadLnMaxLineLengthExceeded
+#: Core/IdResourceStringsCore.pas:119 
+msgid "Max line length exceeded."
+msgstr ""
+
+#. Programmer's name for it: RSConnectTimeout
+#: Core/IdResourceStringsCore.pas:120 
+#, fuzzy
+msgid "Connect timed out."
+msgstr "Conexión fuera de tiempo."
+
+#. Programmer's name for it: RSICMPNotEnoughtBytes
+#: Core/IdResourceStringsCore.pas:121 
+msgid "Not enough bytes received"
+msgstr "No se han recibido los suficientes datos"
+
+#. Programmer's name for it: RSICMPNonEchoResponse
+#: Core/IdResourceStringsCore.pas:122 
+msgid "Non-echo type response received"
+msgstr "Respuesta recibida de tipo No-Eco"
+
+#. Programmer's name for it: RSThreadTerminateAndWaitFor
+#: Core/IdResourceStringsCore.pas:123 
+msgid "Cannot call TerminateAndWaitFor on FreeAndTerminate threads"
+msgstr ""
+
+#. Programmer's name for it: RSAlreadyConnected
+#: Core/IdResourceStringsCore.pas:124 
+msgid "Already connected."
+msgstr "Ya está conectado."
+
+#. Programmer's name for it: RSTerminateThreadTimeout
+#: Core/IdResourceStringsCore.pas:125 
+msgid "Terminate Thread Timeout"
+msgstr ""
+
+#. Programmer's name for it: RSNoExecuteSpecified
+#: Core/IdResourceStringsCore.pas:126 
+msgid "No execute handler found."
+msgstr "Ejecución guiada no especificada."
+
+#. Programmer's name for it: RSNoCommandHandlerFound
+#: Core/IdResourceStringsCore.pas:127 
+#, fuzzy
+msgid "No command handler found."
+msgstr "Ejecución guiada no especificada."
+
+#. Programmer's name for it: RSCannotPerformTaskWhileServerIsActive
+#: Core/IdResourceStringsCore.pas:128 
+#, fuzzy
+msgid "Cannot perform task while server is active."
+msgstr "Cannot change session state when the server is active."
+
+#. Programmer's name for it: RSThreadClassNotSpecified
+#: Core/IdResourceStringsCore.pas:129 
+msgid "Thread Class Not Specified."
+msgstr "Clase Thread no especificada."
+
+#. S.G. 6/4/2004: IdIOHandler.DoCapture
+#. Programmer's name for it: RSMaximumNumberOfCaptureLineExceeded
+#: Core/IdResourceStringsCore.pas:130 
+msgid "Maximum number of line allowed exceeded"
+msgstr ""
+
+#. Programmer's name for it: RSResolveError
+#: Core/IdResourceStringsCore.pas:133 
+msgid "Error resolving host %s: %s (%d)"
+msgstr ""
+
+#. Programmer's name for it: RSReverseResolveError
+#: Core/IdResourceStringsCore.pas:134 
+msgid "Error resolving Address %s: %s (%d)"
+msgstr ""
+
+#. scheduler
+#. Programmer's name for it: RSchedMaxThreadEx
+#: Core/IdResourceStringsCore.pas:136 
+msgid "The maximum number of threads for this scheduler is exceeded."
+msgstr ""
+
+#. transparent proxy
+#. Programmer's name for it: RSTransparentProxyCannotBind
+#: Core/IdResourceStringsCore.pas:138 
+msgid "Transparent proxy cannot bind."
+msgstr ""
+
+#. Fibers
+#. Programmer's name for it: RSFibersNotSupported
+#: Core/IdResourceStringsCore.pas:140 
+#, fuzzy
+msgid "Fibers are not supported on this system."
+msgstr "Operación no soportada en socket."
+
+#. Log strings
+#. Programmer's name for it: RSLogConnected
+#. Programmer's name for it: RSStatusConnected
+#: Core/IdResourceStringsCore.pas:143  System/IdResourceStrings.pas:35
+msgid "Connected."
+msgstr "Conectado."
+
+#. Programmer's name for it: RSLogDisconnected
+#. Programmer's name for it: RSStatusDisconnected
+#: Core/IdResourceStringsCore.pas:144  System/IdResourceStrings.pas:37
+msgid "Disconnected."
+msgstr "Desconectado."
+
+#. End of Line
+#. Programmer's name for it: RSLogEOL
+#: Core/IdResourceStringsCore.pas:145 
+msgid "<EOL>"
+msgstr "<EOL>"
+
+#. Carriage Return
+#. Programmer's name for it: RSLogCR
+#: Core/IdResourceStringsCore.pas:146 
+msgid "<CR>"
+msgstr ""
+
+#. Line feed
+#. Programmer's name for it: RSLogLF
+#: Core/IdResourceStringsCore.pas:147 
+#, fuzzy
+msgid "<LF>"
+msgstr "<EOL>"
+
+#. Receive
+#. Programmer's name for it: RSLogRecv
+#: Core/IdResourceStringsCore.pas:148 
+#, fuzzy
+msgid "Recv "
+msgstr "Recivido: "
+
+#. Send
+#. Programmer's name for it: RSLogSent
+#: Core/IdResourceStringsCore.pas:149 
+#, fuzzy
+msgid "Sent "
+msgstr "Enviado: "
+
+#. Status
+#. Programmer's name for it: RSLogStat
+#: Core/IdResourceStringsCore.pas:150 
+msgid "Stat "
+msgstr ""
+
+#. Programmer's name for it: RSLogFileAlreadyOpen
+#: Core/IdResourceStringsCore.pas:152 
+msgid "Unable to set Filename while log file is open."
+msgstr ""
+
+#. Programmer's name for it: RSBufferMissingTerminator
+#: Core/IdResourceStringsCore.pas:154 
+msgid "Buffer terminator must be specified."
+msgstr ""
+
+#. Programmer's name for it: RSBufferInvalidStartPos
+#: Core/IdResourceStringsCore.pas:155 
+msgid "Buffer start position is invalid."
+msgstr ""
+
+#. Programmer's name for it: RSIOHandlerCannotChange
+#: Core/IdResourceStringsCore.pas:157 
+#, fuzzy
+msgid "Cannot change a connected IOHandler."
+msgstr "No se puede cambiar objetivo mientras esté activo."
+
+#. Programmer's name for it: RSIOHandlerTypeNotInstalled
+#: Core/IdResourceStringsCore.pas:158 
+#, fuzzy
+msgid "No IOHandler of type %s is installed."
+msgstr "Valor de Intercept inválido"
+
+#. Programmer's name for it: RSReplyInvalidCode
+#: Core/IdResourceStringsCore.pas:160 
+#, fuzzy
+msgid "Reply Code is not valid: %s"
+msgstr "Lista no inicializada!"
+
+#. Programmer's name for it: RSThreadSchedulerThreadRequired
+#: Core/IdResourceStringsCore.pas:162 
+msgid "Thread must be specified for the scheduler."
+msgstr ""
+
+#. Programmer's name for it: RSThreadComponentLoopAlreadyRunning
+#: Core/IdResourceStringsCore.pas:164 
+msgid "Cannot set Loop property when the Thread is already running."
+msgstr ""
+
+#. Programmer's name for it: RSThreadComponentThreadNameAlreadyRunning
+#: Core/IdResourceStringsCore.pas:165 
+#, fuzzy
+msgid "Cannot set ThreadName when the Thread is already running."
+msgstr "El Socket está actualmente conectado."
+
+#. Programmer's name for it: RSStreamProxyNoStack
+#: Core/IdResourceStringsCore.pas:167 
+msgid "A Stack has not been created for converting the data type."
+msgstr ""
+
+#. Programmer's name for it: RSTransparentProxyCyclic
+#: Core/IdResourceStringsCore.pas:169 
+msgid "Transparent Proxy Cyclic error."
+msgstr ""
+
+#. Programmer's name for it: RSTCPServerSchedulerAlreadyActive
+#: Core/IdResourceStringsCore.pas:171 
+#, fuzzy
+msgid "Cannot change the scheduler while the server is Active."
+msgstr "Cannot change session state when the server is active."
+
+#. Programmer's name for it: RSQueryMustProvideSOARecord
+#: Protocols/IdDNSCommon.pas:132 
+msgid ""
+"You have to provide a TIdRR_SOA object with Serial number and Name to "
+"progress IXFR. %d"
+msgstr ""
+
+#. Programmer's name for it: RSFTPFSysErrMsg
+#: Protocols/IdFTPBaseFileSystem.pas:125 
+msgid "Permission Denied"
+msgstr ""
+
+#. Programmer's name for it: KdeVersionMark
+#: Protocols/IdHL7.pas:414 
+msgid "!-!IdHL7.pas,0.00-011,08 Mar 02 17:59,12259"
+msgstr ""
+
+#. Programmer's name for it: RSNNTPSvrImplicitTLSRequiresSSL
+#: Protocols/IdNNTPServer.pas:370 
+msgid ""
+"Implicit NNTP requires that IOHandler be set to a TIdSSLIOHandlerSocketBase."
+msgstr ""
+
+#. General
+#. Programmer's name for it: RSFailedTimeZoneInfo
+#: Protocols/IdResourceStringsProtocols.pas:185 
+msgid "Failed attempting to retrieve time zone information."
+msgstr "Fallo al intentar recuperar la información de hora de la zona."
+
+#. Programmer's name for it: RSIOHandlerPropInvalid
+#: Protocols/IdResourceStringsProtocols.pas:186 
+#, fuzzy
+msgid "IOHandler value is not valid"
+msgstr "Valor de Intercept inválido"
+
+#. Programmer's name for it: RSNoBindingsSpecified
+#: Protocols/IdResourceStringsProtocols.pas:187 
+msgid "No bindings specified."
+msgstr "Encuadernación no especificada."
+
+#. Programmer's name for it: RSASLNotSupported
+#: Protocols/IdResourceStringsProtocols.pas:190 
+msgid "Doesn't support AUTH or the SASL handlers you specified!!"
+msgstr ""
+
+#. Programmer's name for it: RSASLRequired
+#: Protocols/IdResourceStringsProtocols.pas:191 
+msgid "Need SASL mechanisms to login with it!!"
+msgstr ""
+
+#. Programmer's name for it: RSASLNotValidForProt
+#: Protocols/IdResourceStringsProtocols.pas:192 
+msgid "Authentication Type not valid for this protocol."
+msgstr ""
+
+#. TIdEMailAddress
+#. Programmer's name for it: RSEMailSymbolOutsideAddress
+#: Protocols/IdResourceStringsProtocols.pas:194 
+#, fuzzy
+msgid "@ Outside address"
+msgstr "Dirección errónea."
+
+#. ZLIB Intercept
+#. Programmer's name for it: RSZLCompressorInitializeFailure
+#: Protocols/IdResourceStringsProtocols.pas:196 
+msgid "Unable to initialize compressor"
+msgstr ""
+
+#. Programmer's name for it: RSZLDecompressorInitializeFailure
+#: Protocols/IdResourceStringsProtocols.pas:197 
+msgid "Unable to initialize decompressor"
+msgstr ""
+
+#. Programmer's name for it: RSZLCompressionError
+#: Protocols/IdResourceStringsProtocols.pas:198 
+msgid "Compression error"
+msgstr ""
+
+#. Programmer's name for it: RSZLDecompressionError
+#: Protocols/IdResourceStringsProtocols.pas:199 
+msgid "Decompression error"
+msgstr ""
+
+#. MIME Types
+#. Programmer's name for it: RSMIMEExtensionEmpty
+#: Protocols/IdResourceStringsProtocols.pas:202 
+msgid "Extension is empty"
+msgstr ""
+
+#. Programmer's name for it: RSMIMEMIMETypeEmpty
+#: Protocols/IdResourceStringsProtocols.pas:203 
+#, fuzzy
+msgid "Mimetype is empty"
+msgstr "Directorio no vacío"
+
+#. Programmer's name for it: RSMIMEMIMEExtAlreadyExists
+#: Protocols/IdResourceStringsProtocols.pas:204 
+#, fuzzy
+msgid "Extension already exits"
+msgstr "El archivo de destino ya existe."
+
+#. IdRegister
+#. Programmer's name for it: RSRegSASL
+#: Protocols/IdResourceStringsProtocols.pas:206 
+msgid "Indy SASL"
+msgstr ""
+
+#. Message Strings
+#. Programmer's name for it: RSIdMessageCannotLoad
+#: Protocols/IdResourceStringsProtocols.pas:210 
+#, fuzzy
+msgid "Cannot load message from file %s"
+msgstr "Demasiados archivos abiertos."
+
+#. MessageClient Strings
+#. Programmer's name for it: RSMsgClientEncodingText
+#: Protocols/IdResourceStringsProtocols.pas:213 
+msgid "Encoding text"
+msgstr ""
+
+#. Programmer's name for it: RSMsgClientEncodingAttachment
+#: Protocols/IdResourceStringsProtocols.pas:214 
+msgid "Encoding attachment"
+msgstr "Codificando datos adjuntos"
+
+#. Programmer's name for it: RSMsgClientUnkownMessagePartType
+#: Protocols/IdResourceStringsProtocols.pas:215 
+#, fuzzy
+msgid "Unknown Message Part Type."
+msgstr "&Nueva parte de mensaje..."
+
+#. Programmer's name for it: RSMsgClientInvalidEncoding
+#: Protocols/IdResourceStringsProtocols.pas:216 
+msgid "Invalid Encoding. UU only allows Body and Attachments."
+msgstr ""
+
+#. Programmer's name for it: RSMsgClientInvalidForTransferEncoding
+#: Protocols/IdResourceStringsProtocols.pas:217 
+msgid ""
+"Message parts cannot be used in a message which has a "
+"ContentTransferEncoding value."
+msgstr ""
+
+#. NNTP Exceptions
+#. Programmer's name for it: RSNNTPConnectionRefused
+#: Protocols/IdResourceStringsProtocols.pas:220 
+msgid "Connection explicitly refused by NNTP server."
+msgstr ""
+
+#. Programmer's name for it: RSNNTPStringListNotInitialized
+#: Protocols/IdResourceStringsProtocols.pas:221 
+msgid "Stringlist not initialized!"
+msgstr "Lista no inicializada!"
+
+#. Programmer's name for it: RSNNTPNoOnNewsgroupList
+#: Protocols/IdResourceStringsProtocols.pas:222 
+msgid "No OnNewsgroupList event has been defined."
+msgstr "El evento OnNewsgroupList no ha sido definido."
+
+#. Programmer's name for it: RSNNTPNoOnNewGroupsList
+#: Protocols/IdResourceStringsProtocols.pas:223 
+msgid "No OnNewGroupsList event has been defined."
+msgstr "El evento OnNewGroupsList no ha sido definido."
+
+#. Programmer's name for it: RSNNTPNoOnNewNewsList
+#: Protocols/IdResourceStringsProtocols.pas:224 
+msgid "No OnNewNewsList event has been defined."
+msgstr "El evento OnNewNewsList no ha sido definido."
+
+#. Programmer's name for it: RSNNTPNoOnXHDREntry
+#: Protocols/IdResourceStringsProtocols.pas:225 
+#, fuzzy
+msgid "No OnXHDREntry event has been defined."
+msgstr "El evento OnNewNewsList no ha sido definido."
+
+#. Programmer's name for it: RSNNTPNoOnXOVER
+#: Protocols/IdResourceStringsProtocols.pas:226 
+#, fuzzy
+msgid "No OnXOVER event has been defined."
+msgstr "El evento OnNewNewsList no ha sido definido."
+
+#. HTTP Status
+#. Programmer's name for it: RSHTTPChunkStarted
+#: Protocols/IdResourceStringsProtocols.pas:228 
+msgid "Chunk Started"
+msgstr ""
+
+#. Programmer's name for it: RSHTTPContinue
+#: Protocols/IdResourceStringsProtocols.pas:229 
+msgid "Continue"
+msgstr "Continuar"
+
+#. Programmer's name for it: RSHTTPSwitchingProtocols
+#: Protocols/IdResourceStringsProtocols.pas:230 
+msgid "Switching protocols"
+msgstr "Protocolos Switching"
+
+#. Programmer's name for it: RSHTTPCreated
+#: Protocols/IdResourceStringsProtocols.pas:232 
+msgid "Created"
+msgstr "Creado"
+
+#. Programmer's name for it: RSHTTPAccepted
+#: Protocols/IdResourceStringsProtocols.pas:233 
+msgid "Accepted"
+msgstr "Aceptado"
+
+#. Programmer's name for it: RSHTTPNonAuthoritativeInformation
+#: Protocols/IdResourceStringsProtocols.pas:234 
+msgid "Non-authoritative Information"
+msgstr "Información sin autoridad"
+
+#. Programmer's name for it: RSHTTPNoContent
+#: Protocols/IdResourceStringsProtocols.pas:235 
+msgid "No Content"
+msgstr "Sin contenido"
+
+#. Programmer's name for it: RSHTTPResetContent
+#: Protocols/IdResourceStringsProtocols.pas:236 
+msgid "Reset Content"
+msgstr "Resetear contenido"
+
+#. Programmer's name for it: RSHTTPPartialContent
+#: Protocols/IdResourceStringsProtocols.pas:237 
+msgid "Partial Content"
+msgstr "Contenido parcial"
+
+#. Programmer's name for it: RSHTTPMovedPermanently
+#: Protocols/IdResourceStringsProtocols.pas:238 
+msgid "Moved Permanently"
+msgstr "Movido permanentemente"
+
+#. Programmer's name for it: RSHTTPMovedTemporarily
+#: Protocols/IdResourceStringsProtocols.pas:239 
+msgid "Moved Temporarily"
+msgstr "Movido temporalmente"
+
+#. Programmer's name for it: RSHTTPSeeOther
+#: Protocols/IdResourceStringsProtocols.pas:240 
+msgid "See Other"
+msgstr "Ver otro"
+
+#. Programmer's name for it: RSHTTPNotModified
+#: Protocols/IdResourceStringsProtocols.pas:241 
+msgid "Not Modified"
+msgstr "No modificado"
+
+#. Programmer's name for it: RSHTTPUseProxy
+#: Protocols/IdResourceStringsProtocols.pas:242 
+msgid "Use Proxy"
+msgstr "Usar Proxy"
+
+#. Programmer's name for it: RSHTTPBadRequest
+#: Protocols/IdResourceStringsProtocols.pas:243 
+msgid "Bad Request"
+msgstr "Respuesta errónea"
+
+#. Programmer's name for it: RSHTTPUnauthorized
+#: Protocols/IdResourceStringsProtocols.pas:244 
+msgid "Unauthorized"
+msgstr "No autorizado"
+
+#. Programmer's name for it: RSHTTPForbidden
+#: Protocols/IdResourceStringsProtocols.pas:245 
+msgid "Forbidden"
+msgstr "Prohibido"
+
+#. Programmer's name for it: RSHTTPNotFound
+#: Protocols/IdResourceStringsProtocols.pas:246 
+msgid "Not Found"
+msgstr "No encontrado"
+
+#. Programmer's name for it: RSHTTPMethodNotAllowed
+#: Protocols/IdResourceStringsProtocols.pas:247 
+msgid "Method not allowed"
+msgstr "Método no admitido"
+
+#. Programmer's name for it: RSHTTPNotAcceptable
+#: Protocols/IdResourceStringsProtocols.pas:248 
+msgid "Not Acceptable"
+msgstr "No aceptable"
+
+#. Programmer's name for it: RSHTTPProxyAuthenticationRequired
+#: Protocols/IdResourceStringsProtocols.pas:249 
+msgid "Proxy Authentication Required"
+msgstr "Autentificación de Proxy requerida"
+
+#. Programmer's name for it: RSHTTPRequestTimeout
+#: Protocols/IdResourceStringsProtocols.pas:250 
+msgid "Request Timeout"
+msgstr "Respuesta fuera de tiempo"
+
+#. Programmer's name for it: RSHTTPConflict
+#: Protocols/IdResourceStringsProtocols.pas:251 
+msgid "Conflict"
+msgstr "Conflicto"
+
+#. Programmer's name for it: RSHTTPGone
+#: Protocols/IdResourceStringsProtocols.pas:252 
+msgid "Gone"
+msgstr "Ido"
+
+#. Programmer's name for it: RSHTTPLengthRequired
+#: Protocols/IdResourceStringsProtocols.pas:253 
+msgid "Length Required"
+msgstr "Tamaño requerido"
+
+#. Programmer's name for it: RSHTTPPreconditionFailed
+#: Protocols/IdResourceStringsProtocols.pas:254 
+msgid "Precondition Failed"
+msgstr "Precondición fallida"
+
+#. Programmer's name for it: RSHTTPRequestEntityToLong
+#: Protocols/IdResourceStringsProtocols.pas:255 
+msgid "Request Entity To Long"
+msgstr "Entidad de respuesta a alargar"
+
+#. Programmer's name for it: RSHTTPRequestURITooLong
+#: Protocols/IdResourceStringsProtocols.pas:256 
+msgid "Request-URI Too Long. 256 Chars max"
+msgstr "Respuesta URI demasiado larga. 256 caracteres máximo"
+
+#. Programmer's name for it: RSHTTPUnsupportedMediaType
+#: Protocols/IdResourceStringsProtocols.pas:257 
+msgid "Unsupported Media Type"
+msgstr "Tipo de medio no soportado"
+
+#. Programmer's name for it: RSHTTPInternalServerError
+#: Protocols/IdResourceStringsProtocols.pas:258 
+msgid "Internal Server Error"
+msgstr "Error interno del servidor"
+
+#. Programmer's name for it: RSHTTPNotImplemented
+#: Protocols/IdResourceStringsProtocols.pas:259 
+msgid "Not Implemented"
+msgstr "No implementado"
+
+#. Programmer's name for it: RSHTTPBadGateway
+#: Protocols/IdResourceStringsProtocols.pas:260 
+msgid "Bad Gateway"
+msgstr "Gateway erróneo"
+
+#. Programmer's name for it: RSHTTPServiceUnavailable
+#: Protocols/IdResourceStringsProtocols.pas:261 
+msgid "Service Unavailable"
+msgstr "Servicio no disponible"
+
+#. Programmer's name for it: RSHTTPGatewayTimeout
+#: Protocols/IdResourceStringsProtocols.pas:262 
+msgid "Gateway timeout"
+msgstr "Gateway fuera de tiempo"
+
+#. Programmer's name for it: RSHTTPHTTPVersionNotSupported
+#: Protocols/IdResourceStringsProtocols.pas:263 
+msgid "HTTP version not supported"
+msgstr "Versión de HTTP no soportada"
+
+#. Programmer's name for it: RSHTTPUnknownResponseCode
+#: Protocols/IdResourceStringsProtocols.pas:264 
+msgid "Unknown Response Code"
+msgstr "Código de respuesta desconocido"
+
+#. HTTP Other
+#. Programmer's name for it: RSHTTPMethodRequiresVersion
+#: Protocols/IdResourceStringsProtocols.pas:266 
+msgid "Request method requires HTTP version 1.1"
+msgstr ""
+
+#. Programmer's name for it: RSHTTPHeaderAlreadyWritten
+#: Protocols/IdResourceStringsProtocols.pas:267 
+msgid "Header has already been written."
+msgstr ""
+
+#. Programmer's name for it: RSHTTPErrorParsingCommand
+#: Protocols/IdResourceStringsProtocols.pas:268 
+msgid "Error in parsing command."
+msgstr "Error en el comando de corrección."
+
+#. Programmer's name for it: RSHTTPUnsupportedAuthorisationScheme
+#: Protocols/IdResourceStringsProtocols.pas:269 
+msgid "Unsupported authorization scheme."
+msgstr "Conbinación de autorización no soportada."
+
+#. Programmer's name for it: RSHTTPCannotSwitchSessionStateWhenActive
+#: Protocols/IdResourceStringsProtocols.pas:270 
+msgid "Cannot change session state when the server is active."
+msgstr "Cannot change session state when the server is active."
+
+#. HTTP Authentication
+#. Programmer's name for it: RSHTTPAuthAlreadyRegistered
+#: Protocols/IdResourceStringsProtocols.pas:272 
+msgid "This authentication method is already registered with class name %s."
+msgstr ""
+
+#. HTTP Authentication Digeest
+#. Programmer's name for it: RSHTTPAuthInvalidHash
+#: Protocols/IdResourceStringsProtocols.pas:274 
+msgid ""
+"Unsupported hash algorithm. This implementation supports only MD5 encoding."
+msgstr ""
+
+#. SSPI Authentication
+#. Programmer's name for it: RSHTTPSSPISuccess
+#: Protocols/IdResourceStringsProtocols.pas:279 
+msgid "Successfull API call"
+msgstr ""
+
+#. Programmer's name for it: RSHTTPSSPINotEnoughMem
+#: Protocols/IdResourceStringsProtocols.pas:280 
+msgid "Not enough memory is available to complete this request"
+msgstr ""
+
+#. Programmer's name for it: RSHTTPSSPIInvalidHandle
+#: Protocols/IdResourceStringsProtocols.pas:281 
+msgid "The handle specified is invalid"
+msgstr ""
+
+#. Programmer's name for it: RSHTTPSSPIFuncNotSupported
+#: Protocols/IdResourceStringsProtocols.pas:282 
+#, fuzzy
+msgid "The function requested is not supported"
+msgstr "Tipo de objeto no soportado."
+
+#. Programmer's name for it: RSHTTPSSPIUnknownTarget
+#: Protocols/IdResourceStringsProtocols.pas:283 
+msgid "The specified target is unknown or unreachable"
+msgstr ""
+
+#. Programmer's name for it: RSHTTPSSPIInternalError
+#: Protocols/IdResourceStringsProtocols.pas:284 
+msgid "The Local Security Authority cannot be contacted"
+msgstr ""
+
+#. Programmer's name for it: RSHTTPSSPISecPackageNotFound
+#. Programmer's name for it: RSHTTPSSPIBadPackageID
+#: Protocols/IdResourceStringsProtocols.pas:285 
+#: Protocols/IdResourceStringsProtocols.pas:302
+msgid "The requested security package does not exist"
+msgstr ""
+
+#. Programmer's name for it: RSHTTPSSPINotOwner
+#: Protocols/IdResourceStringsProtocols.pas:286 
+msgid "The caller is not the owner of the desired credentials"
+msgstr ""
+
+#. Programmer's name for it: RSHTTPSSPIPackageCannotBeInstalled
+#: Protocols/IdResourceStringsProtocols.pas:287 
+msgid "The security package failed to initialize, and cannot be installed"
+msgstr ""
+
+#. Programmer's name for it: RSHTTPSSPIInvalidToken
+#: Protocols/IdResourceStringsProtocols.pas:288 
+msgid "The token supplied to the function is invalid"
+msgstr ""
+
+#. Programmer's name for it: RSHTTPSSPICannotPack
+#: Protocols/IdResourceStringsProtocols.pas:289 
+msgid ""
+"The security package is not able to marshall the logon buffer, so the logon "
+"attempt has failed"
+msgstr ""
+
+#. Programmer's name for it: RSHTTPSSPIQOPNotSupported
+#: Protocols/IdResourceStringsProtocols.pas:290 
+msgid ""
+"The per-message Quality of Protection is not supported by the security "
+"package"
+msgstr ""
+
+#. Programmer's name for it: RSHTTPSSPINoImpersonation
+#: Protocols/IdResourceStringsProtocols.pas:291 
+msgid "The security context does not allow impersonation of the client"
+msgstr ""
+
+#. Programmer's name for it: RSHTTPSSPILoginDenied
+#: Protocols/IdResourceStringsProtocols.pas:292 
+msgid "The logon attempt failed"
+msgstr ""
+
+#. Programmer's name for it: RSHTTPSSPIUnknownCredentials
+#: Protocols/IdResourceStringsProtocols.pas:293 
+msgid "The credentials supplied to the package were not recognized"
+msgstr ""
+
+#. Programmer's name for it: RSHTTPSSPINoCredentials
+#: Protocols/IdResourceStringsProtocols.pas:294 
+msgid "No credentials are available in the security package"
+msgstr ""
+
+#. Programmer's name for it: RSHTTPSSPIMessageAltered
+#: Protocols/IdResourceStringsProtocols.pas:295 
+msgid "The message or signature supplied for verification has been altered"
+msgstr ""
+
+#. Programmer's name for it: RSHTTPSSPIOutOfSequence
+#: Protocols/IdResourceStringsProtocols.pas:296 
+msgid "The message supplied for verification is out of sequence"
+msgstr ""
+
+#. Programmer's name for it: RSHTTPSSPINoAuthAuthority
+#: Protocols/IdResourceStringsProtocols.pas:297 
+msgid "No authority could be contacted for authentication."
+msgstr ""
+
+#. Programmer's name for it: RSHTTPSSPIContinueNeeded
+#: Protocols/IdResourceStringsProtocols.pas:298 
+msgid ""
+"The function completed successfully, but must be called again to complete "
+"the context"
+msgstr ""
+
+#. Programmer's name for it: RSHTTPSSPICompleteNeeded
+#: Protocols/IdResourceStringsProtocols.pas:299 
+msgid "The function completed successfully, but CompleteToken must be called"
+msgstr ""
+
+#. Programmer's name for it: RSHTTPSSPICompleteContinueNeeded
+#: Protocols/IdResourceStringsProtocols.pas:300 
+msgid ""
+"The function completed successfully, but both CompleteToken and this "
+"function must be called to complete the context"
+msgstr ""
+
+#. Programmer's name for it: RSHTTPSSPILocalLogin
+#: Protocols/IdResourceStringsProtocols.pas:301 
+msgid ""
+"The logon was completed, but no network authority was available. The logon "
+"was made using locally known information"
+msgstr ""
+
+#. Programmer's name for it: RSHTTPSSPIContextExpired
+#: Protocols/IdResourceStringsProtocols.pas:303 
+msgid "The context has expired and can no longer be used."
+msgstr ""
+
+#. Programmer's name for it: RSHTTPSSPIIncompleteMessage
+#: Protocols/IdResourceStringsProtocols.pas:304 
+msgid "The supplied message is incomplete.  The signature was not verified."
+msgstr ""
+
+#. Programmer's name for it: RSHTTPSSPIIncompleteCredentialNotInit
+#: Protocols/IdResourceStringsProtocols.pas:305 
+msgid ""
+"The credentials supplied were not complete, and could not be verified. The "
+"context could not be initialized."
+msgstr ""
+
+#. Programmer's name for it: RSHTTPSSPIBufferTooSmall
+#: Protocols/IdResourceStringsProtocols.pas:306 
+msgid "The buffers supplied to a function was too small."
+msgstr ""
+
+#. Programmer's name for it: RSHTTPSSPIIncompleteCredentialsInit
+#: Protocols/IdResourceStringsProtocols.pas:307 
+msgid ""
+"The credentials supplied were not complete, and could not be verified. "
+"Additional information can be returned from the context."
+msgstr ""
+
+#. Programmer's name for it: RSHTTPSSPIRengotiate
+#: Protocols/IdResourceStringsProtocols.pas:308 
+msgid "The context data must be renegotiated with the peer."
+msgstr ""
+
+#. Programmer's name for it: RSHTTPSSPIWrongPrincipal
+#: Protocols/IdResourceStringsProtocols.pas:309 
+msgid "The target principal name is incorrect."
+msgstr ""
+
+#. Programmer's name for it: RSHTTPSSPINoLSACode
+#: Protocols/IdResourceStringsProtocols.pas:310 
+msgid "There is no LSA mode context associated with this context."
+msgstr ""
+
+#. Programmer's name for it: RSHTTPSSPITimeScew
+#: Protocols/IdResourceStringsProtocols.pas:311 
+msgid "The clocks on the client and server machines are skewed."
+msgstr ""
+
+#. Programmer's name for it: RSHTTPSSPIUntrustedRoot
+#: Protocols/IdResourceStringsProtocols.pas:312 
+msgid "The certificate chain was issued by an untrusted authority."
+msgstr ""
+
+#. Programmer's name for it: RSHTTPSSPIIllegalMessage
+#: Protocols/IdResourceStringsProtocols.pas:313 
+msgid "The message received was unexpected or badly formatted."
+msgstr ""
+
+#. Programmer's name for it: RSHTTPSSPICertUnknown
+#: Protocols/IdResourceStringsProtocols.pas:314 
+msgid "An unknown error occurred while processing the certificate."
+msgstr ""
+
+#. Programmer's name for it: RSHTTPSSPICertExpired
+#: Protocols/IdResourceStringsProtocols.pas:315 
+msgid "The received certificate has expired."
+msgstr ""
+
+#. Programmer's name for it: RSHTTPSSPIEncryptionFailure
+#: Protocols/IdResourceStringsProtocols.pas:316 
+msgid "The specified data could not be encrypted."
+msgstr ""
+
+#. Programmer's name for it: RSHTTPSSPIDecryptionFailure
+#: Protocols/IdResourceStringsProtocols.pas:317 
+msgid "The specified data could not be decrypted."
+msgstr ""
+
+#. Programmer's name for it: RSHTTPSSPIAlgorithmMismatch
+#: Protocols/IdResourceStringsProtocols.pas:318 
+msgid ""
+"The client and server cannot communicate, because they do not possess a "
+"common algorithm."
+msgstr ""
+
+#. Programmer's name for it: RSHTTPSSPISecurityQOSFailure
+#: Protocols/IdResourceStringsProtocols.pas:319 
+msgid ""
+"The security context could not be established due to a failure in the "
+"requested quality of service (e.g. mutual authentication or delegation)."
+msgstr ""
+
+#. Programmer's name for it: RSHTTPSSPIUnknwonError
+#: Protocols/IdResourceStringsProtocols.pas:320 
+#, fuzzy
+msgid "Unknown error"
+msgstr "Error de sock desconocido."
+
+#. Programmer's name for it: RSHTTPSSPIErrorMsg
+#: Protocols/IdResourceStringsProtocols.pas:330 
+msgid "SSPI %s returns error #%d(0x%x): %s"
+msgstr ""
+
+#. Programmer's name for it: RSHTTPSSPIInterfaceInitFailed
+#: Protocols/IdResourceStringsProtocols.pas:332 
+msgid "SSPI interface has failed to initialise properly"
+msgstr ""
+
+#. Programmer's name for it: RSHTTPSSPINoPkgInfoSpecified
+#: Protocols/IdResourceStringsProtocols.pas:333 
+#, fuzzy
+msgid "No PSecPkgInfo specified"
+msgstr " no especificado"
+
+#. Programmer's name for it: RSHTTPSSPINoCredentialHandle
+#: Protocols/IdResourceStringsProtocols.pas:334 
+msgid "No credential handle acquired"
+msgstr ""
+
+#. Programmer's name for it: RSHTTPSSPICanNotChangeCredentials
+#: Protocols/IdResourceStringsProtocols.pas:335 
+msgid "Can not change credentials after handle aquired. Use Release first"
+msgstr ""
+
+#. Programmer's name for it: RSHTTPSSPIUnknwonCredentialUse
+#: Protocols/IdResourceStringsProtocols.pas:336 
+#, fuzzy
+msgid "Unknown credentials use"
+msgstr "Cola %s desconocida"
+
+#. Programmer's name for it: RSHTTPSSPIDoAuquireCredentialHandle
+#: Protocols/IdResourceStringsProtocols.pas:337 
+msgid "Do AcquireCredentialsHandle first"
+msgstr ""
+
+#. Programmer's name for it: RSHTTPSSPICompleteTokenNotSupported
+#: Protocols/IdResourceStringsProtocols.pas:338 
+#, fuzzy
+msgid "CompleteAuthToken is not supported"
+msgstr "Comando no soportado."
+
+#. Block Cipher Intercept
+#. Programmer's name for it: RSBlockIncorrectLength
+#: Protocols/IdResourceStringsProtocols.pas:341 
+msgid "Incorrect length in received block"
+msgstr ""
+
+#. FTP
+#. Programmer's name for it: RSFTPUnknownHost
+#. Programmer's name for it: RSLPRUnknown
+#: Protocols/IdResourceStringsProtocols.pas:344 
+#: Protocols/IdResourceStringsProtocols.pas:773
+msgid "Unknown"
+msgstr ""
+
+#. Programmer's name for it: RSFTPStatusReady
+#: Protocols/IdResourceStringsProtocols.pas:345 
+#, fuzzy
+msgid "Connection established"
+msgstr "Conexión rechazada."
+
+#. Programmer's name for it: RSFTPStatusStartTransfer
+#: Protocols/IdResourceStringsProtocols.pas:346 
+msgid "Starting FTP transfer"
+msgstr ""
+
+#. Programmer's name for it: RSFTPStatusDoneTransfer
+#: Protocols/IdResourceStringsProtocols.pas:347 
+#, fuzzy
+msgid "Transfer complete"
+msgstr "Tranformación fallida"
+
+#. Programmer's name for it: RSFTPStatusAbortTransfer
+#: Protocols/IdResourceStringsProtocols.pas:348 
+#, fuzzy
+msgid "Transfer aborted"
+msgstr "Tranformación fallida"
+
+#. Programmer's name for it: RSFTPProtocolMismatch
+#: Protocols/IdResourceStringsProtocols.pas:349 
+msgid "Network protocol mismatch, use"
+msgstr ""
+
+#. Programmer's name for it: RSFTPParamError
+#: Protocols/IdResourceStringsProtocols.pas:350 
+#, fuzzy
+msgid "Error in parameters to %s"
+msgstr "No hay tipo de parámetro para el parámetro '%s'"
+
+#. Programmer's name for it: RSFTPParamNotImp
+#: Protocols/IdResourceStringsProtocols.pas:351 
+#, fuzzy
+msgid "Parameter %s Not Implemented"
+msgstr "No implementado"
+
+#. Programmer's name for it: RSFTPInvalidPort
+#: Protocols/IdResourceStringsProtocols.pas:352 
+#, fuzzy
+msgid "Invalid port number"
+msgstr "Nombre de usuario inválido."
+
+#. Programmer's name for it: RSFTPOnCustomFTPProxyReq
+#: Protocols/IdResourceStringsProtocols.pas:354 
+msgid "OnCustomFTPProxy required but not assigned"
+msgstr ""
+
+#. Programmer's name for it: RSFTPDataConnAssuranceFailure
+#: Protocols/IdResourceStringsProtocols.pas:357 
+msgid ""
+"Data connection assurance check failed.\n"
+"Server reported IP: %s  Port: %d\n"
+"Our socket IP: %s  Port: %d"
+msgstr ""
+
+#. Programmer's name for it: RSFTPProtocolNotSupported
+#: Protocols/IdResourceStringsProtocols.pas:358 
+#, fuzzy
+msgid "Protocol not supported, use"
+msgstr "Protocolo no soportado."
+
+#. Programmer's name for it: RSFTPMustUseExtWithIPv6
+#: Protocols/IdResourceStringsProtocols.pas:359 
+msgid "UseExtensionDataPort must be true for IPv6 connections."
+msgstr ""
+
+#. Programmer's name for it: RSFTPMustUseExtWithNATFastTrack
+#: Protocols/IdResourceStringsProtocols.pas:360 
+msgid "UseExtensionDataPort must be true for NAT fasttracking."
+msgstr ""
+
+#. Programmer's name for it: RSFTPFTPPassiveMustBeTrueWithNATFT
+#: Protocols/IdResourceStringsProtocols.pas:361 
+msgid "Can not use active transfers with NAT fastracking."
+msgstr ""
+
+#. Programmer's name for it: RSFTPServerSentInvalidPort
+#: Protocols/IdResourceStringsProtocols.pas:362 
+msgid "Server sent invalid port number (%s)"
+msgstr ""
+
+#. Programmer's name for it: RSInvalidFTPListingFormat
+#: Protocols/IdResourceStringsProtocols.pas:363 
+msgid "Unknown FTP listing format"
+msgstr ""
+
+#. Programmer's name for it: RSFTPNoSToSWithNATFastTrack
+#: Protocols/IdResourceStringsProtocols.pas:364 
+msgid ""
+"No Site to Site transfers are permitted with a FTP NAT fastracked connection."
+msgstr ""
+
+#. Programmer's name for it: RSFTPSToSNoDataProtection
+#: Protocols/IdResourceStringsProtocols.pas:365 
+msgid "Can't use dataprotection on site to site transfer."
+msgstr ""
+
+#. Programmer's name for it: RSFTPSToSProtosMustBeSame
+#: Protocols/IdResourceStringsProtocols.pas:366 
+msgid "Transport protocols must be the same."
+msgstr ""
+
+#. Programmer's name for it: RSFTPSToSSSCNNotSupported
+#: Protocols/IdResourceStringsProtocols.pas:367 
+#, fuzzy
+msgid "SSCN is not supported on both servers."
+msgstr "Operación no soportada en socket."
+
+#. Programmer's name for it: RSFTPNoDataPortProtectionAfterCCC
+#: Protocols/IdResourceStringsProtocols.pas:368 
+#, fuzzy
+msgid "Can not set DataPortProtection after CCC issued."
+msgstr "No se puede enviar y/o recibir una vez que el socket esté cerrado."
+
+#. Programmer's name for it: RSFTPNoDataPortProtectionWOEncryption
+#: Protocols/IdResourceStringsProtocols.pas:369 
+msgid "Can not set DataPortProtection with unencrypted connections."
+msgstr ""
+
+#. Programmer's name for it: RSFTPNoCCCWOEncryption
+#: Protocols/IdResourceStringsProtocols.pas:370 
+msgid "Can not set CCC without encyption."
+msgstr ""
+
+#. Programmer's name for it: RSFTPNoAUTHWOSSL
+#: Protocols/IdResourceStringsProtocols.pas:371 
+msgid "Can not set AUTH without SSL."
+msgstr ""
+
+#. Programmer's name for it: RSFTPNoAUTHCon
+#: Protocols/IdResourceStringsProtocols.pas:372 
+msgid "Can not set AUTH while connected."
+msgstr ""
+
+#. Programmer's name for it: RSFTPSToSTransferModesMusbtSame
+#: Protocols/IdResourceStringsProtocols.pas:373 
+msgid "Transfer modes must be the same."
+msgstr ""
+
+#. Programmer's name for it: RSCMDNotRecognized
+#: Protocols/IdResourceStringsProtocols.pas:378 
+msgid "command not recognized"
+msgstr "comando no reconocido"
+
+#. Programmer's name for it: RSGopherNotGopherPlus
+#: Protocols/IdResourceStringsProtocols.pas:380 
+msgid "%s is not a Gopher+ server"
+msgstr "%s no es un servidor Gopher+"
+
+#. Programmer's name for it: RSCodeNoError
+#: Protocols/IdResourceStringsProtocols.pas:382 
+msgid "RCode NO Error"
+msgstr "RCode NO Error"
+
+#. Programmer's name for it: RSCodeQueryServer
+#: Protocols/IdResourceStringsProtocols.pas:383 
+msgid "DNS Server Reports Query Server Error"
+msgstr "El servidor DNS mostró un error del servidor en la consulta"
+
+#. Programmer's name for it: RSCodeQueryFormat
+#: Protocols/IdResourceStringsProtocols.pas:384 
+msgid "DNS Server Reports Query Format Error"
+msgstr "El servidor DNS mostró un error en el formato de la consulta"
+
+#. Programmer's name for it: RSCodeQueryName
+#: Protocols/IdResourceStringsProtocols.pas:385 
+msgid "DNS Server Reports Query Name Error"
+msgstr "El servidor DNS mostró un error en el nombre de la consulta"
+
+#. Programmer's name for it: RSCodeQueryNotImplemented
+#: Protocols/IdResourceStringsProtocols.pas:386 
+msgid "DNS Server Reports Query Not Implemented Error"
+msgstr "El servidor DNS mostró un error de No Implementación en la consulta"
+
+#. Programmer's name for it: RSCodeQueryQueryRefused
+#: Protocols/IdResourceStringsProtocols.pas:387 
+msgid "DNS Server Reports Query Refused Error"
+msgstr "El servidor DNS mostró un error de rechazo en la consulta"
+
+#. Programmer's name for it: RSCodeQueryUnknownError
+#: Protocols/IdResourceStringsProtocols.pas:388 
+msgid "Server Returned Unknown Error"
+msgstr "El servidor retornó un error desconocido"
+
+#. Programmer's name for it: RSDNSTimeout
+#: Protocols/IdResourceStringsProtocols.pas:390 
+#, fuzzy
+msgid "TimedOut"
+msgstr "Fuera de tiempo"
+
+#. Programmer's name for it: RSDNSMFIsObsolete
+#: Protocols/IdResourceStringsProtocols.pas:391 
+msgid "MF is an Obsolete Command. USE MX."
+msgstr "MF es un comando obsoleto. USE MX."
+
+#. Programmer's name for it: RSDNSMDISObsolete
+#: Protocols/IdResourceStringsProtocols.pas:392 
+msgid "MD is an Obsolete Command. Use MX."
+msgstr "MD es un comando obsoleto. Use MX."
+
+#. Programmer's name for it: RSDNSMailAObsolete
+#: Protocols/IdResourceStringsProtocols.pas:393 
+msgid "MailA is an Obsolete Command. USE MX."
+msgstr "MailA es un comando obsoleto. USE MX."
+
+#. Programmer's name for it: RSDNSMailBNotImplemented
+#: Protocols/IdResourceStringsProtocols.pas:394 
+msgid "-Err 501 MailB is not implemented"
+msgstr "-Err 501 MailB no está implementado"
+
+#. Programmer's name for it: RSQueryInvalidQueryCount
+#: Protocols/IdResourceStringsProtocols.pas:396 
+#, fuzzy
+msgid "Invalid Query Count %d"
+msgstr "Contador %d de consulta inválido"
+
+#. Programmer's name for it: RSQueryInvalidPacketSize
+#: Protocols/IdResourceStringsProtocols.pas:397 
+msgid "Invalid Packet Size %d"
+msgstr "Tamaño de paquete inválido %d"
+
+#. Programmer's name for it: RSQueryLessThanFour
+#: Protocols/IdResourceStringsProtocols.pas:398 
+msgid "Received Packet is too small. Less than 4 bytes %d"
+msgstr "El paquete recibido es demasiado pequeño. Más que 4 bytes %d"
+
+#. Programmer's name for it: RSQueryInvalidHeaderID
+#: Protocols/IdResourceStringsProtocols.pas:399 
+msgid "Invalid Header Id %d"
+msgstr "Id %d de cabecera invalido"
+
+#. Programmer's name for it: RSQueryLessThanTwelve
+#: Protocols/IdResourceStringsProtocols.pas:400 
+msgid "Received Packet is too small. Less than 12 bytes %d"
+msgstr "El paquete recibido es demasiado pequeño. Más que 12 bytes %d"
+
+#. Programmer's name for it: RSQueryPackReceivedTooSmall
+#: Protocols/IdResourceStringsProtocols.pas:401 
+msgid "Received Packet is too small. %d"
+msgstr "El paquete recibido es demasiado pequeño. %d"
+
+#. Programmer's name for it: RSQueryInvalidIpV6
+#: Protocols/IdResourceStringsProtocols.pas:402 
+#, fuzzy
+msgid "Invalid IP V6 Address. %s"
+msgstr "Nombre de alias no válido: %s"
+
+#. Programmer's name for it: RSLPDDataFileSaved
+#: Protocols/IdResourceStringsProtocols.pas:406 
+msgid "Data file saved to %s"
+msgstr "Datos de archivo guardados en %s"
+
+#. Programmer's name for it: RSLPDControlFileSaved
+#: Protocols/IdResourceStringsProtocols.pas:407 
+msgid "Control file save to %s"
+msgstr "Archivo de control guardado en %s"
+
+#. Programmer's name for it: RSLPDDirectoryDoesNotExist
+#: Protocols/IdResourceStringsProtocols.pas:408 
+msgid "Directory %s does not exist"
+msgstr "El directorio %s no existe"
+
+#. Programmer's name for it: RSLPDServerStartTitle
+#: Protocols/IdResourceStringsProtocols.pas:409 
+msgid "Winshoes LPD Server %s "
+msgstr "Servidor Winshoes LPD %s "
+
+#. Programmer's name for it: RSLPDServerActive
+#: Protocols/IdResourceStringsProtocols.pas:410 
+msgid "Server status: active"
+msgstr "Estado del servidor: activo"
+
+#. Programmer's name for it: RSLPDQueueStatus
+#: Protocols/IdResourceStringsProtocols.pas:411 
+msgid "Queue %s status: %s"
+msgstr "Estado de la cola %s : %s"
+
+#. Programmer's name for it: RSLPDClosingConnection
+#: Protocols/IdResourceStringsProtocols.pas:412 
+msgid "closing connection"
+msgstr "Cerrando conexión"
+
+#. Programmer's name for it: RSLPDUnknownQueue
+#: Protocols/IdResourceStringsProtocols.pas:413 
+msgid "Unknown queue %s"
+msgstr "Cola %s desconocida"
+
+#. Programmer's name for it: RSLPDConnectTo
+#: Protocols/IdResourceStringsProtocols.pas:414 
+msgid "connected with %s"
+msgstr "Conectado con %s"
+
+#. Programmer's name for it: RSLPDAbortJob
+#: Protocols/IdResourceStringsProtocols.pas:415 
+msgid "abort job"
+msgstr "Abortar trabajo"
+
+#. Programmer's name for it: RSLPDReceiveControlFile
+#: Protocols/IdResourceStringsProtocols.pas:416 
+msgid "Receive control file"
+msgstr "Recibir archivo de control"
+
+#. Programmer's name for it: RSLPDReceiveDataFile
+#: Protocols/IdResourceStringsProtocols.pas:417 
+msgid "Receive data file"
+msgstr "Recibir archivo de datos"
+
+#. Programmer's name for it: RSLPDNoQueuesDefined
+#: Protocols/IdResourceStringsProtocols.pas:420 
+msgid "Error: no queues defined"
+msgstr "Error: Listas de trabajo no definidas"
+
+#. Programmer's name for it: RSTimeOut
+#: Protocols/IdResourceStringsProtocols.pas:423 
+msgid "Timeout"
+msgstr "Fuera de tiempo"
+
+#. Programmer's name for it: RSTFTPUnexpectedOp
+#: Protocols/IdResourceStringsProtocols.pas:424 
+msgid "Unexpected operation from %s:%d"
+msgstr "Operación inesperada desde %s:%d"
+
+#. Programmer's name for it: RSTFTPUnsupportedTrxMode
+#: Protocols/IdResourceStringsProtocols.pas:425 
+msgid "Unsupported transfer mode: \"%s\""
+msgstr "Modo de trasnferencia no soportado: \"%s\""
+
+#. Programmer's name for it: RSTFTPDiskFull
+#: Protocols/IdResourceStringsProtocols.pas:426 
+msgid "Unable to complete write request, progress halted at %d bytes"
+msgstr "Modo de trasnferencia no soportado: \"%s\""
+
+#. Programmer's name for it: RSTFTPFileNotFound
+#: Protocols/IdResourceStringsProtocols.pas:427 
+msgid "Unable to open %s"
+msgstr "No se puede abrir %s"
+
+#. Programmer's name for it: RSTFTPAccessDenied
+#: Protocols/IdResourceStringsProtocols.pas:428 
+msgid "Access to %s denied"
+msgstr "Acceso a %s denegado"
+
+#. Programmer's name for it: RSTIdTextInvalidCount
+#: Protocols/IdResourceStringsProtocols.pas:431 
+msgid "Invalid Text count. TIdText must be greater than 1"
+msgstr "Contador de texto inválido. TIdText debe ser mayor que 1"
+
+#. Programmer's name for it: RSTIdMessagePartCreate
+#: Protocols/IdResourceStringsProtocols.pas:432 
+msgid "TIdMessagePart can not be created.  Use descendant classes. "
+msgstr "TIdMessagePart can not be created.  Use descendant classes. "
+
+#. Programmer's name for it: RSTIdMessageErrorSavingAttachment
+#: Protocols/IdResourceStringsProtocols.pas:433 
+#, fuzzy
+msgid "Error saving attachment."
+msgstr "Codificando datos adjuntos"
+
+#. Programmer's name for it: RSTIdMessageErrorAttachmentBlocked
+#: Protocols/IdResourceStringsProtocols.pas:434 
+msgid "Attachment %s is blocked."
+msgstr ""
+
+#. Programmer's name for it: RSPOP3FieldNotSpecified
+#: Protocols/IdResourceStringsProtocols.pas:437 
+msgid " not specified"
+msgstr " no especificado"
+
+#. APR: user will see Server response    {Do not Localize}
+#. Programmer's name for it: RSPOP3UnrecognizedPOP3ResponseHeader
+#: Protocols/IdResourceStringsProtocols.pas:438 
+msgid ""
+"Unrecognized POP3 Response Header:\n"
+"\"%s\""
+msgstr ""
+
+#. APR    {Do not Localize}
+#. Programmer's name for it: RSPOP3ServerDoNotSupportAPOP
+#: Protocols/IdResourceStringsProtocols.pas:439 
+msgid "Server do not support APOP (no timestamp)"
+msgstr ""
+
+#. Programmer's name for it: RSIMAP4ConnectionStateError
+#: Protocols/IdResourceStringsProtocols.pas:443 
+msgid ""
+"Unable to execute command, wrong connection state;Current connection state: %"
+"s."
+msgstr ""
+
+#. Programmer's name for it: RSUnrecognizedIMAP4ResponseHeader
+#: Protocols/IdResourceStringsProtocols.pas:444 
+msgid "Unrecognized IMAP4 Response Header."
+msgstr ""
+
+#. Programmer's name for it: RSIMAP4NumberInvalid
+#: Protocols/IdResourceStringsProtocols.pas:445 
+msgid ""
+"Number parameter (relative message number or UID) is invalid; Must be 1 or "
+"greater."
+msgstr ""
+
+#. Programmer's name for it: RSIMAP4NumberInvalidString
+#: Protocols/IdResourceStringsProtocols.pas:446 
+msgid ""
+"Number parameter (relative message number or UID) is invalid; Cannot contain "
+"an empty string."
+msgstr ""
+
+#. Programmer's name for it: RSIMAP4NumberInvalidDigits
+#: Protocols/IdResourceStringsProtocols.pas:447 
+msgid ""
+"Number parameter (relative message number or UID) is invalid; Cannot contain "
+"non-digit characters."
+msgstr ""
+
+#. Programmer's name for it: RSIMAP4DisconnectedProbablyIdledOut
+#: Protocols/IdResourceStringsProtocols.pas:448 
+msgid ""
+"Server has gracefully disconnected you, possibly because the connection was "
+"idle for too long."
+msgstr ""
+
+#. Programmer's name for it: RSIMAP4ConnectionStateNonAuthenticated
+#: Protocols/IdResourceStringsProtocols.pas:452 
+#, fuzzy
+msgid "Non Authenticated"
+msgstr "Autentificación de Proxy requerida"
+
+#. Programmer's name for it: RSIMAP4ConnectionStateAuthenticated
+#: Protocols/IdResourceStringsProtocols.pas:453 
+#, fuzzy
+msgid "Authenticated"
+msgstr "Autentificación de Proxy requerida"
+
+#. Programmer's name for it: RSIMAP4ConnectionStateSelected
+#: Protocols/IdResourceStringsProtocols.pas:454 
+msgid "Selected"
+msgstr ""
+
+#. Programmer's name for it: RSTELNETSRVUsernamePrompt
+#: Protocols/IdResourceStringsProtocols.pas:457 
+msgid "Username: "
+msgstr "Nombre de usuario: "
+
+#. Programmer's name for it: RSTELNETSRVPasswordPrompt
+#: Protocols/IdResourceStringsProtocols.pas:458 
+msgid "Password: "
+msgstr "Contraseña: "
+
+#. Programmer's name for it: RSTELNETSRVInvalidLogin
+#: Protocols/IdResourceStringsProtocols.pas:459 
+msgid "Invalid Login."
+msgstr "Nombre de usuario inválido."
+
+#. Programmer's name for it: RSTELNETSRVMaxloginAttempt
+#: Protocols/IdResourceStringsProtocols.pas:460 
+msgid "Allowed login attempts exceeded, good bye."
+msgstr "No se permiten más intentos de acceso, adios."
+
+#. Programmer's name for it: RSTELNETSRVNoAuthHandler
+#: Protocols/IdResourceStringsProtocols.pas:461 
+msgid "No authentication handler has been specified."
+msgstr "No ha sido espeficiada una atentifiación."
+
+#. Programmer's name for it: RSTELNETSRVWelcomeString
+#: Protocols/IdResourceStringsProtocols.pas:462 
+msgid "Indy Telnet Server"
+msgstr "Servidor Telnet Indy"
+
+#. Programmer's name for it: RSTELNETSRVOnDataAvailableIsNil
+#: Protocols/IdResourceStringsProtocols.pas:463 
+msgid "OnDataAvailable event is nil."
+msgstr "El evento OnDataAvailable es nulo."
+
+#. Programmer's name for it: RSTELNETCLIConnectError
+#: Protocols/IdResourceStringsProtocols.pas:466 
+msgid "server not responding"
+msgstr "server not responding"
+
+#. Programmer's name for it: RSTELNETCLIReadError
+#: Protocols/IdResourceStringsProtocols.pas:467 
+msgid "Server did not respond."
+msgstr "El servidor no respondió."
+
+#. Programmer's name for it: RSNETCALInvalidIPString
+#: Protocols/IdResourceStringsProtocols.pas:470 
+msgid "The string %s does not translate into a valid IP."
+msgstr "El texto %s no se puede pasar a una IP válida."
+
+#. Programmer's name for it: RSNETCALCInvalidNetworkMask
+#: Protocols/IdResourceStringsProtocols.pas:471 
+msgid "Invalid network mask."
+msgstr "Máscara de red inválida."
+
+#. Programmer's name for it: RSNETCALCInvalidValueLength
+#: Protocols/IdResourceStringsProtocols.pas:472 
+msgid "Invalid value length: Should be 32."
+msgstr "Valor de anchura inválido: Debe ser 32."
+
+#. Programmer's name for it: RSNETCALConfirmLongIPList
+#: Protocols/IdResourceStringsProtocols.pas:473 
+msgid ""
+"There is too many IP addresses in the specified range (%d) to be displayed "
+"at design time."
+msgstr ""
+"There is too many IP addresses in the specified range (%d) to be displayed "
+"at design time."
+
+#. Programmer's name for it: RSIdentReplyTimeout
+#: Protocols/IdResourceStringsProtocols.pas:475 
+msgid ""
+"Reply Timed Out:  The server did not return a response and the query has "
+"been abandoned"
+msgstr ""
+
+#. Programmer's name for it: RSIdentInvalidPort
+#: Protocols/IdResourceStringsProtocols.pas:476 
+msgid ""
+"Invalid Port:  The foreign or local port is not specified correctly or "
+"invalid"
+msgstr ""
+
+#. Programmer's name for it: RSIdentNoUser
+#: Protocols/IdResourceStringsProtocols.pas:477 
+msgid "No User:  Port pair is not used or not used by an identifiable user"
+msgstr ""
+
+#. Programmer's name for it: RSIdentHiddenUser
+#: Protocols/IdResourceStringsProtocols.pas:478 
+msgid "Hidden User:  Information was not returned at a user's request"
+msgstr ""
+
+#. Programmer's name for it: RSIdentUnknownError
+#: Protocols/IdResourceStringsProtocols.pas:479 
+msgid ""
+"Unknown or other error: Can not determine owner, other error, or the error "
+"can not be revealed."
+msgstr ""
+
+#. Programmer's name for it: RSTunnelGetByteRange
+#: Protocols/IdResourceStringsProtocols.pas:485 
+msgid "Call to %s.GetByte [property Bytes] with index <> [0..%d]"
+msgstr "Call to %s.GetByte [property Bytes] with index <> [0..%d]"
+
+#. Programmer's name for it: RSTunnelTransformErrorBS
+#: Protocols/IdResourceStringsProtocols.pas:486 
+msgid "Error in transformation before send"
+msgstr "Error en la transformación antes enviada"
+
+#. Programmer's name for it: RSTunnelTransformError
+#: Protocols/IdResourceStringsProtocols.pas:487 
+msgid "Transform failed"
+msgstr "Tranformación fallida"
+
+#. Programmer's name for it: RSTunnelCRCFailed
+#: Protocols/IdResourceStringsProtocols.pas:488 
+msgid "CRC Failed"
+msgstr "CRC fallido"
+
+#. Programmer's name for it: RSTunnelConnectMsg
+#. Programmer's name for it: RSHL7StatusConnecting
+#: Protocols/IdResourceStringsProtocols.pas:489 
+#: Protocols/IdResourceStringsProtocols.pas:792
+msgid "Connecting"
+msgstr "Conectando"
+
+#. Programmer's name for it: RSTunnelDisconnectMsg
+#: Protocols/IdResourceStringsProtocols.pas:490 
+msgid "Disconnect"
+msgstr "Desconectado"
+
+#. Programmer's name for it: RSTunnelConnectToMasterFailed
+#: Protocols/IdResourceStringsProtocols.pas:491 
+msgid "Cannt connect to the Master server"
+msgstr "No se puede conectar al servidor maestro"
+
+#. Programmer's name for it: RSTunnelDontAllowConnections
+#: Protocols/IdResourceStringsProtocols.pas:492 
+msgid "Do not allow connctions now"
+msgstr "No se encuentran conecxiones ahora"
+
+#. Programmer's name for it: RSTunnelMessageTypeError
+#: Protocols/IdResourceStringsProtocols.pas:493 
+msgid "Message type recognition error"
+msgstr "Error de tipo de de reconocimiento"
+
+#. Programmer's name for it: RSTunnelMessageHandlingError
+#: Protocols/IdResourceStringsProtocols.pas:494 
+msgid "Message handling failed"
+msgstr "Message handling failed"
+
+#. Programmer's name for it: RSTunnelMessageInterpretError
+#: Protocols/IdResourceStringsProtocols.pas:495 
+msgid "Interpretation of message failed"
+msgstr "Interpretación de mensaje fallida"
+
+#. Programmer's name for it: RSTunnelMessageCustomInterpretError
+#: Protocols/IdResourceStringsProtocols.pas:496 
+msgid "Custom message interpretation failed"
+msgstr "Interpretación del mensaje personalizado fallida"
+
+#. Programmer's name for it: RSDestinationFileAlreadyExists
+#: Protocols/IdResourceStringsProtocols.pas:501 
+msgid "Destination file already exists."
+msgstr "El archivo de destino ya existe."
+
+#. Programmer's name for it: RSSSLAcceptError
+#: Protocols/IdResourceStringsProtocols.pas:504 
+msgid "Error accepting connection with SSL."
+msgstr "Error aceptando conexión con SSL."
+
+#. Programmer's name for it: RSSSLConnectError
+#: Protocols/IdResourceStringsProtocols.pas:505 
+msgid "Error connecting with SSL."
+msgstr "Error conectando con SSL."
+
+#. Programmer's name for it: RSSSLSettingCipherError
+#: Protocols/IdResourceStringsProtocols.pas:506 
+msgid "SetCipher failed."
+msgstr "SetCipher fallido."
+
+#. Programmer's name for it: RSSSLCreatingContextError
+#: Protocols/IdResourceStringsProtocols.pas:507 
+msgid "Error creating SSL context."
+msgstr "Error creando contexto SSL."
+
+#. Programmer's name for it: RSSSLLoadingRootCertError
+#: Protocols/IdResourceStringsProtocols.pas:508 
+msgid "Could not load root certificate."
+msgstr "No se puede leer el certificado del administrador."
+
+#. Programmer's name for it: RSSSLLoadingCertError
+#: Protocols/IdResourceStringsProtocols.pas:509 
+msgid "Could not load certificate."
+msgstr "No se puede leer el certificado."
+
+#. Programmer's name for it: RSSSLLoadingKeyError
+#: Protocols/IdResourceStringsProtocols.pas:510 
+msgid "Could not load key, check password."
+msgstr "No se puede cargar la clave, verifique la contraseña."
+
+#. Programmer's name for it: RSSSLGetMethodError
+#: Protocols/IdResourceStringsProtocols.pas:511 
+msgid "Error geting SSL method."
+msgstr "Error obteniendo método SSL."
+
+#. Programmer's name for it: RSSSLDataBindingError
+#: Protocols/IdResourceStringsProtocols.pas:512 
+msgid "Error binding data to SSL socket."
+msgstr "Error encuadernando datos al socket SSL."
+
+#. Programmer's name for it: RSMsgCmpEdtrNew
+#: Protocols/IdResourceStringsProtocols.pas:514 
+msgid "&New Message Part..."
+msgstr "&Nueva parte de mensaje..."
+
+#. Programmer's name for it: RSMsgCmpEdtrExtraHead
+#: Protocols/IdResourceStringsProtocols.pas:515 
+msgid "Extra Headers Text Editor"
+msgstr "Editor de texto de cabeceras extra"
+
+#. Programmer's name for it: RSMsgCmpEdtrBodyText
+#: Protocols/IdResourceStringsProtocols.pas:516 
+msgid "Body Text Editor"
+msgstr "Editor de texto del cuerpo"
+
+#. Programmer's name for it: RSNNTPServerNotRecognized
+#: Protocols/IdResourceStringsProtocols.pas:519 
+#, fuzzy
+msgid "Command not recognized"
+msgstr "comando no reconocido"
+
+#. Programmer's name for it: RSNNTPServerGoodBye
+#: Protocols/IdResourceStringsProtocols.pas:520 
+msgid "Goodbye"
+msgstr "Adios"
+
+#. Programmer's name for it: RSGopherServerNoProgramCode
+#: Protocols/IdResourceStringsProtocols.pas:522 
+msgid "Error: No program code to return request!"
+msgstr "Error: Sin código de programa para ofrecer respuesta!"
+
+#. Programmer's name for it: RSInvalidSyslogPRI
+#: Protocols/IdResourceStringsProtocols.pas:525 
+msgid "Invalid syslog message: incorrect PRI section"
+msgstr ""
+
+#. Programmer's name for it: RSInvalidSyslogPRINumber
+#: Protocols/IdResourceStringsProtocols.pas:526 
+msgid "Invalid syslog message: incorrect PRI number \"%s\""
+msgstr ""
+
+#. Programmer's name for it: RSInvalidSyslogTimeStamp
+#: Protocols/IdResourceStringsProtocols.pas:527 
+msgid "Invalid syslog message: incorrect timestamp \"%s\""
+msgstr ""
+
+#. Programmer's name for it: RSInvalidSyslogPacketSize
+#: Protocols/IdResourceStringsProtocols.pas:528 
+msgid "Invalid Syslog message: packet too large (%d bytes)"
+msgstr ""
+
+#. Programmer's name for it: RSInvalidHostName
+#: Protocols/IdResourceStringsProtocols.pas:529 
+msgid ""
+"Invalid host name. A SYSLOG host name cannot contain any space (\"%s\")+"
+msgstr ""
+
+#. Programmer's name for it: RSOSSLModeNotSet
+#: Protocols/IdResourceStringsProtocols.pas:532 
+msgid "Mode has not been set."
+msgstr "El modo no ha sido asignado."
+
+#. Programmer's name for it: RSOSSLCouldNotLoadSSLLibrary
+#: Protocols/IdResourceStringsProtocols.pas:533 
+msgid "Could not load SSL library."
+msgstr "No se puede leer la librería SSL."
+
+#. Programmer's name for it: RSOSSLStatusString
+#: Protocols/IdResourceStringsProtocols.pas:534 
+msgid "SSL status: \"%s\""
+msgstr "Estado SSL: \"%s\""
+
+#. Programmer's name for it: RSOSSLConnectionDropped
+#: Protocols/IdResourceStringsProtocols.pas:535 
+msgid "SSL connection has dropped."
+msgstr "La conexión SSL ha sido detenida."
+
+#. Programmer's name for it: RSOSSLCertificateLookup
+#: Protocols/IdResourceStringsProtocols.pas:536 
+msgid "SSL certificate request error."
+msgstr "Error de la respuesta de certificado SSL."
+
+#. Programmer's name for it: RSOSSLInternal
+#: Protocols/IdResourceStringsProtocols.pas:537 
+msgid "SSL library internal error."
+msgstr "Error interno de librería SSL."
+
+#. Programmer's name for it: RSWSockStack
+#: Protocols/IdResourceStringsProtocols.pas:540 
+msgid "Winsock stack"
+msgstr "Winsock stack"
+
+#. Programmer's name for it: RSSMTPSvrCmdNotRecognized
+#: Protocols/IdResourceStringsProtocols.pas:543 
+#, fuzzy
+msgid "Command Not Recognised"
+msgstr "comando no reconocido"
+
+#. Programmer's name for it: RSSMTPSvrQuit
+#: Protocols/IdResourceStringsProtocols.pas:544 
+msgid "Signing Off"
+msgstr ""
+
+#. Programmer's name for it: RSSMTPSvrOk
+#: Protocols/IdResourceStringsProtocols.pas:545 
+msgid "Ok"
+msgstr ""
+
+#. Programmer's name for it: RSSMTPSvrStartData
+#: Protocols/IdResourceStringsProtocols.pas:546 
+msgid "Start mail input; end with <CRLF>.<CRLF>"
+msgstr ""
+
+#. Programmer's name for it: RSSMTPSvrAddressOk
+#: Protocols/IdResourceStringsProtocols.pas:547 
+msgid "%s Address Okay"
+msgstr ""
+
+#. Programmer's name for it: RSSMTPSvrAddressError
+#: Protocols/IdResourceStringsProtocols.pas:548 
+msgid "%s Address Error"
+msgstr ""
+
+#. Programmer's name for it: RSSMTPSvrNotPermitted
+#: Protocols/IdResourceStringsProtocols.pas:549 
+#, fuzzy
+msgid "%s Sender Not Permitted"
+msgstr "No implementado"
+
+#. waiting to be abused by some spammer.
+#. Programmer's name for it: RSSMTPSvrNoRelay
+#: Protocols/IdResourceStringsProtocols.pas:552 
+msgid "We do not relay %s"
+msgstr ""
+
+#. Programmer's name for it: RSSMTPSvrWelcome
+#: Protocols/IdResourceStringsProtocols.pas:553 
+msgid "Welcome to the INDY SMTP Server"
+msgstr ""
+
+#. Programmer's name for it: RSSMTPSvrHello
+#: Protocols/IdResourceStringsProtocols.pas:554 
+msgid "Hello %s"
+msgstr ""
+
+#. Programmer's name for it: RSSMTPSvrNoHello
+#: Protocols/IdResourceStringsProtocols.pas:555 
+msgid "Polite people say HELO"
+msgstr ""
+
+#. Programmer's name for it: RSSMTPSvrCmdGeneralError
+#: Protocols/IdResourceStringsProtocols.pas:556 
+msgid "Syntax Error - Command not understood: %s"
+msgstr ""
+
+#. Programmer's name for it: RSSMTPSvrXServer
+#: Protocols/IdResourceStringsProtocols.pas:557 
+#, fuzzy
+msgid "Indy SMTP Server"
+msgstr "Servidores Indy"
+
+#. Programmer's name for it: RSSMTPSvrReceivedHeader
+#: Protocols/IdResourceStringsProtocols.pas:558 
+msgid "by DNSName [127.0.0.1] running Indy SMTP"
+msgstr ""
+
+#. Programmer's name for it: RSSMTPSvrAuthFailed
+#: Protocols/IdResourceStringsProtocols.pas:559 
+#, fuzzy
+msgid "Authentication Failed"
+msgstr "Autentificación de Proxy requerida"
+
+#. Programmer's name for it: RSSMTPSvrAddressWillForward
+#: Protocols/IdResourceStringsProtocols.pas:560 
+msgid "%s User not local, Will forward"
+msgstr ""
+
+#. Programmer's name for it: RSSMTPSvrReqSTARTTLS
+#: Protocols/IdResourceStringsProtocols.pas:561 
+msgid "Must issue a STARTTLS command first"
+msgstr ""
+
+#. Programmer's name for it: RSSMTPSvrParmErrMailFrom
+#: Protocols/IdResourceStringsProtocols.pas:562 
+msgid "Parameter error! Example: mail from:<user@domain.com>"
+msgstr ""
+
+#. Programmer's name for it: RSSMTPSvrParmErrRcptTo
+#: Protocols/IdResourceStringsProtocols.pas:563 
+msgid "Command parameter error! Example: rcpt to:<a@b.c>"
+msgstr ""
+
+#. Programmer's name for it: RSSMTPSvrParmErr
+#: Protocols/IdResourceStringsProtocols.pas:564 
+#, fuzzy
+msgid "Syntax error in parameters or arguments"
+msgstr "No hay tipo de parámetro para el parámetro '%s'"
+
+#. Programmer's name for it: RSSMTPSvrParmErrNoneAllowed
+#: Protocols/IdResourceStringsProtocols.pas:565 
+msgid "Syntax error (no parameters allowed)"
+msgstr ""
+
+#. Programmer's name for it: RSSMTPSvrReadyForTLS
+#: Protocols/IdResourceStringsProtocols.pas:566 
+msgid "Ready to start TLS"
+msgstr ""
+
+#. errorcode 554
+#. Programmer's name for it: RSSMTPSvrCmdErrSecurity
+#: Protocols/IdResourceStringsProtocols.pas:567 
+msgid "Command refused due to lack of security"
+msgstr ""
+
+#. Programmer's name for it: RSSMTPSvrImplicitTLSRequiresSSL
+#: Protocols/IdResourceStringsProtocols.pas:568 
+msgid ""
+"Implicit SMTP TLS requires that IOHandler be set to a TIdServerIOHandlerSSL."
+msgstr ""
+
+#. Programmer's name for it: RSSMTPSvrBadSequence
+#: Protocols/IdResourceStringsProtocols.pas:569 
+msgid "Bad sequence of commands"
+msgstr ""
+
+#. Programmer's name for it: RSSMTPNotLoggedIn
+#: Protocols/IdResourceStringsProtocols.pas:570 
+msgid "Not logged in"
+msgstr ""
+
+#. Programmer's name for it: RSSMTPMailboxUnavailable
+#: Protocols/IdResourceStringsProtocols.pas:571 
+msgid "Requested action not taken: mailbox unavailable"
+msgstr ""
+
+#. Programmer's name for it: RSSMTPUserNotLocal
+#: Protocols/IdResourceStringsProtocols.pas:572 
+msgid "User %s not local; please try <%s>"
+msgstr ""
+
+#. Programmer's name for it: RSSMTPUserNotLocalNoAddr
+#: Protocols/IdResourceStringsProtocols.pas:573 
+msgid "User %s not local; no forwarding address"
+msgstr ""
+
+#. Programmer's name for it: RSSMTPTooManyRecipients
+#: Protocols/IdResourceStringsProtocols.pas:574 
+#, fuzzy
+msgid "Too Many recipients."
+msgstr "Demasiados procesos."
+
+#. Programmer's name for it: RSSMTPAccountDisabled
+#: Protocols/IdResourceStringsProtocols.pas:575 
+#, fuzzy
+msgid "%s Account Disabled"
+msgstr "%s no puede ser cargado."
+
+#. Programmer's name for it: RSSMTPLocalProcessingError
+#: Protocols/IdResourceStringsProtocols.pas:577 
+msgid "Local Processing Error"
+msgstr ""
+
+#. Programmer's name for it: RSSMTPNoOnRcptTo
+#: Protocols/IdResourceStringsProtocols.pas:578 
+msgid "No OnRcptTo event"
+msgstr ""
+
+#. data command error replies
+#. Programmer's name for it: RSSMTPSvrExceededStorageAlloc
+#: Protocols/IdResourceStringsProtocols.pas:580 
+#, fuzzy
+msgid "Requested mail action aborted: exceeded storage allocation"
+msgstr "El software causo que se abortara la conexión."
+
+#. Programmer's name for it: RSSMTPSvrMailBoxNameNotAllowed
+#: Protocols/IdResourceStringsProtocols.pas:581 
+msgid "Requested action not taken: mailbox name not allowed"
+msgstr ""
+
+#. Programmer's name for it: RSSMTPSvrTransactionFailed
+#: Protocols/IdResourceStringsProtocols.pas:582 
+#, fuzzy
+msgid " Transaction failed"
+msgstr "Evento OnExecute no asignado."
+
+#. Programmer's name for it: RSSMTPSvrLocalError
+#: Protocols/IdResourceStringsProtocols.pas:583 
+msgid "Requested action aborted: local error in processing"
+msgstr ""
+
+#. Programmer's name for it: RSSMTPSvrInsufficientSysStorage
+#: Protocols/IdResourceStringsProtocols.pas:584 
+msgid "Requested action not taken: insufficient system storage "
+msgstr ""
+
+#. Programmer's name for it: RSSMTPMsgLenLimit
+#: Protocols/IdResourceStringsProtocols.pas:585 
+msgid "Message length exceeds administrative limit"
+msgstr ""
+
+#. Programmer's name for it: RSPOP3SvrImplicitTLSRequiresSSL
+#: Protocols/IdResourceStringsProtocols.pas:587 
+msgid ""
+"Implicit POP3 requires that IOHandler be set to a TIdServerIOHandlerSSL."
+msgstr ""
+
+#. Programmer's name for it: RSPOP3SvrMustUseSTLS
+#: Protocols/IdResourceStringsProtocols.pas:588 
+msgid "Must use STLS"
+msgstr ""
+
+#. Programmer's name for it: RSPOP3SvrNotHandled
+#: Protocols/IdResourceStringsProtocols.pas:589 
+#, fuzzy
+msgid "Command Not Handled: %s"
+msgstr "Comando no reconocido (%s)"
+
+#. Programmer's name for it: RSPOP3SvrNotPermittedWithTLS
+#. Programmer's name for it: RSIMAP4SvrNotPermittedWithTLS
+#: Protocols/IdResourceStringsProtocols.pas:590 
+#: Protocols/IdResourceStringsProtocols.pas:870
+#, fuzzy
+msgid "Command not permitted when TLS active"
+msgstr "Cannot change session state when the server is active."
+
+#. Programmer's name for it: RSPOP3SvrNotInThisState
+#: Protocols/IdResourceStringsProtocols.pas:591 
+msgid "Command not permitted in this state"
+msgstr ""
+
+#. Programmer's name for it: RSPOP3SvrBeginTLSNegotiation
+#: Protocols/IdResourceStringsProtocols.pas:592 
+msgid "Begin TLS negotiation"
+msgstr ""
+
+#. Programmer's name for it: RSPOP3SvrLoginFirst
+#: Protocols/IdResourceStringsProtocols.pas:593 
+msgid "Please login first"
+msgstr ""
+
+#. Programmer's name for it: RSPOP3SvrInvalidSyntax
+#: Protocols/IdResourceStringsProtocols.pas:594 
+#, fuzzy
+msgid "Invalid Syntax"
+msgstr "Argumento inválido."
+
+#. Programmer's name for it: RSPOP3SvrClosingConnection
+#: Protocols/IdResourceStringsProtocols.pas:595 
+#, fuzzy
+msgid "Closing Connection Channel."
+msgstr "Cerrando conexión"
+
+#. Programmer's name for it: RSPOP3SvrPasswordRequired
+#: Protocols/IdResourceStringsProtocols.pas:596 
+#, fuzzy
+msgid "Password required"
+msgstr "Contraseña: "
+
+#. Programmer's name for it: RSPOP3SvrLoginFailed
+#: Protocols/IdResourceStringsProtocols.pas:597 
+#, fuzzy
+msgid "Login failed"
+msgstr "sigaction call failed"
+
+#. Programmer's name for it: RSPOP3SvrLoginOk
+#: Protocols/IdResourceStringsProtocols.pas:598 
+msgid "Login OK"
+msgstr ""
+
+#. Programmer's name for it: RSPOP3SvrWrongState
+#: Protocols/IdResourceStringsProtocols.pas:599 
+msgid "Wrong State"
+msgstr ""
+
+#. Programmer's name for it: RSPOP3SvrInvalidMsgNo
+#: Protocols/IdResourceStringsProtocols.pas:600 
+#, fuzzy
+msgid "Invalid Message Number"
+msgstr "Argumento inválido."
+
+#. Programmer's name for it: RSPOP3SvrNoOp
+#: Protocols/IdResourceStringsProtocols.pas:601 
+msgid "NOOP"
+msgstr ""
+
+#. Programmer's name for it: RSPOP3SvrReset
+#: Protocols/IdResourceStringsProtocols.pas:602 
+#, fuzzy
+msgid "Reset"
+msgstr "Resultado"
+
+#. Programmer's name for it: RSPOP3SvrCapaList
+#: Protocols/IdResourceStringsProtocols.pas:603 
+msgid "Capability list follows"
+msgstr ""
+
+#. Programmer's name for it: RSPOP3SvrWelcome
+#: Protocols/IdResourceStringsProtocols.pas:604 
+#, fuzzy
+msgid "Welcome to Indy POP3 Server"
+msgstr "Servidores Indy"
+
+#. Programmer's name for it: RSPOP3SvrUnknownCmd
+#: Protocols/IdResourceStringsProtocols.pas:605 
+#, fuzzy
+msgid "Sorry, Unknown Command"
+msgstr "Código de respuesta desconocido"
+
+#. Programmer's name for it: RSPOP3SvrInternalError
+#: Protocols/IdResourceStringsProtocols.pas:606 
+#, fuzzy
+msgid "Unknown Internal Error"
+msgstr "Error de sock desconocido."
+
+#. Programmer's name for it: RSPOP3SvrHelpFollows
+#: Protocols/IdResourceStringsProtocols.pas:607 
+msgid "Help follows"
+msgstr ""
+
+#. Programmer's name for it: RSPOP3SvrTooManyCons
+#: Protocols/IdResourceStringsProtocols.pas:608 
+msgid "Too many connections. Try again later."
+msgstr ""
+
+#. TIdCoder3to4
+#. Programmer's name for it: RSUnevenSizeInDecodeStream
+#: Protocols/IdResourceStringsProtocols.pas:611 
+msgid "Uneven size in DecodeToStream."
+msgstr ""
+
+#. Programmer's name for it: RSUnevenSizeInEncodeStream
+#: Protocols/IdResourceStringsProtocols.pas:612 
+msgid "Uneven size in Encode."
+msgstr ""
+
+#. Programmer's name for it: RSIllegalCharInInputString
+#: Protocols/IdResourceStringsProtocols.pas:613 
+#, fuzzy
+msgid "Illegal character in input string."
+msgstr "Nombre de sesión inválido: %s"
+
+#. TIdMessageCoder
+#. Programmer's name for it: RSMessageDecoderNotFound
+#: Protocols/IdResourceStringsProtocols.pas:616 
+#, fuzzy
+msgid "Message decoder not found"
+msgstr "Mensaje demasiado largo."
+
+#. Programmer's name for it: RSMessageEncoderNotFound
+#: Protocols/IdResourceStringsProtocols.pas:617 
+#, fuzzy
+msgid "Message encoder not found"
+msgstr "Mensaje demasiado largo."
+
+#. TIdMessageCoderMIME
+#. Programmer's name for it: RSMessageCoderMIMEUnrecognizedContentTrasnferEncoding
+#: Protocols/IdResourceStringsProtocols.pas:620 
+msgid "Unrecognized content trasnfer encoding."
+msgstr ""
+
+#. TIdMessageCoderUUE
+#. Programmer's name for it: RSUnrecognizedUUEEncodingScheme
+#: Protocols/IdResourceStringsProtocols.pas:623 
+msgid "Unrecognized UUE encoding scheme."
+msgstr ""
+
+#. TIdICMPCast
+#. Programmer's name for it: RSIPMCastInvalidMulticastAddress
+#: Protocols/IdResourceStringsProtocols.pas:626 
+msgid ""
+"The supplied IP address is not a valid multicast address [224.0.0.0 to "
+"239.255.255.255]."
+msgstr ""
+
+#. Programmer's name for it: RSIPMCastNotSupportedOnWin32
+#: Protocols/IdResourceStringsProtocols.pas:627 
+#, fuzzy
+msgid "This function is not supported on Win32."
+msgstr "Operación no soportada en socket."
+
+#. Programmer's name for it: RSIPMCastReceiveError0
+#: Protocols/IdResourceStringsProtocols.pas:628 
+#, fuzzy
+msgid "IP Broadcast Receive Error = 0."
+msgstr "Recibe error ICMP = 0."
+
+#. Programmer's name for it: RSFTPDefaultGreeting
+#: Protocols/IdResourceStringsProtocols.pas:631 
+#, fuzzy
+msgid "Indy FTP Server ready."
+msgstr "Servidor Telnet Indy"
+
+#. Programmer's name for it: RSFTPOpenDataConn
+#: Protocols/IdResourceStringsProtocols.pas:632 
+msgid "Data connection already open; transfer starting."
+msgstr ""
+
+#. Programmer's name for it: RSFTPDataConnToOpen
+#: Protocols/IdResourceStringsProtocols.pas:633 
+msgid "File status okay; about to open data connection."
+msgstr ""
+
+#. Programmer's name for it: RSFTPDataConnList
+#: Protocols/IdResourceStringsProtocols.pas:634 
+msgid "Opening ASCII mode data connection for /bin/ls."
+msgstr ""
+
+#. Programmer's name for it: RSFTPDataConnNList
+#: Protocols/IdResourceStringsProtocols.pas:635 
+msgid "Opening ASCII mode data connection for file list."
+msgstr ""
+
+#. Programmer's name for it: RSFTPDataConnMLst
+#: Protocols/IdResourceStringsProtocols.pas:636 
+msgid "Opening ASCII data connection for directory listing"
+msgstr ""
+
+#. Programmer's name for it: RSFTPCmdSuccessful
+#: Protocols/IdResourceStringsProtocols.pas:637 
+msgid "%s Command successful."
+msgstr ""
+
+#. Programmer's name for it: RSFTPServiceOpen
+#: Protocols/IdResourceStringsProtocols.pas:638 
+msgid "Service ready for new user."
+msgstr ""
+
+#. Programmer's name for it: RSFTPServerClosed
+#: Protocols/IdResourceStringsProtocols.pas:639 
+#, fuzzy
+msgid "Service closing control connection."
+msgstr "Cerrando conexión"
+
+#. Programmer's name for it: RSFTPDataConn
+#: Protocols/IdResourceStringsProtocols.pas:640 
+msgid "Data connection open; no transfer in progress."
+msgstr ""
+
+#. Programmer's name for it: RSFTPDataConnClosed
+#: Protocols/IdResourceStringsProtocols.pas:641 
+#, fuzzy
+msgid "Closing data connection."
+msgstr "Cerrando conexión"
+
+#. Programmer's name for it: RSFTPDataConnEPLFClosed
+#: Protocols/IdResourceStringsProtocols.pas:642 
+msgid "Success."
+msgstr ""
+
+#. Programmer's name for it: RSFTPDataConnClosedAbnormally
+#: Protocols/IdResourceStringsProtocols.pas:643 
+#, fuzzy
+msgid "Data connection closed abnormally."
+msgstr "Conexión cerrada."
+
+#. Programmer's name for it: RSFTPPassiveMode
+#: Protocols/IdResourceStringsProtocols.pas:644 
+msgid "Entering Passive Mode (%s)."
+msgstr ""
+
+#. Programmer's name for it: RSFTPUserLogged
+#: Protocols/IdResourceStringsProtocols.pas:645 
+msgid "User logged in, proceed."
+msgstr ""
+
+#. Programmer's name for it: RSFTPAnonymousUserLogged
+#: Protocols/IdResourceStringsProtocols.pas:646 
+msgid "Anonymous user logged in, proceed."
+msgstr ""
+
+#. Programmer's name for it: RSFTPFileActionCompleted
+#: Protocols/IdResourceStringsProtocols.pas:647 
+msgid "Requested file action okay, completed."
+msgstr ""
+
+#. Programmer's name for it: RSFTPDirFileCreated
+#: Protocols/IdResourceStringsProtocols.pas:648 
+msgid "\"%s\" created."
+msgstr ""
+
+#. Programmer's name for it: RSFTPUserOkay
+#: Protocols/IdResourceStringsProtocols.pas:649 
+msgid "User name okay, need password."
+msgstr ""
+
+#. Programmer's name for it: RSFTPAnonymousUserOkay
+#: Protocols/IdResourceStringsProtocols.pas:650 
+msgid "Anonymous login OK, send e-mail as password."
+msgstr ""
+
+#. Programmer's name for it: RSFTPNeedLoginWithUser
+#: Protocols/IdResourceStringsProtocols.pas:651 
+msgid "Login with USER first."
+msgstr ""
+
+#. Programmer's name for it: RSFTPFileActionPending
+#: Protocols/IdResourceStringsProtocols.pas:652 
+msgid "Requested file action pending further information."
+msgstr ""
+
+#. Programmer's name for it: RSFTPServiceNotAvailable
+#. Programmer's name for it: RSFTPClosingConnection
+#: Protocols/IdResourceStringsProtocols.pas:653 
+#: Protocols/IdResourceStringsProtocols.pas:658
+msgid "Service not available, closing control connection."
+msgstr ""
+
+#. Programmer's name for it: RSFTPCantOpenDataConn
+#. Programmer's name for it: RSFTPCantOpenData
+#: Protocols/IdResourceStringsProtocols.pas:654 
+#: Protocols/IdResourceStringsProtocols.pas:662
+#, fuzzy
+msgid "Can't open data connection."
+msgstr "Conexión de red caída o reseteada"
+
+#. Programmer's name for it: RSFTPFileActionNotTaken
+#: Protocols/IdResourceStringsProtocols.pas:655 
+msgid "Requested file action not taken."
+msgstr ""
+
+#. Programmer's name for it: RSFTPFileActionAborted
+#: Protocols/IdResourceStringsProtocols.pas:656 
+msgid "Requested action aborted: local error in processing."
+msgstr ""
+
+#. Programmer's name for it: RSFTPEnteringEPSV
+#: Protocols/IdResourceStringsProtocols.pas:657 
+msgid "Entering Extended Passive Mode (%s)"
+msgstr ""
+
+#. Programmer's name for it: RSFTPPORTDisabled
+#: Protocols/IdResourceStringsProtocols.pas:659 
+msgid "PORT/EPRT Command disabled."
+msgstr ""
+
+#. Programmer's name for it: RSFTPPORTRange
+#: Protocols/IdResourceStringsProtocols.pas:660 
+msgid "PORT/EPRT Command disabled for reserved port range (1-1024)."
+msgstr ""
+
+#. Programmer's name for it: RSFTPSameIPAddress
+#: Protocols/IdResourceStringsProtocols.pas:661 
+msgid ""
+"Data port can only be used by the same IP address used by the control "
+"connection."
+msgstr ""
+
+#. Programmer's name for it: RSFTPEPSVAllEntered
+#: Protocols/IdResourceStringsProtocols.pas:663 
+msgid " EPSV ALL sent, now only accepting EPSV connections"
+msgstr ""
+
+#. Programmer's name for it: RSFTPNetProtNotSup
+#: Protocols/IdResourceStringsProtocols.pas:664 
+#, fuzzy
+msgid "Network protocol not supported, use %s"
+msgstr "Protocolo no soportado."
+
+#. Programmer's name for it: RSFTPFileOpSuccess
+#: Protocols/IdResourceStringsProtocols.pas:665 
+msgid "File Operation Successful"
+msgstr ""
+
+#. Programmer's name for it: RSFTPInvalidOps
+#: Protocols/IdResourceStringsProtocols.pas:666 
+#, fuzzy
+msgid "Invalid %s options"
+msgstr "Nombre de sesión inválido: %s"
+
+#. Programmer's name for it: RSFTPOptNotRecog
+#: Protocols/IdResourceStringsProtocols.pas:667 
+#, fuzzy
+msgid "Option not recognized."
+msgstr "comando no reconocido"
+
+#. Programmer's name for it: RSFTPPropNotNeg
+#: Protocols/IdResourceStringsProtocols.pas:668 
+msgid "Property can not be a negative number."
+msgstr ""
+
+#. Programmer's name for it: RSFTPClntNoted
+#: Protocols/IdResourceStringsProtocols.pas:669 
+#, fuzzy
+msgid "Noted."
+msgstr "Conectado."
+
+#. Programmer's name for it: RSFTPQuitGoodby
+#: Protocols/IdResourceStringsProtocols.pas:670 
+#, fuzzy
+msgid "Goodbye."
+msgstr "Adios"
+
+#. Programmer's name for it: RSFTPPASVBoundPortMaxMustBeGreater
+#: Protocols/IdResourceStringsProtocols.pas:671 
+msgid "PASVBoundPortMax must be greater than PASVBoundPortMax."
+msgstr ""
+
+#. Programmer's name for it: RSFTPPASVBoundPortMinMustBeLess
+#: Protocols/IdResourceStringsProtocols.pas:672 
+msgid "PASVBoundPortMin must be less than PASVBoundPortMax."
+msgstr ""
+
+#. Programmer's name for it: RSFTPRequestedActionNotTaken
+#. Programmer's name for it: RSFTPActionNotTaken
+#. Programmer's name for it: RSFTPRequestedFileActionNotTaken
+#: Protocols/IdResourceStringsProtocols.pas:673 
+#: Protocols/IdResourceStringsProtocols.pas:678
+#: Protocols/IdResourceStringsProtocols.pas:681
+msgid "Requested action not taken."
+msgstr ""
+
+#. Programmer's name for it: RSFTPCmdNotRecognized
+#: Protocols/IdResourceStringsProtocols.pas:674 
+#, fuzzy
+msgid "'%s': command not understood."
+msgstr "Comando no soportado."
+
+#. Programmer's name for it: RSFTPCmdNotImplemented
+#: Protocols/IdResourceStringsProtocols.pas:675 
+#, fuzzy
+msgid "\"%s\" Command not implemented."
+msgstr "Comando no soportado."
+
+#. Programmer's name for it: RSFTPCmdHelpNotKnown
+#: Protocols/IdResourceStringsProtocols.pas:676 
+#, fuzzy
+msgid "Unknown command %s."
+msgstr "Código de respuesta desconocido"
+
+#. Programmer's name for it: RSFTPUserNotLoggedIn
+#: Protocols/IdResourceStringsProtocols.pas:677 
+msgid "Not logged in."
+msgstr ""
+
+#. Programmer's name for it: RSFTPActionAborted
+#: Protocols/IdResourceStringsProtocols.pas:679 
+msgid "Requested action aborted: page type unknown."
+msgstr ""
+
+#. Programmer's name for it: RSFTPRequestedFileActionAborted
+#: Protocols/IdResourceStringsProtocols.pas:680 
+#, fuzzy
+msgid "Requested file action aborted."
+msgstr "El software causo que se abortara la conexión."
+
+#. Programmer's name for it: RSFTPMaxConnections
+#: Protocols/IdResourceStringsProtocols.pas:682 
+msgid "Maximum connections limit exceeded. Try again later."
+msgstr ""
+
+#. Programmer's name for it: RSFTPDataConnToOpenStou
+#: Protocols/IdResourceStringsProtocols.pas:683 
+#, fuzzy
+msgid "About to open data connection for %s"
+msgstr "Conexión de red caída o reseteada"
+
+#. Programmer's name for it: RSFTPNeedAccountForLogin
+#: Protocols/IdResourceStringsProtocols.pas:684 
+msgid "Need account for login."
+msgstr ""
+
+#. Programmer's name for it: RSFTPAuthSSL
+#: Protocols/IdResourceStringsProtocols.pas:685 
+msgid "AUTH Command OK. Initializing SSL"
+msgstr ""
+
+#. Programmer's name for it: RSFTPDataProtBuffer0
+#: Protocols/IdResourceStringsProtocols.pas:686 
+msgid "PBSZ Command OK. Protection buffer size set to 0."
+msgstr ""
+
+#. Programmer's name for it: RSFTPInvalidProtTypeForMechanism
+#: Protocols/IdResourceStringsProtocols.pas:688 
+msgid "Requested PROT level not supported by mechanism."
+msgstr ""
+
+#. Programmer's name for it: RSFTPProtTypeClear
+#: Protocols/IdResourceStringsProtocols.pas:689 
+#, fuzzy
+msgid "PROT Command OK. Using Clear data connection"
+msgstr "Cerrando conexión"
+
+#. Programmer's name for it: RSFTPProtTypePrivate
+#: Protocols/IdResourceStringsProtocols.pas:690 
+#, fuzzy
+msgid "PROT Command OK. Using Private data connection"
+msgstr "Cerrando conexión"
+
+#. Programmer's name for it: RSFTPClearCommandConnection
+#: Protocols/IdResourceStringsProtocols.pas:691 
+msgid "Command channel switched to clear-text."
+msgstr ""
+
+#. Programmer's name for it: RSFTPClearCommandNotPermitted
+#: Protocols/IdResourceStringsProtocols.pas:692 
+msgid "Clear command channel is not permitted."
+msgstr ""
+
+#. Programmer's name for it: RSFTPPBSZAuthDataRequired
+#: Protocols/IdResourceStringsProtocols.pas:693 
+#, fuzzy
+msgid "AUTH Data required."
+msgstr "Tamaño requerido"
+
+#. Programmer's name for it: RSFTPPBSZNotAfterCCC
+#: Protocols/IdResourceStringsProtocols.pas:694 
+#, fuzzy
+msgid "Not permitted after CCC"
+msgstr "No implementado"
+
+#. Programmer's name for it: RSFTPPROTProtBufRequired
+#: Protocols/IdResourceStringsProtocols.pas:695 
+msgid "PBSZ Data Buffer Size required."
+msgstr ""
+
+#. Programmer's name for it: RSFTPInvalidForParam
+#: Protocols/IdResourceStringsProtocols.pas:696 
+#, fuzzy
+msgid "Command not implemented for that parameter."
+msgstr "Comando no soportado."
+
+#. Programmer's name for it: RSFTPNotAllowedAfterEPSVAll
+#: Protocols/IdResourceStringsProtocols.pas:697 
+msgid "%s not allowed after EPSV ALL"
+msgstr ""
+
+#. Programmer's name for it: RSFTPOTPMethod
+#: Protocols/IdResourceStringsProtocols.pas:699 
+#, fuzzy
+msgid "Unknown OTP method"
+msgstr "Código de respuesta desconocido"
+
+#. Programmer's name for it: RSFTPIOHandlerWrong
+#: Protocols/IdResourceStringsProtocols.pas:700 
+msgid "IOHandler is of wrong type."
+msgstr ""
+
+#. Programmer's name for it: RSFTPFileNameCanNotBeEmpty
+#: Protocols/IdResourceStringsProtocols.pas:701 
+msgid "The destination filename can not be empty"
+msgstr ""
+
+#. part of any phrase otherwise, a FTP client might get confused.
+#. Programmer's name for it: RSFTPCurrentDirectoryIs
+#: Protocols/IdResourceStringsProtocols.pas:705 
+msgid "\"%s\" is working directory."
+msgstr ""
+
+#. Programmer's name for it: RSFTPTYPEChanged
+#: Protocols/IdResourceStringsProtocols.pas:706 
+msgid "Type set to %s."
+msgstr ""
+
+#. Programmer's name for it: RSFTPMODEChanged
+#: Protocols/IdResourceStringsProtocols.pas:707 
+#, fuzzy
+msgid "Mode set to %s."
+msgstr "Conectando a %s."
+
+#. Programmer's name for it: RSFTPMODENotSupported
+#: Protocols/IdResourceStringsProtocols.pas:708 
+msgid "Unimplemented mode."
+msgstr ""
+
+#. Programmer's name for it: RSFTPSTRUChanged
+#: Protocols/IdResourceStringsProtocols.pas:709 
+msgid "Structure set to %s."
+msgstr ""
+
+#. Programmer's name for it: RSFTPSITECmdsSupported
+#: Protocols/IdResourceStringsProtocols.pas:710 
+msgid "The following SITE commands are supported:"
+msgstr ""
+
+#. Programmer's name for it: RSFTPDirectorySTRU
+#: Protocols/IdResourceStringsProtocols.pas:711 
+msgid "%s directory structure."
+msgstr ""
+
+#. Programmer's name for it: RSFTPCmdEndOfStat
+#: Protocols/IdResourceStringsProtocols.pas:712 
+msgid "End of Status"
+msgstr ""
+
+#. Programmer's name for it: RSFTPCmdExtsSupportedStart
+#: Protocols/IdResourceStringsProtocols.pas:713 
+#, fuzzy
+msgid "Extensions supported:"
+msgstr "Comando no soportado."
+
+#. Programmer's name for it: RSFTPCmdExtsSupportedEnd
+#: Protocols/IdResourceStringsProtocols.pas:714 
+msgid "End of extentions."
+msgstr ""
+
+#. Programmer's name for it: RSFTPNoOnDirEvent
+#: Protocols/IdResourceStringsProtocols.pas:716 
+msgid "No OnListDirectory event found!"
+msgstr ""
+
+#. Programmer's name for it: RSFTPImplicitTLSRequiresSSL
+#: Protocols/IdResourceStringsProtocols.pas:718 
+msgid "Implicit FTP requires that IOHandler be set to a TIdServerIOHandlerSSL."
+msgstr ""
+
+#. %s is the umask number
+#. Programmer's name for it: RSFTPUMaskIs
+#: Protocols/IdResourceStringsProtocols.pas:721 
+msgid "Current UMASK is %.3d"
+msgstr ""
+
+#. first %d is the new value, second one is the old value
+#. Programmer's name for it: RSFTPUMaskSet
+#: Protocols/IdResourceStringsProtocols.pas:723 
+msgid "UMASK set to %.3d (was %.3d)"
+msgstr ""
+
+#. Programmer's name for it: RSFTPPermissionDenied
+#: Protocols/IdResourceStringsProtocols.pas:724 
+#, fuzzy
+msgid "Permission denied."
+msgstr "Acceso denegado."
+
+#. Programmer's name for it: RSFTPCHMODSuccessful
+#: Protocols/IdResourceStringsProtocols.pas:725 
+msgid "CHMOD command successful."
+msgstr ""
+
+#. Programmer's name for it: RSFTPHelpBegining
+#: Protocols/IdResourceStringsProtocols.pas:726 
+msgid ""
+"The following commands are recognized (* => unimplemented, + => extension)."
+msgstr ""
+
+#. toggles for DIRSTYLE SITE command in IIS
+#. Programmer's name for it: RSFTPOn
+#: Protocols/IdResourceStringsProtocols.pas:728 
+#, fuzzy
+msgid "on"
+msgstr "Ido"
+
+#. Programmer's name for it: RSFTPOff
+#: Protocols/IdResourceStringsProtocols.pas:729 
+msgid "off"
+msgstr ""
+
+#. Programmer's name for it: RSFTPDirStyle
+#: Protocols/IdResourceStringsProtocols.pas:730 
+msgid "MSDOS-like directory output is %s"
+msgstr ""
+
+#. facility
+#. Programmer's name for it: STR_SYSLOG_FACILITY_KERNEL
+#: Protocols/IdResourceStringsProtocols.pas:734 
+msgid "kernel messages"
+msgstr ""
+
+#. Programmer's name for it: STR_SYSLOG_FACILITY_USER
+#: Protocols/IdResourceStringsProtocols.pas:735 
+msgid "user-level messages"
+msgstr ""
+
+#. Programmer's name for it: STR_SYSLOG_FACILITY_MAIL
+#: Protocols/IdResourceStringsProtocols.pas:736 
+msgid "mail system"
+msgstr ""
+
+#. Programmer's name for it: STR_SYSLOG_FACILITY_SYS_DAEMON
+#: Protocols/IdResourceStringsProtocols.pas:737 
+msgid "system daemons"
+msgstr ""
+
+#. Programmer's name for it: STR_SYSLOG_FACILITY_SECURITY1
+#: Protocols/IdResourceStringsProtocols.pas:738 
+msgid "security/authorization messages (1)"
+msgstr ""
+
+#. Programmer's name for it: STR_SYSLOG_FACILITY_INTERNAL
+#: Protocols/IdResourceStringsProtocols.pas:739 
+msgid "messages generated internally by syslogd"
+msgstr ""
+
+#. Programmer's name for it: STR_SYSLOG_FACILITY_LPR
+#: Protocols/IdResourceStringsProtocols.pas:740 
+msgid "line printer subsystem"
+msgstr ""
+
+#. Programmer's name for it: STR_SYSLOG_FACILITY_NNTP
+#: Protocols/IdResourceStringsProtocols.pas:741 
+msgid "network news subsystem"
+msgstr ""
+
+#. Programmer's name for it: STR_SYSLOG_FACILITY_UUCP
+#: Protocols/IdResourceStringsProtocols.pas:742 
+msgid "UUCP subsystem"
+msgstr ""
+
+#. Programmer's name for it: STR_SYSLOG_FACILITY_CLOCK1
+#: Protocols/IdResourceStringsProtocols.pas:743 
+msgid "clock daemon (1)"
+msgstr ""
+
+#. Programmer's name for it: STR_SYSLOG_FACILITY_SECURITY2
+#: Protocols/IdResourceStringsProtocols.pas:744 
+msgid "security/authorization messages (2)"
+msgstr ""
+
+#. Programmer's name for it: STR_SYSLOG_FACILITY_FTP
+#: Protocols/IdResourceStringsProtocols.pas:745 
+msgid "FTP daemon"
+msgstr ""
+
+#. Programmer's name for it: STR_SYSLOG_FACILITY_NTP
+#: Protocols/IdResourceStringsProtocols.pas:746 
+msgid "NTP subsystem"
+msgstr ""
+
+#. Programmer's name for it: STR_SYSLOG_FACILITY_AUDIT
+#: Protocols/IdResourceStringsProtocols.pas:747 
+msgid "log audit"
+msgstr ""
+
+#. Programmer's name for it: STR_SYSLOG_FACILITY_ALERT
+#: Protocols/IdResourceStringsProtocols.pas:748 
+msgid "log alert"
+msgstr ""
+
+#. Programmer's name for it: STR_SYSLOG_FACILITY_CLOCK2
+#: Protocols/IdResourceStringsProtocols.pas:749 
+msgid "clock daemon (2)"
+msgstr ""
+
+#. Programmer's name for it: STR_SYSLOG_FACILITY_LOCAL0
+#: Protocols/IdResourceStringsProtocols.pas:750 
+msgid "local use 0  (local0)"
+msgstr ""
+
+#. Programmer's name for it: STR_SYSLOG_FACILITY_LOCAL1
+#: Protocols/IdResourceStringsProtocols.pas:751 
+msgid "local use 1  (local1)"
+msgstr ""
+
+#. Programmer's name for it: STR_SYSLOG_FACILITY_LOCAL2
+#: Protocols/IdResourceStringsProtocols.pas:752 
+msgid "local use 2  (local2)"
+msgstr ""
+
+#. Programmer's name for it: STR_SYSLOG_FACILITY_LOCAL3
+#: Protocols/IdResourceStringsProtocols.pas:753 
+msgid "local use 3  (local3)"
+msgstr ""
+
+#. Programmer's name for it: STR_SYSLOG_FACILITY_LOCAL4
+#: Protocols/IdResourceStringsProtocols.pas:754 
+msgid "local use 4  (local4)"
+msgstr ""
+
+#. Programmer's name for it: STR_SYSLOG_FACILITY_LOCAL5
+#: Protocols/IdResourceStringsProtocols.pas:755 
+msgid "local use 5  (local5)"
+msgstr ""
+
+#. Programmer's name for it: STR_SYSLOG_FACILITY_LOCAL6
+#: Protocols/IdResourceStringsProtocols.pas:756 
+msgid "local use 6  (local6)"
+msgstr ""
+
+#. Programmer's name for it: STR_SYSLOG_FACILITY_LOCAL7
+#: Protocols/IdResourceStringsProtocols.pas:757 
+msgid "local use 7  (local7)"
+msgstr ""
+
+#. Programmer's name for it: STR_SYSLOG_FACILITY_UNKNOWN
+#: Protocols/IdResourceStringsProtocols.pas:758 
+msgid "Unknown or illegale facility code"
+msgstr ""
+
+#. Severity
+#. Programmer's name for it: STR_SYSLOG_SEVERITY_EMERGENCY
+#: Protocols/IdResourceStringsProtocols.pas:761 
+#, fuzzy
+msgid "Emergency: system is unusable"
+msgstr "Subsistema de red no disponible."
+
+#. Programmer's name for it: STR_SYSLOG_SEVERITY_ALERT
+#: Protocols/IdResourceStringsProtocols.pas:762 
+msgid "Alert: action must be taken immediately"
+msgstr ""
+
+#. Programmer's name for it: STR_SYSLOG_SEVERITY_CRITICAL
+#: Protocols/IdResourceStringsProtocols.pas:763 
+msgid "Critical: critical conditions"
+msgstr ""
+
+#. Programmer's name for it: STR_SYSLOG_SEVERITY_ERROR
+#: Protocols/IdResourceStringsProtocols.pas:764 
+msgid "Error: error conditions"
+msgstr ""
+
+#. Programmer's name for it: STR_SYSLOG_SEVERITY_WARNING
+#: Protocols/IdResourceStringsProtocols.pas:765 
+msgid "Warning: warning conditions"
+msgstr ""
+
+#. Programmer's name for it: STR_SYSLOG_SEVERITY_NOTICE
+#: Protocols/IdResourceStringsProtocols.pas:766 
+msgid "Notice: normal but significant condition"
+msgstr ""
+
+#. Programmer's name for it: STR_SYSLOG_SEVERITY_INFORMATIONAL
+#: Protocols/IdResourceStringsProtocols.pas:767 
+msgid "Informational: informational messages"
+msgstr ""
+
+#. Programmer's name for it: STR_SYSLOG_SEVERITY_DEBUG
+#: Protocols/IdResourceStringsProtocols.pas:768 
+msgid "Debug: debug-level messages"
+msgstr ""
+
+#. Programmer's name for it: STR_SYSLOG_SEVERITY_UNKNOWN
+#: Protocols/IdResourceStringsProtocols.pas:769 
+msgid "Unknown or illegale security code"
+msgstr ""
+
+#. Programmer's name for it: RSLPRError
+#: Protocols/IdResourceStringsProtocols.pas:772 
+msgid "Reply %s on Job ID %s"
+msgstr ""
+
+#. Programmer's name for it: RSIRCCanNotConnect
+#: Protocols/IdResourceStringsProtocols.pas:776 
+#, fuzzy
+msgid "IRC Connect Failed"
+msgstr "Conectado."
+
+#. Programmer's name for it: RSIRCNotConnected
+#: Protocols/IdResourceStringsProtocols.pas:777 
+#, fuzzy
+msgid "Not connected to server."
+msgstr "No conectado."
+
+#. Programmer's name for it: RSIRCClientVersion
+#: Protocols/IdResourceStringsProtocols.pas:778 
+msgid "TIdIRC 1.061 by Steve Williams"
+msgstr ""
+
+#. Programmer's name for it: RSIRCClientInfo
+#: Protocols/IdResourceStringsProtocols.pas:779 
+msgid "%s Non-visual component for 32-bit Delphi."
+msgstr ""
+
+#. Programmer's name for it: RSIRCNick
+#: Protocols/IdResourceStringsProtocols.pas:780 
+msgid "Nick"
+msgstr ""
+
+#. Programmer's name for it: RSIRCAltNick
+#: Protocols/IdResourceStringsProtocols.pas:781 
+msgid "OtherNick"
+msgstr ""
+
+#. Programmer's name for it: RSIRCUserName
+#: Protocols/IdResourceStringsProtocols.pas:782 
+msgid "ircuser"
+msgstr ""
+
+#. Programmer's name for it: RSIRCRealName
+#: Protocols/IdResourceStringsProtocols.pas:783 
+msgid "Real name"
+msgstr ""
+
+#. Programmer's name for it: RSIRCTimeIsNow
+#: Protocols/IdResourceStringsProtocols.pas:784 
+msgid "Local time is %s"
+msgstr ""
+
+#. Programmer's name for it: RSHL7StatusStopped
+#: Protocols/IdResourceStringsProtocols.pas:787 
+msgid "Stopped"
+msgstr ""
+
+#. Programmer's name for it: RSHL7StatusFailedToStart
+#: Protocols/IdResourceStringsProtocols.pas:789 
+msgid "Failed to Start: %s"
+msgstr ""
+
+#. Programmer's name for it: RSHL7StatusFailedToStop
+#: Protocols/IdResourceStringsProtocols.pas:790 
+#, fuzzy
+msgid "Failed to Stop: %s"
+msgstr "No se puede abrir %s"
+
+#. Programmer's name for it: RSHL7StatusConnected
+#: Protocols/IdResourceStringsProtocols.pas:791 
+#, fuzzy
+msgid "Connected"
+msgstr "Conectado."
+
+#. Programmer's name for it: RSHL7StatusReConnect
+#: Protocols/IdResourceStringsProtocols.pas:793 
+#, fuzzy
+msgid "Reconnect at %s: %s"
+msgstr "Conectado con %s"
+
+#. Programmer's name for it: RSHL7NotWhileWorking
+#: Protocols/IdResourceStringsProtocols.pas:794 
+msgid "You cannot set %s while the HL7 Component is working"
+msgstr ""
+
+#. Programmer's name for it: RSHL7NotWorking
+#: Protocols/IdResourceStringsProtocols.pas:795 
+msgid "Attempt to %s while the HL7 Component is not working"
+msgstr ""
+
+#. Programmer's name for it: RSHL7NotFailedToStop
+#: Protocols/IdResourceStringsProtocols.pas:796 
+msgid "Interface is unusable due to failure to stop"
+msgstr ""
+
+#. Programmer's name for it: RSHL7AlreadyStarted
+#: Protocols/IdResourceStringsProtocols.pas:797 
+msgid "Interface was already started"
+msgstr ""
+
+#. Programmer's name for it: RSHL7AlreadyStopped
+#: Protocols/IdResourceStringsProtocols.pas:798 
+msgid "Interface was already stopped"
+msgstr ""
+
+#. Programmer's name for it: RSHL7ModeNotSet
+#: Protocols/IdResourceStringsProtocols.pas:799 
+#, fuzzy
+msgid "Mode is not initialised"
+msgstr "Lista no inicializada!"
+
+#. Programmer's name for it: RSHL7NoAsynEvent
+#: Protocols/IdResourceStringsProtocols.pas:800 
+msgid ""
+"Component is in Asynchronous mode but OnMessageArrive has not been hooked"
+msgstr ""
+
+#. Programmer's name for it: RSHL7NoSynEvent
+#: Protocols/IdResourceStringsProtocols.pas:801 
+msgid ""
+"Component is in Synchronous mode but  OnMessageReceive has not been hooked"
+msgstr ""
+
+#. Programmer's name for it: RSHL7InvalidPort
+#: Protocols/IdResourceStringsProtocols.pas:802 
+#, fuzzy
+msgid "Assigned Port value %d is invalid"
+msgstr "Valor de Intercept inválido"
+
+#. Programmer's name for it: RSHL7ImpossibleMessage
+#: Protocols/IdResourceStringsProtocols.pas:803 
+msgid "A message has been received but the commication mode is unknown"
+msgstr ""
+
+#. Programmer's name for it: RSHL7UnexpectedMessage
+#: Protocols/IdResourceStringsProtocols.pas:804 
+msgid "Unexpected message arrived to an interface that is not listening"
+msgstr ""
+
+#. Programmer's name for it: RSHL7UnknownMode
+#: Protocols/IdResourceStringsProtocols.pas:805 
+#, fuzzy
+msgid "Unknown mode"
+msgstr "Código de respuesta desconocido"
+
+#. Programmer's name for it: RSHL7ClientThreadNotStopped
+#: Protocols/IdResourceStringsProtocols.pas:806 
+#, fuzzy
+msgid "Unable to stop client thread"
+msgstr "No se puede abrir %s"
+
+#. Programmer's name for it: RSHL7SendMessage
+#: Protocols/IdResourceStringsProtocols.pas:807 
+msgid "Send a message"
+msgstr ""
+
+#. Programmer's name for it: RSHL7NoConnectionFound
+#: Protocols/IdResourceStringsProtocols.pas:808 
+msgid "Server Connection not locatable when sending message"
+msgstr ""
+
+#. Programmer's name for it: RSHL7WaitForAnswer
+#: Protocols/IdResourceStringsProtocols.pas:809 
+msgid "You cannot send a message while you are still waiting for an answer"
+msgstr ""
+
+#. Programmer's name for it: RSMFDIvalidObjectType
+#: Protocols/IdResourceStringsProtocols.pas:810 
+msgid ""
+"Unsupported object type. You can assign only one of the following types or "
+"their descendants: TStrings, TStream."
+msgstr ""
+
+#. Programmer's name for it: RSURINoProto
+#: Protocols/IdResourceStringsProtocols.pas:813 
+#, fuzzy
+msgid "Protocol field is empty"
+msgstr "Familia de protocolo no soportada."
+
+#. Programmer's name for it: RSURINoHost
+#: Protocols/IdResourceStringsProtocols.pas:814 
+msgid "Host field is empty"
+msgstr ""
+
+#. Programmer's name for it: RSIHTChainedNotAssigned
+#: Protocols/IdResourceStringsProtocols.pas:817 
+msgid "You must chain this component to another I/O Handler before using it"
+msgstr ""
+
+#. Programmer's name for it: RSSNPPNoMultiLine
+#: Protocols/IdResourceStringsProtocols.pas:820 
+msgid "TIdSNPP Mess command only supports single line Messages."
+msgstr ""
+
+#. Programmer's name for it: RSUnassignedUserPassProv
+#: Protocols/IdResourceStringsProtocols.pas:823 
+msgid "Unassigned UserPassProvider!"
+msgstr ""
+
+#. Programmer's name for it: RSDirSMTPInvalidEMailAddress
+#: Protocols/IdResourceStringsProtocols.pas:826 
+#, fuzzy
+msgid "Invalid Email Address %s"
+msgstr "Nombre de alias no válido: %s"
+
+#. Programmer's name for it: RSDirSMTPNoMXRecordsForDomain
+#: Protocols/IdResourceStringsProtocols.pas:827 
+msgid "No MX records for the domain %s"
+msgstr ""
+
+#. Programmer's name for it: RSDirSMTPCantConnectToSMTPSvr
+#: Protocols/IdResourceStringsProtocols.pas:828 
+#, fuzzy
+msgid "Can not connect to MX servers for address %s"
+msgstr "No se puede conectar al servidor maestro"
+
+#. Programmer's name for it: RSDirSMTPCantAssignHost
+#: Protocols/IdResourceStringsProtocols.pas:829 
+msgid ""
+"Can not assign Host property, it is resolved by IdDirectSMTP on the fly."
+msgstr ""
+
+#. Programmer's name for it: RSYencFileCorrupted
+#: Protocols/IdResourceStringsProtocols.pas:832 
+msgid "File corrupted."
+msgstr ""
+
+#. Programmer's name for it: RSYencInvalidSize
+#: Protocols/IdResourceStringsProtocols.pas:833 
+#, fuzzy
+msgid "Invalid Size"
+msgstr "Nombre de usuario inválido."
+
+#. Programmer's name for it: RSYencInvalidCRC
+#: Protocols/IdResourceStringsProtocols.pas:834 
+#, fuzzy
+msgid "Invalid CRC"
+msgstr "Invalid class typecast"
+
+#. Programmer's name for it: RSSocksSvrNotSupported
+#: Protocols/IdResourceStringsProtocols.pas:837 
+#, fuzzy
+msgid "Not supported"
+msgstr "Comando no soportado."
+
+#. Programmer's name for it: RSSocksSvrInvalidLogin
+#: Protocols/IdResourceStringsProtocols.pas:838 
+#, fuzzy
+msgid "Invalid Login"
+msgstr "Nombre de usuario inválido."
+
+#. Programmer's name for it: RSSocksSvrWrongATYP
+#: Protocols/IdResourceStringsProtocols.pas:839 
+msgid "Wrong SOCKS5-ATYP"
+msgstr ""
+
+#. Programmer's name for it: RSSocksSvrWrongSocksVersion
+#: Protocols/IdResourceStringsProtocols.pas:840 
+msgid "Wrong SOCKS-version"
+msgstr ""
+
+#. Programmer's name for it: RSSocksSvrWrongSocksCommand
+#: Protocols/IdResourceStringsProtocols.pas:841 
+msgid "Wrong SOCKS-Command"
+msgstr ""
+
+#. Programmer's name for it: RSSocksSvrAccessDenied
+#: Protocols/IdResourceStringsProtocols.pas:842 
+#, fuzzy
+msgid "Access Denied"
+msgstr "Acceso denegado."
+
+#. Programmer's name for it: RSSocksSvrUnexpectedClose
+#: Protocols/IdResourceStringsProtocols.pas:843 
+#, fuzzy
+msgid "Unexpected Close."
+msgstr "Operación inesperada desde %s:%d"
+
+#. Programmer's name for it: RSTLSSSLIOHandlerRequired
+#: Protocols/IdResourceStringsProtocols.pas:846 
+msgid "SSL IOHandler is required for this setting"
+msgstr ""
+
+#. Programmer's name for it: RSTLSSSLCanNotSetWhileActive
+#: Protocols/IdResourceStringsProtocols.pas:847 
+#, fuzzy
+msgid "This value can not be set while the server is active."
+msgstr "Cannot change session state when the server is active."
+
+#. Programmer's name for it: RSTLSSLCanNotSetWhileConnected
+#: Protocols/IdResourceStringsProtocols.pas:848 
+msgid "This value can not be set while the client is connected."
+msgstr ""
+
+#. Programmer's name for it: RSTLSSLSSLNotAvailable
+#: Protocols/IdResourceStringsProtocols.pas:849 
+#, fuzzy
+msgid "SSL is not available on this server."
+msgstr "%s no es un servicio válido."
+
+#. Programmer's name for it: RSTLSSLSSLCmdFailed
+#: Protocols/IdResourceStringsProtocols.pas:850 
+msgid "Start SSL negotiation command failed."
+msgstr ""
+
+#. user's provided reply will follow this string
+#. Programmer's name for it: RSPOP3ReplyInvalidEnhancedCode
+#: Protocols/IdResourceStringsProtocols.pas:854 
+#, fuzzy
+msgid "Invalid Enhanced Code: "
+msgstr "Invalid class typecast"
+
+#. IdSMTPReply
+#. Programmer's name for it: RSSMTPReplyInvalidReplyStr
+#: Protocols/IdResourceStringsProtocols.pas:857 
+#, fuzzy
+msgid "Invalid Reply String."
+msgstr "Nombre de usuario inválido."
+
+#. Programmer's name for it: RSSMTPReplyInvalidClass
+#: Protocols/IdResourceStringsProtocols.pas:858 
+#, fuzzy
+msgid "Invalid Reply Class."
+msgstr "Id %d de cabecera invalido"
+
+#. Programmer's name for it: RSUnsupportedOperation
+#: Protocols/IdResourceStringsProtocols.pas:860 
+#, fuzzy
+msgid "Unsupported operation."
+msgstr "Tipo de medio no soportado"
+
+#. Mapped port components
+#. Programmer's name for it: RSEmptyHost
+#: Protocols/IdResourceStringsProtocols.pas:863 
+#, fuzzy
+msgid "Host is empty"
+msgstr "Host caído."
+
+#. Programmer's name for it: RSPop3ProxyGreeting
+#: Protocols/IdResourceStringsProtocols.pas:864 
+msgid "POP3 proxy ready"
+msgstr ""
+
+#. Programmer's name for it: RSPop3UnknownCommand
+#: Protocols/IdResourceStringsProtocols.pas:865 
+msgid "command must be either USER or QUIT"
+msgstr ""
+
+#. Programmer's name for it: RSPop3QuitMsg
+#: Protocols/IdResourceStringsProtocols.pas:866 
+msgid "POP3 proxy signing off"
+msgstr ""
+
+#. IMAP4 Server
+#. Programmer's name for it: RSIMAP4SvrBeginTLSNegotiation
+#: Protocols/IdResourceStringsProtocols.pas:869 
+msgid "Begin TLS negotiation now"
+msgstr ""
+
+#. Programmer's name for it: RSIMAP4SvrImplicitTLSRequiresSSL
+#: Protocols/IdResourceStringsProtocols.pas:871 
+msgid ""
+"Implicit IMAP4 requires that IOHandler be set to a TIdServerIOHandlerSSLBase."
+msgstr ""
+
+#. Programmer's name for it: RSOTP_Challenge
+#: Protocols/IdUserAccountsOTP.pas:133 
+msgid "Response to %s required for OTP."
+msgstr ""
+
+#. Programmer's name for it: RSOTP_SeedBadFormat
+#: Protocols/IdUserAccountsOTP.pas:134 
+msgid ""
+"The seed must be alphanumeric and it must at least 1 character but no more "
+"than 16 characters."
+msgstr ""
+
+#. Programmer's name for it: RSOTP_InvalidCount
+#: Protocols/IdUserAccountsOTP.pas:135 
+#, fuzzy
+msgid "The count must be greater than 1."
+msgstr "Contador de texto inválido. TIdText debe ser mayor que 1"
+
+#. Programmer's name for it: RSOTP_InvalidPassword
+#: Protocols/IdUserAccountsOTP.pas:136 
+msgid ""
+"The password must be longer than 10 characters but no more than 63 "
+"characters."
+msgstr ""
+
+#. This must be longer than 9 characters but no more than 63 characters in length
+#. Programmer's name for it: RSOTP_DefaultPassword
+#: Protocols/IdUserAccountsOTP.pas:138 
+msgid "PleaseChangeMeNow"
+msgstr ""
+
+#. Winsock
+#. Programmer's name for it: RSWinsockCallError
+#: System/IdResourceStrings.pas:29 
+msgid "Error on call Winsock2 library function %s"
+msgstr ""
+
+#. Programmer's name for it: RSWinsockLoadError
+#: System/IdResourceStrings.pas:30 
+msgid "Error on loading Winsock2 library (%s)"
+msgstr ""
+
+#. Programmer's name for it: RSWinsockInitializationError
+#: System/IdResourceStrings.pas:31 
+msgid "Winsock Initialization Error."
+msgstr "Error de inicialización de Winsock."
+
+#. Status
+#. Programmer's name for it: RSStatusResolving
+#: System/IdResourceStrings.pas:33 
+msgid "Resolving hostname %s."
+msgstr ""
+
+#. Programmer's name for it: RSStatusConnecting
+#: System/IdResourceStrings.pas:34 
+msgid "Connecting to %s."
+msgstr "Conectando a %s."
+
+#. Programmer's name for it: RSStatusDisconnecting
+#: System/IdResourceStrings.pas:36 
+#, fuzzy
+msgid "Disconnecting."
+msgstr "Desconectado"
+
+#. Programmer's name for it: RSStatusText
+#: System/IdResourceStrings.pas:38 
+msgid "%s"
+msgstr "%s"
+
+#. Stack
+#. Programmer's name for it: RSStackError
+#: System/IdResourceStrings.pas:40 
+msgid ""
+"Socket Error # %d\n"
+"%s"
+msgstr ""
+
+#. Programmer's name for it: RSStackEINTR
+#: System/IdResourceStrings.pas:41 
+msgid "Interrupted system call."
+msgstr "Llamada de sistema interrumpida."
+
+#. Programmer's name for it: RSStackEBADF
+#: System/IdResourceStrings.pas:42 
+msgid "Bad file number."
+msgstr "Numero de archivo erróneo."
+
+#. Programmer's name for it: RSStackEACCES
+#: System/IdResourceStrings.pas:43 
+msgid "Access denied."
+msgstr "Acceso denegado."
+
+#. Programmer's name for it: RSStackEFAULT
+#: System/IdResourceStrings.pas:44 
+msgid "Buffer fault."
+msgstr ""
+
+#. Programmer's name for it: RSStackEINVAL
+#: System/IdResourceStrings.pas:45 
+msgid "Invalid argument."
+msgstr "Argumento inválido."
+
+#. Programmer's name for it: RSStackEMFILE
+#: System/IdResourceStrings.pas:46 
+msgid "Too many open files."
+msgstr "Demasiados archivos abiertos."
+
+#. Programmer's name for it: RSStackEWOULDBLOCK
+#: System/IdResourceStrings.pas:47 
+#, fuzzy
+msgid "Operation would block."
+msgstr "Bloquearía la operación. "
+
+#. Programmer's name for it: RSStackEINPROGRESS
+#: System/IdResourceStrings.pas:48 
+msgid "Operation now in progress."
+msgstr "Operación ahora en progreso."
+
+#. Programmer's name for it: RSStackEALREADY
+#: System/IdResourceStrings.pas:49 
+msgid "Operation already in progress."
+msgstr "Operación ya en progreso."
+
+#. Programmer's name for it: RSStackENOTSOCK
+#: System/IdResourceStrings.pas:50 
+msgid "Socket operation on non-socket."
+msgstr "Operación de Socket en non-socket."
+
+#. Programmer's name for it: RSStackEDESTADDRREQ
+#: System/IdResourceStrings.pas:51 
+msgid "Destination address required."
+msgstr "Dirección de destino requerida."
+
+#. Programmer's name for it: RSStackEMSGSIZE
+#: System/IdResourceStrings.pas:52 
+msgid "Message too long."
+msgstr "Mensaje demasiado largo."
+
+#. Programmer's name for it: RSStackEPROTOTYPE
+#: System/IdResourceStrings.pas:53 
+msgid "Protocol wrong type for socket."
+msgstr "Protocolo de tipo incorrecto para socket."
+
+#. Programmer's name for it: RSStackENOPROTOOPT
+#: System/IdResourceStrings.pas:54 
+msgid "Bad protocol option."
+msgstr "Opción de protocolo errónea."
+
+#. Programmer's name for it: RSStackEPROTONOSUPPORT
+#: System/IdResourceStrings.pas:55 
+msgid "Protocol not supported."
+msgstr "Protocolo no soportado."
+
+#. Programmer's name for it: RSStackESOCKTNOSUPPORT
+#: System/IdResourceStrings.pas:56 
+msgid "Socket type not supported."
+msgstr "Tipo de Socket no soportado."
+
+#. Programmer's name for it: RSStackEOPNOTSUPP
+#: System/IdResourceStrings.pas:57 
+msgid "Operation not supported on socket."
+msgstr "Operación no soportada en socket."
+
+#. Programmer's name for it: RSStackEPFNOSUPPORT
+#: System/IdResourceStrings.pas:58 
+msgid "Protocol family not supported."
+msgstr "Familia de protocolo no soportada."
+
+#. Programmer's name for it: RSStackEAFNOSUPPORT
+#: System/IdResourceStrings.pas:59 
+msgid "Address family not supported by protocol family."
+msgstr "Address family not supported by protocol family."
+
+#. Programmer's name for it: RSStackEADDRINUSE
+#: System/IdResourceStrings.pas:60 
+msgid "Address already in use."
+msgstr "Dirección ya en uso."
+
+#. Programmer's name for it: RSStackEADDRNOTAVAIL
+#: System/IdResourceStrings.pas:61 
+msgid "Cannot assign requested address."
+msgstr "No se puede asignar dirección de respuesta."
+
+#. Programmer's name for it: RSStackENETDOWN
+#: System/IdResourceStrings.pas:62 
+msgid "Network is down."
+msgstr "Red caída."
+
+#. Programmer's name for it: RSStackENETUNREACH
+#: System/IdResourceStrings.pas:63 
+msgid "Network is unreachable."
+msgstr ""
+
+#. Programmer's name for it: RSStackENETRESET
+#: System/IdResourceStrings.pas:64 
+msgid "Net dropped connection or reset."
+msgstr "Conexión de red caída o reseteada"
+
+#. Programmer's name for it: RSStackECONNABORTED
+#: System/IdResourceStrings.pas:65 
+msgid "Software caused connection abort."
+msgstr "El software causo que se abortara la conexión."
+
+#. Programmer's name for it: RSStackECONNRESET
+#: System/IdResourceStrings.pas:66 
+msgid "Connection reset by peer."
+msgstr "Connection reset by peer."
+
+#. Programmer's name for it: RSStackENOBUFS
+#: System/IdResourceStrings.pas:67 
+msgid "No buffer space available."
+msgstr "Espacio del búfer no disponible."
+
+#. Programmer's name for it: RSStackEISCONN
+#: System/IdResourceStrings.pas:68 
+msgid "Socket is already connected."
+msgstr "El Socket está actualmente conectado."
+
+#. Programmer's name for it: RSStackENOTCONN
+#: System/IdResourceStrings.pas:69 
+msgid "Socket is not connected."
+msgstr "El Socket no está conectado."
+
+#. Programmer's name for it: RSStackESHUTDOWN
+#: System/IdResourceStrings.pas:70 
+msgid "Cannot send or receive after socket is closed."
+msgstr "No se puede enviar y/o recibir una vez que el socket esté cerrado."
+
+#. Programmer's name for it: RSStackETOOMANYREFS
+#: System/IdResourceStrings.pas:71 
+msgid "Too many references, cannot splice."
+msgstr "Demasiadas referencias, no se pueden unir."
+
+#. Programmer's name for it: RSStackETIMEDOUT
+#: System/IdResourceStrings.pas:72 
+msgid "Connection timed out."
+msgstr "Conexión fuera de tiempo."
+
+#. Programmer's name for it: RSStackELOOP
+#: System/IdResourceStrings.pas:74 
+msgid "Too many levels of symbolic links."
+msgstr "Demasiados niveles de enlaces simbólicos."
+
+#. Programmer's name for it: RSStackENAMETOOLONG
+#: System/IdResourceStrings.pas:75 
+msgid "File name too long."
+msgstr "Nombre de archivo demasiado largo."
+
+#. Programmer's name for it: RSStackEHOSTDOWN
+#: System/IdResourceStrings.pas:76 
+msgid "Host is down."
+msgstr "Host caído."
+
+#. Programmer's name for it: RSStackEHOSTUNREACH
+#: System/IdResourceStrings.pas:77 
+msgid "No route to host."
+msgstr "No guiado al host."
+
+#. Programmer's name for it: RSStackENOTEMPTY
+#: System/IdResourceStrings.pas:78 
+msgid "Directory not empty"
+msgstr "Directorio no vacío"
+
+#. Programmer's name for it: RSStackHOST_NOT_FOUND
+#: System/IdResourceStrings.pas:79 
+msgid "Host not found."
+msgstr "Host no encontrado."
+
+#. Programmer's name for it: RSStackTRY_AGAIN
+#: System/IdResourceStrings.pas:80 
+msgid "Non-authoritative response (try again or check DNS setup)."
+msgstr "Non-authoritative response (try again or check DNS setup)."
+
+#. Programmer's name for it: RSStackNO_RECOVERY
+#: System/IdResourceStrings.pas:81 
+msgid "Non-recoverable errors: FORMERR, REFUSED, NOTIMP."
+msgstr "Errores no recuperables: FORMERR, REFUSED, NOTIMP."
+
+#. Programmer's name for it: RSStackNO_DATA
+#: System/IdResourceStrings.pas:82 
+msgid "Valid name, no data record (check DNS setup)."
+msgstr "Nombre válido, datos no grabados (verifique la configuración DNS)."
+
+#. Programmer's name for it: RSStackNotSupportedOnLinux
+#: System/IdResourceStrings.pas:83 
+#, fuzzy
+msgid "Non-blocking not supported on Linux"
+msgstr "Operación no soportada en socket."
+
+#. Programmer's name for it: RSStackClassUndefined
+#: System/IdResourceStrings.pas:84 
+msgid "Stack Class is undefined."
+msgstr ""
+
+#. Programmer's name for it: RSStackAlreadyCreated
+#: System/IdResourceStrings.pas:85 
+#, fuzzy
+msgid "Stack already created."
+msgstr "El Socket está actualmente conectado."
+
+#. Other
+#. Programmer's name for it: RSAntiFreezeOnlyOne
+#: System/IdResourceStrings.pas:87 
+msgid "Only one TIdAntiFreeze can exist per application."
+msgstr "Sólo puede existir un TIdAntiFreeze por aplicación."
+
+#. Programmer's name for it: RSCannotSetIPVersionWhenConnected
+#: System/IdResourceStrings.pas:88 
+#, fuzzy
+msgid "Cannot change IPVersion when connected"
+msgstr "No se puede cambiar objetivo mientras esté activo."
+
+#. Programmer's name for it: RSCannotBindRange
+#: System/IdResourceStrings.pas:89 
+msgid "Can not bind in port range (%d - %d)"
+msgstr ""
+
+#. Programmer's name for it: RSConnectionClosedGracefully
+#: System/IdResourceStrings.pas:90 
+msgid "Connection Closed Gracefully."
+msgstr "Conexión cerrada."
+
+#. Programmer's name for it: RSCorruptServicesFile
+#: System/IdResourceStrings.pas:91 
+msgid "%s is corrupt."
+msgstr ""
+
+#. Programmer's name for it: RSCouldNotBindSocket
+#: System/IdResourceStrings.pas:92 
+msgid "Could not bind socket. Address and port are already in use."
+msgstr "Could not bind socket. Address and port are already in use."
+
+#. Programmer's name for it: RSInvalidPortRange
+#: System/IdResourceStrings.pas:93 
+#, fuzzy
+msgid "Invalid Port Range (%d - %d)"
+msgstr "Id %d de cabecera invalido"
+
+#. Programmer's name for it: RSInvalidServiceName
+#: System/IdResourceStrings.pas:94 
+msgid "%s is not a valid service."
+msgstr "%s no es un servicio válido."
+
+#. Programmer's name for it: RSIPv6Unavailable
+#: System/IdResourceStrings.pas:95 
+#, fuzzy
+msgid "IPv6 unavailable"
+msgstr "Servicio no disponible"
+
+#. Programmer's name for it: RSIPVersionUnsupported
+#: System/IdResourceStrings.pas:96 
+#, fuzzy
+msgid "The requested IPVersion / Address family is not supported."
+msgstr "Tipo de objeto no soportado."
+
+#. Programmer's name for it: RSNotAllBytesSent
+#: System/IdResourceStrings.pas:97 
+msgid "Not all bytes sent."
+msgstr "No se han enviado todos los bytes."
+
+#. Programmer's name for it: RSPackageSizeTooBig
+#: System/IdResourceStrings.pas:98 
+msgid "Package Size Too Big."
+msgstr "El tamaño del paquete es demasiado grande."
+
+#. Programmer's name for it: RSSetSizeExceeded
+#: System/IdResourceStrings.pas:99 
+msgid "Set Size Exceeded."
+msgstr "Asignación de tamaño excedida."
+
+#. Programmer's name for it: RSStreamNotEnoughBytes
+#: System/IdResourceStrings.pas:100 
+#, fuzzy
+msgid "Not enough bytes read from stream."
+msgstr "No se han recibido los suficientes datos"
+
+#. Programmer's name for it: RSEndOfStream
+#: System/IdResourceStrings.pas:101 
+msgid "End of stream: Class %s at %d"
+msgstr ""
+
+#, fuzzy
+#~ msgid "None"
+#~ msgstr "Ido"
+
+#, fuzzy
+#~ msgid "Selective"
+#~ msgstr "Recivido: "
+
+#, fuzzy
+#~ msgid "Original idea"
+#~ msgstr "DigitalVideo"
+
+#, fuzzy
+#~ msgid "Contributions"
+#~ msgstr "Conectando"
+
+#, fuzzy
+#~ msgid "&About"
+#~ msgstr "Acerca de..."
+
+#, fuzzy
+#~ msgid "ResultsPanel"
+#~ msgstr "Resultado"
+
+#, fuzzy
+#~ msgid "Tests"
+#~ msgstr "Resultado"
+
+#, fuzzy
+#~ msgid "Errors"
+#~ msgstr "Error"
+
+#, fuzzy
+#~ msgid "Test Name"
+#~ msgstr "Nombre de usuario: "
+
+#, fuzzy
+#~ msgid "Location"
+#~ msgstr "Conectando"
+
+#, fuzzy
+#~ msgid "E&xit"
+#~ msgstr "E&jectuar"
+
+#, fuzzy
+#~ msgid "Select Fai&led"
+#~ msgstr "Conectado."
+
+#, fuzzy
+#~ msgid "Deselect C&urrent"
+#~ msgstr "Resetear contenido"
+
+#, fuzzy
+#~ msgid "&Options"
+#~ msgstr "Conectando"
+
+#, fuzzy
+#~ msgid "Actio&ns"
+#~ msgstr "Conectando"
+
+#, fuzzy
+#~ msgid "Ctrl A"
+#~ msgstr "Control-C hit"
+
+#, fuzzy
+#~ msgid "Project &name"
+#~ msgstr "Coordinador de proyecto"
+
+#, fuzzy
+#~ msgid "Project filename"
+#~ msgstr "Coordinador de proyecto"
+
+#, fuzzy
+#~ msgid "Project &path"
+#~ msgstr "Coordinador de proyecto"
+
+#, fuzzy
+#~ msgid "C&reate"
+#~ msgstr "Creado"
+
+#, fuzzy
+#~ msgid "Parameters"
+#~ msgstr "%s%s%s parámetros"
+
+#, fuzzy
+#~ msgid "&Select parameter..."
+#~ msgstr "Define &Parametros..."
+
+#, fuzzy
+#~ msgid "&Macros"
+#~ msgstr "Mar"
+
+#, fuzzy
+#~ msgid "&Insert"
+#~ msgstr "Resultado"
+
+#, fuzzy
+#~ msgid "&Unit name"
+#~ msgstr "Nombre de usuario: "
+
+#, fuzzy
+#~ msgid "Unit filename"
+#~ msgstr "Nombre de alias no válido: %s"
+
+#, fuzzy
+#~ msgid "Registration Options"
+#~ msgstr "Nombre de usuario inválido."
+
+#, fuzzy
+#~ msgid "Folder Name"
+#~ msgstr "Nombre de usuario: "
+
+#, fuzzy
+#~ msgid "Exit"
+#~ msgstr "E&jectuar"
+
+#, fuzzy
+#~ msgid "&Edit"
+#~ msgstr "E&jectuar"
+
+#, fuzzy
+#~ msgid "Open Source File"
+#~ msgstr "Tranformación fallida"
+
+#, fuzzy
+#~ msgid "Database Engine Error"
+#~ msgstr "Nombre de la base de datos ausente"
+
+#, fuzzy
+#~ msgid "ErrorText"
+#~ msgstr "Error"
+
+#, fuzzy
+#~ msgid "BDE Error:"
+#~ msgstr "Error"
+
+#, fuzzy
+#~ msgid "Server Error:"
+#~ msgstr "Error interno del servidor"
+
+#, fuzzy
+#~ msgid "DbResult"
+#~ msgstr "Resultado"
+
+#, fuzzy
+#~ msgid "NativeResult"
+#~ msgstr "Resultado"
+
+#, fuzzy
+#~ msgid "Database Login"
+#~ msgstr "Nombre de la base de datos ausente"
+
+#, fuzzy
+#~ msgid "&OK"
+#~ msgstr "Aceptar"
+
+#, fuzzy
+#~ msgid "Database:"
+#~ msgstr "%s%s%s Base de datos"
+
+#, fuzzy
+#~ msgid "&User Name:"
+#~ msgstr "Nombre de usuario: "
+
+#, fuzzy
+#~ msgid "&Password:"
+#~ msgstr "Contraseña: "
+
+#, fuzzy
+#~ msgid "Password"
+#~ msgstr "Contraseña: "
+
+#, fuzzy
+#~ msgid "Inactive"
+#~ msgstr "Gateway fuera de tiempo"
+
+#, fuzzy
+#~ msgid "Single Value"
+#~ msgstr "Continuar"
+
+#, fuzzy
+#~ msgid "Count"
+#~ msgstr "Control-C hit"
+
+#, fuzzy
+#~ msgid "Max"
+#~ msgstr "Mar"
+
+#, fuzzy
+#~ msgid "BaseNameEdit"
+#~ msgstr "Nombre de usuario: "
+
+#, fuzzy
+#~ msgid "Databas&e:"
+#~ msgstr "%s%s%s Base de datos"
+
+#, fuzzy
+#~ msgid "SQL &Builder ..."
+#~ msgstr "Constructor S&QL..."
+
+#, fuzzy
+#~ msgid "Available Fields"
+#~ msgstr "No aceptable"
+
+#, fuzzy
+#~ msgid "Use &Connection String"
+#~ msgstr "Conectando"
+
+#, fuzzy
+#~ msgid "B&uild..."
+#~ msgstr "Constructor S&QL..."
+
+#, fuzzy
+#~ msgid "CollectionEditor"
+#~ msgstr "Conectando"
+
+#, fuzzy
+#~ msgid " Database "
+#~ msgstr "%s%s%s Base de datos"
+
+#, fuzzy
+#~ msgid "&Driver name:"
+#~ msgstr "Nombre de usuario: "
+
+#, fuzzy
+#~ msgid "&Keep inactive connection"
+#~ msgstr "Cerrando conexión"
+
+#, fuzzy
+#~ msgid "Input Requested"
+#~ msgstr "Respuesta errónea"
+
+#, fuzzy
+#~ msgid "&Data"
+#~ msgstr "%s%s%s Base de datos"
+
+#, fuzzy
+#~ msgid "Index Files"
+#~ msgstr "%s%s%s archivos de índice"
+
+#, fuzzy
+#~ msgid "CommandText Editor"
+#~ msgstr "Editor de texto del cuerpo"
+
+#, fuzzy
+#~ msgid "&Code Editor..."
+#~ msgstr "Editor &UpdateSQL..."
+
+#, fuzzy
+#~ msgid "Requested Events"
+#~ msgstr "Respuesta fuera de tiempo"
+
+#, fuzzy
+#~ msgid "&Contents"
+#~ msgstr "Sin contenido"
+
+#, fuzzy
+#~ msgid "Help Contents"
+#~ msgstr "Sin contenido"
+
+#, fuzzy
+#~ msgid "Exit|Quits the application"
+#~ msgstr "Aplicación sín nombre"
+
+#, fuzzy
+#~ msgid "Find|Finds the specified text"
+#~ msgstr "Encuadernación no especificada."
+
+#, fuzzy
+#~ msgid "Strikeout"
+#~ msgstr "Fuera de tiempo"
+
+#, fuzzy
+#~ msgid "HelpContextAction1"
+#~ msgstr "Sin contenido"
+
+#, fuzzy
+#~ msgid "On Server"
+#~ msgstr "Servidores Indy"
+
+#, fuzzy
+#~ msgid "<HTML>"
+#~ msgstr "<EOL>"
+
+#, fuzzy
+#~ msgid "&About..."
+#~ msgstr "Acerca de..."
+
+#, fuzzy
+#~ msgid "&Server"
+#~ msgstr "Servidores Indy"
+
+#, fuzzy
+#~ msgid "&Connection"
+#~ msgstr "Conectando"
+
+#, fuzzy
+#~ msgid "RequestCount:"
+#~ msgstr "Respuesta fuera de tiempo"
+
+#, fuzzy
+#~ msgid "Min Response Time:"
+#~ msgstr "Código de respuesta desconocido"
+
+#, fuzzy
+#~ msgid "&Reset"
+#~ msgstr "Resultado"
+
+#, fuzzy
+#~ msgid "Version 4.0"
+#~ msgstr "Versión %s"
+
+#, fuzzy
+#~ msgid "Missing %s property"
+#~ msgstr "Propiedad DataSet sin valor"
+
+#, fuzzy
+#~ msgid "Cannot perform a requery after connection has changed"
+#~ msgstr "No se puede enviar y/o recibir una vez que el socket esté cerrado."
+
+#, fuzzy
+#~ msgid "FilterOptions are not supported"
+#~ msgstr "Versión de HTTP no soportada"
+
+#~ msgid ""
+#~ "Cannot enable AutoSessionName property with more than one session on a "
+#~ "form or data-module"
+#~ msgstr ""
+#~ "No se puede activar la propiedad AutoSessionName con más de una sesión en "
+#~ "un formulario o módulo de datos"
+
+#~ msgid ""
+#~ "Cannot add a session to the form or data-module while session '%s' has "
+#~ "AutoSessionName enabled"
+#~ msgstr ""
+#~ "No se puede añadir una sesión al formulario o módulo de datos mientras la "
+#~ "sesión '%s' tiene la propiedad AutoSessionName activada"
+
+#~ msgid "Cannot modify SessionName while AutoSessionName is enabled"
+#~ msgstr ""
+#~ "No se puede modificar SessionName mientras la propiedad AutoSessionName "
+#~ "está activada"
+
+#~ msgid "Duplicate database name '%s'"
+#~ msgstr "Duplicado el nombre de base de datos: '%s'"
+
+#~ msgid "Duplicate session name '%s'"
+#~ msgstr "Duplicado el nombre de sesión: '%s'"
+
+#~ msgid "Invalid session name %s"
+#~ msgstr "Nombre de sesión inválido: %s"
+
+#~ msgid "Database name missing"
+#~ msgstr "Nombre de la base de datos ausente"
+
+#~ msgid "Session name missing"
+#~ msgstr "Nombre de sesión ausente"
+
+#~ msgid "Cannot perform this operation on an open database"
+#~ msgstr "No se puede ejecutar esta operación en una base de datos abierta"
+
+#~ msgid "Cannot perform this operation on a closed database"
+#~ msgstr "No se puede ejecutar esta operación en una base de datos cerrada"
+
+#~ msgid "Database handle owned by a different session"
+#~ msgstr ""
+#~ "El \"Handle\" de la base de datos está siendo utilizado por una sesión "
+#~ "diferente"
+
+#~ msgid "Cannot perform this operation on an active session"
+#~ msgstr "No se puede ejecutar esta operación sobre una sesión activa"
+
+#~ msgid "Error creating cursor handle"
+#~ msgstr "Error al crear el cursor"
+
+#~ msgid "Cannot convert field '%s' to a floating point value"
+#~ msgstr "No se puede convertir el campo '%s' en un valor de punto flotante"
+
+#~ msgid "Cannot convert field '%s' to an integer value"
+#~ msgstr "No se puede convertir el campo '%s' en un valor entero"
+
+#~ msgid "Source and destination tables are incompatible"
+#~ msgstr "Las tablas fuente y destino son incompatibles"
+
+#~ msgid "Fields '%s' and '%s' are not assignment compatible"
+#~ msgstr "Los campos '%s' y '%s' no son de asignación compatible"
+
+#~ msgid "ReferenceTableName not specified for field '%s'"
+#~ msgstr "ReferenceTableName no ha sido especificado para el campo '%s'"
+
+#~ msgid "Cannot use array of Field values with Expression Indices"
+#~ msgstr "No se puede usar la matriz de valores Campo con Expression Indices"
+
+#~ msgid "Invalid batch move parameters"
+#~ msgstr "Parámetros de TBatchMove inválidos"
+
+#~ msgid "No SQL statement available"
+#~ msgstr "No hay sentencia SQL disponible"
+
+#~ msgid "No value for parameter '%s'"
+#~ msgstr "No hay valor para el parámetro '%s'"
+
+#~ msgid "No parameter type for parameter '%s'"
+#~ msgstr "No hay tipo de parámetro para el parámetro '%s'"
+
+#~ msgid "Cannot connect to database '%s'"
+#~ msgstr "No se puede conectar con la base de datos '%s'"
+
+#~ msgid ""
+#~ "An error occurred while attempting to initialize the Borland Database "
+#~ "Engine (error $%.4x)"
+#~ msgstr ""
+#~ "Ha ocurrido un error mientras se intentaba inicializar el Motor de la "
+#~ "Base de Datos (error $%.4x)"
+
+#~ msgid "Da&tabase Editor..."
+#~ msgstr "Editor de Base de Da&tos..."
+
+#~ msgid "E&xplore"
+#~ msgstr "E&xplorador"
+
+#~ msgid "'%s' cannot be opened"
+#~ msgstr "'%s' no puede ser abierto"
+
+#~ msgid "The MasterSource property of '%s' must be linked to a DataSource"
+#~ msgstr ""
+#~ "La propiedad MasterSource de '%s' debe estar enlazada con una fuente de "
+#~ "datos DataSource"
+
+#~ msgid "Unable to open the MasterSource Table"
+#~ msgstr "Incapaz de abrir la tabla maestra"
+
+#~ msgid "S&QL Builder..."
+#~ msgstr "Constructor S&QL..."
+
+#~ msgid "Define &Parameters..."
+#~ msgstr "Define &Parametros..."
+
+#~ msgid "0009"
+#~ msgstr "0009"
+
+#~ msgid "Database is currently connected. Disconnect and continue?"
+#~ msgstr ""
+#~ "La base de datos está conectada actualmente. Desconectar y continuar?"
+
+#~ msgid "BDE error $%.4x"
+#~ msgstr "Error BDE $%.4x"
+
+#~ msgid "Unable to use duplicate DataSource and LookupSource"
+#~ msgstr "Incapaz de usar DataSource y LookupSource duplicados"
+
+#~ msgid "LookupSource must be connected to TTable component"
+#~ msgstr "LookupSource debe estar conectado a un componente TTable"
+
+#~ msgid "%s must be the lookup table's active index"
+#~ msgstr "%s debe ser el índice activo de la tabla de búsqueda"
+
+#~ msgid ";Input;Output;Input/Output;Result"
+#~ msgstr ";Entrada;Salida;Entrada/Salida;Resultado"
+
+#~ msgid "Must have a valid field type selected"
+#~ msgstr "Debe haber un tipo de campo válido seleccionado"
+
+#~ msgid "Parameter '%s' truncated on output"
+#~ msgstr "El parámetro '%s' truncado en salida"
+
+#~ msgid ""
+#~ ";String;SmallInt;Integer;Word;Boolean;Float;Currency;BCD;Date;Time;"
+#~ "DateTime;;;;Blob;Memo;Graphic;;;;;Cursor;"
+#~ msgstr ""
+#~ ";String;SmallInt;Integer;Word;Boolean;Float;Currency;BCD;Date;Time;"
+#~ "DateTime;;;;Blob;Memo;Graphic;;;;;Cursor;"
+
+#~ msgid "Result"
+#~ msgstr "Resultado"
+
+#~ msgid "%s%s%s Database"
+#~ msgstr "%s%s%s Base de datos"
+
+#~ msgid "%s%s%s Parameters"
+#~ msgstr "%s%s%s parámetros"
+
+#~ msgid "%s%s%s Index Files"
+#~ msgstr "%s%s%s archivos de índice"
+
+#~ msgid "Index does not exist. Index: %s"
+#~ msgstr "El índice no existe. Indice: %s"
+
+#~ msgid "Missing TableName property"
+#~ msgstr "Propiedad TableName sin valor"
+
+#~ msgid "Missing DataSetField property"
+#~ msgstr "Propiedad DataSetField sin valor"
+
+#~ msgid "E&xecute"
+#~ msgstr "E&jectuar"
+
+#~ msgid "Not in cached update mode"
+#~ msgstr "No se encuentra en modo cached update"
+
+#~ msgid "Invalid alias name %s"
+#~ msgstr "Nombre de alias no válido: %s"
+
+#~ msgid "Cannot access field '%s' in a filter"
+#~ msgstr "No se puede acceder al campo '%s' en un filtro"
+
+#~ msgid "&UpdateSQL Editor..."
+#~ msgstr "Editor &UpdateSQL..."
+
+#~ msgid "No dataset association"
+#~ msgstr "No hay asociación con dataset"
+
+#~ msgid "Untitled Application"
+#~ msgstr "Aplicación sín nombre"
+
+#~ msgid "Cannot update, %s is not owned by %s"
+#~ msgstr "No se puede actualizar, %s no es propiedad de %s"
+
+#~ msgid "Update failed"
+#~ msgstr "Fallo en la actualización"
+
+#~ msgid "Must select at least one key field and one update field"
+#~ msgstr ""
+#~ "Debe seleccionar, al menos, un campo clave y un campo para actualizar"
+
+#~ msgid "Update SQL statements not generated, exit anyway?"
+#~ msgstr "Sentencia SQL no generada, abandonar?"
+
+#~ msgid "Unable to determine field names for %s"
+#~ msgstr "Incapaz de determinar los nombres de campo para %s"
+
+#~ msgid ""
+#~ "The transaction isolation level must be dirty read for local databases"
+#~ msgstr ""
+#~ "El nivel de transacción debe ser 'dirty read' para bases de datos locales"
+
+#~ msgid "Missing DataSet property"
+#~ msgstr "Propiedad DataSet sin valor"
+
+#~ msgid "No provider available"
+#~ msgstr "Proveedor no disponible"
+
+#~ msgid "Dataset is not a query"
+#~ msgstr "Fuente de datos no es resultado de una consulta"
+
+#~ msgid "Operation cannot mix aggregate value with record-varying value"
+#~ msgstr "Operation cannot mix aggregate value with record-varying value"
+
+#~ msgid "Expression is not an aggregate expression"
+#~ msgstr "Expression is not an aggregate expression"
+
+#~ msgid "Aggregate expressions not allowed in filters"
+#~ msgstr "Aggregate expressions not allowed in filters"
+
+#~ msgid "IN predicate list may not be empty"
+#~ msgstr "IN predicate list may not be empty"
+
+#~ msgid "Unable to load bind parameters"
+#~ msgstr "Unable to load bind parameters"
+
+#~ msgid "Property may not be modified while aggregate is active"
+#~ msgstr "Property may not be modified while aggregate is active"
+
+#~ msgid ""
+#~ "Field '%s' is not the correct type of calculated field to be used in an "
+#~ "aggregate, use an internalcalc"
+#~ msgstr ""
+#~ "Field '%s' is not the correct type of calculated field to be used in an "
+#~ "aggregate, use an internalcalc"
+
+#~ msgid "Grid requested to display more than 256 columns"
+#~ msgstr "Grid requested to display more than 256 columns"
+
+#, fuzzy
+#~ msgid "Modified"
+#~ msgstr "No modificado"
+
+#, fuzzy
+#~ msgid "Conflicting Value"
+#~ msgstr "Continuar"
+
+#, fuzzy
+#~ msgid "Invalid data packet"
+#~ msgstr "Nombre de alias no válido: %s"
+
+#, fuzzy
+#~ msgid "Connection not allowed to TConnectionBroker"
+#~ msgstr "Conexión no soportada por ruleset."
+
+#, fuzzy
+#~ msgid "Error reading from socket"
+#~ msgstr "Error encuadernando datos al socket SSL."
+
+#, fuzzy
+#~ msgid "Unsupported variant type: %s"
+#~ msgstr "Tipo de medio no soportado"
+
+#, fuzzy
+#~ msgid "Invalid action received: %d"
+#~ msgstr "Tamaño de paquete inválido %d"
+
+#, fuzzy
+#~ msgid "ParentConnection is not assigned"
+#~ msgstr "Evento OnExecute no asignado."
+
+#, fuzzy
+#~ msgid "Invalid response"
+#~ msgstr "Nombre de sesión inválido: %s"
+
+#, fuzzy
+#~ msgid "Array elements of type %s are not supported"
+#~ msgstr "Tipo de dirección no soportada."
+
+#, fuzzy
+#~ msgid "Modifications are not allowed"
+#~ msgstr "Método no admitido"
+
+#, fuzzy
+#~ msgid "Deletes are not allowed"
+#~ msgstr "Método no admitido"
+
+#, fuzzy
+#~ msgid "Inserts are not allowed"
+#~ msgstr "Método no admitido"
+
+#, fuzzy
+#~ msgid "Operation not allowed with aggregates active"
+#~ msgstr "Property may not be modified while aggregate is active"
+
+#, fuzzy
+#~ msgid "No server available"
+#~ msgstr "Proveedor no disponible"
+
+#, fuzzy
+#~ msgid "URL required"
+#~ msgstr "Tamaño requerido"
+
+#, fuzzy
+#~ msgid "Object not available: %s"
+#~ msgstr "Servicio no disponible"
+
+#, fuzzy
+#~ msgid "Cannot open detail table with master closed"
+#~ msgstr "No se puede conectar al servidor maestro"
+
+#, fuzzy
+#~ msgid "DataTable"
+#~ msgstr "%s%s%s Base de datos"
+
+#, fuzzy
+#~ msgid "Invalid source dataset"
+#~ msgstr "Invalid class typecast"
+
+#, fuzzy
+#~ msgid "Invalid record buffer"
+#~ msgstr "Nombre de sesión inválido: %s"
+
+#, fuzzy
+#~ msgid "Refresh not supported."
+#~ msgstr "Comando no soportado."
+
+#, fuzzy
+#~ msgid "Nested detail sets not supported"
+#~ msgstr "Tipo de dirección no soportada."
+
+#, fuzzy
+#~ msgid "DataObject does not support record deletion"
+#~ msgstr "Tipo de objeto no soportado."
+
+#, fuzzy
+#~ msgid "Partial locates not supported"
+#~ msgstr "Protocolo no soportado."
+
+#, fuzzy
+#~ msgid "DataObject does not support searching"
+#~ msgstr "Tipo de objeto no soportado."
+
+#, fuzzy
+#~ msgid "Cannot change connection on Active Monitor"
+#~ msgstr "No se puede cambiar objetivo mientras esté activo."
+
+#, fuzzy
+#~ msgid "Missing SQLConnection property"
+#~ msgstr "Propiedad DataSet sin valor"
+
+#, fuzzy
+#~ msgid "Cannot perform this operation on an open connection"
+#~ msgstr "No se puede ejecutar esta operación en una base de datos abierta"
+
+#, fuzzy
+#~ msgid "Cannot perform this operation on a closed connection"
+#~ msgstr "No se puede ejecutar esta operación en una base de datos cerrada"
+
+#, fuzzy
+#~ msgid "Connection name missing"
+#~ msgstr "Nombre de sesión ausente"
+
+#, fuzzy
+#~ msgid "Missing query, table name or procedure name"
+#~ msgstr "Propiedad TableName sin valor"
+
+#, fuzzy
+#~ msgid "Missing Database property"
+#~ msgstr "Propiedad DataSet sin valor"
+
+#, fuzzy
+#~ msgid "Missing DriverName property"
+#~ msgstr "Propiedad TableName sin valor"
+
+#, fuzzy
+#~ msgid "A transaction is already active"
+#~ msgstr "El archivo de destino ya existe."
+
+#, fuzzy
+#~ msgid "Unable to Load %s"
+#~ msgstr "No se puede abrir %s"
+
+#, fuzzy
+#~ msgid "Unable to Find Procedure %s"
+#~ msgstr "No se puede abrir %s"
+
+#, fuzzy
+#~ msgid "&Edit Connection Properties"
+#~ msgstr "Conexión rechazada."
+
+#, fuzzy
+#~ msgid "Unable to Open Metadata"
+#~ msgstr "No se puede abrir %s"
+
+#, fuzzy
+#~ msgid "[0x0003]: Invalid Field Type"
+#~ msgstr "Invalid class typecast"
+
+#, fuzzy
+#~ msgid "[0x0005]: Operation Not Supported"
+#~ msgstr "Operación no soportada en socket."
+
+#, fuzzy
+#~ msgid "[0x0009]: Invalid Parameter"
+#~ msgstr "Argumento inválido."
+
+#, fuzzy
+#~ msgid "[0x000C] Invalid Username/Password"
+#~ msgstr "Id %d de cabecera invalido"
+
+#, fuzzy
+#~ msgid "[0x000D]: Invalid Precision"
+#~ msgstr "Nombre de sesión inválido: %s"
+
+#, fuzzy
+#~ msgid "[0x0011]: Duplicate Transaction ID"
+#~ msgstr "Duplicado el nombre de sesión: '%s'"
+
+#, fuzzy
+#~ msgid "[0x0013]: Local Transaction already active"
+#~ msgstr "El archivo de destino ya existe."
+
+#, fuzzy
+#~ msgid "[0x0015]: Connection failed"
+#~ msgstr "Conectado."
+
+#, fuzzy
+#~ msgid "Database Server Error: %s"
+#~ msgstr "Error interno del servidor"
+
+#, fuzzy
+#~ msgid "Unable to move %s to %s"
+#~ msgstr "No se puede abrir %s"
+
+#, fuzzy
+#~ msgid "Operation not allowed in a DBCtrlGrid"
+#~ msgstr "Operación ahora en progreso."
+
+#, fuzzy
+#~ msgid "&Transaction Editor..."
+#~ msgstr "Editor de Base de Da&tos..."
+
+#, fuzzy
+#~ msgid "Transaction is currently Active. Rollback and continue?"
+#~ msgstr ""
+#~ "La base de datos está conectada actualmente. Desconectar y continuar?"
+
+#, fuzzy
+#~ msgid "&Dataset Editor..."
+#~ msgstr "Editor de Base de Da&tos..."
+
+#, fuzzy
+#~ msgid "Unsupported feature"
+#~ msgstr "Tipo de medio no soportado"
+
+#, fuzzy
+#~ msgid "Not permitted"
+#~ msgstr "No implementado"
+
+#, fuzzy
+#~ msgid "Database connection timed out"
+#~ msgstr "Conexión fuera de tiempo."
+
+#, fuzzy
+#~ msgid "Cannot set database"
+#~ msgstr "No se puede conectar con la base de datos '%s'"
+
+#, fuzzy
+#~ msgid "Cannot perform operation -- DB is not open"
+#~ msgstr "No se puede ejecutar esta operación en una base de datos abierta"
+
+#, fuzzy
+#~ msgid "Cannot perform operation -- DB is currently open"
+#~ msgstr "No se puede ejecutar esta operación en una base de datos abierta"
+
+#, fuzzy
+#~ msgid "Database name is missing"
+#~ msgstr "Nombre de la base de datos ausente"
+
+#, fuzzy
+#~ msgid "Database not assigned"
+#~ msgstr "Nombre de la base de datos ausente"
+
+#, fuzzy
+#~ msgid "Transaction not assigned"
+#~ msgstr "Evento OnExecute no asignado."
+
+#, fuzzy
+#~ msgid "XSQLDA index out of range"
+#~ msgstr "Indice de Byte fuera de rango."
+
+#, fuzzy
+#~ msgid "XSQLDA name does not exist (%s)"
+#~ msgstr "El índice no existe. Indice: %s"
+
+#, fuzzy
+#~ msgid "Invalid statement handle"
+#~ msgstr "Argumento inválido."
+
+#, fuzzy
+#~ msgid "Unknown SQL Data type (%d)"
+#~ msgstr "Unknown custom variant type ($.4x)"
+
+#, fuzzy
+#~ msgid "Invalid data conversion"
+#~ msgstr "Nombre de alias no válido: %s"
+
+#, fuzzy
+#~ msgid "Field \"%s\" not found"
+#~ msgstr "Host no encontrado."
+
+#, fuzzy
+#~ msgid "Not in edit mode"
+#~ msgstr "No se encuentra en modo cached update"
+
+#, fuzzy
+#~ msgid "Unsupported Field Type"
+#~ msgstr "Tipo de medio no soportado"
+
+#, fuzzy
+#~ msgid "Update Failed"
+#~ msgstr "Fallo en la actualización"
+
+#, fuzzy
+#~ msgid "No Provider"
+#~ msgstr "Proveedor no disponible"
+
+#, fuzzy
+#~ msgid "No Records Affected"
+#~ msgstr "No conectado."
+
+#, fuzzy
+#~ msgid "Cannot Cancel events while processing"
+#~ msgstr "No se puede cambiar objetivo mientras esté activo."
+
+#, fuzzy
+#~ msgid "Invalid Event"
+#~ msgstr "Argumento inválido."
+
+#, fuzzy
+#~ msgid "Invalid Queueing"
+#~ msgstr "Argumento inválido."
+
+#, fuzzy
+#~ msgid "Invalid Registration"
+#~ msgstr "Nombre de usuario inválido."
+
+#, fuzzy
+#~ msgid "Invalid Batch Move"
+#~ msgstr "Parámetros de TBatchMove inválidos"
+
+#, fuzzy
+#~ msgid "SPB Constant Not supported"
+#~ msgstr "Comando no soportado."
+
+#, fuzzy
+#~ msgid "Cannot perform operation -- service is not attached"
+#~ msgstr "No se puede ejecutar esta operación en una base de datos abierta"
+
+#, fuzzy
+#~ msgid "Cannot perform operation -- service is attached"
+#~ msgstr "No se puede ejecutar esta operación en una base de datos cerrada"
+
+#, fuzzy
+#~ msgid "Server Name Missing"
+#~ msgstr "Nombre de sesión ausente"
+
+#, fuzzy
+#~ msgid "DestinationDirectory is not set"
+#~ msgstr "Directorio no vacío"
+
+#, fuzzy
+#~ msgid "SourceDirectory is not set"
+#~ msgstr "Directorio no vacío"
+
+#, fuzzy
+#~ msgid "Invalid option specified"
+#~ msgstr " no especificado"
+
+#, fuzzy
+#~ msgid "Events already registered"
+#~ msgstr "El Socket está actualmente conectado."
+
+#, fuzzy
+#~ msgid "&Service Editor ..."
+#~ msgstr "Editor de Base de Da&tos..."
+
+#, fuzzy
+#~ msgid "Successful Connection"
+#~ msgstr "Cerrando conexión"
+
+#, fuzzy
+#~ msgid "Invalid statement"
+#~ msgstr "Invalid class typecast"
+
+#, fuzzy
+#~ msgid "Invalid Comment"
+#~ msgstr "Argumento inválido."
+
+#, fuzzy
+#~ msgid "  Opening connection "
+#~ msgstr "Cerrando conexión"
+
+#, fuzzy
+#~ msgid "Database Name = "
+#~ msgstr "Nombre de la base de datos ausente"
+
+#, fuzzy
+#~ msgid "User Name = "
+#~ msgstr "Nombre de usuario: "
+
+#, fuzzy
+#~ msgid "Min Connections = "
+#~ msgstr "Conectando"
+
+#, fuzzy
+#~ msgid "Max Connections = "
+#~ msgstr "Conectando"
+
+#, fuzzy
+#~ msgid "gave out connection "
+#~ msgstr "Cerrando conexión"
+
+#, fuzzy
+#~ msgid "Unable to create new connection: "
+#~ msgstr "No se encuentra el socket."
+
+#, fuzzy
+#~ msgid "Release connection "
+#~ msgstr "Cerrando conexión"
+
+#, fuzzy
+#~ msgid "Database Settings"
+#~ msgstr "Nombre de la base de datos ausente"
+
+#, fuzzy
+#~ msgid "Section name can not be empty"
+#~ msgstr "IN predicate list may not be empty"
+
+#, fuzzy
+#~ msgid "TMethod instance is not callable"
+#~ msgstr "Método no admitido"
+
+#~ msgid "Floating point underflow"
+#~ msgstr "Floating point underflow"
+
+#, fuzzy
+#~ msgid "Invalid format string"
+#~ msgstr "Nombre de sesión inválido: %s"
+
+#, fuzzy
+#~ msgid "Invalid cast operation"
+#~ msgstr "Invalid class typecast"
+
+#, fuzzy
+#~ msgid "Invalid cast"
+#~ msgstr "Invalid class typecast"
+
+#, fuzzy
+#~ msgid "File not open for input"
+#~ msgstr "Demasiados archivos abiertos."
+
+#, fuzzy
+#~ msgid "Class delegator not found"
+#~ msgstr "Host no encontrado."
+
+#, fuzzy
+#~ msgid "Error creating system registry entry"
+#~ msgstr "Error al crear el cursor"
+
+#, fuzzy
+#~ msgid "DCOM not installed"
+#~ msgstr "Método no admitido"
+
+#, fuzzy
+#~ msgid "DAX Error"
+#~ msgstr "Error"
+
+#, fuzzy
+#~ msgid "Unable to find a Table of Contents"
+#~ msgstr "Unable to load bind parameters"
+
+#, fuzzy
+#~ msgid "Cannot assign a %s to a %s"
+#~ msgstr "No se puede asignar dirección de respuesta."
+
+#, fuzzy
+#~ msgid "Class %s not found"
+#~ msgstr "Host no encontrado."
+
+#, fuzzy
+#~ msgid "A class named %s already exists"
+#~ msgstr "El archivo de destino ya existe."
+
+#, fuzzy
+#~ msgid "Cannot open file %s"
+#~ msgstr "Demasiados archivos abiertos."
+
+#, fuzzy
+#~ msgid "Cannot open file \"%s\". %s"
+#~ msgstr "Demasiados archivos abiertos."
+
+#, fuzzy
+#~ msgid "Invalid binary value"
+#~ msgstr "Argumento inválido."
+
+#, fuzzy
+#~ msgid "Invalid file name - %s"
+#~ msgstr "Nombre de alias no válido: %s"
+
+#, fuzzy
+#~ msgid "''%s'' is not a valid component name"
+#~ msgstr "%s no es un servicio válido."
+
+#, fuzzy
+#~ msgid "Invalid property path"
+#~ msgstr "Invalid class typecast"
+
+#, fuzzy
+#~ msgid "Method (%s) not found"
+#~ msgstr "Host no encontrado."
+
+#, fuzzy
+#~ msgid "Invalid string constant"
+#~ msgstr "Nombre de sesión inválido: %s"
+
+#, fuzzy
+#~ msgid "Item not found ($0%x)"
+#~ msgstr "Host no encontrado."
+
+#, fuzzy
+#~ msgid "List index out of bounds (%d)"
+#~ msgstr "Indice de Byte fuera de rango."
+
+#, fuzzy
+#~ msgid "Resource %s not found"
+#~ msgstr "Host no encontrado."
+
+#, fuzzy
+#~ msgid "%s.Seek not implemented"
+#~ msgstr "No implementado"
+
+#, fuzzy
+#~ msgid "Operation not allowed on sorted list"
+#~ msgstr "Operación no soportada en socket."
+
+#, fuzzy
+#~ msgid "Property %s does not exist"
+#~ msgstr "El directorio %s no existe"
+
+#, fuzzy
+#~ msgid "Error setting stream size"
+#~ msgstr "Error al crear el cursor"
+
+#, fuzzy
+#~ msgid "(%d, %d) is not a valid DateDay pair"
+#~ msgstr "%s no es un servicio válido."
+
+#, fuzzy
+#~ msgid "Conversion type (%s) already registered in %s"
+#~ msgstr "Custom variant type (%.4x) already used by %s"
+
+#, fuzzy
+#~ msgid "[$%.8x]"
+#~ msgstr "[%.8x]"
+
+#, fuzzy
+#~ msgid "[%s%.8x]"
+#~ msgstr "[%.8x]"
+
+#, fuzzy
+#~ msgid "No address specified"
+#~ msgstr "Encuadernación no especificada."
+
+#, fuzzy
+#~ msgid "Can't listen on an open socket"
+#~ msgstr "No se encuentra el socket."
+
+#, fuzzy
+#~ msgid "Can't create new socket"
+#~ msgstr "No se encuentra el socket."
+
+#, fuzzy
+#~ msgid "Socket already open"
+#~ msgstr "El Socket está actualmente conectado."
+
+#, fuzzy
+#~ msgid "Can't change value while socket is active"
+#~ msgstr "No se puede cambiar objetivo mientras esté activo."
+
+#, fuzzy
+#~ msgid "Unexpected end of string [%s]"
+#~ msgstr "Operación inesperada desde %s:%d"
+
+#, fuzzy
+#~ msgid "Unexpected characters"
+#~ msgstr "Operación inesperada desde %s:%d"
+
+#, fuzzy
+#~ msgid "No context-sensitive help found"
+#~ msgstr "Ejecución guiada no especificada."
+
+#, fuzzy
+#~ msgid "SquareInches"
+#~ msgstr "Sequencer"
+
+#, fuzzy
+#~ msgid "Time"
+#~ msgstr "Fuera de tiempo"
+
+#, fuzzy
+#~ msgid "Invalid property info type"
+#~ msgstr "Invalid class typecast"
+
+#, fuzzy
+#~ msgid "Invalid property typeinfo type"
+#~ msgstr "Invalid class typecast"
+
+#, fuzzy
+#~ msgid "Item not found (%s%x)"
+#~ msgstr "Host no encontrado."
+
+#~ msgid "Invalid class typecast"
+#~ msgstr "Invalid class typecast"
+
+#~ msgid "Control-C hit"
+#~ msgstr "Control-C hit"
+
+#~ msgid "Quit key hit"
+#~ msgstr "Quit key hit"
+
+#, fuzzy
+#~ msgid "Error creating variant or safe array"
+#~ msgstr "Error al crear el cursor"
+
+#, fuzzy
+#~ msgid "Invalid variant operation on %s variant"
+#~ msgstr "Nombre de sesión inválido: %s"
+
+#, fuzzy
+#~ msgid "Invalid variant type (0x%.4x)"
+#~ msgstr "Invalid class typecast"
+
+#, fuzzy
+#~ msgid "Invalid variant type conversion of %s variant"
+#~ msgstr "Nombre de alias no válido: %s"
+
+#, fuzzy
+#~ msgid "Invalid variant array dimension (%d)"
+#~ msgstr "Argumento inválido."
+
+#, fuzzy
+#~ msgid "Invalid NULL variant operation (%s)"
+#~ msgstr "Invalid class typecast"
+
+#, fuzzy
+#~ msgid "Too many custom variant types have been registered"
+#~ msgstr "Too many custom variants have been registered"
+
+#, fuzzy
+#~ msgid "Could not convert %s variant into %s"
+#~ msgstr "Custom variant type (%.4x) is not usable"
+
+#, fuzzy
+#~ msgid "Invalid argument"
+#~ msgstr "Argumento inválido."
+
+#, fuzzy
+#~ msgid "Invalid variant type"
+#~ msgstr "Invalid class typecast"
+
+#, fuzzy
+#~ msgid "Operation not supported"
+#~ msgstr "Operación no soportada en socket."
+
+#, fuzzy
+#~ msgid "Unexpected variant error"
+#~ msgstr "Operación inesperada desde %s:%d"
+
+#~ msgid "Recursion while doing a VarDataClear"
+#~ msgstr "Recursion while doing a VarDataClear"
+
+#~ msgid "Recursion while doing a VarDataCopy"
+#~ msgstr "Recursion while doing a VarDataCopy"
+
+#~ msgid "Recursion while doing a VarDataCopyNoInd"
+#~ msgstr "Recursion while doing a VarDataCopyNoInd"
+
+#~ msgid "Recursion while doing a VarDataInit"
+#~ msgstr "Recursion while doing a VarDataInit"
+
+#~ msgid "Recursion while doing a VarDataCastTo"
+#~ msgstr "Recursion while doing a VarDataCastTo"
+
+#, fuzzy
+#~ msgid ""
+#~ "Invalid variant operation: %s%.8x\n"
+#~ "%s"
+#~ msgstr "Invalid class typecast"
+
+#, fuzzy
+#~ msgid "Custom variant type (%s%.4x) is out of range"
+#~ msgstr "Custom variant type ($.4x) is out of range"
+
+#, fuzzy
+#~ msgid "Custom variant type (%s%.4x) already used by %s"
+#~ msgstr "Custom variant type (%.4x) already used by %s"
+
+#, fuzzy
+#~ msgid "Custom variant type (%s%.4x) is not usable"
+#~ msgstr "Custom variant type (%.4x) is not usable"
+
+#~ msgid "Mar"
+#~ msgstr "Mar"
+
+#~ msgid "Jun"
+#~ msgstr "Jun"
+
+#~ msgid "Jul"
+#~ msgstr "Jul"
+
+#~ msgid "Sep"
+#~ msgstr "Sep"
+
+#~ msgid "Oct"
+#~ msgstr "Oct"
+
+#~ msgid "Nov"
+#~ msgstr "Nov"
+
+#, fuzzy
+#~ msgid "Exception %s"
+#~ msgstr "Versión %s"
+
+#, fuzzy
+#~ msgid "Invalid type conversion"
+#~ msgstr "Nombre de alias no válido: %s"
+
+#~ msgid "&No"
+#~ msgstr "&No"
+
+#~ msgid "FB"
+#~ msgstr "FB"
+
+#~ msgid "FG"
+#~ msgstr "FG"
+
+#~ msgid "BG"
+#~ msgstr "BG"
+
+#~ msgid "Error"
+#~ msgstr "Error"
+
+#~ msgid "(Untitled)"
+#~ msgstr "Aplicación sín nombre"
+
+#~ msgid " (%dx%d)"
+#~ msgstr " (%dx%d)"
+
+#~ msgid ""
+#~ "All files (*.*)|*.*|Wave files (*.wav)|*.wav|Midi files (*.mid)|*.mid|"
+#~ "Video for Windows (*.avi)|*.avi"
+#~ msgstr ""
+#~ "Todos los archivos (*.*)|*.*|Archivos Wave|(*.wav)|*.wav|Archivos Mido (*."
+#~ "mid)|*.mid|Videos para Windows (*.avi)|*.avi"
+
+#~ msgid "AVIVideo"
+#~ msgstr "AVIVideo"
+
+#~ msgid "CDAudio"
+#~ msgstr "CDAudio"
+
+#~ msgid "DAT"
+#~ msgstr "DAT"
+
+#~ msgid "DigitalVideo"
+#~ msgstr "DigitalVideo"
+
+#~ msgid "MMMovie"
+#~ msgstr "MMMovie"
+
+#~ msgid "Overlay"
+#~ msgstr "Overlay"
+
+#~ msgid "Scanner"
+#~ msgstr "Scanner"
+
+#~ msgid "Sequencer"
+#~ msgstr "Sequencer"
+
+#~ msgid "VCR"
+#~ msgstr "VCR"
+
+#~ msgid "Videodisc"
+#~ msgstr "Videodisc"
+
+#~ msgid "WaveAudio"
+#~ msgstr "WaveAudio"
+
+#~ msgid ""
+#~ "Cannot assign a subitem to an actionbar when one of it's parent's is "
+#~ "already assigned to an actionbar"
+#~ msgstr ""
+#~ "No se puede asignar un subelemento a un ActionBar cuando uno de sus "
+#~ "ancestros ya está asignado a un ActionBar"
+
+#, fuzzy
+#~ msgid "Unable to load %s"
+#~ msgstr "No se puede abrir %s"
+
+#, fuzzy
+#~ msgid "No OnGetItem event handler assigned"
+#~ msgstr "El evento OnNewNewsList no ha sido definido."
+
+#, fuzzy
+#~ msgid "Invalid Color string"
+#~ msgstr "Nombre de sesión inválido: %s"
+
+#, fuzzy
+#~ msgid "\"%s\" is an invalid path"
+#~ msgstr "%s no es un servicio válido."
+
+#, fuzzy
+#~ msgid "Invalid path"
+#~ msgstr "Argumento inválido."
+
+#, fuzzy
+#~ msgid "Maroon"
+#~ msgstr "Mar"
+
+#, fuzzy
+#~ msgid "Cream"
+#~ msgstr "Creado"
+
+#, fuzzy
+#~ msgid "No help keyword specified."
+#~ msgstr "Encuadernación no especificada."
+
+#, fuzzy
+#~ msgid "Invalid string offset"
+#~ msgstr "Argumento inválido."
+
+#, fuzzy
+#~ msgid "Node is owned by a different document"
+#~ msgstr ""
+#~ "El \"Handle\" de la base de datos está siendo utilizado por una sesión "
+#~ "diferente"
+
+#, fuzzy
+#~ msgid "Invalid character in name"
+#~ msgstr "Nombre de sesión inválido: %s"
+
+#, fuzzy
+#~ msgid "No data allowed"
+#~ msgstr "No hay datos para leer."
+
+#, fuzzy
+#~ msgid "Node not found"
+#~ msgstr "Host no encontrado."
+
+#, fuzzy
+#~ msgid "Invalid state"
+#~ msgstr "Invalid class typecast"
+
+#, fuzzy
+#~ msgid "Invalid syntax"
+#~ msgstr "Argumento inválido."
+
+#, fuzzy
+#~ msgid "Invalid modification"
+#~ msgstr "Nombre de usuario inválido."
+
+#, fuzzy
+#~ msgid "Invalid namespace request"
+#~ msgstr "Parámetros de TBatchMove inválidos"
+
+#, fuzzy
+#~ msgid "Invalid access"
+#~ msgstr "Argumento inválido."
+
+#, fuzzy
+#~ msgid "Error creating file \"%s\""
+#~ msgstr "Error al crear el cursor"
+
+#, fuzzy
+#~ msgid "DOM Error: "
+#~ msgstr "Error"
+
+#, fuzzy
+#~ msgid "Node \"%s\" not found"
+#~ msgstr "Host no encontrado."
+
+#, fuzzy
+#~ msgid "Invalid node type"
+#~ msgstr "Invalid class typecast"
+
+#, fuzzy
+#~ msgid "ItemTag property is not initialized"
+#~ msgstr "Lista no inicializada!"
+
+#, fuzzy
+#~ msgid "Unknown datatype \"%s\""
+#~ msgstr "Cola %s desconocida"
+
+#, fuzzy
+#~ msgid "Invalid %s value: \"%s\""
+#~ msgstr "Nombre de alias no válido: %s"
+
+#, fuzzy
+#~ msgid "Invalid group declaration in \"%s\""
+#~ msgstr "Nombre de sesión inválido: %s"
+
+#, fuzzy
+#~ msgid "Missing Type name"
+#~ msgstr "Propiedad TableName sin valor"
+
+#, fuzzy
+#~ msgid "%s cannot be set on a ref item"
+#~ msgstr "'%s' no puede ser abierto"
+
+#, fuzzy
+#~ msgid "Invalid built-in type name \"%s\""
+#~ msgstr "Nombre de alias no válido: %s"
+
+#, fuzzy
+#~ msgid "Permission denied"
+#~ msgstr "Acceso denegado."
+
+#, fuzzy
+#~ msgid "ShowMessage not supported"
+#~ msgstr "Comando no soportado."
+
+#, fuzzy
+#~ msgid "Unknown client type."
+#~ msgstr "Cola %s desconocida"
+
+#, fuzzy
+#~ msgid "Unknown browser type."
+#~ msgstr "Cola %s desconocida"
+
+#, fuzzy
+#~ msgid "\"%s\" is not a valid component name."
+#~ msgstr "%s no es un servicio válido."
+
+#, fuzzy
+#~ msgid "Client Dropped Connection"
+#~ msgstr "Conexión de red caída o reseteada"
+
+#, fuzzy
+#~ msgid "%s not found."
+#~ msgstr "Host no encontrado."
+
+#, fuzzy
+#~ msgid "This function is not valid for this server type."
+#~ msgstr "Operación no soportada en socket."
+
+#, fuzzy
+#~ msgid "\"%s\" is not a valid height."
+#~ msgstr "%s no es un servicio válido."
+
+#, fuzzy
+#~ msgid "\"%s\" is not a valid width."
+#~ msgstr "%s no es un servicio válido."
+
+#, fuzzy
+#~ msgid "Index out of bounds."
+#~ msgstr "Indice de Byte fuera de rango."
+
+#, fuzzy
+#~ msgid "Resource %s not found."
+#~ msgstr "Host no encontrado."
+
+#, fuzzy
+#~ msgid "No main form is defined."
+#~ msgstr "Encuadernación no especificada."
+
+#, fuzzy
+#~ msgid "Device not supported"
+#~ msgstr "Comando no soportado."
+
+#, fuzzy
+#~ msgid "Message Dialog"
+#~ msgstr "Mensaje demasiado largo."
+
+#, fuzzy
+#~ msgid "red"
+#~ msgstr "Creado"
+
+#, fuzzy
+#~ msgid "Error: "
+#~ msgstr "Error"
+
+#, fuzzy
+#~ msgid "Error creating session"
+#~ msgstr "Error creando contexto SSL."
+
+#, fuzzy
+#~ msgid "Unknown or Unrecognized"
+#~ msgstr "comando no reconocido"
+
+#, fuzzy
+#~ msgid "Opera"
+#~ msgstr "Overlay"
+
+#, fuzzy
+#~ msgid "Cannot find internal file: %s"
+#~ msgstr "Demasiados archivos abiertos."
+
+#, fuzzy
+#~ msgid "Intraweb Version: %s"
+#~ msgstr "Versión %s"
+
+#, fuzzy
+#~ msgid "Prior"
+#~ msgstr "Error"
+
+#, fuzzy
+#~ msgid "Unsupported field type in DBLink"
+#~ msgstr "Tipo de medio no soportado"
+
+#, fuzzy
+#~ msgid "%s is not a valid response."
+#~ msgstr "%s no es un servicio válido."
+
+#, fuzzy
+#~ msgid "Invalid session timeout value."
+#~ msgstr "Nombre de sesión inválido: %s"
+
+#, fuzzy
+#~ msgid "Authentication Failed."
+#~ msgstr "Autentificación de Proxy requerida"
+
+#, fuzzy
+#~ msgid "MetaFile not supported"
+#~ msgstr "Comando no soportado."
+
+#, fuzzy
+#~ msgid "Could not load image"
+#~ msgstr "No se puede leer el certificado."
+
+#, fuzzy
+#~ msgid "Execute: "
+#~ msgstr "E&jectuar"
+
+#, fuzzy
+#~ msgid "Internal Graphic: "
+#~ msgstr "Argumento inválido."
+
+#, fuzzy
+#~ msgid "Sent: "
+#~ msgstr "Enviado: "
+
+#, fuzzy
+#~ msgid "Resize: "
+#~ msgstr "Resultado"
+
+#, fuzzy
+#~ msgid "Partial Update: "
+#~ msgstr "Contenido parcial"
+
+#, fuzzy
+#~ msgid "Stop the service and exit the application."
+#~ msgstr "Sólo puede existir un TIdAntiFreeze por aplicación."
+
+#, fuzzy
+#~ msgid "Execute via &IE"
+#~ msgstr "E&jectuar"
+
+#, fuzzy
+#~ msgid "&Parameters"
+#~ msgstr "%s%s%s parámetros"
+
+#, fuzzy
+#~ msgid "URL Parameters"
+#~ msgstr "%s%s%s parámetros"
+
+#, fuzzy
+#~ msgid "Simulated Connection speed"
+#~ msgstr "Conexión rechazada."
+
+#, fuzzy
+#~ msgid "Connection Speed: "
+#~ msgstr "Conexión rechazada."
+
+#, fuzzy
+#~ msgid "zlib.dll       not found in %s"
+#~ msgstr "Host no encontrado."
+
+#, fuzzy
+#~ msgid "Frame container not found."
+#~ msgstr "Mensaje demasiado largo."
+
+#, fuzzy
+#~ msgid "Invalid graphic format"
+#~ msgstr "Argumento inválido."
+
+#, fuzzy
+#~ msgid "Unable to locate form/component, '%s'"
+#~ msgstr "No se puede abrir %s"
+
+#, fuzzy
+#~ msgid "About..."
+#~ msgstr "Acerca de..."
+
+#, fuzzy
+#~ msgid "(Unassigned)"
+#~ msgstr "Aplicación sín nombre"
+
+#, fuzzy
+#~ msgid "Unknown Type"
+#~ msgstr "Cola %s desconocida"
+
+#, fuzzy
+#~ msgid "(Not available)"
+#~ msgstr "Proveedor no disponible"
+
+#, fuzzy
+#~ msgid "Control"
+#~ msgstr "Control-C hit"
+
+#, fuzzy
+#~ msgid "Database"
+#~ msgstr "%s%s%s Base de datos"
+
+#, fuzzy
+#~ msgid ""
+#~ "Cannot change settings when there are active connections. Kill "
+#~ "connections?"
+#~ msgstr "Cannot change session state when the server is active."
+
+#, fuzzy
+#~ msgid "%d current connections"
+#~ msgstr "Cerrando conexión"
+
+#, fuzzy
+#~ msgid "The Socket Server is already running"
+#~ msgstr "El Socket está actualmente conectado."
+
+#, fuzzy
+#~ msgid "The information requested could not be loaded. "
+#~ msgstr "%s no puede ser cargado."
+
+#, fuzzy
+#~ msgid "No active summaries have been defined. "
+#~ msgstr "El evento OnNewsgroupList no ha sido definido."
+
+#, fuzzy
+#~ msgid "No available dimensions have been defined. "
+#~ msgstr "El evento OnNewNewsList no ha sido definido."
+
+#, fuzzy
+#~ msgid "[Error]"
+#~ msgstr "Error"
+
+#, fuzzy
+#~ msgid "Unsupported data type : %s"
+#~ msgstr "Tipo de medio no soportado"
+
+#, fuzzy
+#~ msgid "Row index out of range : %d"
+#~ msgstr "Indice de Byte fuera de rango."
+
+#, fuzzy
+#~ msgid "Column index out of range : %d"
+#~ msgstr "Indice de Byte fuera de rango."
+
+#, fuzzy
+#~ msgid "Array index out of range : %d"
+#~ msgstr "Indice de Byte fuera de rango."
+
+#, fuzzy
+#~ msgid "Operation not allowed on sorted string list."
+#~ msgstr "Operación no soportada en socket."
+
+#, fuzzy
+#~ msgid "General array error."
+#~ msgstr "Error interno del servidor"
+
+#, fuzzy
+#~ msgid "Cannot perform this action on an active Dimension Map"
+#~ msgstr "No se puede ejecutar esta operación sobre una sesión activa"
+
+#, fuzzy
+#~ msgid "Not Available"
+#~ msgstr "No aceptable"
+
+#, fuzzy
+#~ msgid "Data set property is not assigned"
+#~ msgstr "Fuente de datos no es resultado de una consulta"
+
+#, fuzzy
+#~ msgid " is already in the query"
+#~ msgstr "Dirección ya en uso."
+
+#, fuzzy
+#~ msgid "Could not remove the field"
+#~ msgstr "No se puede leer el certificado."
+
+#, fuzzy
+#~ msgid "Dataset is too large"
+#~ msgstr "Fuente de datos no es resultado de una consulta"
+
+#, fuzzy
+#~ msgid "Count of %s"
+#~ msgstr "Conectando a %s."
+
+#, fuzzy
+#~ msgid "Unsupported Data Type %d"
+#~ msgstr "Tipo de medio no soportado"
+
+#, fuzzy
+#~ msgid "&Graphical Query Builder..."
+#~ msgstr "Constructor S&QL..."
+
+#, fuzzy
+#~ msgid "&Decision Cube Editor..."
+#~ msgstr "Editor de Base de Da&tos..."
+
+#, fuzzy
+#~ msgid "&Query Editor..."
+#~ msgstr "Editor de Base de Da&tos..."
+
+#, fuzzy
+#~ msgid "Partial match at end"
+#~ msgstr "Contenido parcial"
+
+#, fuzzy
+#~ msgid "Not "
+#~ msgstr "No encontrado"
+
+#~ msgid "Byte index out of range."
+#~ msgstr "Indice de Byte fuera de rango."
+
+#~ msgid "OnExecute not assigned."
+#~ msgstr "Evento OnExecute no asignado."
+
+#~ msgid "Raw Receive Error = 0."
+#~ msgstr "Recibe error Raw = 0."
+
+#~ msgid "ICMP Receive Error = 0."
+#~ msgstr "Recibe error ICMP = 0."
+
+#~ msgid "%s could not be loaded."
+#~ msgstr "%s no puede ser cargado."
+
+#~ msgid "Cannot change target while active."
+#~ msgstr "No se puede cambiar objetivo mientras esté activo."
+
+#~ msgid "InterceptEnabled cannot be set to true when Intercept is nil."
+#~ msgstr "InterceptEnabled cannot be set to true when Intercept is nil."
+
+#~ msgid "UDP Receive Error = 0."
+#~ msgstr "Recibe error UDP = 0."
+
+#, fuzzy
+#~ msgid "%s is not a valid IP address."
+#~ msgstr "%s no es un servicio válido."
+
+#~ msgid "Bad address."
+#~ msgstr "Dirección errónea."
+
+#~ msgid "Operation would block. "
+#~ msgstr "Bloquearía la operación. "
+
+#~ msgid "Too many processes."
+#~ msgstr "Demasiados procesos."
+
+#~ msgid "Too many users."
+#~ msgstr "Demasiados usuarios."
+
+#~ msgid "Disk Quota Exceeded."
+#~ msgstr "Cuenta de tamaño en disco excedida."
+
+#~ msgid "Stale NFS file handle."
+#~ msgstr "Stale NFS file handle."
+
+#~ msgid "Too many levels of remote in path."
+#~ msgstr "Demasiados niveles de la ruta remota."
+
+#~ msgid "Network subsystem is unavailable."
+#~ msgstr "Subsistema de red no disponible."
+
+#~ msgid "WINSOCK DLL Version out of range."
+#~ msgstr "Versión WINSOCK DLL fuera de rango."
+
+#~ msgid "Winsock not loaded yet."
+#~ msgstr "Winsock no cargado todavía."
+
+#~ msgid "http://www.nevrona.com/indy/"
+#~ msgstr "http://www.nevrona.com/indy/"
+
+#, fuzzy
+#~ msgid "Distribution Coordinator"
+#~ msgstr "Coordinador de proyecto"
+
+#~ msgid "Received someone else's packet"
+#~ msgstr "Recibidos algunos paquetes"
+
+#, fuzzy
+#~ msgid "Syntax error, command unrecognized."
+#~ msgstr "comando no reconocido"
+
+#, fuzzy
+#~ msgid "username"
+#~ msgstr "Nombre de usuario: "
+
+#, fuzzy
+#~ msgid "Only one data module per application"
+#~ msgstr "Sólo puede existir un TIdAntiFreeze por aplicación."
+
+#, fuzzy
+#~ msgid "No data modules registered"
+#~ msgstr "No hay datos para leer."
+
+#, fuzzy
+#~ msgid "Invalid ISAPI application: %s"
+#~ msgstr "Nombre de alias no válido: %s"
+
+#, fuzzy
+#~ msgid "Invalid Redirect parameter"
+#~ msgstr "Parámetros de TBatchMove inválidos"
+
+#, fuzzy
+#~ msgid "Servers"
+#~ msgstr "Servidores Indy"
+
+#, fuzzy
+#~ msgid "Unknown command"
+#~ msgstr "Código de respuesta desconocido"
+
+#, fuzzy
+#~ msgid "Unable to not open registry key: %s"
+#~ msgstr "No se puede abrir %s"
+
+#, fuzzy
+#~ msgid "Invalid Action %d"
+#~ msgstr "Tamaño de paquete inválido %d"
+
+#, fuzzy
+#~ msgid "Content Type"
+#~ msgstr "Sin contenido"
+
+#, fuzzy
+#~ msgid "Thread"
+#~ msgstr "Creado"
+
+#, fuzzy
+#~ msgid "Receive"
+#~ msgstr "Recivido: "
+
+#, fuzzy
+#~ msgid "Data set field not found: %s"
+#~ msgstr "Datos de archivo guardados en %s"
+
+#, fuzzy
+#~ msgid "Invalid parent"
+#~ msgstr "Argumento inválido."
+
+#, fuzzy
+#~ msgid "Invalid parent class: %s"
+#~ msgstr "Nombre de alias no válido: %s"
+
+#, fuzzy
+#~ msgid "Missing Delta Packet"
+#~ msgstr "Propiedad DataSet sin valor"
+
+#, fuzzy
+#~ msgid "XMLBroker: %s is not connected"
+#~ msgstr "El Socket no está conectado."
+
+#, fuzzy
+#~ msgid "DataSet: %s is not active"
+#~ msgstr "Fuente de datos no es resultado de una consulta"
+
+#, fuzzy
+#~ msgid "Duplicate action name"
+#~ msgstr "Duplicado el nombre de sesión: '%s'"
+
+#, fuzzy
+#~ msgid "Too many table columns"
+#~ msgstr "Demasiados archivos abiertos."
+
+#, fuzzy
+#~ msgid "address"
+#~ msgstr "Dirección errónea."
+
+#, fuzzy
+#~ msgid "%s%s%s %s"
+#~ msgstr "%s%s%s Base de datos"
+
+#, fuzzy
+#~ msgid "Too many parameters for method %s"
+#~ msgstr "No hay tipo de parámetro para el parámetro '%s'"
+
+#, fuzzy
+#~ msgid "''%s'' is not a valid date"
+#~ msgstr "%s no es un servicio válido."
+
+#, fuzzy
+#~ msgid "''%s'' is not a valid date and time"
+#~ msgstr "%s no es un servicio válido."
+
+#, fuzzy
+#~ msgid "''%s'' is not a valid integer value"
+#~ msgstr "%s no es un servicio válido."
+
+#, fuzzy
+#~ msgid "''%s'' is not a valid time"
+#~ msgstr "%s no es un servicio válido."
+
+#, fuzzy
+#~ msgid "Invalid stream operation"
+#~ msgstr "Invalid class typecast"
+
+#~ msgid "sigaction call failed"
+#~ msgstr "sigaction call failed"
+
+#, fuzzy
+#~ msgid "Unknown custom variant type ($%.4x)"
+#~ msgstr "Unknown custom variant type ($.4x)"
+
+#, fuzzy
+#~ msgid "Custom variant type ($%.4x) is out of range"
+#~ msgstr "Custom variant type ($.4x) is out of range"
+
+#, fuzzy
+#~ msgid "Custom variant type ($%.4x) already used by %s"
+#~ msgstr "Custom variant type (%.4x) already used by %s"
+
+#, fuzzy
+#~ msgid "Custom variant type ($%.4x) is not usable"
+#~ msgstr "Custom variant type (%.4x) is not usable"
+
+#, fuzzy
+#~ msgid "Could not convert variant of type (%s) into type (%s)"
+#~ msgstr "Custom variant type (%.4x) is not usable"
+
+#, fuzzy
+#~ msgid "Component is not connected to an open Database"
+#~ msgstr "No se puede ejecutar esta operación en una base de datos abierta"
+
+#, fuzzy
+#~ msgid "Unsupported SOAP encodingStyle %s"
+#~ msgstr "Tipo de medio no soportado"
+
+#, fuzzy
+#~ msgid "Invalid SOAP request"
+#~ msgstr "Argumento inválido."
+
+#, fuzzy
+#~ msgid "Unsupported calling convention: %s"
+#~ msgstr "Modo de trasnferencia no soportado: \"%s\""
+
+#, fuzzy
+#~ msgid "varDate type not supported"
+#~ msgstr "Tipo de dirección no soportada."
+
+#, fuzzy
+#~ msgid "varDispatch type not supported"
+#~ msgstr "Tipo de dirección no soportada."
+
+#, fuzzy
+#~ msgid "varError type not supported"
+#~ msgstr "Tipo de Socket no soportado."
+
+#, fuzzy
+#~ msgid "varVariant type not supported"
+#~ msgstr "Tipo de objeto no soportado."
+
+#, fuzzy
+#~ msgid "Invalid Pointer"
+#~ msgstr "Nombre de usuario inválido."
+
+#, fuzzy
+#~ msgid "Invalid date string: %s"
+#~ msgstr "Nombre de sesión inválido: %s"
+
+#, fuzzy
+#~ msgid "Invalid time string: %s"
+#~ msgstr "Nombre de sesión inválido: %s"
+
+#, fuzzy
+#~ msgid "Invalid hour: %d"
+#~ msgstr "Id %d de cabecera invalido"
+
+#, fuzzy
+#~ msgid "Invalid minute: %d"
+#~ msgstr "Nombre de alias no válido: %s"
+
+#, fuzzy
+#~ msgid "Invalid second: %d"
+#~ msgstr "Id %d de cabecera invalido"
+
+#, fuzzy
+#~ msgid "Invalid second: %f"
+#~ msgstr "Nombre de sesión inválido: %s"
+
+#, fuzzy
+#~ msgid "Invalid millisecond: %d"
+#~ msgstr "Nombre de alias no válido: %s"
+
+#, fuzzy
+#~ msgid "Invalid hour offset: %d"
+#~ msgstr "Contador %d de consulta inválido"
+
+#, fuzzy
+#~ msgid "Invalid day: %d"
+#~ msgstr "Id %d de cabecera invalido"
+
+#, fuzzy
+#~ msgid "Invalid month: %d"
+#~ msgstr "Contador %d de consulta inválido"
+
+#, fuzzy
+#~ msgid "Invalid duration string: %s"
+#~ msgstr "Nombre de sesión inválido: %s"
+
+#, fuzzy
+#~ msgid "Cannot convert empty string to TBcd value"
+#~ msgstr "No se puede convertir el campo '%s' en un valor de punto flotante"
+
+#, fuzzy
+#~ msgid "Cannot convert scientific notation to TBcd value"
+#~ msgstr "No se puede convertir el campo '%s' en un valor de punto flotante"
+
+#, fuzzy
+#~ msgid "Cannot convert NAN to TBcd value"
+#~ msgstr "No se puede convertir el campo '%s' en un valor entero"
+
+#, fuzzy
+#~ msgid "%s is not a valid hex string"
+#~ msgstr "%s no es un servicio válido."
+
+#, fuzzy
+#~ msgid "No service available for URL %s"
+#~ msgstr "Proveedor no disponible"
+
+#, fuzzy
+#~ msgid "Unsuppported variant type %d"
+#~ msgstr "Tipo de medio no soportado"
+
+#, fuzzy
+#~ msgid "Unknown Error"
+#~ msgstr "Error de sock desconocido."
+
+#, fuzzy
+#~ msgid "Service Info Page"
+#~ msgstr "Servicio no disponible"
+
+#, fuzzy
+#~ msgid "method not supported"
+#~ msgstr "Comando no soportado."
+
+#~ msgid ""
+#~ "Unable to retrieve a pointer to a running object registered with OLE for %"
+#~ "s/%s"
+#~ msgstr ""
+#~ "Unable to retrieve a pointer to a running object registered with OLE for %"
+#~ "s/%s"
+
+#, fuzzy
+#~ msgid "Unknown Adapter mode: %s"
+#~ msgstr "Cola %s desconocida"
+
+#, fuzzy
+#~ msgid "DataSet is nil"
+#~ msgstr "Fuente de datos no es resultado de una consulta"
+
+#, fuzzy
+#~ msgid "Row not found in %s"
+#~ msgstr "Host no encontrado."
+
+#, fuzzy
+#~ msgid "%s: DataSet property is nil"
+#~ msgstr "Propiedad DataSet sin valor"
+
+#, fuzzy
+#~ msgid "%0:s: Dataset %1:s not active"
+#~ msgstr "Fuente de datos no es resultado de una consulta"
+
+#, fuzzy
+#~ msgid "Missing XML Data Component"
+#~ msgstr "Propiedad DataSet sin valor"
+
+#, fuzzy
+#~ msgid "Page access denied"
+#~ msgstr "Acceso denegado."
+
+#, fuzzy
+#~ msgid "UserName"
+#~ msgstr "Nombre de usuario: "
+
+#, fuzzy
+#~ msgid "UserID not found"
+#~ msgstr "Host no encontrado."
+
+#, fuzzy
+#~ msgid "Invalid password"
+#~ msgstr "Id %d de cabecera invalido"
+
+#, fuzzy
+#~ msgid "Unknown user name"
+#~ msgstr "Cola %s desconocida"
+
+#, fuzzy
+#~ msgid "Unexpected parameter type"
+#~ msgstr "Operación inesperada desde %s:%d"
+
+#, fuzzy
+#~ msgid "Duplication prototype name"
+#~ msgstr "Duplicado el nombre de sesión: '%s'"
+
+#, fuzzy
+#~ msgid "Variable not found: %s"
+#~ msgstr "No se puede abrir %s"
+
+#, fuzzy
+#~ msgid "Component %s not found"
+#~ msgstr "Host no encontrado."
+
+#, fuzzy
+#~ msgid "WebSnap Application"
+#~ msgstr "Aplicación sín nombre"
+
+#, fuzzy
+#~ msgid "Unable to execute %s"
+#~ msgstr "No se puede abrir %s"
+
+#, fuzzy
+#~ msgid "Found"
+#~ msgstr "No encontrado"
+
+#, fuzzy
+#~ msgid "Not found"
+#~ msgstr "No encontrado"
+
+#, fuzzy
+#~ msgid "Go"
+#~ msgstr "Ido"
+
+#, fuzzy
+#~ msgid "&Web Page Editor..."
+#~ msgstr "Editor de Base de Da&tos..."
+
+#, fuzzy
+#~ msgid "Open Transformation File"
+#~ msgstr "Tranformación fallida"
+
+#, fuzzy
+#~ msgid "Version of Transformation File not supported"
+#~ msgstr "Error en la transformación antes enviada"
+
+#, fuzzy
+#~ msgid "Could not open file "
+#~ msgstr "Demasiados archivos abiertos."
+
+#, fuzzy
+#~ msgid "Reason: %s\n"
+#~ msgstr "Versión %s"
+
+#, fuzzy
+#~ msgid "Must have a target stream"
+#~ msgstr "Debe haber un tipo de campo válido seleccionado"
+
+#, fuzzy
+#~ msgid "FileVersion"
+#~ msgstr "Versión %s"
+
+#, fuzzy
+#~ msgid "InternalName"
+#~ msgstr "Nombre de usuario: "
+
+#, fuzzy
+#~ msgid "Translation"
+#~ msgstr "Editor de Base de Da&tos..."
+
+#, fuzzy
+#~ msgid "Invalid canvas state request"
+#~ msgstr "Nombre de alias no válido: %s"
+
+#, fuzzy
+#~ msgid "Invalid XImage"
+#~ msgstr "Argumento inválido."
+
+#, fuzzy
+#~ msgid "No printer adapter available for printing"
+#~ msgstr "Proveedor no disponible"
+
+#, fuzzy
+#~ msgid "Access denied to \"%s\""
+#~ msgstr "Acceso denegado."
+
+#, fuzzy
+#~ msgid "Directory \"%s\" is not empty."
+#~ msgstr "Directorio no vacío"
+
+#, fuzzy
+#~ msgid "Unable to read directory \"%s\"."
+#~ msgstr "Unable to load bind parameters"
+
+#, fuzzy
+#~ msgid ""
+#~ "\"%s\"\n"
+#~ "File not found."
+#~ msgstr "Host no encontrado."
+
+#, fuzzy
+#~ msgid "Date Modified"
+#~ msgstr "No modificado"
+
+#, fuzzy
+#~ msgid "Directory"
+#~ msgstr "Directorio no vacío"
+
+#, fuzzy
+#~ msgid "No Preview Available"
+#~ msgstr "Proveedor no disponible"
+
+#, fuzzy
+#~ msgid "A property category called %s already exists"
+#~ msgstr "El archivo de destino ya existe."
+
+#, fuzzy
+#~ msgid "Property category does not exist (%s)"
+#~ msgstr "El directorio %s no existe"
+
+#, fuzzy
+#~ msgid "Mime format not supported for TIcon"
+#~ msgstr "Operación no soportada en socket."
+
+#, fuzzy
+#~ msgid "Image format not recognized"
+#~ msgstr "comando no reconocido"
+
+#, fuzzy
+#~ msgid "Invalid handle value for %s"
+#~ msgstr "Nombre de alias no válido: %s"
+
+#, fuzzy
+#~ msgid "Unable to write bitmap"
+#~ msgstr "No se puede abrir %s"
+
+#, fuzzy
+#~ msgid "%s is already in the StatusBar"
+#~ msgstr "Dirección ya en uso."
+
+#, fuzzy
+#~ msgid "Movie not loaded"
+#~ msgstr "Método no admitido"
+
+#, fuzzy
+#~ msgid "Items Editor..."
+#~ msgstr "Editor de Base de Da&tos..."
+
+#, fuzzy
+#~ msgid "E&xport..."
+#~ msgstr "E&xplorador"
+
+#, fuzzy
+#~ msgid "Database Parameters"
+#~ msgstr "%s%s%s parámetros"
+
+#, fuzzy
+#~ msgid "Pass&word:"
+#~ msgstr "Contraseña: "
+
+#, fuzzy
+#~ msgid "Borland Socket Server"
+#~ msgstr "Servidor Telnet Indy"
+
+#, fuzzy
+#~ msgid "&Disconnect"
+#~ msgstr "Desconectado"
+
+#~ msgid "Disconnecting from %s."
+#~ msgstr "Desconectando desde %s."

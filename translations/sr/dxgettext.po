@@ -1,0 +1,442 @@
+msgid ""
+msgstr ""
+"Project-Id-Version: dxgettext \n"
+"POT-Creation-Date: 2003-07-08 20:14\n"
+"PO-Revision-Date: 2003-10-22 10:57+0100\n"
+"Last-Translator: Dušan Majkić <dmajkic@dmajkic.co.yu>\n"
+"Language-Team: dmajkic <dmajkic@dmajkic.co.yu>\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+
+msgid "  assemble application.exe --dxgettext"
+msgstr "  assemble application.exe --dxgettext"
+
+msgid "  msgmergePOT english.po otherlanguage.po destination.po"
+msgstr "  msgmergePOT енглески.po други_језик.po циљни_језик.po"
+
+msgid "  msgmkignore default.po -o ignore.po"
+msgstr "  msgmkignore default.po -o ignore.po"
+
+msgid "  msgshowheader translation.mo"
+msgstr "  msgshowheader превод.mo"
+
+msgid "  msgsplitTStrings input.po -o output.po"
+msgstr "  msgsplitTStrings улазни.po -o излазни.po"
+
+msgid "  msgstripCR source.po destination.po"
+msgstr "  msgstripCR изворни.po циљни.po"
+
+msgid " -b c:\\source\\myprogram --delphi"
+msgstr " -b c:\\source\\moj_program --delphi"
+
+msgid "$gnugettext: end directive is missing !"
+msgstr "$gnugettext: Недостаје end директива!"
+
+msgid "&Cancel"
+msgstr "От&кажи"
+
+msgid "&Close"
+msgstr "&Затвори"
+
+msgid "&Merge"
+msgstr "&Спајање превода"
+
+msgid "&OK"
+msgstr "&ОК"
+
+msgid "Adds the wildcards: *.pas *.inc *.rc *.dpr *.xfm"
+msgstr "Додај џокере: *.pas *.inc *.rc *.dpr *.xfm"
+
+msgid "Adds the wildcards: *.pas *.inc *.rc *.dpr *.xfm *.dfm"
+msgstr "Додај џокере: *.pas *.inc *.rc *.dpr *.xfm *.dfm"
+
+msgid "Already specified an .exe file."
+msgstr "Већ је задат .exe фајл."
+
+msgid "Also search subdirectories"
+msgstr "Такође, претражи подфасцикле"
+
+msgid "Assume the specified codepage. Default is CP_ACP."
+msgstr "Употеби назначену кодну стерану. Подразумевана је CP_ACP."
+
+msgid "Assume wildcards to be part of filenames"
+msgstr "Третирај џокере као делове имена фајла"
+
+msgid "Base directory:"
+msgstr "Базна фасцикла:"
+
+msgid "Because there was unexpected output from msgmerge.exe, no merging has been done."
+msgstr "Због неочекиваног излаза из msgmerge.exe, спајање није обављено."
+
+msgid "Borland Package Library"
+msgstr "Борландова пакет библиотека"
+
+msgid "CRLF substituted with #10 for %s. Consider to use sLineBreak instead."
+msgstr "CRLF је замењено са #10 за %s. Размотрите употребу sLineBreak уместо #13#10."
+
+msgid "Cannot convert ansistring to widestring with specified codepage."
+msgstr "Није могућа конверзија ansistring у уникод widestring са датом кодном страном."
+
+msgid "Cannot rename %s to %s"
+msgstr "Није успело преименовње %s у %s"
+
+msgid "Configuration"
+msgstr "Конфигурација"
+
+msgid "Constant %s is not known."
+msgstr "Константа %s је непозната."
+
+msgid "Could not open or create subkey %s."
+msgstr "Није могуће отворити или направити подкључ %s."
+
+msgid "Create backup file of old translation (recommended)"
+msgstr "Креирање резервне копије фајла старог превода (препоручена опција)"
+
+msgid "Do you want to overwrite the file named %s?"
+msgstr "Да ли желите да препишете фајл %s?"
+
+msgid "Dynamic Link Library"
+msgstr "Динамична библиотека (DLL)"
+
+msgid "ERROR in %s: %s"
+msgstr "ГРЕШКА у %s: %s"
+
+msgid "ERROR: %s"
+msgstr "ГРЕШКА: %s"
+
+msgid "Embed translations in executable"
+msgstr "Додавање превода у извршни фајл"
+
+msgid "Error when writing to stream."
+msgstr "Грешка код уписа података. "
+
+msgid "Error: Specified TPoEntry was not found in list."
+msgstr "Фрешка: Назначени TPoEntry није пронађен у листи."
+
+msgid "Exception occured"
+msgstr "Догодила се грешка у извршавању програма"
+
+msgid "Executable file:"
+msgstr "Извршни фајл:"
+
+msgid "Extracting text"
+msgstr "Екстрактујем текст"
+
+msgid "Filemasks"
+msgstr "Фајл маске"
+
+msgid "Finished."
+msgstr "Готово!"
+
+msgid "GNU gettext %s"
+msgstr "GNU gettext %s"
+
+msgid ""
+"If a filename is preceded with @, it is assumed to contain a list of\n"
+"filenames or file masks."
+msgstr ""
+"Ако име фајла почиње са @, онда тај фајл треба да садржи листу\n"
+"имена фајлова или маски фајлова."
+
+msgid "Ignore list. Remove those that you do want to have translated."
+msgstr "Листа за игнорисање. Уклоните оне које желите да буду преведени."
+
+msgid "Illegal line %d: %s"
+msgstr "Недозвољена линија %d: %s"
+
+msgid "Initializing..."
+msgstr "Инизијализација..."
+
+msgid "Internal error in TPoEntryList data structure. Sublist for searchkey was empty."
+msgstr "Интерна грешка у TPoEntryList структури података. Подлиста за претрагу по кључу је празна."
+
+msgid "Line: %s"
+msgstr "Линија: %s"
+
+msgid "Merge translation with new translation template"
+msgstr "Спој овај превод и нови шаблон"
+
+msgid "Missing comma after first parameter"
+msgstr "Недостаје зарез после првог параметра"
+
+msgid "MsgId is not pure ASCII: \"%s\""
+msgstr "MsgId није чист ASCII: \"%s\""
+
+msgid "No .exe filename specified."
+msgstr "Није назначен .exe фајл."
+
+msgid "No filename specified for list of msgids to remove."
+msgstr "Недостаје назив фајла са msgid листом за уклањање."
+
+msgid "No input filename specified."
+msgstr "Недостаје улазни фајл."
+
+msgid "No output filename specified."
+msgstr "Недостаје излазни фајл."
+
+msgid "No patch code has been specified."
+msgstr "Недостаје код за промену. (patch code) "
+
+msgid "No translation for %s"
+msgstr "Нема превода за %s"
+
+msgid "No translations (.mo files) found."
+msgstr "Нису пронађени компајлирани преводи (.мо фајлови)"
+
+msgid "No warnings or errors."
+msgstr "Нема упозорења ни грешака."
+
+msgid "Options:"
+msgstr "Опције:"
+
+msgid "Order by msgid"
+msgstr "Редослед msgid"
+
+msgid "Order by occurence (default)"
+msgstr "Редослед по броју појављивања (подразумевано)"
+
+msgid "Output directory for .po files"
+msgstr "Излазни фасцикла за .po фајлове"
+
+msgid "Output of command line application"
+msgstr "Излаз апликације са командне линије"
+
+msgid "Overwrite %s aborted."
+msgstr "Преписивање %s прекинуто."
+
+msgid "Patch code \"%s\" was not found in .exe file. Are you sure the .exe file has been compiled with the correct libraries?"
+msgstr "Код за исправку (Patch code) \"%s\" није нађен у  .exe фајлу. Да ли сте сигурни да је .exe фајл компајлиран са потребим библиотекама?"
+
+msgid "Quiet: Reduces output to absolute minimum."
+msgstr "Тихо: Смањује излаз на апсолутни минимум."
+
+msgid "Reading %s"
+msgstr "Учитавање %s"
+
+msgid "Recurse subdirectories"
+msgstr "Прођи кроз све подфасцикле"
+
+msgid "Remember settings"
+msgstr "Запамти опције"
+
+msgid "Result of running %s:"
+msgstr "Резултат покретања %s:"
+
+msgid "Scanning %s C/C++ files"
+msgstr "Скенирање %s C/C++ фајлова"
+
+msgid "Single quote detected - string starts but does not end"
+msgstr "Детектован само један наводник - стринг почиње, али се не завршава"
+
+msgid "StreamReadln requires the stream to be not nil."
+msgstr "StreamReadln захтева да stream параметар буде дефинисан (различит од nil)."
+
+msgid "Suppresses warnings about CRLF"
+msgstr "Уклони упозорења о CRLF"
+
+msgid "Template files (*.po;*.pot)|*.po;*.pot|All files (*.*)|*.*"
+msgstr "Шаблони (*.po;*.pot)|*.po;*.pot|Сви фајлови (*.*)|*.*"
+
+msgid "The applications have now been integrated into your desktop."
+msgstr "Апликације су успешно интегрисане у ваш систем."
+
+msgid "The specified template file does not exist."
+msgstr "Назначени фајл са шаблоном за превод не постоји."
+
+msgid "The specified translation file does not exist."
+msgstr "Назначени фајл са преводом не постоји."
+
+msgid ""
+"The template was merged into the translation file.\n"
+"Do you want to open the translation file now?\n"
+"(This requires you to have a .po file editor installed)"
+msgstr ""
+"Шаблон је спојен са преводом.\n"
+"Да ли желите да оворите фајл са преводом?.\n"
+"(Ова операција захтева да имате инсталиран едитор .po фајлова)"
+
+msgid "This Windows installation is corrupt - .exe extension is not associated with anything."
+msgstr "Инсталација Windows је неисправна - .exe екстензија није повезана са било чим."
+
+msgid "This file has already been modified. Please recompile this .exe file."
+msgstr "Овај фајл је већ измењен. Молим да поново компајлирате овај .exe фајл."
+
+msgid "This line is not connected with the previous line using a plus (+)."
+msgstr "Ова линија није повезана са предходном линијом помоћу знака плус (+)."
+
+msgid "This list of translations cannot handle MsgId duplicates. Please remove the duplicate of \"%s\"."
+msgstr "Листа превода не подноси дупле MsgId. Молим да уклоните дупликате \"%s\"."
+
+msgid "This program needs a filename as parameter."
+msgstr "Овај програм захтева назив фајла као параметар."
+
+msgid "This program needs one parameter, which must be a directory path or a file name."
+msgstr "Овај програм захтева један параметар, који мора бити путања до фасцикле или фајла."
+
+msgid ""
+"This will append all files in the directory of application.exe and in \n"
+"all subdirectories to the file application.exe. This will enable the \n"
+"gnugettext.pas unit that was compiled into application.exe to get \n"
+"its translations from the .exe file instead of from external files."
+msgstr ""
+"Ово ће уградити све фајлове из фасцикле где је апликација\n"
+"као и из подфасциле у саму апликацију. Ово омогућава\n"
+"gnugettext.pas компајлираном унутар апликације\n"
+"да преузме преводе из .exe фајла уместо из екстерних фајлова"
+
+msgid "This will append the following translations to your executable file."
+msgstr "Следећи преводи ће бити укључени у ваш извршни фајл."
+
+msgid ""
+"This will create a po file from two identical po extracts that\n"
+"only differ by the language, for instance the German and English\n"
+"runtime source code from Borland."
+msgstr ""
+"Креирање  po фајла од два идентична po фајла издвојена\n"
+"која се једино разликују по језику, на пример Немачка и Енглеска\n"
+"верзија Борландовог изворног кода."
+
+msgid ""
+"This will extract all texts from the specified files and save them\n"
+"in a file named default.po."
+msgstr ""
+"Екстракција свих стрингова из назначених фајлова и снимање истих\n"
+"у један фајл default.po."
+
+msgid ""
+"This will extract texts from default.po that this program\n"
+"thinks should not be translated by a translator"
+msgstr ""
+"Екстракција стрингова из default.po за које овај програм\n"
+"сматра да не треба да буду превођени"
+
+msgid ""
+"This will generate the file output.po as a copy of default.po, \n"
+"but without all the MsgIds that are listed in ignore.po."
+msgstr ""
+"Ово ће генерисати фајл output.po као копију default.po, \n"
+"али без свих MsgIds наведених у ignore.po."
+
+msgid "This will output the header of the translation to stdout, i.e. _('')."
+msgstr "Испис заглаља превода на stdout, слично као  _('')."
+
+msgid ""
+"This will split all multiline translations into several single\n"
+"line translations, while still keeping the multiline translations\n"
+"around. Use msgmerge on the output file afterwards."
+msgstr ""
+"Подела свих превода, који су у више редова, у  више превода\n"
+"који заузимају један ред, а у исто време преводи у више редова остају\n"
+"сачувани. После употребите msgmerge на излазном фајлу."
+
+msgid "This will strip all Carriage Return codes (\\r)."
+msgstr "Уклањање свих Carriage Return карактера (\\r) из фајла ."
+
+msgid "Translation file:"
+msgstr "Фајл са преводом:"
+
+msgid "Translation files (*.po)|*.po|All files (*.*)|*.*"
+msgstr "Преводи (*.po)|*.po| сви фајлови (*.*)|*.*"
+
+msgid "Translation template:"
+msgstr "Шаблон за превод:"
+
+msgid "Usage:"
+msgstr "Употреба:"
+
+msgid "Use --nowc option to disable this message."
+msgstr "Употребите --nowc опцију да онемогућите ову поруку."
+
+msgid "Use directory as base directory for filenames."
+msgstr "Употреби фасциклу као базну за називе фајлове."
+
+msgid "WARNING in %s: %s"
+msgstr "УПОЗОРЕЊЕ у %s: %s"
+
+msgid "WARNING: %s"
+msgstr "УПОЗОРЕЊЕ: %s"
+
+msgid "WARNING: Unknown file extension %s. Reading file as being pascal source."
+msgstr "УПОЗОРЕЊЕ: Непозната екстензија %s.  Учитавам фајл као да је паскал изворни код."
+
+msgid "Warning: Remember to escape wildcards in the shell"
+msgstr "Упозорење: Не заборавите на џокер знаке у конзоли."
+
+msgid "Writing %s"
+msgstr "Уписивање %s"
+
+msgid "You can specify several base dirs, that will all be scanned."
+msgstr "Можете назначити неколико основних фасцикли, које ће све бити скениране."
+
+msgid "assemble %s"
+msgstr "assemble %s"
+
+msgid "assemble usage:"
+msgstr "assemble Употреба:"
+
+msgid "dxgettext %s"
+msgstr "dxgettext %s"
+
+msgid "dxgettext usage:"
+msgstr "dxgettext употреба:"
+
+msgid "ggfmt %s running %s"
+msgstr "ggfmt %s покреће %s"
+
+msgid "msgid contains non-ascii characters: \"%s\""
+msgstr "msgid садржи знакове који нису ascii: \"%s\""
+
+msgid "msgmerge.exe failed with exit code %s."
+msgstr "msgmerge.exe је насилно прекинуо рад са поруком %s."
+
+msgid "msgmergePOT %s"
+msgstr "msgmergePOT %s"
+
+msgid "msgmergePOT usage:"
+msgstr "msgmergePOT употреба:"
+
+msgid "msgmkignore %s"
+msgstr "msgmkignore %s"
+
+msgid "msgremove %s"
+msgstr "msgremove %s"
+
+msgid "msgremove usage:"
+msgstr "msgremove Употреба:"
+
+msgid "msgshowheader usage:"
+msgstr "msgshowheader употреба:"
+
+msgid "msgsplitTStrings %s"
+msgstr "msgsplitTStrings %s"
+
+msgid "msgsplitTStrings usage:"
+msgstr "msgsplitTStrings употреба:"
+
+msgid "msgstripCR usage:"
+msgstr "msgstripCR употреба:"
+
+msgid ""
+"ngettext() encountered. This will create msgid_plural entries in the\n"
+"default.po file, which may render it uneditable by some GUI po file editors.\n"
+"Consider to use dngettext() instead, putting the msgid_plural entries into\n"
+"a separate .po file."
+msgstr ""
+"ngettext() пронађен. Ово ће креирати msgid_plural записе у\n"
+"default.po фајлу, које неки GUI .po едитори не препознају.\n"
+"Зато размотрите употребу dngettext(), стављајући msgid_plural ставке\n"
+"у посебан .po фајл."
+
+msgid "resourcestring does not end in semicolon."
+msgstr "Стринг из ресурса се не завршава тачка-зарезом."
+
+msgid "{gnugettext: Unknonw option."
+msgstr "{gnugettext: Непозната опција."
+
+msgid "{gnugettext: error in the domain name definition."
+msgstr "{gnugettext: Грешка у дефинисању назива домена."
+
+msgid "{gnugettext: reset found without scan-all."
+msgstr "{gnugettext: reset нађен без scan-all."
+
