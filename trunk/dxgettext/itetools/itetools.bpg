@@ -1,0 +1,36 @@
+#------------------------------------------------------------------------------
+VERSION = BWS.01
+#------------------------------------------------------------------------------
+!ifndef ROOT
+ROOT = $(MAKEDIR)\..
+!endif
+#------------------------------------------------------------------------------
+MAKE = $(ROOT)\bin\make.exe -$(MAKEFLAGS) -f$**
+DCC = $(ROOT)\bin\dcc32.exe $**
+BRCC = $(ROOT)\bin\brcc32.exe $**
+#------------------------------------------------------------------------------
+PROJECTS = dfntopo.exe ixtopo.exe poread.exe msgidcopy.exe MoReader.exe \
+  dxgettext.exe
+#------------------------------------------------------------------------------
+default: $(PROJECTS)
+#------------------------------------------------------------------------------
+
+ixtopo.exe: ixtopo\ixtopo.dpr
+  $(DCC)
+
+poread.exe: poread\poread.dpr
+  $(DCC)
+
+msgidcopy.exe: msgidcopy\msgidcopy.dpr
+  $(DCC)
+
+MoReader.exe: moreader\MoReader.dpr
+  $(DCC)
+
+dfntopo.exe: dfntopo\dfntopo.dpr
+  $(DCC)
+
+dxgettext.exe: ..\dxgettext\dxgettext.dpr
+  $(DCC)
+
+

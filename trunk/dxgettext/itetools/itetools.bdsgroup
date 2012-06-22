@@ -1,0 +1,24 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<BorlandProject>
+  <PersonalityInfo>
+    <Option>
+      <Option Name="Personality">Default.Personality</Option>
+      <Option Name="ProjectType"></Option>
+      <Option Name="Version">1.0</Option>
+      <Option Name="GUID">{97BCCA7E-0CDE-4713-87DE-B791723C596A}</Option>
+    </Option>
+  </PersonalityInfo>
+  <Default.Personality>
+    
+    <Projects>
+      <Projects Name="dfntopo.exe">dfntopo\dfntopo.bdsproj</Projects>
+      <Projects Name="ixtopo.exe">ixtopo\ixtopo.bdsproj</Projects>
+      <Projects Name="poread.exe">poread\poread.bdsproj</Projects>
+      <Projects Name="msgidcopy.exe">msgidcopy\msgidcopy.bdsproj</Projects>
+      <Projects Name="MoReader.exe">moreader\MoReader.bdsproj</Projects>
+      <Projects Name="dxgettext.exe">..\dxgettext\dxgettext.bdsproj</Projects>
+      <Projects Name="Targets">dfntopo.exe ixtopo.exe poread.exe msgidcopy.exe MoReader.exe dxgettext.exe</Projects>
+    </Projects>
+    <Dependencies/>
+  </Default.Personality>
+</BorlandProject>

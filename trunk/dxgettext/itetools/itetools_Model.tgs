@@ -1,0 +1,11 @@
+<?xml version="1.0"?>
+<ProjectSupport>
+  <SupportedProjects>
+    <ProjectName>dxgettext</ProjectName>
+    <ProjectName>MoReader</ProjectName>
+    <ProjectName>poread</ProjectName>
+    <ProjectName>ixtopo</ProjectName>
+    <ProjectName>dfntopo</ProjectName>
+    <ProjectName>msgidcopy</ProjectName>
+  </SupportedProjects>
+</ProjectSupport>

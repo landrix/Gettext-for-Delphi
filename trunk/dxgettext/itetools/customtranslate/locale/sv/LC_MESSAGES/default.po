@@ -1,0 +1,136 @@
+# SOME DESCRIPTIVE TITLE.
+# Copyright (C) YEAR THE PACKAGE'S COPYRIGHT HOLDER
+# This file is distributed under the same license as the PACKAGE package.
+# FIRST AUTHOR <EMAIL@ADDRESS>, YEAR.
+#
+msgid ""
+msgstr ""
+"Project-Id-Version: Custom Translate Demo\n"
+"POT-Creation-Date: 2003-03-10 13:51\n"
+"PO-Revision-Date: 2003-03-10 14:00+0100\n"
+"Last-Translator: Peter Thörnqvist <peter3@peter3.com>\n"
+"Language-Team: English <none@nowhere.com>\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+
+#. Programmer's name for it: SEnvironment
+#: MainFrm.pas:43
+msgid "Environment"
+msgstr "Miljö"
+
+#. Programmer's name for it: SGeneral
+#: MainFrm.pas:44
+msgid "General"
+msgstr "Generellt"
+
+#. Programmer's name for it: SViewer
+#: MainFrm.pas:45
+msgid "Viewer"
+msgstr "Viewer"
+
+#. Programmer's name for it: SGantt
+#: MainFrm.pas:46
+msgid "Gantt"
+msgstr "Gantt"
+
+#. Programmer's name for it: SFontsAndColors
+#: MainFrm.pas:47
+msgid "Fonts and Colors"
+msgstr "Typsnitt och färger"
+
+#. Programmer's name for it: SResources
+#: MainFrm.pas:48
+msgid "Resources"
+msgstr "Resurser"
+
+#. Programmer's name for it: STasks
+#: MainFrm.pas:49
+msgid "Tasks"
+msgstr "Uppgifter"
+
+#. Programmer's name for it: SToolTips
+#: MainFrm.pas:50
+msgid "ToolTips"
+msgstr "InfoTips"
+
+#. Programmer's name for it: SOrders
+#: MainFrm.pas:51
+msgid "Orders"
+msgstr "Ordrar"
+
+#. Programmer's name for it: SColors
+#: MainFrm.pas:52
+msgid "Colors"
+msgstr "Färger"
+
+#. Form1..Caption
+#: MainFrm.dfm:6
+msgid "Custom Translator Demo"
+msgstr "Exempel på anpassad översättning"
+
+#. Form1..Font.Name
+#: MainFrm.dfm:11
+msgid "MS Shell Dlg 2"
+msgstr ""
+
+#. Form1..PageControl1..TabSheet1..Caption
+#: MainFrm.dfm:31
+msgid "Explanation"
+msgstr "Förklaring"
+
+#. Form1..PageControl1..TabSheet1..RichEdit1......Lines.Strings
+#: MainFrm.dfm:45
+msgid "dxgettext automatically extracts published string properties from dfm files and resourcestrings and string constants from source files. There are, however, some properties it can't extract automatically. You must then handle these translations yourself and this is a two step process:\n"
+msgstr "dxgettext automatically extracts published string properties from dfm files and resourcestrings and string constants from source files. There are, however, some properties it can't extract automatically. You must then handle these translations yourself and this is a two step process:\n"
+
+#. Form1..PageControl1..TabSheet1..RichEdit1....Lines.Strings
+#: MainFrm.dfm:46
+msgid "1. Get the original strings into the PO file"
+msgstr "1. Get the original strings into the PO file"
+
+#. Form1..PageControl1..TabSheet1..RichEdit1....Lines.Strings
+#: MainFrm.dfm:47
+msgid "2. Find and apply the translations at run-time"
+msgstr "2. Find and apply the translations at run-time"
+
+#. Form1..PageControl1..TabSheet1..RichEdit1......Lines.Strings
+#: MainFrm.dfm:55
+msgid "For step 1, you have two options: add the strings manually to the PO file or add them to the source file as consts or resourcestrings. Note that you don't need to actually use the const or resourcestring variables: it is enough that they are defined as strings somewhere in the source.\n"
+msgstr "For step 1, you have two options: add the strings manually to the PO file or add them to the source file as consts or resourcestrings. Note that you don't need to actually use the const or resourcestring variables: it is enough that they are defined as strings somewhere in the source.\n"
+
+#. Form1..PageControl1..TabSheet1..RichEdit1......Lines.Strings
+#: MainFrm.dfm:63
+msgid "In this demo, the strings in the listview is extracted by clicking the \"Extract\" button. The extracted strings are put into a memo in PO format. Next, you will need to copy these strings into your PO file (open with Notepad and add the strings at the bottom). The treeview is \"auto-translated\" since all the strings used by it are declared as resourcestrings in the source.\n"
+msgstr "In this demo, the strings in the listview is extracted by clicking the \"Extract\" button. The extracted strings are put into a memo in PO format. Next, you will need to copy these strings into your PO file (open with Notepad and add the strings at the bottom). The treeview is \"auto-translated\" since all the strings used by it are declared as resourcestrings in the source.\n"
+
+#. Form1..PageControl1..TabSheet1..RichEdit1......Lines.Strings
+#: MainFrm.dfm:70
+msgid "For step 2, you need to write a custom translation handler and register it. This demo has example handlers for both the listview and the treeview that you can copy verbatim to your own project. Make sure that the handler is registered (by calling TP_GlobalHandleClass) before calling TranslateProperties!\n"
+msgstr "For step 2, you need to write a custom translation handler and register it. This demo has example handlers for both the listview and the treeview that you can copy verbatim to your own project. Make sure that the handler is registered (by calling TP_GlobalHandleClass) before calling TranslateProperties!\n"
+
+#. Form1..PageControl1..TabSheet2..Caption
+#: MainFrm.dfm:79
+msgid "Extracted strings"
+msgstr "Utlästa texter"
+
+#. Form1..ListView1......Caption
+#: MainFrm.dfm:130
+msgid "Filename"
+msgstr "Filnamn"
+
+#. Form1..ListView1......Caption
+#: MainFrm.dfm:137
+msgid "Type"
+msgstr "Typ"
+
+#. Form1..btnExtract..Caption
+#: MainFrm.dfm:176
+msgid "Extract"
+msgstr "Läs texter"
+
+#. Form1..btnUseSV..Caption
+#: MainFrm.dfm:185
+msgid "Use Swedish"
+msgstr "Använd svenska"
+

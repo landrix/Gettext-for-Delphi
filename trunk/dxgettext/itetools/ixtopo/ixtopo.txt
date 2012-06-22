@@ -1,0 +1,12 @@
+What:
+ixtopo extracts translations from xml files exported from the ITE and puts them in a po file. Note that the po file and the msgid entries in it must already exist. This tool will not create the po file or add new entries to the po file.
+
+How:
+Start by creating a po file with the dxgettext tool. Next, open the Translation Repository in Delphi, select "Export" from the toolbar and export the content to an xml file. Open the xml file and study the BASE-LOCALE and TARGET-LOCALE items: you need to know their name before using this tool. Run this tool to extract the translations from the xml file and put them into the po file.
+
+Command line:
+ixtopo <xmlfile> <pofile> <locale>
+where
+<xmlfile> the xml file to read from
+<pofile> the po file to write to
+<locale> is the locale as defined in the xml file. Note that you can specify either the BASE-LOCALE name or any of the TARGET-LOCALEs as the string. You must include the name in quotes ("" or '') since the locale name contains a space (i.e "US en"). 
