@@ -1,0 +1,181 @@
+# SOME DESCRIPTIVE TITLE.
+# Copyright (C) YEAR THE PACKAGE'S COPYRIGHT HOLDER
+# This file is distributed under the same license as the PACKAGE package.
+# FIRST AUTHOR <EMAIL@ADDRESS>, YEAR.
+#
+msgid ""
+msgstr ""
+"Project-Id-Version: Translate 1.0\n"
+"POT-Creation-Date: 2003-07-02 09:14\n"
+"PO-Revision-Date: 2003-07-10 10:10+0100\n"
+"Last-Translator: XAN, Sandro Wendt <info@xan.de>\n"
+"Language-Team: XAN <info@xan.de>\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=utf-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+
+#. frmMain..Caption
+#: main_translation.dfm:6
+msgid "Autotranslate BPL-Ressources to PO file"
+msgstr "Autom. Übersetzung der BPL-Resourcen zu PO-Datei"
+
+#. frmMain..Font.Name
+#: main_translation.dfm:11
+msgid "MS Sans Serif"
+msgstr "MS Sans Serif"
+
+#. frmMain..panel2..Caption
+#: main_translation.dfm:34
+msgid "Step 2"
+msgstr "Schritt 2"
+
+#. frmMain..panel2..Label3..Caption
+#: main_translation.dfm:41
+msgid "PO file to merge :"
+msgstr "PO-Datei zum Verbinden :"
+
+#. frmMain..panel2..btMergePO..Caption
+#: main_translation.dfm:48
+msgid "Merge PO file"
+msgstr "Verbinde PO-Dateien"
+
+#. frmMain..panel2..edPO..Text
+#: main_translation.dfm:58
+msgid "delphi7.po"
+msgstr "delphi7_de.po"
+
+#. frmMain..panel2..chkUTF8..Caption
+#: main_translation.dfm:72
+msgid "write conforming to UTF8 (see your PO file setting)"
+msgstr "schreibe UTF8 konform (siehe PO-Datei Einstellungen)"
+
+#. frmMain..panel2..btCreatePO..Caption
+#: main_translation.dfm:82
+msgid "Create PO file"
+msgstr "Erstelle PO-Dateien"
+
+#. frmMain..panelClient..Values......Caption
+#: main_translation.dfm:112
+msgid "ID"
+msgstr "ID"
+
+#. frmMain..panelClient..Values......Caption
+#: main_translation.dfm:116
+msgid "BPL (english)"
+msgstr "BPL (englisch)"
+
+#. frmMain..panelClient..Values......Caption
+#: main_translation.dfm:120
+msgid "language dependent"
+msgstr "sprachabhängig"
+
+#. frmMain..panelClient..panel1..Caption
+#: main_translation.dfm:134
+msgid "Step 1"
+msgstr "Schritt 1"
+
+#. frmMain..panelClient..panel1..Label1..Caption
+#: main_translation.dfm:141
+msgid "BPL files to extract :"
+msgstr "zu extrahierende BPL-Dateien :"
+
+#. frmMain..panelClient..panel1..Label2..Caption
+#: main_translation.dfm:148
+msgid "Extension for corresponding language dependent ressourcefiles :"
+msgstr "Dateiendung für korrespondierende sprachabh. Resource-Dateien :"
+
+#. frmMain..panelClient..panel1..lbLoadInfo..Caption
+#. frmMain..panelClient..panel1..lbEntriesInfo..Caption
+#: main_translation.dfm:155
+#: main_translation.dfm:162
+msgid "-"
+msgstr "-"
+
+#. frmMain..panelClient..panel1..edBPL..Text
+#: main_translation.dfm:170
+msgid "c:\\winnt\\system32\\*.bpl"
+msgstr "c:\\winnt\\system32\\*.bpl"
+
+#. frmMain..panelClient..panel1..edLang..Text
+#: main_translation.dfm:178
+msgid ".de"
+msgstr ".de"
+
+#. frmMain..panelClient..panel1..btExtract..Caption
+#: main_translation.dfm:185
+msgid "Extract ressources"
+msgstr "Extrahiere Resourcen"
+
+#. frmMain..MainMenu1..Files1..Caption
+#: main_translation.dfm:210
+msgid "&Files"
+msgstr "&Dateien"
+
+#. frmMain..MainMenu1..Files1..Exit1..Caption
+#: main_translation.dfm:212
+msgid "&Exit"
+msgstr "&Ende"
+
+#. frmMain..MainMenu1..Extractions1..Caption
+#: main_translation.dfm:217
+msgid "&Ressources"
+msgstr "&Resourcen"
+
+#. frmMain..MainMenu1..Extractions1..Extract1..Caption
+#: main_translation.dfm:219
+msgid "&Extract"
+msgstr "&Extrahieren"
+
+#. frmMain..MainMenu1..Extractions1..Load1..Caption
+#: main_translation.dfm:223
+msgid "&Load"
+msgstr "&Laden"
+
+#. frmMain..MainMenu1..Extractions1..Save1..Caption
+#: main_translation.dfm:227
+msgid "&Save"
+msgstr "&Speichern"
+
+#. frmMain..MainMenu1..POfiles1..Caption
+#: main_translation.dfm:232
+msgid "&PO files"
+msgstr "&PO-Dateien"
+
+#. frmMain..MainMenu1..POfiles1..Merge1..Caption
+#: main_translation.dfm:234
+msgid "&Merge"
+msgstr "&Verbinden"
+
+#. frmMain..MainMenu1..POfiles1..Create1..Caption
+#: main_translation.dfm:237
+msgid "&Create"
+msgstr "&Erstellen"
+
+#. frmMain..MainMenu1..N1..Caption
+#: main_translation.dfm:241
+msgid "&?"
+msgstr "&?"
+
+#. frmMain..MainMenu1..N1..Help1..Caption
+#: main_translation.dfm:243
+msgid "&Help"
+msgstr "&Hilfe"
+
+#: main_translation.pas:340
+#: main_translation.pas:343
+msgid "Loading %s ..."
+msgstr "Lade %s ..."
+
+#: main_translation.pas:346
+msgid "%d translations available"
+msgstr "%d Übersetzungen verfügbar"
+
+#: main_translation.pas:351
+msgid "ready"
+msgstr "Fertig"
+
+#. allready filled -> do not replace it
+#: main_translation.pas:452
+msgid "row %d: %s -> %s -> %s"
+msgstr "Zeile %d: %s -> %s -> %s"
+

@@ -1,0 +1,8 @@
+Directory          Description
+=============================================================
+assemble           Puts all MO files into the .exe file
+msgmergePOT        Generates PO file if you have translated source code
+msgmkignore        Makes a list of PO file entries that do not seem translatable
+msgremove          Removes the entries in one PO file from another PO file
+msgstripCR         Removes \r from PO files
+stripifdef         Generates a Delphi 6/7 only version of gnugettext.pas from the CVS version

@@ -1,0 +1,105 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD HTML 4.01 Transitional//EN">
+
+<html>
+
+	<head>
+		<meta http-equiv="content-type" content="text/html;charset=iso-8859-1">
+		<title>Autotranslate BPL-Ressources to PO file</title>
+		<style type="text/css" media="screen"><!--
+body { font-family: Arial, Helvetica, Geneva, Swiss, SunSans-Regular }
+--></style>
+	</head>
+
+	<body bgcolor="#fffacd">
+		<table width="100%" border="0" cellspacing="5" cellpadding="0" bgcolor="#00bfff">
+			<tr>
+				<td>
+					<h1>Tool to autotranslate BPL-Ressources to PO file</h1>
+					(c)&nbsp;2003 XAN</td>
+			</tr>
+		</table>
+		<p></p>
+		<table width="100%" border="0" cellspacing="2" cellpadding="0">
+			<tr>
+				<td>
+					<h2><font color="#00bfff">Background:</font></h2>
+				</td>
+			</tr>
+		</table>
+		<p>Because I'm very lazy and it makes no fun to translate the messages one by one (Borland has done a good job and translated every ressourcestring and form to german language, why should I do it again?!) I have developed a tool to automatically translate the stringtables (ressourcestrings in Delphi) and Forms inside the Borland BPL files.</p>
+		<p>I only have to specify which BPL files and corresponding language dependent files (e.g. the pair VCL70.bpl and vcl70.de as the german ressource file) should be included for translation.</p>
+		<p>The tool than extracts and assigns the english and foreign stringtables. In the next step it will fill the PO template with the desired translations: searchs for the english text in the msgid lines and put the translation in the msgstr lines.</p>
+		<p>In a couple of minutes I was able to fill the Delphi7 template with the translations originally released by Borland ;)</p>
+		<p>The tool also able to create a PO template for your project (e.g. exe file) with all ressourcestrings and forms including that used by third party software.</p>
+		<p></p>
+		<table width="100%" border="0" cellspacing="2" cellpadding="0">
+			<tr>
+				<td>
+					<h2><font color="#00bfff">Hint:</font></h2>
+				</td>
+			</tr>
+		</table>
+		<p>The result (count of translated messages) will be the best if you use the Delphi Architect version.</p>
+		<p>Because I'm using only the Delphi Professional version and so are many BPLs like decision cube or WebSnap not included, only 83% of the PO file was filled.</p>
+		<p>This tool should work with all Delphi versions and languages wich are available through Borlands supplied language dependent ressource files.</p>
+		<p></p>
+		<table width="100%" border="0" cellspacing="2" cellpadding="0">
+			<tr>
+				<td>
+					<h2><font color="#00bfff">Using the tool:</font></h2>
+				</td>
+			</tr>
+		</table>
+		<h3>Merge PO file</h3>
+		<p>example: german Delphi 7 Professional and Win2000</p>
+		<p>first run:</p>
+		<ol>
+			<li>select &quot;&lt;windows system directory&gt;\*.bpl&quot; as files to extract.
+			<li>select &quot;.de&quot; as file extension for german ressource files.
+			<li>click &quot;extract ressources&quot;
+			<li>after a couple of minutes you can proceed with step 2:
+			<li>get the appropriate german template for Delphi7 from &quot;http://www.dybdahl.dk/dxgettext&quot;
+
+			<li>set the field with the PO file to merge to &quot;delphi7.po&quot;
+			<li>Uncheck the &quot;UTF8&quot;-box if the template does not use this format (UTF8 is default)
+			<li>click &quot;Merge PO file&quot; and the delphi7.po file will be filled with available translations		</ol>
+		<p>second run:</p>
+		<p>repeat the first run with &quot;&lt;Delphi install directory&gt;\bin\*.bpl&quot; as files to extract.</p>
+		<p>third run:</p>
+		<p>repeat the first run with &quot;&lt;Delphi install directory&gt;\rave5\*.bpl&quot; as files to extract.</p>
+		<h3>Create PO file:</h3>
+		<p>example: this translation tool</p>
+		<ol>
+			<li>select &quot;&lt;directory&gt;\translation.exe&quot; as file to extract.
+
+			<li>clear the field with the file extension.
+
+			<li>click &quot;extract ressources&quot;
+			<li>set the field with the PO file to merge to &quot;default.po&quot;
+			<li>click &quot;Create PO file&quot; and the default.po file will be filled with the strings included in translation.exe
+		</ol>
+		<p></p>
+		<table width="100%" border="0" cellspacing="2" cellpadding="0">
+			<tr>
+				<td>
+					<h2><font color="#00bfff">License:</font></h2>
+				</td>
+			</tr>
+		</table>
+		<p>This tool is licensed under MPL 1.1 (Mozilla Public License). See <a href="http://www.opensource.org/licenses/mozilla1.1.php" target="_blank">OSI</a> for complete text of the license before using this tool.</p>
+		<p>
+		</p>
+		<table width="100%" border="0" cellspacing="2" cellpadding="0">
+			<tr>
+				<td>
+					<h2><font color="#00bfff">Author:</font></h2>
+				</td>
+			</tr>
+		</table>
+		<p>(c) 2003 XAN<br>
+			<a href="http://www.xan.de" target="_blank">www.xan.de<br>
+			</a><a href="mailto:info@xan.de">info@xan.de</a></p>
+		<p></p>
+	</body>
+
+</html>
