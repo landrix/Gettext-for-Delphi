@@ -1,0 +1,41 @@
+object FormMain: TFormMain
+  Left = 383
+  Top = 464
+  Width = 349
+  Height = 111
+  HorzScrollBar.Range = 281
+  VertScrollBar.Range = 65
+  ActiveControl = ButtonTestGettext
+  Caption = 'GNU gettext sample application'
+  Color = clBackground
+  Font.CharSet = fcsUnicode
+  Font.Color = clBlack
+  Font.Height = 16
+  Font.Name = 'times new roman'
+  Font.Pitch = fpVariable
+  Font.Style = []
+  ParentFont = False
+  Position = poScreenCenter
+  OnCreate = FormCreate
+  PixelsPerInch = 96
+  TextHeight = 24
+  TextWidth = 8
+  object ButtonTestGettext: TButton
+    Left = 56
+    Top = 40
+    Width = 105
+    Height = 25
+    Caption = 'Click me'
+    TabOrder = 0
+    OnClick = ButtonTestGettextClick
+  end
+  object ButtonTestResourceString: TButton
+    Left = 176
+    Top = 40
+    Width = 105
+    Height = 25
+    Caption = 'Click me'
+    TabOrder = 1
+    OnClick = ButtonTestResourceStringClick
+  end
+end

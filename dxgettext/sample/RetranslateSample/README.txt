@@ -1,0 +1,1 @@
+This project requires Delphi 2009 or later.
