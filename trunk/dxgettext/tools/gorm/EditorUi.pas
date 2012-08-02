@@ -240,6 +240,8 @@ type
     mi_LabelsImportIgnore: TMenuItem;
     act_LabelsImportIgnore: TAction;
     N12: TMenuItem;
+    act_TransCreateMsgstr: TAction;
+    Createtranslationtrackingmsgstr1: TMenuItem;
     procedure MenuItemAboutClick(Sender: TObject);
     procedure act_FileExitExecute(Sender: TObject);
     procedure act_FileOpenExecute(Sender: TObject);
@@ -318,6 +320,7 @@ type
     procedure act_LabelsImportIgnoreExecute(Sender: TObject);
     procedure act_LabelsSaveIgnoreExecute(Sender: TObject);
     procedure act_AutoMicrosoftExecute(Sender: TObject);
+    procedure act_TransCreateMsgstrExecute(Sender: TObject);
   private
     CurrentFilename: string; // File currently opened (if any)
     Items: TPoEntryList; // Contains all item read from CurrentFilename
@@ -1556,6 +1559,32 @@ begin
 
   CloseGuiItem;
   CreateHTML;
+end;
+
+procedure TFormEditor.act_TransCreateMsgstrExecute(Sender: TObject);
+var  i: integer;
+  item: TPoEntry;
+  idlabel:string;
+  frm: TFormLabel;
+begin
+  if messagedlg('This will remove ALL existing translations from this file. Do you want to continue?',mtconfirmation,[mbyes,mbno],0)=mryes then
+  begin
+    frm:=TFormLabel.Create(self);
+    try
+      frm.editlabelname.editlabel.Caption:='Please specify an id that will'#13#10+'be included in the translations.';
+      frm.EditLabelName.Text := emptystr;
+      if (frm.ShowModal=mrOK) then
+        idlabel := frm.EditLabelName.Text
+      else
+        exit;
+    finally
+      FreeAndNil(frm);
+    end;
+    for i := 0 to Rows.Count - 1 do begin
+      (Rows.Objects[i] as TPoEntry).MsgStr:=inttostr(i)+idlabel+':'+(Rows.Objects[i] as TPoEntry).MsgId;
+    end;
+    ExecuteFilter;
+  end;
 end;
 
 procedure TFormEditor.act_LabelsAddStandardLabelsExecute(Sender: TObject);
