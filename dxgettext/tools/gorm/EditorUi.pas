@@ -1562,8 +1562,8 @@ begin
 end;
 
 procedure TFormEditor.act_TransCreateMsgstrExecute(Sender: TObject);
-var  i: integer;
-  item: TPoEntry;
+var
+  i: integer;
   idlabel:string;
   frm: TFormLabel;
 begin
