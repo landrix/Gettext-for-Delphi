@@ -441,14 +441,24 @@ begin
           if p = 0 then
             break;
 
-          s:=trim(copy(line,1,p-1));
-          if copy(s,length(s),1)='=' then begin
+          s := trim(copy(line, 1, p - 1));
+          if copy(s, length(s), 1) = '=' then
+          begin
             // Identifier probably precedes the string
-            s:=trim(copy(s,1,length(s)-1));
+            s := trim(copy(s, 1, length(s) - 1));
             if is_identifier(s) then
-              constident:=s
+            begin
+              constident := s;
+            end
             else
-              constident:='';
+            begin
+              constident := '';
+            end;
+          end
+          else
+          begin
+            //*** when no '=' in line the ident is unknown (maybe a line before...)
+            constident := '';
           end;
 
           delete(line, 1, p - 1);
