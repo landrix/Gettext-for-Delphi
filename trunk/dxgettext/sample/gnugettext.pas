@@ -80,12 +80,24 @@ interface
   // Delphi 2009 with Unicode
   {$DEFINE DELPHI2009OROLDER}
 {$endif}
+{$ifdef VER210}
+  // Delphi 2010 with Unicode
+  {$DEFINE DELPHI2010OROLDER}
+{$endif}
 {$ifdef VER220}
   // Delphi 2011 with Unicode
   {$DEFINE DELPHI2011OROLDER}
 {$endif}
 {$ifdef VER230}
   // Delphi 2012 with Unicode
+  {$DEFINE DELPHI2012OROLDER}
+{$endif}
+{$ifdef VER240}
+  // Delphi 2013/XE3 with Unicode
+  {$DEFINE DELPHI2013OROLDER}
+{$endif}
+
+{$ifdef DELPHI2013OROLDER}
   {$DEFINE DELPHI2012OROLDER}
 {$endif}
 
@@ -173,6 +185,7 @@ procedure TP_Ignore(AnObject:TObject; const name:ComponentNameString);
 procedure TP_IgnoreClass (IgnClass:TClass);
 procedure TP_IgnoreClassProperty (IgnClass:TClass;const propertyname:ComponentNameString);
 procedure TP_GlobalIgnoreClass (IgnClass:TClass);
+function TP_TryGlobalIgnoreClass (IgnClass:TClass): boolean;
 procedure TP_GlobalIgnoreClassProperty (IgnClass:TClass;const propertyname:ComponentNameString);
 procedure TP_GlobalHandleClass (HClass:TClass;Handler:TTranslator);
 procedure TranslateComponent(AnObject: TComponent; const TextDomain:DomainString='');
@@ -365,6 +378,7 @@ type
       procedure TP_Ignore(AnObject:TObject; const name:ComponentNameString);
       procedure TP_IgnoreClass (IgnClass:TClass);
       procedure TP_IgnoreClassProperty (IgnClass:TClass;propertyname:ComponentNameString);
+      function TP_TryGlobalIgnoreClass (IgnClass:TClass): boolean;
       procedure TP_GlobalIgnoreClass (IgnClass:TClass);
       procedure TP_GlobalIgnoreClassProperty (IgnClass:TClass;propertyname:ComponentNameString);
       procedure TP_GlobalHandleClass (HClass:TClass;Handler:TTranslator);
@@ -756,6 +770,11 @@ end;
 procedure TP_GlobalIgnoreClass (IgnClass:TClass);
 begin
   DefaultInstance.TP_GlobalIgnoreClass(IgnClass);
+end;
+
+function TP_TryGlobalIgnoreClass (IgnClass:TClass): boolean;
+begin
+  Result := DefaultInstance.TP_TryGlobalIgnoreClass (IgnClass);
 end;
 
 procedure TP_IgnoreClass (IgnClass:TClass);
@@ -1642,20 +1661,22 @@ begin
   {$endif}
 end;
 
-procedure TGnuGettextInstance.TP_GlobalIgnoreClass(IgnClass: TClass);
+function TGnuGettextInstance.TP_TryGlobalIgnoreClass (IgnClass:TClass): boolean;
 var
   cm:TClassMode;
   i:integer;
 begin
+  Result := false;
   for i:=0 to TP_GlobalClassHandling.Count-1 do begin
     cm:=TObject(TP_GlobalClassHandling.Items[i]) as TClassMode;
     if cm.HClass=IgnClass then
-      raise EGGProgrammingError.Create ('You cannot add a class to the ignore list that is already on that list: '+IgnClass.ClassName+'. You should keep all TP_Global functions in one place in your source code.');
+      exit; // class already in ignore list
     if IgnClass.InheritsFrom(cm.HClass) then begin
       // This is the place to insert this class
       cm:=TClassMode.Create;
       cm.HClass:=IgnClass;
       TP_GlobalClassHandling.Insert(i,cm);
+      Result := true;
       {$ifdef DXGETTEXTDEBUG}
       DebugWriteln ('Globally, class '+IgnClass.ClassName+' is being ignored.');
       {$endif}
@@ -1665,9 +1686,16 @@ begin
   cm:=TClassMode.Create;
   cm.HClass:=IgnClass;
   TP_GlobalClassHandling.Add(cm);
+  Result := true;
   {$ifdef DXGETTEXTDEBUG}
   DebugWriteln ('Globally, class '+IgnClass.ClassName+' is being ignored.');
   {$endif}
+end;
+
+procedure TGnuGettextInstance.TP_GlobalIgnoreClass(IgnClass: TClass);
+begin
+  if not TP_TryGlobalIgnoreClass(IgnClass) then
+    raise EGGProgrammingError.Create ('You cannot add a class to the ignore list that is already on that list: '+IgnClass.ClassName+'. You should keep all TP_Global functions in one place in your source code.');
 end;
 
 procedure TGnuGettextInstance.TP_GlobalIgnoreClassProperty(
