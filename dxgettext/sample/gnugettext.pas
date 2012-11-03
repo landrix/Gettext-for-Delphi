@@ -1,4 +1,4 @@
-﻿{*------------------------------------------------------------------------------
+{*------------------------------------------------------------------------------
   GNU gettext translation system for Delphi, Kylix, C++ Builder and others.
   All parts of the translation system are kept in this unit.
 
@@ -85,11 +85,11 @@ interface
   {$DEFINE DELPHI2010OROLDER}
 {$endif}
 {$ifdef VER220}
-  // Delphi 2011 with Unicode
+  // Delphi 2011/XE with Unicode
   {$DEFINE DELPHI2011OROLDER}
 {$endif}
 {$ifdef VER230}
-  // Delphi 2012 with Unicode
+  // Delphi 2012/XE2 with Unicode
   {$DEFINE DELPHI2012OROLDER}
 {$endif}
 {$ifdef VER240}
@@ -97,32 +97,14 @@ interface
   {$DEFINE DELPHI2013OROLDER}
 {$endif}
 
-{$ifdef DELPHI2013OROLDER}
-  {$DEFINE DELPHI2012OROLDER}
-{$endif}
-
-{$ifdef DELPHI2012OROLDER}
+{$ifdef DELPHI2007OROLDER}
   {$DEFINE DELPHI2011OROLDER}
 {$endif}
-
-{$ifdef DELPHI2011OROLDER}
-  {$DEFINE DELPHI2010OROLDER}
-{$endif}
-
-{$ifdef DELPHI2010OROLDER}
-  {$DEFINE DELPHI2009OROLDER}
-{$endif}
-
 {$ifdef DELPHI2009OROLDER}
-  {$DEFINE DELPHI2007OROLDER}
+  {$DEFINE DELPHI2011OROLDER}
 {$endif}
-
-{$ifdef DELPHI2007OROLDER}
-  {$DEFINE DELPHI7OROLDER}
-{$endif}
-
-{$ifdef DELPHI7OROLDER}
-  {$DEFINE DELPHI6OROLDER}
+{$ifdef DELPHI2010OROLDER}
+  {$DEFINE DELPHI2011OROLDER}
 {$endif}
 
 uses
@@ -968,17 +950,37 @@ begin
   DefaultInstance.UseLanguage(LanguageCode);
 end;
 
+// Delphi6: use integer (does not know NativeInt)
+// Delphi7: use integer (knows NativeInt, but it's not documented)
+// Delphi2005: use integer (knows NativeInt, but it's not documented)
+// Delphi2006: use integer (knows NativeInt, but it's not documented)
+// Delphi2007: use integer (knows NativeInt, but it's not documented)
+// Delphi2009: use integer (knows NativeInt, but it's not documented but mentioned where constants are documented)
+// Delphi2010: use integer (knows NativeInt and it's documented)
+// Delphi2011/XE: use integer (knows NativeInt and it's documented)
+// Delphi2012/XE2: use nativeint
+// DelphiX2013/XE3: use nativeint
+
+type
+{$IFDEF DELPHI2011OROLDER}
+  THInstanceType = Integer;
+  TNativeInt = Integer;
+{$ELSE}
+  THInstanceType = NativeInt;
+  TNativeInt= NativeInt;
+{$ENDIF}
+
 type
   PStrData = ^TStrData;
   TStrData = record
-    Ident: Integer;
+    Ident: TNativeInt;
     Str: String;
   end;
-  
-function SysUtilsEnumStringModules(Instance: {$IFDEF DELPHI2012OROLDER}NativeInt{$ELSE}Integer{$ENDIF DELPHI2012OROLDER}; Data: Pointer): Boolean;
+
+function SysUtilsEnumStringModules(Instance: THInstanceType; Data: Pointer): Boolean;
 {$IFDEF MSWINDOWS}
 var
-  Buffer: array [0..1023] of Char; // WideChar in Delphi 2008, AnsiChar before that
+  Buffer: array [0..1023] of Char; // WideChar in Delphi 2009, AnsiChar before that
 begin
   with PStrData(Data)^ do begin
     SetString(Str, Buffer,
@@ -1002,7 +1004,7 @@ begin
 end;
 {$ENDIF}
 
-function SysUtilsFindStringResource(Ident: NativeInt): string;
+function SysUtilsFindStringResource(Ident: TNativeInt): string;
 var
   StrData: TStrData;
 begin
