@@ -1,4 +1,4 @@
-{*------------------------------------------------------------------------------
+﻿{*------------------------------------------------------------------------------
   GNU gettext translation system for Delphi, Kylix, C++ Builder and others.
   All parts of the translation system are kept in this unit.
 
@@ -52,6 +52,7 @@ interface
 {$ifdef VER140}
   // Delphi 6
   {$DEFINE DELPHI2007OROLDER}
+  {$DEFINE DELPHI7OROLDER}
 {$ifdef MSWINDOWS}
   {$DEFINE DELPHI6OROLDER}
 {$endif}
@@ -59,6 +60,7 @@ interface
 {$ifdef VER150}
   // Delphi 7
   {$DEFINE DELPHI2007OROLDER}
+  {$DEFINE DELPHI7OROLDER}
 {$endif}
 {$ifdef VER160}
   // Delphi 8
@@ -116,6 +118,9 @@ uses
   CWString,
 {$endif}
 {$endif}
+{$IFNDEF DELPHI7OROLDER}
+  WideStrings,
+{$ENDIF DELPHI7OROLDER}
   Classes, StrUtils, SysUtils, TypInfo;
 
 (*****************************************************************************)
@@ -398,6 +403,9 @@ type
       procedure UnregisterWhenNewLanguageListener(Listener: IGnuGettextInstanceWhenNewLanguageListener);
     protected
       procedure TranslateStrings (sl:TStrings;const TextDomain:DomainString);
+      {$IFNDEF DELPHI7OROLDER}
+      procedure TranslateWideStrings (sl: TWideStrings;const TextDomain:DomainString);
+      {$ENDIF DELPHI7OROLDER}
 
       // Override these three, if you want to inherited from this class
       // to create a new class that handles other domain and language dependent
@@ -2001,6 +2009,13 @@ begin
           if Count<>0 then
             FreeMem (PropList);
         end;
+        {$IFNDEF DELPHI7OROLDER}
+        if AnObject is TWideStrings then begin
+          if ((AnObject as TWideStrings).Text<>'') and (TP_Retranslator<>nil) then
+            (TP_Retranslator as TTP_Retranslator).Remember(AnObject, 'Text', (AnObject as TWideStrings).Text);
+          TranslateWideStrings (AnObject as TWideStrings,TextDomain);
+        end;
+        {$ENDIF DELPHI7OROLDER}
         if AnObject is TStrings then begin
           if ((AnObject as TStrings).Text<>'') and (TP_Retranslator<>nil) then
             (TP_Retranslator as TTP_Retranslator).Remember(AnObject, 'Text', (AnObject as TStrings).Text);
@@ -2174,6 +2189,75 @@ begin
     end;
   end;
 end;
+
+{$IFNDEF DELPHI7OROLDER}
+procedure TGnuGettextInstance.TranslateWideStrings(sl: TWideStrings;
+  const TextDomain: DomainString);
+var
+  line: string;
+  i: integer;
+  s:TWideStringList;
+  {$ifdef DELPHI2009OROLDER}
+  slAsTStringList:TWideSringList;
+  originalOwnsObjects: Boolean;
+  {$endif}
+begin
+  if sl.Count > 0 then begin
+    // From D2009 onward, the TStringList class has a OwnsObjects property, just like
+    // TObjectList has. This means that when we will be calling Clear on the given
+    // list in the sl parameter, we could destroy the objects it contains.
+    // To avoid this we must disable OwnsObjects while we replace the strings, but
+    // only if sl is a TStringList instance and if using Delphi 2009 or upper.
+    {$ifdef DELPHI2009OROLDER}
+    originalOwnsObjects := False; // avoid warning
+    if sl is TWideStringList then
+      slAsTStringList := TWideStringList(sl)
+    else
+      slAsTStringList := nil;
+    {$endif}
+
+    sl.BeginUpdate;
+    try
+      s := TWideStringList.Create;
+      try
+        // don't use Assign here as it will propagate the Sorted property (among others)
+        // in versions of Delphi from Delphi XE ownard
+        s.AddStrings(sl);
+
+        for i:=0 to s.Count-1 do begin
+          line := s.Strings[i];
+          if line<>'' then
+            if TextDomain = '' then
+              s.Strings[i] := ComponentGettext(line)
+            else
+              s.Strings[i] := dgettext(TextDomain,line);
+        end;
+
+        {$ifdef DELPHI2009OROLDER}
+        if Assigned(slAsTStringList) then begin
+          originalOwnsObjects := slAsTStringList.OwnsObjects;
+          slAsTStringList.OwnsObjects := False;
+        end;
+        {$endif}
+        try
+          // same here, we don't want to modify the properties of the orignal string list
+          sl.Clear;
+          sl.AddStrings(s);
+        finally
+          {$ifdef DELPHI2009OROLDER}
+          if Assigned(slAsTStringList) then
+            slAsTStringList.OwnsObjects := originalOwnsObjects;
+          {$endif}
+        end;
+      finally
+        FreeAndNil (s);
+      end;
+    finally
+      sl.EndUpdate;
+    end;
+  end;
+end;
+{$ENDIF DELPHI7OROLDER}
 
 function TGnuGettextInstance.GetTranslatorNameAndEmail: TranslatedUnicodeString;
 begin
