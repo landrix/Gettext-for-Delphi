@@ -1,4 +1,4 @@
-﻿{*------------------------------------------------------------------------------
+{*------------------------------------------------------------------------------
   GNU gettext translation system for Delphi, Kylix, C++ Builder and others.
   All parts of the translation system are kept in this unit.
 
@@ -51,63 +51,85 @@ interface
 
 {$ifdef VER140}
   // Delphi 6
-  {$DEFINE DELPHI2007OROLDER}
-  {$DEFINE DELPHI7OROLDER}
-{$ifdef MSWINDOWS}
-  {$DEFINE DELPHI6OROLDER}
-{$endif}
+  {$DEFINE dx_Hinstance_is_Integer}
+  {$DEFINE dx_NativeInt_is_Integer}
 {$endif}
 {$ifdef VER150}
   // Delphi 7
-  {$DEFINE DELPHI2007OROLDER}
-  {$DEFINE DELPHI7OROLDER}
+  {$DEFINE dx_has_Unsafe_Warnings}
+  {$DEFINE dx_Hinstance_is_Integer}
+  {$DEFINE dx_NativeInt_is_Integer}
 {$endif}
 {$ifdef VER160}
   // Delphi 8
-  {$DEFINE DELPHI2007OROLDER}
+  {$DEFINE dx_has_Unsafe_Warnings}
+  {$DEFINE dx_has_WideStrings}
+  {$DEFINE dx_Hinstance_is_Integer}
+  {$DEFINE dx_NativeInt_is_Integer}
 {$endif}
 {$ifdef VER170}
   // Delphi 2005
-  {$DEFINE DELPHI2007OROLDER}
+  {$DEFINE dx_has_Unsafe_Warnings}
+  {$DEFINE dx_has_WideStrings}
+  {$DEFINE dx_Hinstance_is_Integer}
+  {$DEFINE dx_NativeInt_is_Integer}
 {$endif}
 {$ifdef VER180}
   // Delphi 2006
-  {$DEFINE DELPHI2007OROLDER}
+  {$DEFINE dx_has_Unsafe_Warnings}
+  {$DEFINE dx_has_WideStrings}
+  {$DEFINE dx_Hinstance_is_Integer}
+  {$DEFINE dx_NativeInt_is_Integer}
 {$endif}
 {$ifdef VER190}
   // Delphi 2007
-  {$DEFINE DELPHI2007OROLDER}
+  {$DEFINE dx_has_Unsafe_Warnings}
+  {$DEFINE dx_has_WideStrings}
+  {$DEFINE dx_Hinstance_is_Integer}
+  {$DEFINE dx_NativeInt_is_Integer}
 {$endif}
 {$ifdef VER200}
   // Delphi 2009 with Unicode
-  {$DEFINE DELPHI2009OROLDER}
+  {$DEFINE dx_has_Unsafe_Warnings}
+  {$DEFINE dx_has_WideStrings}
+  {$DEFINE dx_Hinstance_is_Integer}
+  {$DEFINE dx_NativeInt_is_Integer}
+  {$DEFINE dx_StringList_has_OwnsObjects}
 {$endif}
 {$ifdef VER210}
   // Delphi 2010 with Unicode
-  {$DEFINE DELPHI2010OROLDER}
+  {$DEFINE dx_has_Unsafe_Warnings}
+  {$DEFINE dx_has_WideStrings}
+  {$DEFINE dx_Hinstance_is_Integer}
+  {$DEFINE dx_NativeInt_is_Integer}
+  {$DEFINE dx_StringList_has_OwnsObjects}
 {$endif}
 {$ifdef VER220}
   // Delphi 2011/XE with Unicode
-  {$DEFINE DELPHI2011OROLDER}
+  {$DEFINE dx_has_Unsafe_Warnings}
+  {$DEFINE dx_has_WideStrings}
+  {$DEFINE dx_Hinstance_is_Integer}
+  {$DEFINE dx_NativeInt_is_Integer}
+  {$DEFINE dx_StringList_has_OwnsObjects}
 {$endif}
 {$ifdef VER230}
   // Delphi 2012/XE2 with Unicode
-  {$DEFINE DELPHI2012OROLDER}
+  {$DEFINE dx_has_Unsafe_Warnings}
+  {$DEFINE dx_has_WideStrings}
+  {$DEFINE dx_StringList_has_OwnsObjects}
 {$endif}
 {$ifdef VER240}
   // Delphi 2013/XE3 with Unicode
-  {$DEFINE DELPHI2013OROLDER}
+  {$DEFINE dx_has_Unsafe_Warnings}
+  {$DEFINE dx_has_WideStrings}
+  {$DEFINE dx_StringList_has_OwnsObjects}
 {$endif}
 
-{$ifdef DELPHI2007OROLDER}
-  {$DEFINE DELPHI2011OROLDER}
-{$endif}
-{$ifdef DELPHI2009OROLDER}
-  {$DEFINE DELPHI2011OROLDER}
-{$endif}
-{$ifdef DELPHI2010OROLDER}
-  {$DEFINE DELPHI2011OROLDER}
-{$endif}
+{$ifdef dx_has_Unsafe_Warnings}
+  {$WARN UNSAFE_TYPE OFF}
+  {$WARN UNSAFE_CODE OFF}
+  {$WARN UNSAFE_CAST OFF}
+{$endif dx_has_Unsafe_Warnings}
 
 uses
 {$ifdef MSWINDOWS}
@@ -118,9 +140,9 @@ uses
   CWString,
 {$endif}
 {$endif}
-{$IFNDEF DELPHI7OROLDER}
+{$IFDEF dx_has_WideStrings}
   WideStrings,
-{$ENDIF DELPHI7OROLDER}
+{$ENDIF dx_has_WideStrings}
   Classes, StrUtils, SysUtils, TypInfo;
 
 (*****************************************************************************)
@@ -244,14 +266,6 @@ procedure HookIntoResourceStrings (enabled:boolean=true; SupportPackages:boolean
 (*  in your application at the same time                                     *)
 (*                                                                           *)
 (*****************************************************************************)
-
-{$ifdef MSWINDOWS}
-{$ifndef DELPHI6OROLDER}
-{$WARN UNSAFE_TYPE OFF}
-{$WARN UNSAFE_CODE OFF}
-{$WARN UNSAFE_CAST OFF}
-{$endif DELPHI6OROLDER}
-{$endif MSWINDOWS}
 
 type
   TOnDebugLine = Procedure (Sender: TObject; const Line: String; var Discard: Boolean) of Object;  // Set Discard to false if output should still go to ordinary debug log
@@ -403,9 +417,9 @@ type
       procedure UnregisterWhenNewLanguageListener(Listener: IGnuGettextInstanceWhenNewLanguageListener);
     protected
       procedure TranslateStrings (sl:TStrings;const TextDomain:DomainString);
-      {$IFNDEF DELPHI7OROLDER}
+      {$IFDEF dx_has_WideStrings}
       procedure TranslateWideStrings (sl: TWideStrings;const TextDomain:DomainString);
-      {$ENDIF DELPHI7OROLDER}
+      {$ENDIF dx_has_WideStrings}
 
       // Override these three, if you want to inherited from this class
       // to create a new class that handles other domain and language dependent
@@ -958,25 +972,18 @@ begin
   DefaultInstance.UseLanguage(LanguageCode);
 end;
 
-// Delphi6: use integer (does not know NativeInt)
-// Delphi7: use integer (knows NativeInt, but it's not documented)
-// Delphi2005: use integer (knows NativeInt, but it's not documented)
-// Delphi2006: use integer (knows NativeInt, but it's not documented)
-// Delphi2007: use integer (knows NativeInt, but it's not documented)
-// Delphi2009: use integer (knows NativeInt, but it's not documented but mentioned where constants are documented)
-// Delphi2010: use integer (knows NativeInt and it's documented)
-// Delphi2011/XE: use integer (knows NativeInt and it's documented)
-// Delphi2012/XE2: use nativeint
-// DelphiX2013/XE3: use nativeint
-
 type
-{$IFDEF DELPHI2011OROLDER}
+{$ifdef dx_Hinstance_is_Integer}
   THInstanceType = Integer;
-  TNativeInt = Integer;
-{$ELSE DELPHI2011OROLDER}
+{$else dx_Hinstance_is_Integer}
   THInstanceType = NativeInt;
+{$endif dx_Hinstance_is_Integer}
+
+{$ifdef dx_NativeInt_is_Integer}
+  TNativeInt = Integer;
+{$else dx_NativeInt_is_Integer}
   TNativeInt= NativeInt;
-{$ENDIF DELPHI2011OROLDER}
+{$endif dx_NativeInt_is_Integer}
 
 type
   PStrData = ^TStrData;
@@ -2009,13 +2016,13 @@ begin
           if Count<>0 then
             FreeMem (PropList);
         end;
-        {$IFNDEF DELPHI7OROLDER}
+        {$IFDEF dx_has_WideStrings}
         if AnObject is TWideStrings then begin
           if ((AnObject as TWideStrings).Text<>'') and (TP_Retranslator<>nil) then
             (TP_Retranslator as TTP_Retranslator).Remember(AnObject, 'Text', (AnObject as TWideStrings).Text);
           TranslateWideStrings (AnObject as TWideStrings,TextDomain);
         end;
-        {$ENDIF DELPHI7OROLDER}
+        {$ENDIF dx_has_WideStrings}
         if AnObject is TStrings then begin
           if ((AnObject as TStrings).Text<>'') and (TP_Retranslator<>nil) then
             (TP_Retranslator as TTP_Retranslator).Remember(AnObject, 'Text', (AnObject as TStrings).Text);
@@ -2129,15 +2136,15 @@ var
   line: string;
   i: integer;
   s:TStringList;
-  {$ifdef DELPHI2009OROLDER}
+  {$ifdef dx_StringList_has_OwnsObjects}
   slAsTStringList:TStringList;
   originalOwnsObjects: Boolean;
-  {$endif DELPHI2009OROLDER}
+  {$endif dx_StringList_has_OwnsObjects}
 begin
   if sl.Count > 0 then begin
-    {$ifdef DELPHI2009OROLDER}
-    // From D2009 onward, the TStringList class has a OwnsObjects property, just like
-    // TObjectList has. This means that when we will be calling Clear on the given
+    {$ifdef dx_StringList_has_OwnsObjects}
+    // From D2009 onward, the TStringList class has an OwnsObjects property, just like
+    // TObjectList has. This means that if we call Clear on the given
     // list in the sl parameter, we could destroy the objects it contains.
     // To avoid this we must disable OwnsObjects while we replace the strings, but
     // only if sl is a TStringList instance and if using Delphi 2009 or upper.
@@ -2146,7 +2153,7 @@ begin
       slAsTStringList := TStringList(sl)
     else
       slAsTStringList := nil;
-    {$endif DELPHI2009OROLDER}
+    {$endif dx_StringList_has_OwnsObjects}
 
     sl.BeginUpdate;
     try
@@ -2165,21 +2172,21 @@ begin
               s.Strings[i]:=dgettext(TextDomain,line);
         end;
 
-        {$ifdef DELPHI2009OROLDER}
+        {$ifdef dx_StringList_has_OwnsObjects}
         if Assigned(slAsTStringList) then begin
           originalOwnsObjects := slAsTStringList.OwnsObjects;
           slAsTStringList.OwnsObjects := False;
         end;
-        {$endif DELPHI2009OROLDER}
+        {$endif dx_StringList_has_OwnsObjects}
         try
           // same here, we don't want to modify the properties of the orignal string list
           sl.Clear;
           sl.AddStrings(s);
         finally
-          {$ifdef DELPHI2009OROLDER}
+          {$ifdef dx_StringList_has_OwnsObjects}
           if Assigned(slAsTStringList) then
             slAsTStringList.OwnsObjects := originalOwnsObjects;
-          {$endif DELPHI2009OROLDER}
+          {$endif dx_StringList_has_OwnsObjects}
         end;
       finally
         FreeAndNil (s);
@@ -2190,22 +2197,22 @@ begin
   end;
 end;
 
-{$IFNDEF DELPHI7OROLDER}
+{$IFDEF dx_has_WideStrings}
 procedure TGnuGettextInstance.TranslateWideStrings(sl: TWideStrings;
   const TextDomain: DomainString);
 var
   line: string;
   i: integer;
   s:TWideStringList;
-  {$ifdef DELPHI2009OROLDER}
-  slAsTStringList:TWideSringList;
+  {$ifdef dx_StringList_has_OwnsObjects}
+  slAsTStringList:TWideStringList;
   originalOwnsObjects: Boolean;
-  {$endif DELPHI2009OROLDER}
+  {$endif dx_StringList_has_OwnsObjects}
 begin
   if sl.Count > 0 then begin
-    {$ifdef DELPHI2009OROLDER}
+    {$ifdef dx_StringList_has_OwnsObjects}
     // From D2009 onward, the TStringList class has a OwnsObjects property, just like
-    // TObjectList has. This means that when we will be calling Clear on the given
+    // TObjectList has. This means that if we call Clear on the given
     // list in the sl parameter, we could destroy the objects it contains.
     // To avoid this we must disable OwnsObjects while we replace the strings, but
     // only if sl is a TStringList instance and if using Delphi 2009 or upper.
@@ -2214,7 +2221,7 @@ begin
       slAsTStringList := TWideStringList(sl)
     else
       slAsTStringList := nil;
-    {$endif DELPHI2009OROLDER}
+    {$endif dx_StringList_has_OwnsObjects}
 
     sl.BeginUpdate;
     try
@@ -2233,21 +2240,21 @@ begin
               s.Strings[i] := dgettext(TextDomain,line);
         end;
 
-        {$ifdef DELPHI2009OROLDER}
+        {$ifdef dx_StringList_has_OwnsObjects}
         if Assigned(slAsTStringList) then begin
           originalOwnsObjects := slAsTStringList.OwnsObjects;
           slAsTStringList.OwnsObjects := False;
         end;
-        {$endif DELPHI2009OROLDER}
+        {$endif dx_StringList_has_OwnsObjects}
         try
           // same here, we don't want to modify the properties of the orignal string list
           sl.Clear;
           sl.AddStrings(s);
         finally
-          {$ifdef DELPHI2009OROLDER}
+          {$ifdef dx_StringList_has_OwnsObjects}
           if Assigned(slAsTStringList) then
             slAsTStringList.OwnsObjects := originalOwnsObjects;
-          {$endif DELPHI2009OROLDER}
+          {$endif dx_StringList_has_OwnsObjects}
         end;
       finally
         FreeAndNil (s);
@@ -2257,7 +2264,7 @@ begin
     end;
   end;
 end;
-{$ENDIF DELPHI7OROLDER}
+{$ENDIF dx_has_WideStrings}
 
 function TGnuGettextInstance.GetTranslatorNameAndEmail: TranslatedUnicodeString;
 begin
