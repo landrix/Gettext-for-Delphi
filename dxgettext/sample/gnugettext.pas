@@ -250,8 +250,8 @@ procedure HookIntoResourceStrings (enabled:boolean=true; SupportPackages:boolean
 {$WARN UNSAFE_TYPE OFF}
 {$WARN UNSAFE_CODE OFF}
 {$WARN UNSAFE_CAST OFF}
-{$endif}
-{$endif}
+{$endif DELPHI6OROLDER}
+{$endif MSWINDOWS}
 
 type
   TOnDebugLine = Procedure (Sender: TObject; const Line: String; var Discard: Boolean) of Object;  // Set Discard to false if output should still go to ordinary debug log
@@ -973,10 +973,10 @@ type
 {$IFDEF DELPHI2011OROLDER}
   THInstanceType = Integer;
   TNativeInt = Integer;
-{$ELSE}
+{$ELSE DELPHI2011OROLDER}
   THInstanceType = NativeInt;
   TNativeInt= NativeInt;
-{$ENDIF}
+{$ENDIF DELPHI2011OROLDER}
 
 type
   PStrData = ^TStrData;
@@ -2132,21 +2132,21 @@ var
   {$ifdef DELPHI2009OROLDER}
   slAsTStringList:TStringList;
   originalOwnsObjects: Boolean;
-  {$endif}
+  {$endif DELPHI2009OROLDER}
 begin
   if sl.Count > 0 then begin
+    {$ifdef DELPHI2009OROLDER}
     // From D2009 onward, the TStringList class has a OwnsObjects property, just like
     // TObjectList has. This means that when we will be calling Clear on the given
     // list in the sl parameter, we could destroy the objects it contains.
     // To avoid this we must disable OwnsObjects while we replace the strings, but
     // only if sl is a TStringList instance and if using Delphi 2009 or upper.
-    {$ifdef DELPHI2009OROLDER}
     originalOwnsObjects := False; // avoid warning
     if sl is TStringList then
       slAsTStringList := TStringList(sl)
     else
       slAsTStringList := nil;
-    {$endif}
+    {$endif DELPHI2009OROLDER}
 
     sl.BeginUpdate;
     try
@@ -2170,7 +2170,7 @@ begin
           originalOwnsObjects := slAsTStringList.OwnsObjects;
           slAsTStringList.OwnsObjects := False;
         end;
-        {$endif}
+        {$endif DELPHI2009OROLDER}
         try
           // same here, we don't want to modify the properties of the orignal string list
           sl.Clear;
@@ -2179,7 +2179,7 @@ begin
           {$ifdef DELPHI2009OROLDER}
           if Assigned(slAsTStringList) then
             slAsTStringList.OwnsObjects := originalOwnsObjects;
-          {$endif}
+          {$endif DELPHI2009OROLDER}
         end;
       finally
         FreeAndNil (s);
@@ -2200,21 +2200,21 @@ var
   {$ifdef DELPHI2009OROLDER}
   slAsTStringList:TWideSringList;
   originalOwnsObjects: Boolean;
-  {$endif}
+  {$endif DELPHI2009OROLDER}
 begin
   if sl.Count > 0 then begin
+    {$ifdef DELPHI2009OROLDER}
     // From D2009 onward, the TStringList class has a OwnsObjects property, just like
     // TObjectList has. This means that when we will be calling Clear on the given
     // list in the sl parameter, we could destroy the objects it contains.
     // To avoid this we must disable OwnsObjects while we replace the strings, but
     // only if sl is a TStringList instance and if using Delphi 2009 or upper.
-    {$ifdef DELPHI2009OROLDER}
     originalOwnsObjects := False; // avoid warning
     if sl is TWideStringList then
       slAsTStringList := TWideStringList(sl)
     else
       slAsTStringList := nil;
-    {$endif}
+    {$endif DELPHI2009OROLDER}
 
     sl.BeginUpdate;
     try
@@ -2238,7 +2238,7 @@ begin
           originalOwnsObjects := slAsTStringList.OwnsObjects;
           slAsTStringList.OwnsObjects := False;
         end;
-        {$endif}
+        {$endif DELPHI2009OROLDER}
         try
           // same here, we don't want to modify the properties of the orignal string list
           sl.Clear;
@@ -2247,7 +2247,7 @@ begin
           {$ifdef DELPHI2009OROLDER}
           if Assigned(slAsTStringList) then
             slAsTStringList.OwnsObjects := originalOwnsObjects;
-          {$endif}
+          {$endif DELPHI2009OROLDER}
         end;
       finally
         FreeAndNil (s);
