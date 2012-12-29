@@ -123,6 +123,7 @@ interface
   {$DEFINE dx_has_Unsafe_Warnings}
   {$DEFINE dx_has_WideStrings}
   {$DEFINE dx_StringList_has_OwnsObjects}
+  {$DEFINE dx_GetStrProp_reads_unicode}
 {$endif}
 
 {$ifdef dx_has_Unsafe_Warnings}
@@ -1835,10 +1836,14 @@ begin
             tkString, tkLString :
               old := GetStrProp(AnObject, PropName);
             tkWString :
-              old := GetWideStrProp(AnObject, PropName);
+              old :=
+                {$IFDEF dx_GetStrProp_reads_unicode}GetStrProp{$ELSE}GetWideStrProp{$ENDIF}
+                  (AnObject, PropName);
             {$IFDEF UNICODE}
             tkUString :
-              old := GetUnicodeStrProp(AnObject, PropName);
+              old :=
+                {$IFDEF dx_GetStrProp_reads_unicode}GetStrProp{$ELSE}GetUnicodeStrProp{$ENDIF}
+                  (AnObject, PropName);
             {$ENDIF}
           else
             raise Exception.Create ('Internal error: Illegal property type. This problem needs to be solved by a programmer, try to find a workaround.');
