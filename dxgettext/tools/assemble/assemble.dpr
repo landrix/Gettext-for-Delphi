@@ -22,16 +22,16 @@ begin
     textdomain('dxgettext');
     AddDomainForResourceString('delphi');
     AddDomainForResourceString('kylix');
-    conapp:=TConsoleApp.Create;
+    conapp := TConsoleApp.Create;
     try
       conapp.Execute;
     finally
-      FreeAndNil (conapp);
+      FreeAndNil(conapp);
     end;
   except
-    on e:Exception do begin
-      consoleoutput.writeln (e.Message);
+    on e: Exception do begin
+      consoleoutput.writeln ('Error: ' + e.Message + ' (' + e.ClassName + ')');
       ExitCode:=1;
-    end;
+    end;  
   end;
 end.
