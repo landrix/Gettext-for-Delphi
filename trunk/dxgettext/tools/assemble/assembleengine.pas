@@ -11,6 +11,7 @@ type
     class
     public
       exefilename:string;
+      basedirectory: string;
       detectioncode:RawByteString;
       startheader:RawByteString;
       endheader:RawByteString;
@@ -18,12 +19,11 @@ type
       filelist:TStringList;  // Objects are TFileInfo
       constructor Create;
       destructor Destroy; override;
-      procedure PrepareFileList; // Always run that before Execute;
+      procedure PrepareFileList(const dir: string); // Always run that before Execute;
       procedure SkipFile (filename:string); // removes item from list
       procedure Execute;
       procedure SetGnuGettextPatchCode;
     private
-      basedirectory:string;
       procedure RecurseDirs (list:TStringList; dir:string);
       function FindSignature(const signature: RawByteString; str: TFileStream): Boolean;
     end;
@@ -31,7 +31,8 @@ type
 implementation
 
 uses
-  SysUtils, StrUtils,
+  SysUtils,
+  StrUtils,
   gnugettext;
 
 type
@@ -84,19 +85,22 @@ var
   fi:TFileInfo;
   relativeoffsethelper,
   tableoffset:int64;
+  s: string;
 begin
-  if exefilename='' then
-    raise Exception.Create (_('No .exe filename specified.'));
-
-  basedirectory:=extractfilepath(exefilename);
+  if exefilename = '' then
+    raise Exception.Create(_('No .exe filename specified.'));
+  if basedirectory = '' then
+    basedirectory := ExtractFilePath(exefilename);
+  basedirectory := IncludeTrailingPathDelimiter(basedirectory);
+  basedirectory := IncludeTrailingPathDelimiter(basedirectory + 'locale\');
 
   // Find all files to include
   if filelist.count=0 then
-    PrepareFileList;
+    PrepareFileList(basedirectory);
   filelist.Sort;
 
   if filelist.Count = 0 then begin
-    WriteLn('No .mo files found, leaving the executable unchanged.');
+    WriteLn(Format('No .mo files found in "%s", leaving the executable unchanged.', [basedirectory]));
     exit;
   end;
   str:=TFileStream.Create (exefilename,fmOpenReadWrite);
@@ -104,10 +108,8 @@ begin
     if not FindSignature(detectioncode, str) then
       raise Exception.Create (Format(_('Signature "%s" was not found in .exe file. Please make sure the .exe file has been compiled with the correct libraries.'), [detectioncode]));
 
-    if FindSignature(startheader,str) or FindSignature(endheader,str) then
-    begin
-      raise Exception.Create (_('This file has already been modified. Please recompile this .exe file.'));
-    end;
+    if FindSignature(startheader, str) or FindSignature(endheader, str) then
+      raise Exception.Create(_('This file has already been modified. Please recompile this .exe file.'));
 
     // add new begin header to the end of the exe file
     str.Seek(0, soFromEnd);
@@ -118,7 +120,8 @@ begin
     str.Seek(0, soFromEnd);
     for i:=0 to filelist.count-1 do begin
       fi:=filelist.objects[i] as TFileInfo;
-      infile:=TFileStream.Create (basedirectory+fi.filename, fmOpenRead);
+      writeln('Adding file: ', fi.filename);
+      infile := TFileStream.Create(fi.filename, fmOpenRead);
       try
         fi.offset:=str.Position;
         fi.size:=infile.Size;
@@ -141,7 +144,9 @@ begin
       StreamWriteInt64(str,nextpos-relativeoffsethelper);
       StreamWriteInt64(str,fi.offset-relativeoffsethelper);
       StreamWriteInt64(str,fi.size);
-      StreamWriteRaw (str,utf8encode(fi.filename));
+      s := 'locale\'+Copy(fi.filename, Length(basedirectory) + 1);
+      Writeln('Adding Header: ', s);
+      StreamWriteRaw(str, utf8encode(s));
     end;
     while str.position<>nextpos do
       StreamWriteRaw (str,' ');
@@ -178,13 +183,6 @@ begin
   while true do begin
     rd:=str.Read(b[1],bufsize);
     p:=pos(signature,a+b);
-// bugfix: This did not find signatures that were located within the last part of the
-//         file at > (Filesize div bufsize) * bufsize + 100
-//         The point of the second part of the if condition is beyond me anyway because
-//         the expensive part of searching is in the pos call above and has already
-//         been executed. So what was the point of this? Some kind of optimization I don't
-//         understand? -- 2011-08-20 twm
-//    if (p<>0) and (p<bufsize+100) then begin
     if p<>0 then begin
       Result:=True;
       exit;
@@ -197,10 +195,10 @@ begin
   end;
 end;
 
-procedure Tassembleengine.PrepareFileList;
+procedure Tassembleengine.PrepareFileList(const dir: string);
 begin
-  if filelist.Count=0 then
-    RecurseDirs (filelist, 'locale'+PathDelim);
+  if filelist.Count = 0 then
+    RecurseDirs(filelist, dir);
 end;
 
 procedure Tassembleengine.RecurseDirs(list: TStringList; dir: string);
@@ -219,7 +217,7 @@ begin
       dirlist.Delete (0);
       
       // Scan this directory for subdirectories
-      more:=FindFirst (basedirectory+dir+'*',faAnyFile,sr)=0;
+      more := FindFirst(dir + '*', faAnyFile, sr) = 0;
       while more do begin
         if (sr.Name<>'.') and (sr.Name<>'..') then begin
           if sr.Attr and faDirectory<>0 then begin
@@ -231,7 +229,7 @@ begin
       FindClose (sr);
 
       // Scan this directory for files
-      more:=FindFirst (basedirectory+dir+filemask,faAnyFile,sr)=0;
+      more := FindFirst(dir + filemask, faAnyFile, sr) = 0;
       while more do begin
         if (sr.Name<>'.') and (sr.Name<>'..') then begin
           if sr.Attr and faDirectory=0 then begin
@@ -265,7 +263,8 @@ var
   idx:integer;
 begin
   idx:=filelist.IndexOf(filename);
-  if idx=-1 then raise Exception.Create ('Internal error. Filename not found in list: '+filename);
+  if idx = -1 then
+    raise Exception.Create('Internal error. Filename not found in list: ' + filename);
   filelist.Objects[idx].Free;
   filelist.Delete(idx);
 end;
