@@ -49,6 +49,24 @@ interface
 // Use DefaultInstance.DebugLogToFile() to write the log to a file.
 { $define DXGETTEXTDEBUG}
 
+// ### LO - Workaround aka hack for programs compiled with German Delphi
+//
+// If the current OS Language is not German, immediately add a Delphi RTL domain
+// to the resource domains and bind the text domain to a fixed German->English
+// translation.
+// Using a fixed German->English translation because the OS
+// Language may not be one of the installed translations.
+// Otherwise the German RTL resourcestrings will not be translated.
+// This results in German menu shortcuts 'Strg+', 'Umsch+' instead of
+// 'Ctrl+', 'Shift+' and so on.
+//
+// Since there is no way to automatically determine whether the compiling version
+// is German, you must enable the following conditional define to enable it.
+// Be warned: This has not been thoroughly tested.
+// Default is turned off.
+{.$define dx_German_Delphi_fix}  
+
+
 {$ifdef VER140}
   // Delphi 6
   {$DEFINE dx_Hinstance_is_Integer}
@@ -3404,6 +3422,38 @@ begin
   end;
 end;
 
+{$ifdef dx_German_Delphi_fix}  
+  // ### LO - Workaround for programs compiled with German Delphi
+  //
+  // If the current OS Language is not German, immediately add a Delphi RTL domain
+  // to the resource domains and bind the text domain to a fixed German->English
+  // translation.
+  // Using a fixed German->English translation because the OS
+  // Language may not be one of the installed translations.
+  // Otherwise the German RTL resourcestrings will not be translated.
+  // This results in German menu shortcuts 'Strg+', 'Umsch+' instead of
+  // 'Ctrl+', 'Shift+' and so on.
+ 
+procedure CheckForGermanDelphi;
+const
+  DefaultRTLDomain = 'delphi'; // German to English translation of Delphi RTL strings
+  DefaultShortcuts = 'shortcuts'; // German to English translation of ressource strings
+
+  procedure AddAndBindDomain(szDomain: DomainString);
+  begin
+    AddDomainForResourceString(szDomain);
+    with DefaultInstance do
+      bindtextdomainToFile(szDomain, DefaultDomainDirectory + '\' + szDomain + '.mo');
+  end;
+
+begin
+  if not AnsiStartsText('de', GetCurrentLanguage) then begin
+    AddAndBindDomain(DefaultShortcuts);
+    AddAndBindDomain(DefaultRTLDomain);
+  end;
+end;
+{$endif dx_German_Delphi_fix}
+
 var
   param0:string;
 
@@ -3462,6 +3512,10 @@ initialization
   if (param0<>'delphi32.exe') and (param0<>'kylix') and (param0<>'bds.exe') then
     HookIntoResourceStrings (AutoCreateHooks,false);
   param0:='';
+
+{$ifdef dx_German_Delphi_fix}  
+  CheckForGermanDelphi;
+{$endif dx_German_Delphi_fix} 
 
 finalization
   FreeAndNil (DefaultInstance);
