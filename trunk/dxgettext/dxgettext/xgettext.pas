@@ -2109,7 +2109,7 @@ end;
 
 procedure TXExcludeFormClassProperties.AddFormClassProperty(aPropertyname: string);
 begin
-  FProperties.Add(Trim(Lowercase(aPropertyname)));
+  FProperties.Add(Trim(Lowercase(StringReplace(aPropertyname,'/','.',[rfReplaceAll]))));
 end;
 
 constructor TXExcludeFormClassProperties.Create(Collection: TCollection);
@@ -2178,12 +2178,42 @@ function TXExcludeFormClassPropertyList.ExcludeFormClassProperty(
   aClassname, aPropertyname: string): Boolean;
 var
   item: TXExcludeFormClassProperties;
+  ItemWildcardPos: integer;
+  ItemClassname: string;
+  ItemClassnameLen: integer;
+  ClassnameLen: integer;
+  i: integer;
 begin
   Result := False;
   if Count > 0 then begin
-    item := FindItem(aClassname);
-    if assigned(item) then
-      Result := item.ExcludeFormClassProperty(aPropertyname);
+    aClassname := Trim(Lowercase(aClassname));
+    ClassnameLen := Length(aClassname);
+    for i := 0 to Count-1 do begin
+      item := Items[i];
+      ItemClassname := item.NameOfClass;
+      ItemWildcardPos := pos('*', ItemClassname);
+      ItemClassnameLen:= Length(ItemClassname);
+      {(*}
+      if
+         //exact class name
+         (ItemClassname = aClassname) or
+         // just * wildcard
+         ((ItemWildcardPos = 1) and (ItemClassnameLen = 1)) or
+         // postfix wildcard Class*
+         ((ItemWildcardPos = ItemClassnameLen) and
+          (Copy(ItemClassname, 1, ItemWildcardPos - 1)
+           = Copy(aClassname, 1, ItemWildcardPos - 1))) or
+         // prefix wildcard *Class
+         ((ItemWildcardPos = 1) and (ClassnameLen >= ItemClassnameLen - 1) and
+          (Copy(ItemClassname, 2, ItemClassnameLen - 1)
+           = Copy(aClassname, ClassnameLen - ItemClassnameLen + 2, ItemClassnameLen - 1)))
+      {*)}
+      then begin
+        Result := Items[i].ExcludeFormClassProperty(aPropertyname);
+        if Result then
+          exit;
+      end;
+    end;
   end;
 end;
 
