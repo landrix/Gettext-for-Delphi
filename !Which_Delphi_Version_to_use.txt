@@ -1,0 +1,2 @@
+Most of the projects require a unicode enabled version of Delphi.
+The dproj files currently are for Delphi XE.
