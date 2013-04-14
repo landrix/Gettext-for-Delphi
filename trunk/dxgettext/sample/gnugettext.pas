@@ -66,8 +66,8 @@ interface
 // Default is turned off.
 {.$define dx_German_Delphi_fix}  
 
-// if the conditional dx_SupportsResources the .mo files can also be
-// added to the executable as Windows resources
+// if the conditional dx_SupportsResources is defined the .mo files
+// can also be added to the executable as Windows resources
 // Be warned: This has not been thoroughly tested.
 // Default is turned off.
 {.$define dx_SupportsResources}
