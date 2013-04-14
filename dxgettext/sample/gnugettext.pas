@@ -47,7 +47,7 @@ interface
 
 // If the conditional define DXGETTEXTDEBUG is defined, debugging log is activated.
 // Use DefaultInstance.DebugLogToFile() to write the log to a file.
-{ $define DXGETTEXTDEBUG}
+{.$define DXGETTEXTDEBUG}
 
 // ### LO - Workaround aka hack for programs compiled with German Delphi
 //
@@ -66,6 +66,11 @@ interface
 // Default is turned off.
 {.$define dx_German_Delphi_fix}  
 
+// if the conditional dx_SupportsResources the .mo files can also be
+// added to the executable as Windows resources
+// Be warned: This has not been thoroughly tested.
+// Default is turned off.
+{.$define dx_SupportsResources}
 
 {$ifdef VER140}
   // Delphi 6
@@ -303,7 +308,8 @@ type
       Users:Integer; /// Reference count. If it reaches zero, this object should be destroyed.
       constructor Create (const filename: FilenameString;
                           const Offset: int64; Size: int64;
-                          const xUseMemoryMappedFiles: Boolean);
+                          const xUseMemoryMappedFiles: Boolean;
+                          const ResName: string);
       destructor Destroy; override;
       function gettext(const msgid: RawUtf8String;var found:boolean): RawUtf8String; // uses mo file and utf-8
       property isSwappedArchitecture:boolean read doswap;
@@ -525,6 +531,13 @@ type
     class
       offset,size:int64;
     end;
+{$IFDEF dx_SupportsResources}
+  TResourceFileInfo = class
+  public
+    ResourceName: string;
+    constructor Create(const _ResourceName: string);
+  end;
+{$ENDIF dx_SupportsResources}
   TFileLocator=
     class // This class finds files even when embedded inside executable
       constructor Create;
@@ -537,6 +550,9 @@ type
     private
       basedirectory:FilenameString;
       filelist:TStringList; //Objects are TEmbeddedFileInfo. Filenames are relative to .exe file
+{$IFDEF dx_SupportsResources}
+      FResourceList: TStringList; // Objects are TResourceFileInfo, Filenames are relative to .exe file
+{$ENDIF dx_SupportsResources}
       MoFilesCS:TMultiReadExclusiveWriteSynchronizer;
       MoFiles:TStringList; // Objects are filenames+offset, objects are TMoFile
       function ReadInt64 (str:TStream):int64;
@@ -2929,15 +2945,36 @@ begin
   filelist.CaseSensitive:=False;
   {$endif}
   filelist.Sorted:=True;
+{$IFDEF dx_SupportsResources}
+  FResourceList := TStringList.Create;
+  FResourceList.Duplicates := dupError;
+  FResourceList.CaseSensitive := False;
+  FResourceList.Sorted := True;
+{$ENDIF dx_SupportsResources}
 end;
 
 destructor TFileLocator.Destroy;
+var
+  Idx: integer;
 begin
-  while filelist.count<>0 do begin
-    filelist.Objects[0].Free;
-    filelist.Delete (0);
+{$IFDEF dx_SupportsResources}
+  if Assigned(FResourceList) then begin
+    while FResourceList.Count > 0 do begin
+      Idx := FResourceList.Count - 1;
+      FResourceList.Objects[Idx].Free;
+      FResourceList.Delete(Idx);
+    end;
+    FreeAndNil(FResourceList);
+  end;
+{$ENDIF dx_SupportsResources}
+
+  while filelist.count > 0 do begin
+    Idx := filelist.Count - 1;
+    filelist.Objects[Idx].Free;
+    filelist.Delete (Idx);
   end;
   FreeAndNil (filelist);
+
   FreeAndNil (MoFiles);
   FreeAndNil (MoFilesCS);
   inherited;
@@ -2946,12 +2983,33 @@ end;
 function TFileLocator.FileExists(filename: FilenameString): boolean;
 var
   idx:integer;
+{$IFDEF dx_SupportsResources}
+  ResName: string;
+  HResInfo: HRSRC;
+{$ENDIF dx_SupportsResources}
 begin
   if LeftStr(filename,length(basedirectory))=basedirectory then begin
     // Cut off basedirectory if the file is located beneath that base directory
     filename:=MidStr(filename,length(basedirectory)+1,maxint);
   end;
   Result:=filelist.Find(filename,idx);
+
+{$IFDEF dx_SupportsResources}
+  if not Result then begin
+    Result := FResourceList.Find(filename, Idx);
+    if not Result then begin
+      ResName := UpperCase(filename);
+      ResName := StringReplace(ResName,  '/', '_', [rfReplaceAll]);
+      ResName := StringReplace(ResName,  '\', '_', [rfReplaceAll]);
+      ResName := StringReplace(ResName, '_LC_MESSAGES_', '_', [rfReplaceAll]);
+      ResName := StringReplace(ResName, '.MO', '', [rfReplaceAll]);
+      HResInfo := FindResource(hInstance, PChar(ResName), RT_RCDATA);
+      Result := (HResInfo <> 0);
+      if Result then
+        FResourceList.AddObject(filename, TResourceFileInfo.Create(ResName));
+    end;
+  end;
+{$ENDIF dx_SupportsResources}
 end;
 
 function TFileLocator.GetMoFile(filename: FilenameString; DebugLogger:TDebugLogger): TMoFile;
@@ -2961,10 +3019,12 @@ var
   idxname:FilenameString;
   Offset, Size: Int64;
   realfilename:FilenameString;
+  ResName: string;
 begin
   // Find real filename
   offset:=0;
   size:=0;
+  Resname := '';
   realfilename:=filename;
   if LeftStr(filename,length(basedirectory))=basedirectory then begin
     filename:=MidStr(filename,length(basedirectory)+1,maxint);
@@ -2977,7 +3037,19 @@ begin
       {$ifdef DXGETTEXTDEBUG}
       DebugLogger ('Instead of '+filename+', using '+realfilename+' from offset '+IntTostr(offset)+', size '+IntToStr(size));
       {$endif}
+    end
+{$IFDEF dx_SupportsResources}
+    else begin
+      Idx := FResourceList.IndexOf(filename);
+      if Idx <> -1 then begin
+        realfilename := ExecutableFilename;
+        ResName := (FResourceList.Objects[Idx] as TResourceFileInfo).ResourceName;
+  {$ifdef DXGETTEXTDEBUG}
+      DebugLogger ('Instead of '+filename+', using resource '+ResName+' from '+realfilename);
+  {$endif}
+      end;
     end;
+{$ENDIF dx_SupportsResources}
   end;
 
 
@@ -2988,11 +3060,16 @@ begin
   // Find TMoFile object
   MoFilesCS.BeginWrite;
   try
-    idxname:=realfilename+' //\\ '+IntToStr(offset);
+{$IFDEF dx_SupportsResources}
+    if ResName <> '' then begin
+      idxname := realfilename + ' //\\ ' + ResName;
+    end else
+{$ENDIF dx_SupportsResources}
+      idxname:=realfilename+' //\\ '+IntToStr(offset);
     if MoFiles.Find(idxname, idx) then begin
       Result:=MoFiles.Objects[idx] as TMoFile;
     end else begin
-      Result:=TMoFile.Create (realfilename, Offset, Size, UseMemoryMappedFiles);
+      Result:=TMoFile.Create (realfilename, Offset, Size, UseMemoryMappedFiles, ResName);
       MoFiles.AddObject(idxname, Result);
     end;
     Inc (Result.Users);
@@ -3267,11 +3344,12 @@ end;
 
 constructor TMoFile.Create(const filename: FilenameString;
                            const Offset: int64; Size: int64;
-                           const xUseMemoryMappedFiles: Boolean);
+                           const xUseMemoryMappedFiles: Boolean;
+                           const ResName: string);
 var
   i:cardinal;
   nn:integer;
-  mofile:TFileStream;
+  mofile:TStream;
 begin
   if sizeof(i) <> 4 then
     raise EGGProgrammingError.Create('TDomain in gnugettext is written for an architecture that has 32 bit integers.');
@@ -3284,6 +3362,20 @@ begin
   FUseMemoryMappedFiles := False;
   {$endif}
 
+{$IFDEF dx_SupportsResources}
+  if ResName <> '' then begin
+    // Read the whole file into memory
+    mofile:=TResourceStream.Create(HInstance, ResName, RT_RCDATA);
+    try
+      size := mofile.Size;
+      Getmem (momemoryHandle, size);
+      momemory := momemoryHandle;
+      mofile.ReadBuffer(momemory^, size);
+    finally
+      FreeAndNil(mofile);
+    end;
+  end else
+{$endif dx_SupportsResources}
   if FUseMemoryMappedFiles then
   begin
     // Map the mo file into memory and let the operating system decide how to cache
@@ -3456,6 +3548,16 @@ end;
 
 var
   param0:string;
+
+{$IFDEF dx_SupportsResources}
+{ TResourceFileInfo }
+
+constructor TResourceFileInfo.Create(const _ResourceName: string);
+begin
+  inherited Create;
+  ResourceName := _ResourceName;
+end;
+{$ENDIF dx_SupportsResources}
 
 initialization
   {$ifdef DXGETTEXTDEBUG}
