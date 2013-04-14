@@ -95,14 +95,16 @@ begin
   basedirectory := IncludeTrailingPathDelimiter(basedirectory + 'locale\');
 
   // Find all files to include
-  if filelist.count=0 then
+  if filelist.count = 0 then
     PrepareFileList(basedirectory);
-  filelist.Sort;
 
   if filelist.Count = 0 then begin
-    WriteLn(Format('No .mo files found in "%s", leaving the executable unchanged.', [basedirectory]));
+    WriteLn(Format(_('No files matching "%s" found in "%s", leaving the executable unchanged.'), [filemask, basedirectory]));
     exit;
   end;
+
+  filelist.Sort;
+
   str:=TFileStream.Create (exefilename,fmOpenReadWrite);
   try
     if not FindSignature(detectioncode, str) then
@@ -120,14 +122,14 @@ begin
     str.Seek(0, soFromEnd);
     for i:=0 to filelist.count-1 do begin
       fi:=filelist.objects[i] as TFileInfo;
-      writeln('Adding file: ', fi.filename);
+      writeln(Format(_('Adding file: %s'), [fi.filename]));
       infile := TFileStream.Create(fi.filename, fmOpenRead);
       try
-        fi.offset:=str.Position;
-        fi.size:=infile.Size;
-        str.CopyFrom(infile,0);
+        fi.offset := str.Position;
+        fi.size := infile.Size;
+        str.CopyFrom(infile, 0);
       finally
-        FreeAndNil (infile);
+        FreeAndNil(infile);
       end;
     end;
 
@@ -140,12 +142,13 @@ begin
       while str.position<>nextpos do
         StreamWriteRaw (str,' ');
       fi:=filelist.Objects[i] as TFileInfo;
-      nextpos:=((str.Position+sizeof(nextpos)+sizeof(fi.offset)+sizeof(fi.size)+length(fi.filename))+256) and (not $ff);
-      StreamWriteInt64(str,nextpos-relativeoffsethelper);
-      StreamWriteInt64(str,fi.offset-relativeoffsethelper);
-      StreamWriteInt64(str,fi.size);
-      s := 'locale\'+Copy(fi.filename, Length(basedirectory) + 1);
-      Writeln('Adding Header: ', s);
+      nextpos := ((str.Position + sizeof(nextpos) + sizeof(fi.offset)
+        + sizeof(fi.size) + length(fi.filename)) + 256) and (not $ff);
+      StreamWriteInt64(str, nextpos-relativeoffsethelper);
+      StreamWriteInt64(str, fi.offset-relativeoffsethelper);
+      StreamWriteInt64(str, fi.size);
+      s := 'locale\' + Copy(fi.filename, Length(basedirectory) + 1);
+      Writeln(Format(_('Adding Header: %s'), [s]));
       StreamWriteRaw(str, utf8encode(s));
     end;
     while str.position<>nextpos do
@@ -159,7 +162,7 @@ begin
   finally
     FreeAndNil (str);
   end;
-  WriteLn('Successfully added ', Filelist.Count, ' .mo files to ', exefilename);
+  WriteLn(Format(_('Successfully added %d files to %s'), [Filelist.Count, exefilename]));
 end;
 
 function Tassembleengine.FindSignature(const signature: RawByteString; str: TFileStream): Boolean;
@@ -203,49 +206,49 @@ end;
 
 procedure Tassembleengine.RecurseDirs(list: TStringList; dir: string);
 var
-  sr:TSearchRec;
-  dirlist:TStringList;
-  more:boolean;
-  fi:TFileInfo;
+  sr: TSearchRec;
+  dirlist: TStringList;
+  more: boolean;
+  fi: TFileInfo;
 begin
-  dirlist:=TStringList.Create;
+  dirlist := TStringList.Create;
   try
     dirlist.Add(dir);
 
-    while dirlist.Count<>0 do begin
-      dir:=dirlist.Strings[0];
-      dirlist.Delete (0);
-      
-      // Scan this directory for subdirectories
-      more := FindFirst(dir + '*', faAnyFile, sr) = 0;
+    while dirlist.Count <> 0 do begin
+      dir := dirlist.Strings[0];
+      dirlist.Delete(0);
+
+      // Scan this directory for subdirectories and append them to dirlist
+      more := (FindFirst(dir + '*', faAnyFile, sr) = 0);
       while more do begin
-        if (sr.Name<>'.') and (sr.Name<>'..') then begin
-          if sr.Attr and faDirectory<>0 then begin
-            dirlist.Add(dir+sr.Name+PathDelim);
+        if (sr.Name <> '.') and (sr.Name <> '..') then begin
+          if (sr.Attr and faDirectory) <> 0 then begin
+            dirlist.Add(dir + sr.Name + PathDelim);
           end;
         end;
-        more:=Findnext (sr)=0;
+        more := (Findnext(sr) = 0);
       end;
-      FindClose (sr);
+      FindClose(sr);
 
-      // Scan this directory for files
-      more := FindFirst(dir + filemask, faAnyFile, sr) = 0;
+      // Scan this directory for files and append them to list
+      more := (FindFirst(dir + filemask, faAnyFile, sr) = 0);
       while more do begin
-        if (sr.Name<>'.') and (sr.Name<>'..') then begin
-          if sr.Attr and faDirectory=0 then begin
-            if uppercase(dir+sr.Name)<>uppercase(exefilename) then begin
-              fi:=TFileInfo.Create;
-              fi.filename:=dir+sr.Name;
-              list.AddObject (fi.filename, fi);
+        if (sr.Name <> '.') and (sr.Name <> '..') then begin
+          if (sr.Attr and faDirectory) = 0 then begin
+            if not SameText(dir + sr.Name, exefilename) then begin
+              fi := TFileInfo.Create;
+              fi.filename := dir + sr.Name;
+              list.AddObject(fi.filename, fi);
             end;
           end;
         end;
-        more:=Findnext (sr)=0;
+        more := (Findnext(sr) = 0);
       end;
-      FindClose (sr);
+      FindClose(sr);
     end;
   finally
-    FreeAndNil (dirlist);
+    FreeAndNil(dirlist);
   end;
 end;
 

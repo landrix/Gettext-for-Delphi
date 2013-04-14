@@ -63,7 +63,7 @@ begin
       if engine.basedirectory <> '' then
         raise Exception.CreateFmt(_('Already specified locale base dir (new: "%s".'), [op]);
       engine.basedirectory := op;
-      consoleoutput.WriteLn('Setting basedirectory to "' + engine.basedirectory + '"');
+      consoleoutput.WriteLn(Format(_('Setting basedirectory to "%s"'), [engine.basedirectory]));
     end else if Copy(pa, 1, 2) = '--' then begin
       raise Exception.CreateFmt(_('Unknown option "%s"'), [pa]);
     end else begin
@@ -71,7 +71,7 @@ begin
       if engine.exefilename <> '' then
         raise Exception.CreateFmt(_('Already specified an .exe file (new: "%s".'), [param]);
       engine.exefilename := ExpandFileName(AnsiDequotedStr(param, '"'));
-      consoleoutput.WriteLn('Setting exefilename to "' + engine.exefilename + '"');
+      consoleoutput.WriteLn(Format(_('Setting exefilename to "%s"'), [engine.exefilename]));
     end;
     inc(i);
   end;
