@@ -31,19 +31,36 @@ uses
 
 procedure TConsoleApp.AnalyzeCommandline;
 var
-  i:integer;
-  param,uparam:string;
+  i: integer;
+  lParam, lUParam: string;
 begin
-  i:=1;
-  while i<=paramcount do begin
-    param:=paramstr(i);
-    uparam:=uppercase(param);
-    if uparam='-O' then begin
+  i := 1;
+
+  while i <= ParamCount do
+  begin
+    lParam  := ParamStr(i);
+    lUParam := UpperCase(lParam);
+
+    if (lUParam = '-O') then
+    begin
       inc (i);
-      engine.outputfilename:=ExpandFileName(paramstr(i));
-    end else begin
-      engine.inputfilename:=ExpandFileName(param);
+      engine.outputfilename := ExpandFileName( paramstr(i));
+    end
+    else if (lUParam = '--BLACKLIST') then
+    begin
+      inc (i);
+      engine.FileNameBlackList := ExpandFileName( paramstr(i));
+    end
+    else if (lUParam = '--WHITELIST') then
+    begin
+      inc (i);
+      engine.FileNameWhiteList := ExpandFileName( paramstr(i));
+    end
+    else
+    begin
+      engine.inputfilename := ExpandFileName( lParam);
     end;
+
     inc (i);
   end;
 end;
@@ -78,6 +95,11 @@ begin
   writeln;
   writeln (_('This will extract texts from default.po that this program'+sLineBreak+
              'thinks should not be translated by a translator'));
+  writeln;
+  writeln (_('Options:'));
+  writeln ('  --BlackList   ' + _('.po file with Text always added to ignore'));
+  writeln ('  --WhiteList   ' + _('.po file with Text never added to ignore'));
+
 end;
 
 end.

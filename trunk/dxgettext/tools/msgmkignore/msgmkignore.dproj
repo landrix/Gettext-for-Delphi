@@ -79,7 +79,7 @@
 						<Source Name="MainSource">msgmkignore.dpr</Source>
 					</Source>
 					<Parameters>
-						<Parameters Name="RunParams">default.po -o ignore.po</Parameters>
+						<Parameters Name="RunParams">--blacklist ignore_blacklist.po --whitelist ignore_whitelist.po default.po -o ignore.po</Parameters>
 					</Parameters>
 					<VersionInfo>
 						<VersionInfo Name="IncludeVerInfo">False</VersionInfo>

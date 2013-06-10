@@ -3,66 +3,109 @@ unit msgmkignoreengine;
 interface
 
 uses
-  Classes, poparser;
+  Classes, SysUtils, poparser;
 
 type
   Tmsgmkignoreengine=
     class
     public
-      inputfilename:string;
-      outputfilename:string;
+      inputfilename: string;
+      outputfilename: string;
+      FileNameBlackList: TFileName;
+      FileNameWhiteList: TFileName;
       procedure Execute;
     private
-      infile:TextFile;
-      outfile:TFileStream;
-      procedure HandleEntry (entry:TPoEntry);
+      infile: TextFile;
+      outfile: TFileStream;
+      procedure HandleEntry ( xEntry: TPoEntry;
+                              xBlackList, xWhiteList: TPoEntryList);
     end;
     
 implementation
 
 uses
-  SysUtils,
   gnugettext, ignoredetector;
 
 { Tmsgmkignoreengine }
 
 procedure Tmsgmkignoreengine.Execute;
 var
-  pop:TPoParser;
-  entry:TPoEntry;
+  lPop: TPoParser;
+  lEntry: TPoEntry;
+  lBlackList, lWhiteList: TPoEntryList;
 begin
   if inputfilename='' then
+  begin
     raise Exception.Create (_('No input filename specified.'));
+  end;
+
   if outputfilename='' then
+  begin
     raise Exception.Create (_('No output filename specified.'));
-  AssignFile (infile,inputfilename);
-  Reset (infile);
-  outfile:=TFileStream.Create (outputfilename, fmCreate);
+  end;
+
+  lBlackList := TPoEntryList.Create;
+  lWhiteList := TPoEntryList.Create;
   try
-    pop:=TPoParser.Create;
+    if (FileNameBlackList <> '') and
+       FileExists( FileNameBlackList) then
+    begin
+      lBlackList.LoadFromFile( FileNameBlackList);
+    end;
+
+    if (FileNameWhiteList <> '') and
+       FileExists( FileNameWhiteList) then
+    begin
+      lWhiteList.LoadFromFile( FileNameWhiteList);
+    end;
+
+    AssignFile( infile,
+                inputfilename);
+    Reset (infile);
+
+    outfile := TFileStream.Create( outputfilename, fmCreate);
     try
-      StreamWrite (outfile,'#  '+_('Ignore list. Remove those that you do want to have translated.'));
-      StreamWrite (outfile,sLineBreak);
-      StreamWrite (outfile,sLineBreak);
-      while true do begin
-        entry:=pop.ReadNextEntry(infile);
-        if entry=nil then
-          break;
-        HandleEntry (entry);
+      lPop := TPoParser.Create;
+      try
+        StreamWrite (outfile, '#  '+_('Ignore list. Remove those that you do want to have translated.'));
+        StreamWrite (outfile, sLineBreak);
+        StreamWrite (outfile, sLineBreak);
+
+        while true do
+        begin
+          lEntry := lPop.ReadNextEntry( infile);
+
+          if lEntry = nil then
+          begin
+            break;
+          end;
+
+          HandleEntry( lEntry,
+                       lBlackList,
+                       lWhiteList);
+        end;
+      finally
+        FreeAndNil( lPop);
       end;
     finally
-      FreeAndNil (pop);
+      FreeAndNil( outfile);
+      CloseFile( infile);
     end;
   finally
-    FreeAndNil (outfile);
-    CloseFile (infile);
+    FreeAndNil( lBlackList);
+    FreeAndNil( lWhiteList);
   end;
 end;
 
-procedure Tmsgmkignoreengine.HandleEntry(entry: TPoEntry);
+procedure Tmsgmkignoreengine.HandleEntry( xEntry: TPoEntry;
+                                          xBlackList, xWhiteList: TPoEntryList);
 begin
-  if not IsProbablyTranslatable (entry) then
-    entry.WriteToStream(outfile);
+  if not IsProbablyTranslatable( xEntry,
+                                 xBlackList,
+                                 xWhiteList) then
+  begin
+    xentry.WriteToStream( outfile);
+  end;
 end;
 
 end.

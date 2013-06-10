@@ -1628,7 +1628,9 @@ begin
       if ignoreitem=nil then begin
         newitem:=TPoEntry.Create;
         newitem.Assign(item);
-        if not IsProbablyTranslatable(newitem) then 
+        if not IsProbablyTranslatable( newitem,
+                                       nil,
+                                       nil) then
           ignorelist.Add(newitem)
         else
           FreeAndNil (newitem);
