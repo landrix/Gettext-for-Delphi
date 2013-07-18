@@ -37,7 +37,7 @@ procedure ReadList(SectKey : String; AList : TStringList);
 implementation
 
 uses
-  IniFiles,SysUtils;
+  IniFiles, SysUtils;
 
 var IniFileName:string;
 
