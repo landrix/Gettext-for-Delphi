@@ -1211,6 +1211,10 @@ object FormEditor: TFormEditor
         Caption = 'GNU gettext for Delphi'
         OnClick = MenuItemGNUgettextforDelphiClick
       end
+      object mi_GormDiffHelp: TMenuItem
+        Caption = 'How-to configure Diff for po files'
+        OnClick = mi_GormDiffHelpClick
+      end
       object N3: TMenuItem
         Caption = '-'
       end
@@ -1553,7 +1557,7 @@ object FormEditor: TFormEditor
     Left = 321
     Top = 120
     Bitmap = {
-      494C010103000500080010001000FFFFFFFFFF10FFFFFFFFFFFFFFFF424D3600
+      494C010103000500180010001000FFFFFFFFFF10FFFFFFFFFFFFFFFF424D3600
       0000000000003600000028000000400000001000000001002000000000000010
       0000000000000000000000000000000000000000000000000000000000000000
       00000000000000000000000000000040400000404000002520000D0D0D000D0D

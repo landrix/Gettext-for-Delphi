@@ -242,6 +242,7 @@ type
     N12: TMenuItem;
     act_TransCreateMsgstr: TAction;
     Createtranslationtrackingmsgstr1: TMenuItem;
+    mi_GormDiffHelp: TMenuItem;
     procedure MenuItemAboutClick(Sender: TObject);
     procedure act_FileExitExecute(Sender: TObject);
     procedure act_FileOpenExecute(Sender: TObject);
@@ -321,6 +322,7 @@ type
     procedure act_LabelsSaveIgnoreExecute(Sender: TObject);
     procedure act_AutoMicrosoftExecute(Sender: TObject);
     procedure act_TransCreateMsgstrExecute(Sender: TObject);
+    procedure mi_GormDiffHelpClick(Sender: TObject);
   private
     CurrentFilename: string; // File currently opened (if any)
     Items: TPoEntryList; // Contains all item read from CurrentFilename
@@ -414,7 +416,9 @@ uses
   w_IgnoreLoad,
   w_IgnoreImport,
   w_IgnoreSave,
-  w_TranslationDbLearnOptions;
+  w_TranslationDbLearnOptions,
+  PoDiffHtml
+  ;
 
 {$R *.dfm}
 
@@ -803,7 +807,19 @@ var
   filename: string;
   s: string;
 begin
-  if paramcount = 1 then
+  if (ParamCount>2)and(ParamStr(1)='-diff') then
+    begin
+    if (paramcount>3)and(paramstr(4)<>'') then
+      begin
+      PoDiffHtml.RunDiff(ParamStr(2),ParamStr(3),ParamStr(4));
+      end
+    else
+      begin
+      PoDiffHtml.RunDiff(ParamStr(2),ParamStr(3),ParamStr(2));
+      end;
+    Close;
+    end
+  else if paramcount = 1 then
     LoadFileByName(Paramstr(1));
   // Automatic startup actions. These may trigger exceptions!
   if (CurrentFilename = '') and GetSettingStartupActionsEnabled then begin
@@ -1446,6 +1462,20 @@ begin
     ShowMessage(_('Translation completed.') + #13 + Format(_('Strings translated: %d'), [ReqCount]));
 
   ExecuteFilter;
+end;
+
+procedure TFormEditor.mi_GormDiffHelpClick(Sender: TObject);
+begin
+ShowMessage(_('To configure diff viewer for SVN you should have'+slinebreak+
+  'Tortoise SVN client 1.7+'+slinebreak+
+  'Open context menu on your repository, go to Settings,'+slinebreak+
+  'External Programs, Diff Viewer, click Advanced... button,'+slinebreak+
+  'press Add... button. Fill ".po" to expension field and'+slinebreak+
+  '..your path to gorm.exe file.. -diff %base %mine'+slinebreak+
+  'to external program field.'+slinebreak+slinebreak+
+  'Important. Gorm also can be used as 3-way Diff tool for po files.'+slinebreak+
+  ' You need to pass 4 parameters: -diff'+slinebreak+
+  ' base-file, mine-file, theirs-file in console'));
 end;
 
 procedure TFormEditor.mi_HelpHelpClick(Sender: TObject);
