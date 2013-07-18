@@ -40,7 +40,8 @@ uses
   u_dzMicrosoftTranslate in 'u_dzMicrosoftTranslate.pas',
   u_dzStringUtils in 'u_dzStringUtils.pas',
   w_TranslationDbLearnOptions in 'w_TranslationDbLearnOptions.pas' {f_TranslationDbLearnOptions},
-  u_dzAdoDbUniqueId in 'u_dzAdoDbUniqueId.pas';
+  u_dzAdoDbUniqueId in 'u_dzAdoDbUniqueId.pas',
+  PoDiffHtml in 'PoDiffHtml.pas';
 
 {$R *.res}
 
