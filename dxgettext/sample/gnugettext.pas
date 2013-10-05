@@ -1949,11 +1949,11 @@ begin
   DebugWriteln ('----------------------------------------------------------------------');
   DebugWriteln ('TranslateProperties() was called for an object of class '+AnObject.ClassName+' with domain "'+textdomain+'".');
   {$endif}
+
+  if textdomain='' then
+    textdomain:=curmsgdomain;
   if TP_Retranslator<>nil then
-    if textdomain = '' then
-      (TP_Retranslator as TTP_Retranslator).TextDomain:=curmsgdomain
-    else
-      (TP_Retranslator as TTP_Retranslator).TextDomain:=textdomain;
+    (TP_Retranslator as TTP_Retranslator).TextDomain:=textdomain;
   {$ifdef FPC}
   DoneList:=TCSStringList.Create;
   TodoList:=TCSStringList.Create;
