@@ -23,6 +23,7 @@ const // use these for Get/SetPoHeaderEntry calls
   PO_HEADER_LAST_TRANSLATOR = 'Last-Translator:';
   PO_HEADER_CONTENT_TYPE = 'Content-Type:';
   PO_HEADER_LANGUAGE = 'X-Poedit-Language:';
+  PO_HEADER_Poedit_BasePath = 'X-Poedit-Basepath:';
 
 type
   TObjectPascalFormat = (opfTrue, opfFalse, opfUndefined);
@@ -63,6 +64,7 @@ type
       function Count:integer;
       function Language: string; // returns the X-Poedit-Language entry in the '' translation
       function ProjectAndVersion: string; // returns the Project-Id-Version entry in the '' translation
+      function BasePath: String;
 
       // Iterate through all items. When nil is returned, no more elements are there.
       function FindFirst:TPoEntry;
@@ -615,6 +617,11 @@ begin
   po:=TPoEntry.Create;
   po.Assign (entry);
   l.Add(po);
+end;
+
+function TPoEntryList.BasePath: String;
+begin
+  Result := GetHeaderEntry( PO_HEADER_Poedit_BasePath);
 end;
 
 procedure TPoEntryList.Clear;
