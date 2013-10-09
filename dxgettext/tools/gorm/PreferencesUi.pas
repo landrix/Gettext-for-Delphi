@@ -60,6 +60,10 @@ type
     grp_TranslationRepositiory: TGroupBox;
     l_TransRepDir: TLabel;
     ed_TransRepDir: TEdit;
+    gb_ExternalEditor: TGroupBox;
+    l_1: TLabel;
+    cb_ExternalEditorUseLineNumbers: TCheckBox;
+    eb_ExternalEditor: TButtonedEdit;
     procedure FormCreate(Sender: TObject);
     procedure ButtonOKClick(Sender: TObject);
     procedure ButtonBrowseExenameClick(Sender: TObject);
@@ -67,6 +71,7 @@ type
     procedure chk_WrapAtNCharactersClick(Sender: TObject);
     procedure CheckBoxTranslationMemoryClick(Sender: TObject);
     procedure EditFilenameToOpenRightButtonClick(Sender: TObject);
+    procedure eb_ExternalEditorRightButtonClick(Sender: TObject);
   public
   end;
 
@@ -90,6 +95,23 @@ begin
     end;
   finally
     FreeAndNil (od);
+  end;
+end;
+
+procedure TFormPreferences.eb_ExternalEditorRightButtonClick(Sender: TObject);
+var
+  lOpenDialog: TOpenDialog;
+begin
+  lOpenDialog := TOpenDialog.Create(self);
+  try
+    lOpenDialog.FileName := eb_ExternalEditor.Text;
+    lOpenDialog.Filter   := _('Executables (*.exe)')+'|*.exe';
+    if lOpenDialog.Execute then
+    begin
+      eb_ExternalEditor.Text := lOpenDialog.FileName;
+    end;
+  finally
+    FreeAndNil (lOpenDialog);
   end;
 end;
 
@@ -140,6 +162,9 @@ begin
   SetSetting ('GUI', 'ShowStatus', chk_ShowStatus.Checked);
   SetSetting ('Application','ExeFilename', ed_ApplicationExeFilename.Text);
   SetSetting ('Application','MoFilename', ed_MoFilename.Text);
+  SetSetting ('Application','ExternalEditorFilename', eb_ExternalEditor.Text);
+  SetSetting ('Application','ExternalEditorUseLineNumbers', cb_ExternalEditorUseLineNumbers.Checked);
+
   if chk_WrapAtNCharacters.Checked then
     SetSetting ('Save', 'WrapAfter', ed_WrapLinesAfter.Text)
   else
@@ -252,6 +277,8 @@ begin
   EditFilenameToOpen.Text:=GetSettingStartupOpenFilename;
   ed_ApplicationExeFilename.Text := GetSettingApplicationExeFilename;
   ed_MoFilename.Text := GetSettingApplicationMoFilename;
+  eb_ExternalEditor.Text := GetSettingApplicationExternalEditorFilename;
+  cb_ExternalEditorUseLineNumbers.Checked := GetSettingApplicationExternalEditorUseLineNumbers;
 
   i := GetSettingSaveWrapAfter;
   chk_WrapAtNCharacters.Checked := (i <> 0);

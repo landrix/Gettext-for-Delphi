@@ -1156,14 +1156,91 @@ end;
 
 procedure TFormEditor.ListBoxSourceClick(Sender: TObject);
 var
-  s: string;
+  s, lBasePath, lCompletePath, lEditorFilename, lParameterStr, lMessage: string;
   Idx: Integer;
+  lPoHeader: TPoEntry;
+  lSourceCodeLocation: TSourceCodeLocation;
+  lShowPathAsShowMessage: Boolean;
 begin
+  lShowPathAsShowMessage := False;
+  lMessage := '';
+
   Idx := ListBoxSource.ItemIndex;
-  if Idx >= 0 then begin
+  if Idx >= 0 then
+  begin
     s := ListBoxSource.Items[Idx];
-    ShowMessage(s);
-    Clipboard.AsText := s;
+
+    lEditorFilename := GetSettingApplicationExternalEditorFilename;
+    if ( lEditorFilename <> '') and
+       FileExists( lEditorFilename) then
+    begin
+      lPoHeader := Items.Find('');
+      if Assigned( lPoHeader) then
+      begin
+        lBasePath := IncludeTrailingPathDelimiter( GetPoHeaderEntry( lPoHeader.MsgStr,
+                                                                     PO_HEADER_Poedit_BasePath));
+
+
+        if not DirectoryExists( lBasePath) then
+        begin
+          lMessage := Format( _('Invalid base path: "%s"'),
+                              [ lBasePath]);
+          lShowPathAsShowMessage := True;
+        end
+        else
+        begin
+          lSourceCodeLocation := ExtractLocationPathLineNumber( s);
+
+          lCompletePath := lBasePath + lSourceCodeLocation.Path;
+
+          if not FileExists( lCompletePath) then
+          begin
+            lMessage := Format( _('File not found: "%s"'),
+                                [ lCompletePath]);
+            lShowPathAsShowMessage := True;
+          end
+          else
+          begin
+            if (lSourceCodeLocation.Path <> '') then
+            begin
+              lParameterStr := AnsiQuotedStr( lCompletePath, '"');
+
+              if GetSettingApplicationExternalEditorUseLineNumbers and
+                 ( lSourceCodeLocation.LineNumber <> 0) then
+              begin
+                lParameterStr := lParameterStr + ' ' +
+                                 Format( '-n%d',
+                                         [ lSourceCodeLocation.LineNumber]);
+              end;
+
+              ShellExecute( Self.Handle,
+                            'open',
+                            PChar( AnsiQuotedStr( lEditorFilename, '"')),
+                            PChar( lParameterStr),
+                            '',
+                            SW_SHOWNORMAL);
+            end;
+          end;
+        end;
+      end;
+    end
+    else
+    begin
+      lShowPathAsShowMessage := True;
+    end;
+
+    if lShowPathAsShowMessage then
+    begin
+      if (lMessage <> '') then
+      begin
+        lMessage := lMessage + sLineBreak;
+      end;
+      lMessage := lMessage + s;
+
+      ShowMessage( lMessage);
+
+      Clipboard.AsText := s;
+    end;
   end;
 end;
 

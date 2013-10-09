@@ -1,9 +1,9 @@
 object f_EditHeader: Tf_EditHeader
-  Left = 0
-  Top = 0
+  Left = 335
+  Top = 202
   BorderStyle = bsDialog
   Caption = 'Edit Header'
-  ClientHeight = 353
+  ClientHeight = 391
   ClientWidth = 337
   Color = clBtnFace
   Font.Charset = DEFAULT_CHARSET
@@ -72,40 +72,47 @@ object f_EditHeader: Tf_EditHeader
     Height = 13
     Caption = 'Last translator'#39's email address'
   end
+  object l_BasePath: TLabel
+    Left = 8
+    Top = 320
+    Width = 48
+    Height = 13
+    Caption = 'Base path'
+  end
   object ed_Project: TEdit
     Left = 8
     Top = 128
     Width = 321
     Height = 21
-    TabOrder = 0
+    TabOrder = 1
   end
   object ed_Team: TEdit
     Left = 8
     Top = 176
     Width = 121
     Height = 21
-    TabOrder = 1
+    TabOrder = 2
   end
   object ed_TeamEmail: TEdit
     Left = 136
     Top = 176
     Width = 193
     Height = 21
-    TabOrder = 2
+    TabOrder = 3
   end
   object cmb_Language: TComboBox
     Left = 8
     Top = 288
     Width = 153
     Height = 21
-    TabOrder = 5
+    TabOrder = 6
   end
   object cmb_Charset: TComboBox
     Left = 168
     Top = 288
     Width = 153
     Height = 21
-    TabOrder = 6
+    TabOrder = 7
     Items.Strings = (
       'ASCII'
       'ISO-8859-1'
@@ -154,30 +161,30 @@ object f_EditHeader: Tf_EditHeader
   end
   object b_Ok: TButton
     Left = 176
-    Top = 320
+    Top = 360
     Width = 75
     Height = 25
     Caption = 'OK'
     Default = True
     ModalResult = 1
-    TabOrder = 7
+    TabOrder = 9
   end
   object b_Cancel: TButton
     Left = 256
-    Top = 320
+    Top = 360
     Width = 75
     Height = 25
     Cancel = True
     Caption = 'Cancel'
     ModalResult = 2
-    TabOrder = 8
+    TabOrder = 10
   end
   object m_Comments: TMemo
     Left = 8
     Top = 24
     Width = 321
     Height = 81
-    TabOrder = 9
+    TabOrder = 0
     WordWrap = False
   end
   object ed_LastTranslator: TEdit
@@ -185,13 +192,20 @@ object f_EditHeader: Tf_EditHeader
     Top = 224
     Width = 121
     Height = 21
-    TabOrder = 3
+    TabOrder = 4
   end
   object ed_LastEmail: TEdit
     Left = 136
     Top = 224
     Width = 193
     Height = 21
-    TabOrder = 4
+    TabOrder = 5
+  end
+  object ed_BasePath: TEdit
+    Left = 8
+    Top = 336
+    Width = 313
+    Height = 21
+    TabOrder = 8
   end
 end
