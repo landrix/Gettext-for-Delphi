@@ -35,6 +35,8 @@ type
     l_LastEmail: TLabel;
     ed_LastTranslator: TEdit;
     ed_LastEmail: TEdit;
+    l_BasePath: TLabel;
+    ed_BasePath: TEdit;
   private
     procedure SetData(_Item: TPoEntry);
     procedure GetData(_Item: TPoEntry);
@@ -89,6 +91,8 @@ begin
   SetPoHeaderEntry(Header, PO_HEADER_LAST_TRANSLATOR, ed_LastTranslator.Text + ' <' + ed_LastEmail.Text + '>');
   SetPoHeaderEntry(Header, PO_HEADER_LANGUAGE, cmb_Language.Text);
   SetPoHeaderEntry(Header, PO_HEADER_CONTENT_TYPE, 'text/plain; charset=' + cmb_Charset.Text);
+  SetPoHeaderEntry(Header, PO_HEADER_Poedit_BasePath, ed_BasePath.Text);
+
   _Item.MsgStr := Header;
 end;
 
@@ -169,6 +173,8 @@ begin
     cmb_Charset.Text := Copy(Second, 9)
   else
     cmb_Charset.Text := Second;
+
+  ed_BasePath.Text := GetPoHeaderEntry(Header, PO_HEADER_Poedit_BasePath);
 end;
 
 end.

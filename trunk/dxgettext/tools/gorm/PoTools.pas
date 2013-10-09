@@ -14,7 +14,14 @@ interface
 uses
   Classes, CheckLst, PoParser;
 
+type
+  TSourceCodeLocation = record
+    Path: String;
+    LineNumber: Integer;
+  end;
+
 procedure ExtractSourcecodeLocations (Item:TPoEntry;Locations:TStrings);
+function ExtractLocationPathLineNumber( const xLocationString: String): TSourceCodeLocation;
 procedure ExtractProgrammerComments (Item:TPoEntry;Comments:TStrings);
 procedure ExtractUserComments (Item:TPoEntry;Comments:TStrings);
 procedure ExtractLabels (Item:TPoEntry;CheckListBoxLabels:TCheckListBox);
@@ -150,6 +157,30 @@ begin
     s := Item.AutoCommentList.Strings[i];
     if LeftStr(s, 2) = '#:' then
       Locations.Add(Trim(Copy(s, 3)));
+  end;
+end;
+
+function ExtractLocationPathLineNumber( const xLocationString: String): TSourceCodeLocation;
+var
+  lPos: Integer;
+begin
+  Result := Default( TSourceCodeLocation);
+
+  if (xLocationString <> '') then
+  begin
+    lPos := pos( ':', xLocationString);
+
+    if (lPos > 0) then
+    begin
+      Result.Path       := copy( xLocationString, 0, lPos - 1);
+      Result.LineNumber := StrToInt( copy( xLocationString,
+                                           lPos + 1,
+                                           Length( xLocationString) - lPos));
+    end
+    else
+    begin
+      Result.Path       := xLocationString;
+    end;
   end;
 end;
 

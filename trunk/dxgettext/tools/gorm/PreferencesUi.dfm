@@ -3,7 +3,7 @@ object FormPreferences: TFormPreferences
   Top = 0
   BorderStyle = bsDialog
   Caption = 'Preferences'
-  ClientHeight = 529
+  ClientHeight = 621
   ClientWidth = 577
   Color = clBtnFace
   Font.Charset = DEFAULT_CHARSET
@@ -26,7 +26,7 @@ object FormPreferences: TFormPreferences
   end
   object ButtonOK: TButton
     Left = 416
-    Top = 496
+    Top = 584
     Width = 75
     Height = 25
     Caption = '&OK'
@@ -36,7 +36,7 @@ object FormPreferences: TFormPreferences
   end
   object ButtonCancel: TButton
     Left = 496
-    Top = 496
+    Top = 584
     Width = 75
     Height = 25
     Cancel = True
@@ -370,11 +370,52 @@ object FormPreferences: TFormPreferences
       TabOrder = 0
     end
   end
+  object gb_ExternalEditor: TGroupBox
+    Left = 8
+    Top = 496
+    Width = 265
+    Height = 89
+    Caption = 'External editor'
+    TabOrder = 9
+    object l_1: TLabel
+      Left = 18
+      Top = 20
+      Width = 191
+      Height = 13
+      Caption = 'Directory to store translation repository'
+    end
+    object cb_ExternalEditorUseLineNumbers: TCheckBox
+      Left = 16
+      Top = 64
+      Width = 241
+      Height = 17
+      Caption = 'add "-n#" to goto line number'
+      ParentShowHint = False
+      ShowHint = True
+      TabOrder = 0
+    end
+    object eb_ExternalEditor: TButtonedEdit
+      Left = 16
+      Top = 40
+      Width = 233
+      Height = 21
+      Hint = 
+        'Paths must be relative if you want to move the files to a differ' +
+        'ent location.'
+      Images = ilOpenFile
+      ParentShowHint = False
+      RightButton.ImageIndex = 0
+      RightButton.Visible = True
+      ShowHint = True
+      TabOrder = 1
+      OnRightButtonClick = eb_ExternalEditorRightButtonClick
+    end
+  end
   object ilOpenFile: TImageList
     Left = 528
     Top = 8
     Bitmap = {
-      494C010102000400040010001000FFFFFFFFFF00FFFFFFFFFFFFFFFF424D3600
+      494C010102000400080010001000FFFFFFFFFF10FFFFFFFFFFFFFFFF424D3600
       0000000000003600000028000000400000001000000001002000000000000010
       0000000000000000000000000000000000000000000000000000000000000000
       000000000000CFE0E93083AFC77C6A9DB795E0E0E01FE5E5E51AE5E5E51AE5E5
@@ -510,6 +551,7 @@ object FormPreferences: TFormPreferences
       00000000000000000000000000000000C000C00000000000C000C00000000000
       C000C00000000000C000C00000000000C000C00000000000C000C00000000000
       C000C00000000000C000C00000000000C001C00100000000C003C00300000000
-      C003C00300000000C003C00300000000}
+      C003C00300000000C003C0030000000000000000000000000000000000000000
+      000000000000}
   end
 end

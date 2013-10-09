@@ -14,6 +14,8 @@ function GetSettingStartupParallelTranslation:string;
 function GetSettingStartupOpenFilename:string;
 function GetSettingApplicationExeFilename:string;
 function GetSettingApplicationMoFilename:string;
+function GetSettingApplicationExternalEditorFilename: string;
+function GetSettingApplicationExternalEditorUseLineNumbers: boolean;
 function GetSettingSaveWrapAfter: integer;
 function GetSettingShowStatus: boolean;
 function GetSettingApplicationGoogleAPIkey:string;
@@ -162,6 +164,16 @@ end;
 function GetSettingApplicationMoFilename:string;
 begin
   Result:=GetSettingString ('Application','MoFilename');
+end;
+
+function GetSettingApplicationExternalEditorFilename: string;
+begin
+  Result := GetSettingString('Application', 'ExternalEditorFilename');
+end;
+
+function GetSettingApplicationExternalEditorUseLineNumbers: boolean;
+begin
+  Result := GetSettingBool('Application', 'ExternalEditorUseLineNumbers', true);
 end;
 
 function GetSettingApplicationGoogleAPIkey:string;
