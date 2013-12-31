@@ -2186,7 +2186,7 @@ begin
     // TObjectList has. This means that if we call Clear on the given
     // list in the sl parameter, we could destroy the objects it contains.
     // To avoid this we must disable OwnsObjects while we replace the strings, but
-    // only if sl is a TStringList instance and if using Delphi 2009 or upper.
+    // only if sl is a TStringList instance and if using Delphi 2009 or later.
     originalOwnsObjects := False; // avoid warning
     if sl is TStringList then
       slAsTStringList := TStringList(sl)
@@ -2218,9 +2218,12 @@ begin
         end;
         {$endif dx_StringList_has_OwnsObjects}
         try
-          // same here, we don't want to modify the properties of the orignal string list
-          sl.Clear;
-          sl.AddStrings(s);
+          //DH Fix 2013-09-19: Only refill sl if changed
+          if sl.Text<>s.Text then begin
+            // same here, we don't want to modify the properties of the original string list
+            sl.Clear;
+            sl.AddStrings(s);
+          end;
         finally
           {$ifdef dx_StringList_has_OwnsObjects}
           if Assigned(slAsTStringList) then
