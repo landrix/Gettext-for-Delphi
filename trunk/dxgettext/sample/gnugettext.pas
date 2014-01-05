@@ -112,15 +112,16 @@ interface
   {$DEFINE dx_has_Inline}
   {$endif}
 {$endif}
-{$ifdef VER190}
+{$ifdef VER185}
   // Delphi 2007
-  {$DEFINE dx_has_Unsafe_Warnings}
+  {$DEFINE dx_has_Unsafe_Warnings}        
   {$DEFINE dx_has_WideStrings}
   {$DEFINE dx_Hinstance_is_Integer}
   {$DEFINE dx_NativeInt_is_Integer}
   {$DEFINE dx_NativeUInt_is_Cardinal}
   {$DEFINE dx_has_Inline}
 {$endif}
+// there was no VER190 ??
 {$ifdef VER200}
   // Delphi 2009, first version with Unicode
   {$DEFINE dx_has_Unsafe_Warnings}
@@ -487,9 +488,9 @@ type
       procedure RegisterWhenNewLanguageListener(Listener: IGnuGettextInstanceWhenNewLanguageListener);
       procedure UnregisterWhenNewLanguageListener(Listener: IGnuGettextInstanceWhenNewLanguageListener);
     protected
-      procedure TranslateStrings (sl:TStrings;const TextDomain:DomainString);
+      procedure TranslateStrings (_sl:TStrings;const TextDomain:DomainString);
       {$IFDEF dx_has_WideStrings}
-      procedure TranslateWideStrings (sl: TWideStrings;const TextDomain:DomainString);
+      procedure TranslateWideStrings (_sl: TWideStrings;const TextDomain:DomainString);
       {$ENDIF dx_has_WideStrings}
 
       // Override these three, if you want to inherited from this class
@@ -2381,17 +2382,17 @@ begin
   {$endif}
 end;
 
-procedure TGnuGettextInstance.TranslateStrings(sl: TStrings;const TextDomain:DomainString);
+procedure TGnuGettextInstance.TranslateStrings(_sl: TStrings;const TextDomain:DomainString);
 var
   line: string;
   i: integer;
-  s:TStringList;
+  tempSL: TStringList;
   {$ifdef dx_StringList_has_OwnsObjects}
-  slAsTStringList:TStringList;
+  slAsTStringList: TStringList;
   originalOwnsObjects: Boolean;
   {$endif dx_StringList_has_OwnsObjects}
 begin
-  if sl.Count > 0 then begin
+  if _sl.Count > 0 then begin
     {$ifdef dx_StringList_has_OwnsObjects}
     // From D2009 onward, the TStringList class has an OwnsObjects property, just like
     // TObjectList has. This means that if we call Clear on the given
@@ -2399,31 +2400,31 @@ begin
     // To avoid this we must disable OwnsObjects while we replace the strings, but
     // only if sl is a TStringList instance and if using Delphi 2009 or later.
     originalOwnsObjects := False; // avoid warning
-    if sl is TStringList then
-      slAsTStringList := TStringList(sl)
+    if _sl is TStringList then
+      slAsTStringList := TStringList(_sl)
     else
       slAsTStringList := nil;
     {$endif dx_StringList_has_OwnsObjects}
 
-    sl.BeginUpdate;
+    _sl.BeginUpdate;
     try
-      s:=TStringList.Create;
+      tempSL:=TStringList.Create;
       try
         // don't use Assign here as it will propagate the Sorted property (among others)
-        // in versions of Delphi from Delphi XE ownard
-        s.AddStrings(sl);
+        // in versions of Delphi from Delphi XE onward
+        tempSL.AddStrings(_sl);
 
-        for i:=0 to s.Count-1 do begin
-          line:=s.Strings[i];
+        for i:=0 to tempSL.Count-1 do begin
+          line:=tempSL.Strings[i];
           if line<>'' then
             if TextDomain = '' then
-              s.Strings[i]:=ComponentGettext(line)
+              tempSL.Strings[i]:=ComponentGettext(line)
             else
-              s.Strings[i]:=dgettext(TextDomain,line);
+              tempSL.Strings[i]:=dgettext(TextDomain,line);
         end;
 
         //DH Fix 2013-09-19: Only refill sl if changed
-        if sl.Text<>s.Text then
+        if _sl.Text<>tempSL.Text then
         begin
           {$ifdef dx_StringList_has_OwnsObjects}
           if Assigned(slAsTStringList) then begin
@@ -2432,23 +2433,29 @@ begin
           end;
           {$endif dx_StringList_has_OwnsObjects}
           try
+            {$ifdef dx_StringList_has_OwnsObjects}
             if Assigned(slAsTStringList) and slAsTStringList.Sorted then
             begin
               // TStringList doesn't release the objects in PutObject, so we use this to get
               // sl.Clear to not destroy the objects in classes that inherit from TStringList
               // but do a ClearObject in Clear.
-              if sl.ClassType <> TStringList then
-                for I := 0 to sl.Count - 1 do
-                  sl.Objects[I] := nil;
+              //
+              // todo: Check whether this should be
+              //   if _sl is TStringList then
+              // instead.
+              if _sl.ClassType <> TStringList then
+                for I := 0 to _sl.Count - 1 do
+                  _sl.Objects[I] := nil;
 
-              // same here, we don't want to modify the properties of the orignal string list
-              sl.Clear;
-              sl.AddStrings(s);
+              // same here, we don't use assign because we don't want to modify the properties of the orignal string list
+              _sl.Clear;
+              _sl.AddStrings(tempSL);
             end
             else
+            {$endif dx_StringList_has_OwnsObjects}
             begin
-              for i := 0 to sl.Count - 1 do
-                sl[i] := s[i];
+              for i := 0 to _sl.Count - 1 do
+                _sl[i] := tempSL[i];
             end;
           finally
             {$ifdef dx_StringList_has_OwnsObjects}
@@ -2458,27 +2465,27 @@ begin
           end;
         end;
       finally
-        FreeAndNil (s);
+        FreeAndNil (tempSL);
       end;
     finally
-      sl.EndUpdate;
+      _sl.EndUpdate;
     end;
   end;
 end;
 
 {$IFDEF dx_has_WideStrings}
-procedure TGnuGettextInstance.TranslateWideStrings(sl: TWideStrings;
+procedure TGnuGettextInstance.TranslateWideStrings(_sl: TWideStrings;
   const TextDomain: DomainString);
 var
   line: string;
   i: integer;
-  s:TWideStringList;
+  tempSL:TWideStringList;
   {$ifdef dx_StringList_has_OwnsObjects}
   slAsTWideStringList:TWideStringList;
   originalOwnsObjects: Boolean;
   {$endif dx_StringList_has_OwnsObjects}
 begin
-  if sl.Count > 0 then begin
+  if _sl.Count > 0 then begin
     {$ifdef dx_StringList_has_OwnsObjects}
     // From D2009 onward, the TWideStringList class has an OwnsObjects property, just like
     // TObjectList has. This means that if we call Clear on the given
@@ -2486,31 +2493,31 @@ begin
     // To avoid this we must disable OwnsObjects while we replace the strings, but
     // only if sl is a TWideStringList instance and if using Delphi 2009 or later.
     originalOwnsObjects := False; // avoid warning
-    if sl is TWideStringList then
-      slAsTWideStringList := TWideStringList(sl)
+    if _sl is TWideStringList then
+      slAsTWideStringList := TWideStringList(_sl)
     else
       slAsTWideStringList := nil;
     {$endif dx_StringList_has_OwnsObjects}
 
-    sl.BeginUpdate;
+    _sl.BeginUpdate;
     try
-      s:=TWideStringList.Create;
+      tempSL:=TWideStringList.Create;
       try
         // don't use Assign here as it will propagate the Sorted property (among others)
         // in versions of Delphi from Delphi XE ownard
-        s.AddStrings(sl);
+        tempSL.AddStrings(_sl);
 
-        for i:=0 to s.Count-1 do begin
-          line:=s.Strings[i];
+        for i:=0 to tempSL.Count-1 do begin
+          line:=tempSL.Strings[i];
           if line<>'' then
             if TextDomain = '' then
-              s.Strings[i]:=ComponentGettext(line)
+              tempSL.Strings[i]:=ComponentGettext(line)
             else
-              s.Strings[i]:=dgettext(TextDomain,line);
+              tempSL.Strings[i]:=dgettext(TextDomain,line);
         end;
 
         //DH Fix 2013-09-19: Only refill sl if changed
-        if sl.Text<>s.Text then
+        if _sl.Text<>tempSL.Text then
         begin
           {$ifdef dx_StringList_has_OwnsObjects}
           if Assigned(slAsTWideStringList) then begin
@@ -2519,23 +2526,29 @@ begin
           end;
           {$endif dx_StringList_has_OwnsObjects}
           try
+            {$ifdef dx_StringList_has_OwnsObjects}
             if Assigned(slAsTWideStringList) and slAsTWideStringList.Sorted then
             begin
               // TWideStringList doesn't release the objects in PutObject, so we use this to get
               // sl.Clear to not destroy the objects in classes that inherit from TWideStringList
               // but do a ClearObject in Clear.
-              if sl.ClassType <> TWideStringList then
-                for I := 0 to sl.Count - 1 do
-                  sl.Objects[I] := nil;
+              //
+              // todo: Check whether this should be
+              //   if _sl is TWideStringList then
+              // instead.
+              if _sl.ClassType <> TWideStringList then
+                for I := 0 to _sl.Count - 1 do
+                  _sl.Objects[I] := nil;
 
-              // same here, we don't want to modify the properties of the orignal string list
-              sl.Clear;
-              sl.AddStrings(s);
+              // same here, we don't use assign because we don't want to modify the properties of the orignal string list
+              _sl.Clear;
+              _sl.AddStrings(tempSL);
             end
             else
+            {$endif dx_StringList_has_OwnsObjects}
             begin
-              for i := 0 to sl.Count - 1 do
-                sl[i] := s[i];
+              for i := 0 to _sl.Count - 1 do
+                _sl[i] := tempSL[i];
             end;
           finally
             {$ifdef dx_StringList_has_OwnsObjects}
@@ -2545,10 +2558,10 @@ begin
           end;
         end;
       finally
-        FreeAndNil (s);
+        FreeAndNil (tempSL);
       end;
     finally
-      sl.EndUpdate;
+      _sl.EndUpdate;
     end;
   end;
 end;
