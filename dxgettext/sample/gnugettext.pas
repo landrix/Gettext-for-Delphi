@@ -102,6 +102,7 @@ interface
   {$DEFINE dx_NativeUInt_is_Cardinal}
 {$endif}
 {$ifdef VER180}
+  {$ifndef VER185}
   // Delphi 2006
   {$DEFINE dx_has_Unsafe_Warnings}
   {$DEFINE dx_has_WideStrings}
@@ -109,6 +110,7 @@ interface
   {$DEFINE dx_NativeInt_is_Integer}
   {$DEFINE dx_NativeUInt_is_Cardinal}
   {$DEFINE dx_has_Inline}
+  {$endif}
 {$endif}
 {$ifdef VER190}
   // Delphi 2007
@@ -423,7 +425,6 @@ type
     class
     private
       fOnDebugLine:TOnDebugLine;
-      CreatorThread:Cardinal;  /// Only this thread can use LoadResString
     public
       Enabled:Boolean;      /// Set this to false to disable translations
       DesignTimeCodePage:Integer;  /// See MultiByteToWideChar() in Win32 API for documentation
@@ -664,7 +665,6 @@ type
     class(TList)
     private
       interceptorClassDatas:TList;
-      interceptorClassDataParents:array of TClass;
 
       function findInterceptorClassData(aClass:TClass):Pointer;
 
@@ -1675,7 +1675,6 @@ end;
 
 constructor TGnuGettextInstance.Create;
 begin
-  CreatorThread:=GetCurrentThreadId;
   {$ifdef MSWindows}
   DesignTimeCodePage:=CP_ACP;
   {$endif}
@@ -2423,24 +2422,40 @@ begin
               s.Strings[i]:=dgettext(TextDomain,line);
         end;
 
-        {$ifdef dx_StringList_has_OwnsObjects}
-        if Assigned(slAsTStringList) then begin
-          originalOwnsObjects := slAsTStringList.OwnsObjects;
-          slAsTStringList.OwnsObjects := False;
-        end;
-        {$endif dx_StringList_has_OwnsObjects}
-        try
-          //DH Fix 2013-09-19: Only refill sl if changed
-          if sl.Text<>s.Text then begin
-            // same here, we don't want to modify the properties of the original string list
-            sl.Clear;
-            sl.AddStrings(s);
-          end;
-        finally
+        //DH Fix 2013-09-19: Only refill sl if changed
+        if sl.Text<>s.Text then
+        begin
           {$ifdef dx_StringList_has_OwnsObjects}
-          if Assigned(slAsTStringList) then
-            slAsTStringList.OwnsObjects := originalOwnsObjects;
+          if Assigned(slAsTStringList) then begin
+            originalOwnsObjects := slAsTStringList.OwnsObjects;
+            slAsTStringList.OwnsObjects := False;
+          end;
           {$endif dx_StringList_has_OwnsObjects}
+          try
+            if Assigned(slAsTStringList) and slAsTStringList.Sorted then
+            begin
+              // TStringList doesn't release the objects in PutObject, so we use this to get
+              // sl.Clear to not destroy the objects in classes that inherit from TStringList
+              // but do a ClearObject in Clear.
+              if sl.ClassType <> TStringList then
+                for I := 0 to sl.Count - 1 do
+                  sl.Objects[I] := nil;
+
+              // same here, we don't want to modify the properties of the orignal string list
+              sl.Clear;
+              sl.AddStrings(s);
+            end
+            else
+            begin
+              for i := 0 to sl.Count - 1 do
+                sl[i] := s[i];
+            end;
+          finally
+            {$ifdef dx_StringList_has_OwnsObjects}
+            if Assigned(slAsTStringList) then
+              slAsTStringList.OwnsObjects := originalOwnsObjects;
+            {$endif dx_StringList_has_OwnsObjects}
+          end;
         end;
       finally
         FreeAndNil (s);
@@ -2459,56 +2474,75 @@ var
   i: integer;
   s:TWideStringList;
   {$ifdef dx_StringList_has_OwnsObjects}
-  slAsTStringList:TWideStringList;
+  slAsTWideStringList:TWideStringList;
   originalOwnsObjects: Boolean;
   {$endif dx_StringList_has_OwnsObjects}
 begin
   if sl.Count > 0 then begin
     {$ifdef dx_StringList_has_OwnsObjects}
-    // From D2009 onward, the TStringList class has a OwnsObjects property, just like
+    // From D2009 onward, the TWideStringList class has an OwnsObjects property, just like
     // TObjectList has. This means that if we call Clear on the given
     // list in the sl parameter, we could destroy the objects it contains.
     // To avoid this we must disable OwnsObjects while we replace the strings, but
-    // only if sl is a TStringList instance and if using Delphi 2009 or upper.
+    // only if sl is a TWideStringList instance and if using Delphi 2009 or later.
     originalOwnsObjects := False; // avoid warning
     if sl is TWideStringList then
-      slAsTStringList := TWideStringList(sl)
+      slAsTWideStringList := TWideStringList(sl)
     else
-      slAsTStringList := nil;
+      slAsTWideStringList := nil;
     {$endif dx_StringList_has_OwnsObjects}
 
     sl.BeginUpdate;
     try
-      s := TWideStringList.Create;
+      s:=TWideStringList.Create;
       try
         // don't use Assign here as it will propagate the Sorted property (among others)
         // in versions of Delphi from Delphi XE ownard
         s.AddStrings(sl);
 
         for i:=0 to s.Count-1 do begin
-          line := s.Strings[i];
+          line:=s.Strings[i];
           if line<>'' then
             if TextDomain = '' then
-              s.Strings[i] := ComponentGettext(line)
+              s.Strings[i]:=ComponentGettext(line)
             else
-              s.Strings[i] := dgettext(TextDomain,line);
+              s.Strings[i]:=dgettext(TextDomain,line);
         end;
 
-        {$ifdef dx_StringList_has_OwnsObjects}
-        if Assigned(slAsTStringList) then begin
-          originalOwnsObjects := slAsTStringList.OwnsObjects;
-          slAsTStringList.OwnsObjects := False;
-        end;
-        {$endif dx_StringList_has_OwnsObjects}
-        try
-          // same here, we don't want to modify the properties of the orignal string list
-          sl.Clear;
-          sl.AddStrings(s);
-        finally
+        //DH Fix 2013-09-19: Only refill sl if changed
+        if sl.Text<>s.Text then
+        begin
           {$ifdef dx_StringList_has_OwnsObjects}
-          if Assigned(slAsTStringList) then
-            slAsTStringList.OwnsObjects := originalOwnsObjects;
+          if Assigned(slAsTWideStringList) then begin
+            originalOwnsObjects := slAsTWideStringList.OwnsObjects;
+            slAsTWideStringList.OwnsObjects := False;
+          end;
           {$endif dx_StringList_has_OwnsObjects}
+          try
+            if Assigned(slAsTWideStringList) and slAsTWideStringList.Sorted then
+            begin
+              // TWideStringList doesn't release the objects in PutObject, so we use this to get
+              // sl.Clear to not destroy the objects in classes that inherit from TWideStringList
+              // but do a ClearObject in Clear.
+              if sl.ClassType <> TWideStringList then
+                for I := 0 to sl.Count - 1 do
+                  sl.Objects[I] := nil;
+
+              // same here, we don't want to modify the properties of the orignal string list
+              sl.Clear;
+              sl.AddStrings(s);
+            end
+            else
+            begin
+              for i := 0 to sl.Count - 1 do
+                sl[i] := s[i];
+            end;
+          finally
+            {$ifdef dx_StringList_has_OwnsObjects}
+            if Assigned(slAsTWideStringList) then
+              slAsTWideStringList.OwnsObjects := originalOwnsObjects;
+            {$endif dx_StringList_has_OwnsObjects}
+          end;
         end;
       finally
         FreeAndNil (s);
@@ -2806,11 +2840,6 @@ begin
   {$ifdef DXGETTEXTDEBUG}
   DebugWriteln ('Loaded resourcestring: '+utf8encode(Result));
   {$endif}
-  if CreatorThread<>GetCurrentThreadId then begin
-    {$ifdef DXGETTEXTDEBUG}
-    DebugWriteln ('LoadResString was called from an invalid thread. Resourcestring was not translated.');
-    {$endif}
-  end else
   Result:=ResourceStringGettext(Result);
 end;
 
@@ -3348,7 +3377,11 @@ begin
   for i:=0 to list.Count-1 do
     TObject(list.Items[i]).Free;
   FreeAndNil (list);
-  KnownRetranslators.Remove(Self);
+
+  // some times, we are finalized before the main form's unit
+  if Assigned(KnownRetranslators) then
+    KnownRetranslators.Remove(Self);
+
   inherited;
 end;
 
@@ -3825,7 +3858,6 @@ begin
   inherited Create;
 
   interceptorClassDatas:=TList.Create;
-  SetLength(interceptorClassDataParents,50);
 end;
 
 destructor THookedObjects.Destroy;
@@ -3884,6 +3916,7 @@ const
 var
   proxyClass:TClass;
   proxyClassData:Pointer;
+  objClassData:PProxyClassData;
   size,classOfs:Integer;
   p:PAnsiChar;
   beforeDestructionVmtAddr:PPointer;
@@ -3898,25 +3931,24 @@ begin
       // and the last one is followed by an invalid address.
       // So to figure out the size, we walk the memory looking for the first
       // invalid address.
-      proxyClassData:=getClassData(obj.ClassType);
-      p:=PAnsiChar(proxyClassData)+classofs;
+      objClassData:=getClassData(obj.ClassType);
+      p:=PAnsiChar(objClassData)+classofs;
       while AddrInModule(PPointer(p)^) do
         Inc(p, SizeOf(Pointer));
-      size:=TNativeUInt(p)-TNativeUInt(proxyClassData);
+      size:=NativeUInt(p)-NativeUInt(objClassData);
 
       proxyClassData:=AllocMem(size);
-
       interceptorClassDatas.Add(proxyClassData);
-      if Length(interceptorClassDataParents)<interceptorClassDatas.Count then
-        SetLength(interceptorClassDataParents, interceptorClassDatas.Count+growthCapacity);
-
-      interceptorClassDataParents[interceptorClassDatas.Count-1]:=obj.ClassType;
 
       proxyClass:=TClass(PAnsiChar(proxyClassData) + classOfs);
-      System.Move(getClassData(obj)^, proxyClassData^, size);
-      PProxyClassData(proxyClassData)^.Parent := @interceptorClassDataParents[interceptorClassDatas.Count-1];
-      PProxyClassData(proxyClassData)^.SelfPtr := proxyClass;
 
+      // Copy everything from the original class data then adjust SelfPtr to point to ourselves
+      // and the parent pointer to the address of the original data SelfPtr.
+      System.Move(objClassData^, proxyClassData^, size);
+      PProxyClassData(proxyClassData)^.Parent:=@(objClassData^.SelfPtr);
+      PProxyClassData(proxyClassData)^.SelfPtr:=proxyClass;
+
+      // Place our BeforeDestruction virtual method in the metaclass VMT
       beforeDestructionVmtAddr:=GetBeforeDestructionVmtAddress(proxyClass);
       beforeDestructionVmtAddr^:=GetBeforeDestructionHookAddress;
 
