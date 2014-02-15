@@ -55,7 +55,7 @@ object FormEditor: TFormEditor
         45)
       object LabelRowCount: TLabel
         Left = 1109
-        Top = 15
+        Top = 24
         Width = 18
         Height = 14
         Alignment = taRightJustify
@@ -63,14 +63,14 @@ object FormEditor: TFormEditor
         Caption = '123'
       end
       object LabelLabelFilter: TLabel
-        Left = 328
+        Left = 344
         Top = 2
         Width = 66
         Height = 14
         Caption = 'Filter by label:'
       end
       object EditFilterText: TLabeledEdit
-        Left = 105
+        Left = 121
         Top = 20
         Width = 187
         Height = 22
@@ -81,7 +81,7 @@ object FormEditor: TFormEditor
         OnChange = EditFilterTextChange
       end
       object ComboBoxLabel: TComboBox
-        Left = 328
+        Left = 344
         Top = 20
         Width = 155
         Height = 22
@@ -90,16 +90,18 @@ object FormEditor: TFormEditor
         OnChange = ComboBoxLabelChange
       end
       object StaticTextFilterExplanation: TStaticText
-        Left = 800
-        Top = 17
-        Width = 298
+        Left = 790
+        Top = 0
+        Width = 337
         Height = 18
+        Alignment = taRightJustify
+        AutoSize = False
         Caption = 'Only the result of filtering is affected by the Messages menu.'
         TabOrder = 6
         Visible = False
       end
       object chkInverseFilter: TCheckBox
-        Left = 490
+        Left = 506
         Top = 22
         Width = 105
         Height = 19
@@ -110,12 +112,11 @@ object FormEditor: TFormEditor
         OnClick = chkInverseFilterClick
       end
       object btnRefreshFilter: TBitBtn
-        Left = 595
+        Left = 611
         Top = 12
         Width = 112
         Height = 27
         Caption = 'Refresh filter'
-        DoubleBuffered = True
         Glyph.Data = {
           36080000424D3608000000000000360000002800000020000000100000000100
           2000000000000008000000000000000000000000000000000000FF00FF00FF00
@@ -184,17 +185,15 @@ object FormEditor: TFormEditor
           FF00FF00FF00FF00FF00FF00FF009D9D9D009F9F9F00A2A2A200A1A1A1009F9F
           9F0099999900FF00FF00FF00FF00FF00FF00FF00FF00FF00FF00}
         NumGlyphs = 2
-        ParentDoubleBuffered = False
         TabOrder = 5
         OnClick = btnRefreshFilterClick
       end
       object ButtonShowAll: TBitBtn
         Left = 8
         Top = 11
-        Width = 82
+        Width = 105
         Height = 26
         Caption = 'Show all'
-        DoubleBuffered = True
         Glyph.Data = {
           36080000424D3608000000000000360000002800000020000000100000000100
           2000000000000008000000000000000000000000000000000000FF00FF00FF00
@@ -263,12 +262,11 @@ object FormEditor: TFormEditor
           FF00FF00FF00FF00FF00FF00FF00FF00FF00FF00FF00FF00FF00FF00FF00FF00
           FF00FF00FF00FF00FF00FF00FF00FF00FF00FF00FF00FF00FF00}
         NumGlyphs = 2
-        ParentDoubleBuffered = False
         TabOrder = 0
         OnClick = ButtonShowAllClick
       end
       object b_FilterSelect: TButton
-        Left = 291
+        Left = 307
         Top = 19
         Width = 24
         Height = 23
@@ -774,8 +772,6 @@ object FormEditor: TFormEditor
               'Insert a special char to translation. You can change it in the P' +
               'references window.'
             Caption = #182
-            DoubleBuffered = True
-            ParentDoubleBuffered = False
             TabOrder = 1
             OnClick = btSpecCharsClick
           end
@@ -1275,7 +1271,6 @@ object FormEditor: TFormEditor
       Category = 'file'
       Caption = '&Save translation as ...'
       Hint = 'Save translations to a new .po file.'
-      ShortCut = 16467
       OnExecute = act_FileSaveAsExecute
     end
     object act_FileSyncWithOther: TAction
@@ -1557,7 +1552,7 @@ object FormEditor: TFormEditor
     Left = 321
     Top = 120
     Bitmap = {
-      494C010103000500180010001000FFFFFFFFFF10FFFFFFFFFFFFFFFF424D3600
+      494C010103000500280010001000FFFFFFFFFF10FFFFFFFFFFFFFFFF424D3600
       0000000000003600000028000000400000001000000001002000000000000010
       0000000000000000000000000000000000000000000000000000000000000000
       00000000000000000000000000000040400000404000002520000D0D0D000D0D

@@ -244,11 +244,21 @@ type
     Createtranslationtrackingmsgstr1: TMenuItem;
     mi_GormDiffHelp: TMenuItem;
     procedure MenuItemAboutClick(Sender: TObject);
-    procedure act_FileExitExecute(Sender: TObject);
     procedure act_FileOpenExecute(Sender: TObject);
+    procedure act_FileReloadExecute(Sender: TObject);
     procedure act_FileSaveExecute(Sender: TObject);
-    procedure act_FileAppendToExecute(Sender: TObject);
+    procedure act_FileSaveAsExecute(Sender: TObject);
     procedure act_FileSyncWithOtherExecute(Sender: TObject);
+    procedure act_FileAppendToExecute(Sender: TObject);
+    procedure act_FileHeaderExecute(Sender: TObject);
+    procedure act_FileReadFromExecute(Sender: TObject);
+    procedure act_FileExitExecute(Sender: TObject);
+    procedure act_AutoDisableExecute(Sender: TObject);
+    procedure act_AutoGoogleExecute(Sender: TObject);
+    procedure act_AutoMicrosoftExecute(Sender: TObject);
+    procedure act_AutoMoExecute(Sender: TObject);
+    procedure act_AutoPoExecute(Sender: TObject);
+    procedure act_AutoRepositoryExecute(Sender: TObject);
     procedure MenuItemOpenMRUClick(Sender: TObject);
     procedure FormCreate(Sender: TObject);
     procedure FormDestroy(Sender: TObject);
@@ -288,11 +298,6 @@ type
     procedure chkInverseFilterClick(Sender: TObject);
     procedure btnRefreshFilterClick(Sender: TObject);
     procedure act_LabelsToggleFuzzyExecute(Sender: TObject);
-    procedure act_AutoDisableExecute(Sender: TObject);
-    procedure act_AutoGoogleExecute(Sender: TObject);
-    procedure act_AutoMoExecute(Sender: TObject);
-    procedure act_AutoPoExecute(Sender: TObject);
-    procedure act_AutoRepositoryExecute(Sender: TObject);
     procedure MemoMsgStrKeyDown(Sender: TObject; var Key: Word; Shift: TShiftState);
     procedure act_LabelsToggleIgnoreExecute(Sender: TObject);
     procedure CheckListBoxLabelsClick(Sender: TObject);
@@ -310,17 +315,12 @@ type
     procedure b_FilterSelectClick(Sender: TObject);
     procedure act_ToolsRepositoryShowExecute(Sender: TObject);
     procedure act_ToolsRepositoryLearnExecute(Sender: TObject);
-    procedure act_FileHeaderExecute(Sender: TObject);
-    procedure act_FileSaveAsExecute(Sender: TObject);
-    procedure act_FileReloadExecute(Sender: TObject);
-    procedure act_FileReadFromExecute(Sender: TObject);
     procedure ActivateTranslationsMemory(Sender: TObject);
     procedure listAutoTranslationDblClick(Sender: TObject);
     procedure btSpecCharsClick(Sender: TObject);
     procedure act_LabelsLoadIgnoreExecute(Sender: TObject);
     procedure act_LabelsImportIgnoreExecute(Sender: TObject);
     procedure act_LabelsSaveIgnoreExecute(Sender: TObject);
-    procedure act_AutoMicrosoftExecute(Sender: TObject);
     procedure act_TransCreateMsgstrExecute(Sender: TObject);
     procedure mi_GormDiffHelpClick(Sender: TObject);
   private
@@ -375,7 +375,7 @@ type
                               Shift: TShiftState; X, Y: Integer);
     procedure RemoveFuzzyFromEmtpyTranslations;
     procedure AutoTranslate;
-
+    function EditHeader(_ForceLanguageInput: boolean): boolean;
   public
   end;
 
@@ -589,7 +589,7 @@ begin
     end;
     item := items.FindNext(item);
   end;
-  LabelRowCount.Caption := format('%d total, %d untranslated, %d fuzzy, %d filtered', [Rows.Count, countuntranslated, countfuzzy, icountfiltered]);
+  LabelRowCount.Caption := Format(_('%d total, %d untranslated, %d fuzzy, %d filtered'), [Rows.Count, countuntranslated, countfuzzy, icountfiltered]);
   Grid.RowCount := Rows.Count + 1;
   Grid.Cells[0, 0] := 'Status';
   Grid.Cells[1, 0] := 'MsgId';
@@ -984,6 +984,10 @@ begin
   try
     od.Filter := _FileType + ' (' + _FileMask + ')|' + _FileMask
       + '|' + _('All files') + ' (*.*)|*.*';
+    if _Filename <> '' then begin
+      od.InitialDir := ExtractFileDir(_Filename);
+      od.FileName := _Filename;
+    end;
     Result := od.Execute;
     if Result then
       _Filename := od.Filename;
@@ -2446,40 +2450,61 @@ var
   Code: string;
 begin
   lng := Items.Language;
-  if lng = '' then
-    raise Exception.Create(_('The language of this po file is unknown, please edit the header first to provide it.'));
+  while lng = '' do begin
+    if idYes <>  MessageDlg(_('The language of this po file is unknown.'#13#10
+      + 'Do you want to set it now?'),
+      mtError, [mbYes, mbCancel], 0) then
+        exit;
+    if not EditHeader(true) then
+      exit;
+    lng := Items.Language;
+  end;
   if not dxlanguages.TryGetCodeForLanguage(lng, Code) then
     raise Exception.CreateFmt(_('Language "%s" is not known to Gorm.'), [lng]);
   SetTranslator(TTranslatorEngineRepository.Create(FTranslationRepository, Code));
   act_AutoRepository.Checked := true;
 end;
 
-procedure TFormEditor.act_FileHeaderExecute(Sender: TObject);
+function TFormEditor.EditHeader(_ForceLanguageInput: boolean): boolean;
 var
   Item: TPoEntry;
 begin
   Item := Items.Find('');
   if not Assigned(Item) then begin
     Item := TPoEntry.Create;
-    Item.AutoCommentList.Add('SOME DESCRIPTIVE TITLE.');
-    Item.AutoCommentList.Add('Copyright (C) YEAR THE PACKAGE''S COPYRIGHT HOLDER');
-    Item.AutoCommentList.Add('This file is distributed under the same license as the PACKAGE package.');
-    Item.AutoCommentList.Add('FIRST AUTHOR <EMAIL@ADDRESS>, YEAR.');
-    Item.Fuzzy := true;
-    Item.MsgStr := 'Project-Id-Version: PACKAGE VERSION'#13#10
-      + 'POT-Creation-Date: ' + FormatDateTime('yyyy-mm-dd hh:nn', now) + #13#10
-      + 'PO-Revision-Date: ' + FormatDateTime('yyyy-mm-dd hh:nn', now) + #13#10
-      + 'Last-Translator: Somebody <your.email@address.com>'#13#10
-      + 'MIME-Version: 1.0'#13#10
-      + 'Content-Type: text/plain; charset=UTF-8'#13#10
-      + 'Content-Transfer-Encoding: 8bit'#13#10
-      + 'X-Generator: ' + 'Gorm.exe';
-    Items.Add(Item);
+    try
+      Item.UserCommentList.Add('# SOME DESCRIPTIVE TITLE.');
+      Item.UserCommentList.Add('# Copyright (C) YEAR THE PACKAGE''S COPYRIGHT HOLDER');
+      Item.UserCommentList.Add('# This file is distributed under the same license as the PACKAGE package.');
+      Item.UserCommentList.Add('# FIRST AUTHOR <EMAIL@ADDRESS>, YEAR.');
+      Item.Fuzzy := true;
+      Item.MsgStr := 'Project-Id-Version: PACKAGE VERSION'#13#10
+        + 'POT-Creation-Date: ' + FormatDateTime('yyyy-mm-dd hh:nn', now) + #13#10
+        + 'PO-Revision-Date: ' + FormatDateTime('yyyy-mm-dd hh:nn', now) + #13#10
+        + 'Last-Translator: Somebody <your.email@address.com>'#13#10
+        + 'MIME-Version: 1.0'#13#10
+        + 'Content-Type: text/plain; charset=UTF-8'#13#10
+        + 'Content-Transfer-Encoding: 8bit'#13#10
+        + 'X-Generator: ' + 'Gorm.exe';
+      Items.Add(Item);
+    finally
+      FreeAndNil(Item);
+    end;
+    // .Add does not add Item itsself but a copy, so in order to edit
+    // the actual header, we need to search it again.
+    Item := Items.Find('');
   end;
-  if Tf_EditHeader.Execute(Self, Item) then begin
+  Result := Tf_EditHeader.Execute(Self, Item, _ForceLanguageInput);
+  if Result then begin
     Item.Fuzzy := false;
+    items.language;
     ActivateTranslationsMemory(Self);
   end;
+end;
+
+procedure TFormEditor.act_FileHeaderExecute(Sender: TObject);
+begin
+  EditHeader(false);
 end;
 
 procedure TFormEditor.act_LabelsLoadIgnoreExecute(Sender: TObject);
@@ -2711,7 +2736,13 @@ begin
 end;
 
 procedure TFormEditor.LoadPostProcess;
+var
+  Item: TPoEntry;
 begin
+  Item := Items.Find('');
+  if not Assigned(Item) then
+    EditHeader(true);
+
   RemoveFuzzyFromEmtpyTranslations;
   ScanItemsForLabels;
   ApplyLabelList;

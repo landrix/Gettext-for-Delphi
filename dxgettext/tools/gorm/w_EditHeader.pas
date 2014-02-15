@@ -37,11 +37,15 @@ type
     ed_LastEmail: TEdit;
     l_BasePath: TLabel;
     ed_BasePath: TEdit;
+    procedure cmb_LanguageChange(Sender: TObject);
   private
-    procedure SetData(_Item: TPoEntry);
+    FForceLanguageInput: Boolean;
+    procedure SetData(_Item: TPoEntry; _ForceLanguageInput: boolean);
     procedure GetData(_Item: TPoEntry);
+    procedure CheckInput;
   public
-    class function Execute(_Owner: TComponent; _Item: TPoEntry): boolean;
+    class function Execute(_Owner: TComponent; _Item: TPoEntry;
+      _ForceLanguageInput: boolean): boolean;
     constructor Create(_Owner: TComponent); override;
   end;
 
@@ -56,19 +60,26 @@ uses
 
 { Tf_EditHeader }
 
-class function Tf_EditHeader.Execute(_Owner: TComponent; _Item: TPoEntry): boolean;
+class function Tf_EditHeader.Execute(_Owner: TComponent; _Item: TPoEntry;
+  _ForceLanguageInput: boolean): boolean;
 var
   frm: Tf_EditHeader;
 begin
   frm := Tf_EditHeader.Create(_Owner);
   try
-    frm.SetData(_Item);
+    frm.SetData(_Item, _ForceLanguageInput);
+    frm.CheckInput;
     Result := (frm.ShowModal = mrOk);
     if Result then
       frm.GetData(_Item);
   finally
     FreeAndNil(frm);
   end;
+end;
+
+procedure Tf_EditHeader.cmb_LanguageChange(Sender: TObject);
+begin
+  CheckInput;
 end;
 
 constructor Tf_EditHeader.Create(_Owner: TComponent);
@@ -78,6 +89,20 @@ begin
   TranslateComponent(Self);
 
   dxLanguages.GetLanguages(cmb_Language.Items);
+end;
+
+procedure Tf_EditHeader.CheckInput;
+var
+ OK: boolean;
+begin
+  OK := (cmb_Language.Text <> '');
+  if FForceLanguageInput then begin
+    if OK then
+      cmb_Language.Color := clWindow
+    else
+      cmb_Language.Color := clYellow;
+    b_Ok.Enabled := OK;
+  end;
 end;
 
 procedure Tf_EditHeader.GetData(_Item: TPoEntry);
@@ -96,7 +121,7 @@ begin
   _Item.MsgStr := Header;
 end;
 
-procedure Tf_EditHeader.SetData(_Item: TPoEntry);
+procedure Tf_EditHeader.SetData(_Item: TPoEntry; _ForceLanguageInput: boolean);
 
   function DequoteStr(const _s: string; _StartQuote: char = ''''; _EndQuote: char = ''''): string;
   var
@@ -175,6 +200,8 @@ begin
     cmb_Charset.Text := Second;
 
   ed_BasePath.Text := GetPoHeaderEntry(Header, PO_HEADER_Poedit_BasePath);
+
+  FForceLanguageInput := _ForceLanguageInput;
 end;
 
 end.
