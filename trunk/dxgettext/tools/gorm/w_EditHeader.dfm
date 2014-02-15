@@ -3,8 +3,8 @@ object f_EditHeader: Tf_EditHeader
   Top = 202
   BorderStyle = bsDialog
   Caption = 'Edit Header'
-  ClientHeight = 391
-  ClientWidth = 337
+  ClientHeight = 401
+  ClientWidth = 401
   Color = clBtnFace
   Font.Charset = DEFAULT_CHARSET
   Font.Color = clWindowText
@@ -30,7 +30,7 @@ object f_EditHeader: Tf_EditHeader
     Caption = 'Language team'
   end
   object l_TeamEmail: TLabel
-    Left = 136
+    Left = 168
     Top = 160
     Width = 101
     Height = 13
@@ -46,9 +46,9 @@ object f_EditHeader: Tf_EditHeader
   object l_Charset: TLabel
     Left = 168
     Top = 256
-    Width = 151
+    Width = 217
     Height = 26
-    Caption = 'Charset (use UTF-8 unless you know what you are doing!)'
+    Caption = 'Charset (use UTF-8 unless you know exactly what you are doing!)'
     WordWrap = True
   end
   object l_Comments: TLabel
@@ -66,7 +66,7 @@ object f_EditHeader: Tf_EditHeader
     Caption = 'Last translator'
   end
   object l_LastEmail: TLabel
-    Left = 136
+    Left = 168
     Top = 208
     Width = 145
     Height = 13
@@ -82,21 +82,21 @@ object f_EditHeader: Tf_EditHeader
   object ed_Project: TEdit
     Left = 8
     Top = 128
-    Width = 321
+    Width = 385
     Height = 21
     TabOrder = 1
   end
   object ed_Team: TEdit
     Left = 8
     Top = 176
-    Width = 121
+    Width = 153
     Height = 21
     TabOrder = 2
   end
   object ed_TeamEmail: TEdit
-    Left = 136
+    Left = 168
     Top = 176
-    Width = 193
+    Width = 225
     Height = 21
     TabOrder = 3
   end
@@ -106,11 +106,12 @@ object f_EditHeader: Tf_EditHeader
     Width = 153
     Height = 21
     TabOrder = 6
+    OnChange = cmb_LanguageChange
   end
   object cmb_Charset: TComboBox
     Left = 168
     Top = 288
-    Width = 153
+    Width = 161
     Height = 21
     TabOrder = 7
     Items.Strings = (
@@ -160,8 +161,8 @@ object f_EditHeader: Tf_EditHeader
       'UTF-8')
   end
   object b_Ok: TButton
-    Left = 176
-    Top = 360
+    Left = 240
+    Top = 368
     Width = 75
     Height = 25
     Caption = 'OK'
@@ -170,8 +171,8 @@ object f_EditHeader: Tf_EditHeader
     TabOrder = 9
   end
   object b_Cancel: TButton
-    Left = 256
-    Top = 360
+    Left = 320
+    Top = 368
     Width = 75
     Height = 25
     Cancel = True
@@ -182,7 +183,7 @@ object f_EditHeader: Tf_EditHeader
   object m_Comments: TMemo
     Left = 8
     Top = 24
-    Width = 321
+    Width = 385
     Height = 81
     TabOrder = 0
     WordWrap = False
@@ -190,21 +191,21 @@ object f_EditHeader: Tf_EditHeader
   object ed_LastTranslator: TEdit
     Left = 8
     Top = 224
-    Width = 121
+    Width = 153
     Height = 21
     TabOrder = 4
   end
   object ed_LastEmail: TEdit
-    Left = 136
+    Left = 168
     Top = 224
-    Width = 193
+    Width = 225
     Height = 21
     TabOrder = 5
   end
   object ed_BasePath: TEdit
     Left = 8
     Top = 336
-    Width = 313
+    Width = 385
     Height = 21
     TabOrder = 8
   end

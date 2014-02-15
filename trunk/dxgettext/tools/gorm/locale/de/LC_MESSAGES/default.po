@@ -2,1888 +2,24 @@
 # Copyright (C) YEAR THE PACKAGE'S COPYRIGHT HOLDER
 # This file is distributed under the same license as the PACKAGE package.
 # FIRST AUTHOR <EMAIL@ADDRESS>, YEAR.
-#
 msgid ""
 msgstr ""
 "Project-Id-Version: PACKAGE VERSION\n"
-"POT-Creation-Date: 2011-08-21 20:58\n"
-"PO-Revision-Date: 2011-08-20 13:29\n"
-"Last-Translator: twm <nospam@dummzeuch.de>\n"
+"POT-Creation-Date: 2014-02-15 19:16\n"
+"PO-Revision-Date: 2014-02-15 19:02\n"
+"Last-Translator: Somebody <your.email@address.com>\n"
 "Language-Team:  <>\n"
 "MIME-Version: 1.0\n"
 "Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: 8bit\n"
-"X-Generator: dxgettext 1.3.0\n"
+"X-Generator: Gorm.exe\n"
 "X-Poedit-Language: german\n"
-
-#. FormPreferences..GroupBoxTranslationTest..Caption
-#: PreferencesUi.dfm:135
-msgid "  Run app to test translation  "
-msgstr "  Programm zum Testen der Überstzung ausführen  "
-
-#. FormPreferences..grp_SaveSettings..Caption
-#: PreferencesUi.dfm:179
-msgid "  Save settings  "
-msgstr "  Einstellungen speichern  "
-
-#. FormPreferences..GroupBoxStartupSettings..Caption
-#: PreferencesUi.dfm:52
-msgid "  Settings to be applied at startup  "
-msgstr "  Einstellungen beim Start anwenden  "
-
-#. FormPreferences..gbSymbols..Caption
-#: PreferencesUi.dfm:304
-msgid "  Special chars inserting  "
-msgstr "  Einfügen von Sonderzeichen  "
-
-#. FormPreferences..groupTranslationMemory..Caption
-#: PreferencesUi.dfm:216
-msgid "  Translation memory  "
-msgstr "  Übersetzungsspeicher  "
-
-#. FormPreferences..groupTranslationMemory..edMaxMemoryFileSize..EditLabel.Caption
-#: PreferencesUi.dfm:234
-msgid " Max file size, MB:"
-msgstr " Max. Dateigröße, MB:"
-
-#. FormPreferences..groupTranslationMemory..edSuggestionsNumber..EditLabel.Caption
-#: PreferencesUi.dfm:265
-msgid " Number of sugestions to show"
-msgstr " Anzahl der anzuzeigenden Vorschläge"
-
-#. FormPreferences..groupTranslationMemory..edCompareAccuracy..EditLabel.Caption
-#: PreferencesUi.dfm:250
-msgid " Search accuracy"
-msgstr " Such-Genauigkeit"
-
-#. FormPreferences..gbSymbols..edSymbolsFontSize..EditLabel.Caption
-#: PreferencesUi.dfm:334
-msgid " Special chars font size"
-msgstr " Schriftgrad für Sonderzeichen"
-
-#: w_dzProgress.pas:174
-#, no-object-pascal-format
-msgid "\"%\" must be followed by \"d\" or \"%\"."
-msgstr "Auf \"%\" muss  \"d\" oder \"%\" folgen."
-
-#. FormEditor..TheActionList..act_TransAutofillGorm..Caption
-#: EditorUi.dfm:1453
-msgid "\"Gorm\" prefix ..."
-msgstr "\"Gorm\" Präfix ..."
-
-#. FormEditor..TheActionList..act_TransAutofillHashes..Caption
-#: EditorUi.dfm:1461
-msgid "### instead of letters ..."
-msgstr "Buchstaben durch ### ersetzen ..."
-
-#: EditorUi.pas:2722
-#, object-pascal-format
-msgid "%d entries have been added to the repository."
-msgstr "%d Einträge wurden zum Repository hinzugefügt."
-
-#: EditorUi.pas:2419 EditorUi.pas:2495
-#, object-pascal-format
-msgid ""
-"%d entries have been changed.\n"
-"Remember to clear the translations from all newly ignored entries, otherwise they will still be translated."
-msgstr ""
-"%d Eingräge wurden geändert.\n"
-"Denken Sie daran, die Übersetzungen der neu ignorierten Einträge zu löschen, sonst werden sie weiterhin übersetzt."
-
-#: EditorUi.pas:2720
-#, object-pascal-format
-msgid "%d entries have been labelled."
-msgstr "%d Einträge wurden gelabeled."
-
-#: EditorUi.pas:2529
-#, object-pascal-format
-msgid "%d entries have been saved."
-msgstr "%d Einträge wurden gespeichert."
-
-#. Update GUI etc.
-#: EditorUi.pas:2029
-#, object-pascal-format
-msgid "%d labels have been applied."
-msgstr "%d Labels wurden angewendet."
-
-#. by VGL: Searches for suitable translation suggestions in memory
-#: EditorUi.pas:1233
-#, object-pascal-format
-msgid "%d suggestions found in memory:"
-msgstr "%d Vorschläge wurden im Übersetzungsspeicher gefunden:"
-
-#: EditorUi.pas:1523
-#, object-pascal-format
-msgid "%d translations have been cleared."
-msgstr "%d Übersetzungen wurden gelöscht."
-
-#: EditorUi.pas:2268
-#, object-pascal-format
-msgid "%s from %s"
-msgstr "%s von %s"
-
-#. FormEditor..MenuMain..MenuHelp..MenuItemAbout..Caption
-#: EditorUi.dfm:1225
-msgid "&About"
-msgstr "&Info"
-
-#. f_TranslationDb..al_Translation..act_TransAdd..Caption
-#: w_TranslationDb.dfm:183
-msgid "&Add"
-msgstr "Hinzu&fügen"
-
-#. FormEditor..TheActionList..act_LabelsAddStandardLabels..Caption
-#: EditorUi.dfm:1363
-msgid "&Add standard labels"
-msgstr "Standard Labels hinzufügen"
-
-#. FormEditor..MenuMain..MenuAutoTranslate..Caption
-#: EditorUi.dfm:1036
-msgid "&Auto translate"
-msgstr "&Autom. übersetzen"
-
-#. FormLabel..ButtonCancel..Caption
-#. FormLabelApplicationByRules..ButtonCancel..Caption
-#. FormPreferences..ButtonCancel..Caption
-#. f_TranslationDb..al_Translation..act_TransEditCancel..Caption
-#. f_TranslationDb..al_Translation..act_TransAddCancel..Caption
-#: EditLabel.dfm:45 LabelApplicationByRulesUi.dfm:48 PreferencesUi.dfm:43
-#: w_TranslationDb.dfm:204 w_TranslationDb.dfm:215
-msgid "&Cancel"
-msgstr "&Abbrechen"
-
-#. GoogleTranslationSettings..rg_Language....Items.Strings
-#. f_MicrosoftTranslationSettings..rg_Language....Items.Strings
-#: GoogleTranslateSettings.dfm:59 w_MicrosoftTranslateSettings.dfm:60
-#: GoogleTranslate.pas:719
-msgid "&Chinese simplified"
-msgstr "&Chinesisch (vereinfacht)"
-
-#. FormEditor..TheActionList..act_TransClear..Caption
-#: EditorUi.dfm:1476
-msgid "&Clear translations ..."
-msgstr "Übersetzungen löschen ..."
-
-#. FormEditor..TheActionList..act_ToolsCompileToMo..Caption
-#: EditorUi.dfm:1504
-msgid "&Compile to MO file"
-msgstr "In MO-Datei compilieren"
-
-#. FormEditor..PanelDetails..PanelBottomCenter..PanelTranslation..Panel9..ButtonCopyMsgId2MsgStr..Caption
-#: EditorUi.dfm:619
-msgid "&Copy original"
-msgstr "Original kopieren"
-
-#. FormEditor..TheActionList..act_TransAutofillCopy..Caption
-#: EditorUi.dfm:1469
-msgid "&Copy original ..."
-msgstr "Original kopieren ..."
-
-#. FormEditor..MenuMain..MenuTranslations..MenuItemCopyallitemstoclipboard..Caption
-#: EditorUi.dfm:1059
-msgid "&Copy to clipboard"
-msgstr "In Zwischenablage kopieren"
-
-#. GoogleTranslationSettings..rg_Language....Items.Strings
-#. f_MicrosoftTranslationSettings..rg_Language....Items.Strings
-#: GoogleTranslateSettings.dfm:60 w_MicrosoftTranslateSettings.dfm:61
-#: GoogleTranslate.pas:720
-msgid "&Danish"
-msgstr "&Dänisch"
-
-#. f_TranslationDb..al_Translation..act_TransDel..Caption
-#: w_TranslationDb.dfm:193
-msgid "&Delete"
-msgstr "&Löschen"
-
-#. FormEditor..TheActionList..act_AutoDisable..Caption
-#: EditorUi.dfm:1317
-msgid "&Disable automatic translation"
-msgstr "Automatische Übersetzung ausschalten"
-
-#. f_TranslationDb..al_Translation..act_TransEdit..Caption
-#: w_TranslationDb.dfm:188
-msgid "&Edit"
-msgstr "&Bearbeiten"
-
-#. FormEditor..TheActionList..act_FileExit..Caption
-#: EditorUi.dfm:1305
-msgid "&Exit"
-msgstr "&Beenden"
-
-#. FormEditor..MenuMain..MenuFile..Caption
-#: EditorUi.dfm:985
-msgid "&File"
-msgstr "&Datei"
-
-#. GoogleTranslationSettings..rg_Language....Items.Strings
-#. f_MicrosoftTranslationSettings..rg_Language....Items.Strings
-#: GoogleTranslateSettings.dfm:62 w_MicrosoftTranslateSettings.dfm:63
-#: GoogleTranslate.pas:722
-msgid "&Finnish"
-msgstr "&Finnisch"
-
-#. GoogleTranslationSettings..rg_Language....Items.Strings
-#. f_MicrosoftTranslationSettings..rg_Language....Items.Strings
-#: GoogleTranslateSettings.dfm:64 w_MicrosoftTranslateSettings.dfm:65
-#: GoogleTranslate.pas:724
-msgid "&German"
-msgstr "Deutsch"
-
-#. FormEditor..MenuMain..MenuHelp..MenuItemGormhomepage..Caption
-#: EditorUi.dfm:1214
-msgid "&Gorm homepage"
-msgstr "&Gorm Homepage"
-
-#. FormEditor..MenuMain..MenuHelp..Caption
-#. FormEditor..MenuMain..MenuHelp..mi_HelpHelp..Caption
-#: EditorUi.dfm:1207 EditorUi.dfm:1209
-msgid "&Help"
-msgstr "&Hilfe"
-
-#. GoogleTranslationSettings..rg_Language....Items.Strings
-#. f_MicrosoftTranslationSettings..rg_Language....Items.Strings
-#: GoogleTranslateSettings.dfm:65 w_MicrosoftTranslateSettings.dfm:66
-#: GoogleTranslate.pas:725
-msgid "&Indonesian"
-msgstr "&Indonesisch"
-
-#. GoogleTranslationSettings..rg_Language....Items.Strings
-#. f_MicrosoftTranslationSettings..rg_Language....Items.Strings
-#: GoogleTranslateSettings.dfm:67 w_MicrosoftTranslateSettings.dfm:68
-#: GoogleTranslate.pas:727
-msgid "&Japanese"
-msgstr "&Japanisch"
-
-#. GoogleTranslationSettings..rg_Language....Items.Strings
-#. f_MicrosoftTranslationSettings..rg_Language....Items.Strings
-#: GoogleTranslateSettings.dfm:68 w_MicrosoftTranslateSettings.dfm:69
-#: GoogleTranslate.pas:728
-msgid "&Korean"
-msgstr "&Koreanisch"
-
-#. FormEditor..MenuMain..MenuLabels..Caption
-#: EditorUi.dfm:1103
-msgid "&Labels"
-msgstr "&Labels"
-
-#. FormEditor..TheActionList..act_ToolsRepositoryLearn..Caption
-#: EditorUi.dfm:1524
-msgid "&Learn"
-msgstr "&Lernen"
-
-#. FormEditor..TheActionList..act_TransCopyMsgid..Caption
-#: EditorUi.dfm:1423
-msgid "&MSGID values"
-msgstr "&MSGID Werte"
-
-#. GoogleTranslationSettings..rg_Language....Items.Strings
-#. f_MicrosoftTranslationSettings..rg_Language....Items.Strings
-#: GoogleTranslateSettings.dfm:69 w_MicrosoftTranslateSettings.dfm:70
-#: GoogleTranslate.pas:729
-msgid "&Norwegian"
-msgstr "&Norwegisch"
-
-#. FormLabel..ButtonOK..Caption
-#. FormLabelApplicationByRules..ButtonOK..Caption
-#. FormPreferences..ButtonOK..Caption
-#. f_TranslationDb..al_Translation..act_TransEditOk..Caption
-#. f_TranslationDb..al_Translation..act_TransAddOk..Caption
-#: EditLabel.dfm:34 LabelApplicationByRulesUi.dfm:36 PreferencesUi.dfm:32
-#: w_TranslationDb.dfm:198 w_TranslationDb.dfm:209
-msgid "&OK"
-msgstr "&OK"
-
-#. FormEditor..TheActionList..act_FileOpen..Caption
-#: EditorUi.dfm:1243
-msgid "&Open translation ..."
-msgstr "Übersetzung öffnen ..."
-
-#. GoogleTranslationSettings..rg_Language....Items.Strings
-#. f_MicrosoftTranslationSettings..rg_Language....Items.Strings
-#: GoogleTranslateSettings.dfm:70 w_MicrosoftTranslateSettings.dfm:71
-#: GoogleTranslate.pas:730
-msgid "&Portuguese"
-msgstr "&Portugiesisch"
-
-#. FormEditor..TheActionList..act_ToolsPreferences..Caption
-#: EditorUi.dfm:1482
-msgid "&Preferences"
-msgstr "Einstellungen"
-
-#. FormEditor..TheActionList..act_ToolsRun..Caption
-#: EditorUi.dfm:1511
-msgid "&Run application"
-msgstr "P&rogramm aufrufen"
-
-#. GoogleTranslationSettings..rg_Language....Items.Strings
-#. f_MicrosoftTranslationSettings..rg_Language....Items.Strings
-#: GoogleTranslateSettings.dfm:71 w_MicrosoftTranslateSettings.dfm:72
-#: GoogleTranslate.pas:731
-msgid "&Russian"
-msgstr "&Russisch"
-
-#. FormEditor..TheActionList..act_FileSave..Caption
-#: EditorUi.dfm:1272
-msgid "&Save translation"
-msgstr "Übersetzung &speichern"
-
-#. FormEditor..TheActionList..act_FileSaveAs..Caption
-#: EditorUi.dfm:1279
-msgid "&Save translation as ..."
-msgstr "Übersetzung speichern unter ..."
-
-#. FormEditor..TheActionList..act_ToolsRepositoryShow..Caption
-#: EditorUi.dfm:1518
-msgid "&Show repository"
-msgstr "Repository anzeigen"
-
-#. GoogleTranslationSettings..rg_Language....Items.Strings
-#. f_MicrosoftTranslationSettings..rg_Language....Items.Strings
-#: GoogleTranslateSettings.dfm:73 w_MicrosoftTranslateSettings.dfm:74
-#: GoogleTranslate.pas:733
-msgid "&Swedish"
-msgstr "&Schwedisch"
-
-#. GoogleTranslationSettings..rg_Language....Items.Strings
-#. f_MicrosoftTranslationSettings..rg_Language....Items.Strings
-#: GoogleTranslateSettings.dfm:74 w_MicrosoftTranslateSettings.dfm:75
-#: GoogleTranslate.pas:734
-msgid "&Thai"
-msgstr "&Thailändisch"
-
-#. FormEditor..MenuMain..MenuTools..Caption
-#: EditorUi.dfm:1174
-msgid "&Tools"
-msgstr "&Optionen"
-
-#. GoogleTranslationSettings..rg_Language....Items.Strings
-#. f_MicrosoftTranslationSettings..rg_Language....Items.Strings
-#: GoogleTranslateSettings.dfm:75 w_MicrosoftTranslateSettings.dfm:76
-#: GoogleTranslate.pas:735
-msgid "&Ukrainian"
-msgstr "&Ukrainisch"
-
-#. FormHelp..Memo1....Lines.Strings
-#: HelpUi.dfm:31
-msgid "* Control-Down, PageDown: Go to next item."
-msgstr "* Strg-Runter, Bild runter: Zum nächsten Eintrag springen."
-
-#. FormHelp..Memo1....Lines.Strings
-#: HelpUi.dfm:30
-msgid "* Control-Up, PageUp: Go to previous item."
-msgstr "* Strg-Hoch, Bild hoch: Zum vorherigen Eintrag springen."
-
-#. FormHelp..Memo1......Lines.Strings
-#: HelpUi.dfm:38
-msgid "* Create a rules set that applies a label to translations that are in these units"
-msgstr "* Erzeugen Sie einen Regelsatz, der für die Übersetzungen in diesen Units ein Label setzt."
-
-#. FormHelp..Memo1......Lines.Strings
-#: HelpUi.dfm:46
-msgid "* During translation, apply a \"reviewprogrammers\" label to those items, that the programmers should improve."
-msgstr "* Während der Übersetzung, setzen Sie für die Einträge, die die Programmierer verbessern sollten, das Label \"reviewprogrammers\"."
-
-#. FormHelp..Memo1....Lines.Strings
-#: HelpUi.dfm:39
-msgid "* Filter by this label"
-msgstr "* Filtern Sie nach diesem Label"
-
-#. FormHelp..Memo1....Lines.Strings
-#: HelpUi.dfm:35
-msgid "* Identify the units that you want to demonstrate"
-msgstr "* Ermitteln Sie die Units, die Sie demonstrieren wollen"
-
-#. FormHelp..Memo1....Lines.Strings
-#: HelpUi.dfm:40
-msgid "* Translate the items found"
-msgstr "* Übersetzten Sie die gefundenen Einträge"
-
-# Label: ignore
-#. FormEditor..MenuMain..MenuFile..N1..Caption
-#. FormEditor..MenuMain..MenuFile..N11..Caption
-#. FormEditor..MenuMain..MenuFile..MenuItemSeparator1..Caption
-#. FormEditor..MenuMain..MenuTranslations..N5..Caption
-#. FormEditor..MenuMain..MenuTranslations..N6..Caption
-#. FormEditor..MenuMain..MenuLabels..N4..Caption
-#. FormEditor..MenuMain..MenuLabels..N9..Caption
-#. FormEditor..MenuMain..MenuLabels..N10..Caption
-#. FormEditor..MenuMain..MenuLabels..N12..Caption
-#. FormEditor..MenuMain..MenuTools..N7..Caption
-#. FormEditor..MenuMain..MenuTools..N8..Caption
-#. FormEditor..MenuMain..MenuHelp..N3..Caption
-#: EditorUi.dfm:1006 EditorUi.dfm:1023 EditorUi.dfm:1029 EditorUi.dfm:1074
-#: EditorUi.dfm:1098 EditorUi.dfm:1111 EditorUi.dfm:1123 EditorUi.dfm:1143
-#: EditorUi.dfm:1156 EditorUi.dfm:1188 EditorUi.dfm:1197 EditorUi.dfm:1222
-msgid "-"
-msgstr ""
-
-# Label: ignore
-#. FormEditor..PanelList..PanelFilter..b_FilterSelect..Caption
-#. FormLabelApplicationByRules..ButtonSelectFilename..Caption
-#: EditorUi.dfm:274 LabelApplicationByRulesUi.dfm:68
-msgid "..."
-msgstr ""
-
-#: EditorUi.pas:1191
-msgid "... fetching translation ..."
-msgstr "... Übersetzung wird ermittelt ..."
-
-#. FormEditor..TheActionList..act_LabelsApplyByRule..Caption
-#: EditorUi.dfm:1371
-msgid "A&pply labels based on predefined rules"
-msgstr "Labels anhand von vorgegebenen Regeln setzen"
-
-#. f_EditHeader..cmb_Charset....Items.Strings
-#: w_EditHeader.dfm:110
-msgid "ASCII"
-msgstr "ASCII"
-
-#. f_dzProgress..b_Cancel..Caption
-#: w_dzProgress.dfm:42
-msgid "Abort"
-msgstr "Abbrechen"
-
-#. f_dzProgress..l_Action..Caption
-#: w_dzProgress.dfm:25
-msgid "Action"
-msgstr "Aktion"
-
-#. FormEditor..TheActionList..act_LabelsAddLabel..Hint
-#: EditorUi.dfm:1358
-msgid "Add a new label to the list of available labels."
-msgstr "Zur Liste der verfügbaren Labels ein neues hinzufügen."
-
-#. FormEditor..TheActionList..act_LabelsAddLabel..Caption
-#: EditorUi.dfm:1357
-msgid "Add label"
-msgstr "Label hinzufügen"
-
-#. FormEditor..TheActionList..act_ToolsRepositoryLearn....Hint
-#: EditorUi.dfm:1527
-msgid "Add new entries from the current selection to the translation repository."
-msgstr "Neue Einträge aus der aktuellen Auswahl zum Translation-Repository hinzufügen."
-
-#. f_TranslationDbLearnOptions..chk_AddTagToRepository..Caption
-#: w_TranslationDbLearnOptions.dfm:63
-msgid "Add tag to repository"
-msgstr "Tags zum Repository hinzufügen"
-
-#. FormEditor..TheActionList..act_LabelsAddStandardLabels....Hint
-#: EditorUi.dfm:1366
-msgid "Add the standard labels to the list of available labels: Ignore, needsimprovement, presentation, reviewprogrammers, starred"
-msgstr "Standard-Labels zur Liste der verfügbaren Labels hinzufügen:·Ignore,·needsimprovement,·presentation,·reviewprogrammers,·starred"
-
-#. FormEditor..MenuMain..MenuFile..mi_FileAddTo..Caption
-#: EditorUi.dfm:1015
-msgid "Add to existing .po file ..."
-msgstr "Zu existierender .po-Datei hinzufügen ..."
-
-#. FormEditor..MenuMain..MenuFile..mi_FileAddTo....Hint
-#: EditorUi.dfm:1020
-msgid "Add translations to an existing .po file. Existing translations in that file will not be changed but new translations will be added and fuzzy translations will be replaced and marked non-fuzzy."
-msgstr "Übersetzungen zu existierender .po-Datei hinzufügen. Existierende Übersetzungen in dieser Datei werden nicht geändert. Lediglich neue Übersetzungen werden hinzugefügt und \"fuzzy\" Übersetzungen werden ersetzt und als non-\"fuzzy\" markiert."
-
-#: EditorUi.pas:968 EditorUi.pas:989 w_IgnoreImport.pas:157
-#: w_IgnoreLoad.pas:153 w_IgnoreSave.pas:97
-msgid "All files"
-msgstr "Alle Dateien"
-
-#. FormAutoTranslateOptions..rg_TranslateWhich....Items.Strings
-#: AutoTranslateOptions.dfm:60
-msgid "Also re-translate already translated entries."
-msgstr "Auch bereits übersetzte Einträge neu übersetzen."
-
-#. FormAutoTranslateOptions..rg_TranslateWhich....Items.Strings
-#: AutoTranslateOptions.dfm:59
-msgid "Also translate entries currently marked as fuzzy."
-msgstr "Auch derzeit als \"fuzzy\" markierte Einträge übersetzen."
-
-#. FormEditor..TheActionList..act_FileAppendTo..Caption
-#: EditorUi.dfm:1291
-msgid "Append to existing .po file ..."
-msgstr "An existierende .po-Datei anhängen ..."
-
-#. FormEditor..TheActionList..act_FileAppendTo....Hint
-#: EditorUi.dfm:1294
-msgid "Append translations to an existing .po file. Warning: May create duplicates."
-msgstr "Übersetzungen an existierende .po-Datei anhängen. Achtung: Dies kann zu Duplikaten führen."
-
-#. FormPreferences..GroupBoxTranslationTest..l_ApplicationExeFilename..Caption
-#: PreferencesUi.dfm:142
-msgid "Application exe filename"
-msgstr "Programm EXE-Dateiname"
-
-#: EditorUi.pas:2756
-#, object-pascal-format
-msgid "Application file \"%s\" does not exist. Please check your settings."
-msgstr "Programmdatei \"%s\" existiert nicht. Bitte überprüfen Sie Ihre Einstellungen."
-
-#. FormEditor..TheActionList..act_LabelsApplyWarning..Caption
-#: EditorUi.dfm:1376
-msgid "Apply &warning label on all problematic translations"
-msgstr "\"&warning\" Label für alle zweifelhaften Übersetzungen setzen"
-
-#. FormEditor..TheActionList..act_LabelsApplyWarning....Hint
-#: EditorUi.dfm:1379
-msgid "Apply a \"warning\" label to all problematic translations, e.g. missing/mismatched placeholders, spacing ..."
-msgstr "Ein \"warning\"-Label für alle zweifelhaften Überstzungen setzen, z.B. fehlende / falsche Platzhalter, Leerzeichen ..."
-
-#. FormEditor..TheActionList..act_LabelsApplyToSelection..Hint
-#: EditorUi.dfm:1385
-msgid "Apply a label to all selected entries."
-msgstr "Label für alle ausgewählten Einträge setzen."
-
-#. FormEditor..TheActionList..act_LabelsImportIgnore....Hint
-#: EditorUi.dfm:1550
-msgid "Apply an \"ignore\" label to all entries matching \"ignore\" entries in a .po."
-msgstr "\"ignore\"-Label für alle Einträge setzen, zu denen es einen passenden \"ignore\"-Eintrag in einer .po-Datei gibt."
-
-#. FormLabelApplicationByRules..Caption
-#: LabelApplicationByRulesUi.dfm:6
-msgid "Apply label by rules"
-msgstr "Labels anhand von Regeln setzen"
-
-#. FormEditor..TheActionList..act_LabelsApplyToSelection..Caption
-#: EditorUi.dfm:1384
-msgid "Apply label to selection ..."
-msgstr "Label für Auswahl setzen ..."
-
-#. FormPreferences..GroupBoxStartupSettings..CheckBoxApplySettingsAtStartup..Caption
-#: PreferencesUi.dfm:92
-msgid "Apply these settings at startup"
-msgstr "Diese Einstellungen beim Start verwenden"
-
-# Label: reviewprogrammers
-#: w_IgnoreImport.pas:127 w_IgnoreLoad.pas:122
-msgid "Are you sure you want to clear the ignore flag for all currently ignored entries?"
-msgstr "Sind Sie sicher, dass Sie das \"ignore\"-Label für alle derzeit ignorierten Einträge löschen wollen?"
-
-#: EditorUi.pas:2101
-#, object-pascal-format
-msgid ""
-"Are you sure you want to reload file\n"
-"%s\n"
-"from disk?\n"
-"All changes will be lost!"
-msgstr ""
-"Sind Sie sicher, dass Sie die Datei\n"
-"%s\n"
-"erneut von Platte laden wollen?\n"
-"Alle Änderungen gehen verloren!"
-
-# Label: ignore
-#. FormEditor..PanelDetails..PanelBottomCenter..PanelTranslation..Panel9..ButtonMoveDown..Font.Name
-#. FormEditor..PanelDetails..PanelBottomCenter..PanelTranslation..Panel9..ButtonMoveUp..Font.Name
-#: EditorUi.dfm:559 EditorUi.dfm:593
-msgid "Arial"
-msgstr ""
-
-# Label: ignore
-#. FormEditor..Font.Name
-#. FormEditor..PanelDetails..PanelBottomCenter..PanelTranslation..MemoMsgStr..Font.Name
-#. FormEditor..PanelDetails..PanelBottomCenter..PanelOriText..MemoMsgId..Font.Name
-#. FormPreferences..gbSymbols..memSpecialChars..Font.Name
-#: EditorUi.dfm:12 EditorUi.dfm:516 EditorUi.dfm:851 PreferencesUi.dfm:321
-msgid "Arial Unicode MS"
-msgstr ""
-
-#. FormEditor..MenuMain..MenuTranslations..MenuItemAutofilltranslations..Caption
-#: EditorUi.dfm:1081
-msgid "Autofill translations"
-msgstr "Übersetzungen automatisch füllen"
+"X-Poedit-Basepath: \n"
 
 #. FormAutoTranslateOptions..Caption
 #: AutoTranslateOptions.dfm:5
 msgid "Automatic Translation Options"
 msgstr "Optionen für automatische Übersetzung"
-
-#. FormPreferences..GroupBoxStartupSettings..CheckBoxStartupAddStdLabels..Caption
-#: PreferencesUi.dfm:83
-msgid "Automatic add standard labels"
-msgstr "Automatisch die Standard-Labels hinzufügen"
-
-#. FormEditor..PanelDetails..PanelBottomCenter..PanelAutoTranslation..lblParallelLanguageTranslation..Caption
-#: EditorUi.dfm:806
-msgid "Automatic translation:"
-msgstr "Automatische Übersetzung:"
-
-#. f_IgnoreImport..chk_AutoFilter..Caption
-#. f_IgnoreLoad..chk_AutoFilter..Caption
-#: w_IgnoreImport.dfm:84 w_IgnoreLoad.dfm:84
-msgid "Automatically filter on this label."
-msgstr "Automatisch nach diesem Label filtern."
-
-#. FormEditor..TheActionList..act_TransAutomaticTranslation..Caption
-#: EditorUi.dfm:1396
-msgid "Automatically translate all items ..."
-msgstr "Alle Einträge automatisch übersetzen ..."
-
-#. FormEditor..TheActionList..act_TransAutomaticTranslation....Hint
-#: EditorUi.dfm:1399
-msgid "Automatically translate the current selection using the active auto translate engine."
-msgstr "Die aktuelle Auswahl automatisch mit der ausgewählten Übersetzungs-Engine übersetzen."
-
-#. FormAutoTranslateOptions..l_Method..Caption
-#: AutoTranslateOptions.dfm:23
-msgid "Automatically translate using:"
-msgstr "Automatische Übersetzung mittels:"
-
-#. f_EditHeader..cmb_Charset....Items.Strings
-#: w_EditHeader.dfm:144
-msgid "BIG5"
-msgstr "BIG5"
-
-#. f_EditHeader..cmb_Charset....Items.Strings
-#: w_EditHeader.dfm:145
-msgid "BIG5-HKSCS"
-msgstr "BIG5-HKSCS"
-
-#. f_EditHeader..cmb_Charset....Items.Strings
-#: w_EditHeader.dfm:132
-msgid "CP1250"
-msgstr "CP1250"
-
-#. f_EditHeader..cmb_Charset....Items.Strings
-#: w_EditHeader.dfm:133
-msgid "CP1251"
-msgstr "CP1251"
-
-#. f_EditHeader..cmb_Charset....Items.Strings
-#: w_EditHeader.dfm:134
-msgid "CP1252"
-msgstr "CP1252"
-
-#. f_EditHeader..cmb_Charset....Items.Strings
-#: w_EditHeader.dfm:135
-msgid "CP1253"
-msgstr "CP1253"
-
-#. f_EditHeader..cmb_Charset....Items.Strings
-#: w_EditHeader.dfm:136
-msgid "CP1254"
-msgstr "CP1254"
-
-#. f_EditHeader..cmb_Charset....Items.Strings
-#: w_EditHeader.dfm:137
-msgid "CP1255"
-msgstr "CP1255"
-
-#. f_EditHeader..cmb_Charset....Items.Strings
-#: w_EditHeader.dfm:138
-msgid "CP1256"
-msgstr "CP1256"
-
-#. f_EditHeader..cmb_Charset....Items.Strings
-#: w_EditHeader.dfm:139
-msgid "CP1257"
-msgstr "CP1257"
-
-#. f_EditHeader..cmb_Charset....Items.Strings
-#: w_EditHeader.dfm:126
-msgid "CP850"
-msgstr "CP850"
-
-#. f_EditHeader..cmb_Charset....Items.Strings
-#: w_EditHeader.dfm:127
-msgid "CP866"
-msgstr "CP866"
-
-#. f_EditHeader..cmb_Charset....Items.Strings
-#: w_EditHeader.dfm:128
-msgid "CP874"
-msgstr "CP874"
-
-#. f_EditHeader..cmb_Charset....Items.Strings
-#: w_EditHeader.dfm:129
-msgid "CP932"
-msgstr "CP932"
-
-#. f_EditHeader..cmb_Charset....Items.Strings
-#: w_EditHeader.dfm:130
-msgid "CP949"
-msgstr "CP949"
-
-#. f_EditHeader..cmb_Charset....Items.Strings
-#: w_EditHeader.dfm:131
-msgid "CP950"
-msgstr "CP950"
-
-#: GoogleTranslate.pas:663
-#, object-pascal-format
-msgid "Can't connect to Google server. Check your Internet settings and Google API key. (%s)"
-msgstr "Kann keine Verbindung zum Google-Server aufbauen. Überprüfen Sie Ihre Internet-Einstellungen und den Google-API Key. (%s)"
-
-#. FormAutoTranslateOptions..b_Cancel..Caption
-#. GoogleTranslationSettings..b_Cancel..Caption
-#. f_EditHeader..b_Cancel..Caption
-#. f_IgnoreImport..b_Cancel..Caption
-#. f_IgnoreLoad..b_Cancel..Caption
-#. f_IgnoreSave..b_Cancel..Caption
-#. f_MicrosoftTranslationSettings..b_Cancel..Caption
-#. f_Textfilter..b_Cancel..Caption
-#. f_TranslationDbLearnOptions..b_Cancel..Caption
-#. f_TranslationDbNew..b_Cancel..Caption
-#: AutoTranslateOptions.dfm:105 GoogleTranslateSettings.dfm:95
-#: w_EditHeader.dfm:171 w_IgnoreImport.dfm:106 w_IgnoreLoad.dfm:106
-#: w_IgnoreSave.dfm:67 w_MicrosoftTranslateSettings.dfm:96 w_TextFilter.dfm:73
-#: w_TranslationDbLearnOptions.dfm:54 w_TranslationDbNew.dfm:51
-msgid "Cancel"
-msgstr "Abbrechen"
-
-#. Automatic startup actions. These may trigger exceptions!
-#: EditorUi.pas:818 EditorUi.pas:2128
-#, object-pascal-format
-msgid "Cannot find the file \"%s\" that contains translations. Are you sure that you have arranged the files correctly on your harddisk?"
-msgstr "Kann die Datei \"%s\", die die Übersetzungen enhält, nicht finden. Sind Sie sicher, dass Sie die Dateien auf der Platte korrekt abgelegt haben?"
-
-#: u_dzMicrosoftTranslate.pas:202
-msgid "Cannot parse answer. No \"</string>\" found."
-msgstr "Antwort kann nicht analysiert werden. Kein \"</string>\" gefunden."
-
-#. <string xmlns="http://schemas.microsoft.com/2003/10/Serialization/">this is the translation</string>
-#: u_dzMicrosoftTranslate.pas:195
-msgid "Cannot parse answer. No \">\" found."
-msgstr "Antwort kann nicht analysiert werden. Kein \">\" gefunden."
-
-#. FormEditor..TheActionList..act_ToolsPreferences..Hint
-#: EditorUi.dfm:1483
-msgid "Change preferences of the application."
-msgstr "Einstellungen des Programms ändern."
-
-#. f_EditHeader..l_Charset..Caption
-#: w_EditHeader.dfm:51
-msgid "Charset (use UTF-8 unless you know what you are doing!)"
-msgstr "Zeichensatz (Benutzen Sie UTF-8, es sei denn Sie wissen was Sie tun!)"
-
-#: PoTools.pas:272 PoTools.pas:274 PoTools.pas:276 PoTools.pas:278
-msgid "Check spaces."
-msgstr "überprüfen Sie die Leerzeichen."
-
-#. f_IgnoreImport..chk_ClearFirst..Caption
-#. f_IgnoreLoad..chk_ClearFirst..Caption
-#: w_IgnoreImport.dfm:55 w_IgnoreLoad.dfm:55
-msgid "Clear current ignore labels first"
-msgstr "Vorher aktuelle \"ignore\"-Labels löschen"
-
-#. FormEditor..TheActionList..act_TransClear..Hint
-#: EditorUi.dfm:1477
-msgid "Clear the translation of all selected entries."
-msgstr "Übersetzung aller ausgewählten Einträge löschen."
-
-#. f_IgnoreImport..chk_ClearTranslation..Caption
-#: w_IgnoreImport.dfm:115
-msgid "Clear translations on all newly labelled items"
-msgstr "Übersetzung aller neu markierten Einträge löschen"
-
-#. f_TranslationDb..al_Translation..act_Close..Caption
-#: w_TranslationDb.dfm:219
-msgid "Close"
-msgstr "Schließen"
-
-#: u_Languages.pas:396
-#, object-pascal-format
-msgid "Code for language %s not found."
-msgstr "Code für Sprache %s nicht gefunden."
-
-#. f_EditHeader..l_Comments..Caption
-#: w_EditHeader.dfm:59
-msgid "Comments"
-msgstr "Kommentare"
-
-#. f_Textfilter..chk_Comments..Caption
-#: w_TextFilter.dfm:46
-msgid "Comments and instructions"
-msgstr "Kommentare und Anweisungen"
-
-#. FormEditor..PanelDetails..PanelBottomLeft..PanelComments..LabelProgrammerComments..Caption
-#: EditorUi.dfm:364
-msgid "Comments and instructions:"
-msgstr "Kommentare und Anweisungen:"
-
-#. FormEditor..TheActionList..act_ToolsCompileToMo..Hint
-#: EditorUi.dfm:1505
-msgid "Compile to .mo file (needs to be set up in preferences)."
-msgstr "In .mo-Datei umwandeln (muss in den Einstellungen konfiguriert sein)."
-
-#. f_TranslationDb..tc_Language..dbg_English......FieldName
-#: w_TranslationDb.dfm:117
-msgid "Content"
-msgstr "Inhalt"
-
-#. FormEditor..PanelDetails..PanelBottomCenter..PanelTranslation..Panel9..ButtonParallel..Caption
-#: EditorUi.dfm:695
-msgid "Copy &automatic"
-msgstr "&autom. Übers. kopieren"
-
-#. FormEditor..PanelDetails..PanelBottomCenter..PanelTranslation..Panel9..ButtonCopyMsgId2MsgStr..Hint
-#: EditorUi.dfm:618
-msgid "Copy MsgId to MsgStr (Alt+c)"
-msgstr "MsgId nach MsgStr kopieren (Alt+c)"
-
-#. FormEditor..TheActionList..act_TransAutofillGorm....Hint
-#: EditorUi.dfm:1456
-msgid "Copy MsgId to MsgStr and add a \"Gorm\" prefix for the current selection. (Testing only)"
-msgstr "Bei allen ausgewählten Einträgen MsgId nach MsgStr kopieren und einen \"Gorm\"-Prefix hinzufügen. (nur zum Testen)"
-
-#. FormEditor..TheActionList..act_TransAutofillCopy..Hint
-#: EditorUi.dfm:1470
-msgid "Copy MsgId to MsgStr for the current selection."
-msgstr "Ausgewählte MsgId nach MsgStr kopieren."
-
-#. FormEditor..TheActionList..act_TransCopyWithComments....Hint
-#: EditorUi.dfm:1432
-msgid "Copy all selected MsgId entries inlcuding the comments for programmers to the clipboard."
-msgstr "Alle ausgewählten MsgId-Einträge inkl. der Kommentare für den Programmierer in die Zwischenablage kopieren."
-
-#. FormEditor..TheActionList..act_TransCopyMsgid..Hint
-#: EditorUi.dfm:1424
-msgid "Copy all selected MsgId values to the clipboard."
-msgstr "Alle ausgewählten MsgId-Werte in die Zwischenablage kopieren."
-
-#: ToolsAutoUpgrader.pas:51
-msgid "Could not get filesystem path for temporary files from Windows API. Please inspect your computer settings."
-msgstr "Konnte Windows-Einstellung für temporäre Dateien nicht ermitteln. Bitte überprüfen Sie Ihre Computereinstellungen."
-
-#: w_TranslationDb.pas:155 w_TranslationDb.pas:328
-#, object-pascal-format
-msgid "Could not open repository for language %s"
-msgstr "Konnte Repository für Sprache %s nicht öffnen."
-
-#: EditorUi.pas:2758
-#, object-pascal-format
-msgid "Could not run program file %s."
-msgstr "Konnte Programm %s nicht starten."
-
-#. FormEditor..TheActionList..act_TransCreateHtml..Caption
-#: EditorUi.dfm:1444
-msgid "Create HTML page"
-msgstr "HTML-Seite erzeugen"
-
-#. FormEditor..TheActionList..act_TransCreateHtml....Hint
-#: EditorUi.dfm:1448
-msgid "Create a html page with the current selection and open it in the web browser."
-msgstr "Alle ausgewählten Einträge als HTML-Seite exportieren und im Web-Browser öffnen."
-
-#. f_IgnoreSave..l_Blurb....Caption
-#: w_IgnoreSave.dfm:33
-msgid "Create an ignore.po file from the entries labeled as \"ignore\". To be used when extracting translations with dxgettext."
-msgstr "Ingore.po-Datei aus den mit \"ignore\" markierten Einträgen erzeugen. Zur Verwendung beim Extrahieren von Übersetzungen mit dxgettext."
-
-#: u_dzVclUtils.pas:91
-msgid "Ctrl+Return to 'click' right button."
-msgstr "Strg+Return zum \"klicken\" des rechten Buttons."
-
-#. FormPreferences..groupTranslationMemory..edCompareAccuracy....Hint
-#: PreferencesUi.dfm:247
-msgid "Difference between two strings that admissible in suggestions list: ( 0 - only perfect matches)"
-msgstr "Zulässige Differenz zwischen zwei Zeichenketten in der Vorschlagsliste :(0 - nur vollkommen gleiche)"
-
-#. FormPreferences..grp_TranslationRepositiory..l_TransRepDir..Caption
-#: PreferencesUi.dfm:363
-msgid "Directory to store translation repository"
-msgstr "Verzeichnis, um das Translation-Repository zu speichern"
-
-#. FormAutoTranslateOptions..chk_MarkOnly..Caption
-#: AutoTranslateOptions.dfm:122
-msgid "Do not change the translation, only label these entries"
-msgstr "Keine Übersetzungen ändern, nur die Einträge mit einem Label versehen."
-
-#. FormEditor..TheActionList..act_AutoDisable..Hint
-#: EditorUi.dfm:1320
-msgid "Do not translate automatically."
-msgstr "Nicht automatisch übersetzen."
-
-#: w_dzProgress.pas:102
-msgid "Do you really want to abort?"
-msgstr "Wollen Sie wirklich abbrechen?"
-
-#: EditorUi.pas:2223
-msgid "Do you really want to mark all selected items 'fuzzy'?"
-msgstr "Wollen Sie wirklich alle ausgewählten Einträge als \"fuzzy\" markieren?"
-
-#: EditorUi.pas:2241
-msgid "Do you really want to remove the 'fuzzy' mark from all selected items?"
-msgstr "Wollen Sie wirklich die \"fuzzy\"-Markierung von allen ausgewählten Einträgen entfernen?"
-
-#: EditorUi.pas:662
-msgid "Do you want to save?"
-msgstr "Wollen Sie abspeichern?"
-
-#. GoogleTranslationSettings..rg_Language....Items.Strings
-#. f_MicrosoftTranslationSettings..rg_Language....Items.Strings
-#: GoogleTranslateSettings.dfm:61 w_MicrosoftTranslateSettings.dfm:62
-#: GoogleTranslate.pas:721
-msgid "Dutc&h"
-msgstr "&Holländisch"
-
-#. f_EditHeader..cmb_Charset....Items.Strings
-#: w_EditHeader.dfm:141
-msgid "EUC-JP"
-msgstr "EUC-JP"
-
-#. f_EditHeader..cmb_Charset....Items.Strings
-#: w_EditHeader.dfm:142
-msgid "EUC-KR"
-msgstr "EUC-KR"
-
-#. f_EditHeader..cmb_Charset....Items.Strings
-#: w_EditHeader.dfm:143
-msgid "EUC-TW"
-msgstr "EUC-TW"
-
-#. f_EditHeader..Caption
-#: w_EditHeader.dfm:5
-msgid "Edit Header"
-msgstr "Kopfdaten ändern"
-
-#. FormEditor..TheActionList..act_FileHeader..Caption
-#: EditorUi.dfm:1299
-msgid "Edit header ..."
-msgstr "Kopfdaten ändern ..."
-
-#. FormEditor..TheActionList..act_FileHeader..Hint
-#: EditorUi.dfm:1300
-msgid "Edit the header of the .po file."
-msgstr "Kopfdaten der .po-Datei ändern."
-
-#. FormEditor..PanelDetails..PanelBottomRight..PanelEditableComments..LabelEditableComments..Caption
-#: EditorUi.dfm:924
-msgid "Editable comments:"
-msgstr "Änderbare Kommentare:"
-
-#. FormPreferences..GroupBoxStartupSettings..CheckBoxAutoUpgrade..Caption
-#: PreferencesUi.dfm:102
-msgid "Enable automatic upgrade via internet"
-msgstr "Automatisches Update via Internet aktivieren"
-
-#. FormPreferences..groupTranslationMemory..CheckBoxTranslationMemory..Caption
-#: PreferencesUi.dfm:223
-msgid "Enable translation memory"
-msgstr "Übersetzungsspeicher aktivieren"
-
-#. f_TranslationDb..tc_Language..dbg_English......Title.Caption
-#: w_TranslationDb.dfm:118
-msgid "English Text"
-msgstr "Englischer Text"
-
-#. FormEditor..PanelDetails..PanelBottomCenter..PanelTranslation..MemoMsgStr..Hint
-#: EditorUi.dfm:510
-msgid "Enter the translation here"
-msgstr "Geben Sie hier die Übersetzung ein"
-
-#: u_TranslationRepository.pas:52
-#, object-pascal-format
-msgid ""
-"Error copying file\n"
-"%s\n"
-"to\n"
-"%s\n"
-"%s (%d)"
-msgstr ""
-"Fehler beim Koperen der Datei\n"
-"%s\n"
-"nach\n"
-"%s\n"
-"%s (%d)"
-
-#: TranslationsMemory.pas:409
-msgid "Error during memory file saving."
-msgstr "Fehler beim speichern des Übersetzungsspeichers als Datei."
-
-#: EditorUi.pas:2796
-msgid "Error sending mail"
-msgstr "Fehler beim Versenden von Mail"
-
-#: PreferencesUi.pas:103
-msgid "Executables (*.exe)"
-msgstr "Anwendungen (*.exe)"
-
-#. FormEditor..TheActionList..act_FileExit..Hint
-#: EditorUi.dfm:1306
-msgid "Exit the application"
-msgstr "Programm beenden"
-
-#. FormLabelApplicationByRules..EditFilename..EditLabel.Caption
-#: LabelApplicationByRulesUi.dfm:59
-msgid "File name:"
-msgstr "Dateiname:"
-
-#. FormEditor..PanelList..PanelFilter..LabelLabelFilter..Caption
-#: EditorUi.dfm:73
-msgid "Filter by label:"
-msgstr "Nach Label filtern:"
-
-#: EditorUi.pas:1493
-#, object-pascal-format
-msgid "Filter by the label \"%s\" in order to see the texts that may have problems."
-msgstr "Filtern Sie nach Label \"%s\" um Texte zu sehen, die evtl. zweifelhaft sind."
-
-#: EditorUi.pas:1765
-msgid "Filter:"
-msgstr "Filter:"
-
-#. FormEditor..PanelList..PanelFilter..EditFilterText..EditLabel.Caption
-#: EditorUi.dfm:82
-msgid "Filter: MSGID, MSGSTR"
-msgstr "Filter: MSGID, MSGSTR"
-
-#. FormEditor..TheActionList..act_ToolsFindFirstWarning..Caption
-#: EditorUi.dfm:1488
-msgid "Find &first warning"
-msgstr "Erste Warnung finden"
-
-#. FormEditor..TheActionList..act_ToolsFindNextWarning..Caption
-#: EditorUi.dfm:1497
-msgid "Find &next warning"
-msgstr "Nächste Warnung finden"
-
-#: EditorUi.pas:832
-msgid "Finished compiling."
-msgstr "Umwandlung abgeschlossen"
-
-#: EditorUi.pas:874
-msgid ""
-"For all selected entries copy the MsgId to the MsgStr, with \"Gorm\" as prefix.\n"
-"This only makes sense for test purposes.\n"
-"Are you really sure that you want to do that?"
-msgstr ""
-"Für alle ausgewählten Einträge die MsgId nach MsgStr kopieren und mit \"Gorm\" als Präfix versehen.\n"
-"Dies ist nur sinnvoll für Testzwecke.\n"
-"Sind Sie wirklich sicher, dass Sie das tun möchten?"
-
-#. GoogleTranslationSettings..rg_Language....Items.Strings
-#. f_MicrosoftTranslationSettings..rg_Language....Items.Strings
-#: GoogleTranslateSettings.dfm:63 w_MicrosoftTranslateSettings.dfm:64
-#: GoogleTranslate.pas:723
-msgid "French"
-msgstr "Französisch"
-
-#: u_TranslatorEngineGetText.pas:43
-#, object-pascal-format
-msgid "From MO file %s"
-msgstr "Von MO-Datei %s"
-
-#: u_TranslatorEnginePoFile.pas:72
-#, object-pascal-format
-msgid "From PO file %s"
-msgstr "Von PO-Datei %s"
-
-#. See comment from Lars (above)
-#: EditorUi.pas:1461
-msgid "Fuzzy"
-msgstr "Fuzzy"
-
-#. FormEditor..TheActionList..act_LabelsFuzzySelection..Caption
-#: EditorUi.dfm:1417
-msgid "Fuzzy selection"
-msgstr "\"fuzzy\" für Auswahl setzen"
-
-#. f_EditHeader..cmb_Charset....Items.Strings
-#: w_EditHeader.dfm:147
-msgid "GB18030"
-msgstr "GB18030"
-
-#. f_EditHeader..cmb_Charset....Items.Strings
-#: w_EditHeader.dfm:140
-msgid "GB2312"
-msgstr "GB2312"
-
-#. f_EditHeader..cmb_Charset....Items.Strings
-#: w_EditHeader.dfm:146
-msgid "GBK"
-msgstr "GBK"
-
-#. f_EditHeader..cmb_Charset....Items.Strings
-#: w_EditHeader.dfm:152
-msgid "GEORGIAN-PS"
-msgstr "GEORGIAN-PS"
-
-#. FormEditor..MenuMain..MenuHelp..MenuItemGNUgettextforDelphi..Caption
-#: EditorUi.dfm:1218
-msgid "GNU gettext for Delphi"
-msgstr "GNU gettext für Delphi"
-
-#. FormEditor..TheActionList..act_ToolsFindFirstWarning....Hint
-#: EditorUi.dfm:1491
-msgid "Go to the first problematic translation in the current selection."
-msgstr "Zur ersten zweifelhaften Übersetzung in der aktuellen Auswahl springen."
-
-#. FormEditor..TheActionList..act_ToolsFindNextWarning..Hint
-#: EditorUi.dfm:1498
-msgid "Go to the next problematic translation in the current selection."
-msgstr "Zur nächsten zweifelhaften Übersetzung in der aktuellen Auswahl springen."
-
-#. GoogleTranslationSettings..edGoogleAPIKey..EditLabel.Caption
-#: GoogleTranslateSettings.dfm:106
-msgid "Google API Key"
-msgstr "Google API Key"
-
-#. GoogleTranslationSettings..Caption
-#: GoogleTranslateSettings.dfm:5
-msgid "Google Translation Settings (Powered by Google)"
-msgstr "Einstellungen für Google Translate (Powered by Google)"
-
-#: u_TranslatorEngineGoogle.pas:86
-#, object-pascal-format
-msgid "Google translate %s -> %s (%s)"
-msgstr "Google translate %s -> %s (%s)"
-
-#. FormEditor..Caption
-#: EditorUi.dfm:4
-msgid "Gorm"
-msgstr "Gorm"
-
-#: EditorUi.pas:1869
-msgid "Gorm editor for po files."
-msgstr "Gorm Editor für po-Dateien."
-
-#. FormHelp..Caption
-#: HelpUi.dfm:4
-msgid "Help"
-msgstr "Hilfe"
-
-#. FormEditor..PanelDetails..PanelBottomLeft..PanelMessages..LabelMessages..Caption
-#: EditorUi.dfm:434
-msgid "Hints and Warnings"
-msgstr "Hinweise und Warnungen"
-
-#. f_EditHeader..cmb_Charset....Items.Strings
-#: w_EditHeader.dfm:111
-msgid "ISO-8859-1"
-msgstr "ISO-8859-1"
-
-#. f_EditHeader..cmb_Charset....Items.Strings
-#: w_EditHeader.dfm:120
-msgid "ISO-8859-13"
-msgstr "ISO-8859-13"
-
-#. f_EditHeader..cmb_Charset....Items.Strings
-#: w_EditHeader.dfm:121
-msgid "ISO-8859-14"
-msgstr "ISO-8859-14"
-
-#. f_EditHeader..cmb_Charset....Items.Strings
-#: w_EditHeader.dfm:122
-msgid "ISO-8859-15"
-msgstr "ISO-8859-15"
-
-#. f_EditHeader..cmb_Charset....Items.Strings
-#: w_EditHeader.dfm:112
-msgid "ISO-8859-2"
-msgstr "ISO-8859-2"
-
-#. f_EditHeader..cmb_Charset....Items.Strings
-#: w_EditHeader.dfm:113
-msgid "ISO-8859-3"
-msgstr "ISO-8859-3"
-
-#. f_EditHeader..cmb_Charset....Items.Strings
-#: w_EditHeader.dfm:114
-msgid "ISO-8859-4"
-msgstr "ISO-8859-4"
-
-#. f_EditHeader..cmb_Charset....Items.Strings
-#: w_EditHeader.dfm:115
-msgid "ISO-8859-5"
-msgstr "ISO-8859-5"
-
-#. f_EditHeader..cmb_Charset....Items.Strings
-#: w_EditHeader.dfm:116
-msgid "ISO-8859-6"
-msgstr "ISO-8859-6"
-
-#. f_EditHeader..cmb_Charset....Items.Strings
-#: w_EditHeader.dfm:117
-msgid "ISO-8859-7"
-msgstr "ISO-8859-7"
-
-#. f_EditHeader..cmb_Charset....Items.Strings
-#: w_EditHeader.dfm:118
-msgid "ISO-8859-8"
-msgstr "ISO-8859-8"
-
-#. f_EditHeader..cmb_Charset....Items.Strings
-#: w_EditHeader.dfm:119
-msgid "ISO-8859-9"
-msgstr "ISO-8859-9"
-
-#. f_IgnoreLoad..l_IgnoreFile..Caption
-#: w_IgnoreLoad.dfm:23
-msgid "Ignore.po file to load"
-msgstr "Zu ladende Ingore.po-Datei"
-
-#. f_IgnoreSave..l_IgnoreFile..Caption
-#: w_IgnoreSave.dfm:23
-msgid "Ignore.po file to save to"
-msgstr "zu speichernde ingore.po-Datei"
-
-#: w_IgnoreLoad.pas:151 w_IgnoreSave.pas:95
-msgid "Ignore.po files"
-msgstr "ignore.po-Datei"
-
-#. f_IgnoreImport..Caption
-#: w_IgnoreImport.dfm:5
-msgid "Import \"ignore\" labels"
-msgstr "\"ignore\"-Labels importieren"
-
-#. FormEditor..TheActionList..act_LabelsImportIgnore..Caption
-#: EditorUi.dfm:1547
-msgid "Import \"ignore\" labels ..."
-msgstr "\"ignore\"-Labels importieren ..."
-
-#: EditorUi.pas:1355
-msgid "In order to use this feature, you must first enable auto translate."
-msgstr "Um diese Funktion zu benutzen, müssen Sie zunächst die automatische Übersetzung einschalten."
-
-#. FormEditor..PanelDetails..PanelBottomLeft..PanelComments..ListBoxProgrammerComments..Hint
-#: EditorUi.dfm:373
-msgid "Information from software developers to the translator"
-msgstr "Informationen der Software-Entwickler an den Übersetzer"
-
-#. FormEditor..PanelDetails..PanelBottomCenter..PanelTranslation..Panel9..btSpecChars....Hint
-#: EditorUi.dfm:786
-msgid "Insert a special char to translation. You can change it in the Preferences window."
-msgstr "Spezielles Zeichen in Übersetzung einfügen. Konfigurierbar im Einstellungen-Fenster."
-
-# Label: ignore
-#. f_TranslationDb..tc_Language....Tabs.Strings
-#: w_TranslationDb.dfm:26
-msgid "Interkosmo"
-msgstr ""
-
-#: EditorUi.pas:1763
-msgid "Inv. Filter:"
-msgstr "Inv.-Filter:"
-
-#: w_dzProgress.pas:192
-#, object-pascal-format
-msgid "Invalid FormCaption, %s"
-msgstr "Ungültiger Fenstertitel, %s"
-
-#. FormEditor..PanelList..PanelFilter..chkInverseFilter..Caption
-#: EditorUi.dfm:109
-msgid "Inverse filter"
-msgstr "Invertierter Filter"
-
-#. f_Textfilter..chk_Inverted..Caption
-#: w_TextFilter.dfm:82
-msgid "Inverted"
-msgstr "umgedreht"
-
-#. GoogleTranslationSettings..rg_Language....Items.Strings
-#. f_MicrosoftTranslationSettings..rg_Language....Items.Strings
-#: GoogleTranslateSettings.dfm:66 w_MicrosoftTranslateSettings.dfm:67
-#: GoogleTranslate.pas:726
-msgid "It&alian"
-msgstr "It&lienisch"
-
-#: EditorUi.pas:1068
-#, object-pascal-format
-msgid "Items in current file: %d"
-msgstr "Elemente in der aktuellen Datei: %d"
-
-#: EditorUi.pas:1069
-#, object-pascal-format
-msgid "Items in synch file: %d"
-msgstr "Elemente in synchronisierter Datei: %d"
-
-#. f_EditHeader..cmb_Charset....Items.Strings
-#: w_EditHeader.dfm:149
-msgid "JOHAB"
-msgstr "JOHAB"
-
-#. f_EditHeader..cmb_Charset....Items.Strings
-#: w_EditHeader.dfm:123
-msgid "KOI8-R"
-msgstr "KOI8-R"
-
-#. f_EditHeader..cmb_Charset....Items.Strings
-#: w_EditHeader.dfm:125
-msgid "KOI8-T"
-msgstr "KOI8-T"
-
-#. f_EditHeader..cmb_Charset....Items.Strings
-#: w_EditHeader.dfm:124
-msgid "KOI8-U"
-msgstr "KOI8-U"
-
-#. FormHelp..Memo1....Lines.Strings
-#: HelpUi.dfm:28
-msgid "Keyboard shortcuts:"
-msgstr "Tastatenkürzel:"
-
-#. FormLabel..Caption
-#: EditLabel.dfm:4
-msgid "Label"
-msgstr "Label"
-
-#. f_IgnoreImport..chk_LabelAs..Caption
-#. f_IgnoreLoad..chk_LabelAs..Caption
-#: w_IgnoreImport.dfm:64 w_IgnoreLoad.dfm:64
-msgid "Label changed entries as"
-msgstr "Geänderte Einträge mit Label markieren"
-
-#. FormLabel..EditLabelName..EditLabel.Caption
-#: EditLabel.dfm:25
-msgid "Label name (ascii letters only)"
-msgstr "Label-Namen (nur Ascii-Buchstaben)"
-
-#. FormAutoTranslateOptions..chk_LabelAs..Caption
-#: AutoTranslateOptions.dfm:76
-msgid "Label translated entries as"
-msgstr "Übersetzte Einträge mit Label versehen"
-
-#. FormEditor..PanelDetails..PanelBottomRight..PanelLabels..LabelLabels..Caption
-#: EditorUi.dfm:893
-msgid "Labels:"
-msgstr "Labels:"
-
-#. GoogleTranslationSettings..rg_Language..Caption
-#. f_EditHeader..l_Language..Caption
-#. f_MicrosoftTranslationSettings..rg_Language..Caption
-#. f_TranslationDbNew..l_Language..Caption
-#: GoogleTranslateSettings.dfm:56 w_EditHeader.dfm:44
-#: w_MicrosoftTranslateSettings.dfm:57 w_TranslationDbNew.dfm:23
-msgid "Language"
-msgstr "Sprache"
-
-#: EditorUi.pas:2317 EditorUi.pas:2681
-#, object-pascal-format
-msgid "Language \"%s\" is not known to Gorm."
-msgstr "Sprache \"%s\" ist Gorm nicht bekannt."
-
-#. f_EditHeader..l_Team..Caption
-#: w_EditHeader.dfm:30
-msgid "Language team"
-msgstr "Übersetzungs-Team"
-
-#. f_EditHeader..l_LastTranslator..Caption
-#: w_EditHeader.dfm:66
-msgid "Last translator"
-msgstr "Letzter Übersetzer"
-
-#. f_EditHeader..l_LastEmail..Caption
-#: w_EditHeader.dfm:73
-msgid "Last translator's email address"
-msgstr "E-Mail-Adresse des letzten Übersetzers"
-
-#. f_TranslationDb..tc_Language....Tabs.Strings
-#: w_TranslationDb.dfm:25
-msgid "Latin"
-msgstr "Latein"
-
-#. FormPreferences..gbSymbols..Label2..Caption
-#: PreferencesUi.dfm:311
-msgid "List of chars:"
-msgstr "Liste von Zeichen:"
-
-#. FormEditor..TheActionList..act_LabelsLoadIgnore..Hint
-#: EditorUi.dfm:1312
-msgid "Load a .po file containing entries to ignore"
-msgstr ".po-Datei laden, die zu ignorierende Einträge enthält"
-
-#. f_IgnoreLoad..Caption
-#: w_IgnoreLoad.dfm:5
-msgid "Load ignore labels from file"
-msgstr "\"ignore\"-Labels aus Datei laden"
-
-#. FormEditor..TheActionList..act_LabelsLoadIgnore..Caption
-#: EditorUi.dfm:1311
-msgid "Load ignore.po ..."
-msgstr "Ignore.po laden ..."
-
-#. FormEditor..TheActionList..act_FileOpen..Hint
-#: EditorUi.dfm:1244
-msgid "Load translations from a .po file."
-msgstr "Übersetzungen aus einer .po-Datei laden"
-
-#. f_Textfilter..l_LookIn..Caption
-#: w_TextFilter.dfm:23
-msgid "Look for string in ..."
-msgstr "Suchen nach der Zeichenfolge in ..."
-
-#. f_TranslationDb..tc_Language..p_Locate..l_LookupEnglish..Caption
-#: w_TranslationDb.dfm:145
-msgid "Lookup English"
-msgstr "Englisch nachschlagen"
-
-#. f_TranslationDb..tc_Language..p_Locate..l_LookupTranslation..Caption
-#: w_TranslationDb.dfm:153
-msgid "Lookup Translation"
-msgstr "Übersetzung nachschlagen"
-
-#: EditorUi.pas:2291
-msgid "MO files"
-msgstr "MO-Dateien"
-
-#: PreferencesUi.pas:87
-msgid "MO files (*.mo)"
-msgstr "MO-Dateien (* .mo)"
-
-# Label: ignore
-#. f_dzProgress..Font.Name
-#: w_dzProgress.dfm:13
-msgid "MS Sans Serif"
-msgstr ""
-
-#. f_Textfilter..chk_MsgId..Caption
-#: w_TextFilter.dfm:30
-msgid "MSGID"
-msgstr "MSGID"
-
-#. f_Textfilter..chk_MsgStr..Caption
-#: w_TextFilter.dfm:38
-msgid "MSGSTR"
-msgstr "MSGSTR"
-
-#. FormHelp..Memo1....Lines.Strings
-#: HelpUi.dfm:33
-msgid "Make sales demo:"
-msgstr "Vertriebs-Demo durchführen:"
-
-#. FormEditor..TheActionList..act_LabelsFuzzySelection..Hint
-#: EditorUi.dfm:1418
-msgid "Mark all selected entries \"fuzzy\"."
-msgstr "Markiert ausgewählte Einträge als \"fuzzy\"."
-
-#. FormEditor..TheActionList..act_LabelsUnfuzzySelection..Hint
-#: EditorUi.dfm:1412
-msgid "Mark all selected entries non-\"fuzzy\"."
-msgstr "Markiert ausgewählte Einträge als nicht-\"fuzzy\"."
-
-#. FormAutoTranslateOptions..chk_MarkFuzzy..Caption
-#: AutoTranslateOptions.dfm:68
-msgid "Mark translated entries as fuzzy"
-msgstr "Übersetzte Einträge als \"fuzzy\" markieren."
-
-#. f_MicrosoftTranslationSettings..ed_BingAppId..EditLabel.Caption
-#: w_MicrosoftTranslateSettings.dfm:107
-msgid "Microsoft Bing AppID"
-msgstr "Microsoft Bing AppID"
-
-#. f_MicrosoftTranslationSettings..Caption
-#: w_MicrosoftTranslateSettings.dfm:5
-msgid "Microsoft Translation Settings (Powered by Microsoft)"
-msgstr "Einstellungen für Microsoft Translate (Powered by Microsoft)"
-
-#: u_TranslatorEngineMicrosoft.pas:89
-#, object-pascal-format
-msgid "Microsoft translate %s -> %s (%s)"
-msgstr "Microsoft translate %s -> %s (%s)"
-
-#. FormPreferences..GroupBoxTranslationTest..l_MoFilename..Caption
-#: PreferencesUi.dfm:149
-msgid "Mo file name"
-msgstr "Mo-Dateiname"
-
-#. FormEditor..PanelDetails..PanelBottomCenter..PanelTranslation..Panel9..chkQuickNavigation..Hint
-#: EditorUi.dfm:772
-msgid "Navigation with arrow keys and pageup/down"
-msgstr "Navigation mit den Pfeiltasten und Pageup/down"
-
-#. f_TranslationDbNew..Caption
-#: w_TranslationDbNew.dfm:5
-msgid "New Translation DB"
-msgstr "Neue Übersetzungs-DB"
-
-#: EditorUi.pas:1073
-#, object-pascal-format
-msgid "New items added: %d"
-msgstr "Neue Einträge hinzugefügt: %d"
-
-#: EditorUi.pas:2656
-msgid "No MO filename is set!"
-msgstr "Kein MO-Dateiname festgelegt!"
-
-#: EditorUi.pas:1078
-msgid "No differences found"
-msgstr "Keine Unterschiede gefunden"
-
-#: EditorUi.pas:621 EditorUi.pas:1554 EditorUi.pas:2773
-msgid "No file is currently open."
-msgstr "Derzeit ist keine Datei geöffnet."
-
-#. FormAutoTranslateOptions..b_OK..Caption
-#. GoogleTranslationSettings..b_Ok..Caption
-#. f_EditHeader..b_Ok..Caption
-#. f_IgnoreImport..b_Ok..Caption
-#. f_IgnoreLoad..b_Ok..Caption
-#. f_IgnoreSave..b_Ok..Caption
-#. f_MicrosoftTranslationSettings..b_Ok..Caption
-#. f_Textfilter..b_Ok..Caption
-#. f_TranslationDbLearnOptions..b_Ok..Caption
-#. f_TranslationDbNew..b_Ok..Caption
-#: AutoTranslateOptions.dfm:94 GoogleTranslateSettings.dfm:83
-#: w_EditHeader.dfm:160 w_IgnoreImport.dfm:94 w_IgnoreLoad.dfm:94
-#: w_IgnoreSave.dfm:55 w_MicrosoftTranslateSettings.dfm:84 w_TextFilter.dfm:62
-#: w_TranslationDbLearnOptions.dfm:42 w_TranslationDbNew.dfm:39
-msgid "OK"
-msgstr "OK"
-
-#: EditorUi.pas:1074
-#, object-pascal-format
-msgid "Obsolete items removed: %d"
-msgstr "Veraltete Einträge entfernt: %d"
-
-#. FormPreferences..GroupBoxStartupSettings..ComboBoxParallelTranslation....Items.Strings
-#: PreferencesUi.dfm:76
-msgid "Off"
-msgstr "Aus"
-
-#. FormEditor..PanelList..PanelFilter..StaticTextFilterExplanation..Caption
-#: EditorUi.dfm:100
-msgid "Only the result of filtering is affected by the Messages menu."
-msgstr "Das Messages-Menü arbeitet nur auf den gefilterten Einträgen."
-
-#. FormAutoTranslateOptions..rg_TranslateWhich....Items.Strings
-#: AutoTranslateOptions.dfm:58
-msgid "Only translate untranslated entries."
-msgstr "Nur Einträge ohne Übersetzung übersetzen."
-
-#. FormPreferences..GroupBoxStartupSettings..l_OpenFile..Caption
-#: PreferencesUi.dfm:66
-msgid "Open file:"
-msgstr "Datei öffnen:"
-
-#: EditorUi.pas:2844
-msgid "Original"
-msgstr "Original"
-
-#. FormEditor..PanelDetails..PanelBottomCenter..PanelOriText..LabelMsgId..Caption
-#: EditorUi.dfm:835
-msgid "Original text:"
-msgstr "Originaltext:"
-
-#. Output created <date + time>
-#: EditorUi.pas:2878
-#, object-pascal-format
-msgid "Output created: %s"
-msgstr "Ausgabe erstellt: %s"
-
-#. Output from <'Gorm'>
-#: EditorUi.pas:2826
-#, object-pascal-format
-msgid "Output from %s"
-msgstr "Ausgabe von %s"
-
-#: EditorUi.pas:2650
-msgid "Output generated by PO->MO compiler:"
-msgstr "Vom PO->MO-Compiler erzeugte Ausgabe:"
-
-#: EditorUi.pas:979
-msgid "PO Files"
-msgstr "PO-Dateien"
-
-#. f_IgnoreImport..l_IgnoreFile..Caption
-#: w_IgnoreImport.dfm:23
-msgid "PO file to import \"ignore\" labels from"
-msgstr "PO-Datei, aus der die \"ignore\"-Labels importiert werden sollen"
-
-#: EditorUi.pas:1000 w_IgnoreImport.pas:156 w_IgnoreLoad.pas:152
-#: w_IgnoreSave.pas:96
-msgid "PO files"
-msgstr "PO-Dateien"
-
-#: PreferencesUi.pas:192
-msgid "PO files (*.po)"
-msgstr "PO-Dateien (* .po)"
-
-#. FormPreferences..GroupBoxStartupSettings..LabelParallelTranslation..Caption
-#: PreferencesUi.dfm:59
-msgid "Parallel translation"
-msgstr "Parallele Übersetzung"
-
-#: u_dzGoogleTranslate.pas:248
-#, object-pascal-format
-msgid "Parsing error on JSON answer: First pair name is \"%s\" not \"responseData\"."
-msgstr "Parsing-Fehler der JSON Antwort: Das erste Paar ist \"%s\" nicht \"responseData\"."
-
-#: u_dzGoogleTranslate.pas:259
-#, object-pascal-format
-msgid "Parsing error on JSON answer: First responseData pair is \"%s\" not \"translatedText\"."
-msgstr "Parsing-Fehler der JSON Antwort: Erstes responseData Paar ist \"%s\" nicht \"translatedText\"."
-
-#: u_dzGoogleTranslate.pas:243
-#, object-pascal-format
-msgid "Parsing error on JSON answer: Root object size is %d not 3."
-msgstr "Parsing-Fehler der JSON Antwort: Größe des Root Objekts ist %d nicht 3."
-
-#: u_dzGoogleTranslate.pas:269
-#, object-pascal-format
-msgid "Parsing error on JSON answer: Second pair name is \"%s\" not \"responseDetails\"."
-msgstr "Parsing-Fehler der JSON Antwort: Name des zweiten Paares ist \"%s\" nicht \"responseDetails\"."
-
-#: u_dzGoogleTranslate.pas:280
-#, object-pascal-format
-msgid "Parsing error on JSON answer: Thrid pair name is \"%s\" not \"responseStatus\"."
-msgstr "Parsing-Fehler der JSON Antwort: Name des dritten Paares ist \"%s\" nicht \"responseStatus\"."
-
-#: u_dzGoogleTranslate.pas:265
-msgid "Parsing error on JSON answer: responseData is neither NULL nor an object."
-msgstr "Parsing-Fehler der JSON Antwort: responseData ist weder NULL noch ein Objekt."
-
-#: u_dzGoogleTranslate.pas:255
-#, object-pascal-format
-msgid "Parsing error on JSON answer: responseData object size is %d not 1."
-msgstr "Parsing-Fehler der JSON Antwort: Größé des responseData Objekts ist %d nicht 1."
-
-#: u_dzGoogleTranslate.pas:276
-msgid "Parsing error on JSON answer: responseDetails is neither NULL nor a string."
-msgstr "Parsing-Fehler der JSON Antwort: responseDetails ist weder NULL noch eine Zeichenkette."
-
-#: u_dzGoogleTranslate.pas:283
-msgid "Parsing error on JSON answer: responseStatus is not a number."
-msgstr "Parsing-Fehler der JSON Antwort: responsestatus ist keine Zahl."
-
-#: u_dzGoogleTranslate.pas:262
-msgid "Parsing error on JSON answer: translatedText data is not a string."
-msgstr "Parsing-Fehler der JSON Antwort: translatedText ist keine Zeichenkette."
-
-#. FormPreferences..GroupBoxStartupSettings..EditFilenameToOpen....Hint
-#: PreferencesUi.dfm:120
-msgid "Paths must be relative if you want to move the files to a different location."
-msgstr "Pfade müssen relativ sein, wenn Sie die Dateien an einen anderen Speicherort verschieben möchten."
-
-#: PoTools.pas:246
-msgid "Please specify a correct PO header as translation for the empty string."
-msgstr "Bitte geben Sie einen korrekten PO-Header als Übersetzung für die leere Zeichenfolge an."
-
-#. FormPreferences..Caption
-#: PreferencesUi.dfm:5
-msgid "Preferences"
-msgstr "Einstellungen"
-
-#. f_TranslationDbLearnOptions..chk_Preview..Caption
-#: w_TranslationDbLearnOptions.dfm:89
-msgid "Preview changes by adding label"
-msgstr "Vorschau der Änderungen durch Hinzufügen von Label"
-
-#. f_dzProgress..Caption
-#: w_dzProgress.dfm:6
-msgid "Progress"
-msgstr "Progress"
-
-#: w_dzProgress.pas:91
-#, object-pascal-format
-msgid "Progress (%d%%)"
-msgstr "Fortschritt (%d%%)"
-
-#. f_EditHeader..l_ProjectName..Caption
-#: w_EditHeader.dfm:23
-msgid "Project name and version"
-msgstr "Projektname und version"
-
-#. FormEditor..PanelDetails..PanelBottomCenter..PanelTranslation..Panel9..chkQuickNavigation..Caption
-#: EditorUi.dfm:774
-msgid "Quick navigation"
-msgstr "Schnellnavigation"
-
-#. FormEditor..TheActionList..act_FileReadFrom..Caption
-#: EditorUi.dfm:1257
-msgid "Read translations from ..."
-msgstr "Übersetzungen lesen aus ..."
-
-#. FormEditor..TheActionList..act_FileReadFrom....Hint
-#: EditorUi.dfm:1260
-msgid "Read translations from another .po file and add them to the list. Duplicates will be ignored."
-msgstr "Übersetzungen aus einer anderen .po-Datei lesen und der Liste hinzufügen. Duplikate werden ignoriert."
-
-#: w_TranslationDb.pas:214
-#, object-pascal-format
-msgid ""
-"Really delete this translation?\n"
-"%s\n"
-"-->\n"
-"%s"
-msgstr ""
-"Diese Übersetzung wirklich Löschen?\n"
-"%s,\n"
-"-->\n"
-"%s"
-
-#. FormEditor..PanelList..PanelFilter..btnRefreshFilter..Caption
-#: EditorUi.dfm:120
-msgid "Refresh filter"
-msgstr "Filter aktualisieren"
-
-#. FormEditor..TheActionList..act_FileReload..Caption
-#: EditorUi.dfm:1265
-msgid "Reload"
-msgstr "Neu laden"
-
-#. FormEditor..TheActionList..act_FileReload..Hint
-#: EditorUi.dfm:1266
-msgid "Reload from .po file. Warning: Any changes will be lost."
-msgstr ".po-Datei erneut laden. Achtung: Alle Änderungen gehen verloren."
-
-#. FormEditor..MenuMain..MenuFile..mi_FileReload....Hint
-#: EditorUi.dfm:997
-msgid "Reload the current file from disk. Any changes that have not yet been saved will be lost."
-msgstr "Aktuelle Datei erneut von Festplatte laden. Alle Änderungen, die noch nicht gespeichert wurden, gehen verloren."
-
-#. FormEditor..TheActionList..act_LabelsRemoveFromSelection..Hint
-#: EditorUi.dfm:1391
-msgid "Remove a label from all selected entries."
-msgstr "Label von allen ausgewählten Einträgen entfernen."
-
-#. FormAutoTranslateOptions..chk_Unfuzzy..Caption
-#: AutoTranslateOptions.dfm:114
-msgid "Remove fuzzy from translated entries."
-msgstr "\"fuzzy\" von allen übersetzten Einträgen entfernen."
-
-#. FormEditor..TheActionList..act_LabelsRemoveFromSelection..Caption
-#: EditorUi.dfm:1390
-msgid "Remove label from selection ..."
-msgstr "Label von Auswahl entfernen ..."
-
-#. FormEditor..MenuMain..MenuFile..MenuItemReopen..Caption
-#: EditorUi.dfm:990
-msgid "Reopen"
-msgstr "Wieder öffnen"
-
-#. FormEditor..TheActionList..act_TransAutofillHashes....Hint
-#: EditorUi.dfm:1464
-msgid "Replace all letters with '#' for all translations for the current selection. (Testing only)"
-msgstr "In allen Übersetzungen in der aktuellen Auswahl alle Buchstaben durch '#' ersetzen . (zum Testen)"
-
-#. FormEditor..MenuMain..MenuTools..mi_ToolsRepository..Caption
-#: EditorUi.dfm:1179
-msgid "Repository"
-msgstr "Repository"
-
-#. FormEditor..TheActionList..act_ToolsRun..Hint
-#: EditorUi.dfm:1512
-msgid "Run an application (needs to be set up in preferences)."
-msgstr "Programm ausführen (Euss in den Einstellungen konfiguriert werden)."
-
-#. f_EditHeader..cmb_Charset....Items.Strings
-#: w_EditHeader.dfm:148
-msgid "SHIFT_JIS"
-msgstr "SHIFT_JIS"
-
-#. FormEditor..TheActionList..act_LabelsSaveIgnore..Caption
-#: EditorUi.dfm:1541
-msgid "Save Ignore ..."
-msgstr "Ignore speichern ..."
-
-#. FormEditor..TheActionList..act_LabelsSaveIgnore..Hint
-#: EditorUi.dfm:1542
-msgid "Save all entries marked with an \"ignore\" label to a .po file."
-msgstr "Speichern aller Einträge mit einem \"ignore\"-Label in eine .po-Datei."
-
-#. f_IgnoreSave..Caption
-#: w_IgnoreSave.dfm:5
-msgid "Save ignore to ignore.po"
-msgstr "\"ignore\" in ignore.po speichern ..."
-
-#. FormEditor..MenuMain..MenuLabels..mi_LabelsSaveIgnore..Caption
-#: EditorUi.dfm:1169
-msgid "Save ignore.po ..."
-msgstr "Ignore.po speichern ..."
-
-#. FormEditor..TheActionList..act_FileSave..Hint
-#: EditorUi.dfm:1273
-msgid "Save translations to .po file."
-msgstr "Übersetzungen in .po-Datei speichern."
-
-#. FormEditor..TheActionList..act_FileSaveAs..Hint
-#: EditorUi.dfm:1280
-msgid "Save translations to a new .po file."
-msgstr "Übersetzungen in einer neuen .po-Datei speichern."
-
-#: EditorUi.pas:619
-msgid "Saving file..."
-msgstr "Datei wird gespeichert..."
-
-#: EditorUi.pas:638
-msgid "Saving translation memory file..."
-msgstr "Übersetzungs-Speicher wird in Datei gespeichert..."
-
-#. FormAutoTranslateOptions..rg_TranslateWhich..Caption
-#: AutoTranslateOptions.dfm:55
-msgid "Select which entries to translate"
-msgstr "Wählen Sie die zu übersetzenden Einträge"
-
-#. FormEditor..TheActionList..act_TransSendEmail..Caption
-#: EditorUi.dfm:1437
-msgid "Send by email"
-msgstr "Per e-Mail senden"
-
-#. FormEditor..TheActionList..act_TransSendEmail..Hint
-#: EditorUi.dfm:1439
-msgid "Send the current selection by email."
-msgstr "Aktuelle Auswahl per e-Mail senden."
-
-#: PreferencesUi.pas:229
-#, object-pascal-format
-msgid "Settings file: %s"
-msgstr "Einstellungsdatei: %s"
-
-#. FormEditor..PanelList..PanelFilter..ButtonShowAll..Caption
-#: EditorUi.dfm:197
-msgid "Show all"
-msgstr "Alle anzeigen"
-
-#. FormPreferences..GroupBoxStartupSettings..chk_ShowStatus..Caption
-#: PreferencesUi.dfm:110
-msgid "Show status bar"
-msgstr "Statusleiste anzeigen"
-
-#. FormEditor..TheActionList..act_ToolsRepositoryShow..Hint
-#: EditorUi.dfm:1519
-msgid "Show the translation repository."
-msgstr "Translation-Repository anzeigen"
-
-#. f_Textfilter..chk_Source..Caption
-#: w_TextFilter.dfm:54
-msgid "Source code location"
-msgstr "Position im Quellcode"
-
-#. FormEditor..PanelDetails..PanelBottomLeft..PanelSourceLoc..LabelSourceLocation..Caption
-#: EditorUi.dfm:399
-msgid "Source code location:"
-msgstr "Position im Quellcode:"
-
-#. FormEditor..PanelDetails..PanelBottomCenter..PanelOriText..MemoMsgId....Hint
-#: EditorUi.dfm:845
-msgid "Spaces are shown using dots, in order to make them clearly visible. Linebreaks are shown using an arrow that points downwards."
-msgstr "Leerzeichen werden als Punkte angezeigt, um sie deutlich sichtbar zu machen. Zeilenumbrüche werden mit einen Pfeil, der nach unten zeigt, angezeigt."
-
-#. GoogleTranslationSettings..rg_Language....Items.Strings
-#. f_MicrosoftTranslationSettings..rg_Language....Items.Strings
-#: GoogleTranslateSettings.dfm:72 w_MicrosoftTranslateSettings.dfm:73
-#: GoogleTranslate.pas:732
-msgid "Spanish"
-msgstr "Spanisch"
-
-#: LabelApplicationByRulesUi.pas:64
-msgid "Specify a utf-8 file that contains rules for application of labels."
-msgstr "Geben Sie eine Utf-8-Datei, die Regeln zum Zuweisen von Labels enthält."
-
-#: EditorUi.pas:2843
-msgid "Status"
-msgstr "Status"
-
-#: EditorUi.pas:1444
-#, object-pascal-format
-msgid "Strings translated: %d"
-msgstr "Zeichenketten übersetzt: %d"
-
-#. FormEditor..TheActionList..act_FileSyncWithOther..Caption
-#: EditorUi.dfm:1286
-msgid "Synch with other .po file ..."
-msgstr "Synchronisieren mit anderer .po-Datei ..."
-
-#. FormEditor..MenuMain..MenuTranslations..Caption
-#: EditorUi.dfm:1057
-msgid "T&ranslations"
-msgstr "Übe&rsetzungen"
-
-#. f_EditHeader..cmb_Charset....Items.Strings
-#: w_EditHeader.dfm:150
-msgid "TIS-620"
-msgstr "TIS-620"
 
 # Label: ignore
 #. FormAutoTranslateOptions..Font.Name
@@ -1907,7 +43,7 @@ msgstr "TIS-620"
 #. f_TranslationDbLearnOptions..Font.Name
 #. f_TranslationDbNew..Font.Name
 #: AutoTranslateOptions.dfm:12 AutoTranslateOptions.dfm:36 EditLabel.dfm:11
-#: EditorUi.dfm:449 GoogleTranslateSettings.dfm:12
+#: EditorUi.dfm:445 GoogleTranslateSettings.dfm:12
 #: GoogleTranslateSettings.dfm:33 HelpUi.dfm:11
 #: LabelApplicationByRulesUi.dfm:13 PreferencesUi.dfm:12 w_EditHeader.dfm:12
 #: w_IgnoreImport.dfm:12 w_IgnoreLoad.dfm:12 w_IgnoreSave.dfm:12
@@ -1917,347 +53,59 @@ msgstr "TIS-620"
 msgid "Tahoma"
 msgstr ""
 
-#: u_Languages.pas:369
-msgid "TdxLanguage is not valid"
-msgstr "TdxLanguage ist ungültig"
-
-#. f_EditHeader..l_TeamEmail..Caption
-#: w_EditHeader.dfm:37
-msgid "Team's email address"
-msgstr "E-Mail-Adresse des Teams"
-
-#. f_Textfilter..Caption
-#: w_TextFilter.dfm:5
-msgid "Textfilter"
-msgstr "Textfilter"
-
-#. GoogleTranslationSettings..lbGoogleAPIinfo....Hint
-#: GoogleTranslateSettings.dfm:27
-msgid "The Google Translate API requires the use of an API key, which you can get from the Google APIs console."
-msgstr "Die Google Translate API erfordert die Verwendung eines API-Schlüssels, den Sie von der Google-APIs-Konsole erhalten können."
-
-#. f_MicrosoftTranslationSettings..l_BingAppIdInfo....Hint
-#: w_MicrosoftTranslateSettings.dfm:28
-msgid "The Microsoft Translation API requires the use of a Bing AppID, which you can get from http://msdn.microsoft.com/en-us/library/ff512386.aspx"
-msgstr "Die Microsoft-Translation API erfordert die Verwendung einer Bing AppID, die Sie auf http://msdn.microsoft.com/en-us/library/ff512386.aspx erhalten"
-
-#: EditorUi.pas:1368
-msgid "The current selection is empty."
-msgstr "Die aktuelle Auswahl ist leer."
-
-#: EditorUi.pas:1362
-#, object-pascal-format
-msgid ""
-"The currently selected translator engine\n"
-"%s\n"
-"does not allow batch translation."
-msgstr ""
-"Die aktuell ausgewählte Übersetzungs-Engine\n"
-"%s\n"
-"erlaubt keine Batch-Übersetzung."
-
-#: LabelApplicationByRulesUi.pas:66
-msgid "The file has the following format, where the first word in each line is a label:"
-msgstr "Die Datei hat das folgende Format, wobei das erste Wort in jeder Zeile ein Label ist:"
-
-#: EditorUi.pas:623 EditorUi.pas:2315 EditorUi.pas:2679
-msgid "The language of this po file is unknown, please edit the header first to provide it."
-msgstr "Die Sprache dieser po-Datei ist unbekannt, bearbeiten Sie zuerst die Kopfdaten um sie anzugeben."
-
-#. Check line breaks
-#: PoTools.pas:290
-msgid "The number of line breaks do not match."
-msgstr "Die Anzahl der Zeilenumbrüche stimmen nicht überein."
-
-#. Check tabulators
-#: PoTools.pas:302
-msgid "The number of tabulators do not match."
-msgstr "Die Anzahl der Tabulatoren stimmen nicht überein."
-
-#: PoTools.pas:235
-#, object-pascal-format
-msgid "The original text includes %d times %s, but the translation contains %d of these."
-msgstr "Der ursprüngliche Text enthält %d mal %s, aber die Übersetzung enthält deren %d."
-
-#: EditorUi.pas:2685
-msgid "There is no repository for this language yet. Please create one first."
-msgstr "Es gibt kein Repository für diese Sprache. Bitte erzeugen Sie zunächst eines."
-
-#. FormEditor..PanelDetails..PanelBottomLeft..PanelMessages..MemoMessages..Hint
-#: EditorUi.dfm:443
-msgid "These warnings indicate possible problems with your translation."
-msgstr "Diese Warnungen weisen auf mögliche Probleme mit Ihrer Übersetzung hin."
-
-#. FormEditor..PanelDetails..PanelBottomLeft..PanelSourceLoc..ListBoxSource..Hint
-#: EditorUi.dfm:408
-msgid "This information is only for technicians."
-msgstr "Diese Informationen sind nur für Techniker."
-
-#: EditorUi.pas:1208
-msgid "This is a plural form"
-msgstr "Dies ist eine Pluralform"
-
-#. FormPreferences..GroupBoxStartupSettings..CheckBoxApplySettingsAtStartup..Hint
-#: PreferencesUi.dfm:91
-msgid "This is good before sending files to the translator"
-msgstr "Dies erleichtert dem Übersetzer die Arbeit mit den Dateien"
+#. FormAutoTranslateOptions..l_Method..Caption
+#: AutoTranslateOptions.dfm:23
+msgid "Automatically translate using:"
+msgstr "Automatische Übersetzung mittels:"
 
 #. FormAutoTranslateOptions..l_Blurb....Caption
 #: AutoTranslateOptions.dfm:32
-msgid "This operation may take 30 seconds or longer, depending on the translation method used and possibly your internet connection."
-msgstr "Dieser Vorgang kann 30 Sekunden oder länger dauern, je verwendeter Übersetzung-Methode und möglicherweise Ihrer Internet-Verbindung."
-
-#: EditorUi.pas:904
 msgid ""
-"This will make all selected translations look very unreadable.\n"
-"This only makes sense for test purposes.\n"
-"Are you really sure that you want to do that?"
+"This operation may take 30 seconds or longer, depending on the "
+"translation method used and possibly your internet "
+"connection."
 msgstr ""
-"Dies wird alle ausgewählten Übersetzungen nicht lesbar machen.\n"
-"Dies ist nur sinnvoll für Testzwecke.\n"
-"Sind Sie wirklich sicher, dass Sie das tun möchten?"
+"Dieser Vorgang kann 30 Sekunden oder länger dauern, je verwendeter "
+"Übersetzung-Methode und möglicherweise Ihrer "
+"Internet-Verbindung."
 
-#: EditorUi.pas:1534
-#, object-pascal-format
+#. FormAutoTranslateOptions..rg_TranslateWhich..Caption
+#: AutoTranslateOptions.dfm:55
+msgid "Select which entries to translate"
+msgstr "Wählen Sie die zu übersetzenden Einträge"
+
+#. FormAutoTranslateOptions..rg_TranslateWhich....Items.Strings
+#: AutoTranslateOptions.dfm:58
+msgid "Only translate untranslated entries."
+msgstr "Nur Einträge ohne Übersetzung übersetzen."
+
+#. FormAutoTranslateOptions..rg_TranslateWhich....Items.Strings
+#: AutoTranslateOptions.dfm:59
 msgid ""
-"This will overwrite all translations from the current selection (%d entries) with the original.\n"
-"Are you really sure that you want to do that?"
+"Also translate entries currently marked as "
+"fuzzy."
 msgstr ""
-"Dies überschreibt alle Übersetzungen aus der aktuellen Auswahl (%d Einträge) mit dem Original.\n"
-"Sind Sie wirklich sicher, dass Sie das tun möchten?"
+"Auch derzeit als \"fuzzy\" markierte Einträge "
+"übersetzen."
 
-#: EditorUi.pas:1504
-#, object-pascal-format
+#. FormAutoTranslateOptions..rg_TranslateWhich....Items.Strings
+#: AutoTranslateOptions.dfm:60
 msgid ""
-"This will remove the translations from the current selection (%d entries).\n"
-"Are you really sure that you want to do that?"
+"Also re-translate already translated "
+"entries."
 msgstr ""
-"Dies entfernt die Übersetzungen der aktuellen Auswahl (%d Einträge).\n"
-"Sind Sie wirklich sicher, dass Sie das tun möchten?"
+"Auch bereits übersetzte Einträge neu "
+"übersetzen."
 
-#. f_IgnoreLoad..l_Blurb....Caption
-#: w_IgnoreLoad.dfm:33
-msgid "This will set the \"ignore\" label for all entries found in the selected ingore.po file."
-msgstr "Dies setzt das \"ignore\"-Label für alle Einträge, die in der ausgewählten ingore.po-Datei gefunden werden."
+#. FormAutoTranslateOptions..chk_MarkFuzzy..Caption
+#: AutoTranslateOptions.dfm:68
+msgid "Mark translated entries as fuzzy"
+msgstr "Übersetzte Einträge als \"fuzzy\" markieren."
 
-#. f_IgnoreImport..l_Blurb....Caption
-#: w_IgnoreImport.dfm:33
-msgid "This will set the \"ignore\" label for all entries with an \"ignore\" label found in the selected PO file."
-msgstr "Dies setzt das \"ignore\"-Label für alle Einträge, die in der ausgewählten PO-Datei ein \"ignore\"-Label haben."
-
-#. FormHelp..Memo1....Lines.Strings
-#: HelpUi.dfm:42
-msgid "Tips:"
-msgstr "Tipps:"
-
-#. FormEditor..TheActionList..act_LabelsToggleFuzzy..Caption
-#: EditorUi.dfm:1349
-msgid "Toggle \"fuzzy\" status"
-msgstr "\"fuzzy\"-Status umschalten"
-
-#. FormEditor..TheActionList..act_LabelsToggleIgnore..Caption
-#: EditorUi.dfm:1341
-msgid "Toggle \"ignore\" label"
-msgstr "\"ignore\"-Label umschalten"
-
-#. FormEditor..TheActionList..act_LabelsToggleFuzzy..Hint
-#: EditorUi.dfm:1350
-msgid "Toggle the \"fuzzy\" status of the current entry."
-msgstr "Schaltet den \"fuzzy\" Status des aktuellen Eintrags um."
-
-#. FormEditor..TheActionList..act_LabelsToggleIgnore..Hint
-#: EditorUi.dfm:1342
-msgid "Toggle the \"ignore\" label of the current entry."
-msgstr "Schaltet das \"ignore\"-Label des aktuellen Eintrags um."
-
-#. FormEditor..TheActionList..act_AutoGoogle....Hint
-#: EditorUi.dfm:1329
-msgid "Translate using Google Translate (requires API key, will be turned off at 2011-12-01 by Google)"
-msgstr "Mit Google Translate übersetzen (API-Schlüssel erforderlich, wird von Google deaktiviert am 2011-12-01)"
-
-#. FormEditor..TheActionList..act_AutoMicrosoft..Hint
-#: EditorUi.dfm:1252
-msgid "Translate using Microsoft Translator V2 (requires Bing AppID)"
-msgstr "Übersetzen mit Microsoft Translator V2 (erfordert Bing AppID)"
-
-#. FormEditor..TheActionList..act_AutoMo..Hint
-#: EditorUi.dfm:1336
-msgid "Translate using a .mo file."
-msgstr "Übersetzen anhand einer .mo-Datei."
-
-#. FormEditor..TheActionList..act_AutoPo..Hint
-#: EditorUi.dfm:1406
-msgid "Translate using a .po file."
-msgstr "Übersetzen anhand einer .po-Datei."
-
-#. FormEditor..TheActionList..act_AutoRepository....Hint
-#: EditorUi.dfm:1536
-msgid "Translate using the translation repository of the language selected in the .po file header."
-msgstr "Übersetzen anhand des Translation-Repositories der Sprache, die im Kopf der .po-Datei angegeben ist."
-
-#: EditorUi.pas:2845
-msgid "Translation"
-msgstr "Übersetzung"
-
-#: w_TranslationDb.pas:359
-#, object-pascal-format
-msgid "Translation %d"
-msgstr "Übersetzung %d"
-
-#. f_TranslationDb..Caption
-#: w_TranslationDb.dfm:4
-msgid "Translation DB"
-msgstr "Übersetzungs-DB"
-
-#. FormPreferences..grp_TranslationRepositiory..Caption
-#: PreferencesUi.dfm:356
-msgid "Translation Repositiory"
-msgstr "Übersetzungs-Repositiory"
-
-#. f_TranslationDbLearnOptions..l_Filename..Caption
-#: w_TranslationDbLearnOptions.dfm:23
-msgid "Translation Repository File"
-msgstr "Translation-Repository Datei"
-
-#. f_TranslationDbLearnOptions..Caption
-#: w_TranslationDbLearnOptions.dfm:5
-msgid "Translation Repository Learn Options"
-msgstr "Lern-Einstellungen für Translation-Repository"
-
-#: EditorUi.pas:1444
-msgid "Translation completed."
-msgstr "Übersetzung abgeschlossen."
-
-#: EditorUi.pas:2835
-#, object-pascal-format
-msgid "Translation file: \"%s\""
-msgstr "Übersetzungsdatei: \"%s\""
-
-#: u_TranslatorEngineRepository.pas:103
-#, object-pascal-format
-msgid "Translation repository %s"
-msgstr "Translation-Repository %s"
-
-#: u_TranslatorEngineRepository.pas:50
-#, object-pascal-format
-msgid "Translation repository for language %s does not exist."
-msgstr "Translation-Repository für Sprache %s existiert nicht."
-
-#: EditorUi.pas:1434
-msgid "Translation request failed."
-msgstr "Übersetzung-Anforderung ist fehlgeschlagen."
-
-#. FormEditor..PanelDetails..PanelBottomCenter..PanelTranslation..Panel9..LabelMsgStr..Caption
-#: EditorUi.dfm:541
-msgid "Translation:"
-msgstr "Übersetzung:"
-
-#. If the file is too big - clean it when next save
-#: TranslationsMemory.pas:381
-msgid "Translations memory file is corrupted"
-msgstr "Datei des Übersetzungs-Speichers ist beschädigt"
-
-#. f_EditHeader..cmb_Charset....Items.Strings
-#: w_EditHeader.dfm:153
-msgid "UTF-8"
-msgstr "UTF-8"
-
-#. FormEditor..TheActionList..act_LabelsUnfuzzySelection..Caption
-#: EditorUi.dfm:1411
-msgid "Unfuzzy Selection"
-msgstr "\"fuzzy\" von Auswahl entfernen"
-
-#: u_Languages.pas:375
-#, object-pascal-format
-msgid "Unknown language code %s."
-msgstr "Unbekannter Sprachcode %s."
-
-#: EditorUi.pas:1463
-msgid "Untranslated"
-msgstr "nicht übersetzt"
-
-#: EditorUi.pas:2276
-#, object-pascal-format
-msgid "Use &Google Translate (%s) ..."
-msgstr "&Google Translate (%s) benutzen ..."
-
-#. FormEditor..TheActionList..act_AutoGoogle..Caption
-#: EditorUi.dfm:1325
-msgid "Use &Google Translate ..."
-msgstr "&Google Translate benutzen ..."
-
-#. FormEditor..TheActionList..act_AutoMo..Caption
-#: EditorUi.dfm:1334
-msgid "Use &MO file ..."
-msgstr "&MO-Datei benutzen ..."
-
-#. FormEditor..TheActionList..act_AutoPo..Caption
-#: EditorUi.dfm:1404
-msgid "Use &PO file ..."
-msgstr "&PO-Datei benutzen ..."
-
-#: EditorUi.pas:2283
-#, object-pascal-format
-msgid "Use Microsoft Translator &V2 (%s) ..."
-msgstr "Microsoft Translator &V2 (%s) benutzen ..."
-
-#. FormEditor..TheActionList..act_AutoMicrosoft..Caption
-#: EditorUi.dfm:1250
-msgid "Use Microsoft Translator &V2 ..."
-msgstr "Microsoft Translator &V2 benutzen ..."
-
-#. FormEditor..TheActionList..act_AutoRepository..Caption
-#: EditorUi.dfm:1532
-msgid "Use Translation &Repository"
-msgstr "Translation-&Repository benutzen"
-
-#. f_EditHeader..cmb_Charset....Items.Strings
-#: w_EditHeader.dfm:151
-msgid "VISCII"
-msgstr "VISCII"
-
-#: EditorUi.pas:1871
-msgid "Version"
-msgstr "Version"
-
-#: EditorUi.pas:2184
-msgid "Warning not found."
-msgstr "Warnung nicht gefunden."
-
-#. FormEditor..TheActionList..act_TransCopyWithComments..Caption
-#: EditorUi.dfm:1429
-msgid "With comments for programmers"
-msgstr "Mit Kommentaren für die Programmierer"
-
-#. FormPreferences..grp_SaveSettings..chk_WrapAtNCharacters..Caption
-#: PreferencesUi.dfm:195
-msgid "Wrap lines after [characters]"
-msgstr "Zeilen umbrechen nach [Zeichen]"
-
-#. Start Application
-#: EditorUi.pas:2753
-msgid "You must specify an application in the preferences before you can run it."
-msgstr "Sie müssen in den Einstellungen ein Programm angeben, bevor Sie es ausführen können."
-
-#. GoogleTranslationSettings..lb_OKhint..Caption
-#: GoogleTranslateSettings.dfm:48
-msgid "You need a Google API key to enable it"
-msgstr "Sie benötigen einen Google-API-Schlüssel um dies zu aktivieren"
-
-#. f_MicrosoftTranslationSettings..lb_OKhint..Caption
-#: w_MicrosoftTranslateSettings.dfm:49
-msgid "You need a Microsoft Bing AppID to enable it"
-msgstr "Sie benötigen eine Microsoft Bing AppID zum aktivieren"
-
-#. f_TranslationDbLearnOptions..ed_PoTag..Text
-#: w_TranslationDbLearnOptions.dfm:82
-msgid "add"
-msgstr "add"
-
-#: EditorUi.pas:2711
-#, object-pascal-format
-msgid "added %s -> %s"
-msgstr "%s -> %s hinzugefügt"
+#. FormAutoTranslateOptions..chk_LabelAs..Caption
+#: AutoTranslateOptions.dfm:76
+msgid "Label translated entries as"
+msgstr "Übersetzte Einträge mit Label versehen"
 
 #. FormAutoTranslateOptions..ed_Label..Text
 #. FormEditor..TheActionList..act_AutoMicrosoft..Category
@@ -2267,11 +115,390 @@ msgstr "%s -> %s hinzugefügt"
 #. FormEditor..TheActionList..act_AutoPo..Category
 #. FormEditor..TheActionList..act_AutoRepository..Category
 #. f_TranslationDbLearnOptions..ed_RepositoryTag..Text
-#: AutoTranslateOptions.dfm:87 EditorUi.dfm:1249 EditorUi.dfm:1316
-#: EditorUi.dfm:1324 EditorUi.dfm:1333 EditorUi.dfm:1403 EditorUi.dfm:1531
+#: AutoTranslateOptions.dfm:87 EditorUi.dfm:1240 EditorUi.dfm:1306
+#: EditorUi.dfm:1314 EditorUi.dfm:1323 EditorUi.dfm:1393 EditorUi.dfm:1521
 #: w_TranslationDbLearnOptions.dfm:74
 msgid "auto"
 msgstr "auto"
+
+#. FormAutoTranslateOptions..b_OK..Caption
+#. GoogleTranslationSettings..b_Ok..Caption
+#. f_EditHeader..b_Ok..Caption
+#. f_IgnoreImport..b_Ok..Caption
+#. f_IgnoreLoad..b_Ok..Caption
+#. f_IgnoreSave..b_Ok..Caption
+#. f_MicrosoftTranslationSettings..b_Ok..Caption
+#. f_Textfilter..b_Ok..Caption
+#. f_TranslationDbLearnOptions..b_Ok..Caption
+#. f_TranslationDbNew..b_Ok..Caption
+#: AutoTranslateOptions.dfm:94 GoogleTranslateSettings.dfm:83
+#: w_EditHeader.dfm:168 w_IgnoreImport.dfm:94 w_IgnoreLoad.dfm:94
+#: w_IgnoreSave.dfm:55 w_MicrosoftTranslateSettings.dfm:84 w_TextFilter.dfm:62
+#: w_TranslationDbLearnOptions.dfm:42 w_TranslationDbNew.dfm:39
+msgid "OK"
+msgstr "OK"
+
+#. FormAutoTranslateOptions..b_Cancel..Caption
+#. GoogleTranslationSettings..b_Cancel..Caption
+#. f_EditHeader..b_Cancel..Caption
+#. f_IgnoreImport..b_Cancel..Caption
+#. f_IgnoreLoad..b_Cancel..Caption
+#. f_IgnoreSave..b_Cancel..Caption
+#. f_MicrosoftTranslationSettings..b_Cancel..Caption
+#. f_Textfilter..b_Cancel..Caption
+#. f_TranslationDbLearnOptions..b_Cancel..Caption
+#. f_TranslationDbNew..b_Cancel..Caption
+#: AutoTranslateOptions.dfm:105 GoogleTranslateSettings.dfm:95
+#: w_EditHeader.dfm:179 w_IgnoreImport.dfm:106 w_IgnoreLoad.dfm:106
+#: w_IgnoreSave.dfm:67 w_MicrosoftTranslateSettings.dfm:96 w_TextFilter.dfm:73
+#: w_TranslationDbLearnOptions.dfm:54 w_TranslationDbNew.dfm:51
+msgid "Cancel"
+msgstr "Abbrechen"
+
+#. FormAutoTranslateOptions..chk_Unfuzzy..Caption
+#: AutoTranslateOptions.dfm:114
+msgid "Remove fuzzy from translated entries."
+msgstr ""
+"\"fuzzy\" von allen übersetzten Einträgen "
+"entfernen."
+
+#. FormAutoTranslateOptions..chk_MarkOnly..Caption
+#: AutoTranslateOptions.dfm:122
+msgid ""
+"Do not change the translation, only label these "
+"entries"
+msgstr ""
+"Keine Übersetzungen ändern, nur die Einträge mit einem Label "
+"versehen."
+
+#. FormLabel..Caption
+#: EditLabel.dfm:4
+msgid "Label"
+msgstr "Label"
+
+#. FormLabel..EditLabelName..EditLabel.Caption
+#: EditLabel.dfm:25
+msgid "Label name (ascii letters only)"
+msgstr "Label-Namen (nur Ascii-Buchstaben)"
+
+#. FormLabel..ButtonOK..Caption
+#. FormLabelApplicationByRules..ButtonOK..Caption
+#. FormPreferences..ButtonOK..Caption
+#. f_TranslationDb..al_Translation..act_TransEditOk..Caption
+#. f_TranslationDb..al_Translation..act_TransAddOk..Caption
+#: EditLabel.dfm:34 LabelApplicationByRulesUi.dfm:36 PreferencesUi.dfm:32
+#: w_TranslationDb.dfm:198 w_TranslationDb.dfm:209
+msgid "&OK"
+msgstr "&OK"
+
+#. FormLabel..ButtonCancel..Caption
+#. FormLabelApplicationByRules..ButtonCancel..Caption
+#. FormPreferences..ButtonCancel..Caption
+#. f_TranslationDb..al_Translation..act_TransEditCancel..Caption
+#. f_TranslationDb..al_Translation..act_TransAddCancel..Caption
+#: EditLabel.dfm:45 LabelApplicationByRulesUi.dfm:48 PreferencesUi.dfm:43
+#: w_TranslationDb.dfm:204 w_TranslationDb.dfm:215
+msgid "&Cancel"
+msgstr "&Abbrechen"
+
+#. FormEditor..Caption
+#: EditorUi.dfm:4
+msgid "Gorm"
+msgstr "Gorm"
+
+# Label: ignore
+#. FormEditor..Font.Name
+#. FormEditor..PanelDetails..PanelBottomCenter..PanelTranslation..MemoMsgStr..Font.Name
+#. FormEditor..PanelDetails..PanelBottomCenter..PanelOriText..MemoMsgId..Font.Name
+#. FormPreferences..gbSymbols..memSpecialChars..Font.Name
+#: EditorUi.dfm:12 EditorUi.dfm:501 EditorUi.dfm:838 PreferencesUi.dfm:321
+msgid "Arial Unicode MS"
+msgstr ""
+
+#. FormEditor..PanelList..PanelFilter..LabelLabelFilter..Caption
+#: EditorUi.dfm:70
+msgid "Filter by label:"
+msgstr "Nach Label filtern:"
+
+#. FormEditor..PanelList..PanelFilter..EditFilterText..EditLabel.Caption
+#: EditorUi.dfm:79
+msgid "Filter: MSGID, MSGSTR"
+msgstr "Filter: MSGID, MSGSTR"
+
+#. FormEditor..PanelList..PanelFilter..StaticTextFilterExplanation..Caption
+#: EditorUi.dfm:97
+msgid ""
+"Only the result of filtering is affected by the Messages "
+"menu."
+msgstr ""
+"Das Messages-Menü arbeitet nur auf den gefilterten "
+"Einträgen."
+
+#. FormEditor..PanelList..PanelFilter..chkInverseFilter..Caption
+#: EditorUi.dfm:106
+msgid "Inverse filter"
+msgstr "Invertierter Filter"
+
+#. FormEditor..PanelList..PanelFilter..btnRefreshFilter..Caption
+#: EditorUi.dfm:117
+msgid "Refresh filter"
+msgstr "Filter aktualisieren"
+
+#. FormEditor..PanelList..PanelFilter..ButtonShowAll..Caption
+#: EditorUi.dfm:194
+msgid "Show all"
+msgstr "Alle anzeigen"
+
+# Label: ignore
+#. FormEditor..PanelList..PanelFilter..b_FilterSelect..Caption
+#. FormLabelApplicationByRules..ButtonSelectFilename..Caption
+#: EditorUi.dfm:271 LabelApplicationByRulesUi.dfm:68
+msgid "..."
+msgstr ""
+
+#. FormEditor..PanelDetails..PanelBottomLeft..PanelComments..LabelProgrammerComments..Caption
+#: EditorUi.dfm:360
+msgid "Comments and instructions:"
+msgstr "Kommentare und Anweisungen:"
+
+#. FormEditor..PanelDetails..PanelBottomLeft..PanelComments..ListBoxProgrammerComments..Hint
+#: EditorUi.dfm:369
+msgid ""
+"Information from software developers to the "
+"translator"
+msgstr ""
+"Informationen der Software-Entwickler an den "
+"Übersetzer"
+
+#. FormEditor..PanelDetails..PanelBottomLeft..PanelSourceLoc..LabelSourceLocation..Caption
+#: EditorUi.dfm:395
+msgid "Source code location:"
+msgstr "Position im Quellcode:"
+
+#. FormEditor..PanelDetails..PanelBottomLeft..PanelSourceLoc..ListBoxSource..Hint
+#: EditorUi.dfm:404
+msgid "This information is only for technicians."
+msgstr "Diese Informationen sind nur für Techniker."
+
+#. FormEditor..PanelDetails..PanelBottomLeft..PanelMessages..LabelMessages..Caption
+#: EditorUi.dfm:430
+msgid "Hints and Warnings"
+msgstr "Hinweise und Warnungen"
+
+#. FormEditor..PanelDetails..PanelBottomLeft..PanelMessages..MemoMessages..Hint
+#: EditorUi.dfm:439
+msgid ""
+"These warnings indicate possible problems with your "
+"translation."
+msgstr ""
+"Diese Warnungen weisen auf mögliche Probleme mit Ihrer Übersetzung "
+"hin."
+
+#. FormEditor..PanelDetails..PanelBottomCenter..PanelTranslation..MemoMsgStr..Hint
+#: EditorUi.dfm:495
+msgid "Enter the translation here"
+msgstr "Geben Sie hier die Übersetzung ein"
+
+#. FormEditor..PanelDetails..PanelBottomCenter..PanelTranslation..Panel9..LabelMsgStr..Caption
+#: EditorUi.dfm:526
+msgid "Translation:"
+msgstr "Übersetzung:"
+
+# Label: ignore
+#. FormEditor..PanelDetails..PanelBottomCenter..PanelTranslation..Panel9..ButtonMoveDown..Font.Name
+#. FormEditor..PanelDetails..PanelBottomCenter..PanelTranslation..Panel9..ButtonMoveUp..Font.Name
+#: EditorUi.dfm:544 EditorUi.dfm:578
+msgid "Arial"
+msgstr ""
+
+#. FormEditor..PanelDetails..PanelBottomCenter..PanelTranslation..Panel9..ButtonCopyMsgId2MsgStr..Hint
+#: EditorUi.dfm:603
+msgid "Copy MsgId to MsgStr (Alt+c)"
+msgstr "MsgId nach MsgStr kopieren (Alt+c)"
+
+#. FormEditor..PanelDetails..PanelBottomCenter..PanelTranslation..Panel9..ButtonCopyMsgId2MsgStr..Caption
+#: EditorUi.dfm:604
+msgid "&Copy original"
+msgstr "Original kopieren"
+
+#. FormEditor..PanelDetails..PanelBottomCenter..PanelTranslation..Panel9..ButtonParallel..Caption
+#: EditorUi.dfm:680
+msgid "Copy &automatic"
+msgstr "&autom. Übers. kopieren"
+
+#. FormEditor..PanelDetails..PanelBottomCenter..PanelTranslation..Panel9..chkQuickNavigation..Hint
+#: EditorUi.dfm:757
+msgid "Navigation with arrow keys and pageup/down"
+msgstr "Navigation mit den Pfeiltasten und Pageup/down"
+
+#. FormEditor..PanelDetails..PanelBottomCenter..PanelTranslation..Panel9..chkQuickNavigation..Caption
+#: EditorUi.dfm:759
+msgid "Quick navigation"
+msgstr "Schnellnavigation"
+
+#. FormEditor..PanelDetails..PanelBottomCenter..PanelTranslation..Panel9..btSpecChars....Hint
+#: EditorUi.dfm:771
+msgid ""
+"Insert a special char to translation. You can change it in the "
+"Preferences window."
+msgstr ""
+"Spezielles Zeichen in Übersetzung einfügen. Konfigurierbar im "
+"Einstellungen-Fenster."
+
+#. FormEditor..PanelDetails..PanelBottomCenter..PanelAutoTranslation..lblParallelLanguageTranslation..Caption
+#: EditorUi.dfm:792
+msgid "Automatic translation:"
+msgstr "Automatische Übersetzung:"
+
+#. FormEditor..PanelDetails..PanelBottomCenter..PanelOriText..LabelMsgId..Caption
+#: EditorUi.dfm:822
+msgid "Original text:"
+msgstr "Originaltext:"
+
+#. FormEditor..PanelDetails..PanelBottomCenter..PanelOriText..MemoMsgId....Hint
+#: EditorUi.dfm:832
+msgid ""
+"Spaces are shown using dots, in order to make them clearly visible. "
+"Linebreaks are shown using an arrow that points "
+"downwards."
+msgstr ""
+"Leerzeichen werden als Punkte angezeigt, um sie deutlich sichtbar zu "
+"machen. Zeilenumbrüche werden mit einen Pfeil, der nach unten zeigt, "
+"angezeigt."
+
+#. FormEditor..PanelDetails..PanelBottomRight..PanelLabels..LabelLabels..Caption
+#: EditorUi.dfm:881
+msgid "Labels:"
+msgstr "Labels:"
+
+#. FormEditor..PanelDetails..PanelBottomRight..PanelEditableComments..LabelEditableComments..Caption
+#: EditorUi.dfm:912
+msgid "Editable comments:"
+msgstr "Änderbare Kommentare:"
+
+#. FormEditor..MenuMain..MenuFile..Caption
+#: EditorUi.dfm:968
+msgid "&File"
+msgstr "&Datei"
+
+#. FormEditor..MenuMain..MenuFile..MenuItemReopen..Caption
+#: EditorUi.dfm:973
+msgid "Reopen"
+msgstr "Wieder öffnen"
+
+#. FormEditor..MenuMain..MenuFile..mi_FileReload....Hint
+#: EditorUi.dfm:980
+msgid ""
+"Reload the current file from disk. Any changes that have not yet been "
+"saved will be lost."
+msgstr ""
+"Aktuelle Datei erneut von Festplatte laden. Alle Änderungen, die noch "
+"nicht gespeichert wurden, gehen verloren."
+
+# Label: ignore
+#. FormEditor..MenuMain..MenuFile..N1..Caption
+#. FormEditor..MenuMain..MenuFile..N11..Caption
+#. FormEditor..MenuMain..MenuFile..MenuItemSeparator1..Caption
+#. FormEditor..MenuMain..MenuTranslations..N5..Caption
+#. FormEditor..MenuMain..MenuTranslations..N6..Caption
+#. FormEditor..MenuMain..MenuLabels..N4..Caption
+#. FormEditor..MenuMain..MenuLabels..N9..Caption
+#. FormEditor..MenuMain..MenuLabels..N10..Caption
+#. FormEditor..MenuMain..MenuLabels..N12..Caption
+#. FormEditor..MenuMain..MenuTools..N7..Caption
+#. FormEditor..MenuMain..MenuTools..N8..Caption
+#. FormEditor..MenuMain..MenuHelp..N3..Caption
+#: EditorUi.dfm:989 EditorUi.dfm:1006 EditorUi.dfm:1012 EditorUi.dfm:1057
+#: EditorUi.dfm:1085 EditorUi.dfm:1098 EditorUi.dfm:1110 EditorUi.dfm:1130
+#: EditorUi.dfm:1143 EditorUi.dfm:1175 EditorUi.dfm:1184 EditorUi.dfm:1213
+msgid "-"
+msgstr ""
+
+#. FormEditor..MenuMain..MenuFile..mi_FileAddTo..Caption
+#: EditorUi.dfm:998
+msgid "Add to existing .po file ..."
+msgstr ""
+"Zu existierender .po-Datei hinzufügen "
+"..."
+
+#. FormEditor..MenuMain..MenuFile..mi_FileAddTo....Hint
+#: EditorUi.dfm:1003
+msgid ""
+"Add translations to an existing .po file. Existing translations in "
+"that file will not be changed but new translations will be added and "
+"fuzzy translations will be replaced and marked "
+"non-fuzzy."
+msgstr ""
+"Übersetzungen zu existierender .po-Datei hinzufügen. Existierende "
+"Übersetzungen in dieser Datei werden nicht geändert. Lediglich neue "
+"Übersetzungen werden hinzugefügt und \"fuzzy\" Übersetzungen werden "
+"ersetzt und als non-\"fuzzy\" markiert."
+
+#. FormEditor..MenuMain..MenuAutoTranslate..Caption
+#: EditorUi.dfm:1019
+msgid "&Auto translate"
+msgstr "&Autom. übersetzen"
+
+#. FormEditor..MenuMain..MenuTranslations..Caption
+#: EditorUi.dfm:1040
+msgid "T&ranslations"
+msgstr "Übe&rsetzungen"
+
+#. FormEditor..MenuMain..MenuTranslations..MenuItemCopyallitemstoclipboard..Caption
+#: EditorUi.dfm:1042
+msgid "&Copy to clipboard"
+msgstr "In Zwischenablage kopieren"
+
+#. FormEditor..MenuMain..MenuTranslations..MenuItemAutofilltranslations..Caption
+#: EditorUi.dfm:1064
+msgid "Autofill translations"
+msgstr "Übersetzungen automatisch füllen"
+
+#. FormEditor..MenuMain..MenuLabels..Caption
+#: EditorUi.dfm:1090
+msgid "&Labels"
+msgstr "&Labels"
+
+#. FormEditor..MenuMain..MenuLabels..mi_LabelsSaveIgnore..Caption
+#: EditorUi.dfm:1156
+msgid "Save ignore.po ..."
+msgstr "Ignore.po speichern ..."
+
+#. FormEditor..MenuMain..MenuTools..Caption
+#: EditorUi.dfm:1161
+msgid "&Tools"
+msgstr "&Optionen"
+
+#. FormEditor..MenuMain..MenuTools..mi_ToolsRepository..Caption
+#: EditorUi.dfm:1166
+msgid "Repository"
+msgstr "Repository"
+
+#. FormEditor..MenuMain..MenuHelp..Caption
+#. FormEditor..MenuMain..MenuHelp..mi_HelpHelp..Caption
+#: EditorUi.dfm:1194 EditorUi.dfm:1196
+msgid "&Help"
+msgstr "&Hilfe"
+
+#. FormEditor..MenuMain..MenuHelp..MenuItemGormhomepage..Caption
+#: EditorUi.dfm:1201
+msgid "&Gorm homepage"
+msgstr "&Gorm Homepage"
+
+#. FormEditor..MenuMain..MenuHelp..MenuItemGNUgettextforDelphi..Caption
+#: EditorUi.dfm:1205
+msgid "GNU gettext for Delphi"
+msgstr "GNU gettext für Delphi"
+
+#. FormEditor..MenuMain..MenuHelp..mi_GormDiffHelp..Caption
+#: EditorUi.dfm:1209
+msgid "How-to configure Diff for po files"
+msgstr "Diff für po-Dateien konfigurieren"
+
+#. FormEditor..MenuMain..MenuHelp..MenuItemAbout..Caption
+#: EditorUi.dfm:1216
+msgid "&About"
+msgstr "&Info"
 
 #. FormEditor..TheActionList..act_FileOpen..Category
 #. FormEditor..TheActionList..act_FileReadFrom..Category
@@ -2282,16 +509,126 @@ msgstr "auto"
 #. FormEditor..TheActionList..act_FileAppendTo..Category
 #. FormEditor..TheActionList..act_FileHeader..Category
 #. FormEditor..TheActionList..act_FileExit..Category
-#: EditorUi.dfm:1242 EditorUi.dfm:1256 EditorUi.dfm:1264 EditorUi.dfm:1271
-#: EditorUi.dfm:1278 EditorUi.dfm:1285 EditorUi.dfm:1290 EditorUi.dfm:1298
-#: EditorUi.dfm:1304
+#: EditorUi.dfm:1233 EditorUi.dfm:1247 EditorUi.dfm:1255 EditorUi.dfm:1262
+#: EditorUi.dfm:1269 EditorUi.dfm:1275 EditorUi.dfm:1280 EditorUi.dfm:1288
+#: EditorUi.dfm:1294
 msgid "file"
 msgstr "file"
 
-#: EditorUi.pas:2709
-#, object-pascal-format
-msgid "labelled %s -> %s"
-msgstr "%s -> %s gelabled"
+#. FormEditor..TheActionList..act_FileOpen..Caption
+#: EditorUi.dfm:1234
+msgid "&Open translation ..."
+msgstr "Übersetzung öffnen ..."
+
+#. FormEditor..TheActionList..act_FileOpen..Hint
+#: EditorUi.dfm:1235
+msgid "Load translations from a .po file."
+msgstr "Übersetzungen aus einer .po-Datei laden"
+
+#. FormEditor..TheActionList..act_AutoMicrosoft..Caption
+#: EditorUi.dfm:1241
+msgid "Use Microsoft Translator &V2 ..."
+msgstr "Microsoft Translator &V2 benutzen ..."
+
+#. FormEditor..TheActionList..act_AutoMicrosoft..Hint
+#: EditorUi.dfm:1243
+msgid ""
+"Translate using Microsoft Translator V2 (requires Bing "
+"AppID)"
+msgstr ""
+"Übersetzen mit Microsoft Translator V2 (erfordert Bing "
+"AppID)"
+
+#. FormEditor..TheActionList..act_FileReadFrom..Caption
+#: EditorUi.dfm:1248
+msgid "Read translations from ..."
+msgstr "Übersetzungen lesen aus ..."
+
+#. FormEditor..TheActionList..act_FileReadFrom....Hint
+#: EditorUi.dfm:1251
+msgid ""
+"Read translations from another .po file and add them to the list. "
+"Duplicates will be ignored."
+msgstr ""
+"Übersetzungen aus einer anderen .po-Datei lesen und der Liste "
+"hinzufügen. Duplikate werden ignoriert."
+
+#. FormEditor..TheActionList..act_FileReload..Caption
+#: EditorUi.dfm:1256
+msgid "Reload"
+msgstr "Neu laden"
+
+#. FormEditor..TheActionList..act_FileReload..Hint
+#: EditorUi.dfm:1257
+msgid ""
+"Reload from .po file. Warning: Any changes will be "
+"lost."
+msgstr ""
+".po-Datei erneut laden. Achtung: Alle Änderungen gehen "
+"verloren."
+
+#. FormEditor..TheActionList..act_FileSave..Caption
+#: EditorUi.dfm:1263
+msgid "&Save translation"
+msgstr "Übersetzung &speichern"
+
+#. FormEditor..TheActionList..act_FileSave..Hint
+#: EditorUi.dfm:1264
+msgid "Save translations to .po file."
+msgstr "Übersetzungen in .po-Datei speichern."
+
+#. FormEditor..TheActionList..act_FileSaveAs..Caption
+#: EditorUi.dfm:1270
+msgid "&Save translation as ..."
+msgstr "Übersetzung speichern unter ..."
+
+#. FormEditor..TheActionList..act_FileSaveAs..Hint
+#: EditorUi.dfm:1271
+msgid "Save translations to a new .po file."
+msgstr ""
+"Übersetzungen in einer neuen .po-Datei "
+"speichern."
+
+#. FormEditor..TheActionList..act_FileSyncWithOther..Caption
+#: EditorUi.dfm:1276
+msgid "Synch with other .po file ..."
+msgstr ""
+"Synchronisieren mit anderer .po-Datei "
+"..."
+
+#. FormEditor..TheActionList..act_FileAppendTo..Caption
+#: EditorUi.dfm:1281
+msgid "Append to existing .po file ..."
+msgstr "An existierende .po-Datei anhängen ..."
+
+#. FormEditor..TheActionList..act_FileAppendTo....Hint
+#: EditorUi.dfm:1284
+msgid ""
+"Append translations to an existing .po file. Warning: May create "
+"duplicates."
+msgstr ""
+"Übersetzungen an existierende .po-Datei anhängen. Achtung: Dies kann "
+"zu Duplikaten führen."
+
+#. FormEditor..TheActionList..act_FileHeader..Caption
+#: EditorUi.dfm:1289
+msgid "Edit header ..."
+msgstr "Kopfdaten ändern ..."
+
+#. FormEditor..TheActionList..act_FileHeader..Hint
+#: EditorUi.dfm:1290
+msgid "Edit the header of the .po file."
+msgstr "Kopfdaten der .po-Datei ändern."
+
+#. FormEditor..TheActionList..act_FileExit..Caption
+#: EditorUi.dfm:1295
+msgid "&Exit"
+msgstr "&Beenden"
+
+#. FormEditor..TheActionList..act_FileExit..Hint
+#: EditorUi.dfm:1296
+msgid "Exit the application"
+msgstr "Programm beenden"
 
 #. FormEditor..TheActionList..act_LabelsLoadIgnore..Category
 #. FormEditor..TheActionList..act_LabelsToggleIgnore..Category
@@ -2306,45 +643,169 @@ msgstr "%s -> %s gelabled"
 #. FormEditor..TheActionList..act_LabelsFuzzySelection..Category
 #. FormEditor..TheActionList..act_LabelsSaveIgnore..Category
 #. FormEditor..TheActionList..act_LabelsImportIgnore..Category
-#: EditorUi.dfm:1310 EditorUi.dfm:1340 EditorUi.dfm:1348 EditorUi.dfm:1356
-#: EditorUi.dfm:1362 EditorUi.dfm:1370 EditorUi.dfm:1375 EditorUi.dfm:1383
-#: EditorUi.dfm:1389 EditorUi.dfm:1410 EditorUi.dfm:1416 EditorUi.dfm:1540
-#: EditorUi.dfm:1546
+#: EditorUi.dfm:1300 EditorUi.dfm:1330 EditorUi.dfm:1338 EditorUi.dfm:1346
+#: EditorUi.dfm:1352 EditorUi.dfm:1360 EditorUi.dfm:1365 EditorUi.dfm:1373
+#: EditorUi.dfm:1379 EditorUi.dfm:1400 EditorUi.dfm:1406 EditorUi.dfm:1530
+#: EditorUi.dfm:1536
 msgid "labels"
 msgstr "labels"
 
-#: w_dzProgress.pas:165
-#, no-object-pascal-format
-msgid "must not contain a % at the end"
-msgstr "darf kein % am Ende haben"
+#. FormEditor..TheActionList..act_LabelsLoadIgnore..Caption
+#: EditorUi.dfm:1301
+msgid "Load ignore.po ..."
+msgstr "Ignore.po laden ..."
 
-#. f_TranslationDb..tc_Language....Tabs.Strings
-#: w_TranslationDb.dfm:27 w_TranslationDb.pas:148
-msgid "new ..."
-msgstr "Neu ..."
-
-# Label: ignore
-#. f_IgnoreImport..ed_Label..Text
-#. f_IgnoreLoad..ed_Label..Text
-#: w_IgnoreImport.dfm:76 w_IgnoreLoad.dfm:76
-msgid "newignore"
+#. FormEditor..TheActionList..act_LabelsLoadIgnore..Hint
+#: EditorUi.dfm:1302
+msgid ""
+"Load a .po file containing entries to "
+"ignore"
 msgstr ""
+".po-Datei laden, die zu ignorierende Einträge "
+"enthält"
 
-#: w_dzProgress.pas:180
-msgid "too many parameters"
-msgstr "Zuviele Parameter"
+#. FormEditor..TheActionList..act_AutoDisable..Caption
+#: EditorUi.dfm:1307
+msgid "&Disable automatic translation"
+msgstr "Automatische Übersetzung ausschalten"
 
-#. FormEditor..TheActionList..act_ToolsPreferences..Category
-#. FormEditor..TheActionList..act_ToolsFindFirstWarning..Category
-#. FormEditor..TheActionList..act_ToolsFindNextWarning..Category
-#. FormEditor..TheActionList..act_ToolsCompileToMo..Category
-#. FormEditor..TheActionList..act_ToolsRun..Category
-#. FormEditor..TheActionList..act_ToolsRepositoryShow..Category
-#. FormEditor..TheActionList..act_ToolsRepositoryLearn..Category
-#: EditorUi.dfm:1481 EditorUi.dfm:1487 EditorUi.dfm:1496 EditorUi.dfm:1503
-#: EditorUi.dfm:1510 EditorUi.dfm:1517 EditorUi.dfm:1523
-msgid "tools"
-msgstr "tools"
+#. FormEditor..TheActionList..act_AutoDisable..Hint
+#: EditorUi.dfm:1310
+msgid "Do not translate automatically."
+msgstr "Nicht automatisch übersetzen."
+
+#. FormEditor..TheActionList..act_AutoGoogle..Caption
+#: EditorUi.dfm:1315
+msgid "Use &Google Translate ..."
+msgstr "&Google Translate benutzen ..."
+
+#. FormEditor..TheActionList..act_AutoGoogle....Hint
+#: EditorUi.dfm:1319
+msgid ""
+"Translate using Google Translate (requires API key, will be turned "
+"off at 2011-12-01 by Google)"
+msgstr ""
+"Mit Google Translate übersetzen (API-Schlüssel erforderlich, wird von "
+"Google deaktiviert am 2011-12-01)"
+
+#. FormEditor..TheActionList..act_AutoMo..Caption
+#: EditorUi.dfm:1324
+msgid "Use &MO file ..."
+msgstr "&MO-Datei benutzen ..."
+
+#. FormEditor..TheActionList..act_AutoMo..Hint
+#: EditorUi.dfm:1326
+msgid "Translate using a .mo file."
+msgstr "Übersetzen anhand einer .mo-Datei."
+
+#. FormEditor..TheActionList..act_LabelsToggleIgnore..Caption
+#: EditorUi.dfm:1331
+msgid "Toggle \"ignore\" label"
+msgstr "\"ignore\"-Label umschalten"
+
+#. FormEditor..TheActionList..act_LabelsToggleIgnore..Hint
+#: EditorUi.dfm:1332
+msgid ""
+"Toggle the \"ignore\" label of the current "
+"entry."
+msgstr ""
+"Schaltet das \"ignore\"-Label des aktuellen Eintrags "
+"um."
+
+#. FormEditor..TheActionList..act_LabelsToggleFuzzy..Caption
+#: EditorUi.dfm:1339
+msgid "Toggle \"fuzzy\" status"
+msgstr "\"fuzzy\"-Status umschalten"
+
+#. FormEditor..TheActionList..act_LabelsToggleFuzzy..Hint
+#: EditorUi.dfm:1340
+msgid ""
+"Toggle the \"fuzzy\" status of the current "
+"entry."
+msgstr ""
+"Schaltet den \"fuzzy\" Status des aktuellen Eintrags "
+"um."
+
+#. FormEditor..TheActionList..act_LabelsAddLabel..Caption
+#: EditorUi.dfm:1347
+msgid "Add label"
+msgstr "Label hinzufügen"
+
+#. FormEditor..TheActionList..act_LabelsAddLabel..Hint
+#: EditorUi.dfm:1348
+msgid ""
+"Add a new label to the list of available "
+"labels."
+msgstr ""
+"Zur Liste der verfügbaren Labels ein neues "
+"hinzufügen."
+
+#. FormEditor..TheActionList..act_LabelsAddStandardLabels..Caption
+#: EditorUi.dfm:1353
+msgid "&Add standard labels"
+msgstr "Standard Labels hinzufügen"
+
+#. FormEditor..TheActionList..act_LabelsAddStandardLabels....Hint
+#: EditorUi.dfm:1356
+msgid ""
+"Add the standard labels to the list of available labels: Ignore, "
+"needsimprovement, presentation, reviewprogrammers, "
+"starred"
+msgstr ""
+"Standard-Labels zur Liste der verfügbaren Labels "
+"hinzufügen:·Ignore,·needsimprovement,·presentation,·reviewprogrammers,"
+"·starred"
+
+#. FormEditor..TheActionList..act_LabelsApplyByRule..Caption
+#: EditorUi.dfm:1361
+msgid "A&pply labels based on predefined rules"
+msgstr ""
+"Labels anhand von vorgegebenen Regeln "
+"setzen"
+
+#. FormEditor..TheActionList..act_LabelsApplyWarning..Caption
+#: EditorUi.dfm:1366
+msgid ""
+"Apply &warning label on all problematic "
+"translations"
+msgstr ""
+"\"&warning\" Label für alle zweifelhaften Übersetzungen "
+"setzen"
+
+#. FormEditor..TheActionList..act_LabelsApplyWarning....Hint
+#: EditorUi.dfm:1369
+msgid ""
+"Apply a \"warning\" label to all problematic translations, e.g. "
+"missing/mismatched placeholders, spacing "
+"..."
+msgstr ""
+"Ein \"warning\"-Label für alle zweifelhaften Überstzungen setzen, z.B. "
+"fehlende / falsche Platzhalter, Leerzeichen "
+"..."
+
+#. FormEditor..TheActionList..act_LabelsApplyToSelection..Caption
+#: EditorUi.dfm:1374
+msgid "Apply label to selection ..."
+msgstr "Label für Auswahl setzen ..."
+
+#. FormEditor..TheActionList..act_LabelsApplyToSelection..Hint
+#: EditorUi.dfm:1375
+msgid "Apply a label to all selected entries."
+msgstr ""
+"Label für alle ausgewählten Einträge "
+"setzen."
+
+#. FormEditor..TheActionList..act_LabelsRemoveFromSelection..Caption
+#: EditorUi.dfm:1380
+msgid "Remove label from selection ..."
+msgstr "Label von Auswahl entfernen ..."
+
+#. FormEditor..TheActionList..act_LabelsRemoveFromSelection..Hint
+#: EditorUi.dfm:1381
+msgid "Remove a label from all selected entries."
+msgstr ""
+"Label von allen ausgewählten Einträgen "
+"entfernen."
 
 # Label: ignore
 #. FormEditor..TheActionList..act_TransAutomaticTranslation..Category
@@ -2356,14 +817,1253 @@ msgstr "tools"
 #. FormEditor..TheActionList..act_TransAutofillHashes..Category
 #. FormEditor..TheActionList..act_TransAutofillCopy..Category
 #. FormEditor..TheActionList..act_TransClear..Category
+#. FormEditor..TheActionList..act_TransCreateMsgstr..Category
 #. f_TranslationDb..al_Translation..act_TransAdd..Category
 #. f_TranslationDb..al_Translation..act_TransEdit..Category
 #. f_TranslationDb..al_Translation..act_TransDel..Category
-#: EditorUi.dfm:1395 EditorUi.dfm:1422 EditorUi.dfm:1428 EditorUi.dfm:1436
-#: EditorUi.dfm:1443 EditorUi.dfm:1452 EditorUi.dfm:1460 EditorUi.dfm:1468
-#: EditorUi.dfm:1475 w_TranslationDb.dfm:182 w_TranslationDb.dfm:187
-#: w_TranslationDb.dfm:192
+#: EditorUi.dfm:1385 EditorUi.dfm:1412 EditorUi.dfm:1418 EditorUi.dfm:1426
+#: EditorUi.dfm:1433 EditorUi.dfm:1442 EditorUi.dfm:1450 EditorUi.dfm:1458
+#: EditorUi.dfm:1465 EditorUi.dfm:1544 w_TranslationDb.dfm:182
+#: w_TranslationDb.dfm:187 w_TranslationDb.dfm:192
 msgid "trans"
+msgstr ""
+
+#. FormEditor..TheActionList..act_TransAutomaticTranslation..Caption
+#: EditorUi.dfm:1386
+msgid "Automatically translate all items ..."
+msgstr ""
+"Alle Einträge automatisch übersetzen "
+"..."
+
+#. FormEditor..TheActionList..act_TransAutomaticTranslation....Hint
+#: EditorUi.dfm:1389
+msgid ""
+"Automatically translate the current selection using the active auto "
+"translate engine."
+msgstr ""
+"Die aktuelle Auswahl automatisch mit der ausgewählten "
+"Übersetzungs-Engine übersetzen."
+
+#. FormEditor..TheActionList..act_AutoPo..Caption
+#: EditorUi.dfm:1394
+msgid "Use &PO file ..."
+msgstr "&PO-Datei benutzen ..."
+
+#. FormEditor..TheActionList..act_AutoPo..Hint
+#: EditorUi.dfm:1396
+msgid "Translate using a .po file."
+msgstr "Übersetzen anhand einer .po-Datei."
+
+#. FormEditor..TheActionList..act_LabelsUnfuzzySelection..Caption
+#: EditorUi.dfm:1401
+msgid "Unfuzzy Selection"
+msgstr "\"fuzzy\" von Auswahl entfernen"
+
+#. FormEditor..TheActionList..act_LabelsUnfuzzySelection..Hint
+#: EditorUi.dfm:1402
+msgid "Mark all selected entries non-\"fuzzy\"."
+msgstr "Markiert ausgewählte Einträge als nicht-\"fuzzy\"."
+
+#. FormEditor..TheActionList..act_LabelsFuzzySelection..Caption
+#: EditorUi.dfm:1407
+msgid "Fuzzy selection"
+msgstr "\"fuzzy\" für Auswahl setzen"
+
+#. FormEditor..TheActionList..act_LabelsFuzzySelection..Hint
+#: EditorUi.dfm:1408
+msgid "Mark all selected entries \"fuzzy\"."
+msgstr "Markiert ausgewählte Einträge als \"fuzzy\"."
+
+#. FormEditor..TheActionList..act_TransCopyMsgid..Caption
+#: EditorUi.dfm:1413
+msgid "&MSGID values"
+msgstr "&MSGID Werte"
+
+#. FormEditor..TheActionList..act_TransCopyMsgid..Hint
+#: EditorUi.dfm:1414
+msgid ""
+"Copy all selected MsgId values to the "
+"clipboard."
+msgstr ""
+"Alle ausgewählten MsgId-Werte in die Zwischenablage "
+"kopieren."
+
+#. FormEditor..TheActionList..act_TransCopyWithComments..Caption
+#: EditorUi.dfm:1419
+msgid "With comments for programmers"
+msgstr "Mit Kommentaren für die Programmierer"
+
+#. FormEditor..TheActionList..act_TransCopyWithComments....Hint
+#: EditorUi.dfm:1422
+msgid ""
+"Copy all selected MsgId entries inlcuding the comments for "
+"programmers to the clipboard."
+msgstr ""
+"Alle ausgewählten MsgId-Einträge inkl. der Kommentare für den "
+"Programmierer in die Zwischenablage "
+"kopieren."
+
+#. FormEditor..TheActionList..act_TransSendEmail..Caption
+#: EditorUi.dfm:1427
+msgid "Send by email"
+msgstr "Per e-Mail senden"
+
+#. FormEditor..TheActionList..act_TransSendEmail..Hint
+#: EditorUi.dfm:1429
+msgid "Send the current selection by email."
+msgstr "Aktuelle Auswahl per e-Mail senden."
+
+#. FormEditor..TheActionList..act_TransCreateHtml..Caption
+#: EditorUi.dfm:1434
+msgid "Create HTML page"
+msgstr "HTML-Seite erzeugen"
+
+#. FormEditor..TheActionList..act_TransCreateHtml....Hint
+#: EditorUi.dfm:1438
+msgid ""
+"Create a html page with the current selection and open it in the web "
+"browser."
+msgstr ""
+"Alle ausgewählten Einträge als HTML-Seite exportieren und im "
+"Web-Browser öffnen."
+
+#. FormEditor..TheActionList..act_TransAutofillGorm..Caption
+#: EditorUi.dfm:1443
+msgid "\"Gorm\" prefix ..."
+msgstr "\"Gorm\" Präfix ..."
+
+#. FormEditor..TheActionList..act_TransAutofillGorm....Hint
+#: EditorUi.dfm:1446
+msgid ""
+"Copy MsgId to MsgStr and add a \"Gorm\" prefix for the current "
+"selection. (Testing only)"
+msgstr ""
+"Bei allen ausgewählten Einträgen MsgId nach MsgStr kopieren und einen "
+"\"Gorm\"-Prefix hinzufügen. (nur zum Testen)"
+
+#. FormEditor..TheActionList..act_TransAutofillHashes..Caption
+#: EditorUi.dfm:1451
+msgid "### instead of letters ..."
+msgstr "Buchstaben durch ### ersetzen ..."
+
+#. FormEditor..TheActionList..act_TransAutofillHashes....Hint
+#: EditorUi.dfm:1454
+msgid ""
+"Replace all letters with '#' for all translations for the current "
+"selection. (Testing only)"
+msgstr ""
+"In allen Übersetzungen in der aktuellen Auswahl alle Buchstaben durch "
+"'#' ersetzen . (zum Testen)"
+
+#. FormEditor..TheActionList..act_TransAutofillCopy..Caption
+#: EditorUi.dfm:1459
+msgid "&Copy original ..."
+msgstr "Original kopieren ..."
+
+#. FormEditor..TheActionList..act_TransAutofillCopy..Hint
+#: EditorUi.dfm:1460
+msgid ""
+"Copy MsgId to MsgStr for the current "
+"selection."
+msgstr "Ausgewählte MsgId nach MsgStr kopieren."
+
+#. FormEditor..TheActionList..act_TransClear..Caption
+#: EditorUi.dfm:1466
+msgid "&Clear translations ..."
+msgstr "Übersetzungen löschen ..."
+
+#. FormEditor..TheActionList..act_TransClear..Hint
+#: EditorUi.dfm:1467
+msgid ""
+"Clear the translation of all selected "
+"entries."
+msgstr ""
+"Übersetzung aller ausgewählten Einträge "
+"löschen."
+
+#. FormEditor..TheActionList..act_ToolsPreferences..Category
+#. FormEditor..TheActionList..act_ToolsFindFirstWarning..Category
+#. FormEditor..TheActionList..act_ToolsFindNextWarning..Category
+#. FormEditor..TheActionList..act_ToolsCompileToMo..Category
+#. FormEditor..TheActionList..act_ToolsRun..Category
+#. FormEditor..TheActionList..act_ToolsRepositoryShow..Category
+#. FormEditor..TheActionList..act_ToolsRepositoryLearn..Category
+#: EditorUi.dfm:1471 EditorUi.dfm:1477 EditorUi.dfm:1486 EditorUi.dfm:1493
+#: EditorUi.dfm:1500 EditorUi.dfm:1507 EditorUi.dfm:1513
+msgid "tools"
+msgstr "tools"
+
+#. FormEditor..TheActionList..act_ToolsPreferences..Caption
+#: EditorUi.dfm:1472
+msgid "&Preferences"
+msgstr "Einstellungen"
+
+#. FormEditor..TheActionList..act_ToolsPreferences..Hint
+#: EditorUi.dfm:1473
+msgid "Change preferences of the application."
+msgstr "Einstellungen des Programms ändern."
+
+#. FormEditor..TheActionList..act_ToolsFindFirstWarning..Caption
+#: EditorUi.dfm:1478
+msgid "Find &first warning"
+msgstr "Erste Warnung finden"
+
+#. FormEditor..TheActionList..act_ToolsFindFirstWarning....Hint
+#: EditorUi.dfm:1481
+msgid ""
+"Go to the first problematic translation in the current "
+"selection."
+msgstr ""
+"Zur ersten zweifelhaften Übersetzung in der aktuellen Auswahl "
+"springen."
+
+#. FormEditor..TheActionList..act_ToolsFindNextWarning..Caption
+#: EditorUi.dfm:1487
+msgid "Find &next warning"
+msgstr "Nächste Warnung finden"
+
+#. FormEditor..TheActionList..act_ToolsFindNextWarning..Hint
+#: EditorUi.dfm:1488
+msgid ""
+"Go to the next problematic translation in the current "
+"selection."
+msgstr ""
+"Zur nächsten zweifelhaften Übersetzung in der aktuellen Auswahl "
+"springen."
+
+#. FormEditor..TheActionList..act_ToolsCompileToMo..Caption
+#: EditorUi.dfm:1494
+msgid "&Compile to MO file"
+msgstr "In MO-Datei compilieren"
+
+#. FormEditor..TheActionList..act_ToolsCompileToMo..Hint
+#: EditorUi.dfm:1495
+msgid ""
+"Compile to .mo file (needs to be set up in "
+"preferences)."
+msgstr ""
+"In .mo-Datei umwandeln (muss in den Einstellungen konfiguriert "
+"sein)."
+
+#. FormEditor..TheActionList..act_ToolsRun..Caption
+#: EditorUi.dfm:1501
+msgid "&Run application"
+msgstr "P&rogramm aufrufen"
+
+#. FormEditor..TheActionList..act_ToolsRun..Hint
+#: EditorUi.dfm:1502
+msgid ""
+"Run an application (needs to be set up in "
+"preferences)."
+msgstr ""
+"Programm ausführen (Euss in den Einstellungen konfiguriert "
+"werden)."
+
+#. FormEditor..TheActionList..act_ToolsRepositoryShow..Caption
+#: EditorUi.dfm:1508
+msgid "&Show repository"
+msgstr "Repository anzeigen"
+
+#. FormEditor..TheActionList..act_ToolsRepositoryShow..Hint
+#: EditorUi.dfm:1509
+msgid "Show the translation repository."
+msgstr "Translation-Repository anzeigen"
+
+#. FormEditor..TheActionList..act_ToolsRepositoryLearn..Caption
+#: EditorUi.dfm:1514
+msgid "&Learn"
+msgstr "&Lernen"
+
+#. FormEditor..TheActionList..act_ToolsRepositoryLearn....Hint
+#: EditorUi.dfm:1517
+msgid ""
+"Add new entries from the current selection to the translation "
+"repository."
+msgstr ""
+"Neue Einträge aus der aktuellen Auswahl zum Translation-Repository "
+"hinzufügen."
+
+#. FormEditor..TheActionList..act_AutoRepository..Caption
+#: EditorUi.dfm:1522
+msgid "Use Translation &Repository"
+msgstr "Translation-&Repository benutzen"
+
+#. FormEditor..TheActionList..act_AutoRepository....Hint
+#: EditorUi.dfm:1526
+msgid ""
+"Translate using the translation repository of the language selected "
+"in the .po file header."
+msgstr ""
+"Übersetzen anhand des Translation-Repositories der Sprache, die im "
+"Kopf der .po-Datei angegeben ist."
+
+#. FormEditor..TheActionList..act_LabelsSaveIgnore..Caption
+#: EditorUi.dfm:1531
+msgid "Save Ignore ..."
+msgstr "Ignore speichern ..."
+
+#. FormEditor..TheActionList..act_LabelsSaveIgnore..Hint
+#: EditorUi.dfm:1532
+msgid ""
+"Save all entries marked with an \"ignore\" label to a .po "
+"file."
+msgstr ""
+"Speichern aller Einträge mit einem \"ignore\"-Label in eine "
+".po-Datei."
+
+#. FormEditor..TheActionList..act_LabelsImportIgnore..Caption
+#: EditorUi.dfm:1537
+msgid "Import \"ignore\" labels ..."
+msgstr "\"ignore\"-Labels importieren ..."
+
+#. FormEditor..TheActionList..act_LabelsImportIgnore....Hint
+#: EditorUi.dfm:1540
+msgid ""
+"Apply an \"ignore\" label to all entries matching \"ignore\" entries in a "
+".po."
+msgstr ""
+"\"ignore\"-Label für alle Einträge setzen, zu denen es einen passenden "
+"\"ignore\"-Eintrag in einer .po-Datei "
+"gibt."
+
+#. FormEditor..TheActionList..act_TransCreateMsgstr..Caption
+#: EditorUi.dfm:1545
+msgid "Create translation tracking msgstr"
+msgstr ""
+
+#. GoogleTranslationSettings..Caption
+#: GoogleTranslateSettings.dfm:5
+msgid ""
+"Google Translation Settings (Powered by "
+"Google)"
+msgstr ""
+"Einstellungen für Google Translate (Powered by "
+"Google)"
+
+#. GoogleTranslationSettings..lbGoogleAPIinfo....Hint
+#: GoogleTranslateSettings.dfm:27
+msgid ""
+"The Google Translate API requires the use of an API key, which you "
+"can get from the Google APIs console."
+msgstr ""
+"Die Google Translate API erfordert die Verwendung eines "
+"API-Schlüssels, den Sie von der Google-APIs-Konsole erhalten "
+"können."
+
+#. GoogleTranslationSettings..lbGoogleAPIinfo..Caption
+#. f_MicrosoftTranslationSettings..l_BingAppIdInfo..Caption
+#: GoogleTranslateSettings.dfm:28 w_MicrosoftTranslateSettings.dfm:29
+msgid "what is this?"
+msgstr "Was ist das?"
+
+#. GoogleTranslationSettings..lb_OKhint..Caption
+#: GoogleTranslateSettings.dfm:48
+msgid ""
+"You need a Google API key to enable "
+"it"
+msgstr ""
+"Sie benötigen einen Google-API-Schlüssel um dies zu "
+"aktivieren"
+
+#. GoogleTranslationSettings..rg_Language..Caption
+#. f_EditHeader..l_Language..Caption
+#. f_MicrosoftTranslationSettings..rg_Language..Caption
+#. f_TranslationDbNew..l_Language..Caption
+#: GoogleTranslateSettings.dfm:56 w_EditHeader.dfm:44
+#: w_MicrosoftTranslateSettings.dfm:57 w_TranslationDbNew.dfm:23
+msgid "Language"
+msgstr "Sprache"
+
+#. GoogleTranslationSettings..rg_Language....Items.Strings
+#. f_MicrosoftTranslationSettings..rg_Language....Items.Strings
+#: GoogleTranslateSettings.dfm:59 w_MicrosoftTranslateSettings.dfm:60
+#: GoogleTranslate.pas:719
+msgid "&Chinese simplified"
+msgstr "&Chinesisch (vereinfacht)"
+
+#. GoogleTranslationSettings..rg_Language....Items.Strings
+#. f_MicrosoftTranslationSettings..rg_Language....Items.Strings
+#: GoogleTranslateSettings.dfm:60 w_MicrosoftTranslateSettings.dfm:61
+#: GoogleTranslate.pas:720
+msgid "&Danish"
+msgstr "&Dänisch"
+
+#. GoogleTranslationSettings..rg_Language....Items.Strings
+#. f_MicrosoftTranslationSettings..rg_Language....Items.Strings
+#: GoogleTranslateSettings.dfm:61 w_MicrosoftTranslateSettings.dfm:62
+#: GoogleTranslate.pas:721
+msgid "Dutc&h"
+msgstr "&Holländisch"
+
+#. GoogleTranslationSettings..rg_Language....Items.Strings
+#. f_MicrosoftTranslationSettings..rg_Language....Items.Strings
+#: GoogleTranslateSettings.dfm:62 w_MicrosoftTranslateSettings.dfm:63
+#: GoogleTranslate.pas:722
+msgid "&Finnish"
+msgstr "&Finnisch"
+
+#. GoogleTranslationSettings..rg_Language....Items.Strings
+#. f_MicrosoftTranslationSettings..rg_Language....Items.Strings
+#: GoogleTranslateSettings.dfm:63 w_MicrosoftTranslateSettings.dfm:64
+#: GoogleTranslate.pas:723
+msgid "French"
+msgstr "Französisch"
+
+#. GoogleTranslationSettings..rg_Language....Items.Strings
+#. f_MicrosoftTranslationSettings..rg_Language....Items.Strings
+#: GoogleTranslateSettings.dfm:64 w_MicrosoftTranslateSettings.dfm:65
+#: GoogleTranslate.pas:724
+msgid "&German"
+msgstr "Deutsch"
+
+#. GoogleTranslationSettings..rg_Language....Items.Strings
+#. f_MicrosoftTranslationSettings..rg_Language....Items.Strings
+#: GoogleTranslateSettings.dfm:65 w_MicrosoftTranslateSettings.dfm:66
+#: GoogleTranslate.pas:725
+msgid "&Indonesian"
+msgstr "&Indonesisch"
+
+#. GoogleTranslationSettings..rg_Language....Items.Strings
+#. f_MicrosoftTranslationSettings..rg_Language....Items.Strings
+#: GoogleTranslateSettings.dfm:66 w_MicrosoftTranslateSettings.dfm:67
+#: GoogleTranslate.pas:726
+msgid "It&alian"
+msgstr "It&lienisch"
+
+#. GoogleTranslationSettings..rg_Language....Items.Strings
+#. f_MicrosoftTranslationSettings..rg_Language....Items.Strings
+#: GoogleTranslateSettings.dfm:67 w_MicrosoftTranslateSettings.dfm:68
+#: GoogleTranslate.pas:727
+msgid "&Japanese"
+msgstr "&Japanisch"
+
+#. GoogleTranslationSettings..rg_Language....Items.Strings
+#. f_MicrosoftTranslationSettings..rg_Language....Items.Strings
+#: GoogleTranslateSettings.dfm:68 w_MicrosoftTranslateSettings.dfm:69
+#: GoogleTranslate.pas:728
+msgid "&Korean"
+msgstr "&Koreanisch"
+
+#. GoogleTranslationSettings..rg_Language....Items.Strings
+#. f_MicrosoftTranslationSettings..rg_Language....Items.Strings
+#: GoogleTranslateSettings.dfm:69 w_MicrosoftTranslateSettings.dfm:70
+#: GoogleTranslate.pas:729
+msgid "&Norwegian"
+msgstr "&Norwegisch"
+
+#. GoogleTranslationSettings..rg_Language....Items.Strings
+#. f_MicrosoftTranslationSettings..rg_Language....Items.Strings
+#: GoogleTranslateSettings.dfm:70 w_MicrosoftTranslateSettings.dfm:71
+#: GoogleTranslate.pas:730
+msgid "&Portuguese"
+msgstr "&Portugiesisch"
+
+#. GoogleTranslationSettings..rg_Language....Items.Strings
+#. f_MicrosoftTranslationSettings..rg_Language....Items.Strings
+#: GoogleTranslateSettings.dfm:71 w_MicrosoftTranslateSettings.dfm:72
+#: GoogleTranslate.pas:731
+msgid "&Russian"
+msgstr "&Russisch"
+
+#. GoogleTranslationSettings..rg_Language....Items.Strings
+#. f_MicrosoftTranslationSettings..rg_Language....Items.Strings
+#: GoogleTranslateSettings.dfm:72 w_MicrosoftTranslateSettings.dfm:73
+#: GoogleTranslate.pas:732
+msgid "Spanish"
+msgstr "Spanisch"
+
+#. GoogleTranslationSettings..rg_Language....Items.Strings
+#. f_MicrosoftTranslationSettings..rg_Language....Items.Strings
+#: GoogleTranslateSettings.dfm:73 w_MicrosoftTranslateSettings.dfm:74
+#: GoogleTranslate.pas:733
+msgid "&Swedish"
+msgstr "&Schwedisch"
+
+#. GoogleTranslationSettings..rg_Language....Items.Strings
+#. f_MicrosoftTranslationSettings..rg_Language....Items.Strings
+#: GoogleTranslateSettings.dfm:74 w_MicrosoftTranslateSettings.dfm:75
+#: GoogleTranslate.pas:734
+msgid "&Thai"
+msgstr "&Thailändisch"
+
+#. GoogleTranslationSettings..rg_Language....Items.Strings
+#. f_MicrosoftTranslationSettings..rg_Language....Items.Strings
+#: GoogleTranslateSettings.dfm:75 w_MicrosoftTranslateSettings.dfm:76
+#: GoogleTranslate.pas:735
+msgid "&Ukrainian"
+msgstr "&Ukrainisch"
+
+#. GoogleTranslationSettings..edGoogleAPIKey..EditLabel.Caption
+#: GoogleTranslateSettings.dfm:106
+msgid "Google API Key"
+msgstr "Google API Key"
+
+#. FormHelp..Caption
+#: HelpUi.dfm:4
+msgid "Help"
+msgstr "Hilfe"
+
+#. FormHelp..Memo1....Lines.Strings
+#: HelpUi.dfm:28
+msgid "Keyboard shortcuts:"
+msgstr "Tastatenkürzel:"
+
+#. FormHelp..Memo1....Lines.Strings
+#: HelpUi.dfm:30
+msgid ""
+"* Control-Up, PageUp: Go to previous "
+"item."
+msgstr ""
+"* Strg-Hoch, Bild hoch: Zum vorherigen Eintrag "
+"springen."
+
+#. FormHelp..Memo1....Lines.Strings
+#: HelpUi.dfm:31
+msgid ""
+"* Control-Down, PageDown: Go to next "
+"item."
+msgstr ""
+"* Strg-Runter, Bild runter: Zum nächsten Eintrag "
+"springen."
+
+#. FormHelp..Memo1....Lines.Strings
+#: HelpUi.dfm:33
+msgid "Make sales demo:"
+msgstr "Vertriebs-Demo durchführen:"
+
+#. FormHelp..Memo1....Lines.Strings
+#: HelpUi.dfm:35
+msgid ""
+"* Identify the units that you want to "
+"demonstrate"
+msgstr ""
+"* Ermitteln Sie die Units, die Sie demonstrieren "
+"wollen"
+
+#. FormHelp..Memo1......Lines.Strings
+#: HelpUi.dfm:38
+msgid ""
+"* Create a rules set that applies a label to translations that are in "
+"these units"
+msgstr ""
+"* Erzeugen Sie einen Regelsatz, der für die Übersetzungen in diesen "
+"Units ein Label setzt."
+
+#. FormHelp..Memo1....Lines.Strings
+#: HelpUi.dfm:39
+msgid "* Filter by this label"
+msgstr "* Filtern Sie nach diesem Label"
+
+#. FormHelp..Memo1....Lines.Strings
+#: HelpUi.dfm:40
+msgid "* Translate the items found"
+msgstr "* Übersetzten Sie die gefundenen Einträge"
+
+#. FormHelp..Memo1....Lines.Strings
+#: HelpUi.dfm:42
+msgid "Tips:"
+msgstr "Tipps:"
+
+#. FormHelp..Memo1......Lines.Strings
+#: HelpUi.dfm:46
+msgid ""
+"* During translation, apply a \"reviewprogrammers\" label to those "
+"items, that the programmers should improve."
+msgstr ""
+"* Während der Übersetzung, setzen Sie für die Einträge, die die "
+"Programmierer verbessern sollten, das Label "
+"\"reviewprogrammers\"."
+
+#. FormLabelApplicationByRules..Caption
+#: LabelApplicationByRulesUi.dfm:6
+msgid "Apply label by rules"
+msgstr "Labels anhand von Regeln setzen"
+
+#. FormLabelApplicationByRules..EditFilename..EditLabel.Caption
+#: LabelApplicationByRulesUi.dfm:59
+msgid "File name:"
+msgstr "Dateiname:"
+
+#. FormPreferences..Caption
+#: PreferencesUi.dfm:5
+msgid "Preferences"
+msgstr "Einstellungen"
+
+#. FormPreferences..GroupBoxStartupSettings..Caption
+#: PreferencesUi.dfm:52
+msgid "  Settings to be applied at startup  "
+msgstr "  Einstellungen beim Start anwenden  "
+
+#. FormPreferences..GroupBoxStartupSettings..LabelParallelTranslation..Caption
+#: PreferencesUi.dfm:59
+msgid "Parallel translation"
+msgstr "Parallele Übersetzung"
+
+#. FormPreferences..GroupBoxStartupSettings..l_OpenFile..Caption
+#: PreferencesUi.dfm:66
+msgid "Open file:"
+msgstr "Datei öffnen:"
+
+#. FormPreferences..GroupBoxStartupSettings..ComboBoxParallelTranslation....Items.Strings
+#: PreferencesUi.dfm:76
+msgid "Off"
+msgstr "Aus"
+
+#. FormPreferences..GroupBoxStartupSettings..CheckBoxStartupAddStdLabels..Caption
+#: PreferencesUi.dfm:83
+msgid "Automatic add standard labels"
+msgstr "Automatisch die Standard-Labels hinzufügen"
+
+#. FormPreferences..GroupBoxStartupSettings..CheckBoxApplySettingsAtStartup..Hint
+#: PreferencesUi.dfm:91
+msgid ""
+"This is good before sending files to the "
+"translator"
+msgstr ""
+"Dies erleichtert dem Übersetzer die Arbeit mit den "
+"Dateien"
+
+#. FormPreferences..GroupBoxStartupSettings..CheckBoxApplySettingsAtStartup..Caption
+#: PreferencesUi.dfm:92
+msgid "Apply these settings at startup"
+msgstr "Diese Einstellungen beim Start verwenden"
+
+#. FormPreferences..GroupBoxStartupSettings..CheckBoxAutoUpgrade..Caption
+#: PreferencesUi.dfm:102
+msgid "Enable automatic upgrade via internet"
+msgstr "Automatisches Update via Internet aktivieren"
+
+#. FormPreferences..GroupBoxStartupSettings..chk_ShowStatus..Caption
+#: PreferencesUi.dfm:110
+msgid "Show status bar"
+msgstr "Statusleiste anzeigen"
+
+#. FormPreferences..GroupBoxStartupSettings..EditFilenameToOpen....Hint
+#. FormPreferences..gb_ExternalEditor..eb_ExternalEditor....Hint
+#: PreferencesUi.dfm:120 PreferencesUi.dfm:404
+msgid ""
+"Paths must be relative if you want to move the files to a different "
+"location."
+msgstr ""
+"Pfade müssen relativ sein, wenn Sie die Dateien an einen anderen "
+"Speicherort verschieben möchten."
+
+#. FormPreferences..GroupBoxTranslationTest..Caption
+#: PreferencesUi.dfm:135
+msgid "  Run app to test translation  "
+msgstr "  Programm zum Testen der Überstzung ausführen  "
+
+#. FormPreferences..GroupBoxTranslationTest..l_ApplicationExeFilename..Caption
+#: PreferencesUi.dfm:142
+msgid "Application exe filename"
+msgstr "Programm EXE-Dateiname"
+
+#. FormPreferences..GroupBoxTranslationTest..l_MoFilename..Caption
+#: PreferencesUi.dfm:149
+msgid "Mo file name"
+msgstr "Mo-Dateiname"
+
+#. FormPreferences..grp_SaveSettings..Caption
+#: PreferencesUi.dfm:179
+msgid "  Save settings  "
+msgstr "  Einstellungen speichern  "
+
+#. FormPreferences..grp_SaveSettings..chk_WrapAtNCharacters..Caption
+#: PreferencesUi.dfm:195
+msgid "Wrap lines after [characters]"
+msgstr "Zeilen umbrechen nach [Zeichen]"
+
+#. FormPreferences..groupTranslationMemory..Caption
+#: PreferencesUi.dfm:216
+msgid "  Translation memory  "
+msgstr "  Übersetzungsspeicher  "
+
+#. FormPreferences..groupTranslationMemory..CheckBoxTranslationMemory..Caption
+#: PreferencesUi.dfm:223
+msgid "Enable translation memory"
+msgstr "Übersetzungsspeicher aktivieren"
+
+#. FormPreferences..groupTranslationMemory..edMaxMemoryFileSize..EditLabel.Caption
+#: PreferencesUi.dfm:234
+msgid " Max file size, MB:"
+msgstr " Max. Dateigröße, MB:"
+
+#. FormPreferences..groupTranslationMemory..edCompareAccuracy....Hint
+#: PreferencesUi.dfm:247
+msgid ""
+"Difference between two strings that admissible in suggestions list: ( "
+"0 - only perfect matches)"
+msgstr ""
+"Zulässige Differenz zwischen zwei Zeichenketten in der "
+"Vorschlagsliste :(0 - nur vollkommen "
+"gleiche)"
+
+#. FormPreferences..groupTranslationMemory..edCompareAccuracy..EditLabel.Caption
+#: PreferencesUi.dfm:250
+msgid " Search accuracy"
+msgstr " Such-Genauigkeit"
+
+#. FormPreferences..groupTranslationMemory..edSuggestionsNumber..EditLabel.Caption
+#: PreferencesUi.dfm:265
+msgid " Number of sugestions to show"
+msgstr " Anzahl der anzuzeigenden Vorschläge"
+
+#. FormPreferences..gbSymbols..Caption
+#: PreferencesUi.dfm:304
+msgid "  Special chars inserting  "
+msgstr "  Einfügen von Sonderzeichen  "
+
+#. FormPreferences..gbSymbols..Label2..Caption
+#: PreferencesUi.dfm:311
+msgid "List of chars:"
+msgstr "Liste von Zeichen:"
+
+#. FormPreferences..gbSymbols..edSymbolsFontSize..EditLabel.Caption
+#: PreferencesUi.dfm:334
+msgid " Special chars font size"
+msgstr " Schriftgrad für Sonderzeichen"
+
+#. FormPreferences..grp_TranslationRepositiory..Caption
+#: PreferencesUi.dfm:356
+msgid "Translation Repositiory"
+msgstr "Übersetzungs-Repositiory"
+
+#. FormPreferences..grp_TranslationRepositiory..l_TransRepDir..Caption
+#. FormPreferences..gb_ExternalEditor..l_1..Caption
+#: PreferencesUi.dfm:363 PreferencesUi.dfm:385
+msgid "Directory to store translation repository"
+msgstr ""
+"Verzeichnis, um das Translation-Repository zu "
+"speichern"
+
+#. FormPreferences..gb_ExternalEditor..Caption
+#: PreferencesUi.dfm:378
+msgid "External editor"
+msgstr "Externer Editor"
+
+#. FormPreferences..gb_ExternalEditor..cb_ExternalEditorUseLineNumbers..Caption
+#: PreferencesUi.dfm:392
+msgid "add \"-n#\" to goto line number"
+msgstr ""
+"\"-n#\" anhängen, um zu einer Zeile zu "
+"springen"
+
+#. f_dzProgress..Caption
+#: w_dzProgress.dfm:6
+msgid "Progress"
+msgstr "Progress"
+
+# Label: ignore
+#. f_dzProgress..Font.Name
+#: w_dzProgress.dfm:13
+msgid "MS Sans Serif"
+msgstr ""
+
+#. f_dzProgress..l_Action..Caption
+#: w_dzProgress.dfm:25
+msgid "Action"
+msgstr "Aktion"
+
+#. f_dzProgress..b_Cancel..Caption
+#: w_dzProgress.dfm:42
+msgid "Abort"
+msgstr "Abbrechen"
+
+#. f_EditHeader..Caption
+#: w_EditHeader.dfm:5
+msgid "Edit Header"
+msgstr "Kopfdaten ändern"
+
+#. f_EditHeader..l_ProjectName..Caption
+#: w_EditHeader.dfm:23
+msgid "Project name and version"
+msgstr "Projektname und -version"
+
+#. f_EditHeader..l_Team..Caption
+#: w_EditHeader.dfm:30
+msgid "Language team"
+msgstr "Übersetzungs-Team"
+
+#. f_EditHeader..l_TeamEmail..Caption
+#: w_EditHeader.dfm:37
+msgid "Team's email address"
+msgstr "E-Mail-Adresse des Teams"
+
+#. f_EditHeader..l_Charset..Caption
+#: w_EditHeader.dfm:51
+msgid ""
+"Charset (use UTF-8 unless you know exactly what you are "
+"doing!)"
+msgstr ""
+"Zeichensatz (Benutzen Sie UTF-8, es sei denn Sie wissen genau was Sie "
+"tun!)"
+
+#. f_EditHeader..l_Comments..Caption
+#: w_EditHeader.dfm:59
+msgid "Comments"
+msgstr "Kommentare"
+
+#. f_EditHeader..l_LastTranslator..Caption
+#: w_EditHeader.dfm:66
+msgid "Last translator"
+msgstr "Letzter Übersetzer"
+
+#. f_EditHeader..l_LastEmail..Caption
+#: w_EditHeader.dfm:73
+msgid "Last translator's email address"
+msgstr "E-Mail-Adresse des letzten Übersetzers"
+
+#. f_EditHeader..l_BasePath..Caption
+#: w_EditHeader.dfm:80
+msgid "Base path"
+msgstr "Basispfad"
+
+#. f_EditHeader..cmb_Charset....Items.Strings
+#: w_EditHeader.dfm:118
+msgid "ASCII"
+msgstr "ASCII"
+
+#. f_EditHeader..cmb_Charset....Items.Strings
+#: w_EditHeader.dfm:119
+msgid "ISO-8859-1"
+msgstr "ISO-8859-1"
+
+#. f_EditHeader..cmb_Charset....Items.Strings
+#: w_EditHeader.dfm:120
+msgid "ISO-8859-2"
+msgstr "ISO-8859-2"
+
+#. f_EditHeader..cmb_Charset....Items.Strings
+#: w_EditHeader.dfm:121
+msgid "ISO-8859-3"
+msgstr "ISO-8859-3"
+
+#. f_EditHeader..cmb_Charset....Items.Strings
+#: w_EditHeader.dfm:122
+msgid "ISO-8859-4"
+msgstr "ISO-8859-4"
+
+#. f_EditHeader..cmb_Charset....Items.Strings
+#: w_EditHeader.dfm:123
+msgid "ISO-8859-5"
+msgstr "ISO-8859-5"
+
+#. f_EditHeader..cmb_Charset....Items.Strings
+#: w_EditHeader.dfm:124
+msgid "ISO-8859-6"
+msgstr "ISO-8859-6"
+
+#. f_EditHeader..cmb_Charset....Items.Strings
+#: w_EditHeader.dfm:125
+msgid "ISO-8859-7"
+msgstr "ISO-8859-7"
+
+#. f_EditHeader..cmb_Charset....Items.Strings
+#: w_EditHeader.dfm:126
+msgid "ISO-8859-8"
+msgstr "ISO-8859-8"
+
+#. f_EditHeader..cmb_Charset....Items.Strings
+#: w_EditHeader.dfm:127
+msgid "ISO-8859-9"
+msgstr "ISO-8859-9"
+
+#. f_EditHeader..cmb_Charset....Items.Strings
+#: w_EditHeader.dfm:128
+msgid "ISO-8859-13"
+msgstr "ISO-8859-13"
+
+#. f_EditHeader..cmb_Charset....Items.Strings
+#: w_EditHeader.dfm:129
+msgid "ISO-8859-14"
+msgstr "ISO-8859-14"
+
+#. f_EditHeader..cmb_Charset....Items.Strings
+#: w_EditHeader.dfm:130
+msgid "ISO-8859-15"
+msgstr "ISO-8859-15"
+
+#. f_EditHeader..cmb_Charset....Items.Strings
+#: w_EditHeader.dfm:131
+msgid "KOI8-R"
+msgstr "KOI8-R"
+
+#. f_EditHeader..cmb_Charset....Items.Strings
+#: w_EditHeader.dfm:132
+msgid "KOI8-U"
+msgstr "KOI8-U"
+
+#. f_EditHeader..cmb_Charset....Items.Strings
+#: w_EditHeader.dfm:133
+msgid "KOI8-T"
+msgstr "KOI8-T"
+
+#. f_EditHeader..cmb_Charset....Items.Strings
+#: w_EditHeader.dfm:134
+msgid "CP850"
+msgstr "CP850"
+
+#. f_EditHeader..cmb_Charset....Items.Strings
+#: w_EditHeader.dfm:135
+msgid "CP866"
+msgstr "CP866"
+
+#. f_EditHeader..cmb_Charset....Items.Strings
+#: w_EditHeader.dfm:136
+msgid "CP874"
+msgstr "CP874"
+
+#. f_EditHeader..cmb_Charset....Items.Strings
+#: w_EditHeader.dfm:137
+msgid "CP932"
+msgstr "CP932"
+
+#. f_EditHeader..cmb_Charset....Items.Strings
+#: w_EditHeader.dfm:138
+msgid "CP949"
+msgstr "CP949"
+
+#. f_EditHeader..cmb_Charset....Items.Strings
+#: w_EditHeader.dfm:139
+msgid "CP950"
+msgstr "CP950"
+
+#. f_EditHeader..cmb_Charset....Items.Strings
+#: w_EditHeader.dfm:140
+msgid "CP1250"
+msgstr "CP1250"
+
+#. f_EditHeader..cmb_Charset....Items.Strings
+#: w_EditHeader.dfm:141
+msgid "CP1251"
+msgstr "CP1251"
+
+#. f_EditHeader..cmb_Charset....Items.Strings
+#: w_EditHeader.dfm:142
+msgid "CP1252"
+msgstr "CP1252"
+
+#. f_EditHeader..cmb_Charset....Items.Strings
+#: w_EditHeader.dfm:143
+msgid "CP1253"
+msgstr "CP1253"
+
+#. f_EditHeader..cmb_Charset....Items.Strings
+#: w_EditHeader.dfm:144
+msgid "CP1254"
+msgstr "CP1254"
+
+#. f_EditHeader..cmb_Charset....Items.Strings
+#: w_EditHeader.dfm:145
+msgid "CP1255"
+msgstr "CP1255"
+
+#. f_EditHeader..cmb_Charset....Items.Strings
+#: w_EditHeader.dfm:146
+msgid "CP1256"
+msgstr "CP1256"
+
+#. f_EditHeader..cmb_Charset....Items.Strings
+#: w_EditHeader.dfm:147
+msgid "CP1257"
+msgstr "CP1257"
+
+#. f_EditHeader..cmb_Charset....Items.Strings
+#: w_EditHeader.dfm:148
+msgid "GB2312"
+msgstr "GB2312"
+
+#. f_EditHeader..cmb_Charset....Items.Strings
+#: w_EditHeader.dfm:149
+msgid "EUC-JP"
+msgstr "EUC-JP"
+
+#. f_EditHeader..cmb_Charset....Items.Strings
+#: w_EditHeader.dfm:150
+msgid "EUC-KR"
+msgstr "EUC-KR"
+
+#. f_EditHeader..cmb_Charset....Items.Strings
+#: w_EditHeader.dfm:151
+msgid "EUC-TW"
+msgstr "EUC-TW"
+
+#. f_EditHeader..cmb_Charset....Items.Strings
+#: w_EditHeader.dfm:152
+msgid "BIG5"
+msgstr "BIG5"
+
+#. f_EditHeader..cmb_Charset....Items.Strings
+#: w_EditHeader.dfm:153
+msgid "BIG5-HKSCS"
+msgstr "BIG5-HKSCS"
+
+#. f_EditHeader..cmb_Charset....Items.Strings
+#: w_EditHeader.dfm:154
+msgid "GBK"
+msgstr "GBK"
+
+#. f_EditHeader..cmb_Charset....Items.Strings
+#: w_EditHeader.dfm:155
+msgid "GB18030"
+msgstr "GB18030"
+
+#. f_EditHeader..cmb_Charset....Items.Strings
+#: w_EditHeader.dfm:156
+msgid "SHIFT_JIS"
+msgstr "SHIFT_JIS"
+
+#. f_EditHeader..cmb_Charset....Items.Strings
+#: w_EditHeader.dfm:157
+msgid "JOHAB"
+msgstr "JOHAB"
+
+#. f_EditHeader..cmb_Charset....Items.Strings
+#: w_EditHeader.dfm:158
+msgid "TIS-620"
+msgstr "TIS-620"
+
+#. f_EditHeader..cmb_Charset....Items.Strings
+#: w_EditHeader.dfm:159
+msgid "VISCII"
+msgstr "VISCII"
+
+#. f_EditHeader..cmb_Charset....Items.Strings
+#: w_EditHeader.dfm:160
+msgid "GEORGIAN-PS"
+msgstr "GEORGIAN-PS"
+
+#. f_EditHeader..cmb_Charset....Items.Strings
+#: w_EditHeader.dfm:161
+msgid "UTF-8"
+msgstr "UTF-8"
+
+#. f_IgnoreImport..Caption
+#: w_IgnoreImport.dfm:5
+msgid "Import \"ignore\" labels"
+msgstr "\"ignore\"-Labels importieren"
+
+#. f_IgnoreImport..l_IgnoreFile..Caption
+#: w_IgnoreImport.dfm:23
+msgid "PO file to import \"ignore\" labels from"
+msgstr ""
+"PO-Datei, aus der die \"ignore\"-Labels importiert werden "
+"sollen"
+
+#. f_IgnoreImport..l_Blurb....Caption
+#: w_IgnoreImport.dfm:33
+msgid ""
+"This will set the \"ignore\" label for all entries with an \"ignore\" "
+"label found in the selected PO file."
+msgstr ""
+"Dies setzt das \"ignore\"-Label für alle Einträge, die in der "
+"ausgewählten PO-Datei ein \"ignore\"-Label "
+"haben."
+
+#. f_IgnoreImport..chk_ClearFirst..Caption
+#. f_IgnoreLoad..chk_ClearFirst..Caption
+#: w_IgnoreImport.dfm:55 w_IgnoreLoad.dfm:55
+msgid "Clear current ignore labels first"
+msgstr "Vorher aktuelle \"ignore\"-Labels löschen"
+
+#. f_IgnoreImport..chk_LabelAs..Caption
+#. f_IgnoreLoad..chk_LabelAs..Caption
+#: w_IgnoreImport.dfm:64 w_IgnoreLoad.dfm:64
+msgid "Label changed entries as"
+msgstr "Geänderte Einträge mit Label markieren"
+
+# Label: ignore
+#. f_IgnoreImport..ed_Label..Text
+#. f_IgnoreLoad..ed_Label..Text
+#: w_IgnoreImport.dfm:76 w_IgnoreLoad.dfm:76
+msgid "newignore"
+msgstr ""
+
+#. f_IgnoreImport..chk_AutoFilter..Caption
+#. f_IgnoreLoad..chk_AutoFilter..Caption
+#: w_IgnoreImport.dfm:84 w_IgnoreLoad.dfm:84
+msgid "Automatically filter on this label."
+msgstr "Automatisch nach diesem Label filtern."
+
+#. f_IgnoreImport..chk_ClearTranslation..Caption
+#: w_IgnoreImport.dfm:115
+msgid ""
+"Clear translations on all newly labelled "
+"items"
+msgstr ""
+"Übersetzung aller neu markierten Einträge "
+"löschen"
+
+#. f_IgnoreLoad..Caption
+#: w_IgnoreLoad.dfm:5
+msgid "Load ignore labels from file"
+msgstr "\"ignore\"-Labels aus Datei laden"
+
+#. f_IgnoreLoad..l_IgnoreFile..Caption
+#: w_IgnoreLoad.dfm:23
+msgid "Ignore.po file to load"
+msgstr "Zu ladende Ingore.po-Datei"
+
+#. f_IgnoreLoad..l_Blurb....Caption
+#: w_IgnoreLoad.dfm:33
+msgid ""
+"This will set the \"ignore\" label for all entries found in the "
+"selected ingore.po file."
+msgstr ""
+"Dies setzt das \"ignore\"-Label für alle Einträge, die in der "
+"ausgewählten ingore.po-Datei gefunden "
+"werden."
+
+#. f_IgnoreSave..Caption
+#: w_IgnoreSave.dfm:5
+msgid "Save ignore to ignore.po"
+msgstr "\"ignore\" in ignore.po speichern ..."
+
+#. f_IgnoreSave..l_IgnoreFile..Caption
+#: w_IgnoreSave.dfm:23
+msgid "Ignore.po file to save to"
+msgstr "zu speichernde ingore.po-Datei"
+
+#. f_IgnoreSave..l_Blurb....Caption
+#: w_IgnoreSave.dfm:33
+msgid ""
+"Create an ignore.po file from the entries labeled as \"ignore\". To be "
+"used when extracting translations with "
+"dxgettext."
+msgstr ""
+"Ingore.po-Datei aus den mit \"ignore\" markierten Einträgen erzeugen. "
+"Zur Verwendung beim Extrahieren von Übersetzungen mit "
+"dxgettext."
+
+#. f_MicrosoftTranslationSettings..Caption
+#: w_MicrosoftTranslateSettings.dfm:5
+msgid ""
+"Microsoft Translation Settings (Powered by "
+"Microsoft)"
+msgstr ""
+"Einstellungen für Microsoft Translate (Powered by "
+"Microsoft)"
+
+#. f_MicrosoftTranslationSettings..l_BingAppIdInfo....Hint
+#: w_MicrosoftTranslateSettings.dfm:28
+msgid ""
+"The Microsoft Translation API requires the use of a Bing AppID, which "
+"you can get from http://msdn.microsoft.com/en-us/library/ff512386.aspx"
+msgstr ""
+"Die Microsoft-Translation API erfordert die Verwendung einer Bing "
+"AppID, die Sie auf http://msdn.microsoft.com/en-us/library/ff512386.as"
+"px erhalten"
+
+#. f_MicrosoftTranslationSettings..lb_OKhint..Caption
+#: w_MicrosoftTranslateSettings.dfm:49
+msgid ""
+"You need a Microsoft Bing AppID to enable "
+"it"
+msgstr ""
+"Sie benötigen eine Microsoft Bing AppID zum "
+"aktivieren"
+
+#. f_MicrosoftTranslationSettings..ed_BingAppId..EditLabel.Caption
+#: w_MicrosoftTranslateSettings.dfm:107
+msgid "Microsoft Bing AppID"
+msgstr "Microsoft Bing AppID"
+
+#. f_Textfilter..Caption
+#: w_TextFilter.dfm:5
+msgid "Textfilter"
+msgstr "Textfilter"
+
+#. f_Textfilter..l_LookIn..Caption
+#: w_TextFilter.dfm:23
+msgid "Look for string in ..."
+msgstr "Suchen nach der Zeichenfolge in ..."
+
+#. f_Textfilter..chk_MsgId..Caption
+#: w_TextFilter.dfm:30
+msgid "MSGID"
+msgstr "MSGID"
+
+#. f_Textfilter..chk_MsgStr..Caption
+#: w_TextFilter.dfm:38
+msgid "MSGSTR"
+msgstr "MSGSTR"
+
+#. f_Textfilter..chk_Comments..Caption
+#: w_TextFilter.dfm:46
+msgid "Comments and instructions"
+msgstr "Kommentare und Anweisungen"
+
+#. f_Textfilter..chk_Source..Caption
+#: w_TextFilter.dfm:54
+msgid "Source code location"
+msgstr "Position im Quellcode"
+
+#. f_Textfilter..chk_Inverted..Caption
+#: w_TextFilter.dfm:82
+msgid "Inverted"
+msgstr "umgedreht"
+
+#. f_TranslationDb..Caption
+#: w_TranslationDb.dfm:4
+msgid "Translation DB"
+msgstr "Übersetzungs-DB"
+
+#. f_TranslationDb..tc_Language....Tabs.Strings
+#: w_TranslationDb.dfm:25
+msgid "Latin"
+msgstr "Latein"
+
+# Label: ignore
+#. f_TranslationDb..tc_Language....Tabs.Strings
+#: w_TranslationDb.dfm:26
+msgid "Interkosmo"
+msgstr ""
+
+#. f_TranslationDb..tc_Language....Tabs.Strings
+#: w_TranslationDb.dfm:27 w_TranslationDb.pas:148
+msgid "new ..."
+msgstr "Neu ..."
+
+#. f_TranslationDb..tc_Language..dbg_English......FieldName
+#: w_TranslationDb.dfm:117
+msgid "Content"
+msgstr "Inhalt"
+
+#. f_TranslationDb..tc_Language..dbg_English......Title.Caption
+#: w_TranslationDb.dfm:118
+msgid "English Text"
+msgstr "Englischer Text"
+
+#. f_TranslationDb..tc_Language..p_Locate..l_LookupEnglish..Caption
+#: w_TranslationDb.dfm:145
+msgid "Lookup English"
+msgstr "Englisch nachschlagen"
+
+#. f_TranslationDb..tc_Language..p_Locate..l_LookupTranslation..Caption
+#: w_TranslationDb.dfm:153
+msgid "Lookup Translation"
+msgstr "Übersetzung nachschlagen"
+
+#. f_TranslationDb..al_Translation..act_TransAdd..Caption
+#: w_TranslationDb.dfm:183
+msgid "&Add"
+msgstr "Hinzu&fügen"
+
+#. f_TranslationDb..al_Translation..act_TransEdit..Caption
+#: w_TranslationDb.dfm:188
+msgid "&Edit"
+msgstr "&Bearbeiten"
+
+#. f_TranslationDb..al_Translation..act_TransDel..Caption
+#: w_TranslationDb.dfm:193
+msgid "&Delete"
+msgstr "&Löschen"
+
+# Label: ignore
+#. f_TranslationDb..al_Translation..act_TransEditOk..Category
+#. f_TranslationDb..al_Translation..act_TransEditCancel..Category
+#: w_TranslationDb.dfm:197 w_TranslationDb.dfm:203
+msgid "transedit"
 msgstr ""
 
 # Label: ignore
@@ -2373,21 +2073,838 @@ msgstr ""
 msgid "transadd"
 msgstr ""
 
-# Label: ignore
-#. f_TranslationDb..al_Translation..act_TransEditOk..Category
-#. f_TranslationDb..al_Translation..act_TransEditCancel..Category
-#: w_TranslationDb.dfm:197 w_TranslationDb.dfm:203
-msgid "transedit"
+#. f_TranslationDb..al_Translation..act_Close..Caption
+#: w_TranslationDb.dfm:219
+msgid "Close"
+msgstr "Schließen"
+
+#. f_TranslationDbLearnOptions..Caption
+#: w_TranslationDbLearnOptions.dfm:5
+msgid "Translation Repository Learn Options"
+msgstr "Lern-Einstellungen für Translation-Repository"
+
+#. f_TranslationDbLearnOptions..l_Filename..Caption
+#: w_TranslationDbLearnOptions.dfm:23
+msgid "Translation Repository File"
+msgstr "Translation-Repository Datei"
+
+#. f_TranslationDbLearnOptions..chk_AddTagToRepository..Caption
+#: w_TranslationDbLearnOptions.dfm:63
+msgid "Add tag to repository"
+msgstr "Tags zum Repository hinzufügen"
+
+#. f_TranslationDbLearnOptions..ed_PoTag..Text
+#: w_TranslationDbLearnOptions.dfm:82
+msgid "add"
+msgstr "add"
+
+#. f_TranslationDbLearnOptions..chk_Preview..Caption
+#: w_TranslationDbLearnOptions.dfm:89
+msgid "Preview changes by adding label"
 msgstr ""
+"Vorschau der Änderungen durch Hinzufügen von "
+"Label"
+
+#. f_TranslationDbNew..Caption
+#: w_TranslationDbNew.dfm:5
+msgid "New Translation DB"
+msgstr "Neue Übersetzungs-DB"
+
+#: EditorUi.pas:593
+#, object-pascal-format
+msgid ""
+"%d total, %d untranslated, %d fuzzy, %d "
+"filtered"
+msgstr ""
+"%d gesamt, %d nicht übersetzt, %d fuzzy, %d "
+"ausgefiltert"
+
+#: EditorUi.pas:626
+msgid "Saving file..."
+msgstr "Datei wird gespeichert..."
+
+#: EditorUi.pas:628 EditorUi.pas:1668 EditorUi.pas:2940
+msgid "No file is currently open."
+msgstr "Derzeit ist keine Datei geöffnet."
+
+#: EditorUi.pas:630 EditorUi.pas:2846
+msgid ""
+"The language of this po file is unknown, please edit the header first "
+"to provide it."
+msgstr ""
+"Die Sprache dieser po-Datei ist unbekannt, bearbeiten Sie zuerst die "
+"Kopfdaten um sie anzugeben."
+
+#: EditorUi.pas:645
+msgid "Saving translation memory file..."
+msgstr ""
+"Übersetzungs-Speicher wird in Datei "
+"gespeichert..."
+
+#: EditorUi.pas:669
+msgid "Do you want to save?"
+msgstr "Wollen Sie abspeichern?"
+
+#. Automatic startup actions. These may trigger exceptions!
+#: EditorUi.pas:837 EditorUi.pas:2268
+#, object-pascal-format
+msgid ""
+"Cannot find the file \"%s\" that contains translations. Are you sure "
+"that you have arranged the files correctly on your "
+"harddisk?"
+msgstr ""
+"Kann die Datei \"%s\", die die Übersetzungen enhält, nicht finden. Sind "
+"Sie sicher, dass Sie die Dateien auf der Platte korrekt abgelegt "
+"haben?"
+
+#: EditorUi.pas:851
+msgid "Finished compiling."
+msgstr "Umwandlung abgeschlossen"
+
+#: EditorUi.pas:893
+msgid ""
+"For all selected entries copy the MsgId to the MsgStr, with \"Gorm\" as "
+"prefix.\n"
+"This only makes sense for test purposes.\n"
+"Are you really sure that you want to do "
+"that?"
+msgstr ""
+"Für alle ausgewählten Einträge die MsgId nach MsgStr kopieren und mit "
+"\"Gorm\" als Präfix versehen.\n"
+"Dies ist nur sinnvoll für Testzwecke.\n"
+"Sind Sie wirklich sicher, dass Sie das tun "
+"möchten?"
+
+#: EditorUi.pas:923
+msgid ""
+"This will make all selected translations look very unreadable.\n"
+"This only makes sense for test purposes.\n"
+"Are you really sure that you want to do "
+"that?"
+msgstr ""
+"Dies wird alle ausgewählten Übersetzungen nicht lesbar machen.\n"
+"Dies ist nur sinnvoll für Testzwecke.\n"
+"Sind Sie wirklich sicher, dass Sie das tun "
+"möchten?"
+
+#: EditorUi.pas:987 EditorUi.pas:1012 w_IgnoreImport.pas:157
+#: w_IgnoreLoad.pas:153 w_IgnoreSave.pas:97
+msgid "All files"
+msgstr "Alle Dateien"
+
+#: EditorUi.pas:1002
+msgid "PO Files"
+msgstr "PO-Dateien"
+
+#: EditorUi.pas:1023 w_IgnoreImport.pas:156 w_IgnoreLoad.pas:152
+#: w_IgnoreSave.pas:96
+msgid "PO files"
+msgstr "PO-Dateien"
+
+#: EditorUi.pas:1091
+#, object-pascal-format
+msgid "Items in current file: %d"
+msgstr "Elemente in der aktuellen Datei: %d"
+
+#: EditorUi.pas:1092
+#, object-pascal-format
+msgid "Items in synch file: %d"
+msgstr ""
+"Elemente in synchronisierter Datei: "
+"%d"
+
+#: EditorUi.pas:1096
+#, object-pascal-format
+msgid "New items added: %d"
+msgstr "Neue Einträge hinzugefügt: %d"
+
+#: EditorUi.pas:1097
+#, object-pascal-format
+msgid "Obsolete items removed: %d"
+msgstr "Veraltete Einträge entfernt: %d"
+
+#: EditorUi.pas:1101
+msgid "No differences found"
+msgstr "Keine Unterschiede gefunden"
+
+#: EditorUi.pas:1191
+#, object-pascal-format
+msgid "Invalid base path: \"%s\""
+msgstr "Ungültiger Basispfad: \"%s\""
+
+#: EditorUi.pas:1203
+#, object-pascal-format
+msgid "File not found: \"%s\""
+msgstr "Datei nicht gefunden: \"%s\""
+
+#: EditorUi.pas:1291
+msgid "... fetching translation ..."
+msgstr "... Übersetzung wird ermittelt ..."
+
+#: EditorUi.pas:1308
+msgid "This is a plural form"
+msgstr "Dies ist eine Pluralform"
+
+#. by VGL: Searches for suitable translation suggestions in memory
+#: EditorUi.pas:1333
+#, object-pascal-format
+msgid "%d suggestions found in memory:"
+msgstr ""
+"%d Vorschläge wurden im Übersetzungsspeicher "
+"gefunden:"
+
+#: EditorUi.pas:1455
+msgid ""
+"In order to use this feature, you must first enable auto "
+"translate."
+msgstr ""
+"Um diese Funktion zu benutzen, müssen Sie zunächst die automatische "
+"Übersetzung einschalten."
+
+#: EditorUi.pas:1462
+#, object-pascal-format
+msgid ""
+"The currently selected translator engine\n"
+"%s\n"
+"does not allow batch translation."
+msgstr ""
+"Die aktuell ausgewählte Übersetzungs-Engine\n"
+"%s\n"
+"erlaubt keine Batch-Übersetzung."
+
+#: EditorUi.pas:1468
+msgid "The current selection is empty."
+msgstr "Die aktuelle Auswahl ist leer."
+
+#: EditorUi.pas:1534
+msgid "Translation request failed."
+msgstr "Übersetzung-Anforderung ist fehlgeschlagen."
+
+#: EditorUi.pas:1544
+msgid "Translation completed."
+msgstr "Übersetzung abgeschlossen."
+
+#: EditorUi.pas:1544
+#, object-pascal-format
+msgid "Strings translated: %d"
+msgstr "Zeichenketten übersetzt: %d"
+
+#: EditorUi.pas:1560
+#, no-object-pascal-format
+msgid ""
+"To configure diff viewer for SVN you should have\n"
+"Tortoise SVN client 1.7+\n"
+"Open context menu on your repository, go to Settings,\n"
+"External Programs, Diff Viewer, click Advanced... button,\n"
+"press Add... button. Fill \".po\" to expension field and\n"
+"..your path to gorm.exe file.. -diff %base %mine\n"
+"to external program field.\n"
+"\n"
+"Important. Gorm also can be used as 3-way Diff tool for po files.\n"
+" You need to pass 4 parameters: -diff\n"
+" base-file, mine-file, theirs-file in "
+"console"
+msgstr ""
+"Um einen Diff-Betrachter für SVN zu konfigurieren\n"
+"benötigen Sie den Tortiose SVN Client 1.7+\n"
+"Öffnen Sie das Kontextmenü Ihres Repositories und\n"
+"gehen Sie zu Einstellungen, Externe Programme,\n"
+"Diff Viewer. Drücken Sie den \"Erweitert ...\" Button,\n"
+"Drücken Sie den \"Hinzufügen ...\" Button. Geben Sie \".po\"\n"
+"in das Erweiterungs-Feld und\n"
+".. den Pfad zur gorm.exe Datei... -diff %base %mine\n"
+"in das Externes Programm Feld.\n"
+"\n"
+"Wichtig: Gorm kann auch als 3-Wege Diff-Tool für po-Dateien verwendet "
+"werden:\n"
+"Dazu müssen 4 Parameter übergeben werden:\n"
+"-dif base-file mine-file theirs-file"
+
+#. See comment from Lars (above)
+#: EditorUi.pas:1575
+msgid "Fuzzy"
+msgstr "Fuzzy"
+
+#: EditorUi.pas:1577
+msgid "Untranslated"
+msgstr "nicht übersetzt"
+
+#: EditorUi.pas:1607
+#, object-pascal-format
+msgid ""
+"Filter by the label \"%s\" in order to see the texts that may have "
+"problems."
+msgstr ""
+"Filtern Sie nach Label \"%s\" um Texte zu sehen, die evtl. zweifelhaft "
+"sind."
+
+#: EditorUi.pas:1618
+#, object-pascal-format
+msgid ""
+"This will remove the translations from the current selection (%d "
+"entries).\n"
+"Are you really sure that you want to do "
+"that?"
+msgstr ""
+"Dies entfernt die Übersetzungen der aktuellen Auswahl (%d Einträge).\n"
+"Sind Sie wirklich sicher, dass Sie das tun "
+"möchten?"
+
+#: EditorUi.pas:1637
+#, object-pascal-format
+msgid "%d translations have been cleared."
+msgstr "%d Übersetzungen wurden gelöscht."
+
+#: EditorUi.pas:1648
+#, object-pascal-format
+msgid ""
+"This will overwrite all translations from the current selection (%d "
+"entries) with the original.\n"
+"Are you really sure that you want to do "
+"that?"
+msgstr ""
+"Dies überschreibt alle Übersetzungen aus der aktuellen Auswahl (%d "
+"Einträge) mit dem Original.\n"
+"Sind Sie wirklich sicher, dass Sie das tun "
+"möchten?"
+
+#: EditorUi.pas:1903
+msgid "Inv. Filter:"
+msgstr "Inv.-Filter:"
+
+#: EditorUi.pas:1905
+msgid "Filter:"
+msgstr "Filter:"
+
+#: EditorUi.pas:2009
+msgid "Gorm editor for po files."
+msgstr "Gorm Editor für po-Dateien."
+
+#: EditorUi.pas:2011
+msgid "Version"
+msgstr "Version"
+
+#. Update GUI etc.
+#: EditorUi.pas:2169
+#, object-pascal-format
+msgid "%d labels have been applied."
+msgstr "%d Labels wurden angewendet."
+
+#: EditorUi.pas:2241
+#, object-pascal-format
+msgid ""
+"Are you sure you want to reload file\n"
+"%s\n"
+"from disk?\n"
+"All changes will be lost!"
+msgstr ""
+"Sind Sie sicher, dass Sie die Datei\n"
+"%s\n"
+"erneut von Platte laden wollen?\n"
+"Alle Änderungen gehen verloren!"
+
+#: EditorUi.pas:2324
+msgid "Warning not found."
+msgstr "Warnung nicht gefunden."
+
+#: EditorUi.pas:2363
+msgid ""
+"Do you really want to mark all selected items "
+"'fuzzy'?"
+msgstr ""
+"Wollen Sie wirklich alle ausgewählten Einträge als \"fuzzy\" "
+"markieren?"
+
+#: EditorUi.pas:2381
+msgid ""
+"Do you really want to remove the 'fuzzy' mark from all selected "
+"items?"
+msgstr ""
+"Wollen Sie wirklich die \"fuzzy\"-Markierung von allen ausgewählten "
+"Einträgen entfernen?"
 
 #. every time an item is selected.
-#: EditorUi.pas:2267
+#: EditorUi.pas:2407
 msgid "unknown language"
 msgstr "unbekannte Sprache"
 
-#. GoogleTranslationSettings..lbGoogleAPIinfo..Caption
-#. f_MicrosoftTranslationSettings..l_BingAppIdInfo..Caption
-#: GoogleTranslateSettings.dfm:28 w_MicrosoftTranslateSettings.dfm:29
-msgid "what is this?"
-msgstr "Was ist das?"
+#: EditorUi.pas:2408
+#, object-pascal-format
+msgid "%s from %s"
+msgstr "%s von %s"
+
+#: EditorUi.pas:2416
+#, object-pascal-format
+msgid "Use &Google Translate (%s) ..."
+msgstr "&Google Translate (%s) benutzen ..."
+
+#: EditorUi.pas:2423
+#, object-pascal-format
+msgid "Use Microsoft Translator &V2 (%s) ..."
+msgstr ""
+"Microsoft Translator &V2 (%s) benutzen "
+"..."
+
+#: EditorUi.pas:2431
+msgid "MO files"
+msgstr "MO-Dateien"
+
+#: EditorUi.pas:2456
+msgid ""
+"The language of this po file is unknown.\n"
+"Do you want to set it now?"
+msgstr ""
+"Die Sprache dieser po-Datei ist unbekannt. Wollen Sie sie jetzt "
+"setzen?"
+
+#: EditorUi.pas:2464 EditorUi.pas:2848
+#, object-pascal-format
+msgid "Language \"%s\" is not known to Gorm."
+msgstr "Sprache \"%s\" ist Gorm nicht bekannt."
+
+#: EditorUi.pas:2580 EditorUi.pas:2656
+#, object-pascal-format
+msgid ""
+"%d entries have been changed.\n"
+"Remember to clear the translations from all newly ignored entries, "
+"otherwise they will still be translated."
+msgstr ""
+"%d Eingräge wurden geändert.\n"
+"Denken Sie daran, die Übersetzungen der neu ignorierten Einträge zu "
+"löschen, sonst werden sie weiterhin "
+"übersetzt."
+
+#: EditorUi.pas:2690
+#, object-pascal-format
+msgid "%d entries have been saved."
+msgstr "%d Einträge wurden gespeichert."
+
+#: EditorUi.pas:2817
+msgid "Output generated by PO->MO compiler:"
+msgstr "Vom PO->MO-Compiler erzeugte Ausgabe:"
+
+#: EditorUi.pas:2823
+msgid "No MO filename is set!"
+msgstr "Kein MO-Dateiname festgelegt!"
+
+#: EditorUi.pas:2852
+msgid ""
+"There is no repository for this language yet. Please create one "
+"first."
+msgstr ""
+"Es gibt kein Repository für diese Sprache. Bitte erzeugen Sie "
+"zunächst eines."
+
+#: EditorUi.pas:2876
+#, object-pascal-format
+msgid "labelled %s -> %s"
+msgstr "%s -> %s gelabled"
+
+#: EditorUi.pas:2878
+#, object-pascal-format
+msgid "added %s -> %s"
+msgstr "%s -> %s hinzugefügt"
+
+#: EditorUi.pas:2887
+#, object-pascal-format
+msgid "%d entries have been labelled."
+msgstr "%d Einträge wurden gelabeled."
+
+#: EditorUi.pas:2889
+#, object-pascal-format
+msgid "%d entries have been added to the repository."
+msgstr "%d Einträge wurden zum Repository hinzugefügt."
+
+#. Start Application
+#: EditorUi.pas:2920
+msgid ""
+"You must specify an application in the preferences before you can run "
+"it."
+msgstr ""
+"Sie müssen in den Einstellungen ein Programm angeben, bevor Sie es "
+"ausführen können."
+
+#: EditorUi.pas:2923
+#, object-pascal-format
+msgid ""
+"Application file \"%s\" does not exist. Please check your "
+"settings."
+msgstr ""
+"Programmdatei \"%s\" existiert nicht. Bitte überprüfen Sie Ihre "
+"Einstellungen."
+
+#: EditorUi.pas:2925
+#, object-pascal-format
+msgid "Could not run program file %s."
+msgstr "Konnte Programm %s nicht starten."
+
+#: EditorUi.pas:2963
+msgid "Error sending mail"
+msgstr "Fehler beim Versenden von Mail"
+
+#. Output from <'Gorm'>
+#: EditorUi.pas:2993
+#, object-pascal-format
+msgid "Output from %s"
+msgstr "Ausgabe von %s"
+
+#: EditorUi.pas:3002
+#, object-pascal-format
+msgid "Translation file: \"%s\""
+msgstr "Übersetzungsdatei: \"%s\""
+
+#: EditorUi.pas:3010
+msgid "Status"
+msgstr "Status"
+
+#: EditorUi.pas:3011
+msgid "Original"
+msgstr "Original"
+
+#: EditorUi.pas:3012
+msgid "Translation"
+msgstr "Übersetzung"
+
+#. Output created <date + time>
+#: EditorUi.pas:3045
+#, object-pascal-format
+msgid "Output created: %s"
+msgstr "Ausgabe erstellt: %s"
+
+#: GoogleTranslate.pas:663
+#, object-pascal-format
+msgid ""
+"Can't connect to Google server. Check your Internet settings and "
+"Google API key. (%s)"
+msgstr ""
+"Kann keine Verbindung zum Google-Server aufbauen. Überprüfen Sie Ihre "
+"Internet-Einstellungen und den Google-API Key. "
+"(%s)"
+
+#: LabelApplicationByRulesUi.pas:64
+msgid ""
+"Specify a utf-8 file that contains rules for application of "
+"labels."
+msgstr ""
+"Geben Sie eine Utf-8-Datei, die Regeln zum Zuweisen von Labels "
+"enthält."
+
+#: LabelApplicationByRulesUi.pas:66
+msgid ""
+"The file has the following format, where the first word in each line "
+"is a label:"
+msgstr ""
+"Die Datei hat das folgende Format, wobei das erste Wort in jeder "
+"Zeile ein Label ist:"
+
+#: PoTools.pas:266
+#, object-pascal-format
+msgid ""
+"The original text includes %d times %s, but the translation contains "
+"%d of these."
+msgstr ""
+"Der ursprüngliche Text enthält %d mal %s, aber die Übersetzung "
+"enthält deren %d."
+
+#: PoTools.pas:277
+msgid ""
+"Please specify a correct PO header as translation for the empty "
+"string."
+msgstr ""
+"Bitte geben Sie einen korrekten PO-Header als Übersetzung für die "
+"leere Zeichenfolge an."
+
+#: PoTools.pas:303 PoTools.pas:305 PoTools.pas:307 PoTools.pas:309
+msgid "Check spaces."
+msgstr "überprüfen Sie die Leerzeichen."
+
+#. Check line breaks
+#: PoTools.pas:321
+msgid "The number of line breaks do not match."
+msgstr ""
+"Die Anzahl der Zeilenumbrüche stimmen nicht "
+"überein."
+
+#. Check tabulators
+#: PoTools.pas:333
+msgid "The number of tabulators do not match."
+msgstr ""
+"Die Anzahl der Tabulatoren stimmen nicht "
+"überein."
+
+#: PreferencesUi.pas:92
+msgid "MO files (*.mo)"
+msgstr "MO-Dateien (* .mo)"
+
+#: PreferencesUi.pas:108 PreferencesUi.pas:125
+msgid "Executables (*.exe)"
+msgstr "Anwendungen (*.exe)"
+
+#: PreferencesUi.pas:217
+msgid "PO files (*.po)"
+msgstr "PO-Dateien (* .po)"
+
+#: PreferencesUi.pas:254
+#, object-pascal-format
+msgid "Settings file: %s"
+msgstr "Einstellungsdatei: %s"
+
+#: ToolsAutoUpgrader.pas:51
+msgid ""
+"Could not get filesystem path for temporary files from Windows API. "
+"Please inspect your computer settings."
+msgstr ""
+"Konnte Windows-Einstellung für temporäre Dateien nicht ermitteln. "
+"Bitte überprüfen Sie Ihre Computereinstellungen."
+
+#. If the file is too big - clean it when next save
+#: TranslationsMemory.pas:381
+msgid "Translations memory file is corrupted"
+msgstr ""
+"Datei des Übersetzungs-Speichers ist "
+"beschädigt"
+
+#: TranslationsMemory.pas:409
+msgid "Error during memory file saving."
+msgstr ""
+"Fehler beim speichern des Übersetzungsspeichers als "
+"Datei."
+
+#: u_dzGoogleTranslate.pas:243
+#, object-pascal-format
+msgid ""
+"Parsing error on JSON answer: Root object size is %d not "
+"3."
+msgstr ""
+"Parsing-Fehler der JSON Antwort: Größe des Root Objekts ist %d nicht "
+"3."
+
+#: u_dzGoogleTranslate.pas:248
+#, object-pascal-format
+msgid ""
+"Parsing error on JSON answer: First pair name is \"%s\" not "
+"\"responseData\"."
+msgstr ""
+"Parsing-Fehler der JSON Antwort: Das erste Paar ist \"%s\" nicht "
+"\"responseData\"."
+
+#: u_dzGoogleTranslate.pas:255
+#, object-pascal-format
+msgid ""
+"Parsing error on JSON answer: responseData object size is %d not "
+"1."
+msgstr ""
+"Parsing-Fehler der JSON Antwort: Größé des responseData Objekts ist "
+"%d nicht 1."
+
+#: u_dzGoogleTranslate.pas:259
+#, object-pascal-format
+msgid ""
+"Parsing error on JSON answer: First responseData pair is \"%s\" not "
+"\"translatedText\"."
+msgstr ""
+"Parsing-Fehler der JSON Antwort: Erstes responseData Paar ist \"%s\" "
+"nicht \"translatedText\"."
+
+#: u_dzGoogleTranslate.pas:262
+msgid ""
+"Parsing error on JSON answer: translatedText data is not a "
+"string."
+msgstr ""
+"Parsing-Fehler der JSON Antwort: translatedText ist keine "
+"Zeichenkette."
+
+#: u_dzGoogleTranslate.pas:265
+msgid ""
+"Parsing error on JSON answer: responseData is neither NULL nor an "
+"object."
+msgstr ""
+"Parsing-Fehler der JSON Antwort: responseData ist weder NULL noch ein "
+"Objekt."
+
+#: u_dzGoogleTranslate.pas:269
+#, object-pascal-format
+msgid ""
+"Parsing error on JSON answer: Second pair name is \"%s\" not "
+"\"responseDetails\"."
+msgstr ""
+"Parsing-Fehler der JSON Antwort: Name des zweiten Paares ist \"%s\" "
+"nicht \"responseDetails\"."
+
+#: u_dzGoogleTranslate.pas:276
+msgid ""
+"Parsing error on JSON answer: responseDetails is neither NULL nor a "
+"string."
+msgstr ""
+"Parsing-Fehler der JSON Antwort: responseDetails ist weder NULL noch "
+"eine Zeichenkette."
+
+#: u_dzGoogleTranslate.pas:280
+#, object-pascal-format
+msgid ""
+"Parsing error on JSON answer: Thrid pair name is \"%s\" not "
+"\"responseStatus\"."
+msgstr ""
+"Parsing-Fehler der JSON Antwort: Name des dritten Paares ist \"%s\" "
+"nicht \"responseStatus\"."
+
+#: u_dzGoogleTranslate.pas:283
+msgid ""
+"Parsing error on JSON answer: responseStatus is not a "
+"number."
+msgstr ""
+"Parsing-Fehler der JSON Antwort: responsestatus ist keine "
+"Zahl."
+
+#. <string xmlns="http://schemas.microsoft.com/2003/10/Serialization/">this is the translation</string>
+#: u_dzMicrosoftTranslate.pas:195
+msgid "Cannot parse answer. No \">\" found."
+msgstr ""
+"Antwort kann nicht analysiert werden. Kein \">\" "
+"gefunden."
+
+#: u_dzMicrosoftTranslate.pas:202
+msgid ""
+"Cannot parse answer. No \"</string>\" "
+"found."
+msgstr ""
+"Antwort kann nicht analysiert werden. Kein \"</string>\" "
+"gefunden."
+
+#: u_dzVclUtils.pas:91
+msgid "Ctrl+Return to 'click' right button."
+msgstr ""
+"Strg+Return zum \"klicken\" des rechten "
+"Buttons."
+
+#: u_Languages.pas:369
+msgid "TdxLanguage is not valid"
+msgstr "TdxLanguage ist ungültig"
+
+#: u_Languages.pas:375
+#, object-pascal-format
+msgid "Unknown language code %s."
+msgstr "Unbekannter Sprachcode %s."
+
+#: u_Languages.pas:396
+#, object-pascal-format
+msgid "Code for language %s not found."
+msgstr "Code für Sprache %s nicht gefunden."
+
+#: u_TranslationRepository.pas:52
+#, object-pascal-format
+msgid ""
+"Error copying file\n"
+"%s\n"
+"to\n"
+"%s\n"
+"%s (%d)"
+msgstr ""
+"Fehler beim Koperen der Datei\n"
+"%s\n"
+"nach\n"
+"%s\n"
+"%s (%d)"
+
+#: u_TranslatorEngineGetText.pas:43
+#, object-pascal-format
+msgid "From MO file %s"
+msgstr "Von MO-Datei %s"
+
+#: u_TranslatorEngineGoogle.pas:86
+#, object-pascal-format
+msgid "Google translate %s -> %s (%s)"
+msgstr "Google translate %s -> %s (%s)"
+
+#: u_TranslatorEngineMicrosoft.pas:89
+#, object-pascal-format
+msgid "Microsoft translate %s -> %s (%s)"
+msgstr "Microsoft translate %s -> %s (%s)"
+
+#: u_TranslatorEnginePoFile.pas:72
+#, object-pascal-format
+msgid "From PO file %s"
+msgstr "Von PO-Datei %s"
+
+#: u_TranslatorEngineRepository.pas:50
+#, object-pascal-format
+msgid ""
+"Translation repository for language %s does not "
+"exist."
+msgstr ""
+"Translation-Repository für Sprache %s existiert "
+"nicht."
+
+#: u_TranslatorEngineRepository.pas:103
+#, object-pascal-format
+msgid "Translation repository %s"
+msgstr "Translation-Repository %s"
+
+#: w_dzProgress.pas:91
+#, object-pascal-format
+msgid "Progress (%d%%)"
+msgstr "Fortschritt (%d%%)"
+
+#: w_dzProgress.pas:102
+msgid "Do you really want to abort?"
+msgstr "Wollen Sie wirklich abbrechen?"
+
+#: w_dzProgress.pas:165
+#, no-object-pascal-format
+msgid "must not contain a % at the end"
+msgstr "darf kein % am Ende haben"
+
+#: w_dzProgress.pas:174
+#, no-object-pascal-format
+msgid "\"%\" must be followed by \"d\" or \"%\"."
+msgstr "Auf \"%\" muss  \"d\" oder \"%\" folgen."
+
+#: w_dzProgress.pas:180
+msgid "too many parameters"
+msgstr "Zuviele Parameter"
+
+#: w_dzProgress.pas:192
+#, object-pascal-format
+msgid "Invalid FormCaption, %s"
+msgstr "Ungültiger Fenstertitel, %s"
+
+# Label: reviewprogrammers
+#: w_IgnoreImport.pas:127 w_IgnoreLoad.pas:122
+msgid ""
+"Are you sure you want to clear the ignore flag for all currently "
+"ignored entries?"
+msgstr ""
+"Sind Sie sicher, dass Sie das \"ignore\"-Label für alle derzeit "
+"ignorierten Einträge löschen wollen?"
+
+#: w_IgnoreLoad.pas:151 w_IgnoreSave.pas:95
+msgid "Ignore.po files"
+msgstr "ignore.po-Datei"
+
+#: w_TranslationDb.pas:155 w_TranslationDb.pas:328
+#, object-pascal-format
+msgid ""
+"Could not open repository for language "
+"%s"
+msgstr ""
+"Konnte Repository für Sprache %s nicht "
+"öffnen."
+
+#: w_TranslationDb.pas:214
+#, object-pascal-format
+msgid ""
+"Really delete this translation?\n"
+"%s\n"
+"-->\n"
+"%s"
+msgstr ""
+"Diese Übersetzung wirklich Löschen?\n"
+"%s,\n"
+"-->\n"
+"%s"
+
+#: w_TranslationDb.pas:359
+#, object-pascal-format
+msgid "Translation %d"
+msgstr "Übersetzung %d"
 
