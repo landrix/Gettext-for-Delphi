@@ -115,11 +115,9 @@ object FormPreferences: TFormPreferences
       Top = 64
       Width = 233
       Height = 21
-      Hint = 
-        'Paths must be relative if you want to move the files to a differ' +
-        'ent location.'
       Images = ilOpenFile
       ParentShowHint = False
+      RightButton.DisabledImageIndex = 1
       RightButton.ImageIndex = 0
       RightButton.Visible = True
       ShowHint = True
@@ -165,6 +163,7 @@ object FormPreferences: TFormPreferences
       Width = 233
       Height = 21
       Images = ilOpenFile
+      RightButton.DisabledImageIndex = 1
       RightButton.ImageIndex = 0
       RightButton.Visible = True
       TabOrder = 1
@@ -356,18 +355,26 @@ object FormPreferences: TFormPreferences
     Caption = 'Translation Repositiory'
     TabOrder = 8
     object l_TransRepDir: TLabel
-      Left = 18
-      Top = 20
+      Left = 16
+      Top = 24
       Width = 191
       Height = 13
       Caption = 'Directory to store translation repository'
     end
-    object ed_TransRepDir: TEdit
+    object ed_TransRepDir: TButtonedEdit
       Left = 16
       Top = 40
       Width = 249
       Height = 21
+      Hint = 
+        'Paths must be relative if you want to move the files to a differ' +
+        'ent location.'
+      Images = ilOpenFile
+      RightButton.DisabledImageIndex = 1
+      RightButton.ImageIndex = 0
+      RightButton.Visible = True
       TabOrder = 0
+      OnRightButtonClick = ed_TransRepDirRightButtonClick
     end
   end
   object gb_ExternalEditor: TGroupBox
@@ -377,12 +384,12 @@ object FormPreferences: TFormPreferences
     Height = 89
     Caption = 'External editor'
     TabOrder = 9
-    object l_1: TLabel
-      Left = 18
-      Top = 20
-      Width = 191
+    object l_ExternalEditor: TLabel
+      Left = 16
+      Top = 24
+      Width = 176
       Height = 13
-      Caption = 'Directory to store translation repository'
+      Caption = 'Exernal Editor source files'
     end
     object cb_ExternalEditorUseLineNumbers: TCheckBox
       Left = 16
@@ -394,28 +401,26 @@ object FormPreferences: TFormPreferences
       ShowHint = True
       TabOrder = 0
     end
-    object eb_ExternalEditor: TButtonedEdit
+    object ed_ExternalEditor: TButtonedEdit
       Left = 16
       Top = 40
       Width = 233
       Height = 21
-      Hint = 
-        'Paths must be relative if you want to move the files to a differ' +
-        'ent location.'
       Images = ilOpenFile
       ParentShowHint = False
+      RightButton.DisabledImageIndex = 1
       RightButton.ImageIndex = 0
       RightButton.Visible = True
       ShowHint = True
       TabOrder = 1
-      OnRightButtonClick = eb_ExternalEditorRightButtonClick
+      OnRightButtonClick = ed_ExternalEditorRightButtonClick
     end
   end
   object ilOpenFile: TImageList
     Left = 528
     Top = 8
     Bitmap = {
-      494C010102000400080010001000FFFFFFFFFF10FFFFFFFFFFFFFFFF424D3600
+      494C010102000400100010001000FFFFFFFFFF10FFFFFFFFFFFFFFFF424D3600
       0000000000003600000028000000400000001000000001002000000000000010
       0000000000000000000000000000000000000000000000000000000000000000
       000000000000CFE0E93083AFC77C6A9DB795E0E0E01FE5E5E51AE5E5E51AE5E5

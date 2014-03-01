@@ -59,11 +59,11 @@ type
     udSymbolsFontSize: TUpDown;
     grp_TranslationRepositiory: TGroupBox;
     l_TransRepDir: TLabel;
-    ed_TransRepDir: TEdit;
+    ed_TransRepDir: TButtonedEdit;
     gb_ExternalEditor: TGroupBox;
-    l_1: TLabel;
+    l_ExternalEditor: TLabel;
     cb_ExternalEditorUseLineNumbers: TCheckBox;
-    eb_ExternalEditor: TButtonedEdit;
+    ed_ExternalEditor: TButtonedEdit;
     procedure FormCreate(Sender: TObject);
     procedure ButtonOKClick(Sender: TObject);
     procedure ButtonBrowseExenameClick(Sender: TObject);
@@ -71,7 +71,8 @@ type
     procedure chk_WrapAtNCharactersClick(Sender: TObject);
     procedure CheckBoxTranslationMemoryClick(Sender: TObject);
     procedure EditFilenameToOpenRightButtonClick(Sender: TObject);
-    procedure eb_ExternalEditorRightButtonClick(Sender: TObject);
+    procedure ed_ExternalEditorRightButtonClick(Sender: TObject);
+    procedure ed_TransRepDirRightButtonClick(Sender: TObject);
   public
   end;
 
@@ -98,17 +99,26 @@ begin
   end;
 end;
 
-procedure TFormPreferences.eb_ExternalEditorRightButtonClick(Sender: TObject);
+procedure TFormPreferences.ed_TransRepDirRightButtonClick(Sender: TObject);
+var
+  dir: string;
+begin
+  dir := ed_TransRepDir.Text;
+  if dzSelectDirectory(dir, Self) then
+    ed_TransRepDir.Text := dir;
+end;
+
+procedure TFormPreferences.ed_ExternalEditorRightButtonClick(Sender: TObject);
 var
   lOpenDialog: TOpenDialog;
 begin
   lOpenDialog := TOpenDialog.Create(self);
   try
-    lOpenDialog.FileName := eb_ExternalEditor.Text;
+    lOpenDialog.FileName := ed_ExternalEditor.Text;
     lOpenDialog.Filter   := _('Executables (*.exe)')+'|*.exe';
     if lOpenDialog.Execute then
     begin
-      eb_ExternalEditor.Text := lOpenDialog.FileName;
+      ed_ExternalEditor.Text := lOpenDialog.FileName;
     end;
   finally
     FreeAndNil (lOpenDialog);
@@ -162,7 +172,7 @@ begin
   SetSetting ('GUI', 'ShowStatus', chk_ShowStatus.Checked);
   SetSetting ('Application','ExeFilename', ed_ApplicationExeFilename.Text);
   SetSetting ('Application','MoFilename', ed_MoFilename.Text);
-  SetSetting ('Application','ExternalEditorFilename', eb_ExternalEditor.Text);
+  SetSetting ('Application','ExternalEditorFilename', ed_ExternalEditor.Text);
   SetSetting ('Application','ExternalEditorUseLineNumbers', cb_ExternalEditorUseLineNumbers.Checked);
 
   if chk_WrapAtNCharacters.Checked then
@@ -277,7 +287,7 @@ begin
   EditFilenameToOpen.Text:=GetSettingStartupOpenFilename;
   ed_ApplicationExeFilename.Text := GetSettingApplicationExeFilename;
   ed_MoFilename.Text := GetSettingApplicationMoFilename;
-  eb_ExternalEditor.Text := GetSettingApplicationExternalEditorFilename;
+  ed_ExternalEditor.Text := GetSettingApplicationExternalEditorFilename;
   cb_ExternalEditorUseLineNumbers.Checked := GetSettingApplicationExternalEditorUseLineNumbers;
 
   i := GetSettingSaveWrapAfter;
