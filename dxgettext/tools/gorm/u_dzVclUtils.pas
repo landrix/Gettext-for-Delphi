@@ -1,14 +1,15 @@
-///<summary> This is an extract from u_dzVclUtils which is part of dzlib available from berlios
+///<summary> This is an extract from u_dzVclUtils which is part of dzlib available from sourceforge
 ///          under the MPL 1.1 </summary>
 unit u_dzVclUtils;
 
 interface
 
 uses
-  ComCtrls,
-  ExtCtrls,
+  Classes,
   Messages,
-  Classes;
+  Controls,
+  ComCtrls,
+  ExtCtrls;
 
 ///<summary> Enables longer SimpleText (longer than 127 characters)
 ///          Call once to enable. Works, by adding a single panel with owner drawing and
@@ -19,6 +20,15 @@ procedure TStatusBar_EnableLongSimpleText(_StatusBar: TStatusBar);
 
 ///<summary> Set the SimpleText of the StatusBar and invalidate it to enforce a redraw </summary>
 procedure TStatusBar_SetLongSimpleText(_StatusBar: TStatusBar; const _Text: string);
+
+///<summary>
+/// In Windows Vista and later it uses TFileOpenDialog, in XP it calls
+/// SelectDirectory.
+/// @param Directory on input is the default directory to use, on output
+///                  it is the new directory selected by the user, only if
+///                  Result = true.
+/// @returns true, if the user selected a directory
+function dzSelectDirectory(var _Directory: string; _Owner: TWinControl = nil): boolean;
 
 type
   TdzButtonedEdit = class(TButtonedEdit)
@@ -31,9 +41,12 @@ type
 implementation
 
 uses
-  Graphics,
-  Types,
   Windows,
+  SysUtils,
+  FileCtrl,
+  Types,
+  Graphics,
+  Dialogs,
   gnugettext;
 
 type
@@ -90,6 +103,31 @@ begin
   if RightButton.Visible and (RightButton.Hint = '') then begin
     RightButton.Hint := _('Ctrl+Return to ''click'' right button.');
     ShowHint := true;
+  end;
+end;
+
+function dzSelectDirectory(var _Directory: string; _Owner: TWinControl = nil): boolean;
+var
+  fod: TFileOpenDialog;
+begin
+  if Win32MajorVersion >= 6 then begin
+    // only available on Vista and later
+    fod := TFileOpenDialog.Create(_Owner);
+    try
+      fod.Title := _('Select Directory');
+      fod.Options := [fdoPickFolders, fdoPathMustExist, fdoForceFileSystem]; // YMMV
+      fod.OkButtonLabel := _('Select');
+      fod.DefaultFolder := _Directory;
+      fod.FileName := _Directory;
+      Result := fod.Execute;
+      if Result then
+        _Directory := fod.FileName;
+    finally
+      fod.Free;
+    end
+  end else begin
+    Result := FileCtrl.SelectDirectory('Select Directory', ExtractFileDrive(_Directory),
+      _Directory, [sdNewUI, sdNewFolder], _Owner);
   end;
 end;
 
