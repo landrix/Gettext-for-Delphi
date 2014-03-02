@@ -412,6 +412,7 @@ uses
   w_EditHeader,
   u_Languages,
   w_dzProgress,
+  u_dzOsUtils,
   u_dzVclUtils,
   w_IgnoreLoad,
   w_IgnoreImport,
@@ -1166,7 +1167,7 @@ var
   lSourceCodeLocation: TSourceCodeLocation;
   lShowPathAsShowMessage: Boolean;
 begin
-  lShowPathAsShowMessage := False;
+  lShowPathAsShowMessage := true;
   lMessage := '';
 
   Idx := ListBoxSource.ItemIndex;
@@ -1181,56 +1182,49 @@ begin
       lPoHeader := Items.Find('');
       if Assigned( lPoHeader) then
       begin
-        lBasePath := IncludeTrailingPathDelimiter( GetPoHeaderEntry( lPoHeader.MsgStr,
-                                                                     PO_HEADER_Poedit_BasePath));
+        lBasePath := GetPoHeaderEntry( lPoHeader.MsgStr, PO_HEADER_Poedit_BasePath);
+        if lBasePath <> '' then begin
+          lBasePath := IncludeTrailingPathDelimiter(lBasePath);
 
-
-        if not DirectoryExists( lBasePath) then
-        begin
-          lMessage := Format( _('Invalid base path: "%s"'),
-                              [ lBasePath]);
-          lShowPathAsShowMessage := True;
-        end
-        else
-        begin
-          lSourceCodeLocation := ExtractLocationPathLineNumber( s);
-
-          lCompletePath := lBasePath + lSourceCodeLocation.Path;
-
-          if not FileExists( lCompletePath) then
+          if not DirectoryExists( lBasePath) then
           begin
-            lMessage := Format( _('File not found: "%s"'),
-                                [ lCompletePath]);
-            lShowPathAsShowMessage := True;
+            lMessage := Format( _('Invalid base path: "%s"'),
+                                [ lBasePath]);
           end
           else
           begin
-            if (lSourceCodeLocation.Path <> '') then
+            lSourceCodeLocation := ExtractLocationPathLineNumber( s);
+
+            lCompletePath := lBasePath + lSourceCodeLocation.Path;
+
+            if not FileExists( lCompletePath) then
             begin
-              lParameterStr := AnsiQuotedStr( lCompletePath, '"');
-
-              if GetSettingApplicationExternalEditorUseLineNumbers and
-                 ( lSourceCodeLocation.LineNumber <> 0) then
+              lMessage := Format( _('File not found: "%s"'),
+                                  [ lCompletePath]);
+            end
+            else
+            begin
+              if (lSourceCodeLocation.Path <> '') then
               begin
-                lParameterStr := lParameterStr + ' ' +
-                                 Format( '-n%d',
-                                         [ lSourceCodeLocation.LineNumber]);
-              end;
+                lParameterStr := AnsiQuotedStr( lCompletePath, '"');
 
-              ShellExecute( Self.Handle,
-                            'open',
-                            PChar( AnsiQuotedStr( lEditorFilename, '"')),
-                            PChar( lParameterStr),
-                            '',
-                            SW_SHOWNORMAL);
+                if GetSettingApplicationExternalEditorUseLineNumbers and
+                   ( lSourceCodeLocation.LineNumber <> 0) then
+                begin
+                  lParameterStr := lParameterStr + ' ' +
+                                   Format( '-n%d',
+                                           [ lSourceCodeLocation.LineNumber]);
+                end;
+
+                if not ShellExecEx(lEditorFilename, lParameterStr,
+                                '', SW_SHOWNORMAL) then
+                  RaiseLastOSError;
+                lShowPathAsShowMessage := false
+              end;
             end;
           end;
         end;
       end;
-    end
-    else
-    begin
-      lShowPathAsShowMessage := True;
     end;
 
     if lShowPathAsShowMessage then
