@@ -31,6 +31,7 @@ uses
   w_TranslationDbNew in 'w_TranslationDbNew.pas' {f_TranslationDbNew},
   w_dzProgress in 'w_dzProgress.pas' {f_dzProgress},
   u_TranslatorEngineRepository in 'u_TranslatorEngineRepository.pas',
+  u_dzOsUtils in 'u_dzOsUtils.pas',
   u_dzVclUtils in 'u_dzVclUtils.pas',
   TranslationsMemory in 'TranslationsMemory.pas',
   w_IgnoreLoad in 'w_IgnoreLoad.pas' {f_IgnoreLoad},

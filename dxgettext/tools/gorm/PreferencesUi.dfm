@@ -152,6 +152,7 @@ object FormPreferences: TFormPreferences
       Width = 233
       Height = 21
       Images = ilOpenFile
+      RightButton.DisabledImageIndex = 1
       RightButton.ImageIndex = 0
       RightButton.Visible = True
       TabOrder = 0
@@ -387,7 +388,7 @@ object FormPreferences: TFormPreferences
     object l_ExternalEditor: TLabel
       Left = 16
       Top = 24
-      Width = 176
+      Width = 124
       Height = 13
       Caption = 'Exernal Editor source files'
     end

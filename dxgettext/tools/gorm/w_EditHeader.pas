@@ -10,12 +10,19 @@ uses
   Classes,
   Graphics,
   Controls,
+  ImgList,
+  ExtCtrls,
   Forms,
   Dialogs,
   StdCtrls,
-  poparser;
+  poparser,
+  u_dzVclUtils;
 
 type
+  TButtonedEdit = class(TdzButtonedEdit)
+  end;
+
+  type
   Tf_EditHeader = class(TForm)
     l_ProjectName: TLabel;
     ed_Project: TEdit;
@@ -36,8 +43,10 @@ type
     ed_LastTranslator: TEdit;
     ed_LastEmail: TEdit;
     l_BasePath: TLabel;
-    ed_BasePath: TEdit;
+    ed_BasePath: TButtonedEdit;
+    ilOpenFile: TImageList;
     procedure cmb_LanguageChange(Sender: TObject);
+    procedure ed_BasePathRightButtonClick(Sender: TObject);
   private
     FForceLanguageInput: Boolean;
     procedure SetData(_Item: TPoEntry; _ForceLanguageInput: boolean);
@@ -89,6 +98,15 @@ begin
   TranslateComponent(Self);
 
   dxLanguages.GetLanguages(cmb_Language.Items);
+end;
+
+procedure Tf_EditHeader.ed_BasePathRightButtonClick(Sender: TObject);
+var
+  dir: string;
+begin
+  dir := ed_BasePath.Text;
+  if dzSelectDirectory(dir, Self) then
+    ed_BasePath.Text := dir;
 end;
 
 procedure Tf_EditHeader.CheckInput;
