@@ -1090,76 +1090,6 @@ begin
   end;
   Result := langcode;
 end;
-
-const GET_MODULE_HANDLE_EX_FLAG_FROM_ADDRESS = $00000004;
-const GET_MODULE_HANDLE_EX_FLAG_UNCHANGED_REFCOUNT = $00000002;
-
-function GetModuleHandleEx(dwFlags: DWORD; lpModuleName: PChar; out phModule: HMODULE): BOOL; stdcall; external kernel32 name 'GetModuleHandleExA';
-
-{$ifndef dx_has_LpVoid}
-type
-  LPVOID = Pointer;
-{$endif dx_has_LpVoid}
-
-type
-{$ifdef dx_NativeUInt_is_Cardinal}
-  TNativeUInt = Cardinal;
-{$else}
-  TNativeUInt = NativeUInt;
-{$endif dx_NativeUInt_is_Cardinal}
-
-type
-  TModuleInfo = record
-    lpBaseOfDll: LPVOID;
-    SizeOfImage: DWORD;
-    EntryPoint: LPVOID;
-  end;
-
-function GetModuleInformation(hProcess: THANDLE; hModule: HMODULE; var lpmodinfo: TModuleInfo; cb: DWORD): BOOL; stdcall; external 'psapi' name 'GetModuleInformation';
-
-function GetModuleRegionInfoByAddr(Addr: Pointer; out Base: Pointer; out Size: TNativeUInt): Boolean;
-var
-  Tmm: TMemoryBasicInformation;
-  DllModule: HMODULE;
-  ModuleInfo: TModuleInfo;
-begin
-  Result := GetModuleHandleEx(GET_MODULE_HANDLE_EX_FLAG_FROM_ADDRESS or GET_MODULE_HANDLE_EX_FLAG_UNCHANGED_REFCOUNT, Addr, DllModule);
-  if Result then
-  begin
-    ZeroMemory(@ModuleInfo, SizeOf(ModuleInfo));
-    Result := GetModuleInformation(GetCurrentProcess, DllModule, ModuleInfo, SizeOf(ModuleInfo));
-    if Result then
-    begin
-      Base := ModuleInfo.lpBaseOfDll;
-      Size := ModuleInfo.SizeOfImage;
-    end;
-  end
-  else
-  begin
-    ZeroMemory(@Tmm, SizeOf(Tmm));
-    Result := VirtualQuery(addr, Tmm, SizeOf(Tmm)) = SizeOf(Tmm);
-    if Result then
-    begin
-      Base := Tmm.AllocationBase;
-      Size := (TNativeUInt(Addr) - TNativeUInt(Base)) * 2;
-    end;
-  end;
-end;
-
-var
-  FModuleBase:Pointer;
-  FModuleSize:TNativeUInt;
-
-function AddrInModule(Addr: Pointer): Boolean; {$ifdef dx_has_Inline}inline;{$endif}
-begin
-  Result := (TNativeUInt(Addr) >= TNativeUInt(FModuleBase)) and
-            (TNativeUInt(Addr) < TNativeUInt(FModuleBase) + FModuleSize);
-end;
-
-procedure SetupModuleInfo;
-begin
-  GetModuleRegionInfoByAddr(@SetupModuleInfo, FModuleBase, FModuleSize);
-end;
 {$endif}
 
 {$ifndef UNICODE}
@@ -4073,7 +4003,6 @@ initialization
   {$ifdef MSWINDOWS}
   SetLength(ExecutableFilename, GetModuleFileName(HInstance,
     PChar(ExecutableFilename), Length(ExecutableFilename)));
-  SetupModuleInfo;
   {$endif}
   {$ifdef LINUX}
   if ModuleIsLib or ModuleIsPackage then
