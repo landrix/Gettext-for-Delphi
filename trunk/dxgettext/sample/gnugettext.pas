@@ -114,7 +114,7 @@ interface
 {$endif}
 {$ifdef VER185}
   // Delphi 2007
-  {$DEFINE dx_has_Unsafe_Warnings}        
+  {$DEFINE dx_has_Unsafe_Warnings}
   {$DEFINE dx_has_WideStrings}
   {$DEFINE dx_Hinstance_is_Integer}
   {$DEFINE dx_NativeInt_is_Integer}
@@ -779,6 +779,16 @@ begin
     Result:=MsgId;
     exit;
   end;
+
+  // First, get the value from the default domain
+  if Assigned(Instance) then
+    Result:=Instance.gettext(MsgId)
+  else
+    Result:=gettext(MsgId);
+  if Result<>MsgId then
+    exit;
+
+  // If it was not in the default domain, then go through the others
   ComponentDomainListCS.BeginRead;
   try
     for i:=0 to ComponentDomainList.Count-1 do begin
@@ -2053,7 +2063,7 @@ begin
             if TP_Retranslator<>nil then
               (TP_Retranslator as TTP_Retranslator).Remember(AnObject, PropName, old);
             if textdomain = '' then
-              ws := ComponentGettext(old)
+              ws := ComponentGettext(old, Self)
             else
               ws := dgettext(textdomain,old);
             if ws <> old then begin
@@ -2159,10 +2169,11 @@ begin
   DebugWriteln ('TranslateProperties() was called for an object of class '+AnObject.ClassName+' with domain "'+textdomain+'".');
   {$endif}
 
-  if textdomain='' then
-    textdomain:=curmsgdomain;
   if TP_Retranslator<>nil then
-    (TP_Retranslator as TTP_Retranslator).TextDomain:=textdomain;
+    if textdomain = '' then
+      (TP_Retranslator as TTP_Retranslator).TextDomain:=curmsgdomain
+    else
+      (TP_Retranslator as TTP_Retranslator).TextDomain:=textdomain;
   {$ifdef FPC}
   DoneList:=TCSStringList.Create;
   TodoList:=TCSStringList.Create;
@@ -2418,7 +2429,7 @@ begin
           line:=tempSL.Strings[i];
           if line<>'' then
             if TextDomain = '' then
-              tempSL.Strings[i]:=ComponentGettext(line)
+              tempSL.Strings[i]:=ComponentGettext(line, Self)
             else
               tempSL.Strings[i]:=dgettext(TextDomain,line);
         end;
@@ -2511,7 +2522,7 @@ begin
           line:=tempSL.Strings[i];
           if line<>'' then
             if TextDomain = '' then
-              tempSL.Strings[i]:=ComponentGettext(line)
+              tempSL.Strings[i]:=ComponentGettext(line, Self)
             else
               tempSL.Strings[i]:=dgettext(TextDomain,line);
         end;
@@ -3907,7 +3918,7 @@ begin
   while (i<interceptorClassDatas.Count) and (Result=nil) do
   begin
     proxyClassData:=interceptorClassDatas[i];
-    if PProxyClassData(proxyClassData)^.Parent^=aClass then
+    if (PProxyClassData(proxyClassData)^.Parent^=aClass) or (PProxyClassData(proxyClassData)^.SelfPtr=aClass) then
       Result:=proxyClassData;
 
     Inc(i);
@@ -3931,8 +3942,8 @@ var
   proxyClassData:Pointer;
   objClassData:PProxyClassData;
   size,classOfs:Integer;
-  p:PAnsiChar;
   beforeDestructionVmtAddr:PPointer;
+  hookedClassNameLength:Cardinal;
 begin
   if IndexOf(obj)<0 then
   begin
@@ -3940,26 +3951,34 @@ begin
     proxyClassData:=findInterceptorClassData(obj.ClassType);
     if proxyClassData=nil then
     begin
-      // All virtual method pointers are located after the start of the metaclass
-      // and the last one is followed by an invalid address.
-      // So to figure out the size, we walk the memory looking for the first
-      // invalid address.
+      // According to Allen Bauer, we know that the ClassName is stored right after the
+      // virtual method pointers.
+      // So to figure out the size, we take the difference between the start of the VMT
+      // and the location of ClassName.
+      // See the following link for reference:
+      // http://stackoverflow.com/questions/760513/where-can-i-find-information-on-the-structure-of-the-delphi-vmt
       objClassData:=getClassData(obj.ClassType);
-      p:=PAnsiChar(objClassData)+classofs;
-      while AddrInModule(PPointer(p)^) do
-        Inc(p, SizeOf(Pointer));
-      size:=NativeUInt(p)-NativeUInt(objClassData);
+      hookedClassNameLength:=Length(objClassData.ClassName^)+3;
+      if hookedClassNameLength>255 then
+        hookedClassNameLength:=255;
+      size:=NativeUInt(objClassData.ClassName)-NativeUInt(objClassData)+hookedClassNameLength+2;
 
       proxyClassData:=AllocMem(size);
       interceptorClassDatas.Add(proxyClassData);
 
       proxyClass:=TClass(PAnsiChar(proxyClassData) + classOfs);
 
-      // Copy everything from the original class data then adjust SelfPtr to point to ourselves
-      // and the parent pointer to the address of the original data SelfPtr.
+      // Copy everything from the original class data then do the following adjustments:
+      // - Parent points to the address of the original data SelfPtr.
+      // - SelfPtr points to ourselves
+      // - ClassName points at the end of our structure to respect compiler layout (see above)
+      // - ClassName gets a suffix as it helps when debugging
       System.Move(objClassData^, proxyClassData^, size);
       PProxyClassData(proxyClassData)^.Parent:=@(objClassData^.SelfPtr);
       PProxyClassData(proxyClassData)^.SelfPtr:=proxyClass;
+      PProxyClassData(proxyClassData)^.ClassName:=PShortString(PAnsiChar(proxyClassData)+size-hookedClassNameLength-2);
+      SetLength(PProxyClassData(proxyClassData)^.ClassName^,hookedClassNameLength);
+      System.Move(AnsiString('!dx'#0),(PAnsiChar(PProxyClassData(proxyClassData)^.ClassName)+hookedClassNameLength+1-3)^,4);
 
       // Place our BeforeDestruction virtual method in the metaclass VMT
       beforeDestructionVmtAddr:=GetBeforeDestructionVmtAddress(proxyClass);
