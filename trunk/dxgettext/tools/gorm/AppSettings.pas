@@ -209,6 +209,7 @@ var
 begin
   ini:=TMemIniFile.Create(IniFilename);
   try
+    ini.Encoding := TEncoding.UTF8;
     ini.EraseSection(SectKey);
     i:=0;
     while i<AList.Count do begin

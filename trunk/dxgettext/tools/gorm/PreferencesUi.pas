@@ -56,7 +56,8 @@ type
     ilOpenFile: TImageList;
     gbSymbols: TGroupBox;
     memSpecialChars: TMemo;
-    Label2: TLabel;
+    b_Default: TButton;
+    l_ListOfChars: TLabel;
     edSymbolsFontSize: TLabeledEdit;
     udSymbolsFontSize: TUpDown;
     grp_TranslationRepositiory: TGroupBox;
@@ -76,6 +77,7 @@ type
     procedure ed_ExternalEditorRightButtonClick(Sender: TObject);
     procedure ed_TransRepDirRightButtonClick(Sender: TObject);
     procedure ed_msgfmtexeRightButtonClick(Sender: TObject);
+    procedure b_DefaultClick(Sender: TObject);
   private
     procedure SelectFile(_ed: TCustomEdit; _Filter: string);
   public
@@ -199,6 +201,20 @@ begin
   Close;
 end;
 
+procedure TFormPreferences.b_DefaultClick(Sender: TObject);
+begin
+  memSpecialChars.Lines.Clear;
+  memSpecialChars.Lines.Add(#167#169#174#183'$'#8364#8470); // do not translate
+  memSpecialChars.Lines.Add(#186#185#178#179#170#176); // do not translate
+  memSpecialChars.Lines.Add(#188#189#8531#8532#190#8539#8540#8541#8542#8453); // do not translate
+  memSpecialChars.Lines.Add(#215#247#708#709#8240); // do not translate
+  memSpecialChars.Lines.Add(#8804#8805#8801#8800#8776#8734#177); // do not translate
+  memSpecialChars.Lines.Add(#8226#171#8212#187#8211); // do not translate
+  memSpecialChars.Lines.Add(#8592#8593#8594#8595#8596#8597); // do not translate
+  memSpecialChars.Lines.Add(#8710#8706#181#8721#8467); // do not translate
+  memSpecialChars.Lines.Add(#9792#9794#9786#9787); // do not translate
+end;
+
 procedure TFormPreferences.CheckBoxTranslationMemoryClick(Sender: TObject);
 var i : Integer;
 begin
@@ -248,18 +264,6 @@ var
 begin
   TranslateComponent (self);
   LabelPath.Caption:=format(_('Settings file: %s'),[GetIniFilename]);
-
-  memSpecialChars.Lines.Clear;
-  memSpecialChars.Lines.Add(#167#169#174#183'$'#8364#8470); // do not translate
-  memSpecialChars.Lines.Add(#186#185#178#179#170#176); // do not translate
-  memSpecialChars.Lines.Add(#188#189#8531#8532#190#8539#8540#8541#8542#8453); // do not translate
-  memSpecialChars.Lines.Add(#215#247#708#709#8240); // do not translate
-  memSpecialChars.Lines.Add(#8804#8805#8801#8800#8776#8734#177); // do not translate
-  memSpecialChars.Lines.Add(#8226#171#8212#187#8211); // do not translate
-  memSpecialChars.Lines.Add(#8592#8593#8594#8595#8596#8597); // do not translate
-  memSpecialChars.Lines.Add(#8710#8706#181#8721#8467); // do not translate
-  memSpecialChars.Lines.Add(#9792#9794#9786#9787); // do not translate
-
 
   for i:= Low(TRANSLATION_ARR) to High(TRANSLATION_ARR) do
     ComboBoxParallelTranslation.Items.Add(StripHotkey(TRANSLATION_ARR[i].Caption));

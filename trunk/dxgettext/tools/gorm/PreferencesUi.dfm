@@ -322,7 +322,7 @@ object FormPreferences: TFormPreferences
     Height = 180
     Caption = '  Special chars inserting  '
     TabOrder = 5
-    object Label2: TLabel
+    object l_ListOfChars: TLabel
       Left = 16
       Top = 21
       Width = 62
@@ -353,7 +353,7 @@ object FormPreferences: TFormPreferences
       EditLabel.Caption = ' Special chars font size'
       LabelPosition = lpRight
       NumbersOnly = True
-      TabOrder = 1
+      TabOrder = 2
       Text = '12'
     end
     object udSymbolsFontSize: TUpDown
@@ -363,8 +363,17 @@ object FormPreferences: TFormPreferences
       Height = 21
       Associate = edSymbolsFontSize
       Position = 12
-      TabOrder = 2
+      TabOrder = 3
       Thousands = False
+    end
+    object b_Default: TButton
+      Left = 200
+      Top = 136
+      Width = 75
+      Height = 25
+      Caption = 'Default'
+      TabOrder = 1
+      OnClick = b_DefaultClick
     end
   end
   object grp_TranslationRepositiory: TGroupBox
@@ -440,7 +449,7 @@ object FormPreferences: TFormPreferences
     Left = 528
     Top = 8
     Bitmap = {
-      494C010102000400140010001000FFFFFFFFFF10FFFFFFFFFFFFFFFF424D3600
+      494C010102000400200010001000FFFFFFFFFF10FFFFFFFFFFFFFFFF424D3600
       0000000000003600000028000000400000001000000001002000000000000010
       0000000000000000000000000000000000000000000000000000000000000000
       000000000000CFE0E93083AFC77C6A9DB795E0E0E01FE5E5E51AE5E5E51AE5E5
