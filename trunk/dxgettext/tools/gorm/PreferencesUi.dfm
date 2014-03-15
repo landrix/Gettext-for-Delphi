@@ -31,7 +31,7 @@ object FormPreferences: TFormPreferences
     Height = 25
     Caption = '&OK'
     Default = True
-    TabOrder = 6
+    TabOrder = 8
     OnClick = ButtonOKClick
   end
   object ButtonCancel: TButton
@@ -42,7 +42,7 @@ object FormPreferences: TFormPreferences
     Cancel = True
     Caption = '&Cancel'
     ModalResult = 2
-    TabOrder = 7
+    TabOrder = 9
   end
   object GroupBoxStartupSettings: TGroupBox
     Left = 8
@@ -127,9 +127,9 @@ object FormPreferences: TFormPreferences
   end
   object GroupBoxTranslationTest: TGroupBox
     Left = 8
-    Top = 270
+    Top = 272
     Width = 265
-    Height = 115
+    Height = 169
     Caption = '  Run app to test translation  '
     TabOrder = 2
     object l_ApplicationExeFilename: TLabel
@@ -145,6 +145,13 @@ object FormPreferences: TFormPreferences
       Width = 60
       Height = 13
       Caption = 'Mo file name'
+    end
+    object l_msgfmtexe: TLabel
+      Left = 16
+      Top = 120
+      Width = 116
+      Height = 13
+      Caption = 'Path to msgfmt.exe tool'
     end
     object ed_ApplicationExeFilename: TButtonedEdit
       Left = 16
@@ -170,23 +177,26 @@ object FormPreferences: TFormPreferences
       TabOrder = 1
       OnRightButtonClick = ed_MoFilenameRightButtonClick
     end
+    object ed_msgfmtexe: TButtonedEdit
+      Left = 16
+      Top = 136
+      Width = 233
+      Height = 21
+      Images = ilOpenFile
+      RightButton.DisabledImageIndex = 1
+      RightButton.ImageIndex = 0
+      RightButton.Visible = True
+      TabOrder = 2
+      OnRightButtonClick = ed_msgfmtexeRightButtonClick
+    end
   end
   object grp_SaveSettings: TGroupBox
-    Left = 8
-    Top = 398
-    Width = 265
-    Height = 83
+    Left = 288
+    Top = 494
+    Width = 281
+    Height = 67
     Caption = '  Save settings  '
-    TabOrder = 3
-    object ed_WrapLinesAfter: TEdit
-      Left = 40
-      Top = 40
-      Width = 57
-      Height = 21
-      Enabled = False
-      TabOrder = 1
-      Text = '0'
-    end
+    TabOrder = 7
     object chk_WrapAtNCharacters: TCheckBox
       Left = 16
       Top = 24
@@ -206,6 +216,15 @@ object FormPreferences: TFormPreferences
       TabOrder = 2
       Thousands = False
       Wrap = True
+    end
+    object ed_WrapLinesAfter: TEdit
+      Left = 40
+      Top = 40
+      Width = 57
+      Height = 21
+      Enabled = False
+      TabOrder = 1
+      Text = '0'
     end
   end
   object groupTranslationMemory: TGroupBox
@@ -354,7 +373,7 @@ object FormPreferences: TFormPreferences
     Width = 281
     Height = 73
     Caption = 'Translation Repositiory'
-    TabOrder = 8
+    TabOrder = 6
     object l_TransRepDir: TLabel
       Left = 16
       Top = 24
@@ -380,11 +399,11 @@ object FormPreferences: TFormPreferences
   end
   object gb_ExternalEditor: TGroupBox
     Left = 8
-    Top = 496
+    Top = 456
     Width = 265
     Height = 89
     Caption = 'External editor'
-    TabOrder = 9
+    TabOrder = 3
     object l_ExternalEditor: TLabel
       Left = 16
       Top = 24
@@ -400,7 +419,7 @@ object FormPreferences: TFormPreferences
       Caption = 'add "-n#" to goto line number'
       ParentShowHint = False
       ShowHint = True
-      TabOrder = 0
+      TabOrder = 1
     end
     object ed_ExternalEditor: TButtonedEdit
       Left = 16
@@ -413,7 +432,7 @@ object FormPreferences: TFormPreferences
       RightButton.ImageIndex = 0
       RightButton.Visible = True
       ShowHint = True
-      TabOrder = 1
+      TabOrder = 0
       OnRightButtonClick = ed_ExternalEditorRightButtonClick
     end
   end
@@ -421,7 +440,7 @@ object FormPreferences: TFormPreferences
     Left = 528
     Top = 8
     Bitmap = {
-      494C010102000400100010001000FFFFFFFFFF10FFFFFFFFFFFFFFFF424D3600
+      494C010102000400140010001000FFFFFFFFFF10FFFFFFFFFFFFFFFF424D3600
       0000000000003600000028000000400000001000000001002000000000000010
       0000000000000000000000000000000000000000000000000000000000000000
       000000000000CFE0E93083AFC77C6A9DB795E0E0E01FE5E5E51AE5E5E51AE5E5

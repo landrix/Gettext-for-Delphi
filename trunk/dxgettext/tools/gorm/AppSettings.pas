@@ -14,6 +14,7 @@ function GetSettingStartupParallelTranslation:string;
 function GetSettingStartupOpenFilename:string;
 function GetSettingApplicationExeFilename:string;
 function GetSettingApplicationMoFilename:string;
+function GetSettingApplicationMsgFmtExe: string;
 function GetSettingApplicationExternalEditorFilename: string;
 function GetSettingApplicationExternalEditorUseLineNumbers: boolean;
 function GetSettingSaveWrapAfter: integer;
@@ -164,6 +165,11 @@ end;
 function GetSettingApplicationMoFilename:string;
 begin
   Result:=GetSettingString ('Application','MoFilename');
+end;
+
+function GetSettingApplicationMsgFmtExe: string;
+begin
+  Result:=GetSettingString ('Application','MsgFmtExe');
 end;
 
 function GetSettingApplicationExternalEditorFilename: string;
