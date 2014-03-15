@@ -35,6 +35,8 @@ type
     ed_ApplicationExeFilename: TButtonedEdit;
     l_MoFilename: TLabel;
     ed_MoFilename: TButtonedEdit;
+    l_msgfmtexe: TLabel;
+    ed_msgfmtexe: TButtonedEdit;
     CheckBoxApplySettingsAtStartup: TCheckBox;
     CheckBoxAutoUpgrade: TCheckBox;
     grp_SaveSettings: TGroupBox;
@@ -73,6 +75,9 @@ type
     procedure EditFilenameToOpenRightButtonClick(Sender: TObject);
     procedure ed_ExternalEditorRightButtonClick(Sender: TObject);
     procedure ed_TransRepDirRightButtonClick(Sender: TObject);
+    procedure ed_msgfmtexeRightButtonClick(Sender: TObject);
+  private
+    procedure SelectFile(_ed: TCustomEdit; _Filter: string);
   public
   end;
 
@@ -83,20 +88,30 @@ uses
 
 {$R *.dfm}
 
-procedure TFormPreferences.ed_MoFilenameRightButtonClick(Sender: TObject);
+procedure TFormPreferences.SelectFile(_ed: TCustomEdit; _Filter: string);
 var
   od:TOpenDialog;
 begin
-  od:=TOpenDialog.Create(self);
+  od := TOpenDialog.Create(self);
   try
-    od.FileName := ed_MoFilename.Text;
-    od.Filter:=_('MO files (*.mo)')+'|*.mo';
+    od.FileName := _ed.Text;
+    od.Filter := _Filter;
     if od.Execute then begin
-      ed_MoFilename.Text := od.FileName;
+      _ed.Text := od.FileName;
     end;
   finally
-    FreeAndNil (od);
+    FreeAndNil(od);
   end;
+end;
+
+procedure TFormPreferences.ed_MoFilenameRightButtonClick(Sender: TObject);
+begin
+  SelectFile(ed_MoFilename, _('MO files (*.mo)') + '|*.mo');
+end;
+
+procedure TFormPreferences.ed_msgfmtexeRightButtonClick(Sender: TObject);
+begin
+  SelectFile(ed_msgfmtexe, _('Executables (*.exe)') + '|*.exe');
 end;
 
 procedure TFormPreferences.ed_TransRepDirRightButtonClick(Sender: TObject);
@@ -109,35 +124,15 @@ begin
 end;
 
 procedure TFormPreferences.ed_ExternalEditorRightButtonClick(Sender: TObject);
-var
-  lOpenDialog: TOpenDialog;
 begin
-  lOpenDialog := TOpenDialog.Create(self);
-  try
-    lOpenDialog.FileName := ed_ExternalEditor.Text;
-    lOpenDialog.Filter   := _('Executables (*.exe)')+'|*.exe';
-    if lOpenDialog.Execute then
-    begin
-      ed_ExternalEditor.Text := lOpenDialog.FileName;
-    end;
-  finally
-    FreeAndNil (lOpenDialog);
-  end;
+  SelectFile(ed_ExternalEditor, _('Executables (*.exe)') + '|*.exe');
 end;
 
 procedure TFormPreferences.ButtonBrowseExenameClick(Sender: TObject);
 var
   od:TOpenDialog;
 begin
-  od:=TOpenDialog.Create(self);
-  try
-    od.FileName := ed_ApplicationExeFilename.Text;
-    od.Filter:=_('Executables (*.exe)')+'|*.exe';
-    if od.Execute then
-      ed_ApplicationExeFilename.Text := od.FileName;
-  finally
-    FreeAndNil (od);
-  end;
+  SelectFile(ed_ApplicationExeFilename, _('Executables (*.exe)') + '|*.exe');
 end;
 
 procedure TFormPreferences.ButtonOKClick(Sender: TObject);
@@ -172,6 +167,7 @@ begin
   SetSetting ('GUI', 'ShowStatus', chk_ShowStatus.Checked);
   SetSetting ('Application','ExeFilename', ed_ApplicationExeFilename.Text);
   SetSetting ('Application','MoFilename', ed_MoFilename.Text);
+  SetSetting ('Application','MsgFmtExe', ed_msgfmtexe.Text);
   SetSetting ('Application','ExternalEditorFilename', ed_ExternalEditor.Text);
   SetSetting ('Application','ExternalEditorUseLineNumbers', cb_ExternalEditorUseLineNumbers.Checked);
 
@@ -216,19 +212,9 @@ begin
   ed_WrapLinesAfter.Enabled := chk_WrapAtNCharacters.Checked;
 end;
 
-procedure TFormPreferences.EditFilenameToOpenRightButtonClick(
-  Sender: TObject);
-var
-  od:TOpenDialog;
+procedure TFormPreferences.EditFilenameToOpenRightButtonClick(Sender: TObject);
 begin
-  od:=TOpenDialog.Create(self);
-  try
-    od.FileName:=EditFilenameToOpen.Text;
-    od.Filter:=_('PO files (*.po)')+'|*.po';
-    if od.Execute then EditFilenameToOpen.Text := od.FileName;
-  finally
-    FreeAndNil (od);
-  end;
+  SelectFile(EditFilenameToOpen, _('PO files (*.po)') + '|*.po');
 end;
 
 procedure TFormPreferences.FormCreate(Sender: TObject);
@@ -287,6 +273,8 @@ begin
   EditFilenameToOpen.Text:=GetSettingStartupOpenFilename;
   ed_ApplicationExeFilename.Text := GetSettingApplicationExeFilename;
   ed_MoFilename.Text := GetSettingApplicationMoFilename;
+  ed_msgfmtexe.Text := GetSettingApplicationMsgFmtExe;
+
   ed_ExternalEditor.Text := GetSettingApplicationExternalEditorFilename;
   cb_ExternalEditorUseLineNumbers.Checked := GetSettingApplicationExternalEditorUseLineNumbers;
 
