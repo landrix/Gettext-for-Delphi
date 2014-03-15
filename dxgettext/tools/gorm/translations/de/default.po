@@ -1671,7 +1671,7 @@ msgstr "\"ignore\" in ignore.po speichern ..."
 #. f_IgnoreSave..l_IgnoreFile..Caption
 #: w_IgnoreSave.dfm:23
 msgid "Ignore.po file to save to"
-msgstr "zu speichernde ingore.po-Datei"
+msgstr "Zu speichernde ingore.po-Datei"
 
 #. f_IgnoreSave..l_Blurb....Caption
 #: w_IgnoreSave.dfm:33
@@ -2458,7 +2458,7 @@ msgstr "Sind Sie sicher, dass Sie das \"ignore\"-Label für alle derzeit ignorie
 
 #: w_IgnoreLoad.pas:151 w_IgnoreSave.pas:95
 msgid "Ignore.po files"
-msgstr "ignore.po-Datei"
+msgstr "Ignore.po-Datei"
 
 #: w_TranslationDb.pas:155 w_TranslationDb.pas:328
 #, object-pascal-format
