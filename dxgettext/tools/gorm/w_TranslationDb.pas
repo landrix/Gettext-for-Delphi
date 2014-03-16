@@ -88,6 +88,7 @@ implementation
 
 uses
   gnugettext,
+  u_dzVclUtils,
   u_Languages,
   w_TranslationDbNew;
 
@@ -112,6 +113,9 @@ end;
 constructor Tf_TranslationDb.Create(_Owner: TComponent);
 begin
   inherited;
+
+  TForm_ReadPlacement(self, fpePosAndSize);
+
   TranslateComponent(Self);
   // make sure the field name does not get translated
   dbg_English.Columns[0].FieldName := 'Content';
@@ -119,6 +123,8 @@ end;
 
 destructor Tf_TranslationDb.Destroy;
 begin
+  TForm_StorePlacement(self, fpePosAndSize);
+
   FreeAndNil(Fdm);
   inherited;
 end;

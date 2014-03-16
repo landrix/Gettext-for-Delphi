@@ -728,6 +728,8 @@ begin
 
   TranslateComponent(self);
 
+  TForm_ReadPlacement(self, fpePosAndSize);
+
   TStatusBar_EnableLongSimpleText(TheStatusBar);
   InitStatusBar;
 
@@ -766,6 +768,8 @@ end;
 
 procedure TFormEditor.FormDestroy(Sender: TObject);
 begin
+  TForm_StorePlacement(self, fpePosAndSize);
+
   FreeAndNil(TrMem);
   FreeAndNil(FTranslationRepository);
   FreeAndNil(Translator);
