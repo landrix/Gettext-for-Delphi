@@ -149,6 +149,7 @@
 				<Form>f_dzProgress</Form>
 			</DCCReference>
 			<DCCReference Include="u_TranslatorEngineRepository.pas"/>
+			<DCCReference Include="u_dzClassUtils.pas"/>
 			<DCCReference Include="u_dzVclUtils.pas"/>
 			<DCCReference Include="TranslationsMemory.pas"/>
 			<DCCReference Include="w_IgnoreLoad.pas">

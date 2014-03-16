@@ -27,7 +27,6 @@ object f_TranslationDbLearnOptions: Tf_TranslationDbLearnOptions
     Top = 24
     Width = 417
     Height = 21
-    Alignment = taRightJustify
     Anchors = [akLeft, akTop, akRight]
     Color = clBtnFace
     ReadOnly = True

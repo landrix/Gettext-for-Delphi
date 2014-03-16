@@ -33,6 +33,7 @@ uses
   u_TranslatorEngineRepository in 'u_TranslatorEngineRepository.pas',
   u_dzOsUtils in 'u_dzOsUtils.pas',
   u_dzVclUtils in 'u_dzVclUtils.pas',
+  u_dzClassUtils in 'u_dzClassUtils.pas',
   TranslationsMemory in 'TranslationsMemory.pas',
   w_IgnoreLoad in 'w_IgnoreLoad.pas' {f_IgnoreLoad},
   w_IgnoreImport in 'w_IgnoreImport.pas' {f_IgnoreImport},

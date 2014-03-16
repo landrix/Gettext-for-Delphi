@@ -24,6 +24,8 @@ type
 implementation
 
 uses
+  Forms,
+  u_dzVclUtils,
   gnugettext;
 
 { TTranslationRepository }
@@ -33,7 +35,8 @@ begin
   inherited Create;
   FRepDirBS := IncludeTrailingPathDelimiter(_RepDir);
   if _TemplateFile = '' then
-    FTemplateFile := FRepDirBS + 'TranslateDB.mdb'
+    FTemplateFile := IncludeTrailingPathDelimiter(TApplication_GetExePath)
+      + 'TranslateDB.mdb'
   else
     FTemplateFile := _TemplateFile;
 end;
