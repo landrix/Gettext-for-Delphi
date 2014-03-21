@@ -1474,75 +1474,89 @@ msgstr "KOI8-U"
 msgid "KOI8-T"
 msgstr "KOI8-T"
 
+# Label: ignore
 #. f_EditHeader..cmb_Charset....Items.Strings
 #: w_EditHeader.dfm:134
 msgid "CP850"
-msgstr "CP850"
+msgstr ""
 
+# Label: ignore
 #. f_EditHeader..cmb_Charset....Items.Strings
 #: w_EditHeader.dfm:135
 msgid "CP866"
-msgstr "CP866"
+msgstr ""
 
+# Label: ignore
 #. f_EditHeader..cmb_Charset....Items.Strings
 #: w_EditHeader.dfm:136
 msgid "CP874"
-msgstr "CP874"
+msgstr ""
 
+# Label: ignore
 #. f_EditHeader..cmb_Charset....Items.Strings
 #: w_EditHeader.dfm:137
 msgid "CP932"
-msgstr "CP932"
+msgstr ""
 
+# Label: ignore
 #. f_EditHeader..cmb_Charset....Items.Strings
 #: w_EditHeader.dfm:138
 msgid "CP949"
-msgstr "CP949"
+msgstr ""
 
+# Label: ignore
 #. f_EditHeader..cmb_Charset....Items.Strings
 #: w_EditHeader.dfm:139
 msgid "CP950"
-msgstr "CP950"
+msgstr ""
 
+# Label: ignore
 #. f_EditHeader..cmb_Charset....Items.Strings
 #: w_EditHeader.dfm:140
 msgid "CP1250"
-msgstr "CP1250"
+msgstr ""
 
+# Label: ignore
 #. f_EditHeader..cmb_Charset....Items.Strings
 #: w_EditHeader.dfm:141
 msgid "CP1251"
-msgstr "CP1251"
+msgstr ""
 
+# Label: ignore
 #. f_EditHeader..cmb_Charset....Items.Strings
 #: w_EditHeader.dfm:142
 msgid "CP1252"
-msgstr "CP1252"
+msgstr ""
 
+# Label: ignore
 #. f_EditHeader..cmb_Charset....Items.Strings
 #: w_EditHeader.dfm:143
 msgid "CP1253"
-msgstr "CP1253"
+msgstr ""
 
+# Label: ignore
 #. f_EditHeader..cmb_Charset....Items.Strings
 #: w_EditHeader.dfm:144
 msgid "CP1254"
-msgstr "CP1254"
+msgstr ""
 
+# Label: ignore
 #. f_EditHeader..cmb_Charset....Items.Strings
 #: w_EditHeader.dfm:145
 msgid "CP1255"
-msgstr "CP1255"
+msgstr ""
 
+# Label: ignore
 #. f_EditHeader..cmb_Charset....Items.Strings
 #: w_EditHeader.dfm:146
 msgid "CP1256"
-msgstr "CP1256"
+msgstr ""
 
+# Label: ignore
 #. f_EditHeader..cmb_Charset....Items.Strings
 #: w_EditHeader.dfm:147
 msgid "CP1257"
-msgstr "CP1257"
+msgstr ""
 
 #. f_EditHeader..cmb_Charset....Items.Strings
 #: w_EditHeader.dfm:148

@@ -113,7 +113,7 @@ end;
 procedure TGoogleTranslationSettings.lbGoogleAPIinfoClick(Sender: TObject);
 begin
   // Open default browser with Google starter guide
-  ShellExecute(GetDesktopWindow(), 'open', 'https://code.google.com/intl/uk-UA/apis/language/translate/v2/getting_started.html', '', '', SW_SHOWDEFAULT);
+  ShellExecute(GetDesktopWindow(), 'open', 'https://developers.google.com/translate/v2/faq', '', '', SW_SHOWDEFAULT);
 end;
 
 procedure TGoogleTranslationSettings.lbGoogleAPIinfoMouseEnter(
