@@ -183,6 +183,7 @@ interface
   {$DEFINE dx_has_Inline}
   {$DEFINE dx_has_LpVoid}
   {$DEFINE dx_has_VclThemes}
+  {$DEFINE dx_midstr_in_AnsiStrings}
 {$endif}
 {$ifdef VER260}
   // Delphi XE5
@@ -193,6 +194,7 @@ interface
   {$DEFINE dx_has_Inline}
   {$DEFINE dx_has_LpVoid}
   {$DEFINE dx_has_VclThemes}
+  {$DEFINE dx_midstr_in_AnsiStrings}
 {$endif}
 
 {$ifdef dx_has_Unsafe_Warnings}
@@ -210,10 +212,13 @@ uses
   CWString,
 {$endif}
 {$endif}
+{$IFDEF dx_midstr_in_AnsiStrings}
+  System.AnsiStrings,
+{$ENDIF dx_midstr_in_AnsiStrings}
 {$IFDEF dx_has_WideStrings}
   WideStrings,
 {$ENDIF dx_has_WideStrings}
-  Classes, StrUtils, SysUtils, TypInfo;
+  Types, Classes, StrUtils, SysUtils, TypInfo;
 
 (*****************************************************************************)
 (*                                                                           *)
@@ -551,6 +556,11 @@ uses
 {$endif}
 {$endif}
 
+{$ifdef dx_NativeUInt_is_Cardinal}
+type
+  NativeUInt = cardinal;
+{$endif}
+
 (**************************************************************************)
 // Some comments on the implementation:
 // This unit should be independent of other units where possible.
@@ -721,6 +731,13 @@ begin
   end;
   Result:=s;
 end;
+
+{$ifdef dx_midstr_in_AnsiStrings}
+function MidStr(const AText: RawUtf8String; const AStart, ACount: Integer): RawUtf8String; overload; inline;
+begin
+  Result := System.AnsiStrings.MidStr(AText, AStart, ACount);
+end;
+{$endif dx_midstr_in_AnsiStrings}
 
 function EnsureLineBreakInTranslatedString (s:RawUtf8String):RawUtf8String;
 {$ifdef MSWINDOWS}
@@ -3101,7 +3118,7 @@ begin
         offset := tableoffset;
         Assert(sizeof(offset)=8);
         while (true) and (fs.Position<headerendpos) do begin
-          fs.Seek(offset,soFromBeginning);
+          fs.Position := offset;
           offset:=ReadInt64(fs);
           if offset=0 then
             exit;
@@ -3646,7 +3663,7 @@ begin
         size := mofile.Size;
       Getmem (momemoryHandle, size);
       momemory := momemoryHandle;
-      mofile.Seek(offset, soFromBeginning);
+      mofile.Position := offset;
       mofile.ReadBuffer(momemory^, size);
     finally
       FreeAndNil(mofile);
@@ -4060,4 +4077,6 @@ finalization
   FreeAndNil (KnownRetranslators);
 
 end.
+
+
 
