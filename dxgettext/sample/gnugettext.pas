@@ -2345,8 +2345,8 @@ var
   line: string;
   i: integer;
   tempSL: TStringList;
+  slAsTStringList:TStringList;
   {$ifdef dx_StringList_has_OwnsObjects}
-  slAsTStringList: TStringList;
   originalOwnsObjects: Boolean;
   {$endif dx_StringList_has_OwnsObjects}
 begin
@@ -2358,11 +2358,11 @@ begin
     // To avoid this we must disable OwnsObjects while we replace the strings, but
     // only if sl is a TStringList instance and if using Delphi 2009 or later.
     originalOwnsObjects := False; // avoid warning
+    {$endif dx_StringList_has_OwnsObjects}
     if sl is TStringList then
       slAsTStringList := TStringList(sl)
     else
       slAsTStringList := nil;
-    {$endif dx_StringList_has_OwnsObjects}
 
     sl.BeginUpdate;
     try
@@ -2391,7 +2391,6 @@ begin
           end;
           {$endif dx_StringList_has_OwnsObjects}
           try
-            {$ifdef dx_StringList_has_OwnsObjects}
             if Assigned(slAsTStringList) and slAsTStringList.Sorted then
             begin
               // TStringList doesn't release the objects in PutObject, so we use this to get
@@ -2410,7 +2409,6 @@ begin
               sl.AddStrings(tempSL);
             end
             else
-            {$endif dx_StringList_has_OwnsObjects}
             begin
               for i := 0 to sl.Count - 1 do
                 sl[i] := tempSL[i];
@@ -2438,8 +2436,8 @@ var
   line: string;
   i: integer;
   tempSL:TWideStringList;
-  {$ifdef dx_StringList_has_OwnsObjects}
   slAsTWideStringList:TWideStringList;
+  {$ifdef dx_StringList_has_OwnsObjects}
   originalOwnsObjects: Boolean;
   {$endif dx_StringList_has_OwnsObjects}
 begin
@@ -2451,11 +2449,11 @@ begin
     // To avoid this we must disable OwnsObjects while we replace the strings, but
     // only if sl is a TWideStringList instance and if using Delphi 2009 or later.
     originalOwnsObjects := False; // avoid warning
+    {$endif dx_StringList_has_OwnsObjects}
     if sl is TWideStringList then
       slAsTWideStringList := TWideStringList(sl)
     else
       slAsTWideStringList := nil;
-    {$endif dx_StringList_has_OwnsObjects}
 
     sl.BeginUpdate;
     try
@@ -2484,7 +2482,6 @@ begin
           end;
           {$endif dx_StringList_has_OwnsObjects}
           try
-            {$ifdef dx_StringList_has_OwnsObjects}
             if Assigned(slAsTWideStringList) and slAsTWideStringList.Sorted then
             begin
               // TWideStringList doesn't release the objects in PutObject, so we use this to get
@@ -2503,7 +2500,6 @@ begin
               sl.AddStrings(tempSL);
             end
             else
-            {$endif dx_StringList_has_OwnsObjects}
             begin
               for i := 0 to sl.Count - 1 do
                 sl[i] := tempSL[i];
