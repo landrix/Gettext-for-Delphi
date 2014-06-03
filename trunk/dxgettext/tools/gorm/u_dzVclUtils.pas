@@ -6,11 +6,12 @@ interface
 
 uses
   Windows,
+  Classes,
   Messages,
   Controls,
   ComCtrls,
   Forms,
-  ExtCtrls, Classes;
+  ExtCtrls;
 
 ///<summary> Enables longer SimpleText (longer than 127 characters)
 ///          Call once to enable. Works, by adding a single panel with owner drawing and
@@ -75,6 +76,11 @@ function TForm_ReadPlacement(_frm: TForm; _Which: TFormPlacementEnum; const _Reg
 function TForm_ReadPlacement(_frm: TForm; _Which: TFormPlacementEnum;
   const _HKEY: HKEY = HKEY_CURRENT_USER): Boolean; overload;
 
+type
+  TOnFilesDropped = procedure(_Sender: TObject; _Files: TStrings) of object;
+
+function TForm_ActivateDropFiles(_WinCtrl: TWinControl; _Callback: TOnFilesDropped): TObject;
+
 ///<summary>
 /// In Windows Vista and later it uses TFileOpenDialog, in XP it calls
 /// SelectDirectory.
@@ -82,7 +88,7 @@ function TForm_ReadPlacement(_frm: TForm; _Which: TFormPlacementEnum;
 ///                  it is the new directory selected by the user, only if
 ///                  Result = true.
 /// @returns true, if the user selected a directory
-function dzSelectDirectory(var _Directory: string; _Owner: TWinControl = nil): boolean;
+function dzSelectDirectory(var _Directory: string; _Owner: TWinControl = nil): Boolean;
 
 type
   TdzButtonedEdit = class(TButtonedEdit)
@@ -100,8 +106,10 @@ uses
   Types,
   Graphics,
   Dialogs,
+  ShellApi,
+  gnugettext,
   u_dzClassUtils,
-  gnugettext, u_dzStringUtils;
+  u_dzStringUtils;
 
 type
   // Note: This class is never instantiated, only the DrawPanel method will be used
@@ -128,7 +136,7 @@ var
   Painter: TStatusBarPainter;
   pnl: TStatusPanel;
 begin
-  _StatusBar.SimplePanel := false;
+  _StatusBar.SimplePanel := False;
   _StatusBar.Panels.Clear;
   pnl := _StatusBar.Panels.Add;
   pnl.Style := psOwnerDraw;
@@ -156,7 +164,7 @@ begin
   inherited;
   if RightButton.Visible and (RightButton.Hint = '') then begin
     RightButton.Hint := _('Ctrl+Return to ''click'' right button.');
-    ShowHint := true;
+    ShowHint := True;
   end;
 end;
 
@@ -197,7 +205,7 @@ function TForm_StorePlacement(_frm: TForm; _Which: TFormPlacementEnum;
   _HKEY: HKEY = HKEY_CURRENT_USER): Boolean;
 begin
   Result := TForm_StorePlacement(_frm, _Which,
-    'Software\' + ChangeFileExt(ExtractFileName(Application.ExeName), '') + '\' + _frm.Name
+    'Software\' + ChangeFileExt(ExtractFileName(Application.Exename), '') + '\' + _frm.Name
     + '\NormPos', _HKEY);
 end;
 
@@ -262,11 +270,96 @@ function TForm_ReadPlacement(_frm: TForm; _Which: TFormPlacementEnum;
   const _HKEY: HKEY = HKEY_CURRENT_USER): Boolean;
 begin
   Result := TForm_ReadPlacement(_frm, _Which,
-    'Software\' + ChangeFileExt(ExtractFileName(Application.ExeName), '') + '\' + _frm.Name
+    'Software\' + ChangeFileExt(ExtractFileName(Application.Exename), '') + '\' + _frm.Name
     + '\NormPos', _HKEY);
 end;
 
-function dzSelectDirectory(var _Directory: string; _Owner: TWinControl = nil): boolean;
+type
+  TDropFilesActivator = class(TObject)
+  private
+    FCtrl: TWinControl;
+    FCallback: TOnFilesDropped;
+    FOldWindowProc: TWndMethod;
+    procedure NewWindowProc(var _Msg: TMessage);
+    procedure WmDropFiles(var _Msg: TMessage);
+    procedure doCallback(_st: TStrings);
+  public
+    constructor Create(_WinControl: TWinControl; _Callback: TOnFilesDropped);
+    destructor Destroy; override;
+  end;
+
+{ TDropFilesActivator }
+
+constructor TDropFilesActivator.Create(_WinControl: TWinControl; _Callback: TOnFilesDropped);
+begin
+  inherited Create;
+  FCtrl := _WinControl;
+
+  FCallback := _Callback;
+  FOldWindowProc := FCtrl.WindowProc;
+  FCtrl.WindowProc := NewWindowProc;
+  DragAcceptFiles(FCtrl.Handle, True);
+end;
+
+destructor TDropFilesActivator.Destroy;
+begin
+  if Assigned(FCtrl) and Assigned(FOldWindowProc) then begin
+    FCtrl.WindowProc := FOldWindowProc;
+    DragAcceptFiles(FCtrl.Handle, False);
+  end;
+  inherited;
+end;
+
+procedure TDropFilesActivator.doCallback(_st: TStrings);
+begin
+  if Assigned(FCallback) then
+    FCallback(FCtrl, _st);
+end;
+
+procedure TDropFilesActivator.NewWindowProc(var _Msg: TMessage);
+begin
+  if _Msg.Msg = WM_NCCREATE then
+    DragAcceptFiles(FCtrl.Handle, True);
+
+  if _Msg.Msg = WM_NCDESTROY then
+    DragAcceptFiles(FCtrl.Handle, False);
+
+  if _Msg.Msg = WM_DROPFILES then
+    WmDropFiles(_Msg);
+
+  // call original WindowProc method to handle all other messages
+  FOldWindowProc(_Msg);
+end;
+
+procedure TDropFilesActivator.WmDropFiles(var _Msg: TMessage);
+var
+  arr: array[0..255] of Char;
+  fn: string;
+  i: Integer;
+  sl: TStringList;
+  cnt: Cardinal;
+begin
+  sl := TStringList.Create;
+  try
+    cnt := DragQueryFile(_Msg.wParam, $FFFFFFFF, nil, 255);
+    for i := 0 to cnt - 1 do begin
+      DragQueryFile(_Msg.wParam, i, @arr, SizeOf(arr));
+      fn := PChar(@arr);
+      sl.Add(fn);
+    end;
+    DragFinish(_Msg.wParam);
+    doCallback(sl);
+  finally
+    FreeAndNil(sl);
+  end;
+end;
+
+function TForm_ActivateDropFiles(_WinCtrl: Controls.TWinControl; _Callback: TOnFilesDropped): TObject;
+begin
+  Result := TDropFilesActivator.Create(_WinCtrl as TWinControl, _Callback);
+end;
+
+function dzSelectDirectory(var _Directory: string; _Owner: TWinControl = nil): Boolean;
 var
   fod: TFileOpenDialog;
 begin
@@ -278,10 +371,10 @@ begin
       fod.Options := [fdoPickFolders, fdoPathMustExist, fdoForceFileSystem]; // YMMV
       fod.OkButtonLabel := _('Select');
       fod.DefaultFolder := _Directory;
-      fod.FileName := _Directory;
+      fod.Filename := _Directory;
       Result := fod.Execute;
       if Result then
-        _Directory := fod.FileName;
+        _Directory := fod.Filename;
     finally
       fod.Free;
     end
