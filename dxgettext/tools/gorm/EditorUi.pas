@@ -340,6 +340,7 @@ type
     FSpecChars : TStringList;     // Contains the list of special chars grouped by similarity. Readed from .ini file.
 
     FIngoreImportFilename: string; // stores the filename to import ignore labels from
+    FDropfilesActivator: TObject;
 
     procedure ExecuteFilter;
     procedure CloseGuiItem;
@@ -376,6 +377,8 @@ type
     procedure RemoveFuzzyFromEmtpyTranslations;
     procedure AutoTranslate;
     function EditHeader(_ForceLanguageInput: boolean): boolean;
+    procedure HandleFilesDropped(_Sender: TObject; _Files: TStrings);
+    procedure LoadFileInteractive(const _Filename: string);
   public
   end;
 
@@ -733,6 +736,8 @@ begin
   TStatusBar_EnableLongSimpleText(TheStatusBar);
   InitStatusBar;
 
+  FDropfilesActivator := TForm_ActivateDropFiles(self, HandleFilesDropped);
+
   FTextSearchWhere := [swMsgId, swMsgStr];
 
   items := TPoEntryList.Create;
@@ -770,6 +775,7 @@ procedure TFormEditor.FormDestroy(Sender: TObject);
 begin
   TForm_StorePlacement(self, fpePosAndSize);
 
+  FreeAndNil(FDropfilesActivator);
   FreeAndNil(TrMem);
   FreeAndNil(FTranslationRepository);
   FreeAndNil(Translator);
@@ -2175,27 +2181,40 @@ end;
 
 procedure TFormEditor.act_FileOpenExecute(Sender: TObject);
 var
-  i: Integer;
   fn: string;
 begin
   CloseGuiItem;
   if not SelectPoFileToOpen(fn) then
     exit;
 
+  LoadFileInteractive(fn);
+end;
+
+procedure TFormEditor.LoadFileInteractive(const _Filename: string);
+var
+  i: Integer;
+begin
   Screen.Cursor := crHourglass;
   try
-    i := FOpenMRU.IndexOf(fn);
+    i := FOpenMRU.IndexOf(_Filename);
     if i < 0 then begin
-      FOpenMRU.Add(fn);
+      FOpenMRU.Add(_Filename);
       SaveList('OpenMRU', FOpenMRU);
       AddOpenMRU(FOpenMRU.Count - 1);
       MenuItemReopen.Visible := (FOpenMRU.Count > 0);
     end;
 
-    LoadFileByName(fn);
+    LoadFileByName(_Filename);
   finally
     Screen.Cursor := crDefault;
   end;
+end;
+
+procedure TFormEditor.HandleFilesDropped(_Sender: TObject; _Files: TStrings);
+begin
+  if _Files.Count = 0 then
+    exit;
+  LoadFileInteractive(_Files[0]);
 end;
 
 procedure TFormEditor.act_FileReadFromExecute(Sender: TObject);
