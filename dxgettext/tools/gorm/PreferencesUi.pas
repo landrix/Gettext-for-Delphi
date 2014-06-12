@@ -131,8 +131,6 @@ begin
 end;
 
 procedure TFormPreferences.ButtonBrowseExenameClick(Sender: TObject);
-var
-  od:TOpenDialog;
 begin
   SelectFile(ed_ApplicationExeFilename, _('Executables (*.exe)') + '|*.exe');
 end;
@@ -311,6 +309,13 @@ begin
   CheckBoxTranslationMemoryClick(Sender);
 
   ed_TransRepDir.Text := GetSettingTranslationRepositoryDir;
+
+  TEdit_SetAutocomplete(EditFilenameToOpen);
+  TEdit_SetAutocomplete(ed_ApplicationExeFilename);
+  TEdit_SetAutocomplete(ed_MoFilename);
+  TEdit_SetAutocomplete(ed_msgfmtexe);
+  TEdit_SetAutocomplete(ed_ExternalEditor);
+  TEdit_SetAutocomplete(ed_TransRepDir);
 end;
 
 end.

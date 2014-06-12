@@ -6,6 +6,7 @@ uses
   Windows,
   Messages,
   SysUtils,
+  Types,
   Variants,
   Classes,
   Graphics,
