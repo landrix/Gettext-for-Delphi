@@ -10,6 +10,8 @@ uses
   Messages,
   Controls,
   ComCtrls,
+  ComObj,
+  StdCtrls,
   Forms,
   ExtCtrls;
 
@@ -89,6 +91,34 @@ function TForm_ActivateDropFiles(_WinCtrl: TWinControl; _Callback: TOnFilesDropp
 ///                  Result = true.
 /// @returns true, if the user selected a directory
 function dzSelectDirectory(var _Directory: string; _Owner: TWinControl = nil): Boolean;
+
+type
+  TErrorHandlingEnum = (ehReturnFalse, ehRaiseException);
+type
+  TAutoCompleteSourceEnum = (acsFileSystem, acsUrlHistory, acsUrlMru);
+  TAutoCompleteSourceEnumSet = set of TAutoCompleteSourceEnum;
+type
+  TAutoCompleteTypeEnum = (actSuggest, actAppend);
+  TAutoCompleteTypeEnumSet = set of TAutoCompleteTypeEnum;
+
+///<summary>
+/// Enables autocompletion for an edit control using a call to SHAutoComplete
+/// @param ed is a TCustomEdit control for which autocompletion should be enabled
+/// @param Source is a set of TAutoCompleteSourceEnum that determines from which source to
+///               autocomplate, any combination of acsFileSystem, acsUrlHistory, acsUrlMru
+///               is allowed.
+/// @param Type is a set fo TAutoCompleteEnumSet that determines the type of autocompletion
+///             actAppend means that the first match will be appended to the existing text and
+///                       selected, so that typing anything will automatically overwrite it.
+///             actSuggest means that a list of matches will be displayed as a dropdown list
+///                        from which the user can then select using the arrow keys or the mouse.
+///             is is possible to pass an empty set, in which case the registry setting.
+///             (Unfortunately MSDN doesn't say where in the registry this setting is located.)
+/// @param ErrorHandling determines whether a failure in the SHAutoComplete call should raise
+///                      an EOLEException or return false. </summary>
+function TEdit_SetAutocomplete(_ed: TCustomEdit; _Source: TAutoCompleteSourceEnumSet = [acsFileSystem];
+  _Type: TAutoCompleteTypeEnumSet = [actSuggest, actAppend];
+  _ErrorHandling: TErrorHandlingEnum = ehReturnFalse): Boolean;
 
 type
   TdzButtonedEdit = class(TButtonedEdit)
@@ -371,10 +401,10 @@ begin
       fod.Options := [fdoPickFolders, fdoPathMustExist, fdoForceFileSystem]; // YMMV
       fod.OkButtonLabel := _('Select');
       fod.DefaultFolder := _Directory;
-      fod.Filename := _Directory;
+      fod.FileName := _Directory;
       Result := fod.Execute;
       if Result then
-        _Directory := fod.Filename;
+        _Directory := fod.FileName;
     finally
       fod.Free;
     end
@@ -382,6 +412,97 @@ begin
     Result := FileCtrl.SelectDirectory('Select Directory', ExtractFileDrive(_Directory),
       _Directory, [sdNewUI, sdNewFolder], _Owner);
   end;
+end;
+
+const
+  // constants and descriptions from MSDN
+  // http://msdn.microsoft.com/en-us/library/windows/desktop/bb759862(v=vs.85).aspx
+
+  // Ignore the registry default and force the AutoAppend feature off.
+  // This flag must be used in combination with one or more of the
+  // SHACF_FILESYS* or SHACF_URL* flags.
+  SHACF_AUTOAPPEND_FORCE_OFF = $80000000;
+
+  // Ignore the registry value and force the AutoAppend feature on. The completed string will be
+  // displayed in the edit box with the added characters highlighted.
+  // This flag must be used in combination with one or more of the
+  // SHACF_FILESYS* or SHACF_URL* flags.
+  SHACF_AUTOAPPEND_FORCE_ON = $40000000;
+
+  // Ignore the registry default and force the AutoSuggest feature off.
+  // This flag must be used in combination with one or more of the
+  // SHACF_FILESYS* or SHACF_URL* flags.
+  SHACF_AUTOSUGGEST_FORCE_OFF = $20000000;
+
+  // Ignore the registry value and force the AutoSuggest feature on.
+  // A selection of possible completed strings will be displayed as a
+  // drop-down list, below the edit box. This flag must be used in
+  // combination with one or more of the
+  // SHACF_FILESYS* or SHACF_URL* flags.
+  SHACF_AUTOSUGGEST_FORCE_ON = $10000000;
+
+  // The default setting, equivalent to
+  // SHACF_FILESYSTEM | SHACF_URLALL.
+  // SHACF_DEFAULT cannot be combined with any other flags.
+  SHACF_DEFAULT = $00000000;
+
+  // Include the file system only.
+  SHACF_FILESYS_ONLY = $00000010;
+
+  // Include the file system and directories, UNC servers, and UNC server shares.
+  SHACF_FILESYS_DIRS = $00000020;
+
+  // Include the file system and the rest of the Shell (Desktop, Computer, and Control Panel, for example).
+  SHACF_FILESYSTEM = $00000001;
+
+  // Include the URLs in the user's History list.
+  SHACF_URLHISTORY = $00000002;
+
+  // Include the URLs in the user's Recently Used list.
+  SHACF_URLMRU = $00000004;
+
+  // Include the URLs in the users History and Recently Used lists. Equivalent to
+  // SHACF_URLHISTORY | SHACF_URLMRU.
+  SHACF_URLALL = SHACF_URLHISTORY or SHACF_URLMRU;
+
+  // Allow the user to select from the autosuggest list by pressing the TAB key.
+  // If this flag is not set, pressing the TAB key will shift focus to the next
+  // control and close the autosuggest list.
+  // If SHACF_USETAB is set, pressing the TAB key will select the first item
+  // in the list. Pressing TAB again will select the next item in the list,
+  // and so on. When the user reaches the end of the list, the next TAB key
+  // press will cycle the focus back to the edit control.
+  // This flag must be used in combination with one or more of the
+  // SHACF_FILESYS* or SHACF_URL*
+  // flags
+  SHACF_USETAB = $00000008;
+
+  SHACF_VIRTUAL_NAMESPACE = $00000040;
+
+function SHAutoComplete(hwndEdit: HWnd; dwFlags: DWORD): HResult; stdcall; external 'Shlwapi.dll';
+
+function TEdit_SetAutocomplete(_ed: TCustomEdit; _Source: TAutoCompleteSourceEnumSet = [acsFileSystem];
+  _Type: TAutoCompleteTypeEnumSet = [actSuggest, actAppend]; _ErrorHandling: TErrorHandlingEnum = ehReturnFalse): Boolean;
+var
+  Options: DWORD;
+  Res: HResult;
+begin
+  Options := 0;
+  if acsFileSystem in _Source then
+    Options := Options or SHACF_FILESYSTEM;
+  if acsUrlHistory in _Source then
+    Options := Options or SHACF_URLHISTORY;
+  if acsUrlMru in _Source then
+    Options := Options or SHACF_URLMRU;
+  if actSuggest in _Type then
+    Options := Options or SHACF_AUTOSUGGEST_FORCE_ON;
+  if actAppend in _Type then
+    Options := Options or SHACF_AUTOAPPEND_FORCE_ON;
+
+  Res := SHAutoComplete(_ed.Handle, Options);
+  Result := (Res = S_OK);
+  if not Result and (_ErrorHandling = ehRaiseException) then
+    raise EOleException.Create(_('Call to SHAutoComplete failed.'), Res, 'Shlwapi.dll', '', 0);
 end;
 
 end.
