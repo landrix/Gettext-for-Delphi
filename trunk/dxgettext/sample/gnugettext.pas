@@ -15,7 +15,9 @@ unit gnugettext;
 (*  Contributors: Peter Thornqvist, Troy Wolbrink,            *)
 (*                Frank Andreas de Groot, Igor Siticov,       *)
 (*                Jacques Garcia Vazquez, Igor Gitman,        *)
-(*                Arvid Winkelsdorf, Thomas Mueller           *)
+(*                Arvid Winkelsdorf,                          *)
+(*                Thomas Mueller (dummzeuch)                  *)
+(*                Olivier Sannier (obones)                    *)
 (*                                                            *)
 (*  See http://dybdahl.dk/dxgettext/ for more information     *)
 (*                                                            *)
@@ -434,6 +436,8 @@ type
     public
       Enabled:Boolean;      /// Set this to false to disable translations
       DesignTimeCodePage:Integer;  /// See MultiByteToWideChar() in Win32 API for documentation
+      SearchAllDomains: Boolean;  /// Should gettext and ngettext look in all other known domains after the current one
+
       constructor Create;
       destructor Destroy; override;
       procedure UseLanguage(LanguageCode: LanguageString);
@@ -799,9 +803,9 @@ begin
 
   // First, get the value from the default domain
   if Assigned(Instance) then
-    Result:=Instance.gettext(MsgId)
+    Result:=Instance.dgettext(Instance.curmsgdomain, MsgId)
   else
-    Result:=gettext(MsgId);
+    Result:=dgettext(DefaultInstance.curmsgdomain, MsgId);
   if Result<>MsgId then
     exit;
 
@@ -1645,6 +1649,7 @@ begin
   {$endif}
   curGetPluralForm:=GetPluralForm2EN;
   Enabled:=True;
+  SearchAllDomains:=False;
   curmsgdomain:=DefaultTextDomain;
   savefileCS := TMultiReadExclusiveWriteSynchronizer.Create;
   domainlist := TStringList.Create;
@@ -1747,15 +1752,37 @@ end;
 {$ifndef UNICODE}
 function TGnuGettextInstance.gettext(
   const szMsgId: ansistring): TranslatedUnicodeString;
+var
+  domain: DomainString;
+  domainIndex: Integer;
 begin
   Result := dgettext(curmsgdomain, szMsgId);
+  if SearchAllDomains then begin
+    domainIndex := 0;
+    while (Result = szMsgId) and (domainIndex < domainlist.count) do begin
+      domain := domainlist[domainIndex];
+      Result := dgettext(domain, szMsgId);
+      Inc(domainIndex);
+  	end;
+  end;
 end;
 {$endif}
 
 function TGnuGettextInstance.gettext(
   const szMsgId: MsgIdString): TranslatedUnicodeString;
+var
+  domain: DomainString;
+  domainIndex: Integer;
 begin
   Result := dgettext(curmsgdomain, szMsgId);
+  if SearchAllDomains then begin
+    domainIndex := 0;
+    while (Result = szMsgId) and (domainIndex < domainlist.count) do begin
+      domain := domainlist[domainIndex];
+      Result := dgettext(domain, szMsgId);
+      Inc(domainIndex);
+  	end;
+  end;
 end;
 
 function TGnuGettextInstance.gettext_NoExtract(
@@ -2589,15 +2616,37 @@ end;
 {$ifndef UNICODE}
 function TGnuGettextInstance.ngettext(const singular, plural: ansistring;
   Number: Integer): TranslatedUnicodeString;
+var
+  domain: DomainString;
+  domainIndex: Integer;
 begin
   Result := dngettext(curmsgdomain, singular, plural, Number);
+  if SearchAllDomains then begin
+    domainIndex := 0;
+    while (Result <> singular) and (Result <> plural) and (domainIndex < domainlist.count) do begin
+      domain := domainlist[domainIndex];
+      Result := dngettext(domain, singular, plural, Number);
+      Inc(domainIndex);
+  	end;
+  end;
 end;
 {$endif}
 
 function TGnuGettextInstance.ngettext(const singular, plural: MsgIdString;
   Number: Integer): TranslatedUnicodeString;
+var
+  domain: DomainString;
+  domainIndex: Integer;
 begin
   Result := dngettext(curmsgdomain, singular, plural, Number);
+  if SearchAllDomains then begin
+    domainIndex := 0;
+    while (Result <> singular) and (Result <> plural) and (domainIndex < domainlist.count) do begin
+      domain := domainlist[domainIndex];
+      Result := dngettext(domain, singular, plural, Number);
+      Inc(domainIndex);
+  	end;
+  end;
 end;
 
 function TGnuGettextInstance.ngettext_NoExtract(const singular,
