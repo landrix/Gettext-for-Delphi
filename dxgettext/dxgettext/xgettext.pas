@@ -552,7 +552,7 @@ begin
               idoffset:=-1;
               idplural:=True;
             end
-            else if (uppercase(copy(line, p + idlength, 5)) = '_NOOP') then
+            else if (uppercase(copy(line, p + idoffset + idlength, 5)) = '_NOOP') then
             begin
               //*** Implement the extraction for getText_noop (no operation,
               //    only extraction) function

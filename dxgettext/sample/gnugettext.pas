@@ -250,6 +250,7 @@ function gettext_NoExtract(const szMsgId: MsgIdString): TranslatedUnicodeString;
 function gettext_NoOp(const szMsgId: MsgIdString): TranslatedUnicodeString;
 function dgettext(const szDomain: DomainString; const szMsgId: MsgIdString): TranslatedUnicodeString;
 function dgettext_NoExtract(const szDomain: DomainString; const szMsgId: MsgIdString): TranslatedUnicodeString;
+function dgettext_NoOp(const szDomain: DomainString; const szMsgId: MsgIdString): TranslatedUnicodeString;
 function dngettext(const szDomain: DomainString; const singular,plural: MsgIdString; Number:longint): TranslatedUnicodeString;
 function ngettext(const singular,plural: MsgIdString; Number:longint): TranslatedUnicodeString;
 function ngettext_NoExtract(const singular,plural: MsgIdString; Number:longint): TranslatedUnicodeString;
@@ -475,6 +476,7 @@ type
       {$endif}
       function dgettext(const szDomain: DomainString; const szMsgId: MsgIdString): TranslatedUnicodeString; overload; virtual;
       function dgettext_NoExtract(const szDomain: DomainString; const szMsgId: MsgIdString): TranslatedUnicodeString;
+      function dgettext_NoOp(const szDomain: DomainString; const szMsgId: MsgIdString): TranslatedUnicodeString;
       function dngettext(const szDomain: DomainString; const singular,plural:MsgIdString;Number:longint):TranslatedUnicodeString; overload; virtual;
       function dngettext_NoExtract(const szDomain: DomainString; const singular,plural:MsgIdString;Number:longint):TranslatedUnicodeString;
       procedure textdomain(const szDomain: DomainString);
@@ -879,6 +881,17 @@ begin
   // This can sometimes be necessary, and by using this function,
   // the source code scanner will not trigger warnings.
   Result := dgettext(szDomain, szMsgId);
+end;
+
+function dgettext_NoOp(const szDomain: DomainString; const szMsgId: MsgIdString): TranslatedUnicodeString;
+begin
+  //*** With this function Strings can be added to the po-file without beeing
+  //    ResourceStrings (dxgettext will add the string and this function will
+  //    return it without a change)
+  //    see gettext manual
+  //      4.7 - Special Cases of Translatable Strings
+  //      http://www.gnu.org/software/hello/manual/gettext/Special-cases.html#Special-cases
+  Result := DefaultInstance.dgettext_NoOp(szDomain, szMsgId);
 end;
 
 function dngettext(const szDomain: DomainString; const singular,plural: MsgIdString; Number:longint): TranslatedUnicodeString;
@@ -1737,6 +1750,11 @@ begin
   // This can sometimes be necessary, and by using this function,
   // the source code scanner will not trigger warnings.
   Result:=dgettext(szDomain,szMsgId);
+end;
+
+function TGnuGettextInstance.dgettext_NoOp(const szDomain: DomainString; const szMsgId: MsgIdString): TranslatedUnicodeString;
+begin
+  Result := gettext_NoOp( szMsgId);
 end;
 
 function TGnuGettextInstance.GetCurrentLanguage: LanguageString;
