@@ -391,8 +391,8 @@ var poe : TPOEntry;
 begin
   if (NOT FileExists(FFilename))
     then begin
+      poe := TPOEntry.Create;
       try
-        poe := TPOEntry.Create;
         poe.UserCommentList.Clear;
         poe.AutoCommentList.Clear;
         poe.AutoCommentList.Add('# GORM translation memory file');
