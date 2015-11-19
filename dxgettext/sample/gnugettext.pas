@@ -51,6 +51,10 @@ interface
 // Use DefaultInstance.DebugLogToFile() to write the log to a file.
 {.$define DXGETTEXTDEBUG}
 
+// If the conditional define dx_ChangeProxyClassname is defined, THookedObjects.Proxify adds '!dx'
+// to the class name. Default: off
+{.$define dx_ChangeProxyClassname}
+
 // ### LO - Workaround aka hack for programs compiled with German Delphi
 //
 // If the current OS Language is not German, immediately add a Delphi RTL domain
@@ -2390,8 +2394,8 @@ var
   line: string;
   i: integer;
   tempSL: TStringList;
-  slAsTStringList:TStringList;
   {$ifdef dx_StringList_has_OwnsObjects}
+  slAsTStringList: TStringList;
   originalOwnsObjects: Boolean;
   {$endif dx_StringList_has_OwnsObjects}
 begin
@@ -2403,11 +2407,11 @@ begin
     // To avoid this we must disable OwnsObjects while we replace the strings, but
     // only if sl is a TStringList instance and if using Delphi 2009 or later.
     originalOwnsObjects := False; // avoid warning
-    {$endif dx_StringList_has_OwnsObjects}
     if sl is TStringList then
       slAsTStringList := TStringList(sl)
     else
       slAsTStringList := nil;
+    {$endif dx_StringList_has_OwnsObjects}
 
     sl.BeginUpdate;
     try
@@ -2436,6 +2440,7 @@ begin
           end;
           {$endif dx_StringList_has_OwnsObjects}
           try
+            {$ifdef dx_StringList_has_OwnsObjects}
             if Assigned(slAsTStringList) and slAsTStringList.Sorted then
             begin
               // TStringList doesn't release the objects in PutObject, so we use this to get
@@ -2454,6 +2459,7 @@ begin
               sl.AddStrings(tempSL);
             end
             else
+            {$endif dx_StringList_has_OwnsObjects}
             begin
               for i := 0 to sl.Count - 1 do
                 sl[i] := tempSL[i];
@@ -2481,8 +2487,8 @@ var
   line: string;
   i: integer;
   tempSL:TWideStringList;
-  slAsTWideStringList:TWideStringList;
   {$ifdef dx_StringList_has_OwnsObjects}
+  slAsTWideStringList:TWideStringList;
   originalOwnsObjects: Boolean;
   {$endif dx_StringList_has_OwnsObjects}
 begin
@@ -2494,11 +2500,11 @@ begin
     // To avoid this we must disable OwnsObjects while we replace the strings, but
     // only if sl is a TWideStringList instance and if using Delphi 2009 or later.
     originalOwnsObjects := False; // avoid warning
-    {$endif dx_StringList_has_OwnsObjects}
     if sl is TWideStringList then
       slAsTWideStringList := TWideStringList(sl)
     else
       slAsTWideStringList := nil;
+    {$endif dx_StringList_has_OwnsObjects}
 
     sl.BeginUpdate;
     try
@@ -2527,6 +2533,7 @@ begin
           end;
           {$endif dx_StringList_has_OwnsObjects}
           try
+            {$ifdef dx_StringList_has_OwnsObjects}
             if Assigned(slAsTWideStringList) and slAsTWideStringList.Sorted then
             begin
               // TWideStringList doesn't release the objects in PutObject, so we use this to get
@@ -2545,6 +2552,7 @@ begin
               sl.AddStrings(tempSL);
             end
             else
+            {$endif dx_StringList_has_OwnsObjects}
             begin
               for i := 0 to sl.Count - 1 do
                 sl[i] := tempSL[i];
@@ -3986,9 +3994,11 @@ begin
       System.Move(objClassData^, proxyClassData^, size);
       PProxyClassData(proxyClassData)^.Parent:=@(objClassData^.SelfPtr);
       PProxyClassData(proxyClassData)^.SelfPtr:=proxyClass;
+{$IFDEF dx_ChangeProxyClassname}
       PProxyClassData(proxyClassData)^.ClassName:=PShortString(PAnsiChar(proxyClassData)+size-hookedClassNameLength-2);
       SetLength(PProxyClassData(proxyClassData)^.ClassName^,hookedClassNameLength);
       System.Move(AnsiString('!dx'#0),(PAnsiChar(PProxyClassData(proxyClassData)^.ClassName)+hookedClassNameLength+1-3)^,4);
+{$ENDIF}
 
       // Place our BeforeDestruction virtual method in the metaclass VMT
       beforeDestructionVmtAddr:=GetBeforeDestructionVmtAddress(proxyClass);
@@ -4140,6 +4150,4 @@ finalization
   FreeAndNil (KnownRetranslators);
 
 end.
-
-
 
