@@ -408,7 +408,7 @@ procedure HookIntoResourceStrings (enabled:boolean=true; SupportPackages:boolean
 type
   TOnDebugLine = Procedure (Sender: TObject; const Line: String; var Discard: Boolean) of Object;  // Set Discard to false if output should still go to ordinary debug log
   TGetPluralForm=function (Number:Longint):Integer;
-  TDebugLogger=procedure (line: ansistring) of object;
+  TDebugLogger=procedure (line: string) of object;
 
 {*------------------------------------------------------------------------------
   Handles .mo files, in separate files or inside the exe file.
@@ -592,7 +592,7 @@ type
       procedure FreeTP_ClassHandlingItems;
       function ClassIsIgnored(AClass:TClass): Boolean;
       {$ifdef DXGETTEXTDEBUG}
-      procedure DebugWriteln(line: ansistring);
+      procedure DebugWriteln(Line: string);
       {$endif}
       procedure TranslateProperty(AnObject: TObject; PropInfo: PPropInfo;
         TodoList: TStrings; const TextDomain:DomainString);
@@ -1672,16 +1672,16 @@ begin
     OpenMoFile;
   if mofile=nil then begin
     {$ifdef DXGETTEXTDEBUG}
-    DebugLogger('.mo file is not open. Not translating "'+msgid+'"');
+    DebugLogger('.mo file is not open. Not translating "'+string(msgid)+'"');
     {$endif}
     Result := msgid;
   end else begin
     Result:=mofile.gettext(msgid,found);
     {$ifdef DXGETTEXTDEBUG}
     if found then
-      DebugLogger ('Found in .mo ('+Domain+'): "'+utf8encode(msgid)+'"->"'+utf8encode(Result)+'"')
+      DebugLogger ('Found in .mo ('+Domain+'): "'+string(utf8encode(msgid))+'"->"'+string(utf8encode(Result))+'"')
     else
-      DebugLogger ('Translation not found in .mo file ('+Domain+') : "'+utf8encode(msgid)+'"');
+      DebugLogger ('Translation not found in .mo file ('+Domain+') : "'+string(utf8encode(msgid))+'"');
     {$endif}
   end;
 end;
@@ -2667,14 +2667,14 @@ begin
     p:=pos(#0,trans);
     if p=0 then begin
       {$ifdef DXGETTEXTDEBUG}
-      DebugWriteln ('Last translation used: '+utf8encode(trans));
+      DebugWriteln ('Last translation used: '+string(utf8encode(trans)));
       {$endif}
       Result:=trans;
       exit;
     end;
     if idx=0 then begin
       {$ifdef DXGETTEXTDEBUG}
-      DebugWriteln ('Translation found: '+utf8encode(trans));
+      DebugWriteln ('Translation found: '+string(utf8encode(trans)));
       {$endif}
       Result:=LeftStr(trans,p-1);
       exit;
@@ -2815,9 +2815,10 @@ begin
 end;
 
 {$ifdef DXGETTEXTDEBUG}
-procedure TGnuGettextInstance.DebugWriteln(line: ansistring);
+procedure TGnuGettextInstance.DebugWriteln(Line: string);
 Var
   Discard: Boolean;
+  ALine: AnsiString;
 begin
   Assert (DebugLogCS<>nil);
   Assert (DebugLog<>nil);
@@ -2833,17 +2834,18 @@ begin
       If Discard then Exit;
     end;
 
-    line:=line+sLineBreak;
+    ALine := AnsiString(Line);
+    ALine:=ALine+sLineBreak;
 
     // Ensure that memory usage doesn't get too big.
     if (DebugLog is TMemoryStream) and (DebugLog.Position>1000000) then begin
-      line:=sLineBreak+sLineBreak+sLineBreak+sLineBreak+sLineBreak+
+      ALine:=sLineBreak+sLineBreak+sLineBreak+sLineBreak+sLineBreak+
             'Debug log halted because memory usage grew too much.'+sLineBreak+
             'Specify a filename to store the debug log in or disable debug loggin in gnugettext.pas.'+
             sLineBreak+sLineBreak+sLineBreak+sLineBreak+sLineBreak;
       DebugLogOutputPaused:=True;
     end;
-    DebugLog.WriteBuffer(line[1],length(line));
+    DebugLog.WriteBuffer(ALine[1],length(ALine));
   finally
     DebugLogCS.EndWrite;
   end;
@@ -2901,43 +2903,42 @@ begin
     {$endif}
     Result:='ERROR';
     exit;
-  end else begin
-    {$ifdef LINUX}
-    // This works with Unicode if the Linux has utf-8 character set
-    // Result:=System.LoadResString(ResStringRec);
-    ResMod:=FindResourceHInstance(ResStringRec^.Module^);
-    Handle:=FindResource(ResMod,
-      PAnsiChar(ResStringRec^.Identifier div ResStringTableLen), PAnsiChar(6));   // RT_STRING
-    Tab:=Pointer(LoadResource(ResMod, Handle));
-    if Tab=nil then
-      Result:=''
-    else
-      Result:=PWideChar(PAnsiChar(Tab)+Tab[ResStringRec^.Identifier mod ResStringTableLen]);
-    {$endif}
-    {$ifdef MSWINDOWS}
-    if not Win32PlatformIsUnicode then begin
-      SetString(Result, Buffer,
-        LoadString(FindResourceHInstance(ResStringRec.Module^),
-          ResStringRec.Identifier, Buffer, SizeOf(Buffer)))
-    end else begin
-      Result := '';
-      Len := 0;
-      While Length(Result)<=Len+1 do begin     
-        if Length(Result) = 0 then
-          SetLength(Result, 1024)
-        else
-          SetLength(Result, Length(Result) * 2);
-        Len := LoadStringW(FindResourceHInstance(ResStringRec.Module^),
-          ResStringRec.Identifier, PWideChar(Result), Length(Result));
-      end;
-      SetLength(Result, Len);
-    end;
-    {$endif}
   end;
-  {$ifdef DXGETTEXTDEBUG}
-  DebugWriteln ('Loaded resourcestring: '+utf8encode(Result));
+  {$ifdef LINUX}
+  // This works with Unicode if the Linux has utf-8 character set
+  // Result:=System.LoadResString(ResStringRec);
+  ResMod:=FindResourceHInstance(ResStringRec^.Module^);
+  Handle:=FindResource(ResMod,
+    PAnsiChar(ResStringRec^.Identifier div ResStringTableLen), PAnsiChar(6));   // RT_STRING
+  Tab:=Pointer(LoadResource(ResMod, Handle));
+  if Tab=nil then
+    Result:=''
+  else
+    Result:=PWideChar(PAnsiChar(Tab)+Tab[ResStringRec^.Identifier mod ResStringTableLen]);
   {$endif}
-  Result:=ResourceStringGettext(Result);
+  {$ifdef MSWINDOWS}
+  if not Win32PlatformIsUnicode then begin
+    SetString(Result, Buffer,
+      LoadString(FindResourceHInstance(ResStringRec.Module^),
+        ResStringRec.Identifier, Buffer, SizeOf(Buffer)))
+  end else begin
+    Result := '';
+    Len := 0;
+    While Length(Result)<=Len+1 do begin
+      if Length(Result) = 0 then
+        SetLength(Result, 1024)
+      else
+        SetLength(Result, Length(Result) * 2);
+      Len := LoadStringW(FindResourceHInstance(ResStringRec.Module^),
+        ResStringRec.Identifier, PWideChar(Result), Length(Result));
+    end;
+    SetLength(Result, Len);
+  end;
+  {$endif}
+  {$ifdef DXGETTEXTDEBUG}
+  DebugWriteln ('Loaded resourcestring: '+string(utf8encode(Result)));
+  {$endif}
+  Result:=Gettext(Result);
 end;
 
 procedure TGnuGettextInstance.RegisterWhenNewLanguageListener(
