@@ -313,6 +313,10 @@ function dgettext_NoOp(const szDomain: DomainString; const szMsgId: MsgIdString)
 function dngettext(const szDomain: DomainString; const singular,plural: MsgIdString; Number:longint): TranslatedUnicodeString;
 function ngettext(const singular,plural: MsgIdString; Number:longint): TranslatedUnicodeString;
 function ngettext_NoExtract(const singular,plural: MsgIdString; Number:longint): TranslatedUnicodeString;
+function pgettext(const szMsgCtxt,szMsgId: MsgIdString): TranslatedUnicodeString;
+function pdgettext(const szDomain: DomainString; const szMsgCtxt,szMsgId: MsgIdString): TranslatedUnicodeString;
+function pngettext(const szMsgCtxt,singular,plural: MsgIdString; Number:longint): TranslatedUnicodeString;
+function pdngettext(const szDomain: DomainString; const szMsgCtxt,singular,plural: MsgIdString; Number:longint): TranslatedUnicodeString;
 procedure textdomain(const szDomain: DomainString);
 function getcurrenttextdomain: DomainString;
 procedure bindtextdomain(const szDomain: DomainString; const szDirectory: FilenameString);
@@ -356,6 +360,8 @@ procedure RemoveDomainForComponent (const domain:DomainString);
 // Use like this: ws:=LoadResStringW(@NameOfResourceString);
 function LoadResString(ResStringRec: PResStringRec): widestring;
 function LoadResStringW(ResStringRec: PResStringRec): UnicodeString;
+function PLoadResString(const szMsgCtxt: MsgIdString; ResStringRec: PResStringRec): widestring;
+function PLoadResStringW(const szMsgCtxt: MsgIdString; ResStringRec: PResStringRec): UnicodeString;
 
 // This returns an empty string if not translated or translator name is not specified.
 function GetTranslatorNameAndEmail:TranslatedUnicodeString;
@@ -543,8 +549,15 @@ type
       procedure bindtextdomain(const szDomain: DomainString; const szDirectory: FilenameString);
       procedure bindtextdomainToFile (const szDomain: DomainString; const filename: FilenameString); // Also works with files embedded in exe file
 
+      // particular translations (context parameter)
+      function pgettext(const szMsgCtxt,szMsgId: MsgIdString): TranslatedUnicodeString;
+      function pdgettext(const szDomain: DomainString; const szMsgCtxt,szMsgId: MsgIdString): TranslatedUnicodeString;
+      function pngettext(const szMsgCtxt,singular,plural: MsgIdString; Number:longint): TranslatedUnicodeString;
+      function pdngettext(const szDomain: DomainString; const szMsgCtxt,singular,plural: MsgIdString; Number:longint): TranslatedUnicodeString;
+
       // Windows API functions
       function LoadResString(ResStringRec: PResStringRec): UnicodeString;
+      function PLoadResString(const szMsgCtxt: MsgIdString; ResStringRec: PResStringRec): UnicodeString;
 
       // Output all log info to this file. This may only be called once.
       procedure DebugLogToFile (const filename:FilenameString; append:boolean=false);
@@ -597,11 +610,16 @@ type
       procedure TranslateProperty(AnObject: TObject; PropInfo: PPropInfo;
         TodoList: TStrings; const TextDomain:DomainString);
       function Getdomain(const domain:DomainString; const DefaultDomainDirectory:FilenameString; const CurLang: LanguageString): TDomain;  // Translates a single property of an object
+
+      function GetResString(ResStringRec: PResStringRec): UnicodeString;
+
+      procedure pgettext_fixup(const szLookup,szMsgId: MsgIdString; var szTranslation: MsgIdString); {$ifdef dx_has_Inline}inline;{$endif}
     end;
 
 const
   LOCALE_SISO639LANGNAME = $59;    // Used by Lazarus software development tool
   LOCALE_SISO3166CTRYNAME = $5A;   // Used by Lazarus software development tool
+  GETTEXT_CONTEXT_GLUE = #4;
 
 var
   DefaultInstance:TGnuGettextInstance;  /// Default instance of the main API for singlethreaded applications.
@@ -971,6 +989,26 @@ begin
   Result := ngettext(singular, plural, Number);
 end;
 
+function pgettext(const szMsgCtxt,szMsgId: MsgIdString): TranslatedUnicodeString;
+begin
+  Result:=DefaultInstance.pgettext(szMsgCtxt,szMsgId);
+end;
+
+function pdgettext(const szDomain: DomainString; const szMsgCtxt,szMsgId: MsgIdString): TranslatedUnicodeString;
+begin
+  Result:=DefaultInstance.pdgettext(szDomain,szMsgCtxt,szMsgId);
+end;
+
+function pngettext(const szMsgCtxt,singular,plural: MsgIdString; Number:longint): TranslatedUnicodeString;
+begin
+  Result:=DefaultInstance.pngettext(szMsgCtxt,singular,plural,Number);
+end;
+
+function pdngettext(const szDomain: DomainString; const szMsgCtxt,singular,plural: MsgIdString; Number:longint): TranslatedUnicodeString;
+begin
+  Result:=DefaultInstance.pdngettext(szDomain,szMsgCtxt,singular,plural,Number);
+end;
+
 procedure textdomain(const szDomain: Domainstring);
 begin
   DefaultInstance.textdomain(szDomain);
@@ -1285,7 +1323,15 @@ begin
   Result:=DefaultInstance.LoadResString(ResStringRec);
 end;
 
+function PLoadResString(const szMsgCtxt: MsgIdString; ResStringRec: PResStringRec): widestring;
+begin
+  Result:=DefaultInstance.PLoadResString(szMsgCtxt,ResStringRec);
+end;
 
+function PLoadResStringW(const szMsgCtxt: MsgIdString; ResStringRec: PResStringRec): UnicodeString;
+begin
+  Result:=DefaultInstance.PLoadResString(szMsgCtxt,ResStringRec);
+end;
 
 function GetCurrentLanguage:LanguageString;
 begin
@@ -1840,7 +1886,7 @@ begin
       domain := domainlist[domainIndex];
       Result := dgettext(domain, szMsgId);
       Inc(domainIndex);
-  	end;
+    end;
   end;
 end;
 {$endif}
@@ -1858,7 +1904,7 @@ begin
       domain := domainlist[domainIndex];
       Result := dgettext(domain, szMsgId);
       Inc(domainIndex);
-  	end;
+    end;
   end;
 end;
 
@@ -1880,6 +1926,48 @@ begin
   //      4.7 - Special Cases of Translatable Strings
   //      http://www.gnu.org/software/hello/manual/gettext/Special-cases.html#Special-cases
   Result := TranslatedUnicodeString(szMsgId);
+end;
+
+procedure TGnuGettextInstance.pgettext_fixup(const szLookup,szMsgId: MsgIdString; var szTranslation: MsgIdString);
+begin
+  if szTranslation = szLookup then
+    szTranslation := szMsgId;
+end;
+
+function TGnuGettextInstance.pgettext(const szMsgCtxt,szMsgId: MsgIdString): TranslatedUnicodeString;
+var
+  lookup: MsgIdString;
+begin
+  lookup := szMsgCtxt + GETTEXT_CONTEXT_GLUE + szMsgId;
+  Result := gettext(lookup);
+  pgettext_fixup(lookup, szMsgId, Result);
+end;
+
+function TGnuGettextInstance.pdgettext(const szDomain: DomainString; const szMsgCtxt,szMsgId: MsgIdString): TranslatedUnicodeString;
+var
+  lookup: MsgIdString;
+begin
+  lookup := szMsgCtxt + GETTEXT_CONTEXT_GLUE + szMsgId;
+  Result := dgettext(szDomain, lookup);
+  pgettext_fixup(lookup, szMsgId, Result);
+end;
+
+function TGnuGettextInstance.pngettext(const szMsgCtxt,singular,plural: MsgIdString; Number:longint): TranslatedUnicodeString;
+var
+  lookup: MsgIdString;
+begin
+  lookup := szMsgCtxt + GETTEXT_CONTEXT_GLUE + singular;
+  Result := ngettext(lookup, plural, Number);
+  pgettext_fixup(lookup, singular, Result);
+end;
+
+function TGnuGettextInstance.pdngettext(const szDomain: DomainString; const szMsgCtxt,singular,plural: MsgIdString; Number:longint): TranslatedUnicodeString;
+var
+  lookup: MsgIdString;
+begin
+  lookup := szMsgCtxt + GETTEXT_CONTEXT_GLUE + singular;
+  Result := dngettext(szDomain, lookup, plural, Number);
+  pgettext_fixup(lookup, singular, Result);
 end;
 
 procedure TGnuGettextInstance.textdomain(const szDomain: DomainString);
@@ -2479,7 +2567,7 @@ begin
         for i:=0 to tempSL.Count-1 do begin
           line:=tempSL.Strings[i];
           if line<>'' then
-            if TextDomain = '' then
+            if (TextDomain = '') or (TextDomain = DefaultTextDomain) then
               tempSL.Strings[i]:=ComponentGettext(line, Self)
             else
               tempSL.Strings[i]:=dgettext(TextDomain,line);
@@ -2708,7 +2796,7 @@ begin
       domain := domainlist[domainIndex];
       Result := dngettext(domain, singular, plural, Number);
       Inc(domainIndex);
-  	end;
+    end;
   end;
 end;
 {$endif}
@@ -2726,7 +2814,7 @@ begin
       domain := domainlist[domainIndex];
       Result := dngettext(domain, singular, plural, Number);
       Inc(domainIndex);
-  	end;
+    end;
   end;
 end;
 
@@ -2873,8 +2961,7 @@ begin
   end;
 end;
 
-function TGnuGettextInstance.LoadResString(
-  ResStringRec: PResStringRec): UnicodeString;
+function TGnuGettextInstance.GetResString(ResStringRec: PResStringRec): UnicodeString;
 {$ifdef MSWINDOWS}
 var
   Len: Integer;
@@ -2938,7 +3025,17 @@ begin
   {$ifdef DXGETTEXTDEBUG}
   DebugWriteln ('Loaded resourcestring: '+string(utf8encode(Result)));
   {$endif}
-  Result:=Gettext(Result);
+end;
+
+function TGnuGettextInstance.LoadResString(
+  ResStringRec: PResStringRec): UnicodeString;
+begin
+  Result:=Gettext(GetResString(ResStringRec));
+end;
+
+function TGnuGettextInstance.PLoadResString(const szMsgCtxt: MsgIdString; ResStringRec: PResStringRec): UnicodeString;
+begin
+  Result:=PGettext(szMsgCtxt, GetResString(ResStringRec));
 end;
 
 procedure TGnuGettextInstance.RegisterWhenNewLanguageListener(
