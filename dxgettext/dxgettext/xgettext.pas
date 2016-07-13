@@ -110,6 +110,7 @@ type
       domainlist: TStringList; // Strings are domain name, values are TXGTDomain
       constlist:TStringList;   // List of consts. Strings are names, Objects are TConst
       definedDomain: string;
+      definedContext: string;
       procedure doHandleExtendedDirective (var line: string);
       procedure ClearConstList;
       function GetDomain(const domain: string): TXGTDomain;
@@ -194,10 +195,11 @@ type
     end;
 
 const
-  cDefineDirective  = '{gnugettext:'; // Start of an option inside the source code
-  cScanOption       = 'scan-all';     // Means that all strings in the source code should be extracted
-  cDomainDefinition = 'text-domain';  // Changes default text domain for strings
-  cScanResetOption  = 'reset';        // Changes back to default behaviour
+  cDefineDirective   = '{gnugettext:'; // Start of an option inside the source code
+  cScanOption        = 'scan-all';     // Means that all strings in the source code should be extracted
+  cDomainDefinition  = 'text-domain';  // Changes default text domain for strings
+  cContextDefinition = 'context';      // Sets the context for all subsequent strings
+  cScanResetOption   = 'reset';        // Changes back to default behaviour (default domain, no context)
 
   { consts for exclusion of files, directories, properties and classes from extraction: }
   cExcludeFormInstance = 'exclude-form-instance';
@@ -382,6 +384,37 @@ begin
 end;
 
 procedure TXGetText.ExtractFromPascal(const sourcefilename: string);
+  procedure ApplyContext(var msgid: string);
+  var
+    contextPos: Integer;
+    contextStr: string;
+    contextValue: string;
+  begin
+    contextPos := Pos(cContextDefinition+'=', lastcomment);
+    if contextPos > 0 then begin
+      contextStr := Copy(lastcomment, contextPos + length (cContextDefinition) + 1 );
+      extractstring(contextstr, contextValue);
+      if length(contextValue) > 0 then begin
+        delete (lastcomment, contextPos, length (cContextDefinition) + 1 + length(contextValue) + 2);
+        lastcomment := trim(lastcomment);
+      end;
+    end;
+
+    if (length(definedContext) > 0) and (length(contextValue) = 0) then
+      contextValue := definedContext;
+
+    if (length(contextValue) > 0) and (Pos(GETTEXT_CONTEXT_GLUE, msgid) <= 0) then
+      msgid := contextValue + GETTEXT_CONTEXT_GLUE + msgid;
+  end;
+
+  procedure PrepareLastCommentForConst(const constident: string; var msgid: string);
+  begin
+    ApplyContext(msgid);
+
+    if lastcomment<>'' then
+      lastcomment:=lastcomment+sLinebreak;
+    lastcomment:=lastcomment+'Programmer''s name for it: '+constident;
+  end;
 // I didn't have a Pascal parser available when this code was written.
 var
   line, uline:string;
@@ -393,6 +426,7 @@ var
   constident:string;
   idlength,idoffset:integer;
   idplural:boolean;
+  idcontext:boolean;
   firstline:boolean;
   isutf8:boolean;
 begin
@@ -466,9 +500,7 @@ begin
           msgid:=RemoveNuls(readstring(line, firstline, isutf8));
           if resourcestringmode=2 then begin
             if constident<>'' then begin
-              if lastcomment<>'' then
-                lastcomment:=lastcomment+sLinebreak;
-              lastcomment:=lastcomment+'Programmer''s name for it: '+constident;
+              PrepareLastCommentForConst(constident, msgid);
             end;
             AddTranslation('default', msgid, lastcomment, MakePathLinuxRelative(sourcefilename)+':'+IntToStr(FLineNr));
             lastcomment := '';
@@ -486,9 +518,7 @@ begin
             // If source-code comments for gnugettext enable it,
             // extract the constant even though it is not a resourcestring.
             if Length (definedDomain) > 0 then begin
-              if lastcomment <> '' then
-                lastcomment := lastcomment + sLinebreak;
-              lastcomment := lastcomment + 'Programmer''s name for it: ' + constident;
+              PrepareLastCommentForConst(constident, msgid);
               AddTranslation (definedDomain, msgid, lastcomment, MakePathLinuxRelative(sourcefilename)+':'+IntToStr(FLineNr));
               lastcomment := '';
             end;
@@ -508,6 +538,7 @@ begin
         end;
       end else begin
         // Check for occurence of gettext()
+        idcontext:=False;
         while true do begin
           uline:=uppercase(line);
           p:=poscode('_',uline);
@@ -561,6 +592,12 @@ begin
               //      http://www.gnu.org/software/hello/manual/gettext/Special-cases.html#Special-cases
               idlength := idlength + 5;
             end;
+            idcontext:=False;
+            if uppercase(copy(line, p + idoffset - 1, 1)) = 'P' then begin
+              Inc(idlength);
+              Dec(idoffset);
+              idcontext:=True;
+            end
           end;
           if ((p + idoffset = 1) or
               (not ((ord(uline[p + idoffset - 1]) <= 255) and
@@ -586,20 +623,37 @@ begin
                 end;
               end;
 
-              // Get parameter that contains the msgid
-              msgid := RemoveNuls(readstring(line, firstline, isutf8));
-              if idplural then begin
-                line := trim(line);
+              // get context from first parameter
+              if idcontext then
+              begin
+                msgid := RemoveNuls(readstring(line, firstline, isutf8))+GETTEXT_CONTEXT_GLUE;
                 if copy(line, 1, 1) = ',' then begin
                   delete(line, 1, 1);
                   line:=trim(line);
                 end else begin
                   Warning (wtSyntaxError,_('Missing comma after first parameter'));
                 end;
+              end
+              else
+              begin
+                msgid := '';
+              end;
+
+              // Get parameter that contains the msgid
+              msgid := msgid+RemoveNuls(readstring(line, firstline, isutf8));
+              if idplural then begin
+                line := trim(line);
+                if copy(line, 1, 1) = ',' then begin
+                  delete(line, 1, 1);
+                  line:=trim(line);
+                end else begin
+                  Warning (wtSyntaxError,_('Missing comma after parameter'));
+                end;
                 if line='' then
                   dxreadln(line, firstline, isutf8);
                 msgid := msgid+PluralSplitter+RemoveNuls(readstring(line, firstline, isutf8));
               end;
+              ApplyContext(msgid);
               AddTranslation(domain, msgid, lastcomment, MakePathLinuxRelative(sourcefilename) + ':' + IntToStr(FLineNr));
               lastcomment := '';
             end { if a parenthesis is found };
@@ -1509,13 +1563,21 @@ end;
 
 
 procedure TXGetText.doHandleExtendedDirective(var line: string);
+  function GetString: string;
+  begin
+    Result := '';
+    if (length (line) > 0) and (line[1] = '=') then begin
+      delete (line, 1, 1);
+      line := trim (line);
+      extractstring(line,Result);
+    end;
+  end;
+
 Const
   cErrOptionUnknown = '{gnugettext: Unknonw option.';
   cErrMissingStart = '{gnugettext: reset found without scan-all.';
   cErrDomainSyntax = '{gnugettext: error in the domain name definition.';
-Var
-  i : integer;
-  tmp : string;
+  cErrContextSyntax = '{gnugettext: error in the context name definition.';
 begin
   delete (line, 1, length(cDefineDirective));
   line := trim (line);
@@ -1525,36 +1587,31 @@ begin
     if pos (cDomainDefinition, lowerCase (copy (line, 1, length(cDomainDefinition)))) = 1 then begin
       delete (line, 1, Length (cDomainDefinition));
       line := trim (line);
-      if (length (line) > 0) and (line[1] = '=') then begin
-        delete (line, 1, 1);
-        line := trim (line);
-        if (length (line) > 0) and (line[1] = '''') then begin
-          delete (line, 1, 1);
-          i := 1;
-          tmp := '';
-          while (i <= length (line)) and (line[i] <> '}') do begin
-            if (line[i] = '''') then begin
-              if (i = length (line)) or (line[i+1] <> '''') then begin
-                definedDomain := tmp;
-                break;
-              end
-              else inc (i);
-            end;
-            tmp := tmp + line[i];
-            inc (i);
-          end;
-        end;
-      end;
 
+      definedDomain := GetString;
       if length (definedDomain) = 0 then begin
         Warning (wtExtendedDirectiveError, _(cErrDomainSyntax));
       end;
     end
     else definedDomain := 'default';
   end
+  else if IsDirective(cContextDefinition, line) then begin
+    delete (line, 1, length (cContextDefinition));
+    line := trim (line);
+
+    definedContext := GetString;
+    if length (definedContext) = 0 then begin
+      Warning (wtExtendedDirectiveError, _(cErrContextSyntax));
+    end;
+  end
   else if IsDirective(cScanResetOption, line) then begin
-    if length (definedDomain) = 0 then Warning(wtExtendedDirectiveError, _(cErrMissingStart))
-    else definedDomain := ''
+    if (length (definedDomain) = 0) and (length(definedContext) = 0) then begin
+      Warning(wtExtendedDirectiveError, _(cErrMissingStart))
+    end
+    else begin
+      definedDomain := '';
+      definedContext := '';
+    end;
   end
   else begin
     Warning (wtExtendedDirectiveError, _(cErrOptionUnknown))
