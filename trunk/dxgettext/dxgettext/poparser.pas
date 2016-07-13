@@ -35,7 +35,7 @@ type
     public
       UserCommentList:TStringList;   // Entire lines
       AutoCommentList:TStringList;   // Entire lines
-      MsgId:string;              // singular and plural are separated by PluraSPlitter, if plural form is present
+      MsgId:string;              // singular and plural are separated by PluraSPlitter, if plural form is present, context is in front, separated by the glue
       MsgStr:string;             // plural forms are separated by PluraSPlitter, if present
       Fuzzy:boolean;                 // If true, msgstr is not the translation, but just a proposal for a translation
       IsObjectPascalFormat: TObjectPascalFormat;
@@ -78,6 +78,7 @@ type
     private
       LineNumber:Integer;
       IsMsgId:boolean;
+      IsMsgCtxt:boolean;
       entry:TPoEntry;  // This is the return value if last AddLine returned True
       entryhasdata:boolean;
     public
@@ -308,19 +309,28 @@ begin
       if copy(line,1,1)='#' then
         entry.AutoCommentList.Add(line)
       else begin
+        if uppercase(copy(line,1,7))='MSGCTXT' then begin
+          IsMsgId:=False;
+          IsMsgCtxt:=True;
+          delete (line,1,7);
+          line:=trim(line);
+        end;
         if uppercase(copy(line,1,12))='MSGID_PLURAL' then begin
           IsMsgId:=True;
+          IsMsgCtxt:=False;
           delete (line,1,12);
           line:=trim(line);
           entry.MsgId:=entry.MsgId+PluralSplitter;
         end;
         if uppercase(copy(line,1,5))='MSGID' then begin
           IsMsgId:=True;
+          IsMsgCtxt:=False;
           delete (line,1,5);
           line:=trim(line);
         end;
         if uppercase(copy(line,1,6))='MSGSTR' then begin
           IsMsgId:=False;
+          IsMsgCtxt:=False;
           delete (line,1,6);
           if copy(line,1,1)='[' then begin
             if copy(line,2,1)<>'0' then
@@ -349,8 +359,12 @@ begin
           end;
           inc (i);
         end;
-        if IsMsgId then entry.MsgId:=entry.MsgId+value
-                   else entry.MsgStr:=entry.MsgStr+value;
+        if IsMsgId then
+          entry.MsgId:=entry.MsgId+value
+        else if IsMsgCtxt then
+          entry.MsgId:=value+GETTEXT_CONTEXT_GLUE+entry.MsgId
+        else
+          entry.MsgStr:=entry.MsgStr+value;
       end;
     end;
     if (line='') and entryhasdata then begin
@@ -518,6 +532,18 @@ procedure TPoEntry.WriteToStream (str:TStream; AWidth: integer = 70);
         break;
     end;
   end;
+  procedure WriteMsgId(MsgId:string);
+  var
+    p: Integer;
+  begin
+    p := Pos(GETTEXT_CONTEXT_GLUE, MsgId);
+    if p > 0 then
+    begin
+      WritePart('msgctxt',Copy(MsgId,1,p-1));
+      MsgId:=Copy(MsgId,p+1);
+    end;
+    WritePart('msgid',MsgId);
+  end;
 var
   s:string;
   p:integer;
@@ -559,13 +585,13 @@ begin
     StreamWriteln(str, s);
   end;
 
-  // Write msgid and msgstr
+  // Write msgctxt, msgid and msgstr
   p:=pos(PluralSplitter,MsgId);
   isplural:=p<>0;
   if not isplural then
-    WritePart ('msgid',MsgId)
+    WriteMsgId (MsgId)
   else begin
-    WritePart ('msgid',copy(MsgId,1,p-1));
+    WriteMsgId (copy(MsgId,1,p-1));
     WritePart ('msgid_plural',copy(MsgId,p+1,maxint));
   end;
   p:=pos(PluralSplitter,MsgStr);
