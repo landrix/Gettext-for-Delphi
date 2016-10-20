@@ -105,10 +105,12 @@ begin
   consoleoutput.writeln(_('assemble usage:'));
   consoleoutput.writeln(_('  assemble "application.exe" --localebase="C:\program\" --dxgettext'));
   consoleoutput.writeln('');
-  consoleoutput.writeln(_('This will append all files in the directory of application.exe and in ' + sLineBreak +
+  consoleoutput.writeln(_('This will append all .mo files in the directory of application.exe and in ' + sLineBreak +
     'all subdirectories to the file application.exe. This will enable the ' + sLineBreak +
     'gnugettext.pas unit that was compiled into application.exe to get ' + sLineBreak +
-    'its translations from the .exe file instead of from external files.'));
+    'its translations from the .exe file instead of from external files.' + sLineBreak +
+    '--localebase sets the base directory for searching for .mo files.' + sLineBreak +
+    '  The default is the directory containing application.exe.'));
 end;
 
 end.
