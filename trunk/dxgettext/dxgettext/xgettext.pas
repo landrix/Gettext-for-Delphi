@@ -114,7 +114,8 @@ type
       procedure doHandleExtendedDirective (var line: string);
       procedure ClearConstList;
       function GetDomain(const domain: string): TXGTDomain;
-      procedure AddTranslation(const domain:string; const aMsgid: string; const Comments, Location: string);
+      procedure AddTranslation(const domain:string; const aMsgid: string;
+        const Comments: string; Location: string; LineNo: integer);
       procedure WriteAll(const Destinationpath:string; const domain: string);
       function MakePathLinuxRelative(const path: string): string;
     private
@@ -158,6 +159,7 @@ type
       PreserveUserComments: Boolean;
       MaxWidth: integer;
       NoWildcards:boolean;
+      LineNumbers: Boolean; // if true (default), line numbers are written as comments
       filemasks:TStringList;
       DestinationPath:string;
       CFiles:TStringList;   // This will contain filenames of C/C++ source files to be scanned elsewhere
@@ -502,7 +504,7 @@ begin
             if constident<>'' then begin
               PrepareLastCommentForConst(constident, msgid);
             end;
-            AddTranslation('default', msgid, lastcomment, MakePathLinuxRelative(sourcefilename)+':'+IntToStr(FLineNr));
+            AddTranslation('default', msgid, lastcomment, sourcefilename, FLineNr);
             lastcomment := '';
           end;
           if constident<>'' then begin
@@ -519,7 +521,7 @@ begin
             // extract the constant even though it is not a resourcestring.
             if Length (definedDomain) > 0 then begin
               PrepareLastCommentForConst(constident, msgid);
-              AddTranslation (definedDomain, msgid, lastcomment, MakePathLinuxRelative(sourcefilename)+':'+IntToStr(FLineNr));
+              AddTranslation (definedDomain, msgid, lastcomment, sourcefilename, FLineNr);
               lastcomment := '';
             end;
           end;
@@ -654,7 +656,7 @@ begin
                 msgid := msgid+PluralSplitter+RemoveNuls(readstring(line, firstline, isutf8));
               end;
               ApplyContext(msgid);
-              AddTranslation(domain, msgid, lastcomment, MakePathLinuxRelative(sourcefilename) + ':' + IntToStr(FLineNr));
+              AddTranslation(domain, msgid, lastcomment, sourcefilename, FLineNr);
               lastcomment := '';
             end { if a parenthesis is found };
           end else begin
@@ -695,6 +697,7 @@ begin
   constlist.CaseSensitive:=True;
   Excludes := TXExcludes.Create;
   MaxWidth := 70;
+  LineNumbers := True;
 end;
 
 destructor TXGetText.Destroy;
@@ -752,7 +755,7 @@ var
       propname := propertyname;
     if not excludeclass and not excludeinstance and not Excludes.ExcludeFormClassProperty(classnames[indent], propname) then begin
       comment := scope2comment(scope, propertyname);
-      AddTranslation('default', RemoveNuls(aValue), comment, MakePathLinuxRelative(sourcefilename) + ':' + IntToStr(FLineNr));
+      AddTranslation('default', RemoveNuls(aValue), comment, sourcefilename, FLineNr);
     end;
   end;
 
@@ -945,8 +948,8 @@ begin
   end;
 end;
 
-procedure TXGetText.AddTranslation(const domain, aMsgid: string; const Comments,
-  Location: string);
+procedure TXGetText.AddTranslation(const domain:string; const aMsgid: string;
+  const Comments: string; Location: string; LineNo: integer);
 // Adds something to translate to the list
 var
   it: TPoEntry;
@@ -956,6 +959,10 @@ var
   smsgid,
   lookupvalue:string;
 begin
+  Location := MakePathLinuxRelative(Location);
+  if LineNumbers then
+    Location := Location + ':' + IntToStr(LineNo);
+
   smsgid := aMsgid;
 
   // Check, that all parts of msgid are nonempty, if there are multiple parts
@@ -1483,7 +1490,7 @@ begin
             end;
               inc (i);
           end;
-          AddTranslation('default',RemoveNuls(line),ident,MakePathLinuxRelative(sourcefilename) + ':' + IntToStr(FLineNr));
+          AddTranslation('default',RemoveNuls(line),ident,sourcefilename, FLineNr);
         end;
       end;
     end;
@@ -1640,7 +1647,7 @@ procedure TXGetText.ExtractFromEXE(const sourcefilename: string);
               while ws<>'' do begin
                 inc (itemno);
                 j:=ord(ws[1]);
-                AddTranslation('default',RemoveNuls(copy(ws,2,j)),'Resource '+r.Name+', item no. '+IntToStr(itemno),MakePathLinuxRelative(sourcefilename)+':'+IntToStr(r.Offset));
+                AddTranslation('default',RemoveNuls(copy(ws,2,j)),'Resource '+r.Name+', item no. '+IntToStr(itemno),sourcefilename, FLineNr);
                 delete (ws,1,j+1);
               end;
             end;
