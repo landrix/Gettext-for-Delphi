@@ -144,6 +144,9 @@ begin
         if uparam='--KYLIX' then begin
           xgt.AddKylixFilemasks;
         end else
+        if uparam = '--NO-LINE-NUMBERS' then begin
+           xgt.LineNumbers := False;
+        end else
         begin
           if copy(param,1,1)='@' then begin
             FileMode:=fmOpenRead;
