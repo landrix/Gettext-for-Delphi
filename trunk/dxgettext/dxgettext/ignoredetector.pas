@@ -222,6 +222,7 @@ begin
     lHasLetters:=False;
     lHasDigits:=False;
     lHasWhiteSpace:=False;
+    lHasPunctuationMark:= False;
     for i:=1 to length(s2) do
     begin
       c:=s2[i];
