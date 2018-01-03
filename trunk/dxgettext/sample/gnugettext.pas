@@ -3041,7 +3041,7 @@ end;
 function TGnuGettextInstance.LoadResString(
   ResStringRec: PResStringRec): UnicodeString;
 begin
-  Result:=Gettext(GetResString(ResStringRec));
+  Result:=ResourceStringGettext(GetResString(ResStringRec));
 end;
 
 function TGnuGettextInstance.PLoadResString(const szMsgCtxt: MsgIdString; ResStringRec: PResStringRec): UnicodeString;
