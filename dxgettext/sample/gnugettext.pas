@@ -623,7 +623,7 @@ type
       function Getdomain(const domain:DomainString; const DefaultDomainDirectory:FilenameString; const CurLang: LanguageString): TDomain;  // Translates a single property of an object
 
       function GetResString(ResStringRec: PResStringRec): UnicodeString;
-
+      function ResourceStringGettext(MsgId: MsgIdString): TranslatedUnicodeString;
       procedure pgettext_fixup(const szLookup,szMsgId: MsgIdString; var szTranslation: MsgIdString); {$ifdef dx_has_Inline}inline;{$endif}
     end;
 
@@ -862,22 +862,7 @@ function ResourceStringGettext(MsgId: MsgIdString): TranslatedUnicodeString;
 var
   i:integer;
 begin
-  if (MsgID='') or (ResourceStringDomainListCS=nil) then begin
-    // This only happens during very complicated program startups that fail,
-    // or when Msgid=''
-    Result:=MsgId;
-    exit;
-  end;
-  ResourceStringDomainListCS.BeginRead;
-  try
-    for i:=0 to ResourceStringDomainList.Count-1 do begin
-      Result:=dgettext(ResourceStringDomainList.Strings[i], MsgId);
-      if Result<>MsgId then
-        break;
-    end;
-  finally
-    ResourceStringDomainListCS.EndRead;
-  end;
+  Result := DefaultInstance.ResourceStringGettext(MsgId);
 end;
 
 function ComponentGettext(MsgId: MsgIdString; Instance: TGnuGettextInstance = nil): TranslatedUnicodeString;
@@ -3036,6 +3021,28 @@ begin
   {$ifdef DXGETTEXTDEBUG}
   DebugWriteln ('Loaded resourcestring: '+string(utf8encode(Result)));
   {$endif}
+end;
+
+function TGnuGettextInstance.ResourceStringGettext(MsgId: MsgIdString): TranslatedUnicodeString;
+var
+  i:integer;
+begin
+  if (MsgID='') or (ResourceStringDomainListCS=nil) then begin
+    // This only happens during very complicated program startups that fail,
+    // or when Msgid=''
+    Result:=MsgId;
+    exit;
+  end;
+  ResourceStringDomainListCS.BeginRead;
+  try
+    for i:=0 to ResourceStringDomainList.Count-1 do begin
+      Result:=dgettext(ResourceStringDomainList.Strings[i], MsgId);
+      if Result<>MsgId then
+        break;
+    end;
+  finally
+    ResourceStringDomainListCS.EndRead;
+  end;
 end;
 
 function TGnuGettextInstance.LoadResString(
