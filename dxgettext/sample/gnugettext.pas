@@ -859,8 +859,6 @@ begin
 end;
 
 function ResourceStringGettext(MsgId: MsgIdString): TranslatedUnicodeString;
-var
-  i:integer;
 begin
   Result := DefaultInstance.ResourceStringGettext(MsgId);
 end;
