@@ -338,7 +338,16 @@ procedure bindtextdomain(const szDomain: DomainString; const szDirectory: Filena
 /// and CC is an ISO 3166 two-letter country code.
 /// For example, for German in Germany, ll is de, and CC is DE which results in de_DE </summary>
 procedure UseLanguage(LocaleName: LanguageString);
-function GetCurrentLanguage:LanguageString;
+function GetCurrentLanguage:LanguageString; deprecated; // use GetCurrentLocaleName instead
+///<summary>
+/// @Returns the full locale name in the form ll_CC </summary>
+function GetCurrentLocaleName: LanguageString;
+///<summary>
+/// @Returns the two letter language code of the current LocaleName </summary>
+function GetCurrentLanguageCode: LanguageString;
+///<summary>
+/// @Returns the two letter language code of the given LocaleName </summary>
+function LocaleNameToLanguageCode(const ALocaleName: LanguageString): LanguageString;
 
 // Translates a component (form, frame etc.) to the currently selected language.
 // Put TranslateComponent(self) in the OnCreate event of all your forms.
@@ -532,7 +541,9 @@ type
       function gettext_NoOp(const szMsgId: MsgIdString): TranslatedUnicodeString;
       function ngettext(const singular,plural:MsgIdString;Number:longint):TranslatedUnicodeString; overload; virtual;
       function ngettext_NoExtract(const singular,plural:MsgIdString;Number:longint):TranslatedUnicodeString;
-      function GetCurrentLanguage:LanguageString;
+      function GetCurrentLanguage:LanguageString; deprecated; // use GetCurentLocaleName instead
+      function GetCurrentLanguageCode:LanguageString;
+      function GetCurrentLocaleName:LanguageString;
       function GetTranslationProperty (const Propertyname:ComponentNameString):TranslatedUnicodeString;
       function GetTranslatorNameAndEmail:TranslatedUnicodeString;
 
@@ -1334,7 +1345,22 @@ end;
 
 function GetCurrentLanguage:LanguageString;
 begin
-  Result:=DefaultInstance.GetCurrentLanguage;
+  Result:=GetCurrentLocaleName;
+end;
+
+function GetCurrentLocaleName: LanguageString;
+begin
+  Result:=DefaultInstance.GetCurrentLocaleName;
+end;
+
+function GetCurrentLanguageCode: LanguageString;
+begin
+  Result := LocaleNameToLanguageCode(GetCurrentLocaleName);
+end;
+
+function LocaleNameToLanguageCode(const ALocaleName: LanguageString): LanguageString;
+begin
+  Result := LowerCase(LeftStr(ALocaleName, 2));
 end;
 
 { TDomain }
@@ -1862,6 +1888,16 @@ begin
 end;
 
 function TGnuGettextInstance.GetCurrentLanguage: LanguageString;
+begin
+  Result:=GetCurrentLocaleName;
+end;
+
+function TGnuGettextInstance.GetCurrentLanguageCode: LanguageString;
+begin
+  Result := LocaleNameToLanguageCode(GetCurrentLocaleName);
+end;
+
+function TGnuGettextInstance.GetCurrentLocaleName: LanguageString;
 begin
   Result:=curlang;
 end;
