@@ -50,11 +50,9 @@
     <DelphiCompile Include="GetResourceStringTest.dpr">
       <MainSource>MainSource</MainSource>
     </DelphiCompile>
-    <DCCReference Include="..\..\..\sample\gnugettext.pas" />
+    <DCCReference Include="..\..\..\dxgettext\sample\gnugettext.pas" />
     <DCCReference Include="GetResourceStringTestMain.pas" />
   </ItemGroup>
   <PropertyGroup>
-    <PreBuildEvent>call ..\buildtools\prebuild.cmd $(PROJECTPATH)</PreBuildEvent>
-    <PostBuildEvent>call ..\buildtools\postbuild.cmd $(OUTPUTDIR)$(OUTPUTNAME)</PostBuildEvent>
   </PropertyGroup>
 </Project>

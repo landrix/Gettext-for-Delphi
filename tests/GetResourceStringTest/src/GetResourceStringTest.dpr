@@ -4,7 +4,7 @@ program GetResourceStringTest;
 
 uses
   SysUtils,
-  gnugettext in '..\..\..\sample\gnugettext.pas',
+  gnugettext in '..\..\..\dxgettext\sample\gnugettext.pas',
   GetResourceStringTestMain in 'GetResourceStringTestMain.pas';
 
 begin
