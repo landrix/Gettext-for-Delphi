@@ -817,6 +817,27 @@ var
   HookedObjects:THookedObjects;
   KnownRetranslators:TList;
 
+// LO: Helper functions to make the ugly ifdefs more readable
+function doGetWideStrProp(AnObject:TObject; Propname:ComponentNameString):TranslatedUnicodeString;
+begin
+{$IFDEF dx_GetStrProp_reads_unicode}
+  Result := GetStrProp(AnObject, PropName);
+{$ELSE}
+  Result := GetWideStrProp(AnObject, PropName)
+{$ENDIF}
+end;
+
+{$IFDEF UNICODE}
+function doGetUnicodeStrProp(AnObject:TObject; Propname:ComponentNameString):TranslatedUnicodeString;
+begin
+{$IFDEF dx_GetStrProp_reads_unicode}
+  Result := GetStrProp(AnObject, PropName);
+{$ELSE}
+  Result := GetUnicodeStrProp(AnObject, PropName)
+{$ENDIF}
+end;
+{$ENDIF UNICODE}
+
 function GGGetEnvironmentVariable(const Name:widestring):widestring;
 var
   Len: integer;
@@ -2215,14 +2236,10 @@ begin
             tkString, tkLString :
               old := GetStrProp(AnObject, PropName);
             tkWString :
-              old :=
-                {$IFDEF dx_GetStrProp_reads_unicode}GetStrProp{$ELSE}GetWideStrProp{$ENDIF}
-                  (AnObject, PropName);
+              old := doGetWideStrProp(AnObject, Propname);
             {$IFDEF UNICODE}
             tkUString :
-              old :=
-                {$IFDEF dx_GetStrProp_reads_unicode}GetStrProp{$ELSE}GetUnicodeStrProp{$ENDIF}
-                  (AnObject, PropName);
+              old := doGetUnicodeStrProp(AnObject, Propname);
             {$ENDIF}
           else
             raise Exception.Create ('Internal error: Illegal property type. This problem needs to be solved by a programmer, try to find a workaround.');
