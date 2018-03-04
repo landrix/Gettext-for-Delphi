@@ -333,7 +333,11 @@ function getcurrenttextdomain: DomainString;
 procedure bindtextdomain(const szDomain: DomainString; const szDirectory: FilenameString);
 
 // Set language to use
-procedure UseLanguage(LanguageCode: LanguageString);
+///<summary>
+/// A LocaleName usually has the form ll_CC. Where ll is an ISO 639 two-letter language code,
+/// and CC is an ISO 3166 two-letter country code.
+/// For example, for German in Germany, ll is de, and CC is DE which results in de_DE </summary>
+procedure UseLanguage(LocaleName: LanguageString);
 function GetCurrentLanguage:LanguageString;
 
 // Translates a component (form, frame etc.) to the currently selected language.
@@ -619,8 +623,9 @@ type
       procedure DebugWriteln(Line: string);
       {$endif}
       procedure TranslateProperty(AnObject: TObject; PropInfo: PPropInfo;
-        TodoList: TStrings; const TextDomain:DomainString);
-      function Getdomain(const domain:DomainString; const DefaultDomainDirectory:FilenameString; const CurLang: LanguageString): TDomain;  // Translates a single property of an object
+        TodoList: TStrings; const TextDomain:DomainString);  // Translates a single property of an object
+      function Getdomain(const domain:DomainString; const DefaultDomainDirectory:FilenameString;
+        const LocaleName: LanguageString): TDomain;
 
       function GetResString(ResStringRec: PResStringRec): UnicodeString;
       function ResourceStringGettext(MsgId: MsgIdString): TranslatedUnicodeString;
@@ -1229,9 +1234,9 @@ begin
   Result:=DefaultInstance.GetTranslatorNameAndEmail;
 end;
 
-procedure UseLanguage(LanguageCode: LanguageString);
+procedure UseLanguage(LocaleName: LanguageString);
 begin
-  DefaultInstance.UseLanguage(LanguageCode);
+  DefaultInstance.UseLanguage(LocaleName);
 end;
 
 type
@@ -2934,7 +2939,8 @@ begin
 end;
 {$endif}
 
-function TGnuGettextInstance.Getdomain(const domain:DomainString; const DefaultDomainDirectory:FilenameString; const CurLang: LanguageString): TDomain;
+function TGnuGettextInstance.Getdomain(const domain:DomainString; const DefaultDomainDirectory:FilenameString;
+  const LocaleName: LanguageString): TDomain;
 // Retrieves the TDomain object for the specified domain.
 // Creates one, if none there, yet.
 var
@@ -2948,7 +2954,7 @@ begin
     {$endif}
     Result.Domain := Domain;
     Result.Directory := DefaultDomainDirectory;
-    Result.SetLanguageCode(curlang);
+    Result.SetLanguageCode(LocaleName);
     domainlist.AddObject(Domain, Result);
   end else begin
     Result := domainlist.Objects[idx] as TDomain;
