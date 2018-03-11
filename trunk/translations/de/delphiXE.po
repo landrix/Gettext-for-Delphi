@@ -1,7 +1,7 @@
 #
 msgid ""
 msgstr ""
-"Project-Id-Version: Delphi2010 German\n"
+"Project-Id-Version: DelphiXE German\n"
 "POT-Creation-Date: 2010-10-24 13:10\n"
 "PO-Revision-Date: 2010-10-24 13:10\n"
 "Last-Translator: twm <nospam@dummzeuch.de>\n"
