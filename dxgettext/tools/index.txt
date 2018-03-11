@@ -1,8 +1,25 @@
 Directory          Description
 =============================================================
-assemble           Puts all MO files into the .exe file
+..\dxgettext       Extract translation strings from source files (tools dxgettext and ggdxgettext)
+assemble           Puts all MO files into the .exe file (tools assemble and ggassemble)
+bplPoMerge         Tool to autotranslate BPL-Ressources to PO file
+ConvertTranslateDb Tool to convert Gorm's translateDB files from old to new format (Delphi 2009)
+dxgreg             registers tools to the Windows explorer context menu
+ExtractChangedTranslations
+                   extracts only new translated or changed string from two uniform translation files (Delphi 2009)
+ggfmt              Tool for .po context menu "Compile to mo file" and .mo context menu "Decompile to po file"
+ggmerge            Tool for .po context menu "Merge templlate"
+gorm               Editor for po files
+msgimport          Generates a .po file from an UTF-8 text file with two columns msgid<tab>msgtext
 msgmergePOT        Generates PO file if you have translated source code
 msgmkignore        Makes a list of PO file entries that do not seem translatable
 msgremove          Removes the entries in one PO file from another PO file
+msgshowheader      takes the name of an .mo file as parameter and outputs the header, i.e. _(''), to stdout.
+msgsplitTStrings   split all multiline translations into several single line translations,
+                   while still keeping the multiline translations around.
+
 msgstripCR         Removes \r from PO files
+ResStringsToPo     Converts a .po file from two PAS files with RESSOURCESTRINGs where one contains
+                   the source language (English) and the second one contains the destination language
 stripifdef         Generates a Delphi 6/7 only version of gnugettext.pas from the CVS version
+
