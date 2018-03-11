@@ -528,9 +528,11 @@ type
       DesignTimeCodePage:Integer;  /// See MultiByteToWideChar() in Win32 API for documentation
       SearchAllDomains: Boolean;  /// Should gettext and ngettext look in all other known domains after the current one
 
-      constructor Create;
+      ///<summary>
+      /// If LocaleName is not '', the instance will be initialized for the given language / locale </summary>
+      constructor Create(LocaleName: LanguageString = '');
       destructor Destroy; override;
-      procedure UseLanguage(LanguageCode: LanguageString);
+      procedure UseLanguage(LocaleName: LanguageString);
       procedure GetListOfLanguages (const domain:DomainString; list:TStrings); // Puts list of language codes, for which there are translations in the specified domain, into list
       {$ifndef UNICODE}
       function gettext(const szMsgId: ansistring): TranslatedUnicodeString; overload; virtual;
@@ -1799,7 +1801,7 @@ begin
   WhenNewDomainDirectory (szDomain, szDirectory);
 end;
 
-constructor TGnuGettextInstance.Create;
+constructor TGnuGettextInstance.Create(LocaleName: LanguageString = '');
 begin
   {$ifdef MSWindows}
   DesignTimeCodePage:=CP_ACP;
@@ -1826,7 +1828,7 @@ begin
   // Set some settings
   DefaultDomainDirectory := IncludeTrailingPathDelimiter(extractfilepath(ExecutableFilename))+'locale';
 
-  UseLanguage('');
+  UseLanguage(LocaleName);
 
   bindtextdomain(DefaultTextDomain, DefaultDomainDirectory);
   textdomain(DefaultTextDomain);
@@ -2523,38 +2525,38 @@ begin
   fWhenNewLanguageListeners.Remove(Listener);
 end;
 
-procedure TGnuGettextInstance.UseLanguage(LanguageCode: LanguageString);
+procedure TGnuGettextInstance.UseLanguage(LocaleName: LanguageString);
 var
   i,p:integer;
   dom:TDomain;
   l2:string;
 begin
   {$ifdef DXGETTEXTDEBUG}
-  DebugWriteln('UseLanguage('''+LanguageCode+'''); called');
+  DebugWriteln('UseLanguage('''+LocaleName+'''); called');
   {$endif}
 
-  if LanguageCode='' then begin
-    LanguageCode:=GGGetEnvironmentVariable('LANG');
+  if LocaleName='' then begin
+    LocaleName:=GGGetEnvironmentVariable('LANG');
     {$ifdef DXGETTEXTDEBUG}
-    DebugWriteln ('LANG env variable is '''+LanguageCode+'''.');
+    DebugWriteln ('LANG env variable is '''+LocaleName+'''.');
     {$endif}
     {$ifdef MSWINDOWS}
-    if LanguageCode='' then begin
-      LanguageCode:=GetWindowsLanguage;
+    if LocaleName='' then begin
+      LocaleName:=GetWindowsLanguage;
       {$ifdef DXGETTEXTDEBUG}
-      DebugWriteln ('Found Windows language code to be '''+LanguageCode+'''.');
+      DebugWriteln ('Found Windows language code to be '''+LocaleName+'''.');
       {$endif}
     end;
     {$endif}
-    p:=pos('.',LanguageCode);
+    p:=pos('.',LocaleName);
     if p<>0 then
-      LanguageCode:=LeftStr(LanguageCode,p-1);
+      LocaleName:=LeftStr(LocaleName,p-1);
     {$ifdef DXGETTEXTDEBUG}
-    DebugWriteln ('Language code that will be set is '''+LanguageCode+'''.');
+    DebugWriteln ('Language code that will be set is '''+LocaleName+'''.');
     {$endif}
   end;
 
-  curlang := LanguageCode;
+  curlang := LocaleName;
   for i:=0 to domainlist.Count-1 do begin
     dom:=domainlist.Objects[i] as TDomain;
     dom.SetLanguageCode (curlang);
