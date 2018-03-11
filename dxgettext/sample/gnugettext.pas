@@ -515,7 +515,7 @@ type
   IGnuGettextInstanceWhenNewLanguageListener = interface
     procedure WhenNewLanguage (const LanguageID:LanguageString);
   end;
-    
+
 {*------------------------------------------------------------------------------
   The main translation engine.
 -------------------------------------------------------------------------------}
@@ -804,7 +804,7 @@ type
 var
   // System information
   Win32PlatformIsUnicode:boolean=False;
-  
+
   // Information about files embedded inside .exe file
   FileLocator:TFileLocator;
 
@@ -1498,7 +1498,7 @@ var
   s:string;
 begin
   Propertyname:=uppercase(Propertyname)+': ';
-  sl:=TStringList.Create;    
+  sl:=TStringList.Create;
   try
     sl.Text:=utf8decode(gettext(''));
     for i:=0 to sl.Count-1 do begin
@@ -1653,7 +1653,7 @@ begin
   n1:=Number mod 10;
   n2:=Number mod 100;
 
-  if Number=1 then Result:=0 
+  if Number=1 then Result:=0
   else if (n1>=2) and (n1<=4) and ((n2<10) or (n2>=20)) then Result:=1
   else Result:=2;
 end;
@@ -3327,7 +3327,7 @@ begin
   SetLength (a, bufsize);
   SetLength (b, bufsize);
   str.Read(a[1],bufsize);
-  
+
   while true do begin
     rd:=str.Read(b[1],bufsize);
     p:=pos(signature,a+b);
@@ -3415,7 +3415,7 @@ begin
 
         // go to beginning of embedded block
         fs.Seek(headerbeginpos, soFromBeginning);
-        
+
         offset := tableoffset;
         Assert(sizeof(offset)=8);
         while (true) and (fs.Position<headerendpos) do begin
@@ -3614,7 +3614,7 @@ var
   i:integer;
 begin
   Assert (mofile<>nil);
-  
+
   MoFilesCS.BeginWrite;
   try
     dec (mofile.Users);
@@ -3698,7 +3698,7 @@ begin
     if item.obj is TComponent then begin
       comp:=TComponent(item.obj).FindComponent('GNUgettextMarker') as TGnuGettextComponentMarker;
       if Assigned(comp) and (self<>comp.Retranslator) then begin
-        comp.Retranslator.Execute; 
+        comp.Retranslator.Execute;
         Continue;
       end;
     end;
@@ -4047,7 +4047,7 @@ begin
       inc (a);
       inc (b);
     end;
-    if CompareResult=0 then 
+    if CompareResult=0 then
       CompareResult:=msgidsize-size;
     if CompareResult=0 then begin  // msgid=s
       // Found the msgid
