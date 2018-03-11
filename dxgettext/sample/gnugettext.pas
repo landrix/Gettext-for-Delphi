@@ -3825,7 +3825,7 @@ begin
     Inc(patchPosition, 2); // skip the jump
     patchPosition := pansiChar(Pointer(pointer(patchPosition)^)^);
   end;
-  offset:=integer(NewProc)-integer(pointer(patchPosition))-5;
+  offset:=pansiChar(NewProc)-pansiChar(pointer(patchPosition))-5;
 
   Patch[0] := ansichar($E9);
   Patch[1] := ansichar(offset and 255);
@@ -3846,7 +3846,7 @@ begin
   {$ifdef LINUX}
   pageSize:=sysconf (_SC_PAGE_SIZE);
   p:=pointer(PatchPosition);
-  p:=pointer((integer(p) + PAGESIZE-1) and not (PAGESIZE-1) - pageSize);
+  p:=pointer((pansiChar(p) + PAGESIZE-1) and not (PAGESIZE-1) - pageSize);
   if mprotect (p, pageSize, PROT_READ + PROT_WRITE + PROT_EXEC) <> 0 then
     RaiseLastOSError;
   {$endif}
