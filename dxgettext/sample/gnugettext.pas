@@ -18,6 +18,7 @@ unit gnugettext;
 (*                Arvid Winkelsdorf, Andreas Hausladen,       *)
 (*                Thomas Mueller (dummzeuch)                  *)
 (*                Olivier Sannier (obones)                    *)
+(*                Luebbe Onken (LO)                           *)
 (*                                                            *)
 (*  See http://dybdahl.dk/dxgettext/ for more information     *)
 (*                                                            *)
@@ -1274,7 +1275,6 @@ begin
 end;
 
 type
-// todo: is this still necessary? We already redefine NativeInt
 {$ifdef dx_Hinstance_is_Integer}
   THInstanceType = Integer;
 {$else dx_Hinstance_is_Integer}
