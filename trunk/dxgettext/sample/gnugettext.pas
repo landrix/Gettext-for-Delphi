@@ -15,7 +15,7 @@ unit gnugettext;
 (*  Contributors: Peter Thornqvist, Troy Wolbrink,            *)
 (*                Frank Andreas de Groot, Igor Siticov,       *)
 (*                Jacques Garcia Vazquez, Igor Gitman,        *)
-(*                Arvid Winkelsdorf,                          *)
+(*                Arvid Winkelsdorf, Andreas Hausladen,       *)
 (*                Thomas Mueller (dummzeuch)                  *)
 (*                Olivier Sannier (obones)                    *)
 (*                                                            *)
@@ -995,7 +995,7 @@ end;
 
 function dgettext_NoOp(const szDomain: DomainString; const szMsgId: MsgIdString): TranslatedUnicodeString;
 begin
-  //*** With this function Strings can be added to the po-file without beeing
+  //*** With this function Strings can be added to the po-file without being
   //    ResourceStrings (dxgettext will add the string and this function will
   //    return it without a change)
   //    see gettext manual
@@ -1274,6 +1274,7 @@ begin
 end;
 
 type
+// todo: is this still necessary? We already redefine NativeInt
 {$ifdef dx_Hinstance_is_Integer}
   THInstanceType = Integer;
 {$else dx_Hinstance_is_Integer}
@@ -3452,21 +3453,24 @@ end;
 constructor TFileLocator.Create;
 begin
   MoFilesCS:=TMultiReadExclusiveWriteSynchronizer.Create;
+
   MoFiles:=TStringList.Create;
-  filelist:=TStringList.Create;
-  {$ifdef LINUX}
-  filelist.Duplicates:=dupError;
-  filelist.CaseSensitive:=True;
-  {$endif}
   MoFiles.Sorted:=True;
   MoFiles.Duplicates:=dupError;
   MoFiles.CaseSensitive:=False;
-  {$ifdef MSWINDOWS}
+
+  filelist:=TStringList.Create;
   filelist.Duplicates:=dupError;
+  { TODO : what if it's neither LINUX nor MSWINDOWS? }
+  {$ifdef LINUX}
+  filelist.CaseSensitive:=True;
+  {$endif}
+  {$ifdef MSWINDOWS}
   filelist.CaseSensitive:=False;
   {$endif}
   filelist.Sorted:=True;
-{$IFDEF dx_SupportsResources}
+
+  {$IFDEF dx_SupportsResources}
   FResourceList := TStringList.Create;
   FResourceList.Duplicates := dupError;
   FResourceList.CaseSensitive := False;
@@ -3489,11 +3493,8 @@ begin
   end;
 {$ENDIF dx_SupportsResources}
 
-  while filelist.count > 0 do begin
-    Idx := filelist.Count - 1;
-    filelist.Objects[Idx].Free;
-    filelist.Delete (Idx);
-  end;
+  for Idx := 0 to filelist.Count-1  do
+    FileList.Objects[Idx].Free;
   FreeAndNil (filelist);
 
   FreeAndNil (MoFiles);
@@ -3850,7 +3851,7 @@ begin
   {$ifdef LINUX}
   pageSize:=sysconf (_SC_PAGE_SIZE);
   p:=pointer(PatchPosition);
-  p:=pointer((pansiChar(p) + PAGESIZE-1) and not (PAGESIZE-1) - pageSize);
+  p:=pointer((pansichar(p) + PAGESIZE-1) and not (PAGESIZE-1) - pageSize);
   if mprotect (p, pageSize, PROT_READ + PROT_WRITE + PROT_EXEC) <> 0 then
     RaiseLastOSError;
   {$endif}
