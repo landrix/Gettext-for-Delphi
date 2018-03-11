@@ -1300,7 +1300,7 @@ var
 begin
   with PStrData(Data)^ do begin
     SetString(Str, Buffer,
-      LoadString(Instance, Ident, @Buffer[0], sizeof(Buffer)));
+      LoadString(Instance, Ident, @Buffer[0], Length(Buffer)));
     Result := Str = '';
   end;
 end;
@@ -3020,11 +3020,7 @@ function TGnuGettextInstance.GetResString(ResStringRec: PResStringRec): UnicodeS
 {$ifdef MSWINDOWS}
 var
   Len: Integer;
-  {$IFDEF UNICODE}
-  Buffer: array [0..1023] of widechar;
-  {$else}
-  Buffer: array [0..1023] of ansichar;
-  {$endif}
+  Buffer: array [0..1023] of char;
 {$endif}
 {$ifdef LINUX }
 const
@@ -3062,7 +3058,7 @@ begin
   if not Win32PlatformIsUnicode then begin
     SetString(Result, Buffer,
       LoadString(FindResourceHInstance(ResStringRec.Module^),
-        ResStringRec.Identifier, Buffer, SizeOf(Buffer)))
+        ResStringRec.Identifier, Buffer, Length(Buffer)))
   end else begin
     Result := '';
     Len := 0;
