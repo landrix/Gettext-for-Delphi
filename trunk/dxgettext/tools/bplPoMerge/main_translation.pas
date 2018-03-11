@@ -23,7 +23,7 @@ type
   TfrmMain = class(TForm)
     panel2: TGroupBox;
     btMergePO: TButton;
-    Label3: TLabel;
+    l_PoFile: TLabel;
     edPO: TEdit;
     progressBusy: TProgressBar;
     chkUTF8: TCheckBox;
@@ -31,7 +31,7 @@ type
     listboxMerge: TListBox;
     OpenDialog: TOpenDialog;
     btCreatePO: TButton;
-    MainMenu1: TMainMenu;
+    TheMainMenu: TMainMenu;
     Files1: TMenuItem;
     Extractions1: TMenuItem;
     POfiles1: TMenuItem;
@@ -47,14 +47,17 @@ type
     panelClient: TPanel;
     Values: TListView;
     panel1: TGroupBox;
-    Label1: TLabel;
-    Label2: TLabel;
+    l_BplDir: TLabel;
+    l_LanguageExtension: TLabel;
     lbLoadInfo: TLabel;
     lbEntriesInfo: TLabel;
     edBPL: TEdit;
     edLang: TEdit;
     btExtract: TBitBtn;
     progressLoad: TProgressBar;
+    p_Bottom: TPanel;
+    b_SelectBplSourceDir: TButton;
+    b_SelectPo: TButton;
     procedure btExtractClick(Sender: TObject);
     procedure btMergePOClick(Sender: TObject);
     procedure FormCreate(Sender: TObject);
@@ -65,6 +68,8 @@ type
     procedure Load1Click(Sender: TObject);
     procedure Save1Click(Sender: TObject);
     procedure Help1Click(Sender: TObject);
+    procedure b_SelectBplSourceDirClick(Sender: TObject);
+    procedure b_SelectPoClick(Sender: TObject);
   private
     { Private-Deklarationen }
     FFilename: String;
@@ -92,7 +97,20 @@ implementation
 
 {$R *.dfm}
 
-uses StrUtils, gnugettext;
+uses StrUtils, gnugettext, FileCtrl;
+
+// taken from https://forums.embarcadero.com/thread.jspa?threadID=112112
+
+type
+  TUTF8NoBOMEncoding = class(TUTF8Encoding)
+  public
+    function GetPreamble: TBytes; override;
+  end;
+
+function TUTF8NoBOMEncoding.GetPreamble: TBytes;
+begin
+  SetLength(Result, 0);
+end;
 
 function TfrmMain.CorrectStringToPO(strIn:String) : String;
 begin
@@ -294,22 +312,25 @@ var Buffer: array of Byte;
     nstrSize: Integer;
 begin
   streamRes:=TResourceStream.CreateFromID(hModule,LongWord(lpszName),lpszType);
-  streamRes.Seek(0,0);
-  nIdx:=0;
-  while streamRes.Position<streamRes.Size do begin
-    // make the work visible
-    progressLoad.Position:=(progressLoad.Position+1) mod 100;
-    SetLength(Buffer,2);
-    streamRes.Read(Buffer[0],2);  // Size of next string
-    nStrSize:=Buffer[0]+Buffer[1]*256;
-    if nStrSize=0 then
-      break;
-    SetLength(Buffer,nStrSize*2);  // *2 because of WideString
-    streamRes.Read(Buffer[0],nStrSize*2);
-    MergeToValues(Format('%s_STRING_%d',[ChangeFileExt(ExtractFilename(FFilename),''),(LongWord(lpszName)-1)*16+nIdx]),WideString(Buffer),FColumn);
-    Inc(nIdx);
+  try
+    streamRes.Seek(0,0);
+    nIdx:=0;
+    while streamRes.Position<streamRes.Size do begin
+      // make the work visible
+      progressLoad.Position:=(progressLoad.Position+1) mod 100;
+      SetLength(Buffer,2);
+      streamRes.Read(Buffer[0],2);  // Size of next string
+      nStrSize:=Buffer[0]+Buffer[1]*256;
+      if nStrSize=0 then
+        break;
+      SetLength(Buffer,nStrSize*2);  // *2 because of WideString
+      streamRes.Read(Buffer[0],nStrSize*2);
+      MergeToValues(Format('%s_STRING_%d',[ChangeFileExt(ExtractFilename(FFilename),''),(LongWord(lpszName)-1)*16+nIdx]),WideString(Buffer),FColumn);
+      Inc(nIdx);
+    end;
+  finally
+    streamRes.Free;
   end;
-  streamRes.Free;
 end;
 
 procedure TfrmMain.LoadValues(sFilename:String;nCol:Integer);
@@ -317,38 +338,59 @@ const nMaxStrLen = 2000;
 var lwInstance: THandle;
 begin
   lwInstance:=LoadLibraryEx(PChar(sFilename),0,LOAD_LIBRARY_AS_DATAFILE);
-  if (lwInstance=0) then exit;
-  FFilename:=sFilename;
-  FColumn:=nCol;
-  // enum ressourcestrings
-  EnumResourceNames(lwInstance,RT_STRING,@EnumResourceNames_Callback,LongWord(Self));
-  // enum forms
-  EnumResourceNames(lwInstance,RT_RCDATA,@EnumResourceNames_Callback,LongWord(Self));
-  FreeLibrary(lwInstance);
+  try
+    if (lwInstance=0) then
+      exit; //==>
+    FFilename:=sFilename;
+    FColumn:=nCol;
+    // enum ressourcestrings
+    EnumResourceNames(lwInstance,RT_STRING,@EnumResourceNames_Callback,LongWord(Self));
+    // enum forms
+    EnumResourceNames(lwInstance,RT_RCDATA,@EnumResourceNames_Callback,LongWord(Self));
+  finally
+    FreeLibrary(lwInstance);
+  end;
 end;
 
 procedure TfrmMain.btExtractClick(Sender: TObject);
-var sr: TSearchRec;
+var
+  sr: TSearchRec;
+  dir: string;
+  fn: string;
+  FullFn: string;
+  LangExt: string;
 begin
   btExtract.Enabled:=False;
+
   Values.Items.BeginUpdate;
   Values.Items.Clear;
   Values.Items.EndUpdate;
+
+  dir :=IncludeTrailingPathDelimiter(ExtractFilePath(edBPL.Text));
+  LangExt := edLang.Text;
   if FindFirst(edBPL.Text,faAnyFile,sr)=0 then begin
     repeat
       Values.Items.BeginUpdate;
-      lbLoadInfo.Caption:=Format(_('Loading %s ...'),[sr.Name]);
-      Application.ProcessMessages;
-      LoadValues(ExpandFilename(ExtractFilePath(edBPL.Text)+'/'+sr.Name),colBPL);
-      lbLoadInfo.Caption:=Format(_('Loading %s ...'),[ChangeFileExt(sr.Name,edLang.Text)]);
-      Application.ProcessMessages;
-      LoadValues(ChangeFileExt(ExpandFilename(ExtractFilePath(edBPL.Text)+'/'+sr.Name),edLang.Text),colLang);
-      lbEntriesInfo.Caption:=Format(_('%d translations available'),[Values.Items.Count]);
-      Values.Items.EndUpdate;
+      try
+        fn := sr.Name;
+        lbLoadInfo.Caption:=Format(_('Loading %s ...'),[fn]);
+        Application.ProcessMessages;
+        fullFn := ExpandFilename(dir + fn);
+        LoadValues(fn, colBPL);
+
+        lbLoadInfo.Caption:=Format(_('Loading %s ...'),[ChangeFileExt(fn,LangExt)]);
+        Application.ProcessMessages;
+        FullFn := ChangeFileExt(FullFn, LangExt);
+        LoadValues(FullFn,colLang);
+
+        lbEntriesInfo.Caption:=Format(_('%d translations available'),[Values.Items.Count]);
+      finally
+        Values.Items.EndUpdate;
+      end;
     until FindNext(sr)<>0;
     FindClose(sr);
   end;
-  lbLoadInfo.Caption:=_('ready');
+  lbLoadInfo.Caption:=_('done');
   progressLoad.Position:=0;
   btExtract.Enabled:=True;
 end;
@@ -389,96 +431,128 @@ var tmpList:TStringList;
     Item: TListItem;
     State: Integer;
     strRow: AnsiString;
+    Encoding: TEncoding;
 begin
   btMergePO.Enabled:=False;
+
   listboxMerge.Items.Clear;
-  tmpList:=TStringList.Create;
+
+  Encoding := nil;
+  tmpList:=nil;
   outList:=TStringList.Create;
   try
-    tmpList.LoadFromFile(edPO.Text);
-    // if file exists -> backup file
-    DeleteFile(edPO.Text+'.bak');
-    RenameFile(edPO.Text,edPO.Text+'.bak');
-  except
-  end;
-  n:=0;
-  progressBusy.Min:=0;
-  progressBusy.Max:=tmpList.Count;
-  State:=0;  // 0:neutral, 1:msgid, 2:msgstr
-  while n<tmpList.Count do begin
+    tmpList:=TStringList.Create;
     if chkUTF8.Checked then
-      strRow:=UTF8ToAnsi(tmpList[n])
+      Encoding := TUTF8NoBOMEncoding.Create
     else
-      strRow:=tmpList[n];
-    case State of
-    0: begin
-        outList.Add(strRow);
-        if pos('msgid ',strRow)>0 then begin
-          State:=1;
-          msgid:=DeleteQuotes(copy(strRow,7,Length(strRow)-6));
-        end;
-        Inc(n);
-       end;
-    1: begin
-        if pos('msgstr ',strRow)>0 then begin
-          State:=2;
-          msgstr:=DeleteQuotes(copy(strRow,8,Length(strRow)-7));
-          end
-        else begin
+      Encoding := TMBCSEncoding.Create(CP_ACP, 0, 0);
+    try
+      tmpList.LoadFromFile(edPO.Text, Encoding);
+      // if file exists -> backup file
+      DeleteFile(edPO.Text+'.bak');
+      RenameFile(edPO.Text,edPO.Text+'.bak');
+    except
+    end;
+    n:=0;
+    progressBusy.Min:=0;
+    progressBusy.Max:=tmpList.Count;
+    State:=0;  // 0:neutral, 1:msgid, 2:msgstr
+    while (n<tmpList.Count) or (State = 2) do begin
+      if n >= tmpList.Count then begin
+        // this is so we can write the last msgstr
+        strRow := '';
+      end else begin
+        strRow:=tmpList[n];
+      end;
+      case State of
+      0: begin
           outList.Add(strRow);
-          msgid:=msgid+DeleteQuotes(strRow);
-        end;
-        Inc(n);
-       end;
-    2: begin
-        if pos('"',strRow)>0 then begin
-          msgstr:=msgstr+DeleteQuotes(strRow);
+          if pos('msgid ',strRow)>0 then begin
+            State:=1;
+            msgid:=DeleteQuotes(copy(strRow,7,Length(strRow)-6));
+          end;
           Inc(n);
-          end
-        else begin
-          if Length(msgstr)>0 then begin
-            // allready filled -> do not replace it
+         end;
+      1: begin
+          if pos('msgstr ',strRow)>0 then begin
+            State:=2;
+            msgstr:=DeleteQuotes(copy(strRow,8,Length(strRow)-7));
             end
           else begin
-            Item:=nil;
-            for n1:=0 to Values.Items.Count-1 do begin
-              if Values.Items[n1].SubItems[0]=msgid then begin
-                Item:=Values.Items[n1];
-                break;
+            outList.Add(strRow);
+            msgid:=msgid+DeleteQuotes(strRow);
+          end;
+          Inc(n);
+         end;
+      2: begin
+          if pos('"',strRow)>0 then begin
+            msgstr:=msgstr+DeleteQuotes(strRow);
+            Inc(n);
+            end
+          else begin
+            if Length(msgstr)>0 then begin
+              // allready filled -> do not replace it
+              end
+            else begin
+              Item:=nil;
+              for n1:=0 to Values.Items.Count-1 do begin
+                if Values.Items[n1].SubItems[0]=msgid then begin
+                  Item:=Values.Items[n1];
+                  break;
+                end;
+              end;
+              if Item<>nil then begin
+                msgstr:=Item.SubItems[1];
+                listboxMerge.Items.Add(Format(_('row %d: %s -> %s -> %s'),[n,Item.Caption,Item.SubItems[0],Item.SubItems[1]]));
               end;
             end;
-            if Item<>nil then begin
-              msgstr:=Item.SubItems[1];
-              listboxMerge.Items.Add(Format(_('row %d: %s -> %s -> %s'),[n,Item.Caption,Item.SubItems[0],Item.SubItems[1]]));
-            end;
+            AddMsgStr(outList,'msgstr',msgstr);
+            State:=0;
           end;
-          AddMsgStr(outList,'msgstr',msgstr);
-          State:=0;
-        end;
-    	 end;
+         end;
+      end;
+      progressBusy.Position:=n;
+      Application.ProcessMessages;
     end;
-    progressBusy.Position:=n;
-    Application.ProcessMessages;
+    progressBusy.Position:=0;
+    outList.SaveToFile(edPO.Text, Encoding);
+  finally
+    Encoding.Free;
+    tmpList.Free;
+    outList.Free;
   end;
-  progressBusy.Position:=0;
-  tmpList.Free;
-  if chkUTF8.Checked then
-    for n:=0 to outList.Count-1 do
-      outList[n]:=AnsiToUTF8(outList[n]);
-  outList.SaveToFile(edPO.Text);
-  outList.Free;
   btMergePO.Enabled:=True;
+end;
+
+procedure TfrmMain.b_SelectBplSourceDirClick(Sender: TObject);
+var
+  dir: string;
+begin
+  dir := ExtractFileDir(edBPL.Text);
+  if SelectDirectory(_('Select directory containing translation bpl files'), '', dir, [sdNewUI], Self) then
+    edBPL.Text := IncludeTrailingPathDelimiter(dir) + '*.bpl';
+end;
+
+procedure TfrmMain.b_SelectPoClick(Sender: TObject);
+begin
+  OpenDialog.Filter := 'PO files (*.po)|*.po';
+  OpenDialog.FileName := edPO.Text;
+  if OpenDialog.Execute(Self.Handle) then
+    edPO.Text := OpenDialog.FileName;
 end;
 
 procedure TfrmMain.FormCreate(Sender: TObject);
 begin
   TranslateComponent(self);
+  lbLoadInfo.Caption := '';
+  lbEntriesInfo.Caption := '';
 end;
 
 procedure TfrmMain.btCreatePOClick(Sender: TObject);
 var outList:TStringList;
     n: Integer;
     strMsgID,strMsgStr: String;
+  Encoding: TEncoding;
 begin
   btCreatePO.Enabled:=False;
   listboxMerge.Items.Clear;
@@ -530,7 +604,16 @@ begin
   if chkUTF8.Checked then
     for n:=0 to outList.Count-1 do
       outList[n]:=AnsiToUTF8(outList[n]);
-  outList.SaveToFile(edPO.Text);
+
+  if chkUTF8.Checked then
+    Encoding := TUTF8NoBOMEncoding.Create
+  else
+    Encoding := TMBCSEncoding.Create(CP_ACP, 0, 0);
+  try
+    outList.SaveToFile(edPO.Text, Encoding);
+  finally
+    Encoding.Free;
+  end;
   outList.Free;
   progressBusy.Position:=0;
   btCreatePO.Enabled:=True;
@@ -552,18 +635,27 @@ var n:Integer;
     tmpList: TStrings;
     strRow: String;
 begin
+  OpenDialog.FileName := IncludeTrailingPathDelimiter(ExtractFilePath(Application.ExeName))
+    + 'resources.txt';
+  OpenDialog.Filter := 'Text files (*.txt)|*.txt';
   if OpenDialog.Execute then begin
     tmpList:=TStringList.Create;
     tmpList.LoadFromFile(OpenDialog.Filename);
-    for n:=0 to tmpList.Count-1 do begin
-      strRow:=tmpList[n];
-      with Values.Items.Add do begin
-        Caption:=copy(strRow,1,Pos(#9,strRow)-1);
-        System.Delete(strRow,1,Pos(#9,strRow));
-        SubItems.Add(copy(strRow,1,Pos(#9,strRow)-1));
-        System.Delete(strRow,1,Pos(#9,strRow));
-        SubItems.Add(strRow);
+    Values.Items.BeginUpdate;
+    try
+      Values.Items.Clear;
+      for n:=0 to tmpList.Count-1 do begin
+        strRow:=tmpList[n];
+        with Values.Items.Add do begin
+          Caption:=copy(strRow,1,Pos(#9,strRow)-1);
+          System.Delete(strRow,1,Pos(#9,strRow));
+          SubItems.Add(copy(strRow,1,Pos(#9,strRow)-1));
+          System.Delete(strRow,1,Pos(#9,strRow));
+          SubItems.Add(strRow);
+        end;
       end;
+    finally
+      Values.Items.EndUpdate;
     end;
     tmpList.Free;
   end;
@@ -573,6 +665,9 @@ procedure TfrmMain.Save1Click(Sender: TObject);
 var n:Integer;
     tmpList: TStrings;
 begin
+  SaveDialog.FileName := IncludeTrailingPathDelimiter(ExtractFilePath(Application.ExeName))
+    + 'resources.txt';
+  SaveDialog.Filter := 'Text files (*.txt)|*.txt';
   if SaveDialog.Execute then begin
     tmpList:=TStringList.Create;
     for n:=0 to Values.Items.Count-1 do
