@@ -8,6 +8,7 @@ type
     public
       inputfilename:string;
       outputfilename:string;
+      IgnoreDuplicates: boolean;
       procedure Execute;
     end;
 
@@ -50,7 +51,11 @@ begin
             pe.MsgId:=copy(line,1,p-1);
             pe.MsgStr:=copy(line,p+1,maxint);
             pe.AutoCommentList.Add('#. Row '+IntToStr(row));
-            polist.Add(pe);
+            if IgnoreDuplicates and Assigned(polist.Find(pe.MsgId)) then begin
+              WriteLn('ignoring duplicate MsgId ' + pe.MsgId);
+              FreeAndNil(pe);
+            end else
+              polist.Add(pe);
           end;
         end;
       end;

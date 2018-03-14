@@ -41,6 +41,8 @@ begin
     if uparam='-O' then begin
       inc (i);
       engine.outputfilename:=ExpandFileName(paramstr(i));
+    end else if uparam = '--IGNORE-DUPLICATES' then begin
+       engine.IgnoreDuplicates := true;
     end else begin
       engine.inputfilename:=ExpandFileName(param);
     end;
@@ -74,7 +76,7 @@ begin
   writeln (Format(_('msgimport %s'),(.version.)));
   writeln;
   writeln (_('Usage:'));
-  writeln (_('  msgimport textfile.txt -o output.po'));
+  writeln (_('  msgimport textfile.txt -o output.po --ignore-duplicates'));
   writeln;
   writeln (_('This will generate a po file from an ascii tabulated file that'+sLineBreak+
              'contains two columns. The first column becomes msgid, and the'+sLineBreak+
