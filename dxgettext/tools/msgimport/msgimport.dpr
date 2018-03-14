@@ -40,4 +40,8 @@ begin
       ExitCode:=1;
     end;
   end;
+  if DebugHook <> 0 then begin
+    Write('press <enter>');
+    Readln;
+  end;
 end.
