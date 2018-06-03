@@ -56,6 +56,14 @@ interface
 // to the class name. Default: off
 {.$define dx_ChangeProxyClassname}
 
+// If the conditional dx_EMPTY_TO_EMPTY is defined translating an empty string results in an
+// empty string.
+// This can also be set at runtime by setting the EmptyToEmpty field of a TGnuGettextInstance
+// (e.g. the defaultInstance).
+// The default behaviour is to return the header entry as per
+// https://www.gnu.org/software/gettext/manual/html_node/PO-Files.html
+{.$define dx_EMPTY_TO_EMPTY}
+
 // ### LO - Workaround aka hack for programs compiled with German Delphi
 //
 // If the current OS Language is not German, immediately add a Delphi RTL domain
@@ -526,6 +534,15 @@ type
       fOnDebugLine:TOnDebugLine;
     public
       Enabled:Boolean;      /// Set this to false to disable translations
+      ///<summary>
+      /// Set this to true, if you want the empty string to be "translated" to an empty string.
+      /// The default behaviour is to return the po file header.
+      /// https://www.gnu.org/software/gettext/manual/html_node/PO-Files.html
+      /// "An empty untranslated-string is reserved to contain the header entry with the meta
+      ///  information (see Header Entry). This header entry should be the first entry of the file.
+      ///  The empty untranslated-string is reserved for this purpose and must not be
+      ///  used anywhere else. </summary> 
+      EmptyToEmpty: Boolean;
       DesignTimeCodePage:Integer;  /// See MultiByteToWideChar() in Win32 API for documentation
       SearchAllDomains: Boolean;  /// Should gettext and ngettext look in all other known domains after the current one
 
@@ -1804,6 +1821,10 @@ end;
 
 constructor TGnuGettextInstance.Create(LocaleName: LanguageString = '');
 begin
+  {$ifdef dx_EMPTY_TO_EMPTY}
+  EmptyToEmpty := True;
+  {$endif}
+
   {$ifdef MSWindows}
   DesignTimeCodePage:=CP_ACP;
   {$endif}
@@ -1888,12 +1909,16 @@ begin
     {$endif}
     Result:=szMsgId;
   end else begin
-    Result:=UTF8Decode(EnsureLineBreakInTranslatedString(getdomain(szDomain,DefaultDomainDirectory,CurLang).gettext(StripCRRawMsgId(utf8encode(szMsgId)))));
+    if EmptyToEmpty and (szMsgId = '') then begin
+      Result := '';
+    end else begin
+      Result:=UTF8Decode(EnsureLineBreakInTranslatedString(getdomain(szDomain,DefaultDomainDirectory,CurLang).gettext(StripCRRawMsgId(utf8encode(szMsgId)))));
 
-    {$ifdef DXGETTEXTDEBUG}
-    if (szMsgId<>'') and (Result='') then
-      DebugWriteln (Format('Error: Translation of %s was an empty string. This may never occur.',[szMsgId]));
-    {$endif}
+      {$ifdef DXGETTEXTDEBUG}
+      if (szMsgId<>'') and (Result='') then
+        DebugWriteln (Format('Error: Translation of %s was an empty string. This may never occur.',[szMsgId]));
+      {$endif}
+    end;
   end;
 end;
 
@@ -1939,7 +1964,7 @@ var
   domainIndex: Integer;
 begin
   Result := dgettext(curmsgdomain, szMsgId);
-  if SearchAllDomains then begin
+  if SearchAllDomains and (szMsgId <> '') then begin
     domainIndex := 0;
     while (Result = szMsgId) and (domainIndex < domainlist.count) do begin
       domain := domainlist[domainIndex];
@@ -1957,7 +1982,7 @@ var
   domainIndex: Integer;
 begin
   Result := dgettext(curmsgdomain, szMsgId);
-  if SearchAllDomains then begin
+  if SearchAllDomains and (szMsgId <> '') then begin
     domainIndex := 0;
     while (Result = szMsgId) and (domainIndex < domainlist.count) do begin
       domain := domainlist[domainIndex];
@@ -1978,7 +2003,7 @@ end;
 
 function TGnuGettextInstance.gettext_NoOp(const szMsgId: MsgIdString): TranslatedUnicodeString;
 begin
-  //*** With this function Strings can be added to the po-file without beeing
+  //*** With this function Strings can be added to the po-file without being
   //    ResourceStrings (dxgettext will add the string and this function will
   //    return it without a change)
   //    see gettext manual
