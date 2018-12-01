@@ -266,8 +266,8 @@ interface
   {$DEFINE dx_has_VclThemes}
   {$DEFINE dx_midstr_in_AnsiStrings}
 {$endif}
-{$ifdef VER320}
-  // Delphi 10.2 Tokyo
+{$if CompilerVersion >= 32}
+  // Delphi 10.2 Tokyo and up
   {$DEFINE dx_has_Unsafe_Warnings}
   {$DEFINE dx_has_WideStrings}
   {$DEFINE dx_StringList_has_OwnsObjects}
