@@ -6,7 +6,7 @@ unit gnugettextvclauto;
 (*  You may distribute and modify this file as you wish       *)
 (*  for free                                                  *)
 (*                                                            *)
-(*  See http://dybdahl.dk/dxgettext/ for more information     *)
+(*  See http://dxgettext.po.dk for more information           *)
 (*                                                            *)
 (**************************************************************)
 
