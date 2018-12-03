@@ -4,7 +4,7 @@
 
   @author Lars B. Dybdahl and others
   @version $LastChangedRevision: 220 $
-  @see http://dybdahl.dk/dxgettext/
+  @see http://dxgettext.po.dk
 -------------------------------------------------------------------------------}
 unit gnugettext;
 (**************************************************************)
@@ -20,14 +20,11 @@ unit gnugettext;
 (*                Olivier Sannier (obones)                    *)
 (*                Luebbe Onken (LO)                           *)
 (*                                                            *)
-(*  See http://dybdahl.dk/dxgettext/ for more information     *)
+(*  See http://dxgettext.po.dk for more information           *)
 (*                                                            *)
 (**************************************************************)
 
-// Information about this file:
-// $LastChangedDate: 2010-08-25 15:40:17 +0200 (on, 25 aug 2010) $
-// $LastChangedRevision: 220 $
-// $HeadURL: http://svn.berlios.de/svnroot/repos/dxgettext/trunk/dxgettext/sample/gnugettext.pas $
+// $HeadURL: https://svn.code.sf.net/p/dxgettext/code/trunk/dxgettext/sample/gnugettext.pas $
 
 // Redistribution and use in source and binary forms, with or without
 // modification, are permitted provided that the following conditions are met:
