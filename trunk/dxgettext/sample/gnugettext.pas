@@ -4,7 +4,7 @@
 
   @author Lars B. Dybdahl and others
   @version $LastChangedRevision: 220 $
-  @see http://dxgettext.po.dk
+  @see http://dxgettext.po.dk/
 -------------------------------------------------------------------------------}
 unit gnugettext;
 (**************************************************************)
@@ -20,7 +20,7 @@ unit gnugettext;
 (*                Olivier Sannier (obones)                    *)
 (*                Luebbe Onken (LO)                           *)
 (*                                                            *)
-(*  See http://dxgettext.po.dk for more information           *)
+(*  See http://dxgettext.po.dk/ for more information          *)
 (*                                                            *)
 (**************************************************************)
 
@@ -273,7 +273,7 @@ interface
   {$DEFINE dx_has_LpVoid}
   {$DEFINE dx_has_VclThemes}
   {$DEFINE dx_midstr_in_AnsiStrings}
-{$ifend}
+{$endif}
 
 {$ifdef dx_has_Unsafe_Warnings}
   {$WARN UNSAFE_TYPE OFF}

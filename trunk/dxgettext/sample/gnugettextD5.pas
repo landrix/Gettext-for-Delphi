@@ -1,9 +1,4 @@
 unit gnugettextD5;
-// Information about this file:
-// $LastChangedDate: 2005-04-04 19:40:57 +0200 (ma, 04 apr 2005) $
-// $LastChangedRevision: 60 $
-// $HeadURL: http://svn.berlios.de/svnroot/repos/dxgettext/trunk/dxgettext/sample/gnugettextD5.pas $
-
 // Delphi 5 optimized interface for gnugettext.pas
 // This unit must only be used on Delphi 5. When you upgrade to Delphi 6 or
 // later, you should remove this unit and replace all reference to gnugettextD5
