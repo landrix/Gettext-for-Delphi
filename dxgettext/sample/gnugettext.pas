@@ -273,7 +273,7 @@ interface
   {$DEFINE dx_has_LpVoid}
   {$DEFINE dx_has_VclThemes}
   {$DEFINE dx_midstr_in_AnsiStrings}
-{$endif}
+{$ifend}
 
 {$ifdef dx_has_Unsafe_Warnings}
   {$WARN UNSAFE_TYPE OFF}
