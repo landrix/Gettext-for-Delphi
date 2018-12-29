@@ -6,7 +6,7 @@ unit xgettext;
 (*  E-mail: Lars@dybdahl.dk, phone +45 70201241                 *)
 (*  You received this file under the Mozilla Public License 1.1 *)
 (*                                                              *)
-(*  See http://dybdahl.dk/dxgettext/ for more information       *)
+(*  See http://dxgettext.po.dk/ for more information            *)
 (*                                                              *)
 (****************************************************************)
 
