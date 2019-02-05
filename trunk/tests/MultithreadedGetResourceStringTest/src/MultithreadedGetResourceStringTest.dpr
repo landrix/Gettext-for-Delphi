@@ -1,11 +1,11 @@
-program GetResourceStringTest;
+program MultithreadedGetResourceStringTest;
 
 {$APPTYPE CONSOLE}
 
 uses
   SysUtils,
   gnugettext in '..\..\..\dxgettext\sample\gnugettext.pas',
-  GetResourceStringTestMain in 'GetResourceStringTestMain.pas';
+  MultithreadedGetResourceStringTestMain in 'MultithreadedGetResourceStringTestMain.pas';
 
 begin
   try
