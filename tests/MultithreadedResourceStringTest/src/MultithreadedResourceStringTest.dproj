@@ -5,8 +5,8 @@
     <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
     <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
     <DCC_DCCCompiler>DCC32</DCC_DCCCompiler>
-    <DCC_DependencyCheckOutputName>..\MultithreadedGetResourceStringTest.exe</DCC_DependencyCheckOutputName>
-    <MainSource>MultithreadedGetResourceStringTest.dpr</MainSource>
+    <DCC_DependencyCheckOutputName>..\MultithreadedResourceStringTest.exe</DCC_DependencyCheckOutputName>
+    <MainSource>MultithreadedResourceStringTest.dpr</MainSource>
   </PropertyGroup>
   <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|AnyCPU' ">
     <Version>7.0</Version>
@@ -31,16 +31,16 @@
       <Excluded_Packages Name="$(BDS)\bin\dcloffice2k100.bpl">Microsoft Office 2000 Sample Automation Server Wrapper Components</Excluded_Packages>
       <Excluded_Packages Name="$(BDS)\bin\dclofficexp100.bpl">Microsoft Office XP Sample Automation Server Wrapper Components</Excluded_Packages>
       <Excluded_Packages Name="$(BDS)\bin\dcltee7100.bpl">TeeChart Components</Excluded_Packages>
-    </Excluded_Packages><Source><Source Name="MainSource">MultithreadedGetResourceStringTest.dpr</Source></Source></Delphi.Personality></BorlandProject></BorlandProject>
+    </Excluded_Packages><Source><Source Name="MainSource">MultithreadedResourceStringTest.dpr</Source></Source></Delphi.Personality></BorlandProject></BorlandProject>
   </ProjectExtensions>
   <Import Project="$(MSBuildBinPath)\Borland.Delphi.Targets" />
   <PropertyGroup>
   </PropertyGroup>
   <ItemGroup>
-    <DelphiCompile Include="MultithreadedGetResourceStringTest.dpr">
+    <DelphiCompile Include="MultithreadedResourceStringTest.dpr">
       <MainSource>MainSource</MainSource>
     </DelphiCompile>
     <DCCReference Include="..\..\..\dxgettext\sample\gnugettext.pas" />
-    <DCCReference Include="MultithreadedGetResourceStringTestMain.pas" />
+    <DCCReference Include="MultithreadedResourceStringTestMain.pas" />
   </ItemGroup>
 </Project>
