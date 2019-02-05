@@ -5,7 +5,7 @@ program MultithreadedResourceStringTest;
 uses
   SysUtils,
   gnugettext in '..\..\..\dxgettext\sample\gnugettext.pas',
-  MultithreadedResourceStringTestMain in 'MultithreadedResourceStringTestMain.pas';
+  MultithreadedResourceStringTestMain in '..\src\MultithreadedResourceStringTestMain.pas';
 
 begin
   try
