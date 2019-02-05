@@ -47,8 +47,6 @@ begin
     for i := Low(Threads) to High(Threads) do begin
       WriteLn('Thread ', i, ': ', Threads[i].FCounter);
     end;
-    Write('Press <enter> to exit');
-    Readln;
   finally
     for i := Low(Threads) to High(Threads) do begin
       Threads[i].free;
@@ -61,6 +59,9 @@ begin
   AddDomainForResourceString('bla');
   RunTest('DE', 'Hallo');
   RunTest('FR', '''allo');
+  RunTest('EN', 'Hello');
+  Write('Press <enter> to exit');
+  Readln;
 end;
 
 resourcestring
@@ -86,7 +87,7 @@ begin
   while not Terminated do begin
     s := sHello;
     if s <> FHello then
-      raise exception.Create('Hello was translated wrongly to German.');
+      raise exception.CreateFmt('Hello was translated wrongly. Expected %s but got %s.', [FHello, s]);
 
     s := sWorld;
     if s <> 'World' then
