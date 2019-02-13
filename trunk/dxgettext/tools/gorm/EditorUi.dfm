@@ -74,6 +74,7 @@ object FormEditor: TFormEditor
         Top = 20
         Width = 187
         Height = 22
+        Hint = '(F3)'
         EditLabel.Width = 110
         EditLabel.Height = 14
         EditLabel.Caption = 'Filter: MSGID, MSGSTR'
@@ -116,6 +117,8 @@ object FormEditor: TFormEditor
         Top = 12
         Width = 112
         Height = 27
+        Hint = 'Refresh filter'
+        Action = act_RefreshFilter
         Caption = 'Refresh filter'
         Glyph.Data = {
           36080000424D3608000000000000360000002800000020000000100000000100
@@ -186,7 +189,6 @@ object FormEditor: TFormEditor
           9F0099999900FF00FF00FF00FF00FF00FF00FF00FF00FF00FF00}
         NumGlyphs = 2
         TabOrder = 5
-        OnClick = btnRefreshFilterClick
       end
       object ButtonShowAll: TBitBtn
         Left = 8
@@ -494,7 +496,7 @@ object FormEditor: TFormEditor
           Top = 32
           Width = 492
           Height = 94
-          Hint = 'Enter the translation here'
+          Hint = 'Enter the translation here (F6)'
           Margins.Top = 1
           Align = alClient
           Font.Charset = DEFAULT_CHARSET
@@ -1257,7 +1259,6 @@ object FormEditor: TFormEditor
       Category = 'file'
       Caption = 'Reload'
       Hint = 'Reload from .po file. Warning: Any changes will be lost.'
-      ShortCut = 116
       OnExecute = act_FileReloadExecute
     end
     object act_FileSave: TAction
@@ -1330,7 +1331,7 @@ object FormEditor: TFormEditor
     end
     object act_LabelsToggleIgnore: TAction
       Category = 'labels'
-      Caption = 'Toggle "ignore" label'
+      Caption = 'Toggle "&ignore" label'
       Hint = 'Toggle the "ignore" label of the current entry.'
       ImageIndex = 0
       ShortCut = 49225
@@ -1338,7 +1339,7 @@ object FormEditor: TFormEditor
     end
     object act_LabelsToggleFuzzy: TAction
       Category = 'labels'
-      Caption = 'Toggle "fuzzy" status'
+      Caption = 'Toggle "f&uzzy" status'
       Hint = 'Toggle the "fuzzy" status of the current entry.'
       ImageIndex = 0
       ShortCut = 16454
@@ -1546,6 +1547,24 @@ object FormEditor: TFormEditor
       Category = 'trans'
       Caption = 'Create translation tracking msgstr'
       OnExecute = act_TransCreateMsgstrExecute
+    end
+    object act_Filter: TAction
+      Category = 'nomenu'
+      Caption = 'Filter'
+      ShortCut = 114
+      OnExecute = act_FilterExecute
+    end
+    object act_RefreshFilter: TAction
+      Category = 'nomenu'
+      Caption = 'Refresh filter'
+      ShortCut = 116
+      OnExecute = act_RefreshFilterExecute
+    end
+    object act_Translation: TAction
+      Category = 'nomenu'
+      Caption = 'goto translation field'
+      ShortCut = 117
+      OnExecute = act_TranslationExecute
     end
   end
   object TheImageList: TImageList

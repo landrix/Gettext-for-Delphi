@@ -243,6 +243,9 @@ type
     act_TransCreateMsgstr: TAction;
     Createtranslationtrackingmsgstr1: TMenuItem;
     mi_GormDiffHelp: TMenuItem;
+    act_Filter: TAction;
+    act_RefreshFilter: TAction;
+    act_Translation: TAction;
     procedure MenuItemAboutClick(Sender: TObject);
     procedure act_FileOpenExecute(Sender: TObject);
     procedure act_FileReloadExecute(Sender: TObject);
@@ -296,7 +299,7 @@ type
     procedure ButtonMoveDownClick(Sender: TObject);
     procedure ButtonMoveUpClick(Sender: TObject);
     procedure chkInverseFilterClick(Sender: TObject);
-    procedure btnRefreshFilterClick(Sender: TObject);
+    procedure act_RefreshFilterExecute(Sender: TObject);
     procedure act_LabelsToggleFuzzyExecute(Sender: TObject);
     procedure MemoMsgStrKeyDown(Sender: TObject; var Key: Word; Shift: TShiftState);
     procedure act_LabelsToggleIgnoreExecute(Sender: TObject);
@@ -323,6 +326,8 @@ type
     procedure act_LabelsSaveIgnoreExecute(Sender: TObject);
     procedure act_TransCreateMsgstrExecute(Sender: TObject);
     procedure mi_GormDiffHelpClick(Sender: TObject);
+    procedure act_FilterExecute(Sender: TObject);
+    procedure act_TranslationExecute(Sender: TObject);
   private
     CurrentFilename: string; // File currently opened (if any)
     Items: TPoEntryList; // Contains all item read from CurrentFilename
@@ -769,6 +774,11 @@ begin
   CloseGuiItem;
 
   FTranslationRepository := TTranslationRepository.Create(GetSettingTranslationRepositoryDir);
+
+  if GetSettingApplicationExternalEditorFilename = '' then
+    ListBoxSource.Hint := ListBoxSource.Hint + #13#10 + 'No external editor configured.'
+  else
+    ListBoxSource.Hint := ListBoxSource.Hint + #13#10 + 'Click to open source file in text editor.';
 end;
 
 procedure TFormEditor.FormDestroy(Sender: TObject);
@@ -1115,6 +1125,11 @@ begin
   end;
 end;
 
+procedure TFormEditor.act_FilterExecute(Sender: TObject);
+begin
+  EditFilterText.SetFocus;
+end;
+
 procedure TFormEditor.MenuItemGNUgettextforDelphiClick(Sender: TObject);
 begin
   ShellExecute(0, 'open', 'http://dxgettext.po.dk/', nil, nil, sw_normal);
@@ -1281,6 +1296,9 @@ var
 
 begin
   CurrentItemRow := Grid.Row - 1;
+  if CurrentItemRow = -1 then
+    Exit;
+
   CurrentItem := Rows.Objects[CurrentItemRow] as TPoEntry;
   MemoMsgId.Lines.Text := FormatMsgIdForDisplay(CurrentItem.MsgId);
   MemoMsgStr.Lines.Text := CurrentItem.MsgStr;
@@ -1702,6 +1720,11 @@ begin
   end;
 end;
 
+procedure TFormEditor.act_TranslationExecute(Sender: TObject);
+begin
+  MemoMsgStr.SetFocus;
+end;
+
 procedure TFormEditor.act_LabelsAddStandardLabelsExecute(Sender: TObject);
 begin
   AddStandardLabels;
@@ -1844,7 +1867,7 @@ begin
   ButtonParallel.Visible := False;
 end;
 
-procedure TFormEditor.btnRefreshFilterClick(Sender: TObject);
+procedure TFormEditor.act_RefreshFilterExecute(Sender: TObject);
 begin
   CloseGuiItem;
   ExecuteFilter;
