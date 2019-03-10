@@ -57,7 +57,7 @@ var
   lang:string;
   success:boolean;
 begin
-  lang:=lowercase(GetCurrentLanguage);
+  lang:=lowercase(GetCurrentLocaleName);
   if (lang='') or (lang='c') or (lang='en') then begin
     system.write (ws);
   end
