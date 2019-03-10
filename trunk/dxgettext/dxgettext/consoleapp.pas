@@ -251,7 +251,7 @@ begin
              'in a file named default.po.'));
   WriteLine ('');
   WriteLine (_('Options:'));
-  WriteLine ('  --delphi                 ' + _('Adds the wildcards: *.pas *.inc *.rc *.dpr *.xfm *.dfm'));
+  WriteLine ('  --delphi                 ' + _('Adds the wildcards: *.pas *.inc *.rc *.dpr *.xfm *.dfm *.fmx'));
   WriteLine ('  --kylix                  ' + _('Adds the wildcards: *.pas *.inc *.rc *.dpr *.xfm'));
   WriteLine ('  -r                       ' + _('Recurse subdirectories'));
   WriteLine ('  -b dir                   ' + _('Use directory as base directory for filenames.'));

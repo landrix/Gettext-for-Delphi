@@ -1137,7 +1137,7 @@ begin
     else begin
       if Assigned(OnProgress) then
         OnProgress (Format(_('Reading %s'),[CurrentFilename]),CurrentFilename,0);
-      if (ext='.DFM') or (ext='.XFM') then
+      if (ext='.DFM') or (ext='.XFM') or (ext = '.FMX') then
         ExtractFromDFM(CurrentFilename)
       else
       if ext='.RC' then
