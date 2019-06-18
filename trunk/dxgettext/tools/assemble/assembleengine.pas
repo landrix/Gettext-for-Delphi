@@ -26,6 +26,7 @@ type
     private
       procedure RecurseDirs (list:TStringList; dir:string);
       function FindSignature(const signature: RawByteString; str: TFileStream): Boolean;
+      function TryOpenExeStream: TFileStream;
     end;
 
 implementation
@@ -77,6 +78,37 @@ begin
   inherited;
 end;
 
+
+function Tassembleengine.TryOpenExeStream: TFileStream;
+const
+  MaxTries = 10;
+var
+  Tries: Integer;
+begin
+  Tries := 1;
+  while True do begin
+    try
+      Result := TFileStream.Create(exefilename, fmOpenReadWrite);
+      // if we get here, it worked, so we simply exit
+      WriteLn('Opening executable worked on ', Tries, ' try.');
+      Exit; //==>
+    except
+      on EFOpenError do begin
+        // If opening the file failed, it's probably the virus scanner which is currently
+        // accessing it. So we wait a second and try again.
+        if Tries >= MaxTries then begin
+          // we already failed too many times, give up
+          raise;
+        end;
+        Inc(Tries);
+        WriteLn('Opening executable failed, will try again in 1 second.');
+        // sleep 1 second and try again
+        Sleep(1000);
+      end;
+    end;
+  end;
+end;
+
 procedure Tassembleengine.Execute;
 var
   str,infile:TFileStream;
@@ -105,7 +137,7 @@ begin
 
   filelist.Sort;
 
-  str:=TFileStream.Create (exefilename,fmOpenReadWrite);
+  str:=TryOpenExeStream;
   try
     if not FindSignature(detectioncode, str) then
       raise Exception.Create (Format(_('Signature "%s" was not found in .exe file. Please make sure the .exe file has been compiled with the correct libraries.'), [detectioncode]));
