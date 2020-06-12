@@ -6,11 +6,9 @@ uses
   {$ifdef MSWINDOWS}
   gnugettext in '..\..\sample\gnugettext.pas',
   appconsts in '..\..\dxgettext\appconsts.pas',
-  consoleoutput in '..\..\dxgettext\consoleoutput.pas',
   {$else}
   gnugettext in '../../sample/gnugettext.pas',
   appconsts in '../../dxgettext/appconsts.pas',
-  consoleoutput in '../../dxgettext/consoleoutput.pas',
   {$endif}
   consoleapp in 'consoleapp.pas',
   assembleengine in 'assembleengine.pas';
@@ -32,6 +30,6 @@ begin
     on e: Exception do begin
       consoleoutput.writeln ('Error: ' + e.Message + ' (' + e.ClassName + ')');
       ExitCode:=1;
-    end;  
+    end;
   end;
 end.

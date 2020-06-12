@@ -22,7 +22,6 @@ implementation
 
 uses
   appconsts,
-  consoleoutput,
   gnugettext;
 
 { TConsoleApp }
@@ -63,7 +62,7 @@ begin
       if engine.basedirectory <> '' then
         raise Exception.CreateFmt(_('Already specified locale base dir (new: "%s".'), [op]);
       engine.basedirectory := op;
-      consoleoutput.WriteLn(Format(_('Setting basedirectory to "%s"'), [engine.basedirectory]));
+      WriteLn(Format(_('Setting basedirectory to "%s"'), [engine.basedirectory]));
     end else if Copy(pa, 1, 2) = '--' then begin
       raise Exception.CreateFmt(_('Unknown option "%s"'), [pa]);
     end else begin
@@ -71,7 +70,7 @@ begin
       if engine.exefilename <> '' then
         raise Exception.CreateFmt(_('Already specified an .exe file (new: "%s".'), [param]);
       engine.exefilename := ExpandFileName(AnsiDequotedStr(param, '"'));
-      consoleoutput.WriteLn(Format(_('Setting exefilename to "%s"'), [engine.exefilename]));
+      WriteLn(Format(_('Setting exefilename to "%s"'), [engine.exefilename]));
     end;
     inc(i);
   end;
@@ -100,12 +99,12 @@ end;
 
 procedure TConsoleApp.WriteHelp;
 begin
-  consoleoutput.writeln(Format(_('assemble %s'), [appconsts.version]));
-  consoleoutput.writeln('');
-  consoleoutput.writeln(_('assemble usage:'));
-  consoleoutput.writeln(_('  assemble "application.exe" --localebase="C:\program\" --dxgettext'));
-  consoleoutput.writeln('');
-  consoleoutput.writeln(_('This will append all .mo files in the directory of application.exe and in ' + sLineBreak +
+  writeln(Format(_('assemble %s'), [appconsts.version]));
+  writeln('');
+  writeln(_('assemble usage:'));
+  writeln(_('  assemble "application.exe" --localebase="C:\program\" --dxgettext'));
+  writeln('');
+  writeln(_('This will append all .mo files in the directory of application.exe and in ' + sLineBreak +
     'all subdirectories to the file application.exe. This will enable the ' + sLineBreak +
     'gnugettext.pas unit that was compiled into application.exe to get ' + sLineBreak +
     'its translations from the .exe file instead of from external files.' + sLineBreak +
