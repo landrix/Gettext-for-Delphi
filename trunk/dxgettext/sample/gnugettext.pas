@@ -3305,7 +3305,10 @@ begin
     a:=b;
     offset:=offset+bufsize;
   end;
+{$IFNDEF VER340} // Delphi 10.4 Sydney / BDS 21
+  // this causes a hint in Deohi 10.4
   Result:=0;
+{$ENDIF}
 end;
 
 procedure TFileLocator.Analyze;
