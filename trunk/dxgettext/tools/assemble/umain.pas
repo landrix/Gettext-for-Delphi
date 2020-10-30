@@ -48,7 +48,7 @@ begin
   engine.exefilename:=filename;
   engine.SetGnuGettextPatchCode;
   engine.filemask:='*.mo';
-  engine.PrepareFileList;
+  engine.PrepareFileList('locale'+PathDelim);
   ListBoxTranslations.Items.Text:=engine.filelist.Text;
   for i:=0 to ListBoxTranslations.Items.Count-1 do 
     ListBoxTranslations.Checked[i]:=True;
