@@ -587,7 +587,9 @@ type
 
 const
   LOCALE_SISO639LANGNAME = $59;    // Used by Lazarus software development tool
+  {$EXTERNALSYM LOCALE_SISO639LANGNAME}
   LOCALE_SISO3166CTRYNAME = $5A;   // Used by Lazarus software development tool
+  {$EXTERNALSYM LOCALE_SISO3166CTRYNAME}
   GETTEXT_CONTEXT_GLUE = #4;
 
 var
