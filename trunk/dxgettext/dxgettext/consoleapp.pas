@@ -101,8 +101,11 @@ begin
         if uparam='--USEIGNOREPO' then
         begin
           xgt.UseIgnoreFile:=True;
-        end
-        else
+        end else
+        if uparam='--UPDATEIGNORE' then
+        begin
+          xgt.UpdateIgnore:=True;
+        end else
         if uparam = '--PRESERVEUSERCOMMENTS' then
         begin
           xgt.PreserveUserComments := True;
@@ -262,6 +265,7 @@ begin
   WriteLine ('  --so filename            ' + _('Outputs default domain to specified file. No other files are written.'));
   WriteLine ('  -q                       ' + _('Quiet: Reduces output to absolute minimum.'));
   WriteLine ('  --useignorepo            ' + _('Use ignore.po file from the base dir'));
+  WriteLine ('  --updateignore           ' + _('Add likely ignores to ignore.po file'));
   WriteLine ('  --preserveUserComments   ' + _('preserve user comments from existing template file'));
   WriteLine ('  --nonascii               ' + _('Allow non-ascii characters.'));
   {$ifdef MSWINDOWS}
