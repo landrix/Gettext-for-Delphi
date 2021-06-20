@@ -3771,7 +3771,7 @@ msgstr ""
 #. Programmer's name for it: BadRequest
 #: Win32/internet/SvrConst.pas:69
 msgid "<HTML><TITLE>Invalid HTTP request: Method not allowed for HTTP/1.0</TITLE><BODY><H1>Invalid HTTP request: Method not allowed for HTTP/1.0</H1><P>HTTP status code: 400</BODY></HTML>\n"
-msgstr "<HTML><TITLE>Ung&uuml;ltige HTTP-Anforderung: Methode f&uuml;r HTTP/1.0 nicht zul&auml;ssig</TITLE><BODY><H1>Ung&uuml;ltige HTTP-Anforderung: Methode f&uuml;r HTTP/1.0 nicht zul&auml;ssig</H1><P>HTTP-Statuscode: 400</BODY></HTML>"
+msgstr "<HTML><TITLE>Ung&uuml;ltige HTTP-Anforderung: Methode f&uuml;r HTTP/1.0 nicht zul&auml;ssig</TITLE><BODY><H1>Ung&uuml;ltige HTTP-Anforderung: Methode f&uuml;r HTTP/1.0 nicht zul&auml;ssig</H1><P>HTTP-Statuscode: 400</BODY></HTML>\n"
 
 #. Programmer's name for it: sForbiddenString
 #: Win32/internet/SvrConst.pas:24
@@ -12213,7 +12213,7 @@ msgstr "Ungültiges Argument zum Codieren des Datums"
 #. Programmer's name for it: STimeEncodeError
 #: Win32/rtl/sys/SysConst.pas:26
 msgid "Invalid argument to time encode"
-msgstr "Ungültiges Argument zur zeit-Codierung"
+msgstr "Ungültiges Argument zur Zeit-Codierung"
 
 #. Programmer's name for it: RSStackEINVAL
 #: Indy-renamed/Indy10/System/IdResourceStrings.pas:54
