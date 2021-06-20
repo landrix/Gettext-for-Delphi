@@ -5148,7 +5148,7 @@ msgstr "''%s'' ist keine gültige Uhrzeit"
 #. Programmer's name for it: STimeEncodeError
 #: common/RTLConsts.pas:316  sys/SysConst.pas:26
 msgid "Invalid argument to time encode"
-msgstr "Ungültiges Argument zur zeit-Codierung"
+msgstr "Ungültiges Argument zur Zeit-Codierung"
 
 #. Programmer's name for it: sTargetBufferTooSmall
 #: common/ZLibConst.pas:15
