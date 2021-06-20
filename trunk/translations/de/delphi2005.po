@@ -10010,7 +10010,7 @@ msgstr "'%s' ist kein gültiger boolescher Wert"
 #: dotNet/rtl/Borland.Vcl.SysConst.pas:25  Win32/rtl/common/RTLConsts.pas:316
 #: Win32/rtl/sys/SysConst.pas:26
 msgid "Invalid argument to time encode"
-msgstr "Ungültiges Argument zur zeit-Codierung"
+msgstr "Ungültiges Argument zur Zeit-Codierung"
 
 #. Programmer's name for it: SDateEncodeError
 #. Programmer's name for it: SDateEncodeError

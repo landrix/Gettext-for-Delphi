@@ -2399,7 +2399,7 @@ msgstr "Ungültiges Argument zum Codieren des Datums"
 #. Programmer's name for it: STimeEncodeError
 #: Vcl/consts.pas:196  Rtl/Sys/sysconst.pas:21
 msgid "Invalid argument to time encode"
-msgstr "Ungültiges Argument zur zeit-Codierung"
+msgstr "Ungültiges Argument zur Zeit-Codierung"
 
 #. Programmer's name for it: SInvalidDate
 #: Vcl/consts.pas:197

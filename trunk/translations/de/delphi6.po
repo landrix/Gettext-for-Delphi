@@ -969,7 +969,7 @@ msgstr "Ungültiges Argument zum Codieren des Datums"
 #. Programmer's name for it: STimeEncodeError
 #: Clx/QConsts.pas:188  Rtl/Common/RTLConsts.pas:82 Rtl/Sys/SysConst.pas:25
 msgid "Invalid argument to time encode"
-msgstr "Ungültiges Argument zur zeit-Codierung"
+msgstr "Ungültiges Argument zur Zeit-Codierung"
 
 #. Programmer's name for it: SInvalidDate
 #: Clx/QConsts.pas:189  Rtl/Common/RTLConsts.pas:40

@@ -4560,7 +4560,7 @@ msgstr "'%s' ist kein gültiger boolescher Wert"
 #. Programmer's name for it: STimeEncodeError
 #: sys/SysConst.pas:25
 msgid "Invalid argument to time encode"
-msgstr "Ungültiges Argument zur zeit-Codierung"
+msgstr "Ungültiges Argument zur Zeit-Codierung"
 
 #. Programmer's name for it: SDateEncodeError
 #: sys/SysConst.pas:26
