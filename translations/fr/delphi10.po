@@ -339,9 +339,7 @@ msgstr ""
 #: Vcl.Consts.pas:336
 #, fuzzy, object-pascal-format
 msgid "'%d' is not a valid span"
-msgstr ""
-"Impossible de définir ControlItem.Control en GridPanel "
-"propriétaire"
+msgstr "%d' n'est pas une étendue correcte"
 
 #. Programmer's name for it: SInvalidTimeStamp
 #: System.SysConst.pas:26
@@ -646,7 +644,6 @@ msgstr "%s est déjà associé à %s"
 msgid "'%s' is an invalid mask at (%d)"
 msgstr "%s' est un masque incorrect à (%d)"
 
-#. Programmer's name for it: SInvalidCommand
 #: Data.DBXCommonResStrs.pas:58
 #, object-pascal-format
 msgid ""
@@ -1170,7 +1167,7 @@ msgstr ""
 #: IdResourceStringsProtocols.pas:683
 #, fuzzy, object-pascal-format
 msgid "'%s': command not understood."
-msgstr "Non connecté."
+msgstr "%s' : commande non comprise."
 
 #. Programmer's name for it: RSFTPIsAFile
 #: IdResourceStringsProtocols.pas:674
@@ -2396,20 +2393,22 @@ msgstr ""
 msgid "<- &Bind ->"
 msgstr "<- &Lier ->"
 
-#. Programmer's name for it: sPortName
 #: Soap.SOAPConst.pas:381
 #, fuzzy, object-pascal-format
 msgid ""
 "</head><body><h1>Error Encountered</h1><P>Interface %s not "
 "found</P></body></html>"
-msgstr "Port"
+msgstr ""
+"<html><head></head><body><h1>Error Encountered</h1><P>Interface %s "
+"not found</P></body></html>"
 
-#. Programmer's name for it: sPortName
 #: Soap.SOAPConst.pas:382
 msgid ""
 "</head><body><h1>Forbidden (403)</h1><P>Access "
 "Forbidden</P></body></html>"
-msgstr "Port"
+msgstr ""
+"<html><head></head><body><h1>Forbidden (403)</h1><P>Access "
+"Forbidden</P></body></html>"
 
 #. Programmer's name for it: sInterfaceInfo
 #: Soap.SOAPConst.pas:369
@@ -5517,7 +5516,9 @@ msgstr ""
 msgid ""
 "Cannot add columns or rows while expand style is fixed "
 "size"
-msgstr "%d' n'est pas une étendue correcte"
+msgstr ""
+"Impossible d'ajouter des colonnes ou des lignes alors que le style de "
+"développement est taille fixe"
 
 #. Programmer's name for it: sJSONBuilderUnsupVarRecType
 #: System.JSONConsts.pas:116
