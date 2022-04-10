@@ -478,6 +478,10 @@ begin
             break;
 
           s := trim(copy(line, 1, p - 1));
+          // sometimes the strings start with something like #34
+          while Copy(s, Length(s) - 2, 1) = '#' do begin
+            s := Trim(Copy(s, 1, Length(s) - 3));
+          end;
           if copy(s, length(s), 1) = '=' then
           begin
             // Identifier probably precedes the string
