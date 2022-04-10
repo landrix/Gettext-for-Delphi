@@ -8,7 +8,7 @@ msgstr ""
 "MIME-Version: 1.0\n"
 "Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: 8bit\n"
-"X-Generator: dxgettext 1.3.0\n"
+"X-Generator: dxgettext 1.3.1\n"
 "Language-Team:  <>\n"
 "X-Poedit-Language: french\n"
 "X-Poedit-Basepath: \n"
@@ -262,7 +262,7 @@ msgstr ""
 #: Vcl.Consts.pas:340
 #, object-pascal-format
 msgid "'%d' is not a valid span"
-msgstr ""
+msgstr "%d' n'est pas une étendue correcte"
 
 #. Programmer's name for it: SInvalidTimeStamp
 #: System.SysConst.pas:35
@@ -2247,20 +2247,22 @@ msgstr ""
 msgid "<- &Bind ->"
 msgstr "<- &Lier ->"
 
-#. Programmer's name for it: sPortName
 #: Soap.SOAPConst.pas:383
 #, object-pascal-format
 msgid ""
 "</head><body><h1>Error Encountered</h1><P>Interface %s not "
 "found</P></body></html>"
 msgstr ""
+"<html><head></head><body><h1>Error Encountered</h1><P>Interface %s "
+"not found</P></body></html>"
 
-#. Programmer's name for it: sPortName
 #: Soap.SOAPConst.pas:384
 msgid ""
 "</head><body><h1>Forbidden (403)</h1><P>Access "
 "Forbidden</P></body></html>"
-msgstr "Port"
+msgstr ""
+"<html><head></head><body><h1>Forbidden (403)</h1><P>Access "
+"Forbidden</P></body></html>"
 
 #. Programmer's name for it: sInterfaceInfo
 #: Soap.SOAPConst.pas:371
@@ -4854,6 +4856,8 @@ msgid ""
 "Cannot add columns or rows when ExpandStyle is "
 "TExpandStyle.FixedSize"
 msgstr ""
+"Impossible d'ajouter des colonnes ou des lignes alors que ExpandStyle "
+"est TExpandStyle.FixedSize"
 
 #. Programmer's name for it: sCannotAddFixedSize
 #: Vcl.Consts.pas:339
@@ -4861,6 +4865,8 @@ msgid ""
 "Cannot add columns or rows while expand style is fixed "
 "size"
 msgstr ""
+"Impossible d'ajouter des colonnes ou des lignes alors que le style de "
+"développement est taille fixe"
 
 #. Contacts in Group
 #. Programmer's name for it: SCannotAddContactIntoGroup
@@ -8344,31 +8350,31 @@ msgstr ""
 #. Programmer's name: 32761 				CURSOR
 #: FMX.Controls.Win.rc:4
 msgid "Controls_cur32761.cur"
-msgstr "Controls_cur32761.cur"
+msgstr ""
 
 # Label: ignore
 #. Programmer's name: 32762 				CURSOR
 #: FMX.Controls.Win.rc:5
 msgid "Controls_cur32762.cur"
-msgstr "Controls_cur32762.cur"
+msgstr ""
 
 # Label: ignore
 #. Programmer's name: 32763 				CURSOR
 #: FMX.Controls.Win.rc:6
 msgid "Controls_cur32763.cur"
-msgstr "Controls_cur32763.cur"
+msgstr ""
 
 # Label: ignore
 #. Programmer's name: 32766 				CURSOR
 #: FMX.Controls.Win.rc:7
 msgid "Controls_cur32766.cur"
-msgstr "Controls_cur32766.cur"
+msgstr ""
 
 # Label: ignore
 #. Programmer's name: 32767 				CURSOR
 #: FMX.Controls.Win.rc:8
 msgid "Controls_cur32767.cur"
-msgstr "Controls_cur32767.cur"
+msgstr ""
 
 #. Programmer's name for it: SConvDuplicateFamily
 #: System.RTLConsts.pas:137
@@ -11397,7 +11403,7 @@ msgstr ""
 #. Programmer's name: VCL_EW ICON
 #: Vcl.IMouse.rc:3
 msgid "EW.ico"
-msgstr "EW.ico"
+msgstr ""
 
 #. Programmer's name for it: SException
 #: System.SysConst.pas:70
@@ -17662,7 +17668,7 @@ msgstr ""
 #. Programmer's name: VCL_NESW ICON
 #: Vcl.IMouse.rc:1
 msgid "NESW.ico"
-msgstr "NESW.ico"
+msgstr ""
 
 #. Programmer's name for it: SProtocolNetMeeting
 #: FMX.Consts.pas:729
@@ -18703,7 +18709,7 @@ msgstr "Novembre"
 #. Programmer's name: VCL_NS ICON
 #: Vcl.IMouse.rc:2
 msgid "NS.ico"
-msgstr "NS.ico"
+msgstr ""
 
 #. Programmer's name for it: SExprBadNullTest
 #: Data.DBConsts.pas:67
@@ -19543,67 +19549,67 @@ msgstr ""
 #. Programmer's name: PAN_ALL CURSOR
 #: Vcl.IMouse.rc:5
 msgid "pan_all.cur"
-msgstr "pan_all.cur"
+msgstr ""
 
 # Label: ignore
 #. Programmer's name: PAN_DOWN CURSOR
 #: Vcl.IMouse.rc:6
 msgid "pan_down.cur"
-msgstr "pan_down.cur"
+msgstr ""
 
 # Label: ignore
 #. Programmer's name: PAN_DOWNLEFT CURSOR
 #: Vcl.IMouse.rc:7
 msgid "pan_downleft.cur"
-msgstr "pan_downleft.cur"
+msgstr ""
 
 # Label: ignore
 #. Programmer's name: PAN_DOWNRIGHT CURSOR
 #: Vcl.IMouse.rc:8
 msgid "pan_downright.cur"
-msgstr "pan_downright.cur"
+msgstr ""
 
 # Label: ignore
 #. Programmer's name: PAN_LEFT CURSOR
 #: Vcl.IMouse.rc:9
 msgid "pan_left.cur"
-msgstr "pan_left.cur"
+msgstr ""
 
 # Label: ignore
 #. Programmer's name: PAN_LEFTRIGHT CURSOR
 #: Vcl.IMouse.rc:10
 msgid "pan_leftright.cur"
-msgstr "pan_leftright.cur"
+msgstr ""
 
 # Label: ignore
 #. Programmer's name: PAN_RIGHT CURSOR
 #: Vcl.IMouse.rc:11
 msgid "pan_right.cur"
-msgstr "pan_right.cur"
+msgstr ""
 
 # Label: ignore
 #. Programmer's name: PAN_UP CURSOR
 #: Vcl.IMouse.rc:12
 msgid "pan_up.cur"
-msgstr "pan_up.cur"
+msgstr ""
 
 # Label: ignore
 #. Programmer's name: PAN_UPDOWN CURSOR
 #: Vcl.IMouse.rc:13
 msgid "pan_updown.cur"
-msgstr "pan_updown.cur"
+msgstr ""
 
 # Label: ignore
 #. Programmer's name: PAN_UPLEFT CURSOR
 #: Vcl.IMouse.rc:14
 msgid "pan_upleft.cur"
-msgstr "pan_upleft.cur"
+msgstr ""
 
 # Label: ignore
 #. Programmer's name: PAN_UPRIGHT CURSOR
 #: Vcl.IMouse.rc:15
 msgid "pan_upright.cur"
-msgstr "pan_upright.cur"
+msgstr ""
 
 #. DataBindingListDesigner..ActionList1..DescriptionsAction..Caption
 #: BindCompEdit.dfm:279

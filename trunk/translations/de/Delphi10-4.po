@@ -1,9 +1,9 @@
 #
 msgid ""
 msgstr ""
-"Project-Id-Version: Delphi 10.2\n"
-"POT-Creation-Date: 2022-04-10 14:01\n"
-"PO-Revision-Date: 2022-04-10 14:01\n"
+"Project-Id-Version: Delphi 10.4\n"
+"POT-Creation-Date: 2022-04-10 18:07\n"
+"PO-Revision-Date: 2022-04-10 18:07\n"
 "Last-Translator:  <>\n"
 "MIME-Version: 1.0\n"
 "Content-Type: text/plain; charset=UTF-8\n"
@@ -346,11 +346,12 @@ msgstr "%s (Version %d.%d, Build %d, %5:s)"
 msgid "%s (Version %d.%d.%d)"
 msgstr "%s (Version %d.%d.%d)"
 
+# Label: ignore
 #. Programmer's name for it: SCmplxErrorSuffix
 #: System.RTLConsts.pas:164
 #, object-pascal-format
 msgid "%s [%s<?>%s]"
-msgstr "%s [%s<?>%s]"
+msgstr ""
 
 #. Programmer's name for it: SActionManagerNotAssigned
 #: Vcl.Consts.pas:326
@@ -4429,12 +4430,13 @@ msgstr ""
 "Bluetooth: WSALookupServiceBegin-Fehler: (%d) "
 "%s"
 
+# Label: ignore
 #. ImageListEditor..OpenDialog..DefaultExt
 #: ImgEdit.dfm:266
 #. ImageListEditor..SaveDialog..DefaultExt
 #: ImgEdit.dfm:284
 msgid "bmp"
-msgstr "Bitmaps (*.bmp)|*.bmp"
+msgstr ""
 
 #. DataBindForm..Panel1..Label3..Caption
 #: DbOleEdt.dfm:45
