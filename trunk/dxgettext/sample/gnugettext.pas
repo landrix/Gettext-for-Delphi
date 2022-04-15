@@ -3290,7 +3290,7 @@ begin
 
   SetLength (a, bufsize);
   SetLength (b, bufsize);
-  str.Read(a[1],bufsize);
+  str.ReadBuffer(a[1],bufsize);
 
   while true do begin
     rd:=str.Read(b[1],bufsize);
