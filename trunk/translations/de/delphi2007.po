@@ -6302,7 +6302,7 @@ msgstr "Transaktion kann nicht gesetzt werden."
 #. Programmer's name for it: sCouldNotUnwrapDocLitElementWrapper
 #: Win32/soap/wsdlimporter/WSDLImpConst.pas:817
 msgid "Cannot unwrap"
-msgstr ""
+msgstr "Entpacken nicht möglich"
 
 #. Programmer's name for it: SUpdateWrongDB
 #: Win32/db/bdeconst.pas:72
@@ -6745,7 +6745,7 @@ msgstr "Fehler bei Codeset-Konvertierung"
 #. Programmer's name for it: sCollapseAliases
 #: Win32/soap/wsdlimporter/WSDLImpConst.pas:808
 msgid "Collapse simple alias types"
-msgstr ""
+msgstr "Einfache Alias-Typen ausblenden"
 
 # Label: ignore
 #. CollectionEditor..Caption
@@ -9082,7 +9082,7 @@ msgstr "Registrierungsdatei '%s' für Treiber/Verbindung nicht gefunden"
 #. Programmer's name for it: SDryBucketsDescription
 #: Win32/rtl/common/RTLConsts.pas:241
 msgid "DryBuckets"
-msgstr ""
+msgstr "Bucket (Trockenmaß)"
 
 #. Programmer's name for it: SDryBushelsDescription
 #: Win32/rtl/common/RTLConsts.pas:242
@@ -11204,7 +11204,7 @@ msgstr "Der Header wurde bereits geschrieben."
 #. Programmer's name for it: sMethodHeaders
 #: Win32/soap/wsdlimporter/WSDLImpConst.pas:829
 msgid "Headers"
-msgstr ""
+msgstr "Header"
 
 #. Programmer's name for it: RSNNTPReplyHeadersFollow
 #: Indy-renamed/Indy10/Protocols/IdResourceStringsProtocols.pas:563
@@ -11883,17 +11883,17 @@ msgstr "Eingabe"
 #. Programmer's name for it: sCUInputWrapperElementNotSameAsOperationName
 #: Win32/soap/wsdlimporter/WSDLImpConst.pas:822
 msgid "Input element wrapper name does not match operation's name"
-msgstr ""
+msgstr "Name des Eingabeelement-Wrappers entspricht nicht dem Operationsnamen"
 
 #. Programmer's name for it: sCUInputMessageHasMoreThanOnePart
 #: Win32/soap/wsdlimporter/WSDLImpConst.pas:818
 msgid "Input message has more than one part"
-msgstr ""
+msgstr "Eingabemeldung besteht aus mehreren Parts"
 
 #. Programmer's name for it: sCUInputPartRefersToTypeNotElement
 #: Win32/soap/wsdlimporter/WSDLImpConst.pas:820
 msgid "Input part does not refer to an element"
-msgstr ""
+msgstr "Eingabe-Part verweist auf kein Element"
 
 #. InputReqDialog..Caption
 #: Win32/Property_Editors/dbinpreq.dfm:6
@@ -14552,7 +14552,7 @@ msgstr "Weitere Schaltflächen"
 #. Programmer's name for it: sCUMoreThanOneStrictlyOutMembersWereFound
 #: Win32/soap/wsdlimporter/WSDLImpConst.pas:825
 msgid "More than one strictly out element was found"
-msgstr ""
+msgstr "Mehrere strenge out-Elemente gefunden"
 
 #. Programmer's name for it: sMouseCategoryName
 #: ToolsAPI/DesignIntf.pas:676
@@ -15695,7 +15695,7 @@ msgstr "Es sind keine Zusammenfassungen definiert. "
 #. Programmer's name for it: sNoBindingsFound
 #: Win32/soap/wsdlimporter/WSDLImpConst.pas:646
 msgid "No supported Bindings found in document"
-msgstr ""
+msgstr "Im Dokument wurden keine unterstützten Bindungen gefunden"
 
 #. Programmer's name for it: SNoTableName
 #: Win32/IBX/IBXConst.pas:124
@@ -16644,7 +16644,7 @@ msgstr "Gliederungsindex nicht gefunden"
 #. Programmer's name for it: sCUOutputElementIsAPureCollection
 #: Win32/soap/wsdlimporter/WSDLImpConst.pas:827
 msgid "Output element is a pure collection"
-msgstr ""
+msgstr "Ausgabeelement ist eine reine Kollektion"
 
 #. Programmer's name for it: sCUOutputMessageHasMoreThanOnePart
 #: Win32/soap/wsdlimporter/WSDLImpConst.pas:819
@@ -16654,7 +16654,7 @@ msgstr "Output-Nachricht hat mehr als einen Teil"
 #. Programmer's name for it: sCUOutputPartRefersToTypeNotElement
 #: Win32/soap/wsdlimporter/WSDLImpConst.pas:821
 msgid "Output part does not refer to an element"
-msgstr ""
+msgstr "Ausgabe-Part verweist auf kein Element"
 
 #. Programmer's name for it: RSICMPConvOverallLengthExceeded
 #: Indy-renamed/Indy10/Core/IdIcmpClient.pas:272
@@ -20563,7 +20563,7 @@ msgstr "Die angeforderte Information konnte nicht geladen werden. "
 #. Programmer's name for it: sCUInputPartNotAComplexType
 #: Win32/soap/wsdlimporter/WSDLImpConst.pas:823
 msgid "The input part is not a complex type"
-msgstr ""
+msgstr "Das Eingabe-Part ist kein komplexer Typ"
 
 #. Programmer's name for it: RSHTTPSSPIInternalError
 #: Indy-renamed/Indy10/Protocols/IdResourceStringsProtocols.pas:301
@@ -20646,7 +20646,7 @@ msgstr ""
 #. Programmer's name for it: sCUOutputPartNotAComplexType
 #: Win32/soap/wsdlimporter/WSDLImpConst.pas:824
 msgid "The output part is not a complex type"
-msgstr ""
+msgstr "Das Ausgabe-Part ist kein komplexer Typ"
 
 #. Programmer's name for it: RSHTTPSSPIQOPNotSupported
 #: Indy-renamed/Indy10/Protocols/IdResourceStringsProtocols.pas:307
@@ -23004,13 +23004,13 @@ msgstr "Warnung: '%s' - Fehler bei der Verarbeitung des XML-Schemas"
 #: Win32/soap/wsdlimporter/WSDLImpConst.pas:787
 #, object-pascal-format
 msgid "Warning: Input  Literal parameters of %s() cannot be unwrapped"
-msgstr ""
+msgstr "Warnung: Literale Eingabeparameter von %s() können nicht abgewickelt werden"
 
 #. Programmer's name for it: sUnwindWarningOut
 #: Win32/soap/wsdlimporter/WSDLImpConst.pas:788
 #, object-pascal-format
 msgid "Warning: Output Literal parameters of %s() cannot be unwrapped"
-msgstr ""
+msgstr "Warnung: Literale Ausgabeparameter von %s() können nicht abgewickelt werden"
 
 #. Programmer's name for it: STR_SYSLOG_SEVERITY_WARNING
 #: Indy-renamed/Indy10/Protocols/IdResourceStringsProtocols.pas:844

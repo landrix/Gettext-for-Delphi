@@ -8924,7 +8924,7 @@ msgstr "Viertelscheffel (Trockenmaß)"
 #. Programmer's name for it: SDryBucketsDescription
 #: Rtl/Common/StdConvs.pas:403
 msgid "DryBuckets"
-msgstr ""
+msgstr "Bucket (Trockenmaß)"
 
 #. Programmer's name for it: SDryBushelsDescription
 #: Rtl/Common/StdConvs.pas:404

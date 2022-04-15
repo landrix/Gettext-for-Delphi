@@ -4202,7 +4202,7 @@ msgstr "Viertelscheffel (Trockenmaß)"
 #. Programmer's name for it: SDryBucketsDescription
 #: common/RTLConsts.pas:258
 msgid "DryBuckets"
-msgstr ""
+msgstr "Bucket (Trockenmaß)"
 
 #. Programmer's name for it: SDryBushelsDescription
 #: common/RTLConsts.pas:259
@@ -6068,7 +6068,7 @@ msgstr "Wirklich den WSDL-Importer-Assistenten schließen?"
 #. Programmer's name for it: sNoBindingsFound
 #: wsdlimporter/WSDLImpConst.pas:662
 msgid "No supported Bindings found in document"
-msgstr ""
+msgstr "Im Dokument wurden keine unterstützten Bindungen gefunden"
 
 # Label: ignore
 #. Programmer's name for it: sNoBindingsFound
@@ -6407,12 +6407,12 @@ msgstr "Warnung: '%s' - Fehler bei der Verarbeitung des XML-Schemas"
 #. Programmer's name for it: sUnwindWarningIn
 #: wsdlimporter/WSDLImpConst.pas:804
 msgid "Warning: Input  Literal parameters of %s() cannot be unwrapped"
-msgstr ""
+msgstr "Warnung: Literale Eingabeparameter von %s() können nicht abgewickelt werden"
 
 #. Programmer's name for it: sUnwindWarningOut
 #: wsdlimporter/WSDLImpConst.pas:805
 msgid "Warning: Output Literal parameters of %s() cannot be unwrapped"
-msgstr ""
+msgstr "Warnung: Literale Ausgabeparameter von %s() können nicht abgewickelt werden"
 
 # Label: ignore
 #. Programmer's name for it: sWarningHeader
@@ -6484,7 +6484,7 @@ msgstr "Interface GUIDs mittels COM API generieren"
 #. Programmer's name for it: sCollapseAliases
 #: wsdlimporter/WSDLImpConst.pas:825
 msgid "Collapse simple alias types"
-msgstr ""
+msgstr "Einfache Alias-Typen ausblenden"
 
 #. Programmer's name for it: sProcessRefSchemas
 #: wsdlimporter/WSDLImpConst.pas:827
@@ -6524,12 +6524,12 @@ msgstr ""
 #. Programmer's name for it: sCouldNotUnwrapDocLitElementWrapper
 #: wsdlimporter/WSDLImpConst.pas:835
 msgid "Cannot unwrap"
-msgstr ""
+msgstr "Entpacken nicht möglich"
 
 #. Programmer's name for it: sCUInputMessageHasMoreThanOnePart
 #: wsdlimporter/WSDLImpConst.pas:836
 msgid "Input message has more than one part"
-msgstr ""
+msgstr "Eingabemeldung besteht aus mehreren Parts"
 
 #. Programmer's name for it: sCUOutputMessageHasMoreThanOnePart
 #: wsdlimporter/WSDLImpConst.pas:837
@@ -6539,32 +6539,32 @@ msgstr "Output-Nachricht hat mehr als einen Teil"
 #. Programmer's name for it: sCUInputPartRefersToTypeNotElement
 #: wsdlimporter/WSDLImpConst.pas:838
 msgid "Input part does not refer to an element"
-msgstr ""
+msgstr "Eingabe-Part verweist auf kein Element"
 
 #. Programmer's name for it: sCUOutputPartRefersToTypeNotElement
 #: wsdlimporter/WSDLImpConst.pas:839
 msgid "Output part does not refer to an element"
-msgstr ""
+msgstr "Ausgabe-Part verweist auf kein Element"
 
 #. Programmer's name for it: sCUInputWrapperElementNotSameAsOperationName
 #: wsdlimporter/WSDLImpConst.pas:840
 msgid "Input element wrapper name does not match operation's name"
-msgstr ""
+msgstr "Name des Eingabeelement-Wrappers entspricht nicht dem Operationsnamen"
 
 #. Programmer's name for it: sCUInputPartNotAComplexType
 #: wsdlimporter/WSDLImpConst.pas:841
 msgid "The input part is not a complex type"
-msgstr ""
+msgstr "Das Eingabe-Part ist kein komplexer Typ"
 
 #. Programmer's name for it: sCUOutputPartNotAComplexType
 #: wsdlimporter/WSDLImpConst.pas:842
 msgid "The output part is not a complex type"
-msgstr ""
+msgstr "Das Ausgabe-Part ist kein komplexer Typ"
 
 #. Programmer's name for it: sCUMoreThanOneStrictlyOutMembersWereFound
 #: wsdlimporter/WSDLImpConst.pas:843
 msgid "More than one strictly out element was found"
-msgstr ""
+msgstr "Mehrere strenge out-Elemente gefunden"
 
 #. Programmer's name for it: sCUTypeNeedsSpecialSerialization
 #: wsdlimporter/WSDLImpConst.pas:844
@@ -6574,12 +6574,12 @@ msgstr "Wrapper-Typ benötigt spezielle Serialisierung"
 #. Programmer's name for it: sCUOutputElementIsAPureCollection
 #: wsdlimporter/WSDLImpConst.pas:845
 msgid "Output element is a pure collection"
-msgstr ""
+msgstr "Ausgabeelement ist eine reine Kollektion"
 
 #. Programmer's name for it: sMethodHeaders
 #: wsdlimporter/WSDLImpConst.pas:847
 msgid "Headers"
-msgstr ""
+msgstr "Header"
 
 #. StandardActions..ActionList1..EditCut1..Category
 #: ActnRes.dfm:12
