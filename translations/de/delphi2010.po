@@ -6417,7 +6417,7 @@ msgstr "Ein extern erstellter Thread kann nicht beendet werden"
 #. Programmer's name for it: sCouldNotUnwrapDocLitElementWrapper
 #: Win32/soap/wsdlimporter/WSDLImpConst.pas:855
 msgid "Cannot unwrap"
-msgstr ""
+msgstr "Entpacken nicht möglich"
 
 #. Programmer's name for it: SUpdateWrongDB
 #: Win32/db/bdeconst.pas:71
@@ -6951,7 +6951,7 @@ msgstr "Fehler bei Codeset-Konvertierung"
 #. Programmer's name for it: sCollapseAliases
 #: Win32/soap/wsdlimporter/WSDLImpConst.pas:834
 msgid "Collapse simple alias types"
-msgstr ""
+msgstr "Einfache Alias-Typen ausblenden"
 
 # Label: ignore
 #. CollectionEditor..Caption
@@ -9051,7 +9051,7 @@ msgstr "Verbindungen jetzt nicht zulassen"
 #. Programmer's name for it: sSkipUnusedTypes
 #: Win32/soap/wsdlimporter/WSDLImpConst.pas:829
 msgid "Do not emit unused &types"
-msgstr ""
+msgstr "Nur verwendete &Typen ausgeben"
 
 #. Programmer's name for it: sWantToExit
 #: Win32/vcl/Mxconsts.pas:100
@@ -9253,7 +9253,7 @@ msgstr "Registrierungsdatei '%s' für Treiber/Verbindung nicht gefunden"
 #. Programmer's name for it: SDryBucketsDescription
 #: Win32/rtl/common/RTLConsts.pas:288
 msgid "DryBuckets"
-msgstr ""
+msgstr "Bucket (Trockenmaß)"
 
 #. Programmer's name for it: SDryBushelsDescription
 #: Win32/rtl/common/RTLConsts.pas:289
@@ -11398,7 +11398,7 @@ msgstr "Der Header wurde bereits geschrieben."
 #. Programmer's name for it: sMethodHeaders
 #: Win32/soap/wsdlimporter/WSDLImpConst.pas:867
 msgid "Headers"
-msgstr ""
+msgstr "Header"
 
 #. Programmer's name for it: RSNNTPReplyHeadersFollow
 #: Indy/Indy10/Protocols/IdResourceStringsProtocols.pas:551
@@ -11828,7 +11828,7 @@ msgstr "SMTP TLS im impliziten Modus erfordert, daß der IOHandler einem TIdServ
 #. Programmer's name for it: sImportHeaders
 #: Win32/soap/wsdlimporter/WSDLImpConst.pas:832
 msgid "Import &Header Types"
-msgstr ""
+msgstr "&Header-Typen importieren"
 
 #. Programmer's name for it: sFeedbackImp
 #: Win32/soap/wsdlimporter/WSDLImpConst.pas:791
@@ -11839,7 +11839,7 @@ msgstr "Import: %s"
 #. Programmer's name for it: sImportFaults
 #: Win32/soap/wsdlimporter/WSDLImpConst.pas:830
 msgid "Import Fau&lt Types"
-msgstr ""
+msgstr "&Fehlertypen importieren"
 
 #. Programmer's name for it: sImportWSDL
 #: Win32/soap/wsdlimporter/WSDLImpConst.pas:660
@@ -11908,6 +11908,10 @@ msgid ""
 "Expected: %s\n"
 "Found: %s"
 msgstr ""
+"Einbezogene Schemadatei \"%s\" hat einen ungültigen targetNamespace.\n"
+"\n"
+"Erwartet: %s\n"
+"Gefunden: %s"
 
 #. Programmer's name for it: SConvIncompatibleTypes4
 #: Win32/rtl/common/RTLConsts.pas:122
@@ -12145,7 +12149,7 @@ msgstr "Eingabepuffer für %s = %d, %s = %d überschritten"
 #. Programmer's name for it: sCUInputWrapperElementNotSameAsOperationName
 #: Win32/soap/wsdlimporter/WSDLImpConst.pas:860
 msgid "Input element wrapper name does not match operation's name"
-msgstr ""
+msgstr "Name des Eingabeelement-Wrappers entspricht nicht dem Operationsnamen"
 
 #. Programmer's name for it: SInputEncodingNotSpecified
 #: Win32/xml/ParserUtilsRTL.pas:304
@@ -12157,12 +12161,12 @@ msgstr "Eingabecodierung nicht angegeben."
 #. Programmer's name for it: sCUInputMessageHasMoreThanOnePart
 #: Win32/soap/wsdlimporter/WSDLImpConst.pas:856
 msgid "Input message has more than one part"
-msgstr ""
+msgstr "Eingabemeldung besteht aus mehreren Parts"
 
 #. Programmer's name for it: sCUInputPartRefersToTypeNotElement
 #: Win32/soap/wsdlimporter/WSDLImpConst.pas:858
 msgid "Input part does not refer to an element"
-msgstr ""
+msgstr "Eingabe-Part verweist auf kein Element"
 
 #. InputReqDialog..Caption
 #: Win32/Property_Editors/dbinpreq.dfm:6
@@ -14475,7 +14479,7 @@ msgstr "Viele Werte von Port sind mit bestimmten Diensten wie ftp oder http asso
 #. Programmer's name for it: sMapNamedArrays
 #: Win32/soap/wsdlimporter/WSDLImpConst.pas:828
 msgid "Map pure collections to wrapper class t&ypes"
-msgstr ""
+msgstr "Reine Kollektionen zu Wrapper-Klassent&ypen zuordnen"
 
 #. Programmer's name for it: SShortMonthNameMar
 #: Win32/rtl/sys/SysConst.pas:136
@@ -15162,7 +15166,7 @@ msgstr "Weitere Steuerelemente"
 #. Programmer's name for it: sCUMoreThanOneStrictlyOutMembersWereFound
 #: Win32/soap/wsdlimporter/WSDLImpConst.pas:863
 msgid "More than one strictly out element was found"
-msgstr ""
+msgstr "Mehrere strenge out-Elemente gefunden"
 
 #. Programmer's name for it: sMouseCategoryName
 #: ToolsAPI/DesignIntf.pas:688
@@ -16315,7 +16319,7 @@ msgstr "Es sind keine Zusammenfassungen definiert. "
 #. Programmer's name for it: sNoBindingsFound
 #: Win32/soap/wsdlimporter/WSDLImpConst.pas:671
 msgid "No supported Bindings found in document"
-msgstr ""
+msgstr "Im Dokument wurden keine unterstützten Bindungen gefunden"
 
 #. Programmer's name for it: SDBXErrNoTable
 #: database/DBXCommonResStrs.pas:114
@@ -17291,7 +17295,7 @@ msgstr "Gliederungsindex nicht gefunden"
 #. Programmer's name for it: sCUOutputElementIsAPureCollection
 #: Win32/soap/wsdlimporter/WSDLImpConst.pas:865
 msgid "Output element is a pure collection"
-msgstr ""
+msgstr "Ausgabeelement ist eine reine Kollektion"
 
 #. Programmer's name for it: SOutputEncodingNotSpecified
 #: Win32/xml/ParserUtilsRTL.pas:305
@@ -17308,7 +17312,7 @@ msgstr "Output-Nachricht hat mehr als einen Teil"
 #. Programmer's name for it: sCUOutputPartRefersToTypeNotElement
 #: Win32/soap/wsdlimporter/WSDLImpConst.pas:859
 msgid "Output part does not refer to an element"
-msgstr ""
+msgstr "Ausgabe-Part verweist auf kein Element"
 
 #. Programmer's name for it: RSICMPConvOverallLengthExceeded
 #: Indy/Indy10/Core/IdResourceStringsCore.pas:255
@@ -18016,17 +18020,17 @@ msgstr "Prozedurtyp"
 #. Programmer's name for it: sForceSOAP12
 #: Win32/soap/wsdlimporter/WSDLImpConst.pas:836
 msgid "Process &only WSDL Binding extensions for the SOAP 1.2 Protocol"
-msgstr ""
+msgstr "Nur WSDL-&Bindungserweiterungen für das SOAP 1.2-Protokoll verarbeiten"
 
 #. Programmer's name for it: sProcessRefSchemas
 #: Win32/soap/wsdlimporter/WSDLImpConst.pas:847
 msgid "Process included &and imported schemas"
-msgstr ""
+msgstr "Einbezogene &und importierte Schemas verarbeiten"
 
 #. Programmer's name for it: sProcessNillableOptional
 #: Win32/soap/wsdlimporter/WSDLImpConst.pas:851
 msgid "Process n&illable and optional elements"
-msgstr ""
+msgstr "Optionale und n&illable Elemente verarbeiten"
 
 #. Programmer's name for it: sProcessNotAccessible
 #: Win32/Visualizers/StringListVisualizer.pas:62
@@ -18036,7 +18040,7 @@ msgstr "Prozess nicht verfügbar"
 #. Programmer's name for it: sSkipHTTPBindOpt
 #: Win32/soap/wsdlimporter/WSDLImpConst.pas:827
 msgid "Process only SOAP binding types"
-msgstr ""
+msgstr "Nur SOAP-Bindungstypen verarbeiten"
 
 #. Programmer's name for it: sHTTPItemProducer
 #: Win32/internet/WebConst.pas:34
@@ -21218,7 +21222,7 @@ msgstr "Die angeforderte Information konnte nicht geladen werden. "
 #. Programmer's name for it: sCUInputPartNotAComplexType
 #: Win32/soap/wsdlimporter/WSDLImpConst.pas:861
 msgid "The input part is not a complex type"
-msgstr ""
+msgstr "Das Eingabe-Part ist kein komplexer Typ"
 
 #. Programmer's name for it: RSInterceptIsDifferent
 #: Indy/Indy10/Core/IdResourceStringsCore.pas:150
@@ -21299,7 +21303,7 @@ msgstr ""
 #. Programmer's name for it: sCUOutputPartNotAComplexType
 #: Win32/soap/wsdlimporter/WSDLImpConst.pas:862
 msgid "The output part is not a complex type"
-msgstr ""
+msgstr "Das Ausgabe-Part ist kein komplexer Typ"
 
 #. Programmer's name for it: SPathFormatNotSupported
 #: Win32/rtl/common/RTLConsts.pas:101
@@ -23893,13 +23897,13 @@ msgstr "Warnung: '%s' - Fehler bei der Verarbeitung des XML-Schemas"
 #: Win32/soap/wsdlimporter/WSDLImpConst.pas:813
 #, object-pascal-format
 msgid "Warning: Input  Literal parameters of %s() cannot be unwrapped"
-msgstr ""
+msgstr "Warnung: Literale Eingabeparameter von %s() können nicht abgewickelt werden"
 
 #. Programmer's name for it: sUnwindWarningOut
 #: Win32/soap/wsdlimporter/WSDLImpConst.pas:814
 #, object-pascal-format
 msgid "Warning: Output Literal parameters of %s() cannot be unwrapped"
-msgstr ""
+msgstr "Warnung: Literale Ausgabeparameter von %s() können nicht abgewickelt werden"
 
 #. Programmer's name for it: STR_SYSLOG_SEVERITY_WARNING
 #: Indy/Indy10/Protocols/IdResourceStringsProtocols.pas:838

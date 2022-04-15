@@ -9545,7 +9545,7 @@ msgstr "Viertelscheffel (Trockenmaß)"
 #: dotNet/rtl/Borland.Vcl.RTLConsts.pas:247
 #: Win32/rtl/common/RTLConsts.pas:242
 msgid "DryBuckets"
-msgstr ""
+msgstr "Bucket (Trockenmaß)"
 
 #. Programmer's name for it: SDryBushelsDescription
 #. Programmer's name for it: SDryBushelsDescription
