@@ -25,6 +25,7 @@ type
     ed_RepositoryTag: TEdit;
     ed_PoTag: TEdit;
     chk_Preview: TCheckBox;
+    chk_AddTagToPoFile: TCheckBox;
     procedure chk_AddTagToRepositoryClick(Sender: TObject);
   private
     procedure SetData(_dm: TTranslationDbAccess; _Preview: boolean;
@@ -85,11 +86,14 @@ procedure Tf_TranslationDbLearnOptions.GetData(out _Preview: boolean;
   out _RepoTag: string; out _PoFileTag: string);
 begin
   _Preview := chk_Preview.Checked;
+  if _Preview or chk_AddTagToPoFile.Checked then
+    _PoFileTag := ed_PoTag.Text
+  else
+    _PoFileTag := '';
   if chk_AddTagToRepository.Checked then
     _RepoTag := ed_RepositoryTag.Text
   else
     _RepoTag := '';
-  _PoFileTag := ed_PoTag.Text
 end;
 
 procedure Tf_TranslationDbLearnOptions.chk_AddTagToRepositoryClick(Sender: TObject);
