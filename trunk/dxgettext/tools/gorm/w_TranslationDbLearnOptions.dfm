@@ -3,7 +3,7 @@ object f_TranslationDbLearnOptions: Tf_TranslationDbLearnOptions
   Top = 0
   BorderIcons = [biSystemMenu, biMaximize]
   Caption = 'Translation Repository Learn Options'
-  ClientHeight = 161
+  ClientHeight = 193
   ClientWidth = 433
   Color = clBtnFace
   Font.Charset = DEFAULT_CHARSET
@@ -34,25 +34,25 @@ object f_TranslationDbLearnOptions: Tf_TranslationDbLearnOptions
   end
   object b_Ok: TButton
     Left = 272
-    Top = 128
+    Top = 160
     Width = 75
     Height = 25
     Anchors = [akRight, akBottom]
     Caption = 'OK'
     Default = True
     ModalResult = 1
-    TabOrder = 5
+    TabOrder = 6
   end
   object b_Cancel: TButton
     Left = 352
-    Top = 128
+    Top = 160
     Width = 75
     Height = 25
     Anchors = [akRight, akBottom]
     Cancel = True
     Caption = 'Cancel'
     ModalResult = 2
-    TabOrder = 6
+    TabOrder = 7
   end
   object chk_AddTagToRepository: TCheckBox
     Left = 8
@@ -82,12 +82,20 @@ object f_TranslationDbLearnOptions: Tf_TranslationDbLearnOptions
   end
   object chk_Preview: TCheckBox
     Left = 224
-    Top = 64
+    Top = 128
     Width = 201
     Height = 17
     Caption = 'Preview changes by adding label'
     Checked = True
     State = cbChecked
+    TabOrder = 5
+  end
+  object chk_AddTagToPoFile: TCheckBox
+    Left = 224
+    Top = 64
+    Width = 153
+    Height = 17
+    Caption = 'Add tag to po file'
     TabOrder = 4
   end
 end
