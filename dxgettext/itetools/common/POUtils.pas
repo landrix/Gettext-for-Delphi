@@ -14,6 +14,9 @@ Portions created by Peter Thornqvist are Copyright (C) 2003 Peter Thornqvist. Al
 You may retrieve the latest version of this file at dxgettext's home page,
 located at http://dybdahl.dk/dxgettext/
 
+(************************************************************************
+  Unicode Bugfixes in this unit by Arthur Hoornweg
+*************************************************************************)
 -----------------------------------------------------------------------------}
 {$I JEDI.INC}
 {$IFDEF COMPILER7_UP}
@@ -128,6 +131,7 @@ function EscapeString(const S: string): string;
 function UnescapeString(const S: string): string;
 
 implementation
+
 const
   cMOSignature = $950412DE;
 
@@ -472,7 +476,7 @@ begin
   try
     AEntry := nil;
     AState := esNone;
-    S.LoadFromFile(Filename);
+    S.LoadFromFile(Filename {$IFDEF unicode}, TEncoding.UTF8{$ENDIF});
     for i := 0 to S.Count - 1 do
     begin
       if AEntry = nil then
@@ -622,7 +626,12 @@ begin
       // empty line between entries
       S.Add('');
     end;
+{$IFDEF unicode}
+    S.WriteBOM := false;
+    S.SaveToFile(Filename, TEncoding.UTF8);
+{$ELSE}
     S.SaveToFile(Filename);
+{$ENDIF}
   finally
     S.Free;
     T.Free;
@@ -798,7 +807,15 @@ procedure TMOFile.WriteItems(Stream: TStream);
 var
   ASize, AOffset: LongWord;
   i: integer;
+{$IFDEF unicode}
+  NullChar: AnsiChar;
+  utf: Utf8String;
+{$ELSE}
   NullChar: char;
+  utf: string;
+type
+  pAnsiChar = Pchar;
+{$ENDIF}
 begin
   {
     Format of MO files:
@@ -860,9 +877,10 @@ begin
   begin
     if i = 0 then
       FOriginalOffset := Stream.Position;
-    ASize := Length(TMOItem(FItems[i]).MsgID);
+    utf := TMOItem(FItems[i]).MsgID;
+    ASize := Length(utf);
     if ASize > 0 then
-      Stream.Write(PChar(TMOItem(FItems[i]).MsgID)^, ASize);
+      Stream.Write(PAnsiChar(utf)^, ASize);
     // always write NUL
     Stream.Write(NullChar, sizeof(NullChar));
   end;
@@ -872,9 +890,10 @@ begin
   begin
     if i = 0 then
       FTranslateOffset := Stream.Position;
-    ASize := Length(TMOItem(FItems[i]).MsgStr);
+    utf := TMOItem(FItems[i]).MsgStr;
+    ASize := Length(utf);
     if ASize > 0 then
-      Stream.Write(PChar(TMOItem(FItems[i]).MsgStr)^, ASize);
+      Stream.Write(PAnsiChar(utf)^, ASize);
     // always write NUL
     Stream.Write(NullChar, sizeof(NullChar));
   end;
@@ -885,7 +904,8 @@ begin
   // original
   for i := 0 to FItems.Count - 1 do
   begin
-    ASize := Length(TMOItem(FItems[i]).MsgID);
+    utf := TMOItem(FItems[i]).MsgID;
+    ASize := Length(utf);
     Stream.Write(ASize, sizeof(ASize));
     Stream.Write(FOriginalOffset, sizeof(FOriginalOffset));
     Inc(FOriginalOffset, ASize + 1); // include terminating NUL
@@ -894,7 +914,8 @@ begin
   // translated
   for i := 0 to FItems.Count - 1 do
   begin
-    ASize := Length(TMOItem(FItems[i]).MsgStr);
+    utf := TMOItem(FItems[i]).MsgStr;
+    ASize := Length(utf);
     Stream.Write(ASize, sizeof(ASize));
     Stream.Write(FTranslateOffset, sizeof(FTranslateOffset));
     Inc(FTranslateOffset, ASize + 1); // include terminating NUL
@@ -929,7 +950,7 @@ end;
 procedure TMOFile.ReadItems(Stream: TStream);
 var
   ASize, ACount, AOffset: LongWord;
-  AString: string;
+  AString: {$IFDEF unicode} Utf8String {$ELSE} string {$ENDIF};
 begin
   ACount := 0;
   // read original
