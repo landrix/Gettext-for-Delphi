@@ -1,7 +1,7 @@
 #
 msgid ""
 msgstr ""
-"Project-Id-Version: DelphiXE German\n"
+"Project-Id-Version: DelphiXE2 German\n"
 "POT-Creation-Date: 2010-10-24 13:10\n"
 "PO-Revision-Date: 2010-10-24 13:10\n"
 "Last-Translator: twm <nospam@dummzeuch.de>\n"
@@ -4718,7 +4718,7 @@ msgstr ""
 #. Programmer's name for it: BadRequest
 #: internet/SvrConst.pas:69
 msgid "<HTML><TITLE>Invalid HTTP request: Method not allowed for HTTP/1.0</TITLE><BODY><H1>Invalid HTTP request: Method not allowed for HTTP/1.0</H1><P>HTTP status code: 400</BODY></HTML>\n"
-msgstr "<HTML><TITLE>Ung&uuml;ltige HTTP-Anforderung: Methode f&uuml;r HTTP/1.0 nicht zul&auml;ssig</TITLE><BODY><H1>Ung&uuml;ltige HTTP-Anforderung: Methode f&uuml;r HTTP/1.0 nicht zul&auml;ssig</H1><P>HTTP-Statuscode: 400</BODY></HTML>"
+msgstr "<HTML><TITLE>Ung&uuml;ltige HTTP-Anforderung: Methode f&uuml;r HTTP/1.0 nicht zul&auml;ssig</TITLE><BODY><H1>Ung&uuml;ltige HTTP-Anforderung: Methode f&uuml;r HTTP/1.0 nicht zul&auml;ssig</H1><P>HTTP-Statuscode: 400</BODY></HTML>\n"
 
 #. Programmer's name for it: sForbiddenString
 #: internet/SvrConst.pas:24

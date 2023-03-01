@@ -8,8 +8,6 @@ msgstr ""
 "MIME-Version: 1.0\n"
 "Content-Type: text/plain; charset=utf-8\n"
 "Content-Transfer-Encoding: 8bit\n"
-"X-Poedit-Language: german\n"
-"X-Poedit-Basepath: \n"
 
 #. Programmer's name for it: SInvalidFieldSize
 #: clx/DBConsts.pas:15
@@ -59,12 +57,15 @@ msgstr "Ungültiger Wert für Feld '%s'"
 #. Programmer's name for it: SFieldRangeError
 #: clx/DBConsts.pas:24
 msgid "%g is not a valid value for field '%s'. The allowed range is %g to %g"
-msgstr "%g ist kein gültiger Wert für das Feld '%s'. Der zulässige Bereich ist %g bis %g"
+msgstr ""
+"%g ist kein gültiger Wert für das Feld '%s'. Der zulässige Bereich ist %g "
+"bis %g"
 
 #. Programmer's name for it: SBcdFieldRangeError
 #: clx/DBConsts.pas:25
 msgid "%s is not a valid value for field '%s'. The allowed range is %s to %s"
-msgstr "%s ist kein gültiger Wert für Feld '%s'. Der zulässige Bereich ist %s bis %s"
+msgstr ""
+"%s ist kein gültiger Wert für Feld '%s'. Der zulässige Bereich ist %s bis %s"
 
 #. Programmer's name for it: SInvalidIntegerValue
 #: clx/DBConsts.pas:26
@@ -294,7 +295,8 @@ msgstr "Fehlende Typübereinstimmung im Ausdruck"
 #. Programmer's name for it: SExprBadScope
 #: clx/DBConsts.pas:72
 msgid "Operation cannot mix aggregate value with record-varying value"
-msgstr "Die Operation kann keine Zusammenfassungswerte mit Datensatzwerten mischen"
+msgstr ""
+"Die Operation kann keine Zusammenfassungswerte mit Datensatzwerten mischen"
 
 #. Programmer's name for it: SExprNoArith
 #: clx/DBConsts.pas:73
@@ -349,7 +351,9 @@ msgstr "Bind-Parameter können nicht geladen werden"
 #. Programmer's name for it: SParamTooBig
 #: clx/DBConsts.pas:83
 msgid "Parameter '%s', cannot save data larger than %d bytes"
-msgstr "Parameter '%s': Daten, die größer sind als %d Byte, können nicht gespeichert werden"
+msgstr ""
+"Parameter '%s': Daten, die größer sind als %d Byte, können nicht gespeichert "
+"werden"
 
 #. Programmer's name for it: SBadFieldType
 #: clx/DBConsts.pas:84
@@ -359,7 +363,9 @@ msgstr "Der Typ von Feld '%s' wird nicht unterstützt"
 #. Programmer's name for it: SAggActive
 #: clx/DBConsts.pas:85
 msgid "Property may not be modified while aggregate is active"
-msgstr "Die Eigenschaft kann nicht geändert werden, während die Aggregatfunktion aktiv ist"
+msgstr ""
+"Die Eigenschaft kann nicht geändert werden, während die Aggregatfunktion "
+"aktiv ist"
 
 #. Programmer's name for it: SProviderSQLNotSupported
 #: clx/DBConsts.pas:86
@@ -373,8 +379,12 @@ msgstr "Ausführung nicht unterstützt: %s"
 
 #. Programmer's name for it: SExprNoAggOnCalcs
 #: clx/DBConsts.pas:88
-msgid "Field '%s' is not the correct type of calculated field to be used in an aggregate, use an internalcalc"
-msgstr "Feld '%s' ist nicht der korrekte Typ eines berechneten Feldes für eine Aggregierung; verwenden Sie internalcalc"
+msgid ""
+"Field '%s' is not the correct type of calculated field to be used in an "
+"aggregate, use an internalcalc"
+msgstr ""
+"Feld '%s' ist nicht der korrekte Typ eines berechneten Feldes für eine "
+"Aggregierung; verwenden Sie internalcalc"
 
 #. Programmer's name for it: SRecordChanged
 #: clx/DBConsts.pas:89
@@ -384,7 +394,8 @@ msgstr "Datensatz nicht gefunden oder von einem anderen Benutzer geändert"
 #. Programmer's name for it: SDataSetUnidirectional
 #: clx/DBConsts.pas:90
 msgid "Operation not allowed on a unidirectional dataset"
-msgstr "Diese Operation ist bei einer unidirektionalen Datenemenge nicht gestattet"
+msgstr ""
+"Diese Operation ist bei einer unidirektionalen Datenemenge nicht gestattet"
 
 #. Programmer's name for it: SUnassignedVar
 #: clx/DBConsts.pas:91
@@ -466,22 +477,28 @@ msgstr "Ungültiges Datenpaket"
 #. Programmer's name for it: SRefreshError
 #: clx/MidConst.pas:46
 msgid "Must apply updates before refreshing data"
-msgstr "Die Änderungen müssen vor der Aktualisierung der Daten übernommen werden"
+msgstr ""
+"Die Änderungen müssen vor der Aktualisierung der Daten übernommen werden"
 
 #. Programmer's name for it: SProviderInvalid
 #: clx/MidConst.pas:47
 msgid "Invalid provider. Provider was freed by the application server"
-msgstr "Ungültiger Provider. Der Provider wurde bereits vom Anwendungsserver entladen"
+msgstr ""
+"Ungültiger Provider. Der Provider wurde bereits vom Anwendungsserver entladen"
 
 #. Programmer's name for it: SServerNameBlank
 #: clx/MidConst.pas:48
 msgid "Cannot connect, %s must contain a valid ServerName or ServerGUID"
-msgstr "Es kann keine Verbindung hergestellt werden; %s muss einen gültigen Server-Namen oder eine ServerGUID enthalten"
+msgstr ""
+"Es kann keine Verbindung hergestellt werden; %s muss einen gültigen Server-"
+"Namen oder eine ServerGUID enthalten"
 
 #. Programmer's name for it: SRepositoryIdBlank
 #: clx/MidConst.pas:49
 msgid "Cannot connect, %s must contain a valid repository id"
-msgstr "Es kann keine Verbindung hergestellt werden; %s muss eine gültige Objketablagen-ID enthalten"
+msgstr ""
+"Es kann keine Verbindung hergestellt werden; %s muss eine gültige "
+"Objketablagen-ID enthalten"
 
 #. Programmer's name for it: SAggsGroupingLevel
 #: clx/MidConst.pas:50
@@ -506,7 +523,8 @@ msgstr "Fehler beim Laden von MIDAS.DLL"
 #. Programmer's name for it: SCannotCreateDataSet
 #: clx/MidConst.pas:54
 msgid "No fields defined.  Cannot create dataset"
-msgstr "Es wurden keine Felder definiert.  Datenmenge kann nicht erzeugt werden"
+msgstr ""
+"Es wurden keine Felder definiert.  Datenmenge kann nicht erzeugt werden"
 
 #. Programmer's name for it: SInvalidClone
 #: clx/MidConst.pas:55
@@ -595,28 +613,40 @@ msgstr "Datensatz nicht gefunden; es wurde kein Schlüssel angegeben"
 
 #. Programmer's name for it: SFieldNameTooLong
 #: clx/MidConst.pas:80
-msgid "Field name cannot be longer then %d characters.  Try setting ObjectView to True on the dataset"
-msgstr "Der Feldname darf nicht länger als %d  Zeichen sein. Sie sollten für die Datenmenge ObjectView auf True setzen"
+msgid ""
+"Field name cannot be longer then %d characters.  Try setting ObjectView to "
+"True on the dataset"
+msgstr ""
+"Der Feldname darf nicht länger als %d  Zeichen sein. Sie sollten für die "
+"Datenmenge ObjectView auf True setzen"
 
 #. Programmer's name for it: SNoDataSets
 #: clx/MidConst.pas:81
 msgid "Cannot resolve to dataset when using nested datasets or references"
-msgstr "Bei Datenmengen oder -referenzen kann in die Datenmenge nicht zurückgeschrieben werden"
+msgstr ""
+"Bei Datenmengen oder -referenzen kann in die Datenmenge nicht "
+"zurückgeschrieben werden"
 
 #. Programmer's name for it: SRecConstFail
 #: clx/MidConst.pas:82
 msgid "Preparation of record constraint failed with error \"%s\""
-msgstr "Die Vorbereitung der Datensatzbedingung konnte nicht durchgeführt werden; Fehler '%s'"
+msgstr ""
+"Die Vorbereitung der Datensatzbedingung konnte nicht durchgeführt werden; "
+"Fehler '%s'"
 
 #. Programmer's name for it: SFieldConstFail
 #: clx/MidConst.pas:83
 msgid "Preparation of field constraint failed with error \"%s\""
-msgstr "Die Vorbereitung der Feldbedingung konnte nicht durchgeführt werden; Fehler '%s'"
+msgstr ""
+"Die Vorbereitung der Feldbedingung konnte nicht durchgeführt werden; Fehler "
+"'%s'"
 
 #. Programmer's name for it: SDefExprFail
 #: clx/MidConst.pas:84
 msgid "Preparation of default expression failed with error \"%s\""
-msgstr "Die Vorbereitung des Standardausdrucks konnte nicht durchgeführt werden; Fehler '%s'"
+msgstr ""
+"Die Vorbereitung des Standardausdrucks konnte nicht durchgeführt werden; "
+"Fehler '%s'"
 
 #. Programmer's name for it: SArrayElementError
 #: clx/MidConst.pas:85
@@ -626,7 +656,9 @@ msgstr "Array-Elemente vom Typ %s werden nicht unterstützt"
 #. Programmer's name for it: SNoTableName
 #: clx/MidConst.pas:86
 msgid "Unable to resolve records.  Table name not found."
-msgstr "Datensätze können nicht zurückgeschrieben werden. Der Tabellenname wurde nicht gefunden."
+msgstr ""
+"Datensätze können nicht zurückgeschrieben werden. Der Tabellenname wurde "
+"nicht gefunden."
 
 #. Programmer's name for it: SNoEditsAllowed
 #: clx/MidConst.pas:87
@@ -676,7 +708,8 @@ msgstr "Der erwartete Rückgabewert wurde nicht empfangen"
 #. Programmer's name for it: SNoWinSock2
 #: clx/MidConst.pas:103
 msgid "WinSock 2 must be installed to use the socket connection"
-msgstr "Um Socket-Verbindungen verwenden zu können, muss WinSock2 installiert sein"
+msgstr ""
+"Um Socket-Verbindungen verwenden zu können, muss WinSock2 installiert sein"
 
 #. Programmer's name for it: SURLRequired
 #: clx/MidConst.pas:106
@@ -690,8 +723,11 @@ msgstr "http://server.company.com/scripts/httpsrvr.dll"
 
 #. Programmer's name for it: SInvalidURL
 #: clx/MidConst.pas:108
-msgid "URL must be in the form \"http://server.company.com/scripts/httpsrvr.dll\""
-msgstr "Die URL muss folgende Form besitzen: \"http://server.company.com/scripts/httpsrvr.dll\""
+msgid ""
+"URL must be in the form \"http://server.company.com/scripts/httpsrvr.dll\""
+msgstr ""
+"Die URL muss folgende Form besitzen: \"http://server.company.com/scripts/"
+"httpsrvr.dll\""
 
 #. Programmer's name for it: SServerIsBusy
 #: clx/MidConst.pas:109
@@ -706,7 +742,9 @@ msgstr "Das Objekt ist nicht verfügbar: %s"
 #. Programmer's name for it: SMasterNotOpen
 #: clx/MidConst.pas:114
 msgid "Cannot open detail table with master closed"
-msgstr "Detailtabelle kann nicht geöffnet werden, wenn die Haupttabelle geschlossen ist."
+msgstr ""
+"Detailtabelle kann nicht geöffnet werden, wenn die Haupttabelle geschlossen "
+"ist."
 
 #. Programmer's name for it: SInvalidCreateWidget
 #: clx/QConsts.pas:30
@@ -849,12 +887,16 @@ msgstr "Registerindex außerhalb des zulässigen Bereichs"
 #. Programmer's name for it: SInvalidTabPosition
 #: clx/QConsts.pas:58
 msgid "Tab position incompatible with current tab style"
-msgstr "Die Position des Register ist nicht mit dem aktuellen Erscheinungsbild kompatibel."
+msgstr ""
+"Die Position des Register ist nicht mit dem aktuellen Erscheinungsbild "
+"kompatibel."
 
 #. Programmer's name for it: SInvalidTabStyle
 #: clx/QConsts.pas:59
 msgid "Tab style incompatible with current tab position"
-msgstr "Das Erscheinungsbild des Registers ist nicht mit der aktuellen Position kompatibel."
+msgstr ""
+"Das Erscheinungsbild des Registers ist nicht mit der aktuellen Position "
+"kompatibel."
 
 #. Programmer's name for it: SInvalidBitmap
 #: clx/QConsts.pas:60
@@ -944,7 +986,9 @@ msgstr "Fehler beim Erzeugen von Widget"
 #. Programmer's name for it: SCannotFocus
 #: clx/QConsts.pas:77
 msgid "Cannot focus a disabled or invisible window (%s)"
-msgstr "Ein deaktiviertes oder unsichtbares Fenster (%s) kann den Fokus nicht erhalten"
+msgstr ""
+"Ein deaktiviertes oder unsichtbares Fenster (%s) kann den Fokus nicht "
+"erhalten"
 
 #. Programmer's name for it: SParentRequired
 #: clx/QConsts.pas:78
@@ -954,7 +998,8 @@ msgstr "Element '%s' besitzt kein übergeordnetes Widget"
 #. Programmer's name for it: SParentGivenNotAParent
 #: clx/QConsts.pas:79
 msgid "Parent given is not a parent of '%s'"
-msgstr "Das angegebene übergeordnete Element ist kein übergeordnetes Element von '%s'"
+msgstr ""
+"Das angegebene übergeordnete Element ist kein übergeordnetes Element von '%s'"
 
 #. Programmer's name for it: SVisibleChanged
 #: clx/QConsts.pas:80
@@ -1029,12 +1074,15 @@ msgstr "%s an %s"
 #. Programmer's name for it: SGroupIndexTooLow
 #: clx/QConsts.pas:94
 msgid "GroupIndex cannot be less than a previous menu item's GroupIndex"
-msgstr "GroupIndex kann nicht kleiner sein als der GroupIndex eines vorhergehenden Menüelementes"
+msgstr ""
+"GroupIndex kann nicht kleiner sein als der GroupIndex eines vorhergehenden "
+"Menüelementes"
 
 #. Programmer's name for it: SNoMDIForm
 #: clx/QConsts.pas:95
 msgid "Cannot create form. No MDI forms are currently active"
-msgstr "Formular kann nicht erstellt werden. Zur Zeit sind keine MDI-Formulare aktiv"
+msgstr ""
+"Formular kann nicht erstellt werden. Zur Zeit sind keine MDI-Formulare aktiv"
 
 #. Programmer's name for it: SNotAnMDIForm
 #: clx/QConsts.pas:96
@@ -1311,7 +1359,9 @@ msgstr "Wert muß zwischen %d und %d liegen"
 #. Programmer's name for it: SCannotCreateName
 #: clx/QConsts.pas:147
 msgid "Cannot create a default method name for an unnamed component"
-msgstr "Für eine unbenannte Komponente kann kein Standard-Methodennamen erstellt werden"
+msgstr ""
+"Für eine unbenannte Komponente kann kein Standard-Methodennamen erstellt "
+"werden"
 
 #. Programmer's name for it: SUnnamed
 #: clx/QConsts.pas:148
@@ -1409,8 +1459,11 @@ msgstr ""
 
 #. Programmer's name for it: SAlreadyExists
 #: clx/QConsts.pas:168
-msgid "A file with that name already exists. Please specify a different filename."
-msgstr "Eine Datei mit diesem Namen gibt es bereits. Geben Sie einen anderen Dateinamen an."
+msgid ""
+"A file with that name already exists. Please specify a different filename."
+msgstr ""
+"Eine Datei mit diesem Namen gibt es bereits. Geben Sie einen anderen "
+"Dateinamen an."
 
 #. Programmer's name for it: SConfirmDeleteTitle
 #: clx/QConsts.pas:169
@@ -1615,7 +1668,8 @@ msgstr "Eigenschaftskategorie existiert nicht (%s)"
 #. Programmer's name for it: sInvalidFilter
 #: clx/QConsts.pas:224 toolsapi/DesignIntf.pas:493
 msgid "Property filters may only be name, class or type based (%d:%d)"
-msgstr "Eigenschaftsfilter dürfen nur auf Name, Klasse oder Typ basieren (%d:%d)"
+msgstr ""
+"Eigenschaftsfilter dürfen nur auf Name, Klasse oder Typ basieren (%d:%d)"
 
 #. Programmer's name for it: SInvalidCategory
 #: clx/QConsts.pas:225
@@ -1625,7 +1679,8 @@ msgstr "Kategorien müssen ihre eigenen Namen und Beschreibung definieren"
 #. Programmer's name for it: sOperationNotAllowed
 #: clx/QConsts.pas:227
 msgid "Operation not allowed while dispatching application events"
-msgstr "Operation bei der Weiterleitung von Anwendungsereignissen nicht gestattet"
+msgstr ""
+"Operation bei der Weiterleitung von Anwendungsereignissen nicht gestattet"
 
 #. Programmer's name for it: STextNotFound
 #: clx/QConsts.pas:228
@@ -1817,7 +1872,8 @@ msgstr "Alle"
 #. Programmer's name for it: sInvalidSetClipped
 #: clx/QConsts.pas:272
 msgid "Cannot set Clipped property while painting"
-msgstr "Die Eigenschaft Clipped kann während des Zeichnens nicht geändert werden"
+msgstr ""
+"Die Eigenschaft Clipped kann während des Zeichnens nicht geändert werden"
 
 #. Programmer's name for it: sInvalidLCDValue
 #: clx/QConsts.pas:274
@@ -1832,7 +1888,9 @@ msgstr "Registerseite mit Index %d konnte nicht gelöscht werden"
 #. Programmer's name for it: sPageIndexError
 #: clx/QConsts.pas:278
 msgid "%d is an invalid PageIndex value.  PageIndex must be between 0 and %d"
-msgstr "%d ist ein ungültiger Wert für PageIndex. PageIndex muß einen Wert zwischen 0 und %d besitzen"
+msgstr ""
+"%d ist ein ungültiger Wert für PageIndex. PageIndex muß einen Wert zwischen "
+"0 und %d besitzen"
 
 #. Programmer's name for it: sInvalidLevel
 #: clx/QConsts.pas:279
@@ -1857,7 +1915,8 @@ msgstr "%s befindet sich bereits in der Statuszeile"
 #. Programmer's name for it: sListRadioItemBadParent
 #: clx/QConsts.pas:283
 msgid "Radio items must have a Controller as a parent"
-msgstr "Optionsfelder müssen einen Controller als übergeordnetes Element besitzen"
+msgstr ""
+"Optionsfelder müssen einen Controller als übergeordnetes Element besitzen"
 
 #. Programmer's name for it: sOwnerNotCustomHeaderSections
 #: clx/QConsts.pas:284
@@ -1882,7 +1941,6 @@ msgstr "Rückgängig"
 msgid "Redo"
 msgstr "Widerrufen"
 
-# Label: ignore
 #. Programmer's name for it: SLine
 #. FileDialogForm..ItemPopup..N1..Caption
 #. FileDialogForm..ListPopup..N2..Caption
@@ -1942,13 +2000,18 @@ msgstr "Laden..."
 
 #. Programmer's name for it: SNoAppInLib
 #: clx/QConsts.pas:300
-msgid "Fatal error: Cannot create application object in a shared object or library."
-msgstr "Fataler Fehler: Ein Anwendungsobjekt kann nicht in einem Shared Object oder einer Bibliothek erzeugt werden."
+msgid ""
+"Fatal error: Cannot create application object in a shared object or library."
+msgstr ""
+"Fataler Fehler: Ein Anwendungsobjekt kann nicht in einem Shared Object oder "
+"einer Bibliothek erzeugt werden."
 
 #. Programmer's name for it: SDuplicateApp
 #: clx/QConsts.pas:301
 msgid "Fatal error: Cannot create more than one TApplication instance"
-msgstr "Fataler Fehler: Mehr als eine Instanz von TApplication kann nicht erzeugt werden"
+msgstr ""
+"Fataler Fehler: Mehr als eine Instanz von TApplication kann nicht erzeugt "
+"werden"
 
 #. Programmer's name for it: SFirstRecord
 #: clx/QDBConsts.pas:20
@@ -2077,8 +2140,12 @@ msgstr ";Eingabe;Ausgabe;Eingabe/Ausgabe;Ergebnis"
 
 #. Programmer's name for it: SDataTypes
 #: clx/SqlConst.pas:72
-msgid ";String;SmallInt;Integer;Word;Boolean;Float;Currency;BCD;Date;Time;DateTime;;;;Blob;Memo;Graphic;;;;;Cursor;"
-msgstr ";String;SmallInt;Integer;Word;Boolean;Float;Currency;BCD;Date;Time;DateTime;;;;Blob;Memo;Graphic;;;;;Cursor;"
+msgid ""
+";String;SmallInt;Integer;Word;Boolean;Float;Currency;BCD;Date;Time;"
+"DateTime;;;;Blob;Memo;Graphic;;;;;Cursor;"
+msgstr ""
+";String;SmallInt;Integer;Word;Boolean;Float;Currency;BCD;Date;Time;"
+"DateTime;;;;Blob;Memo;Graphic;;;;;Cursor;"
 
 #. Programmer's name for it: SResultName
 #: clx/SqlConst.pas:73
@@ -2208,22 +2275,28 @@ msgstr "DBX-Fehler: Keine Zuordnung des Fehlercodes gefunden"
 #. Programmer's name for it: SDBXNOCONNECTION
 #: clx/SqlConst.pas:99
 msgid "DBX Error: Connection not found, error message cannot be retrieved"
-msgstr "DBX-Fehler: Verbindung nicht gefunden, Fehlermeldung kann nicht abgerufen werden"
+msgstr ""
+"DBX-Fehler: Verbindung nicht gefunden, Fehlermeldung kann nicht abgerufen "
+"werden"
 
 #. Programmer's name for it: SDBXNOMETAOBJECT
 #: clx/SqlConst.pas:100
 msgid "DBX Error: MetadataObject not found, error message cannot be retrieved"
-msgstr "DBX-Fehler: MetadataObject nicht gefunden, Fehlermeldung kann nicht abgerufen werden"
+msgstr ""
+"DBX-Fehler: MetadataObject nicht gefunden, Fehlermeldung kann nicht "
+"abgerufen werden"
 
 #. Programmer's name for it: SDBXNOCOMMAND
 #: clx/SqlConst.pas:101
 msgid "DBX Error: Command not found, error message cannot be retrieved"
-msgstr "DBX-Fehler: Befehl nicht gefunden, Fehlermeldung kann nicht abgerufen werden"
+msgstr ""
+"DBX-Fehler: Befehl nicht gefunden, Fehlermeldung kann nicht abgerufen werden"
 
 #. Programmer's name for it: SDBXNOCURSOR
 #: clx/SqlConst.pas:102
 msgid "DBX Error: Cursor not found, error message cannot be retrieved"
-msgstr "DBX-Fehler: Cursor nicht gefunden, Fehlermeldung kann nicht abgerufen werden"
+msgstr ""
+"DBX-Fehler: Cursor nicht gefunden, Fehlermeldung kann nicht abgerufen werden"
 
 #. Programmer's name for it: SNOMEMORY
 #: clx/SqlConst.pas:103
@@ -2393,8 +2466,11 @@ msgstr "Keine automatisch aktivierten Datenmodule"
 
 #. Programmer's name for it: sTooManyActiveConnections
 #: internet/BrkrConst.pas:25
-msgid "Maximum number of concurrent connections exceeded.  Please try again later"
-msgstr "Die maximale Anzahl gleichzeitiger Verbindungen wurde überschritten. Versuchen Sie später noch erneut"
+msgid ""
+"Maximum number of concurrent connections exceeded.  Please try again later"
+msgstr ""
+"Die maximale Anzahl gleichzeitiger Verbindungen wurde überschritten. "
+"Versuchen Sie später noch erneut"
 
 #. Programmer's name for it: sInternalServerError
 #: internet/BrkrConst.pas:29
@@ -2669,8 +2745,13 @@ msgstr "%s: Eigenschaft DisplayComponent ist nil"
 
 #. Programmer's name for it: sNoHandler
 #: internet/SiteConst.pas:76
-msgid "No request handlers handled this request. The WebAppComponents PageDispatcher, AdapterDispatcher or DispatchActions property may not be set."
-msgstr "Diese Anforderung wurde von keiner entsprechenden Routine behandelt. Die WebAppComponents-Eigenschaft PageDispatcher, AdapterDispatcher oder DispatchActions sind u.U. nicht gesetzt."
+msgid ""
+"No request handlers handled this request. The WebAppComponents "
+"PageDispatcher, AdapterDispatcher or DispatchActions property may not be set."
+msgstr ""
+"Diese Anforderung wurde von keiner entsprechenden Routine behandelt. Die "
+"WebAppComponents-Eigenschaft PageDispatcher, AdapterDispatcher oder "
+"DispatchActions sind u.U. nicht gesetzt."
 
 #. LoginAdapter validation
 #: internet/SiteConst.pas:80
@@ -2826,7 +2907,8 @@ msgstr "Unerwarteter Script-Fehler"
 #. 4 - source line text
 #: internet/SiteConst.pas:160
 msgid ""
-"<table width=\"95%%\" border=\"1\" cellspacing=\"0\" bordercolor=\"#C0C0C0\">\n"
+"<table width=\"95%%\" border=\"1\" cellspacing=\"0\" bordercolor=\"#C0C0C0"
+"\">\n"
 "<tr>\n"
 "<td colspan=2>\n"
 "<font color=\"#727272\"><b>Error[%0:d]:</b> \n"
@@ -2848,7 +2930,8 @@ msgid ""
 "</tr>\n"
 "</table>\n"
 msgstr ""
-"<table width=\"95%%\" border=\"1\" cellspacing=\"0\" bordercolor=\"#C0C0C0\">\n"
+"<table width=\"95%%\" border=\"1\" cellspacing=\"0\" bordercolor=\"#C0C0C0"
+"\">\n"
 "<tr>\n"
 "<td colspan=2>\n"
 "<font color=\"#727272\"><b>Fehler[%0:d]:</b> \n"
@@ -2917,8 +3000,12 @@ msgstr "include-Dateifehler auf Zeile %d: erwartet ="
 
 #. Programmer's name for it: sIncTypeError
 #: internet/SiteConst.pas:174
-msgid "File include error on line %d: expecting virtual, file, or page, but found %s."
-msgstr "include-Dateifehler auf Zeile %d: erwaret virtual, Datei, oder Seite, aber %s gefunden."
+msgid ""
+"File include error on line %d: expecting virtual, file, or page, but found %"
+"s."
+msgstr ""
+"include-Dateifehler auf Zeile %d: erwaret virtual, Datei, oder Seite, aber %"
+"s gefunden."
 
 #. Programmer's name for it: sUnknownCommand
 #: internet/SockAppNotify.pas:124
@@ -2958,37 +3045,68 @@ msgstr "Start"
 #. Programmer's name for it: sUnauthorizedString
 #. Programmer's name for it: UnauthorizedString
 #: internet/SvrConst.pas:23 internet/SvrConst.pas:66
-msgid "<HTML><HEAD><TITLE>Unauthorized</TITLE></HEAD><BODY><H1>Unauthorized</H1>Proper authorization is required for this area. Either your browser does not perform authorization, or your authorization has failed.</BODY></HTML>\n"
-msgstr "<HTML><HEAD><TITLE>Nicht autorisiert</TITLE></HEAD><BODY><H1>Nicht autorisiert</H1>Für diesen Bereich ist eine Anmeldung erforderlich. Entweder hat Ihr Browser keine Anmeldung durchgeführt oder Ihre Anmeldung ist mißlungen.</BODY></HTML>\n"
+msgid ""
+"<HTML><HEAD><TITLE>Unauthorized</TITLE></HEAD><BODY><H1>Unauthorized</"
+"H1>Proper authorization is required for this area. Either your browser does "
+"not perform authorization, or your authorization has failed.</BODY></HTML>\n"
+msgstr ""
+"<HTML><HEAD><TITLE>Nicht autorisiert</TITLE></HEAD><BODY><H1>Nicht "
+"autorisiert</H1>Für diesen Bereich ist eine Anmeldung erforderlich. Entweder "
+"hat Ihr Browser keine Anmeldung durchgeführt oder Ihre Anmeldung ist "
+"mißlungen.</BODY></HTML>\n"
 
 #. Programmer's name for it: sForbiddenString
 #. Programmer's name for it: ForbiddenString
 #: internet/SvrConst.pas:24 internet/SvrConst.pas:67
-msgid "<HTML><TITLE>The requested URL is forbidden</TITLE><BODY><H1>The requested URL is forbidden</H1><P>HTTP status code: 403</BODY></HTML>\n"
-msgstr "<HTML><TITLE>Der Zugriff auf die angeforderte URL ist nicht gestattet</TITLE><BODY><H1>Der Zugriff auf die angeforderte URL ist nicht gestattet</H1><P>HTTP-Statuscode: 403</BODY></HTML>\n"
+msgid ""
+"<HTML><TITLE>The requested URL is forbidden</TITLE><BODY><H1>The requested "
+"URL is forbidden</H1><P>HTTP status code: 403</BODY></HTML>\n"
+msgstr ""
+"<HTML><TITLE>Der Zugriff auf die angeforderte URL ist nicht gestattet</"
+"TITLE><BODY><H1>Der Zugriff auf die angeforderte URL ist nicht gestattet</"
+"H1><P>HTTP-Statuscode: 403</BODY></HTML>\n"
 
 #. Programmer's name for it: sNoDirBrowseString
 #. Programmer's name for it: NoDirBrowseString
 #: internet/SvrConst.pas:25 internet/SvrConst.pas:68
-msgid "<HTML><TITLE>Directory browsing is forbidden</TITLE><BODY><H1>The requested URL is forbidden</H1><P>HTTP status code: 403</BODY></HTML>\n"
-msgstr "<HTML><TITLE>Das Durchsuchen von Verzeichnissen ist nicht gestattet</TITLE><BODY><H1>Der Zugriff auf die angeforderte URL ist nicht gestattet</H1><P>HTTP-Statuscode: 403</BODY></HTML>\n"
+msgid ""
+"<HTML><TITLE>Directory browsing is forbidden</TITLE><BODY><H1>The requested "
+"URL is forbidden</H1><P>HTTP status code: 403</BODY></HTML>\n"
+msgstr ""
+"<HTML><TITLE>Das Durchsuchen von Verzeichnissen ist nicht gestattet</"
+"TITLE><BODY><H1>Der Zugriff auf die angeforderte URL ist nicht gestattet</"
+"H1><P>HTTP-Statuscode: 403</BODY></HTML>\n"
 
 #. Programmer's name for it: sBadRequest
 #. Programmer's name for it: BadRequest
 #: internet/SvrConst.pas:26 internet/SvrConst.pas:69
-msgid "<HTML><TITLE>Invalid HTTP request: Method not allowed for HTTP/1.0</TITLE><BODY><H1>Invalid HTTP request: Method not allowed for HTTP/1.0</H1><P>HTTP status code: 400</BODY></HTML>\n"
-msgstr "<HTML><TITLE>Ungültige HTTP-Anforderung: Methode für HTTP/1.0 nicht zulässig</TITLE><BODY><H1>Ungültige HTTP-Anforderung: Methode für HTTP/1.0 nicht zulässig</H1><P>HTTP-Statuscode: 400</BODY></HTML>\n"
+msgid ""
+"<HTML><TITLE>Invalid HTTP request: Method not allowed for HTTP/1.0</"
+"TITLE><BODY><H1>Invalid HTTP request: Method not allowed for HTTP/1.0</"
+"H1><P>HTTP status code: 400</BODY></HTML>\n"
+msgstr ""
+"<HTML><TITLE>Ungültige HTTP-Anforderung: Methode für HTTP/1.0 nicht "
+"zulässig</TITLE><BODY><H1>Ungültige HTTP-Anforderung: Methode für HTTP/1.0 "
+"nicht zulässig</H1><P>HTTP-Statuscode: 400</BODY></HTML>\n"
 
 #. Programmer's name for it: sBadRequest
 #. Programmer's name for it: BadRequest
 #: internet/SvrConst.pas:32 internet/SvrConst.pas:75
-msgid "<TITLE>The requested URL was not found</TITLE><BODY><H1>The requested URL was not found</H1><P>HTTP status code: 404</BODY>"
-msgstr "<TITLE>Die angeforderte URL wurde nicht gefunden</TITLE><BODY><H1>Die angeforderte URL wurde nicht gefunden</H1><P>HTTP-Statuscode: 404</BODY>"
+msgid ""
+"<TITLE>The requested URL was not found</TITLE><BODY><H1>The requested URL "
+"was not found</H1><P>HTTP status code: 404</BODY>"
+msgstr ""
+"<TITLE>Die angeforderte URL wurde nicht gefunden</TITLE><BODY><H1>Die "
+"angeforderte URL wurde nicht gefunden</H1><P>HTTP-Statuscode: 404</BODY>"
 
 #. Programmer's name for it: sBadRequest
 #: internet/SvrConst.pas:39
-msgid "<TITLE>Internal Server Error</TITLE><BODY><H1>Internal Server Error</H1><P>HTTP status code: 500<P>HTTP error message: %s</BODY>"
-msgstr "<TITLE>Interner Server-Fehler</TITLE><BODY><H1>Interner Server-Fehler</H1><P>HTTP-Statuscode: 500<P>HTTP-Fehlermeldung: %s</BODY>"
+msgid ""
+"<TITLE>Internal Server Error</TITLE><BODY><H1>Internal Server Error</"
+"H1><P>HTTP status code: 500<P>HTTP error message: %s</BODY>"
+msgstr ""
+"<TITLE>Interner Server-Fehler</TITLE><BODY><H1>Interner Server-Fehler</"
+"H1><P>HTTP-Statuscode: 500<P>HTTP-Fehlermeldung: %s</BODY>"
 
 #. Programmer's name for it: sInvalidActionRegistration
 #: internet/SvrConst.pas:41 internet/WebConst.pas:23
@@ -3088,8 +3206,12 @@ msgstr "Erzeugen"
 
 #. Programmer's name for it: sDirHeader
 #: internet/SvrConst.pas:79
-msgid "<HTML><HEAD><TITLE>Directory of %s</TITLE></HEAD><BODY><H1>Directory of %0:s</H1>\n"
-msgstr "<HTML><HEAD><TITLE>Verzeichnis von %s</TITLE></HEAD><BODY><H1>Verzeichnis von %0:s</H1>\n"
+msgid ""
+"<HTML><HEAD><TITLE>Directory of %s</TITLE></HEAD><BODY><H1>Directory of %0:"
+"s</H1>\n"
+msgstr ""
+"<HTML><HEAD><TITLE>Verzeichnis von %s</TITLE></HEAD><BODY><H1>Verzeichnis "
+"von %0:s</H1>\n"
 
 #. Programmer's name for it: sDirParent
 #: internet/SvrConst.pas:80
@@ -3131,13 +3253,15 @@ msgstr "</UL></BODY></HTML>\n"
 
 #. Programmer's name for it: sBrowserExecFailed
 #: internet/SvrConst.pas:86
+#, fuzzy
 msgid "Unable to exec file %s"
-msgstr "Datei %s kann nicht ausgeführt werden"
+msgstr "%s kann nicht ausgeführt werden"
 
 #. Programmer's name for it: sBrowserNotFound
 #: internet/SvrConst.pas:87
+#, fuzzy
 msgid "Unable to find file %s"
-msgstr "Datei %s kann nicht gefunden werden"
+msgstr "Prozedur %s nicht gefunden"
 
 #. Programmer's name for it: sErrorExec
 #: internet/SvrHTTPIndy.pas:858
@@ -3153,7 +3277,8 @@ msgstr "Das Einlesen der Informationen über die Zeitzone ist fehlgeschlagen."
 #. Programmer's name for it: sErrorExecTimeout
 #: internet/SvrHTTPIndy.pas:863
 msgid "Timeout occurred waiting for %s to execute"
-msgstr "Beim Warten auf die AUsführung von %s ist eine Zeitüberschreitung aufgetreten"
+msgstr ""
+"Beim Warten auf die AUsführung von %s ist eine Zeitüberschreitung aufgetreten"
 
 #. Programmer's name for it: sErrorExecFail
 #: internet/SvrHTTPIndy.pas:864
@@ -3247,8 +3372,9 @@ msgstr "Aktualisierung durchführen"
 
 #. Programmer's name for it: sFieldNameBlank
 #: internet/WbmConst.pas:26
+#, fuzzy
 msgid "%s.FieldName = ''"
-msgstr "%s.FieldName = ''"
+msgstr "Feldname"
 
 #. Programmer's name for it: sXMLComponentNotDefined
 #: internet/WbmConst.pas:27
@@ -3280,49 +3406,41 @@ msgstr "Ungültige übergeordnete Klasse: %s"
 msgid "Field %s ignored, only one status field allowed"
 msgstr "Feld %s wird ignoriert, es ist nur ein Statusfeld gestattet"
 
-# Label: ignore
 #. Programmer's name for it: sFirstButton
 #: internet/WbmConst.pas:33
 msgid "|<"
 msgstr ""
 
-# Label: ignore
 #. Programmer's name for it: sLastButton
 #: internet/WbmConst.pas:34
 msgid ">|"
 msgstr ""
 
-# Label: ignore
 #. Programmer's name for it: sPriorButton
 #: internet/WbmConst.pas:35
 msgid "<"
 msgstr ""
 
-# Label: ignore
 #. Programmer's name for it: sNextButton
 #: internet/WbmConst.pas:36
 msgid ">"
 msgstr ""
 
-# Label: ignore
 #. Programmer's name for it: sPriorPageButton
 #: internet/WbmConst.pas:37
 msgid "<<"
 msgstr ""
 
-# Label: ignore
 #. Programmer's name for it: sNextPageButton
 #: internet/WbmConst.pas:38
 msgid ">>"
 msgstr ""
 
-# Label: ignore
 #. Programmer's name for it: sDeleteButton
 #: internet/WbmConst.pas:39
 msgid " - "
 msgstr ""
 
-# Label: ignore
 #. Programmer's name for it: sInsertButton
 #: internet/WbmConst.pas:40
 msgid " + "
@@ -3386,7 +3504,9 @@ msgstr "XMLBroker: %s hat keine Verbindung"
 #. Programmer's name for it: sErrorDecodingURLText
 #: internet/WebConst.pas:20
 msgid "Error decoding URL style (%%XX) encoded string at position %d"
-msgstr "Fehler beim Decodieren eines im URL-Stil (%%XX) codierten Strings bei Position %d"
+msgstr ""
+"Fehler beim Decodieren eines im URL-Stil (%%XX) codierten Strings bei "
+"Position %d"
 
 #. Programmer's name for it: sInvalidURLEncodedChar
 #: internet/WebConst.pas:21
@@ -3466,8 +3586,11 @@ msgstr "Ungültige Enumeration von Web-Komponente"
 
 #. Programmer's name for it: sInvalidWebParent
 #: internet/WebConst.pas:42
-msgid "Operation not supported.  %s component does not support IGetWebComponentList"
-msgstr "Operation wird nicht unterstützt.  Komponente %s unterstützt nicht IGetWebComponentList"
+msgid ""
+"Operation not supported.  %s component does not support IGetWebComponentList"
+msgstr ""
+"Operation wird nicht unterstützt.  Komponente %s unterstützt nicht "
+"IGetWebComponentList"
 
 #. Programmer's name for it: sVariableIsNotAContainer
 #: internet/WebConst.pas:44
@@ -3499,12 +3622,14 @@ msgstr "Aktion kann nicht auf unbekannte HTTP -Methode antworten"
 #. Programmer's name for it: SCannotReadOddPos
 #: internet/xdom.pas:79
 msgid "Cannot read WideString from odd byte position"
-msgstr "WideString kann nicht von einer ungeraden Byte-Position aus gelesen werden"
+msgstr ""
+"WideString kann nicht von einer ungeraden Byte-Position aus gelesen werden"
 
 #. Programmer's name for it: SCannotWriteOddPos
 #: internet/xdom.pas:80
 msgid "Cannot write WideString to odd byte position"
-msgstr "WideString kann nicht an eine ungerade Byte-Position geschrieben werden"
+msgstr ""
+"WideString kann nicht an eine ungerade Byte-Position geschrieben werden"
 
 #. Programmer's name for it: SOddSizeInvalid
 #: internet/xdom.pas:81
@@ -3544,12 +3669,15 @@ msgstr "Kein entsprechender DOM-Hersteller: \"%s\""
 #. Programmer's name for it: SNoDOMNodeEx
 #: internet/XMLConst.pas:19
 msgid "Selected DOM Vendor does not support this property or method"
-msgstr "Der gewählte DOM-Hersteller unterstützt diese Eigenschaft oder Methode nicht"
+msgstr ""
+"Der gewählte DOM-Hersteller unterstützt diese Eigenschaft oder Methode nicht"
 
 #. Programmer's name for it: SDOMNotSupported
 #: internet/XMLConst.pas:20
 msgid "Property or Method \"%s\" is not supported by DOM Vendor \"%s\""
-msgstr "Eigenschaft oder Methode \"%s\" wird von diesem DOM-Hersteller \"%s\" nicht unterstützt"
+msgstr ""
+"Eigenschaft oder Methode \"%s\" wird von diesem DOM-Hersteller \"%s\" nicht "
+"unterstützt"
 
 #. Programmer's name for it: SNodeExpected
 #: internet/XMLConst.pas:23
@@ -3667,8 +3795,12 @@ msgstr "Ungültiger Zugriff"
 
 #. Programmer's name for it: SBadTransformArgs
 #: internet/XMLConst.pas:50
-msgid "TransformNode most be called using a document node (not a document element) for the source and the stylesheet."
-msgstr "TransformNode muss mit einem Dokumentknoten (nicht einem Dokumentelement) für die Quelle und das Stylesheet aufgerufen werden."
+msgid ""
+"TransformNode most be called using a document node (not a document element) "
+"for the source and the stylesheet."
+msgstr ""
+"TransformNode muss mit einem Dokumentknoten (nicht einem Dokumentelement) "
+"für die Quelle und das Stylesheet aufgerufen werden."
 
 #. Programmer's name for it: SErrorWritingFile
 #: internet/XMLConst.pas:51
@@ -3744,7 +3876,9 @@ msgstr "Nicht unterstützte Zeichencodierung \"%s\", versuchen Sie LoadFromFile"
 #. Programmer's name for it: SNoRefresh
 #: internet/XMLConst.pas:69
 msgid "Refresh is only supported if the FileName or XML properties are set"
-msgstr "Aktualisierung wird nur unterstützt, wenn die Eigenschaften FileName oder XML gesetzt sind"
+msgstr ""
+"Aktualisierung wird nur unterstützt, wenn die Eigenschaften FileName oder "
+"XML gesetzt sind"
 
 #. Programmer's name for it: SMissingFileName
 #: internet/XMLConst.pas:70
@@ -3817,7 +3951,8 @@ msgstr "%s darf für ein Verweiselement nicht gesetzt werden"
 #. Programmer's name for it: SSetGroupRefProp
 #: internet/XMLConst.pas:85
 msgid "Set the GroupRef property for the cmGroupRef content model"
-msgstr "Legen Sie die Eigenschaft GroupRef für das cmGroupRef-Inhaltsmodell fest"
+msgstr ""
+"Legen Sie die Eigenschaft GroupRef für das cmGroupRef-Inhaltsmodell fest"
 
 #. Programmer's name for it: SNoContentModel
 #: internet/XMLConst.pas:86
@@ -3952,7 +4087,8 @@ msgstr "Die Verbindung wurde erfolgreich geschlossen."
 #. Programmer's name for it: RSCouldNotBindSocket
 #: internetdirect/IdResourceStrings.pas:11
 msgid "Could not bind socket. Address and port are already in use."
-msgstr "Socket konnte nicht gebunden werden. Adresse und Port werden bereits benutzt."
+msgstr ""
+"Socket konnte nicht gebunden werden. Adresse und Port werden bereits benutzt."
 
 #. Programmer's name for it: RSNoBindingsSpecified
 #: internetdirect/IdResourceStrings.pas:13
@@ -4032,7 +4168,8 @@ msgstr "%d: Zirkulärverweise sind nicht gestattet"
 #. Programmer's name for it: RSInterceptPropIsNil
 #: internetdirect/IdResourceStrings.pas:28
 msgid "InterceptEnabled cannot be set to true when Intercept is nil."
-msgstr "InterceptEnabled darf nicht auf true gesetzt sein, wenn Intercept nil ist."
+msgstr ""
+"InterceptEnabled darf nicht auf true gesetzt sein, wenn Intercept nil ist."
 
 #. Programmer's name for it: RSIOHandlerPropInvalid
 #: internetdirect/IdResourceStrings.pas:29
@@ -4053,7 +4190,9 @@ msgstr "Objekttyp nicht unterstützt."
 
 #: internetdirect/IdResourceStrings.pas:33
 msgid "AcceptWait property cannot be modified while server is active."
-msgstr "Die Eigenschaft AcceptWait kann nicht modifiziert werden, während der Server aktiv ist."
+msgstr ""
+"Die Eigenschaft AcceptWait kann nicht modifiziert werden, während der Server "
+"aktiv ist."
 
 #. Programmer's name for it: RSTerminateThreadTimeout
 #: internetdirect/IdResourceStrings.pas:34
@@ -4492,17 +4631,22 @@ msgstr "Nicht unterstütztes Autorisierungs-Schema."
 #. Programmer's name for it: RSHTTPCannotSwitchSessionStateWhenActive
 #: internetdirect/IdResourceStrings.pas:135
 msgid "Cannot change session state when the server is active."
-msgstr "Sitzungsstatus kann nicht geändert werden, während der Server aktiv ist.."
+msgstr ""
+"Sitzungsstatus kann nicht geändert werden, während der Server aktiv ist.."
 
 #. HTTP Authentication
 #: internetdirect/IdResourceStrings.pas:137
 msgid "This authentication method is already registered with class name %s."
-msgstr "Diese Authentifizierungsmethode ist bereits mit Klassennamen %s registriert."
+msgstr ""
+"Diese Authentifizierungsmethode ist bereits mit Klassennamen %s registriert."
 
 #. HTTP Authentication Digeest
 #: internetdirect/IdResourceStrings.pas:139
-msgid "Unsupported hash algorithm. This implementation supports only MD5 encoding."
-msgstr "Nicht unterstützter Hash-Algorithmus. Die Implementierung unterstützt nur MD5-Codierung."
+msgid ""
+"Unsupported hash algorithm. This implementation supports only MD5 encoding."
+msgstr ""
+"Nicht unterstützter Hash-Algorithmus. Die Implementierung unterstützt nur "
+"MD5-Codierung."
 
 #. SSPI Authentication
 #: internetdirect/IdResourceStrings.pas:144
@@ -4549,7 +4693,9 @@ msgstr "Der Aufrufer ist nicht der Besitzer der gewünschten Beglaubigung"
 #. Programmer's name for it: RSHTTPSSPIPackageCannotBeInstalled
 #: internetdirect/IdResourceStrings.pas:152
 msgid "The security package failed to initialize, and cannot be installed"
-msgstr "Das Sicherheits-Package konnte nicht initialisiert werden und kann nicht installiert werden"
+msgstr ""
+"Das Sicherheits-Package konnte nicht initialisiert werden und kann nicht "
+"installiert werden"
 
 #. Programmer's name for it: RSHTTPSSPIInvalidToken
 #: internetdirect/IdResourceStrings.pas:153
@@ -4558,13 +4704,21 @@ msgstr "Das der Funktion übermittelte Token ist ungültig"
 
 #. Programmer's name for it: RSHTTPSSPICannotPack
 #: internetdirect/IdResourceStrings.pas:154
-msgid "The security package is not able to marshall the logon buffer, so the logon attempt has failed"
-msgstr "Das Sicherheits-Package kann den Anmelde-Puffer nicht einrichten, deswegen ist der Versuch der Anmeldung fehlgeschlagen"
+msgid ""
+"The security package is not able to marshall the logon buffer, so the logon "
+"attempt has failed"
+msgstr ""
+"Das Sicherheits-Package kann den Anmelde-Puffer nicht einrichten, deswegen "
+"ist der Versuch der Anmeldung fehlgeschlagen"
 
 #. Programmer's name for it: RSHTTPSSPIQOPNotSupported
 #: internetdirect/IdResourceStrings.pas:155
-msgid "The per-message Quality of Protection is not supported by the security package"
-msgstr "Der Qualitätsschutz pro Botschaft wird vom Sicherheits-Package nicht unterstützt"
+msgid ""
+"The per-message Quality of Protection is not supported by the security "
+"package"
+msgstr ""
+"Der Qualitätsschutz pro Botschaft wird vom Sicherheits-Package nicht "
+"unterstützt"
 
 #. Programmer's name for it: RSHTTPSSPINoImpersonation
 #: internetdirect/IdResourceStrings.pas:156
@@ -4589,7 +4743,8 @@ msgstr "Im Sicherheits-Package sind keine Beglaubigungen verfügbar"
 #. Programmer's name for it: RSHTTPSSPIMessageAltered
 #: internetdirect/IdResourceStrings.pas:160
 msgid "The message or signature supplied for verification has been altered"
-msgstr "Die zur Verifizierung übermittelte Botschaft oder Signatur wurde verändert"
+msgstr ""
+"Die zur Verifizierung übermittelte Botschaft oder Signatur wurde verändert"
 
 #. Programmer's name for it: RSHTTPSSPIOutOfSequence
 #: internetdirect/IdResourceStrings.pas:161
@@ -4599,27 +4754,43 @@ msgstr "Die zur Verifizierung übermittelte Botschaft ist außerhalb der Sequenz
 #. Programmer's name for it: RSHTTPSSPINoAuthAuthority
 #: internetdirect/IdResourceStrings.pas:162
 msgid "No authority could be contacted for authentication."
-msgstr "Für die Authentifizierung konnte keine geeignete Stelle kontaktiert werden."
+msgstr ""
+"Für die Authentifizierung konnte keine geeignete Stelle kontaktiert werden."
 
 #. Programmer's name for it: RSHTTPSSPIContinueNeeded
 #: internetdirect/IdResourceStrings.pas:163
-msgid "The function completed successfully, but must be called again to complete the context"
-msgstr "Die Funktion wurde erfolgreich ausgeführt, muss aber zur Vervollständigung des Kontexts wieder aufgerufen werden"
+msgid ""
+"The function completed successfully, but must be called again to complete "
+"the context"
+msgstr ""
+"Die Funktion wurde erfolgreich ausgeführt, muss aber zur Vervollständigung "
+"des Kontexts wieder aufgerufen werden"
 
 #. Programmer's name for it: RSHTTPSSPICompleteNeeded
 #: internetdirect/IdResourceStrings.pas:164
 msgid "The function completed successfully, but CompleteToken must be called"
-msgstr "Die Funktion wurde erfolgreich ausgeführt, aber CompleteToken muss aufgerufen werden"
+msgstr ""
+"Die Funktion wurde erfolgreich ausgeführt, aber CompleteToken muss "
+"aufgerufen werden"
 
 #. Programmer's name for it: RSHTTPSSPICompleteContinueNeeded
 #: internetdirect/IdResourceStrings.pas:165
-msgid "The function completed successfully, but both CompleteToken and this function must be called to complete the context"
-msgstr "Die Funktion wurde erfolgreich ausgeführt, aber CompleteToken als auch diese Funktion müssen aufgerufen werden, um den Kontext zu vervollständigen"
+msgid ""
+"The function completed successfully, but both CompleteToken and this "
+"function must be called to complete the context"
+msgstr ""
+"Die Funktion wurde erfolgreich ausgeführt, aber CompleteToken als auch diese "
+"Funktion müssen aufgerufen werden, um den Kontext zu vervollständigen"
 
 #. Programmer's name for it: RSHTTPSSPILocalLogin
 #: internetdirect/IdResourceStrings.pas:166
-msgid "The logon was completed, but no network authority was available. The logon was made using locally known information"
-msgstr "Die Anmeldung wurde durchgeführt, aber es war keine Netzwerk-Autorität verfügbar. Die Anmeldung wurde unter Verwendung lokal bekannter Informationen durchgeführt"
+msgid ""
+"The logon was completed, but no network authority was available. The logon "
+"was made using locally known information"
+msgstr ""
+"Die Anmeldung wurde durchgeführt, aber es war keine Netzwerk-Autorität "
+"verfügbar. Die Anmeldung wurde unter Verwendung lokal bekannter "
+"Informationen durchgeführt"
 
 #. Programmer's name for it: RSHTTPSSPIContextExpired
 #: internetdirect/IdResourceStrings.pas:168
@@ -4629,12 +4800,18 @@ msgstr "Der Kontext ist abgelaufen und kann nicht mehr verwendet werden."
 #. Programmer's name for it: RSHTTPSSPIIncompleteMessage
 #: internetdirect/IdResourceStrings.pas:169
 msgid "The supplied message is incomplete.  The signature was not verified."
-msgstr "Die übermittelte Botschaft ist unvollständig. Die Signatur wurde nicht verifiziert."
+msgstr ""
+"Die übermittelte Botschaft ist unvollständig. Die Signatur wurde nicht "
+"verifiziert."
 
 #. Programmer's name for it: RSHTTPSSPIIncompleteCredentialNotInit
 #: internetdirect/IdResourceStrings.pas:170
-msgid "The credentials supplied were not complete, and could not be verified. The context could not be initialized."
-msgstr "Die aufgeführten Beglaubigungen waren unvollständig und konnten nicht verifiziert werden. Der Kontext konnte nicht initialisiert werden."
+msgid ""
+"The credentials supplied were not complete, and could not be verified. The "
+"context could not be initialized."
+msgstr ""
+"Die aufgeführten Beglaubigungen waren unvollständig und konnten nicht "
+"verifiziert werden. Der Kontext konnte nicht initialisiert werden."
 
 #. Programmer's name for it: RSHTTPSSPIBufferTooSmall
 #: internetdirect/IdResourceStrings.pas:171
@@ -4643,8 +4820,13 @@ msgstr "Die der Funktion mitgegebenen Puffer sind zu klein."
 
 #. Programmer's name for it: RSHTTPSSPIIncompleteCredentialsInit
 #: internetdirect/IdResourceStrings.pas:172
-msgid "The credentials supplied were not complete, and could not be verified. Additional information can be returned from the context."
-msgstr "Die aufgeführten Beglaubigungen waren unvollständig und konnten nicht verifiziert werden. Zusatzinformationen können aus dem Kontext zurückgegeben werden."
+msgid ""
+"The credentials supplied were not complete, and could not be verified. "
+"Additional information can be returned from the context."
+msgstr ""
+"Die aufgeführten Beglaubigungen waren unvollständig und konnten nicht "
+"verifiziert werden. Zusatzinformationen können aus dem Kontext zurückgegeben "
+"werden."
 
 #. Programmer's name for it: RSHTTPSSPIRengotiate
 #: internetdirect/IdResourceStrings.pas:173
@@ -4669,7 +4851,9 @@ msgstr "Die Uhrzeit auf Client und Server ist unterschiedlich."
 #. Programmer's name for it: RSHTTPSSPIUntrustedRoot
 #: internetdirect/IdResourceStrings.pas:177
 msgid "The certificate chain was issued by an untrusted authority."
-msgstr "Die Zertifikatskette wurde von einer nicht vertrauenswürdigen Autorität ausgegeben."
+msgstr ""
+"Die Zertifikatskette wurde von einer nicht vertrauenswürdigen Autorität "
+"ausgegeben."
 
 #. Programmer's name for it: RSHTTPSSPIIllegalMessage
 #: internetdirect/IdResourceStrings.pas:178
@@ -4698,13 +4882,21 @@ msgstr "Die angegebenen Daten konnten nicht entschlüsselt werden."
 
 #. Programmer's name for it: RSHTTPSSPIAlgorithmMismatch
 #: internetdirect/IdResourceStrings.pas:183
-msgid "The client and server cannot communicate, because they do not possess a common algorithm."
-msgstr "Client und Server können nicht kommunizieren, da sie keinen gemeinsamen Algorithmus besitzen."
+msgid ""
+"The client and server cannot communicate, because they do not possess a "
+"common algorithm."
+msgstr ""
+"Client und Server können nicht kommunizieren, da sie keinen gemeinsamen "
+"Algorithmus besitzen."
 
 #. Programmer's name for it: RSHTTPSSPISecurityQOSFailure
 #: internetdirect/IdResourceStrings.pas:184
-msgid "The security context could not be established due to a failure in the requested quality of service (e.g. mutual authentication or delegation)."
-msgstr "Der Sicherheitskontext konnte nicht eingerichtet werden, da Qualität des Service fehlt (z.B. gegenseitige Authentifizierung oder Delegation)."
+msgid ""
+"The security context could not be established due to a failure in the "
+"requested quality of service (e.g. mutual authentication or delegation)."
+msgstr ""
+"Der Sicherheitskontext konnte nicht eingerichtet werden, da Qualität des "
+"Service fehlt (z.B. gegenseitige Authentifizierung oder Delegation)."
 
 #. Programmer's name for it: RSHTTPSSPIUnknwonError
 #: internetdirect/IdResourceStrings.pas:185
@@ -4734,7 +4926,9 @@ msgstr "Es wurde kein Beglaubigungs-Handle geholt"
 #. Programmer's name for it: RSHTTPSSPICanNotChangeCredentials
 #: internetdirect/IdResourceStrings.pas:200
 msgid "Can not change credentials after handle aquired. Use Release first"
-msgstr "Beglaubigung kann nicht nach Holen des Handle geändert werden. Zuerst Release benutzen"
+msgstr ""
+"Beglaubigung kann nicht nach Holen des Handle geändert werden. Zuerst "
+"Release benutzen"
 
 #. Programmer's name for it: RSHTTPSSPIUnknwonCredentialUse
 #: internetdirect/IdResourceStrings.pas:201
@@ -5040,7 +5234,9 @@ msgstr "Host nicht gefunden."
 #. Programmer's name for it: RSStackTRY_AGAIN
 #: internetdirect/IdResourceStrings.pas:268
 msgid "Non-authoritative response (try again or check DNS setup)."
-msgstr "Nicht-autoritative Antwort (Versuchen Sie es noch einmal oder überprüfen Sie das DNS-Setup)."
+msgstr ""
+"Nicht-autoritative Antwort (Versuchen Sie es noch einmal oder überprüfen Sie "
+"das DNS-Setup)."
 
 #. Programmer's name for it: RSStackNO_RECOVERY
 #: internetdirect/IdResourceStrings.pas:269
@@ -5085,12 +5281,14 @@ msgstr "Der DNS-Server meldet einen Fehler im Abfragenamen"
 #. Programmer's name for it: RSCodeQueryNotImplemented
 #: internetdirect/IdResourceStrings.pas:280
 msgid "DNS Server Reports Query Not Implemented Error"
-msgstr "Der DNS-Server meldet einen Fehler, dass die Abfrage nicht implementiert ist"
+msgstr ""
+"Der DNS-Server meldet einen Fehler, dass die Abfrage nicht implementiert ist"
 
 #. Programmer's name for it: RSCodeQueryQueryRefused
 #: internetdirect/IdResourceStrings.pas:281
 msgid "DNS Server Reports Query Refused Error"
-msgstr "Der DNS-Server meldet einen Fehler, dass die Abfrage zurückgewiesen wurde"
+msgstr ""
+"Der DNS-Server meldet einen Fehler, dass die Abfrage zurückgewiesen wurde"
 
 #. Programmer's name for it: RSCodeQueryUnknownError
 #: internetdirect/IdResourceStrings.pas:282
@@ -5235,7 +5433,9 @@ msgstr "Nicht unterstützter Transfer-Modus: \"%s\""
 #. Programmer's name for it: RSTFTPDiskFull
 #: internetdirect/IdResourceStrings.pas:318
 msgid "Unable to complete write request, progress halted at %d bytes"
-msgstr "Die Schreibanforderung konnte nicht abgeschlossen werden, der Fortschritt wurde bei %d Byte angehalten"
+msgstr ""
+"Die Schreibanforderung konnte nicht abgeschlossen werden, der Fortschritt "
+"wurde bei %d Byte angehalten"
 
 #. Programmer's name for it: RSTFTPFileNotFound
 #: internetdirect/IdResourceStrings.pas:319
@@ -5255,7 +5455,8 @@ msgstr "Ungültige Anzahl für Text. TIdText muss größer als 1 sein"
 #. Programmer's name for it: RSTIdMessagePartCreate
 #: internetdirect/IdResourceStrings.pas:324
 msgid "TIdMessagePart can not be created.  Use descendant classes. "
-msgstr "TIdMessagePart kann nicht erzeugt werden. Verwenden Sie abgeleitete Klassen. "
+msgstr ""
+"TIdMessagePart kann nicht erzeugt werden. Verwenden Sie abgeleitete Klassen. "
 
 #. Programmer's name for it: RSTIdMessageErrorSavingAttachment
 #: internetdirect/IdResourceStrings.pas:325
@@ -5283,8 +5484,12 @@ msgstr "Server unterstützt kein APOP (kein Zeitstempel)"
 
 #. Programmer's name for it: RSIMAP4ConnectionStateError
 #: internetdirect/IdResourceStrings.pas:334
-msgid "Unable to execute command, wrong connection state;Current connection state: %s."
-msgstr "Anweisung kann nicht ausgeführt werden, falscher Verbindungsstatus;aktueller Verbindungsstatus: %s."
+msgid ""
+"Unable to execute command, wrong connection state;Current connection state: %"
+"s."
+msgstr ""
+"Anweisung kann nicht ausgeführt werden, falscher Verbindungsstatus;aktueller "
+"Verbindungsstatus: %s."
 
 #. Programmer's name for it: RSUnrecognizedIMAP4ResponseHeader
 #: internetdirect/IdResourceStrings.pas:335
@@ -5375,33 +5580,53 @@ msgstr "Ungültige Länge von Wert: sollte 32 sein."
 
 #. Programmer's name for it: RSNETCALConfirmLongIPList
 #: internetdirect/IdResourceStrings.pas:360
-msgid "There is too many IP addresses in the specified range (%d) to be displayed at design time."
-msgstr "Im angegebenen Bereich (%d) gibt es mehr IP-Adressen als zur Entwurfszeit angezeigt werden können."
+msgid ""
+"There is too many IP addresses in the specified range (%d) to be displayed "
+"at design time."
+msgstr ""
+"Im angegebenen Bereich (%d) gibt es mehr IP-Adressen als zur Entwurfszeit "
+"angezeigt werden können."
 
 #. Programmer's name for it: RSIdentReplyTimeout
 #: internetdirect/IdResourceStrings.pas:362
-msgid "Reply Timed Out:  The server did not return a response and the query has been abandoned"
-msgstr "Zeit überschritten bei Antwort:  Der Server gab keine Antwort und die Abfrage wurde nicht eingestellt"
+msgid ""
+"Reply Timed Out:  The server did not return a response and the query has "
+"been abandoned"
+msgstr ""
+"Zeit überschritten bei Antwort:  Der Server gab keine Antwort und die "
+"Abfrage wurde nicht eingestellt"
 
 #. Programmer's name for it: RSIdentInvalidPort
 #: internetdirect/IdResourceStrings.pas:363
-msgid "Invalid Port:  The foreign or local port is not specified correctly or invalid"
-msgstr "Ungültiger Port:  Der fremde oder lokale Port ist nicht korrekt angegeben oder ungültig"
+msgid ""
+"Invalid Port:  The foreign or local port is not specified correctly or "
+"invalid"
+msgstr ""
+"Ungültiger Port:  Der fremde oder lokale Port ist nicht korrekt angegeben "
+"oder ungültig"
 
 #. Programmer's name for it: RSIdentNoUser
 #: internetdirect/IdResourceStrings.pas:364
 msgid "No User:  Port pair is not used or not used by an identifiable user"
-msgstr "Kein Benutzer:  Port-Paar wird nicht oder nicht von identifizierbarem Benutzer verwendet"
+msgstr ""
+"Kein Benutzer:  Port-Paar wird nicht oder nicht von identifizierbarem "
+"Benutzer verwendet"
 
 #. Programmer's name for it: RSIdentHiddenUser
 #: internetdirect/IdResourceStrings.pas:365
 msgid "Hidden User:  Information was not returned at a user's request"
-msgstr "Verborgener Benutzer:  Information wurde nicht auf Anforderung des Benutzers zurückgeschickt"
+msgstr ""
+"Verborgener Benutzer:  Information wurde nicht auf Anforderung des Benutzers "
+"zurückgeschickt"
 
 #. Programmer's name for it: RSIdentUnknownError
 #: internetdirect/IdResourceStrings.pas:366
-msgid "Unknown or other error: Can not determine owner, other error, or the error can not be revealed."
-msgstr "Unbekannter oder anderer Fehler: Der Besitzer oder anderer Fehler kann nicht festgelegt werden oder der Fehler kann nicht angezeigt werden."
+msgid ""
+"Unknown or other error: Can not determine owner, other error, or the error "
+"can not be revealed."
+msgstr ""
+"Unbekannter oder anderer Fehler: Der Besitzer oder anderer Fehler kann nicht "
+"festgelegt werden oder der Fehler kann nicht angezeigt werden."
 
 #. Programmer's name for it: RSAAboutFormCaption
 #: internetdirect/IdResourceStrings.pas:368
@@ -5578,12 +5803,18 @@ msgstr "Anforderung zurückgewiesen oder fehlgeschlagen."
 #. Programmer's name for it: RSSocksRequestServerFailed
 #: internetdirect/IdResourceStrings.pas:424
 msgid "Request rejected because SOCKS server cannot connect."
-msgstr "Die Anforderung wurde zurückgewiesen, da der SOCKS-Server keine Verbindung herstellen konnte."
+msgstr ""
+"Die Anforderung wurde zurückgewiesen, da der SOCKS-Server keine Verbindung "
+"herstellen konnte."
 
 #. Programmer's name for it: RSSocksRequestIdentFailed
 #: internetdirect/IdResourceStrings.pas:425
-msgid "Request rejected because the client program and identd report different user-ids."
-msgstr "Die Anforderung wurde zurückgewiesen, da das Client-Programm und identd verschiedene Anwender-IDs melden."
+msgid ""
+"Request rejected because the client program and identd report different user-"
+"ids."
+msgstr ""
+"Die Anforderung wurde zurückgewiesen, da das Client-Programm und identd "
+"verschiedene Anwender-IDs melden."
 
 #. Programmer's name for it: RSSocksUnknownError
 #: internetdirect/IdResourceStrings.pas:426
@@ -5678,7 +5909,8 @@ msgstr "Zertifikat konnte nicht geladen werden."
 #. Programmer's name for it: RSSSLLoadingKeyError
 #: internetdirect/IdResourceStrings.pas:449
 msgid "Could not load key, check password."
-msgstr "Der Schlüssel konnte nicht geladen werden; überprüfen Sie das Passwort."
+msgstr ""
+"Der Schlüssel konnte nicht geladen werden; überprüfen Sie das Passwort."
 
 #. Programmer's name for it: RSSSLGetMethodError
 #: internetdirect/IdResourceStrings.pas:450
@@ -5757,8 +5989,11 @@ msgstr "Ungültige syslog-Botschaft: Paket zu groß (%d Byte)"
 
 #. Programmer's name for it: RSInvalidHostName
 #: internetdirect/IdResourceStrings.pas:471
-msgid "Invalid host name. A SYSLOG host name cannot contain any space (\"%s\")+"
-msgstr "Ungültiger Host-Name. Ein SYSLOG Host-Name darf keine Leerzeichen enthalten(\"%s\")+"
+msgid ""
+"Invalid host name. A SYSLOG host name cannot contain any space (\"%s\")+"
+msgstr ""
+"Ungültiger Host-Name. Ein SYSLOG Host-Name darf keine Leerzeichen enthalten"
+"(\"%s\")+"
 
 #. Programmer's name for it: RSOSSLModeNotSet
 #: internetdirect/IdResourceStrings.pas:474
@@ -5902,8 +6137,12 @@ msgstr "Nicht erkannter UUE-Codierungsschema."
 
 #. TIdICMPCast
 #: internetdirect/IdResourceStrings.pas:511
-msgid "The supplied IP address is not a valid multicast address [224.0.0.0 to 239.255.255.255]."
-msgstr "Die übermittelte IP-Adresse ist keine gültige Multicast-Adresse [224.0.0.0 bis 239.255.255.255]."
+msgid ""
+"The supplied IP address is not a valid multicast address [224.0.0.0 to "
+"239.255.255.255]."
+msgstr ""
+"Die übermittelte IP-Adresse ist keine gültige Multicast-Adresse [224.0.0.0 "
+"bis 239.255.255.255]."
 
 #. Programmer's name for it: RSIPMCastNotSupportedOnWin32
 #: internetdirect/IdResourceStrings.pas:512
@@ -6401,13 +6640,19 @@ msgstr "Modus ist nicht initialisiert"
 
 #. Programmer's name for it: RSHL7NoAsynEvent
 #: internetdirect/IdResourceStrings.pas:629
-msgid "Component is in Asynchronous mode but OnMessageArrive has not been hooked"
-msgstr "Komponente ist in asynchronen Modus, aber OnMessageArrive wurde nicht eingehängt (hooked)"
+msgid ""
+"Component is in Asynchronous mode but OnMessageArrive has not been hooked"
+msgstr ""
+"Komponente ist in asynchronen Modus, aber OnMessageArrive wurde nicht "
+"eingehängt (hooked)"
 
 #. Programmer's name for it: RSHL7NoSynEvent
 #: internetdirect/IdResourceStrings.pas:630
-msgid "Component is in Synchronous mode but  OnMessageReceive has not been hooked"
-msgstr "Komponente ist in synchronen Modus, aber OnMessageReceive wurde nicht eingehängt (hooked)"
+msgid ""
+"Component is in Synchronous mode but  OnMessageReceive has not been hooked"
+msgstr ""
+"Komponente ist in synchronen Modus, aber OnMessageReceive wurde nicht "
+"eingehängt (hooked)"
 
 #. Programmer's name for it: RSHL7InvalidPort
 #: internetdirect/IdResourceStrings.pas:631
@@ -6417,12 +6662,15 @@ msgstr "Zugewiesener Wert für Port %d ist ungültig"
 #. Programmer's name for it: RSHL7ImpossibleMessage
 #: internetdirect/IdResourceStrings.pas:632
 msgid "A message has been received but the commication mode is unknown"
-msgstr "Es wurde eine Botschaft empfangen, aber der Kommunikationsmodus ist unbekannt"
+msgstr ""
+"Es wurde eine Botschaft empfangen, aber der Kommunikationsmodus ist unbekannt"
 
 #. Programmer's name for it: RSHL7UnexpectedMessage
 #: internetdirect/IdResourceStrings.pas:633
 msgid "Unexpected message arrived to an interface that is not listening"
-msgstr "Eine unerwartete Botschaft kam bei einem Interface an, das nicht empfangsbereit ist."
+msgstr ""
+"Eine unerwartete Botschaft kam bei einem Interface an, das nicht "
+"empfangsbereit ist."
 
 #. Programmer's name for it: RSHL7UnknownMode
 #: internetdirect/IdResourceStrings.pas:634
@@ -6442,17 +6690,24 @@ msgstr "Eine Botschaft senden"
 #. Programmer's name for it: RSHL7NoConnectionFound
 #: internetdirect/IdResourceStrings.pas:637
 msgid "Server Connection not locatable when sending message"
-msgstr "Die Serververbindung ist beim Senden einer Botschaft nicht ausfindig zu machen"
+msgstr ""
+"Die Serververbindung ist beim Senden einer Botschaft nicht ausfindig zu "
+"machen"
 
 #. Programmer's name for it: RSHL7WaitForAnswer
 #: internetdirect/IdResourceStrings.pas:638
 msgid "You cannot send a message while you are still waiting for an answer"
-msgstr "Sie können keine Botschaft schicken, während Sie auf eine Antwort warten."
+msgstr ""
+"Sie können keine Botschaft schicken, während Sie auf eine Antwort warten."
 
 #. Programmer's name for it: RSMFDIvalidObjectType
 #: internetdirect/IdResourceStrings.pas:641
-msgid "Unsupported object type. You can assign only one of the following types or thir descendants: TStrings, TStream."
-msgstr "Nicht unterstützter Objekttyp. Sie können nur einen der folgenden Typen oder deren Nachkommen zuweisen: TStrings, TStream."
+msgid ""
+"Unsupported object type. You can assign only one of the following types or "
+"thir descendants: TStrings, TStream."
+msgstr ""
+"Nicht unterstützter Objekttyp. Sie können nur einen der folgenden Typen oder "
+"deren Nachkommen zuweisen: TStrings, TStream."
 
 #. Programmer's name for it: RSURINoProto
 #: internetdirect/IdResourceStrings.pas:643
@@ -6467,7 +6722,9 @@ msgstr "Host-Feld ist leer"
 #. Programmer's name for it: RSIHTChainedNotAssigned
 #: internetdirect/IdResourceStrings.pas:646
 msgid "You must chain this component to another I/O Handler before using it"
-msgstr "Sie müssen diese Komponenten vor ihrer Verwendung an einen anderen I/O-Handler binden"
+msgstr ""
+"Sie müssen diese Komponenten vor ihrer Verwendung an einen anderen I/O-"
+"Handler binden"
 
 #. Programmer's name for it: RSSNPPNoMultiLine
 #: internetdirect/IdResourceStrings.pas:648
@@ -6477,7 +6734,8 @@ msgstr "TIdSNPP-Anweisung Mess unterstützt nur einzeilige Botschaften."
 #. Programmer's name for it: RSThreadTerminateAndWaitFor
 #: internetdirect/IdResourceStrings.pas:650
 msgid "Cannot call TerminateAndWaitFor on FreeAndTerminate threads"
-msgstr "Aufruf von TerminateAndWaitFor für FreeAndTerminate-Threads nicht möglich"
+msgstr ""
+"Aufruf von TerminateAndWaitFor für FreeAndTerminate-Threads nicht möglich"
 
 #. Programmer's name for it: SIconViewEditor
 #: propertyeditor/ClxIconEdit.pas:327
@@ -6494,7 +6752,6 @@ msgstr "Klasse nicht registriert"
 msgid "Interface %s not registered"
 msgstr "Interface %s nicht registriert"
 
-# Label: ignore
 #. Programmer's name for it: HTMLHead
 #: soap/SOAPConst.pas:148 soap/SOAPConst.pas:149 soap/SOAPConst.pas:150
 #: soap/SOAPConst.pas:152
@@ -6528,13 +6785,21 @@ msgstr "Nicht unterstützte Aufrufkonvention: %s"
 
 #. Programmer's name for it: SUnsupportedCCIntfMeth
 #: soap/SOAPConst.pas:180
-msgid "Remote Method Call: unsupported calling convention %s for method %s on interface %s"
-msgstr "Remote-Methodenaufruf: nicht unterstützte Aufrufkonvention %s für Methode %s in Schnittstelle %s"
+msgid ""
+"Remote Method Call: unsupported calling convention %s for method %s on "
+"interface %s"
+msgstr ""
+"Remote-Methodenaufruf: nicht unterstützte Aufrufkonvention %s für Methode %s "
+"in Schnittstelle %s"
 
 #. Programmer's name for it: SInvClassNotRegistered
 #: soap/SOAPConst.pas:181
-msgid "No invokable class registered that implements interface %s of (soap action/path) %s"
-msgstr "Zum Implementieren von Interface %s für (SOAP-Aktion/Pfad) %s ist keine aufrufbare Klasse registriert."
+msgid ""
+"No invokable class registered that implements interface %s of (soap action/"
+"path) %s"
+msgstr ""
+"Zum Implementieren von Interface %s für (SOAP-Aktion/Pfad) %s ist keine "
+"aufrufbare Klasse registriert."
 
 #. Programmer's name for it: SInvInterfaceNotReg
 #: soap/SOAPConst.pas:182
@@ -6582,7 +6847,8 @@ msgid ""
 "Invalid WSDL document '%s' - Please verify the location and content!\n"
 "Error: %s"
 msgstr ""
-"Ungültiges WSDL-Dokument '%s' - Bitte überprüfen Sie Speicherort und Inhalt!\n"
+"Ungültiges WSDL-Dokument '%s' - Bitte überprüfen Sie Speicherort und "
+"Inhalt!\n"
 "Fehler: %s"
 
 #. Programmer's name for it: SEmptyWSDL
@@ -6592,23 +6858,35 @@ msgstr "Leeres Dokument"
 
 #. Programmer's name for it: sNoWSDLURL
 #: soap/SOAPConst.pas:192
-msgid "No WSDL or URL property was set in the THTTPRIO component. You must set the WSDL or URL property before invoking the Web Service"
-msgstr "In der THTTPPRIO-Komponente wurde keine WSDL- oder URL-Eigenschaft gesetzt. Vor Aufruf des Web Service muss eine dieser Eigenschaften gesetzt sein"
+msgid ""
+"No WSDL or URL property was set in the THTTPRIO component. You must set the "
+"WSDL or URL property before invoking the Web Service"
+msgstr ""
+"In der THTTPPRIO-Komponente wurde keine WSDL- oder URL-Eigenschaft gesetzt. "
+"Vor Aufruf des Web Service muss eine dieser Eigenschaften gesetzt sein"
 
 #. Programmer's name for it: sCantGetURL
 #: soap/SOAPConst.pas:193
-msgid "Unable to retrieve the URL endpoint for Service/Port '%s'/'%s' from WSDL '%s'"
-msgstr "URL-Endpunkt für Service/Port '%s'/'%s' kann nicht von WSDL '%s' gelesen werden"
+msgid ""
+"Unable to retrieve the URL endpoint for Service/Port '%s'/'%s' from WSDL '%s'"
+msgstr ""
+"URL-Endpunkt für Service/Port '%s'/'%s' kann nicht von WSDL '%s' gelesen "
+"werden"
 
 #. Programmer's name for it: SDataTypeNotSupported
 #: soap/SOAPConst.pas:194
-msgid "Datatype of TypeKind: %s not supported as argument for remote invocation"
-msgstr "Datentyp von TypeKind: %s wird als Argument für Remote-Aufruf nicht unterstützt"
+msgid ""
+"Datatype of TypeKind: %s not supported as argument for remote invocation"
+msgstr ""
+"Datentyp von TypeKind: %s wird als Argument für Remote-Aufruf nicht "
+"unterstützt"
 
 #. Programmer's name for it: SNoMatchingDelphiType
 #: soap/SOAPConst.pas:196
-msgid "No matching Kylix type was found for type: URI = %s, Name = %s on Node %s"
-msgstr "Keinen passenden Kylix-Typ gefunden für: URI = %s, Name = %s von Node %s"
+msgid ""
+"No matching Kylix type was found for type: URI = %s, Name = %s on Node %s"
+msgstr ""
+"Keinen passenden Kylix-Typ gefunden für: URI = %s, Name = %s von Node %s"
 
 #. Programmer's name for it: SUnknownSOAPAction
 #: soap/SOAPConst.pas:198
@@ -6617,18 +6895,29 @@ msgstr "Unbekannte SOAP-Aktion %s"
 
 #. Programmer's name for it: SScalarFromTRemotableS
 #: soap/SOAPConst.pas:199
-msgid "Classes that represent scalar types must decsend from TRemotable, %s does not"
-msgstr "Klassen, die Skalartypen repräsentieren, müssen von TRemotable abgeleitet sein, %s ist es nicht"
+#, fuzzy
+msgid ""
+"Classes that represent scalar types must decsend from TRemotable, %s does not"
+msgstr ""
+"Klassen, die Skalartypen repräsentieren, müssen von TRemotableXS abgeleitet "
+"worden sein; %s ist es nicht"
 
 #. Programmer's name for it: SNoSerializeGraphs
 #: soap/SOAPConst.pas:200
-msgid "Must allow multiref output for objects when serializing a graph of objects"
-msgstr "Multiref-Output für Objekte muss aktviert werden bei der Serialisierung eines Objektdiagramms"
+#, fuzzy
+msgid ""
+"Must allow multiref output for objects when serializing a graph of objects"
+msgstr ""
+"Multiref-Output für Objekte muss aktviert werden bei der Serialisierung "
+"eines Objektdiagramms - (%s)"
 
 #. Programmer's name for it: SUnsuportedClassType
 #: soap/SOAPConst.pas:201
+#, fuzzy
 msgid "Conversion from Class %s to SOAP is not supported"
-msgstr "Konvertierung der Klasse %s zu SOAP wird nicht unterstützt"
+msgstr ""
+"Die Konvertierung von Klasse %s zu SOAP wird nicht unterstützt - SOAP-"
+"Klassen müssen von TRemotable abgeleitet worden sein"
 
 #. Programmer's name for it: SUnexpectedDataType
 #: soap/SOAPConst.pas:202
@@ -6664,12 +6953,12 @@ msgstr "Array-Typ erwartet. Knoten %s"
 #. Programmer's name for it: SNoMultiDimVar
 #: soap/SOAPConst.pas:210
 msgid "Multidimensional variant arrays not supported in this release"
-msgstr "Mehrdimensionale variant arrays werden in dieser Version nicht unterstützt"
+msgstr ""
 
 #. Programmer's name for it: SNoURL
 #: soap/SOAPConst.pas:211
 msgid "No URL set"
-msgstr "Keine URL angegeben"
+msgstr ""
 
 #. Programmer's name for it: SNoInterfaceGUID
 #: soap/SOAPConst.pas:213
@@ -6750,8 +7039,9 @@ msgstr "Typ varVariant wird nicht unterstützt"
 
 #. Programmer's name for it: SHeaderError
 #: soap/SOAPConst.pas:229
+#, fuzzy
 msgid "Error Processing Header %s"
-msgstr "Fehler beim Verarbeiten von Header %s"
+msgstr "Fehler beim Verarbeiten von Header (%s)%s"
 
 #. Programmer's name for it: SMissingSoapReturn
 #: soap/SOAPConst.pas:230
@@ -6775,8 +7065,10 @@ msgstr "Kein Knoten zur Meldungsverarbeitung festgelegt"
 
 #. Programmer's name for it: SHeaderAttributeError
 #: soap/SOAPConst.pas:234
-msgid "Soap header %s with attribute 'mustUnderstand' set to true was not handled"
-msgstr "SOAP-Header %s mit Attribut 'mustUnderstand' true wurde nicht behandelt"
+msgid ""
+"Soap header %s with attribute 'mustUnderstand' set to true was not handled"
+msgstr ""
+"SOAP-Header %s mit Attribut 'mustUnderstand' true wurde nicht behandelt"
 
 #. Programmer's name for it: SNoRTTI
 #: soap/SOAPConst.pas:237
@@ -6910,8 +7202,12 @@ msgstr "Ungültige HTTP-Antwort: Länge ist 0"
 
 #. Programmer's name for it: SInvalidBooleanParameter
 #: soap/SOAPConst.pas:267
-msgid "ByteBool, WordBool and LongBool cannot be exposed by WebServices. Please use 'Boolean'"
-msgstr "ByteBool, WordBool und LongBool käönnen durch WebServices nicht dargestellt werden. Bitte verwenden Sie 'Boolean'"
+msgid ""
+"ByteBool, WordBool and LongBool cannot be exposed by WebServices. Please use "
+"'Boolean'"
+msgstr ""
+"ByteBool, WordBool und LongBool käönnen durch WebServices nicht dargestellt "
+"werden. Bitte verwenden Sie 'Boolean'"
 
 #. Programmer's name for it: SWideStringOutOfBounds
 #: soap/SOAPConst.pas:270
@@ -6965,8 +7261,9 @@ msgstr "Methode hat kein RTTI"
 
 #. Programmer's name for it: SUnsupportedVariant
 #: soap/SOAPConst.pas:283
+#, fuzzy
 msgid "Unsuppported variant type"
-msgstr "Nicht unterstützter Variant-Typ"
+msgstr "Nicht unterstützter Variant-Typ %d"
 
 #. Programmer's name for it: SInvalidTimeZone
 #: soap/SOAPConst.pas:288
@@ -6991,7 +7288,9 @@ msgstr ""
 #. Programmer's name for it: sInterfaceInfo
 #: soap/SOAPConst.pas:293
 #, fuzzy
-msgid "<a class=\"NavBar\" href=\"%s\">%s</a>&nbsp;&gt;&nbsp;<span class=\"Off\">%s</span>"
+msgid ""
+"<a class=\"NavBar\" href=\"%s\">%s</a>&nbsp;&gt;&nbsp;<span class=\"Off\">%"
+"s</span>"
 msgstr "<a href=\"%s\">%s</a>&nbsp;&gt;&nbsp;<span class=\"Off\">%s</span>"
 
 #. Programmer's name for it: sRegTypes
@@ -7037,13 +7336,19 @@ msgstr "Port-Name"
 
 #. ##
 #: soap/SOAPConst.pas:303
-msgid "</head><body><h1>Error Encountered</h1><P>Interface %s not found</P></body></html>"
-msgstr "</head><body><h1>Fehler aufgetreten</h1><P>Interface %s wurde nicht gefunden</P></body></html>"
+msgid ""
+"</head><body><h1>Error Encountered</h1><P>Interface %s not found</P></body></"
+"html>"
+msgstr ""
+"</head><body><h1>Fehler aufgetreten</h1><P>Interface %s wurde nicht "
+"gefunden</P></body></html>"
 
 #. Programmer's name for it: sPortName
 #: soap/SOAPConst.pas:304
-msgid "</head><body><h1>Forbidden (403)</h1><P>Access Forbidden</P></body></html>"
-msgstr "</head><body><h1>Verboten (403)</h1><P>Zugang verboten</P></body></html>"
+msgid ""
+"</head><body><h1>Forbidden (403)</h1><P>Access Forbidden</P></body></html>"
+msgstr ""
+"</head><body><h1>Verboten (403)</h1><P>Zugang verboten</P></body></html>"
 
 #. Programmer's name for it: sWSDLPortsforPortType
 #: soap/SOAPConst.pas:305
@@ -7214,8 +7519,12 @@ msgstr "%s%s%s wird bearbeitet"
 
 #. Programmer's name for it: SCantDeleteAncestor
 #: toolsapi/DesignConst.pas:40
-msgid "Selection contains a component introduced in an ancestor form which cannot be deleted"
-msgstr "Auswahl enthält eine Komponente, die in einem Vorfahr-Formular eingeführt wurde, das nicht gelöscht werden kann."
+msgid ""
+"Selection contains a component introduced in an ancestor form which cannot "
+"be deleted"
+msgstr ""
+"Auswahl enthält eine Komponente, die in einem Vorfahr-Formular eingeführt "
+"wurde, das nicht gelöscht werden kann."
 
 #. Programmer's name for it: SCantAddToFrame
 #: toolsapi/DesignConst.pas:41
@@ -7367,7 +7676,8 @@ msgstr "Liste ist während eines aktiven ForEach gesperrt"
 #. Programmer's name for it: SCantWriteResourceStreamError
 #: rtl/common/RTLConsts.pas:18
 msgid "Can't write to a read-only resource stream"
-msgstr "In einen zum Lesen geöffneten Ressourcen-Stream kann nicht geschrieben werden"
+msgstr ""
+"In einen zum Lesen geöffneten Ressourcen-Stream kann nicht geschrieben werden"
 
 #. Programmer's name for it: SCharExpected
 #: rtl/common/RTLConsts.pas:19
@@ -7377,7 +7687,9 @@ msgstr "''%s'' erwartet"
 #. Programmer's name for it: SCheckSynchronizeError
 #: rtl/common/RTLConsts.pas:20
 msgid "CheckSynchronize called from thread $%x, which is NOT the main thread"
-msgstr "CheckSynchronize wurde vom Thread $%x aufgerufen, der NICHT der Haupt-Thread ist."
+msgstr ""
+"CheckSynchronize wurde vom Thread $%x aufgerufen, der NICHT der Haupt-Thread "
+"ist."
 
 #. Programmer's name for it: SClassNotFound
 #: rtl/common/RTLConsts.pas:21
@@ -7387,7 +7699,9 @@ msgstr "Klasse %s nicht gefunden"
 #. Programmer's name for it: SDelimiterQuoteCharError
 #: rtl/common/RTLConsts.pas:22
 msgid "Delimiter and QuoteChar properties cannot have the same value"
-msgstr "Die Eigenschaften Delimiter und QuoteChar dürfen nicht denselben Wert besitzen"
+msgstr ""
+"Die Eigenschaften Delimiter und QuoteChar dürfen nicht denselben Wert "
+"besitzen"
 
 #. Programmer's name for it: SDuplicateClass
 #: rtl/common/RTLConsts.pas:23
@@ -7533,7 +7847,8 @@ msgstr "Ungültige Stringkonstante"
 #. Programmer's name for it: SInvalidStringGridOp
 #: rtl/common/RTLConsts.pas:53
 msgid "Cannot insert or delete rows from grid"
-msgstr "Es können keine Zeilen des Tabellengitters gelöscht oder eingefügt werden"
+msgstr ""
+"Es können keine Zeilen des Tabellengitters gelöscht oder eingefügt werden"
 
 #. Programmer's name for it: SItemNotFound
 #: rtl/common/RTLConsts.pas:54
@@ -7568,7 +7883,9 @@ msgstr "Ungültiger Eingabewert"
 #. Programmer's name for it: SMaskEditErr
 #: rtl/common/RTLConsts.pas:60
 msgid "Invalid input value.  Use escape key to abandon changes"
-msgstr "Ungültiger Eingabewert. Mit der Taste ESC machen Sie die Änderungen rückgängig."
+msgstr ""
+"Ungültiger Eingabewert. Mit der Taste ESC machen Sie die Änderungen "
+"rückgängig."
 
 #. Programmer's name for it: SMemoryStreamError
 #: rtl/common/RTLConsts.pas:61
@@ -7708,17 +8025,22 @@ msgstr "(%d, %d, %d) ist kein gültiger Wert für die Wochenangabe im Datum"
 #. Programmer's name for it: SInvalidDateMonthWeek
 #: rtl/common/RTLConsts.pas:90
 msgid "(%d, %d, %d, %d) is not a valid DateMonthWeek quad"
-msgstr "(%d, %d, %d, %d) ist kein gültiger Wert für die Monats- und Wochenangabe im Datum"
+msgstr ""
+"(%d, %d, %d, %d) ist kein gültiger Wert für die Monats- und Wochenangabe im "
+"Datum"
 
 #. Programmer's name for it: SInvalidDayOfWeekInMonth
 #: rtl/common/RTLConsts.pas:91
 msgid "(%d, %d, %d, %d) is not a valid DayOfWeekInMonth quad"
-msgstr "(%d, %d, %d, %d) ist kein gültiger Wert für dieTages- und Monatsangabe im Datum"
+msgstr ""
+"(%d, %d, %d, %d) ist kein gültiger Wert für dieTages- und Monatsangabe im "
+"Datum"
 
 #. Programmer's name for it: SInvalidJulianDate
 #: rtl/common/RTLConsts.pas:92
 msgid "%f Julian cannot be represented as a DateTime"
-msgstr "%f Julianischer Wert kann nicht als Datum/Uhrzeitwert dargestellt werden"
+msgstr ""
+"%f Julianischer Wert kann nicht als Datum/Uhrzeitwert dargestellt werden"
 
 #. Programmer's name for it: SMissingDateTimeField
 #: rtl/common/RTLConsts.pas:93
@@ -7763,12 +8085,12 @@ msgstr "Konvertierungsfamilie (%s) bereits registriert"
 #. no longer used
 #: rtl/common/RTLConsts.pas:102
 msgid "[$%.8x]"
-msgstr "[$%.8x]"
+msgstr ""
 
 #. Programmer's name for it: SConvUnknownDescriptionWithPrefix
 #: rtl/common/RTLConsts.pas:103
 msgid "[%s%.8x]"
-msgstr "[%s%.8x]"
+msgstr ""
 
 #. Programmer's name for it: SConvIllegalType
 #: rtl/common/RTLConsts.pas:104
@@ -7793,7 +8115,8 @@ msgstr "%s konnte nicht analysiert werden"
 #. Programmer's name for it: SFailedToCallConstructor
 #: rtl/common/RTLConsts.pas:108
 msgid "TStrings descendant %s failed to call inherited constructor"
-msgstr "Der Nachkomme von TStrings %s konnte den geerbten Konstruktor nicht aufrufen"
+msgstr ""
+"Der Nachkomme von TStrings %s konnte den geerbten Konstruktor nicht aufrufen"
 
 #. Programmer's name for it: sWindowsSocketError
 #: rtl/common/RTLConsts.pas:110
@@ -8918,12 +9241,15 @@ msgstr "Fehler bei Bereichsprüfung für Variant des Typs (%s)"
 #. Programmer's name for it: SVarTypeRangeCheck2
 #: rtl/sys/SysConst.pas:80
 msgid "Range check error while converting variant of type (%s) into type (%s)"
-msgstr "Fehler bei Bereichsprüfung bei der Konvertierung von Variant von Typ (%s) zu Typ (%s)"
+msgstr ""
+"Fehler bei Bereichsprüfung bei der Konvertierung von Variant von Typ (%s) zu "
+"Typ (%s)"
 
 #. Programmer's name for it: SVarTypeOutOfRangeWithPrefix
 #: rtl/sys/SysConst.pas:81
 msgid "Custom variant type (%s%.4x) is out of range"
-msgstr "Benutzerdefinierter Variant-Typ (%s%.4x) außerhalb des gültigen Bereichs"
+msgstr ""
+"Benutzerdefinierter Variant-Typ (%s%.4x) außerhalb des gültigen Bereichs"
 
 #. Programmer's name for it: SVarTypeAlreadyUsedWithPrefix
 #: rtl/sys/SysConst.pas:82
@@ -8953,7 +9279,8 @@ msgstr "Unbekannter benutzerdefinierter Variant-Typ ($%.4x)"
 #. Programmer's name for it: SVarTypeOutOfRange
 #: rtl/sys/SysConst.pas:89
 msgid "Custom variant type ($%.4x) is out of range"
-msgstr "Benutzerdefinierter Variant-Typ ($%.4x) außerhalb des gültigen Bereichs"
+msgstr ""
+"Benutzerdefinierter Variant-Typ ($%.4x) außerhalb des gültigen Bereichs"
 
 #. Programmer's name for it: SVarTypeAlreadyUsed
 #: rtl/sys/SysConst.pas:90
@@ -9111,8 +9438,12 @@ msgstr "Ungültiges Package-Handle"
 
 #. Programmer's name for it: SDuplicatePackageUnit
 #: rtl/sys/SysConst.pas:123
-msgid "Cannot load package '%s.'  It contains unit '%s,'which is also contained in package '%s'"
-msgstr "Package '%s kann nicht geladen werden.'\t Es enthält die Unit '%s,'die auch im Package '%s' enthalten ist"
+msgid ""
+"Cannot load package '%s.'  It contains unit '%s,'which is also contained in "
+"package '%s'"
+msgstr ""
+"Package '%s kann nicht geladen werden.'\t Es enthält die Unit '%s,'die auch "
+"im Package '%s' enthalten ist"
 
 #. Programmer's name for it: SOSError
 #: rtl/sys/SysConst.pas:124
@@ -9402,14 +9733,12 @@ msgstr "Dateityp:"
 msgid "&Open"
 msgstr "Ö&ffnen"
 
-# Label: ignore
 #. FileDialogForm..MainPanel..BottomPanel..FileEdit..Directory.FileMask
 #. FileDialogForm..MainPanel..FileIcons..Directory.FileMask
 #: clx/QFileDialog.xfm:90 clx/QFileDialog.xfm:113
 msgid "*"
 msgstr ""
 
-# Label: ignore
 #. FileDialogForm..MainPanel..Panel2..ToolBar1..Caption
 #: clx/QFileDialog.xfm:146
 #, fuzzy
@@ -9426,12 +9755,11 @@ msgstr "Ansicht ändern"
 msgid "ListButton"
 msgstr "ListButton"
 
-# Label: ignore
 #. FileDialogForm..MainPanel..Panel2..ToolBar1..ToolButton3..Caption
 #: clx/QFileDialog.xfm:170
 #, fuzzy
 msgid "ToolButton3"
-msgstr "ToolButton3"
+msgstr "Weitere Schaltflächen"
 
 #. FileDialogForm..MainPanel..Panel2..ToolBar1..NewDirButton..Caption
 #. FileDialogForm..ActionList1..NewDirAction..Caption
@@ -9574,13 +9902,11 @@ msgstr "Verborgene Dateien an&zeigen"
 msgid "ServerInfo"
 msgstr "ServerInfo"
 
-# Label: ignore
 #. Form1..Font.Name
 #: internet/SvrInfoConsole.xfm:10
 msgid "MS Sans Serif"
 msgstr ""
 
-# Label: ignore
 #. WebModule2......Name
 #: internet/SvrInfoModule.xfm:6
 msgid "WebActionItem1"
@@ -9591,7 +9917,6 @@ msgstr ""
 msgid "/List"
 msgstr "/List"
 
-# Label: ignore
 #. WebModule2......Name
 #: internet/SvrInfoModule.xfm:11
 msgid "WebActionItem2"
@@ -9602,7 +9927,6 @@ msgstr ""
 msgid "/Clean"
 msgstr "/Clean"
 
-# Label: ignore
 #. WebModule2......Name
 #: internet/SvrInfoModule.xfm:16
 msgid "WebActionItem3"
@@ -9615,8 +9939,10 @@ msgstr "/Details"
 
 #. WebModule2..PageProducerSelect......HTMLDoc.Strings
 #: internet/SvrInfoModule.xfm:71
-msgid "<a>View List</a>&nbsp;|&nbsp;<a HREF=\"<#PATH>Details\">View Details</a>\n"
-msgstr "<a>Zeige Liste</a>&nbsp;|&nbsp;<a HREF=\"<#PATH>Details\">Zeige Details</a>\n"
+msgid ""
+"<a>View List</a>&nbsp;|&nbsp;<a HREF=\"<#PATH>Details\">View Details</a>\n"
+msgstr ""
+"<a>Zeige Liste</a>&nbsp;|&nbsp;<a HREF=\"<#PATH>Details\">Zeige Details</a>\n"
 
 #. WebModule2..PageProducerSelect....HTMLDoc.Strings
 #: internet/SvrInfoModule.xfm:71
@@ -9635,7 +9961,6 @@ msgstr "</BODY>"
 msgid "</HTML>"
 msgstr "</HTML>"
 
-# Label: ignore
 #. WebModule2..PageProducerSelect....HTMLDoc.Strings
 #. WebModule2..PageProducerDetails....HTMLDoc.Strings
 #: internet/SvrInfoModule.xfm:74 internet/SvrInfoModule.xfm:75
@@ -9735,7 +10060,6 @@ msgstr "Alles markieren|Markiert das gesamte Dokument"
 msgid "Select &Font..."
 msgstr "&Schriftart wählen..."
 
-# Label: ignore
 #. LogDetailFrame..FontDialog1..Font.Name
 #. WebAppDbgMainForm..Font.Name
 #. AboutBox..Font.Name
@@ -9789,14 +10113,16 @@ msgstr "Umschalten"
 
 #. WebAppDbgMainForm..PageControl1..TabSheet2..Caption
 #: internet/SvrMainForm.xfm:75
+#, fuzzy
 msgid "Statistics"
-msgstr "Statistik"
+msgstr "St&atistik"
 
 #. WebAppDbgMainForm..PageControl1..TabSheet1..Caption
 #. DlgProperties..PageControl1..TabLog..Caption
 #: internet/SvrMainForm.xfm:90 internet/SvrPropDlg.xfm:150
+#, fuzzy
 msgid "Log"
-msgstr "Protokoll"
+msgstr "Pr&otokoll"
 
 #. WebAppDbgMainForm..PageControl1..TabSheet1..GroupBox1..CheckBox1..Caption
 #: internet/SvrMainForm.xfm:116
@@ -9906,23 +10232,27 @@ msgstr "mozilla"
 
 #. DlgProperties..PageControl1..TabLog..GroupBox2..Caption
 #: internet/SvrPropDlg.xfm:158
+#, fuzzy
 msgid "Show in Log"
-msgstr "In Protokoll anzeigen"
+msgstr "I&n Protokoll anzeigen"
 
 #. DlgProperties..PageControl1..TabLog..GroupBox6..Caption
 #: internet/SvrPropDlg.xfm:179
+#, fuzzy
 msgid " Log Size "
-msgstr " Protokollgröße "
+msgstr " &Protokollgröße "
 
 #. DlgProperties..PageControl1..TabLog..GroupBox6..Label4..Caption
 #: internet/SvrPropDlg.xfm:187
+#, fuzzy
 msgid "Max Events:"
-msgstr "Max. Ereignisse:"
+msgstr "Ma&x. Ereignisse:"
 
 #. DlgProperties..PageControl1..TabLog..GroupBox6..Label5..Caption
 #: internet/SvrPropDlg.xfm:195
+#, fuzzy
 msgid "Delete when max exceeded:"
-msgstr "Bei Überschreiten des Maximums löschen:"
+msgstr "Bei Überschreiten des &Maximums löschen:"
 
 #. StatsFrame..GroupBox1..Label3..Caption
 #: internet/SvrStatsFrame.xfm:49
@@ -10132,48 +10462,52 @@ msgstr "Status-&Index:"
 
 #. MaskForm..Caption
 #: propertyeditor/ClxMaskProp.xfm:11
+#, fuzzy
 msgid "Input Mask Editor"
-msgstr "Eingabemasken-Editor"
+msgstr "Eintrags-Editor..."
 
 #. MaskForm..Label1..Caption
 #: propertyeditor/ClxMaskProp.xfm:30
 msgid "&Input Mask:"
-msgstr "&Eingabemaske:"
+msgstr ""
 
 #. MaskForm..Label2..Caption
 #: propertyeditor/ClxMaskProp.xfm:39
+#, fuzzy
 msgid "&Sample Masks:"
-msgstr "&Beispielmasken:"
+msgstr "Beispiele"
 
 #. MaskForm..Label3..Caption
 #: propertyeditor/ClxMaskProp.xfm:48
 msgid "&Test Input:"
-msgstr "&Testeingabe:"
+msgstr ""
 
 #. MaskForm..Label4..Caption
 #: propertyeditor/ClxMaskProp.xfm:57
 msgid "Character for &Blanks:"
-msgstr "Leer&zeichen als:"
+msgstr ""
 
 #. MaskForm..Blanks..Text
 #: propertyeditor/ClxMaskProp.xfm:78
 msgid "_"
-msgstr "_"
+msgstr ""
 
 #. MaskForm..SaveMaskCheck..Caption
 #: propertyeditor/ClxMaskProp.xfm:86
 msgid "Save &Literal Characters"
-msgstr "&Literalzeichen speichern"
+msgstr ""
 
 #. MaskForm..Masks..Caption
 #: propertyeditor/ClxMaskProp.xfm:96
+#, fuzzy
 msgid "&Masks..."
-msgstr "&Masken..."
+msgstr "Masse"
 
 #. MaskForm..InputMask..Text
 #: propertyeditor/ClxMaskProp.xfm:140
+#, fuzzy
 msgid "InputMask"
-msgstr "Eingabemaske"
+msgstr "Eingabe"
 
 #. MaskForm..ListBox1....Items.Strings
 #: propertyeditor/ClxMaskProp.xfm:162
@@ -10191,32 +10525,36 @@ msgstr ""
 #. MaskForm..OpenDialog1..DefaultExt
 #: propertyeditor/ClxMaskProp.xfm:168
 msgid "dem"
-msgstr "dem"
+msgstr ""
 
 #. MaskForm..OpenDialog1..Filter
 #: propertyeditor/ClxMaskProp.xfm:169
+#, fuzzy
 msgid "Edit Masks (*.dem)|*.dem|All Files (*.*)|*.*"
-msgstr "Editiermasken (*.DEM)|*.DEM|Alle Dateien (*.*)|*.*"
+msgstr "Datenbank-Dateien (*.gdb)|*.gdb|Alle Dateien (*.*)|*.*"
 
 #. MaskForm..OpenDialog1..Title
 #: propertyeditor/ClxMaskProp.xfm:173
+#, fuzzy
 msgid "Open Mask File"
-msgstr "Maskendatei öffnen"
+msgstr "Xml-Datei öffnen"
 
 #. MaskTextForm..Caption
 #: propertyeditor/ClxMaskText.xfm:11
+#, fuzzy
 msgid "Masked Text Editor"
-msgstr "Maskentext-Editor"
+msgstr "Editor für Textkörper"
 
 #. MaskTextForm..Label3..Caption
 #: propertyeditor/ClxMaskText.xfm:24
+#, fuzzy
 msgid "&Input Text:"
-msgstr "&Eingabetext:"
+msgstr "&Text:"
 
 #. MaskTextForm..Label1..Caption
 #: propertyeditor/ClxMaskText.xfm:33
 msgid "Edit Mask:"
-msgstr "Editiermaske:"
+msgstr ""
 
 #. MaskTextForm..EditMask..Caption
 #: propertyeditor/ClxMaskText.xfm:42
@@ -10315,7 +10653,6 @@ msgstr "String-Listen-Editor"
 msgid "0 lines"
 msgstr "0 Linien"
 
-# Label: ignore
 #. ClxStrEditDlg..Memo....Lines.Strings
 #: propertyeditor/ClxStrEdit.xfm:76
 msgid " \n"
@@ -10323,8 +10660,12 @@ msgstr ""
 
 #. ClxStrEditDlg..OpenDialog....HelpContext
 #: propertyeditor/ClxStrEdit.xfm:88
-msgid "Text files (*.txt)|*.txt|Shell scripts (*.sh)|*.sh|Config files (*.conf)|*.conf|All files (*)|*\n"
-msgstr "Textdateien (*.txt)|*.txt|Shellskripte (*.sh)|*.sh|Konfigurationsdateien (*.conf)|*.conf|Alle Dateien (*)|*\n"
+msgid ""
+"Text files (*.txt)|*.txt|Shell scripts (*.sh)|*.sh|Config files (*.conf)|*."
+"conf|All files (*)|*\n"
+msgstr ""
+"Textdateien (*.txt)|*.txt|Shellskripte (*.sh)|*.sh|Konfigurationsdateien (*."
+"conf)|*.conf|Alle Dateien (*)|*\n"
 
 #. ClxStrEditDlg..OpenDialog..Title
 #: propertyeditor/ClxStrEdit.xfm:91
@@ -10339,11 +10680,3085 @@ msgstr "txt"
 #. ClxStrEditDlg..SaveDialog....DefaultExt
 #: propertyeditor/ClxStrEdit.xfm:103
 #, fuzzy
-msgid "Text files (*.txt)|*.txt|Config files (*.conf)|*.conf|Shell scripts (*.sh)|*.sh|All files (*)|*\n"
-msgstr "Textdateien (*.txt)|Konfigurationsdateien (*.conf)|Shellskripte (*.sh)|Alle Dateien (*)\n"
+msgid ""
+"Text files (*.txt)|*.txt|Config files (*.conf)|*.conf|Shell scripts (*.sh)|*."
+"sh|All files (*)|*\n"
+msgstr ""
+"Textdateien (*.txt)|Konfigurationsdateien (*.conf)|Shellskripte (*.sh)|Alle "
+"Dateien (*)\n"
 
 #. ClxStrEditDlg..SaveDialog..Title
 #: propertyeditor/ClxStrEdit.xfm:106
 msgid "Save string list"
 msgstr "String-Liste speichern"
 
+#~ msgid " - Dock zone has no control"
+#~ msgstr " - Andockzone besitzt kein Steuerelement"
+
+#~ msgid " - Dock zone not found"
+#~ msgstr " - Andockzone nicht gefunden"
+
+#~ msgid " Assign Data From "
+#~ msgstr " Daten zuweisen von "
+
+#~ msgid " Database "
+#~ msgstr " Datenbank "
+
+#~ msgid " Source of Connection "
+#~ msgstr " Quelle der Verbindung "
+
+#~ msgid " Value"
+#~ msgstr " Wert"
+
+#~ msgid " any known drive"
+#~ msgstr " Alle bekannten Laufwerke"
+
+#~ msgid " is already in the query"
+#~ msgstr " ist bereits in der Abfrage"
+
+#~ msgid " is not an allowed dimension type"
+#~ msgstr " ist kein erlaubter Dimensionstyp"
+
+#~ msgid " is not an allowed summary type"
+#~ msgstr " ist kein erlaubter Zusammenfassungstyp"
+
+#~ msgid "%d MB"
+#~ msgstr "%d MB"
+
+#~ msgid "%d current connections"
+#~ msgstr "%d aktuelle Verbindungen"
+
+#~ msgid "%s - %s"
+#~ msgstr "%s - %s"
+
+#~ msgid "%s - PortTypes:"
+#~ msgstr "%s - PortTypen:"
+
+#~ msgid "%s ActionManager property has not been assigned"
+#~ msgstr "%s ActionManager-Eigenschaft wurde nichts zugewiesen"
+
+#~ msgid "%s Properties"
+#~ msgstr "%s Eigenschaften"
+
+#~ msgid "%s component requires Client to function properly"
+#~ msgstr "Komponente %s setzt voraus, dass der Client richtig funktioniert."
+
+#~ msgid "%s component requires Server to function properly"
+#~ msgstr "Komponente %s setzt voraus, dass der Server richtig funktioniert."
+
+#~ msgid "%s does not allow hiding"
+#~ msgstr "%s kann nicht verborgen werden"
+
+#~ msgid "%s is already associated with %s"
+#~ msgstr "%s ist bereits mit %s verknüpft"
+
+#~ msgid ""
+#~ "%s is an InterBase 6 function. Please upgrade to InterBase 6 to use this "
+#~ "functonality"
+#~ msgstr ""
+#~ "%s ist eine Funktion von InterBase 6. Um diese Funktionalität zu nutzen, "
+#~ "müssen Sie auf IB6 updaten"
+
+#~ msgid "%s must be the lookup table's active index"
+#~ msgstr "%s muss der aktive Index der Nachschlagetabelle sein."
+
+#~ msgid "%s%s%s %s"
+#~ msgstr "%s%s%s %s"
+
+#~ msgid "%s%s%s Database"
+#~ msgstr "%s%s%s Datenbanken"
+
+#~ msgid "%s%s%s Index Files"
+#~ msgstr "%s%s%s Indexdateien"
+
+#~ msgid "%s%s%s Parameters"
+#~ msgstr "%s%s%s Parameter"
+
+#~ msgid "%s, Default"
+#~ msgstr "%s, Standard"
+
+#~ msgid "&Active"
+#~ msgstr "&Aktiv"
+
+#~ msgid "&Active Type"
+#~ msgstr "A&ktivität"
+
+#~ msgid "&Add fields..."
+#~ msgstr "&Felder hinzufügen..."
+
+#~ msgid "&Add or Remove Buttons"
+#~ msgstr "&Schaltflächen hinzufügen oder entfernen"
+
+#~ msgid "&Alias name:"
+#~ msgstr "Alia&sname:"
+
+#~ msgid "&Allow XML Packets"
+#~ msgstr "Erl&aube XML-Pakete"
+
+#~ msgid "&Apply Event"
+#~ msgstr "Ereignis &anwenden"
+
+#~ msgid "&Arrange"
+#~ msgstr "An&ordnen"
+
+#~ msgid "&Attribute set name:"
+#~ msgstr "Name der &Attributmenge:"
+
+#~ msgid "&Base Field"
+#~ msgstr "&Basisfeld"
+
+#~ msgid "&Based on:"
+#~ msgstr "&Basierend auf:"
+
+#~ msgid "&Bold"
+#~ msgstr "Fe&tt"
+
+#~ msgid "&Browse"
+#~ msgstr "&Durchsuchen..."
+
+#~ msgid "&Browse URL"
+#~ msgstr "&URL durchsuchen"
+
+#~ msgid "&Browse..."
+#~ msgstr "&Durchsuchen..."
+
+#~ msgid "&Bullets"
+#~ msgstr "&Aufzählungszeichen"
+
+#~ msgid "&Cancel"
+#~ msgstr "&Abbrechen"
+
+#~ msgid "&Cancel Edit"
+#~ msgstr "Bearbeiten &abbrechen"
+
+#~ msgid "&Caption Options"
+#~ msgstr "Ü&berschriftoptionen"
+
+#~ msgid "&Cascade"
+#~ msgstr "Ü&berlappend"
+
+#~ msgid "&Cells"
+#~ msgstr "&Zellen"
+
+#~ msgid "&Center"
+#~ msgstr "&Zentriert"
+
+#~ msgid "&Code Editor..."
+#~ msgstr "&Quelltext-Editor..."
+
+#~ msgid "&Connection"
+#~ msgstr "V&erbindung"
+
+#~ msgid "&Connections"
+#~ msgstr "V&erbindungen"
+
+#~ msgid "&Contents"
+#~ msgstr "I&nhalt"
+
+#~ msgid "&Copy Selection"
+#~ msgstr "Auswahl &kopieren"
+
+#~ msgid "&Customize"
+#~ msgstr "A&npassen"
+
+#~ msgid "&Database:"
+#~ msgstr "Datenban&k:"
+
+#~ msgid "&Dataset Editor..."
+#~ msgstr "&Dataset-Editor..."
+
+#~ msgid "&Decision Cube Editor..."
+#~ msgstr "&Editor für Entscheidungsanalyse..."
+
+#~ msgid "&Decision Query Editor..."
+#~ msgstr "&Editor für Entscheidungsabfrage..."
+
+#~ msgid "&Delete Selection"
+#~ msgstr "Auswahl &entfernen"
+
+#~ msgid "&Dimensions"
+#~ msgstr "&Maße"
+
+#~ msgid "&Dimensions:"
+#~ msgstr "&Maße:"
+
+#~ msgid "&Disconnect"
+#~ msgstr "&Verbindung trennen"
+
+#~ msgid "&Display Sparse Rows/Columns"
+#~ msgstr "S&palten/Zeilen mit wenig Werten anzeigen"
+
+#~ msgid "&Do not display Sparse Rows/Columns"
+#~ msgstr "S&palten/Zeilen mit wenig Werten nicht anzeigen"
+
+#~ msgid "&Download URL"
+#~ msgstr "Von &URL herunterladen"
+
+#~ msgid "&Driver name:"
+#~ msgstr "&Treiber-Name:"
+
+#~ msgid "&Edit Done"
+#~ msgstr "Bearbeitung &abschließen"
+
+#~ msgid "&Edit Query"
+#~ msgstr "Ab&frage bearbeiten"
+
+#~ msgid "&Exit"
+#~ msgstr "&Beenden"
+
+#~ msgid "&Field"
+#~ msgstr "&Feld"
+
+#~ msgid "&Field Name:"
+#~ msgstr "&Feldname:"
+
+#~ msgid "&Fields:"
+#~ msgstr "&Felder:"
+
+#~ msgid "&Find..."
+#~ msgstr "Su&chen..."
+
+#~ msgid "&Finish"
+#~ msgstr "&Fertig stellen"
+
+#~ msgid "&Generator"
+#~ msgstr "&Generator"
+
+#~ msgid "&Get Cell Counts"
+#~ msgstr "&Ermittle Zellenanzahl"
+
+#~ msgid "&Graphical Query Builder..."
+#~ msgstr "&Grafischer Abfragegenerator..."
+
+#~ msgid "&Grouping"
+#~ msgstr "&Gruppierung"
+
+#~ msgid "&Help on Help"
+#~ msgstr "&Verwendung der Hilfe"
+
+#~ msgid "&Inactive Timeout:"
+#~ msgstr "&Inaktivitäts-Timeout:"
+
+#~ msgid "&Initial Value"
+#~ msgstr "&Anfangswert"
+
+#~ msgid "&Italic"
+#~ msgstr "&Kursiv"
+
+#~ msgid "&Joined Fields"
+#~ msgstr "Ver&knüpfte Felder"
+
+#~ msgid "&Keep inactive connection"
+#~ msgstr "&Inaktive Verbindung halten"
+
+#~ msgid "&Key Fields:"
+#~ msgstr "&Schlüsselfelder:"
+
+#~ msgid "&Large icons"
+#~ msgstr "&Große Symbole"
+
+#~ msgid "&List of Available Fields:"
+#~ msgstr "&Liste der verfügbaren Felder:"
+
+#~ msgid "&Listen on Port:"
+#~ msgstr "P&ort überwachen:"
+
+#~ msgid "&Local"
+#~ msgstr "&Lokal"
+
+#~ msgid "&Login prompt"
+#~ msgstr "L&ogin-Abfrage"
+
+#~ msgid "&Master Fields"
+#~ msgstr "H&auptfelder"
+
+#~ msgid "&Menu animations:"
+#~ msgstr "&Menüanimationen:"
+
+#~ msgid "&Minimize All"
+#~ msgstr "&Alle verkleinern"
+
+#~ msgid "&Move Selection"
+#~ msgstr "Auswahl &verlagern"
+
+#~ msgid "&Name:"
+#~ msgstr "&Name:"
+
+#~ msgid "&New field..."
+#~ msgstr "&Neues Feld..."
+
+#~ msgid "&Open Picture..."
+#~ msgstr "&Bild öffnen..."
+
+#~ msgid "&Open..."
+#~ msgstr "Ö&ffnen..."
+
+#~ msgid "&Parameter overrides:"
+#~ msgstr "&Parameter überschreibt:"
+
+#~ msgid "&Ports"
+#~ msgstr "&Ports"
+
+#~ msgid "&Print..."
+#~ msgstr "D&rucken..."
+
+#~ msgid "&Properties"
+#~ msgstr "&Eigenschaften"
+
+#~ msgid "&Property Name:"
+#~ msgstr "Name der &Eigenschaft:"
+
+#~ msgid "&Protocol:"
+#~ msgstr "&Protokoll:"
+
+#~ msgid "&Query Editor..."
+#~ msgstr "Abfragee&ditor..."
+
+#~ msgid "&Query Text:"
+#~ msgstr "&Abfragetext:"
+
+#~ msgid "&Registered Objects Only"
+#~ msgstr "&Nur registrierte Objekte"
+
+#~ msgid "&Remote"
+#~ msgstr "E&xtern"
+
+#~ msgid "&Reset..."
+#~ msgstr "Symbolleisten"
+
+#~ msgid "&Result Field:"
+#~ msgstr "E&rgebnisfeld:"
+
+#~ msgid "&Run Time Display Only"
+#~ msgstr "Nu&r Laufzeitanzeige"
+
+#~ msgid "&Run..."
+#~ msgstr "&Ausführen..."
+
+#~ msgid "&SQL:"
+#~ msgstr "&SQL:"
+
+#~ msgid "&Save Picture..."
+#~ msgstr "Bild &speichern..."
+
+#~ msgid "&Select All"
+#~ msgstr "Alles &markieren"
+
+#~ msgid "&Send Mail..."
+#~ msgstr "Mail &senden..."
+
+#~ msgid "&Server:"
+#~ msgstr "&Server:"
+
+#~ msgid "&Service Editor ..."
+#~ msgstr "&Service-Editor..."
+
+#~ msgid "&Show Host Name"
+#~ msgstr "Zeige Ho&stname"
+
+#~ msgid "&Size:"
+#~ msgstr "&Größe:"
+
+#~ msgid "&Strikeout"
+#~ msgstr "Format"
+
+#~ msgid "&Summaries"
+#~ msgstr "Zu&sammenfassungen"
+
+#~ msgid "&Summaries:"
+#~ msgstr "&Zusammenfassungen:"
+
+#~ msgid "&Table:"
+#~ msgstr "&Tabelle:"
+
+#~ msgid "&Tables:"
+#~ msgstr "&Tabellen:"
+
+#~ msgid "&Thread Cache Size:"
+#~ msgstr "Größe des &Thread-Puffers:"
+
+#~ msgid "&Tile Vertically"
+#~ msgstr "&Vertikal anordnen"
+
+#~ msgid "&Toolbar Options"
+#~ msgstr "Sy&mbolleistenoptionen"
+
+#~ msgid "&Topic Search"
+#~ msgstr "&Suche über Schlüsselwort"
+
+#~ msgid "&Transaction Editor..."
+#~ msgstr "Transa&ktions-Editor..."
+
+#~ msgid "&Type"
+#~ msgstr "&Typ"
+
+#~ msgid "&Type:"
+#~ msgstr "&Typ:"
+
+#~ msgid "&Underline"
+#~ msgstr "&Unterstrichen"
+
+#~ msgid "&Undo"
+#~ msgstr "&Rückgängig"
+
+#~ msgid "&UpdateSQL Editor..."
+#~ msgstr "UpdateS&QL-Editor..."
+
+#~ msgid "&Web Page Editor..."
+#~ msgstr "Editor für &Web-Seiten..."
+
+#~ msgid "&average"
+#~ msgstr "&durchschnittlich"
+
+#~ msgid "&count"
+#~ msgstr "&Anzahl"
+
+#~ msgid ""
+#~ "&nbsp;&nbsp;<span class=\"Tip\">Link to WS-Inspection document of "
+#~ "Services <a href=\"%s\">here</a></span>"
+#~ msgstr ""
+#~ "&nbsp;&nbsp;<span class=\"Tip\">Verknüpfung mit WS-Inspektionsdokument "
+#~ "der Services <a href=\"%s\">hier</a></span>"
+
+#~ msgid "&sum"
+#~ msgstr "&Summe"
+
+#~ msgid "'%s' cannot be opened"
+#~ msgstr "'%s' kann nicht geöffnet werden"
+
+#~ msgid "'%s' is not a valid property value"
+#~ msgstr "'%s' ist kein gültiger Wert für die Eigenschaft"
+
+#~ msgid "''%s'' is not connected to an InterBase database"
+#~ msgstr "''%s'' ist nicht mit einer InterBase-Datenbank verbunden"
+
+#~ msgid "(ADT)"
+#~ msgstr "(ADT)"
+
+#~ msgid "(All Actions)"
+#~ msgstr "(Alle Aktionen)"
+
+#~ msgid "(Array)"
+#~ msgstr "(Array)"
+
+#~ msgid "(Binary)"
+#~ msgstr "(Binär)"
+
+#~ msgid "(Checkmark toggles visibility)"
+#~ msgstr "(Häkchen schaltet Anzeige um)"
+
+#~ msgid "(No Category)"
+#~ msgstr "(Keine Kategorie)"
+
+#~ msgid "(No Name)"
+#~ msgstr "(Kein Name)"
+
+#~ msgid "(Not Shown)"
+#~ msgstr "(Nicht angezeigt)"
+
+#~ msgid "3D Dark Shadow"
+#~ msgstr "3D Dunkler Schatten"
+
+#~ msgid "3D Light"
+#~ msgstr "3D Hell"
+
+#~ msgid ": [ - no volume label - ]"
+#~ msgstr ": [ - Ohne Namen - ]"
+
+#~ msgid "<- &Bind ->"
+#~ msgstr "<- B&indung ->"
+
+#~ msgid "<Components[%d]>"
+#~ msgstr "<Komponenten[%d]>"
+
+#~ msgid "<No Records>"
+#~ msgstr "<Keine Datensätze>"
+
+#~ msgid "<Unchanged>"
+#~ msgstr "<Unverändert>"
+
+#~ msgid "A connection component is required for async ExecuteOptions"
+#~ msgstr ""
+#~ "Für asynchrone ExecuteOptions wird eine Verbindungskomponente erwartet"
+
+#~ msgid "A key with the name of \"%s\" already exists"
+#~ msgstr "Schlüssel mit der Bezeichnung \"%s\" existiert bereits"
+
+#~ msgid "A script error occured.  Do you want to debug?"
+#~ msgstr "Es ist ein Script-Fehler aufgetreten. Möchten Sie ihn suchen?"
+
+#~ msgid "A style named %s has already been registered"
+#~ msgstr "Ein Attribut namens %s wurde bereits registriert"
+
+#~ msgid "A&ctions:"
+#~ msgstr "&Aktionen:"
+
+#~ msgid "A&vailable Indexes"
+#~ msgstr "Verfügbare &Indizes"
+
+#~ msgid "ABCDEFGHIJKLMNOP"
+#~ msgstr "ABCDEFGHIJKLMNOP"
+
+#~ msgid "AVIVideo"
+#~ msgstr "AVIVideo"
+
+#~ msgid "ActionManager must first be assigned"
+#~ msgstr "ActionManager muss zuerst zugewiesen werden"
+
+#~ msgid "Actions"
+#~ msgstr "Aktionen"
+
+#~ msgid "Active"
+#~ msgstr "Aktiv"
+
+#~ msgid "Active Border"
+#~ msgstr "Aktiver Rahmen"
+
+#~ msgid "Active Caption"
+#~ msgstr "Aktive Titelleiste"
+
+#~ msgid "Active+Needed"
+#~ msgstr "Aktiv+Benötigt"
+
+#~ msgid "ActiveEdit"
+#~ msgstr "ActiveEdit"
+
+#~ msgid "ActiveX Control Data Bindings Editor"
+#~ msgstr "Editor für ActiveX-Datenbindung"
+
+#~ msgid "Add All Actions..."
+#~ msgstr "Alle Aktionen hinzufügen..."
+
+#~ msgid "Add All Params"
+#~ msgstr "Alle Parameter hinzufügen"
+
+#~ msgid "Add F&ield to SQL"
+#~ msgstr "F&eld zu SQL hinzufügen"
+
+#~ msgid "Add New"
+#~ msgstr "Neue hinzufügen"
+
+#~ msgid "Add Params..."
+#~ msgstr "Parameter hinzufügen..."
+
+#~ msgid "Add T&able to SQL"
+#~ msgstr "T&abelle zu SQL hinzufügen"
+
+#~ msgid "Add all &fields"
+#~ msgstr "Alle Fel&der hinzufügen..."
+
+#~ msgid "Add item"
+#~ msgstr "Eintrag hinzufügen"
+
+#~ msgid "Add/Join Tables and Create Field List with SQL Builder"
+#~ msgstr "Add/Join Tables und Create Field List mit dem SQL Builder"
+
+#~ msgid "Aggregates"
+#~ msgstr "Aggregatfunktionen"
+
+#~ msgid "Align &Left"
+#~ msgstr "&Links ausrichten"
+
+#~ msgid "Align &Right"
+#~ msgstr "&Rechts ausrichten"
+
+#~ msgid "Align Left|Aligns text at the left indent"
+#~ msgstr "Links ausrichten|Text linksbündig ausrichten"
+
+#~ msgid "Align Right|Aligns text at the right indent"
+#~ msgstr "Rechts ausrichten|Text rechtsbündig ausrichten"
+
+#~ msgid "All &Fields"
+#~ msgstr "Alle &Felder"
+
+#~ msgid ""
+#~ "All (*.bmp;*.ico;*.emf;*.wmf)|*.bmp;*.ico;*.emf;*.wmf|Bitmaps (*.bmp)|*."
+#~ "bmp|Icons (*.ico)|*.ico|Enhanced Metafiles (*.emf)|*.emf|Metafiles (*."
+#~ "wmf)|*.wmf\n"
+#~ msgstr ""
+#~ "Alle (*.bmp;*.ico;*.emf;*.wmf)|*.bmp;*.ico;*.emf;*.wmf|Bitmaps (*.bmp)|*."
+#~ "bmp|Icons (*.ico)|*.ico|Erweiterte Metadateien (*.emf)|*.emf|Metadateien "
+#~ "(*.wmf)|*.wmf\n"
+
+#~ msgid "All Fields"
+#~ msgstr "&Alle Felder"
+
+#~ msgid "All Values"
+#~ msgstr "Alle Werte"
+
+#~ msgid "All dimension fields must be grouped. "
+#~ msgstr "Alle Dimensionsfelder müssen gruppiert werden."
+
+#~ msgid "All files (*.*)|*.*"
+#~ msgstr "Alle Dateien (*.*)|*.*"
+
+#~ msgid ""
+#~ "All files (*.*)|*.*|Wave files (*.wav)|*.wav|Midi files (*.mid)|*.mid|"
+#~ "Video for Windows (*.avi)|*.avi"
+#~ msgstr ""
+#~ "Alle Dateien (*.*)|*.*|Wave-Dateien (*.WAV)|*.WAV|Midi-Dateien (*.MID)|*."
+#~ "MID|Video für Windows (*.avi)|*.avi"
+
+#~ msgid ""
+#~ "An error occurred while attempting to initialize the Borland Database "
+#~ "Engine (error $%.4x)"
+#~ msgstr ""
+#~ "Bei der Initialisierung der Borland Database Engine ist ein Fehler "
+#~ "aufgetreten (Fehler $%.4x)"
+
+#~ msgid "An error returned from DDE  ($0%x)"
+#~ msgstr "Vom DDE wurde ein Fehler zurückgegeben ($0%x)"
+
+#~ msgid "An expression cannot be used for a grouping field"
+#~ msgstr ""
+#~ "Ein Ausdruck kann nicht zum Gruppieren eines Feldes verwendet werden"
+
+#~ msgid "Application Workspace"
+#~ msgstr "Anwendungsarbeitsbereich"
+
+#~ msgid "Apply &to all toolbars"
+#~ msgstr "&Für alle Symbolleisten verwenden"
+
+#~ msgid "Apply caption options &to all toolbars"
+#~ msgstr "Optionen für alle Symbolleisten verwenden"
+
+#~ msgid "Aqua"
+#~ msgstr "Aquamarin"
+
+#~ msgid "Array index out of range : %d"
+#~ msgstr "Array-Index außerhalb des gültigen Bereichs: %d"
+
+#~ msgid "Associate attributes"
+#~ msgstr "Attribute verknüpfen"
+
+#~ msgid "Attempting to put items into a virtual style listbox"
+#~ msgstr "Versuch, Elemente in ein virtuelles Stillistenfeld einzufügen"
+
+#~ msgid "Attribute already associated with another element"
+#~ msgstr "Das Attribut ist bereits mit einem anderen Element verknüpft"
+
+#~ msgid "Attribute set name"
+#~ msgstr "Name der Attributmenge"
+
+#~ msgid "Available &Fields"
+#~ msgstr "Verfügbare &Felder:"
+
+#~ msgid "Available fields"
+#~ msgstr "Verfügbare Felder"
+
+#~ msgid ""
+#~ "Average is calculated using a field sum and count(*).  The necessary "
+#~ "summaries have been added."
+#~ msgstr ""
+#~ "Der Mittelwert wird durch Ermittlung der Feldsumme und count(*) "
+#~ "ermittelt. Die dazu notwendigen Zusammenfassungen wurden hinzugefügt."
+
+#~ msgid ""
+#~ "Average is calculated using sum and count summaries for each field. The "
+#~ "necessary summaries have been added."
+#~ msgstr ""
+#~ "Der Mittelwert wird durch Ermittlung der Summe und der Anzahl für jedes "
+#~ "Feld ermittelt. Die dazu notwendigen Zusammenfassungen wurden hinzugefügt."
+
+#~ msgid "Average of %s"
+#~ msgstr "Mittelwert von %s"
+
+#~ msgid "Average summaries use Sum and Count"
+#~ msgstr "Mittelwert verwendet Summe und Anzahl"
+
+#~ msgid "B&uild..."
+#~ msgstr "A&ufbauen..."
+
+#~ msgid "BDE error $%.4x"
+#~ msgstr "BDE-Fehler $%.4x"
+
+#~ msgid "Background"
+#~ msgstr "Hintergrund"
+
+#~ msgid "Backup Database files"
+#~ msgstr "Datenbankdateien sichern"
+
+#~ msgid "Beginning of file"
+#~ msgstr "Beginn der Datei."
+
+#~ msgid "BinEdit"
+#~ msgstr "BinEdit"
+
+#~ msgid "BkSp"
+#~ msgstr "Rück"
+
+#~ msgid "Black"
+#~ msgstr "Schwarz"
+
+#~ msgid "Blob stream cannot be read"
+#~ msgstr "Blob-Stream kann nicht gelesen werden."
+
+#~ msgid "Blob stream cannot be written"
+#~ msgstr "Blob-Stream kann nicht geschrieben werden."
+
+#~ msgid "Blue"
+#~ msgstr "Blau"
+
+#~ msgid "Bo&und Properties to Fields:"
+#~ msgstr "&Bindung von Eigenschaften an Feld:"
+
+#~ msgid "Borland Socket Server"
+#~ msgstr "Borland Socket-Server"
+
+#~ msgid "Break link operation is not supported."
+#~ msgstr "Operation zur Trennung der Verbindung nicht erlaubt."
+
+#~ msgid "Browse URL"
+#~ msgstr "Internet"
+
+#~ msgid "Buffer not set"
+#~ msgstr "Puffer nicht gesetzt."
+
+#~ msgid "Building data store..."
+#~ msgstr "Datenspeicher aufbauen..."
+
+#~ msgid "Bullets|Inserts a bullet on the current line"
+#~ msgstr ""
+#~ "Aufzählungszeichen|In die aktuielle Zeile ein Aufzählungszeichen einfügen"
+
+#~ msgid "Button Face"
+#~ msgstr "Schalterfläche"
+
+#~ msgid "Button Highlight"
+#~ msgstr "Schalterhervorhebung"
+
+#~ msgid "Button Shadow"
+#~ msgstr "Schalterschatten"
+
+#~ msgid "Button Text"
+#~ msgstr "Schaltertext"
+
+#~ msgid "C"
+#~ msgstr "K"
+
+#~ msgid "C&lear"
+#~ msgstr "E&ntfernen"
+
+#~ msgid "C&lose"
+#~ msgstr "S&chließen"
+
+#~ msgid "C&omponent:"
+#~ msgstr "K&omponente:"
+
+#~ msgid "CDAudio"
+#~ msgstr "CDAudio"
+
+#~ msgid "COM Server Warning"
+#~ msgstr "Warnung des COM-Servers"
+
+#~ msgid "COUNTALL"
+#~ msgstr "COUNTALL"
+
+#~ msgid "CachedUpdates not enabled"
+#~ msgstr "CachedUpdates ist nicht aktiviert"
+
+#~ msgid "Call to GetExtensionVersion FAILED. Error Code: %d"
+#~ msgstr "Aufruf von GetExtensionVersion FEHLGESCHLAGEN. Fehler-Code: %d"
+
+#~ msgid ""
+#~ "Can't end a shared transaction unless it is forced and equal to the "
+#~ "transaction's TimeoutAction"
+#~ msgstr ""
+#~ "Eine gemeinsame Transaktion kann nicht beendet werden, außer es wird "
+#~ "erzwungen und ist gleich der TimeOutAction der Transaktion."
+
+#~ msgid "Cannot \"open\" a non-select statement. Use ExecQuery"
+#~ msgstr ""
+#~ "Ein Nicht-Select-Statement kann nicht \"geöffnet\" werden. Verwenden Sie "
+#~ "ExecQuery."
+
+#~ msgid "Cannot Cancel events while processing"
+#~ msgstr ""
+#~ "Während deren Bearbeitung können Ereignisse nicht abgebrochen werden"
+
+#~ msgid "Cannot Create Primary Index; are created automatically"
+#~ msgstr ""
+#~ "Primärindizes können nicht erzeugt werden, da sie automatisch erzeugt "
+#~ "werden"
+
+#~ msgid "Cannot Drop System Index"
+#~ msgstr "Systemindex kann nicht entfernt werden"
+
+#~ msgid "Cannot access field '%s' in a filter"
+#~ msgstr "Auf Feld '%s' kann in einem Filter nicht zugegriffen werden"
+
+#~ msgid ""
+#~ "Cannot add a session to the form or data-module while session '%s' has "
+#~ "AutoSessionName enabled"
+#~ msgstr ""
+#~ "Einem Formular oder Datenmodul kann keine Session hinzugefügt werden, da "
+#~ "Session '%s' AutoSessionName aktiviert hat"
+
+#~ msgid ""
+#~ "Cannot assign a subitem to an actionbar when one of it's parent's is "
+#~ "already assigned to an actionbar"
+#~ msgstr ""
+#~ "Unterelement kann nicht zu Aktionsleiste hinzugefügt werden, wenn ein "
+#~ "übergeordnetes Element bereits einer Aktionsleiste zugewiesen ist"
+
+#~ msgid "Cannot build the Decision Cube with an empty data set"
+#~ msgstr ""
+#~ "Der Entscheidungswürfel kann nicht mit einer leeren Datenmenge erstellt "
+#~ "werden"
+
+#~ msgid ""
+#~ "Cannot change settings when there are active connections. Kill "
+#~ "connections?"
+#~ msgstr ""
+#~ "Die Einstellungen können nicht geändert werden, da noch aktive "
+#~ "Verbindungen bestehen. Sollen diese Verbindungen abgebrochen werden?"
+
+#~ msgid "Cannot convert field '%s' to a floating point value"
+#~ msgstr "Feld '%s' kann nicht in Fließkommawert konvertiert werden"
+
+#~ msgid "Cannot convert field '%s' to an integer value"
+#~ msgstr "Feld '%s' kann nicht in Integerwert konvertiert werden"
+
+#~ msgid "Cannot create shared resource. (Windows error %d)"
+#~ msgstr ""
+#~ "Gemeinsam genutzte Ressource kann nicht erzeugt werden. (Windows-Fehler %"
+#~ "d)"
+
+#~ msgid "Cannot delete from dataset. (No delete query)"
+#~ msgstr ""
+#~ "Aus der Datenmenge kann nichts gelöscht werden. (Keine Lösch-Abfrage)."
+
+#~ msgid ""
+#~ "Cannot enable AutoSessionName property with more than one session on a "
+#~ "form or data-module"
+#~ msgstr ""
+#~ "Die Eigenschaft AutoSessionName kann nicht aktiviert werden, wenn sich "
+#~ "mehr als eine Session in einem Formular oder einem Datenmodul befinden"
+
+#~ msgid "Cannot exit when there are active connections. Kill connections?"
+#~ msgstr ""
+#~ "Das Programm kann nicht beendet werden, da noch aktive Verbindungen "
+#~ "bestehen. Sollen diese Verbindungen abgebrochen werden?"
+
+#~ msgid "Cannot focus a disabled or invisible window"
+#~ msgstr ""
+#~ "Ein deaktiviertes oder unsichtbares Fenster kann nicht den Fokus erhalten"
+
+#~ msgid "Cannot have more than one MDI form per application"
+#~ msgstr "Es ist nur ein MDI-Formular pro Anwendung möglich"
+
+#~ msgid "Cannot insert child node"
+#~ msgstr "Untergeordneter Knoten kann nicht eingefügt werden"
+
+#~ msgid "Cannot insert into dataset. (No insert query)"
+#~ msgstr "In Datenmenge kann nicht eingefügt werden. (Keine Einfüge-Abfrage)."
+
+#~ msgid "Cannot link to an invalid source."
+#~ msgstr "Zu einer ungültigen Quelle kann nicht verknüpft werden."
+
+#~ msgid "Cannot load older version of TShape"
+#~ msgstr "Kann ältere Version von TShape nicht laden"
+
+#~ msgid "Cannot modify SessionName while AutoSessionName is enabled"
+#~ msgstr ""
+#~ "Während AutoSessionName aktiviert ist, kann SessionName nicht geändert "
+#~ "werden."
+
+#~ msgid "Cannot open AVI"
+#~ msgstr "AVI kann nicht geöffnet werden"
+
+#~ msgid "Cannot perform a requery after connection has changed"
+#~ msgstr "Nach Wechsel der Verbindung kann keine Abfrage durchgeführt werden"
+
+#~ msgid "Cannot perform operation -- DB is currently open"
+#~ msgstr ""
+#~ "Operation kann nicht durchgeführt werden -- DB ist im Moment geöffnet."
+
+#~ msgid "Cannot perform operation -- DB is not open"
+#~ msgstr "Operation kann nicht durchgeführt werden -- DB ist nicht offen."
+
+#~ msgid "Cannot perform operation -- service is attached"
+#~ msgstr ""
+#~ "Operation kann nicht durchgeführt werden -- Ein Service ist verbunden."
+
+#~ msgid "Cannot perform operation -- service is not attached"
+#~ msgstr ""
+#~ "Operation kann nicht durchgeführt werden -- Es ist kein Service verbunden."
+
+#~ msgid "Cannot perform this action on an active Dimension Map"
+#~ msgstr ""
+#~ "Diese Aktion kann nicht auf eine aktive Dimensionszuweisung angewendet "
+#~ "werden"
+
+#~ msgid "Cannot perform this operation on a closed database"
+#~ msgstr "Operation bei geschlossener Datenbank nicht ausführbar"
+
+#~ msgid "Cannot perform this operation on an active session"
+#~ msgstr ""
+#~ "Diese Operation kann auf eine aktive Sitzung nicht angewendet werden"
+
+#~ msgid "Cannot perform this operation on an open database"
+#~ msgstr "Operation bei geöffneter Datenbank nicht ausführbar"
+
+#~ msgid "Cannot post. (No update/insert query)"
+#~ msgstr ""
+#~ "Zurückschreiben nicht möglich. (Keine Aktualisierungs-/Einfügen-Abfrage)"
+
+#~ msgid "Cannot print value"
+#~ msgstr "Wert kann nicht gedruckt werden"
+
+#~ msgid "Cannot refresh row. (No refresh query)"
+#~ msgstr ""
+#~ "Zeile kann nicht aktualisiert werden. (Keine Aktualisierungs-Abfrage)."
+
+#~ msgid "Cannot set database"
+#~ msgstr "Datenbank kann nicht gesetzt werden."
+
+#~ msgid "Cannot set transaction"
+#~ msgstr "Transaktion kann nicht gesetzt werden."
+
+#~ msgid "Cannot update, %s is not owned by %s"
+#~ msgstr "Aktualisierung nicht möglich, %s gehört zu %s"
+
+#~ msgid "Cannot update. (No update query)"
+#~ msgstr "Keine Aktualisierung möglich. (Keine Aktualisierungs-Abfrage)."
+
+#~ msgid "Cannot use array of Field values with Expression Indices"
+#~ msgstr ""
+#~ "Ein Array von Feldwerten kann nicht mit auf Ausdrücken basierenden "
+#~ "Indizes verwendet werden"
+
+#~ msgid "Caption Text"
+#~ msgstr "Titeltext"
+
+#~ msgid "Cascade"
+#~ msgstr "Überlappend"
+
+#~ msgid "Cate&gories:"
+#~ msgstr "&Kategorien:"
+
+#~ msgid "Center|Centers text between margins"
+#~ msgstr "Zentriert|Text zentriert ausrichten"
+
+#~ msgid "Circular DataLink Reference"
+#~ msgstr "Zirkuläre DataLink-Verweis"
+
+#~ msgid "Circular provider references not allowed."
+#~ msgstr "Zirkuläre Provider-Referenzen nicht erlaubt."
+
+#~ msgid "Circular references not allowed"
+#~ msgstr "Zirkuläre Verweise sind nicht gestattet"
+
+#~ msgid "Circular references not permitted"
+#~ msgstr "Zirkuläre Verweise sind nicht gestattet."
+
+#~ msgid "Clear Selection"
+#~ msgstr "Liste"
+
+#~ msgid "Client DataSet Data"
+#~ msgstr "Daten der Client-Datenmenge"
+
+#~ msgid "Client of TDrag not initialized"
+#~ msgstr "Client von TDrag wurde nicht initialisiert"
+
+#~ msgid "Close"
+#~ msgstr "Schließen"
+
+#~ msgid "Color"
+#~ msgstr "Farben"
+
+#~ msgid "Color Select"
+#~ msgstr "Dialog"
+
+#~ msgid "Column cannot be set to null (%s)"
+#~ msgstr "Spalte kann nicht auf null gesetzt werden (%s)"
+
+#~ msgid "Column index out of range : %d"
+#~ msgstr "Spaltenindex außerhalb des gültigen Bereichs: %d"
+
+#~ msgid "Column lists do not match"
+#~ msgstr "Fehlende Überinstimmung bei Spaltenlisten."
+
+#~ msgid "Column types don't match. (From index: %d; To index: %d)"
+#~ msgstr "Spaltentypen stimmen nicht überein. (Von Index: %d; Zu Index: %d)"
+
+#~ msgid "CommandText Editor"
+#~ msgstr "Anweisungstext-Editor"
+
+#~ msgid "CommandText does not return a result set"
+#~ msgstr "CommandText gibt keine Ergebnismenge zurück"
+
+#~ msgid "Component %s not found"
+#~ msgstr "Komponente %s nicht gefunden"
+
+#~ msgid "Component is not connected to an open Database"
+#~ msgstr "Die Komponente ist nicht mit einer offenen Datenbank verbunden"
+
+#~ msgid ""
+#~ "Component was expected to implement IInterfaceComponentReference for "
+#~ "ValuesList support"
+#~ msgstr ""
+#~ "Es wurde erwartet, dass die Komponente zur Unterstützung von ValuesList "
+#~ "IInterfaceComponentReference implementiert"
+
+#~ msgid "Conflicting Value"
+#~ msgstr "Widersprüchliche Werte"
+
+#~ msgid "Control '%s' has no parent window"
+#~ msgstr "Element '%s' hat kein übergeordnetes Fenster"
+
+#~ msgid "Control of when the information for this field is loaded"
+#~ msgstr "Steuerung wenn die Information für dieses Feld geladen ist"
+
+#~ msgid "Control whether to load the decision cube at design time"
+#~ msgstr "Steuerung, ob der Decision Cube zur Laufzeit geladen wird"
+
+#~ msgid "Copy Selection"
+#~ msgstr "Liste"
+
+#~ msgid "Correct"
+#~ msgstr "Korrekt"
+
+#~ msgid "Could not find server in ObjectManager list"
+#~ msgstr "Der Server kann in der ObjectManager-Liste nicht gefunden werden"
+
+#~ msgid "Could not load CARDS.DLL"
+#~ msgstr "CARDS.DLL kann nicht geladen werden"
+
+#~ msgid "Could not obtain OLE control window handle"
+#~ msgstr "Das Fenster-Handle des OLE-Elements nicht verfügbar"
+
+#~ msgid "Could not remove the field"
+#~ msgstr "Das Feld konnte nicht entfernt werden"
+
+#~ msgid "Count (*) for Averages"
+#~ msgstr ""
+#~ "Zur Berechnung von Mittelwerten count(*) verwenden (zählt Nullwerte mit)"
+
+#~ msgid "Count of %s"
+#~ msgstr "Anzahl von %s"
+
+#~ msgid "Cream"
+#~ msgstr "Creme"
+
+#~ msgid "Creates a WebSnap Application"
+#~ msgstr "WebSnap-Anwendung erzeugen"
+
+#~ msgid "Creates a WebSnap Data Module"
+#~ msgstr "WebSnap-Datenmodul erzeugen"
+
+#~ msgid "Creates a WebSnap Page Module"
+#~ msgstr "WebSnap-Seitenmodul erzeugen"
+
+#~ msgid "Creating Cube index for %s ..."
+#~ msgstr "Erstellen des Würfelindex für %s..."
+
+#~ msgid "Cube Maximums"
+#~ msgstr "Cube Maxima"
+
+#~ msgid "Cube Properties"
+#~ msgstr "Würfeleigenschaften"
+
+#~ msgid "Current"
+#~ msgstr "Aktuell"
+
+#~ msgid "Custom..."
+#~ msgstr "Individuell..."
+
+#~ msgid "Customize"
+#~ msgstr "Anpassen"
+
+#~ msgid "D&ataset:"
+#~ msgstr "Daten&menge:"
+
+#~ msgid "D&efaults"
+#~ msgstr "&Vorgaben"
+
+#~ msgid "D&etail Fields"
+#~ msgstr "D&etailfelder"
+
+#~ msgid "DAT"
+#~ msgstr "DAT"
+
+#~ msgid "DAX Error"
+#~ msgstr "DAX-Fehler"
+
+#~ msgid "DCOM not installed"
+#~ msgstr "DCOM ist nicht installiert"
+
+#~ msgid "DDE Error - conversation not established ($0%x)"
+#~ msgstr "DDE-Fehler - Konversation konnte nicht etabliert werden ($0%x)"
+
+#~ msgid "DOM Error: "
+#~ msgstr "DOM-Fehler: "
+
+#~ msgid "DPB Constant (%d) is unknown"
+#~ msgstr "DPB-Konstante (%d) ist unbekannt."
+
+#~ msgid "DPB Constant (%s) is unknown"
+#~ msgstr "DPB-Konstante (%s) ist unbekannt."
+
+#~ msgid "DPB Constant (isc_dpb_%s) is unsupported"
+#~ msgstr "DPB-Konstante (isc_dpb_%s) wird nicht unterstützt."
+
+#~ msgid "Da&tabase Editor..."
+#~ msgstr "&Datenbank-Editor..."
+
+#~ msgid "Data Access"
+#~ msgstr "Datenzugriff"
+
+#~ msgid "Data Bindings..."
+#~ msgstr "Datenbindungen..."
+
+#~ msgid "Data Packet"
+#~ msgstr "Datenpaket"
+
+#~ msgid "Data set is uni-directional"
+#~ msgstr "Datenmenge ist unidirektional."
+
+#~ msgid "Data set property is not assigned"
+#~ msgstr "Der Eigenschaft Data Set wurde kein Wert zugewiesen"
+
+#~ msgid "DataSet: %s is not active"
+#~ msgstr "DataSet: %s ist nicht aktiv"
+
+#~ msgid "Databas&e:"
+#~ msgstr "Dat&enbank:"
+
+#~ msgid "Database Files|*.gdb"
+#~ msgstr "Datenbankdateien|*.gdb"
+
+#~ msgid "Database Parameters"
+#~ msgstr "Datenbank-Parameter"
+
+#~ msgid "Database connection timed out"
+#~ msgstr "Zeitüberschreitung bei Datenbankverbindung."
+
+#~ msgid "Database handle owned by a different session"
+#~ msgstr "Datenbank-Handle gehört zu einer anderen Sitzung"
+
+#~ msgid "Database is currently connected. Disconnect and continue?"
+#~ msgstr "Die Datenbank ist verbunden. Verbindung beenden und weitermachen?"
+
+#~ msgid "Database name is missing"
+#~ msgstr "Der Name der Datenbank fehlt."
+
+#~ msgid "Database name missing"
+#~ msgstr "Datenbankname fehlt"
+
+#~ msgid "Database not assigned"
+#~ msgstr "Datenbank nicht zugewiesen."
+
+#~ msgid "Dataset closed"
+#~ msgstr "Datenmenge geschlossen."
+
+#~ msgid ""
+#~ "Dataset does not support bookmarks, which are required for multi-record "
+#~ "data controls"
+#~ msgstr ""
+#~ "Die Datenmenge unterstützt keine Positionsmarken, die von Multi-Datensatz-"
+#~ "Elementen benötigt werden."
+
+#~ msgid "Dataset is not a query"
+#~ msgstr "Die Datenmenge ist keine Abfrage"
+
+#~ msgid "Dataset is too large"
+#~ msgstr "Datenmenge ist zu groß"
+
+#~ msgid "Dataset open"
+#~ msgstr "Datenmenge geöffnet."
+
+#~ msgid "Date exceeds maximum of %s"
+#~ msgstr "Das Datum überschreitet das Maximum von %s"
+
+#~ msgid "Date grouping is not allowed for fields of this type"
+#~ msgstr "Die Gruppierung nach Datum ist für diesen Feldtyp nicht erlaubt"
+
+#~ msgid "Date is less than minimum of %s"
+#~ msgstr "Das Datum unterschreitet das Minimum von %s"
+
+#~ msgid "Date range can only be used in multiselect mode"
+#~ msgstr "Datumsbereich kann nur im Multiselect-Modus gebraucht werden"
+
+#~ msgid "Decision Cube"
+#~ msgstr "Datenanalyse"
+
+#~ msgid "Decision Cube Editor"
+#~ msgstr "Editor für Entscheidungswürfel"
+
+#~ msgid "Decision Cube Editor.."
+#~ msgstr "Editor für Entscheidungswürfel..."
+
+#~ msgid "Decision Cube size excedes limits"
+#~ msgstr "Der Entscheidungswürfel überschreitet seine Kapazität"
+
+#~ msgid "Decision Query Editor"
+#~ msgstr "Editor für Entscheidungsabfrage"
+
+#~ msgid "Decision Query Editor.."
+#~ msgstr "Editor für Entscheidungsabfrage..."
+
+#~ msgid "Define &Parameters..."
+#~ msgstr "&Parameter definieren..."
+
+#~ msgid "Delete Selected"
+#~ msgstr "Auswahl löschen"
+
+#~ msgid "Delete Selection"
+#~ msgstr "Liste"
+
+#~ msgid "Delete existing components?"
+#~ msgstr "Existierende Komponenten löschen?"
+
+#~ msgid "Deleted"
+#~ msgstr "Gelöscht"
+
+#~ msgid "Delete|Erases the selection"
+#~ msgstr "Löschen|Auswahl löschen"
+
+#~ msgid "DelphiException %s"
+#~ msgstr "DelphiException %s"
+
+#~ msgid "Description"
+#~ msgstr "Beschreibung"
+
+#~ msgid "Designer Data Options"
+#~ msgstr "Optionen für Designer Daten"
+
+#~ msgid "DestinationDirectory is not set"
+#~ msgstr "DestinationDirectory nicht gesetzt"
+
+#~ msgid "Dialog"
+#~ msgstr "Dialog"
+
+#~ msgid "DigitalVideo"
+#~ msgstr "DigitalVideo"
+
+#~ msgid "Dimension Map is not the correct size"
+#~ msgstr "Die Größe der Dimensionszuweisung ist nicht korrekt"
+
+#~ msgid "Dimension Settings"
+#~ msgstr "Dimensionseinstellungen"
+
+#~ msgid "Dimensions/Summaries"
+#~ msgstr "Maße/Zusammenfassungen"
+
+#~ msgid "Disconnecting clients can cause application errors. Continue?"
+#~ msgstr ""
+#~ "Wenn die Verbindung zu den Clients getrennt wird, kann das zu Fehlern in "
+#~ "der Anwendung führen. Weiter?"
+
+#~ msgid "Dispatch interface missing from class %s"
+#~ msgstr "Dispatch-Schnittstelle der Klasse %s fehlt"
+
+#~ msgid "Dispatch methods do not support more than 64 parameters"
+#~ msgstr "Dispatch-Methoden unterstützen maximal 64 Parameter."
+
+#~ msgid "Display &Name"
+#~ msgstr "A&nzeige"
+
+#~ msgid "Display Data Only"
+#~ msgstr "Nur Daten anzeigen"
+
+#~ msgid "Display Data and Subtotals"
+#~ msgstr "Daten und Zwischensummen anzeigen"
+
+#~ msgid "Display Dimension &Names"
+#~ msgstr "Maßeinheiten a&nzeigen"
+
+#~ msgid "Display Names and &Values"
+#~ msgstr "Namen und &Werte anzeigen"
+
+#~ msgid "Display Names, Values, and &Totals"
+#~ msgstr "Namen, Wer&te und Summen anzeigen"
+
+#~ msgid "Display Subtotals Only"
+#~ msgstr "Nur Zwischensummen anzeigen"
+
+#~ msgid "Do you still want to Exit?"
+#~ msgstr "Wollen Sie wirklich beenden?"
+
+#~ msgid "Docked control must have a name"
+#~ msgstr "Angedocktes Steuerelement muß einen Namen haben."
+
+#~ msgid "Don't Prompt Again"
+#~ msgstr "Meldung nicht mehr anzeigen"
+
+#~ msgid "Download from URL"
+#~ msgstr "Internet"
+
+#~ msgid "Drag to create Separators"
+#~ msgstr "Ziehen für das Erstellen von Separatoren"
+
+#~ msgid "Drill in to this value"
+#~ msgstr "Diesen Wert untersuchen"
+
+#~ msgid "Drilled In"
+#~ msgstr "Untersucht"
+
+#~ msgid "Duplicate CardId found"
+#~ msgstr "Doppelte CardId gefunden"
+
+#~ msgid "Duplicate database name '%s'"
+#~ msgstr "Doppelter Datenbankname '%s'"
+
+#~ msgid "Duplicate item in array"
+#~ msgstr "Im Array befinden sich Doppeleinträge"
+
+#~ msgid "Duplicate session name '%s'"
+#~ msgstr "Doppelter Name für eine Sitzung: '%s'"
+
+#~ msgid "E&xecute"
+#~ msgstr "&Ausführen"
+
+#~ msgid "E&xplore"
+#~ msgstr "E&xplorer"
+
+#~ msgid "EOF in comment detected"
+#~ msgstr "EOF im Kommentar gefunden"
+
+#~ msgid "EOF in string detected"
+#~ msgstr "EOF im String gefunden"
+
+#~ msgid "Edit SQL"
+#~ msgstr "SQL bearbeiten"
+
+#~ msgid "Empty SQL Statement"
+#~ msgstr "Leere SQL-Anweisung."
+
+#~ msgid "Empty query"
+#~ msgstr "Leere Abfrage."
+
+#~ msgid "End of file"
+#~ msgstr "Ende der Datei."
+
+#~ msgid "Enhanced Metafiles"
+#~ msgstr "Erweiterte Metadateien"
+
+#~ msgid "Error assigning Hot-Key to %s. %s"
+#~ msgstr "Fehler bei der Zuordnung des Tastenkürzels zu %s. %s"
+
+#~ msgid "Error creating cursor handle"
+#~ msgstr "Fehler beim Erstellen des Cursor-Handle"
+
+#~ msgid ""
+#~ "Error creating object.  Please verify that the Microsoft Data Access "
+#~ "Components 2.1 (or later) have been properly installed"
+#~ msgstr ""
+#~ "Fehler bei der Objekterzeugung. Stellen Sie sicher, daß die Microsoft "
+#~ "Data Access Components 2.1 (oder höher) richtig installiert sind"
+
+#~ msgid "Error creating system registry entry"
+#~ msgstr "Fehler beim Erstellen eines Eintrages in der Systemregistrierung"
+
+#~ msgid "Error creating window"
+#~ msgstr "Fehler beim Erzeugen eines Fensters"
+
+#~ msgid "Error creating window class"
+#~ msgstr "Metadateien"
+
+#~ msgid "Error creating window device context"
+#~ msgstr "Fehler beim Erstellen des Fenster-Gerätekontexts"
+
+#~ msgid "Error loading ISAPI Application: %s"
+#~ msgstr "Fehler beim Laden von ISAPI-Anwendung %s"
+
+#~ msgid ""
+#~ "Error loading previously saved settings file: %sWould you like to delete "
+#~ "it?"
+#~ msgstr ""
+#~ "Fehler beim Laden der zuvor gespeicherten Einstellungsdatei: %sSoll die "
+#~ "Datei gelöscht werden?"
+
+#~ msgid "Error occurred when DDE ran out of memory ($0%x)"
+#~ msgstr "Wegen Speichermangel bei DDE ist ein Fehler aufgetreten ($0%x)."
+
+#~ msgid "Error opening port %d with error: %s"
+#~ msgstr "Fehler beim Öffnen von Port %d. Fehler: %s"
+
+#~ msgid "Error reading from Mime Request Stream"
+#~ msgstr "Fehler beim Lesen von Mime-Anforderungs-Stream"
+
+#~ msgid "Error removing control from dock tree"
+#~ msgstr "Fehler beim Entfernen des Steuerelements aus der Andock-Hierarchie"
+
+#~ msgid "Error sending mail"
+#~ msgstr "Fehler beim Versenden von Mail"
+
+#~ msgid "Error setting %s.Count"
+#~ msgstr "Fehler beim Setzen von %s.Count"
+
+#~ msgid "Error setting path: \"%s\""
+#~ msgstr "Fehler beim Festlegen des Pfades: \"%s\""
+
+#~ msgid "Errors object must support the interface IIterateIntfSupport"
+#~ msgstr "Fehlerobjekte müssen das Interface IIterateIntfSupport unterstützen"
+
+#~ msgid "Events already registered"
+#~ msgstr "Ereignisse bereits registriert"
+
+#~ msgid "Events are not supported with server side TableDirect cursors"
+#~ msgstr ""
+#~ "Ereignisse werden nicht mit server-seitigen TableDirect-Cursorn "
+#~ "unterstützt"
+
+#~ msgid "Exceded Maximum Event limits"
+#~ msgstr "Das Maximum an Ereignissen wurde überschritten"
+
+#~ msgid "Exit|Quits the application"
+#~ msgstr "Beenden|Anwendung beenden"
+
+#~ msgid "Expand"
+#~ msgstr "Einblenden"
+
+#~ msgid "F&ind First"
+#~ msgstr "&Ersten suchen"
+
+#~ msgid "Failed to Load Stream"
+#~ msgstr "Das Laden des Streams ist mißlungen"
+
+#~ msgid "Failed to Save Stream"
+#~ msgstr "Das Speichern des Streams ist mißlungen"
+
+#~ msgid "Failed to clear tab control"
+#~ msgstr "Register-Element konnte nicht geleert werden"
+
+#~ msgid "Failed to get object at index %d"
+#~ msgstr "Objekt mit Index %d konnte nicht gelesen werden"
+
+#~ msgid "Failed to lookup isc_cancel_events"
+#~ msgstr "isc_cancel_events konnte nicht nachgeschlagen werden"
+
+#~ msgid "Failed to lookup isc_event_block"
+#~ msgstr "isc_event_block konnte nicht nachgeschlagen werden"
+
+#~ msgid "Failed to lookup isc_event_counts"
+#~ msgstr "isc_event_counts konnte nicht nachgeschlagen werden"
+
+#~ msgid "Failed to lookup isc_free"
+#~ msgstr "isc_free konnte nicht nachgeschlagen werden"
+
+#~ msgid "Failed to lookup isc_interprete"
+#~ msgstr "isc_interprete konnte nicht nachgeschlagen werden"
+
+#~ msgid "Failed to lookup isc_que_events"
+#~ msgstr "isc_que_events konnte nicht nachgeschlagen werden"
+
+#~ msgid "Failed to read ImageList data from stream"
+#~ msgstr "Die ImageList-Daten konnten nicht aus dem Stream gelesen werden"
+
+#~ msgid "Failed to retrieve tab at index %d"
+#~ msgstr "Registerseite mit Index %d konnte nicht gelesen werden"
+
+#~ msgid "Failed to set calendar date or time"
+#~ msgstr "Kalenderzeit oder -datum konnte nicht gesetzt werden"
+
+#~ msgid "Failed to set calendar min/max range"
+#~ msgstr "Der max./min.  Bereich des Kalenders konnte nicht gesetzt werden"
+
+#~ msgid "Failed to set calendar selected range"
+#~ msgstr "Der ausgewählte Bereich des Kalenders kann nicht gesetzt werden"
+
+#~ msgid "Failed to set maximum selection range"
+#~ msgstr "Der max. Auswahlbereich konnte nicht gesetzt werden"
+
+#~ msgid "Failed to set object at index %d"
+#~ msgstr "Objekt mit Index %d konnte nicht gesetzt werden"
+
+#~ msgid "Failed to set tab \"%s\" at index %d"
+#~ msgstr "Registerseite '%s' mit Index %d konnte nicht gesetzt werden"
+
+#~ msgid "Failed to write ImageList data to stream"
+#~ msgstr "Die ImageList-Daten konnten nicht in den Stream geschrieben werden"
+
+#~ msgid "Fatal error in cache: code: %d"
+#~ msgstr "Schwerer Fehler im Cache: Code: %d"
+
+#~ msgid "Fetch &Params"
+#~ msgstr "&Parameter holen"
+
+#~ msgid "Field \"%s\" is read-only"
+#~ msgstr "Feld \"%s\" ist schreibgeschützt."
+
+#~ msgid "Field \"%s\" not found"
+#~ msgstr "Feld \"%s\" konnte nicht gefunden werden."
+
+#~ msgid "Field %s has an unsupported data type: %s"
+#~ msgstr "Feld %s ist vom nicht unterstützten Datentyp %s"
+
+#~ msgid "Field Link Designer"
+#~ msgstr "Feldverbindungs-Designer"
+
+#~ msgid "Field properties"
+#~ msgstr "Feldeigenschaften"
+
+#~ msgid "Field type"
+#~ msgstr "Feldtyp"
+
+#~ msgid ""
+#~ "Fieldname (for a summary, the original field used to calculate the "
+#~ "summary)\n"
+#~ msgstr ""
+#~ "Feldname (für die Zusammanfassung, das ursprüngliche Feld wird für die "
+#~ "Kalkulation der Summe benutzt)\n"
+
+#~ msgid "Fields"
+#~ msgstr "Felder"
+
+#~ msgid "Fields '%s' and '%s' are not assignment compatible"
+#~ msgstr "Die Felder '%s' und '%s' sind nicht zuweisungskompatibel"
+
+#~ msgid "File load error"
+#~ msgstr "Fehler beim Dateiladen"
+
+#~ msgid "Filename(s)"
+#~ msgstr "Dateiname(n)"
+
+#~ msgid "Filter property cannot be used for detail tables"
+#~ msgstr ""
+#~ "Die Filter-Eigenschaft kann nicht bei Detail-Tabellen verwendet werden"
+
+#~ msgid "FilterOptions are not supported"
+#~ msgstr "Filteroptionen werden nicht unterstützt"
+
+#~ msgid "Find &Next"
+#~ msgstr "&Weitersuchen"
+
+#~ msgid "Find First|Finds the first occurance of specified text"
+#~ msgstr "Suchen"
+
+#~ msgid "Find Next|Repeats the last find"
+#~ msgstr "Weitersuchen|Letzte Suche wiederholen"
+
+#~ msgid "Find|Finds the specified text"
+#~ msgstr "Suchen|Angegebenen Text suchen"
+
+#~ msgid "Font Select"
+#~ msgstr "MS Sans Serif"
+
+#~ msgid "For&mat"
+#~ msgstr "For&mat"
+
+#~ msgid "Format"
+#~ msgstr "Format"
+
+#~ msgid "FormatEdit"
+#~ msgstr "FormatEdit"
+
+#~ msgid "Free Space"
+#~ msgstr "Freier Speicherplatz"
+
+#~ msgid "Fuchsia"
+#~ msgstr "Fuchsie"
+
+#~ msgid "General array error."
+#~ msgstr "Allgemeiner Fehler im Array."
+
+#~ msgid ""
+#~ "Generic ServiceStart not applicable: Use Specific Procedures to set "
+#~ "configuration params"
+#~ msgstr ""
+#~ "Generisches ServiceStart ist hier nicht anwendbar: Verwenden Sie "
+#~ "spezifische Prozeduren, um die Konfigurationsparameter zu setzen."
+
+#~ msgid "Getting the Count of a TComponentsEnumerator object is not supported"
+#~ msgstr ""
+#~ "Das Lesen von Count eines TComponentsEnumerator-Objekts wiurd nicht "
+#~ "unterstützt"
+
+#~ msgid "Gradient Active Caption"
+#~ msgstr "Gradient aktiver Titel"
+
+#~ msgid "Gradient Inactive Caption"
+#~ msgstr "Gradient inaktiver Titel"
+
+#~ msgid "Gray"
+#~ msgstr "Grau"
+
+#~ msgid "Gray Text"
+#~ msgstr "Grauer Text"
+
+#~ msgid "Green"
+#~ msgstr "Grün"
+
+#~ msgid "Grid Dimension Options"
+#~ msgstr "Optionen für Rasterdimension"
+
+#~ msgid "Grid Dimension Settings"
+#~ msgstr "Einstellung für Rasterdimension"
+
+#~ msgid "Group values for this field into ranges"
+#~ msgstr "Gruppiere Werte dieses Feldes in Bereiche"
+
+#~ msgid "Grouping values ..."
+#~ msgstr "Werte gruppieren..."
+
+#~ msgid "Help Contents"
+#~ msgstr "Inhalt der Hilfe"
+
+#~ msgid "Help on help"
+#~ msgstr "Verwendung der Hilfe"
+
+#~ msgid "Highlight Background"
+#~ msgstr "Hervorgehobener Hintergrund"
+
+#~ msgid "Highlight Text"
+#~ msgstr "Hervorgehobener Text"
+
+#~ msgid "Host"
+#~ msgstr "Host"
+
+#~ msgid "Hot-Key is assigned to another window"
+#~ msgstr "Tastenkürzel ist einem anderen Fenster zugeordnet"
+
+#~ msgid "Hot-Key is invalid"
+#~ msgstr "Tastenkürzel ist ungültig"
+
+#~ msgid "IBSQL Closed"
+#~ msgstr "IBSQL geschlossen"
+
+#~ msgid "IBSQL Open"
+#~ msgstr "IBSQL geöffnet"
+
+#~ msgid "IP Address"
+#~ msgstr "IP-Adresse"
+
+#~ msgid "ISAPI Application Error"
+#~ msgstr "Fehler in ISAPI-Anwendung"
+
+#~ msgid "Illegal Dimension Index"
+#~ msgstr "Ungültiger Dimensionsindex"
+
+#~ msgid "Image dimensions do not match image list dimensions"
+#~ msgstr "Bildgröße und Bildlistengröße stimmen nicht überein"
+
+#~ msgid "Inactive Border"
+#~ msgstr "Inaktiver Rahmen"
+
+#~ msgid "Inactive Caption"
+#~ msgstr "Inaktiver Titel"
+
+#~ msgid "Inactive Caption Text"
+#~ msgstr "Inaktiver Titeltext"
+
+#~ msgid "Inactive Dimensions"
+#~ msgstr "Nicht aktive Dimensionen"
+
+#~ msgid ""
+#~ "Inactive Timeout specifes the number of minutes a client can be inactive "
+#~ "before being disconnected. (0 indicates infinite)\n"
+#~ msgstr ""
+#~ "Inaktivitäts-Timeout gibt die Minuten an, bevor die Verbindung zu einem "
+#~ "nicht aktiver Client  getrennt wird. (0 bedeutet kein Timeout)\n"
+
+#~ msgid "Incorrect level assignment"
+#~ msgstr "Ungültige Zuweisung von Ebenen"
+
+#~ msgid "Incorrect type information for class %s"
+#~ msgstr "Falsche Typinformation für Klasse %s"
+
+#~ msgid "Increment By"
+#~ msgstr "Erhöhen um"
+
+#~ msgid "Index Field Missing"
+#~ msgstr "Indexfeld fehlt"
+
+#~ msgid "Index Files"
+#~ msgstr "Indexdateien"
+
+#~ msgid "Index does not exist. Index: %s"
+#~ msgstr "Index existiert nicht. Index: %s"
+
+#~ msgid "Info Background"
+#~ msgstr "Info-Hintergrund"
+
+#~ msgid "Info Text"
+#~ msgstr "Info-Text"
+
+#~ msgid ""
+#~ "Information required to do Maximum Cell limit is not current.  Do you "
+#~ "want to fetch it now?"
+#~ msgstr ""
+#~ "Die Information für das Berechnen des Zellmaximums ist nicht mehr "
+#~ "aktuell. Soll diese Information aktualisiert werden?"
+
+#~ msgid "Initial Value is not legal for this type of Grouping"
+#~ msgstr "Der Anfangswert ist für diesen Gruppierungstyp nicht erlaubt"
+
+#~ msgid ""
+#~ "Initialization of script debugger failed. Verify that a script debugger "
+#~ "is installed"
+#~ msgstr ""
+#~ "Initialisierung des Script-Debugger ist misslungen. Überprüfen Sie, ob "
+#~ "ein Script-Debugger installiert ist."
+
+#~ msgid "Input Requested"
+#~ msgstr "Eingabeaufforderung"
+
+#~ msgid "Inserted"
+#~ msgstr "Eingefügt"
+
+#~ msgid ""
+#~ "InterBase Install DLL ibinstall.dll not found in the path. Please install "
+#~ "InterBase 6 to use this functionality"
+#~ msgstr ""
+#~ "Die InterBase-Installations-DLL ibinstall.dll wurde im Pfad nicht gefunden"
+
+#~ msgid ""
+#~ "InterBase library gds.so.0 not found in the path. Please install "
+#~ "InterBase to use this functionality"
+#~ msgstr ""
+#~ "InterBase-Bibliothek gds.so.0 im Pfad nicht gefunden. Bitte installieren "
+#~ "Sie InterBase für diese Funktion"
+
+#~ msgid ""
+#~ "InterBase library gds32.dll not found in the path. Please install "
+#~ "InterBase to use this functionality"
+#~ msgstr "InterBase-DLL gds32.dll wurde im Pfad nicht gefunden"
+
+#~ msgid "InterbaseExpress %g"
+#~ msgstr "InterbaseExpress %g"
+
+#~ msgid "InterbaseExpress 4.3"
+#~ msgstr "InterbaseExpress 4.3"
+
+#~ msgid "Intercept GUID"
+#~ msgstr "Abfang-GUID"
+
+#~ msgid ""
+#~ "Intercept GUID is the GUID for a data interceptor COM object.  See help "
+#~ "for the TSocketConnection for details.\n"
+#~ msgstr ""
+#~ "Intercept GUID ist die GUID für ein Data Interceptor COM-Objekt.  Für "
+#~ "Details siehe Hilfe von TSocketConnection.\n"
+
+#~ msgid ""
+#~ "Interface (%s) canno be remoted - please verify the interface declaration "
+#~ "- specially the methods calling convention!"
+#~ msgstr ""
+#~ "Interface (%s) kann nicht ausgelagert werden - überprüfen Sie die "
+#~ "Interface-Deklaration - speziell die Aufrufkonventionen der Methoden!"
+
+#~ msgid ""
+#~ "Interface (%s) is not registered - please include the unit that registers "
+#~ "this interface to your project"
+#~ msgstr ""
+#~ "Interface (%s) ist nicht registriert - fügen Sie die Unit, die dieses "
+#~ "Interface registriert, in Ihr Projekt ein"
+
+#~ msgid "Internet"
+#~ msgstr "Internet"
+
+#~ msgid "Interpreter"
+#~ msgstr "Interpreter"
+
+#~ msgid "Invalid Batch Move"
+#~ msgstr "Ungültige Batch-Operation"
+
+#~ msgid ""
+#~ "Invalid Colormap this ActionBand requires ColorMaps of type "
+#~ "TCustomActionBarColorMapEx"
+#~ msgstr ""
+#~ "Ungültige Colormap. Dieses ActionBand benötigt ColorMaps des Typ "
+#~ "TCustomActionBarColorMapEx"
+
+#~ msgid "Invalid DispID for parameter %d in method %s"
+#~ msgstr "Ungültige DispID für Parameter %d in Methode %s"
+
+#~ msgid "Invalid Enum Value"
+#~ msgstr "Ungültiger Enum-Wert"
+
+#~ msgid "Invalid Event"
+#~ msgstr "Ungültiges Ereignis"
+
+#~ msgid "Invalid ISAPI application: %s"
+#~ msgstr "Ungültige ISAPI-Anwendung: %s"
+
+#~ msgid "Invalid ImageList"
+#~ msgstr "Ungültige ImageList"
+
+#~ msgid "Invalid Queueing"
+#~ msgstr "Ungültiges Queueing"
+
+#~ msgid "Invalid Redirect parameter"
+#~ msgstr "Ungültiger Redirect-Parameter"
+
+#~ msgid "Invalid Registration"
+#~ msgstr "Ungültige Registrierung"
+
+#~ msgid "Invalid SOAP response"
+#~ msgstr "Ungültige SOAP-Antwort"
+
+#~ msgid "Invalid alias name %s"
+#~ msgstr "Ungültiger Aliasname %s"
+
+#~ msgid "Invalid batch move parameters"
+#~ msgstr "Ungültige Batch-Move-Parameter"
+
+#~ msgid "Invalid blank event added to EventAlerter events list"
+#~ msgstr ""
+#~ "Der Ereignisliste des Event-Alerters wurde ein ungültiges leeres Ereignis "
+#~ "hinzugefügt"
+
+#~ msgid "Invalid class reference for TAppletApplication"
+#~ msgstr "Ungültige Klassenreferenz für TAppletApplication"
+
+#~ msgid "Invalid column index (index exceeds permitted range)"
+#~ msgstr ""
+#~ "Ungültiger Spaltenindex (Der Index überschreitet den erlaubten Bereich)."
+
+#~ msgid "Invalid data conversion"
+#~ msgstr "Ungültige Datenkonvertierung."
+
+#~ msgid "Invalid image"
+#~ msgstr "Ungültiges Bild"
+
+#~ msgid "Invalid index"
+#~ msgstr "Ungültiger Index"
+
+#~ msgid "Invalid namespace request"
+#~ msgstr "Ungültige Namespace-Anforderung"
+
+#~ msgid "Invalid object verb"
+#~ msgstr "Ungültiges Objekt-Verb"
+
+#~ msgid "Invalid operation on TOleGraphic"
+#~ msgstr "Ungültige Operation für TOleGraphic"
+
+#~ msgid "Invalid option specified"
+#~ msgstr "Ungültige Option angegeben"
+
+#~ msgid "Invalid outline index"
+#~ msgstr "Ungültiger Gliederungsindex"
+
+#~ msgid "Invalid owner"
+#~ msgstr "Ungültiger Besitzer"
+
+#~ msgid "Invalid parameter index (index exceeds permitted range)"
+#~ msgstr ""
+#~ "Ungültiger Parameterindex (Der Index überschreitet den erlaubten Bereich)."
+
+#~ msgid "Invalid selection"
+#~ msgstr "Ungültige Auswahl"
+
+#~ msgid "Invalid session name %s"
+#~ msgstr "Ungültiger Sitzungsname %s"
+
+#~ msgid "Invalid statement handle"
+#~ msgstr "Ungültiges Anweisungs-Handle."
+
+#~ msgid "Invalid string offset"
+#~ msgstr "Ungültiger String-Offset"
+
+#~ msgid "Invalid syntax"
+#~ msgstr "Syntaxfehler"
+
+#~ msgid "Item %s has subitems, delete anyway?"
+#~ msgstr "Element %s hat Unterelemente, trotzdem löschen?"
+
+#~ msgid "Item %s is not allowed to be moved"
+#~ msgstr "Eintrag %s darf nicht verschoben werden"
+
+#~ msgid "Key"
+#~ msgstr "Schlüssel"
+
+#~ msgid "Key \"%s\" not found"
+#~ msgstr "Taste \"%s\" nicht gefunden"
+
+#~ msgid "Key may not contain equals sign (\"=\")"
+#~ msgstr "Schlüssel darf keine Gleichheitszeichen (\"=\") enthalten"
+
+#~ msgid "L&og"
+#~ msgstr "Pr&otokoll"
+
+#~ msgid "Last Activity"
+#~ msgstr "Letzte Aktivität"
+
+#~ msgid "License information for %s is invalid"
+#~ msgstr "Lizenz-Information für %s ist ungültig"
+
+#~ msgid ""
+#~ "License information for %s not found. You cannot use this control in "
+#~ "design mode"
+#~ msgstr ""
+#~ "Lizenz-Information für %s nicht gefunden. Sie können dieses Steuerelement "
+#~ "im Entwurfsmodus nicht verwenden"
+
+#~ msgid "Lime"
+#~ msgstr "Limone"
+
+#~ msgid "Limit on the number of dimensions which can be loaded at one time\n"
+#~ msgstr ""
+#~ "Limitierung der Anzahl der Einheiten, die gleichzeitig geladen werden "
+#~ "können\n"
+
+#~ msgid ""
+#~ "Limit on the number of storage cells which can be loaded at one time\n"
+#~ msgstr ""
+#~ "Limitierung der Anzahl der Speicherzellen, die gleichzeitig geladen "
+#~ "werden können\n"
+
+#~ msgid "Limit on the number of summaries which can be loaded at one time"
+#~ msgstr ""
+#~ "Limitierung der Anzahl der Zusammanfassungen, die gleichzeitig geladen "
+#~ "werden können"
+
+#~ msgid "Link Properties"
+#~ msgstr "Verknüpfungseigenschaften"
+
+#~ msgid "Linked %s"
+#~ msgstr "Verknüpft %s"
+
+#~ msgid "List"
+#~ msgstr "Liste"
+
+#~ msgid "List all fields or List only the fields in the query"
+#~ msgstr "&Alle Felder"
+
+#~ msgid "Listbox (%s) style must be virtual in order to set Count"
+#~ msgstr ""
+#~ "Stil des Listenfeldes (%s) muss virtuell sein, damit Count gesetzt werden "
+#~ "kann"
+
+#~ msgid "Lo&gin Prompt"
+#~ msgstr "A&nmeldeaufforderung"
+
+#~ msgid "Look&up Keys:"
+#~ msgstr "S&chlüssel:"
+
+#~ msgid "Lookup definition"
+#~ msgstr "Nachschlage-Definition"
+
+#~ msgid "LookupSource must be connected to TTable component"
+#~ msgstr "LookupSource muss mit TTable-Komponente verbunden werden"
+
+#~ msgid "MMMovie"
+#~ msgstr "MMMovie"
+
+#~ msgid ""
+#~ "Many values of Port are associated by convention with a particular "
+#~ "service such as ftp or http. Port is the ID of the connection on which "
+#~ "the server listens for client requests. \n"
+#~ msgstr ""
+#~ "Viele Werte von Port sind mit bestimmten Diensten wie ftp oder http "
+#~ "assoziiert. Port ist die ID der Verbindung, auf der der Server auf Client-"
+#~ "Anfragen wartet. \n"
+
+#~ msgid "Maroon"
+#~ msgstr "Braun"
+
+#~ msgid "Maximum"
+#~ msgstr "Maximum"
+
+#~ msgid "Maximum of %s"
+#~ msgstr "Maximum von %s"
+
+#~ msgid "Maximum outline depth exceeded"
+#~ msgstr "Maximale Gliederungstiefe überschritten"
+
+#~ msgid "Me&nu show recently used items first"
+#~ msgstr "Optionen"
+
+#~ msgid "Medium Gray"
+#~ msgstr "Mittelgrau"
+
+#~ msgid "Memory Control"
+#~ msgstr "Speicherkontrolle"
+
+#~ msgid "Menu Background"
+#~ msgstr "Menühintergrund"
+
+#~ msgid "Menu Text"
+#~ msgstr "Menütext"
+
+#~ msgid "Merge"
+#~ msgstr "Zusammenführen"
+
+#~ msgid "Metafile is not valid"
+#~ msgstr "Metadatei ist ungültig"
+
+#~ msgid "Metafiles"
+#~ msgstr "Metadateien"
+
+#~ msgid "Method %s of class %s not found"
+#~ msgstr "Methode %s aus Klasse %s nicht gefunden"
+
+#~ msgid "Method '%s' not supported by OLE object"
+#~ msgstr "Methode '%s' wird vom OLE-Objekt nicht unterstützt"
+
+#~ msgid "Method '%s' not supported by automation object"
+#~ msgstr "Die Methode '%s' wird vom Automatisierungsobjekt nicht unterstützt"
+
+#~ msgid "Method definition for %s has over %d parameters"
+#~ msgstr "Methodendefinition für %s hat mehr als %d Parameter"
+
+#~ msgid "Minimize All"
+#~ msgstr "Alle verkleinern"
+
+#~ msgid "Minimum of %s"
+#~ msgstr "Minimum von %s"
+
+#~ msgid "Missing %s property"
+#~ msgstr "Eigenschaft %s fehlt"
+
+#~ msgid "Missing Connection or ConnectionString"
+#~ msgstr "Fehlende Connection oder ConnectionString"
+
+#~ msgid "Modified"
+#~ msgstr "Geändert"
+
+#~ msgid "Money Green"
+#~ msgstr "Dollargrün"
+
+#~ msgid "Move &Up"
+#~ msgstr "Nach &oben"
+
+#~ msgid "Move Dow&n"
+#~ msgstr "Nach &unten"
+
+#~ msgid "Move Selected Down"
+#~ msgstr "Auswahl nach unten verschieben"
+
+#~ msgid "Move Selected Up"
+#~ msgstr "Auswahl nach oben verschieben"
+
+#~ msgid "Move Selection"
+#~ msgstr "Liste"
+
+#~ msgid "Move to Column Area"
+#~ msgstr "Zum Spaltenbereich"
+
+#~ msgid "Move to Row Area"
+#~ msgstr "Zum Zeilenbereich"
+
+#~ msgid "Multiselect mode must be on for this feature"
+#~ msgstr "Mehrfachauswahl muss für diese Funktion aktiviert sein"
+
+#~ msgid "Must have a valid field type selected"
+#~ msgstr "Sie müssen einen gültigen Feldtypen auswählen"
+
+#~ msgid "Must select at least one key field and one update field"
+#~ msgstr ""
+#~ "Sie müssen mindestens ein Schlüsselfeld und ein Updatefeld auswählen"
+
+#~ msgid "Navy"
+#~ msgstr "Dunkelblau"
+
+#~ msgid "New"
+#~ msgstr "Neu"
+
+#~ msgid "New Field"
+#~ msgstr "Neues Feld"
+
+#~ msgid "Next|Go to the next tab"
+#~ msgstr "&Fertig stellen"
+
+#~ msgid ""
+#~ "No ActionBand style unit present in the uses clause.Your application must "
+#~ "include either XPStyleActnCtrls, StdStyleActnCtrls or a third party "
+#~ "ActionBand style unit in its uses clause."
+#~ msgstr ""
+#~ "In der uses-Klausel ist keine ActionBand-Attribut-Unit vorhanden.In Ihrer "
+#~ "Anwendung muss XPStyleActnCtrls, StdStyleActnCtrls oder eine ActionBand-"
+#~ "Attribut-Unit in der uses-Klausel vorhanden sein."
+
+#~ msgid "No Events Registered"
+#~ msgstr "Es sind keine Ereignisse registriert"
+
+#~ msgid "No Install Options selected"
+#~ msgstr "Es sind keine Installationsoptionen ausgewählt"
+
+#~ msgid "No MCI device open"
+#~ msgstr "Kein MCI-Gerät geöffnet"
+
+#~ msgid "No OnGetItem event handler assigned"
+#~ msgstr "Es wurde keine OnGetItem-Ereignisbehandlung zugewiesen"
+
+#~ msgid "No Provider"
+#~ msgstr "Kein Provider"
+
+#~ msgid "No Records Affected"
+#~ msgstr "Keine Datensätze betroffen"
+
+#~ msgid "No Stored Procedure Name assigned"
+#~ msgstr "Stored Procedure wurde kein Name zugewiesen"
+
+#~ msgid "No Table Name assigned"
+#~ msgstr "Kein Tabellenname zugewiesen"
+
+#~ msgid ""
+#~ "No URL property set - please specify the URL of the Service you wish to "
+#~ "connect to"
+#~ msgstr ""
+#~ "URL-Eigenschaft nicht gesetzt - geben Sie die URL des Services an, zu dem "
+#~ "Sie verbunden werden möchten"
+
+#~ msgid "No access to field \"%s\""
+#~ msgstr "Kein Zugriff auf Feld \"%s\"."
+
+#~ msgid "No active summaries have been defined. "
+#~ msgstr "Es wurden keine aktiven Zusammenfassungen definiert."
+
+#~ msgid "No argument provided for an operator or summary"
+#~ msgstr "Für einen Operator oder eine Zusammenfassung fehlt ein Argument"
+
+#~ msgid "No available dimensions have been defined. "
+#~ msgstr "Es wurden keine verfügbaren Dimensionen definiert."
+
+#~ msgid "No context-sensitive help installed"
+#~ msgstr "Keine kontextsensitive Hilfe installiert"
+
+#~ msgid "No databases are listed in transaction component"
+#~ msgstr "In der Transaktionskomponente sind keine Datenbanken aufgeführt."
+
+#~ msgid "No dataset association"
+#~ msgstr "Keine Datenmengenverknüpfung"
+
+#~ msgid "No default browser is specified"
+#~ msgstr "Es ist kein Standard-Browser eingetragen"
+
+#~ msgid "No dimension fields are defined. "
+#~ msgstr "Es sind keine Dimensionsfelder definiert."
+
+#~ msgid "No help found for %s"
+#~ msgstr "Für %s sind keine Hilfeinformationen vorhanden."
+
+#~ msgid "No help keyword specified."
+#~ msgstr "Es wurden keine Schlüsselwörter für die Hilfe angegeben."
+
+#~ msgid "No matching ADO data type for %s"
+#~ msgstr "Kein passender ADO-Datentyp für %s"
+
+#~ msgid "No provider available"
+#~ msgstr "Kein Provider verfügbar"
+
+#~ msgid "No summaries are defined. "
+#~ msgstr "Es sind keine Zusammenfassungen definiert."
+
+#~ msgid "No topic-based help system installed"
+#~ msgstr "Es ist keine themenbasierte Hilfe installiert."
+
+#~ msgid "Node is owned by a different document"
+#~ msgstr "Der Knoten ist im Besitz eines anderen Dokuments"
+
+#~ msgid "Node not found"
+#~ msgstr "Knoten nicht gefunden"
+
+#~ msgid "Not Available"
+#~ msgstr "Nicht verfügbar"
+
+#~ msgid "Not enough room available to load a summary. "
+#~ msgstr ""
+#~ "Es steht nicht genügend Speicher zur Verfügung, um eine Zusammenfassung "
+#~ "zu laden."
+
+#~ msgid "Not enough space available to load a dimension. "
+#~ msgstr ""
+#~ "Es steht nicht genügend Speicher zur Verfügung, um eine Dimension zu "
+#~ "laden."
+
+#~ msgid "Not in edit mode"
+#~ msgstr "Nicht im Bearbeitungs-Modus"
+
+#~ msgid "Not permitted"
+#~ msgstr "Nicht gestattet."
+
+#~ msgid "OLE control activation failed"
+#~ msgstr "Aktivierung des OLE-Steuerelements mißlungen"
+
+#~ msgid "OLE error %.8x"
+#~ msgstr "OLE-Fehler %.8x"
+
+#~ msgid "Object factory for class %s missing"
+#~ msgstr "Der Objektgenerator für die Klasse %s fehlt"
+
+#~ msgid "Olive"
+#~ msgstr "Olivgrün"
+
+#~ msgid ""
+#~ "One or more fields of a type which cannot be tabulated were removed from "
+#~ "the query."
+#~ msgstr ""
+#~ "Ein oder mehrere Felder wurden aus der Abfrage entfernt, da sie nicht "
+#~ "tabularisiert werden konnten."
+
+#~ msgid "Open Dimension"
+#~ msgstr "Dimension öffnen"
+
+#~ msgid "Open Picture"
+#~ msgstr "Dialog"
+
+#~ msgid "Open Transformation File"
+#~ msgstr "Transformationsdatei öffnen"
+
+#~ msgid "Open with..."
+#~ msgstr "Öffnen mit..."
+
+#~ msgid "Open|Opens an existing file"
+#~ msgstr "Öffnen|Vorhandene Datei öffnen"
+
+#~ msgid "Operation cancelled at user's request"
+#~ msgstr "Die Operation wurde auf Anforderung des Anwenders abgebrochen."
+
+#~ msgid "Operation not allowed on an empty OLE container"
+#~ msgstr "Operation mit einem leeren OLE-Container nicht zulässig"
+
+#~ msgid "Operation not allowed on sorted string list."
+#~ msgstr ""
+#~ "Diese Operation ist bei einer sortierten String-Liste nicht erlaubt."
+
+#~ msgid "Original Value"
+#~ msgstr "Originalwert"
+
+#~ msgid "Other"
+#~ msgstr "Andere"
+
+#~ msgid "Other Values"
+#~ msgstr "Andere Werte"
+
+#~ msgid "Out of Bounds"
+#~ msgstr "Außerhalb des Bereichs"
+
+#~ msgid "Outline index not found"
+#~ msgstr "Gliederungsindex nicht gefunden"
+
+#~ msgid "Overlay"
+#~ msgstr "Überlagert"
+
+#~ msgid "Page Set&up..."
+#~ msgstr "Seite e&inrichten..."
+
+#~ msgid "Pages"
+#~ msgstr "Seiten"
+
+#~ msgid "Parameter %d required for method %s"
+#~ msgstr "Parameter %d erforderlich für Methode %s"
+
+#~ msgid "Parameter '%s' truncated on output"
+#~ msgstr "Parameter '%s' wurde bei Ausgabe abgeschnitten"
+
+#~ msgid "Parameter name expected"
+#~ msgstr "Parametername erwartet"
+
+#~ msgid "Parent must be expanded"
+#~ msgstr "Elternknoten muß expandiert sein"
+
+#~ msgid "Pass&word:"
+#~ msgstr "Pass&wort:"
+
+#~ msgid "Personalized Menus and Toolbars"
+#~ msgstr "Individuelle Menüs und Symbolleisten"
+
+#~ msgid "Previous|Go back to the previous tab"
+#~ msgstr "Tab"
+
+#~ msgid "Print Set&up..."
+#~ msgstr "&Druckereinstellungen..."
+
+#~ msgid "Print Setup"
+#~ msgstr "Druckereinstellungen"
+
+#~ msgid "Purple"
+#~ msgstr "Purpur"
+
+#~ msgid "Query Fields"
+#~ msgstr "Felder abfragen"
+
+#~ msgid "Query Parameters missing or incorrect"
+#~ msgstr "Abfrageparameter fehlen oder sind nicht korrekt"
+
+#~ msgid ""
+#~ "Query could not be run. Check that the query, SQL text, and Database are "
+#~ "correct."
+#~ msgstr ""
+#~ "Die Abfrage konnte nicht gestartet werden. Überprüfen Sie, ob Abfrage, "
+#~ "SQL-Text und Datenbank korrekt sind."
+
+#~ msgid "Query is legal."
+#~ msgstr "Die Abfrage ist gültig."
+
+#~ msgid "Query lacks a Select/From clause."
+#~ msgstr "Der Abfrage fehlt eine Select/From-Klausel."
+
+#~ msgid "R"
+#~ msgstr "R"
+
+#~ msgid ""
+#~ "Received content of invalid Content-Type setting: %s - SOAP expects "
+#~ "\"text/xml\""
+#~ msgstr ""
+#~ "Empfang von Inhalt mit ungültigen Einstellungen für Inhaltstyp: %s - SOAP "
+#~ "erwartet \"text/xml\""
+
+#~ msgid "Recordset is not open"
+#~ msgstr "Recordset ist nicht geöffnet"
+
+#~ msgid "Red"
+#~ msgstr "Rot"
+
+#~ msgid "ReferenceTableName not specified for field '%s'"
+#~ msgstr "Für Feld '%s' wurde kein Referenztabellenname angegeben"
+
+#~ msgid "Refresh"
+#~ msgstr "Aktualisieren"
+
+#~ msgid "Replace|Replaces specific text with different text"
+#~ msgstr "Ersetzen|Angegebenen Text durch neuen Text ersetzen"
+
+#~ msgid "Request is not live - cannot modify"
+#~ msgstr "Die Anforderung ist nicht 'live' - Änderung nicht möglich."
+
+#~ msgid "Required Param value not set"
+#~ msgstr "Wert für Required Param nicht gesetzt"
+
+#~ msgid "Reset Toolbar"
+#~ msgstr "Symbolleiste zurücksetzen"
+
+#~ msgid "Reset Usage Data"
+#~ msgstr "Optionen"
+
+#~ msgid "Reset all usage data?"
+#~ msgstr "Alle verwendeten Daten zurücksetzen"
+
+#~ msgid "Restore Database Files"
+#~ msgstr "Datenbankdateien wiederherstellen"
+
+#~ msgid "Restore Defaults"
+#~ msgstr "Rücksetzen"
+
+#~ msgid "RichEdit line insertion error"
+#~ msgstr "Fehler bei Einfügen von RichEdit-Zeile"
+
+#~ msgid "Row index out of range : %d"
+#~ msgstr "Zeilenindex außerhalb des gültigen Bereichs: %d"
+
+#~ msgid "Run"
+#~ msgstr "Start"
+
+#~ msgid "Run a query to fetch information required to estimate cell usage"
+#~ msgstr ""
+#~ "Abfrage zum Einholen von notwendigen Informationen starten, um den "
+#~ "Zellenverbrauch abzuschätzen"
+
+#~ msgid "Run|Runs an application"
+#~ msgstr "Start"
+
+#~ msgid "S&QL Builder..."
+#~ msgstr "SQL-&Builder..."
+
+#~ msgid "SEOFReached"
+#~ msgstr "SEOFReached"
+
+#~ msgid "SPB Constant Not supported"
+#~ msgstr "SPB-Konstante nicht unterstützt"
+
+#~ msgid "SPB Constant Unknown"
+#~ msgstr "SPB-Konstante unbekannt"
+
+#~ msgid "SQL &Builder ..."
+#~ msgstr "SQL-&Builder..."
+
+#~ msgid "SQL Dialect Invalid"
+#~ msgstr "Ungültiger SQL-Dialekt"
+
+#~ msgid "SQL Monitor Instance is already present"
+#~ msgstr "Es gibt schon eine Instanz des SQL-Monitor"
+
+#~ msgid ""
+#~ "SQL Parse Error:\n"
+#~ "\n"
+#~ "%s"
+#~ msgstr ""
+#~ "Fehler bei der SQL-Auswertung:\n"
+#~ "\n"
+#~ "%s"
+
+#~ msgid "SQL Query"
+#~ msgstr "SQL-Abfrage"
+
+#~ msgid "Save %s attributes as"
+#~ msgstr "%s-Attribute unter anderem Namen speichern"
+
+#~ msgid "Save &As..."
+#~ msgstr "Speichern &unter..."
+
+#~ msgid "Save As|Saves the active file with a new name"
+#~ msgstr "Speichern unter|Aktive Datei unter einem neuen Namen speichern"
+
+#~ msgid "Save Picture"
+#~ msgstr "Dialog"
+
+#~ msgid "Scanner"
+#~ msgstr "Scanner"
+
+#~ msgid "Scanning data set values..."
+#~ msgstr "Datenwerte analysieren..."
+
+#~ msgid "Script Error"
+#~ msgstr "Script-Fehler"
+
+#~ msgid "Script execution timed out after %d seconds"
+#~ msgstr "Zeit der Script-Ausführung nach %d Sekunden überschritten"
+
+#~ msgid "Scroll Bar"
+#~ msgstr "Bildlaufleiste"
+
+#~ msgid "Se&lect all"
+#~ msgstr "Alles mar&kieren"
+
+#~ msgid "Se&ttings:"
+#~ msgstr "Eins&tellungen:"
+
+#~ msgid "Search"
+#~ msgstr "Suchen"
+
+#~ msgid "Select &Color..."
+#~ msgstr "&Farbe wählen..."
+
+#~ msgid "Send email"
+#~ msgstr "E-mail senden"
+
+#~ msgid "Separator"
+#~ msgstr "Separator"
+
+#~ msgid "Sequencer"
+#~ msgstr "Sequencer"
+
+#~ msgid "Server Name Missing"
+#~ msgstr "Server-Name fehlt"
+
+#~ msgid "Service \"%s\" failed to install with error: \"%s\""
+#~ msgstr "Service \"%s\" konnte nicht installiert werden; Fehler: \"%s\""
+
+#~ msgid "Service \"%s\" failed to uninstall with error: \"%s\""
+#~ msgstr "Service \"%s\" konnte nicht deinstalliert werden; Fehler: \"%s\""
+
+#~ msgid "Service Editor"
+#~ msgstr "Service-Editor"
+
+#~ msgid "Service failed in custom message(%d): %s"
+#~ msgstr "Service fehlgeschlagen in selbstdef. Meldung (%d): %s"
+
+#~ msgid "Service failed on %s: %s"
+#~ msgstr "Service fehlgeschlagen bei %s:%s"
+
+#~ msgid "Service installed successfully"
+#~ msgstr "Service erfolgreich installiert"
+
+#~ msgid "Service uninstalled successfully"
+#~ msgstr "Service erfolgreich deinstalliert"
+
+#~ msgid "Session name missing"
+#~ msgstr "Name der Sitzung fehlt"
+
+#~ msgid "Show &tips on toolbars"
+#~ msgstr "&Kurzhinweise in Symbolleisten anzeigen"
+
+#~ msgid "Show Detail Records.."
+#~ msgstr "Detaildatensätze anzeigen..."
+
+#~ msgid "Show f&ull menus after a short delay"
+#~ msgstr "&Nach kurzer Verzögerung vollständige Menüs anzeigen"
+
+#~ msgid "Show shortcut keys in tips"
+#~ msgstr "&Tastenkürzel in Kurzhinweisen anzeigen"
+
+#~ msgid "Silver"
+#~ msgstr "Silber"
+
+#~ msgid "Size Mismatch - Field %s size is too small for data"
+#~ msgstr "Größenfehler - Feld %s ist zu klein für die Daten"
+
+#~ msgid "Size(Bytes)"
+#~ msgstr "Größe(Bytes)"
+
+#~ msgid "Skip"
+#~ msgstr "Überspringen"
+
+#~ msgid "Sky Blue"
+#~ msgstr "Himmelblau"
+
+#~ msgid "Source and destination tables are incompatible"
+#~ msgstr "Quell- und Zieltabellen sind inkompatibel"
+
+#~ msgid "SourceDirectory is not set"
+#~ msgstr "SourceDirectory nicht gesetzt"
+
+#~ msgid "Standard"
+#~ msgstr "Standard"
+
+#~ msgid "Standard Deviation of %s"
+#~ msgstr "Standardabweichung von %s"
+
+#~ msgid "Standard Style"
+#~ msgstr "Standard-Attribut"
+
+#~ msgid "Start a new query using a table from the database"
+#~ msgstr ""
+#~ "Starte eine neue Abfrage unter Benutzung einer Tabelle der Datenbank"
+
+#~ msgid ""
+#~ "Starting value for date ranges, Intial value for single valued "
+#~ "dimensions\n"
+#~ msgstr ""
+#~ "Startwert für Datumsbereich, Startwert für eindimensionale Einheiten\n"
+
+#~ msgid "StatusBar cannot have more than 64 panels"
+#~ msgstr "StatusBar kann nicht mehr als 64 Bedienfelder (Panels) haben"
+
+#~ msgid "Strikeout"
+#~ msgstr "Durchstreichen"
+
+#~ msgid "String Data type not supported for summaries"
+#~ msgstr "Datentyp String wird von Zusammenfassungen nicht unterstützt"
+
+#~ msgid "String List Editor"
+#~ msgstr "String-Listen-Editor"
+
+#~ msgid "String list does not allow duplicates."
+#~ msgstr "Die String-Liste lässt keine Doppeleinträge zu."
+
+#~ msgid "Sub&totals on/off"
+#~ msgstr "&Zwischensummen an/aus"
+
+#~ msgid "Subtotals on/off"
+#~ msgstr "Zwischensummen an/aus"
+
+#~ msgid "Successful Connection"
+#~ msgstr "Erfogreiche Verbindung"
+
+#~ msgid "Successful execution"
+#~ msgstr "Ausführung erfolgreich"
+
+#~ msgid "Sum"
+#~ msgstr "Summe"
+
+#~ msgid "Sum of %s"
+#~ msgstr "Summe von %s"
+
+#~ msgid "Summary of %s"
+#~ msgstr "Zusammenfassung von: %s"
+
+#~ msgid "TPB Constant (%d) is unknown"
+#~ msgstr "TPB-Konstante (%d) ist unbekannt."
+
+#~ msgid "TPB Constant (%s) is unknown"
+#~ msgstr "TPB-Konstante (%s) ist unbekannt."
+
+#~ msgid "TPB Constant (isc_tpb_%s) is unsupported"
+#~ msgstr "TPB-Konstante (isc_tpb_%s) ist nicht unterstützt."
+
+#~ msgid "Table Name Mismatch"
+#~ msgstr "Fehlende Übereinstimmung bei Tabellennamen"
+
+#~ msgid "Teal"
+#~ msgstr "Grünblau"
+
+#~ msgid "Template: "
+#~ msgstr "Vorlage: "
+
+#~ msgid "Temporary file access error"
+#~ msgstr "Zugriffsfehler bei temporären Dateien."
+
+#~ msgid "Text file (*.txt)|*.txt|Any file (*)|*"
+#~ msgstr "Textdatei (*.txt)|*.txt|Alle Dateien (*)|*"
+
+#~ msgid "Text file (*.txt)|*.txt|Any file (*.*)|*.*"
+#~ msgstr "Textdatei (*.txt)|*.txt|Alle Dateien (*.*)|*.*"
+
+#~ msgid ""
+#~ "Text files (*.TXT)|*.TXT|Config files (*.SYS;*.INI)|*.SYS;*.INI|Batch "
+#~ "files (*.BAT)|*.BAT|All files (*.*)|*.*\n"
+#~ msgstr ""
+#~ "Textdateien (*.TXT)|*.TXT|Konfigurationsdateien (*.SYS;*.INI)|*.SYS;*.INI|"
+#~ "Batchdateien (*.BAT)|*.BAT|Alle Dateien (*.*)|*.*\n"
+
+#~ msgid ""
+#~ "The DecisionCube Capacity is low. Please deactivate dimensions or change "
+#~ "the data set."
+#~ msgstr ""
+#~ "Die Kapazität des Entscheidungswürfels ist erschöpft. Deaktivieren Sie "
+#~ "einige Dimensionen oder ändern Sie die Datenmenge."
+
+#~ msgid "The MasterSource property of '%s' must be linked to a DataSource"
+#~ msgstr ""
+#~ "Die MasterSource-Eigenschaft von '%s' muss mit einer DataSource verbunden "
+#~ "sein."
+
+#~ msgid "The Socket Server can only be run as a service on NT 3.51 and prior"
+#~ msgstr ""
+#~ "Der Socket-Server kann auf Win NT 3.51 und älter als Service ausgeführt "
+#~ "werden"
+
+#~ msgid "The Socket Server is already running"
+#~ msgstr "Der Socket-Server wird bereits ausgeführt"
+
+#~ msgid "The bin type does not match the fieldtype."
+#~ msgstr "Der Gruppierungstyp entspricht nicht dem Feldtyp."
+
+#~ msgid ""
+#~ "The dataset may be incorrectly defined, or you may need to map its fields "
+#~ "to active dimensions or summaries with the Decision Cube Editor"
+#~ msgstr ""
+#~ "Die Datenmenge wurde inkorrekt definiert oder die Felder müssen mit dem "
+#~ "Editor für Entscheidungswürfel aktiven Dimensionen oder Zusammenfassungen "
+#~ "zugewiesen werden"
+
+#~ msgid ""
+#~ "The dimension types for this dataset cannot be determined automatically.  "
+#~ "You must map the fields to dimensions or summaries with the Decision Cube "
+#~ "Editor"
+#~ msgstr ""
+#~ "Die Dimensionstypen für diese Datenmenge können nicht automatisch "
+#~ "festgelegt werden. Sie müssen diese Felder mit dem Editor für "
+#~ "Entscheidungswürfel einer Dimension oder Zusammenfassung zuweisen."
+
+#~ msgid "The information requested could not be loaded. "
+#~ msgstr "Die angeforderte Information konnte nicht geladen werden."
+
+#~ msgid "The maximum allowed dimensions of %d has been exceeded."
+#~ msgstr "Das erlaubte Maximum an Dimensionen (%d) wurde überschritten."
+
+#~ msgid "The maximum allowed summaries of %d has been exceeded."
+#~ msgstr "Das erlaubte Maximum an Zusammenfassungen (%d) wurde überschritten."
+
+#~ msgid ""
+#~ "The query may be incorrectly defined, or you may need to map its fields "
+#~ "to active dimensions or summaries with the Decision Cube Editor"
+#~ msgstr ""
+#~ "Die Abfrage wurde inkorrekt definiert oder die Felder der Abfrage müssen "
+#~ "mit dem Editor für Entscheidungswürfel aktiven Dimensionen oder "
+#~ "Zusammenfassungen zugewiesen werden"
+
+#~ msgid "The query you have created is not legal."
+#~ msgstr "Die von Ihnen erstellte Abfrage ist ungültig."
+
+#~ msgid ""
+#~ "The query you have entered is not legal.  Please correct it before "
+#~ "continuing."
+#~ msgstr ""
+#~ "Die eingegebene Abfrage ist ungültig. Sie muß geändert werden, bevor Sie "
+#~ "weitermachen."
+
+#~ msgid ""
+#~ "The transaction isolation level must be dirty read for local databases"
+#~ msgstr ""
+#~ "Die Isolationsebene für Transaktionen muss für lokale Datenbanken Dirty-"
+#~ "Read sein."
+
+#~ msgid ""
+#~ "There are still active COM objects in this application.  One or more "
+#~ "clients may have references to these objects, so manually closing "
+#~ msgstr ""
+#~ "Diese Anwendung enthält noch aktive COM-Objekte.Mindestens ein Client "
+#~ "verweist noch auf diese Objekte,so daß manuelles Schließen "
+
+#~ msgid "There is currently no active project."
+#~ msgstr "Es gibt momentan kein aktives Projekt."
+
+#~ msgid ""
+#~ "This change will not take affect until the Socket Server is restarted"
+#~ msgstr "Die Änderungen werden erst nach Neustart des Socket-Server wirksam"
+
+#~ msgid "This control requires version 4.70 or greater of COMCTL32.DLL"
+#~ msgstr "Dieses Element benötigt COMCTL32.DLL in der Version 4.70 oder höher"
+
+#~ msgid ""
+#~ "Thread Cache Size is the maximum number of threads that can be reused for "
+#~ "new client connections.\n"
+#~ msgstr ""
+#~ "Thread Cache Size ist die maximale Anzahl der Threads, die für neue "
+#~ "Cleint-Verbindungen wiederbenutzt werden können.\n"
+
+#~ msgid "Thread Caching"
+#~ msgstr "Thread-Pufferung"
+
+#~ msgid "Tile &Horizontally"
+#~ msgstr "Hori&zontal anordnen"
+
+#~ msgid "Tile Horizontal"
+#~ msgstr "Horizontal anordnen"
+
+#~ msgid "Tile Vertical"
+#~ msgstr "Vertikal anordnen"
+
+#~ msgid "Timeout values cannot be negative"
+#~ msgstr "Werte für Zeitüberschreitung dürfen nicht negativ sein."
+
+#~ msgid ""
+#~ "To add actions to your application simply drag and drop from either "
+#~ "Categories or Actions onto an existing ActionBar.\n"
+#~ msgstr ""
+#~ "Um Akionen zur Applikation hinzuzufügen, ziehen Sie sie einfach mittels "
+#~ "Drag&&Drop entweder von den Kategorien oder Aktionen auf ein "
+#~ "existierendes ActionBar-Element.\n"
+
+#~ msgid "Too many parameters for method %s"
+#~ msgstr "Zu viele Parameter für Methode %s"
+
+#~ msgid "Toolb&ars:"
+#~ msgstr "&Symbolleisten"
+
+#~ msgid "Topic Search"
+#~ msgstr "Suche über Schlüsselwort"
+
+#~ msgid "Total cell count of %d exceeds the maximum of %d."
+#~ msgstr "Die Gesamtanzahl an Zellen von %d überschreitet das Maximum von %d."
+
+#~ msgid "Transaction is active"
+#~ msgstr "Transaktion ist aktiv."
+
+#~ msgid "Transaction is currently Active. Rollback and continue?"
+#~ msgstr ""
+#~ "Es ist gerade eine Transaktion aktiv. Zurücksetzen und weitermachen?"
+
+#~ msgid "Transaction is not active"
+#~ msgstr "Transaktion ist nicht aktiv."
+
+#~ msgid "Transaction not assigned"
+#~ msgstr "Transaktion ist nicht zugewiesen."
+
+#~ msgid ""
+#~ "Trying to store a string of length %d into a field that can only contain %"
+#~ "d"
+#~ msgstr ""
+#~ "Versuch, String mit der Länge %d in einem Feld zu speichern, das nur %d "
+#~ "aufnehmen kann"
+
+#~ msgid "Type in the query directly"
+#~ msgstr "Geben Sie die Abfrage direkt ein"
+
+#~ msgid "Type information missing for class %s"
+#~ msgstr "Für die Klasse %s fehlt die Typinformation"
+
+#~ msgid "Type mismatch in parameter %d for method %s"
+#~ msgstr "Keine Übereinstimmung in Parameter %d für Methode %s"
+
+#~ msgid "TypeEdit"
+#~ msgstr "TypeEdit"
+
+#~ msgid "Unable to connect DDE conversation"
+#~ msgstr "DDE-Konversation konnte nicht verbunden werden."
+
+#~ msgid "Unable to create derived summary."
+#~ msgstr "Abgeleitete Zusammenfassung konnte nicht erzeugt werden."
+
+#~ msgid "Unable to create new column"
+#~ msgstr "Eine neue Spalte kann nicht erzeugt werden"
+
+#~ msgid "Unable to create new item"
+#~ msgstr "Ein neuer Eintrag kann nicht erzeugt werden"
+
+#~ msgid "Unable to find a Table of Contents"
+#~ msgstr "Inhaltsverzeichnis konnte nicht gefunden werden"
+
+#~ msgid "Unable to insert an item"
+#~ msgstr "Eintrag kann nicht eingefügt werden"
+
+#~ msgid "Unable to open the MasterSource Table"
+#~ msgstr "MasterSource-Tabelle kann nicht geöffnet werden"
+
+#~ msgid ""
+#~ "Unable to retrieve a pointer to a running object registered with OLE for %"
+#~ "s/%s"
+#~ msgstr ""
+#~ "Es kann kein Zeiger auf ein ausgeführtes Objekt geholt werden, daß mit "
+#~ "OLE für %s/%s registriert ist"
+
+#~ msgid "Unable to save settings"
+#~ msgstr "Einstellungen konnten nicht gespeichert werden"
+
+#~ msgid "Unable to use duplicate DataSource and LookupSource"
+#~ msgstr "Kann doppelte DataSource und LookupSource nicht benutzen"
+
+#~ msgid "Underline"
+#~ msgstr "Unterstrichen"
+
+#~ msgid "Undo|Reverts the last action"
+#~ msgstr "Rückgängig|Letzte Aktuion rückgängig machen"
+
+#~ msgid "Unexpected Output buffer value"
+#~ msgstr "Unerwarteter Wert für Ausgabepuffer"
+
+#~ msgid "Unexpected onError return value"
+#~ msgstr "Unerwarteter Rückgabewert von onError"
+
+#~ msgid "Unexpected onStatus return value"
+#~ msgstr "Unerwarteter Rückgabewert von onStatus"
+
+#~ msgid "Unhandled Xerces DOM error (no message available): %d"
+#~ msgstr "Unbehandelter Xerces-DOM-Fehler (keine Meldung verfügbar): %d"
+
+#~ msgid "Uninstall File Name is not set"
+#~ msgstr "Dateiname für die Deinstallation ist nicht gesetzt"
+
+#~ msgid "Unknown Error - Can't retrieve plan"
+#~ msgstr "Unbekannter Fehler - Plan kann nicht ermittelt werden"
+
+#~ msgid "Unknown RichEdit conversion file extension (.%s)"
+#~ msgstr "Unbekannte Dateierweiterung für RichEdit-Konvertierung (.%s)"
+
+#~ msgid "Unknown SQL Data type (%d)"
+#~ msgstr "Unbekannter SQL-Datentyp (%d)."
+
+#~ msgid "Unknown error code"
+#~ msgstr "Unbekannter Fehler-Code"
+
+#~ msgid "Unsupported Data Type %d"
+#~ msgstr "Nicht unterstützter Datentyp: %d"
+
+#~ msgid "Unsupported Field Type"
+#~ msgstr "Nicht unterstützter Feldtyp"
+
+#~ msgid "Unsupported ISAPI Application version: %.8x"
+#~ msgstr "Nicht unterstützte ISAPI-Anwendungsversion: %.8x"
+
+#~ msgid "Unsupported data type : %s"
+#~ msgstr "Nicht unterstützter Datentyp: %s"
+
+#~ msgid "Unsupported feature"
+#~ msgstr "Nicht unterstütztes Merkmal."
+
+#~ msgid "Unsupported field type (%s) in field %s"
+#~ msgstr "Nicht unterstützter Feldtyp (%s) in Feld %s"
+
+#~ msgid "Untitled Application"
+#~ msgstr "Unbenannte Anwendung"
+
+#~ msgid "Update Error - %s"
+#~ msgstr "Fehler bei der Aktualisierung - %s"
+
+#~ msgid "Update Failed"
+#~ msgstr "Aktualisierung nicht erfolgreich"
+
+#~ msgid "Update SQL statements not generated, exit anyway?"
+#~ msgstr "Aktualisierungs-SQL-Anweisungen nicht generiert; trotzdem beenden"
+
+#~ msgid "Update failed"
+#~ msgstr "Aktualisierung misslungen"
+
+#~ msgid "Updating wrong database"
+#~ msgstr "Es wurde die falsche Datenbank aktualisiert."
+
+#~ msgid "Updating wrong transaction. Unique transaction expected in set"
+#~ msgstr ""
+#~ "Aktualisierung der falschen Transaktion. In der Menge wird eine "
+#~ "eindeutige Transaktion erwartet"
+
+#~ msgid "Use &Connection String"
+#~ msgstr "&Verbindungs-String verwenden"
+
+#~ msgid "Use Data &Link File"
+#~ msgstr "D&atenverknüpfungsdatei verwenden"
+
+#~ msgid "Use count(*) to calculate averages (counts null values)"
+#~ msgstr ""
+#~ "Benutze count(*), um den Durchschnitt zu ermitteln (zählt Leerwerte)"
+
+#~ msgid "User abort"
+#~ msgstr "Abbruch durch Anwender."
+
+#~ msgid "User canceled DecisionCube population."
+#~ msgstr ""
+#~ "Das Füllen des Entscheidungswürfels wurde durch den Anwender unterbrochen."
+
+#~ msgid "Users"
+#~ msgstr "Benutzer"
+
+#~ msgid "VCR"
+#~ msgstr "VCR"
+
+#~ msgid "Value"
+#~ msgstr "Wert"
+
+#~ msgid "Value List editor"
+#~ msgstr "Wertlisten-Editor"
+
+#~ msgid "Variance of %s"
+#~ msgstr "Varianz von %s"
+
+#~ msgid "Variant does not reference an OLE object"
+#~ msgstr "Variante referenziert kein OLE-Objekt"
+
+#~ msgid "Variant does not reference an automation object"
+#~ msgstr "Variante referenziert kein Automatisierungsobjekt"
+
+#~ msgid "Videodisc"
+#~ msgstr "Videodisc"
+
+#~ msgid "WSIL:"
+#~ msgstr "WSIL:"
+
+#~ msgid "WaveAudio"
+#~ msgstr "WaveAudio"
+
+#~ msgid "WebAppModule"
+#~ msgstr "WebAppModule"
+
+#~ msgid "WebSnap"
+#~ msgstr "WebSnap"
+
+#~ msgid "WebSnap Application"
+#~ msgstr "WebSnap-Anwendung"
+
+#~ msgid "WebSnap Data Module"
+#~ msgstr "WebSnap-Datenmodul"
+
+#~ msgid "WebSnap Page Module"
+#~ msgstr "WebSnap-Seitenmodul"
+
+#~ msgid "White"
+#~ msgstr "Weiß"
+
+#~ msgid "Window"
+#~ msgstr "Fenster"
+
+#~ msgid "Window Background"
+#~ msgstr "Fensterhintergrund"
+
+#~ msgid "Window Frame"
+#~ msgstr "Fensterrahmen"
+
+#~ msgid "Window Text"
+#~ msgstr "Fenstertext"
+
+#~ msgid "Window is invalid or a child window"
+#~ msgstr "Fenster ist ungültig oder ein untergeordnetes Fenster"
+
+#~ msgid "Windows API error. (Windows error %d [$%.8x])"
+#~ msgstr "Fehler der Windows-API. (Windows-Fehler %d [$%.8x])"
+
+#~ msgid "Would you like to reset to the default Priority Schedule?"
+#~ msgstr "Wollen Sie auf die Standard-Prioritätenverteilung zurücksetzen?"
+
+#~ msgid "XML files (*.xml)|*.xml"
+#~ msgstr "XML-Dateien (*.xml)|*.xml"
+
+#~ msgid "XP Style"
+#~ msgstr "XP-Attribut"
+
+#~ msgid "XSQLDA index out of range"
+#~ msgstr "XSQLDA-Index außerhalb des gültigen Bereichs."
+
+#~ msgid "XSQLDA name does not exist (%s)"
+#~ msgstr "XSQLDA-Name existiert nicht (%s)."
+
+#~ msgid "XTR files (*.xtr)|*.xtr"
+#~ msgstr "XTR-Dateien(*.xtr)|*.xtr"
+
+#~ msgid "Yellow"
+#~ msgstr "Gelb"
+
+#~ msgid "You are not allowed to delete this item"
+#~ msgstr "Sie dürfen diesen Eintrag nicht löschen"
+
+#~ msgid "You can only register 15 events per EventAlerter"
+#~ msgstr "Es können nur 15 Ereignisse pro Event-Alerter registriert werden"
+
+#~ msgid ""
+#~ "You cannot Register or Unregister events from within an OnEventAlert "
+#~ "handler"
+#~ msgstr ""
+#~ "Die Registrierung von Ereignissen bzw. deren Aufhebung kann nicht von "
+#~ "innerhalb einer OnEventAlert-Behandlung vorgenommen werden"
+
+#~ msgid "You cannot call CancelEvents from within an OnEventAlert handler"
+#~ msgstr ""
+#~ "CancelEvents kann nicht aus einer OnEventAlert-Behandlungsroutine heraus "
+#~ "aufgerufen werden"
+
+#~ msgid "You cannot call QueueEvents from within an OnEventAlert handler"
+#~ msgstr ""
+#~ "QueueEvents kann nicht aus einem OnEventAlert-Behandlungsroutine heraus "
+#~ "aufgerufen werden"
+
+#~ msgid "You must be in ShowCheckbox mode to set to this date"
+#~ msgstr "Um das Datum zu setzen, müssen Sie im Modus ShowCheckbox sein"
+
+#~ msgid "You must have Interbase installed to use this component"
+#~ msgstr ""
+#~ "Um diese Komponenten verwenden zu können, muß InterBase installiert sein."
+
+#~ msgid "You must register events before queueing them"
+#~ msgstr ""
+#~ "Ereignisse müssen registriert werden, bevor sie in die Warteschlange "
+#~ "gestellt werden können"
+
+#~ msgid "[Error]"
+#~ msgstr "[Fehler]"
+
+#~ msgid "cbxFields"
+#~ msgstr "cbxFelder"
+
+#~ msgid "cbxGenerators"
+#~ msgstr "cbxGeneratoren"
+
+#~ msgid "continue"
+#~ msgstr "Weiter"
+
+#~ msgid ""
+#~ "dBASE Multiple Index (*.MDX)|*.mdx|dBase Index (*.NDX)|*.ndx|FoxPro Index "
+#~ "(*.CDX)|*.cdx\n"
+#~ msgstr ""
+#~ "dBASE Mehrfachindex (*.MDX)|*.mdx|dBase Index (*.NDX)|*.ndx|FoxPro Index "
+#~ "(*.CDX)|*.cdx\n"
+
+#~ msgid "execute"
+#~ msgstr "Ausführen"
+
+#~ msgid "frmGeneratorEditor"
+#~ msgstr "frmGeneratorEditor"
+
+#~ msgid "goColMoving is not a supported option"
+#~ msgstr "goColMoving wird nicht unterstützt"
+
+#~ msgid "interrogate"
+#~ msgstr "Anfragen"
+
+#~ msgid "open"
+#~ msgstr "&Ausführen..."
+
+#~ msgid "pause"
+#~ msgstr "Pause"
+
+#~ msgid "row error"
+#~ msgstr "Zeilenfehler"
+
+#~ msgid "shutdown"
+#~ msgstr "Herunterfahren"
+
+#~ msgid "start"
+#~ msgstr "Start"
+
+#~ msgid "start Parameters missing or incorrect"
+#~ msgstr "start-Parameter fehlen oder sind nicht korrekt"
+
+#~ msgid "stop"
+#~ msgstr "Stop"
+
+#~ msgid ""
+#~ "this application may cause those client application(s) to fail.\n"
+#~ "\n"
+#~ "Are you sure you want to close this application?"
+#~ msgstr ""
+#~ "dieser Anwendung dazu führen könnte, daß die Client-Anwendungennicht "
+#~ "korrekt funktionieren.\n"
+#~ "\n"
+#~ "Sind Sie sicher, daß Sie diese Anwendung schließen möchten?"
+
+#~ msgid "unknown"
+#~ msgstr "Unbekannt"
+
+#~ msgid "use ExecProc for Procedure; use TQuery for Select procedures"
+#~ msgstr ""
+#~ "Verwenden Sie ExecProc für Prozeduren; verwenden SieTQuery für Select-"
+#~ "Prozeduren"
+
+#~ msgid "use Open for a Select Statement"
+#~ msgstr "Verwenden Sie Open für eine Select-Anweisung"
+
+#~ msgid "xml"
+#~ msgstr "xml"
+
+#~ msgid "xtr"
+#~ msgstr "xtr"
