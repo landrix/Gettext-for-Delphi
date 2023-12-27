@@ -15,7 +15,9 @@ uses
   ImgList,
   StdCtrls,
   ExtCtrls,
-  u_dzVclUtils;
+  u_dzVclUtils,
+  System.UITypes,
+  System.ImageList;
 
 type
   TButtonedEdit = class(TdzButtonedEdit)

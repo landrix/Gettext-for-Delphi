@@ -6,7 +6,8 @@ uses
   Windows,
   SysUtils,
   Classes,
-  u_TranslationDBAccess;
+  u_TranslationDBAccess,
+  u_Languages;
 
 type
   TTranslationRepository = class
@@ -16,7 +17,8 @@ type
   public
     constructor Create(const _RepDir: string; const _TemplateFile: string = '');
     procedure GetExistingLanguages(_sl: TStrings);
-    function TryGetRepository(const _LngCode: string; out _dm: TTranslationDbAccess): boolean;
+    function TryGetRepository( const _LngCode: string;
+                               out _dm: TTranslationDbAccess): boolean;
     function TryGetDatabaseFilename(const _LngCode: string; out _fn: string): boolean;
     procedure GenerateNew(const _LngCode: string);
   end;
@@ -77,20 +79,31 @@ begin
   end;
 end;
 
-function TTranslationRepository.TryGetDatabaseFilename(const _LngCode: string;
-  out _fn: string): boolean;
+function TTranslationRepository.TryGetDatabaseFilename( const _LngCode: string;
+                                                        out _fn: string): boolean;
+var
+  lLanguageName: String;
 begin
-  _fn := FRepDirBS + 'TranslateDB_' + _LngCode + '.mdb';
+  lLanguageName := '';
+
+  if not DxLanguages.TryGetLanguageForCode( _LngCode,
+                                            lLanguageName) then
+  begin
+    lLanguageName := '';
+  end;
+
+  _fn := FRepDirBS + 'TranslateDB_' + lLanguageName + '.mdb';
   Result := FileExists(_fn);
 end;
 
-function TTranslationRepository.TryGetRepository(const _LngCode: string;
-  out _dm: TTranslationDbAccess): boolean;
+function TTranslationRepository.TryGetRepository( const _LngCode: string;
+                                                  out _dm: TTranslationDbAccess): boolean;
 var
   fn: string;
 begin
-  Result := TryGetDatabaseFilename(_LngCode, fn);
-  if Result then begin
+  Result := TryGetDatabaseFilename( _LngCode, fn);
+  if Result then
+  begin
     _dm := TTranslationDbAccess.Create(fn);
   end;
 end;

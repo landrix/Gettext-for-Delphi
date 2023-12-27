@@ -1,11 +1,11 @@
 object FormConfig: TFormConfig
-  Left = 301
-  Top = 198
+  Left = 399
+  Top = 512
   ActiveControl = EditBasepath
   BorderStyle = bsDialog
   Caption = 'Configuration'
-  ClientHeight = 246
-  ClientWidth = 350
+  ClientHeight = 310
+  ClientWidth = 348
   Color = clBtnFace
   Font.Charset = DEFAULT_CHARSET
   Font.Color = clWindowText
@@ -17,14 +17,14 @@ object FormConfig: TFormConfig
   Scaled = False
   OnCreate = FormCreate
   DesignSize = (
-    350
-    246)
+    348
+    310)
   PixelsPerInch = 96
   TextHeight = 13
   object EditMask: TLabeledEdit
     Left = 8
     Top = 88
-    Width = 337
+    Width = 335
     Height = 21
     Hint = 'Here you can specify which files you want to scan.'
     Anchors = [akLeft, akTop, akRight]
@@ -48,29 +48,29 @@ object FormConfig: TFormConfig
   end
   object ButtonOK: TButton
     Left = 96
-    Top = 216
+    Top = 264
     Width = 75
     Height = 25
     Caption = '&OK'
     Default = True
     ModalResult = 1
-    TabOrder = 7
+    TabOrder = 9
     OnClick = ButtonOKClick
   end
   object ButtonCancel: TButton
     Left = 192
-    Top = 216
+    Top = 264
     Width = 75
     Height = 25
     Cancel = True
     Caption = '&Cancel'
     ModalResult = 2
-    TabOrder = 8
+    TabOrder = 10
   end
   object EditBasepath: TLabeledEdit
     Left = 8
     Top = 24
-    Width = 337
+    Width = 335
     Height = 21
     Anchors = [akLeft, akTop, akRight]
     EditLabel.Width = 70
@@ -80,8 +80,8 @@ object FormConfig: TFormConfig
   end
   object CheckBoxSaveSettings: TCheckBox
     Left = 8
-    Top = 192
-    Width = 337
+    Top = 240
+    Width = 334
     Height = 17
     Hint = 
       'Save settings for the base directory in an ini file in this dire' +
@@ -89,7 +89,7 @@ object FormConfig: TFormConfig
     Caption = 'Remember settings'
     ParentShowHint = False
     ShowHint = True
-    TabOrder = 6
+    TabOrder = 8
   end
   object CBCreateIgnore: TCheckBox
     Left = 8
@@ -129,5 +129,21 @@ object FormConfig: TFormConfig
     ParentShowHint = False
     ShowHint = True
     TabOrder = 5
+  end
+  object CheckBoxUseGetTextDefaultFormatting: TCheckBox
+    Left = 8
+    Top = 216
+    Width = 334
+    Height = 17
+    Caption = 'use gettext default formatting'
+    TabOrder = 7
+  end
+  object CheckBoxPreserveUserComments: TCheckBox
+    Left = 8
+    Top = 192
+    Width = 334
+    Height = 17
+    Caption = 'preserve user comments'
+    TabOrder = 6
   end
 end

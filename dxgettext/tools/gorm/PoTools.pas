@@ -173,9 +173,10 @@ begin
     if (lPos > 0) then
     begin
       Result.Path       := copy( xLocationString, 0, lPos - 1);
-      Result.LineNumber := StrToInt( copy( xLocationString,
-                                           lPos + 1,
-                                           Length( xLocationString) - lPos));
+      Result.LineNumber := StrToIntDef( copy( xLocationString,
+                                              lPos + 1,
+                                              Length( xLocationString) - lPos),
+                                        0);
     end
     else
     begin

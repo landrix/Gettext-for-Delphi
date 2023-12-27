@@ -8,9 +8,11 @@ uses
   appconsts in '..\..\dxgettext\appconsts.pas',
   consoleoutput in '..\..\dxgettext\consoleoutput.pas',
   ectConsole in 'ectConsole.pas',
-  poparser in '../../dxgettext/poparser.pas',
-  u_dzQuicksort in '../../dxgettext/u_dzQuicksort.pas',
-  msgmergedxengine in '..\ggmerge\msgmergedxengine.pas';
+  poparser in '..\..\dxgettext\poparser.pas',
+  u_dzQuicksort in '..\..\dxgettext\u_dzQuicksort.pas',
+  msgmergedxengine in '..\ggmerge\msgmergedxengine.pas',
+  ConsoleAppHandler in '..\..\dxgettext\ConsoleAppHandler.pas',
+  xgettexttools in '..\..\dxgettext\xgettexttools.pas';
 
 var
   lConsoleApplication: TConsoleApplication;

@@ -3,21 +3,15 @@ program msgremove;
 
 uses
   SysUtils,
-  {$ifdef mswindows}
   gnugettext in '..\..\sample\gnugettext.pas',
   poparser in '..\..\dxgettext\poparser.pas',
   appconsts in '..\..\dxgettext\appconsts.pas',
   consoleoutput in '..\..\dxgettext\consoleoutput.pas',
   u_dzQuicksort in '..\..\dxgettext\u_dzQuicksort.pas',
-  {$else}
-  gnugettext in '../../sample/gnugettext.pas',
-  poparser in '../../dxgettext/poparser.pas',
-  appconsts in '../../dxgettext/appconsts.pas',
-  consoleoutput in '../../dxgettext/consoleoutput.pas',
-  u_dzQuicksort in '../../dxgettext/u_dzQuicksort.pas',
-  {$endif}
   consoleapp in 'consoleapp.pas',
-  msgremoveengine in 'msgremoveengine.pas';
+  msgremoveengine in 'msgremoveengine.pas',
+  ConsoleAppHandler in '..\..\dxgettext\ConsoleAppHandler.pas',
+  xgettexttools in '..\..\dxgettext\xgettexttools.pas';
 
 var
   conapp:TConsoleApp;

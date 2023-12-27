@@ -15,7 +15,12 @@ uses
   appconsts in '..\..\dxgettext\appconsts.pas',
   consoleoutput in '..\..\dxgettext\consoleoutput.pas',
   Math,
-  u_dzQuicksort in '..\..\dxgettext\u_dzQuicksort.pas';
+  u_dzQuicksort in '..\..\dxgettext\u_dzQuicksort.pas',
+  ConsoleAppHandler in '..\..\dxgettext\ConsoleAppHandler.pas',
+  xgettexttools in '..\..\dxgettext\xgettexttools.pas';
+
+type
+  TAutoCommentCompareType = (acctError, acctFileName, acctBaseDirAndFileName);
 
 function StringProximity (s1,s2:string):integer;
 var
@@ -33,112 +38,251 @@ begin
   end;
 end;
 
-procedure Convert (pe:TPoEntry;trans:TPoEntryList);
+function SameAutoComment( const xCompateType: TAutoCommentCompareType;
+                          const xIdComment, xTransComment: string): Boolean;
 var
-  pt:TPoEntry;
-  bestentry:TPoEntry;
-  maxpoints,points:integer;
-  fuzzy:boolean;
-  i,j,idx:integer;
-  s,s2:string;
+  p, i, lLastPathEntry, lIdPosition, lTransPosition: integer;
+  lIdList, lTransList: TStringList;
+  lIdFolderName, lTransFolderName, lIdFileName, lTransFileName: String;
 begin
-  if pe.MsgId='' then
-    exit;
-  maxpoints:=0;
-  bestentry:=nil;
-  fuzzy:=false;
-  pt:=trans.FindFirst;
-  while pt<>nil do begin
-    if (pt.AutoCommentList.Text=pe.AutoCommentList.Text) then begin
-      // The perfect case: The translation matches something in the other file
-      bestentry:=pt;
-      fuzzy:=false;
-      break;
-    end else begin
-      // The semi-perfect case: Programmer's name matches
-      points:=0;
-      for i:=0 to pt.AutoCommentList.Count-1 do begin
-        s:=pt.AutoCommentList.Strings[i];
-        if copy(s,1,29)='#. Programmer''s name for it: ' then begin
-          idx:=pe.AutoCommentList.IndexOf(s);
-          if idx<>-1 then
-            inc(points,10);
-        end;
-        if copy(s,1,2)='#:' then begin
-          for j:=0 to pe.AutocommentList.Count-1 do begin
-            s2:=pe.AutoCommentList.Strings[j];
-            if s=s2 then begin
-              inc (points,5);
-              break;
-            end else
-              if samefilename(s,s2) then
-                inc (points,2); 
-          end;
-        end;
+  Result := False;
+
+  lIdFileName      := '';
+  lTransFileName   := '';
+
+  lIdFolderName    := '';
+  lTransFolderName := '';
+
+  lIdPosition    := 0;
+  lTransPosition := 0;
+
+  lIdList    := nil;
+  lTransList := nil;
+  try
+    lIdList    := TStringList.Create;
+    lTransList := TStringList.Create;
+
+    if (ExtractStrings(['/'], ['#', ':', ' '], PChar(xIdComment)   , lIdList   ) > 0) and
+       (ExtractStrings(['/'], ['#', ':', ' '], PChar(xTransComment), lTransList) > 0) then
+    begin
+      //lIdFolderName    := lIdList.Text;
+      //lTransFolderName := lTransList.Text;
+
+      //*** extract folder part
+      lLastPathEntry := lIdList.Count - 2;
+
+      for i := 0 to lLastPathEntry do
+      begin
+        lIdFolderName := lIdFolderName + '/' + lIdList[i];
       end;
-      if points<>0 then
-        points:=points+9000;
-      if points>maxpoints then begin
-        maxpoints:=points;
-        bestentry:=pt;
-        fuzzy:=false;
-      end else begin
-        // Third solution: source positions match
-        points:=0;
-        for i:=0 to pt.AutoCommentList.Count-1 do begin
-          s:=pt.AutoCommentList.Strings[i];
-          if copy(s,1,2)='#:' then begin
-            idx:=pe.AutoCommentList.IndexOf(s);
-            if idx<>-1 then
-              inc(points);
-          end;
-        end;
-        if points<>0 then
-          points:=points+9000;
-        if points>maxpoints then begin
-          maxpoints:=points;
-          bestentry:=pt;
-          fuzzy:=false;
-        end;
+
+
+      lLastPathEntry := lTransList.Count - 2;
+
+      if xCompateType = acctBaseDirAndFileName then
+      begin
+        Inc(lLastPathEntry, -1);
       end;
+
+      for i := 0 to lLastPathEntry do
+      begin
+        lTransFolderName := lTransFolderName + '/' + lTransList[i];
+      end;
+
+
+      //*** extract FileName part (last entry in list)
+      // Strip colon and things after it
+      p := LastDelimiter(':', lIdList[lIdList.Count - 1]);
+      if p = 0 then
+      begin
+        exit;
+      end;
+      lIdFileName := copy(lIdList[lIdList.Count - 1], 1, p - 1);
+      lIdPosition := StrToInt( copy( lIdList[lIdList.Count - 1], p + 1, Length(lIdList[lIdList.Count - 1]) - p));
+
+      // Strip colon and things after it
+      p := pos(':', lTransList[lTransList.Count - 1]);
+      if p = 0 then
+      begin
+        exit;
+      end;
+      lTransFileName := copy(lTransList[lTransList.Count - 1], 1, p - 1);
+      lTransPosition := StrToInt( copy( lTransList[lTransList.Count - 1], p + 1, Length(lTransList[lTransList.Count - 1]) - p));
     end;
-    pt:=trans.FindNext(pt);
-  end;
-  if bestentry<>nil then begin
-    pe.MsgStr:=bestentry.MsgId;
-    if fuzzy then
-      pe.AutoCommentList.Add('#, fuzzy');
-  end else begin
-    writeln (Format(_('No translation for %s'),[pe.MsgId]));
+
+    case xCompateType of
+      acctFileName:
+        begin
+          Result := SameFileName(lIdFileName, lTransFileName) and
+                    (lIdPosition = lTransPosition);
+        end;
+      acctBaseDirAndFileName:
+        begin
+          Result := SameText(lIdFolderName, lTransFolderName) and
+                    SameFileName(lIdFileName, lTransFileName) and
+                    (lIdPosition = lTransPosition);
+        end;
+    else
+      raise Exception.Create('invalid type');
+    end;
+  finally
+    FreeAndNil(lIdList);
+    FreeAndNil(lTransList);
   end;
 end;
 
-function samefilename (s1,s2:string):boolean;
+procedure Convert (xPe: TPoEntry; xTrans: TPoEntryList);
 var
-  p:integer;
+  lPt: TPoEntry;
+  lBestEntry: TPoEntry;
+  lMaxPoints, lPoints: integer;
+  fuzzy: boolean;
+  i, j, idx: integer;
+  s, s2: string;
 begin
-  Result:=false;
-  // Strip colon and things after it
-  p:=pos(':',s1);
-  if p=0 then exit;
-  s1:=copy(s1,1,p-1);
-  // Strip colon and things after it
-  p:=pos(':',s2);
-  if p=0 then exit;
-  s1:=copy(s2,1,p-1);
-  // Strip up to last slash
-  while true do begin
-    p:=pos('/',s1);
-    if p=0 then break;
-    s1:=copy(s1,p+1,maxint);
+  if xPe.MsgId='' then
+  begin
+    exit;
   end;
-  // Strip up to last slash
-  while true do begin
-    p:=pos('/',s2);
-    if p=0 then break;
-    s2:=copy(s1,p+1,maxint);
+
+  lMaxPoints := 0;
+  lBestEntry := nil;
+  fuzzy     := false;
+
+  lPt := xTrans.FindFirst;
+  while lPt <> nil do
+  begin
+    if (lPt.AutoCommentList.Text=xPe.AutoCommentList.Text) then
+    begin
+      // The perfect case: The translation matches something in the other file
+      lBestEntry := lPt;
+      fuzzy := False;
+
+      break;
+    end
+    else
+    begin
+      // The semi-perfect case: Programmer's name matches
+      lPoints := 0;
+
+      if xPe.MsgId = ' &Images ' then
+      begin
+        lPoints := 0;
+      end;
+
+      for i := 0 to lPt.AutoCommentList.Count - 1 do
+      begin
+        s:=lPt.AutoCommentList.Strings[i];
+        if copy(s , 1, 29) = '#. Programmer''s name for it: ' then
+        begin
+          idx := xPe.AutoCommentList.IndexOf(s);
+          if idx <> -1 then
+          begin
+            inc(lPoints, 50);
+          end;
+        end;
+
+        if (copy(s, 1, 2) = '#:') then
+        begin
+          for j := 0 to xPe.AutocommentList.Count - 1 do
+          begin
+            s2 := xPe.AutoCommentList.Strings[j];
+
+            if (s = s2) then
+            begin
+              inc (lPoints, 20);
+              break;
+            end
+            else if (copy(s2, 1, 2) = '#:') and
+                    SameAutoComment(acctBaseDirAndFileName, s2, s) then
+            begin
+              inc (lPoints, 10);
+            end;
+          end;
+        end;
+      end;
+
+      if lPoints <> 0 then
+      begin
+        lPoints := lPoints + 9000;
+      end;
+
+      if (lPoints > lMaxPoints) then
+      begin
+        lMaxPoints := lPoints;
+        lBestEntry := lPt;
+        fuzzy := false;
+      end
+      else
+      begin
+        // Third solution: source positions match
+        lPoints := 0;
+        for i := 0 to lPt.AutoCommentList.Count - 1 do
+        begin
+          s := lPt.AutoCommentList.Strings[i];
+
+          if (copy(s, 1, 2) = '#:') then
+          begin
+            idx := xPe.AutoCommentList.IndexOf(s);
+            if idx <> -1 then
+            begin
+              //*** perfect source position match
+              inc(lPoints, 5);
+            end
+            else
+            begin
+              //*** match one sub folder deeper (e.g. for ...\db\XX\DBLogDlg.pas)
+              for j := 0 to xPe.AutocommentList.Count - 1 do
+              begin
+                s2 := xPe.AutoCommentList.Strings[j];
+
+                if (copy(s2, 1, 2) = '#:') and
+                   SameAutoComment(acctBaseDirAndFileName, s2, s) then
+                begin
+                  inc (lPoints, 2);
+                end;
+              end;
+            end;
+          end;
+        end;
+
+        if (lPoints <> 0) then
+        begin
+          lPoints := lPoints + 9000;
+        end;
+
+        if lPoints > lMaxPoints then
+        begin
+          lMaxPoints := lPoints;
+          lBestEntry := lPt;
+          fuzzy := false;
+        end;
+      end;
+    end;
+
+    lPt := xTrans.FindNext(lPt);
   end;
-  Result:=uppercase(s1)=uppercase(s2);
+
+  if lBestEntry <> nil then
+  begin
+    if (xPe.MsgId <> lBestEntry.MsgId) then
+    begin
+      xPe.MsgStr := lBestEntry.MsgId;
+
+      if fuzzy then
+      begin
+        xPe.AutoCommentList.Add('#, fuzzy');
+      end;
+    end
+    else
+    begin
+      writeln (Format(_('msgId %s: translation equal'), [xPe.MsgId]));
+    end;
+  end
+  else
+  begin
+    writeln (Format(_('No translation for %s'), [xPe.MsgId]));
+  end;
 end;
 
 { Main routine }
@@ -185,6 +329,8 @@ begin
           Convert (pe,trans);
           pe.WriteToStream(dest);
         end;
+
+        FormatOutputWithMsgCat( dest);
       finally
         CloseFile (srceng);
         FreeAndNil (dest);

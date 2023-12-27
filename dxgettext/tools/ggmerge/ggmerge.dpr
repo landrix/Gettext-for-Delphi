@@ -9,6 +9,7 @@ uses
   msgmergedxengine in 'msgmergedxengine.pas',
   consoleoutput in '..\..\dxgettext\consoleoutput.pas',
   u_dzQuicksort in '..\..\dxgettext\u_dzQuicksort.pas',
+  xgettexttools in '..\..\dxgettext\xgettexttools.pas',
   ConsoleAppHandler in '..\..\dxgettext\ConsoleAppHandler.pas';
 
 {$R *.res}

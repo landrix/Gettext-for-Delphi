@@ -5,6 +5,7 @@ uses
   Classes,
   Forms,
   SysUtils,
+  StrUtils,
   Windows,
   uOutput in 'uOutput.pas' {FormOutput},
   appconsts in '..\..\dxgettext\appconsts.pas',
@@ -31,52 +32,82 @@ begin
 end;
 
 var
-  AppOutput:TStringList;
-  temppath,tempfilename:string;
-  len:DWORD;
-  cmdline:string;
-  filename:string;
-  apppath:string;
-  programname:string;
-  outtext:string;
-  outputext:string;
+  lAppOutput: TStringList;
+  lTempPath,
+  lTempFileName:string;
+  lLen: DWORD;
+  lCmdLine: string;
+  lFileName: string;
+  lAppPath: string;
+  lProgramName: string;
+  lOutText: string;
+  lFileExtension: string;
 begin
-  TextDomain ('dxgettext');
-  AddDomainForResourceString('delphi');
+  TextDomain( 'dxgettext');
+  AddDomainForResourceString( 'delphi');
 
-  apppath:=extractfilepath(paramstr(0));
-  chdir (apppath);
+  lAppPath := ExtractFilePath( paramstr(0));
+  chdir( lAppPath);
 
-  SetLength (temppath, 1000);
-  len:=GetTempPath (1000,PChar(temppath));
-  SetLength (temppath, len);
-  tempfilename:=IncludeTrailingPathDelimiter(temppath)+'msgfmt-'+IntToStr(Application.Handle)+'.$$$';
+  SetLength( lTempPath, 1000);
+  lLen := GetTempPath( 1000, PChar( lTempPath));
+  SetLength( lTempPath, lLen);
+  lTempFileName := IncludeTrailingPathDelimiter( lTempPath) + 'msgfmt-' + IntToStr( Application.Handle) + '.$$$';
 
-  programname:=paramstr(1);
-  filename:=ExpandFileName(paramstr(2));
-  if paramcount=3 then outputext:=paramstr(3) else outputext:='';
+  lProgramName := ParamStr(1);
+  lFileName    := ExpandFileName( ParamStr(2));
+  if (ParamCount = 3) then
+  begin
+    lFileExtension := ParamStr(3);
+  end
+  else
+  begin
+    lFileExtension := '';
+  end;
 
   Application.Initialize;
-  Application.CreateForm(TFormOutput, FormOutput);
-  AppOutput:=TStringlist.Create;
+  Application.CreateForm( TFormOutput, FormOutput);
+
+  lAppOutput := TStringlist.Create;
   try
-    cmdline:='"'+programname+'" "'+shellescape(filename)+'"';
-    if outputext<>'' then
-      cmdline:=cmdline+' -o "'+shellescape(changefileext(filename,outputext))+'"';
-    cmdline:=cmdline+' 2>&1';
-    cmdline:='-c "'+shellescape(cmdline)+'"';
-    ExecConsoleApp('bash.exe',cmdline,AppOutput,nil);
-    outtext:=AdjustLineBreaks(AppOutput.Text);
+    lCmdLine := '"' + lFileName + '"';
+    if (lFileExtension <> '') then
+    begin
+      lCmdLine := lCmdLine + ' -o "' + ChangeFileExt( lFileName,
+                                                      lFileExtension) + '"';
+    end;
+    //lCmdLine := lCmdLine + ' 2>&1';
+
+    ExecConsoleApp( lProgramName,
+                    lCmdLine,
+                    lAppOutput,
+                    nil);
+
+    begin
+      lOutText := Trim( AdjustLineBreaks( lAppOutput.Text));
+    end;
   finally
-    FreeAndNil (AppOutput);
+    FreeAndNil (lAppOutput);
   end;
-  if trim(outtext)='' then begin
-    exit;
-  end else begin
+
+  if ( ( lOutText <> '') and
+       not AnsiStartsText( 'Execution succes',
+                           lOutText)) then
+  begin
     // First %s will be replaced by version number, second by the name of an .exe file that has been run
-    FormOutput.Caption:=Format(_('ggfmt %s running %s'),[version,programname]);
-    FormOutput.MemoOutput.Lines.Text:=outtext;
-    FormOutput.MemoOutput.Lines.Insert(0,Format(_('Result of running %s:'),[programname]));
+    FormOutput.Caption := Format( _('ggfmt %s running %s'),
+                                  [ version,
+                                    lProgramName]);
+    FormOutput.MemoOutput.Lines.Append( Format( _('Result of running %s:'),
+                                                [ lProgramName]));
+    FormOutput.MemoOutput.Lines.Append( Format( _('Parameter: %s'),
+                                                [ lCmdLine]));
+    FormOutput.MemoOutput.Lines.Text := lOutText;
+  end
+  else
+  begin
+    exit;
   end;
+
   Application.Run;
 end.

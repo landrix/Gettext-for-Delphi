@@ -55,7 +55,12 @@ uses
   u_TranslationRepository,
   TranslationsMemory,
   ComCtrls,
-  ToolWin;
+  ToolWin,
+  System.ImageList,
+  System.Actions,
+  Vcl.Mask,
+  System.Types,
+  System.UITypes;
 
 const
   strIgnore = 'ignore';
@@ -370,6 +375,7 @@ type
     procedure SetTranslator(_Translator: TTranslatorEngine);
     procedure ShowHintOnStatusBar(_Sender: TObject);
     procedure InitStatusBar;
+    function CheckHeader( xHeaderPoEntry: TPoEntry): Boolean;
     function SelectFileToSave(const _FileType, _FileMask: string; var _Filename: string): boolean;
     function SelectPoFileToSave(var _Filename: string): boolean;
     function SelectFileToOpen(const _FileType, _FileMask: string; var _Filename: string): boolean;
@@ -426,7 +432,8 @@ uses
   w_IgnoreImport,
   w_IgnoreSave,
   w_TranslationDbLearnOptions,
-  PoDiffHtml
+  PoDiffHtml,
+  xgettexttools
   ;
 
 {$R *.dfm}
@@ -634,9 +641,13 @@ begin
     TheStatusBar.SimpleText := _('Saving file...');
     if CurrentFilename = '' then
       raise Exception.Create(_('No file is currently open.'));
-    if Items.Language = '' then
+    if (Items.Language_New = '')  then
+    begin
       raise Exception.Create(_('The language of this po file is unknown, please edit the header first to provide it.'));
-    items.SaveToFile(CurrentFilename, GetSettingSaveWrapAfter);
+    end;
+    items.SaveToFile( CurrentFilename,
+                      GetSettingUseGetTextDefaultFormatting,
+                      GetSettingSaveWrapAfter);
     TheStatusBar.SimpleText := '';
 
     // by VGL: Write all translations to translations memory file
@@ -718,13 +729,17 @@ end;
 
 procedure TFormEditor.ActivateTranslationsMemory(Sender: TObject);
 begin
-  if GetSettingTranslationMemory
-    then begin
-      if NOT Assigned(TrMem) then TrMem := TTranslationsMemory.Create;
-      TrMem.ClearTranslationsMemory;
-      if assigned(items) then TrMem.aLanguage := items.Language;
-      TrMem.LoadMemoryFile;
+  if GetSettingTranslationMemory then
+  begin
+    if NOT Assigned(TrMem) then TrMem := TTranslationsMemory.Create;
+    TrMem.ClearTranslationsMemory;
+    if assigned(items) then
+    begin
+      TrMem.aLanguage := items.Language_New;
     end;
+
+    TrMem.LoadMemoryFile;
+  end;
 end;
 
 procedure TFormEditor.FormCreate(Sender: TObject);
@@ -2080,6 +2095,12 @@ begin
         item := Rows.Objects[i] as TPoEntry;
         item.WriteToStream(outfile, GetSettingSaveWrapAfter);
       end;
+
+      if GetSettingUseGetTextDefaultFormatting then
+      begin
+        FormatOutputWithMsgCat( outfile);
+      end;
+
     finally
       FreeAndNil(outfile);
     end;
@@ -2323,12 +2344,18 @@ var
   fn: string;
 begin
   CloseGuiItem;
+
   if not SelectPoFileToSave(fn) then
     exit;
+
   Screen.Cursor := crHourGlass;
   try
-    items.SaveToFile(fn, GetSettingSaveWrapAfter);
+    items.SaveToFile( fn,
+                      GetSettingUseGetTextDefaultFormatting,
+                      GetSettingSaveWrapAfter);
+
     CurrentFilename := fn;
+
     Self.Caption := 'Gorm - [' + CurrentFilename + ']';
   finally
     Screen.Cursor := crDefault;
@@ -2486,22 +2513,37 @@ end;
 
 procedure TFormEditor.act_AutoRepositoryExecute(Sender: TObject);
 var
-  Lng: string;
-  Code: string;
+  lLng: string;
+  lCode: string;
 begin
-  lng := Items.Language;
-  while lng = '' do begin
-    if idYes <>  MessageDlg(_('The language of this po file is unknown.'#13#10
-      + 'Do you want to set it now?'),
-      mtError, [mbYes, mbCancel], 0) then
+  lCode := items.Language_New;
+  if lCode = '' then
+  begin
+    raise Exception.Create(_('The language of this po file is unknown, please edit the header first to provide it.'));
+    while lCode = '' do
+    begin
+      if idYes <>  MessageDlg( _( 'The language of this po file is unknown.' + sLineBreak +
+                                  'Do you want to set it now?'),
+                               mtError, [mbYes, mbCancel], 0) then
+      begin
         exit;
-    if not EditHeader(true) then
-      exit;
-    lng := Items.Language;
+      end;
+
+      if not EditHeader( True) then
+      begin
+        exit;
+      end;
+
+      lCode := items.Language_New;
+    end;
   end;
-  if not dxlanguages.TryGetCodeForLanguage(lng, Code) then
-    raise Exception.CreateFmt(_('Language "%s" is not known to Gorm.'), [lng]);
-  SetTranslator(TTranslatorEngineRepository.Create(FTranslationRepository, Code));
+
+  if not dxlanguages.TryGetLanguageForCode( lCode, lLng) then
+  begin
+    raise Exception.CreateFmt(_('Code "%s" is not known to Gorm.'), [lCode]);
+  end;
+
+  SetTranslator(TTranslatorEngineRepository.Create(FTranslationRepository, lCode));
   act_AutoRepository.Checked := true;
 end;
 
@@ -2510,7 +2552,8 @@ var
   Item: TPoEntry;
 begin
   Item := Items.Find('');
-  if not Assigned(Item) then begin
+  if not Assigned(Item) then
+  begin
     Item := TPoEntry.Create;
     try
       Item.UserCommentList.Add('# SOME DESCRIPTIVE TITLE.');
@@ -2535,9 +2578,10 @@ begin
     Item := Items.Find('');
   end;
   Result := Tf_EditHeader.Execute(Self, Item, _ForceLanguageInput);
-  if Result then begin
+  if Result then
+  begin
     Item.Fuzzy := false;
-    items.language;
+    items.Language_New;
     ActivateTranslationsMemory(Self);
   end;
 end;
@@ -2720,7 +2764,10 @@ begin
       end;
       Item := Items.FindNext(Item);
     end;
-    xitems.SaveToFile(fn, GetSettingSaveWrapAfter);
+
+    xitems.SaveToFile( fn,
+                       GetSettingUseGetTextDefaultFormatting,
+                       GetSettingSaveWrapAfter);
     cnt := xitems.Count;
   finally
     FreeAndNil(xitems);
@@ -2758,7 +2805,46 @@ begin
   end;
 end;
 
+function TFormEditor.CheckHeader( xHeaderPoEntry: TPoEntry): Boolean;
+var
+  lHeaderText, lLanguageParam, lLanguageCode: String;
+begin
+  Result := False;
+
+  if Assigned( xHeaderPoEntry) then
+  begin
+    lHeaderText := xHeaderPoEntry.MsgStr;
+
+    //*** the old poEdit Language entry is Master. if present use it and not
+    //    the "x-Language" entry
+    lLanguageParam := GetPoHeaderEntry( lHeaderText,
+                                        PO_HEADER_POEDIT_LANGUAGE);
+    if (lLanguageParam <> '') then
+    begin
+      lLanguageCode := '';
+      if not DxLanguages.TryGetCodeForLanguage( lLanguageParam,
+                                                lLanguageCode) then
+      begin
+        lLanguageCode := '';
+      end;
+
+      if (MidStr( GetPoHeaderEntry( lHeaderText,
+                                    PO_HEADER_LANGUAGE_new),
+                  1,
+                  2) <> lLanguageCode) then
+      begin
+        SetPoHeaderEntry( lHeaderText, PO_HEADER_LANGUAGE_new, lLanguageCode);
+      end;
+    end;
+
+    xHeaderPoEntry.MsgStr := lHeaderText;
+  end;
+
+  Result := True;
+end;
 procedure TFormEditor.LoadFileByName(const _FileName: string);
+var
+  lHeaderItem: TPoEntry;
 begin
   CloseGuiItem;
   Grid.RowCount := 1;
@@ -2771,6 +2857,11 @@ begin
   Items.Clear;
   Items.LoadFromFile(CurrentFilename);
 
+  lHeaderItem := Items.Find('');
+  if Assigned( lHeaderItem) then
+  begin
+    CheckHeader( lHeaderItem);
+  end;
   ActivateTranslationsMemory(Self);
   LoadPostProcess;
 end;
@@ -2805,35 +2896,30 @@ end;
 
 procedure TFormEditor.act_AutoGoogleExecute(Sender: TObject);
 var
-  Lng: string;
   LngCode: string;
 begin
   CloseGuiItem;
 
-  Lng := Items.Language;
-  if Lng <> '' then
-    if not dxlanguages.TryGetCodeForLanguage(Lng, LngCode) then
-      LngCode := '';
-  if TGoogleTranslationSettings.Execute(Self, LngCode) then begin
-    EnableGoogleTranslate(LngCode);
+  LngCode := items.Language_New;
+
+  if TGoogleTranslationSettings.Execute(Self, LngCode) then
+  begin
+    EnableGoogleTranslate( LngCode);
   end;
 end;
 
 procedure TFormEditor.act_AutoMicrosoftExecute(Sender: TObject);
 var
-  Lng: string;
   LngCode: string;
   AppId: string;
 begin
   CloseGuiItem;
   AppId := GetSettingApplicationBingAppId;
 
-  Lng := Items.Language;
-  if Lng <> '' then
-    if not dxlanguages.TryGetCodeForLanguage(Lng, LngCode) then
-      LngCode := '';
+  LngCode := items.Language_New;
 
-  if Tf_MicrosoftTranslationSettings.Execute(Self, Appid, LngCode) then begin
+  if Tf_MicrosoftTranslationSettings.Execute(Self, Appid, LngCode) then
+  begin
     EnableMicrosoftTranslate(AppId, LngCode);
   end;
 end;
@@ -2872,8 +2958,8 @@ procedure TFormEditor.act_ToolsRepositoryLearnExecute(Sender: TObject);
 var
   i: integer;
   item: TPoEntry;
-  lng: string;
-  Code: string;
+  lLng: string;
+  lCode: string;
   dm: TTranslationDbAccess;
   prog: Tf_dzProgress;
   Aborted: boolean;
@@ -2884,15 +2970,21 @@ var
   PoFileTag: string;
 begin
   CloseGuiItem;
-  lng := Items.Language;
-  if lng = '' then
+  lCode := items.Language_New;
+  if lCode = '' then
+  begin
     raise Exception.Create(_('The language of this po file is unknown, please edit the header first to provide it.'));
-  if not dxlanguages.TryGetCodeForLanguage(lng, Code) then
-    raise Exception.CreateFmt(_('Language "%s" is not known to Gorm.'), [lng]);
+  end;
+  if not dxlanguages.TryGetLanguageForCode(lCode, lLng) then
+  begin
+    raise Exception.CreateFmt(_('Code "%s" is not known to Gorm.'), [lCode]);
+  end;
 
   dm := nil;
-  if not FTranslationRepository.TryGetRepository(Code, dm) then
+  if not FTranslationRepository.TryGetRepository(lCode, dm) then
+  begin
     raise Exception.Create(_('There is no repository for this language yet. Please create one first.'));
+  end;
   Preview := true;
   RepoTag := 'auto';
   PoFileTag := 'added';

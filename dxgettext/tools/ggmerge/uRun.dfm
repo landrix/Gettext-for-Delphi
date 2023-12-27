@@ -4,7 +4,7 @@ object FormRun: TFormRun
   ActiveControl = EditTemplate
   BorderStyle = bsDialog
   Caption = 'Merge translation with new translation template'
-  ClientHeight = 227
+  ClientHeight = 247
   ClientWidth = 464
   Color = clBtnFace
   Font.Charset = DEFAULT_CHARSET
@@ -19,17 +19,17 @@ object FormRun: TFormRun
   OnResize = FormResize
   DesignSize = (
     464
-    227)
+    247)
   PixelsPerInch = 96
   TextHeight = 14
   object ButtonGo: TButton
     Left = 184
-    Top = 193
+    Top = 209
     Width = 105
     Height = 25
     Caption = '&Merge'
     Default = True
-    TabOrder = 9
+    TabOrder = 10
     OnClick = ButtonGoClick
   end
   object EditTranslation: TLabeledEdit
@@ -87,17 +87,17 @@ object FormRun: TFormRun
   end
   object CheckBoxSaveSettings: TCheckBox
     Left = 8
-    Top = 170
+    Top = 186
     Width = 431
     Height = 17
     TabStop = False
     Anchors = [akLeft, akTop, akRight]
     Caption = 'Remember settings'
-    TabOrder = 8
+    TabOrder = 9
   end
   object CheckBoxNonAscii: TCheckBox
     Left = 8
-    Top = 113
+    Top = 112
     Width = 431
     Height = 17
     Anchors = [akLeft, akTop, akRight]
@@ -115,12 +115,21 @@ object FormRun: TFormRun
   end
   object cb_PreserveStateFuzzy: TCheckBox
     Left = 8
-    Top = 151
+    Top = 150
     Width = 431
     Height = 17
     Anchors = [akLeft, akTop, akRight]
     Caption = 'Preserve state "fuzzy"'
     TabOrder = 7
+  end
+  object cb_UseGetTextDefaultFormatting: TCheckBox
+    Left = 8
+    Top = 168
+    Width = 431
+    Height = 17
+    Anchors = [akLeft, akTop, akRight]
+    Caption = 'use gettext default formatting'
+    TabOrder = 8
   end
   object XPManifest: TXPManifest
     Left = 120

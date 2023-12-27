@@ -14,7 +14,7 @@ interface
 
 uses
   Windows, Messages, SysUtils, Variants, Classes, Graphics, Controls, Forms,
-  Dialogs, XPMan, StdCtrls, xgettext, ExtCtrls;
+  Dialogs, XPMan, StdCtrls, xgettext, ExtCtrls, System.UITypes;
 
 type
   TFormWork = class(TForm)
@@ -97,49 +97,59 @@ end;
 
 procedure TFormWork.TimerActivateTimer(Sender: TObject);
 var
-  f:TFormConfig;
-  xgt:TXGetText;
-  ini:TIniFile;
-  rxgt:TRunXGettext;
-  filename:string;
+  f: TFormConfig;
+  xgt: TXGetText;
+  ini: TIniFile;
+  rxgt: TRunXGettext;
+  filename: string;
 begin
-  filename:=ExpandFileName(paramstr(1));
-  TimerActivate.Enabled:=False;
-  xgt:=TXGetText.Create;
+  filename := ExpandFileName(paramstr(1));
+  TimerActivate.Enabled := False;
+  xgt := TXGetText.Create;
   try
-    f:=TFormConfig.Create (self);
+    f := TFormConfig.Create (self);
     try
-      if fileexists(filename) then begin
-        f.EditBasePath.Text:=extractfilepath(filename);
-        f.EditMask.Text:=extractfilename(filename);
-        f.CheckBoxSaveSettings.Checked:=false;
-        f.CheckBoxRecurse.Checked:=false;
-      end else begin
-        f.EditBasepath.Text:=IncludeTrailingPathDelimiter(filename);
-        f.CheckBoxSaveSettings.Checked:=fileexists(f.EditBasepath.Text+'dxgettext.ini');
-        if f.CheckBoxSaveSettings.Checked then begin
-          ini:=TIniFile.Create (f.EditBasepath.Text+'dxgettext.ini');
+      if fileexists(filename) then
+      begin
+        f.EditBasePath.Text := extractfilepath( filename);
+        f.EditMask    .Text := extractfilename( filename);
+        f.CheckBoxSaveSettings.Checked := false;
+        f.CheckBoxRecurse     .Checked := false;
+      end
+      else
+      begin
+        f.EditBasepath.Text := IncludeTrailingPathDelimiter(filename);
+        f.CheckBoxSaveSettings.Checked := fileexists( f.EditBasepath.Text + 'dxgettext.ini');
+        if f.CheckBoxSaveSettings.Checked then
+        begin
+          ini := TIniFile.Create (f.EditBasepath.Text + 'dxgettext.ini');
           try
-            f.CheckBoxRecurse.Checked:=ini.ReadBool('ggdxgettext','recurse',f.CheckBoxRecurse.Checked);
-            f.EditMask.Text:=ini.ReadString('dxgettext','mask',f.EditMask.Text);
-            f.CBCreateIgnore.Checked:=ini.ReadBool('ggdxgettext','updateignore',False);
-            f.CBRemoveIgnore.Checked:=ini.ReadBool('ggdxgettext','useignore',False);
-            f.CheckBoxAllowNonAscii.Checked:=ini.ReadBool('ggdxgettext','allownonascii',False);
+            f.CheckBoxRecurse                    .Checked := ini.ReadBool  ('ggdxgettext', 'recurse'                    , f.CheckBoxRecurse.Checked);
+            f.EditMask                           .Text    := ini.ReadString('dxgettext'  , 'mask'                       , f.EditMask.Text);
+            f.CBCreateIgnore                     .Checked := ini.ReadBool  ('ggdxgettext', 'updateignore'               , False);
+            f.CBRemoveIgnore                     .Checked := ini.ReadBool  ('ggdxgettext', 'useignore'                  , False);
+            f.CheckBoxAllowNonAscii              .Checked := ini.ReadBool  ('ggdxgettext', 'allownonascii'              , False);
+            f.CheckBoxPreserveUserComments       .Checked := ini.ReadBool  ('ggdxgettext', 'preserveusercomments'       , False);
+            f.CheckBoxUseGetTextDefaultFormatting.Checked := ini.ReadBool  ('ggdxgettext', 'usegettextdefaultformatting', False);
           finally
             FreeAndNil (ini);
           end;
         end;
       end;
-      if f.ShowModal<>mrOK then begin
+      if f.ShowModal<>mrOK then
+      begin
         Close;
         exit;
       end;
-      xgt.Recurse:=f.CheckBoxRecurse.Checked;
-      xgt.UpdateIgnore:=f.CBCreateIgnore.Checked;
-      xgt.UseIgnoreFile:=f.CBRemoveIgnore.Checked;
+      xgt.Recurse                     := f.CheckBoxRecurse                    .Checked;
+      xgt.UpdateIgnore                := f.CBCreateIgnore                     .Checked;
+      xgt.UseIgnoreFile               := f.CBRemoveIgnore                     .Checked;
       xgt.AddBaseDirectory(IncludeTrailingPathDelimiter(f.EditBasepath.Text));
-      xgt.DestinationPath := IncludeTrailingPathDelimiter(f.EditBasepath.Text);
-      xgt.AllowNonAscii:=f.CheckBoxAllowNonAscii.Checked;
+      xgt.DestinationPath             := IncludeTrailingPathDelimiter( f.EditBasepath.Text);
+      xgt.AllowNonAscii               := f.CheckBoxAllowNonAscii              .Checked;
+      xgt.PreserveUserComments        := f.CheckBoxPreserveUserComments       .Checked;
+      xgt.UseGetTextDefaultFormatting := f.CheckBoxUseGetTextDefaultFormatting.Checked;
+
       Explode(f.EditMask.Text,xgt.filemasks);
     finally
       FreeAndNil (f);
@@ -148,15 +158,24 @@ begin
     xgt.OnWarning:=Warning;
     xgt.OnOverwrite:=OverwriteQuestion;
     Update;
+
     xgt.Execute;
-    if xgt.CFiles.Count<>0 then begin
+
+    if xgt.CFiles.Count <> 0 then
+    begin
       // %s will be replaced with the number of C/C++ files
       if Assigned(xgt.OnProgress) then
-        xgt.OnProgress (Format(_('Scanning %s C/C++ files'),[IntToStr(xgt.CFiles.Count)]),'C/C++ files',0);
-      rxgt:=TRunXGettext.Create;
+      begin
+        xgt.OnProgress( Format( _('Scanning %s C/C++ files'),
+                                [ IntToStr(xgt.CFiles.Count)]),
+                        'C/C++ files',
+                        0);
+      end;
+
+      rxgt := TRunXGettext.Create;
       try
-        rxgt.FileList.Assign(xgt.CFiles);
-        rxgt.OutputDir:=xgt.DestinationPath;
+        rxgt.FileList.Assign( xgt.CFiles);
+        rxgt.OutputDir := xgt.DestinationPath;
         rxgt.Execute;
       finally
         FreeAndNil (rxgt);

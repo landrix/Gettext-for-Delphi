@@ -31,7 +31,6 @@ type
     l_TeamEmail: TLabel;
     ed_TeamEmail: TEdit;
     l_Language: TLabel;
-    cmb_Language: TComboBox;
     l_Charset: TLabel;
     cmb_Charset: TComboBox;
     b_Ok: TButton;
@@ -45,6 +44,7 @@ type
     l_BasePath: TLabel;
     ed_BasePath: TButtonedEdit;
     ilOpenFile: TImageList;
+    e_Language: TEdit;
     procedure cmb_LanguageChange(Sender: TObject);
     procedure ed_BasePathRightButtonClick(Sender: TObject);
   private
@@ -96,8 +96,6 @@ begin
   inherited;
 
   TranslateComponent(Self);
-
-  dxLanguages.GetLanguages(cmb_Language.Items);
 end;
 
 procedure Tf_EditHeader.ed_BasePathRightButtonClick(Sender: TObject);
@@ -113,12 +111,19 @@ procedure Tf_EditHeader.CheckInput;
 var
  OK: boolean;
 begin
-  OK := (cmb_Language.Text <> '');
-  if FForceLanguageInput then begin
+  OK := (e_Language.Text <> '');
+
+  if FForceLanguageInput then
+  begin
     if OK then
-      cmb_Language.Color := clWindow
+    begin
+      e_Language.Color := clWindow;
+    end
     else
-      cmb_Language.Color := clYellow;
+    begin
+      e_Language.Color := clYellow;
+    end;
+
     b_Ok.Enabled := OK;
   end;
 end;
@@ -126,13 +131,33 @@ end;
 procedure Tf_EditHeader.GetData(_Item: TPoEntry);
 var
   Header: string;
+  lLanguageText: String;
 begin
   _Item.UserCommentList.Assign(m_Comments.Lines);
   Header := _Item.MsgStr;
   SetPoHeaderEntry(Header, PO_HEADER_PROJECT_ID_VERSION, ed_Project.Text);
   SetPoHeaderEntry(Header, PO_HEADER_LANGUAGE_TEAM, ed_Team.Text + ' <' + ed_TeamEmail.Text + '>');
   SetPoHeaderEntry(Header, PO_HEADER_LAST_TRANSLATOR, ed_LastTranslator.Text + ' <' + ed_LastEmail.Text + '>');
-  SetPoHeaderEntry(Header, PO_HEADER_LANGUAGE, cmb_Language.Text);
+
+  //*** only change the old entry if it was set before
+  if (GetPoHeaderEntry( Header, PO_HEADER_POEDIT_LANGUAGE) <> '') then
+  begin
+    lLanguageText := '';
+    if not DxLanguages.TryGetLanguageForCode( e_Language.Text,
+                                              lLanguageText) then
+    begin
+      lLanguageText := '';
+    end;
+
+    SetPoHeaderEntry( Header,
+                      PO_HEADER_POEDIT_LANGUAGE,
+                      lLanguageText);
+  end;
+
+  SetPoHeaderEntry( Header,
+                    PO_HEADER_LANGUAGE_new,
+                    e_Language.Text);
+
   SetPoHeaderEntry(Header, PO_HEADER_CONTENT_TYPE, 'text/plain; charset=' + cmb_Charset.Text);
   SetPoHeaderEntry(Header, PO_HEADER_Poedit_BasePath, ed_BasePath.Text);
 
@@ -192,6 +217,7 @@ var
   First: string;
   Second: string;
   Header: string;
+  lLanguageParam, lLanguageCode: String;
 begin
   m_Comments.Lines.Assign(_Item.UserCommentList);
   Header := _Item.MsgStr;
@@ -208,7 +234,24 @@ begin
   ed_LastTranslator.Text := Name;
   ed_LastEmail.Text := DequoteStr(Mail, '<', '>');
 
-  cmb_Language.Text := GetPoHeaderEntry(Header, PO_HEADER_LANGUAGE);
+  lLanguageParam := GetPoHeaderEntry( Header,
+                                      PO_HEADER_POEDIT_LANGUAGE);
+  if (lLanguageParam <> '') then
+  begin
+    lLanguageCode := '';
+    if DxLanguages.TryGetCodeForLanguage( lLanguageParam,
+                                          lLanguageCode) and
+       (lLanguageCode <> '') then
+    begin
+      lLanguageParam := lLanguageCode;
+    end;
+  end
+  else
+  begin
+    lLanguageParam := GetPoHeaderEntry( Header,
+                                        PO_HEADER_LANGUAGE_new);
+  end;
+  e_Language.Text := lLanguageParam;
 
   Value := GetPoHeaderEntry(Header, PO_HEADER_CONTENT_TYPE);
   SplitAtSemicolon(Value, First, Second);

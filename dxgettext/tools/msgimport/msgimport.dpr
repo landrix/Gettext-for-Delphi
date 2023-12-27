@@ -3,23 +3,16 @@ program msgmkignore;
 
 uses
   SysUtils,
-  {$ifdef mswindows}
   gnugettext in '..\..\sample\gnugettext.pas',
   poparser in '..\..\dxgettext\poparser.pas',
   appconsts in '..\..\dxgettext\appconsts.pas',
   consoleoutput in '..\..\dxgettext\consoleoutput.pas',
   u_dzQuicksort in '..\..\dxgettext\u_dzQuicksort.pas',
   assembleengine in '..\assemble\assembleengine.pas',
-  {$else}
-  gnugettext in '../../sample/gnugettext.pas',
-  poparser in '../../dxgettext/poparser.pas',
-  appconsts in '../../dxgettext/appconsts.pas',
-  consoleoutput in '../../dxgettext/consoleoutput.pas',
-  u_dzQuicksort in '../../dxgettext/u_dzQuicksort.pas',
-  assembleengine in '../assemble/assembleengine.pas',
-  {$endif}
   consoleapp in 'consoleapp.pas',
-  msgimportengine in 'msgimportengine.pas';
+  msgimportengine in 'msgimportengine.pas',
+  ConsoleAppHandler in '..\..\dxgettext\ConsoleAppHandler.pas',
+  xgettexttools in '..\..\dxgettext\xgettexttools.pas';
 
 var
   conapp:TConsoleApp;

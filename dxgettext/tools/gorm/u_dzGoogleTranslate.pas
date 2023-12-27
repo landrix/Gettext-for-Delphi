@@ -6,6 +6,7 @@ interface
 
 uses
   SysUtils,
+  System.JSON,
   IdHttp; // Indy
 
 type

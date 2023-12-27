@@ -116,7 +116,8 @@ type
       function GetDomain(const domain: string): TXGTDomain;
       procedure AddTranslation(const domain:string; const aMsgid: string;
         const Comments: string; Location: string; LineNo: integer);
-      procedure WriteAll(const Destinationpath:string; const domain: string);
+      procedure WriteAll( const Destinationpath,
+                                domain: string);
       function MakePathLinuxRelative(const path: string): string;
     private
       resourcestringmode: Integer;  // 0=None, 1=Const, 2=Resourcestring
@@ -129,7 +130,7 @@ type
       BaseDirectoryList:TStringList; // Always ends in a pathdelimiter
       BaseDirectory:string;
       Excludes: TXExcludes;
-      procedure WritePoFiles (const DestinationPath: string);
+      procedure WritePoFiles ( const DestinationPath: string);
       procedure Warning (WarningType:TWarningType;const msg:string); overload;
       procedure Warning (WarningType:TWarningType;const Msg,Line:string;const Filename:string;LineNumber:Integer); overload;
       procedure dxreadln (var line:string; var firstline:boolean; var isutf8:boolean); // same as system.readln, but takes care of comments
@@ -148,12 +149,13 @@ type
     public
       // When set, only default domain is written to a file, and this file has it's filename from this variable
       SingleOutputFilename:string;
-      
+
       OnProgress:TOnProgress;
       OnWarning:TOnWarning;
       Recurse:boolean;
       UpdateIgnore:boolean;  // Will create ignore.po if not exists, and put obvious untranslatable items into it
       UseIgnoreFile:boolean; // Will make sure that no item from ignore.po is stored in other files
+      UseGetTextDefaultFormatting: Boolean;
       AllowNonAscii:boolean;
       OrderbyMsgid:boolean;
       PreserveUserComments: Boolean;
@@ -812,7 +814,7 @@ begin
 
         // Check if a collection starts or ends in this line.
         // If we have nested collections, the nesting-level
-        // will be remembered                                                    
+        // will be remembered
         if RightStr(line, 3) = '= <' then
           inc(collectionlevel);
         if RightStr(lowercase(line), 4) = 'end>' then begin
@@ -1072,7 +1074,8 @@ begin
   it.AutoCommentList.Add('#: ' + RemoveFilenameSpaces(Location));
 end;
 
-procedure TXGetText.WriteAll(const Destinationpath, domain: string);
+procedure TXGetText.WriteAll( const Destinationpath,
+                                    domain: string);
 // Outputs a .po file
 var
   destination: TFileStream;
@@ -1107,18 +1110,32 @@ begin
   // %s will be replaced by the filename
   if Assigned(OnProgress) then
     OnProgress (Format(_('Writing %s'),[filename]),filename,0);
-  destination:=TFileSTream.Create (filename, fmCreate);
+
+  destination := TFileSTream.Create (filename, fmCreate);
   try
     // Write a dummy header that the user can modify
-    StreamWriteDefaultPoTemplateHeader(destination,Format(_('dxgettext %s'),[version]));
+    StreamWriteDefaultPoTemplateHeader( destination,
+                                        Format( _('dxgettext %s'),
+                                                [ version]));
 
     // Write out all msgids
-    if OrderbyMsgid then orderlist:=dom.msgid
-                    else orderlist:=dom.order;
-    for i := 0 to orderlist.Count - 1 do begin
+    if OrderbyMsgid then
+      orderlist:=dom.msgid
+    else
+      orderlist:=dom.order;
+
+    for i := 0 to orderlist.Count - 1 do
+    begin
       item := orderlist.Objects[i] as TPoEntry;
-      item.WriteToStream(destination, MaxWidth);
+      item.WriteToStream( destination,
+                          MaxWidth);
     end;
+
+    if UseGetTextDefaultFormatting then
+    begin
+      FormatOutputWithMsgCat( destination);
+    end;
+
   finally
     FreeAndNil (destination);
   end;
@@ -1395,13 +1412,15 @@ begin
   inherited;
 end;
 
-procedure TXGetText.WritePoFiles (const DestinationPath:string);
+procedure TXGetText.WritePoFiles ( const DestinationPath: string);
 var
   i:integer;
 begin
-  for i:=0 to domainlist.Count-1 do begin
+  for i := 0 to domainlist.Count - 1 do
+  begin
     // Write all domain.po files
-    WriteAll(DestinationPath,domainlist.Strings[i]);
+    WriteAll( DestinationPath,
+              domainlist.Strings[i]);
   end;
 end;
 
@@ -1549,8 +1568,12 @@ begin
 
   // Write files
   if UpdateIgnore then
-    ignorelist.SaveToFile(DestinationPath+'ignore.po');
-  WritePoFiles (DestinationPath);
+  begin
+    ignorelist.SaveToFile( DestinationPath + 'ignore.po',
+                           Self.UseGetTextDefaultFormatting);
+  end;
+
+  WritePoFiles( DestinationPath);
 end;
 
 procedure TXGetText.AddDelphiFilemasks;
@@ -1913,7 +1936,7 @@ begin
   if p = 0 then begin
     Result := False;
     FLastErrorMsg := Format(_('Wrong section: %s seems to be a class and not a property name'), [aPropertyname]);
-  end else 
+  end else
     FExcludeFormClassPropertyList.AddFormClassProperty(aPropertyname);
 end;
 

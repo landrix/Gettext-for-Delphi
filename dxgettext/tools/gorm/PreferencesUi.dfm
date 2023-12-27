@@ -1,6 +1,6 @@
 object FormPreferences: TFormPreferences
-  Left = 0
-  Top = 0
+  Left = 70
+  Top = 141
   BorderStyle = bsDialog
   Caption = 'Preferences'
   ClientHeight = 621
@@ -31,7 +31,7 @@ object FormPreferences: TFormPreferences
     Height = 25
     Caption = '&OK'
     Default = True
-    TabOrder = 8
+    TabOrder = 7
     OnClick = ButtonOKClick
   end
   object ButtonCancel: TButton
@@ -194,37 +194,46 @@ object FormPreferences: TFormPreferences
     Left = 288
     Top = 494
     Width = 281
-    Height = 67
+    Height = 83
     Caption = '  Save settings  '
-    TabOrder = 7
+    TabOrder = 8
+    object ed_WrapLinesAfter: TEdit
+      Left = 40
+      Top = 52
+      Width = 57
+      Height = 21
+      Enabled = False
+      TabOrder = 2
+      Text = '0'
+    end
     object chk_WrapAtNCharacters: TCheckBox
       Left = 16
-      Top = 24
+      Top = 32
       Width = 193
       Height = 17
       Caption = 'Wrap lines after [characters]'
-      TabOrder = 0
+      TabOrder = 1
       OnClick = chk_WrapAtNCharactersClick
     end
     object udWrap: TUpDown
       Left = 97
-      Top = 40
+      Top = 52
       Width = 17
       Height = 21
       Associate = ed_WrapLinesAfter
       Max = 255
-      TabOrder = 2
+      TabOrder = 3
       Thousands = False
       Wrap = True
     end
-    object ed_WrapLinesAfter: TEdit
-      Left = 40
-      Top = 40
-      Width = 57
-      Height = 21
-      Enabled = False
-      TabOrder = 1
-      Text = '0'
+    object cb_UseGetTextDefaultFormatting: TCheckBox
+      Left = 16
+      Top = 16
+      Width = 193
+      Height = 17
+      Caption = 'Use gettext default formatting'
+      TabOrder = 0
+      OnClick = cb_UseGetTextDefaultFormattingClick
     end
   end
   object groupTranslationMemory: TGroupBox
@@ -416,9 +425,9 @@ object FormPreferences: TFormPreferences
     object l_ExternalEditor: TLabel
       Left = 16
       Top = 24
-      Width = 124
+      Width = 141
       Height = 13
-      Caption = 'Exernal Editor source files'
+      Caption = 'Exernal Editor for source files'
     end
     object cb_ExternalEditorUseLineNumbers: TCheckBox
       Left = 16
@@ -449,7 +458,7 @@ object FormPreferences: TFormPreferences
     Left = 528
     Top = 8
     Bitmap = {
-      494C010102000400200010001000FFFFFFFFFF10FFFFFFFFFFFFFFFF424D3600
+      494C010102000500040010001000FFFFFFFFFF10FFFFFFFFFFFFFFFF424D3600
       0000000000003600000028000000400000001000000001002000000000000010
       0000000000000000000000000000000000000000000000000000000000000000
       000000000000CFE0E93083AFC77C6A9DB795E0E0E01FE5E5E51AE5E5E51AE5E5

@@ -26,7 +26,8 @@ uses
   Dialogs,
   StdCtrls,
   ComCtrls,
-  gnugettext;
+  gnugettext,
+  System.UITypes;
 
 type
   EdzProgress = class(Exception);

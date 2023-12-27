@@ -1,0 +1,22 @@
+# Output dir
+/dxgettext/output
+
+#Delphi files and folders
+/dxgettext/dxgettext/**/__history
+/dxgettext/tools/**/__history
+/dxgettext/dxgettext/**/*.dproj.local
+/dxgettext/tools/**/*.dproj.local
+/dxgettext/dxgettext/**/*.identcache
+/dxgettext/tools/**/*.identcache
+
+/dxgettext/*.dsk
+/dxgettext/*.~dsk
+/dxgettext/_dxGetText.groupproj.local
+
+*.res
+
+# Files in install folder
+/dxgettext-packages/dxgettext/Output/dxgettext.exe
+/dxgettext-packages/dxgettext/dxgettext/gnugettext.pas
+/dxgettext-packages/dxgettext/dxgettext/example/gnugettext.pas
+/dxgettext/_dxGetText_prjgroup.tvsconfig

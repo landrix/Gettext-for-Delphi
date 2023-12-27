@@ -106,6 +106,11 @@ begin
         begin
           xgt.UpdateIgnore:=True;
         end else
+        if uparam='--USEGETTEXTDEFAULTFORMATTING' then
+        begin
+          xgt.UseGetTextDefaultFormatting := True;
+        end
+        else
         if uparam = '--PRESERVEUSERCOMMENTS' then
         begin
           xgt.PreserveUserComments := True;
@@ -254,28 +259,29 @@ begin
              'in a file named default.po.'));
   WriteLine ('');
   WriteLine (_('Options:'));
-  WriteLine ('  --delphi                 ' + _('Adds the wildcards: *.pas *.inc *.rc *.dpr *.xfm *.dfm *.fmx'));
-  WriteLine ('  --kylix                  ' + _('Adds the wildcards: *.pas *.inc *.rc *.dpr *.xfm'));
-  WriteLine ('  -r                       ' + _('Recurse subdirectories'));
-  WriteLine ('  -b dir                   ' + _('Use directory as base directory for filenames.'));
-  writeLine ('                           ' + _('You can specify several base dirs, that will all be scanned.'));
-  WriteLine ('  -o:msgid                 ' + _('Order by msgid'));
-  WriteLine ('  -o:occ                   ' + _('Order by occurence (default)'));
-  WriteLine ('  -o dir                   ' + _('Output directory for .po files'));
-  WriteLine ('  --so filename            ' + _('Outputs default domain to specified file. No other files are written.'));
-  WriteLine ('  -q                       ' + _('Quiet: Reduces output to absolute minimum.'));
-  WriteLine ('  --useignorepo            ' + _('Use ignore.po file from the base dir'));
-  WriteLine ('  --updateignore           ' + _('Add likely ignores to ignore.po file'));
-  WriteLine ('  --preserveUserComments   ' + _('preserve user comments from existing template file'));
-  WriteLine ('  --nonascii               ' + _('Allow non-ascii characters.'));
+  WriteLine ('  --delphi                     ' + _('Adds the wildcards: *.pas *.inc *.rc *.dpr *.xfm *.dfm *.fmx'));
+  WriteLine ('  --kylix                      ' + _('Adds the wildcards: *.pas *.inc *.rc *.dpr *.xfm'));
+  WriteLine ('  -r                           ' + _('Recurse subdirectories'));
+  WriteLine ('  -b dir                       ' + _('Use directory as base directory for filenames.'));
+  writeLine ('                               ' + _('You can specify several base dirs, that will all be scanned.'));
+  WriteLine ('  -o:msgid                     ' + _('Order by msgid'));
+  WriteLine ('  -o:occ                       ' + _('Order by occurence (default)'));
+  WriteLine ('  -o dir                       ' + _('Output directory for .po files'));
+  WriteLine ('  --so filename                ' + _('Outputs default domain to specified file. No other files are written.'));
+  WriteLine ('  -q                           ' + _('Quiet: Reduces output to absolute minimum.'));
+  WriteLine ('  --useignorepo                ' + _('Use ignore.po file from the base dir'));
+  WriteLine ('  --updateignore               ' + _('Add likely ignores to ignore.po file'));
+  WriteLine ('  --usegettextdefaultformatting' + _('Use msgcat to format the output file'));
+  WriteLine ('  --preserveUserComments       ' + _('preserve user comments from existing template file'));
+  WriteLine ('  --nonascii                   ' + _('Allow non-ascii characters.'));
   {$ifdef MSWINDOWS}
-  WriteLine ('  --codepage nnn           ' + _('Assume the specified codepage. Default is CP_ACP.'));
+  WriteLine ('  --codepage nnn               ' + _('Assume the specified codepage. Default is CP_ACP.'));
   {$endif}
-  WriteLine ('  --nowc                   ' + _('Assume wildcards to be part of filenames'));
-  WriteLine ('  --ignore-constreplace    ' + _('Suppresses warnings about CRLF'));
-  WriteLine ('  --detectwarnings         ' + _('Warnings will produce a nonzero exit code'));
-  WriteLine ('  --wrap=<number>          ' + _('Wrap lines at <number> (default: 70, min: 10)'));
-  WriteLine ('  --no-wrap                ' + _('do not wrap lines'));
+  WriteLine ('  --nowc                       ' + _('Assume wildcards to be part of filenames'));
+  WriteLine ('  --ignore-constreplace        ' + _('Suppresses warnings about CRLF'));
+  WriteLine ('  --detectwarnings             ' + _('Warnings will produce a nonzero exit code'));
+  WriteLine ('  --wrap=<number>              ' + _('Wrap lines at <number> (default: 70, min: 10)'));
+  WriteLine ('  --no-wrap                    ' + _('do not wrap lines'));
   WriteLine ('');
   WriteLine (_('If a filename is preceded with @, it is assumed to contain a list of'+sLineBreak+
                'filenames or file masks.'));

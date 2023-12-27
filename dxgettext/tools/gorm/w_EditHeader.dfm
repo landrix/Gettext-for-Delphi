@@ -100,20 +100,12 @@ object f_EditHeader: Tf_EditHeader
     Height = 21
     TabOrder = 3
   end
-  object cmb_Language: TComboBox
-    Left = 8
-    Top = 288
-    Width = 153
-    Height = 21
-    TabOrder = 6
-    OnChange = cmb_LanguageChange
-  end
   object cmb_Charset: TComboBox
     Left = 168
     Top = 288
     Width = 161
     Height = 21
-    TabOrder = 7
+    TabOrder = 6
     Items.Strings = (
       'ASCII'
       'ISO-8859-1'
@@ -168,7 +160,7 @@ object f_EditHeader: Tf_EditHeader
     Caption = 'OK'
     Default = True
     ModalResult = 1
-    TabOrder = 8
+    TabOrder = 7
   end
   object b_Cancel: TButton
     Left = 320
@@ -213,14 +205,21 @@ object f_EditHeader: Tf_EditHeader
     RightButton.ImageIndex = 0
     RightButton.Visible = True
     ShowHint = True
-    TabOrder = 10
+    TabOrder = 8
     OnRightButtonClick = ed_BasePathRightButtonClick
+  end
+  object e_Language: TEdit
+    Left = 8
+    Top = 288
+    Width = 153
+    Height = 21
+    TabOrder = 10
   end
   object ilOpenFile: TImageList
     Left = 56
     Top = 352
     Bitmap = {
-      494C010102000400180010001000FFFFFFFFFF10FFFFFFFFFFFFFFFF424D3600
+      494C0101020004001C0010001000FFFFFFFFFF10FFFFFFFFFFFFFFFF424D3600
       0000000000003600000028000000400000001000000001002000000000000010
       0000000000000000000000000000000000000000000000000000000000000000
       000000000000CFE0E93083AFC77C6A9DB795E0E0E01FE5E5E51AE5E5E51AE5E5

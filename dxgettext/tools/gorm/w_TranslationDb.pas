@@ -22,7 +22,8 @@ uses
   ComCtrls,
   ActnList,
   StdCtrls,
-  u_TranslationRepository;
+  u_TranslationRepository,
+  System.UITypes, System.Actions;
 
 type
   Tf_TranslationDb = class(TForm)

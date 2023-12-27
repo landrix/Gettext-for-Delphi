@@ -1,8 +1,8 @@
 @echo off
 
 Rem    Set user path (you must modify)
-set SourceDir=D:\svn\dxGetText\dxgettext
-set InnoDir=C:\Program Files (x86)\Inno Setup 5
+set SourceDir=%~dp0..\..\dxgettext
+set InnoDir=C:\Program Files (x86)\Inno Setup 6
 
 Rem    additional Path, do not change
 set TargetDir=%SourceDir%\..\dxgettext-packages\dxgettext\dxgettext

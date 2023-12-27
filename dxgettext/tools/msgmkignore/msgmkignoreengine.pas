@@ -3,7 +3,7 @@ unit msgmkignoreengine;
 interface
 
 uses
-  Classes, SysUtils, poparser;
+  Classes, SysUtils, poparser, xgettexttools;
 
 type
   Tmsgmkignoreengine=
@@ -87,6 +87,9 @@ begin
       finally
         FreeAndNil( lPop);
       end;
+
+      FormatOutputWithMsgCat( outfile);
+
     finally
       FreeAndNil( outfile);
       CloseFile( infile);

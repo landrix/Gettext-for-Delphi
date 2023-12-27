@@ -28,7 +28,7 @@ begin
     end;
   except
     on e: Exception do begin
-      consoleoutput.writeln ('Error: ' + e.Message + ' (' + e.ClassName + ')');
+      WriteLn('Error: ' + e.Message + ' (' + e.ClassName + ')');
       ExitCode:=1;
     end;
   end;

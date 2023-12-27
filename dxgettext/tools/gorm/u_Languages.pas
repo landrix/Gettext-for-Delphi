@@ -4,7 +4,8 @@ interface
 
 uses
   SysUtils,
-  Classes;
+  Classes,
+  StrUtils;
 
 type
   TdxLanguage = record
@@ -343,12 +344,29 @@ var
   i: Integer;
 begin
   for i := 0 to FLanguageCodes.Count - 1 do
-    if SameText(FLanguageCodes.Names[i], _Code) then begin
+  begin
+    if SameText( FLanguageCodes.Names[i], _Code) then
+    begin
       _Lng := FLanguageCodes.ValueFromIndex[i];
-      Result := true;
+
+      Result := True;
       exit;
     end;
-  Result := false;
+  end;
+
+  //*** Test only the first 2 chars
+  for i := 0 to FLanguageCodes.Count - 1 do
+  begin
+    if SameText( FLanguageCodes.Names[i], MidStr( _Code, 1, 2)) then
+    begin
+      _Lng := FLanguageCodes.ValueFromIndex[i];
+
+      Result := True;
+      exit;
+    end;
+  end;
+
+  Result := False;
 end;
 
 { TdxLanguage }

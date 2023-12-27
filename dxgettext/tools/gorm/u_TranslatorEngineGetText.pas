@@ -49,7 +49,7 @@ var
   Lng: string;
 begin
   Header := dgettext(FDomain, '');
-  Lng := GetPoHeaderEntry(Header, PO_HEADER_LANGUAGE);
+  Lng := GetPoHeaderEntry(Header, PO_HEADER_POEDIT_LANGUAGE);
   Result.TryInitFromName(Lng);
 end;
 

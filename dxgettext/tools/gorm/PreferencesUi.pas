@@ -67,6 +67,7 @@ type
     l_ExternalEditor: TLabel;
     cb_ExternalEditorUseLineNumbers: TCheckBox;
     ed_ExternalEditor: TButtonedEdit;
+    cb_UseGetTextDefaultFormatting: TCheckBox;
     procedure FormCreate(Sender: TObject);
     procedure ButtonOKClick(Sender: TObject);
     procedure ButtonBrowseExenameClick(Sender: TObject);
@@ -78,6 +79,7 @@ type
     procedure ed_TransRepDirRightButtonClick(Sender: TObject);
     procedure ed_msgfmtexeRightButtonClick(Sender: TObject);
     procedure b_DefaultClick(Sender: TObject);
+    procedure cb_UseGetTextDefaultFormattingClick(Sender: TObject);
   private
     procedure SelectFile(_ed: TCustomEdit; _Filter: string);
   public
@@ -171,10 +173,15 @@ begin
   SetSetting ('Application','ExternalEditorFilename', ed_ExternalEditor.Text);
   SetSetting ('Application','ExternalEditorUseLineNumbers', cb_ExternalEditorUseLineNumbers.Checked);
 
+  SetSetting ('Save', 'UseGetTextDefaultFormatting', cb_UseGetTextDefaultFormatting.Checked);
   if chk_WrapAtNCharacters.Checked then
-    SetSetting ('Save', 'WrapAfter', ed_WrapLinesAfter.Text)
+  begin
+    SetSetting ('Save', 'WrapAfter', ed_WrapLinesAfter.Text);
+  end
   else
+  begin
     SetSetting ('Save', 'WrapAfter', '0');
+  end;
 
   // Set all translation memory settings
   SetSetting ('MemoryTranslation','TranslationMemory',CheckBoxTranslationMemory.Checked);
@@ -211,6 +218,15 @@ begin
   memSpecialChars.Lines.Add(#8592#8593#8594#8595#8596#8597); // do not translate
   memSpecialChars.Lines.Add(#8710#8706#181#8721#8467); // do not translate
   memSpecialChars.Lines.Add(#9792#9794#9786#9787); // do not translate
+end;
+
+procedure TFormPreferences.cb_UseGetTextDefaultFormattingClick(Sender: TObject);
+begin
+  chk_WrapAtNCharacters.Enabled := not cb_UseGetTextDefaultFormatting.Checked;
+  if not chk_WrapAtNCharacters.Enabled then
+  begin
+    chk_WrapAtNCharacters.Checked := False;
+  end;
 end;
 
 procedure TFormPreferences.CheckBoxTranslationMemoryClick(Sender: TObject);
@@ -280,6 +296,7 @@ begin
   ed_ExternalEditor.Text := GetSettingApplicationExternalEditorFilename;
   cb_ExternalEditorUseLineNumbers.Checked := GetSettingApplicationExternalEditorUseLineNumbers;
 
+  cb_UseGetTextDefaultFormatting.Checked := GetSettingUseGetTextDefaultFormatting;
   i := GetSettingSaveWrapAfter;
   chk_WrapAtNCharacters.Checked := (i <> 0);
   if i =0 then

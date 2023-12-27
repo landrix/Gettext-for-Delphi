@@ -3,7 +3,7 @@ unit msgmergedxengine;
 interface
 
 uses
-  sysutils, classes, poparser, consoleoutput, gnugettext;
+  sysutils, classes, poparser, consoleoutput, gnugettext, xgettexttools;
 
 type
   TMsgMergeDxEngine = class
@@ -11,6 +11,7 @@ type
     FIgnoreComments: Boolean;
     FPreserveStateFuzzy: Boolean;
     FOnlyNewAndChangedTranslations: Boolean;
+    FUseGetTextDefaultFormatting: Boolean;
     procedure MergeTranslationFileWithTemplate( var xTemplateFile: TextFile;
                                                 xOutputFileStream: TFileStream);
     procedure ExtractOnlyNewAndChangedTranslations( var xTemplateFile: TextFile;
@@ -25,6 +26,7 @@ type
     property IgnoreComments: Boolean read FIgnoreComments write FIgnoreComments;
     property PreserveStateFuzzy: Boolean read FPreserveStateFuzzy write FPreserveStateFuzzy;
     property OnlyNewAndChangedTranslations: Boolean read FOnlyNewAndChangedTranslations write FOnlyNewAndChangedTranslations;
+    property UseGetTextDefaultFormatting: Boolean read FUseGetTextDefaultFormatting write FUseGetTextDefaultFormatting;
   end;
 
 implementation
@@ -119,6 +121,11 @@ begin
     finally
       FreeAndNil (lTransList);
     end;
+  end;
+
+  if UseGetTextDefaultFormatting then
+  begin
+    FormatOutputWithMsgCat( xOutputFileStream);
   end;
 end;
 

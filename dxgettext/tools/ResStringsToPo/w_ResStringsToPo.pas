@@ -135,7 +135,10 @@ begin
         end;
       end;
     end;
-    pol.SaveToFile(PoFile, 0);
+
+    pol.SaveToFile( PoFile,
+                    True,
+                    0);
   finally
     FreeAndNil(pol);
     FreeAndNil(Dest);

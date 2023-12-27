@@ -15,7 +15,8 @@ uses
   Dialogs,
   StdCtrls,
   ExtCtrls,
-  ShellAPI;
+  ShellAPI,
+  StrUtils;
 
 type
   TGoogleTranslationSettings = class(TForm)
@@ -133,10 +134,25 @@ var
   i: Integer;
 begin
   for i := Low(TRANSLATION_ARR) to High(TRANSLATION_ARR) do
-    if TRANSLATION_ARR[i].GTString = _Code then begin
+  begin
+    if TRANSLATION_ARR[i].GTString = _Code then
+    begin
       rg_Language.ItemIndex := i;
+
       exit;
     end;
+  end;
+
+  //*** Test only the first 2 chars
+  for i := Low(TRANSLATION_ARR) to High(TRANSLATION_ARR) do
+  begin
+    if (TRANSLATION_ARR[i].GTString =  MidStr( _Code, 1, 2)) then
+    begin
+      rg_Language.ItemIndex := i;
+
+      exit;
+    end;
+  end;
 end;
 
 end.

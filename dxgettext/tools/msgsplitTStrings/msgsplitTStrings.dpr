@@ -6,18 +6,13 @@ program msgsplitTStrings;
 uses
   SysUtils,
   Classes,
-  {$ifdef mswindows}
   gnugettext in '..\..\sample\gnugettext.pas',
   poparser in '..\..\dxgettext\poparser.pas',
   appconsts in '..\..\dxgettext\appconsts.pas',
   u_dzQuicksort in '..\..\dxgettext\u_dzQuicksort.pas',
-  {$else}
-  gnugettext in '../../sample/gnugettext.pas',
-  poparser in '../../dxgettext/poparser.pas',
-  appconsts in '../../dxgettext/appconsts.pas',
-  u_dzQuicksort in '../../dxgettext/u_dzQuicksort.pas',
-  {$endif}
-  Math;
+  Math,
+  ConsoleAppHandler in '..\..\dxgettext\ConsoleAppHandler.pas',
+  xgettexttools in '..\..\dxgettext\xgettexttools.pas';
 
 { Main routine }
 
@@ -108,6 +103,8 @@ begin
           pe.WriteToStream (dest);
           pe:=extra.FindNext(pe);
         end;
+
+        FormatOutputWithMsgCat( dest);
       finally
         CloseFile (src);
         FreeAndNil (dest);

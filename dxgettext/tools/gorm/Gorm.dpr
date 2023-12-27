@@ -43,7 +43,9 @@ uses
   u_dzStringUtils in 'u_dzStringUtils.pas',
   w_TranslationDbLearnOptions in 'w_TranslationDbLearnOptions.pas' {f_TranslationDbLearnOptions},
   u_dzAdoDbUniqueId in 'u_dzAdoDbUniqueId.pas',
-  PoDiffHtml in 'PoDiffHtml.pas';
+  PoDiffHtml in 'PoDiffHtml.pas',
+  u_dzQuicksort in '..\..\dxgettext\u_dzQuicksort.pas',
+  xgettexttools in '..\..\dxgettext\xgettexttools.pas';
 
 {$R *.res}
 

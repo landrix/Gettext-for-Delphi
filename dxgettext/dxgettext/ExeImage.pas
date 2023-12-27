@@ -5,7 +5,7 @@ unit ExeImage;
 interface
 
 uses
-  TypInfo, Classes, SysUtils, Windows, Graphics, RXTypes;
+  TypInfo, Classes, SysUtils, Windows, Vcl.Graphics, RXTypes;
 
 type
 

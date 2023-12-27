@@ -2,10 +2,10 @@ object FormEditor: TFormEditor
   Left = 307
   Top = 101
   Caption = 'Gorm'
-  ClientHeight = 685
-  ClientWidth = 1138
+  ClientHeight = 734
+  ClientWidth = 1219
   Color = clBtnFace
-  Constraints.MinHeight = 539
+  Constraints.MinHeight = 578
   Font.Charset = DEFAULT_CHARSET
   Font.Color = clWindowText
   Font.Height = -11
@@ -13,7 +13,6 @@ object FormEditor: TFormEditor
   Font.Style = []
   KeyPreview = True
   Menu = MenuMain
-  OldCreateOrder = False
   Position = poScreenCenter
   ShowHint = True
   OnCloseQuery = FormCloseQuery
@@ -22,12 +21,11 @@ object FormEditor: TFormEditor
   OnKeyDown = FormKeyDown
   OnResize = FormResize
   OnShow = FormShow
-  PixelsPerInch = 96
   TextHeight = 14
   object Splitter: TSplitter
     Left = 0
-    Top = 338
-    Width = 1138
+    Top = 362
+    Width = 1219
     Height = 4
     Cursor = crVSplit
     Align = alBottom
@@ -37,25 +35,25 @@ object FormEditor: TFormEditor
   object PanelList: TPanel
     Left = 0
     Top = 0
-    Width = 1138
-    Height = 338
+    Width = 1219
+    Height = 362
     Align = alClient
     BevelOuter = bvNone
     TabOrder = 0
     object PanelFilter: TPanel
       Left = 0
       Top = 0
-      Width = 1138
-      Height = 45
+      Width = 1219
+      Height = 48
       Align = alTop
       BevelOuter = bvNone
       TabOrder = 0
       DesignSize = (
-        1138
-        45)
+        1219
+        48)
       object LabelRowCount: TLabel
-        Left = 1109
-        Top = 24
+        Left = 1190
+        Top = 26
         Width = 18
         Height = 14
         Alignment = taRightJustify
@@ -63,7 +61,7 @@ object FormEditor: TFormEditor
         Caption = '123'
       end
       object LabelLabelFilter: TLabel
-        Left = 344
+        Left = 369
         Top = 2
         Width = 66
         Height = 14
@@ -79,22 +77,23 @@ object FormEditor: TFormEditor
         EditLabel.Height = 14
         EditLabel.Caption = 'Filter: MSGID, MSGSTR'
         TabOrder = 1
+        Text = ''
         OnChange = EditFilterTextChange
       end
       object ComboBoxLabel: TComboBox
-        Left = 344
-        Top = 20
-        Width = 155
+        Left = 369
+        Top = 21
+        Width = 166
         Height = 22
         Style = csDropDownList
         TabOrder = 3
         OnChange = ComboBoxLabelChange
       end
       object StaticTextFilterExplanation: TStaticText
-        Left = 790
+        Left = 846
         Top = 0
-        Width = 337
-        Height = 18
+        Width = 362
+        Height = 19
         Alignment = taRightJustify
         AutoSize = False
         Caption = 'Only the result of filtering is affected by the Messages menu.'
@@ -102,10 +101,10 @@ object FormEditor: TFormEditor
         Visible = False
       end
       object chkInverseFilter: TCheckBox
-        Left = 506
-        Top = 22
-        Width = 105
-        Height = 19
+        Left = 542
+        Top = 24
+        Width = 113
+        Height = 20
         Caption = 'Inverse filter'
         Checked = True
         State = cbChecked
@@ -113,10 +112,10 @@ object FormEditor: TFormEditor
         OnClick = chkInverseFilterClick
       end
       object btnRefreshFilter: TBitBtn
-        Left = 611
-        Top = 12
-        Width = 112
-        Height = 27
+        Left = 655
+        Top = 13
+        Width = 120
+        Height = 29
         Hint = 'Refresh filter'
         Action = act_RefreshFilter
         Caption = 'Refresh filter'
@@ -191,10 +190,10 @@ object FormEditor: TFormEditor
         TabOrder = 5
       end
       object ButtonShowAll: TBitBtn
-        Left = 8
-        Top = 11
-        Width = 105
-        Height = 26
+        Left = 9
+        Top = 12
+        Width = 112
+        Height = 28
         Caption = 'Show all'
         Glyph.Data = {
           36080000424D3608000000000000360000002800000020000000100000000100
@@ -268,10 +267,10 @@ object FormEditor: TFormEditor
         OnClick = ButtonShowAllClick
       end
       object b_FilterSelect: TButton
-        Left = 307
-        Top = 19
-        Width = 24
-        Height = 23
+        Left = 329
+        Top = 20
+        Width = 26
+        Height = 25
         Caption = '...'
         TabOrder = 2
         OnClick = b_FilterSelectClick
@@ -279,9 +278,9 @@ object FormEditor: TFormEditor
     end
     object Grid: TStringGrid
       Left = 0
-      Top = 45
-      Width = 1138
-      Height = 293
+      Top = 48
+      Width = 1219
+      Height = 314
       Align = alClient
       BevelInner = bvNone
       BevelOuter = bvNone
@@ -300,57 +299,54 @@ object FormEditor: TFormEditor
   end
   object PanelDetails: TPanel
     Left = 0
-    Top = 342
-    Width = 1138
-    Height = 343
+    Top = 366
+    Width = 1219
+    Height = 368
     Align = alBottom
     BevelOuter = bvNone
-    Constraints.MinWidth = 887
+    Constraints.MinWidth = 950
     TabOrder = 1
     object Splitter6: TSplitter
-      Left = 861
+      Left = 923
       Top = 0
-      Height = 324
+      Height = 349
       Align = alRight
-      ExplicitHeight = 326
     end
     object Splitter7: TSplitter
-      Left = 359
+      Left = 385
       Top = 0
       Width = 4
-      Height = 324
-      ExplicitHeight = 326
+      Height = 349
     end
     object PanelBottomLeft: TPanel
       Left = 0
       Top = 0
-      Width = 359
-      Height = 324
+      Width = 385
+      Height = 349
       Align = alLeft
       BevelOuter = bvNone
       TabOrder = 0
       object Splitter1: TSplitter
         Left = 0
-        Top = 141
-        Width = 359
+        Top = 151
+        Width = 385
         Height = 4
         Cursor = crVSplit
         Align = alTop
       end
       object Splitter2: TSplitter
         Left = 0
-        Top = 244
-        Width = 359
-        Height = 3
+        Top = 263
+        Width = 385
+        Height = 4
         Cursor = crVSplit
         Align = alBottom
-        ExplicitTop = 246
       end
       object PanelComments: TPanel
         Left = 0
         Top = 0
-        Width = 359
-        Height = 141
+        Width = 385
+        Height = 151
         Align = alTop
         BevelOuter = bvNone
         TabOrder = 0
@@ -358,18 +354,17 @@ object FormEditor: TFormEditor
           AlignWithMargins = True
           Left = 3
           Top = 3
-          Width = 353
+          Width = 134
           Height = 14
           Align = alTop
           Caption = 'Comments and instructions:'
-          ExplicitWidth = 133
         end
         object ListBoxProgrammerComments: TListBox
           AlignWithMargins = True
           Left = 3
-          Top = 23
-          Width = 353
-          Height = 115
+          Top = 20
+          Width = 379
+          Height = 128
           Hint = 'Information from software developers to the translator'
           TabStop = False
           Align = alClient
@@ -383,9 +378,9 @@ object FormEditor: TFormEditor
       end
       object PanelSourceLoc: TPanel
         Left = 0
-        Top = 145
-        Width = 359
-        Height = 99
+        Top = 155
+        Width = 385
+        Height = 108
         Align = alClient
         BevelOuter = bvNone
         TabOrder = 1
@@ -393,18 +388,17 @@ object FormEditor: TFormEditor
           AlignWithMargins = True
           Left = 3
           Top = 3
-          Width = 353
+          Width = 105
           Height = 14
           Align = alTop
           Caption = 'Source code location:'
-          ExplicitWidth = 105
         end
         object ListBoxSource: TListBox
           AlignWithMargins = True
           Left = 3
-          Top = 23
-          Width = 353
-          Height = 73
+          Top = 20
+          Width = 379
+          Height = 85
           Hint = 'This information is only for technicians.'
           TabStop = False
           Align = alClient
@@ -418,9 +412,9 @@ object FormEditor: TFormEditor
       end
       object PanelMessages: TPanel
         Left = 0
-        Top = 247
-        Width = 359
-        Height = 77
+        Top = 267
+        Width = 385
+        Height = 82
         Align = alBottom
         BevelOuter = bvNone
         TabOrder = 2
@@ -428,24 +422,23 @@ object FormEditor: TFormEditor
           AlignWithMargins = True
           Left = 3
           Top = 3
-          Width = 353
+          Width = 95
           Height = 14
           Align = alTop
           Caption = 'Hints and Warnings'
-          ExplicitWidth = 94
         end
         object MemoMessages: TMemo
           AlignWithMargins = True
           Left = 3
-          Top = 23
-          Width = 353
-          Height = 51
+          Top = 20
+          Width = 379
+          Height = 59
           Hint = 'These warnings indicate possible problems with your translation.'
           TabStop = False
           Align = alClient
           Font.Charset = DEFAULT_CHARSET
           Font.Color = clRed
-          Font.Height = -11
+          Font.Height = -12
           Font.Name = 'Tahoma'
           Font.Style = [fsBold]
           ParentColor = True
@@ -458,50 +451,50 @@ object FormEditor: TFormEditor
       end
     end
     object PanelBottomCenter: TPanel
-      Left = 363
+      Left = 389
       Top = 0
-      Width = 498
-      Height = 324
+      Width = 534
+      Height = 349
       Align = alClient
       BevelOuter = bvNone
-      Constraints.MinWidth = 482
+      Constraints.MinWidth = 516
       TabOrder = 1
       object Splitter3: TSplitter
         Left = 0
-        Top = 103
-        Width = 498
-        Height = 2
+        Top = 110
+        Width = 534
+        Height = 3
         Cursor = crVSplit
         Align = alTop
       end
       object Splitter4: TSplitter
         Left = 0
-        Top = 192
-        Width = 498
+        Top = 206
+        Width = 534
         Height = 3
         Cursor = crVSplit
         Align = alTop
       end
       object PanelTranslation: TPanel
         Left = 0
-        Top = 195
-        Width = 498
-        Height = 129
+        Top = 209
+        Width = 534
+        Height = 140
         Align = alClient
         BevelOuter = bvNone
         TabOrder = 2
         object MemoMsgStr: TMemo
           AlignWithMargins = True
           Left = 3
-          Top = 32
-          Width = 492
-          Height = 94
+          Top = 34
+          Width = 528
+          Height = 103
           Hint = 'Enter the translation here (F6)'
           Margins.Top = 1
           Align = alClient
           Font.Charset = DEFAULT_CHARSET
           Font.Color = clWindowText
-          Font.Height = -15
+          Font.Height = -16
           Font.Name = 'Arial Unicode MS'
           Font.Style = []
           ParentFont = False
@@ -515,8 +508,8 @@ object FormEditor: TFormEditor
         object Panel9: TPanel
           Left = 0
           Top = 0
-          Width = 498
-          Height = 31
+          Width = 534
+          Height = 33
           Align = alTop
           BevelOuter = bvNone
           TabOrder = 1
@@ -525,18 +518,17 @@ object FormEditor: TFormEditor
             Left = 3
             Top = 3
             Width = 56
-            Height = 25
+            Height = 15
             Align = alLeft
             Caption = 'Translation:'
             Layout = tlCenter
-            ExplicitHeight = 14
           end
           object ButtonMoveDown: TSpeedButton
             AlignWithMargins = True
-            Left = 436
+            Left = 468
             Top = 2
-            Width = 28
-            Height = 27
+            Width = 30
+            Height = 29
             Margins.Left = 2
             Margins.Top = 2
             Margins.Right = 2
@@ -544,7 +536,7 @@ object FormEditor: TFormEditor
             Align = alRight
             Font.Charset = DEFAULT_CHARSET
             Font.Color = clWindowText
-            Font.Height = -11
+            Font.Height = -12
             Font.Name = 'Arial'
             Font.Style = []
             Glyph.Data = {
@@ -563,14 +555,13 @@ object FormEditor: TFormEditor
             NumGlyphs = 2
             ParentFont = False
             OnClick = ButtonMoveDownClick
-            ExplicitLeft = 437
           end
           object ButtonMoveUp: TSpeedButton
             AlignWithMargins = True
-            Left = 468
+            Left = 502
             Top = 2
-            Width = 28
-            Height = 27
+            Width = 30
+            Height = 29
             Margins.Left = 2
             Margins.Top = 2
             Margins.Right = 2
@@ -578,7 +569,7 @@ object FormEditor: TFormEditor
             Align = alRight
             Font.Charset = DEFAULT_CHARSET
             Font.Color = clWindowText
-            Font.Height = -11
+            Font.Height = -12
             Font.Name = 'Arial'
             Font.Style = []
             Glyph.Data = {
@@ -597,13 +588,12 @@ object FormEditor: TFormEditor
             NumGlyphs = 2
             ParentFont = False
             OnClick = ButtonMoveUpClick
-            ExplicitLeft = 469
           end
           object ButtonCopyMsgId2MsgStr: TSpeedButton
-            Left = 77
+            Left = 83
             Top = 1
-            Width = 104
-            Height = 27
+            Width = 111
+            Height = 29
             Hint = 'Copy MsgId to MsgStr (Alt+c)'
             Caption = '&Copy original'
             Glyph.Data = {
@@ -677,10 +667,10 @@ object FormEditor: TFormEditor
             OnClick = ButtonCopyMsgId2MsgStrClick
           end
           object ButtonParallel: TSpeedButton
-            Left = 182
+            Left = 195
             Top = 1
-            Width = 114
-            Height = 27
+            Width = 122
+            Height = 29
             Caption = 'Copy &automatic'
             Glyph.Data = {
               36080000424D3608000000000000360000002800000020000000100000000100
@@ -754,10 +744,10 @@ object FormEditor: TFormEditor
             OnClick = ButtonParallelClick
           end
           object chkQuickNavigation: TCheckBox
-            Left = 325
+            Left = 349
             Top = 0
-            Width = 109
-            Height = 31
+            Width = 117
+            Height = 33
             Hint = 'Navigation with arrow keys and pageup/down'
             Align = alRight
             Caption = 'Quick navigation'
@@ -766,10 +756,10 @@ object FormEditor: TFormEditor
             TabOrder = 0
           end
           object btSpecChars: TBitBtn
-            Left = 296
+            Left = 317
             Top = 1
-            Width = 19
-            Height = 27
+            Width = 21
+            Height = 29
             Hint = 
               'Insert a special char to translation. You can change it in the P' +
               'references window.'
@@ -781,27 +771,26 @@ object FormEditor: TFormEditor
       end
       object PanelAutoTranslation: TPanel
         Left = 0
-        Top = 105
-        Width = 498
-        Height = 87
+        Top = 113
+        Width = 534
+        Height = 93
         Align = alTop
         BevelOuter = bvNone
         TabOrder = 1
         object lblParallelLanguageTranslation: TLabel
           Left = 0
           Top = 0
-          Width = 498
+          Width = 103
           Height = 14
           Align = alTop
           Caption = 'Automatic translation:'
           Visible = False
-          ExplicitWidth = 104
         end
         object listAutoTranslation: TListBox
           Left = 0
           Top = 14
-          Width = 498
-          Height = 73
+          Width = 534
+          Height = 79
           Align = alClient
           ItemHeight = 14
           TabOrder = 0
@@ -811,16 +800,16 @@ object FormEditor: TFormEditor
       object PanelOriText: TPanel
         Left = 0
         Top = 0
-        Width = 498
-        Height = 103
+        Width = 534
+        Height = 110
         Align = alTop
         BevelOuter = bvNone
         TabOrder = 0
         object LabelMsgId: TLabel
           Left = 0
           Top = 0
-          Width = 498
-          Height = 14
+          Width = 534
+          Height = 15
           Align = alTop
           AutoSize = False
           Caption = 'Original text:'
@@ -828,9 +817,9 @@ object FormEditor: TFormEditor
         object MemoMsgId: TMemo
           AlignWithMargins = True
           Left = 3
-          Top = 17
-          Width = 492
-          Height = 83
+          Top = 18
+          Width = 528
+          Height = 89
           Hint = 
             'Spaces are shown using dots, in order to make them clearly visib' +
             'le. Linebreaks are shown using an arrow that points downwards.'
@@ -838,7 +827,7 @@ object FormEditor: TFormEditor
           Color = clBtnFace
           Font.Charset = DEFAULT_CHARSET
           Font.Color = clWindowText
-          Font.Height = -15
+          Font.Height = -16
           Font.Name = 'Arial Unicode MS'
           Font.Style = []
           ParentFont = False
@@ -851,27 +840,26 @@ object FormEditor: TFormEditor
       end
     end
     object PanelBottomRight: TPanel
-      Left = 864
+      Left = 926
       Top = 0
-      Width = 274
-      Height = 324
+      Width = 293
+      Height = 349
       Align = alRight
       BevelOuter = bvNone
       TabOrder = 2
       object Splitter8: TSplitter
         Left = 0
-        Top = 193
-        Width = 274
+        Top = 207
+        Width = 293
         Height = 3
         Cursor = crVSplit
         Align = alTop
-        ExplicitWidth = 273
       end
       object PanelLabels: TPanel
         Left = 0
-        Top = 70
-        Width = 274
-        Height = 123
+        Top = 75
+        Width = 293
+        Height = 132
         Align = alTop
         BevelOuter = bvNone
         TabOrder = 1
@@ -879,30 +867,29 @@ object FormEditor: TFormEditor
           AlignWithMargins = True
           Left = 3
           Top = 3
-          Width = 268
+          Width = 35
           Height = 14
           Align = alTop
           Caption = 'Labels:'
-          ExplicitWidth = 35
         end
         object CheckListBoxLabels: TCheckListBox
           AlignWithMargins = True
           Left = 3
-          Top = 23
-          Width = 268
-          Height = 97
-          OnClickCheck = CheckListBoxLabelsClickCheck
+          Top = 20
+          Width = 287
+          Height = 109
           Align = alClient
           ItemHeight = 14
           TabOrder = 0
           OnClick = CheckListBoxLabelsClick
+          OnClickCheck = CheckListBoxLabelsClickCheck
         end
       end
       object PanelEditableComments: TPanel
         Left = 0
-        Top = 196
-        Width = 274
-        Height = 128
+        Top = 210
+        Width = 293
+        Height = 139
         Align = alClient
         BevelOuter = bvNone
         TabOrder = 2
@@ -910,18 +897,17 @@ object FormEditor: TFormEditor
           AlignWithMargins = True
           Left = 3
           Top = 3
-          Width = 268
+          Width = 93
           Height = 14
           Align = alTop
           Caption = 'Editable comments:'
-          ExplicitWidth = 92
         end
         object MemoEditableComments: TMemo
           AlignWithMargins = True
           Left = 3
-          Top = 23
-          Width = 268
-          Height = 102
+          Top = 20
+          Width = 287
+          Height = 116
           Align = alClient
           TabOrder = 0
           WordWrap = False
@@ -930,17 +916,17 @@ object FormEditor: TFormEditor
       object PanelButtons: TPanel
         Left = 0
         Top = 0
-        Width = 274
-        Height = 70
+        Width = 293
+        Height = 75
         Align = alTop
         BevelOuter = bvNone
         TabOrder = 0
         object SpeedButtonQuickFuzzy: TSpeedButton
           AlignWithMargins = True
           Left = 3
-          Top = 35
-          Width = 268
-          Height = 27
+          Top = 37
+          Width = 287
+          Height = 28
           Action = act_LabelsToggleFuzzy
           Align = alTop
         end
@@ -948,8 +934,8 @@ object FormEditor: TFormEditor
           AlignWithMargins = True
           Left = 3
           Top = 3
-          Width = 268
-          Height = 26
+          Width = 287
+          Height = 28
           Action = act_LabelsToggleIgnore
           Align = alTop
         end
@@ -957,8 +943,8 @@ object FormEditor: TFormEditor
     end
     object TheStatusBar: TStatusBar
       Left = 0
-      Top = 324
-      Width = 1138
+      Top = 349
+      Width = 1219
       Height = 19
       Panels = <>
       SimplePanel = True
@@ -1571,7 +1557,7 @@ object FormEditor: TFormEditor
     Left = 321
     Top = 120
     Bitmap = {
-      494C010103000500280010001000FFFFFFFFFF10FFFFFFFFFFFFFFFF424D3600
+      494C010103000500040010001000FFFFFFFFFF10FFFFFFFFFFFFFFFF424D3600
       0000000000003600000028000000400000001000000001002000000000000010
       0000000000000000000000000000000000000000000000000000000000000000
       00000000000000000000000000000040400000404000002520000D0D0D000D0D

@@ -27,6 +27,8 @@ type
     CBCreateIgnore: TCheckBox;
     CBRemoveIgnore: TCheckBox;
     CheckBoxAllowNonAscii: TCheckBox;
+    CheckBoxUseGetTextDefaultFormatting: TCheckBox;
+    CheckBoxPreserveUserComments: TCheckBox;
     procedure FormCreate(Sender: TObject);
     procedure ButtonOKClick(Sender: TObject);
   private
@@ -53,15 +55,18 @@ var
   filename:string;
   ini:TIniFile;
 begin
-  if CheckBoxSaveSettings.Checked then begin
-    filename:=ExtractFilePath(IncludeTrailingPathDelimiter(ExpandFileName(EditBasePath.Text)))+'dxgettext.ini';
-    ini:=TIniFile.Create (filename);
+  if CheckBoxSaveSettings.Checked then
+  begin
+    filename := ExtractFilePath( IncludeTrailingPathDelimiter( ExpandFileName( EditBasePath.Text))) + 'dxgettext.ini';
+    ini := TIniFile.Create( filename);
     try
-      ini.WriteBool('ggdxgettext','recurse',CheckBoxRecurse.Checked);
-      ini.WriteString('dxgettext','mask',EditMask.Text);
-      ini.WriteBool('ggdxgettext','updateignore',CBCreateIgnore.Checked);
-      ini.WriteBool('ggdxgettext','useignore',CBRemoveIgnore.Checked);
-      ini.WriteBool('ggdxgettext','allownonascii',CheckBoxAllowNonAscii.Checked);
+      ini.WriteBool  ( 'ggdxgettext', 'recurse'                    , CheckBoxRecurse                    .Checked);
+      ini.WriteString( 'dxgettext'  , 'mask'                       , EditMask                           .Text   );
+      ini.WriteBool  ( 'ggdxgettext', 'updateignore'               , CBCreateIgnore                     .Checked);
+      ini.WriteBool  ( 'ggdxgettext', 'useignore'                  , CBRemoveIgnore                     .Checked);
+      ini.WriteBool  ( 'ggdxgettext', 'allownonascii'              , CheckBoxAllowNonAscii              .Checked);
+      ini.WriteBool  ( 'ggdxgettext', 'preserveusercomments'       , CheckBoxPreserveUserComments       .Checked);
+      ini.WriteBool  ( 'ggdxgettext', 'usegettextdefaultformatting', CheckBoxUseGetTextDefaultFormatting.Checked);
     finally
       FreeAndNil (ini);
     end;

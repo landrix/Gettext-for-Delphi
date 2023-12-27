@@ -3,7 +3,7 @@ unit msgremoveengine;
 interface
 
 uses
-  Classes, poparser;
+  Classes, poparser, xgettexttools;
 
 type
   Tmsgmkignoreengine=
@@ -90,6 +90,8 @@ begin
         break;
       HandleEntry (outfile,po);
     end;
+
+    FormatOutputWithMsgCat( outfile);
   finally
     FreeAndNil (pop);
     CloseFile (infile);

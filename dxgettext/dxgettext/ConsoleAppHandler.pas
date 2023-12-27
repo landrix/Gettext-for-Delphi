@@ -470,14 +470,16 @@ begin
     only relevant when the calling process is a console app.
     }
 
-    if not CreateProcess(nil, PChar(CommandLine),
-       nil, nil,
-       true,                   {inherit kernel object handles from parent}
-       CREATE_NO_WINDOW,
-       nil,
-       nil,
-       StartupInfo,
-       ProcessInfo) then
+    if not CreateProcess( nil,
+                          PChar(CommandLine),
+                          nil,
+                          nil,
+                          true,                   {inherit kernel object handles from parent}
+                          CREATE_NO_WINDOW,
+                          nil,
+                          nil,
+                          StartupInfo,
+                          ProcessInfo) then
      RaiseLastOSError;
 
     CloseHandle(ProcessInfo.hThread);
@@ -545,27 +547,33 @@ begin
       understanding of the child process you are spawining and are sure you
       don't want to wait for it}
 
-      GetExitCodeProcess(ProcessInfo.hProcess, Result);
-      OutputLine {flush the line buffer}
-
-{$IFDEF DEBUG} ;  {that's how much I dislike null statements!
-                   Is there a nobel prize for pedantry?}
-      if PerfFreq > 0 then
+      if not GetExitCodeProcess(ProcessInfo.hProcess, Result) then
       begin
-        QueryPerformanceCounter(EndExec);
-
-        if (Result <> 0) then
-          AppOutput.Add(Format('Execution failed! (error result: %d)',[Result]))
-        else
-          AppOutput.Add('Execution succes');
-
-        AppOutput.Add(Format('Debug: (readcount = %d), ExecTime = %.3f ms',
-          [ReadCount, ((EndExec - StartExec)*1000.0)/PerfFreq]))
-      end else
-      begin
-        AppOutput.Add(Format('Debug: (readcount = %d)', [ReadCount]))
+        RaiseLastOsError;
       end
-{$ENDIF}
+      else
+      begin
+        OutputLine {flush the line buffer}
+
+  {$IFDEF DEBUG} ;  {that's how much I dislike null statements!
+                     Is there a nobel prize for pedantry?}
+        if PerfFreq > 0 then
+        begin
+          QueryPerformanceCounter(EndExec);
+
+          if (Result <> 0) then
+            AppOutput.Add(Format('Execution failed! (error result: %d)',[Result]))
+          else
+            AppOutput.Add('Execution succes');
+
+          AppOutput.Add(Format('Debug: (readcount = %d), ExecTime = %.3f ms',
+            [ReadCount, ((EndExec - StartExec)*1000.0)/PerfFreq]))
+        end else
+        begin
+          AppOutput.Add(Format('Debug: (readcount = %d)', [ReadCount]))
+        end;
+  {$ENDIF}
+      end;
     finally
       CloseHandle(ProcessInfo.hProcess)
     end

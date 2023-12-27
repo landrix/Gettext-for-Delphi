@@ -23,22 +23,21 @@ var
   DefCP:integer=CP_ACP;
 {$endif}
 
-function ConvertWhitespaceToSpaces(const s:string):string;
-function is_identifier(const ws:string):boolean;
-function poscode (const substr,line:string):integer;
-function StreamReadln (s:TStream; var line:string; utf8:boolean):boolean; // Returns false if end of line
-function measureindent(const s: string): word;
-function scope2comment(sl: TStrings; const name: string): string;
-function RemoveFilenameSpaces (const s:string):string;
-function WindowsPathDelim2LinuxPathDelim (const path:string):string;
-function IsDirective(const directive, line: string): boolean;
-
-
+  function ConvertWhitespaceToSpaces(const s:string):string;
+  function is_identifier(const ws:string):boolean;
+  function poscode (const substr,line:string):integer;
+  function StreamReadln (s:TStream; var line:string; utf8:boolean):boolean; // Returns false if end of line
+  function measureindent(const s: string): word;
+  function scope2comment(sl: TStrings; const name: string): string;
+  function RemoveFilenameSpaces (const s:string):string;
+  function WindowsPathDelim2LinuxPathDelim (const path:string):string;
+  function IsDirective(const directive, line: string): boolean;
+  function FormatOutputWithMsgCat( xFileStream: TFileStream): Boolean;
 
 implementation
 
 uses
-  SysUtils, gnugettext;
+  SysUtils, gnugettext, IOUtils, ConsoleAppHandler;
 
 function measureindent(const s: string): word;
 // Returns number of spaces this line used to indent this line
@@ -161,6 +160,69 @@ end;
 function IsDirective(const directive, line: String): boolean;
 begin
   Result := pos (directive, lowerCase (copy (line, 1, length(directive)))) = 1;
+end;
+
+function FormatOutputWithMsgCat( xFileStream: TFileStream): Boolean;
+var
+  lCommand: String;
+  lRes: Integer;
+  lAppOutput: TStringList;
+  lTempFileSource, lTempFileDest: String;
+  lTempFileStream: TFileStream;
+begin
+  Result := False;
+
+  if Assigned( xFileStream) then
+  begin
+    lTempFileSource := TPath.GetTempFileName;
+    lTempFileDest   := TPath.GetTempFileName;
+    try
+      lTempFileStream := nil;
+      try
+        lTempFileStream := TFileStream.Create( lTempFileSource,
+                                               fmCreate);
+        lTempFileStream.CopyFrom( xFileStream, 0);
+      finally
+        FreeAndNil( lTempFileStream);
+      end;
+
+      //*** use msgcat to format the po file according to the gettext tools
+      lCommand := Format( '--force-po -o "%s" "%s"',
+                          [ lTempFileDest,
+                            lTempFileSource]);
+
+      lAppOutput := nil;
+      try
+        lAppOutput := TStringList.Create;
+
+        lRes := ExecConsoleApp( 'msgcat.exe',
+                                lCommand,
+                                lAppOutput,
+                                nil);
+        if (lRes = 0) then
+        begin
+          lTempFileStream := nil;
+          try
+            lTempFileStream := TFileStream.Create( lTempFileDest,
+                                                   fmOpenRead);
+
+            xFileStream.Size := 0;
+
+            xFileStream.CopyFrom( lTempFileStream, 0);
+          finally
+            FreeAndNil( lTempFileStream);
+          end;
+
+          Result := True;
+        end;
+      finally
+        FreeAndNil( lAppOutput);
+      end;
+    finally
+      DeleteFile( lTempFileSource);
+      DeleteFile( lTempFileDest);
+    end;
+  end;
 end;
 
 end.

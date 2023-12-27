@@ -4,7 +4,7 @@ interface
 
 uses
   Windows, Messages, SysUtils, Variants, Classes, Graphics, Controls, Forms,
-  Dialogs, StdCtrls, XPMan, ExtCtrls, StrUtils;
+  Dialogs, StdCtrls, XPMan, ExtCtrls, StrUtils, Vcl.Mask, System.UITypes;
 
 type
   TFormRun = class(TForm)
@@ -19,6 +19,7 @@ type
     CheckBoxNonAscii: TCheckBox;
     cb_CreateRemovedAndNewFile: TCheckBox;
     cb_PreserveStateFuzzy: TCheckBox;
+    cb_UseGetTextDefaultFormatting: TCheckBox;
     procedure ButtonGoClick(Sender: TObject);
     procedure FormCreate(Sender: TObject);
     procedure FormResize(Sender: TObject);
@@ -47,23 +48,7 @@ uses
 
 {$R *.dfm}
 
-function ShellEscape(s:String): String;
-var
-  i: Integer;
-begin
-  Result:='';
 
-  for i := 1 to length(s) do
-  begin
-    if s[i] = '"' then
-      Result := Result + '\"'
-    else
-    if s[i] = '\' then
-      Result := Result + '\\'
-    else
-      Result := Result + s[i];
-  end;
-end;
 
 function TFormRun.ExecuteConsoleApplication(const xWorkingDirectory,
                                                   xApplicationName,
@@ -80,18 +65,14 @@ begin
   try
     ChDir(xWorkingDirectory);
 
-    lCommand := xApplicationName;
-    if not (xApplicationName[Length(xApplicationName)] = ' ') or
-           (xParameters[1] = ' ') then
-    begin
-      lCommand := lCommand + ' ';
-    end;
-    lCommand := lCommand + shellescape(xParameters);
+    lCommand := xParameters;
 
     lAppOutput := TStringList.Create;
     try
-      lRes := ExecConsoleApp( 'bash.exe', '-c "' + lCommand + '"',
-                              lAppOutput, nil);
+      lRes := ExecConsoleApp( xApplicationName,
+                              lCommand,
+                              lAppOutput,
+                              nil);
 
       lOutput := Trim(lAppOutput.Text);
 
@@ -182,10 +163,12 @@ begin
       // Non-ASCII support required. Use internal function.
       lMsgMergeDxEngine := TMsgMergeDxEngine.Create;
       try
-        lMsgMergeDxEngine.translationfilename  := lTranslation;
-        lMsgMergeDxEngine.templatefilename     := lTemplate;
-        lMsgMergeDxEngine.outputfilename       := lTempFileName;
-        lMsgMergeDxEngine.PreserveStateFuzzy   := cb_PreserveStateFuzzy.Checked;
+        lMsgMergeDxEngine.translationfilename         := lTranslation;
+        lMsgMergeDxEngine.templatefilename            := lTemplate;
+        lMsgMergeDxEngine.outputfilename              := lTempFileName;
+        lMsgMergeDxEngine.PreserveStateFuzzy          := cb_PreserveStateFuzzy.Checked;
+        lMsgMergeDxEngine.UseGetTextDefaultFormatting := cb_UseGetTextDefaultFormatting.Checked;
+
         lMsgMergeDxEngine.Execute;
       finally
         FreeAndNil (lMsgMergeDxEngine);
@@ -200,7 +183,7 @@ begin
                                         '-q "' +
                                         lTranslation + '" "' +
                                         lTemplate + '" ' +
-                                        '-o "' + lTempFileName + '" 2>&1') then
+                                        '-o "' + lTempFileName + '"') then
       begin
         Exit;
       end;
@@ -277,11 +260,12 @@ begin
     begin
       ini := TIniFile.Create(ChangeFileExt(lTranslation, '.ini'));
       try
-        ini.WriteString('ggmerge', 'template'            , lTemplate);
-        ini.WriteBool  ('ggmerge', 'createbackup'        , CheckBoxCreateBackup      .Checked);
-        ini.WriteBool  ('ggmerge', 'supportnonascii'     , CheckBoxNonAscii          .Checked);
-        ini.WriteBool  ('ggmerge', 'preserveStateFuzzy'  , cb_PreserveStateFuzzy     .Checked);
-        ini.WriteBool  ('ggmerge', 'createfilenewremoved', cb_CreateRemovedAndNewFile.Checked);
+        ini.WriteString('ggmerge', 'template'                   , lTemplate);
+        ini.WriteBool  ('ggmerge', 'createbackup'               , CheckBoxCreateBackup          .Checked);
+        ini.WriteBool  ('ggmerge', 'supportnonascii'            , CheckBoxNonAscii              .Checked);
+        ini.WriteBool  ('ggmerge', 'preserveStateFuzzy'         , cb_PreserveStateFuzzy         .Checked);
+        ini.WriteBool  ('ggmerge', 'createfilenewremoved'       , cb_CreateRemovedAndNewFile    .Checked);
+        ini.WriteBool  ('ggmerge', 'usegettextdefaultformatting', cb_UseGetTextDefaultFormatting.Checked);
       finally
         FreeAndNil (ini);
       end;
@@ -313,11 +297,12 @@ begin
   begin
     lIni := TIniFile.Create(lIniFileName);
     try
-      EditTemplate              .Text    := lIni.ReadString('ggmerge', 'template'            , '');
-      CheckBoxCreateBackup      .Checked := lIni.ReadBool  ('ggmerge', 'createbackup'        , CheckBoxCreateBackup      .Checked);
-      CheckBoxNonAscii          .Checked := lIni.ReadBool  ('ggmerge', 'supportnonascii'     , CheckBoxNonAscii          .Checked);
-      cb_PreserveStateFuzzy     .Checked := lIni.ReadBool  ('ggmerge', 'preserveStateFuzzy'  , cb_PreserveStateFuzzy     .Checked);
-      cb_CreateRemovedAndNewFile.Checked := lIni.ReadBool  ('ggmerge', 'createfilenewremoved', cb_CreateRemovedAndNewFile.Checked);
+      EditTemplate                  .Text    := lIni.ReadString('ggmerge', 'template'                   , '');
+      CheckBoxCreateBackup          .Checked := lIni.ReadBool  ('ggmerge', 'createbackup'               , CheckBoxCreateBackup          .Checked);
+      CheckBoxNonAscii              .Checked := lIni.ReadBool  ('ggmerge', 'supportnonascii'            , CheckBoxNonAscii              .Checked);
+      cb_PreserveStateFuzzy         .Checked := lIni.ReadBool  ('ggmerge', 'preserveStateFuzzy'         , cb_PreserveStateFuzzy         .Checked);
+      cb_CreateRemovedAndNewFile    .Checked := lIni.ReadBool  ('ggmerge', 'createfilenewremoved'       , cb_CreateRemovedAndNewFile    .Checked);
+      cb_UseGetTextDefaultFormatting.Checked := lIni.ReadBool  ('ggmerge', 'usegettextdefaultformatting', cb_UseGetTextDefaultFormatting.Checked);
     finally
       FreeAndNil(lIni);
     end;

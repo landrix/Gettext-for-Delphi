@@ -15,7 +15,8 @@ uses
   Dialogs,
   StdCtrls,
   ExtCtrls,
-  ShellAPI;
+  ShellAPI,
+  StrUtils;
 
 type
   Tf_MicrosoftTranslationSettings = class(TForm)
@@ -55,9 +56,12 @@ begin
   frm := Tf_MicrosoftTranslationSettings.Create(_Owner);
   try
     frm.SetData(_AppId, _Code);
+
     Result := (frm.ShowModal = mrOk);
     if Result then
+    begin
       frm.GetData(_AppId, _Code);
+    end;
   finally
     FreeAndNil(frm);
   end;
@@ -101,9 +105,13 @@ end;
 procedure Tf_MicrosoftTranslationSettings.GetData(var _AppId, _Code: string);
 begin
   _AppId := ed_BingAppId.Text;
-  if rg_Language.ItemIndex = -1 then begin
+
+  if rg_Language.ItemIndex = -1 then
+  begin
     _Code := '';
-  end else begin
+  end
+  else
+  begin
     _Code := TRANSLATION_ARR[rg_Language.ItemIndex].GTString;
   end;
 end;
@@ -131,11 +139,25 @@ var
   i: Integer;
 begin
   ed_BingAppId.text := _AppId;
+
   for i := Low(TRANSLATION_ARR) to High(TRANSLATION_ARR) do
-    if TRANSLATION_ARR[i].GTString = _Code then begin
+  begin
+    if TRANSLATION_ARR[i].GTString = _Code then
+    begin
       rg_Language.ItemIndex := i;
       exit;
     end;
+  end;
+
+  //*** Test only the first 2 chars
+  for i := Low(TRANSLATION_ARR) to High(TRANSLATION_ARR) do
+  begin
+    if TRANSLATION_ARR[i].GTString = MidStr( _Code, 1, 2) then
+    begin
+      rg_Language.ItemIndex := i;
+      exit;
+    end;
+  end;
 end;
 
 end.

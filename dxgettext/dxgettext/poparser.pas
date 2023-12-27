@@ -22,7 +22,8 @@ const // use these for Get/SetPoHeaderEntry calls
   PO_HEADER_LANGUAGE_TEAM = 'Language-Team:';
   PO_HEADER_LAST_TRANSLATOR = 'Last-Translator:';
   PO_HEADER_CONTENT_TYPE = 'Content-Type:';
-  PO_HEADER_LANGUAGE = 'X-Poedit-Language:';
+  PO_HEADER_POEDIT_LANGUAGE = 'X-Poedit-Language:';
+  PO_HEADER_LANGUAGE_new = 'Language:';
   PO_HEADER_Poedit_BasePath = 'X-Poedit-Basepath:';
 
 type
@@ -56,13 +57,16 @@ type
       constructor Create;
       destructor Destroy; override;
       procedure LoadFromFile (filename:string);
-      procedure SaveToFile (filename:string; AWidth: integer = 70);
+      procedure SaveToFile ( const xFileName: string;
+                             const xUseGetTextDefaultFormatting: Boolean = False;
+                             const xWidth: integer = 70);
       procedure Clear;
       function Find (MsgId:string):TPoEntry;
       function Delete (MsgId:string):boolean;  // True if found and deleted, false if not found
       procedure Add (entry:TPoEntry); // Will fail if MsgId exists. Entry is copied.
       function Count:integer;
-      function Language: string; // returns the X-Poedit-Language entry in the '' translation
+      //function Poedit_Language: string; // returns the X-Poedit-Language entry in the '' translation
+      function Language_New: string;
       function ProjectAndVersion: string; // returns the Project-Id-Version entry in the '' translation
       function BasePath: String;
 
@@ -108,7 +112,7 @@ procedure StreamWriteDefaultPoTemplateHeader (s:TStream;const appname:string);
 implementation
 
 uses
-  Math, SysUtils, gnugettext, u_dzQuicksort, StrUtils;
+  Math, SysUtils, gnugettext, u_dzQuicksort, StrUtils, xgettexttools;
 
 function GetPoHeaderEntry(const _Header: string; const _Label: string): string;
 var
@@ -464,44 +468,66 @@ begin
   Result:=pos(PluralSplitter,MsgId)>=1;
 end;
 
-function FindBestBreak (s:string;LineWidth:integer):integer;
+function FindBestBreak ( s: string;
+                         xLineWidth: integer):integer;
 // Returns number of characters to include in the line
 var
-  spacepos:integer;
-  i,p:integer;
-  MaxLength:integer;
+  lSpacePos: integer;
+  i, p: integer;
+  lMaxLength: integer;
 begin
-  if LineWidth = 0 then begin
+  if xLineWidth = 0 then
+  begin
     // no line wrapping unless there is a linefeed in the string
-    LineWidth := MaxInt;
+    xLineWidth := MaxInt;
   end;
-  p:=pos(#10,s);
-  spacepos:=0;
-  MaxLength:=min(length(s),LineWidth);
-  if (p>0) and (p<MaxLength) then begin
-    Result:=p;
+
+  p := pos(#10, s);
+  lSpacePos := 0;
+  lMaxLength := Min(length(s), xLineWidth);
+
+  if (p > 0) and (p < lMaxLength) then
+  begin
+    Result := p;
     exit;
   end;
-  i:=MaxLength;
-  while i>=1 do begin
+
+  i := lMaxLength;
+
+  while i >= 1 do
+  begin
     case s[i] of
       #10:begin
             Result:=i;
             exit;
           end;
       ' ':
-        if spacepos=0 then
-          spacepos:=i;
+        if lSpacePos=0 then
+          lSpacePos:=i;
     end;
+
     dec (i);
   end;
-  if spacepos>LineWidth div 2 then begin
-    Result:=spacepos;
-  end else
-    Result:=MaxLength;
-  if (Result>=2) and (ord(s[Result])<32) and (ord(s[Result])<>10) then begin
-    for i:=Result-1 downto 1 do begin
-      if (ord(s[i])>=32) or (ord(s[i])=10) then begin
+
+  if (lMaxLength >= xLineWidth) and
+     (lSpacePos > xLineWidth div 2) then
+  begin
+    Result := lSpacePos;
+  end
+  else
+  begin
+    Result := lMaxLength;
+  end;
+
+  if (Result>=2) and
+     (ord(s[Result])<32) and
+     (ord(s[Result])<>10) then
+  begin
+    for i:=Result-1 downto 1 do
+    begin
+      if (ord(s[i])>=32) or
+         (ord(s[i])=10) then
+      begin
         Result:=i;
         exit;
       end;
@@ -796,9 +822,15 @@ begin
   Result := GetHeaderEntry(PO_HEADER_PROJECT_ID_VERSION);
 end;
 
-function TPoEntryList.Language: string;
+(*
+function TPoEntryList.Poedit_Language: string;
 begin
-  Result := GetHeaderEntry(PO_HEADER_LANGUAGE);
+  Result := GetHeaderEntry( PO_HEADER_POEDIT_LANGUAGE);
+end;
+*)
+function TPoEntryList.Language_New: string;
+begin
+  Result := GetHeaderEntry( PO_HEADER_LANGUAGE_new);
 end;
 
 procedure TPoEntryList.LoadFromFile(filename: string);
@@ -907,43 +939,70 @@ begin
   Result := FLst[AIdx];
 end;
 
-procedure TPoEntryList.SaveToFile (filename:string; AWidth: integer = 70);
+procedure TPoEntryList.SaveToFile ( const xFileName: string;
+                                    const xUseGetTextDefaultFormatting: Boolean = False;
+                                    const xWidth: integer = 70);
 var
-  outfile:TFileStream;
-  pe:TPoEntry;
+  lOutFileStream: TFileStream;
+  lPoEntry: TPoEntry;
   i: Integer;
-  Sorter: TPoEntrySorter;
+  lSorter: TPoEntrySorter;
 begin
-  outfile := nil;
-  Sorter := TPoEntrySorter.Create;
-  try
-    outfile:=TFileStream.Create (filename, fmCreate);
-    // Write header
-    pe:=Find('');
-    if pe<>nil then
-      Sorter.Add(pe);
+  if (xFileName = '') then
+  begin
+    raise Exception.Create( _('missing file name'));
+  end
+  else
+  begin
+    lOutFileStream := nil;
+    lSorter := TPoEntrySorter.Create;
+    try
+      lOutFileStream := TFileStream.Create ( xFileName,
+                                             fmCreate);
+      // Write header
+      lPoEntry := Find('');
+      if lPoEntry <> nil then
+      begin
+        lSorter.Add( lPoEntry);
+      end;
 
-    // Write the rest
-    pe:=FindFirst;
-    while pe<>nil do begin
-      if pe.MsgId<>'' then
-        Sorter.Add(pe);
-      pe:=FindNext (pe);
+      // Write the rest
+      lPoEntry := FindFirst;
+      while lPoEntry <> nil do
+      begin
+        if lPoEntry.MsgId <> '' then
+        begin
+          lSorter.Add( lPoEntry);
+        end;
+        lPoEntry := FindNext( lPoEntry);
+      end;
+
+      lSorter.Sort;
+
+      for i := 0 to lSorter.Count - 1 do
+      begin
+        lPoEntry := lSorter[i];
+        if (lPoEntry.MsgId = '') then
+        begin
+          // always wrap the header
+          lPoEntry.WriteToStream( lOutFileStream, 70);
+        end
+        else
+        begin
+          lPoEntry.WriteToStream( lOutFileStream,
+                                  xWidth);
+        end;
+      end;
+
+      if xUseGetTextDefaultFormatting then
+      begin
+        FormatOutputWithMsgCat( lOutFileStream);
+      end;
+
+    finally
+      FreeAndNil (lOutFileStream);
+      FreeAndNil(lSorter);
     end;
-
-    Sorter.Sort;
-
-    for i := 0 to Sorter.Count - 1 do begin
-      pe := Sorter[i];
-      if pe.MsgId='' then
-        // always wrap the header
-        pe.WriteToStream(outfile, 70)
-      else
-        pe.WriteToStream(outfile, AWidth);
-    end;
-  finally
-    FreeAndNil (outfile);
-    FreeAndNil(Sorter);
   end;
 end;
 

@@ -26,7 +26,8 @@ unit TranslationsMemory;
 interface
 
 uses
-  Classes, SysUtils, poparser, Generics.Collections, Generics.Defaults, StrUtils, Messages, Windows;
+  Classes, SysUtils, poparser, Generics.Collections, Generics.Defaults,
+  StrUtils, Messages, Windows, u_Languages;
 
 const
   // this signature help to handle translations memory list
@@ -50,7 +51,7 @@ type
       FMemList: TPoEntryList;
 
       // current language
-      FLanguage: string;
+      FLanguageCode: string;
 
       // memory file name
       FFilename : string;
@@ -70,7 +71,7 @@ type
       // Reduces the memory filesize by removing 50% of oldest entries
       procedure MaintainMemoryFile;
       procedure SetSuggestionAccuracy(_a : Integer);
-      procedure SetLanguage(_s : string);
+      procedure SetLanguageCode( const _s : string);
 
     public
 
@@ -94,7 +95,7 @@ type
       procedure SaveMemoryFile;
 
       property aSuggestionAccuracy:Integer read FSuggestionAccuracy write SetSuggestionAccuracy;
-      property aLanguage:string read FLanguage write SetLanguage;
+      property aLanguage:string read FLanguageCode write SetLanguageCode;
   end;
 
 
@@ -195,11 +196,22 @@ begin
   FSuggestionAccuracy := _a;
 end;
 
-procedure TTranslationsMemory.SetLanguage(_s : string);
+procedure TTranslationsMemory.SetLanguageCode( const _s : string);
+var
+  lLanguageName: String;
 begin
-  FLanguage := _s;
-  FFilename :=  IncludeTrailingPathDelimiter(ExtractFileDir(Application.Exename))
-    + 'gormmemory-'+trim(lowercase(FLanguage)) + '.po';
+  lLanguageName := '';
+
+  FLanguageCode := _s;
+
+  if not dxlanguages.TryGetLanguageForCode( FLanguageCode, lLanguageName) then
+  begin
+    FLanguageCode := '';
+    lLanguageName := '';
+  end;
+
+  FFilename :=  IncludeTrailingPathDelimiter( ExtractFileDir( Application.Exename)) +
+                'gormmemory-' + trim( lowercase( lLanguageName)) + '.po';
 end;
 
 {*------------------------------------------------------------------------------
@@ -404,7 +416,9 @@ begin
     end;
   MaintainMemoryFile;
   try
-    FMemList.SaveToFile(FFilename, 1024);
+    FMemList.SaveToFile( FFilename,
+                         False,
+                         1024);
   except
     raise Exception.Create(_('Error during memory file saving.'));
   end;

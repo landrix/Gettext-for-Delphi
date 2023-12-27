@@ -6,6 +6,7 @@ uses
   SysUtils,
   Classes,
   Generics.Collections,
+  StrUtils,
   u_TranslatorEngine,
   u_Languages;
 
@@ -55,7 +56,7 @@ begin
         FDictionary.AddOrSetValue(po.MsgId, po.MsgStr);
       po := pol.FindNext(po);
     end;
-    FLanguage.TryInitFromCode(pol.Language);
+    FLanguage.TryInitFromCode( MidStr( pol.Language_New, 1, 2));
   finally
     FreeAndNil(pol);
   end;

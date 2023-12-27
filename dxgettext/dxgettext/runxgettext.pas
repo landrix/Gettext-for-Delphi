@@ -16,7 +16,7 @@ unit runxgettext;
 interface
 
 uses
-  Classes;
+  Classes, System.UITypes;
 
 type
   TRunXGettext=
@@ -31,7 +31,7 @@ type
 implementation
 
 uses
-  Dialogs, SysUtils, ConsoleAppHandler, Windows;
+  Dialogs, SysUtils, StrUtils, ConsoleAppHandler, Windows;
 
 { TRunXGettext }
 
@@ -46,70 +46,93 @@ begin
   inherited;
 end;
 
-function shellescape (s:string):string;
-var
-  i:integer;
-begin
-  Result:='';
-  for i:=1 to length(s) do begin
-    if s[i]='"' then
-      Result:=Result+'\"'
-    else
-    if s[i]='\' then
-      Result:=Result+'\\'
-    else
-      Result:=Result+s[i];
-  end;
-end;
-
 procedure TRunXGettext.Execute;
 var
-  AppOutput:TStringList;
-  cmdline:string;
-  appout:string;
-  filelistname:string;
-  tf:TextFile;
+  lAppOutput:TStringList;
+  lCmdLine:string;
+  lAppOut:string;
+  lFileListName:string;
+  lTF:TextFile;
   i:integer;
-  temppath:string;
+  lTempPath:string;
 begin
-  SetLength (temppath, 1000);
-  i:=GetTempPath(1000,PChar(temppath));
-  if i=0 then begin
-    filelistname:='c:\filelist.txt'; 
+  SetLength( lTempPath, 1000);
+
+  i := GetTempPath( 1000, PChar( lTempPath));
+
+  if i = 0 then
+  begin
+    lFileListName := 'c:\filelist.txt';
     // This is extremely rare, and absolutely an Operating system error, and therefore doesn't need translation.
-    ShowMessage (Format('Please check your temp path settings - they are incorrect. Using "%s" instead.',[filelistname]));
-  end else begin
-    SetLength (temppath,i);
-    SetLength (filelistname, MAX_PATH);
-    i:=GetTempFileName(PChar(temppath),'ggd',0,PChar(filelistname));
-    if i=0 then begin
-      filelistname:='c:\filelist.txt';
+    ShowMessage( Format( 'Please check your temp path settings - they are incorrect. Using "%s" instead.',
+                         [ lFileListName]));
+  end
+  else
+  begin
+    SetLength( lTempPath, i);
+    SetLength( lFileListName, MAX_PATH);
+    i := GetTempFileName( PChar( lTempPath),
+                          'ggd',
+                          0,
+                          PChar( lFileListName));
+    if i = 0 then
+    begin
+      lFileListName := 'c:\filelist.txt';
       // This is extremely rare, and absolutely an Operating system error, and therefore doesn't need translation.
-      ShowMessage (Format('Please check your temp path settings - they are incorrect. Using "%s" instead.',[filelistname]));
-    end else
-      SetLength (filelistname, strlen(PChar(filelistname)));
+      ShowMessage( Format( 'Please check your temp path settings - they are incorrect. Using "%s" instead.',
+                           [ lFileListName]));
+    end
+    else
+    begin
+      SetLength( lFileListName, StrLen( PChar( lFileListName)));
+    end;
   end;
                            
-  AssignFile (tf,filelistname);
-  Rewrite (tf);
-  for i:=0 to FileList.Count-1 do begin
-    Writeln (tf,FileList.Strings[i]);
+  AssignFile( lTF, lFileListName);
+  Rewrite( lTF);
+
+  for i := 0 to FileList.Count - 1 do
+  begin
+    Writeln( lTF,
+             FileList.Strings[i]);
   end;
-  CloseFile (tf);
-  AppOutput:=TStringList.Create;
+  CloseFile (lTF);
+
+  lAppOutput := TStringList.Create;
   try
-    cmdline:='xgettext --keyword=_ -n --files-from="'+shellescape(filelistname)+'" -j -p "'+shellescape(OutputDir)+'" -d default 2>&1';
-    // Use this command line in later versions, when xgettext.exe has been replaced with a version that understands --from-code
+    lCmdLine := '--keyword=_ -n --files-from="' + lFileListName + '"';
+
+    if FileExists( OutputDir + 'default.po') then
+    begin
+      lCmdLine := lCmdLine + ' -j';
+    end;
+    lCmdLine := lCmdLine + ' --output-dir=' + OutputDir + ' -d default';
+    //lCmdLine := lCmdLine + ' 2>&1';
+
+    // Use this command line in later versions, when xgettext.exe has been
+    // replaced with a version that understands --from-code
     // cmdline:='xgettext --keyword=_ --from-code=UTF-8 -n --files-from="'+shellescape(filelistname)+'" -j -p "'+shellescape(OutputDir)+'" -d default 2>&1';
-    cmdline:='-c "'+shellescape(cmdline)+'"';
-    ExecConsoleApp ('bash.exe',cmdline,AppOutput,nil);
-    appout:=trim(AppOutput.text);
-    if appout<>'' then
-      MessageDlg (appout,mtInformation,[mbOK],0);
+
+    ExecConsoleApp ( 'xgettext.exe',
+                     lCmdLine,
+                     lAppOutput,
+                     nil);
+
+    lAppOut := trim( lAppOutput.text);
+
+    if ( ( lAppOut <> '') and
+         not AnsiStartsText( 'Execution succes', lAppOut)) then
+    begin
+      MessageDlg ( lAppOut,
+                   mtInformation,
+                   [ mbOK],
+                   0);
+    end;
   finally
-    FreeAndNil (AppOutput);
+    FreeAndNil( lAppOutput);
   end;
-  SysUtils.DeleteFile (filelistname);
+
+  SysUtils.DeleteFile( lFileListName);
 end;
 
 end.

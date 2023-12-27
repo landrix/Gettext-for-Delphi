@@ -262,8 +262,8 @@ MergeToValues(Format('%s_%s',[ChangeFileExt(ExtractFilename(FFilename),''),Name]
 
 begin
   Reader := TReader.Create(Input, 4096);
-  SaveSeparator := DecimalSeparator;
-  DecimalSeparator := '.';
+  SaveSeparator := FormatSettings.DecimalSeparator;
+  FormatSettings.DecimalSeparator := '.';
   try
     try
       Reader.ReadSignature;
@@ -271,7 +271,7 @@ begin
     finally
     end;
   finally
-    DecimalSeparator := SaveSeparator;
+    FormatSettings.DecimalSeparator := SaveSeparator;
     Reader.Free;
   end;
 end;

@@ -18,6 +18,7 @@ function GetSettingApplicationMsgFmtExe: string;
 function GetSettingApplicationExternalEditorFilename: string;
 function GetSettingApplicationExternalEditorUseLineNumbers: boolean;
 function GetSettingSaveWrapAfter: integer;
+function GetSettingUseGetTextDefaultFormatting: Boolean;
 function GetSettingShowStatus: boolean;
 function GetSettingApplicationGoogleAPIkey:string;
 function GetSettingApplicationBingAppId: string;
@@ -195,6 +196,11 @@ end;
 function GetSettingSaveWrapAfter: integer;
 begin
   Result := StrToIntDef(GetSettingString('Save', 'WrapAfter'), 70);
+end;
+
+function GetSettingUseGetTextDefaultFormatting: Boolean;
+begin
+  Result := GetSettingBool('Save', 'UseGetTextDefaultFormatting', True);
 end;
 
 function GetSettingShowStatus: boolean;
