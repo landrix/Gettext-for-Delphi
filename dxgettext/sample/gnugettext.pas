@@ -463,7 +463,7 @@ type
       /// "An empty untranslated-string is reserved to contain the header entry with the meta
       ///  information (see Header Entry). This header entry should be the first entry of the file.
       ///  The empty untranslated-string is reserved for this purpose and must not be
-      ///  used anywhere else. </summary> 
+      ///  used anywhere else. </summary>
       EmptyToEmpty: Boolean;
       DesignTimeCodePage:Integer;  /// See MultiByteToWideChar() in Win32 API for documentation
       SearchAllDomains: Boolean;  /// Should gettext and ngettext look in all other known domains after the current one
@@ -4077,7 +4077,7 @@ type
 var
   method:TMethod;
 begin
-  // NOTE: this method is declared inside inside THookedObjects to have access
+  // NOTE: this method is declared inside THookedObjects to have access
   // to Self, but because it is used as a hook for other classes' BeforeDestruction,
   // Self will not be an instance of THookedObjects but one of the hooked class.
 

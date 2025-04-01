@@ -14,6 +14,7 @@
 /dxgettext/_dxGetText.groupproj.local
 
 *.res
+*.winmerge
 
 # Files in install folder
 /dxgettext-packages/dxgettext/Output/dxgettext.exe
