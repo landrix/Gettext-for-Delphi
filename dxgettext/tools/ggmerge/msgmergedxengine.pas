@@ -3,7 +3,8 @@ unit msgmergedxengine;
 interface
 
 uses
-  sysutils, classes, poparser, consoleoutput, gnugettext, xgettexttools;
+  sysutils, classes, poparser, consoleoutput, gnugettext, xgettexttools,
+  ConsoleAppHandler;
 
 type
   TMsgMergeDxEngine = class
@@ -12,12 +13,17 @@ type
     FPreserveStateFuzzy: Boolean;
     FOnlyNewAndChangedTranslations: Boolean;
     FUseGetTextDefaultFormatting: Boolean;
+    FCreateRemovedAndNewFile: Boolean;
     procedure MergeTranslationFileWithTemplate( var xTemplateFile: TextFile;
                                                 xOutputFileStream: TFileStream);
     procedure ExtractOnlyNewAndChangedTranslations( var xTemplateFile: TextFile;
                                                     xOutputFileStream: TFileStream);
     function MergeCommentText( const xCommentTemplate,
                                      xCommentTranslation: String): String;
+    function GetRemovedAndNewFileName( const xFileNameTimeStamp: TDateTime;
+                                       const xTranslationFile,
+                                             xSuffix: String): TFileName;
+    procedure WriteRemovedAndNewFile( xFile: TFileName);
   public
     TranslationFileName,
     TemplateFileName: string;
@@ -27,6 +33,7 @@ type
     property PreserveStateFuzzy: Boolean read FPreserveStateFuzzy write FPreserveStateFuzzy;
     property OnlyNewAndChangedTranslations: Boolean read FOnlyNewAndChangedTranslations write FOnlyNewAndChangedTranslations;
     property UseGetTextDefaultFormatting: Boolean read FUseGetTextDefaultFormatting write FUseGetTextDefaultFormatting;
+    property CreateRemovedAndNewFile: Boolean  read FCreateRemovedAndNewFile write FCreateRemovedAndNewFile;
   end;
 
 implementation
@@ -200,9 +207,113 @@ begin
   finally
     CloseFile (lTemplateFile);
   end;
+
+  if FCreateRemovedAndNewFile then
+  begin
+    WriteRemovedAndNewFile( OutputFileName);
+  end;
 end;
 
+function TMsgMergeDxEngine.GetRemovedAndNewFileName( const xFileNameTimeStamp: TDateTime;
+                                                     const xTranslationFile, xSuffix: String): TFileName;
+var
+  i: Integer;
+  lTempFileName, lFileNumber: TFileName;
+const
+  cMaxCnt = 9999;
+  cFileExtension = '.po';
+begin
+  Result := '';
 
+  lTempFileName := ExtractFilePath(xTranslationFile)+
+                   FormatDateTime('yyyy-mm-dd hhnn ', xFileNameTimeStamp) +
+                   Trim(ChangeFileExt(ExtractFileName(xTranslationFile), '')) + ' ' +
+                   Trim(xSuffix);
+
+  //*** if no file with this name exists return the name, else search for a
+  //    file with a file number offset
+  if not FileExists(lTempFileName +'.po') then
+  begin
+    Result := lTempFileName + cFileExtension;
+  end
+  else
+  begin
+    // Nach alten Backup-Dateien suchen:
+    for i := 1 to cMaxCNT do
+    begin
+      lFileNumber := Format('%4.4d', [i]);
+
+      Result := lTempFileName + ' ' + lFileNumber + cFileExtension;
+      if not FileExists(Result) then
+      begin
+        Break;
+      end;
+    end;
+  end;
+end;
+
+procedure TMsgMergeDxEngine.WriteRemovedAndNewFile( xFile: TFileName);
+var
+  lCurrentDirectory: TFileName;
+  lFileNameTimeStamp: TDateTime;
+  lRemovedAndNewFileName: String;
+  lAppOutput: TStringList;
+  lRes: Integer;
+const
+  cmsgRemoveExe = 'msgremove.exe';
+begin
+  lFileNameTimeStamp := Now;
+
+  GetDir( 0, lCurrentDirectory);
+  try
+    ChDir( ExtractFilePath( ParamStr( 0)));
+
+    lAppOutput := nil;
+    try
+      lAppOutput := TStringList.Create;
+
+
+      //*** Create a file with the removed Strings
+      lRemovedAndNewFileName := GetRemovedAndNewFileName( lFileNameTimeStamp,
+                                                          translationfilename,
+                                                          'removed');
+      lRes := ExecConsoleApp( cmsgRemoveExe,
+                              ' "' + translationfilename + '" ' +
+                              '-i "' + OutputFileName + '" ' +
+                              '-o "' + lRemovedAndNewFileName + '"',
+                              lAppOutput,
+                              nil);
+      if ( lRes <> 0) then
+      begin
+        raise Exception.Create( Format( _('%s failed with exit code %s.'),
+                                        [ cmsgRemoveExe,
+                                          IntToStr( lRes)]));
+      end;
+
+
+      //*** Create a file with the new Strings
+      lRemovedAndNewFileName := GetRemovedAndNewFileName( lFileNameTimeStamp,
+                                                          translationfilename,
+                                                          'new');
+      lRes := ExecConsoleApp( cmsgRemoveExe,
+                              ' "' + OutputFileName + '" ' +
+                              '-i "' + translationfilename + '" ' +
+                              '-o "' + lRemovedAndNewFileName + '"',
+                              lAppOutput,
+                              nil);
+      if ( lRes <> 0) then
+      begin
+        raise Exception.Create( Format( _('%s failed with exit code %s.'),
+                                        [ cmsgRemoveExe,
+                                          IntToStr( lRes)]));
+      end;
+    finally
+      FreeAndNil( lAppOutput);
+    end;
+  finally
+    ChDir(lCurrentDirectory);
+  end;
+end;
 
 end.
 

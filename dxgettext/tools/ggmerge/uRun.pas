@@ -29,9 +29,6 @@ type
     function ExecuteConsoleApplication(const xWorkingDirectory,
                                              xApplicationName,
                                              xParameters: String): Boolean;
-    function GetRemovedAndNewFileName(const xFileNameTimeStamp: TDateTime;
-                                      const xTranslationFile,
-                                            xSuffix: String): TFileName;
     { Private declarations }
   public
     { Public declarations }
@@ -100,49 +97,9 @@ begin
   end;
 end;
 
-function TFormRun.GetRemovedAndNewFileName(const xFileNameTimeStamp: TDateTime;
-                                           const xTranslationFile, xSuffix: String): TFileName;
-var
-  i: Integer;
-  lTempFileName, lFileNumber: TFileName;
-const
-  cMaxCnt = 9999;
-  cFileExtension = '.po';
-begin
-  Result := '';
-
-  lTempFileName := ExtractFilePath(xTranslationFile)+
-                   FormatDateTime('yyyy-mm-dd hhnn ', xFileNameTimeStamp) +
-                   Trim(ChangeFileExt(ExtractFileName(xTranslationFile), '')) + ' ' +
-                   Trim(xSuffix);
-
-  //*** if no file with this name exists return the name, else search for a
-  //    file with a file number offset
-  if not FileExists(lTempFileName +'.po') then
-  begin
-    Result := lTempFileName + cFileExtension;
-  end
-  else
-  begin
-    // Nach alten Backup-Dateien suchen:
-    for i := 1 to cMaxCNT do
-    begin
-      lFileNumber := Format('%4.4d', [i]);
-
-      Result := lTempFileName + ' ' + lFileNumber + cFileExtension;
-      if not FileExists(Result) then
-      begin
-        Break;
-      end;
-    end;
-  end;
-end;
-
 procedure TFormRun.ButtonGoClick(Sender: TObject);
 var
-  lTranslation, lTranslationBackup, lTemplate, lTempFileName,
-  lRemovedAndNewFileName: String;
-  lFileNameTimeStamp: TDateTime;
+  lTranslation, lTranslationBackup, lTemplate, lTempFileName: String;
   ini: TIniFile;
   lMsgMergeDxEngine: TMsgMergeDxEngine;
 begin
@@ -168,6 +125,7 @@ begin
         lMsgMergeDxEngine.outputfilename              := lTempFileName;
         lMsgMergeDxEngine.PreserveStateFuzzy          := cb_PreserveStateFuzzy.Checked;
         lMsgMergeDxEngine.UseGetTextDefaultFormatting := cb_UseGetTextDefaultFormatting.Checked;
+        lMsgMergeDxEngine.CreateRemovedAndNewFile     := cb_CreateRemovedAndNewFile.Checked;
 
         lMsgMergeDxEngine.Execute;
       finally
@@ -194,35 +152,6 @@ begin
     if Fileexists (lTranslationBackup) then
     begin
       Deletefile (lTranslationBackup);
-    end;
-
-    if cb_CreateRemovedAndNewFile.Checked then
-    begin
-      lFileNameTimeStamp := Now;
-
-      //*** Create a file with the removed Strings
-      lRemovedAndNewFileName := GetRemovedAndNewFileName(lFileNameTimeStamp,
-                                                         lTranslation, 'removed');
-      if not ExecuteConsoleApplication( ExtractFilePath(ParamStr(0)),
-                                        'msgremove.exe',
-                                        ' "' + lTranslation + '" ' +
-                                        '-i "' + lTempFileName + '" ' +
-                                        '-o "' + lRemovedAndNewFileName + '"') then
-      begin
-        Exit;
-      end;
-
-      //*** Create a file with the new Strings
-      lRemovedAndNewFileName := GetRemovedAndNewFileName(lFileNameTimeStamp,
-                                                         lTranslation, 'new');
-      if not ExecuteConsoleApplication( ExtractFilePath(ParamStr(0)),
-                                        'msgremove.exe',
-                                        ' "' + lTempFileName + '" ' +
-                                        '-i "' + lTranslation + '" ' +
-                                        '-o "' + lRemovedAndNewFileName + '"') then
-      begin
-        Exit;
-      end;
     end;
 
     if not RenameFile(lTranslation, lTranslationBackup) then

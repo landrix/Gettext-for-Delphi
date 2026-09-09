@@ -207,6 +207,9 @@ interface
   {$WARN UNSAFE_CAST OFF}
 {$endif dx_has_Unsafe_Warnings}
 
+// this unit does not compile if extended runtime type information is enabled
+{$M-}
+
 uses
 {$ifdef MSWINDOWS}
   Windows,
@@ -250,6 +253,7 @@ function _(const szMsgId: MsgIdString): TranslatedUnicodeString;
 function gettext(const szMsgId: MsgIdString): TranslatedUnicodeString;
 function gettext_NoExtract(const szMsgId: MsgIdString): TranslatedUnicodeString;
 function gettext_NoOp(const szMsgId: MsgIdString): TranslatedUnicodeString;
+function gettext_AllDomains(const szMsgId: MsgIdString): TranslatedUnicodeString;
 function dgettext(const szDomain: DomainString; const szMsgId: MsgIdString): TranslatedUnicodeString;
 function dgettext_NoExtract(const szDomain: DomainString; const szMsgId: MsgIdString): TranslatedUnicodeString;
 function dgettext_NoOp(const szDomain: DomainString; const szMsgId: MsgIdString): TranslatedUnicodeString;
@@ -345,6 +349,10 @@ const
   VCSVersion='$LastChangedRevision: 220 $';
 
 type
+  TSearchAllDomainsOrder = ( sadoError,
+                             sadoCurrentFirst,
+                             sadoOtherCurentDefault);
+
   EGnuGettext=class(Exception);
   EGGProgrammingError=class(EGnuGettext);
   EGGComponentError=class(EGnuGettext);
@@ -410,11 +418,15 @@ type
     private
       Enabled:boolean;
       vDirectory: FilenameString;
+      FUseMemoryMappedFiles: Boolean;
       procedure setDirectory(const dir: FilenameString);
+      function getUseMemoryMappedFiles: Boolean;
+      procedure setUseMemoryMappedFiles( const Value: Boolean);
     public
       DebugLogger:TDebugLogger;
       Domain: DomainString;
       property Directory: FilenameString read vDirectory write setDirectory;
+      property UseMemoryMappedFiles: Boolean read getUseMemoryMappedFiles write setUseMemoryMappedFiles;
       constructor Create;
       destructor Destroy; override;
       // Set parameters
@@ -422,8 +434,8 @@ type
       procedure SetFilename (const filename:FilenameString); // Bind this domain to a specific file
       // Get information
       procedure GetListOfLanguages(list:TStrings);
-      function GetTranslationProperty(Propertyname: ComponentNameString): TranslatedUnicodeString;
-      function gettext(const msgid: RawUtf8String): RawUtf8String; // uses mo file and utf-8
+      function GetTranslationProperty( const xPropertyname: ComponentNameString): TranslatedUnicodeString;
+      function gettext( const msgid: RawUtf8String): RawUtf8String; // uses mo file and utf-8
     private
       mofile:TMoFile;
       SpecificFilename:FilenameString;
@@ -455,6 +467,12 @@ type
     class
     private
       fOnDebugLine:TOnDebugLine;
+      FUseMemoryMappedFiles,
+      FRetranslateOnSameLanguage: Boolean;
+      function getUseMemoryMappedFiles: Boolean;
+      function getRetranslateOnSameLanguage: Boolean;
+      procedure setUseMemoryMappedFiles( const Value: Boolean);
+      procedure setRetranslateOnSameLanguage(const Value: Boolean);
     public
       Enabled:Boolean;      /// Set this to false to disable translations
       ///<summary>
@@ -468,6 +486,7 @@ type
       EmptyToEmpty: Boolean;
       DesignTimeCodePage:Integer;  /// See MultiByteToWideChar() in Win32 API for documentation
       SearchAllDomains: Boolean;  /// Should gettext and ngettext look in all other known domains after the current one
+      SearchAllDomainsOrder: TSearchAllDomainsOrder;
 
       ///<summary>
       /// If LocaleName is not '', the instance will be initialized for the given language / locale </summary>
@@ -477,12 +496,20 @@ type
       procedure GetListOfLanguages (const domain:DomainString; list:TStrings); // Puts list of language codes, for which there are translations in the specified domain, into list
       {$ifndef UNICODE}
       function gettext(const szMsgId: ansistring): TranslatedUnicodeString; overload; virtual;
-      function ngettext(const singular,plural:ansistring;Number:longint):TranslatedUnicodeString; overload; virtual;
+      function ngettext( const singular,
+                               plural: ansistring;
+                         const Number: longint):TranslatedUnicodeString; overload; virtual;
       {$endif}
-      function gettext(const szMsgId: MsgIdString): TranslatedUnicodeString; overload; virtual;
+      function gettext( const szMsgId: MsgIdString): TranslatedUnicodeString; overload; virtual;
       function gettext_NoExtract(const szMsgId: MsgIdString): TranslatedUnicodeString;
       function gettext_NoOp(const szMsgId: MsgIdString): TranslatedUnicodeString;
-      function ngettext(const singular,plural:MsgIdString;Number:longint):TranslatedUnicodeString; overload; virtual;
+      function gettext_AllDomains(const szMsgId: MsgIdString): TranslatedUnicodeString;
+      function ngettext( const singular,
+                               plural: MsgIdString;
+                         const Number: longint):TranslatedUnicodeString; overload; virtual;
+      function ngettext_AllDomains( const xSingular,
+                                          xPlural: MsgIdString;
+                                    const xNumber: Integer): TranslatedUnicodeString;
       function ngettext_NoExtract(const singular,plural:MsgIdString;Number:longint):TranslatedUnicodeString;
       function GetCurrentLanguage:LanguageString; deprecated; // use GetCurentLocaleName instead
       function GetCurrentLanguageCode:LanguageString;
@@ -539,6 +566,8 @@ type
 
       procedure RegisterWhenNewLanguageListener(Listener: IGnuGettextInstanceWhenNewLanguageListener);
       procedure UnregisterWhenNewLanguageListener(Listener: IGnuGettextInstanceWhenNewLanguageListener);
+      property UseMemoryMappedFiles: Boolean read getUseMemoryMappedFiles write setUseMemoryMappedFiles;
+      property RetranslateOnSameLanguage: Boolean read getRetranslateOnSameLanguage write setRetranslateOnSameLanguage;
     protected
       procedure TranslateStrings (sl:TStrings;const TextDomain:DomainString);
       {$IFDEF dx_has_WideStrings}
@@ -578,8 +607,9 @@ type
       {$endif}
       procedure TranslateProperty(AnObject: TObject; PropInfo: PPropInfo;
         TodoList: TStrings; const TextDomain:DomainString);  // Translates a single property of an object
-      function Getdomain(const domain:DomainString; const DefaultDomainDirectory:FilenameString;
-        const LocaleName: LanguageString): TDomain;
+      function Getdomain( const domain: DomainString;
+                          const DefaultDomainDirectory: FilenameString;
+                          const LocaleName: LanguageString): TDomain;
 
       function GetResString(ResStringRec: PResStringRec): UnicodeString;
       function ResourceStringGettext(MsgId: MsgIdString): TranslatedUnicodeString;
@@ -671,6 +701,7 @@ type
     constructor Create(const _ResourceName: string);
   end;
 {$ENDIF dx_SupportsResources}
+
   TFileLocator=
     class // This class finds files even when embedded inside executable
       constructor Create;
@@ -678,7 +709,9 @@ type
       function FindSignaturePos(const signature: RawByteString; str: TFileStream): Int64;
       procedure Analyze;  // List files embedded inside executable
       function FileExists (filename:FilenameString):boolean;
-      function GetMoFile (filename:FilenameString;DebugLogger:TDebugLogger):TMoFile;
+      function GetMoFile( filename: FilenameString;
+                          DebugLogger: TDebugLogger;
+                          const xUseMemoryMappedFiles: Boolean): TMoFile;
       procedure ReleaseMoFile (mofile:TMoFile);
     private
       basedirectory:FilenameString;
@@ -690,6 +723,7 @@ type
       MoFiles:TStringList; // Objects are filenames+offset, objects are TMoFile
       function ReadInt64 (str:TStream):int64;
     end;
+
   TGnuGettextComponentMarker=
     class (TComponent)
     public
@@ -920,6 +954,11 @@ begin
   //      4.7 - Special Cases of Translatable Strings
   //      http://www.gnu.org/software/hello/manual/gettext/Special-cases.html#Special-cases
   Result := DefaultInstance.gettext_NoOp(szMsgId);
+end;
+
+function gettext_AllDomains(const szMsgId: MsgIdString): TranslatedUnicodeString;
+begin
+  Result := DefaultInstance.gettext_AllDomains(szMsgId);
 end;
 
 {*------------------------------------------------------------------------------
@@ -1422,7 +1461,9 @@ begin
   {$ifdef DXGETTEXTDEBUG}
   DebugLogger ('Domain '+domain+' now accesses the file.');
   {$endif}
-  mofile:=FileLocator.GetMoFile(filename, DebugLogger);
+  mofile := FileLocator.GetMoFile( filename,
+                                   DebugLogger,
+                                   FUseMemoryMappedFiles);
 
   {$ifdef DXGETTEXTDEBUG}
   if mofile.isSwappedArchitecture then
@@ -1430,7 +1471,9 @@ begin
   {$endif}
 
   // Check, that the contents of the file is utf-8
-  if pos('CHARSET=UTF-8',uppercase(GetTranslationProperty('Content-Type')))=0 then begin
+  if pos( 'CHARSET=UTF-8',
+          uppercase( GetTranslationProperty('Content-Type')))=0 then
+  begin
     CloseMoFile;
     {$ifdef DXGETTEXTDEBUG}
     DebugLogger ('The translation for the language code '+curlang+' (in '+filename+') does not have charset=utf-8 in its Content-Type. Translations are turned off.');
@@ -1451,35 +1494,52 @@ begin
 end;
 {$endif}
 
-function TDomain.GetTranslationProperty(
-  Propertyname: ComponentNameString): TranslatedUnicodeString;
+function TDomain.GetTranslationProperty( const xPropertyName: ComponentNameString): TranslatedUnicodeString;
 var
-  sl:TStringList;
-  i:integer;
-  s:string;
+  sl: TStringList;
+  i: integer;
+  lPropertyName,
+  s: string;
 begin
-  Propertyname:=uppercase(Propertyname)+': ';
-  sl:=TStringList.Create;
+  lPropertyName := UpperCase( xPropertyName) + ': ';
+
+  sl := TStringList.Create;
   try
-    sl.Text:=utf8decode(gettext(''));
-    for i:=0 to sl.Count-1 do begin
-      s:=sl.Strings[i];
-      if uppercase(MidStr(s,1,length(Propertyname)))=Propertyname then begin
-        Result:=trim(MidStr(s,length(PropertyName)+1,maxint));
+    sl.Text:=utf8decode( gettext( ''));
+
+    for i := 0 to sl.Count - 1 do
+    begin
+      s := sl.Strings[ i];
+
+      if uppercase( MidStr( s,
+                            1,
+                            length( lPropertyName))) = lPropertyName then
+      begin
+        Result := trim( MidStr( s,
+                                length( lPropertyName) + 1,
+                                maxint));
 
         {$ifdef DXGETTEXTDEBUG}
-        DebugLogger ('GetTranslationProperty('+PropertyName+') returns '''+Result+'''.');
+        DebugLogger( 'GetTranslationProperty(' + lPropertyName + ') returns ''' + Result + '''.');
         {$endif}
+
         exit;
       end;
     end;
   finally
     FreeAndNil (sl);
   end;
+
   Result:='';
+
   {$ifdef DXGETTEXTDEBUG}
-  DebugLogger ('GetTranslationProperty('+PropertyName+') did not find any value. An empty string is returned.');
+  DebugLogger( 'GetTranslationProperty(' + lPropertyName + ') did not find any value. An empty string is returned.');
   {$endif}
+end;
+
+function TDomain.getUseMemoryMappedFiles: Boolean;
+begin
+  Result := FUseMemoryMappedFiles;
 end;
 
 procedure TDomain.setDirectory(const dir: FilenameString);
@@ -1555,6 +1615,11 @@ procedure TDomain.SetLanguageCode(const langcode: LanguageString);
 begin
   CloseMoFile;
   curlang:=langcode;
+end;
+
+procedure TDomain.setUseMemoryMappedFiles( const Value: Boolean);
+begin
+  FUseMemoryMappedFiles := Value;
 end;
 
 function GetPluralForm2EN(Number: Integer): Integer;
@@ -1715,7 +1780,7 @@ begin
   SpecificFilename:=filename;
 end;
 
-function TDomain.gettext(const msgid: RawUtf8String): RawUtf8String;
+function TDomain.gettext( const msgid: RawUtf8String): RawUtf8String;
 var
   found:boolean;
 begin
@@ -1723,8 +1788,13 @@ begin
     Result:=msgid;
     exit;
   end;
-  if (mofile=nil) and (not OpenHasFailedBefore) then
+
+  if ( mofile=nil) and
+     ( not OpenHasFailedBefore) then
+  begin
     OpenMoFile;
+  end;
+
   if mofile=nil then begin
     {$ifdef DXGETTEXTDEBUG}
     DebugLogger('.mo file is not open. Not translating "'+string(msgid)+'"');
@@ -1780,7 +1850,10 @@ begin
   {$endif}
   curGetPluralForm:=GetPluralForm2EN;
   Enabled:=True;
+  FUseMemoryMappedFiles      := gnugettext.UseMemoryMappedFiles;
+  FRetranslateOnSameLanguage := gnugettext.ReReadMoFileOnSameLanguage;
   SearchAllDomains:=False;
+  SearchAllDomainsOrder := sadoCurrentFirst;
   curmsgdomain:=DefaultTextDomain;
   savefileCS := TMultiReadExclusiveWriteSynchronizer.Create;
   domainlist := TStringList.Create;
@@ -1837,29 +1910,46 @@ begin
 end;
 
 {$ifndef UNICODE}
-function TGnuGettextInstance.dgettext(const szDomain: DomainString; const szMsgId: ansistring): TranslatedUnicodeString;
+function TGnuGettextInstance.dgettext( const szDomain: DomainString;
+                                       const szMsgId: ansistring): TranslatedUnicodeString;
 begin
-  Result:=dgettext(szDomain, ansi2wideDTCP(szMsgId));
+  Result:=dgettext( szDomain,
+                    ansi2wideDTCP( szMsgId));
 end;
 {$endif}
 
-function TGnuGettextInstance.dgettext(const szDomain: DomainString;
-  const szMsgId: MsgIdString): TranslatedUnicodeString;
+function TGnuGettextInstance.dgettext( const szDomain: DomainString;
+                                       const szMsgId: MsgIdString): TranslatedUnicodeString;
 begin
-  if not Enabled then begin
+  if not Enabled then
+  begin
     {$ifdef DXGETTEXTDEBUG}
-    DebugWriteln ('Translation has been disabled. Text is not being translated: '+szMsgid);
+    DebugWriteln( 'Translation has been disabled. Text is not being translated: ' +
+                  szMsgid);
     {$endif}
+
     Result:=szMsgId;
-  end else begin
-    if EmptyToEmpty and (szMsgId = '') then begin
+  end
+  else
+  begin
+    if EmptyToEmpty and
+       ( szMsgId = '') then
+    begin
       Result := '';
-    end else begin
-      Result:=UTF8Decode(EnsureLineBreakInTranslatedString(getdomain(szDomain,DefaultDomainDirectory,CurLang).gettext(StripCRRawMsgId(utf8encode(szMsgId)))));
+    end
+    else
+    begin
+      Result := UTF8Decode( EnsureLineBreakInTranslatedString( getdomain( szDomain,
+                                                                          DefaultDomainDirectory,
+                                                                          CurLang).gettext( StripCRRawMsgId( utf8encode( szMsgId)))));
 
       {$ifdef DXGETTEXTDEBUG}
-      if (szMsgId<>'') and (Result='') then
-        DebugWriteln (Format('Error: Translation of %s was an empty string. This may never occur.',[szMsgId]));
+      if ( szMsgId<>'') and
+         ( Result='') then
+      begin
+        DebugWriteln( Format( 'Error: Translation of %s was an empty string. This may never occur.',
+                              [ szMsgId]));
+      end;
       {$endif}
     end;
   end;
@@ -1899,38 +1989,109 @@ begin
   Result := curmsgdomain;
 end;
 
-{$ifndef UNICODE}
-function TGnuGettextInstance.gettext(
-  const szMsgId: ansistring): TranslatedUnicodeString;
-var
-  domain: DomainString;
-  domainIndex: Integer;
+function TGnuGettextInstance.getRetranslateOnSameLanguage: Boolean;
 begin
-  Result := dgettext(curmsgdomain, szMsgId);
-  if SearchAllDomains and (szMsgId <> '') then begin
-    domainIndex := 0;
-    while (Result = szMsgId) and (domainIndex < domainlist.count) do begin
-      domain := domainlist[domainIndex];
-      Result := dgettext(domain, szMsgId);
-      Inc(domainIndex);
-    end;
-  end;
+  Result := FRetranslateOnSameLanguage;
+end;
+
+{$ifndef UNICODE}
+function TGnuGettextInstance.gettext( const szMsgId: ansistring): TranslatedUnicodeString;
+begin
+  Result := gettext( ansi2wideDTCP( szMsgId));
 end;
 {$endif}
 
-function TGnuGettextInstance.gettext(
-  const szMsgId: MsgIdString): TranslatedUnicodeString;
-var
-  domain: DomainString;
-  domainIndex: Integer;
+function TGnuGettextInstance.gettext( const szMsgId: MsgIdString): TranslatedUnicodeString;
 begin
-  Result := dgettext(curmsgdomain, szMsgId);
-  if SearchAllDomains and (szMsgId <> '') then begin
-    domainIndex := 0;
-    while (Result = szMsgId) and (domainIndex < domainlist.count) do begin
-      domain := domainlist[domainIndex];
-      Result := dgettext(domain, szMsgId);
-      Inc(domainIndex);
+  if SearchAllDomains then
+  begin
+    Result := gettext_AllDomains( szMsgId);
+  end
+  else
+  begin
+    Result := dgettext( curmsgdomain,
+                        szMsgId);
+  end;
+end;
+
+function TGnuGettextInstance.gettext_AllDomains( const szMsgId: MsgIdString): TranslatedUnicodeString;
+var
+  i,
+  lDomainDefaultIndex,
+  lDomainCurrentIndex: integer;
+begin
+  Result := szMsgId;
+
+  lDomainDefaultIndex := -1;
+  lDomainCurrentIndex := -1;
+
+  if ( ( SearchAllDomainsOrder = sadoCurrentFirst) or
+       ( szMsgId = '')) then
+  begin
+    Result := dgettext( curmsgdomain,
+                        szMsgId);
+  end
+  else if ( SearchAllDomainsOrder = sadoOtherCurentDefault) then
+  begin
+    //*** find Default and current selected domain
+    for i := 0 to domainlist.Count - 1 do
+    begin
+      if ( domainlist.Strings[ i] = curmsgdomain) then
+      begin
+        lDomainCurrentIndex := i;
+      end
+      else if ( domainlist.Strings[ i] = DefaultTextDomain) then
+      begin
+        lDomainDefaultIndex := i;
+      end;
+
+      if ( ( lDomainCurrentIndex <> -1) and
+           ( lDomainDefaultIndex <> -1)) then
+      begin
+        break;
+      end
+    end;
+  end;
+
+  if ( szMsgId <> '') then
+  begin
+    //*** try to translate with the other domains
+    if ( Result = szMsgId) then
+    begin
+      for i := 0 to domainlist.Count - 1 do
+      begin
+        if not ( ( i = lDomainCurrentIndex) or
+                 ( i = lDomainDefaultIndex)) then
+        begin
+          Result := dgettext( domainlist.Strings[ i],
+                              szMsgId);
+
+          if ( Result <> szMsgId) then
+          begin
+            break;
+          end;
+        end;
+      end;
+    end;
+
+    if ( SearchAllDomainsOrder = sadoOtherCurentDefault) then
+    begin
+      //*** Translate with current domain
+      if ( ( Result = szMsgId) and
+           ( lDomainCurrentIndex > -1)) then
+      begin
+        Result := dgettext( domainlist.Strings[ lDomainCurrentIndex],
+                            szMsgId);
+      end;
+
+      //*** Translate with default Domain
+      if ( ( Result = szMsgId) and
+           ( lDomainDefaultIndex > -1) and
+           ( lDomainDefaultIndex <> lDomainCurrentIndex)) then
+      begin
+        Result := dgettext( domainlist.Strings[ lDomainDefaultIndex],
+                            szMsgId);
+      end;
     end;
   end;
 end;
@@ -2526,9 +2687,12 @@ begin
   end;
 
   curlang := LocaleName;
-  for i:=0 to domainlist.Count-1 do begin
-    dom:=domainlist.Objects[i] as TDomain;
-    dom.SetLanguageCode (curlang);
+  for i := 0 to domainlist.Count - 1 do
+  begin
+    dom := domainlist.Objects[ i] as TDomain;
+
+    dom.UseMemoryMappedFiles := FUseMemoryMappedFiles;
+    dom.SetLanguageCode( curlang);
   end;
 
   l2:=lowercase(LeftStr(curlang,2));
@@ -2757,6 +2921,11 @@ begin
   Result:=GetTranslationProperty('LAST-TRANSLATOR');
 end;
 
+function TGnuGettextInstance.getUseMemoryMappedFiles: Boolean;
+begin
+  Result := FUseMemoryMappedFiles;
+end;
+
 function TGnuGettextInstance.GetTranslationProperty(
   const Propertyname: ComponentNameString): TranslatedUnicodeString;
 begin
@@ -2818,37 +2987,136 @@ begin
 end;
 
 {$ifndef UNICODE}
-function TGnuGettextInstance.ngettext(const singular, plural: ansistring;
-  Number: Integer): TranslatedUnicodeString;
-var
-  domain: DomainString;
-  domainIndex: Integer;
+function TGnuGettextInstance.ngettext( const singular,
+                                             plural: ansistring;
+                                       const Number: Integer): TranslatedUnicodeString;
 begin
-  Result := dngettext(curmsgdomain, singular, plural, Number);
-  if SearchAllDomains then begin
-    domainIndex := 0;
-    while (Result <> singular) and (Result <> plural) and (domainIndex < domainlist.count) do begin
-      domain := domainlist[domainIndex];
-      Result := dngettext(domain, singular, plural, Number);
-      Inc(domainIndex);
-    end;
-  end;
+  Result := ngettext( ansi2wideDTCP( singular),
+                      ansi2wideDTCP( plural),
+                      Number);
 end;
 {$endif}
 
-function TGnuGettextInstance.ngettext(const singular, plural: MsgIdString;
-  Number: Integer): TranslatedUnicodeString;
-var
-  domain: DomainString;
-  domainIndex: Integer;
+function TGnuGettextInstance.ngettext( const singular,
+                                             plural: MsgIdString;
+                                       const Number: Integer): TranslatedUnicodeString;
 begin
-  Result := dngettext(curmsgdomain, singular, plural, Number);
-  if SearchAllDomains then begin
-    domainIndex := 0;
-    while (Result <> singular) and (Result <> plural) and (domainIndex < domainlist.count) do begin
-      domain := domainlist[domainIndex];
-      Result := dngettext(domain, singular, plural, Number);
-      Inc(domainIndex);
+  if SearchAllDomains then
+  begin
+    Result := ngettext_AllDomains( singular,
+                                   plural,
+                                   Number);
+  end
+  else
+  begin
+    Result := dngettext( curmsgdomain,
+                         singular,
+                         plural,
+                         Number);
+  end;
+end;
+
+function TGnuGettextInstance.ngettext_AllDomains( const xSingular,
+                                                        xPlural: MsgIdString;
+                                                  const xNumber: Integer): TranslatedUnicodeString;
+var
+  i,
+  lDomainDefaultIndex,
+  lDomainCurrentIndex: integer;
+
+  function isTranslated( const xResult,
+                               xSingular,
+                               xPlural: MsgIdString): Boolean;
+  begin
+    Result := not (xResult = '') and
+              ( ( xResult <> xSingular) and
+                ( xResult <> xPlural));
+  end;
+begin
+  Result := '';
+
+  lDomainDefaultIndex := -1;
+  lDomainCurrentIndex := -1;
+
+  if ( SearchAllDomainsOrder = sadoCurrentFirst) then
+  begin
+    Result := dngettext( curmsgdomain,
+                         xSingular,
+                         xPlural,
+                         xNumber);
+  end
+  else if ( SearchAllDomainsOrder = sadoOtherCurentDefault) then
+  begin
+    //*** find Default and current selected domain
+    for i := 0 to domainlist.Count - 1 do
+    begin
+      if ( domainlist.Strings[ i] = curmsgdomain) then
+      begin
+        lDomainCurrentIndex := i;
+      end
+      else if ( domainlist.Strings[ i] = DefaultTextDomain) then
+      begin
+        lDomainDefaultIndex := i;
+      end;
+
+      if ( ( lDomainCurrentIndex <> -1) and
+           ( lDomainDefaultIndex <> -1)) then
+      begin
+        break;
+      end
+    end;
+  end;
+
+  //*** try to translate with the other domains
+  if not isTranslated( Result,
+                       xSingular,
+                       xPlural) then
+  begin
+    for i := 0 to domainlist.Count - 1 do
+    begin
+      if not ( ( i = lDomainCurrentIndex) or
+               ( i = lDomainDefaultIndex)) then
+      begin
+        Result := dngettext( domainlist.Strings[ i],
+                             xSingular,
+                             xPlural,
+                             xNumber);
+
+        if isTranslated( Result,
+                         xSingular,
+                         xPlural) then
+        begin
+          break;
+        end;
+      end;
+    end;
+  end;
+
+  if ( SearchAllDomainsOrder = sadoOtherCurentDefault) then
+  begin
+    //*** Translate with current domain
+    if ( not isTranslated( Result,
+                           xSingular,
+                           xPlural) and
+         ( lDomainCurrentIndex > -1)) then
+    begin
+      Result := dngettext( domainlist.Strings[ lDomainCurrentIndex],
+                           xSingular,
+                           xPlural,
+                           xNumber);
+    end;
+
+    //*** Translate with default Domain
+    if ( not isTranslated( Result,
+                           xSingular,
+                           xPlural) and
+         ( lDomainDefaultIndex > -1) and
+         ( lDomainDefaultIndex <> lDomainCurrentIndex)) then
+    begin
+      Result := dngettext( domainlist.Strings[ lDomainDefaultIndex],
+                           xSingular,
+                           xPlural,
+                           xNumber);
     end;
   end;
 end;
@@ -2975,8 +3243,9 @@ begin
 end;
 {$endif}
 
-function TGnuGettextInstance.Getdomain(const domain:DomainString; const DefaultDomainDirectory:FilenameString;
-  const LocaleName: LanguageString): TDomain;
+function TGnuGettextInstance.Getdomain( const domain: DomainString;
+                                        const DefaultDomainDirectory: FilenameString;
+                                        const LocaleName: LanguageString): TDomain;
 // Retrieves the TDomain object for the specified domain.
 // Creates one, if none there, yet.
 var
@@ -2988,6 +3257,7 @@ begin
     {$ifdef DXGETTEXTDEBUG}
     Result.DebugLogger:=DebugWriteln;
     {$endif}
+    Result.UseMemoryMappedFiles := FUseMemoryMappedFiles;
     Result.Domain := Domain;
     Result.Directory := DefaultDomainDirectory;
     Result.SetLanguageCode(LocaleName);
@@ -3120,8 +3390,8 @@ begin
     //*** if param ReReadMoFileOnSameLanguage is set, use the ReTranslate
     //    function nevertheless if the current language is the same like the
     //    new (-> reread the current .mo-file from the file system).
-    if ReReadMoFileOnSameLanguage or
-       (comp.LastLanguage <> curlang) then
+    if ( FRetranslateOnSameLanguage or
+         ( comp.LastLanguage <> curlang)) then
     begin
       {$ifdef DXGETTEXTDEBUG}
       DebugWriteln ('The retranslator is being executed.');
@@ -3140,6 +3410,19 @@ begin
   {$ifdef DXGETTEXTDEBUG}
   DebugWriteln ('======================================================================');
   {$endif}
+end;
+
+procedure TGnuGettextInstance.setRetranslateOnSameLanguage( const Value: Boolean);
+begin
+  FRetranslateOnSameLanguage := Value;
+end;
+
+procedure TGnuGettextInstance.setUseMemoryMappedFiles( const Value: Boolean);
+begin
+  FUseMemoryMappedFiles := Value;
+
+  //*** set the current language again ->
+  UseLanguage( curlang);
 end;
 
 procedure TGnuGettextInstance.TP_IgnoreClass(IgnClass: TClass);
@@ -3412,11 +3695,16 @@ begin
             SetLength (filename8bit, offset-fs.position);
             fs.ReadBuffer (filename8bit[1], offset-fs.position);
             filename:=trim(utf8decode(filename8bit));
-            if PreferExternal and sysutils.fileexists(basedirectory+filename) then begin
+            if PreferExternal and
+               sysutils.fileexists(basedirectory+filename) then
+            begin
               // Disregard the internal version and use the external version instead
               FreeAndNil (fi);
-            end else
+            end
+            else
+            begin
               filelist.AddObject(filename,fi);
+            end;
           except
             FreeAndNil (fi);
             raise;
@@ -3517,7 +3805,9 @@ begin
 {$ENDIF dx_SupportsResources}
 end;
 
-function TFileLocator.GetMoFile(filename: FilenameString; DebugLogger:TDebugLogger): TMoFile;
+function TFileLocator.GetMoFile( filename: FilenameString;
+                                 DebugLogger: TDebugLogger;
+                                 const xUseMemoryMappedFiles: Boolean): TMoFile;
 var
   fi:TEmbeddedFileInfo;
   idx:integer;
@@ -3574,7 +3864,11 @@ begin
     if MoFiles.Find(idxname, idx) then begin
       Result:=MoFiles.Objects[idx] as TMoFile;
     end else begin
-      Result:=TMoFile.Create (realfilename, Offset, Size, UseMemoryMappedFiles, ResName);
+      Result := TMoFile.Create( realfilename,
+                                Offset,
+                                Size,
+                                xUseMemoryMappedFiles,
+                                ResName);
       MoFiles.AddObject(idxname, Result);
     end;
     Inc (Result.Users);

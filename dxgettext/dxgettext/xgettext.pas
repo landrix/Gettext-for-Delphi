@@ -136,7 +136,6 @@ type
       procedure dxreadln (var line:string; var firstline:boolean; var isutf8:boolean); // same as system.readln, but takes care of comments
       procedure extractstring(var source:string;var res: string);
       function readstring(var line: string; var firstline:boolean; var isutf8:boolean): string; // Reads a pascal ansistring constant
-      function isStringObjectPascalFormat(const xMsgId: String): TObjectPascalFormat;
       procedure ExtractFromPascal(const sourcefilename: string);
       procedure ExtractFromDFM(const sourcefilename: string);
       procedure ExtractFromRC(const sourcefilename: string);
@@ -174,6 +173,14 @@ type
       procedure HandleIgnores;
       procedure HandleComments;
       procedure Execute;
+      ///<summary>
+      /// Checks whether the given msgid is an Object Pascal format string, that is:
+      /// whether it has to be passed through SysUtils.Format before being displayed.
+      /// @param xMsgId is the msgid to check
+      /// @returns opfTrue if it contains at least one format specifier, opfFalse if it
+      ///          contains a percent sign but no specifier, opfUndefined if it contains
+      ///          no percent sign at all </summary>
+      class function IsStringObjectPascalFormat(const xMsgId: String): TObjectPascalFormat;
     end;
 
 
@@ -635,11 +642,16 @@ begin
               if idcontext then
               begin
                 msgid := RemoveNuls(readstring(line, firstline, isutf8))+GETTEXT_CONTEXT_GLUE;
+                if msgid = GETTEXT_CONTEXT_GLUE then begin
+                  // empty MSGID does not need a context
+                  msgid := '';
+                end else begin
                 if copy(line, 1, 1) = ',' then begin
                   delete(line, 1, 1);
                   line:=trim(line);
                 end else begin
                   Warning (wtSyntaxError,_('Missing comma after first parameter'));
+                  end;
                 end;
               end
               else
@@ -1825,22 +1837,9 @@ begin
   end;
 end;
 
-function TXGetText.isStringObjectPascalFormat(const xMsgId: String): TObjectPascalFormat;
+class function TXGetText.IsStringObjectPascalFormat(const xMsgId: String): TObjectPascalFormat;
 begin
-  Result := opfUndefined;
-
-  if (pos('%', xMsgId) > 0) then
-  begin
-    result := opfFalse;
-  end;
-
-  if (pos('%s', xMsgId) > 0) or
-     (pos('%d', xMsgId) > 0) or
-     (pos('%f', xMsgId) > 0) or
-     (pos('%%', xMsgId) > 0) then
-  begin
-    Result := opfTrue;
-  end;
+  Result := IsObjectPascalFormatString(xMsgId);
 end;
 
 procedure TXGetText.ParseExcludeFile;
