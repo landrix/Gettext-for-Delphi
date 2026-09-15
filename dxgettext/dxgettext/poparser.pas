@@ -28,6 +28,26 @@ const // use these for Get/SetPoHeaderEntry calls
 
 type
   TObjectPascalFormat = (opfTrue, opfFalse, opfUndefined);
+
+const
+  // values for the ArgIndex, Width and Precision fields of TFormatSpecifier
+  FMT_NOT_GIVEN = -1;      // the specifier does not have this part
+  FMT_FROM_ARGUMENT = -2;  // the specifier used '*', the value is taken from the arguments
+
+type
+  ///<summary>
+  /// One Object Pascal format specifier as understood by SysUtils.Format:
+  ///   %[index:][-][width][.precision]type
+  /// An escaped percent sign ('%%') is stored with TypeLetter = '%'. </summary>
+  TFormatSpecifier = record
+    ArgIndex: Integer;     // FMT_NOT_GIVEN if the specifier has no argument index
+    LeftJustified: Boolean;
+    Width: Integer;        // FMT_NOT_GIVEN if the specifier has no width
+    Precision: Integer;    // FMT_NOT_GIVEN if the specifier has no precision
+    TypeLetter: Char;      // always lower case, '%' for an escaped percent sign
+  end;
+  TFormatSpecifiers = array of TFormatSpecifier;
+
   TPoEntry=
     class
     private
@@ -52,7 +72,7 @@ type
     private
       list:TStringList; // Strings are searchkeys, objects are TList of TPoEntries
       function GetSearchKey (MsgId:string):string;
-    function GetHeaderEntry(const _Label: string): string;
+      function GetHeaderEntry(const _Label: string): string;
     public
       constructor Create;
       destructor Destroy; override;
@@ -103,6 +123,32 @@ type
 function GetPoHeaderEntry(const _Header: string; const _Label: string): string;
 procedure SetPoHeaderEntry(var _Header: string; const _Label: string; const _Value: string);
 
+///<summary>
+/// Splits the given text into the Object Pascal format specifiers it contains.
+/// Anything that is not a valid specifier - a lone percent sign in particular - is
+/// ignored. An escaped percent sign ('%%') is returned as a specifier with the
+/// TypeLetter '%'.
+/// @param Text is the text to scan
+/// @returns the specifiers in the order in which they appear in the text </summary>
+function ParseFormatSpecifiers(const _Text: string): TFormatSpecifiers;
+
+///<summary>
+/// Converts a format specifier back into its normalized text, e.g. '%.1f'. Two
+/// specifiers can be substituted for each other exactly if their normalized texts
+/// are equal, so this is what a translation check has to compare.
+/// @param Specifier is the specifier to convert
+/// @returns the normalized text of the specifier </summary>
+function FormatSpecifierToStr(const _Specifier: TFormatSpecifier): string;
+
+///<summary>
+/// Checks whether the given text is an Object Pascal format string, that is:
+/// whether it has to be passed through SysUtils.Format before being displayed.
+/// @param Text is the text to check
+/// @returns opfTrue if it contains at least one format specifier,
+///          opfFalse if it contains a percent sign but no specifier,
+///          opfUndefined if it contains no percent sign at all </summary>
+function IsObjectPascalFormatString(const _Text: string): TObjectPascalFormat;
+
 // These use utf-8 when writing!
 procedure StreamWrite (s:TStream;const line:string);
 procedure StreamWriteln (s:TStream;const line:string='');
@@ -113,6 +159,170 @@ implementation
 
 uses
   Math, SysUtils, gnugettext, u_dzQuicksort, StrUtils, xgettexttools;
+
+const
+  FORMAT_TYPE_LETTERS = ['d', 'D', 'u', 'U', 'e', 'E', 'f', 'F', 'g', 'G',
+                         'n', 'N', 'm', 'M', 'p', 'P', 's', 'S', 'x', 'X'];
+
+///<summary>
+/// Reads the decimal number (or the '*') that starts at _Pos and advances _Pos past it.
+/// @param Text is the text to read from
+/// @param Pos is the position to start at, will be advanced past the number
+/// @param Value is the number that was read, FMT_FROM_ARGUMENT for '*'
+/// @returns true if a number or a '*' was found, false if not (Pos is unchanged then) </summary>
+function TryReadFormatNumber(const _Text: string; var _Pos: Integer; out _Value: Integer): Boolean;
+var
+  Start: Integer;
+begin
+  Result := False;
+  _Value := FMT_NOT_GIVEN;
+  if _Pos > Length(_Text) then
+    Exit;
+  if _Text[_Pos] = '*' then begin
+    _Value := FMT_FROM_ARGUMENT;
+    Inc(_Pos);
+    Result := True;
+    Exit;
+  end;
+  Start := _Pos;
+  while (_Pos <= Length(_Text)) and CharInSet(_Text[_Pos], ['0'..'9']) do
+    Inc(_Pos);
+  if _Pos = Start then
+    Exit;
+  // a number too large for Integer cannot be a sensible width, treat it like '*'
+  _Value := StrToIntDef(Copy(_Text, Start, _Pos - Start), FMT_FROM_ARGUMENT);
+  Result := True;
+end;
+
+///<summary>
+/// Parses the format specifier starting at _Pos, which must point to a percent sign.
+/// @param Text is the text to parse
+/// @param Pos is the position of the percent sign, will be advanced past the specifier
+/// @param Specifier is the specifier that was parsed
+/// @returns true if a valid specifier was found, false if not (Pos is unchanged then) </summary>
+function TryParseFormatSpecifier(const _Text: string; var _Pos: Integer;
+  out _Specifier: TFormatSpecifier): Boolean;
+var
+  p: Integer;
+  Len: Integer;
+  Num: Integer;
+  BeforeNumber: Integer;
+  c: Char;
+begin
+  Result := False;
+  Len := Length(_Text);
+  p := _Pos + 1; // _Text[_Pos] is the percent sign
+  if p > Len then
+    Exit;
+
+  _Specifier.ArgIndex := FMT_NOT_GIVEN;
+  _Specifier.LeftJustified := False;
+  _Specifier.Width := FMT_NOT_GIVEN;
+  _Specifier.Precision := FMT_NOT_GIVEN;
+
+  if _Text[p] = '%' then begin
+    // an escaped percent sign
+    _Specifier.TypeLetter := '%';
+    _Pos := p + 1;
+    Result := True;
+    Exit;
+  end;
+
+  // a number is the argument index only if a colon follows, otherwise it is the width
+  BeforeNumber := p;
+  if TryReadFormatNumber(_Text, p, Num) then begin
+    if (p <= Len) and (_Text[p] = ':') then begin
+      _Specifier.ArgIndex := Num;
+      Inc(p);
+    end else
+      p := BeforeNumber;
+  end;
+
+  if (p <= Len) and (_Text[p] = '-') then begin
+    _Specifier.LeftJustified := True;
+    Inc(p);
+  end;
+
+  TryReadFormatNumber(_Text, p, _Specifier.Width);
+
+  if (p <= Len) and (_Text[p] = '.') then begin
+    Inc(p);
+    if not TryReadFormatNumber(_Text, p, _Specifier.Precision) then
+      Exit; // a dot must be followed by the precision
+  end;
+
+  if p > Len then
+    Exit;
+  c := _Text[p];
+  if not CharInSet(c, FORMAT_TYPE_LETTERS) then
+    Exit;
+  if CharInSet(c, ['A'..'Z']) then
+    c := Char(Ord(c) + Ord('a') - Ord('A'));
+  _Specifier.TypeLetter := c;
+  _Pos := p + 1;
+  Result := True;
+end;
+
+function ParseFormatSpecifiers(const _Text: string): TFormatSpecifiers;
+var
+  p: Integer;
+  Cnt: Integer;
+  Specifier: TFormatSpecifier;
+begin
+  SetLength(Result, 0);
+  Cnt := 0;
+  p := 1;
+  while p <= Length(_Text) do begin
+    if _Text[p] <> '%' then
+      Inc(p)
+    else if TryParseFormatSpecifier(_Text, p, Specifier) then begin
+      // p has been advanced past the specifier
+      if Cnt = Length(Result) then
+        SetLength(Result, Cnt + 8);
+      Result[Cnt] := Specifier;
+      Inc(Cnt);
+    end else
+      Inc(p); // a lone percent sign, not a specifier
+  end;
+  SetLength(Result, Cnt);
+end;
+
+function FormatSpecifierToStr(const _Specifier: TFormatSpecifier): string;
+
+  function NumToStr(_Value: Integer): string;
+  begin
+    if _Value = FMT_FROM_ARGUMENT then
+      Result := '*'
+    else
+      Result := IntToStr(_Value);
+  end;
+
+begin
+  if _Specifier.TypeLetter = '%' then begin
+    Result := '%%';
+    Exit;
+  end;
+  Result := '%';
+  if _Specifier.ArgIndex <> FMT_NOT_GIVEN then
+    Result := Result + NumToStr(_Specifier.ArgIndex) + ':';
+  if _Specifier.LeftJustified then
+    Result := Result + '-';
+  if _Specifier.Width <> FMT_NOT_GIVEN then
+    Result := Result + NumToStr(_Specifier.Width);
+  if _Specifier.Precision <> FMT_NOT_GIVEN then
+    Result := Result + '.' + NumToStr(_Specifier.Precision);
+  Result := Result + _Specifier.TypeLetter;
+end;
+
+function IsObjectPascalFormatString(const _Text: string): TObjectPascalFormat;
+begin
+  if Pos('%', _Text) = 0 then
+    Result := opfUndefined
+  else if Length(ParseFormatSpecifiers(_Text)) > 0 then
+    Result := opfTrue
+  else
+    Result := opfFalse;
+end;
 
 function GetPoHeaderEntry(const _Header: string; const _Label: string): string;
 var

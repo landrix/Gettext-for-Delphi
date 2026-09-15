@@ -49,6 +49,10 @@ begin
     begin
       engine.PreserveStateFuzzy := True;
     end
+    else if (uparam = '--CREATEFILENEWREMOVED') then
+    begin
+      engine.CreateRemovedAndNewFile := True;
+    end
     else
     begin
       if engine.translationfilename = '' then
@@ -101,6 +105,8 @@ begin
   writeln ('');
   writeln (_('Options:'));
   writeln ('  --preserveStateFuzzy   ' + _('preserve "fuzzy" state in the translated file'));
+  writeln ('  --createFileNewRemoved ' + _('create files with new and removed translations'));
+
 
 end;
 

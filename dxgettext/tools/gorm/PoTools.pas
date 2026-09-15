@@ -27,6 +27,7 @@ procedure ExtractUserComments (Item:TPoEntry;Comments:TStrings);
 procedure ExtractLabels (Item:TPoEntry;CheckListBoxLabels:TCheckListBox);
 function FormatMsgIdForDisplay (const s:string):string;
 function ConvertMsgStrToStorageFormat (const s:string):string;
+function CountPlaceholders(const _Which, _In: string): integer;
 function FindWarnings (item:TPoEntry):string;
 function patternmatch (pattern,itemtext:string):boolean;
 function patternmatchspacedlist (pattern,spacedlist:string):boolean;
@@ -237,21 +238,51 @@ begin
   end;
 end;
 
+function CountPlaceholders(const _Which, _In: string): integer;
+var
+  Wanted: TFormatSpecifiers;
+  Found: TFormatSpecifiers;
+  i: Integer;
+begin
+  Result := 0;
+  // _Which is a specifier itself, we are only interested in its type letter
+  Wanted := ParseFormatSpecifiers(_Which);
+  if Length(Wanted) <> 1 then
+    Exit;
+  Found := ParseFormatSpecifiers(_In);
+  for i := 0 to High(Found) do
+    if Found[i].TypeLetter = Wanted[0].TypeLetter then
+      Inc(Result);
+end;
+
 function FindWarnings (item:TPoEntry):string;
 
-  function CountPlaceholders(const _Which: string; const _In: string): integer;
+  // Counts the specifiers in _In that are exactly _Specifier, e.g. '%.1f' does not
+  // count for '%1f' even though both are float specifiers.
+  function CountSpecifiers(const _Specifier: string; const _In: string): integer;
   var
-    p: Integer;
-    s: string;
-    w: string;
+    Specifiers: TFormatSpecifiers;
+    i: integer;
   begin
-    s := LowerCase(_In);
-    w := LowerCase(_Which);
     Result := 0;
-    p := Pos(w, s);
-    while p <> 0 do begin
-      Inc(Result);
-      p := PosEx(w, s, p + 1);
+    Specifiers := ParseFormatSpecifiers(_In);
+    for i := 0 to High(Specifiers) do
+      if FormatSpecifierToStr(Specifiers[i]) = _Specifier then
+        Inc(Result);
+  end;
+
+  // Adds the distinct specifiers of _In to _Specifiers.
+  procedure CollectSpecifiers(const _In: string; _Specifiers: TStrings);
+  var
+    Parsed: TFormatSpecifiers;
+    i: integer;
+    Normalized: string;
+  begin
+    Parsed := ParseFormatSpecifiers(_In);
+    for i := 0 to High(Parsed) do begin
+      Normalized := FormatSpecifierToStr(Parsed[i]);
+      if _Specifiers.IndexOf(Normalized) = -1 then
+        _Specifiers.Add(Normalized);
     end;
   end;
 
@@ -260,8 +291,8 @@ function FindWarnings (item:TPoEntry):string;
     count1: integer;
     count2: integer;
   begin
-    count1 := CountPlaceholders(_Which, item.MsgId);
-    count2 := CountPlaceholders(_Which, item.MsgStr);
+    count1 := CountSpecifiers(_Which, item.MsgId);
+    count2 := CountSpecifiers(_Which, item.MsgStr);
     Result := count1 <> count2;
     if Result then
       _Error := Format(_('The original text includes %d times %s, but the translation contains %d of these.'),
@@ -271,6 +302,7 @@ function FindWarnings (item:TPoEntry):string;
 var
   count1,count2,i:integer;
   s: string;
+  Specifiers: TStringList;
 begin
   Result:='';
   if item.MsgId='' then begin
@@ -278,28 +310,18 @@ begin
       Result:=Result+_('Please specify a correct PO header as translation for the empty string.')+sLineBreak;
   end else
   if item.MsgStr<>'' then begin
-    if HasPlaceholderMismatch('%d', item, s) then
-      Result := Result + s + sLineBreak;
-    if HasPlaceholderMismatch('%u', item, s) then
-      Result := Result + s + sLineBreak;
-    if HasPlaceholderMismatch('%e', item, s) then
-      Result := Result + s + sLineBreak;
-    if HasPlaceholderMismatch('%f', item, s) then
-      Result := Result + s + sLineBreak;
-    if HasPlaceholderMismatch('%g', item, s) then
-      Result := Result + s + sLineBreak;
-    if HasPlaceholderMismatch('%n', item, s) then
-      Result := Result + s + sLineBreak;
-    if HasPlaceholderMismatch('%m', item, s) then
-      Result := Result + s + sLineBreak;
-    if HasPlaceholderMismatch('%p', item, s) then
-      Result := Result + s + sLineBreak;
-    if HasPlaceholderMismatch('%s', item, s) then
-      Result := Result + s + sLineBreak;
-    if HasPlaceholderMismatch('%x', item, s) then
-      Result := Result + s + sLineBreak;
-    if HasPlaceholderMismatch('%%', item, s) then
-      Result := Result + s + sLineBreak;
+    // Check the format specifiers of both texts. Comparing the complete specifiers
+    // rather than just their type letters also finds e.g. %.1f turned into %1f.
+    Specifiers := TStringList.Create;
+    try
+      CollectSpecifiers(item.MsgId, Specifiers);
+      CollectSpecifiers(item.MsgStr, Specifiers);
+      for i := 0 to Specifiers.Count - 1 do
+        if HasPlaceholderMismatch(Specifiers[i], item, s) then
+          Result := Result + s + sLineBreak;
+    finally
+      FreeAndNil(Specifiers);
+    end;
     if (LeftStr(item.MsgId,1)=' ') and (LeftStr(item.MsgStr,1)<>' ') then
       Result:=Result+_('Check spaces.')+sLineBreak;
     if (LeftStr(item.MsgId,1)<>' ') and (LeftStr(item.MsgStr,1)=' ') then
