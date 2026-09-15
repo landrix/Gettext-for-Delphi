@@ -2,6 +2,7 @@
 
 GNU GetText translation tools for Borland Delphi and Borland C++ Builder
 
+2026-09-16 Added support in dxgettext for Delphi12+ triple-quoted multi-line string format (in .pas files)
 
 2026-09-15 Fixed bug in consoleoutput: no output text is generated when output is redirected or piped
 
