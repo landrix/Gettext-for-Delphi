@@ -136,6 +136,8 @@ type
       procedure dxreadln (var line:string; var firstline:boolean; var isutf8:boolean); // same as system.readln, but takes care of comments
       procedure extractstring(var source:string;var res: string);
       function readstring(var line: string; var firstline:boolean; var isutf8:boolean): string; // Reads a pascal ansistring constant
+      function IsTripleQuoteOpener(const line: string): boolean;
+      function ReadTripleQuotedString(var line: string; var firstline:boolean; var isutf8:boolean): string;
       procedure ExtractFromPascal(const sourcefilename: string);
       procedure ExtractFromDFM(const sourcefilename: string);
       procedure ExtractFromRC(const sourcefilename: string);
@@ -372,6 +374,86 @@ begin
   end;
 end;
 
+function TXGetText.IsTripleQuoteOpener(const line: string): boolean;
+var
+  s: string;
+begin
+  // Line starts at the first quote. Check if it's a triple-quote opener:
+  // ''' followed by only whitespace (or nothing)
+  if (Length(line) >= 3) and (Copy(line, 1, 3) = '''''''') then begin
+    s := Trim(Copy(line, 4, MaxInt));
+    Result := s = '';
+  end else
+    Result := False;
+end;
+
+function TXGetText.ReadTripleQuotedString(var line: string; var firstline: boolean; var isutf8: boolean): string;
+var
+  contentLines: TStringList;
+  i, j: integer;
+  s: string;
+  closingFound: boolean;
+  currentLine: string;
+  quotePos: integer;
+  baseIndent: integer;
+begin
+  Result := '';
+
+  quotePos := Pos('''', line);
+  if quotePos > 0 then begin
+    s := Trim(Copy(line, quotePos + 3, MaxInt));
+    line := '';
+  end else begin
+    s := '';
+  end;
+
+  contentLines := TStringList.Create;
+  try
+    closingFound := False;
+    baseIndent := 0;
+
+    if s <> '' then
+      contentLines.Add(s);
+
+    while (not closingFound) and (FLineNr < FLines.Count) do begin
+      currentLine := FLines[FLineNr];
+      Inc(FLineNr);
+
+      s := currentLine;
+      i := 1;
+      while (i <= Length(s)) and ((s[i] = ' ') or (s[i] = #9)) do
+        Inc(i);
+
+      if (i + 2 <= Length(s)) and (Copy(s, i, 3) = '''''''') then begin
+        baseIndent := i - 1;
+        line := Trim(Copy(s, i + 3));
+        closingFound := True;
+      end else begin
+        contentLines.Add(currentLine);
+      end;
+    end;
+
+    if not closingFound then begin
+      Warning(wtSyntaxError, _('Triple-quoted string not closed'));
+      Exit;
+    end;
+
+    for i := 0 to contentLines.Count - 1 do begin
+      s := contentLines[i];
+      j := 1;
+      while (j <= Length(s)) and ((s[j] = ' ') or (s[j] = #9)) and (j - 1 < baseIndent) do
+        Inc(j);
+      if j > 1 then
+        s := Copy(s, j, MaxInt);
+      if i > 0 then
+        Result := Result + #10;
+      Result := Result + s;
+    end;
+  finally
+    contentLines.Free;
+  end;
+end;
+
 function TXGetText.MakePathLinuxRelative (const path:string):string;
 var
   baselen:integer;
@@ -512,7 +594,11 @@ begin
 
           delete(line, 1, p - 1);
           // Extract the string
-          msgid:=RemoveNuls(readstring(line, firstline, isutf8));
+          if IsTripleQuoteOpener(line) then begin
+            msgid := RemoveNuls(ReadTripleQuotedString(line, firstline, isutf8));
+          end else begin
+            msgid := RemoveNuls(readstring(line, firstline, isutf8));
+          end;
           if resourcestringmode=2 then begin
             if constident<>'' then begin
               PrepareLastCommentForConst(constident, msgid);
@@ -641,7 +727,11 @@ begin
               // get context from first parameter
               if idcontext then
               begin
-                msgid := RemoveNuls(readstring(line, firstline, isutf8))+GETTEXT_CONTEXT_GLUE;
+                if IsTripleQuoteOpener(line) then begin
+                  msgid := RemoveNuls(ReadTripleQuotedString(line, firstline, isutf8))+GETTEXT_CONTEXT_GLUE;
+                end else begin
+                  msgid := RemoveNuls(readstring(line, firstline, isutf8))+GETTEXT_CONTEXT_GLUE;
+                end;
                 if msgid = GETTEXT_CONTEXT_GLUE then begin
                   // empty MSGID does not need a context
                   msgid := '';
@@ -660,7 +750,11 @@ begin
               end;
 
               // Get parameter that contains the msgid
-              msgid := msgid+RemoveNuls(readstring(line, firstline, isutf8));
+              if IsTripleQuoteOpener(line) then begin
+                msgid := msgid+RemoveNuls(ReadTripleQuotedString(line, firstline, isutf8));
+              end else begin
+                msgid := msgid+RemoveNuls(readstring(line, firstline, isutf8));
+              end;
               if idplural then begin
                 line := trim(line);
                 if copy(line, 1, 1) = ',' then begin
@@ -671,7 +765,11 @@ begin
                 end;
                 if line='' then
                   dxreadln(line, firstline, isutf8);
-                msgid := msgid+PluralSplitter+RemoveNuls(readstring(line, firstline, isutf8));
+                if IsTripleQuoteOpener(line) then begin
+                  msgid := msgid+PluralSplitter+RemoveNuls(ReadTripleQuotedString(line, firstline, isutf8));
+                end else begin
+                  msgid := msgid+PluralSplitter+RemoveNuls(readstring(line, firstline, isutf8));
+                end;
               end;
               ApplyContext(msgid);
               AddTranslation(domain, msgid, lastcomment, sourcefilename, FLineNr);
@@ -2360,3 +2458,5 @@ end;
 
 
 end.
+
+
