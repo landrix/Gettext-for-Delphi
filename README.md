@@ -3,6 +3,8 @@
 GNU GetText translation tools for Borland Delphi and Borland C++ Builder
 
 
+2026-09-15 Fixed bug in consoleoutput: no output text is generated when output is redirected or piped
+
 2026-09-09 Sync (import) changes from trunk r196 https://sourceforge.net/p/dxgettext/code/196/log/?path=/trunk
 
 2026-09-09 Added support for multi-line text (Lines.Strings) as one translation item, as opposed to Items.Strings, which are translated as separate items

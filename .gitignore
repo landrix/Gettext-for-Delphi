@@ -16,6 +16,12 @@
 *.res
 *.winmerge
 
+# Ignore Delphi history and backup files
+__history/
+__recovery/
+*.bak
+*.~*
+~*
 # Files in install folder
 /dxgettext-packages/dxgettext/Output/dxgettext.exe
 /dxgettext-packages/dxgettext/dxgettext/gnugettext.pas
